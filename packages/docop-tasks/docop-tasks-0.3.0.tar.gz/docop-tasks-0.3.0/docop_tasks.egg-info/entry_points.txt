@@ -1,0 +1,2 @@
+[docop.tasks]
+url2html = docop_tasks.webhtml.fetch_html
