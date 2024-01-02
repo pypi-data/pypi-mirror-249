@@ -1,0 +1,12 @@
+rnaseqdata/__init__.py,sha256=pm8jICgXoqA04U6JKv5BdbzoApNF4vQQbmP9AAX8zKU,195
+rnaseqdata/annot_data.py,sha256=yFBWHWHLb4MSidwxqK9t8mbIEWumx7sPN2m4ing0-Zk,1748
+rnaseqdata/node_data.py,sha256=ewvRa4XxEQFBqOnkDlw8J-PWG1_EjwTyDOEYswH7QJc,3469
+rnaseqdata/random_data.py,sha256=DfOy0L-AWjvHG__Wb6vKS8CiHlxC7UJg2nFHf94l5gk,1658
+rnaseqdata/root_data.py,sha256=v_fajoLQRV1vaCHevtJhBUF3_xkQYM5hI4ed_BJ9hGQ,438
+rnaseqdata/seq_data.py,sha256=mr_YQntnYNCKgwDhS3A_l20oXnsKtlt4dmwGXOR-J1s,1148
+rnaseqdata/stat_data.py,sha256=EhkRPoANttopCxCW-c1eHSZ3lHGp72zvNm7xcPLkgrk,1377
+rnaseqdata-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rnaseqdata-0.0.4.dist-info/METADATA,sha256=7d6wWmTil8HM1CnGe5pfzfgrwXoN5KiwQpqB1cRU4Qk,3252
+rnaseqdata-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rnaseqdata-0.0.4.dist-info/top_level.txt,sha256=tZWdpZA0quZdjt4kmGFtNNZ7yeYX7OIqrGNGgXjxWcE,11
+rnaseqdata-0.0.4.dist-info/RECORD,,
