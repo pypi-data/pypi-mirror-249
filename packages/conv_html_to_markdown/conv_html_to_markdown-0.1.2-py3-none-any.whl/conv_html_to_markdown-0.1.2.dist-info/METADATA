@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: conv_html_to_markdown
+Version: 0.1.2
+Summary: Convert HTML to Markdown using Regex, BeautifulSoup4, and filter useless content with Jina Embeddings.
+Author-Email: Daethyra <109057945+Daethyra@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: beautifulsoup4>=4.12.2
+Requires-Dist: markdownify>=0.11.6
+Requires-Dist: transformers>=4.36.2
+Requires-Dist: torch>=2.1.2
+Description-Content-Type: text/markdown
+
+# Convert and Format HTML to Markdown
+
+## Purpose
+
+For converting HTML to Markdown and formatting a dataset of HTML content 
+into structured Markdown, with added capabilities of processing text embeddings to identify and remove redundant content.
+
+## Installation & Setup
+To get started, run:
+
+`pip install conv_html_to_markdown`
+
+* No API keys required
+* Run `jina_embeddings.py` to preemptively download the embeddings model.
+
+**Example integration**:
+
+* Please see an example usage in [gpt-crawler](https://github.com/Daethyra/gpt-crawler). This fork of `gpt-crawler` has the `conv_html_to_markdown` package integrated into its processing pipeline. 
+
+**Configuration**:
+* You can clone the package repository to configure similarity threshold for removing content, chunk size, maximum number of threads, the file pattern to match when loading files for conversion, and the output file's name.
+
+`git clone https://github.com/daethyra/conv_html_to_markdown.git`
