@@ -1,0 +1,6 @@
+[console_scripts]
+chipmunkdb_python_client = chipmunkdb.ChipmunkDb:main
+
+[sqlalchemy.dialects]
+chipmunkdb = chipmunkdb.jdbc:ChipmunkdbDialect_jdbc
+
