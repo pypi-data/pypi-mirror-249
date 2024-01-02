@@ -1,0 +1,15 @@
+Screen {
+    layout: grid;
+    grid-size: 2 1;
+}
+
+.table_name {
+    color: 	#00FFFF;
+}
+
+DataTable {
+    margin-bottom: 1;
+    padding: 1;
+    border: mediumvioletred;
+    height: 100%;
+}
