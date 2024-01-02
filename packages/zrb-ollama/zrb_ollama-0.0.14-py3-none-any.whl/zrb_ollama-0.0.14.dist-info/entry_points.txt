@@ -1,0 +1,4 @@
+[console_scripts]
+zrb-ollama=zrb_ollama.__main__:vanilla_prompt
+zrb-ollama-agent=zrb_ollama.__main__:agent_prompt
+
