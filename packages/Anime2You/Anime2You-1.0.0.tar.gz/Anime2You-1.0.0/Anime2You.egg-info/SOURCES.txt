@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Anime2You.egg-info/PKG-INFO
+Anime2You.egg-info/SOURCES.txt
+Anime2You.egg-info/dependency_links.txt
+Anime2You.egg-info/requires.txt
+Anime2You.egg-info/top_level.txt
+anime2you/__init__.py
+anime2you/feed.py
+anime2you/rss_manager.py
