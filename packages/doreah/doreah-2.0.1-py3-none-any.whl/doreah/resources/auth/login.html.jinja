@@ -1,0 +1,132 @@
+<html>
+
+
+	<head>
+		<script>
+
+
+		async function auth() {
+		    var username = document.getElementById("user")?.value ?? 'user';
+			var password = document.getElementById("password").value;
+
+            response = await fetch('/auth/authenticate',{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    user:username,
+                    password:password
+                })
+            })
+
+            if (response.ok){
+                const jsonResponse = await response.json();
+                document.cookie = jsonResponse.cookie_name + "=" + jsonResponse.token;
+                location.reload();
+
+            }
+            else {
+                const jsonResponse = await response.json();
+                alert("Access denied!")
+            }
+
+		}
+
+		function enterpress(evt) {
+			if (evt.keyCode === 13) {
+			    if (evt.srcElement.id == 'user') {
+                    document.getElementById('password').focus();
+			    }
+			    else if (evt.srcElement.id == 'password') {
+                    auth();
+                }
+			}
+		}
+		</script>
+
+		<style>
+
+			div.centered_box {
+				background-color: rgba(0,0,0,0.1);
+				height:150px;
+				width:400px;
+				border-radius: 15px;
+
+				padding:25px;
+
+				position:absolute;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				margin:auto;
+
+				text-align: center;
+				display:flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			div.centered_box span {
+
+				text-overflow: ellipsis;
+			}
+			div.centered_box input,div.centered_box span,div.centered_box button {
+				padding:5px;
+				width:100%;
+				margin-top:5px;
+				height:26px;
+			}
+			div.centered_box span {
+				cursor: pointer;
+			}
+			div.centered_box button {
+				background-color:beige;
+				border:0px;
+			}
+			div.centered_box button:hover {
+				background-color:gold;
+				color:black;
+			}
+
+			input {
+				background-color: inherit;
+				border:0px;
+				font-size: inherit;
+				font:inherit;
+				text-align: inherit;
+				color:inherit;
+			}
+			input:focus {
+				outline:none;
+			}
+
+			span:focus {
+				outline:none;
+			}
+
+			.hide {
+				display:none;
+			}
+		</style>
+
+		{% for sheet in css %}
+		<link rel="stylesheet" type="text/css" href="{{ sheet }}" />
+		{% endfor %}
+
+
+	</head>
+
+
+
+
+	<body>
+		<div class="centered_box">
+			{% if not lock_user %}<input id="user" name="user" type="text" autocomplete="current-user" placeholder="Username" onkeyup="enterpress(event)" />{% endif %}
+			<input id="password" name="password" type="password" autocomplete="current-password" placeholder="Password" onkeyup="enterpress(event)" />
+			<button id="loginbutton" onclick="auth()">Login</button>
+		</div>
+
+	</body>
+
+</html>
