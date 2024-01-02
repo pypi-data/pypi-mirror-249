@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: oceanlab-api-client
+Version: 1.1.0
+Summary: A client library for accessing the SINTEF OceanLab Web API
+Home-page: https://gitlab.sintef.no/oceanlab/oceanlab-api-python-client
+Author: Oda Omholt
+Author-email: oda.omholt@sintef.no
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: attrs (>=21.3.0)
+Requires-Dist: httpx (>=0.15.4,<0.24.0)
+Requires-Dist: msal (>=1.22.0,<2.0.0)
+Requires-Dist: python-dateutil (>=2.8.0,<3.0.0)
+Project-URL: Repository, https://gitlab.sintef.no/oceanlab/oceanlab-api-python-client
+Description-Content-Type: text/markdown
+
+# OceanLab API Python Client
+
+## Description
+A client library for accessing data from OceanLab's REST API. 
+
+## Installation
+An installer for the Python package is published on the [Python Package Index (PyPI)](https://pypi.org/project/oceanlab-api-client/).
+
+To install the package: 
+```
+pip install oceanlab-api-client
+```
+
+## Usage
+
+See the documentation on https://oceanlab.pages.sintef.no/e-infrastructure/documentation/ for instructions and examples of usage.
+
+
