@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "litrl"
+version = "0.0.9"
+authors = [
+  { name="Clement Gohlke"},
+]
+description = "Implementation of RL algorithms in PyTorch Lightning"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "lightning~=2.1.2",
+  "hydra-core~=1.3.2",
+  "nptyping~=2.5.0",
+  "gymnasium==0.29.1",
+  "loguru==0.7.2",
+  "pettingzoo==1.24.2",
+  "pygame==2.5.2",
+  "python-dateutil==2.8.2",
+  "onnxruntime==1.16.3",
+  "scipy==1.11.4",
+  "huggingface-hub==0.19.4"
+]
+[project.optional-dependencies]
+test = ["pytest"]
+all = [
+  "torchrl~=0.2.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/c-gohlke/LightningRL"
+
+[tool.setuptools.packages.find]
+include = ["litrl*"]
+
+# LINTING
+## PYTEST
+
+[tool.pytest]
+addopts = "--exitfirst"
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+## MYPY
+
+[tool.mypy]
+strict = true
+exclude = ["build"]
+
+## RUFF
+
+[tool.ruff]
+select = ["ALL"]
+unfixable = ["B", "ERA001"]
+exclude=[".venv"]
+ignore = ["D10", "TD", "ANN101", "ANN401", "G003", "G004", "S", "FA102", "N812", "FIX002", "D203", "D213"]
+dummy-variable-rgx = "^(args|kwargs|_)$"
+pydocstyle.convention = "numpy"
+line-length = 120
+[tool.ruff.per-file-ignores]
+"tests/*.py" = [
+    "INP001", # no __init__ in tests folders
+    "PLR2004", # assert allowed in tests
+    "SLF001", # check private attributes allowed in tests
+]
+
+## PYLINT
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+disable = "C,W,R0903"
