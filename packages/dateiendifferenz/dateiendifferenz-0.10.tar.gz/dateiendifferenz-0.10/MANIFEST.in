@@ -1,0 +1,3 @@
+include dateiendifferenz/requirements.txt
+include dateiendifferenz/thirdparty.json
+include dateiendifferenz/README.MD
