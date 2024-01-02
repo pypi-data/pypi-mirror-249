@@ -1,0 +1,19 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: {{ homepage }}
+Upstream-Name: {{ upstream_name }}
+Upstream-Contact: TODO
+{% if repack %}
+Files-Excluded: vendor/*
+{% endif %}
+
+Files: *
+Copyright: TODO
+License: {{ license }}
+
+Files: debian/*
+Copyright: {{ year }} {{ name }} <{{ email }}>
+License: {{ license }}
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: {{ license }}
+{{ license_text }}

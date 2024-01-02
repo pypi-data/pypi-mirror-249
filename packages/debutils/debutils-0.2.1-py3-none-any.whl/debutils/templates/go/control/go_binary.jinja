@@ -1,0 +1,9 @@
+Package: {{ package }}
+Section: TODO
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Built-Using: ${misc:Built-Using}
+Description: {{ short_desc if short_desc else "TODO" }} (program)
+{{ long_desc if long_desc else " TODO" }}
