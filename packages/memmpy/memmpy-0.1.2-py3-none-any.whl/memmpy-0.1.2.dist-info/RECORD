@@ -1,0 +1,11 @@
+memmpy/__init__.py,sha256=VbuvcnQV3XBiAJf7Tdrsdz8V_I0eC-o1vrYLl2SG1Es,454
+memmpy/_jagged.py,sha256=Nf8N3exMWJnqnzUU9CKOYL3W087p2MiX2JDoIcxAqT8,6865
+memmpy/_labels.py,sha256=99_VqOxagaIc0KltTypYs7WkqMozHXPeaeNVoocOJ1o,2859
+memmpy/_loader.py,sha256=KBPNtFk4520BRHZZDDaY8SiSRLAsAemLzMaDvR44ttw,6608
+memmpy/_subset.py,sha256=a22NqloQsBMuVDGlFYd2tl3Bo0MkbEWHNTNScRBRTtU,1667
+memmpy/_vector.py,sha256=XdEsiWXklOY-_T8BFWbQixsAzjgvmVrrcX2oKJoD-DY,4154
+memmpy/reroot.py,sha256=aNW3oxD3iKrlpAmTZ75SA_CsiAhagxKI1sSTcP7b4LE,5025
+memmpy-0.1.2.dist-info/METADATA,sha256=BBOL93dfUzN_d1_VzvvLLLo-gOMrWAVqSAajYdYKkwY,4952
+memmpy-0.1.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+memmpy-0.1.2.dist-info/top_level.txt,sha256=0b95iyoZHRT_ZualRHKeIvcxA9kQflQZhlwWSXMtln8,7
+memmpy-0.1.2.dist-info/RECORD,,
