@@ -1,0 +1,4 @@
+openai
+replicate
+requests
+pydantic
