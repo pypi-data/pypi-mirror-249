@@ -1,0 +1,5 @@
+numpy
+numba
+im2dhist
+opencv-python
+tqdm
