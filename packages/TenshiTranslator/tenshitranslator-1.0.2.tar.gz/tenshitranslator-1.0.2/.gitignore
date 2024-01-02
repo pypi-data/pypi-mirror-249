@@ -1,0 +1,28 @@
+# data files
+sources/
+Correction/
+
+# python files
+__pycache__/
+
+# vscode
+.vscode/
+
+# test
+.pytest_cache
+.coverage
+
+# docs
+docs/build
+docs/apidocs
+docs/html
+
+# package
+dist/
+
+# executable
+build/
+Backend.spec
+
+# frontend
+node_modules/

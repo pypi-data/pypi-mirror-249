@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TenshiTranslator"
+version = "1.0.2"
+requires-python = ">=3.10"
+authors = [{ name="Ryan4253", email="ryan.liao0305@gmail.com" }]
+description = "Novel Translation utility using Sugoi Translator"
+readme = "README.md"
+license = {file="LICENSE"}
+
+dependencies = [
+  "requests",
+  "selenium",
+  "chromedriver-autoinstaller",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: Microsoft :: Windows",
+    "Development Status :: 4 - Beta",
+    "Framework :: Pytest",
+    "Framework :: Sphinx",
+    "Topic :: Text Processing :: Linguistic"
+]
+
+[project.urls]
+Homepage = "https://github.com/Ryan4253/TenshiTranslator"
+Issues = "https://github.com/Ryan4253/TenshiTranslator/issues"
+documentation = "https://ryan4253.github.io/TenshiTranslator/"
+
+[tool.hatch.build]
+include = [
+  "TenshiTranslator/*",
+]
+
+exclude = [
+  "TenshiTranslator/Backend.py"
+]
