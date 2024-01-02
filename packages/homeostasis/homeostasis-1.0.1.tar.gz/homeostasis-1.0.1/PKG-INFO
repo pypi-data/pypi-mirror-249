@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: homeostasis
+Version: 1.0.1
+Summary: health checks module
+License: GPL 3.0
+Project-URL: GitLab, https://gitlab.com/reptilian_climates/body_scan.git
+Keywords: tests,guarantees,vows,oaths,assurances,insurances,ensurances,reliability,consistency,integrity,speed,calmness
+Requires-Python: >=3.8
+Description-Content-Type: text/plain
+Requires-Dist: body_scan
+Requires-Dist: botanist
+Requires-Dist: shares
+Requires-Dist: click
+Requires-Dist: flask
+Requires-Dist: pdoc3
+Requires-Dist: requests
+Requires-Dist: textual
+Requires-Dist: tinydb
+
+
+
+<pre>
+
+
+<h1>homeostasis</h1>
+
+	<h2>install</h2>
+		[SH] pip install homeostasis
+	
+	<h2>documentation</h2>
+		[SH] homeostasis shares 
+	
+	<h2>health checks</h2>
+		<h3>create a status file</h3>
+			
+			# status_1.py
+			
+			def check_1 ():
+				print ("check 1")
+				
+			def check_2 ():
+				print ("check 2")
+				
+			def check_3 ():
+				raise Exception ("not 110%")
+
+			checks = {
+				"check 1": check_1,
+				"check 2": check_2,
+				"check 3": check_3
+			}
+					
+		
+		<h3>start from a directory deeper than the status file "status_1.py"</h3>
+			[SH] homeostasis status
+
+</pre>
+		
+		
+	
