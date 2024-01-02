@@ -1,0 +1,8 @@
+setup.py
+bug_tracker/__init__.py
+bug_tracker/bug_track.py
+bug_tracker/utils.py
+bug_tracker.egg-info/PKG-INFO
+bug_tracker.egg-info/SOURCES.txt
+bug_tracker.egg-info/dependency_links.txt
+bug_tracker.egg-info/top_level.txt
