@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: pysvt
+Version: 0.3.0
+Summary: A simple test case runner in Python that uses TOML configurations and decorator syntax.
+License: LICENSE
+Author: dhzdhd
+Author-email: dhzdhd@proton.me
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Description-Content-Type: text/markdown
+
+# pysvt
+
+## About
+
+A simple test case runner in Python that uses TOML configurations and decorator syntax.
+
+## Installation
+
+`pip install pysvt`
+
+## Usage
+
+- Function
+
+    Python
+
+    ```python
+    from pysvt import test
+
+    @test("<path_to_TOML_file>")
+    def function(arg1: int, arg2: int) -> int:
+        return arg1 + arg2
+    ```
+
+    TOML
+
+    ```python
+    name = ["One and Two", "Two and Three"]
+    metadata = ["Add to 3", "Add to 5"]
+    i = [[1, 2], [2, 3]]
+    o = [3, 5]
+    ```
+
+    or
+
+    ```python
+    [[cases]]
+    name = "One and Two"
+    i = [1, 2]
+    o = 3
+    metadata = "Add to 3"
+
+    [[cases]]
+    name = "Two and Three"
+    i = [2, 3]
+    o = 5
+    metadata = "Add to 5"
+    ```
+
+    - Input key can be either of - i, in, input, inputs
+    - Output key can be either of - o, out, output, outputs
+
+- Class (if you want to test instance methods)
+
+    Python
+
+    ```python
+    from pysvt import test
+
+    # Specify the name of the method as the second argument
+    @test("<path_to_TOML_file>", "function")
+    class Solution:
+        def function(self, arg1: int, arg2: int) -> int:
+            return arg1 + arg2
+    ```
+
+    TOML
+
+    ```python
+    name = ["One and Two", "Two and Three"]
+    metadata = ["Add to 3", "Add to 5"]
+    init = []  # Has to be specified, indicates class constructor arguments
+    i = [[1, 2], [2, 3]]
+    o = [3, 5]
+    ```
+
+    or
+
+    ```python
+    [[cases]]
+    name = "One and Two"
+    i = [1, 2]
+    o = 3
+    metadata = "Add to 3"
+    init = []  # Has to be specified, indicates class constructor arguments
+
+    [[cases]]
+    name = "Two and Three"
+    i = [2, 3]
+    o = 5
+    metadata = "Add to 5"
+    init = []
+    ```
+
+    - Input key can be either of - i, in, input, inputs
+    - Output key can be either of - o, out, output, outputs
+

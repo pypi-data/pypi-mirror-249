@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "pysvt"
+version = "0.3.0"
+description = "A simple test case runner in Python that uses TOML configurations and decorator syntax."
+authors = ["dhzdhd <dhzdhd@proton.me>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = "LICENSE"
+
+[tool.hatch.metadata]
+Homepage = "https://github.com/dhzdhd/pysvt"
+Repository = "https://github.com/dhzdhd/pysvt.git"
+Issues = "https://github.com/dhzdhd/pysvt/issues"
+Changelog = "https://github.com/dhzdhd/pysvt/blob/master/CHANGELOG.md"
+# Documentation = ""
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+rich = "^13.7.0"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.12.2"
+flake8 = "^6.1.0"
+black = "^23.12.0"
+isort = "^5.13.2"
+pytest = "^7.4.3"
+pyright = "^1.1.342"
+pytest-cov = "^4.1.0"
+
+[tool.taskipy.tasks]
+format = "black --check ."
+lint = "flake8 pysvt"
+sort = "isort pysvt"
+sortc = "isort -c pysvt"
+test = "pytest tests"
+type = "pyright "
+cov = "pytest --cov=tests/"
+publish = "poetry publish --build"
+
+[tool.pyright]
+include = ["pysvt", "examples"]
+defineConstant = { DEBUG = true }
+reportMissingImports = true
+reportMissingTypeStubs = false
+pythonVersion = "3.12"
+pythonPlatform = "Windows"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
