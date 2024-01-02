@@ -1,0 +1,25 @@
+bus_ip: 127.0.0.1
+bus_port: 1324
+rtus:
+- name: Ani
+  ip: 172.26.7.196
+  rate: 0.2
+  read:
+  - {addr: Fout, type: 'REAL[]', start: 0, end: 99}
+  - {addr: Iout, type: 'DINT[]', start: 0, end: 99}
+  writeok:
+  - {addr: Fin, start: 0, end: 99}
+  - {addr: Iin, start: 0, end: 99}
+tags:
+  Ani_Fout_20:
+    type: float32
+    addr: Ani:Fout:20
+  Ani_Iout_20:
+    type: int32
+    addr: Ani:Iout:20
+  Ani_Fin_20:
+    type: float32
+    addr: Ani:Fin:20
+  Ani_Iin_20:
+    type: int32
+    addr: Ani:Iin:20
