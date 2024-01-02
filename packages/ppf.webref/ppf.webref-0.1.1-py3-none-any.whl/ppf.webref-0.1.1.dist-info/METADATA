@@ -1,0 +1,154 @@
+Metadata-Version: 2.1
+Name: ppf.webref
+Version: 0.1.1
+Summary: Flask app providing a web-interface to a JabRef database
+Home-page: https://github.com/adrianschlatter/ppf.webref/tree/master
+Author: Adrian Schlatter
+License: MIT
+Project-URL: Bug Reports, https://github.com/adrianschlatter/ppf.webref/issues
+Project-URL: Source, https://github.com/adrianschlatter/ppf.webref
+Keywords: jabref,references,web,server,app
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: <4,>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: flask-sqlalchemy
+Requires-Dist: flask-talisman
+Requires-Dist: flask-login
+Requires-Dist: flask-wtf
+Requires-Dist: flask-bcrypt
+Requires-Dist: pymysql
+Requires-Dist: ppf.jabref
+Requires-Dist: plumbum
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: check-manifest ; extra == 'test'
+Requires-Dist: setuptools >=40.5.0 ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
+# ppf.webref
+
+ppf.webref is a web app providing an interface to a [JabRef SQL
+database](https://docs.jabref.org/collaborative-work/sqldatabase).
+Access your references from anywhere in the world and from any device with a
+web browser. You do not need to install Java, you do not need to install an
+app. Any non-archaic phone, tablet, PC, Mac, or Raspberry Pi will do.
+
+Create a JabRef database (using your normal JabRef) and point ppf.webref to
+this database. Voila: Your references just became accessible worldwide.
+
+Note: ppf.webref provides *read-only* access to your library. To add, edit, or
+delete entries from your library, you still need a standard JabRef installation
+somewhere.
+
+
+# Installation
+
+Prerequisite: You need JabRef to create, edit, and extend your library.
+
+Install `ppf.webref` (or have a look at
+[docker.webref](https://github.com/adrianschlatter/docker.webref) that provides
+a docker container running `ppf.webref`):
+
+```shell
+pip install ppf.webref
+```
+
+Then, create the config file `~/.config/ppf.webref/ppf.webref.conf`:
+
+```
+[flask]
+secret_key = <your secret key here>
+
+[database]
+server = <server>:<port>
+databasename = <name of your jabref database>
+username = <username ppf.webref should use to access db>
+password = <password ppf.webref should use to access db>
+```
+
+`secret_key` is needed to encrypt cookies. Set it to a random string, e.g. by
+running this snippet:
+
+```shell
+python -c 'import secrets; print(secrets.token_hex())'
+```
+
+You can now start the web server by
+
+```shell
+flask --app ppf.webref run
+```
+
+and point your webbrowser to http://localhost:5000.
+
+[This will start ppf.webref on your local machine which is nice for testing.
+To get the most out of ppf.webref, you will probably want to run ppf.webref on
+a server.]
+
+ppf.webref will present a login form. However, as we have not created any users
+yet, we can't login. To create a user, run:
+
+```shell
+flask --app ppf.webref useradd <username>
+```
+
+This will:
+
+* create a table 'user' in your db if it does not exist yet
+* register user <username> in user table
+
+To set a password for this new user or to change the password of an existing
+user, do
+
+```shell
+flask --app ppf.webref passwd <username>
+```
+
+which will ask for and store (a salted hash of) the password in the
+user table.
+
+Now we are able to login, but the entry table will not provide clickable links
+so you can easily open your documents. For `ppf.webref` to be able to serve the
+documents themselves, we have to put them under `<app.root_path>/references`
+(just place a symlink to your JabRef library there). The app's root path is
+something like `/usr/local/lib/python3.11/site-packages/ppf/webref/`.
+
+
+# Still reading?
+
+If you read this far, you're probably not here for the first time. If you use
+and like this project, would you consider giving it a Github Star? (The button
+is at the top of this website.) If not, maybe you're interested in one of my
+[my other
+projects](https://github.com/adrianschlatter/ppf.sample/blob/develop/docs/list_of_projects.md)?
+
+
+# Contributing
+
+Did you find a bug and would like to report it? Or maybe you've fixed it
+already or want to help fixing it? That's great! Please read
+[CONTRIBUTING](./CONTRIBUTING.md) to learn how to proceed.
+
+To help ascertain that contributing to this project is a pleasant experience,
+we have established a [code of conduct](./CODE_OF_CONDUCT.md). You can expect
+everyone to adhere to it, just make sure you do as well.
+
+
+# Changelog
+
+* 0.1.1: Fix problem with path handling. Improve docs.
+* 0.1: Basic read-only functionality
