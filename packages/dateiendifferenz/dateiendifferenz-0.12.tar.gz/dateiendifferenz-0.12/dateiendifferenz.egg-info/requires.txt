@@ -1,0 +1,4 @@
+numpy
+pandas
+subprocess_alive
+touchtouch
