@@ -1,0 +1,481 @@
+/* CSS for LabXBlock */
+
+.labxblock_block .count {
+    font-weight: bold;
+}
+
+.labxblock_block p {
+    cursor: pointer;
+}
+
+
+
+/* CSS for FeedbackXBlock */
+
+/* Overall block. We limit width, and put a very faint
+   border around it. */
+   .labxblock_block {
+    max-width: 450px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1);
+    padding: 10px
+}
+
+
+
+/* Label for the freeform text input. We want a little
+   space between this and the Likert input.*/
+.labxblock_block .feedback_header_div {
+    margin-top:1em;
+}
+
+/* Fieldset for the Likert radio buttons */
+.labxblock_block .feedback_likert_field {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* The div around everything with a radio button */
+.labxblock_block .feedback_likert_rating {
+    cursor: pointer;
+    border-radius:5px;
+    display:inline-block;
+    text-align:center;
+    padding:0px 10px 0px 10px;
+}
+
+
+
+/* But show it if we are checked... */
+.labxblock_block input[type="radio"]:checked ~ .feedback_icon_active{
+    display: inline-block;
+}
+/* ... while hiding the unchecked icon */
+.labxblock_block input[type="radio"]:checked ~ .feedback_icon_inactive{
+    display: none;
+}
+
+
+.labxblock_block input[type="radio"]:focus ~ .feedback_icon {
+   border-color: #999999;
+}
+
+.labxblock_block input[type="radio"]:hover ~ .feedback_icon {
+   border-color: #999999;
+}
+
+.labxblock_block .feedback_likert_label {
+    cursor: pointer;
+}
+
+.labxblock_block .feedback_freeform_input {
+    margin-bottom: 1em;
+}
+
+.labxblock_block .feedback_freeform_area {
+    height:inherit;
+}
+
+.labxblock_block .feedback_rating_active {
+    color: blue;
+    font-weight: bold;
+    background-color: blanchedalmond;
+}
+
+.labxblock_block .feedback_radio {
+    opacity:0;
+    width:1px;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+}
+
+.labxblock_block .feedback_sr_text{
+    opacity:0;
+    width:1px;
+    height:1px;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+    clip:rect(1px,1px,1px,1px);
+    left:-10000px;
+    overflow:hidden;
+}
+
+.labxblock_block label{
+    display:inline;
+}
+
+.labxblock_block .feedback_likert_field {
+    border-style:none;
+}
+.labxblock_block .feedback_submit_feedback {
+    width:100%;
+}
+
+.lab-content{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.lab-btn{
+   text-align: end;
+}
+/* .lab-button{
+    padding: 8px 16px;
+    background-color: #0086ff;
+    border-radius: 5px;
+    color: white;
+    
+} */
+.text-lab{
+    size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.lab-button:hover{
+    cursor: pointer;
+    background-color: #0B70DF ;
+}
+.ck-editor__editable[role="textbox"] {
+
+    min-height: 200px;
+}
+
+
+
+.result-summary{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding:4px;
+    flex-grow: 1;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5aa447;
+}
+
+.result-summary:hover{
+    cursor: pointer;
+}
+
+.detail-lab-result{
+    align-self: stretch;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 4px 12px; 
+    border-radius: 6px;
+    border-left: solid 2px #5aa447;
+    background-color: rgba(90, 164, 71, 0.05);
+}
+
+.result-container{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* .detail-result-item{
+    padding: 10px 10px 0px;
+
+} */
+
+
+
+/* .detail-lab-result > span:first-child {
+    flex-grow: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5aa447;
+  
+  } */
+.detail-title {
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #576f8a;
+    margin-bottom: -18px;
+}
+.block-title-lab{
+    color: black;
+}
+
+
+.none{
+    display: none;
+}
+/* .ck-focused{
+    border: none !important;
+} */
+
+.student-lab{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student-lab-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-lab-content{
+    padding: 20px;
+    background-color: #f6f6f7    ;
+}
+
+.result-lab{
+    padding-top: 30px;
+}
+
+.result-lab-title{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+
+}
+
+.lab-title-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+/* Notification */
+
+.lab-success{
+    align-self: stretch;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f8fcf7;
+    align-items: flex-start;
+    
+}
+
+#lab-icon-success{
+    color: #5aa447;
+    font-size: 22px;
+}
+
+.text-lab-success{
+
+    width: 11.938rem;
+    height: 1.5rem;
+    flex-grow: 0;
+    /* font-family: Roboto; */
+    font-size: 0.9rem;
+    font-weight: 650;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c3744;
+}
+#lab-notification{
+   padding-bottom: 20px;
+}
+
+/* input file */
+
+.inputfile{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-weight: 700;
+    color: white;
+    background-color: #0086ff;
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 4px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #0B70DF ;
+}
+
+.info-file-content{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f7;
+    padding:10px 20px;
+}
+
+.student-file{
+    border: 1px solid #0075b4;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+}
+
+.student-file {
+    text-decoration: none; 
+}
+
+.student-file:hover {
+    text-decoration: none !important;
+}
+
+
+.notify-upload{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding-bottom: 20px;
+}
+
+.notify-upload > span:first-child {
+    font-weight: 600;
+}
+
+.notify-upload > span:last-child {
+   font-size: 13px;
+   color: #576f8a;
+   
+}
+
+.btn-edit{
+    padding-top: 24px;
+    display: flex;
+    gap:5px;
+    justify-content: end;
+}
+
+.lab-text{
+    font-size: 14px;
+    padding: 10px 0px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.error-message{
+    color : 'red'
+}
+
+#content-student-lab p {
+    margin-bottom: 0;
+}
+
+.lab-title-block span:first-of-type {
+    height: 1.875rem;
+  align-self: stretch;
+  flex-grow: 0;
+  /* font-family: Roboto; */
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2c3744
+}
+
+.lab-date {
+    height: 1.5rem;
+    align-self: stretch;
+    flex-grow: 0;
+ 
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c3744;
+    padding: 10px 0px;
+}
+
+.student-lab-title span:first-of-type{
+    height: 1.5rem;
+  flex-grow: 1;
+  /* font-family: Roboto; */
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2c3744;
+}
+
+#student-lab-edit:hover{
+    cursor: pointer;
+}
+
+
+.btn-primary-custom {
+    border: none;
+    background-color: #0086ff !important;
+    border-radius: 6px;
+    padding: 6px 16px;
+    color: white;
+  }
+
+.btn-primary-custom span {
+    size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.btn-primary-custom:hover {
+    background-color: #0b70df !important;
+  }
+
+  .btn-primary-custom-outline {
+    background: none !important;
+    border: 1px solid #0086ff;
+    border-radius: 6px;
+    padding: 6px 16px;
+   
+  }
+
+.btn-primary-custom-outline span {
+    color: #0086ff;
+    line-height: 20px;
+    font-weight: 600;
+    size: 16px;
+}
+  
+.btn-primary-custom-outline:hover {
+    background-color: #eff7ff !important;
+  }
+
+  .bg-none{
+    background:  none !important;
+  }
