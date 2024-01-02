@@ -1,0 +1,14 @@
+go_libs/__init__.py,sha256=00UbipGzL67ujguHPcajfqgby9eAa6T6-Xr5nJmM6WE,261
+go_libs/dll_path_finder.py,sha256=zvgW-ixFAWz0VGrmJjiBkoxFA-l2niN3v9JFNvAaBNM,1682
+go_libs/go_libs.py,sha256=GVLiWFHxAYVakwS6f_hxDW9mwhgCyuWMAi_RPSVwZSg,3067
+go_libs/lib-im2dhist.go,sha256=nmRG3D1mCzUNdzMxI7P0PaEjtadJf_CXZjUJb6E24Rk,2630
+go_libs/make-library,sha256=atOcjhZ8QQ8zih_3GgEO1fWKimHq-q4Wpkxz7OXv2Uc,1564
+im2dhisteq/__init__.py,sha256=wbwFliHwpYQeJovSgfPmM0D8l3fe5sp9dhx1Fp8mROc,91
+im2dhisteq/im2dhisteq.py,sha256=LIG_pfmBZcKbzh7zFjDmL6UEcZ_rAWA9PiSZVMqiETE,2590
+im2dhisteq-1.0.12.data/scripts/im2dhisteq,sha256=YCK2m5laiSB5bVYcDxjRzBUt_M9HEy2ew0m7UR7yH3w,1089
+im2dhisteq-1.0.12.data/scripts/vid2dhisteq,sha256=hx8lFqIlWFLTaXXffbGeXJomxA83TYxam1T7Jw85GGI,2718
+im2dhisteq-1.0.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+im2dhisteq-1.0.12.dist-info/METADATA,sha256=BmPgCxjp2MApSV31hfEFQ140xAswAbgum4E8MgtHR60,3552
+im2dhisteq-1.0.12.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+im2dhisteq-1.0.12.dist-info/top_level.txt,sha256=iHaPNqEMAF1Thhn7c_stOm2ACi-bUXIT6bXJgPAQEhs,19
+im2dhisteq-1.0.12.dist-info/RECORD,,
