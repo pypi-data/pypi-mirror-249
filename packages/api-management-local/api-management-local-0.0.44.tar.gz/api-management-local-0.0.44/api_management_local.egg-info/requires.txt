@@ -1,0 +1,4 @@
+logzio-python-handler>=4.1.0
+python-sdk-local>=0.0.27
+database-mysql-local>=0.0.133
+star-local>=0.0.10
