@@ -1,0 +1,30 @@
+[project]
+name = "docop-tasks-restricted"
+version = "0.3.1"
+authors = [
+    {name = "Petri Savolainen", email = "petri@koodaamo.fi"},
+]
+description = "Tasks for docop that have more restrictive open source licensing"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "GPLv3+"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+]
+dependencies = ["trafilatura"]
+
+[project.urls]
+Homepage = "https://github.com/koodaamo/docop-tasks-restricted"
+Repository = "https://github.com/koodaamo/docop-tasks-restricted"
+
+[project.entry-points.'docop.tasks.restricted']
+html2txt = 'docop_tasks_restricted.webhtml.html2text'
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["docop_tasks_restricted", "docop_tasks_restricted.webhtml"]
