@@ -1,0 +1,389 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.3_2 2021.09, Sep 10 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/msilvaol/wishlist/simulation/axilite
+T_opt
+Z1 !s110 1704125448
+V`CIkJ<Ea2i3Q>>^G^c@K_0
+04 18 3 work l1calogfex_axilite rtl 1
+=1-000ae431a4f1-6592e408-1d102-2b17e8
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work sim_build/axi_lite_ipif_v3_0_4
+tCvgOpt 0
+n@_opt
+OL;O;2021.3_2;73
+Eaddress_decoder
+Z2 w1703728444
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z5 DPx20 axi_lite_ipif_v3_0_4 8 ipif_pkg 0 22 ^aUgjzL8XBm0GHRQ17F1@1
+Z6 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z9 8axi_lite_ipif_v3_0_vh_rfs.vhd
+Z10 Faxi_lite_ipif_v3_0_vh_rfs.vhd
+l0
+L1728 1
+V;U3mh9NRzl@LW=?cg1U7S2
+!s100 S>Hm3EiBnZ?eI8Bz?lVH^3
+Z11 OL;C;2021.3_2;73
+33
+Z12 !s110 1704125447
+!i10b 1
+Z13 !s108 1704125447.000000
+Z14 !s90 -work|axi_lite_ipif_v3_0_4|-2008|+acc|axi_lite_ipif_v3_0_vh_rfs.vhd|/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_pkg.vhd|/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_address_decoder.vhd|/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_axilite.vhd|
+Z15 !s107 /home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_axilite.vhd|/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_address_decoder.vhd|/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_pkg.vhd|axi_lite_ipif_v3_0_vh_rfs.vhd|
+!i113 0
+Z16 o-work axi_lite_ipif_v3_0_4 -2008 +acc
+Z17 tExplicit 1 CvgOpt 0
+Aimp
+DEx20 axi_lite_ipif_v3_0_4 9 pselect_f 0 22 9llz:8MbW7UffJ9GmYnz`2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 15 address_decoder 0 22 ;U3mh9NRzl@LW=?cg1U7S2
+!i122 0
+l1943
+L1775 326
+VgBhb?<<FMHS4UE5NfaB733
+!s100 n=mVbn<:mh6khRlhSoDnl2
+R11
+33
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Eaxi_lite_ipif
+R2
+R5
+Z18 DPx8 synopsys 10 attributes 0 22 iThS5<O8gHDP?YiMiccE>3
+Z19 DPx4 ieee 14 std_logic_misc 0 22 j4Ca:YPSgnCRYmKlN0[Uj0
+R6
+R4
+R3
+R7
+R8
+!i122 0
+R0
+R9
+R10
+l0
+L2868 1
+VLBf>ji[Y[2_YV87j[<_g01
+!s100 IFZ[m[i1j=STa^N?i3IR23
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Aimp
+DEx20 axi_lite_ipif_v3_0_4 16 slave_attachment 0 22 LNcoMdFc]1Y01jf:XzIL92
+R5
+R18
+R19
+R6
+R4
+R3
+R7
+R8
+DEx4 work 13 axi_lite_ipif 0 22 LBf>ji[Y[2_YV87j[<_g01
+!i122 0
+l2958
+L2948 65
+VX]niJHcizWa>1_[kW7=mL3
+!s100 D?oH0Y37KWYY8QA?ZEV]B0
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Pipif_pkg
+R3
+R4
+R7
+R8
+!i122 0
+R2
+R0
+R9
+R10
+l0
+L152 1
+V^aUgjzL8XBm0GHRQ17F1@1
+!s100 Z52?NnJ<O7zR_2U:`EaNQ3
+R11
+33
+b1
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Bbody
+DPx4 work 8 ipif_pkg 0 22 ^aUgjzL8XBm0GHRQ17F1@1
+R3
+R4
+R7
+R8
+!i122 0
+l0
+L615 1
+VPhLEOOLz9D5UJH4J9WWoJ0
+!s100 j<;VIFi4F;9lN3o9N^RK11
+R11
+33
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+El1calogfex_address_decoder
+Z20 w1704125326
+Z21 DPx4 work 14 l1calogfex_pkg 0 22 M<@dHaDZ4mVjPMYP30_ba1
+R7
+R8
+!i122 0
+R0
+Z22 8/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_address_decoder.vhd
+Z23 F/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_address_decoder.vhd
+l0
+L10 1
+V^InQ5LGU1VHL4IYQNm;ET0
+!s100 3>kz8?0JSYT`SR8]UAO`93
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Artl
+R21
+R7
+R8
+Z24 DEx4 work 26 l1calogfex_address_decoder 0 22 ^InQ5LGU1VHL4IYQNm;ET0
+!i122 0
+l36
+L28 331
+V:`EnB8bH?7N3YkX5dk0j10
+!s100 6S=:US[QCzlV44>_IoSfD1
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+El1calogfex_axilite
+R20
+R21
+R5
+R18
+R19
+R6
+R4
+R3
+R7
+R8
+!i122 0
+R0
+Z25 8/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_axilite.vhd
+Z26 F/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_axilite.vhd
+l0
+L15 1
+VP1RSm>6eUh<UP_:Ydj6901
+!s100 Ank1A[QFfMnbTWXPl6SzF2
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Artl
+R24
+DEx20 axi_lite_ipif_v3_0_4 13 axi_lite_ipif 0 22 LBf>ji[Y[2_YV87j[<_g01
+R21
+R5
+R18
+R19
+R6
+R4
+R3
+R7
+R8
+DEx4 work 18 l1calogfex_axilite 0 22 P1RSm>6eUh<UP_:Ydj6901
+!i122 0
+l87
+L65 231
+V1bUzCaZ_i9=h0EOzdbNRo2
+!s100 @3k=Uf6IA<lzf6KLma9Cc0
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Pl1calogfex_pkg
+R7
+R8
+!i122 0
+w1704125325
+R0
+8/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_pkg.vhd
+F/home/msilvaol/wishlist/simulation/axilite/../../firmware/l1calogfex_pkg.vhd
+l0
+L8 1
+VM<@dHaDZ4mVjPMYP30_ba1
+!s100 FC`4EAYL1fbCROF3CLfj?2
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Epselect_f
+R2
+R7
+R8
+!i122 0
+R0
+R9
+R10
+l0
+L1514 1
+V9llz:8MbW7UffJ9GmYnz`2
+!s100 lcS>QfGo>K0O8iRkk@0d51
+R11
+33
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Aimp
+R7
+R8
+DEx4 work 9 pselect_f 0 22 9llz:8MbW7UffJ9GmYnz`2
+!i122 0
+l1552
+L1534 49
+VgNhOKE;egA3aD8Fz]dBA30
+!s100 on0Dh?l;F8bX7DW@GNR?k2
+R11
+33
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Eslave_attachment
+R2
+R5
+R18
+R19
+R4
+R3
+R6
+R7
+R8
+!i122 0
+R0
+R9
+R10
+l0
+L2268 1
+VLNcoMdFc]1Y01jf:XzIL92
+!s100 KMC91Ejf=V62U[YK6Qh9h0
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Aimp
+DEx20 axi_lite_ipif_v3_0_4 15 address_decoder 0 22 ;U3mh9NRzl@LW=?cg1U7S2
+R5
+R18
+R19
+R4
+R3
+R6
+R7
+R8
+DEx4 work 16 slave_attachment 0 22 LNcoMdFc]1Y01jf:XzIL92
+!i122 0
+l2411
+L2341 357
+V<_nneUm7b>OES=^b4IAaL3
+!s100 ^2QS9<NQHza1:kj8j_NOK1
+R11
+33
+R1
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
