@@ -1,0 +1,13 @@
+pixoo/__init__.py,sha256=u29fx3Pxa20c9G9EuIK4dE4agpyqV40M7Xw9HVyjExA,17544
+pixoo/_colors.py,sha256=wAX6RNMdVhIQLdE5Rys7CknftaSyOJEGEsK1jywLz2A,269
+pixoo/api.py,sha256=4fZN6oMjKPFYHrlYEp6ZUyXc9P8HqqctJdzSunLYt6k,2134
+pixoo/config.py,sha256=2I8j06k1G0BNwAvbkcBMq4B1kNrZkWiKBidvQAeVbqs,1800
+pixoo/exceptions.py,sha256=HpBfshg-uTv1ONfbi_YjHS7QQHb7YztyDm_tbzoQGgg,378
+pixoo/find_device.py,sha256=uI1ex4CJJKnhUziJD006681P9s6Iu7LIeo6-RUXF-P8,1262
+pixoo/font.py,sha256=whi5A9aLDf-GiiwAJmSdC7VW2txKNoE7uY3gFTH67XQ,11583
+pixoo/simulator.py,sha256=YiHAVPtjZU4uEVwLH-qOc_hieoq0sFuBhw_tRJkHUCE,2353
+pixoo-0.8.3.dist-info/LICENSE,sha256=QxhqKpJYhL05pk4vqmMdUVSGfnhhbFCfQY8TD7HvK-M,1364
+pixoo-0.8.3.dist-info/METADATA,sha256=HUZoEHz9ls2jKm5dKMJ2ynmV785hjM2w_baBLDLNpUs,5807
+pixoo-0.8.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pixoo-0.8.3.dist-info/top_level.txt,sha256=GFwniPB1cSoj1A0rvZ93Q3sDg_1nyFC1AIIGsa1WYJ8,6
+pixoo-0.8.3.dist-info/RECORD,,
