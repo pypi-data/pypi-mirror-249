@@ -1,0 +1,8 @@
+setup.py
+hydromt_wff/__init__.py
+hydromt_wff/hydromt_wff.py
+hydromt_wff.egg-info/PKG-INFO
+hydromt_wff.egg-info/SOURCES.txt
+hydromt_wff.egg-info/dependency_links.txt
+hydromt_wff.egg-info/not-zip-safe
+hydromt_wff.egg-info/top_level.txt
