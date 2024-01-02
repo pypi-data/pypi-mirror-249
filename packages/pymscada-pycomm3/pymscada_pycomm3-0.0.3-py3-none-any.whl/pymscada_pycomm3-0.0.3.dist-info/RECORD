@@ -1,0 +1,9 @@
+pymscada_pycomm3-0.0.3.dist-info/METADATA,sha256=elpavVAX3Gxwo04YAFtjiOhO2CVzTmNx2PvQCZANi8I,368
+pymscada_pycomm3-0.0.3.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+pymscada_pycomm3-0.0.3.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pymscada_pycomm3/__init__.py,sha256=YzSZT244kSCUxV1_KNW8VvEnhomcvyxwiRuS8DN2TEU,125
+pymscada_pycomm3/__main__.py,sha256=HswZB_KvEhUgQj01i-PbVi_IQ09mdJJGuJIO6MC2n5s,335
+pymscada_pycomm3/demo/pycomm3.yaml,sha256=_fsXG2HfZ4bfFt35UYlVPobuHAFQG_qT6SKqJbMXJMU,492
+pymscada_pycomm3/logix_client.py,sha256=RUoO-Qfwjs74SKfdEGA5RloQL10q-320f81FPLIhbZE,2766
+pymscada_pycomm3/logix_map.py,sha256=ku6FE2K9rhn9mjVEFCvy1kmmmixbxTNbQoBrXoogBvA,3004
+pymscada_pycomm3-0.0.3.dist-info/RECORD,,
