@@ -1,0 +1,9 @@
+crossfire/__init__.py,sha256=cvYXiJ57DhBwHcf8pTvsj1O0jvjIVHDuLv_OL1TLel4,942
+crossfire/clients/__init__.py,sha256=eBDtdIWf2oWakWXhSYRjRm-0_rQq13Um9w5RKR57QTA,5585
+crossfire/clients/occurrences.py,sha256=6MdYF_-nFTONdjfeaE5pbRJyXNPiO2Dyycoj1HO4Ao4,4642
+crossfire/errors.py,sha256=TUSHvofuxhuXfbURVeOITzK2jEId21t4QTquUwBqRAA,789
+crossfire/logger.py,sha256=d5pdwaLR9WgrbLM9gQLweLLtsskmPlitlwc9CZ2gZsg,1188
+crossfire/parser.py,sha256=LCHgijKZk9XodzyClvz2rQtq6Geyw0TShmnxreY91cw,2479
+crossfire-1.0.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+crossfire-1.0.2.dist-info/METADATA,sha256=KAU_d6ejtVSPbMdrvS0mXs9uNpsjPlRQMTmk-iIEnms,7039
+crossfire-1.0.2.dist-info/RECORD,,
