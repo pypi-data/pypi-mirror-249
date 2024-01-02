@@ -1,0 +1,5 @@
+aiomqtt~=1.2
+dpath~=2.1
+paho-mqtt>=1.6.1
+PyYAML~=6.0
+websockets>=10.2
