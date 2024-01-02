@@ -1,0 +1,2 @@
+[console_scripts]
+orphism = orphism.__main__:main
