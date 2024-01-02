@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ussy/__init__.py
+ussy/ussify.py
+ussy.egg-info/PKG-INFO
+ussy.egg-info/SOURCES.txt
+ussy.egg-info/dependency_links.txt
+ussy.egg-info/not-zip-safe
+ussy.egg-info/requires.txt
+ussy.egg-info/top_level.txt

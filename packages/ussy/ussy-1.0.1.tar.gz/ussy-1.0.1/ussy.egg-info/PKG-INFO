@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ussy
+Version: 1.0.1
+Summary: Funny little ussifier.
+Home-page: https://github.com/ellipse-liu/ussy
+Author: Timothy-Liu
+Author-email: timothys.new.email@gmail.com
+License: MIT
+Keywords: Ussy
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ussy
+ 
