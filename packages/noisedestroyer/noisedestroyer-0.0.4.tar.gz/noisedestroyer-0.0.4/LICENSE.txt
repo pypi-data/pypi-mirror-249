@@ -1,0 +1,1 @@
+This file may be used to interact with the Noise Destroyer api in whatever manner you see fit, provided you are compliant with terms of service (no hacking, etc).

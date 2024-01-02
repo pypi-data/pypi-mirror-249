@@ -1,0 +1,9 @@
+[project]
+name = "noisedestroyer"
+version = "0.0.4"
+description = 'Remove background noise from your video and audio files quickly'
+readme = "readme.md"
+requires-python = ">=3.7"
+dependencies = ['httpx', 'aiofiles','aiohttp~=3.9.1']
+
+[project.urls]

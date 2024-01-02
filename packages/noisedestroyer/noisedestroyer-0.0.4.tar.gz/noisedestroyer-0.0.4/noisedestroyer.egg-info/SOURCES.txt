@@ -1,0 +1,9 @@
+LICENSE.txt
+noisedestroyer.py
+pyproject.toml
+readme.md
+noisedestroyer.egg-info/PKG-INFO
+noisedestroyer.egg-info/SOURCES.txt
+noisedestroyer.egg-info/dependency_links.txt
+noisedestroyer.egg-info/requires.txt
+noisedestroyer.egg-info/top_level.txt
