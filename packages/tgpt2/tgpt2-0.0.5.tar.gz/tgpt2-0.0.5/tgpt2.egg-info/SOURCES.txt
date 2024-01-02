@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+tgpt2/__init__.py
+tgpt2/__main__.py
+tgpt2/console.py
+tgpt2/imager.py
+tgpt2/tgpt2.py
+tgpt2/utils.py
+tgpt2.egg-info/PKG-INFO
+tgpt2.egg-info/SOURCES.txt
+tgpt2.egg-info/dependency_links.txt
+tgpt2.egg-info/entry_points.txt
+tgpt2.egg-info/requires.txt
+tgpt2.egg-info/top_level.txt
