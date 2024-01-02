@@ -1,0 +1,11 @@
+aiogqlc/__init__.py,sha256=b6O5xEQKEhBb-oyMr6h8WMExls1tOfO3uxQPzFAi0AU,70
+aiogqlc/client.py,sha256=DleAZleAwC9JEgwwddH01WcD7zWVliQONknLKnYWgFU,9913
+aiogqlc/constants.py,sha256=Gd2uX9Y-6c6NmYLa50NC-V3SmdrUsG_QcQ4zxrRk5kI,26
+aiogqlc/errors.py,sha256=e5GyyNZLGuSgjJZDTetl19d5qkcpwR9SPMkoG-apejY,333
+aiogqlc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiogqlc/types.py,sha256=PVy3VIiS2zfqkwGf8sOfIEd2lqjbdP6jFE2l76P-tho,2907
+aiogqlc/utils.py,sha256=ETcsTNycTuzzMGkZfIeR4fUZHpKkyz4n_CihCGo0P6Q,378
+aiogqlc-5.0.0.dist-info/LICENSE,sha256=S4W976r4dHTvQMoheBZTPn3osvf54HyQKkpBguHSb5c,1055
+aiogqlc-5.0.0.dist-info/METADATA,sha256=iY7JFdBpyABJ_xWiS0tTv7mCz3DmjYL3yR7qyfCLGXI,4969
+aiogqlc-5.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+aiogqlc-5.0.0.dist-info/RECORD,,
