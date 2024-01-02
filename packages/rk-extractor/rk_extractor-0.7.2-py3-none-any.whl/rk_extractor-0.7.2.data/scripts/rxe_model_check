@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+#
+#--------------------------------------
+set_paths()
+{
+    RK_TOY=/publicfs/lhcb/user/campoverde/SFT
+    if   [[ ! -d $RK_TOY ]];then
+        VENV=$RK_TOY
+	INSTALL=1
+    elif [[   -d $RK_TOY ]];then
+        VENV=$RK_TOY
+	INSTALL=0
+    fi
+
+    PYTHONPATH+=:$VENV/lib/python3.9/site-packages
+    source /cvmfs/sft.cern.ch/lcg/views/dev3/latest/x86_64-centos7-gcc12-opt/setup.sh
+}
+#--------------------------------------
+install_sft()
+{
+    if [[ $INSTALL -eq 0 ]];then
+	return
+    fi
+
+    echo "Installjing in $VENV"
+    mkdir -p $VENV
+
+    pip install                   --prefix $VENV logzero 
+    pip install                   --prefix $VENV rx_selection
+    pip install --no-dependencies --prefix $VENV rx-differential-crosscheck-fits
+    pip install --no-dependencies --prefix $VENV rk-hadmisid-study
+    pip install --no-dependencies --prefix $VENV rx_monitor
+    pip install --no-dependencies --prefix $VENV rx_hqm
+    pip install --no-dependencies --prefix $VENV rx_combinatorial 
+    pip install --no-dependencies --prefix $VENV rx_scripts
+    pip install --no-dependencies --prefix $VENV rx_tools
+    pip install --no-dependencies --prefix $VENV rk_extractor
+}
+#--------------------------------------
+echo "Using $@ for rxe_model_check" |& tee output_$IJOB.log
+IJOB=$1
+DJOB=$2
+FACT=$3
+NFIT=$4
+
+set_paths   |& tee output_$IJOB.log
+install_sft |& tee output_$IJOB.log
+
+cd $DJOB
+
+check_model -i $IJOB -j $DJOB -n $FACT -f $NFIT |& tee output_$IJOB.log
+
