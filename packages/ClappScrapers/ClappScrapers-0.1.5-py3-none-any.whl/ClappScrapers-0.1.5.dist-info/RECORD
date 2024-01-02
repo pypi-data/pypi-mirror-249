@@ -1,0 +1,14 @@
+ClappScrapers/__init__.py,sha256=3zFXVm7thStTaI7EF9-8DlQ62pmJfvldEzEuf_0X2us,45
+ClappScrapers/nieuwbouw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ClappScrapers/nieuwbouw/spider/Nieuwbouwspider.py,sha256=XCX18cotdtGp9EBT6AJ4GNTRSIPs8H3pJ1c4kx8DMtE,12742
+ClappScrapers/nieuwbouw/spider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ClappScrapers/nieuwbouw/spider/extension.py,sha256=JTUa9R2mdWkETZHwr0IMIdOn7O8ZmYqLHp3MWbbxIUA,1031
+ClappScrapers/nieuwbouw/spider/items.py,sha256=t6m2eIeePjMlj4EkNt6OAy6KIhFXgItYMDmPtyRFyFY,271
+ClappScrapers/nieuwbouw/spider/middlewares.py,sha256=CNHmSS5RjXxQqNq-EJ4Uerotw7T-iGvUA8TomBz45C0,3668
+ClappScrapers/nieuwbouw/spider/pipelines.py,sha256=M_2_wRFhpbinDLiDdG2ZbquHUJWzqofGBCWB38-Uu7c,6216
+ClappScrapers/nieuwbouw/spider/settings.py,sha256=BReEN8mg_KuyFD4yMJ20brwD4OpeD2wWen5l96jOwVU,1060
+ClappScrapers-0.1.5.dist-info/LICENSE,sha256=v9eRVAl52INxUo9njJSQaN6tbDTWFDqEYKJ-6vrRRTU,1065
+ClappScrapers-0.1.5.dist-info/METADATA,sha256=9NqPZXX7RF0FAHtpvwc-csuWmv-RVUkj7GB2lw68-nA,576
+ClappScrapers-0.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ClappScrapers-0.1.5.dist-info/top_level.txt,sha256=cGTP2PsOE8HYmcIqbDqScMgBqvYlFONZ4aVZrvoB2J4,14
+ClappScrapers-0.1.5.dist-info/RECORD,,
