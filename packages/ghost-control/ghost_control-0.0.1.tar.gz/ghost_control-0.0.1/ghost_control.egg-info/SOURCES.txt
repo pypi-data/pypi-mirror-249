@@ -1,0 +1,7 @@
+README.rst
+license.lic
+setup.py
+ghost_control.egg-info/PKG-INFO
+ghost_control.egg-info/SOURCES.txt
+ghost_control.egg-info/dependency_links.txt
+ghost_control.egg-info/top_level.txt
