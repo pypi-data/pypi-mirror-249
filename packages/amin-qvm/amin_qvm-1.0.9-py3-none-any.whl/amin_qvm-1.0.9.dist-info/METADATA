@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: amin-qvm
+Version: 1.0.9
+Summary: Amin-QVM: Quantum Computing Library With Built In Novum QVM
+Home-page: https://pypi.org/project/amin-qvm/
+Author: Amin Alogaili
+Author-email: aminalogai@aol.com
+Keywords: quantum computing library simulation amin alogaili QVM aminalogaili novum
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# amin-qvm Library Documentation
+
+## Overview
+
+The **amin-qvm** library has good tools for simulating quantum algorithms and neural networks. It has classes for quantum state manipulation, representation of quantum gates, and implementations of algorithms like Grover and Deutsch-Jozsa.
+
+## Modules in the Library
+
+### novum
+
+#### Class: Novum
+
+This is the primary class representing a quantum system.
+
+- **Initialization:** `Novum(num_qubits: int)`
+  Initiates a quantum system with a specified number of qubits.
+
+- **Methods:**
+  - `execute_qasm(qasm_code: str):` Executes QASM code on the quantum system.
+  - `convert_to_binary(input_data: str, num_bits: int):` Converts CSV data into binary representation.
+  - `prepare_classical_state(input_data):` Prepares the quantum state based on classical binary input data.
+  - `apply_gate(gate_matrix: np.ndarray, qubit_indices: List[int]):` Applies a specified gate to the qubits of the quantum system.
+  - `apply_oracle(b1, b2, entanglements):` Applies an oracle gate to the qubits using the specified entanglements.
+  - `measure_qubits():` Measures the qubits and returns the outcome.
+  - `plot_results(title="Measurement Results"):` Plots the measurement outcomes of the qubits.
+
+### gates
+
+Defines an assortment of quantum gates represented as NumPy arrays.
+
+- **Gate Variables:**
+  PauliX, PauliY, PauliZ, Hadamard, Identity, S, T, CNOT, SWAP, etc.
+
+- **Functions:**
+  PhaseShift(theta): Returns a phase shift gate for a given angle.
+  Rx(theta), Ry(theta), Rz(theta): Rotation gates around the x, y, and z-axis.
+
+### qasm_processing
+
+Provides functions for converting QASM code into executable Python code using the Novum library.
+
+- **Functions:**
+  `qasm_to_python(qasm_code: str):` Converts QASM code into Python code commands for the Novum system.
+
+### tools
+
+Functions supporting quantum neural network operations.
+
+- **Functions:**
+  `update_weights(...), compute_gradients(...), initialize_weights(...), apply_layer(...), forward_pass(...), calculate_loss(...), train_qnn(...)`
+
+### equations
+
+Basic mathematical functions used in quantum computing.
+
+- **Functions:**
+  `inner_product(...), eigen(...), dot_product(...), normalize_state(...), tensor_product(...), is_unitary(...)`
+
+### grover
+
+Implements Grover's search algorithm as a class.
+
+- **Class: Grover**
+  - **Initialization:** `Grover(data: list[str], target: str, iterations: int = 1)`
+  - **Methods:**
+    - `run():` Executes the Grover search algorithm.
+    - `prepare_superposition_state():` Sets up the initial superposition across all qubits.
+    - `apply_oracle():` Applies the oracle function.
+    - `apply_diffusion_operator():` Applies the diffusion (inversion about the mean) operator.
+
+### deutschjozsa
+
+Implementation of the Deutsch-Jozsa algorithm as a class.
+
+- **Class: DeutschJozsa**
+  - Inherits from Novum.
+  - **Initialization:** `DeutschJozsa(num_qubits: int, f)`
+  - **Methods:**
+    - `oracle():` Encodes the provided function f into the quantum oracle.
+    - `run():` Executes the Deutsch-Jozsa algorithm to determine if the function f is constant or balanced.
+
+## Usage
+
+### Installation
+
+```pip install amin-qvm```
+
+### Setting Up the Environment
+
+Make sure you have Python installed on your system, because like, how else are you going to use the library :)
+
+### Creating a Novum Instance
+
+To create a Novum system and run QASM:
+
+```python
+from amin_qvm.system.novum import Novum
+
+# Create an instance with 2 qubits
+novum = Novum(2)
+
+# Run QASM code
+qasm_code = """
+qreg[2];
+cx 0,1;
+h 0;
+measure;
+"""
+novum.execute_qasm(qasm_code)
+```
+
+### Applying Gates and Running Algorithms
+
+```python
+from amin_qvm.system.gates import Hadamard
+from amin_qvm.algorithms.grover import Grover
+
+# Initialize Grover's algorithm with data and target
+grover = Grover(data=["00", "01", "10", "11"], target="10")
+grover.run()
+```
