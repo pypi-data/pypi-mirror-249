@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: schd
+Version: 0.0.9
+Summary: UNKNOWN
+Home-page: https://github.com/kevenli/schd
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: apscheduler (<4.0)
+Requires-Dist: pyaml
+
+UNKNOWN
+
+
