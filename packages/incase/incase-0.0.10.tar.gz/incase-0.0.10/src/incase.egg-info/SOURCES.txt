@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/incase/__init__.py
+src/incase/core.py
+src/incase/extra.py
+src/incase/middleware.py
+src/incase.egg-info/PKG-INFO
+src/incase.egg-info/SOURCES.txt
+src/incase.egg-info/dependency_links.txt
+src/incase.egg-info/entry_points.txt
+src/incase.egg-info/requires.txt
+src/incase.egg-info/top_level.txt
+tests/test_caseless.py
+tests/test_cli.py
+tests/test_extra.py
+tests/test_middleware.py
