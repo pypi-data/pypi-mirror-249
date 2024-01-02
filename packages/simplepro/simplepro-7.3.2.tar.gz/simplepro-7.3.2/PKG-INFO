@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: simplepro
+Version: 7.3.2
+Summary: django admin theme 后台模板
+Home-page: https://github.com/newpanjing/simpleui
+Author: panjing
+Author-email: newpanjing@icloud.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: django>=2.1
+Requires-Dist: django-simpleui>=2023.12.12
+Requires-Dist: django-import-export
+Requires-Dist: requests
+Requires-Dist: rsa
+Requires-Dist: psutil
+Requires-Dist: pillow
+
+**simpleui-pro**
+
+Github:
+
+https://github.com/newpanjing/simplepro
+
+Community:
+
+https://simpleui.72wo.com
+
+
+文档地址：
+
+https://simpleui.72wo.com/docs/simplepro/
+
+QQ群：
+786576510
+
+购买：目前只支持支付宝、微信进行付费购买
+
