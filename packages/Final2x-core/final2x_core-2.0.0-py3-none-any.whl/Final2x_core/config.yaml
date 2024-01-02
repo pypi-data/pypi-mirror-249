@@ -1,0 +1,20 @@
+gpuid: -1
+inputpath:
+- ./1/1/4/5/1/4/1/9/1/9/8/1/0.jpg
+- /home/runner/work/Final2x-core/Final2x-core/assets/gray.jpg
+- /home/runner/work/Final2x-core/Final2x-core/assets/herta.jpg
+- /home/runner/work/Final2x-core/Final2x-core/assets/final2x-10.png
+- /home/runner/work/Final2x-core/Final2x-core/assets/final2x-10.png
+- /home/runner/work/Final2x-core/Final2x-core/assets/final2x-20.png
+- /home/runner/work/Final2x-core/Final2x-core/assets/final2x-40.png
+- /home/runner/work/Final2x-core/Final2x-core/assets/final2x-80.png
+- /home/runner/work/Final2x-core/Final2x-core/assets/final2x-160.png
+- /home/runner/work/Final2x-core/Final2x-core/assets/final2x-320.png
+- /home/runner/work/Final2x-core/Final2x-core/assets/herta-unix-pic.exe
+- /home/runner/work/Final2x-core/Final2x-core/assets/vulkan-1.dll
+model: RealCUGAN-pro
+modelnoise: 1
+modelscale: 2
+outputpath: /home/runner/work/Final2x-core/Final2x-core/assets
+targetscale: 2
+tta: false
