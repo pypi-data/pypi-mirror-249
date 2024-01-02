@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+BPMtoFPS/__init__.py
+BPMtoFPS/main.py
+BPMtoFPS/setup.py
+BPMtoFPS.egg-info/PKG-INFO
+BPMtoFPS.egg-info/SOURCES.txt
+BPMtoFPS.egg-info/dependency_links.txt
+BPMtoFPS.egg-info/top_level.txt
