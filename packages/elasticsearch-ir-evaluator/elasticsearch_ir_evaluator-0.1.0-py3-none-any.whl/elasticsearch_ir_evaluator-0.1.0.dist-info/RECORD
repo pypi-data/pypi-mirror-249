@@ -1,0 +1,10 @@
+elasticsearch_ir_evaluator/__init__.py,sha256=Zonngy0iOTVjwnZAR8h3JoWABkf0yFxtz8CcQ8P5yZk,83
+elasticsearch_ir_evaluator/evaluator.py,sha256=tQ5sjnooNkp_oVNLtM79mh8Jz1lnTFkTr6V4008iJLI,8747
+elasticsearch_ir_evaluator/types.py,sha256=uEUHZjJi3DWe-Z-WBRssiEu8MZ3Q87bn4kXmEK-iLZk,351
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_evaluator.py,sha256=ZN6Ci_lf5bmIGfxn3uAus8LwoVWjt16g8N4eUAV4v28,958
+elasticsearch_ir_evaluator-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+elasticsearch_ir_evaluator-0.1.0.dist-info/METADATA,sha256=gxmVCx5tb74M0m7oVeBx5G8t1pcF3GoEi8bv5sAR44g,4128
+elasticsearch_ir_evaluator-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+elasticsearch_ir_evaluator-0.1.0.dist-info/top_level.txt,sha256=PDHrEL-AiEJmnHbTvnl5qnjfKNTYRKFyXbLU0rEQGA4,33
+elasticsearch_ir_evaluator-0.1.0.dist-info/RECORD,,
