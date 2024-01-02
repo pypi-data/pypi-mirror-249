@@ -1,0 +1,2 @@
+[console_scripts]
+dev-toolbox = dev_toolbox.cli:dev_toolbox
