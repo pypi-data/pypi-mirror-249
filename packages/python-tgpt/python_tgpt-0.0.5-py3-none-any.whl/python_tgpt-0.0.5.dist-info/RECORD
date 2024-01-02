@@ -1,0 +1,12 @@
+tgpt/__init__.py,sha256=w0QLmt4a1I4F0PIwEWgslw-5Hs2vQ5GOpqdU3wMI_Ks,174
+tgpt/__main__.py,sha256=q8wRYHD0YaMGQW-CN73tdERxPm_TOwfFi41yxkvK6og,34
+tgpt/console.py,sha256=BTAZ_dBnvYK7skgGVuIJpc6K2rTS4jUub7G1Q6AVrns,16353
+tgpt/imager.py,sha256=jd4o4Lzyg0y7Mlx-Z9LJpdd0ZL6PLxhPL4CuquEo9p0,1934
+tgpt/tgpt.py,sha256=6C-zt0jdCAKfxPnOMDjMYbnGvTKlLLVx2IVKdP8cVVI,6379
+tgpt/utils.py,sha256=z6wPZh691c6Sk9T4eobiYyJe-OeWKf2QpYs9wghlYgk,2280
+python_tgpt-0.0.5.dist-info/LICENSE,sha256=wHya1MWtezBgi8T3VsDrChvOSfRrzrG0Qln_32B3oKY,1064
+python_tgpt-0.0.5.dist-info/METADATA,sha256=yzyfMLSbrFcdU_i5vZjmJVCkjDSgOQ7H_m8r-1Brtss,8019
+python_tgpt-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+python_tgpt-0.0.5.dist-info/entry_points.txt,sha256=0gYBhKVkOIBjmQKSSVO6UIGWuYpxX0DzV6zPQm-xcmU,43
+python_tgpt-0.0.5.dist-info/top_level.txt,sha256=qQm-Yly9eTtS9ok714aktykE7sSmtoebM8OrRGIMfHA,5
+python_tgpt-0.0.5.dist-info/RECORD,,
