@@ -1,0 +1,9 @@
+localstack_extension_authress/__init__.py,sha256=iugk3T7EwDqq8kD8i5Im9yKTlw5G1K-PldWEyl4VGRU,38
+localstack_extension_authress/extension.py,sha256=nMwqJBfSc-7KZ69DZFFxEL_xZt8C8ASgEKsToSqX-J8,4314
+localstack_extension_authress/server.py,sha256=XtJsutpHzdct1IWKFmYrZu352JUBV8L03To9I79JXK0,2152
+localstack_extension_authress-0.1.22.dist-info/LICENSE,sha256=UoxvKfa1b0jinZAuhxSPr_E_MPMgo36V-X-REa0Zwz4,34506
+localstack_extension_authress-0.1.22.dist-info/METADATA,sha256=r1A_eCJjiFscLpR0VQbGhbkLqDZiHmt4RBF4pc4Ijzs,4215
+localstack_extension_authress-0.1.22.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+localstack_extension_authress-0.1.22.dist-info/entry_points.txt,sha256=glx7lG_xWRnIV0mBH8qmeX2f7KPbkT1cCx0s7M-dxo4,114
+localstack_extension_authress-0.1.22.dist-info/top_level.txt,sha256=s1GTPCRz6oKGmPFLJ8AjoWIBooSD1DIkl0EJClLQdc8,30
+localstack_extension_authress-0.1.22.dist-info/RECORD,,
