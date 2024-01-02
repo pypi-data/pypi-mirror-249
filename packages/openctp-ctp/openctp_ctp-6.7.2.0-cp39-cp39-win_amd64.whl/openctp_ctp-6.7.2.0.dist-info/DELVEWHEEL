@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-qzlz0lf9\\cp39-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '--add-path', '.\\win64;C:\\Miniconda\\pkgs\\libiconv-1.16-h2bbff1b_2\\Library\\bin', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-qzlz0lf9\\cp39-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-qzlz0lf9\\cp39-win_amd64\\built_wheel\\openctp_ctp-6.7.2.0-cp39-cp39-win_amd64.whl']
