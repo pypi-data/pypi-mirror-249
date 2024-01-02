@@ -1,0 +1,2 @@
+[console_scripts]
+tgpt2 = tgpt2.console:main
