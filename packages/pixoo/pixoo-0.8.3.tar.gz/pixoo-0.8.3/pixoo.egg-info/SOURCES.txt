@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pixoo/__init__.py
+pixoo/_colors.py
+pixoo/api.py
+pixoo/config.py
+pixoo/exceptions.py
+pixoo/find_device.py
+pixoo/font.py
+pixoo/simulator.py
+pixoo.egg-info/PKG-INFO
+pixoo.egg-info/SOURCES.txt
+pixoo.egg-info/dependency_links.txt
+pixoo.egg-info/requires.txt
+pixoo.egg-info/top_level.txt
