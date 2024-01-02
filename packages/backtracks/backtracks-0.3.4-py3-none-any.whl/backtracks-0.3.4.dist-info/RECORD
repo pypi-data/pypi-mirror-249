@@ -1,0 +1,10 @@
+backtracks/__init__.py,sha256=27TWCcl6X2utbq6Jk3r5RFWFJJqc1mFkFtTrQ2t00Ys,208
+backtracks/backtracks.py,sha256=iIh7QBa1pEzZwoxfJ1W0CO4zNZD8XlSWQDIFRf90Nao,27175
+backtracks/bailer-jones_edr3.csv,sha256=_wv6ujQnivPyZFXTV7cvCL1PCDUKCcapTvYvvTBZkiU,717321
+backtracks/plotting.py,sha256=k7gmWX0QDTy2LvGGzgkQlf0kKW5_Cr6RIt9m5ehXqQ0,17700
+backtracks/utils.py,sha256=bo8NNg_boek74SiY3_7antDFiX-t7L_ae9b9pTSMScA,6336
+backtracks-0.3.4.dist-info/LICENSE,sha256=IBAaWhrSlc8GIHINTIW5JaEHGaEmf1hwHvOUzqY18Jk,1503
+backtracks-0.3.4.dist-info/METADATA,sha256=w3jHT9aqYxVq-WQrlHmv9da3R5MT8qKb8HRYC3grNUU,3584
+backtracks-0.3.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+backtracks-0.3.4.dist-info/top_level.txt,sha256=vvZQOU74WVqNdh_II__Enp9oHdW3r7BpWpSfHoIFGeg,11
+backtracks-0.3.4.dist-info/RECORD,,
