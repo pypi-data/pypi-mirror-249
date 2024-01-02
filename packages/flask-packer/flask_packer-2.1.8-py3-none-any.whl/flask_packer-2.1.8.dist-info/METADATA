@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: flask-packer
+Version: 2.1.8
+Summary: A Flask extension to bundle and compress CSS and JS files.
+Home-page: https://github.com/stan5079/flask-packer
+Author: H.P. Mertens
+Author-email: stnmertens@gmail.com
+License: GNU General Public License v3.0
+Keywords: flask,packer,static,compress,bundle,minify,combine
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (>=4.0.0)
+Requires-Dist: flask (>=2.0.0)
+Requires-Dist: jinja2 (>=3.0.0)
+Requires-Dist: rjsmin (>=1.2.1)
+
