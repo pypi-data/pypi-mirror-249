@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: docop-tasks-restricted
+Version: 0.3.1
+Summary: Tasks for docop that have more restrictive open source licensing
+Author-email: Petri Savolainen <petri@koodaamo.fi>
+License: GPLv3+
+Project-URL: Homepage, https://github.com/koodaamo/docop-tasks-restricted
+Project-URL: Repository, https://github.com/koodaamo/docop-tasks-restricted
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: trafilatura
+
+This package contains packaged tasks for Docop.
+
+The tasks use code that has fairly restrictive licensing for commercial use.
+
+In particular, this package may contain code licensed under AGPL.
+
+Be sure to respect the licenses.
+
+For packaged tasks with more permissive licenses, see: https://github.com/koodaamo/docop-tasks-restricted
+
+## html2text task
+
+Extract plain text content of the HTML string.
+
+- input: HTML text in the `html` field
+- output: plaintext in the `text` field

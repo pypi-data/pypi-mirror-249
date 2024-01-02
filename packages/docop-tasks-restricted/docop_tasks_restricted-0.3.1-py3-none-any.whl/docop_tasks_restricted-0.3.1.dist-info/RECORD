@@ -1,0 +1,9 @@
+docop_tasks_restricted/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docop_tasks_restricted/webhtml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docop_tasks_restricted/webhtml/html2text.py,sha256=F3NpJR7hphTXBFvaZt2fzEQ0jIdJNNNbabI3vJh7yVA,308
+docop_tasks_restricted-0.3.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+docop_tasks_restricted-0.3.1.dist-info/METADATA,sha256=NZxUN-UehSwxi4sC93nsJWc1CJM613ICBd7RRCp_RCE,1138
+docop_tasks_restricted-0.3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+docop_tasks_restricted-0.3.1.dist-info/entry_points.txt,sha256=wPbuYbtIYsT3gYCECOm12JLC3oWKirCc2NTFuDr0cKo,77
+docop_tasks_restricted-0.3.1.dist-info/top_level.txt,sha256=Q03S_jTFCknArOaPC9snxiP2HpRXKIwS4C_IU98S7Lw,23
+docop_tasks_restricted-0.3.1.dist-info/RECORD,,
