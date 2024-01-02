@@ -1,0 +1,2 @@
+[nbdev]
+madewithclay = madewithclay._modidx:d

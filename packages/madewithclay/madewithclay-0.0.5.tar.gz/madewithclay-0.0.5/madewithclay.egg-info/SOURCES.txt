@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+madewithclay/__init__.py
+madewithclay/_modidx.py
+madewithclay/data.py
+madewithclay/embeddings.py
+madewithclay/model.py
+madewithclay.egg-info/PKG-INFO
+madewithclay.egg-info/SOURCES.txt
+madewithclay.egg-info/dependency_links.txt
+madewithclay.egg-info/entry_points.txt
+madewithclay.egg-info/not-zip-safe
+madewithclay.egg-info/requires.txt
+madewithclay.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+geopandas
+tqdm
+contextily
+matplotlib
+pandas
+numpy
+pyarrow
+psycopg2
+geoalchemy2
+setuptools
+huggingface_hub
+
+[dev]
