@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/scikit_learn_whiskers.egg-info/PKG-INFO
+src/scikit_learn_whiskers.egg-info/SOURCES.txt
+src/scikit_learn_whiskers.egg-info/dependency_links.txt
+src/scikit_learn_whiskers.egg-info/top_level.txt
+src/sklearn_whiskers/__init__.py
+src/sklearn_whiskers/outliers/StandardOutliers.py
+src/sklearn_whiskers/outliers/WhiskerOutliers.py
+src/sklearn_whiskers/outliers/__init__.py
