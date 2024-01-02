@@ -1,0 +1,8 @@
+README.md
+SpecialPurpose.py
+setup.py
+SpecialPurpose.egg-info/PKG-INFO
+SpecialPurpose.egg-info/SOURCES.txt
+SpecialPurpose.egg-info/dependency_links.txt
+SpecialPurpose.egg-info/requires.txt
+SpecialPurpose.egg-info/top_level.txt
