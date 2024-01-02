@@ -1,0 +1,110 @@
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::UserWarning",
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning:"
+]
+addopts = "--doctest-modules"
+
+[tool.black]
+line-length = 120
+target-version = ['py38', 'py39', 'py310']
+string_normalization = true
+magic_trailing_comma = true
+
+[tool.isort]
+profile = "black"
+line_length = 120
+include_trailing_comma = true
+extend_skip = ["georges/__init__.py"]
+
+[tool.flake8]
+ignore = ['E231', 'E241', 'W503', 'E203']
+per-file-ignores = [
+    '__init__.py:F401,F403'
+]
+max-line-length = 120
+count = true
+exclude = ['docs/**', '.venv/**']
+
+
+[tool.poetry]
+name = "georges"
+version = "2024.1"
+description = "Georges' accelerator physics library - Core"
+authors = ["Cédric Hernalsteens <cedric.hernalsteens@ulb.be>",
+           "Robin Tesse <robin.tesse@ulb.be>",
+           "Eustache Gnacadja <eustache.gnacadja@ulb.be>",
+           "Eliott Ramoisiaux <eliott.ramoisiaux@ulb.be>",
+           "Marion Vanwelde <marion.vanwelde@ulb.be>"]
+
+[tool.poetry.dependencies]
+python = ">3.9, <3.11"
+georges-core = "2023.3"
+pymoo = "0.6.1.1"
+lmfit = "1.2.2"
+sympy = "1.12"
+hist = {extras = ["plot"],version="2.7.2"}
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.4.3"
+black = {extras = ["jupyter"], version = "23.11.0"}
+pylint = "3.0.2"
+flake8 = "6.1.0"
+isort = "5.12.0"
+flake8-pyproject = "1.2.3"
+mypy = "1.7.1"
+coverage = {extras = ["toml"], version = "7.3.2"}
+pre-commit = "3.5.0"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "7.2.6"
+sphinx-material =  "0.0.36"
+sphinx-automodapi =  "0.16.0"
+sphinxcontrib-bibtex =  "2.5.0"
+sphinx-copybutton =  "0.5.2"
+sphinx-autobuild =  "2021.3.14"
+m2r2 =  "0.2.8"
+pandoc =  "2.3"
+nbsphinx =  "0.9.3"
+jupyter-sphinx = "0.4.0"
+jupyter-server-mathjax = "0.2.6"
+cairosvg = "2.7.0"
+sphinxcontrib-svg2pdfconverter = {extras = ["cairosvg"], version = "1.2.2"}
+sphinx-tabs = "3.4.1"
+sphinx-rtd-theme = "2.0.0"
+pydata-sphinx-theme = "0.13.3"
+
+[tool.coverage.paths]
+source = ["georges"]
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+source = ["georges"]
+
+[tool.coverage.report]
+skip_covered = true
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if TYPE_CHECKING:",
+    "raise AssertionError",
+    'raise NotImplementedError',
+    'except KeyError',
+    'if 0:',
+    'if __name__ == .__main__.:',
+    'class .*\bProtocol\):',
+    '@(abc\.)?abstractmethod',
+    ]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
