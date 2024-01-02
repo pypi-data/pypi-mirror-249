@@ -1,0 +1,10 @@
+pstruc/__init__.py,sha256=DWplaZnK0ZrUV2HldQ6I5ZpU-eoqkmkVlrg8Jtc-fbs,189
+pstruc/_directory_structure.py,sha256=yh-CTpamJxiTSNHg_uLVOax3WnLPrsCXLBd5vkuXWZ4,4621
+pstruc/_file_structure.py,sha256=HBWxNK6qfE7Svy31u4CMX0qLujXF_5vQUFHSSw8SASc,1281
+pstruc/_pretty_structure.py,sha256=58PKdC6jEDq-KXqQJ31FV32Oqo0qojM645FuhMeMmwI,1115
+pstruc/pstruc.py,sha256=km7kxZIgTcfsvP-Hb71zUniR8rW1ZyZ0wJ4Vha-D_8s,2698
+pstruc-0.2.1.dist-info/LICENSE,sha256=DFih32Dqw_h-ngr0rjM9QTsg5h1QmLH-_QUKXFJyplo,1072
+pstruc-0.2.1.dist-info/METADATA,sha256=cCPUZq6xfN5Ip1x7VXST91M910d5eWp-7DPajgIOE2Q,6329
+pstruc-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pstruc-0.2.1.dist-info/top_level.txt,sha256=ODzNKqEXb_hEM3wMQMNDfCkx7tLrZwbRGLh0cKfFVdc,7
+pstruc-0.2.1.dist-info/RECORD,,
