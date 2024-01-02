@@ -1,0 +1,2 @@
+[console_scripts]
+kasa-carbon = kasa_carbon.kasa_carbon_main:main_wrapper
