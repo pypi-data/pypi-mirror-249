@@ -1,0 +1,2 @@
+[console_scripts]
+fr = findref.cli:main
