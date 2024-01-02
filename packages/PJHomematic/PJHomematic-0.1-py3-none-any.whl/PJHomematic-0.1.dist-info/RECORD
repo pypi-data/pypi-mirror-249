@@ -1,0 +1,10 @@
+homematic/__init__.py,sha256=DNsOfcw_lqvGQk8zzzm1uZZu6Z26ICcgLLm0ue_6f0c,3399
+homematic/__version__.py,sha256=EE0I7TzlQGiMP8rBvTOXT2KNr1wfJDz99Pf2pk8KijU,124
+homematic/hmrpc.py,sha256=mxW_Ce8Z0MsErr88nn7TmgrK-T3hng0P3uQCsQHzEno,3865
+homematic/jsonrpc.py,sha256=DkVv1T153CWioUqf8qJu-0SsIOZy6fgCQonfq7QfICo,2191
+homematic/list_devices.py,sha256=FD5rhmqDv2ychn3sq1QPBJGHCExwJizCwLo0gzD8ltc,3694
+PJHomematic-0.1.dist-info/LICENSE,sha256=8IsmUjfihEmOeK8CcVvCacO73C-dbZTuB9EkhhH5ONA,156
+PJHomematic-0.1.dist-info/METADATA,sha256=loC6PHu9-bFHvwaoZ6Mc3o6Ow4KCz0YNPWrpjJaeYTY,4334
+PJHomematic-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PJHomematic-0.1.dist-info/top_level.txt,sha256=RMKx0vJfQsVDm9HOmFjg6GX_MHlqMr3tpOvg1RrcEik,10
+PJHomematic-0.1.dist-info/RECORD,,
