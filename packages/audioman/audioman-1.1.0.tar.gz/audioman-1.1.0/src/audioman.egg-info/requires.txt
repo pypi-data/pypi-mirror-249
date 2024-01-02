@@ -1,0 +1,6 @@
+filetype
+mutagen
+numpy
+Pillow
+setuptools
+soundfile

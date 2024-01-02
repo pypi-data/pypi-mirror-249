@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/audioman/__init__.py
+src/audioman/_tags.py
+src/audioman/audio.py
+src/audioman/audio_tags.py
+src/audioman/ffmpeg_commands.py
+src/audioman/format_str.py
+src/audioman.egg-info/PKG-INFO
+src/audioman.egg-info/SOURCES.txt
+src/audioman.egg-info/dependency_links.txt
+src/audioman.egg-info/requires.txt
+src/audioman.egg-info/top_level.txt
+src/audioman/effect/__init__.py
+src/audioman/effect/adjustable_fade.py
+src/audioman/effect/effect.py
