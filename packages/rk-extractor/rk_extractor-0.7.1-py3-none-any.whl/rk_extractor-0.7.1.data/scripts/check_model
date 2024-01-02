@@ -1,0 +1,77 @@
+#!python
+
+from model_analyzer import analyzer  as mana
+from np_reader      import np_reader as np_rdr
+from logzero        import logger    as log
+from rk_model       import rk_model
+
+import os
+import math
+import zfit
+import argparse
+import rk.utilities as rkut
+
+#--------------------------------
+class data:
+    jsn_dir = None
+    out_dir = None
+    ijob    = None
+    nfit    = None
+    nev_fac = 1
+#--------------------------------
+def prepare_check():
+    try:
+        os.makedirs(data.jsn_dir, exist_ok=True)
+    except:
+        log.error(f'Cannot make {data.jsn_dir}')
+        raise
+#--------------------------------
+def check_model():
+    log.info('Getting nuisance parameters')
+    rdr          = np_rdr(sys='v65', sta='v63', yld='v24')
+    rdr.cache    = True
+    d_eff        = rdr.get_eff()
+    d_byld       = rdr.get_byields()
+    d_nent       = rkut.average_byields(d_byld, l_exclude=['TIS'])
+    d_rare_yld   = rkut.reso_to_rare(d_nent, kind='jpsi')
+
+    log.info('Building model')
+    mod         = rk_model(preffix='all_tos', d_eff=d_eff, d_nent=d_rare_yld, l_dset=['all_TOS'])
+    mod.bdt_wp  = {'BDT_cmb' : 0.977, 'BDT_prc' : 0.480751}
+    d_mod       = mod.get_model()
+    d_val, d_var= mod.get_cons()
+    _, mod_ee   = d_mod['all_TOS']
+
+    d_const = { key : [val, math.sqrt(var)] for key, val, var in zip(d_val, d_val.values(), d_var.values())}
+
+    log.info('Analyzing model, using seed: {data.ijob}')
+    zfit.settings.set_seed(data.ijob)
+    obj            = mana(pdf=mod_ee, d_const = d_const, nev_fac=data.nev_fac)
+    obj.out_dir    = data.out_dir 
+    df_val, df_err = obj.fit(nfit=data.nfit)
+
+    df_val.to_json(f'{data.jsn_dir}/val_{data.ijob:03}.json', indent=4)
+    df_err.to_json(f'{data.jsn_dir}/err_{data.ijob:03}.json', indent=4)
+#--------------------------------
+def get_args():
+    parser = argparse.ArgumentParser(description='Makes a list of PFNs for a specific set of eventIDs in case we need to reprocess them')
+    parser.add_argument('-i', '--job_ind', type=int, help='Job index, for naming purposes', required=True)
+    parser.add_argument('-j', '--jsn_dir', type=str, help='Directory where JSON files go' , required=True)
+    parser.add_argument('-f', '--nfit'   , type=int, help='Number of toy datasets'        , required=True)
+
+    parser.add_argument('-o', '--out_dir', type=str, help='Directory where output diagnostics go, if not specified, will not save output')
+    parser.add_argument('-n', '--nev_fac', type=int, help='Scale statistics of toys by this factor', default=data.nev_fac)
+    args = parser.parse_args()
+
+    data.ijob    = args.job_ind
+    data.jsn_dir = args.jsn_dir
+    data.nfit    = args.nfit
+
+    data.out_dir = args.out_dir
+    data.nev_fac = args.nev_fac
+#--------------------------------
+if __name__ == '__main__':
+    get_args()
+    prepare_check()
+    check_model()
+
