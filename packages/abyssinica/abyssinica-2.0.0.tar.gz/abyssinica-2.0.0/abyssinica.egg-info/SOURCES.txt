@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+abyssinica/__init__.py
+abyssinica/calendar.py
+abyssinica/numerals.py
+abyssinica/romanization.py
+abyssinica.egg-info/PKG-INFO
+abyssinica.egg-info/SOURCES.txt
+abyssinica.egg-info/dependency_links.txt
+abyssinica.egg-info/top_level.txt
