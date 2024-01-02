@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+pinyin_kana/__init__.py
+pinyin_kana/pinyin_converter.py
+pinyin_kana/pinyin_dicts.py
+pinyin_kana.egg-info/PKG-INFO
+pinyin_kana.egg-info/SOURCES.txt
+pinyin_kana.egg-info/dependency_links.txt
+pinyin_kana.egg-info/requires.txt
+pinyin_kana.egg-info/top_level.txt
+tests/test_converter.py
