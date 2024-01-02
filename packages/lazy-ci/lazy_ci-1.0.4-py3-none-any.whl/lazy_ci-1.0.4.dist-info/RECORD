@@ -1,0 +1,10 @@
+lazy_ci/__about__.py,sha256=Fs5NT457VLyLMi_CrvUHZFymyFHofJm8Ock-eAlAai4,18
+lazy_ci/code_quality.py,sha256=O9bY8q0Av3E3Ve2swVxWjIdAWvWoJQjA6afZ4hKJ4cw,824
+lazy_ci/main.py,sha256=Hu7it14OrIKbd-YIvXyT5H7X0qgSL8ot_KbzmISBJzU,771
+lazy_ci/ship.py,sha256=3pI_dSLhC8dklAhSnWmJw8b7txCFQDiAhjShOBH0h3s,2958
+lazy_ci/test/test_ship.py,sha256=JtPbqJV4QnNxQBS5bD1KaseUIvfYchaJm-eE47oNvmQ,1139
+lazy_ci-1.0.4.dist-info/METADATA,sha256=0ij7xylIgrkQHQKXSh_oa58qi4E49YK4SNP4mrdDD6c,770
+lazy_ci-1.0.4.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+lazy_ci-1.0.4.dist-info/entry_points.txt,sha256=zTDGZEtv8AvUBq9Ej1LoVxEzh5qzOC7UkW_GnnNzExM,101
+lazy_ci-1.0.4.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lazy_ci-1.0.4.dist-info/RECORD,,

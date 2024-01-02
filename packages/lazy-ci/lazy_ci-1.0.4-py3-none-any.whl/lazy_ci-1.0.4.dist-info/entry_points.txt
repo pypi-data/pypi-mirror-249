@@ -1,0 +1,4 @@
+[console_scripts]
+lazy-ci = lazy_ci.main:main
+lazy_ci = lazy_ci.main:main
+lazyci = lazy_ci.main:main
