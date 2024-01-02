@@ -1,0 +1,9 @@
+README.rst
+pyproject.toml
+scrapyduler/__init__.py
+scrapyduler/launcher.py
+scrapyduler.egg-info/PKG-INFO
+scrapyduler.egg-info/SOURCES.txt
+scrapyduler.egg-info/dependency_links.txt
+scrapyduler.egg-info/requires.txt
+scrapyduler.egg-info/top_level.txt
