@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "factoriohelper"
+authors = [
+    { name="Anthony Zimmermann", email="anthony.zimmermann@protonmail.com" },
+]
+description = "A small application that helps playing factorio more efficiently."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia",
+    "Topic :: Multimedia :: Graphics :: Presentation",
+    "Topic :: Multimedia :: Graphics :: Viewers",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "appdirs>=1.4.4,<2.0.0",
+    "matplotlib>=3.8.2,<4.0.0",
+    "networkx>=3.2.1,<4.0.0",
+    "pygraphviz>=1.11,<2.0",
+]
+keywords = [
+    "calculate",
+    "calculator",
+    "factorio",
+    "plan",
+    "planning",
+    "recipe",
+    "recipes",
+]
+dynamic = ["version"]
+
+[project.gui-scripts]
+factoriohelper = "factoriohelper.gui:main"
+
+[project.urls]
+Homepage = "https://gitlab.com/AnthonyZimmermann/factoriohelper"
+Sources = "https://gitlab.com/AnthonyZimmermann/factoriohelper"
+
+[tool.hatch.version]
+path = "README.md"
+pattern = "factoriohelper version (?P<version>\\d+\\.\\d+\\.\\d+)<!-- VERSION -->"
+
+[tool.hatch.build]
+packages = ["factoriohelper"]
+
+# There is a an unresolved issue with hatchling: https://github.com/pypa/hatch/issues/1130
+# Furthermore adding '"README.md" = "photoassistant/README.md"' as force-include does not
+# work at all! We need to wait until this feature really works.
+# [tool.hatch.build.force-include]
+# "LICENSES" = "photoassistant/LICENSES"
+# "README.md" = "photoassistant/README.md"
