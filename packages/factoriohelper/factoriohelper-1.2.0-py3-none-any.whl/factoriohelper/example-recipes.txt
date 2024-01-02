@@ -1,0 +1,4 @@
+2 copper cable = 1 copper plate ; 0.5
+1 electronic circuit = 3 copper cable + 1 iron plate ; 0.5
+1 iron gear wheel = 2 iron plate ; 0.5
+1 inserter = 1 electronic circuit + 3 iron gear wheel + 1 iron plate ; 0.5
