@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: objx
+Version: 20
+Summary: object library.
+Author-email: Bart Thate <libbotx@gmail.com>
+License: Public Domain
+Project-URL: home, https://pypi.org/project/objx
+Project-URL: bugs, https://github.com/botlibx/objx/issues
+Project-URL: source, https://github.com/botlibx/objx
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+
+NAME
+
+::
+
+   OBJX - object library.
+
+
+DESCRIPTION
+
+::
+
+   OBJX provides an objx namespace that allows for easy json save//load
+   to/from disk of objects. It provides an "clean namespace" Object class
+   that only has dunder methods, so the namespace is not cluttered with
+   method names. This makes storing and reading to/from json possible.
+
+
+SYNOPSIS
+
+::
+
+   >>> from objx import Object
+   >>> o = Object()
+   >>> o.a = "b"
+   >>> write(o, "test")
+   >>> oo = Object()
+   >>> read(oo, "test")
+   >>> oo
+   {"a": "b"}  
+
+
+INSTALL
+
+::
+
+   $ pip install objx
+
+
+AUTHOR
+
+::
+
+   Bart Thate <libbotx@gmail.com>
+
+
+COPYRIGHT
+
+::
+
+   OBJX is Public Domain.
