@@ -1,0 +1,15 @@
+swiggy_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swiggy_analytics/cli.py,sha256=skWPontay3M_sQRT_7IqAMt-rDQzsKCkjoYhscl89g4,3027
+swiggy_analytics/constants.py,sha256=9evWfdAJPCk1cEeKwBNFxwQpo-D9iyrGKvvqnhV_-u4,1170
+swiggy_analytics/db.py,sha256=zs13zlAQ-FcebyUMNYIF_MaQnAW9JOnQueGChuz18CM,2576
+swiggy_analytics/exceptions.py,sha256=8MI-MWrjP-K9lUOzUMoVtAhDSv0R3ec_fm8FoaY4sBI,231
+swiggy_analytics/helper.py,sha256=F757V0xlnR9wbo45pwPUA0HuuikPTKyZ_GwN4Rkxbio,11922
+swiggy_analytics/queries.py,sha256=rXZB9rmizvmgCxLIagCZS7nqn1f7ZCR9bzK-MOQISok,1680
+swiggy_analytics/swiggy_analytics.py,sha256=sghiU5Sgon6DjoP0CoF17IpcawTxnVyyU2j_ow55O1Q,3485
+swiggy_analytics/utils.py,sha256=SALfZ5DUSf4QgnAN_kmINCPYhj8BYQdxmGqHR3EuQXI,1923
+swiggy_analytics-1.7.0.dist-info/LICENSE,sha256=EXRtULuiHyH6b4zUPNJW-QABKGSZ0ofAB3sRtYBBk5c,1068
+swiggy_analytics-1.7.0.dist-info/METADATA,sha256=ocry4tp4L6GD7VJg4XZXHDnNzXngmhE2BF1bjPAxUmU,4472
+swiggy_analytics-1.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+swiggy_analytics-1.7.0.dist-info/entry_points.txt,sha256=ANBFxr0GPLppXiixcSIi7m3RPdBnMjWtmp1BBjCGkrA,77
+swiggy_analytics-1.7.0.dist-info/top_level.txt,sha256=3ooPqTXocj_aFdDpzBfjgVAcW574lviVHue6KG5DnIg,17
+swiggy_analytics-1.7.0.dist-info/RECORD,,
