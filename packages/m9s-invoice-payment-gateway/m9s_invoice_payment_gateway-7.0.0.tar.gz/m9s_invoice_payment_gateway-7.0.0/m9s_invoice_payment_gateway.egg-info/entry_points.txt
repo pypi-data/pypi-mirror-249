@@ -1,0 +1,2 @@
+[trytond.modules]
+invoice_payment_gateway = trytond.modules.invoice_payment_gateway
