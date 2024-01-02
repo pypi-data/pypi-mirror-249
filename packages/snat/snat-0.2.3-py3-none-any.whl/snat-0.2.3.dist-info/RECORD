@@ -1,0 +1,17 @@
+snat/__init__.py,sha256=hYgSydV7w5dVN27THIS4U2lPLeWQZpDWeR4Yd6sZm0s,75
+snat/__main__.py,sha256=hHXhGp9yUwgl6074Pa77-AL4li11scRmQRu_i3Bbvyc,1870
+snat/about.py,sha256=LNr6KPJAyEkmcmbrmA-eqOFiW8Q6yPks0wwB9PtoP9Y,2532
+snat/achievement_list.py,sha256=2OJZwehOWQMakz1mhWKbWk2nusC_9TzMW7Fmy0Zwd60,5796
+snat/app.py,sha256=Er69l_yQV7ap8k8sxRDaQ6GhWGXB0Fvgs5N9Cz_qRIQ,4456
+snat/game_list.py,sha256=fFyHaphtQcpyTH2bGl-DMpvgX3qYy0SExYR5OLRo5Co,8608
+snat/input_dialog.py,sha256=K1WtvhdoafEKNaSISAa5aEgG0rUD7FkHLvG8dp0rWds,6948
+snat/settings.py,sha256=8iCxEJoPMXQAZB_5JUHJBEgEjlAgy6JC-avkO-S6xSI,6291
+snat/steam_api.py,sha256=TPoGi2-h5fK-jl92KOwSh49IL974vs7WnWIfPBZowV4,5148
+snat/utils.py,sha256=vke0qXTfoPMbVUCj5onql7cvZenZPpOyI5JoRsmFBdc,1002
+snat/asset/icon.ico,sha256=tVOHe3a0H8rvHmnZGMffYpOonyRJz-tJnXNoqGkTx7A,7610
+snat-0.2.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+snat-0.2.3.dist-info/METADATA,sha256=MzpAp9uviMhRq9BkftswTXXrjWRH9K5PtdDtEQl9ZHc,771
+snat-0.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+snat-0.2.3.dist-info/entry_points.txt,sha256=HVQ4HekwklgWNpsdcD8QQ3xKajx10h_2uIqRMstY-U8,40
+snat-0.2.3.dist-info/top_level.txt,sha256=j_enUyABKxFI4XxRQ5kIEk0RA9GTbqGZhWgSvzpoYHA,5
+snat-0.2.3.dist-info/RECORD,,
