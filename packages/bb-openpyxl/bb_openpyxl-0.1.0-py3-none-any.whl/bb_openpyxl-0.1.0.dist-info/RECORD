@@ -1,0 +1,17 @@
+bb_openpyxl/__init__.py,sha256=FgpBQsKcPioEArdVFcENizC-zQpBnYjarhp3X36R_lQ,478
+bb_openpyxl/_formula.py,sha256=QW3ggQzx-_3wgqqE1PD2A4m6qevk5qMSqcmMyKUHbyo,4403
+bb_openpyxl/_insert.py,sha256=vQvFNw25VAay_YpNZmfGpFa0JT4V44XK7T5Zdq5OgTo,4728
+bb_openpyxl/_utils.py,sha256=8LRRqs-kxvBj4harv8LjGmWSWmGZzoaOTvUsCFaqcJo,209
+bb_openpyxl/delete.py,sha256=bheHo2l_8Fxa952Pg9DZ-z7i7HEc0qTP8Wi4BxxHsD4,375
+bb_openpyxl/insert.py,sha256=FuuPkO9FkkvZKB2a-VZGvrjmM45pmhYh99-byrfvkRk,2906
+bb_openpyxl/sort.py,sha256=-1AJSk1Dzzbb_wjgTkTLEedwcyTyyyy24_X9PHJH6M0,1894
+bb_openpyxl/tests/__init__.py,sha256=QJvXPJZhEAJCbaZdaBc5YVpasdoiyMGeo6lec83H1mU,123
+bb_openpyxl/tests/delete_test.py,sha256=jijpNfOCPHi7aLWNp48VFkpM5QWRtiPZGnY28-TvtG0,640
+bb_openpyxl/tests/formula_test.py,sha256=rsO65sho0hDZGwHL3b5arG77Cd38G1re1ac-cJIKkeM,2039
+bb_openpyxl/tests/insert_test.py,sha256=R9qCosWQ38yIfnXU-9VaMkXyX9hS0qO7RL5dQfvj2OI,658
+bb_openpyxl/tests/sort_test.py,sha256=inoLMZJRwyV0xF6qBuCjUJe4G-oEa59pZLHrG9fGB_U,431
+bb_openpyxl-0.1.0.dist-info/LICENSE,sha256=HFHJ9EeEzvroUfB8ilYMLSW8LFMqlVPpw7QukT1uEbs,1084
+bb_openpyxl-0.1.0.dist-info/METADATA,sha256=mU_TWq6AoMVUViRJzIllh58VRj_i5fCmP6vkjCDIvXg,974
+bb_openpyxl-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bb_openpyxl-0.1.0.dist-info/top_level.txt,sha256=8vKV2vPAv5Ih6fVt3AmOF_pA9IThu3nLkdl7rwMKXBo,12
+bb_openpyxl-0.1.0.dist-info/RECORD,,
