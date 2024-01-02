@@ -1,0 +1,50 @@
+
+
+
+#
+#	how to publish:
+#
+#		(rm -rf dist && python3 -m build --sdist && twine upload dist/*)
+#
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shares"
+version = "1.0.0"
+dependencies = [
+	"mako",
+	"flask"
+]
+
+license = { text = "GPL 3.0" }
+
+description = "documentation framework that serves all '.s.HTML' that are found in the cwd."
+readme = "module.txt"
+
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#setuptools-specific-configuration
+#
+#[tool.setuptools]
+#script-files = [ "lands/scripts/shares" ]
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#setuptools-specific-configuration
+#
+[project.scripts]
+shares = "shares.clique:start"
+
+[tool.setuptools.packages.find]
+where = [ "lands/structures" ]
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+#
+[tool.setuptools.package-data]
+"*" = [ "*.HTML" ]
+
+[project.urls]
+GitLab = "https://gitlab.com/reptilian_climates/modules_series_2/shares"

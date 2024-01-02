@@ -1,0 +1,15 @@
+module.txt
+pyproject.toml
+lands/structures/shares/__init__.py
+lands/structures/shares/clique.py
+lands/structures/shares/shares.s.HTML
+lands/structures/shares.egg-info/PKG-INFO
+lands/structures/shares.egg-info/SOURCES.txt
+lands/structures/shares.egg-info/dependency_links.txt
+lands/structures/shares.egg-info/entry_points.txt
+lands/structures/shares.egg-info/requires.txt
+lands/structures/shares.egg-info/top_level.txt
+lands/structures/shares/_license/license.s.HTML
+lands/structures/shares/basin/__init__.py
+lands/structures/shares/basin/treasury.py
+lands/structures/shares/company/company.s.HTML
