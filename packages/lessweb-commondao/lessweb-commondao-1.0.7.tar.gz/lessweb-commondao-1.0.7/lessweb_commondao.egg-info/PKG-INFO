@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: lessweb-commondao
+Version: 1.0.7
+Summary: Mysql service and toolkit for lessweb
+Author-email: qorzj <goodhorsezxj@gmail.com>
+License: Apache 2
+Keywords: lessweb,mysql
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: aiohttp
+Requires-Dist: lesscli
+Requires-Dist: lessweb
+Requires-Dist: mysql-connector
+Requires-Dist: aiomysql
+
+## How to init?
+```python
+from commondao.mapper import mysql_startup, mysql_cleanup, mysql_connect
+
+bridge.add_mod_ctx(mysql_startup, mysql_cleanup)
+bridge.add_middleware(mysql_connect)
+
+```
+
+## How to codegen?
+`commondao --help`
+
+`commondao codegen --output my_proj/mapper.py`
