@@ -1,0 +1,6 @@
+datalake_bucket: budget-guard-silver
+datalake_key: balances
+file_extension: parquet
+schema:
+  - name: test
+    type: string
