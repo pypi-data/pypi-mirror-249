@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pdfaddyemei
+Version: 0.1.3
+Summary: pdf文件每页添加页眉
+Home-page: https://alidocs.dingtalk.com/i/p/4oJRz0VRJyvmLZMydy0mV7WvjQn7MG89
+Author: 任凌琨、宋佳瑞
+Author-email: 17891967090@163.com
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+pdf文件每页添加页眉
