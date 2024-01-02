@@ -1,0 +1,10 @@
+LICENSE
+LICENSE.md
+README.md
+setup.py
+EasyDataR.egg-info/PKG-INFO
+EasyDataR.egg-info/SOURCES.txt
+EasyDataR.egg-info/dependency_links.txt
+EasyDataR.egg-info/requires.txt
+EasyDataR.egg-info/top_level.txt
+R/__init__.py
