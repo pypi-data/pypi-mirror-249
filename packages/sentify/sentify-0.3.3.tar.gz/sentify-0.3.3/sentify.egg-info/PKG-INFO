@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sentify
+Version: 0.3.3
+Summary: Converter from urls,pdfs,wikipages to clean text document one sentence per line.
+Home-page: https://github.com/ptarau/sentify.git
+Author: Paul Tarau
+Author-email: ptarau@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### *sentify* is a simple and fast tool that converts documents to clean one sentence per line text files ready for NLP tools and Generative AI  processing
+
+It currently handles local and remote *txt* and *pdf* files as well as Wikipedia *wikipage* given by their title.
+
+See code in sentify.sentify for uses and tests.
+
+Enjoy,
+
+Paul Tarau
+
+January, 2024
