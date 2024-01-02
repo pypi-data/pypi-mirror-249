@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ClusterState
+Version: 20240102
+Summary: Highly Available key value store with atomic updates - Replicated and Strongly Consistent
+Home-page: https://github.com/magicray/ClusterConfig
+Author: Bhupendra Singh
+Author-email: bhsingh@gmail.com
+Keywords: paxos,consistent,replicated,cluster,config
+License-File: LICENSE
+
+Leaderless. Paxos for synchronous and consistent replication. SQLite for persistence. HTTPs interface.
