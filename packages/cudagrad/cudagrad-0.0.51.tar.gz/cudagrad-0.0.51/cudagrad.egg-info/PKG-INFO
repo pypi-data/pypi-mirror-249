@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: cudagrad
+Version: 0.0.51
+Summary: A tensor-valued autograd engine for Python
+Home-page: https://github.com/cudagrad/cudagrad
+Author: Ryan Moore
+Author-email: Ryan Moore <ryanm.inbox@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/rv3c/cudagrad
+Project-URL: Bug Tracker, https://github.com/rv3c/cudagrad/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cudagrad
+
+A tensor-valued autograd engine for Python
+
+# Docs
+
+In-depth `cudagrad.Tensor` documentation can be found in [Tensor.ipynb](./Tensor.ipynb)
+
+# Examples
+
+The following examples were written purely in Python using only `cudagrad.Tensor` for learning. See `__main__` guards in `cudagrad/cudagrad/` for usage examples, below are the loss function plots:
+
+## Neuron/Linear
+
+![](cudagrad/plots/linear.jpg)
+
+## Multilayer perceptron
+
+Work in progress!
+
+![](cudagrad/plots/mlp.jpg)
+![](cudagrad/plots/mlp-3d.jpg)
