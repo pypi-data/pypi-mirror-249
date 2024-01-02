@@ -1,0 +1,14 @@
+scuff/__init__.py,sha256=NYWT9yCJowO7qiCt-QO6uAOo7CT1O84K1AV0UvF5y4s,651
+scuff/__main__.py,sha256=6KCjCJjo_vRHjRngjW2edDRTjhboQCN4CG1UTFRHMyw,82
+scuff/cli.py,sha256=2a51w0GIaueRX0ofEnmAQDZwsBkEj-vpjQnvwujCK9Q,88
+scuff/compiler.py,sha256=SiAhW9cBAbKHQxlOP3oeDecR66bLCUD3EnvziBSipJA,7487
+scuff/error.py,sha256=wPeCKJjcGIk02fB7Gy9VfoLtjlqqh6Og7JxY77K8pHg,4519
+scuff/lexer.py,sha256=Zw6g69bZrhgYhH_bz1gcoTrIB-jD6sCH7wYNKA22y50,12966
+scuff/parser.py,sha256=VQs5m12hWs911mrSTxqZB0sLbN53p-VbFpwKvsA4_0o,26960
+scuff/token.py,sha256=LOllX_dohl_69zqgEkqh3fa9N2opqofeSUfLQE8QPC4,5332
+scuff/tools.py,sha256=eodTvoEDdkik4QxOlzqkrSybjJfq_yfqIDdsIMzxSBc,2978
+scuff-0.3.dist-info/LICENSE,sha256=PIT4iuf_iOcMKyY_uOPG2YZ-znjpSTcU0z0ST-wD59Q,1072
+scuff-0.3.dist-info/METADATA,sha256=DBPuF7bfNjsI_RvXOTJB1gwms5COxJ0ZlGy3bAudAMI,4180
+scuff-0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scuff-0.3.dist-info/top_level.txt,sha256=hA1_EOBVNgGfseebgJ_y4U5iNVFJ_2TlgwrcV50Sp1Q,6
+scuff-0.3.dist-info/RECORD,,
