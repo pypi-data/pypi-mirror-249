@@ -1,0 +1,26 @@
+[package]
+authors = ["melkor <hohav@fastmail.com>"]
+name = "peppi-py"
+version = "0.6.0"
+edition = "2021"
+
+[lib]
+name = "peppi_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+arrow2 = "0.18"
+peppi = "2.0.0-alpha.3"
+pyo3 = { version = "0.20", features = ["abi3-py39", "extension-module"] }
+serde = "1.0"
+serde_json = "1.0"
+
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false
+lto = true
+codegen-units = 1
+incremental = false
+rpath = false
