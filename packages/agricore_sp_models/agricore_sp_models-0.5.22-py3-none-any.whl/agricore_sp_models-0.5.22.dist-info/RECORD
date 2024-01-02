@@ -1,0 +1,9 @@
+agricore_sp_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agricore_sp_models/abm_interface.py,sha256=yDfbEBxlQQSM5ebkPrkTLa3V6JPpr3mTmGOjmc7HwJg,18679
+agricore_sp_models/agricore_sp_models.py,sha256=tjV85Cy9IADnySx9d8mKjWDsWmDM5W85bDV3c07_Dl4,6610
+agricore_sp_models/logging.py,sha256=yR-KnL9JXwUqennO7p7t8BxZ9iVSZFSDCBPALmqcePA,1922
+agricore_sp_models/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agricore_sp_models/simulation_models.py,sha256=7QN7ZgEGBt5MLaHiK_enWYhYZE_YvXlUfUipWL-xi80,1157
+agricore_sp_models-0.5.22.dist-info/METADATA,sha256=jMX_9h0sBnhcja-VeQJAx1OYpoN6qfhbqvvPKEMnnIQ,784
+agricore_sp_models-0.5.22.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+agricore_sp_models-0.5.22.dist-info/RECORD,,
