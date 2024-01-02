@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/rnaseqdata/__init__.py
+src/rnaseqdata/annot_data.py
+src/rnaseqdata/node_data.py
+src/rnaseqdata/random_data.py
+src/rnaseqdata/root_data.py
+src/rnaseqdata/seq_data.py
+src/rnaseqdata/stat_data.py
+src/rnaseqdata.egg-info/PKG-INFO
+src/rnaseqdata.egg-info/SOURCES.txt
+src/rnaseqdata.egg-info/dependency_links.txt
+src/rnaseqdata.egg-info/top_level.txt

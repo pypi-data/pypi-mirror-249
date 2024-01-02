@@ -1,0 +1,19 @@
+[project]
+name = "rnaseqdata"
+version = "0.0.4"
+authors = [
+  { name="Tiezheng Yuan", email="tiezhengyuan@hotmail.com" },
+]
+description = "New Data type known as SeqData for RNA-Seq data analysis"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Tiezhengyuan/ernav2_seqdata"
+Issues = "https://github.com/Tiezhengyuan/ernav2_seqdata/issues"
+
