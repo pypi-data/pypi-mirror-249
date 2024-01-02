@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ResistorCalc.egg-info/PKG-INFO
+ResistorCalc.egg-info/SOURCES.txt
+ResistorCalc.egg-info/dependency_links.txt
+ResistorCalc.egg-info/requires.txt
+ResistorCalc.egg-info/top_level.txt
+lib/__init__.py
+lib/resistorcalc.py
+lib/test.py
