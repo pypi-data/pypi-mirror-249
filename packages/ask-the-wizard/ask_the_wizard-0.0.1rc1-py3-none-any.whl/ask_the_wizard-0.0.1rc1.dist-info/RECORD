@@ -1,0 +1,10 @@
+ask_the_wizard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ask_the_wizard/pip_importer.py,sha256=Rt0V6EEJqAZt06oIKb52o485ECHQWSNRW-d-wRQxL7M,1142
+ask_the_wizard/wizard_communication.py,sha256=n9nHbBi1n7gv1Mb7NrnRHSCwXGo2uV4P9vzBxeL7Njk,6365
+ask_the_wizard/wizard_executer.py,sha256=62lQi3Ln3Syjdnh9u67Mp-rD6UrxMx3n8snbwhomeQU,1903
+ask_the_wizard/wizard_importer.py,sha256=qpvbPZM8YZF4WqOZvnKtd3ueBm52vh3945Ih73aQpsQ,2626
+ask_the_wizard-0.0.1rc1.dist-info/LICENSE,sha256=zKUIiE_l0v2KlXO8wKfEakAmWn7POyU_wfARh6Es6dE,1072
+ask_the_wizard-0.0.1rc1.dist-info/METADATA,sha256=dZYtTw3MfBmHldmAykwWqtOgoMUPIF9qBl_dPfUJ_z0,3655
+ask_the_wizard-0.0.1rc1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ask_the_wizard-0.0.1rc1.dist-info/top_level.txt,sha256=rAW8QBMTqnVxhOLmZRAkRFqQcXCP3uOEv_KHWFYofKc,15
+ask_the_wizard-0.0.1rc1.dist-info/RECORD,,
