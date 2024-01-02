@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/dbcreator/__init__.py
+src/dbcreator/core.py
+src/dbcreator.egg-info/PKG-INFO
+src/dbcreator.egg-info/SOURCES.txt
+src/dbcreator.egg-info/dependency_links.txt
+src/dbcreator.egg-info/top_level.txt
