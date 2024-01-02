@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: lazy_ci
+Version: 1.0.4
+Summary: CI for lazy people (like me)
+Project-URL: Issue Tracker, https://github.com/calvinloveland/lazy_ci/issues
+Project-URL: Repository, https://github.com/calvinloveland/lazy_ci
+Author-email: Calvin Loveland <calvin@loveland.dev>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Requires-Dist: black
+Requires-Dist: bump-my-version
+Requires-Dist: gitpython
+Requires-Dist: loguru
+Requires-Dist: prospector
+Requires-Dist: pytest
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# Lazy CI
+A simple CI/CD tool for lazy Python developers.
