@@ -1,0 +1,289 @@
+### AIDocStringGenerator: Overview and Purpose
+
+**AIDocStringGenerator** is an advanced Python tool engineered to streamline the task of creating and updating docstrings in Python source files. Utilizing cutting-edge AI technologies like Anthropic, Google and OpenAI, this application delivers high-quality, context-aware docstrings that significantly enhance code readability and maintainability.
+
+**Key Features**:
+
+1.  **AI-Powered Docstring Generation**: Integrates with AI assistant APIs to generate detailed and accurate docstrings for Python classes, methods, and functions.
+    
+2.  **Flexible File Processing**: Capable of handling both individual Python files and entire directories, making it suitable for projects of any scale.
+    
+3.  **Configurable Operations**: Users can customize the behavior through a configuration file (`config.json`), allowing control over aspects like target paths, verbosity levels, and choice of AI model.
+    
+4.  **Verbose Output**: Offers an optional verbose mode, providing comprehensive logs of the docstring generation process, ideal for debugging and insight into the tool's operations.
+    
+5.  **Existing Docstring Management**: Includes an option to wipe out existing docstrings before generating new ones, ensuring a clean and updated state of documentation.
+    
+6.  **Large Codebase Handling**: Efficiently processes large codebases by splitting the source code into smaller parts, thereby managing API limitations and ensuring thorough coverage.
+    
+7.  **API Key Management**: Supports secure API key integration for accessing AI services, ensuring safe and authorized use of AI technologies.
+    
+
+**Use Cases**:
+
+-   **Automated Documentation**: Ideal for projects lacking comprehensive docstrings, where manual documentation is time-consuming or infeasible.
+-   **Codebase Refactoring**: Assists in updating and standardizing docstrings during large-scale code refactoring and reviews.
+-   **Educational Tool**: Useful for educational purposes, helping students and new developers understand the importance of documentation and observe AI-generated examples.
+    
+
+### Target Audience
+
+The Docstring Generator is particularly useful for:
+
+-   **Developers and Teams**: Especially those working on large or complex Python projects who want to maintain high-quality, consistent documentation.
+    
+-   **Open Source Contributors**: Helps maintain clear and comprehensive documentation in open source projects.
+    
+-   **Organizations Emphasizing Code Quality**: Organizations that value code readability and maintainability as part of their development standards.
+    
+
+### How to Use the Docstring Generator
+
+#### Prerequisites
+
+-   Python installed on your system.
+-   Basic familiarity with Python programming.
+-   Access to AI services like Anthropic, Google and OpenAI
+
+
+### Basic Setup and Configuration
+
+1.  **Install the Package**: Install it using pip:
+    
+    `pip install AIDocStringGenerator` 
+    
+2.  **Initial Configuration**:
+    
+    -   Locate and rename or copy `config_template.json` to `config.json` in the installed package directory.
+
+### 3. Configuration Parameters
+
+- **path:** The file or directory path to process. Default: `""` (empty string).
+-  **wipe_docstrings:** If `true`, existing docstrings in files will be wiped before generating new ones. Default: `true`.
+-  **verbose:** Enable verbose output if set to `true`. Default: `true`.
+-  **bot:** Specify the AI bot to use (options include `openai`, `claude`, `bard, file`). Default: `"file"`.
+-  **model:** Specify the model name to be used. Default: `"classTest"`.
+-  **GOOGLE_API_KEY:** API key for the BARD AI service. 
+-  **OPENAI_API_KEY:** API key for the OpenAI services. 
+-  **ANTHROPIC_API_KEY:** API key for the Claude AI service.
+-  **include_subfolders:** Set to `true` to include subfolders in processing. Default: `false`.
+-  **keep_responses:** If set to `true`, the tool saves the bot responses in the "responses" folder. Default: `false`.
+-  **ignore:** An array of strings containing file or directory names to exclude from processing.
+-  **class_docstrings_verbosity_level:** Controls the level of detail in the generated docstrings for classes. Valid values are 0-5. Default: `5`.
+-  **function_docstrings_verbosity_level:** Controls the level of detail in the generated docstrings for functions. Valid values are 0-5. Default: `2`.
+-  **example_verbosity_level:** Controls the level of detail in the generated code examples. Valid values are 0-5. Default: `3`.
+-  **max_line_length:** Specifies the maximum line length for code formatting. Default: `79`.
+-  **dry_run:** When set to `true`, performs a trial run without making actual changes. Default: `false`.
+-  **enabled_bots:** `The `enabled_bots` configuration in the DocString Generator specifies AI bots and their models for generating docstrings. Each entry in this list pairs a `bot` (like OpenAI, Anthropic, or Google) with a `model`, defining which AI service and model to use. For the "file" bot, `model` refers to a specific response file, enabling use of predefined or simulated responses. This configuration allows flexible, multi-bot processing for diverse documentation needs.
+
+
+#### Configuration File Structure
+
+The `config.json` file is central to configuring the AIDocStringGenerator. Here's an example structure:
+```
+{
+    "path": "",
+    "wipe_docstrings": true,
+    "verbose": true,
+    "bot": "file",
+    "model": "classTest",
+    "enabled_bots": [
+        {"bot": "google", "model": "bard"},
+        {"bot": "openai", "model": "gpt-4-1106-preview"},
+        {"bot": "anthropic", "model": "claude-2.1"}
+    ],
+    "BARD_API_KEY": "",
+    "OPENAI_API_KEY": "",
+    "CLAUDE_API_KEY": "",
+    "include_subfolders": false,
+    "keep_responses": false,
+    "ignore": "",
+    "class_docstrings_verbosity_level": 5,
+    "function_docstrings_verbosity_level": 2,
+    "example_verbosity_level": 3,
+    "max_line_length": 79,
+    "dry_run": false
+}
+```
+#### API Key Security
+
+To securely manage API keys:
+
+1.  Create a `.env` file in the root folder.
+    
+2.  Add your API keys in the following format:
+```
+    CLAUDE_API_KEY=my_key
+    OPENAI_API_KEY=my_key
+    BARD_API_KEY=my_key
+``` 
+    
+This ensures that your keys are stored securely and not exposed in your version control system.
+    
+
+#### Error Handling
+
+The AIDocStringGenerator automatically handles response errors. For instance, if the response JSON format is invalid, the tool will re-query the chatbot. This also applies to invalid example code, ensuring a smooth and error-resilient operation.
+
+#### Real-world Example
+
+An example of the tool in action:
+
+Before:
+```
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    def subtract(self, a, b):
+        return a - b
+
+    def multiply(self, a, b):
+        return a * b
+
+    def divide(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        return a / b
+```
+After:
+
+```
+class Calculator:
+    """A simple class that performs basic arithmetic operations."""
+
+    def add(self, a, b):
+        """Adds two numbers together and returns the result."""
+        return a + b
+
+    def subtract(self, a, b):
+        """Subtracts two numbers and returns the result."""
+        return a - b
+
+    def multiply(self, a, b):
+        """Multiplies two numbers together and returns the result."""
+        return a * b
+
+    def divide(self, a, b):
+        """Divides two numbers and returns the result. Raises a ValueError if the divisor is zero."""
+        if b == 0:
+            raise ValueError('Cannot divide by zero')
+        return a / b
+
+    def example_function_Calculator(self):
+        calculator = Calculator()
+        result = calculator.add(1, 2)
+        print(result)  # Prints 3
+```        
+
+This example demonstrates how AIDocStringGenerator can transform a simple Python class by adding informative and well-structured docstrings, greatly enhancing code readability and documentation.
+
+### Possible Combinations of Bot/Models
+
+Based on the `BOTS` dictionary provided, the possible combinations of bot and model configurations are as follows:
+
+-  **OpenAI Bots:**
+    
+    -   `"openai"` bot with `"gpt-3.5-turbo-1106"` model
+    -   `"openai"` bot with `"gpt-4-1106-preview"` model
+-  **Anthropic Bots:**
+    
+    -   `"anthropic"` bot with `"claude-2.1"` model
+-  **Google Bots:**
+    
+    -   `"google"` bot with `"bard"` model
+-  **File Bots:**
+    
+    -   `"file"` bot with any custom module name as the model. For example, `"classTest"`.
+
+### Special Handling for the "File" Bot
+
+When using the `"file"` bot, the `model` parameter has a unique purpose. Instead of representing an AI model, it specifies the name of a module, which in turn corresponds to a response file. Here's how it works:
+
+-   For a given `model` name, the DocString Generator will look for a file with a specific naming pattern.
+-   If the `model` is set to `"classTest"`, the tool will search for a file named `"classTest.response.json"` for the initial attempt.
+-   If the process involves retrying, the tool will look for sequentially numbered files, like `"classTest.response2.json"`, `"classTest.response3.json"`, and so on.
+-   For example retries, the naming convention changes slightly to incorporate the example context, such as `"classTest.example.json"`.
+
+This approach allows for a high degree of flexibility and control, especially for testing or simulating responses without directly using an AI service. It's ideal for scenarios where response data is predefined or needs to be consistent across multiple runs.
+
+### Note
+
+-   The `"file"` bot configuration is particularly useful for scenarios where you have a set of predefined responses or wish to simulate the behavior of the tool without making actual API calls to AI services.
+-   This setup allows you to test different responses and behaviors of the tool using mock data, making it a valuable feature for development and testing phases.
+
+4.  **Command Line Overrides**:
+    
+    -   Command line arguments allow you to override settings in `config.json`.
+    -   Example command:
+        
+        `AIDocStringGenerator --path "/path/to/source" --verbose --wipe_docstrings --bot "claude" --include_subfolders --verbosity_level "5"` 
+        
+	**Verbosity Levels:**
+
+	To control the level of detail in the generated docstrings and examples, you can use the following verbosity levels:
+
+	**Function and Class Docstrings Verbosity Levels:**
+
+	-   0: No docstrings for functions or classes.
+	-   1: Very brief, one-line comments for major functions and classes only.
+	-   2: Concise but informative docstrings, covering basic purposes and functionality.
+	-   3: Detailed docstrings including parameters, return types, and a description of the behavior.
+	-   4: Very detailed explanations, including usage examples in the docstrings.
+	-   5: Extremely detailed docstrings, providing in-depth explanations, usage examples, and covering edge cases.
+
+	**Example Verbosity Levels:**
+
+	-   0: No examples.
+	-   1: Simple examples demonstrating basic usage.
+	-   2: More comprehensive examples covering various use cases.
+	-   3: Detailed examples with step-by-step explanations.
+	-   4: Extensive examples including edge cases and error handling.
+	-   5: Interactive examples or code playgrounds for experimentation.
+
+
+
+# Running the Generator**
+
+## Process Files or Directories
+
+The AI Docstring Generator can process either a single Python file or an entire directory containing multiple files. You have two options for providing processing instructions:
+
+### Using Command Line Arguments
+
+To run the tool with command-line arguments, use the following format:
+
+```
+AIDocStringGenerator --path "/path/to/python/files" --verbose
+```
+
+This command processes Python files located at the specified path, with verbose output enabled.
+
+### Using a Configuration File
+
+If you start the program without providing command-line arguments, it will automatically look for a configuration file named `config.json` in the current working directory. This file allows you to specify the processing parameters in a structured format.
+
+    
+
+## Advanced Usage
+
+-  **Custom Templates:** Customize the templates used for generating docstrings to align with your project's specific style or requirements. This ensures that the generated documentation adheres to your project's conventions and enhances readability.
+- **Continuous Integration (CI) Setup Instructions** [See Advanced setup](CI.md)
+
+## Best Practices
+
+-   **Regular Updates:**  Run the generator frequently to keep documentation in sync with the latest code changes. This maintains accurate and up-to-date documentation throughout the development process.
+-   **Manual Review:**  Always review and refine automatically generated docstrings to ensure their relevance and accuracy. While AI-generated docstrings can be a valuable starting point, human oversight is crucial to ensure quality and address any potential shortcomings.
+-   **Secure API Keys:**  Protect your API keys by storing them securely and avoiding exposure in shared or public environments. This prevents unauthorized access and potential misuse of your AI services.
+-   **PEP 257 Adherence:**  Follow the Python community's PEP 257 docstring conventions to maintain consistency and readability across your codebase. This promotes better understanding and collaboration among developers.
+
+## Conclusion
+
+The AI Docstring Generator represents a significant advancement in automating the critical task of software documentation. Its key benefits include:
+
+-   **Automation:**  Streamlines the documentation process, saving time and effort for developers.
+-   **AI-Powered:**  Leverages AI capabilities to generate comprehensive and informative docstrings, often surpassing the quality of manual documentation.
+-   **Customization:**  Offers flexibility through configuration options and potentially customizable templates, allowing for tailored documentation that aligns with project-specific needs.
+-   **CI Integration:**  Facilitates seamless integration into continuous integration workflows, ensuring consistent documentation for all code changes.
+
+By effectively utilizing this tool, you can maintain high-quality, consistent, and up-to-date documentation for your Python codebases, promoting better code understanding, maintainability, and collaboration.
