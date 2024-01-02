@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bscal
+Version: 0.0.1
+Summary: Calendar for Bikram Sambat
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Bikram Sambat Calendar
+
+#### Usage
+
+```console
+pip install bscal
+bscal
+```
