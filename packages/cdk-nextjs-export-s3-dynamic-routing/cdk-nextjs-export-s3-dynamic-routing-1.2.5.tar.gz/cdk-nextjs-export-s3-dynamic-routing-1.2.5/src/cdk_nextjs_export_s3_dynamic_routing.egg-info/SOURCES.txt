@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk_nextjs-export-s3-dynamic-routing/__init__.py
+src/cdk_nextjs-export-s3-dynamic-routing/py.typed
+src/cdk_nextjs-export-s3-dynamic-routing/_jsii/__init__.py
+src/cdk_nextjs-export-s3-dynamic-routing/_jsii/cdk-nextjs-export-s3-dynamic-routing@1.2.5.jsii.tgz
+src/cdk_nextjs_export_s3_dynamic_routing.egg-info/PKG-INFO
+src/cdk_nextjs_export_s3_dynamic_routing.egg-info/SOURCES.txt
+src/cdk_nextjs_export_s3_dynamic_routing.egg-info/dependency_links.txt
+src/cdk_nextjs_export_s3_dynamic_routing.egg-info/requires.txt
+src/cdk_nextjs_export_s3_dynamic_routing.egg-info/top_level.txt
