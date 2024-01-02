@@ -1,0 +1,8 @@
+.gitignore
+README.md
+dashbored.py
+pyproject.toml
+dashbored.egg-info/PKG-INFO
+dashbored.egg-info/SOURCES.txt
+dashbored.egg-info/dependency_links.txt
+dashbored.egg-info/top_level.txt
