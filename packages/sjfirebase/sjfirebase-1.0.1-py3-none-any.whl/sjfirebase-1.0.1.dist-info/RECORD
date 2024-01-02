@@ -1,0 +1,15 @@
+sjfirebase/__init__.py,sha256=4OUwRnuL53WytrSvtKA-EJf6vT6mIDrGQlrARHMcq-8,85
+sjfirebase/jclass/__init__.py,sha256=u7a3wDsAF74K6D63kABiJqJLwlThsO4IhTtNgTGpCjE,140
+sjfirebase/jclass/action.py,sha256=eHZ4FrfIi2EWaqsBfXIG0GsUXT9xXDIgjbmoz1zMAKA,377
+sjfirebase/jclass/auth.py,sha256=VQyH01eTN915PtLVlBLT56ktYULQfUNIteg9E4kPN2o,398
+sjfirebase/jclass/database.py,sha256=c4fqKNpjyhxfBv9ixoTnunbLaMf3L6HlJJ8fsBtkpzs,431
+sjfirebase/jclass/firestore.py,sha256=4QxmyUbmG2g46gjMcuGwAMbFiwgh1qde9g5Y4Jt4ge4,350
+sjfirebase/jclass/storage.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sjfirebase/jclass/user.py,sha256=ozHRQItEP4NbzqdU9FL4IXISfmNJgKKubwlLDwr1dVg,455
+sjfirebase/jinterface/__init__.py,sha256=pdSN8897Xr4rPf4V0aUj71UfyXxYZRByGnsCIWwHdbg,25
+sjfirebase/jinterface/oncomplete.py,sha256=PXraw0ysKvl48yIbBALBD_fRk3k-JkDPM-n0bR-0xC4,464
+sjfirebase/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sjfirebase-1.0.1.dist-info/LICENSE,sha256=LOe5eKZj8t-J1zbInWtRylIUaL3yre57Dkxr3g0JvgM,1089
+sjfirebase-1.0.1.dist-info/METADATA,sha256=pufQ1ZdZf4VmXtewf5tIHVn9yl1_FybvEXeYpQLW1pg,4264
+sjfirebase-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sjfirebase-1.0.1.dist-info/RECORD,,
