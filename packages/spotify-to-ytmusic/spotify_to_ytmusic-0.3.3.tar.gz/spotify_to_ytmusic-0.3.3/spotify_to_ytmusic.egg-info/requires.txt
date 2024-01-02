@@ -1,0 +1,8 @@
+ytmusicapi>=1.4
+spotipy>=2.23.0
+platformdirs>=3.2
+
+[dev]
+black
+isort
+coverage
