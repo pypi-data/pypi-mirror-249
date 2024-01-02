@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/ask_the_wizard/__init__.py
+src/ask_the_wizard/pip_importer.py
+src/ask_the_wizard/wizard_communication.py
+src/ask_the_wizard/wizard_executer.py
+src/ask_the_wizard/wizard_importer.py
+src/ask_the_wizard.egg-info/PKG-INFO
+src/ask_the_wizard.egg-info/SOURCES.txt
+src/ask_the_wizard.egg-info/dependency_links.txt
+src/ask_the_wizard.egg-info/requires.txt
+src/ask_the_wizard.egg-info/top_level.txt
