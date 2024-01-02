@@ -1,0 +1,9 @@
+version=4
+{% if repack %}
+opts="mode=git, pgpmode=none,\
+      dversionmangle=s/\+ds\d*$//,repacksuffix=+ds1" \
+{% else %}
+opts="mode=git, pgpmode=none" \
+{% endif %}
+  {{ repo }}.git \
+  HEAD
