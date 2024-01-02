@@ -1,0 +1,3 @@
+[console_scripts]
+django_budget_admin=django_budget_manage:main
+
