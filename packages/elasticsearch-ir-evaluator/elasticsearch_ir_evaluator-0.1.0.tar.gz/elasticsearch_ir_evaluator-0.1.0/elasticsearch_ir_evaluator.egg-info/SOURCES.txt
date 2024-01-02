@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+elasticsearch_ir_evaluator/__init__.py
+elasticsearch_ir_evaluator/evaluator.py
+elasticsearch_ir_evaluator/types.py
+elasticsearch_ir_evaluator.egg-info/PKG-INFO
+elasticsearch_ir_evaluator.egg-info/SOURCES.txt
+elasticsearch_ir_evaluator.egg-info/dependency_links.txt
+elasticsearch_ir_evaluator.egg-info/requires.txt
+elasticsearch_ir_evaluator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_evaluator.py
