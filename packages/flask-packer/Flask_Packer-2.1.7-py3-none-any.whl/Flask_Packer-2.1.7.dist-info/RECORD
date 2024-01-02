@@ -1,0 +1,12 @@
+flask_packer/__init__.py,sha256=5Y1WEFgR-vsHCZxDrxzLHy5bq70QpZ4UTDdB2J5kOwQ,73
+flask_packer/_base.py,sha256=V9zctkvHVtqR8fBuq6uTQ1iCn66CeMqoVhpUgEKW2CY,1021
+flask_packer/_errors.py,sha256=euCFtGk8hzl5Hx-zJj5GvXAEQroPYGvNQz6wgPEC0r0,415
+flask_packer/_extension.py,sha256=lk7PG9q46bYXHVh6sdnmPKgLHMsOTIv3MrkWsehVTVE,6302
+flask_packer/tags/__init__.py,sha256=XgnwfiBR7RRn2IL_Pva9Tx6qls3pq8JD7ZcAiJ5wuFQ,67
+flask_packer/tags/css.py,sha256=SXvra5LFYqU1EfzShBWZmMaMHyIZ2TUX8vFyhPZMknM,1093
+flask_packer/tags/js.py,sha256=NU7FhSJ4PUA2GUXIIyNLO_QPw0gVx-54pfDhadLX1XI,659
+Flask_Packer-2.1.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+Flask_Packer-2.1.7.dist-info/METADATA,sha256=HaDI0kqOJOiBLfSMftAiSwkBVB7W96G3l3yKzgx_frw,864
+Flask_Packer-2.1.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Flask_Packer-2.1.7.dist-info/top_level.txt,sha256=aC1opa0icw_2zmFDRwYl8p3sg0iOhCvpSBmkqf0xnKM,13
+Flask_Packer-2.1.7.dist-info/RECORD,,
