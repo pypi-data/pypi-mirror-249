@@ -1,0 +1,11 @@
+name: gala-dev
+
+channels:
+  - defaults
+
+dependencies:
+  - python=3.11
+  - gsl
+  - pip
+  - pip:
+    - -e .[dev]
