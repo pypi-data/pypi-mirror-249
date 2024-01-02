@@ -1,0 +1,12 @@
+csv_bleach/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csv_bleach/__main__.py,sha256=WD828ZNhoLd_HTyoOfPUHlOVa5GkSNExvJrrYOK4BSo,1107
+csv_bleach/detect_delimiter.py,sha256=gZvpn_o0WFuJMWwjqZpXVvs5g16AAO2-vpcQaH9VAYE,1846
+csv_bleach/detect_row_count.py,sha256=pcdiH375wENB8XOkJ7E2hrqb0Oxk1wUjO6S-YrVg_jk,113
+csv_bleach/line_decoder.py,sha256=3NmY2safjJuZAC07iXiaoBd_yG2-NC8hdaXnkPmS-KU,631
+csv_bleach/line_parser.py,sha256=e65vNONUyh-mxmYHVhbMSJW3Wq4wuqQF73l_sOW_aQw,225
+csv_bleach/type_casting.py,sha256=6rh7IJGRFcRrg_tn-yb6Vn5PhMqQI4N05aidw2jAukw,2031
+csv_bleach-2.4.0.dist-info/LICENSE,sha256=WMc82jKfvW7juSbrRw0fMuWqHBVi2y3nACGRBjIIjvM,1070
+csv_bleach-2.4.0.dist-info/METADATA,sha256=tNZ2ryKv2ha32RG-LXApe-0HlczaL24eaKZ4gkAIU08,1591
+csv_bleach-2.4.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+csv_bleach-2.4.0.dist-info/entry_points.txt,sha256=5sncFeVVHnH-ggBhFJCPYtiW98Gy_ICd6pyadGQZmj4,46
+csv_bleach-2.4.0.dist-info/RECORD,,
