@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ytvip
+Version: 0.0.11
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: User
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: starlette
+Requires-Dist: uvicorn
+Requires-Dist: python-multipart
+Requires-Dist: icecream
+Requires-Dist: yt-dlp
+Requires-Dist: ibis ==3.2.0
+Requires-Dist: peewee ==3.15.4
+Requires-Dist: aiohttp
+Requires-Dist: toml
+
+UNKNOWN
+
+
