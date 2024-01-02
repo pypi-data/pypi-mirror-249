@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: dub.py
+Version: 1.0.3
+Summary: 🔗 A python wrapper built around the dub.co API. 
+Home-page: https://github.com/m2ksims/dub.py
+Author: Maksims K.
+Author-email: contact@maksims.co.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: ratelimit
+
+# dub.py
+
+A wrapper built around the [dub.co API](https://dub.co/docs/api-reference/introduction) written in python.
+
+## Installation
+```
+$ pip install dub.py
+```
+
+## Usage
+```py
+import dub
+
+dub.api_key = "API_KEY_HERE"
+
+tag = dub.Tag(slug="project")
+tag.create(name="tag_name")
+```

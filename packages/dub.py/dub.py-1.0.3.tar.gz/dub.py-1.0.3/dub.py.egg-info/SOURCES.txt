@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dub/__init__.py
+dub/errors.py
+dub/request.py
+dub.py.egg-info/PKG-INFO
+dub.py.egg-info/SOURCES.txt
+dub.py.egg-info/dependency_links.txt
+dub.py.egg-info/requires.txt
+dub.py.egg-info/top_level.txt
