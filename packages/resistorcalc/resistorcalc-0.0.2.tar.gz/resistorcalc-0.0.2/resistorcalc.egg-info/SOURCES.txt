@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+lib/__init__.py
+lib/resistorcalc.py
+lib/test.py
+resistorcalc.egg-info/PKG-INFO
+resistorcalc.egg-info/SOURCES.txt
+resistorcalc.egg-info/dependency_links.txt
+resistorcalc.egg-info/top_level.txt
