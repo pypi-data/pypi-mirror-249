@@ -1,0 +1,3 @@
+[console_scripts]
+simplaza=simplaza.__main__:main
+
