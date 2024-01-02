@@ -1,0 +1,8 @@
+requests
+
+[dev]
+black
+build
+flake8
+isort
+tbump

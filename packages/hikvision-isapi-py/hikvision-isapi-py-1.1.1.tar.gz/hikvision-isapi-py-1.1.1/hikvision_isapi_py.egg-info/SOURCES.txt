@@ -1,0 +1,15 @@
+.dockerignore
+.env.example
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish-pypi.yml
+example/client_usage.py
+hikvision_isapi/__init__.py
+hikvision_isapi/client.py
+hikvision_isapi_py.egg-info/PKG-INFO
+hikvision_isapi_py.egg-info/SOURCES.txt
+hikvision_isapi_py.egg-info/dependency_links.txt
+hikvision_isapi_py.egg-info/requires.txt
+hikvision_isapi_py.egg-info/top_level.txt
