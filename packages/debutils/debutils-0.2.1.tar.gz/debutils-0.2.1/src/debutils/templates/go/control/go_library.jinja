@@ -1,0 +1,10 @@
+Package: {{ package }}
+Architecture: all
+Multi-Arch: foreign
+Depends:
+{% if lib_deps %}
+ {{ lib_deps|join(',\n ') }},
+{% endif %}
+ ${misc:Depends},
+Description: {{ short_desc if short_desc else "TODO" }} (library)
+{{ long_desc if long_desc else " TODO" }}
