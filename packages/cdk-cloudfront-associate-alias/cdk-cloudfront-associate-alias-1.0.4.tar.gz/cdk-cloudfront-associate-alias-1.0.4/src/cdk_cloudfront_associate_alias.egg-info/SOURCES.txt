@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk_cloudfront-associate-alias/__init__.py
+src/cdk_cloudfront-associate-alias/py.typed
+src/cdk_cloudfront-associate-alias/_jsii/__init__.py
+src/cdk_cloudfront-associate-alias/_jsii/cdk-cloudfront-associate-alias@1.0.4.jsii.tgz
+src/cdk_cloudfront_associate_alias.egg-info/PKG-INFO
+src/cdk_cloudfront_associate_alias.egg-info/SOURCES.txt
+src/cdk_cloudfront_associate_alias.egg-info/dependency_links.txt
+src/cdk_cloudfront_associate_alias.egg-info/requires.txt
+src/cdk_cloudfront_associate_alias.egg-info/top_level.txt
