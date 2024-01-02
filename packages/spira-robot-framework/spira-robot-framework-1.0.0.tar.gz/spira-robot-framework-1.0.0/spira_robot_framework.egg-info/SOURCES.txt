@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+keywords.resource
+robot_spira_integration.py
+setup.cfg
+setup.py
+spira.cfg
+tests.robot
+spira_robot_framework.egg-info/PKG-INFO
+spira_robot_framework.egg-info/SOURCES.txt
+spira_robot_framework.egg-info/dependency_links.txt
+spira_robot_framework.egg-info/entry_points.txt
+spira_robot_framework.egg-info/top_level.txt

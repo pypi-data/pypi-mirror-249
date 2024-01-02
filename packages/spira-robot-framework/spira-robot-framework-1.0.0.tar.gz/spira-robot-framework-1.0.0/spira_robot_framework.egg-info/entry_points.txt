@@ -1,0 +1,2 @@
+[pytest11]
+spira-robot-framework = robot_spira_integration
