@@ -1,0 +1,6 @@
+geojson
+numpy
+pandarallel
+pandas
+requests
+tqdm>=4.62.0
