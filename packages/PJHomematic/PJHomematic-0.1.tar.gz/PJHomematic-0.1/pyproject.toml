@@ -1,0 +1,35 @@
+[project]
+name = "PJHomematic"
+dynamic = ["version"]
+authors = [
+  { name="Andreas Schawo", email="andreas@schawo.de" },
+]
+description = "An interface to the Homematic JSON-API"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["json5", "requests", "lxml"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Other Audience",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Home Automation",
+]
+
+[project.optional-dependencies]
+extra=["openpyxl"]
+
+[project.urls]
+"Homepage" = "https://github.com/gitandy/PJHomematic"
+"Bug Tracker" = "https://github.com/gitandy/PJHomematic/issues"
+
+[build-system]
+requires = ["setuptools", "json5", "requests", "lxml"]
+
+[tool.setuptools.dynamic]
+version = {attr = "homematic.__version__"}

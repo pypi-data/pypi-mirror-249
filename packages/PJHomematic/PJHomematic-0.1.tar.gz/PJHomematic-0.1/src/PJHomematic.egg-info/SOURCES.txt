@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/PJHomematic.egg-info/PKG-INFO
+src/PJHomematic.egg-info/SOURCES.txt
+src/PJHomematic.egg-info/dependency_links.txt
+src/PJHomematic.egg-info/requires.txt
+src/PJHomematic.egg-info/top_level.txt
+src/homematic/__init__.py
+src/homematic/__version__.py
+src/homematic/hmrpc.py
+src/homematic/jsonrpc.py
+src/homematic/list_devices.py
