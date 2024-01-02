@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "sewinger"
+version = "0.1.2"
+description = "A simple, lightweight Python dependency injection framework. Get sewing right away."
+authors = ["goddessana <twicegoddessana1229@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.2.6"
+sphinxawesome-theme = "^5.0.1"
+myst-parser = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
