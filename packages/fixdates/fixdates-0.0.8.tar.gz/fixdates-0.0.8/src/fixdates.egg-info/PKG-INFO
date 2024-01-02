@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fixdates
+Version: 0.0.8
+Summary: A simple program to parse and clean date string to standardized date string dd-mmm-yyyy. Useful in pre-processing prior to conversion to proper date data type.
+Author-email: Zaid Waqi <zaidwaqi@gmail.com>
+License: GPLv3
+Project-URL: Homepage, https://github.com/zaidwaqi/fixdates
+Project-URL: Issues, https://github.com/pypa/zaidwaqi/fixdates/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FixDates - Timestamp Data Clean Up Tool
+
+FixDates is a Python project that provides a clean up tool for converting timestamp data written in various text formats into a proper timestamp format. It serves as the engine for cleaning up timestamp data and can be integrated into more comprehensive data clean up tools or scripts.
+
+## Features
+
+- Converts timestamp data from various text formats into a standardized timestamp format.
+- Handles different timestamp formats, including date and time formats.
+- Provides flexibility to customize the cleaning process based on specific requirements.
+- Supports integration with other data clean up tools or scripts.

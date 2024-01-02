@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/fixdates/__init__.py
+src/fixdates/main.py
+src/fixdates.egg-info/PKG-INFO
+src/fixdates.egg-info/SOURCES.txt
+src/fixdates.egg-info/dependency_links.txt
+src/fixdates.egg-info/entry_points.txt
+src/fixdates.egg-info/top_level.txt
+tests/test_fixable_dates.py
+tests/test_unfixable_dates.py
+tests/test_url.py
