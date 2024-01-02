@@ -1,0 +1,13 @@
+__pycache__
+
+# venv
+Include
+Lib
+Scripts
+*.cfg
+
+# check
+check.py
+
+# auth
+.pypirc
