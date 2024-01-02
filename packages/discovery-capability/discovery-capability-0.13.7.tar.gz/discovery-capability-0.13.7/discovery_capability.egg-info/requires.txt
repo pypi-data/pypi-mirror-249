@@ -1,0 +1,8 @@
+discovery-core
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+scipy
+requests
