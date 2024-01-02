@@ -1,0 +1,2 @@
+[console_scripts]
+deterministic-zip-go=deterministic_zip:__main__
