@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cdk-versioned-stack-manager
+Version: 1.0.4
+Summary: A CDK construct for dealing with Versioned Stacks - multiple copies of the same stack that would forever grow over time without...this.
+Home-page: https://github.com/dkershner6/cdk-versioned-stack-manager.git
+Author: Derek Kershner
+License: Apache-2.0
+Project-URL: Source, https://github.com/dkershner6/cdk-versioned-stack-manager.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cdk-versioned-stack-manager
+
+A CDK construct for dealing with Versioned Stacks - multiple copies of the same stack that would forever grow over time without this. This prevents hitting AWS quotas, but allows for some replication.
+
+## Usage
+
+```python
+new cdk.Stack(app, `VersionedStack-${Date.now()}`);
+
+// Inside different stack
+new VersionedStackManager(this, 'VersionedStackManager', {
+  dryRun: false, // Use this to test the construct, will not actually delete but will log what it would delete
+  numberOfStacksToKeep: 5, // Keep this many stacks
+  requestId: new Date().toISOString(), // Should change every time you want this to run.
+  sortDirection: "DESCENDING", // Optional, defaults to DESCENDING, indicates how your stackNames should be sorted
+  stackNamePrefix: 'VersionedStack-' // The pertinent stack names should start with this
+});
+```
+
+## Use Cases
+
+* Blue/Green Deployments of entire stacks

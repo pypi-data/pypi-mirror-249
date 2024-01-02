@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk_versioned-stack-manager/__init__.py
+src/cdk_versioned-stack-manager/py.typed
+src/cdk_versioned-stack-manager/_jsii/__init__.py
+src/cdk_versioned-stack-manager/_jsii/cdk-versioned-stack-manager@1.0.4.jsii.tgz
+src/cdk_versioned_stack_manager.egg-info/PKG-INFO
+src/cdk_versioned_stack_manager.egg-info/SOURCES.txt
+src/cdk_versioned_stack_manager.egg-info/dependency_links.txt
+src/cdk_versioned_stack_manager.egg-info/requires.txt
+src/cdk_versioned_stack_manager.egg-info/top_level.txt
