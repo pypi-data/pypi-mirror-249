@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "incase"
+version = "0.0.12"
+description = "A word case management library with too many features (just in case)."
+authors = [{ name = "Patrick Shechet", email = "patrick.shechet@gmail.com" }]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+middleware = ["starlette"]
+
+[project.scripts]
+incase = "incase:cli"
+
+[project.urls]
+Repository = "https://github.com/kajuberdut/incase"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.1.7",
+    "coverage>=7.3.2",
+    "httpx>=0.25.2",
+]
