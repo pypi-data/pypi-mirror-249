@@ -1,0 +1,8 @@
+- Fix linter issues (hatch fmt)
+- Type all functions, classes, everything (properly with typing module)
+- Add docstrings to all functions and classes
+  - Generate Python documentation
+  - Generate manpages (click-man)
+    Don't add as a dependency (dev-dependency?), create a Makefile to take care of that.
+  - Some kind of wiki (kind of like debmake-doc)
+    - Link Codeberg wiki tab to web version of docs (Codeberg pages)
