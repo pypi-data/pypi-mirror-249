@@ -1,0 +1,8 @@
+deterministic-zip_darwin-arm64,sha256=MjckvoOeylHkCkkdhP59jH6AxH1-4EQs337pVPQ-PRc,2210994
+deterministic_zip_go-0.0.1.dist-info/METADATA,sha256=gDoYJpXH1aqth54IaE9JzsCbJApwgzwv-vpe9nBpsxk,12813
+deterministic_zip_go-0.0.1.dist-info/WHEEL,sha256=idVlctBBMbQ89dwi1u5xGFCp4Ml0Q0x_9cXNXLmQSVY,107
+deterministic_zip_go-0.0.1.dist-info/entry_points.txt,sha256=PInPxhhx1DHPsHjumGrPWu_kMeA74oYLctQ-bTi8jvk,69
+deterministic_zip_go/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deterministic_zip_go/__main__.py,sha256=FeefEyCZZMOgpVZV5lYH3cRAkl3_V3DFX4f3NIgG5rs,142
+deterministic_zip_go/exec.py,sha256=_TA3eB5DGITlcPCprTgwTgsvbQgPwc2DrxEADEqK-mc,3501
+deterministic_zip_go-0.0.1.dist-info/RECORD,,
