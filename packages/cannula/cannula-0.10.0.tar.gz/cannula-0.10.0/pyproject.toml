@@ -1,0 +1,95 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cannula"
+dynamic = ["version"]
+description = "Async GraphQL Helper Library"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Robert Myers", email = "robert@julython.org" },
+]
+keywords = [
+    "graphql",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.6",
+]
+dependencies = [
+    "graphql-core==3.2.3",
+]
+
+[project.optional-dependencies]
+httpx = [
+    "httpx",
+    "fastapi",
+]
+test = [
+    "black",
+    "coverage==7.2.3",
+    "flake8==6.0.0",
+    "mypy==1.2.0",
+    "pycodestyle",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest<8",
+    "Sphinx==7.2.6",
+    "sphinx-autodoc-typehints",
+    "pydata-sphinx-theme",
+    "twine==4.0.2",
+    "types-requests",
+    "hatch",
+]
+performance = [
+    "pytest<8",
+    "pytest-asyncio",
+    "pytest-httpx",
+    "pytest-cov",
+    "pytest-mock",
+    "fastapi",
+    "ariadne",
+    "httpx",
+]
+
+[project.urls]
+Homepage = "https://github.com/rmyers/cannula"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["cannula"]
+
+[tool.hatch.version]
+path = "cannula/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/cannula",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+minversion = "6.0"
+addopts = [
+    "-vvv",
+    "--cov=cannula",
+    "--cov-report=term-missing:skip-covered",
+    "--cov-report=html",
+]
+testpaths = [
+    "tests",
+    "integration",
+]
+
+[tool.isort]
+profile="black"
+
+[tool.flake8]
+max_line_length=120
+
+[tool.mypy]
+ignore_missing_imports = "True"
