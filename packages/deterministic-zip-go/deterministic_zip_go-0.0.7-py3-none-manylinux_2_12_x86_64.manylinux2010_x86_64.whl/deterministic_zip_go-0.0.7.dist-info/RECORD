@@ -1,0 +1,8 @@
+deterministic_zip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deterministic_zip/__main__.py,sha256=FeefEyCZZMOgpVZV5lYH3cRAkl3_V3DFX4f3NIgG5rs,142
+deterministic_zip/exec.py,sha256=_TA3eB5DGITlcPCprTgwTgsvbQgPwc2DrxEADEqK-mc,3501
+deterministic_zip_go-0.0.7.dist-info/METADATA,sha256=EfgHhDcHnaYbS5L7ZRMayrEYWE_FgDymQs6DjQB1rGo,12813
+deterministic_zip_go-0.0.7.dist-info/WHEEL,sha256=vf-SsHqBbc4QjDlpc2m9J40VJslNQ8N6pjQ6UEbxTFw,132
+deterministic_zip_go-0.0.7.dist-info/entry_points.txt,sha256=ebblJ1N3zqWaF5-yXmf0VV3yRljtXEYJVnc5ovP061Q,63
+deterministic_zip_go/deterministic-zip,sha256=ZXgLiQNM6EjOdw_ODgSe49O-EG_myCcclrlErbZUXkI,1998848
+deterministic_zip_go-0.0.7.dist-info/RECORD,,
