@@ -1,0 +1,15 @@
+---
+title: My First Quiz
+author: Firstname Lastname
+rounds:
+  - title: First Round
+    description: Testing, testing
+    questions:
+       - question: "Hello?"
+         answer: "World!" 
+  - title: Second Round
+    description: One two, one two
+    questions:
+       - question: "Hello again?"
+         answer: "World again!" 
+        
