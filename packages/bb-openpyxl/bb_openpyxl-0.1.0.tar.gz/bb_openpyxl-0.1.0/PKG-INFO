@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bb_openpyxl
+Version: 0.1.0
+Summary: 针对openpyxl的功能扩展
+Home-page: https://github.com/taohoo/bb-openpyxl
+Author: HuBo
+Author-email: taohoo@163.com
+License: MIT License
+Platform: all
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openpyxl
+
+# 从pip安装
+```
+pip install bb_openpyxl
+```
+# 针对openpyxl的各种扩展操作
+## sort
+对给定范围的单元格进行排序
+## insert
+包含insert_rows和insert_cols，在插入行和列的时候，保持原有excel中的公式，合并单元格的数据保持一致
+## delete
+包含delete_rows和delete_cols，在删除行和删除列的时候，保持原有excel中的公式，合并单元格的数据保持一致
+
