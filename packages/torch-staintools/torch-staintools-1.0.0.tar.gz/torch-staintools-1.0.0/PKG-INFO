@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: torch-staintools
+Version: 1.0.0
+Summary: GPU-accelerated stain normalization and augmentation
+Home-page: https://github.com/CielAl/torch-staintools
+Author: Y Z
+Author-email: cielmercy@gmail.com
+License: MIT
+Requires-Python: >=3.10
+License-File: LICENSE
