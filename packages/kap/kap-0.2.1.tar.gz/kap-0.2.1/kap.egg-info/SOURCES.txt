@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+kap/__init__.py
+kap/_types.py
+kap/_version.py
+kap/assignment.py
+kap.egg-info/PKG-INFO
+kap.egg-info/SOURCES.txt
+kap.egg-info/dependency_links.txt
+kap.egg-info/not-zip-safe
+kap.egg-info/requires.txt
+kap.egg-info/top_level.txt
