@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: hikvision-isapi-py
+Version: 1.1.1
+Summary: HIKVision ISAPI python library
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: tbump ; extra == 'dev'
+
+# hikvision-isapi-py
+
+Simple client to interact with Hikvision devices using the ISAPI protocol.
+
+Source code: <https://github.com/jackblk/hikvision-isapi-py>
+
+## Ignore SSL verification
+
+Can be useful if you are using self-signed certificates or the web server
+certificate is not trusted by your client.
+
+Set the environment variable `VERIFY_SSL` to `false` (anything but `true` will skip the check)
