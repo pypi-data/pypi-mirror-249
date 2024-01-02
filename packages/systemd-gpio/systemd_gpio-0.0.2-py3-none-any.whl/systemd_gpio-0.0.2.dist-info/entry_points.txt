@@ -1,0 +1,2 @@
+[console_scripts]
+systemd-gpio = systemd_gpio:main
