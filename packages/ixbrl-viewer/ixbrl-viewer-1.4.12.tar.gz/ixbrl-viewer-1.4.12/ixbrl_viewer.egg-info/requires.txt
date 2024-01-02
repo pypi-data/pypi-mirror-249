@@ -1,0 +1,12 @@
+lxml<6,>=4
+pycountry<24,>=22
+
+[arelle]
+arelle_release==2.*
+
+[dev]
+flake8==6.1.0
+lxml-stubs==0.4.0
+mypy==1.8.0
+nose2==0.14.0
+typing-extensions==4.9.0
