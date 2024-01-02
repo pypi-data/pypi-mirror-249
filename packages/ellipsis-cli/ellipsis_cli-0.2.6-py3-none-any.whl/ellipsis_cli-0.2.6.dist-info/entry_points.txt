@@ -1,0 +1,3 @@
+[console_scripts]
+ellipsis=ellipsis.cli:cli
+
