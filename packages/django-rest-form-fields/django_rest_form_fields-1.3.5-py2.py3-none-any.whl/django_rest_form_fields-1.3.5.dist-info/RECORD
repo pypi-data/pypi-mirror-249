@@ -1,0 +1,11 @@
+django_rest_form_fields/__init__.py,sha256=V3ynoyfNMgami2BUbKomtm6ujnxd5huvAixlvDsGtm4,83
+django_rest_form_fields/compatibility.py,sha256=yU5dhKd6GMFgrXtZwvoqgkS1D2GU5Y4dr4sNPSnSn0U,896
+django_rest_form_fields/exceptions.py,sha256=ftM8QFU73hwnKDJRUkSK4BlmJ0KTUNtiUU0pgZ3zzQA,754
+django_rest_form_fields/fields.py,sha256=3aH7VW4fzUij_T8Wl9snnc2Ez_LmBwJx7tXDxtCIA7o,21861
+django_rest_form_fields/forms.py,sha256=wYVB9FpgC3Zm96WiqUU9KRB-NicVbQ2pYiBmjAjfnkc,1741
+django_rest_form_fields/validators.py,sha256=8QwYD2n94neqIjXGQzDyfdNZjwDTVgZ3McT8PquHK6Y,718
+django_rest_form_fields-1.3.5.dist-info/LICENSE,sha256=lYW_WVj1sloHzDytC7vx4pfrx1Nvuy4vX9mt8G1Sh78,1509
+django_rest_form_fields-1.3.5.dist-info/METADATA,sha256=t0ToQPddS_NESM_LVZPcR2W5Vq47mCHfftwAn_0JUyw,12927
+django_rest_form_fields-1.3.5.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_rest_form_fields-1.3.5.dist-info/top_level.txt,sha256=g6VtBvsonye91gy4D3MOf_AFBDT6G28skBlpoMlyg50,24
+django_rest_form_fields-1.3.5.dist-info/RECORD,,
