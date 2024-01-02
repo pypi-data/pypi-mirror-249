@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: hypervehicle
+Version: 0.5.0
+Summary: Parametric geometry generation tool for hypersonic vehicles
+Home-page: https://github.com/kieran-mackle/hypervehicle
+Author: Ingo Jahn, Kieran Mackle
+Author-email: ingo.jahn@usq.edu.au, k.mackle@uq.net.au
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: numpy-stl >=3.0.0
+Requires-Dist: scipy >=1.10.0
+Requires-Dist: pandas >=1.5.2
+Requires-Dist: art >=5.8
+Requires-Dist: tqdm >=4.64.1
+Requires-Dist: multiprocess >=0.70.14
+Requires-Dist: pymeshfix >=0.16.2
+Provides-Extra: all
+Requires-Dist: furo >=2022.12.7 ; extra == 'all'
+Requires-Dist: myst-parser >=0.18.1 ; extra == 'all'
+Requires-Dist: sphinx-copybutton >=0.5.1 ; extra == 'all'
+Requires-Dist: sphinx-inline-tabs >=2022.1.2b11 ; extra == 'all'
+Requires-Dist: sphinx-autobuild >=2021.3.14 ; extra == 'all'
+Requires-Dist: pytest >=7.2.1 ; extra == 'all'
+Requires-Dist: black >=22.12.0 ; extra == 'all'
+Requires-Dist: commitizen >=2.39.1 ; extra == 'all'
+Requires-Dist: pre-commit >=2.21.0 ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: furo >=2022.12.7 ; extra == 'dev'
+Requires-Dist: myst-parser >=0.18.1 ; extra == 'dev'
+Requires-Dist: sphinx-copybutton >=0.5.1 ; extra == 'dev'
+Requires-Dist: sphinx-inline-tabs >=2022.1.2b11 ; extra == 'dev'
+Requires-Dist: sphinx-autobuild >=2021.3.14 ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: pytest >=7.2.1 ; extra == 'docs'
+Requires-Dist: black >=22.12.0 ; extra == 'docs'
+Requires-Dist: commitizen >=2.39.1 ; extra == 'docs'
+Requires-Dist: pre-commit >=2.21.0 ; extra == 'docs'
+
+[![x43](docs/source/images/logo-dark.png)](docs/hangar.md)
+
+A Python package to rapidly generate parametric geometries
+defined by hyperpatches. Check out the 
+[hangar](docs/source/hangar.md) for some examples.
+
+
+## Getting Started
+
+### Prerequisites
+Hypervehicle relies on the [GDTK](https://github.com/gdtk-uq/gdtk) geometry 
+package. Note that a full install of GDTK is not required. Instead, you can simply do a 
+[sparse checkout](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository)
+of the relevant files, using the commands below.
+
+```
+mkdir gdtk
+cd gdtk/
+git init
+git remote add -f origin https://github.com/gdtk-uq/gdtk.git
+git config core.sparseCheckout true
+echo "src/lib/" >> .git/info/sparse-checkout
+git pull origin master
+cd src/lib
+python3 -m pip install -e ./
+cd ../../../
+```
+
+#### PyMesh
+
+Having [PyMesh](https://github.com/PyMesh/PyMesh) installed can greatly enhance the capabilities
+offered by `HyperVehicle`. However, it can be difficult to install. Troubleshooting 
+guide coming soon.
+
+
+### Installation
+
+To install `hypervehicle` from source, use the command below.
+
+```
+pip install git+https://github.com/kieran-mackle/hypervehicle
+```
+
+## Usage
+Please see the [example geometry generation](docs/source/examples/x43.md) 
+to generate a mockup of the X-43A, shown above.
+
+
+## Citing HyperVehicle
+If you use HyperVehicle in any published work, please cite it using the BibTex reference below.
+
+```text
+@inproceedings{Mackle2024,
+  author    = {Mackle, Kieran and Jahn, Ingo},
+  booktitle = {AIAA Science and Technology Forum and Exposition},
+  title     = {Efficient and Flexible Methodology for the Aerodynamic Shape Optimisation of Hypersonic Vehicle Concepts in a High-Dimensional Design Space},
+  year      = {2024},
+}
+```
+
+## License
+HyperVehicle is licensed under [GPLv3](COPYING).
