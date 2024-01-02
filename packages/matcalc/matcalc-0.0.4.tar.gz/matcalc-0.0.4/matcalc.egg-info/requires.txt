@@ -1,0 +1,8 @@
+ase
+joblib
+phonopy
+pymatgen
+
+[models]
+chgnet
+matgl>=0.9.0
