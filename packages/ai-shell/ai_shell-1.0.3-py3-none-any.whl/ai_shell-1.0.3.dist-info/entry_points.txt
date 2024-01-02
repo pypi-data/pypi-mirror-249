@@ -1,0 +1,4 @@
+[console_scripts]
+ai_shell=ai_shell.__main__:run
+ais=ai_shell.__main__:run
+
