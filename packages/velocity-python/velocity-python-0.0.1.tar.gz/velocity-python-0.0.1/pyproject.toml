@@ -1,0 +1,27 @@
+[project]
+name = "velocity-python"
+version = "0.0.1"
+authors = [
+  { name="Paul Perez", email="pperez@codeclubs.org" },
+]
+description = "A rapid application development library for interfacing with data storage"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'requests',
+  'psycopg2-binary',
+  'python-tds',
+  'mysql-connector-python',
+  'openpyxl',
+  'boto3',
+  'jinja2',
+  'xlrd',
+  
+]
+[project.urls]
+Homepage = "https://codeclubs.org/projects/velocity"

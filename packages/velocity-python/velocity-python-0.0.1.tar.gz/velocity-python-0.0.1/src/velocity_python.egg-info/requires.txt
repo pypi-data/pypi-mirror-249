@@ -1,0 +1,8 @@
+requests
+psycopg2-binary
+python-tds
+mysql-connector-python
+openpyxl
+boto3
+jinja2
+xlrd
