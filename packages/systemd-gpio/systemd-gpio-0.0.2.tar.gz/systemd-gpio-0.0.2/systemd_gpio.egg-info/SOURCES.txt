@@ -1,0 +1,15 @@
+.gitignore
+LICENSE.txt
+README.rst
+gpio@.service
+pyproject.toml
+systemd_gpio.py
+.github/dependabot.yml
+.github/workflows/publish.yml
+.github/workflows/pull_request.yml
+systemd_gpio.egg-info/PKG-INFO
+systemd_gpio.egg-info/SOURCES.txt
+systemd_gpio.egg-info/dependency_links.txt
+systemd_gpio.egg-info/entry_points.txt
+systemd_gpio.egg-info/requires.txt
+systemd_gpio.egg-info/top_level.txt
