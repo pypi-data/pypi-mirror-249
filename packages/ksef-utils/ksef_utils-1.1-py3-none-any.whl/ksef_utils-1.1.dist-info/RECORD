@@ -1,0 +1,13 @@
+ksef_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ksef_utils/config.py,sha256=-ZFgODSDFjX9Hec6MBGBNPMjVqGhdFwRgszyMUPKVFA,648
+ksef_utils/server.py,sha256=t-abIyg14Sf3GWo_vxQ3bdXuy-JQFMmneuRqvIRk25s,12072
+ksef_utils/utils.py,sha256=dzijNiSGye-XKz8SP2KhtmrvmaN_o7xGYMIdzIfOqs0,2029
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=PbYyOEPSnoyZ_No6NgVwGlR2ji3LL5JDDctHdmXjYcg,946
+tests/test_e2e.py,sha256=7M-MCKS3za-VTttrcAeAtKhoUkammoTtE1kiteiSnpg,989
+tests/test_ksef.py,sha256=1hlSaatT3EeCR4vz8PR3fJGv0nmrryTCCwYdYpEo11o,5021
+ksef_utils-1.1.dist-info/LICENSE,sha256=ZaCV8VcnO8I437jBDtRwUhsGyzF4kAkRjsUJ-DG3VRo,55
+ksef_utils-1.1.dist-info/METADATA,sha256=Pu3hjv1DdRQyZBC7qm7i179M9NSbuqzUIX42JmYJPk0,3953
+ksef_utils-1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ksef_utils-1.1.dist-info/top_level.txt,sha256=CoUvzrY43GLRArnnreFJPlNFI2UnCOC9zG_El1wxC_s,17
+ksef_utils-1.1.dist-info/RECORD,,
