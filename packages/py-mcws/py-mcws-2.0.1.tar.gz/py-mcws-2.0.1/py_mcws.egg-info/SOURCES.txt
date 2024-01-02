@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+py_mcws/Events.py
+py_mcws/__init__.py
+py_mcws/server.py
+py_mcws.egg-info/PKG-INFO
+py_mcws.egg-info/SOURCES.txt
+py_mcws.egg-info/dependency_links.txt
+py_mcws.egg-info/requires.txt
+py_mcws.egg-info/top_level.txt
