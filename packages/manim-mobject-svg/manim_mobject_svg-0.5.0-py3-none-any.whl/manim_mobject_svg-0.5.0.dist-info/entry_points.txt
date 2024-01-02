@@ -1,0 +1,3 @@
+[manim.plugins]
+manim_mobject_svg=manim_mobject_svg
+
