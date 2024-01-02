@@ -1,0 +1,14 @@
+numpy
+
+[develop]
+bump2version
+check-manifest
+pytest
+pytest-cov
+ruff
+twine
+wheel
+
+[test]
+pytest
+pytest-cov
