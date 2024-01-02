@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mlops-utils
+Version: 0.0.2
+Summary: mlops utils
+Home-page: https://github.com/FLYAI4/mlops-utils
+Author: robert-min
+Author-email: robertmin522@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: mlflow
+Requires-Dist: scipy
+
+# mlops-utils
+mlops-utils : MLFlow, Airflow 등 mlops 인프라 활용을 위한 utils 모듈
