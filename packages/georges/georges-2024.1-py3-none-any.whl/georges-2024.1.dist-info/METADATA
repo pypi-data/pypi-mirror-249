@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: georges
+Version: 2024.1
+Summary: Georges' accelerator physics library - Core
+Author: Cédric Hernalsteens
+Author-email: cedric.hernalsteens@ulb.be
+Requires-Python: >3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: georges-core (==2023.3)
+Requires-Dist: hist[plot] (==2.7.2)
+Requires-Dist: lmfit (==1.2.2)
+Requires-Dist: pymoo (==0.6.1.1)
+Requires-Dist: sympy (==1.12)
