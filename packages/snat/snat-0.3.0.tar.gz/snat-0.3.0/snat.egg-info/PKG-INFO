@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: snat
+Version: 0.3.0
+Summary: Helps you track your Steam achievements
+Author-email: Theo Guerin <tguerin@student.42angouleme.fr>
+License: GPL-3.0-only
+Project-URL: Repository, https://github.com/TheoGuerin64/snat
+Project-URL: Issues, https://github.com/TheoGuerin64/snat/issues
+Keywords: steam,achievement,gui,pyqt
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt6>=6.6.0
+
+# Snat
+Helps you track your Steam achievements
+
+## Installation
+Ensure you have at least Python 3.10
+```
+pip install --upgrade snat
+```
+
+## Usage
+```
+snat
+```
+or
+```
+python -m snat
+```
