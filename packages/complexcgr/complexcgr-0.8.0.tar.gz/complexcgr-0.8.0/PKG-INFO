@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: complexcgr
+Version: 0.8.0
+Summary: complex Chaos Game Representation for DNA
+Home-page: https://github.com/AlgoLab/complexCGR
+License: MIT
+Author: Jorge Avila
+Author-email: jorgeavilacartes@gmail.com
+Maintainer: Jorge Avila
+Maintainer-email: jorgeavilacartes@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow (>=10.0,<11.0)
+Requires-Dist: biopython (>=1.79,<2.0)
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: tqdm (>=4.61.2,<5.0.0)
+Project-URL: Repository, https://github.com/AlgoLab/complexCGR
