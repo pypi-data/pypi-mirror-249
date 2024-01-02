@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+seleniumtest.py
+setup.cfg
+setup.py
+spiratestexecute.py
+spiratestextension.py
+testsequencefunctions.py
+pyunit_spiratest.egg-info/PKG-INFO
+pyunit_spiratest.egg-info/SOURCES.txt
+pyunit_spiratest.egg-info/dependency_links.txt
+pyunit_spiratest.egg-info/entry_points.txt
+pyunit_spiratest.egg-info/top_level.txt
