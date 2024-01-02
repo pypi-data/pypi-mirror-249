@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pyttrading
+Version: 0.4.4
+Summary: Trading Library
+Author: Cecilio Cannavacciuolo Diaz
+Requires-Python: >=3.6
