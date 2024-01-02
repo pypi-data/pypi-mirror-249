@@ -1,0 +1,10 @@
+neo4j_uploader/__init__.py,sha256=IXwndv0hsiHlU4Nk2luaqz6hLbht77TTpnWcqTho-yg,9329
+neo4j_uploader/_logger.py,sha256=RoRpgbZc12-JTP2inwPM6Hcc4ifXgeQQYz6XirV7KA4,2017
+neo4j_uploader/_n4j.py,sha256=q6UHVW8Kcy6JsaKnvxzX8XWKHsOPFGTn5zkjnKxPnlY,2316
+neo4j_uploader/_queries.py,sha256=QnsI1vOfkmdQPx5AsGLLOiLZshIwuSa0FREUuRHdmjI,12150
+neo4j_uploader/_upload_utils.py,sha256=ru30WXaAkwmUuncSCaY7miXjSky3Q0Z9qUKto8HTqg4,17635
+neo4j_uploader/models.py,sha256=4SZ0KSy-X59l41kzu5ePdO-dxsYZUPp_Ktei0TfW7Kw,4341
+neo4j_uploader-0.5.0.dist-info/LICENSE.txt,sha256=FeXSZ3DJKEUQDAhZfrbwh53JND35tBl2hfvFC8nCHkQ,1065
+neo4j_uploader-0.5.0.dist-info/METADATA,sha256=5TUI-k3lfSnkoWnT20yn5C8YeY9tWX8Hqc0jTh2Xv3g,2668
+neo4j_uploader-0.5.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+neo4j_uploader-0.5.0.dist-info/RECORD,,
