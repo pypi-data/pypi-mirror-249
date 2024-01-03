@@ -1,0 +1,9 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+setup.py
+cuopt_mps_parser.egg-info/PKG-INFO
+cuopt_mps_parser.egg-info/SOURCES.txt
+cuopt_mps_parser.egg-info/dependency_links.txt
+cuopt_mps_parser.egg-info/top_level.txt
