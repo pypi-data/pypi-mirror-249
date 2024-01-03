@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pystime
+Version: 0.0.1.7
+Summary: Tool for spatial tumor immune micro-environment
+Home-page: https://github.com/compbiocclab/stime
+Author: Lingxi Chen
+Author-email: chanlingxi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
