@@ -1,0 +1,12 @@
+README.md
+setup.py
+airclick/__init__.py
+airclick.egg-info/PKG-INFO
+airclick.egg-info/SOURCES.txt
+airclick.egg-info/dependency_links.txt
+airclick.egg-info/top_level.txt
+airclick/windows/__init__.py
+airclick/windows/action.py
+airclick/windows/screen.py
+airclick/windows/system.py
+airclick/windows/win.py
