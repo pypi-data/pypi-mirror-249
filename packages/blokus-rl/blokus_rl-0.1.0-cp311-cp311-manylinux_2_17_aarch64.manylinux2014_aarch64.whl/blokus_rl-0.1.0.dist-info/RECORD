@@ -1,0 +1,8 @@
+blokus_rl-0.1.0.dist-info/METADATA,sha256=0oqYG9Qh0gRuWXXx-VnyzRTFSzFdKma1IPxAT0q8sQs,3255
+blokus_rl-0.1.0.dist-info/WHEEL,sha256=__eLsd84qi1SqgkxNfZTnGahdEjoz7lUEmvfBSlT73Q,131
+blokus_rl-0.1.0.dist-info/license_files/LICENSE,sha256=0j9QXCxkvqQaOAThrRhsOKXAeQtEwKEWm1B5kuWgeIc,1066
+blokus_rl/blokus_env.py,sha256=vIvHRuWJwjrruj31tJeKipbx9iIfdamazYBLMV9Ixxo,6073
+blokus_rl/api_test.py,sha256=Ru1a4tvoo5Z0ezJtjS614gVzwLomPJGryyqcYr-BPc8,223
+blokus_rl/__init__.py,sha256=CRXE2axqfv7mUbItDcEc96SlcZ_AIKraCS5RnL-UmX0,42
+blokus_rl/_blokus.cpython-311-aarch64-linux-gnu.so,sha256=gV62EqZAAx4-wL8OJs6MUuVqNhB4ZGZIbQeFT0hNv5U,4888816
+blokus_rl-0.1.0.dist-info/RECORD,,
