@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: webvim
+Version: 0.3.10
+Summary: web editor
+Author-email: Seven <1162584980@qq.com>
+Maintainer-email: Seven <1162584980@qq.com>
+License: MIT License
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: flask-BasicAuth
+Requires-Dist: click
+
+# Web Editor
+
+~~~
+pip install build twine
+python -m build
+twine upload dist/*
+~~~
