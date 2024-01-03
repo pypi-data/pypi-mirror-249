@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "intersectlib"
+version = "1.1.2"
+authors = [
+  { name="Ricardo Ducker", email="duckerricardo@gmail.com" },
+]
+description = "A package that finds range intersections"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Rducker0208/intersectlib"
+Issues = "https://github.com/Rducker0208/intersectlib/issues"
