@@ -1,0 +1,8 @@
+setup.py
+glorb/__init__.py
+glorb/main.py
+glorb.egg-info/PKG-INFO
+glorb.egg-info/SOURCES.txt
+glorb.egg-info/dependency_links.txt
+glorb.egg-info/entry_points.txt
+glorb.egg-info/top_level.txt
