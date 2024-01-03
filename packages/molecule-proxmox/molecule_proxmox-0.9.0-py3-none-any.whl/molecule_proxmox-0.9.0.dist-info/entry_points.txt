@@ -1,0 +1,2 @@
+[molecule.driver]
+proxmox = molecule_proxmox.driver:Proxmox
