@@ -1,0 +1,6 @@
+lz4>=2.1.6
+msgpack>=1.0.7
+redis[hiredis]<5.0
+
+[numpy]
+numpy>=1.23
