@@ -1,0 +1,3 @@
+Add conditional requiredness field, `polarimetric_required: bool(required=False)`, that makes a key `required` if it comes from a header
+from a polarimetric dataset (i.e., a dataset that produces Stokes I, Q, U, V data). The combinations of which specific header keys/values
+conspire to indicate a dataset is polarimetric are defined on a per-instrument level.
