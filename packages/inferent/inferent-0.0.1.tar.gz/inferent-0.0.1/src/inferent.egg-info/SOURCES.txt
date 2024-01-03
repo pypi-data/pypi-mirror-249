@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/inferent/__init__.py
+src/inferent/utils.py
+src/inferent.egg-info/PKG-INFO
+src/inferent.egg-info/SOURCES.txt
+src/inferent.egg-info/dependency_links.txt
+src/inferent.egg-info/top_level.txt
