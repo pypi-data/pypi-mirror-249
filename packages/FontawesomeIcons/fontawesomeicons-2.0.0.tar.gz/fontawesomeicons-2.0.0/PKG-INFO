@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: FontawesomeIcons
+Version: 2.0.0
+Summary: Simple 'Fontawesome' icons Compiled, to use with Qtica.
+Home-page: https://github.com/omamkaz/Qtica
+License: GPL-3.0
+Keywords: qt,pyside6,python,declarative,qml,Qtica,fast,easy,fontawesome,icons
+Author: Osama Mohammed Al-zabidi
+Author-email: omamkaz@gmail.com
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Documentation, https://omamkaz.gitbook.io/qtica
+Project-URL: Repository, https://github.com/omamkaz/Qtica
