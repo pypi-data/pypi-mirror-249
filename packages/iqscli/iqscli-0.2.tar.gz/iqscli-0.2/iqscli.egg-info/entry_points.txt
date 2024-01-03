@@ -1,0 +1,3 @@
+[console_scripts]
+iqscli = iqscli:main
+
