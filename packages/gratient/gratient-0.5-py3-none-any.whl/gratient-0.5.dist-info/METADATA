@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gratient
+Version: 0.5
+Summary: This modules allows you print gratient texts
+Author: Venax
+Requires-Dist: WMI
+Requires-Dist: requests
+
