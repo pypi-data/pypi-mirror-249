@@ -1,0 +1,2 @@
+[console_scripts]
+open-aoe = openaoe.main:main

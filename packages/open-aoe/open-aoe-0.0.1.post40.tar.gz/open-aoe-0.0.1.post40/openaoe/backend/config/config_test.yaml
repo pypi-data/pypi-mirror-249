@@ -1,0 +1,36 @@
+---
+# only for test
+baidu:
+    translation_api_base: https://fanyi-api.baidu.com/api/trans/vip/translate
+    ak: Qk5LPp4j7TLBSAq2wah2Cd9f
+    sk: vn8cigbbA7lCbNxXMjspLC2frunwCcOp
+    bce_access_token: 24.80fce283e30da97b98cf68602177ee94.2592000.1689317971.282335-33925023
+
+openai:
+    api_base: https://api.openai.com/v1
+    api_key: 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
+
+claude:
+    api_key: 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
+
+google:
+    api_base: http://us.alles-apin.openxlab.org.cn/google/v1beta2/models
+    api_key: AIzaSyCsae6WKiuilCJ2R6yHyRHhv1lsiW8mf4k
+
+minimax:
+    api_base: https://api.minimax.chat/v1/text/chatcompletion?GroupId=1683526222209693
+    group_id: 1684739337478593
+    jwt: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoiQVBJTiIsIlN1YmplY3RJRCI6IjE2ODQ3MzkzMzcwMjgwNzQiLCJQaG9uZSI6Ik1UTTRNVFkzTXpJeE5qYz0iLCJHcm91cElEIjoiMTY4NDczOTMzNzQ3ODU5MyIsIlBhZ2VOYW1lIjoiIiwiTWFpbCI6IjExMDUzNTc2NDhAcXEuY29tIiwiQ3JlYXRlVGltZSI6IjIwMjMtMDUtMzEgMTg6NDY6MzMiLCJpc3MiOiJtaW5pbWF4In0.DTf9lBX3ldxJdgljBWdnHG8TYS7KpV7Zs1r4N9p5NBnYohjxmIAQ9mO9l_UsL4byAObkdcyVGgLcq8oZLpW3L5whB-BBeVWo5N-ZupV5clkIq7xyl8llEiSZHetNqjmdIPZXK6-RYInwL7XiLDLBlkhdp5O2frE47cpS9A0nAikFArj4dEgT3tJRO_7yAkVBWzKc3Au3MYx_3CI5vzKjt_C9w37g2k28DG0Stu-5cLyIiTnJELPr2_Mr_leva7r7l7FKO9mozq1wRMngp1NAT08Q0CCBK78pR6ncXflkaJegZz6dXfqx8JMIeEkc0GVGrgksLyydD_01r7iBQ4FT_w
+
+xunfei:
+    api_base: wss://spark-api.xf-yun.com/v2.1/chat
+    app_id: 3a7e57ae
+    ak: 54f28c2203ac14a3266c5e9bb8781d98
+    sk: NjE4ODI3YmMzOGI5OTM0MWQzMzhiM2Ji
+
+internlm:
+    api_base: http://localhost:23333
+...
+
+
+
