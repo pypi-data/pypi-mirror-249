@@ -1,0 +1,12 @@
+LICENSE,sha256=pGhYCN7UDqhlcKSzKTcN0V_zHurfpD9Ujt9MfW4sgXs,11338
+README.md,sha256=uB2pDsGP4P2awcbaA_bQNpNUVoyQLVCAT3RbxYvXGx4,10202
+README_EN.md,sha256=ejj8fkKkz4vSNPnurwgH_sRXAKX085oamAcJHiTCoX0,10242
+main.py,sha256=cgWvw9nZqr9CcCpJ_78XXiErDX6vkqPnj08eQRenykE,691
+pyproject.toml,sha256=c8QdtLFXQ3EUglscTodQ-xGeRgfFSSzXScvgHkh6YmY,791
+target/release/watchmen,sha256=HYizY6icanWbuzPEykqec7vkO0uvQ-2LwCHiIi0mkEg,9181168
+target/release/watchmend,sha256=Eb2hBGKUnKm2V4G9kwiY7ensgkEHavg-1sVdethNpHU,13665944
+watchmen_rust-0.0.1.dist-info/LICENSE,sha256=pGhYCN7UDqhlcKSzKTcN0V_zHurfpD9Ujt9MfW4sgXs,11338
+watchmen_rust-0.0.1.dist-info/METADATA,sha256=Q39Hb6r8WU06n30EkHgzkS95actWYxC0wHlziXQ8NAg,11343
+watchmen_rust-0.0.1.dist-info/WHEEL,sha256=5cEDLREhpnNYpDlijc02-Q_4r7AkXMYW6R1JITTLLOQ,92
+watchmen_rust-0.0.1.dist-info/entry_points.txt,sha256=8IYHruL5O_CWuDaV8C6X1c5LIsSoPVhILI_1x6zI--U,67
+watchmen_rust-0.0.1.dist-info/RECORD,,

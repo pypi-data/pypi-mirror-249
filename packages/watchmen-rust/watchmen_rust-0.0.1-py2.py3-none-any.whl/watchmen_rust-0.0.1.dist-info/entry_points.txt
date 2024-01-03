@@ -1,0 +1,4 @@
+[console_scripts]
+watchmen=main:watchmen
+watchmend=main:watchmend
+
