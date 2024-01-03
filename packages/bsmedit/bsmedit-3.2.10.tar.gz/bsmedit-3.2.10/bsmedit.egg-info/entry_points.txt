@@ -1,0 +1,2 @@
+[gui_scripts]
+bsmedit = bsmedit.__main__:main
