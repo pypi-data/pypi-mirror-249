@@ -1,0 +1,9 @@
+fsrs_optimizer/__init__.py,sha256=sUnxFeiNkZJG_aCN73CDMoCJYoz8EzHLvjTHk89U_Y8,30
+fsrs_optimizer/__main__.py,sha256=L65Js91sZWbceZExg07DgmWJUAwnhb4-dgCQyPtJlXo,7429
+fsrs_optimizer/fsrs_optimizer.py,sha256=K9tniHFx0CU4kTBnXbEUYqA05y25f63qSSPNzPpFFFM,69258
+fsrs_optimizer/fsrs_simulator.py,sha256=4A0-0EnAODbdj9JD_kXUoJvKmal1r-QchqxweK09uic,13706
+FSRS_Optimizer-4.20.5.dist-info/LICENSE,sha256=JgTH1RnGpXmn4k8JshhGCxLQ0n2i6wqj_uCdWJFRH6E,1509
+FSRS_Optimizer-4.20.5.dist-info/METADATA,sha256=3twsXz-MyO413_HtabT7w8Iy8MSIxfVBhxcXiw23_Yo,4238
+FSRS_Optimizer-4.20.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+FSRS_Optimizer-4.20.5.dist-info/top_level.txt,sha256=9uk_SNT5F2H3VckarM8KXrlwKHmkG9MdwH5aHlGH9-8,15
+FSRS_Optimizer-4.20.5.dist-info/RECORD,,
