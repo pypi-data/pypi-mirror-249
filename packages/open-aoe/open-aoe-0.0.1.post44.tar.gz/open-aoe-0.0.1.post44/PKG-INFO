@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: open-aoe
+Version: 0.0.1.post44
+Summary: AOE (All yOu nEed) retrieves answers from different LLM in parallel
+Home-page: https://github.com/opensealion/aoe
+Author: arkmon
+Author-email: 
+License: Apache License 2.0
+Keywords: openaoe
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
