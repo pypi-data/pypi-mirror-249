@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tgedr-pycode
+Version: 0.0.19
+Summary: python handy code
+Home-page: https://github.com/jtviegas-sandbox/pycode
+Author: joao tiago viegas
+Author-email: jtviegas@gmail.com
+License: Unlicense
+Keywords: python development pyspark
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Requires-Dist: matplotlib>=3
+Requires-Dist: matplotlib-inline
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyspark>=3
+Requires-Dist: seaborn
