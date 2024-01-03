@@ -1,0 +1,11 @@
+fajrGPT/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fajrGPT/quran_metadata.py,sha256=54fAanYQdD9UqYe6ww2hCtZjIhL7HsqM2QxTAPepHAQ,4095
+fajrGPT/utils.py,sha256=IIBXBST1oj9iE9jXgYWMutRtIQj5z-iFHgMCzvM0-gs,25622
+fajrGPT/wake.py,sha256=S0N354UODH_j2VDZJ0D5gQBggt0SuoEDvzhNqq_ZYXg,6237
+fajrGPT/assets/brown.mp3,sha256=8Qupi61CSvH325PYY0bRlQLSGn52TBy2SwkH3rlD8k4,1920775
+fajrGPT-1.6.2.dist-info/LICENSE,sha256=wfNd9_9h3RmDVvgquyc49BFVLDGtIUr07E7wfQE65Lg,1062
+fajrGPT-1.6.2.dist-info/METADATA,sha256=M5bLqoFiv8r3hd-wpLZpNVQsDoKUBoPf6HcELnvOWdQ,4714
+fajrGPT-1.6.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fajrGPT-1.6.2.dist-info/entry_points.txt,sha256=XOCG3Zvz_Qsi9KrykBfSEw9XZ9ob0XqG1yscZtFtLNw,46
+fajrGPT-1.6.2.dist-info/top_level.txt,sha256=1rgB-mIi5KxYloWH4JlaD6VfFTBay1hjTqJod3sbq8w,8
+fajrGPT-1.6.2.dist-info/RECORD,,
