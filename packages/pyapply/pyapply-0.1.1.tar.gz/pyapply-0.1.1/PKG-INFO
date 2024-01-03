@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: pyapply
+Version: 0.1.1
+Summary: Tool to automate coverletter generation (and much more)
+Home-page: https://github.com/kirtansoni/pyapply
+Author: Kirtan Soni
+Author-email: 1kirtansoni@gmail.com
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Requires-Dist: openai==1.3.6
+Requires-Dist: pyperclip==1.8.2
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: reportlab==4.0.7
+Requires-Dist: click_help_colors==0.9.4
+
+# PyApply
+
+
+PyApply is a command-line interface (CLI) tool designed to automate coverletter creation, significantly reducing the time required to perform them.
+Heres a  Walkthrough on Medium and Youtube
+  
+> [!NOTE]
+> Currently, this app only works for ASU Student jobs.
+
+## Features
+
+- **Cover Letter Generation**: PyApply can generate cover letters based on provided job descriptions and user details.
+
+- **Preset and Custom Themes**: Choose from predefined themes or use your own custom theme for the cover letters.
+
+- **User Profile Management**: Set user details globally or for specific tasks using JSON files.
+## Installation
+
+  
+
+```bash
+
+pip install pyapply
+
+```
+
+  
+
+## Usage
+
+>[!NOTE]
+>if the below commands dont work directly, try adding ```python -m ``` before every command listed below.
+> Example: ```python -m pyapply about```
+
+### About
+```bash
+pyapply about
+```
+
+
+### Profile Setup
+
+#### To set User Profile
+```bash
+pyapply set_user <path/to/save/asujobs>
+```
+
+#### To set context information for coverletters
+```bash
+
+pyapply set_resume <path/of/resume.txt>
+```
+
+## Generate cover letters
+
+```bash
+pyapply listen
+```
+
+Coverletters will be generated automatically as soon as the clipboard values change.
+
+  
+
+## Performance
+
+PyApply can convert a process that typically takes 5-10 minutes into a task that takes just 30 seconds.
+
+  
+
+<!-- ## Contributing
+
+Contributions are welcome! Please read the contributing guidelines before getting started. -->
+
+
+  
+
+License [MIT](https://choosealicense.com/licenses/mit/)
