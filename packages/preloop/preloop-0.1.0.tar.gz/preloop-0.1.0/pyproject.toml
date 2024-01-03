@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "preloop"
+version = "0.1.0"
+description = "This is a sample package from Preloop that will be developed into a real, usable package in the future."
+authors = ["Preloop, Inc. <engineering@preloop.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+twine = "^4.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
