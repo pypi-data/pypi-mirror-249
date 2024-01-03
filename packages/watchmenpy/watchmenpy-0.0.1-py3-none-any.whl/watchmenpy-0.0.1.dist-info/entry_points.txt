@@ -1,0 +1,3 @@
+[console_scripts]
+watchmen = watchmen.main:main
+watchmend = watchmend.main:main
