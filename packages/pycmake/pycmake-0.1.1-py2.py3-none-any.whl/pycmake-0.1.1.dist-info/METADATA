@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pycmake
+Version: 0.1.1
+Summary: Python bindings for CMake.
+Author-email: "Francis J. Sun" <francisjsun@outlook.com>
+License-File: LICENSE
+Description-Content-Type: text/markdown
+
+# pycmake
+python bindings for cmake.
+
+# how
+## 1. write CMakeLists.py
+```python
+from pycmake.cmake import *
+from pycmake import utils
+import os
+
+
+cmake_cmake_minimum_required(CMAKE_VERSION, 3.6)
+cmake_project("test")
+cmake_add_executable("test")
+cmake_target_sources("test", CMAKE_PRIVATE, "main.cpp")
+cmake_target_link_libraries("test", "-framework Cocoa", "x")
+
+cmake_add_subdirectory("test_subdir")
+cmake_set("my_variable1", "test", CMAKE_CACHE, CMAKE_STRING, "This is my_variable")
+
+cmake_target_sources(
+    "test",
+    CMAKE_PRIVATE,
+    utils.find_files_in_dir_with_extensions(
+        os.path.join(CMAKE_CURRENT_SOURCE_DIR, "src"),
+        extensions="(h)|(cpp)",
+        excluding_dirs="exclude_me",
+    ),
+)
+
+cmake_if(CMAKE_NOT, "TEST_OPT")
+cmake_include("test/CMakeLists.txt")
+cmake_call("custom_fn", "p0", "p1")
+cmake_endif()
+```
+## 2. python CMakeLists.py
+run `python CMakeLists.py` to generate your CMakeLists.txt file.
