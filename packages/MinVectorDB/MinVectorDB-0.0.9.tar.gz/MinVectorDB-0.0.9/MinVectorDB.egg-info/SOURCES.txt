@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+MinVectorDB.egg-info/PKG-INFO
+MinVectorDB.egg-info/SOURCES.txt
+MinVectorDB.egg-info/dependency_links.txt
+MinVectorDB.egg-info/not-zip-safe
+MinVectorDB.egg-info/requires.txt
+MinVectorDB.egg-info/top_level.txt
+min_vec/__init__.py
+min_vec/engine.py
+min_vec/model.py
+min_vec/utils.py
+test/__init__.py
+test/test_model.py
