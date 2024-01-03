@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: lightning-template
+Version: 1.4.4
+Summary: A template wrapper for pytorch-lightning.
+Author-email: shenmishajing <shenmishajing@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/shenmishajing/lightning_template
+Project-URL: Repository, https://github.com/shenmishajing/lightning_template
+Project-URL: Documentation, https://lightning-template.readthedocs.io
+Project-URL: Issues, https://github.com/shenmishajing/lightning_template/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Natural Language :: Chinese (Simplified)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lightning >=2.0.0
+Requires-Dist: jsonargparse[all]
+Requires-Dist: scikit-learn
+Requires-Dist: speed-benchmark
+Requires-Dist: shell-command-launcher
+Provides-Extra: all
+Requires-Dist: lightning-template[build,dev,doc,optional] ; extra == 'all'
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: commitizen ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-autobuild ; extra == 'doc'
+Requires-Dist: sphinx-book-theme ; extra == 'doc'
+Requires-Dist: sphinx-autoapi ; extra == 'doc'
+Requires-Dist: myst-parser ; extra == 'doc'
+Requires-Dist: sphinx-design ; extra == 'doc'
+Provides-Extra: optional
+Requires-Dist: wandb ; extra == 'optional'
+Requires-Dist: rich ; extra == 'optional'
+Requires-Dist: thop ; extra == 'optional'
+
+# Lightning Template
+
+[![platform](https://img.shields.io/badge/platform-Linux%7CWindows%7CmacOS-blue)](https://lightning-template.readthedocs.io)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lightning-template)](https://pypi.org/project/lightning-template/)
+[![PyPI](https://img.shields.io/pypi/v/lightning-template)](https://pypi.org/project/lightning-template)
+[![license](https://img.shields.io/github/license/shenmishajing/lightning_template)](https://github.com/shenmishajing/lightning_template/blob/master/LICENSE)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/shenmishajing/lightning_template)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+
+
+[📘Documentation](https://lightning-template.readthedocs.io) |
+[🛠️Installation](https://lightning-template.readthedocs.io/en/latest/get_started/installation.html) |
+[🤔Reporting Issues](https://github.com/shenmishajing/lightning_template/issues)
+
+Lightning Template is a generic project template lib based on [pytorch lightning](https://pytorch-lightning.readthedocs.io/en/stable/) for [project-template](https://github.com/shenmishajing/project_template). See the [documentation](https://lightning-template.readthedocs.io) for more details.
+
+## Installation
+
+```bash
+pip install lightning-template
+```
+
+See [installation docs](docs/get_started/installation.md) for details.
+
+## Contribution
+
+See [contribution docs](docs/get_started/contribution.md) for details.
+
+## Release versions
+
+We use [setuptools_scm](https://github.com/pypa/setuptools_scm/) for versioning. For the versions available, see the [tags](https://github.com/shenmishajing/lightning_template/tags) on this repository.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Star History
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=shenmishajing/lightning_template&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=shenmishajing/lightning_template&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=shenmishajing/lightning_template&type=Date"
+  />
+</picture>
