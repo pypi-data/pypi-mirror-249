@@ -1,0 +1,22 @@
+0.10.4 Current release
+  * Add a screenshot picture and show in readme.
+0.10.3
+  * Lightly modify code for optimizing.
+  + Uses ltermio new func set_textattr() to make title bold.
+0.10.2
+  * Remove reset_color() from entrypoint main().
+0.10.1
+  * Change build tool backend from setuptools to Hatchling.
+  * Modify code to adapt the upgrade of the ltermio package.
+0.9.16
+  * have a taste of namedtuple and data class.
+0.9.13
+  * fix 'has no attribute keyparam' after upgrade ltermio to 0.2.7.
+0.9.12
+  * fix the 'getkey() is not defined' while press esc to pause game.
+0.9.11
+  * Modify code to adapt the interface changing of the termkey module.
+0.9.10
+  * Rename the game and source files to resolve conflicts.
+0.9.9
+  + Almost a stable version with complete functionality.

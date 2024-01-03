@@ -1,0 +1,48 @@
+[build-system]
+requires = ['hatchling >= 1.0.1']
+build-backend = "hatchling.build"
+
+[project]
+name = 'termtris'
+description = 'A Tetris game in character terminal environment'
+readme = 'README.md'
+requires-python = '>= 3.7'
+license = {file = 'LICENSE'}
+authors = [
+    {name = 'Brooks Su', email = 'yipeng00@gmail.com'},
+]
+keywords = [
+    'tetris', 'termtetris', 'termtris', 'game', 'terminal', 'ltermio',
+]
+classifiers = [
+    'License :: OSI Approved :: Apache Software License',
+    'Natural Language :: English',
+    'Operating System :: Unix',
+    'Operating System :: POSIX',
+    'Operating System :: MacOS :: MacOS X',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Environment :: Console',
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: End Users/Desktop',
+    'Topic :: Games/Entertainment',
+]
+dependencies = ['ltermio >= 0.6.2',]
+dynamic = ['version',]
+
+[project.urls]
+Homepage = 'https://github.com/brookssu/termtris'
+
+[project.scripts]
+tt = 'termtris:main'
+termtris = 'termtris:main'
+
+[tool.hatch.version]
+path = 'termtris/__init__.py'
+
+[tool.hatch.build.targets.sdist]
+include = ['/termtris', 'CHANGELOG',]
+
+[tool.hatch.build.targets.wheel]
+include = ['/termtris/*',]
