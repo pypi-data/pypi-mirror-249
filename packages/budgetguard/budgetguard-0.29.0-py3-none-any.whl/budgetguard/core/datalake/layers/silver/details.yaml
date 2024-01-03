@@ -1,0 +1,8 @@
+datalake_bucket: budget-guard-silver
+datalake_key: details
+file_extension: parquet
+schema:
+  - name: transaction_id
+    type: string
+  - name: account_id
+    type: string
