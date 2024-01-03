@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: znframe
+Version: 0.1.1
+Summary: ZnFrame - ASE-like Interface based on dataclasses
+License: Apache-2.0
+Author: zincwarecode
+Author-email: zincwarecode@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ase (>=3.22.1,<4.0.0)
+Requires-Dist: attrs (>=23.1.0,<24.0.0)
+Requires-Dist: networkx (>=3.2.1,<4.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+[![zincware](https://img.shields.io/badge/Powered%20by-zincware-darkcyan)](https://github.com/zincware)
+[![codecov](https://codecov.io/gh/zincware/ZnFrame/graph/badge.svg?token=ZURLRO9WTI)](https://codecov.io/gh/zincware/ZnFrame)
+[![PyPI version](https://badge.fury.io/py/znframe.svg)](https://badge.fury.io/py/znframe)
+
+# ZnFrame - ASE-like Interface based on dataclasses
+
+This package is designed for light-weight applications that require a structure
+for managing atomic structures. It's primary focus lies on the conversion to /
+from JSON, to send data around easily.
+
+```python
+from znframe import Frame
+from ase.build import molecule
+
+frame = Frame.from_atoms(molecule("NH3"))
+
+print(frame.to_json())
+```
+
+# Installation
+
+`pip install znframe`
+
