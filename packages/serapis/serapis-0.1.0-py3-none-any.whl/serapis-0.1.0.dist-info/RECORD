@@ -1,0 +1,17 @@
+serapis/__init__.py,sha256=pdKIc3YKfahrIPxSMOTozxK_NQw5nVZSEpNcYykjZu4,23
+serapis/calibration.py,sha256=q2OwmmcpP4U1Kgj77FCKFmH5fSVhIrKUM4slEF8KgTk,82234
+serapis/crosssection.py,sha256=miahbqUkvG8Ljhe-bc1e3aJCSxXSagtttkZ2AOWoJKQ,21529
+serapis/event.py,sha256=T3ygwt2ig7bGtJantjrrLUSB3raxTi4kAv_nrbp4hFc,29504
+serapis/inputs.py,sha256=-3AxQXDSyy301xl8pMGJ8vOyJgcPMNNiP-yOymzER4c,21302
+serapis/interface.py,sha256=jJj-axqSPm1DBYy4gwO1c-hsZkz1jl-goD9oaHO6AKg,13168
+serapis/river.py,sha256=xcbnwKQ-PMiZBVDW4l8IEdlWjgqzp3mE4X9XDk25j1k,208812
+serapis/saintvenant.py,sha256=LvHjK7CadLOww_EYlXPK-oIK0hhFGv4j_kev5Hq3IVU,44872
+serapis/serapis_warnings.py,sha256=IIJpu00C0tiHoqVpwVZGc9XhlOj2QWOGUe6fVYTVNDw,541
+serapis/plot/__init__.py,sha256=BMwlm3QXzzcygXOz3C4eG7vIGGRZ_fql5aFkaA__6V0,113
+serapis/plot/visualizer.py,sha256=2QZI8Fnc3UDLGC333lIK1U9G-T3AWo1ObofkcVjYVwg,61503
+serapis-0.1.0.dist-info/AUTHORS.rst,sha256=dPWD1hHy9KROqHoAqYAj9sRSNL-N61iALRoDkPOxYJc,160
+serapis-0.1.0.dist-info/LICENSE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+serapis-0.1.0.dist-info/METADATA,sha256=3pfrMl9Nz9RzeZTc16oEhZl9U11fXAVqBOGlS2tTLL8,8613
+serapis-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+serapis-0.1.0.dist-info/top_level.txt,sha256=_RemzOxS0Lv_YgTJxGiHrmWVXUeT_Djhjiwuug2j7qM,8
+serapis-0.1.0.dist-info/RECORD,,
