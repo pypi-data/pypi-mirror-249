@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/sverilogpy/__init__.py
+src/sverilogpy/py.typed
+src/sverilogpy.egg-info/PKG-INFO
+src/sverilogpy.egg-info/SOURCES.txt
+src/sverilogpy.egg-info/dependency_links.txt
+src/sverilogpy.egg-info/requires.txt
+src/sverilogpy.egg-info/top_level.txt
+tests/test_import.py
