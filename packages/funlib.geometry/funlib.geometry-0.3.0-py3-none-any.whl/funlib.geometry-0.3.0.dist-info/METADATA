@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: funlib.geometry
+Version: 0.3.0
+Summary: A package for Coordinates, Rois and common operations in Coordinate spaces.
+Author: Caroline Malin-Mayor
+Author-email: Jan Funke <funkej@hhmi.org>, William Patton <pattonw@hhmi.org>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
+[![tests](https://github.com/funkelab/funlib.geometry/actions/workflows/tests.yaml/badge.svg)](https://github.com/funkelab/funlib.geometry/actions/workflows/tests.yaml)
+[![black](https://github.com/funkelab/funlib.geometry/actions/workflows/black.yaml/badge.svg)](https://github.com/funkelab/funlib.geometry/actions/workflows/black.yaml)
+[![mypy](https://github.com/funkelab/funlib.geometry/actions/workflows/mypy.yaml/badge.svg)](https://github.com/funkelab/funlib.geometry/actions/workflows/mypy.yaml)
+
+# funlib.geometry
+A package for Coordinates, Rois and common operations in Coordinate spaces
