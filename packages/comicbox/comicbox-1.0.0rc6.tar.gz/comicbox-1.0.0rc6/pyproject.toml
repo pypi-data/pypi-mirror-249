@@ -1,0 +1,181 @@
+[project]
+name = "comicbox"
+requires-python = ">3.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "comicbox"
+version = "1.0.0rc6"
+description = "An API for reading comic archives"
+license = "LGPL-3.0-only"
+authors = ["AJ Slater <aj@slater.net>"]
+readme = "README.md"
+homepage = "https://github.com/ajslater/comicbox"
+repository = "https://github.com/ajslater/comicbox"
+documentation = "https://github.com/ajslater/comicbox"
+keywords = ["comic", "cbz", "cbr", "cbt"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+]
+packages = [
+  { include = "comicbox" },
+  { include = "tests", format = "sdist" }
+]
+include = ["NEWS"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ansicolors = "^1.1.8"
+bidict = "^0.22.1"
+confuse = "^2.0.0"
+comicbox-pdffile = { version = "^0.1.1", optional = true}
+comicfn2dict = "^0.1.0"
+marshmallow = "^3.19.0"
+marshmallow-union = "^0.1.15.post1"
+pycountry = "^23.12.11"
+python-dateutil = "^2.8.2"
+rarfile = "^4.0"
+ruamel-yaml = ">=0.17.32,<0.19.00"
+simplejson = "^3.19.1"
+stringcase = "^1.2.0"
+urnparse = "^0.2.0"
+xmltodict = "^0.13.0"
+
+[tool.poetry.extras]
+pdf = ["comicbox-pdffile"]
+
+[tool.poetry.scripts]
+comicbox = "comicbox.cli:main"
+
+[tool.poetry.group.dev.dependencies]
+wheel = "^0.42.0"
+
+[tool.poetry.group.lint.dependencies]
+check-jsonschema = "^0.27.0"
+codespell = "^2.1.0"
+pyright = "^1.1"
+radon = { version = "^6.0.1", extras = ["toml"] }
+ruff = "^0.1.2"
+types-python-dateutil = "^2.8.19.13"
+vulture = "^2.1"
+
+[tool.poetry.group.test.dependencies]
+coverage = { extras = ["toml"], version = "^7.0" }
+deepdiff = "^6.3.1"
+pytest-cov = "^4.0"
+pytest-gitignore = "^1.3"
+
+[tool.codespell]
+skip = './cache,./dist,./test-results,.git,.mypy_cache,.pytest_cache,.venv,*~,node_modules,package-lock.json,poetry.lock,./tests/test_files/*'
+builtin = 'clear,rare,code'
+check-hidden = true
+ignore-words-list = 'thead,ro,jupyter,coverd'
+
+[tool.coverage.run]
+source = ["comicbox"]
+branch = true
+concurrency = ["multiprocessing"]
+omit = [
+  ".git/*",
+  ".mypy_cache/*",
+  ".pytest_cache/*",
+  ".venv/*",
+  "*__pycache__*",
+  "dist/*",
+  "node_modules/*",
+  "test-results/*",
+  "typings/*",
+]
+
+[tool.coverage.html]
+directory = "test-results/coverage"
+
+[tool.pytest.ini_options]
+junit_family = "xunit2"
+addopts = """
+    --junit-xml=test-results/pytest/results.xml
+    -ra
+    --strict-markers
+    --cov
+    --cov-append
+    --cov-report=html
+    --cov-report=term
+    --ignore=.git
+    --ignore=.mypy_cache
+    --ignore=.venv
+    --ignore=dist
+    --ignore=node_modules
+    --ignore=test-results
+    --ignore=typings
+    --ignore-glob=*__pycache__*
+"""
+
+[tool.pyright]
+exclude = [
+  "**/__pycache__",
+  "**/node_modules",
+  ".git",
+  ".mypy_cache",
+  ".pytest_cache",
+  ".venv",
+  "dist",
+  "package-lock.json",
+  "poetry.lock",
+  "test-results",
+  "typings"
+]
+useLibraryCodeForTypes = true
+pythonVersion = "3.9"
+pythonPlatform = "All"
+
+[tool.radon]
+exclude = "*~,.git/*,*__pycache__*,.pytest_cache/*,.venv/*,node_modules/*,typings/*"
+
+[tool.ruff]
+extend-exclude = ["cache", "typings"]
+extend-ignore = ["S101", "D203", "D213",
+  # Format ignores
+  "W191", "E501", "E111", "E114", "E117", "D206", "D300", "Q000", "Q001",
+  "Q002", "Q003", "COM812", "COM819", "ISC001", "ISC002"
+]
+extend-select = ["A", "ARG", "B", "B9", "C", "C4", "C90", "D", "DJ",
+  "DTZ", "E", "EM", "EXE", "F", "I", "ICN", "INP", "ISC", "PIE", "PL",
+  "PT", "PTH", "PYI", "Q", "N", "RET", "RSE", "RUF", "S", "SIM", "SLF",
+  "T10", "T20", "TCH", "TID", "TRY", "UP", "W", "YTT"
+  # "ANN", "ERA", "COM"
+]
+external = ["V101"]
+# format = "grouped"
+# show-source = true
+task-tags = ["TODO", "FIXME", "XXX", "http", "HACK"]
+
+[tool.ruff.per-file-ignores]
+"comicbox/box/print.py" = ["T201", "T203"]
+"comicbox/run.py" = ["T201", "T203"]
+"tests/*" = ["T201", "T203"]
+
+[tool.ruff.pycodestyle]
+ignore-overlong-task-comments = true
+
+[tool.vulture]
+min_confidence = 61
+sort_by_size = true
+exclude = [
+  ".git/",
+  ".mypy_cache/",
+  ".pytest_cache/",
+  ".venv/",
+  "*__pycache__*",
+  "dist/",
+  "node_modules/",
+  "test_results/",
+  "typings/",
+]
