@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ipv4ac"
+dynamic = [
+  "version"
+]
+authors = [
+  { name = "Bartłomiej Drążkiewicz", email = "bartlomiej@drazkiewicz.me" },
+]
+description = "A simple module provides a function to check if an IPv4 address has correct format."
+readme = { "file" = "README.md", "content-type" = "text/markdown" }
+license = "MIT"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: System :: Networking",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Development Status :: 4 - Beta",
+]
+keywords = [
+  "python",
+  "mit",
+  "module",
+  "network",
+  "ip",
+  "ipv4",
+  "check",
+  "pattern",
+]
+
+[project.urls]
+Repository = "https://github.com/drazkgi/ipv4ac"
+
+[tool.hatch.version]
+path = "src/ipv4ac/__about__.py"
