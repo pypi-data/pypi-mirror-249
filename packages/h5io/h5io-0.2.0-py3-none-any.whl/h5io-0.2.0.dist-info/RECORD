@@ -1,0 +1,10 @@
+h5io/__init__.py,sha256=CJOsoyhyTAieysyIzXTe0pcI-UWt_gzqlhlXrmmSbOo,224
+h5io/_h5io.py,sha256=22lHc3s7nSIfPDOadgBahfUZOlNGuxQOIaiAu5RVgcg,29371
+h5io/_version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+h5io/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h5io/tests/test_io.py,sha256=_oGk-orz2Rt5EcCA9iB3KOzWzLsAJPuW4offf1w2ok4,13988
+h5io-0.2.0.dist-info/LICENSE.txt,sha256=wHVSKirz_hUSRxkXlxYFZoJnZhcgMOng8eXdmaAaVNk,1514
+h5io-0.2.0.dist-info/METADATA,sha256=-wLQfW0thRGcnA4zFS-1YwBSHdeiORYBS_sSCZUDtH4,4227
+h5io-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+h5io-0.2.0.dist-info/top_level.txt,sha256=nMVFu7H0ZApu8_rHJAHwuV10ox6O6_X8cYSE8alSWCY,5
+h5io-0.2.0.dist-info/RECORD,,
