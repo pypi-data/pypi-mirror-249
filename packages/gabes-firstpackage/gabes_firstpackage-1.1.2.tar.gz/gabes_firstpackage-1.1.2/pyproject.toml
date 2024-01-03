@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gabes_firstpackage"
+version = "1.1.2"
+authors = [
+  { name="Gabriel Ribeiro", email="gabrielc.ribeiro@hotmail.com" },
+]
+description = "My first Multilayer Perceptron and package distribution."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy"]
+
+[project.urls]
+Homepage = "https://github.com/gabrielribcesario/gabes_firstpackage"
