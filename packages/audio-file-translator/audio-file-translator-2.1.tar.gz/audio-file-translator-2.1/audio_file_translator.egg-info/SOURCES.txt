@@ -1,0 +1,15 @@
+LICENSE
+setup.py
+AudioFileTranslator_S2ST/ReplaceVideoAudio.py
+AudioFileTranslator_S2ST/__init__.py
+AudioFileTranslator_S2ST/audio_translator.py
+AudioFileTranslator_S2ST/main.py
+AudioFileTranslator_S2ST/sentence_translator.py
+AudioFileTranslator_S2ST/translator_gui.py
+AudioFileTranslator_S2ST/youtube_downloader.py
+audio_file_translator.egg-info/PKG-INFO
+audio_file_translator.egg-info/SOURCES.txt
+audio_file_translator.egg-info/dependency_links.txt
+audio_file_translator.egg-info/entry_points.txt
+audio_file_translator.egg-info/requires.txt
+audio_file_translator.egg-info/top_level.txt
