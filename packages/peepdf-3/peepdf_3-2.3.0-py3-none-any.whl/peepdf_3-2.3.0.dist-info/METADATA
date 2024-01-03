@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: peepdf-3
+Version: 2.3.0
+Summary: The original peepdf, ported to Python 3, and packaged in a setup
+Home-page: https://github.com/digitalsleuth/peepdf-3
+Author: Jose Miguel Esparza, Corey Forman
+License: GNU GPLv3
+License-File: COPYING
+Requires-Dist: requests
+Requires-Dist: pypdf
+Requires-Dist: jsbeautifier
+Requires-Dist: colorama
+Requires-Dist: Pillow
+Requires-Dist: pylibemu
+Requires-Dist: pythonaes
+Requires-Dist: lxml
+
