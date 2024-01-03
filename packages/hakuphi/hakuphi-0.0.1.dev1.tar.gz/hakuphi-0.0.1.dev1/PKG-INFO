@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hakuphi
+Version: 0.0.1.dev1
+Summary: A playground to place lot of things about phi.
+Home-page: https://github.com/KohakuBlueleaf/HakuPhi
+Author: KohakuBlueLeaf
+Author-email: apolloyeh0123@gmail.com
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: pytorch-lightning
