@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: crown_pycurl
+Version: 0.3.1
+Summary: A simple python lib to interact with CRW nodes RPC using curl
+Home-page: https://github.com/adrianhdez929
+Author: adrianhdez929
+Author-email: adrianhdez929@gmail.com
+License: MIT
+Download-URL: https://github.com/adrianhdez929/crown-pycurl/releases/tag/v_03.tar.gz
+Description: UNKNOWN
+Keywords: Crown,PyCurl,RPC
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
