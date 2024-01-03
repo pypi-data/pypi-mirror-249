@@ -1,0 +1,3 @@
+[console_scripts]
+dovecot-checkpass = dovecot_userpassdb:UserPassDBEntry.checkpass_main
+imap-passwd = dovecot_userpassdb:UserPassDBEntry.change_password
