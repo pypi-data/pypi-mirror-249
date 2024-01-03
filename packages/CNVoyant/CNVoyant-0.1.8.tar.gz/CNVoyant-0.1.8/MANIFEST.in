@@ -1,0 +1,2 @@
+include CNVoyant/data/hi_ti_gene.csv 
+include CNVoyant/liftover/paths.json
