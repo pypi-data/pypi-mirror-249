@@ -1,0 +1,14 @@
+ezregex/EZRegex.py,sha256=Yl8xZS1Yk4u4undiMlrukCxvdiBpxgpnYylnPwSlaHE,23525
+ezregex/__init__.py,sha256=Cb-XXVjz2FeRFVklXw4yooaCSQGbzWiqtqDmhO44cb4,337
+ezregex/invert.py,sha256=KHvtxxK-hGiFV7XCOmaj9uTHwXoTHO8vP4IQ_mTm7NY,24376
+ezregex/invert_old.py,sha256=ctH6IcL9Rnso4qo9PAcjJ4FlOF0yeUh6LCbIajvxsK8,10345
+ezregex/perl/__init__.py,sha256=V3kENi9J5NUAYwPBBWytHcKZNXZSBmbW9-RMdZbmPNo,565
+ezregex/perl/elements.py,sha256=dNSGih45_OsvzHn9ssam5XEhlvPQZQmoHsEn21G69Nc,757
+ezregex/perl/psuedonymns.py,sha256=wrk_apbxcW0TfJCL0FyiA2oTOZ-cfB15bhcmRfK6Dh8,63
+ezregex/python/__init__.py,sha256=bPgEF-W4wihJI6nnRaBPkmOsPqq06vlgtL4gAaLxRxo,6786
+ezregex/python/elements.py,sha256=N653g5RLSp1YSZhBdmwKX_5VHmbSIDObWbamzap5DZM,18581
+ezregex/python/psuedonymns.py,sha256=JZBv3CF5W2BPELn6nt944z5RfyqhoBy6TBFI-ILbCxg,2400
+ezregex-1.6.1.dist-info/METADATA,sha256=NJ3tquIkS2sQb4C1Wj2VvH2Og3BPAvObfgtfNA7BE08,19641
+ezregex-1.6.1.dist-info/WHEEL,sha256=Gw8jIuTWkPakxikG-6o91zOxTjpZNZ00Qw8KZLqAprY,87
+ezregex-1.6.1.dist-info/licenses/LICENSE,sha256=UlPV2yn7HK0HiGEUsk5ttIljuNMskA6IHRkKxGkbmj8,1093
+ezregex-1.6.1.dist-info/RECORD,,
