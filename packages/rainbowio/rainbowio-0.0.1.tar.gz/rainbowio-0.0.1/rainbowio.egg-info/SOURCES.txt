@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+rainbowio/__init__.py
+rainbowio/rainbowio.py
+rainbowio.egg-info/PKG-INFO
+rainbowio.egg-info/SOURCES.txt
+rainbowio.egg-info/dependency_links.txt
+rainbowio.egg-info/top_level.txt
