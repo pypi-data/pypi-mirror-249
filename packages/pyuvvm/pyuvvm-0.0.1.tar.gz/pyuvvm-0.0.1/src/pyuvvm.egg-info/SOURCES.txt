@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/pyuvvm/__init__.py
+src/pyuvvm.egg-info/PKG-INFO
+src/pyuvvm.egg-info/SOURCES.txt
+src/pyuvvm.egg-info/dependency_links.txt
+src/pyuvvm.egg-info/requires.txt
+src/pyuvvm.egg-info/top_level.txt
