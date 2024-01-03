@@ -1,0 +1,14 @@
+dokker/__init__.py,sha256=IzxUbov5xWaQ_XP42sWlwcYlStvxa3X_InM0GTKK_J0,425
+dokker/builders.py,sha256=wk_lqhPgrml87Iu3YF6gA8746uIvXW7NVqLrUfdIkG4,1618
+dokker/cli.py,sha256=4V-GGI1kMxgehc-K9QclMRvHnA6GGhKghHFmImiVq5Q,11193
+dokker/compose_spec.py,sha256=tEBY8unCrWCJBnZPTUvVhharmYhuNO0ZVp8pnCvBRFQ,3862
+dokker/project.py,sha256=08ftWEyz5IS-2KqeKjGY8Fp_AOvqhQmZL1bgQ3qz7Tw,1869
+dokker/projects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dokker/projects/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dokker/projects/contrib/cookiecutter.py,sha256=a-MKYRxte8mivFYu_fUJ2LvmPaXCfLhXwiuuOWAPr7E,2220
+dokker/projects/copy.py,sha256=IGwDRhPerh54XYT0LqlVR63HQtt7J4Zcl56p6CzOrqw,2353
+dokker/projects/local.py,sha256=i5PDaH7zbMgwEBsccUihOaQtJphK_qPN6YyiEcbbKOk,1517
+dokker/setup.py,sha256=yWfskZAVJU3Z8uDBNeMRs8-O0Hd_vB92dexV1iNnM5Q,11834
+dokker-0.1.6.dist-info/METADATA,sha256=RxYyxne6azjSHh950OT8njjM8xjSO-l4W9vKaNlUXuY,3519
+dokker-0.1.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dokker-0.1.6.dist-info/RECORD,,
