@@ -1,0 +1,8 @@
+xray/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xray/junit_xml.py,sha256=CMwnbqKO_uBzzzDBlVk7SmUlT7dmpptN88K0W1gxHqc,1549
+xray/logger.py,sha256=Uvlp08u4yzpGOqJfCoxKndq_qz3DU0eCrPra9YDuQ3M,281
+xray/uploader.py,sha256=Dv2US963Ji5whQDH5hqSSYnolkjYrRtneqTYGZDckXE,3137
+xray_uploader-1.4.0.dist-info/METADATA,sha256=xUGiGl0GvmXLWuMiI-r9MIM3V-LK3dud3pwyNr3pOh0,366
+xray_uploader-1.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+xray_uploader-1.4.0.dist-info/top_level.txt,sha256=pvtronOrCIr1CFYP2-_Bd5fiz8d7NzKgcquJ42WYYD8,5
+xray_uploader-1.4.0.dist-info/RECORD,,
