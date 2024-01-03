@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/PyGdbRemoteClient.egg-info/PKG-INFO
+src/PyGdbRemoteClient.egg-info/SOURCES.txt
+src/PyGdbRemoteClient.egg-info/dependency_links.txt
+src/PyGdbRemoteClient.egg-info/top_level.txt
+src/gdb_remote_client/__init__.py
+src/gdb_remote_client/client.py
+src/gdb_remote_client/client_base.py
+src/gdb_remote_client/errors.py
+src/gdb_remote_client/utils.py
