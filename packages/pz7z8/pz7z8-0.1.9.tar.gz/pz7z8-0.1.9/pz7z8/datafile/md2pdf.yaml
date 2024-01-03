@@ -1,0 +1,9 @@
+---
+documentclass: ctexrep
+geometry: margin=0.8in
+fontsize: 10pt
+#documentclass: extreport
+CJKmainfont: 'WenQuanYi Zen Hei Mono'
+toc: yes
+#toc-title: 文档
+---
