@@ -1,0 +1,12 @@
+pytest_sample/__init__.py,sha256=FbRSDMGFZMUaWbO9gdOFb0rhb5DFasO8KFEuZ8LcOGM,47
+pytest_sample/_routing.py,sha256=_FwcrYFJ1GhJXzqysERPE2cNIQsjrW5YGtzZ0gOhPGQ,63
+pytest_sample/_version.py,sha256=M6HWvmdxN88SkH1SyLJq_pOYsXBnPEONM0XBSzsJ1pk,21
+pytest_sample/a.py,sha256=y79lc4amkGQwp0WHXxzrI5L8ObZKq7SNDMObsZtlgeE,14
+pytest_sample/resources/a.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_sample/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anglisano-1.3.1.dist-info/LICENSE,sha256=4Q-PzyWmms11XSRYcx235mJPNzWHYM9J9W3R3Lt4p_g,1077
+anglisano-1.3.1.dist-info/METADATA,sha256=GoRzbVIhwj4snQM-fQ_gJaQ983S57OUWkMTDbx17FY4,695
+anglisano-1.3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+anglisano-1.3.1.dist-info/top_level.txt,sha256=SYqIEf9EOT3G7uALYm6m0T4I6cd08ub4PgeIcrnVPBw,14
+anglisano-1.3.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+anglisano-1.3.1.dist-info/RECORD,,
