@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=ez2ylW-jU_u8ft2RYLkJ4plbc25fsxu58Ecn4XQBHV8,373
+tests/bibtext.py,sha256=phLpJ-mXc1oM5rYcf23sQDWechoQGnoVkloYF5zNaXw,1077
+tests/download.py,sha256=wa-8A1zdvN91j-kOfLZyXQhWt1dEHcU5dZcsczjzgWM,6973
+tests/extractions.py,sha256=qbsQnGE8IJIaYplNLpfcLf6bzuLIyl9ylWWVmaBh8tU,8697
+tests/filters.py,sha256=1Qt6xZbTwaHEvY7ugofyFbSH2rZKvsJ2PpcKsND5eww,1976
+tests/paths.py,sha256=XPd7nlaQr69W8zhTJqEbtI0kPXPz8rAaQIKkyRdg5MQ,5356
+testsmodules-0.0.1.dist-info/LICENSE,sha256=olVM_s9-2vlV7gmP29ZzRkdt1dlPmA_zyVkCKuHSTBU,761
+testsmodules-0.0.1.dist-info/METADATA,sha256=o5TvqdSYNqYiZlKDcNyo2AxfLOm9cCz8_QZiyKgv63A,4326
+testsmodules-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+testsmodules-0.0.1.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+testsmodules-0.0.1.dist-info/RECORD,,
