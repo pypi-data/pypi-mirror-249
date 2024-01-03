@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: toot
+Version: 0.41.0
+Summary: Mastodon CLI client
+Home-page: https://github.com/ihabunek/toot/
+Author: Ivan Habunek
+Author-email: ivan@habunek.com
+License: GPLv3
+Project-URL: Documentation, https://toot.bezdomni.net/
+Project-URL: Issue tracker, https://github.com/ihabunek/toot/issues/
+Keywords: mastodon toot
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console :: Curses
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: click (~=8.1)
+Requires-Dist: requests (<3.0,>=2.13)
+Requires-Dist: beautifulsoup4 (<5.0,>=4.5.0)
+Requires-Dist: wcwidth (>=0.1.7)
+Requires-Dist: urwid (<3.0,>=2.0.0)
+Requires-Dist: tomlkit (<1.0,>=0.10.0)
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pyyaml ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Provides-Extra: richtext
+Requires-Dist: urwidgets (<0.2,>=0.1) ; extra == 'richtext'
+Provides-Extra: test
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: psycopg2-binary ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-xdist[psutil] ; extra == 'test'
+Requires-Dist: setuptools ; extra == 'test'
+Requires-Dist: vermin ; extra == 'test'
+Requires-Dist: typing-extensions ; extra == 'test'
+
+Toot is a CLI and TUI tool for interacting with Mastodon instances from the
+command line.
+
+Allows posting text and media to the timeline, searching, following, muting
+and blocking accounts and other actions.
