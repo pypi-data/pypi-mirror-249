@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/nompy/__init__.py
+src/nompy/gender_predictor.py
+src/nompy/name_gender_pb2.py
+src/nompy.egg-info/PKG-INFO
+src/nompy.egg-info/SOURCES.txt
+src/nompy.egg-info/dependency_links.txt
+src/nompy.egg-info/requires.txt
+src/nompy.egg-info/top_level.txt
+tests/test_gender_predictor.py

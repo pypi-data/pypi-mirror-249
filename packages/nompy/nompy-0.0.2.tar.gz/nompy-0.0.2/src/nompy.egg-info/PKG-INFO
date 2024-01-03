@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nompy
+Version: 0.0.2
+Summary: An awesome package for guessing gender from names.
+Home-page: http://pypi.python.org/pypi/NomPy/
+Author: Ryan McCormack
+License: LICENSE.txt
+Requires-Dist: protobuf
+
+# NomPy
+
+Whats in a name?
