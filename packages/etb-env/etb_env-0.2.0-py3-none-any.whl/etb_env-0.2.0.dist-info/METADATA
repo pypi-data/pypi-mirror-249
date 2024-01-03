@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: etb-env
+Version: 0.2.0
+Summary: A very simple class for getting ENV variables
+License: LICENSE
+Author: Tate Button
+Author-email: yg3bpwn0or679hau8fxi@duck.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
