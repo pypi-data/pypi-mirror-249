@@ -1,0 +1,18 @@
+#!/bin/bash
+
+NJOB=$1
+NFAC=$2
+NFIT=$3
+LOCL=$4
+
+SDIR=$PWD/scripts/jobs/rxe_run_check
+TDIR=/publicfs/ucas/user/campoverde/Test/Jobdir/test_model
+OFIL=rk_check_%{ClusterId}_%{ProcId}
+
+cd $TDIR
+if [[ LOCL -eq 0 ]];then
+    hep_sub -n $NJOB -g lhcb -e $OFIL".err" -o $OFIL".out" -argu %{ProcId} $TDIR $NFAC $NFIT -mem 4000 $SDIR
+else
+    . $SDIR 1 $TDIR $NFAC $NFIT
+fi
+
