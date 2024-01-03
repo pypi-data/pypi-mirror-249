@@ -1,0 +1,12 @@
+dlpack/__init__.py,sha256=JrOkU84USeSqF_sv3oXrsbmY_Df7g4v29adIJeiOO4I,20077
+dlpack/buffer.py,sha256=HF76J8_xZlI6igkEqx5WKOjl2A_qBeKfqFO-XKmqElg,5112
+dlpack/capsule.py,sha256=gXm72Z9u8v6KjPpyjP9r6r9m0FaGZXn80DfkjM1ttRE,7678
+dlpack/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dlpack/tests/test_buffer.py,sha256=DG926PKhpDi2CwYAyrQiyaNHWGhL69ok4d843bvMztY,735
+dlpack/tests/test_capsule.py,sha256=j5no8jUC6QBF4sIEsLU1e9GY7zPV6JIBRrafMMCpwW0,2548
+dlpack/tests/test_dlpack.py,sha256=AkWclhGHOYj2Pt8C7UEk4O20Y-0QoWn2XfEqzWq5GRw,18718
+pydlpack-0.1.dist-info/LICENSE,sha256=C8_A6_3Q8IzRTmLkp_6tjOP5PQLMXCYV-hA9yEKr94Q,1501
+pydlpack-0.1.dist-info/METADATA,sha256=3-1Q-UCU_ogG3cEBQ-FKd0YaczWW41T0SnpuTb1cMzw,5326
+pydlpack-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pydlpack-0.1.dist-info/top_level.txt,sha256=YFTX1EQvc5xZ-qHSzVQJpkX2AQqaVOEJ9U78jHy7B2Q,7
+pydlpack-0.1.dist-info/RECORD,,
