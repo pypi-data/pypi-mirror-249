@@ -1,0 +1,16 @@
+bib2tex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bib2tex/__main__.py,sha256=6oAaR0_zMa25Xta8tLCIzkU-_iGN2bk3a1LXlZed6jw,6729
+bib2tex/bibtex_filter.py,sha256=cln2wbaiX4B-bau6NdkJYGgKKErDAEZlwL225qEQtv8,2279
+bib2tex/bibtex_parser.py,sha256=Z3ZWO8OnFWL8qfauetWVH11Dj3wHgNYBbfrgKN-H7SE,3676
+bib2tex/config.py,sha256=CLPubjUp-fBY9Kegox6dr-faahRJSAJGbLkhoHe9CHo,1081
+bib2tex/converter.py,sha256=Jx85ghJoLLSX4_Wv5QOgbTqWqSgl59K5qlrsdr6O554,2726
+bib2tex/custom_types.py,sha256=yEGECUaVps7eu-KU9sE0N9ir52SlCE1QADBvxVb5K-I,2356
+bib2tex/file_handler.py,sha256=1sSj-wC2i6nbowV_uleUAVFwPnjDwjo9GT6YLJ8xIBM,894
+bib2tex/format_schemes/compact.json,sha256=i1f3XO9BroEy4SMGhl5e9eEoLFssR2eJHSdL6YHNcYs,117
+bib2tex/format_schemes/default.json,sha256=YDPHAaf2rj4pKkJ0Vsyu0FxqClM-w5XGeH_pvqvIrZ0,1203
+bib2tex/format_schemes.py,sha256=B49CcNsIJXZXz6KafvaCeqn2jwgUKgAgAKKmL_beDNg,3314
+bib2tex-0.2.0.dist-info/LICENSE,sha256=N4OjFpuhzwnkZkzPJSd_7sSl7AfOhi5EmzT2_Ezf4BU,1090
+bib2tex-0.2.0.dist-info/METADATA,sha256=3-qJsyVW57zjGCwZGtg7HYqfamiN5oFjAP9r0Qd8mdw,6361
+bib2tex-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bib2tex-0.2.0.dist-info/entry_points.txt,sha256=EqiDDmAYUJtDuWo5duw8j0MKOcrtK86FYUkT0_yLSR8,48
+bib2tex-0.2.0.dist-info/RECORD,,
