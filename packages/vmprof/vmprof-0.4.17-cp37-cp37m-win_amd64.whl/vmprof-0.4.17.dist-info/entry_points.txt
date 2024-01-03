@@ -1,0 +1,2 @@
+[console_scripts]
+vmprofshow = vmprof.show:main
