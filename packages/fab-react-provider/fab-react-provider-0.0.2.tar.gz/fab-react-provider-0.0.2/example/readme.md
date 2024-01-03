@@ -1,0 +1,1 @@
+creare env -> pip install -e . (in parent not in example) -> python run.py
