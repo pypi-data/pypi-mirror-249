@@ -1,0 +1,10 @@
+palletjack/palletjack.h,sha256=9OBWKWFlJ48awwT3ZZS2tX_8tpSQ-pohM8cSQOEf2hw,296
+palletjack/__init__.py,sha256=mjp-srmaugnZrlHsmK9lRlVX4_qdmrNKsFxhKYqNNFw,119
+palletjack/palletjack_cython.pyx,sha256=TJ1jztlt7Br-VEmyPD0ZVSGDefLQ-sXNrO0H9EHEIMo,967
+palletjack/cpalletjack.pxd,sha256=2OFPRy-vATP5f71PIEUAo6MMWUiWzIXxTLq7LvhNat8,399
+palletjack/palletjack_cython.cpython-39-x86_64-linux-gnu.so,sha256=yqsxUpOSTI_sAjm-kDP6idtANJ8XJbv4rRkR5L7dno8,2587537
+palletjack-0.0.9.dist-info/WHEEL,sha256=uQ9JcPdAMEhlCRnfrhg6ydnbrPot9NaB8igB3QVnPX0,148
+palletjack-0.0.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+palletjack-0.0.9.dist-info/RECORD,,
+palletjack-0.0.9.dist-info/top_level.txt,sha256=YNUveproyFeyOcUwfDVZzW8eHQC69PHFPPTIPRWxUv0,11
+palletjack-0.0.9.dist-info/METADATA,sha256=TLsCedzT2EXBbeyKJDWPVF-mRNf3MIH45pRcReFcMyE,1591
