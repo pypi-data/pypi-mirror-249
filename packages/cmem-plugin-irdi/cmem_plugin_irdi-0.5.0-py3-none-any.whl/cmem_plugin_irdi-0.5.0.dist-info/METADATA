@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: cmem-plugin-irdi
+Version: 0.5.0
+Summary: Create unique IRDIs
+Home-page: https://github.com/eccenca/cmem-plugin-irdi
+License: Apache-2.0
+Keywords: eccenca Corporate Memory,plugin
+Author: Robert Klose
+Author-email: robert.klose@eccenca.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: cmem-plugin-base (>=4.3.0,<5.0.0)
+Requires-Dist: rfc3987 (>=1.3.8,<2.0.0)
+Description-Content-Type: text/markdown
+
+# cmem-plugin-irdi
+
+Create unique [ECLASS](https://eclass.eu/support/technical-specification/structure-and-elements/irdi) IRDIs
+
+
+This is a plugin for [eccenca](https://eccenca.com) [Corporate Memory](https://documentation.eccenca.com).
+
+You can install it with the [cmemc](https://eccenca.com/go/cmemc) command line
+clients like this:
+
+```
+cmemc admin workspace python install cmem-plugin-irdi
+```
+
+## Plugin Usage
+
+- All fields of the IRDI are configurable, minus `Item Code`, which is created by the plugin
+  - Created IRDIs are unique per configuration
+- Specify a graph that stores the state of `Item Codes`
+- Input and output paths are configurable
+  - if no input path is configured, values are read from the URIs of the input (Transformation Input)
