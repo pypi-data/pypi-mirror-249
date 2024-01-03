@@ -1,0 +1,14 @@
+examples/__init__.py,sha256=nJGCQ4evVvTLcOdpJEckAUePjPkhsItagbNGPzGEkj8,436
+examples/demo_spread_trades_memecoin.py,sha256=0jt_TZc719jeivfnRFfx78N2Xi4YWd5_zwLFbY6_4Gw,5657
+timeseriesfuser/__init__.py,sha256=nJGCQ4evVvTLcOdpJEckAUePjPkhsItagbNGPzGEkj8,436
+timeseriesfuser/classes.py,sha256=7U_0uxu0yKrY74cUscTEUDobK5H2pM6URVclSXQL6j4,36115
+timeseriesfuser/core.py,sha256=cNmUAZtSo-xz4WPfP6QXBdUtvpDvQl1z0S8Y0_EGRbE,54184
+timeseriesfuser/datasources.py,sha256=RXZN2M2tw5OXCftAZszd_bw5QUQbG6jhy6xQeCdmEJ4,17482
+timeseriesfuser/statics.py,sha256=aheFEPW3IFSHgn1wH3KvtZtT-YB4Lv-B4suY2Pu_U78,36
+timeseriesfuser/helpers/__init__.py,sha256=nJGCQ4evVvTLcOdpJEckAUePjPkhsItagbNGPzGEkj8,436
+timeseriesfuser/helpers/helpers.py,sha256=m4nUd6F53W2uJ_yVFooIzsfOaVT-0h2cMRlmmyv0uuc,8207
+timeseriesfuser-0.5.1.dist-info/LICENSE,sha256=VD-pauwiiia-Xi2zgKvalKRIFSJJjqRCQw6aIpK2T9U,33892
+timeseriesfuser-0.5.1.dist-info/METADATA,sha256=63QCS-Wa44_JvCNl8CVBVU1SeI7X9O_GZTwqAXh7zSo,9259
+timeseriesfuser-0.5.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+timeseriesfuser-0.5.1.dist-info/top_level.txt,sha256=oYJPtb1NXbd5oD-hdu8BteLVAnUBIlRqMMNDHDqzRuA,25
+timeseriesfuser-0.5.1.dist-info/RECORD,,
