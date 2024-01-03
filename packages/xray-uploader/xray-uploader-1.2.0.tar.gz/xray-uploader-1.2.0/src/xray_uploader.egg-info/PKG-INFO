@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xray-uploader
+Version: 1.2.0
+Summary: upload junit xml to xray.
+Author-email: qun <crsncq@126.com>
+License: MIT License
+Keywords: xray
+Requires-Python: >=3.0
+Requires-Dist: requests==2.31.0
