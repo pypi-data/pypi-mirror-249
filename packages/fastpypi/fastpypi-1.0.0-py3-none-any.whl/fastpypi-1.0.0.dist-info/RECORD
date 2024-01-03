@@ -1,0 +1,9 @@
+fastpypi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastpypi/credentials.py,sha256=H6hJFy4bU93lD7s57owdGMoo-y2XHgAd6eVWhZVIxAQ,34
+fastpypi/fastpypi_core.py,sha256=oePft7CbrPTu-rSjVF0CxcUmbP1HDh1DjyI3_rAlRd4,9445
+fastpypi/setup.py,sha256=wWlct1DwPATsybdll6KcMwb3CjRt4dXcVTf2QSMRAuY,617
+fastpypi-1.0.0.dist-info/LICENSE,sha256=4I49wQQa81vKnbbR7_IlUSZQBc-t7K9SJaQb8UaO81Y,1247
+fastpypi-1.0.0.dist-info/METADATA,sha256=vjmNmCNevDhR0a-L0kdWn_qzu7r5TnMKorJCbLIV-wA,1305
+fastpypi-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fastpypi-1.0.0.dist-info/top_level.txt,sha256=75XcqbIsBRUpNHuwzofv3qVXlY39HHnDue3hkdTgRgs,9
+fastpypi-1.0.0.dist-info/RECORD,,
