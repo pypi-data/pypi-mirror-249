@@ -1,0 +1,106 @@
+[build-system]
+build-backend = "poetry_dynamic_versioning.backend"
+requires = [
+  "poetry-core==1.8",
+  "poetry-dynamic-versioning",
+]
+
+[tool.poetry]
+name = "tap-dbf"
+version = "0.1.1a3"
+description = "Singer tap for .DBF files"
+authors = ["Edgar R. Mondragón <edgarrm358@gmail.com>"]
+keywords = [
+  "ELT",
+  "singer.io",
+  "dbf",
+  "dBase",
+]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/edgarrmondragon/tap-dbf"
+repository = "https://github.com/edgarrmondragon/tap-dbf"
+documentation = "https://github.com/edgarrmondragon/tap-dbf#readme"
+classifiers = [
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Database",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+singer-sdk = "~=0.34.0"
+dbfread = "~=2.0.7"
+fsspec = "~=2023.9.2"
+
+# Filesystems
+s3fs = {version = "~=2023.9.2", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+ruff = ">=0.1"
+singer-sdk = {version = "*", extras = ["testing"]}
+pytest-github-actions-annotate-failures = "~=0.2.0"
+typing-extensions = {version = "^4.7.1", python = "<3.11"}
+
+[tool.poetry.scripts]
+tap-dbf = 'tap_dbf.tap:cli'
+
+[tool.poetry.extras]
+s3 = ["s3fs"]
+
+[tool.poetry-dynamic-versioning]
+enable = false
+format-jinja = """
+    {%- if distance == 0 -%}
+        {{ serialize_pep440(base, stage, revision) }}
+    {%- elif revision is not none -%}
+        {{ serialize_pep440(base, stage, revision + 1, dev=distance, metadata=[commit]) }}
+    {%- else -%}
+        {{ serialize_pep440(bump_version(base), stage, revision, dev=distance, metadata=[commit]) }}
+    {%- endif -%}
+"""
+metadata = true
+style = "pep440"
+vcs = "git"
+
+[tool.ruff]
+src = ["tap_dbf", "tests"]
+target-version = "py38"
+
+[tool.ruff.lint]
+ignore = ["ANN101", "DJ", "PD", "COM812", "ISC001", "CPY"]
+preview = true
+select = ["ALL"]
+unfixable = [
+  "ERA001",  # commented-out-code
+]
+
+[tool.ruff.flake8-annotations]
+allow-star-arg-any = true
+
+[tool.ruff.isort]
+known-first-party = ["tap_dbf"]
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.per-file-ignores]
+"tests/*" = ["ANN201"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+python_version = "3.12"
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = ["dbfread.*", "fsspec.*"]
