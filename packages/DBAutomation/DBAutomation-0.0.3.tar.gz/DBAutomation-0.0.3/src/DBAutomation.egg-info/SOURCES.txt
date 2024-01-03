@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/DBAutomation.egg-info/PKG-INFO
+src/DBAutomation.egg-info/SOURCES.txt
+src/DBAutomation.egg-info/dependency_links.txt
+src/DBAutomation.egg-info/requires.txt
+src/DBAutomation.egg-info/top_level.txt
+src/mongodb_connect/__init__.py
+src/mongodb_connect/mongo_crud.py
