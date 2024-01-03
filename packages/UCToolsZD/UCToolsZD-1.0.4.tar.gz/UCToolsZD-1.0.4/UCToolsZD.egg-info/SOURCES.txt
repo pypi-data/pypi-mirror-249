@@ -1,0 +1,11 @@
+README.md
+license.txt
+setup.py
+UCTools/__init__.py
+UCTools/upload.py
+UCToolsZD.egg-info/PKG-INFO
+UCToolsZD.egg-info/SOURCES.txt
+UCToolsZD.egg-info/dependency_links.txt
+UCToolsZD.egg-info/not-zip-safe
+UCToolsZD.egg-info/requires.txt
+UCToolsZD.egg-info/top_level.txt
