@@ -1,0 +1,10 @@
+jagger_ext.cpython-36m-i386-linux-gnu.so,sha256=n8ikl-OpbRczjX-MKcRshhnliJK1ex7T3MXhZuwJEV8,337129
+jagger-0.1.17.dist-info/WHEEL,sha256=vKL5TyPvBaqrVS_wrd1wwVcCEkHcF1Y5mT8I1AQaxRA,110
+jagger-0.1.17.dist-info/LICENSE,sha256=o0KzmXInsoRjSBbNGyDeikWS_-oUgSctIJALtxMfh8w,1324
+jagger-0.1.17.dist-info/RECORD,,
+jagger-0.1.17.dist-info/top_level.txt,sha256=hURSeZwrcC28-aLMLHK7pP4_RcuKhgn8kTDQSgz5bd0,18
+jagger-0.1.17.dist-info/METADATA,sha256=iAkeGjD_XcTRpYNZxv4k01gMXJ3pAeQly5v_xWj__1M,3729
+jagger/__init__.py,sha256=o1PlFFmO2tG6dGa2jl0pd0-Z7kONWOx_PQtKTS5asio,478
+jagger/main.py,sha256=Gnvrv8FrG4GaEn_vWg_4VpX-8lECnweb0a9BiXArUyY,728
+jagger.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+jagger.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
