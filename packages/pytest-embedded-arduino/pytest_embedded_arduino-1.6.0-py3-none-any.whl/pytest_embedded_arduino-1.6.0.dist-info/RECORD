@@ -1,0 +1,7 @@
+pytest_embedded_arduino/__init__.py,sha256=CqyxGekiwDkGwXFqdti-N7MsIqamLb2cbvnYqQTMLGA,193
+pytest_embedded_arduino/app.py,sha256=BTfL0yH4oRKvJvl-imjUY9B2xrYaNAquQVHmGS9PS3E,2426
+pytest_embedded_arduino/serial.py,sha256=dy9WEH62p9lNr6YgiE5NzfLaOIMpHFLVHnWqEmyah84,1887
+pytest_embedded_arduino-1.6.0.dist-info/LICENSE,sha256=_Um-MzeKCR0JCDg5Ac_WFmZEfsPTd7PNlNi9JF1GBX8,1094
+pytest_embedded_arduino-1.6.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pytest_embedded_arduino-1.6.0.dist-info/METADATA,sha256=CuIZ2o7uL9Y6iSfsham5q4yR8jIzdCYI5YcUbFgNq4k,1994
+pytest_embedded_arduino-1.6.0.dist-info/RECORD,,
