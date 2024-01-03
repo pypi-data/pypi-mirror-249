@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bing-results-scraper
+Version: 0.1.4
+Summary: Bing Search Scraper - A Python library for retrieving search results from Bing
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Bing Search Scraper
+
+Bing Search Scraper is a Python library that allows you to easily scrape Bing search results. It leverages the requests library for making HTTP requests and BeautifulSoup for parsing HTML.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install bing-results-scraper
+```
+
+```bash
+from bing_results_scraper import BingScraper
+
+bing = BingScraper()
+
+bing.get_results(q='Your Query') #headers is optional
+```
+#### By Renukumar
+Linkedin : https://www.linkedin.com/in/renukumar-r/ 
+GitHub : https://github.com/Renukumar-R
