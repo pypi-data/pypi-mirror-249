@@ -1,0 +1,10 @@
+LICENSE
+README.md
+iqscli.py
+setup.py
+iqscli.egg-info/PKG-INFO
+iqscli.egg-info/SOURCES.txt
+iqscli.egg-info/dependency_links.txt
+iqscli.egg-info/entry_points.txt
+iqscli.egg-info/requires.txt
+iqscli.egg-info/top_level.txt
