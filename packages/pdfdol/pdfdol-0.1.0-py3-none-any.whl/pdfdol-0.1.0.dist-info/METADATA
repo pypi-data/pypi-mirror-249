@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pdfdol
+Version: 0.1.0
+Summary: Data Object Layer for PDF data
+Author: OtoSense
+License: mit
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dol
+Requires-Dist: pypdf
+
+
+# pdfdol
+Data Object Layer for PDF data
+
+
+To install:	```pip install pdfdol```
