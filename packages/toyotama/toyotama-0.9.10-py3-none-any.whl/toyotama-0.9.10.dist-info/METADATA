@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: toyotama
+Version: 0.9.10
+Summary: Python library for CTF.
+Home-page: https://github.com/Laika/Toyotama
+License: MIT
+Keywords: CTF
+Author: Laika
+Author-email: laika@albina.cc
+Maintainer: Laika
+Maintainer-email: laika@albina.cc
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: flask (>=2.3.2,<3.0.0)
+Requires-Dist: lief (>=0.13.2,<0.14.0)
+Requires-Dist: pillow (>=10.0.0,<11.0.0)
+Requires-Dist: py7zr (>=0.20.6,<0.21.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Project-URL: Repository, https://github.com/Laika/Toyotama
+Description-Content-Type: text/markdown
+
+# Toyotama
+
+[![CodeFactor](https://www.codefactor.io/repository/github/laika/toyotama/badge)](https://www.codefactor.io/repository/github/laika/toyotama)
+[![](https://img.shields.io/pypi/v/toyotama?color=1c0c28&label=PyPI&logo=pypi&logoColor=white)](https://pypi.org/project/toyotama/)
+
+CTF Library
+
+## Notice
+
+- No document. (for now)
+
+## Install
+
+```
+pip install toyotama
+```
+
+## Uninstall
+
+```
+pip uninstall toyotama
+```
+
+## Examples
+
+- Connect
+  [![asciicast](https://asciinema.org/a/uNEjp2IiGu0JKJxJlyYnWabRm.svg)](https://asciinema.org/a/uNEjp2IiGu0JKJxJlyYnWabRm)
+
+- padding\_oracle\_attack
+  [![asciicast](https://asciinema.org/a/j1hYdI966cmPknuGpBUMVxkAv.svg)](https://asciinema.org/a/j1hYdI966cmPknuGpBUMVxkAv)
+
