@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: june-llm-agent
+Version: 0.0.1
+Summary: An LLM Agent that autonomously uses tools to perform actions
+Home-page: https://github.com/JINO-ROHIT/june
+Author: Jino Rohit
+Author-email: find.jinorohit@gmail.com
+License: Apache
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: pydantic ==2.5.3
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: transformers ==4.36.2
+Provides-Extra: dev
+Requires-Dist: twine >=4.0.2 ; extra == 'dev'
+
+# june
+LLM Agent Assistants
