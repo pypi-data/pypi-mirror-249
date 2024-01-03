@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: digplexq
+Version: 0.0.5
+Summary: DigplexQ is a Python package to perform computations with digraph-based complexes.
+Home-page: https://github.com/heitorbaldo/digplexq
+Author: Heitor Baldo
+Author-email: heitorbaldo@gmail.com
+Maintainer: DigplexQ Developers
+License: MIT License
+Keywords: Directed Flag Complexes,Path Complexes,Algebraic Topology,TDA
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows
+Platform: Unix
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: scipy
+Requires-Dist: persim
+
