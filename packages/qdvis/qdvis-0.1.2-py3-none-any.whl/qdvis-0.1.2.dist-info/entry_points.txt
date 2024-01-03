@@ -1,0 +1,2 @@
+[console_scripts]
+qdvis = qdvis.cli:main
