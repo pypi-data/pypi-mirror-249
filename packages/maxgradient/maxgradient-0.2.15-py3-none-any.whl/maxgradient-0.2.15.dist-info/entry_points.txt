@@ -1,0 +1,4 @@
+[console_scripts]
+gradient = maxgradient.cli:app
+mypy = mypy -p src.maxgradient --ignore-missing-imports
+
