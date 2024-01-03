@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: roadrage
+Version: 0.1.1
+Summary: A python package developed to play `Road Rage` game from hand gestures.
+Home-page: https://github.com/arpy8/roadrage
+Author: Arpit Sengar (arpy8)
+Author-email: arpitsengar99@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: mediapipe
+Requires-Dist: opencv-python
+Requires-Dist: pyautogui
+
+# RoadRash - A python package developed to play `Road Rage` game from hand gestures 
+
+Simple run the following command in your **command prompt**
+`
+pip install roadrage && roadrage
+`
