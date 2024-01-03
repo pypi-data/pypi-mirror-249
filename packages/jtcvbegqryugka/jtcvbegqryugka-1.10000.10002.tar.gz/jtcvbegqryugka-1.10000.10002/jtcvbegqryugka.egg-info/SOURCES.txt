@@ -1,0 +1,8 @@
+setup.py
+jtcuhavyubhva/__init__.py
+jtcuhavyubhva/a.py
+jtcuhavyubhva/main.py
+jtcvbegqryugka.egg-info/PKG-INFO
+jtcvbegqryugka.egg-info/SOURCES.txt
+jtcvbegqryugka.egg-info/dependency_links.txt
+jtcvbegqryugka.egg-info/top_level.txt
