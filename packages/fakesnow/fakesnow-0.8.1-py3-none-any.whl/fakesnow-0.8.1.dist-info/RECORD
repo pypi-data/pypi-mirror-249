@@ -1,0 +1,16 @@
+fakesnow/__init__.py,sha256=JXg0HSEHSAOSjEE1ZeA_ogNQ2iFXGEuoibQWk7Pz-WM,3133
+fakesnow/__main__.py,sha256=GDrGyNTvBFuqn_UfDjKs7b3LPtU6gDv1KwosVDrukIM,76
+fakesnow/checks.py,sha256=1qVLR0ZB3z3UPij3Hm8hqlkcNLH2QJnwe8OqkoFCwv8,2356
+fakesnow/cli.py,sha256=KN9kSEXZGNh1orfWsmxFfRiu4fcAqDrgLOh6nTKmhV8,737
+fakesnow/expr.py,sha256=CAxuYIUkwI339DQIBzvFF0F-m1tcVGKEPA5rDTzmH9A,892
+fakesnow/fakes.py,sha256=11uyftf-aQoBPfMcpEWQuMwfEsbDJomof6rKovwFaOk,24491
+fakesnow/fixtures.py,sha256=FfVGhfuIQea0_GQKW8H4ZH0DoxrU2ZnMVJj2eobVbnI,518
+fakesnow/info_schema.py,sha256=SQfNp0i46GmL82NUm9IaeZH78Xp1CBDJsEio_0AYjFQ,4503
+fakesnow/py.typed,sha256=B-DLSjYBi7pkKjwxCSdpVj2J02wgfJr-E7B1wOUyxYU,80
+fakesnow/transforms.py,sha256=4c46iE8Krq7Bx6i78ybFxK0rLtA9m21XEzPCIz65Yqw,25297
+fakesnow-0.8.1.dist-info/LICENSE,sha256=BL6v_VTnU7xdsocviIQJMFr3stX_-uRfTyByo3gRu4M,1071
+fakesnow-0.8.1.dist-info/METADATA,sha256=5c7sxmehggVGW5Y7fGbKPQq-F800vUCFjsNwS4Y95Ow,5740
+fakesnow-0.8.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fakesnow-0.8.1.dist-info/entry_points.txt,sha256=2riAUgu928ZIHawtO8EsfrMEJhi-EH-z_Vq7Q44xKPM,47
+fakesnow-0.8.1.dist-info/top_level.txt,sha256=500evXI1IFX9so82cizGIEMHAb_dJNPaZvd2H9dcKTA,24
+fakesnow-0.8.1.dist-info/RECORD,,
