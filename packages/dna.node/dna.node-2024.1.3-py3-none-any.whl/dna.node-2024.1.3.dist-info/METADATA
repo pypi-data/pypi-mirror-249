@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dna.node
+Version: 2024.1.3
+Summary: DNA framework
+Home-page: https://github.com/kwlee0220/dna.node
+Author: Kang-Woo Lee
+Author-email: kwlee@etri.re.kr
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python >=4.1.2
+Requires-Dist: kafka-python
+Requires-Dist: ffmpeg-python
+Requires-Dist: omegaconf >=2.1.2
+Requires-Dist: tqdm >=4.41.0
+Requires-Dist: Shapely
+Requires-Dist: pyyaml
+Requires-Dist: gdown
+Requires-Dist: python-dateutil
+Requires-Dist: pyproj
+Requires-Dist: redis
+Requires-Dist: ipython
+Requires-Dist: ultralytics
+Requires-Dist: protobuf
+
