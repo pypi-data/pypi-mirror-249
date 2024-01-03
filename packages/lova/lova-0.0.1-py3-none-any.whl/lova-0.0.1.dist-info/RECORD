@@ -1,0 +1,9 @@
+lova/__init__.py,sha256=0rOpuM3CfXrz0e2CLklZkKCRwaMdz0La-BUMDZKOYpA,81
+lova/aggregators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lova/evaluators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lova/recommenders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lova-0.0.1.dist-info/LICENSE,sha256=pIPQDCvwEmBuuXYv72U7t_XW0qqWUZ9YJn1nFeHEF-0,1066
+lova-0.0.1.dist-info/METADATA,sha256=21Ilu5nZUKsK3UISTRkHRN5qnv3r-nIC8mZDqVoq0Do,496
+lova-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lova-0.0.1.dist-info/top_level.txt,sha256=UxdyFdOoZFU9Xse7qSsJUTP5SZLQG-pLLVD35YZanbA,5
+lova-0.0.1.dist-info/RECORD,,
