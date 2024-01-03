@@ -1,0 +1,10 @@
+forecat/__init__.py,sha256=y5VbHPKuAtKR3rHCdyFnSA05UHmGFFbp42xy8kpINNE,243
+forecat/__version__.py,sha256=OOIiGD3mntPzyOR0w-YZoeCZn9qNbKeW-1xCHgqe-Sc,79
+forecat/archs.py,sha256=GZKbcdtULkIAeULGZJGUWniphHoSmDjeA6gS2FFV-7Q,29007
+forecat/transformer.py,sha256=i-7oUWaX5EzzatZPKjj5JRtNSsXX9Y9mzDgqxRt8eF8,5460
+forecat/unet.py,sha256=-WkCYgRW-88kCMEE3sjXF6c6-w4aB4DJZc919X-bMLo,23959
+forecat/utils.py,sha256=S9pwGBbxoxBTs8AAcEX9ek0YdFTa74dF5W0AJqT2TqE,1709
+forecat-0.0.3.dist-info/LICENSE,sha256=2EFyl4if2XD-czTp4FvhC0-rTdKas1b5VpFCQ1ca9gY,1499
+forecat-0.0.3.dist-info/METADATA,sha256=hef8hCCJ6le5chMPh13BVwBRlV2LtYhr56jM91NRJik,3171
+forecat-0.0.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+forecat-0.0.3.dist-info/RECORD,,
