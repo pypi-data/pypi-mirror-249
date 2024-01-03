@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: systembridgewindowssensors
+Version: 4.0.0.dev2
+Summary: System Bridge Windows Sensors
+Home-page: https://github.com/timmo001/system-bridge-windows-sensors
+Author: Aidan Timson (Timmo)
+Author-email: aidan@timmo.dev
+License: Apache-2.0
+Keywords: system-bridge windows
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: incremental==22.10.0
+
+# System Bridge - Windows Sensors
+
+This is the sensors package for Windows in the [System Bridge](https://github.com/timmo001/system-bridge) project.
