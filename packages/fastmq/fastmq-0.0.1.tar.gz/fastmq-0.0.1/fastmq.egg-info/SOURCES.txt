@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+fastmq/__init__.py
+fastmq.egg-info/PKG-INFO
+fastmq.egg-info/SOURCES.txt
+fastmq.egg-info/dependency_links.txt
+fastmq.egg-info/top_level.txt

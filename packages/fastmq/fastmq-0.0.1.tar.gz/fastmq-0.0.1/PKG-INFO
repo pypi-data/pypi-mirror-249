@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fastmq
+Version: 0.0.1
+Summary: Use FastMQ, Do MQ development just like FastAPI
+Home-page: https://gitee.com/bob-zhao/FastMQ
+Author: Denghui Zhao
+Author-email: zdh990831@163.com
+License: Apache
+Keywords: git
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FastMQ
+像FastAPI一样开发MQ通讯。Do development on MQ just like FastAPI
+
+## 愿景
+-[] RabbitMQ的通讯支持
+-[] MQTT的通讯支持
