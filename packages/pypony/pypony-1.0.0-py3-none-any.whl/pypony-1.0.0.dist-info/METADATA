@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: pypony
+Version: 1.0.0
+Summary: A python utility for contract testing APIs
+Home-page: https://github.com/Bandwidth/pypony/
+Author: Bandwidth
+Author-email: letstalk@bandwidth.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs (==23.1.0)
+Requires-Dist: certifi (==2023.11.17)
+Requires-Dist: charset-normalizer (==3.3.2)
+Requires-Dist: click (==8.1.7)
+Requires-Dist: commonmark (==0.9.1)
+Requires-Dist: idna (==3.6)
+Requires-Dist: json-ref-dict (==0.7.2)
+Requires-Dist: jsonpointer (==2.4)
+Requires-Dist: jsonschema (==4.20.0)
+Requires-Dist: openapi-schema-validator (==0.6.2)
+Requires-Dist: openapi-spec-validator (==0.7.1)
+Requires-Dist: pygments (==2.17.2)
+Requires-Dist: pyrsistent (==0.20.0)
+Requires-Dist: pyyaml (==6.0.1)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: rich (==13.7.0)
+Requires-Dist: urllib3 (==2.1.0)
+Requires-Dist: pathable (==0.4.3) ; python_full_version >= "3.7.0" and python_full_version < "4.0.0"
+Requires-Dist: jsonschema-path (==0.3.2) ; python_full_version >= "3.8.0" and python_full_version < "4.0.0"
+Requires-Dist: six (==1.16.0) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: rfc3339-validator (==0.1.4) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4"
+Requires-Dist: iniconfig (==2.0.0) ; python_version >= "3.7"
+Requires-Dist: mdurl (==0.1.2) ; python_version >= "3.7"
+Requires-Dist: packaging (==23.2) ; python_version >= "3.7"
+Requires-Dist: jsonschema-specifications (==2023.11.2) ; python_version >= "3.8"
+Requires-Dist: lazy-object-proxy (==1.10.0) ; python_version >= "3.8"
+Requires-Dist: markdown-it-py (==3.0.0) ; python_version >= "3.8"
+Requires-Dist: pluggy (==1.3.0) ; python_version >= "3.8"
+Requires-Dist: referencing (==0.31.1) ; python_version >= "3.8"
+Requires-Dist: rpds-py (==0.15.2) ; python_version >= "3.8"
+
+# PyPony
+
+![PyPony Logo](PyPony.png)
+
+PyPony is a 🪄magical🪄 Python CLI tool for contract testing OpenAPI specifications against the live APIs that they define.
+
+[![Unit Tests](https://github.com/Bandwidth/pypony/actions/workflows/ci.yml/badge.svg)](https://github.com/Bandwidth/pypony/actions/workflows/ci.yml)
+
+## Supported OAS Features
+
+* JSON or YAML
+* enums
+* $ref
+* oneOf
+
+## Install Locally
+
+```shell
+make install-dependencies
+make install-cli
+```
+
+## Remove Local Installation
+
+```shell
+make remove-cli
+```
+
+## Test
+
+```shell
+make test
+```
+
+### Generate Coverage Report
+```shell
+make test-coverage
+```
+
+## Run
+
+```shell
+pypony -st ./my_steps.yml -sp ./my_spec.yml  -v
+```
+
+### Arguments
+
+|       Argument       | Description                                                          |
+|:--------------------:|:---------------------------------------------------------------------|
+|   '-st', '--step'    | Relative path to step file                                           |
+|   '-sp', '--spec'    | Relative path to spec file                                           |
+|  '-v', '--verbose'   | Boolean verbose output (default=`False`)                             |
+| '-ff', '--fail-fast' | Option to fail fast if an exception is encountered (default=`False`) | # Coming soon!
+
+## Step File
+
+The `step` file is what is used to make API calls - its where you provide information like base url, auth, path, request body, etc. PyPony uses the information in the step file to check against the OpenAPI spec, ensuring it matches the definiution, and then sends it using the [requests](https://pypi.org/project/requests/) library.
+
+Step files export expressions and environment variables, allowing it to be run in a CI/CD pipeline and making data from previous steps accessible.
+
+### Required Step File Fields
+
+* BaseURL
+* Steps
+  * name
+  * operation_id
+  * method
+  * path
+  * status_code
+
+### Example Step File
+
+```yml
+---
+base_url: https://voice.bandwidth.com/api/v2
+auth:
+    username: ${{ env.BW_USERNAME }}
+    password: ${{ env.BW_PASSWORD }}
+steps:
+  - name: createCall
+    operation_id: createCall
+    method: POST
+    path: /accounts/${{ env.BW_ACCOUNT_ID }}/calls
+    headers:
+      Content-Type: application/json
+    body:
+      to: ${{ env.USER_NUMBER }}
+      from: ${{ env.BW_NUMBER }}
+      applicationId: ${{ env.BW_VOICE_APPLICATION_ID }}
+      answerUrl: ${{ env.BW_ANSWER_URL }}
+    status_code: 201
+
+  - name: Get Call Info
+    operation_id: getCallState
+    method: GET
+    path: /accounts/${{ env.BW_ACCOUNT_ID }}/calls/${{ steps.createCall.response.data.callId }}
+    auth:    # overrides global auth definition
+        username: ${{ env.VOXBONE_USERNAME }}
+        password: ${{ env.VOXBONE_PASSWORD }}
+    status_code: 200
+
+  - name: listConferences
+    operation_id: listConferences
+    method: GET
+    path: /accounts/${{ env.BW_ACCOUNT_ID }}/conferences
+    status_code: 200
+```
+
+The full step file schema can be found [here](https://github.com/Bandwidth/pypony/blob/main/src/steps_schema.yml).
+
+
