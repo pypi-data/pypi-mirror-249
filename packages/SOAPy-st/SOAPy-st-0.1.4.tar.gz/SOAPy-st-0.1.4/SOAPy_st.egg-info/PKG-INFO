@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: SOAPy-st
+Version: 0.1.4
+Summary: Spatial Omics Analysis in Python
+Home-page: https://github.com/LiHongCSBLab/SOAPy
+Author: Cancer system biology lab
+Author-email: wangheqi2021@sinh.ac.cn
+Keywords: bio-informatics,spatial data analysis,spatial omics,spatial transcriptomics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<=1.22.3
+Requires-Dist: scanpy>=1.9.3
+Requires-Dist: opencv-python
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: anndata>=0.9.1
+Requires-Dist: esda
+Requires-Dist: libpysal
+Requires-Dist: geopandas>=0.12.2
+Requires-Dist: igraph>=0.9.9
+Requires-Dist: s-dbw>=0.4.0
+Requires-Dist: rp2
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scikit-misc
+Requires-Dist: tensorly
+
+# SOAPy: A package for **S**patial-**O**mics **A**nalysis in **Py**thon
+
+## Brief Introduction
+**SOAPy** is an integrated toolkit that focuses on addressing spatial heterogeneity. SOAPy contains four data
+preprocessing modules (“Data Import”, “spatial network”, and “Spatial Domain”), three modules for analyzing spatial
+expression patterns of genes (“Spatial Variation”, “Spatial Tendency”, and “Spatiotemporal Pattern”), two modules
+for analyzing the spatial architecture of cells (“Spatial Proximity”, “Spatial Composition”), and two module for
+analyzing Spatial Communication.
+
+## Github
+
+https://github.com/LiHongCSBLab/SOAPy/
+
+## Installation
+pip:
+```
+    pip install SOAPy-st
+```
+github:
+```
+    cd SOAPy-st
+    python setup.py build
+    python setup.py install
+```
