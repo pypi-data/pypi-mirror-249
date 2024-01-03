@@ -1,0 +1,4 @@
+lazypredict
+rdkit
+mordred
+pubsams
