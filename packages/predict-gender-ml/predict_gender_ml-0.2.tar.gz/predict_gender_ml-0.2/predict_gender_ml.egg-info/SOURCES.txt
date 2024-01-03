@@ -1,0 +1,14 @@
+README.md
+setup.py
+predict_gender_ml/__init__.py
+predict_gender_ml/data.csv
+predict_gender_ml/fast_model.pth
+predict_gender_ml/predict_gender.py
+predict_gender_ml/vectorizer.joblib
+predict_gender_ml.egg-info/PKG-INFO
+predict_gender_ml.egg-info/SOURCES.txt
+predict_gender_ml.egg-info/dependency_links.txt
+predict_gender_ml.egg-info/requires.txt
+predict_gender_ml.egg-info/top_level.txt
+predict_gender_ml/utils/__init__.py
+predict_gender_ml/utils/gender_utils.py
