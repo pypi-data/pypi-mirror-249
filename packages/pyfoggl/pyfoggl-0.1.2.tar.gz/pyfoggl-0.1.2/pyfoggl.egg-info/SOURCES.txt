@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyfoggl.egg-info/PKG-INFO
+pyfoggl.egg-info/SOURCES.txt
+pyfoggl.egg-info/dependency_links.txt
+pyfoggl.egg-info/requires.txt
+pyfoggl.egg-info/top_level.txt
+tests/__init__.py
+tests/test_foggl.py
