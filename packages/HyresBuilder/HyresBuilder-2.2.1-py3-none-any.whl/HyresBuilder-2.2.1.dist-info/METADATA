@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: HyresBuilder
+Version: 2.2.1
+Summary: Create HyRes peptide PDB files with specified geometry
+Home-page: https://github.com/wayuer19/HyresBuilder
+Download-URL: https://github.com/wayuer19/HyresBuilder/releases
+Author: Shanlong Li
+Author-email: shanlongli@umass.edu
+Platform: Tested on Ubuntu 22.04
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Biopython
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: collective.checkdocs ; extra == 'test'
+Requires-Dist: pygments ; extra == 'test'
+Requires-Dist: Biopython ; extra == 'test'
+
+# HyresBuilder: A simple package for building HyRes peptide model.   
+This package is forked from [PeptideBuilder](https://github.com/clauswilke/PeptideBuilder) and we do some modifications for HyRes.   
+Thanks for the contribution of PeptideBuilder.    
+Shanlong Li    
+
+## Installation:   
+pip install HyresBuilder
+
+
+## Basic usage:   
+This package builds HyRes peptide structure from sequence. Please see the [examples](examples) for details.   
+To obtain psf file and further run simulation on OpenMM, please follow these [instructions](https://github.com/wayuer19/HyRes_GPU).   
+>[!NOTE]
+>After obtaining the pdb files, the initial structures need to be relaxed to get more reasonable state.   
