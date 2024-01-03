@@ -1,0 +1,71 @@
+import cv2
+import time
+from ..utils import preprocess, postprocess_2
+
+
+class FaceDetection:
+    def __init__(self,
+                 model_path: str,
+                 input_width: int,
+                 input_height: int,
+                 confidence_thresh: float,
+                 nms_thresh: float,
+                 class_names: list):
+        self.model_path = model_path
+        self.input_width = input_width
+        self.input_height = input_height
+        self.confidence_thresh = confidence_thresh
+        self.nms_thresh = nms_thresh
+        self.class_names = class_names
+        self.mean = [0.485, 0.456, 0.406]
+        self.std = [0.229, 0.224, 0.225]
+        self.model = None
+        self.det_output = None
+
+    def initialize_model(self):
+        # todo 该函数由子类实现
+        pass
+
+    def infer(self, image):
+        # todo 该函数由子类实现
+        # self.outputs:
+        # det_output: [batch_size, class_num]
+        pass
+
+    def predict(self, image, use_preprocess=True):
+        dets, det_scores, det_labels = [], [], []
+        s = time.time()
+        img, ratio = preprocess(image, (self.input_height, self.input_width)) if use_preprocess else (image, 1.0)
+        print("preprocess: ", time.time() - s)
+
+        s = time.time()
+        self.infer(img)
+        print("infer: ", time.time() - s)
+
+        assert self.det_output.shape[-1] == len(self.class_names), "infer det output shape is not match"
+
+        s = time.time()
+        boxes = postprocess_2(self.det_output, (self.input_height, self.input_width), ratio, self.confidence_thresh,
+                              self.nms_thresh)
+        print("postprocess: ", time.time() - s)
+
+        for box, score, label in zip(boxes[:, :4], boxes[:, 4], boxes[:, 5]):
+            x1, y1, x2, y2 = box[0] / ratio, box[1] / ratio, box[2] / ratio, box[3] / ratio
+            dets.append([max(int(x1), 0), max(int(y1), 0), max(int(x2), 0), max(int(y2), 0)])
+            det_scores.append(float(score))
+            det_labels.append(int(label))
+
+        return dets, det_scores, det_labels
+
+    def show(self, image, dets, det_scores, det_labels):
+        if dets is None or len(dets) == 0:
+            return image
+        for det, score, label in zip(dets, det_scores, det_labels):
+            x1, y1, x2, y2 = det
+            cv2.rectangle(image, (x1, y1), (x2, y2), color=(255, 255, 0), thickness=2)
+            print(self.class_names[label], score)
+            cv2.putText(image, '%s(%.2f)' % (self.class_names[label], score),
+                        ((x1 + x2) // 2, (y1 + y2) // 2), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2, (0, 255, 0),
+                        thickness=2)
+
+        return image
