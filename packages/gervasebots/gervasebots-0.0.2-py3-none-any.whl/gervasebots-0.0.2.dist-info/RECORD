@@ -1,0 +1,11 @@
+src/__init__.py,sha256=ll3uZ3Fae9bVKi0OhLgxMXfKe5Qcpwxup4I2gQXwCT4,628
+src/checks.py,sha256=3WTR7OwgjsYo3ZK9lzISuhb0ktCABRh-sEAkFkHFj0w,480
+src/client.py,sha256=W0DQROeTAMwq_6sjzNOlw5j_06TBVkXgtwJirCVC-2g,1796
+src/creds.py,sha256=IppeCBgVnnKFKgh-BuHtwJlkBe0d4utCDJq6HCvyk6Q,54
+src/errors.py,sha256=D1Js60_r0H_G6nUNcWESXMv5jBvpluEviUzc8npIRMU,533
+gervasebots-0.0.2.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gervasebots-0.0.2.dist-info/METADATA,sha256=OBslUX797p3Vuszx4D7I4UIirTRtvaQIqmZzg-cK6p0,108
+gervasebots-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gervasebots-0.0.2.dist-info/entry_points.txt,sha256=C9JQXgbxMzDiIdZwOlWom2Zb4V9KHTRGng1FDFMsX4Y,49
+gervasebots-0.0.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+gervasebots-0.0.2.dist-info/RECORD,,
