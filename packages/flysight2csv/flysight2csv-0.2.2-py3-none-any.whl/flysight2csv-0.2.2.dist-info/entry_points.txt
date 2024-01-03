@@ -1,0 +1,3 @@
+[console_scripts]
+flysight2csv=flysight2csv.cli:app
+
