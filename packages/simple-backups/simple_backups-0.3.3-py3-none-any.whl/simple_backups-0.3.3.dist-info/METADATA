@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: simple-backups
+Version: 0.3.3
+Summary: Simple backups library.
+Home-page: https://github.com/luiscberrocal/simple-backups
+License: MIT
+Author: Luis C. Berrocal
+Author-email: luis.berrocal.1942@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mkdocstrings[python] (>=0.24.0,<0.25.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Simple Backups
+
+
+[![pypi](https://img.shields.io/pypi/v/simple-backups.svg)](https://pypi.org/project/simple-backups/)
+[![python](https://img.shields.io/pypi/pyversions/simple-backups.svg)](https://pypi.org/project/simple-backups/)
+[![Build Status](https://github.com/luiscberrocal/simple-backups/actions/workflows/dev.yml/badge.svg)](https://github.com/luiscberrocal/simple-backups/actions/workflows/dev.yml)
+[![codecov](https://codecov.io/gh/luiscberrocal/simple-backups/branch/main/graphs/badge.svg)](https://codecov.io/github/luiscberrocal/simple-backups)
+
+
+
+Simple backups library
+
+
+* Documentation: <https://luiscberrocal.github.io/simple-backups>
+* GitHub: <https://github.com/luiscberrocal/simple-backups>
+* PyPI: <https://pypi.org/project/simple-backups/>
+* Free software: MIT
+
+
+## Features
+
+* Create a copy of a file into a backup folder with a dated filename.
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [waynerv/cookiecutter-pypackage](https://github.com/waynerv/cookiecutter-pypackage) project template.
+
