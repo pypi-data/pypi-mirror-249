@@ -1,0 +1,11 @@
+qsharp_lang-1.0.28.dev0.dist-info/METADATA,sha256=a-yteYyFKFP8lsrVwl61pY1AXsUECNCn_X9Ej3oQyvs,2141
+qsharp_lang-1.0.28.dev0.dist-info/WHEEL,sha256=bYxGDNA4IQXchE7gRlJNOD2it4DPWJE9IFvlvNyjw2k,94
+qsharp/.data/qsharp_codemirror.js,sha256=MMCCuj2h_FqHV7XT023V_-KbrPlH8tg1uUFj7lXVo48,3114
+qsharp/estimator/_estimator.py,sha256=LKyAgQ0huG6qX-9FowrsjjKpejK-RUv2FgG5cPbyMtc,36536
+qsharp/estimator/__init__.py,sha256=m0eG0xpTnQBmWPdWHmorhQwdA0hBa5Nnj1ppzKsXcWM,760
+qsharp/_ipython.py,sha256=lwp7Wi73gFMFbpb1djJf552K-FlxvCl3gEMBwP-T_J0,1421
+qsharp/_native.pyi,sha256=rfwLRQnzBNk2JwVHuQbdo6Iag6tH_84DpZUCPg82bdw,4268
+qsharp/_qsharp.py,sha256=uf7rowOFEYMITZRXCxsabpNf1Z5BRVuQ343IiVpkxa8,7132
+qsharp/__init__.py,sha256=1FMbmb_T7kR2qoMZB-t43sfLUjhKr7GJQLXAhctJIHE,734
+qsharp/_native.pyd,sha256=KxMuyGygV-EUZcJ5EezyKRETqQSj-aQTR5KM9KFMT5E,3734528
+qsharp_lang-1.0.28.dev0.dist-info/RECORD,,
