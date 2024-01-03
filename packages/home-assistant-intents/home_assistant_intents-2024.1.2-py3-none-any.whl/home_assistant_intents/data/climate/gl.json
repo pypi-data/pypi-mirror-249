@@ -1,0 +1,26 @@
+{
+  "language": "gl",
+  "intents": {
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "cal é [a] <temp>",
+            "qué <temp> fai",
+            "qué <temp> vai",
+            "cal é [a] <temp> <area>",
+            "qué <temp> fai (en | na | no) <area>",
+            "qué <temp> vai (en | na | no) <area>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateGetTemperature": {
+        "default": "{% set temperature = state_attr(state.entity_id, 'current_temperature') %} {{ temperature | float | abs | round(1) | replace('.0', '') | replace('.',',') }} {{ 'grao' if temperature | float | abs == 1 else 'graos' }} {{ 'baixo cero' if temperature | float < 0 else '' }}\n"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "ro",
+  "intents": {
+    "HassGetWeather": {
+      "data": [
+        {
+          "sentences": [
+            "cum <este> vremea[ afar(ă|a)]",
+            "c(â|a)te grade sunt afar(ă|a)",
+            "<cat_quant> (de (frig|cald);<este>) afar(ă|a)"
+          ]
+        },
+        {
+          "sentences": [
+            "cum <este> (vremea|afar(ă|a))[ [<din> ]<name>]",
+            "c(â|a)te grade sunt[ afar(ă|a)][ [<din> ]<name>]",
+            "<cat_quant> (de (frig|cald);<este>)[ (afar(ă|a)|[<din> ]<name>)]"
+          ],
+          "requires_context": {
+            "domain": "weather"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassGetWeather": {
+        "default": "{% set weather_condition = {\n  'clear': 'cu cer senin',\n  'clear-night': 'cu cer senin',\n  'cloudy': 'și înnorat',\n  'exceptional': 'și exceptional',\n  'fog': 'cu ceață',\n  'hail': 'cu grindină',\n  'lightning': 'cu descărcări electrice',\n  'lightning-rainy': 'cu ploaie însoțită de descărcări electrice',\n  'partlycloudy': 'și parțial noros',\n  'pouring': 'cu averse de ploaie',\n  'rainy': 'cu ploaie',\n  'snowy': 'cu ninsoare',\n  'snowy-rainy': 'cu lapoviță',\n  'sunny': 'și însorit',\n  'windy': 'cu intensificări ale vântului',\n  'windy-variant': 'înnorat, cu intensificări ale vântului'\n} %} {% set temperature = state.attributes.get('temperature') %} {% set temperature_ro = (temperature|string).replace(\".\", \",\") %} {% set temperature_num = temperature | float %} {% if temperature_num | abs == 1 %} {{ temperature_ro }} grad {% elif temperature_num == 0 or temperature_num % 1 != 0 or temperature_num % 100 | abs < 20 %} {{ temperature_ro }} grade {% else %} {{ temperature_ro }} de grade {% endif %} {{ weather_condition.get((state.state | string).lower(), \"\") }}\n"
+      }
+    }
+  }
+}

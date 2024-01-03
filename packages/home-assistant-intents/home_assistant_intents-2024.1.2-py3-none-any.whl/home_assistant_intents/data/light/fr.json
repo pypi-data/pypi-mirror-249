@@ -1,0 +1,85 @@
+{
+  "language": "fr",
+  "intents": {
+    "HassLightSet": {
+      "data": [
+        {
+          "sentences": [
+            "(<regle>|<augmente>|<diminue>) [la] luminosité [<de>] [<le>]{name} [à] {brightness}<pourcent>",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>](<lumiere>|<lumieres>) [<de>] [<le>]{name} [à] {brightness}<pourcent>",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>]{name} [à] {brightness}<pourcent> [de] luminosité",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>]{name} [à] {brightness}<pourcent>",
+            "luminosité [<de>] [<le>]{name} [à] {brightness}<pourcent>",
+            "[<le>]{name} [à] {brightness}<pourcent>",
+            "[<le>]{name} [à] {brightness}<pourcent> [de] luminosité",
+            "[<le>]{name} luminosité [à] {brightness}<pourcent>"
+          ],
+          "response": "brightness"
+        },
+        {
+          "sentences": [
+            "(<regle>|<augmente>|<diminue>) [la] luminosité [<dans>] [<le>]{area} [à] {brightness}<pourcent>",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>](<lumiere>|<lumieres>)  [<dans>] [<le>]{area} [à] {brightness}<pourcent>",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>]{area} [à] {brightness}<pourcent> [de] luminosité",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>]{area} [à] {brightness}<pourcent>",
+            "luminosité [<dans>] [<le>]{area} [à] {brightness}<pourcent>",
+            "[<le>]{area} luminosité [à] {brightness}<pourcent>",
+            "[<le>]{area} [à] {brightness}<pourcent> [de] luminosité",
+            "(<allume>|<regle>) [<tous>] [<le>][<lumieres>] [<de>] [<le>]{area} [avec la luminosité|avec la lumière] [à] {brightness}<pourcent>"
+          ],
+          "response": "brightness",
+          "slots": {
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "(<regle>|<augmente>|<diminue>) [la] luminosité [<de>] [<le>]{name} [<dans>] [<le>]{area} [à] {brightness}<pourcent>",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>](<lumiere>|<lumieres>)  [<de>] [<le>]{name} [<dans>] [<le>]{area} [à] {brightness}<pourcent>",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>]{name} [<dans>] [<le>]{area} [à] {brightness}<pourcent> [de] luminosité",
+            "(<allume>|<regle>|<augmente>|<diminue>) [<le>]{name} [<dans>] [<le>]{area} [à] {brightness}<pourcent>",
+            "luminosité [<de>] [<le>]{name} [<dans>] [<le>]{area} [à] {brightness}<pourcent>",
+            "[<le>]{name} [<dans>] [<le>]{area} {brightness}<pourcent>",
+            "[<le>]{name} [<dans>] [<le>]{area} {brightness}<pourcent> [de] luminosité",
+            "[<le>]{name} [<dans>] [<le>]{area} luminosité {brightness}<pourcent>"
+          ],
+          "response": "brightness"
+        },
+        {
+          "sentences": [
+            "<regle> la couleur [<de>] [<le>]{name} [en] {color}",
+            "(<regle>|<allume>) [<le>]{name} [avec la couleur | de couleur | en] {color}"
+          ],
+          "response": "color"
+        },
+        {
+          "sentences": [
+            "<regle> la couleur [<de>] [<le>]{area} [en] {color}",
+            "<regle> la couleur <de> [<tous>] [<le>](<lumiere>|<lumieres>) [<dans>] [<le>]{area} [en] {color}",
+            "(<regle>|<allume>) [<tous>] [<le>](<lumiere>|<lumieres>) [<de>] [<le>]{area} [avec la couleur | de couleur | en] {color}",
+            "(<regle>|<allume>) [<le>]{area} [avec la couleur | de couleur | en] {color}"
+          ],
+          "slots": {
+            "name": "all"
+          },
+          "response": "color"
+        },
+        {
+          "sentences": [
+            "<regle> la couleur [<de>] [<le>]{name} [<dans>] [<le>]{area} [en] {color}",
+            "(<regle>|<allume>) [<le>]{name} [<dans>] [<le>]{area} [avec la couleur | de couleur | en] {color}"
+          ],
+          "response": "color"
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassLightSet": {
+        "brightness": "Luminosité réglée",
+        "color": "Couleur réglée"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "language": "gl",
+  "intents": {
+    "HassGetWeather": {
+      "data": [
+        {
+          "sentences": [
+            "que tempo (vai|fai|quedou)"
+          ]
+        },
+        {
+          "sentences": [
+            "que tempo (vai|fai|quedou) (en|na|no) <nome>"
+          ],
+          "requires_context": {
+            "domain": "weather"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassGetWeather": {
+        "default": "{% set weather_condition = {\n  'clear': 'Despexado',\n  'clear-night': 'Noite despexada',\n  'cloudy': 'Anubrado',\n  'exceptional': 'Condicións excepcionalmente adversas',\n  'fog': 'Néboa',\n  'hail': 'Sarabia',\n  'lightning': 'Lóstregos',\n  'lightning-rainy': 'Chuvia e lóstregos',\n  'partlycloudy': 'Ceo parcialmente anubrado',\n  'pouring': 'Ballón',\n  'rainy': 'Chuvia',\n  'snowy': 'Neve',\n  'snowy-rainy': 'Chuvia e neve',\n  'sunny': 'Sol',\n  'windy': 'Vento',\n  'windy-variant': 'Vento e ceo anubrado'\n} %}\n {{ weather_condition.get((state.state | string).lower(), \"\") }}, con {{ state.attributes.get('temperature') }} {{ state.attributes.get('temperature_unit') }} de temperatura\n"
+      }
+    }
+  }
+}

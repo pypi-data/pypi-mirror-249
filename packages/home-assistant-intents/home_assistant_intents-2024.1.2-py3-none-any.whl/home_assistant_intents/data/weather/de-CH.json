@@ -1,0 +1,31 @@
+{
+  "language": "de-CH",
+  "intents": {
+    "HassGetWeather": {
+      "data": [
+        {
+          "sentences": [
+            "(Wie isch ds|Was isch für) W(e|ä)tter",
+            "Weles W(e|ä)tter isch"
+          ]
+        },
+        {
+          "sentences": [
+            "(Wie isch ds|Was isch für) W(e|ä)tter[ (ds|z|für|i|in) <name>]",
+            "Weles W(e|ä)tter isch[ (ds|z|für|i|in) <name>]"
+          ],
+          "requires_context": {
+            "domain": "weather"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassGetWeather": {
+        "default": "{% set weather_condition = {\n  'clear': 'u klar',\n  'clear-night': 'u e klari Nacht',\n  'cloudy': 'u bewöukt',\n  'exceptional': 'u ussergewöhnlech',\n  'fog': 'mit Näbu',\n  'hail': 'mit Hageu',\n  'lightning': 'mit Gewitter',\n  'lightning-rainy': 'mit Gewitter u Räge',\n  'partlycloudy': 'u teilweyys bewöukt',\n  'pouring': 'und strömende Räge',\n  'rainy': 'und rägnerisch',\n  'snowy': 'u verschneit',\n  'snowy-rainy': 'mit Schnee u Räge',\n  'sunny': 'u sunnig',\n  'windy': 'u windig',\n  'windy-variant': 'mit Wind u Wouke'\n} %} Es isch {{ state.attributes.get('temperature') }} {{ state.attributes.get('temperature_unit') }} {{ weather_condition.get((state.state | string).lower(), \"\") }}\n"
+      }
+    }
+  }
+}

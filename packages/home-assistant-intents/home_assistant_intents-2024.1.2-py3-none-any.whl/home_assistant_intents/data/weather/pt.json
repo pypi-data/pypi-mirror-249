@@ -1,0 +1,29 @@
+{
+  "language": "pt",
+  "intents": {
+    "HassGetWeather": {
+      "data": [
+        {
+          "sentences": [
+            "como está o tempo"
+          ]
+        },
+        {
+          "sentences": [
+            "como está o tempo (em|no) <nome>"
+          ],
+          "requires_context": {
+            "domain": "weather"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassGetWeather": {
+        "default": "{% set weather_condition = {\n  'clear': 'Céu limpo',\n  'clear-night': 'Céu limpo',\n  'cloudy': 'Céu nublado',\n  'exceptional': 'Condições excepcionalmente adversas',\n  'fog': 'Nevoeiro',\n  'hail': 'Granizo',\n  'lightning': 'Trovoada',\n  'lightning-rainy': 'Chuva e trovoada',\n  'partlycloudy': 'Céu parcialmente nublado',\n  'pouring': 'Chuva forte',\n  'rainy': 'Chuva',\n  'snowy': 'Neve',\n  'snowy-rainy': 'Chuva e neve',\n  'sunny': 'Sol',\n  'windy': 'Vento',\n  'windy-variant': 'Vento e céu nublado'\n} %}\n {{ weather_condition.get((state.state | string).lower(), \"\") }}, com temperatura de {{ state.attributes.get('temperature') }} {{ state.attributes.get('temperature_unit') }}\n"
+      }
+    }
+  }
+}

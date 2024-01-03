@@ -1,0 +1,30 @@
+{
+  "language": "sk",
+  "intents": {
+    "HassGetWeather": {
+      "data": [
+        {
+          "sentences": [
+            "<what_is> počasie"
+          ]
+        },
+        {
+          "sentences": [
+            "<what_is> počasie[ <is>] <in> <name>",
+            "<what_is>[ <in>] <name> počasie"
+          ],
+          "requires_context": {
+            "domain": "weather"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassGetWeather": {
+        "default": "{% set weather_condition = {\n  'clear': 'a jasno',\n  'clear-night': 'a jasno',\n  'cloudy': 'a oblačno',\n  'exceptional': 'a výstrahy',\n  'fog': 'a hmla',\n  'hail': 'a krúpy',\n  'lightning': 'a blesky',\n  'lightning-rainy': 's bleskami a dážďom',\n  'partlycloudy': 'a čiastočne oblačno',\n  'pouring': 'a silný dážď',\n  'rainy': 'a dážď',\n  'snowy': 'a sneží',\n  'snowy-rainy': 'so snehom a dážďom',\n  'sunny': 'a slnečno',\n  'windy': 'a veterno',\n  'windy-variant': 's vetrom a oblačno'\n} %} {{ state.attributes.get('temperature') }} {{ state.attributes.get('temperature_unit') }} {{ weather_condition.get((state.state | string).lower(), \"\") }}\n"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "language": "he",
+  "intents": {
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<what_is> [ה]<temp>",
+            "כמה (חם|קר|חמים|קריר) ב<area>",
+            "<what_is> [ה]<temp> ב<area>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateGetTemperature": {
+        "default": "{% set temperature = state_attr(state.entity_id, 'current_temperature') %} {% if slots.area: %} ב{{ slots.area }} {{ state_attr(state.entity_id, 'current_temperature') }} מעלות {% else: %} הטמפרטורה היא {{ state_attr(state.entity_id, 'current_temperature') }} מעלות {% endif %}\n"
+      }
+    }
+  }
+}

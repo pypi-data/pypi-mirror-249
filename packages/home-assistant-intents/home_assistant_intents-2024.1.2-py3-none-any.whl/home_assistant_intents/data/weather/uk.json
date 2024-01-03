@@ -1,0 +1,29 @@
+{
+  "language": "uk",
+  "intents": {
+    "HassGetWeather": {
+      "data": [
+        {
+          "sentences": [
+            "[яка|що з] погод(а|ою)"
+          ]
+        },
+        {
+          "sentences": [
+            "[яка|що з] погод(а|ою) [в|у|на] <name>"
+          ],
+          "requires_context": {
+            "domain": "weather"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassGetWeather": {
+        "default": "{% set weather_condition = {\n  'clear': 'ясно',\n  'clear-night': 'ясно',\n  'cloudy': 'хмарно',\n  'exceptional': 'виняткові погодні умови',\n  'fog': 'туман',\n  'hail': 'град',\n  'lightning': 'блискавка',\n  'lightning-rainy': 'дощ з блискавкою',\n  'partlycloudy': 'хмарно з проясненням',\n  'pouring': 'злива',\n  'rainy': 'дощ',\n  'snowy': 'сніг',\n  'snowy-rainy': 'сніг з дощем',\n  'sunny': 'сонячно',\n  'windy': 'вітряно',\n  'windy-variant': 'хмарно і вітряно'\n} %} Температура повітря {{ state.attributes.get('temperature') }}{{ state.attributes.get('temperature_unit') }}, {{ weather_condition.get((state.state | string).lower(), \"\") }}\n"
+      }
+    }
+  }
+}

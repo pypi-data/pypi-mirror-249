@@ -1,0 +1,29 @@
+{
+  "language": "ru",
+  "intents": {
+    "HassGetWeather": {
+      "data": [
+        {
+          "sentences": [
+            "[Какая] погода"
+          ]
+        },
+        {
+          "sentences": [
+            "[Какая] погода в <name>"
+          ],
+          "requires_context": {
+            "domain": "weather"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassGetWeather": {
+        "default": "{% set weather_condition = {\n  'clear': ', ясно',\n  'clear-night': ', ясная ночь',\n  'cloudy': ', облачно',\n  'exceptional': ', экстремальные погодные явления',\n  'fog': ', туман',\n  'hail': ', град',\n  'lightning': ', гроза',\n  'lightning-rainy': ', дождь с грозой',\n  'partlycloudy': ', частичная облачность',\n  'pouring': ', ливень',\n  'rainy': ', дождь',\n  'snowy': ', снег',\n  'snowy-rainy': ', мокрый снег',\n  'sunny': ', солнечно',\n  'windy': ', ветренно',\n  'windy-variant': ', ветренно и облачно'\n} %} {{ state.attributes.get('temperature') }} {{ state.attributes.get('temperature_unit') }}{{ weather_condition.get((state.state | string).lower(), \"\") }}\n"
+      }
+    }
+  }
+}

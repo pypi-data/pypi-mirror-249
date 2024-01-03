@@ -1,0 +1,34 @@
+{
+  "language": "en",
+  "intents": {
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<what_is> [the][ current] <temp> [in <area>]",
+            "how (hot | cold | warm | cool) is it [in <area>]",
+            "is it (hot | cold | warm | cool) [in <area>]",
+            "<what_is> <area>[ current] <temp>"
+          ]
+        },
+        {
+          "sentences": [
+            "<what_is> <name>[ current] <temp>",
+            "<what_is>[ the][ current] <temp>[ of] <name>",
+            "how (hot | cold | warm | cool) is <name>"
+          ],
+          "requires_context": {
+            "domain": "climate"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateGetTemperature": {
+        "default": "{% set temperature = state_attr(state.entity_id, 'current_temperature') %} {% if temperature == 1: %} {{ temperature }} degree {% else: %} {{ temperature }} degrees {% endif %}\n"
+      }
+    }
+  }
+}

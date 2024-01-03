@@ -1,0 +1,29 @@
+{
+  "language": "nb",
+  "intents": {
+    "HassGetWeather": {
+      "data": [
+        {
+          "sentences": [
+            "Hvordan [s]er været[ ut][ i dag]"
+          ]
+        },
+        {
+          "sentences": [
+            "Hvordan [s]er været[ ut] <i_på> <navn> [ i dag]"
+          ],
+          "requires_context": {
+            "domain": "weather"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassGetWeather": {
+        "default": "{% set weather_condition = {\n  'clear': 'og klart',\n  'clear-night': 'og klart',\n  'cloudy': 'og skyet',\n  'exceptional': 'og ekstremvær',\n  'fog': 'med tåke',\n  'hail': 'med haglbyger',\n  'lightning': 'med torden',\n  'lightning-rainy': 'med regnbyger og torden',\n  'partlycloudy': 'og delvis skyet',\n  'pouring': 'og kraftig regn',\n  'rainy': 'og regn',\n  'snowy': 'og snø',\n  'snowy-rainy': 'og sludd',\n  'sunny': 'og sol',\n  'windy': 'og vind',\n  'windy-variant': 'med vind og skyer'\n} %} {{ state.attributes.get('temperature') }} {{ state.attributes.get('temperature_unit') }} {{ weather_condition.get((state.state | string).lower(), \"\") }}\n"
+      }
+    }
+  }
+}
