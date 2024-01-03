@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+improved_json/__init__.py
+improved_json/improved_json.py
+improved_json/py.typed
+improved_json/type_check.py
+improved_json.egg-info/PKG-INFO
+improved_json.egg-info/SOURCES.txt
+improved_json.egg-info/dependency_links.txt
+improved_json.egg-info/top_level.txt
+tests/test_decode.py
+tests/test_encode.py
+tests/test_round_trip.py
+tests/test_type_check.py
