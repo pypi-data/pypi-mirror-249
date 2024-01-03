@@ -1,0 +1,3 @@
+[console_scripts]
+tero_datatool=jam_data.cli.dataset_tool:main
+
