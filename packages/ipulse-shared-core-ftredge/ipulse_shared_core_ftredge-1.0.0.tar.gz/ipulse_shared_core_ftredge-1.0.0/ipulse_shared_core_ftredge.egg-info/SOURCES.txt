@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+ipulse_shared_core_ftredge.egg-info/PKG-INFO
+ipulse_shared_core_ftredge.egg-info/SOURCES.txt
+ipulse_shared_core_ftredge.egg-info/dependency_links.txt
+ipulse_shared_core_ftredge.egg-info/requires.txt
+ipulse_shared_core_ftredge.egg-info/top_level.txt
