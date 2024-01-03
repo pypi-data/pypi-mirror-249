@@ -1,0 +1,6 @@
+imageio
+IPython
+matplotlib
+
+[test]
+pytest
