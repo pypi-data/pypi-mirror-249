@@ -1,0 +1,9 @@
+napf-0.0.7.dist-info/WHEEL,sha256=bDTJUAaQf-D5T_XatoKWCwzTAhRCqvC8WhIpUIn8Bvg,152
+napf-0.0.7.dist-info/LICENSE,sha256=RQpxfZtmIABHeQ62S0CQ74mI2Ddoay4UcJiw87LGnUs,1068
+napf-0.0.7.dist-info/RECORD,,
+napf-0.0.7.dist-info/top_level.txt,sha256=2c4FwFA9xSRIW492mX30Z9nXLvzdzrPzQtXoKxCbQM0,5
+napf-0.0.7.dist-info/METADATA,sha256=pSExgnnYnwJbon3H3cioP694iUrGbuq5GjyVQTCPTnI,2976
+napf/base.py,sha256=L8qY9dSNaFRUYyRyuVx3xjsDry53sQjfJZ_M2GI9G4c,11622
+napf/_version.py,sha256=sgGw4W0QJsVSlMcJ_sYCGjJYO_Ijk_F-PWpp6nAwf54,18
+napf/__init__.py,sha256=1er8UPiqlDlBCOUFqDe3xyg9b7JFrUbtMHwj8v0k48Y,400
+napf/_napf.cpython-37m-powerpc64le-linux-gnu.so,sha256=cktph9qxPlg9wYCSLO7ee6HFUxZvfD-PREVaxtjIVk4,2538128
