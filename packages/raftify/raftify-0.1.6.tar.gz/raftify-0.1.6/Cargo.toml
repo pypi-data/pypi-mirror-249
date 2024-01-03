@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+members = [
+    "raftify",
+    "examples/memstore",
+    "harness"
+]
+default-members = [
+    "raftify",
+    "examples/memstore",
+    "harness"
+]
+
+[workspace.package]
+version = "0.1.5"
+authors = ["Lablup Inc."]
+edition = "2021"
+description = """
+Experimental High level Raft framework
+"""
+license = "MIT/Apache-2.0"
+repository = "https://github.com/lablup/raftify"
+keywords = ["raft", "distributed-systems", "ha"]
+categories = ["distributed-systems", "database-implementations"]
+homepage = "https://github.com/lablup/raftify"
+
+[workspace.dependencies]
+raftify = { path = "raftify" }
