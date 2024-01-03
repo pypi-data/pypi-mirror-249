@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xray-uploader"
+authors = [
+    {name = "qun", email = "crsncq@126.com"}
+]
+description = "upload junit xml to xray."
+
+requires-python = ">=3.0"
+keywords = ["xray"]
+license = {text = "MIT License"}
+dependencies = [
+    "requests==2.31.0"
+]
+version = "1.7.0"
+readme = "README.md"
