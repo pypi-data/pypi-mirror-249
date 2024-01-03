@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: predict_gender_ml
+Version: 0.1
+Summary: Predicts gender based on name with ML Models
+Home-page: 
+Author: Jumble
+Author-email: help@help.org
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: joblib==1.3.2
+Requires-Dist: pandas==2.1.2
+Requires-Dist: torch==2.1.0
+
+# Predict Gender ML
+
+Predict Gender ML is a tool to predict a person's gender based on their name using ML Models.
+
+## Usage
+```python
+import predict_gender_ml
+
+
+prediction = predict_gender_ml.predict("John")
+gender = prediction.gender
+probabilities = prediction.probability
+print(f"John is {gender} with a confidence of {max(probabilities)}%")
+> John is M with a confidence of 73%
+```
+
+## ML Models
+### Data
+Data used to train models: https://archive.ics.uci.edu/dataset/591/gender+by+name
+### Accuracy on trained data
+Fast Model: 80%
+
+Accurate Model: 87%
+
