@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pt-pump-up-admin
+Version: 0.0.2
+Summary: Administrative tools to interact with PT-Pump-Up Platform
+Author: Rúben Almeida
+Requires-Dist: requests
+Requires-Dist: mechanize
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: huggingface_hub
+Requires-Dist: mechanize
+Requires-Dist: nltk
+Requires-Dist: tqdm
