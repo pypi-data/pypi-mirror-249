@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\Miniconda3\\envs\\cadquery-ocp\\Lib\\site-packages\\delvewheel\\__main__.py', 'repair', '--wheel-dir=D:\\a\\ocp-build-system\\ocp-build-system\\dist\\.tmp-h9xqj157\\repaired', 'D:\\a\\ocp-build-system\\ocp-build-system\\dist\\.tmp-h9xqj157\\cadquery_ocp-7.7.2-cp311-cp311-win_amd64.whl']
