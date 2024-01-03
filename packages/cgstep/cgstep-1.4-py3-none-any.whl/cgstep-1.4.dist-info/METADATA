@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cgstep
+Version: 1.4
+Summary: Python package and command line tool to control stepping motor driver RPZ-Stepper/TMC5240 on Raspberry Pi
+Home-page: https://github.com/IndoorCorgi/cgstep
+Author: Indoor Corgi
+Author-email: indoorcorgi@gmail.com
+License: Apache License 2.0
+Requires-Python: >=3.9
+License-File: LICENSE
+
