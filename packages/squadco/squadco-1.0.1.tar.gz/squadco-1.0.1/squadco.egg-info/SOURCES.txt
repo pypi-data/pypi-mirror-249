@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+squad/__init__.py
+squad/_squad.py
+squadco.egg-info/PKG-INFO
+squadco.egg-info/SOURCES.txt
+squadco.egg-info/dependency_links.txt
+squadco.egg-info/requires.txt
+squadco.egg-info/top_level.txt
+tests/test_dispute.py
+tests/test_merchants.py
+tests/test_payments.py
+tests/test_pos.py
+tests/test_transfer.py
+tests/test_virtual_accounts.py
+tests/test_wallet.py
