@@ -1,0 +1,8 @@
+numpy
+pydantic
+rich>=10.0.0
+shortuuid
+
+[dev]
+black==23.3.0
+pylint==2.8.2
