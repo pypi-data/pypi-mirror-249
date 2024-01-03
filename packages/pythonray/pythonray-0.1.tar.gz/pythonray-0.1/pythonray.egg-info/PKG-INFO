@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pythonray
+Version: 0.1
+Summary: A package to send messages to Spatie's Ray from Python
+Home-page: https://github.com/hlipnick/python-ray
+Author: Harry Lipnick
+Author-email: harry.lipnick@gmail.com
+License: MIT
+Keywords: python ray spatie
+License-File: LICENSE.txt
+Requires-Dist: requests
