@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: random_number_ltds
+Version: 0.0.1
+Summary: A random number generator
+Author-email: Mehmet Oktay Ozsoy <mehmet.ozsoy@synnada.ai>
+Project-URL: Homepage, https://github.com/mehmetozsoy1/random_number_ltds
+Project-URL: Issues, https://github.com/mehmetozsoy1/random_number_ltds/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# random_number_ltds
+Random Number Generator
