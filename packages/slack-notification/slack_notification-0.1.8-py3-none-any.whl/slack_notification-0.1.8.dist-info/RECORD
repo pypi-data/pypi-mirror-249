@@ -1,0 +1,9 @@
+slack_notification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slack_notification/banner.py,sha256=BfCkC5CSuoo9JtwWPElk-D7f6Vjj1FN05BHbPZDsMx4,77
+slack_notification/singleton_base.py,sha256=WCJ77FE_oWrUd2HCYqJfvMmsXWMNUW58W35rDz7MU9U,254
+slack_notification/slack_notification.py,sha256=Gjb5qg3DItVEfimiyfxq0_ijTSq1hQjuDbK950zfkOs,680
+slack_notification/version.py,sha256=-MhQfnH0f-WXGB3S-kD0tmXhKo5VZmBaqxuphlmgxxk,79
+slack_notification-0.1.8.dist-info/METADATA,sha256=gz9vOXxUhZ9fMYeCsp0mXTzCML6a5roXFJbGApcwrjI,1014
+slack_notification-0.1.8.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+slack_notification-0.1.8.dist-info/licenses/LICENSE,sha256=h7ZEfECt5S7MZnJzV1H9fz15Am3Fcm_zWPqRTY0M-vA,1072
+slack_notification-0.1.8.dist-info/RECORD,,
