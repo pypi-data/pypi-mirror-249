@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: enhanced-enums
+Version: 1.0.2
+Summary: A package that provides enhanced enums for Python.
+Home-page: https://github.com/m-ghiani/ENHANCED_ENUMS
+Author: Massimo Ghiani
+Author-email: m.ghiani@gmail.com
+Maintainer: Massimo Ghiani <m.ghiani@gmail.com>
+Maintainer-email: m.ghiani@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/m-ghiani/ENHANCED_ENUMS/issues
+Project-URL: Source, https://github.com/m-ghiani/ENHANCED_ENUMS
+Keywords: enum,enums,enhanced,enhanced enums,enhanced enum,enhanced-enums,enhanced-enum,enhancedenums,enhancedenum,enhancedenum,enhanced_enums,enhanced_enum,enhancedenums,enhancedenum,enhancedenum,enhanced-enums-package,enhanced-enums-package,enhanced_enums_package,enhanced_enums_package,enhanced-enums,enhanced-enums,enhanced_enums,enhanced_enums,enhanced,en
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+EnhancedEnum
+============
+
+``EnhancedEnum`` is a generic, enhanced enumeration class that extends
+the functionality of Python’s standard ``Enum`` class. It provides
+additional convenience methods for a more user-friendly approach to
+handling enumerations. This class utilizes Python’s generics to ensure
+type safety and clarity.
+
+Features
+--------
+
+-  **User-Friendly String Representation**: Override the ``__str__``
+   method to return the name of the enum member.
+-  **Listing Members**: Easily list all members of the enumeration.
+-  **Validation**: Check if a given value is part of the enumeration.
+-  **Tuple Conversion**: Convert enum members into a tuple.
+-  **Navigation**: Navigate to the next or previous enum members in
+   sequence.
+-  **Creation from String**: Instantiate an enum member from its string
+   name.
+-  **Creation from Value**: Instantiate an enum member from its value.
+
+Installation
+------------
+
+You can copy the ``EnhancedEnum`` class code into your project, or
+import it if you’ve saved it as a separate Python file.
+
+Usage
+-----
+
+Below is an example of how you might define and use the
+``EnhancedEnum``:
+
+.. code:: python
+
+   from enum import Enum, auto
+   from enhanced_enum import EnhancedEnum
+
+   class Color(EnhancedEnum):
+       RED = auto()
+       GREEN = auto()
+       BLUE = auto()
+
+   # List all members
+   print(Color.list_all())
+
+   # Validate a member
+   print(Color.validate(Color.RED))
+
+   # Get next and previous members
+   print(Color.RED.next())
+   print(Color.RED.previous())
+
+   # Create a member from a string
+   print(Color.from_string('RED'))
+
+   # Create a member from a value
+   print(Color.from_value(1))
+
+Methods
+-------
+
+-  ``__str__``: Return a more user-friendly string representation of the
+   enum member.
+-  ``list_all``: Return a list of all enum members.
+-  ``validate``: Check if a given value is a valid member of the enum.
+-  ``as_tuple``: Return the enum members as a tuple.
+-  ``next``: Return the next enum member in sequence.
+-  ``previous``: Return the previous enum member in sequence.
+-  ``from_string``: Return the corresponding enum member for a given
+   name.
+-  ``from_value``: Return the corresponding enum member for a given
+   numeric value.
+
+Contributing
+------------
+
+Contributions, issues, and feature requests are welcome. Feel free to
+check `issues
+page <https://github.com/m-ghiani/ENHANCED_ENUMS/issues>`__ if you want
+to contribute.
+
+License
+-------
+
+Distributed under the MIT License. See ``LICENSE`` for more information.
+
+Contact
+-------
+
+Massimo Ghiani - m.ghiani@gmail.com
+
+Project Link: https://github.com/m-ghiani/ENHANCED_ENUMS
