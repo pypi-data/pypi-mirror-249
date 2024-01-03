@@ -1,0 +1,21 @@
+[project]
+name = "gabes_firstpackage"
+version = "1.1.1"
+authors = [
+  { name="Gabriel Ribeiro", email="gabrielc.ribeiro@hotmail.com" },
+]
+description = "My first Multilayer Perceptron."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/sundae-driver/gabes_firstpackage.git"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"

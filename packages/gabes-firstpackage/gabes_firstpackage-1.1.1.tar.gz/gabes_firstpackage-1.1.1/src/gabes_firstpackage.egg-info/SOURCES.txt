@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+src/gabes_firstpackage/__init__.py
+src/gabes_firstpackage/functions.py
+src/gabes_firstpackage/mlp_momentum.py
+src/gabes_firstpackage.egg-info/PKG-INFO
+src/gabes_firstpackage.egg-info/SOURCES.txt
+src/gabes_firstpackage.egg-info/dependency_links.txt
+src/gabes_firstpackage.egg-info/top_level.txt
