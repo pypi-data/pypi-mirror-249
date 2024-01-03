@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyparamvalidate"
+version = "0.1.8"
+authors = [
+    { name = "kindtester", email = "kindtester@foxmail.com" },
+]
+description = "一个简单但强大的 Python 函数参数验证器。提供多种内置验证器，支持自定义验证规则，帮助开发者轻松进行函数参数验证，提高代码的健壮性和可维护性。"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    'pytest',
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["pyparamvalidate"]
