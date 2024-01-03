@@ -1,0 +1,4 @@
+httpx
+openai
+prompt-toolkit
+tomlkit
