@@ -1,0 +1,12 @@
+paper_forms/__init__.py,sha256=LBK46heutvn3KmsCrKIYu8RQikbfnjZaj2xFrXaeCzQ,22
+paper_forms/boundfield.py,sha256=EXE2squJM2ZjEGrdcclk78_lWj3qgIXsgGDzI73uk5Y,5298
+paper_forms/composer.py,sha256=mTcOrzNaZ8GW12ALckc-EDmljg7BCek3J3WnaIcYWbI,2679
+paper_forms/conf.py,sha256=QTn_oMSaYCpziWXkQPH_E9cc4mSCJ_qxPNVCx3G1iyw,225
+paper_forms/utils.py,sha256=YZCoAjU2D0Jk1sak2xG4lvyjplhXnhRWrITyWrXu4Qg,229
+paper_forms/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paper_forms/templatetags/paper_forms.py,sha256=Kg_XE72nnzXNsC-SndxJoJ4V5EVMLmIX5mShmxHFGGI,1873
+paper_forms-0.5.0.dist-info/LICENSE,sha256=K7QxfIHl_vX_7bO2MPS4gxLEkqqrWv5qCC5B-x_0CM0,1515
+paper_forms-0.5.0.dist-info/METADATA,sha256=nk86gGKUzliCKLA30URNSuIzgjtEfPaWXhCotNlr9-o,18179
+paper_forms-0.5.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+paper_forms-0.5.0.dist-info/top_level.txt,sha256=PQ6Y1VmS79YhZaCy8lqX5lFBRIapJLxAC8FwmYOsSsk,12
+paper_forms-0.5.0.dist-info/RECORD,,
