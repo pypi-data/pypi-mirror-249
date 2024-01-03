@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cgse-core
+Version: 2023.1.0
+Summary: Core services for the CGSE framework
+Author: Rik Huygen
+Author-email: rik.huygen@kuleuven.be
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: apscheduler
+Requires-Dist: cgse-common (==2023.1.4)
+Requires-Dist: click
+Requires-Dist: gitpython
+Requires-Dist: prometheus-client
+Requires-Dist: pyzmq
+Requires-Dist: rich
+Description-Content-Type: text/markdown
+
+# The core services for the CGSE platform
+
