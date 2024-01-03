@@ -1,0 +1,16 @@
+pyapply/VERSION,sha256=WI9djpK4Y5yg-StWin-IGjJTGgYRLeS7dwX0--7eWuU,7
+pyapply/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyapply/__main__.py,sha256=M6gPvzNH46G1wtC9uaQLu_qayeBBOvsPCQy6Lsa7Rgg,3308
+pyapply/utils.py,sha256=N4iMMHrQah-WLXWEfBRd4ikMK0mEXqZGdOU-LzBg1D8,1567
+pyapply/version.py,sha256=gVp-miWf3t0PRRVVENISz-L9FvSgcI6OTsNqWc3I2BQ,277
+pyapply/coverletters/__init__.py,sha256=8QtJa84R5mu6_F6sK7jcMzUXReHPH0JqnMJlc5x1yOQ,21
+pyapply/coverletters/plainV1.py,sha256=L-fZm6YgDDsnAMSAeOfavI8eyqexgjd1TYkN7_gr-Vk,1634
+pyapply/userdatafiles/__init__.py,sha256=-hjd07OkeBeOwGO1J7DIFzpCIlSkcC2-mv6Y4ZvOVLw,2445
+pyapply/workflows/__init__.py,sha256=MG5RMkEwKjSz8AWfhjMqDv6KUcseoVFgyzV9F1hFKvU,21
+pyapply/workflows/asujobs.py,sha256=NeKQgJPLXEivZ2tnPo-kMTTQ06L1LRHo-TbH_ceCHTA,1444
+pyapply-0.1.1.dist-info/LICENSE,sha256=0RjUZXKPwUnT97krWJ05bHyIrSFHsSr-M66Kjufr0B8,1068
+pyapply-0.1.1.dist-info/METADATA,sha256=p3r0-_XHzfTVpwufuhaGeFlBMLXrTSQ93pqKsBDqQGs,2041
+pyapply-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyapply-0.1.1.dist-info/entry_points.txt,sha256=uHCFPWBajpPGvqfeLp8jGaNlT3VPCnDixdL6bwK1sz0,54
+pyapply-0.1.1.dist-info/top_level.txt,sha256=vBFaY8dpQjm1Yjk_dsCC7W-YjnvLjZ4OEJzKet2s4po,8
+pyapply-0.1.1.dist-info/RECORD,,
