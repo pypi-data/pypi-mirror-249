@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+idev-pytermcolor/PyTermColor/Color.py
+idev-pytermcolor/PyTermColor/__init__.py
+idev-pytermcolor/idev_pytermcolor.egg-info/PKG-INFO
+idev-pytermcolor/idev_pytermcolor.egg-info/SOURCES.txt
+idev-pytermcolor/idev_pytermcolor.egg-info/dependency_links.txt
+idev-pytermcolor/idev_pytermcolor.egg-info/top_level.txt
