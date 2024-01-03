@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lightspark-crypto-python
+Version: 0.1.6
+Summary: The Python language bindings for lightspark crypto operations
+Home-page: https://github.com/lightsparkdev/lightspark-crypto-uniffi
+Author: Lightspark Group, Inc. <info@lightspark.com>
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lightspark-crypto-python
+
+This is a python implementation of the lightspark crypto algorithm.
