@@ -1,0 +1,7 @@
+setup.py
+gervasebots.egg-info/PKG-INFO
+gervasebots.egg-info/SOURCES.txt
+gervasebots.egg-info/dependency_links.txt
+gervasebots.egg-info/entry_points.txt
+gervasebots.egg-info/requires.txt
+gervasebots.egg-info/top_level.txt
