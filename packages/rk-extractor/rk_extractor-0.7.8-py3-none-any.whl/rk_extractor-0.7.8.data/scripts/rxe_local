@@ -1,0 +1,105 @@
+#!python
+
+import subprocess
+import argparse
+import shutil
+import glob
+import sys
+import os
+import re
+
+from logzero import logger as log
+
+#----------------------------
+class data:
+    jobid   = None
+    nfits   = None
+    sandbox = None
+    dset    = None
+    vfix    = None
+    mods    = None
+    sft_path= '/publicfs/lhcb/user/campoverde/SFT/RK_TOY'
+#----------------------------
+def get_options(exopt):
+    regex='dset:(.*),vars:(.*),mods:(.*)'
+    mtch = re.match(regex, exopt)
+    if not mtch:
+        log.error(f'Cannot extract datasets and variables from: {exopt}')
+        raise
+
+    return mtch.groups()
+#----------------------------
+def get_args():
+    jobid            = sys.argv[1]
+    nfits            = sys.argv[2]
+    sandbox          = sys.argv[3]
+    exopt            = ' '.join(sys.argv[4:])
+    dset, vfix, mods = get_options(exopt)
+
+    data.sandbox = f'{sandbox}/{jobid.rjust(3, "0")}_{nfits.rjust(3, "0")}'
+    data.jobid   = int(jobid)
+    data.nfits   = int(nfits)
+    data.dset    = dset
+    data.vfix    = vfix
+    data.mods    = mods 
+
+    try:
+        os.makedirs(data.sandbox, exist_ok=True)
+    except:
+        log.error(f'Cannot make sandbox: {data.sandbox}')
+        raise
+#----------------------------
+def print_args():
+    log.info('-' * 40)
+    log.info(f'Args for {os.path.basename(__file__)}:')
+    log.info('-' * 40)
+    log.info(f'{"Sandbox":<20}{data.sandbox:<20}')
+    log.info(f'{"JOBID":<20}{data.jobid:<20}')
+    log.info(f'{"NFits":<20}{data.nfits:<20}')
+    log.info(f'{"Datasets":<20}{data.dset:<20}')
+    log.info(f'{"Variables to fix":<20}{data.vfix:<20}')
+    log.info(f'{"Generating model":<20}{data.mods:<20}')
+    log.info('-' * 40)
+#----------------------------
+def copy_files():
+    ext_dir = os.environ['EXTDIR']
+
+    l_tarball = glob.glob(f'{ext_dir}/*.tar.gz')
+    if len(l_tarball) != 5:
+        log.error(f'Wrong number of tarballs: {l_tarball}')
+        raise
+
+    l_script = ['rxe_toys', 'rxe_run_toys']
+    l_file   = l_script + l_tarball
+    for file_path in l_file:
+        file_name = os.path.basename(file_path)
+        shutil.copyfile(file_path, f'{data.sandbox}/{file_name}')
+
+    for script in l_script:
+        subprocess.run(['chmod', '+x', f'{data.sandbox}/{script}'] )
+#----------------------------
+def run():
+    l_command = ['./rxe_run_toys', data.dset, data.vfix, data.mods]
+
+    log.info(f'Running: {l_command}')
+    stat = subprocess.run(l_command, env={'RK_TOY' : data.sft_path})
+    if stat.returncode != 0:
+        log.error(f'Process returned exit status: {stat.returncode}')
+        raise
+#----------------------------
+def make_seeds():
+    with open(f'{data.jobid}.sd', 'w') as ofile:
+        for i_fit in range(data.nfits):
+            seed = i_fit + 1000 * data.jobid
+            ofile.write(f'{seed}\n')
+#----------------------------
+def main():
+    get_args()
+    print_args()
+    copy_files()
+    os.chdir(data.sandbox)
+    make_seeds()
+    run()
+#----------------------------
+if __name__ == '__main__':
+    main()
