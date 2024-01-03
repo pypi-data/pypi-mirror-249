@@ -1,0 +1,16 @@
+# ChangeLog
+
+## 2.0.5 and 2.0.6 (Current Release)
+- When you hover over a Function, it shows a small description
+- Added the `help()` command, which gives a list of all functions with brief descriptions
+- Fixed Bugs
+- Now you can use `from Mustraxlib import *` to be able to use functions like `function_name(parameters)` instead of `Mustraxlib.function_name(parameters)`
+
+## 2.0.4
+- Experimenting with new functions
+
+## 2.0.3
+- Stable Release
+
+## 0.0.1 to 2.0.2
+- Testing with Various Functions

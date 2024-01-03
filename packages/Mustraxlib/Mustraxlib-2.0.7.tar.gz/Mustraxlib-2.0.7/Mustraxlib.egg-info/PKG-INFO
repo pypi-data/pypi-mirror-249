@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Mustraxlib
+Version: 2.0.7
+Summary: Simple tools for convenient programming
+Home-page: 
+Author: Programmer101
+Author-email: wsl.com.uk@gmail.com
+License: Copyright 2023 Programmer101. All rights reserved. See LICENCE.txt for details
+Keywords: Efficiency,User Input,Hashing,Encryption,Matrix,2D Lists,List Manipulation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+The Mustraxlib Library is a simple library that helps makes coding quicker, shorter and more efficient. Some abilities include: Matrix Manipulation, User Input, Web Scraping and Simple Console Manipulation. To get a full list of functions, use the help() function in your code. To Use the Library, use 'pip install Mustraxlib' in your shell and 'from Mustraxlib import *' in your code. To use the functions, use function_name(parameters). The Code is Copyrighted and not available for private distribution or editing. View LICENCE.txt for more information about legalities.
+
+# ChangeLog
+
+## 2.0.5 and 2.0.6 (Current Release)
+- When you hover over a Function, it shows a small description
+- Added the `help()` command, which gives a list of all functions with brief descriptions
+- Fixed Bugs
+- Now you can use `from Mustraxlib import *` to be able to use functions like `function_name(parameters)` instead of `Mustraxlib.function_name(parameters)`
+
+## 2.0.4
+- Experimenting with new functions
+
+## 2.0.3
+- Stable Release
+
+## 0.0.1 to 2.0.2
+- Testing with Various Functions
