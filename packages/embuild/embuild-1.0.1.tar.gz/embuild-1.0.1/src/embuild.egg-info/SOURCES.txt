@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/embuild/__init__.py
+src/embuild/__main__.py
+src/embuild/embuild.py
+src/embuild.egg-info/PKG-INFO
+src/embuild.egg-info/SOURCES.txt
+src/embuild.egg-info/dependency_links.txt
+src/embuild.egg-info/entry_points.txt
+src/embuild.egg-info/requires.txt
+src/embuild.egg-info/top_level.txt
