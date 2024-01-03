@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "binypt-cli"
+version = "1.0.3a1"
+description = "Command line tool for downloading data charts from Binance"
+authors = ["ilia tayefi <tayefi.ilia@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Tejaromalius/Binypt-cli"
+include = ["LICENSE"]
+keywords = ["crypto", "binance", "cli"]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Science/Research",
+	"License :: OSI Approved :: MIT License",
+	"Natural Language :: English",
+	"Operating System :: Unix",
+	"Programming Language :: Python :: 3.10",
+	"Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+binypt-lib = "^2.3.7"
+argparse = "^1.4.0"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+black = "^23.9.1"
+
+[tool.isort]
+profile="black"
+line_length = "79"
+no_sections = "True"
+length_sort = "True"
+float_to_top = "True"
+order_by_type = "True"
+lines_between_types = "1"
+force_single_line = "True"
+
+[tool.poetry.scripts]
+binypt = "binypt_cli.__main__:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
