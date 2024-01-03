@@ -1,0 +1,13 @@
+systembridgeconnector/__init__.py,sha256=dGwnFlZ_TGofVPPQiHMj8bAr3tpuVOw0-Nfs-zF063o,31
+systembridgeconnector/_version.py,sha256=7-aOsfINWoFIHr2stl8mZMYHtEF_SxyVlGR5pIq23Zw,308
+systembridgeconnector/base.py,sha256=U2naaWTHfDmfi_ViWupX4I_JUHQ20svL5vjnvtsDZBM,307
+systembridgeconnector/const.py,sha256=sTyzJrdOIG52-2pauGytf6eZog-K2T--Hfx_sZd5vn0,3438
+systembridgeconnector/exceptions.py,sha256=JcB7KOGLbr2W2IV1U9nwJof1HAocaauXb-1kYpiKeB8,410
+systembridgeconnector/http_client.py,sha256=zoBTmxeKlCCJ90djTb6twuhRe3GU4EER9cuZNw9QHsE,4652
+systembridgeconnector/version.py,sha256=0jW43dthLFnmWdPlUCxxchRkF2HcT5jzdsS0pNo3Idc,2777
+systembridgeconnector/websocket_client.py,sha256=DMZpRWHggclMZC458rqiv410xNLjMXj8Yo6eEnJVHA0,16540
+systembridgeconnector-4.0.0.dev5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+systembridgeconnector-4.0.0.dev5.dist-info/METADATA,sha256=OekYzPw072cxdpclx5wrfMs8BoTWz14W4fo_9sEUylU,808
+systembridgeconnector-4.0.0.dev5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+systembridgeconnector-4.0.0.dev5.dist-info/top_level.txt,sha256=PV74wjd0CcjsdFQmGde0P5oX-HHlCE5rnKvbAylIOZM,22
+systembridgeconnector-4.0.0.dev5.dist-info/RECORD,,
