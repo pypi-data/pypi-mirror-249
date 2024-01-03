@@ -1,0 +1,18 @@
+# Network
+httpx
+aiohttp
+websockets
+tornado
+# Model Client
+openai
+erniebot
+zhipuai
+# Format
+PyYAML
+# Web
+duckduckgo_search
+newspaper3k
+# Calulate
+numpy
+scipy
+sympy
