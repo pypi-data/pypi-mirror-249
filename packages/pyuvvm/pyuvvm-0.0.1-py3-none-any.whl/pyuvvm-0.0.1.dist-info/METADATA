@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyuvvm
+Version: 0.0.1
+Summary: A Pyton implementation of UVVM for Cocotb
+Author: Rasmus Grøndahl Olsen
+Author-email: pyuvvm@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: cocotb
+Requires-Dist: importlib-resources ; python_version < "3.8"
+
+# pyuvvm
+A Python implementation of UVVM for Cocotb
