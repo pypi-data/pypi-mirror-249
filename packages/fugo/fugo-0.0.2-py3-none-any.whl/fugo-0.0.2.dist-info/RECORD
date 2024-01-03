@@ -1,0 +1,10 @@
+fugo/__init__.py,sha256=doZizCCQxd3szpO-mW0BG4JXHeVeQMulOD1UWRWn1zk,87
+fugo/chord.py,sha256=T0KCs1GSh1yW8STIMn3VvYFrJieT0rGEEtnndNS6xy0,4022
+fugo/interval.py,sha256=hPuc__RJweddBNcx4UKTh4jRapoYl2JVwusBOEnHwpk,5108
+fugo/motion.py,sha256=TmJPD2jIajhbVGNTx9Iyn83W6pEUbApScxCZnybfPSc,3700
+fugo/note.py,sha256=jE06U4ZY97VlyP3NO2upJbROyCLFEzlyWzLviF72ciw,9484
+fugo-0.0.2.dist-info/LICENSE,sha256=wrJPGzNNldl1I4QM6KV2a0OIOMymMJxHNYUmb83EeBc,1078
+fugo-0.0.2.dist-info/METADATA,sha256=yTFgaIj6t0fZPqtgWgx3ihMMIkLwXRwCoQbOhb57Ty4,2622
+fugo-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fugo-0.0.2.dist-info/top_level.txt,sha256=QKIgC9R26OaR6IZVXQs9Z0SxXnYViNp7BMhBTroWt64,5
+fugo-0.0.2.dist-info/RECORD,,
