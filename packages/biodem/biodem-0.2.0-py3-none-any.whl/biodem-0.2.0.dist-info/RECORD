@@ -1,0 +1,12 @@
+biodem/__init__.py,sha256=Y3iLeJov1EMqk1Be1IPsU_uD3uQKZH8HT3Zggr1NXXA,250
+biodem/cli_dem.py,sha256=4f4NFbGOWkSCyKoJKnY9pqVG-kt9FK5s32OXxkfbM-8,12063
+biodem/module1_predata.py,sha256=IeLf90YPjartRdHyhDrdTLSck-LONZzt46iW19LQ2VI,3396
+biodem/module2_model.py,sha256=N7WxSnFLT89gZvHi-vhYTSbTQ1VIwTHvxDAsexehyhE,1601
+biodem/module3_predict.py,sha256=XvI0Fkzb0jmfNuC2LRlyxW8nLN6on4ISm8UQtDfN2wA,857
+biodem/module4_mining.py,sha256=CGweNySX4nMEeJKcXq2XwWA-VjO2CBC0yksqBXanHnQ,2676
+biodem/utils_model.py,sha256=DMbv1M6XwbxHu5BXqQ4adyQkBDysNq2tm6tcOt1Yc8M,28534
+biodem-0.2.0.dist-info/METADATA,sha256=GP7dWr1qJJEL4GRNXOEWfFo0XDu90hN6vIPaiZy7PtM,20544
+biodem-0.2.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+biodem-0.2.0.dist-info/entry_points.txt,sha256=Gx2cr2NruqS0LSwAOo3v5n1uWO33oKkdLCJ-tD1FFZU,325
+biodem-0.2.0.dist-info/licenses/LICENSE,sha256=meVL_HzZ9e_Uj-CmMQeDIne_-ULu2OGHR6Pe_j-ZnSo,1063
+biodem-0.2.0.dist-info/RECORD,,

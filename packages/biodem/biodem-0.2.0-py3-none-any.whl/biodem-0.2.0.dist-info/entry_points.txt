@@ -1,0 +1,8 @@
+[console_scripts]
+dem-hello = biodem.cli_dem:hello
+dem-impute = biodem.cli_dem:cli_dem_impute
+dem-model = biodem.cli_dem:cli_dem_model
+dem-predict = biodem.cli_dem:cli_dem_predict
+dem-rank = biodem.cli_dem:cli_dem_rank
+dem-select-rf = biodem.cli_dem:cli_dem_select_rf
+dem-select-varpca = biodem.cli_dem:cli_dem_select_varpca
