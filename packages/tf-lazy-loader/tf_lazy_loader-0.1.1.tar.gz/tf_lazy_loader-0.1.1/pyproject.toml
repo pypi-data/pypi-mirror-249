@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "tf-lazy-loader"
+version = "0.1.1"
+description = "Lazy loading of Python modules, based on TensorFlow's LazyLoader util."
+authors = ["Nathan Jones <purkinje90@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
