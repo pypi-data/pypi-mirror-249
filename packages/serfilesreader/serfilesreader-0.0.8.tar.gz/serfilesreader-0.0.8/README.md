@@ -1,0 +1,48 @@
+# pyserfilesreader
+
+pyserfilesreader is a library helping you to use SER video files.
+
+SER video files are used in astronomy to provide uncompressed container with header informations
+
+CAUTION : don't read -yet- color (RGB) ser files.
+
+## dependencies
+LIBRARY :
+- numpy
+- cv2
+
+pip3 install numpy cv2
+
+GUI : 
+- pysimplegui-qt
+- cv2
+- numpy
+
+pip3 install PySimpleGUIQt
+
+## capabilities
+reading a ser file
+saving as png
+saving as fit (another astronomical use file format)
+
+## inside the loop
+all datas are numpy array
+
+# methods
+    .read() :           return a numpy frame and go to the next frame
+    .getHeader() :      return SER file header in a dictionnary
+    .readFrameAtPos(n:int) : return frame number n.
+    .getLength() :      return number of frame in SER file.
+    .getWidth() :       return width of a frame
+    .getHeight() :      return height of a frame
+    .getCurrentPosition():       return current cursor value
+    .setCurrentPosition(n:int) : set the cursor at position n. Return position if OK, -1 if something's wrong.
+    .saveFit(filename) : save as FIT file filename frame at "cursor". Return (OK_Flag, filename)
+    .savePng(filename) : save as PNG file filename frame at "cursor". Return (OK_Flag, filename)
+    .nextFrame() :        add 1 to cursor i.e. go to next frame. Return current cursor value. -1 if the end of th video.
+    .previousFrame() :  remove 1 to cursor i.e. go to previous frame. Return current cursor value. -1 if it's from first frame..
+    .getName()          return name of SER file.
+
+
+
+
