@@ -1,0 +1,105 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "github-wiki-page-index"
+description = 'Creates an index based on tags for GitHub Wiki pages.'
+readme = 'README.md'
+authors = [
+    { name = "Paul Suh", email = "paul@mspex.net" }
+]
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki"
+]
+dependencies = []
+requires-python = ">=3.8"
+dynamic = ["version"]
+
+[project.optional-dependencies]
+precommit = [
+    "ruff"
+]
+unittest = [
+    "pytest",
+    "pytest-cov"
+]
+
+[project.urls]
+"Source code" = "https://github.com/paulsuh/githubwikipageindex"
+
+#[tool.hatch.version]
+#path = "src/foobar/__about__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/docs",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/github_wiki_page_index"]
+
+[tool.hatch.envs.default]
+type="conda"
+dependencies = [
+    "coverage[toml]>=6.5",
+    "pytest",
+    "ruff"
+]
+python="3.11"
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[tool.hatch.envs.types]
+dependencies = [
+  "mypy>=1.0.0",
+]
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/foobar tests}"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
+
+[tool.coverage.run]
+source_pkgs = ["src"]
+branch = true
+parallel = true
+omit = [
+  "src/github_wiki_page_index/__about__.py",
+]
+
+[tool.coverage.paths]
+src = ["src"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "no cov",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "def _setup():"
+]
+
+[tool.ruff.per-file-ignores]
+# Ignore `E402` (import violations) and `F401` (unused imports) in all
+# `__init__.py` files
+"__init__.py" = ["E402", "F401"]

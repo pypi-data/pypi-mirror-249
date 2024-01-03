@@ -1,0 +1,24 @@
+name: GitHub Wiki Action
+author: Paul Suh <paul@mspex.net>
+description: This action inserts an index of the wiki's pages into the Home page of a GitHub wiki.
+runs:
+  using: 'docker'
+  image: 'src/Dockerfile'
+
+inputs:
+  REPO_NAME:
+    description: 'name of the repository in the format <user name>/<repo name>. Defaults to current repo. '
+    required: false
+  AUTH_TOKEN:
+    description: 'Authentication token to allow content to be pushed. Pass in secrets.GITHUB_TOKEN.'
+    required: true
+  USER_NAME:
+    description: 'User name for use with the AUTH_TOKEN'
+    required: true
+  USER_EMAIL:
+    description: 'Email address of the user. Utilized as part of the commit action'
+    required: true
+
+branding:
+  icon: list
+  color: blue
