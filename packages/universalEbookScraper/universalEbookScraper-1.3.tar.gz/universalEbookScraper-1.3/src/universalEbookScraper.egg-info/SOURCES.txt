@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/universalEbookScraper.egg-info/PKG-INFO
+src/universalEbookScraper.egg-info/SOURCES.txt
+src/universalEbookScraper.egg-info/dependency_links.txt
+src/universalEbookScraper.egg-info/requires.txt
+src/universalEbookScraper.egg-info/top_level.txt
