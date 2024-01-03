@@ -1,0 +1,2 @@
+[nbdev]
+xcube = xcube._modidx:d
