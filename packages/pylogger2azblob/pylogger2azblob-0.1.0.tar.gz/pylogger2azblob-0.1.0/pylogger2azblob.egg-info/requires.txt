@@ -1,0 +1,7 @@
+azure-storage-blob
+azure-identity
+
+[dev]
+pytest
+build
+twine

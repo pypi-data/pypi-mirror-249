@@ -1,0 +1,12 @@
+LICENSE
+README.md
+README_pypi.md
+pyproject.toml
+pylogger2azblob/__init__.py
+pylogger2azblob/handlers.py
+pylogger2azblob.egg-info/PKG-INFO
+pylogger2azblob.egg-info/SOURCES.txt
+pylogger2azblob.egg-info/dependency_links.txt
+pylogger2azblob.egg-info/requires.txt
+pylogger2azblob.egg-info/top_level.txt
+tests/test_handlers.py
