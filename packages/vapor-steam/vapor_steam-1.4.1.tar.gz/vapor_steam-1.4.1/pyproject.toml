@@ -1,0 +1,96 @@
+[tool.poetry]
+name = "vapor-steam"
+version = "1.4.1"
+description = "TUI program to check the ProtonDB compatibility of all the games of a Steam user."
+authors = ["TabulateJarl8 <tabulatejarl8@gmail.com>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [{include = "vapor"}]
+homepage = "https://tabulate.tech/software/vapor"
+repository = "https://github.com/TabulateJarl8/vapor"
+keywords = ["steam", "protondb", "compatibility", "textual", "tui"]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Environment :: Console",
+	"Intended Audience :: End Users/Desktop",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Typing :: Typed"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+textual = "^0.44.0"
+aiohttp = "^3.9.1"
+platformdirs = "^4.1.0"
+
+[tool.poetry.scripts]
+vapor = "vapor.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+textual-dev = "^1.2.1"
+ruff = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+preview = true
+extend-select = [
+	# pycodestyle
+	"E",
+	"W293",
+	"W292",
+	"W605",
+	# Pyflakes
+	"F",
+	# pyupgrade
+	"UP",
+	# flake8-bugbear
+	"B",
+	# flake8-simplify
+	"SIM",
+	# isort
+	"I",
+	# pep8-naming
+	"N",
+	# flake8-bandit
+	"S",
+	# flake8-boolean-trap
+	"FBT",
+	# flake8-comprehensions
+	"C4",
+	# flake8-pie
+	"PIE",
+	# quote rules
+	"Q001",
+	"Q002",
+	# flake8-raise
+	"RSE",
+	# flake8-return
+	"RET",
+	# flake8-unused-arguments
+	"ARG",
+	# flake8-use-pathlib
+	"PTH",
+	# eradicate
+	"ERA",
+	# perflint
+	"PERF"
+]
+ignore = ["E501", "E274", "S110", "FBT001", "FBT002", "PERF203"]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+line-ending = "lf"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+order-by-type = true
