@@ -1,0 +1,8 @@
+snakemake_executor_plugin_kueue/__init__.py,sha256=ljkx5OeYcXGhSZwtWJq-TSLFAMw8_FySUqsLkMO_6zw,1936
+snakemake_executor_plugin_kueue/custom_resource.py,sha256=H-P6UuBsTi4hOuE4eP5byuLn0uM1WKDhvJEGeFPGnYg,11728
+snakemake_executor_plugin_kueue/executor.py,sha256=_4E1Qf3UfSNYuAP9Neyyb9jr2CpeBmmmHVCmHqOztUo,11115
+snakemake_executor_plugin_kueue/utils.py,sha256=DFO3rDcSDpMfLw9g1unJo1YdMjwmb5_IPHl2YGaDwx8,412
+snakemake_executor_plugin_kueue-0.1.0.dist-info/LICENSE,sha256=AlyLB1m_z0CENCx1ob0PedLTTohtH2VLZhs2kfygrfc,1108
+snakemake_executor_plugin_kueue-0.1.0.dist-info/METADATA,sha256=VjDc2VxsKu26yzrav75u704EN5OC_eC9ZXM_EHlTid4,5313
+snakemake_executor_plugin_kueue-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+snakemake_executor_plugin_kueue-0.1.0.dist-info/RECORD,,
