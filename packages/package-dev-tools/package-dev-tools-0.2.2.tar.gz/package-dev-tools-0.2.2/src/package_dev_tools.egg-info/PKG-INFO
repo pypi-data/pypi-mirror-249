@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: package-dev-tools
+Version: 0.2.2
+Summary: CI/CD tools for Python packages
+Author-email: Quinten Roets <qdr2104@columbia.edu>
+License: MIT
+Project-URL: Source Code, https://github.com/quintenroets/package-dev-tools
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygithub>=2.1
+Requires-Dist: python-slugify>=8.0
+Requires-Dist: simple-classproperty>=4.0
+Requires-Dist: superpathlib>=1.3
+Requires-Dist: toml>=0.10
+Requires-Dist: typer>=0.9
+Requires-Dist: quinten-cli>=1.1
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: bump2version; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: hypothesis; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-mypy-plugins; extra == "dev"
+
+# Package Dev Tools
+[![PyPI version](https://badge.fury.io/py/package-dev-tools.svg)](https://badge.fury.io/py/package-dev-tools)
+![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen)
+
+## Usage
+* Use [actions](https://github.com/quintenroets/package-dev-tools/tree/main/actions) in .github/workflows
+* Use [pre-commit hooks](https://github.com/quintenroets/package-dev-tools/tree/main/.pre-commit-hooks.yaml) in .pre-commit-config.yaml
+
+## Installation
+```shell
+pip install package-dev-tools
+```
+make sure to use Python 3.10+
