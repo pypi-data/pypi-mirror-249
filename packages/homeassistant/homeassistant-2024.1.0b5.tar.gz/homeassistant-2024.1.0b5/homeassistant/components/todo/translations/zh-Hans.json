@@ -1,0 +1,90 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "To-do \u5217\u8868"
+        }
+    },
+    "selector": {
+        "status": {
+            "options": {
+                "completed": "\u5df2\u5b8c\u6210",
+                "needs_action": "\u672a\u5b8c\u6210"
+            }
+        }
+    },
+    "services": {
+        "add_item": {
+            "fields": {
+                "description": {
+                    "name": "\u63cf\u8ff0"
+                },
+                "due_date": {
+                    "name": "\u622a\u6b62\u65e5\u671f"
+                },
+                "due_date_time": {
+                    "name": "\u622a\u6b62\u65e5\u671f\u65f6\u95f4"
+                },
+                "due_datetime": {
+                    "name": "\u622a\u6b62\u65e5\u671f\u548c\u65f6\u95f4"
+                },
+                "item": {
+                    "name": "\u9879\u76ee\u540d\u79f0"
+                }
+            }
+        },
+        "create_item": {
+            "fields": {
+                "status": {
+                    "name": "\u72b6\u6001"
+                },
+                "summary": {
+                    "name": "\u6458\u8981"
+                }
+            }
+        },
+        "delete_item": {
+            "fields": {
+                "summary": {
+                    "name": "\u6458\u8981"
+                }
+            }
+        },
+        "get_items": {
+            "fields": {
+                "status": {
+                    "name": "\u72b6\u6001"
+                }
+            }
+        },
+        "remove_item": {
+            "fields": {
+                "item": {
+                    "name": "\u9879\u76ee\u540d\u79f0"
+                }
+            }
+        },
+        "update_item": {
+            "fields": {
+                "description": {
+                    "name": "\u63cf\u8ff0"
+                },
+                "due_date": {
+                    "name": "\u622a\u6b62\u65e5\u671f"
+                },
+                "due_datetime": {
+                    "name": "\u622a\u6b62\u65e5\u671f\u548c\u65f6\u95f4"
+                },
+                "item": {
+                    "name": "\u9879\u76ee\u540d\u79f0"
+                },
+                "status": {
+                    "name": "\u8bbe\u7f6e\u72b6\u6001"
+                },
+                "summary": {
+                    "name": "\u6458\u8981"
+                }
+            }
+        }
+    },
+    "title": "To-do \u5217\u8868"
+}

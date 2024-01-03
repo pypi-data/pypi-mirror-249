@@ -1,0 +1,9 @@
+{
+    "entity": {
+        "sensor": {
+            "charge_state-usable_battery_level": {
+                "name": "Nivel de bater\u00eda"
+            }
+        }
+    }
+}

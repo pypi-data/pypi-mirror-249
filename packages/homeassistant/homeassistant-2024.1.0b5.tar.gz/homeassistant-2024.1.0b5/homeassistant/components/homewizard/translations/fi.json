@@ -1,0 +1,60 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "unknown_error": "Odottamaton virhe"
+        },
+        "step": {
+            "discovery_confirm": {
+                "description": "Haluatko m\u00e4\u00e4ritt\u00e4\u00e4 {product_type} ( {serial} ) osoitteessa {ip_address} ?"
+            },
+            "user": {
+                "data": {
+                    "ip_address": "IP-osoite"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "total_energy_export_kwh": {
+                "name": "Energian kokonaisvienti"
+            },
+            "total_energy_export_t1_kwh": {
+                "name": "Energian kokonaisvientitariffi 1"
+            },
+            "total_energy_export_t2_kwh": {
+                "name": "Energian kokonaisvientitariffi 2"
+            },
+            "total_energy_export_t3_kwh": {
+                "name": "Energian kokonaisvientitariffi 3"
+            },
+            "total_energy_export_t4_kwh": {
+                "name": "Energian kokonaisvientitariffi 4"
+            },
+            "total_energy_import_kwh": {
+                "name": "Energian kokonaistuonti"
+            },
+            "total_energy_import_t1_kwh": {
+                "name": "Energian kokonaistuontitariffi 1"
+            },
+            "total_energy_import_t2_kwh": {
+                "name": "Energian kokonaistuontitariffi 2"
+            },
+            "total_energy_import_t3_kwh": {
+                "name": "Energian kokonaistuontitariffi 3"
+            },
+            "total_energy_import_t4_kwh": {
+                "name": "Energian kokonaistuontitariffi 4"
+            }
+        }
+    },
+    "exceptions": {
+        "api_disabled": {
+            "message": "HomeWizard-laitteen paikallinen API on poistettu k\u00e4yt\u00f6st\u00e4."
+        },
+        "communication_error": {
+            "message": "Virhe kommunikoitaessa HomeWizard -laitteen kanssa"
+        }
+    }
+}

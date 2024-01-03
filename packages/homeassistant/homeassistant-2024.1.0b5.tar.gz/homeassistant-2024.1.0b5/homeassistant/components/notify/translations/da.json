@@ -1,0 +1,23 @@
+{
+    "services": {
+        "notify": {
+            "fields": {
+                "message": {
+                    "name": "Besked"
+                }
+            }
+        },
+        "persistent_notification": {
+            "fields": {
+                "message": {
+                    "name": "Besked"
+                },
+                "title": {
+                    "name": "Titel"
+                }
+            },
+            "name": "Send en vedvarende notifikation"
+        }
+    },
+    "title": "Notifikationer"
+}
