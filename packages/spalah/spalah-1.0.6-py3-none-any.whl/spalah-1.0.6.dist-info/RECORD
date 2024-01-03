@@ -1,0 +1,12 @@
+spalah/__init__.py,sha256=b9mU8xi-WcDGVztpEn_IKQvlGFXWKTfDXwfMBCStTpg,118
+spalah/dataframe/__init__.py,sha256=ip6q0CmW6w7jLeNG797AERFpaFIAaFSwV7nlKaGYgrE,177
+spalah/dataframe/dataframe.py,sha256=QbcddIjiKmCcB3-1-chx7w0m_qwpKSd0e_i-RMDXPp0,24092
+spalah/dataset/DeltaTableConfig.py,sha256=2XBOXKjC8Bm0wqDEtipX7z79nReyytSkgxm6su9S1xQ,8849
+spalah/dataset/__init__.py,sha256=T_lEubayF0t-kl4NiA267Tef_CvMvl7gMQdPIwvTxl4,156
+spalah/dataset/dbfs.py,sha256=m3cfyCY2o8tFTD98DSjiPl_mwTeI0OsGx9iRQLjHYY4,999
+spalah/shared/__init__.py,sha256=-O-6IPMKF_YWfz90pOMgz33UwnqGJWD5H47n8ylPrGU,58
+spalah/shared/logging.py,sha256=AERLhmL7haqaPU80Kqco6sRbOR0AGLFy-TI0D3DdJmI,407
+spalah-1.0.6.dist-info/LICENSE,sha256=XkDCRxg9xPqUr2YtFMjHY03JkZzYkc_6YIe8OSRDEu8,1217
+spalah-1.0.6.dist-info/METADATA,sha256=nPcG5vUXHfIrl9XjaMO-z5NubPnERPa9efo6BaAk2HQ,6237
+spalah-1.0.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+spalah-1.0.6.dist-info/RECORD,,
