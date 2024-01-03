@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyparamvalidate
+Version: 0.1.8
+Summary: 一个简单但强大的 Python 函数参数验证器。提供多种内置验证器，支持自定义验证规则，帮助开发者轻松进行函数参数验证，提高代码的健壮性和可维护性。
+Author-email: kindtester <kindtester@foxmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: pytest
