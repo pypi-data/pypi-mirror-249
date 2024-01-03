@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "aiogqlc"
+version = "5.1.0"
+description = "aiohttp based GraphQL client"
+authors = ["Jonathan Ehwald <github@ehwald.info>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "aiogqlc"}]
+homepage = "https://github.com/DoctorJohn/aiogqlc"
+repository = "https://github.com/DoctorJohn/aiogqlc"
+documentation = "https://github.com/DoctorJohn/aiogqlc"
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.6.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.4.0"
+pytest = "^7.4.1"
+pytest-cov = "^4.1.0"
+pytest-asyncio = "^0.23.3"
+pytest-aiohttp = "^1.0.4"
+strawberry-graphql = "^0.217.0"
+mypy = "^1.5.1"
+mkdocs = "^1.5.2"
+mkdocs-material = "^9.2.8"
+ruff = "^0.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.mypy]
+plugins = "strawberry.ext.mypy_plugin"
+implicit_reexport = false
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
