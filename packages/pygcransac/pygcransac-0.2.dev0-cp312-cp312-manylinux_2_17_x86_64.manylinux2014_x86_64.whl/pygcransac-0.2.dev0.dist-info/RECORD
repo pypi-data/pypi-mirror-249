@@ -1,0 +1,13 @@
+pygcransac-0.2.dev0.dist-info/WHEEL,sha256=3HofhAPXrcqL04h2nNYfBiYAnjkORDgc3DDTTzHNAXM,146
+pygcransac-0.2.dev0.dist-info/LICENSE,sha256=kfVvQufIkGgwa_SyufvbtSlId61U28li3LakGexSVT0,1968
+pygcransac-0.2.dev0.dist-info/RECORD,,
+pygcransac-0.2.dev0.dist-info/top_level.txt,sha256=4LFD-65bzadiAAVat5WyMFFx2cMi1oAXOo-3I-mnvFA,11
+pygcransac-0.2.dev0.dist-info/METADATA,sha256=9e9nE5CUZ_w1qTwcIcmpbPZ1Euon6mRKwK8EMMfP0HI,6049
+pygcransac/pygcransac.cpython-312-x86_64-linux-gnu.so,sha256=oOcgLKDSAJoX3Do7RpkYHzvE6j1FT3uuJ_7WX-7TOdA,2450921
+pygcransac/__init__.py,sha256=zsFM_Zir7XfOkoI9JnM5mbaycgrsfDby7B0xKQ3rx8Y,51
+pygcransac.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+pygcransac.libs/libopencv_core-61e74dbf.so.3.4.5,sha256=X8FR-jroDucUgdre6ylGy2RNo_mqm8BOHtNDYNv6p3w,3529217
+pygcransac.libs/libopencv_flann-80c081ea.so.3.4.5,sha256=j2ldaXbRRTpzH96UcpaLQ_ecD2ye39l4_urrJiNPiQk,500217
+pygcransac.libs/libopencv_calib3d-b2e6635f.so.3.4.5,sha256=jxYIXX1Vl3yGyBgX461RsUth0ETRDr-fr-GS7bBS0Ic,1715201
+pygcransac.libs/libopencv_features2d-0eb98270.so.3.4.5,sha256=PNZJeD7z3bxSqMlrLoMl0i_uRbKFz2igoa7TTuMbSE0,871585
+pygcransac.libs/libopencv_imgproc-458179af.so.3.4.5,sha256=KFK8gBA8je0PfWNt9KJt9Y_PdKnVno_CwpW6XNo9ZcM,3417529
