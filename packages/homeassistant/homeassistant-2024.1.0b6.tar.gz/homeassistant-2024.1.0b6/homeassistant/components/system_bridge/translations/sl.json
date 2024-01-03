@@ -1,0 +1,9 @@
+{
+    "entity": {
+        "sensor": {
+            "os": {
+                "name": "Operacijski sistem"
+            }
+        }
+    }
+}

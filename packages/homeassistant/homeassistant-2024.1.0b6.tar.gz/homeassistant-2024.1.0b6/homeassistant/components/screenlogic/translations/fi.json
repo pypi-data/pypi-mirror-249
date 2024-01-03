@@ -1,0 +1,39 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "gateway_entry": {
+                "data": {
+                    "ip_address": "IP-osoite",
+                    "port": "Portti"
+                },
+                "description": "Anna ScreenLogic Gateway -tietosi.",
+                "title": "ScreenLogic"
+            },
+            "gateway_select": {
+                "data": {
+                    "selected_gateway": "Yhdysk\u00e4yt\u00e4v\u00e4"
+                },
+                "description": "Seuraavat ScreenLogic-yhdysk\u00e4yt\u00e4v\u00e4t havaittiin. Valitse yksi m\u00e4\u00e4ritett\u00e4v\u00e4ksi tai m\u00e4\u00e4rit\u00e4 ScreenLogic-yhdysk\u00e4yt\u00e4v\u00e4 manuaalisesti.",
+                "title": "ScreenLogic"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "scan_interval": "Sekuntia skannausten v\u00e4lill\u00e4"
+                },
+                "description": "M\u00e4\u00e4rit\u00e4 asetukset {gateway_name}:lle",
+                "title": "ScreenLogic"
+            }
+        }
+    }
+}
