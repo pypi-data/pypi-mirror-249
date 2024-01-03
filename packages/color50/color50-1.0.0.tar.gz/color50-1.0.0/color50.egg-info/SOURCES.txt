@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+color50.egg-info/PKG-INFO
+color50.egg-info/SOURCES.txt
+color50.egg-info/dependency_links.txt
+color50.egg-info/top_level.txt
+src/color50/__init__.py
+src/color50/color.py
+src/color50/colorstr.py
+src/color50/constants.py
+src/color50/core_functions.py
+src/color50/csscolors.json
