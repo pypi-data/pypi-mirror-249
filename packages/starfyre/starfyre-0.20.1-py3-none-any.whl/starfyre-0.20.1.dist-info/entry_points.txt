@@ -1,0 +1,3 @@
+[console_scripts]
+starfyre=starfyre.cli:run
+
