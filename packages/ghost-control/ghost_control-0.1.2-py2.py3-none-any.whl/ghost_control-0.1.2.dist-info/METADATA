@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ghost-control
+Version: 0.1.2
+Summary: A package for ghost_box
+Home-page: 
+Author: zaixia108
+Author-email: zaixia108@gmail.com
+License: GUN GPLv3 License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+empty
