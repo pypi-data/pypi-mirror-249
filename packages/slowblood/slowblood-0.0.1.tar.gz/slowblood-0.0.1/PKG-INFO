@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: slowblood
+Version: 0.0.1
+Summary: Tools for ML/LLM
+Home-page: https://github.com/kyledinh/slowblood
+Author: Kyle Dinh
+Author-email: kyledinh@gmail.com
+Project-URL: Bug Tracker, https://github.com/kyledinh/slowblood/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+## Project and PyPI Package 
+- https://pypi.org/project/gpt-prive/
+- https://github.com/gpt-prive
+- https://huggingface.co/Slowblood
+
+## Required Dependencies 
+- build, twine
+
+## Build
+- Update `src/*` and update `setup.conf`
+- Builds to `dist/` directory
+```
+python -m build
+```
+- Push to PyPi with twine
+```
+python -m twine upload --repository pypi dist/*
+```
+
+## Setup
+- Create API key in PyPI account
+- Add to `~/.pypirc`
+```
+[distutils]
+index-servers =
+    pypi
+    testpypi
+
+[pypi]
+  username = __token__
+  password = pypi-AgszLCJ-Cut-And-P@aste-The-API-K#y-From-Your-AccountlZ7-mow
+
+[testpypi]
+repository = https://test.pypi.org/legacy/
+```
