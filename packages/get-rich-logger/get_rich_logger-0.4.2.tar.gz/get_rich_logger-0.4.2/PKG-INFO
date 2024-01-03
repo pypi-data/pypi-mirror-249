@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: get-rich-logger
+Version: 0.4.2
+Summary: 
+Author: Nicholas Butterly
+Author-email: butterlyn888@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: rich (>=13.1.0,<14.0.0)
+Description-Content-Type: text/markdown
+
+# get-rich-logger
+
+Drop in replacement for python standard library logging.getLogger.
+
+Full documentation can be found [here](https://butterlyn.github.io/get-rich-logger/latest/).
