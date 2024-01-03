@@ -1,0 +1,26 @@
+
+[:python_version == "3.8"]
+typing_extensions
+
+[dill]
+dill
+
+[diskcache]
+diskcache>=5.0.0
+
+[lint]
+mypy>=1.5.0
+types-redis
+
+[redis]
+redis!=5.0.1,>=4.3.1
+
+[speedup]
+bitarray<3.0.0
+xxhash<4.0.0
+hiredis
+
+[tests]
+pytest
+pytest-asyncio==0.23.3
+hypothesis
