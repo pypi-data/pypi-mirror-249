@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: common-library
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-dateutil
+Requires-Dist: google-cloud-bigquery
+
+UNKNOWN
+
+
