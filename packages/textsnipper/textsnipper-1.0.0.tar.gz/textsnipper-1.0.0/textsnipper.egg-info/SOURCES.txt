@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+textsnipper/__init__.py
+textsnipper.egg-info/PKG-INFO
+textsnipper.egg-info/SOURCES.txt
+textsnipper.egg-info/dependency_links.txt
+textsnipper.egg-info/requires.txt
+textsnipper.egg-info/top_level.txt
