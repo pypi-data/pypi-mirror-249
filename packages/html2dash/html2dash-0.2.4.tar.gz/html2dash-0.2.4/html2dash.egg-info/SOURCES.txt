@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+html2dash/__init__.py
+html2dash/html2dash.py
+html2dash.egg-info/PKG-INFO
+html2dash.egg-info/SOURCES.txt
+html2dash.egg-info/dependency_links.txt
+html2dash.egg-info/requires.txt
+html2dash.egg-info/top_level.txt
+tests/test_basic.py
+tests/test_functions.py

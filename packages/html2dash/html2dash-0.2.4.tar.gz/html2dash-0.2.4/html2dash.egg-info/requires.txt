@@ -1,0 +1,7 @@
+dash
+beautifulsoup4
+lxml
+
+[test]
+pytest
+coverage
