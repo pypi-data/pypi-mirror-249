@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: interplot
+Version: 0.1
+Summary: Create matplotlib/plotly hybrid plots with a few lines of code.
+Home-page: https://github.com/janjoch/interplot
+Author: Janosch Jörg
+Author-email: janjo@duck.com
+License: GPL v3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: kaleido
+Requires-Dist: scipy
+Requires-Dist: xarray
+
+# interplot
+Create `matplotlib/plotly` hybrid plots with a few lines of code.
+
+It combines the best of the `matplotlib` and the `plotly` worlds through
+a unified, flat API.
+All the necessary boilerplate code is contained in this module.
+
+Currently supported:
+
+- line plots (scatter)
+- line fills
+- histograms
+- heatmaps
+- boxplot
+- linear regression
+- text annotations
+- 2D subplots
+- color cycling
+
+
+## Resources
+
+- **Documentation:** https://interplot.janjo.ch
+- **Source Code:** https://github.com/janjoch/interplot
+- **PyPI:** https://pypi.org/project/interplot/
+
+
+## Licence
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+
+## Demo
+
+View on `NBViewer`:
+[![NBViewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/janjoch/interplot/tree/main/)
+
+
+Try on `Binder`:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janjoch/interplot/HEAD)
+
+
+## Install
+```pip install interplot```
+
+
+### dev installation
+1. ```git clone https://github.com/janjoch/interplot```
+2. ```cd interplot```
+2. ```pip install -e .```
