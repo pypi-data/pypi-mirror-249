@@ -1,0 +1,10 @@
+tap_neon/__init__.py,sha256=R3DlfUV_E9VmkhXXdAjXgH7Oj2dI2jtQhcrzZz7cSOw,79
+tap_neon/__main__.py,sha256=A0ICLnRgfpmZ3GwUHP-k-pN2Ai6PGBNAu4yhNqGpw7w,107
+tap_neon/client.py,sha256=k9nIexUSI4MPi9A9jwvZfWfE4LCYBGBIKV_dyGmGRcg,2628
+tap_neon/streams.py,sha256=97bpkZmYgHjVhdJt5DePlyZJrVR8M0ycOREWrC8expU,3727
+tap_neon/tap.py,sha256=JAy9BySekWZ-MKWN_5h0Ex0x9IXMtEIMs5GtN1ApDc0,2991
+tap_neon-0.3.0b2.dist-info/METADATA,sha256=htmEwV_UrJlUZI4WYIRHiWGDC89XIRsgolKxUrLolLc,3828
+tap_neon-0.3.0b2.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+tap_neon-0.3.0b2.dist-info/entry_points.txt,sha256=gtg1510tnRfZI1i_aOJd4s0aHrMU_9S4KIlZG21H6IQ,54
+tap_neon-0.3.0b2.dist-info/licenses/LICENSE,sha256=_v6tlq8KgAuvM0XSmFaXn46EZ6vn1IKIN6QAyv3RW1M,11355
+tap_neon-0.3.0b2.dist-info/RECORD,,
