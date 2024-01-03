@@ -1,0 +1,9 @@
+logger_cloudwatch_structlog/__init__.py,sha256=EdutTzVi01V6gnScVqZ66nDEMPOL9P0H7bY0YrVT69A,136
+logger_cloudwatch_structlog/custom_processors.py,sha256=NNmFK1h66TQGOW-0hhZcOzp2PIpPLOPntUmkqG63C44,4159
+logger_cloudwatch_structlog/functions.py,sha256=5MJ3aAvbM4zSPCOijEDfGBUam3M8NnFmoNVnPfSAnVo,7226
+logger_cloudwatch_structlog-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+logger_cloudwatch_structlog-0.0.5.dist-info/METADATA,sha256=_iUqFS0sYtpi21UnNfrKinSn5Vf4Ix7vcA0YUhYhCEo,7841
+logger_cloudwatch_structlog-0.0.5.dist-info/NOTICE,sha256=UySa7EOj2FarLU3BTa-FH_t_SfrFGwlt9bPV0pzYhR0,247
+logger_cloudwatch_structlog-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+logger_cloudwatch_structlog-0.0.5.dist-info/top_level.txt,sha256=BmvelYWDvCxUw2dOWjm306Ogu8N1gY0KdYunnoCYROk,28
+logger_cloudwatch_structlog-0.0.5.dist-info/RECORD,,
