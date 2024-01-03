@@ -1,0 +1,3 @@
+[console_scripts]
+yt-dl-gui=yt_downloader_gui.main:main
+
