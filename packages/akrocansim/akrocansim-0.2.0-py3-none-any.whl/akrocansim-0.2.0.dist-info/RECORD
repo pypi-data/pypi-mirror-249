@@ -1,0 +1,9 @@
+akrocansim/J1939.py,sha256=mVklbNaSZhL2YEQGVPBvKXd6Ch7FUugnKK01k5vgUqI,1443
+akrocansim/J1939DA_parser.py,sha256=Oer4-y3WzM3IF2zSUR242v4Kx6oqHfgFEzjmKtLeVK4,32044
+akrocansim/__init__.py,sha256=6ANC55aOIHj_xPHrmPZ5OmySJcS4eZibpvurjFu3OYU,3235
+akrocansim/canbustransmitter.py,sha256=YDSe7TOAvJP_snvZkkpZtIdvoBvVo2ZxtSR3RKIp5lY,2970
+akrocansim/gui.py,sha256=t7BcGHg4aP9gzMDsSFK-D1GJ2MwByu2F0_34862G7pk,12034
+akrocansim-0.2.0.dist-info/LICENSE,sha256=NbxQE_g_MpQzPDfHiCr1W042iMZePQotChNWPYAJ1-s,1083
+akrocansim-0.2.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+akrocansim-0.2.0.dist-info/METADATA,sha256=Kyd6CM-RbiDKp02lZTEpzTX1bILxv-DrtBggm-rWcdo,1015
+akrocansim-0.2.0.dist-info/RECORD,,
