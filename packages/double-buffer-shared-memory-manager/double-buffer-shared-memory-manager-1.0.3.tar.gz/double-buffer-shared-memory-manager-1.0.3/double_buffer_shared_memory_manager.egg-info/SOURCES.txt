@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+double_buffer_shared_memory/__init__.py
+double_buffer_shared_memory/double_buffered_shared_memory_manager.py
+double_buffer_shared_memory/infos.py
+double_buffer_shared_memory/log_messages.py
+double_buffer_shared_memory_manager.egg-info/PKG-INFO
+double_buffer_shared_memory_manager.egg-info/SOURCES.txt
+double_buffer_shared_memory_manager.egg-info/dependency_links.txt
+double_buffer_shared_memory_manager.egg-info/requires.txt
+double_buffer_shared_memory_manager.egg-info/top_level.txt
