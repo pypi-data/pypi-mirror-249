@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pytars
+Version: 0.0.2
+Summary: Python Tools for Applied Remote Sensing
+Author: hokiespurs
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: pillow
+
+# pytars
+Python Tools for Applied Remote Sensing
