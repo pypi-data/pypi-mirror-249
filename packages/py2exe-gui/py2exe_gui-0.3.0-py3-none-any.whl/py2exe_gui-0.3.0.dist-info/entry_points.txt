@@ -1,0 +1,3 @@
+[console_scripts]
+py2exe-gui=py2exe_gui.__main__:main
+
