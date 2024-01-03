@@ -1,0 +1,14 @@
+numpy
+vedo
+pandas
+napari
+napari-stress
+napari-process-points-and-surfaces
+pyfmaps
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+PyQt5
