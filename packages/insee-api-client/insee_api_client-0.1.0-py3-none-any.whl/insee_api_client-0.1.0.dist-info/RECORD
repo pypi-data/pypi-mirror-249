@@ -1,0 +1,9 @@
+insee_api_client/__init__.py,sha256=_5xoxBvqik7-PeMx5hwvFygQoUHpV34lQIJj__e4LaA,26
+insee_api_client/client.py,sha256=ZpwZD27lqa8LVy1XO93hziQBSLYj9tNBeOKq6YBiczA,1855
+insee_api_client/resources/__init__.py,sha256=FHnjFFYKEuWfTu0rZs2KaNztw0Rrf-jATZBWQTDLNHs,30
+insee_api_client/resources/base.py,sha256=0M1ydcgq4oHnxJyNOULJpY3lW9q-bQm6NIAnC9tp2uM,1460
+insee_api_client/resources/sirene.py,sha256=r1Tg40NeFfZRvqSEIxYIkl_C0EP48YFNbBeOpDBHrE0,1596
+insee_api_client/utils.py,sha256=uxj6ntFpLrGm2ZogIsLW6p8xX983TSUrRXLO95PpN4Y,255
+insee_api_client-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+insee_api_client-0.1.0.dist-info/METADATA,sha256=8TLW1NCxH9eiVdVZH9lFkQ9WDQycU3FB9SW21L2wKv8,389
+insee_api_client-0.1.0.dist-info/RECORD,,
