@@ -1,0 +1,8 @@
+wheel
+selenium
+attrdict3
+pytest
+pytest_html
+loguru
+webdriver-manager
+wxPython

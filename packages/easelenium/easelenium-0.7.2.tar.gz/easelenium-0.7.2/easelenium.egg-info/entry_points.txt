@@ -1,0 +1,3 @@
+[console_scripts]
+easelenium_cli = easelenium.scripts.easelenium_cli:main
+easelenium_ui = easelenium.scripts.easelenium_ui:main

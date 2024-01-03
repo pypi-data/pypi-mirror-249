@@ -1,0 +1,12 @@
+wheel
+pytest
+pytest-html
+pytest-dotenv
+selenium
+black
+loguru
+pytest-profiling
+pytest-cov
+ruff
+webdriver-manager
+wxPython
