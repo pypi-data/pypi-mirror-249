@@ -1,0 +1,12 @@
+chex
+typing
+jax>=0.4.17
+transformers>=4.34.0
+flax>=0.7.1
+optax>=0.1.7
+einops
+msgpack
+ml_collections
+einops
+datasets
+IPython
