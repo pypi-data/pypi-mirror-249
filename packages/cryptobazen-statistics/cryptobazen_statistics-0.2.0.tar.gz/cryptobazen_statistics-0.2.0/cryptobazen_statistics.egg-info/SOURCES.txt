@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cryptobazen_statistics/__init__.py
+cryptobazen_statistics/statistic_functions.py
+cryptobazen_statistics.egg-info/PKG-INFO
+cryptobazen_statistics.egg-info/SOURCES.txt
+cryptobazen_statistics.egg-info/dependency_links.txt
+cryptobazen_statistics.egg-info/not-zip-safe
+cryptobazen_statistics.egg-info/requires.txt
+cryptobazen_statistics.egg-info/top_level.txt

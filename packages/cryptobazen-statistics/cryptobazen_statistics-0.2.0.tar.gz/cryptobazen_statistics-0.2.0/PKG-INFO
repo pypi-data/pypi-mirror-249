@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cryptobazen_statistics
+Version: 0.2.0
+Summary: Statistic functions for Transformer models
+Author: Cryptobazen
+Author-email: erwinvink@outlook.com
+License: MIT License
+License-File: LICENSE
+Requires-Dist: numpy>=1.24
+Requires-Dist: scikit-learn>=1.2.0
+
+The PyToch Transformer model needs sometimes a custom statistic function. This package contains some of these functions.
