@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "unitsit-tools"
+version = "1.2.3"
+description = "unitsit-tools is a Python package containing various utility modules for common tasks."
+readme = "README.md"
+authors = ["NoirPi <noirpi@noircoding.de>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+toml = "^0.10"
+asyncpg = { version = "^0.28", optional = true }
+psycopg-binary = { version = "^3.1", optional = true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+flake8 = "^5.0.4"
+black = "^22.10.0"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.extras]
+asyncpg = ["asyncpg"]
+psycopg = ["psycopg-binary", "psycopg"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--ignore=tests/database_tests"
