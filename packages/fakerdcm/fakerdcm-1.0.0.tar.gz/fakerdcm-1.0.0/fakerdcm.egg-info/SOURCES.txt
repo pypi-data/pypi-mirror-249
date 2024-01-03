@@ -1,0 +1,9 @@
+setup.py
+fakedcm/__init__.py
+fakedcm/fakedcm.py
+fakerdcm.egg-info/PKG-INFO
+fakerdcm.egg-info/SOURCES.txt
+fakerdcm.egg-info/dependency_links.txt
+fakerdcm.egg-info/entry_points.txt
+fakerdcm.egg-info/requires.txt
+fakerdcm.egg-info/top_level.txt
