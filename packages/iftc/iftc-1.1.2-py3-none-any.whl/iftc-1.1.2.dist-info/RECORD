@@ -1,0 +1,20 @@
+iftc/__init__ .py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iftc/evaluate.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iftc/ift_config.py,sha256=6ItciubtWi8n174cTeeNAHW494u8fnDk_rJm7JhbSaQ,577
+iftc/spelling_corrector.py,sha256=gYoDmWPS5r6A_xKblovFtASArap2cmmKZGX8d8qULmw,1097
+iftc/test.py,sha256=TKBr0wkCPQ7Rp4IOmPP_PrFYiicdxoO6I_fcwA3q0kU,194
+iftc/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iftc/data/dictionary/_bi_acronyms.json,sha256=dxC-kt5e24oPJPVuzh7O0BqXPqVZd6s-mLvXgeZnXBk,25021
+iftc/data/dictionary/_knowledge_base.json,sha256=wEDMKm537wVPDdYBpLK4Syps0pTWW9eY9ZZZZGjMKRQ,26214
+iftc/data/dictionary/_uni_acronyms.json,sha256=K__o49m9CzscntP5T7Fx2acaoVTccSHLcXpOoJP8M6I,6012
+iftc/data/dictionary/_vn_syl.json,sha256=CLD8Lg5M2PLqHL3fihPPbhwvrvXWXX3kNKXb5XquaZw,273593
+iftc/data/dictionary/_vowel.json,sha256=T_bKVvY_cQpIsSlwdTVemcxj1iRMPDWA9CB3aasY1vM,1318
+iftc/spell_checker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iftc/spell_checker/candidate.py,sha256=Eb3c8b0bB0TmwuV1BQIpXpJigktRc-uhZdijVKggIzQ,4606
+iftc/spell_checker/intentional.py,sha256=4yIBTZIfj3nSVPseU3rroQrlSLReDfPM4HFge62ARHo,3544
+iftc/spell_checker/text_processor.py,sha256=ziGcX2kZaddBcdeD0QQuELP84UyjwpoE7HgeX_iJN4E,2516
+iftc/spell_checker/unintentional.py,sha256=3KahKsBYrSczwEsA3JkV4ZNBjzYCn_gDy1opJKwv1o8,1612
+iftc-1.1.2.dist-info/METADATA,sha256=oPMQE6J5nwhd5_uQy29lrLHXsNeMWB1lw1zWWguAWvE,1647
+iftc-1.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+iftc-1.1.2.dist-info/top_level.txt,sha256=TyZFrzxuiaKYkhrHQ5_P3aL9utroPKdEQ30gHmeapQI,5
+iftc-1.1.2.dist-info/RECORD,,
