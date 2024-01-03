@@ -1,0 +1,5 @@
+scanpy>=1.7.2
+torch>=1.7.0
+plotly>=5.3.1
+matplotlib<=3.6.3
+plotnine>=0.8.0
