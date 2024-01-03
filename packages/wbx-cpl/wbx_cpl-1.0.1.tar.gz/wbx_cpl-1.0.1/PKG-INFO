@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: wbx_cpl
+Version: 1.0.1
+Summary: Commands for Webex compliance officers
+Author-email: Stephane Cohen <stecohen@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Stephane Cohen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: Control Hub,Webex,groups
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: click==8.1.7
+Requires-Dist: pandas==2.1.4
+Requires-Dist: requests==2.31.0
+Description-Content-Type: text/markdown
+
+# Wbx-cpl : commands utilies for Webex Compliance Officers
+
+## Usage:
+```
+Usage: python -m wbx-cpl [OPTIONS] COMMAND [ARGS]...
+       python -m wbx-cpl COMMAND --help 
+
+Options:
+  -t, --token TEXT     Your access token. Read from AUTH_BEARER env variable
+                       by default.
+  -d, --debug INTEGER  debug level.
+  --help               Show this message and exit.
+
+Commands:
+  download-msg-files  Download files attached to given message id
+  space-members       List emails of members in given space ID
+  space-messages      List messages in by given space ID, up to 1000 messages per user
+  user-messages       List messages sent by given user email, up to 1000 messages
+```
+
+# Examples:
+```
+# list messages sent by a user (default from = 30 days ago, default to = today)
+python -m wbx-cpl user-messages user1@customer.com 
+
+# list messages sent by a user and save in CSV file  
+python -m wbx-cpl -c msgs.csv user-messages user1@customer.com 
+
+# list messages sent by user between <from> and <to> dates  
+python3 -m wbx-cpl user-messages -f '{"from":"2022-10-20T00:00:00.000Z", "to":"2023-10-20T00:00:00.000Z" }' user1@customer.com 
+
+# list members of a space  
+python3 -m wbx-cpl space-members co list-space-members <spaceid>
+
+```
+
+## Notes:
+- the --filter option follows the input parameters of [Webex Events End Point](https://developer.webex.com/docs/api/v1/events/list-events)
