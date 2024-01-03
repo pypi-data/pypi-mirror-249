@@ -1,0 +1,11 @@
+*~
+*.swp
+__pycache__
+*.pyc
+.pypirc
+.pybuild/
+build/
+dist/
+venv/
+*.egg-info/
+pid
