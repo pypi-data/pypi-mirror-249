@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: stela_control_professional
+Version: 0.1.0
+Summary: All apps in one for business.
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stela-professional
+ 
+
+
