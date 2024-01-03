@@ -1,0 +1,9 @@
+models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+models/base.py,sha256=N-_Mrqv9A6usDyvgNFgapIhDaFFmYJuxSMPrxebeqQk,836
+models/cars.py,sha256=ok_3l8LTaYSLcIw0352Gm4UCuanhCGSdzg6T-HXTosc,1623
+models/db_settings.py,sha256=ogPiIRnc_Fxm1itZh0P6RYha_VgLM4h69BmDvCNJoPM,486
+models/properties.py,sha256=vJMwaAKnb00h_e1Pr2INEkdGKRrtcmHd1rJd83fEvYU,1724
+unegui_models-0.1.6.dist-info/METADATA,sha256=RiK_0JpoCScrmriVBw_Kw-ElZAGpqIoC_fUHe7d5uTc,235
+unegui_models-0.1.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+unegui_models-0.1.6.dist-info/top_level.txt,sha256=vH5ByFtkqB2bXlXOuK5zaaM_1GFEE9six0KgGIdPaU0,7
+unegui_models-0.1.6.dist-info/RECORD,,
