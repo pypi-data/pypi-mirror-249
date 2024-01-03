@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+linux_isolate_process/__init__.py
+linux_isolate_process/isolate.py
+linux_isolate_process.egg-info/PKG-INFO
+linux_isolate_process.egg-info/SOURCES.txt
+linux_isolate_process.egg-info/dependency_links.txt
+linux_isolate_process.egg-info/top_level.txt
