@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: djream
+Version: 0.1a6
+Summary: A framework for building React frontends for Django projects
+Home-page: https://djream.io
+Author: Karl Hobley
+Author-email: karl@kaed.uk
+License: BSD-3-Clause
+Project-URL: Documentation, https://dream.io/docs/
+Project-URL: Source, https://github.com/kaedroho/djream/
+Project-URL: Tracker, https://github.com/kaedroho/djream/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 5.0
+Description-Content-Type: text/markdown
+Requires-Dist: Django <6.0,>=4.0
+Requires-Dist: telepath <0.4,>=0.3
+
+# Djream
+
+Djream is a framework for building lightweight React SPAs for Django, using Django views and forms for backend logic and React for presentation.
+
+Visit [djream.io](https://djream.io) for more information
