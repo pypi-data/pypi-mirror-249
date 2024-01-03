@@ -1,0 +1,2475 @@
+# Bodo Platform SDK
+
+A simple SDK for Bodo Cloud Platform.
+
+List of contents:
+
+- [Getting Started](#getting-started)
+- [Job resource](#job-resource)
+- [Cluster resource](#cluster-resource)
+- [Workspace resource](#workspace-resource)
+- [Cloud config](#cloud-config)
+- [Instance Role Manager](#instance-role)
+- [Billing module](#billing-module)
+
+## Getting started<a id="getting-started"></a>
+
+The first step is to create an _API Token_ in the Bodo Platform for
+Bodo SDK authentication.
+Navigate to _API Tokens_ in the Admin Console to generate a token.
+Copy and save the token's _Client ID_ and _Secret Key_ and use them for BodoClient
+definition:
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+```
+
+Alternatively, set `BODO_CLIENT_ID` and `BODO_SECRET_KEY` environment variables
+to avoid requiring keys:
+
+```python
+from bodosdk.client import get_bodo_client
+
+client = get_bodo_client()
+```
+
+**Other bodo client options**
+
+- print_logs - default False, if enabled all API calls will be printed
+
+```python
+from bodosdk.client import get_bodo_client
+from bodosdk.models import WorkspaceKeys
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys, print_logs=True)
+```
+
+### Job resource<a id="job-resource"></a>
+
+Module responsible for managing jobs in a workspace
+
+- [Bodo Platform Batch Jobs](#bodo-platform-batch-jobs)
+  - [Create batch job definition](#create-batch-job-definition)
+  - [List batch job definitions](#list-batch-job-definitions)
+  - [Get batch job definition by id](#get-batch-job-definition-by-id)
+  - [Get batch job definition by name](#get-batch-job-definition-by-name)
+  - [Remove batch job definition](#remove-batch-job-definition)
+  - [Submit a batch job run](#submit-a-batch-job-run)
+  - [List batch job runs](#list-batch-job-runs)
+  - [Get batch job run](#get-batch-job-run)
+  - [Cancel batch job run](#cancel-batch-job-run)
+  - [Cancel all job runs on a cluster UUIDs](#cancel-all-job-runs-on-a-cluster-uuids)
+  - [Check batch job run status](#check-batch-job-run-status)
+  - [Submit SQL job run](#submit-sql-job-run)
+  - [Job Run waiter](#job-run-waiter)
+  - [get job logs](#get-job-logs)
+
+#### Bodo Platform Batch Jobs <a id="bodo-platform-batch-jobs"></a>
+
+##### Create batch job definition <a id="create-batch-job-definition"></a>
+
+`BodoClient.job.create_batch_job_definition(job_definition: CreateBatchJobDefinition)`
+
+Creates batch job definition in the given workspace.
+
+- **Example 1: Create batch job definition for a workspace source script**
+
+```python
+  from bodosdk.models import WorkspaceKeys,BatchJobDefinition
+  from bodosdk.client import get_bodo_client
+  from bodosdk.models.job import CreateBatchJobDefinition, JobConfig, JobSource, JobSourceType, SourceCodeType, \
+      WorkspaceDef, RetryStrategy
+
+  keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+  )
+  client = get_bodo_client(keys)
+
+  workspace_source_def = JobSource(
+      type=JobSourceType.WORKSPACE,
+      definition=WorkspaceDef(
+          path="Example-path/batch-job-defs",
+      ),
+  )
+
+  retry_strategy = RetryStrategy(
+      num_retries=1,
+      retry_on_timeout=False,
+      delay_between_retries=2,
+  )
+
+  jobConfig = JobConfig(
+      source=workspace_source_def,
+      source_code_type=SourceCodeType.PYTHON,
+      sourceLocation="test.py",
+      args=None,
+      retry_strategy=retry_strategy,
+      timeout=10000,
+      env_vars=None,
+  )
+
+  createBatchJobDef = CreateBatchJobDefinition(
+      name="test-job",
+      config=jobConfig,
+      description="test-batch-job-description-attempt",
+      cluster_config={
+          "bodoVersion": "2023.1.3",
+          "instance_type": "c5.2xlarge",
+          "workers_quantity": 2,
+          "accelerated_networking": False,
+      }, )
+
+  jobdef = client.job.create_batch_job_definition(createBatchJobDef)
+```
+
+- **Example 2: Create batch job definition for a git source script**
+
+  ```python
+  from bodosdk.models import WorkspaceKeys, CreateBatchJobDefinition, BatchJobDefinition
+  from bodosdk.client import get_bodo_client
+  from bodosdk.models.job import CreateBatchJobDefinition, JobConfig, JobSource, JobSourceType, SourceCodeType, \
+      WorkspaceDef, RetryStrategy
+
+  keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+  )
+  client = get_bodo_client(keys)
+
+  git_source_def = JobSource(
+      type=JobSourceType.GIT,
+      definition=GitDef(
+          repo_url='https://github.com/Bodo-inc/Bodo-examples.git',
+          username='XYZ',
+          token='XYZ'
+      ),
+  )
+
+  retry_strategy = RetryStrategy(
+      num_retries=1,
+      retry_on_timeout=False,
+      delay_between_retries=2,
+  )
+
+  jobConfig = JobConfig(
+      source=git_source_def,
+      source_code_type=SourceCodeType.PYTHON,
+      sourceLocation="test.py",
+      args=None,
+      retry_strategy=retry_strategy,
+      timeout=10000,
+      env_vars=None,
+  )
+
+  createBatchJobDef = CreateBatchJobDefinition(
+      name="test-job",
+      config=jobConfig,
+      description="test-batch-job-description-attempt",
+      cluster_config={
+          "bodoVersion": "2023.1.3",
+          "instance_type": "c5.2xlarge",
+          "workers_quantity": 2,
+          "accelerated_networking": False,
+      }, )
+
+  jobdef = client.job.create_batch_job_definition(createBatchJobDef)
+  ```
+
+- \*\*Example 3. Create batch job definition for a S3 source script
+
+To run a script file located on an S3 bucket, the cluster must have the required permissions to read the files from S3.
+This can be provided by creating an Instance Role with access to the required S3 bucket.
+Please make sure to specify an Instance Role that should be attached to the Job Cluster.
+The policy attached to the roles should provide access to both the bucket and its contents.
+
+```python
+from bodosdk.client import get_bodo_client
+from bodosdk.models.job import RetryStrategy
+from bodosdk.models import (CreateRoleDefinition, InstanceRole, JobConfig, JobSource, JobSourceType, S3Source, SourceCodeType, WorkspaceKeys, CreateBatchJobDefinition)
+
+keys = WorkspaceKeys(
+  client_id='XYZ',
+  secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+
+git_source_def = JobSource
+
+keys = WorkspaceKeys(client_id='XYZ', secret_key='XYZ')
+
+role_definition = CreateRoleDefinition(
+  name="test-sdk-role-creation",
+  description="testing",
+  data=InstanceRole(role_arn="arn:aws:iam::accountID:role/name")
+)
+
+list_of_instance_roles = client.instance_role.list()
+
+role_to_use = None
+for role in list_of_instance_roles:
+  if role.name == 'role_i_want_to_use':
+    role_to_use = role
+    break
+
+s3_job_source = JobSource(
+  type=JobSourceType.S3,
+  definition=S3Source(
+    bucket_path='s3://path-to-my-bucket/my_job_script_folder/',
+    type=JobSourceType.S3,
+    bucket_region='region',
+  ),
+)
+
+createBatchJobDef = CreateBatchJobDefinition(
+  name="test-job",
+  config=JobConfig(
+    source=s3_job_source,
+    source_code_type=SourceCodeType.PYTHON,
+    sourceLocation="to_sql.py",
+    args=None,
+    timeout=10000,
+    env_vars=None),
+  description="test-batch-job-description-attempt",
+  cluster_config={
+    "bodo_version": "2023.1.3",
+    "instance_type": "c5.2xlarge",
+    "workers_quantity": 2,
+    "accelerated_networking": False,
+    "instance_role_uuid": role_to_use.uuid,
+  })
+
+jobdef = client.job.create_batch_job_definition(createBatchJobDef)
+```
+
+##### List batch job definitions <a id="list-batch-job-definitions"></a>
+
+`BodoClient.job.list_batch_job_definitions(page: int, size: int,
+                                          order: PaginationOrder)`
+
+**Parameters:**
+
+| Parameter | Type              | Description                                                                   | Required |
+| --------- | ----------------- | ----------------------------------------------------------------------------- | -------- |
+| `page`    | `int`             | The page number has a lower limit of 1, default value 1                       | No       |
+| `size`    | `int`             | The size has a maximum allowed value of 100 and default value of 5            | No       |
+| `order`   | `PaginationOrder` | The order in which the elements would be displayed. Default is created_at ASC | No       |
+
+**Returns:**
+Return lists all batch job runs in the given workspace filtered by given parameters - List[JobRunResponse]
+
+Lists all batch job definitions in the given workspace.
+
+**Example:**
+
+```python
+from typing import List
+
+from bodosdk.models import PersonalKeys, WorkspaceKeys, JobConfig, SourceCodeType, RetryStrategy, JobSourceType, \
+    WorkspaceDef, CreateBatchJobDefinition
+from bodosdk.client import get_bodo_client
+from bodosdk.models.job import CreateJobRun, JobSource, JobRunStatus, BatchJobDefinitionResponse
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+jobdefs: List[BatchJobDefinitionResponse] = client.job.list_batch_job_definitions()
+```
+
+<br/>
+
+##### Get batch job definition by id <a id="get-batch-job-definition-by-id"></a>
+
+`BodoClient.job.get_batch_job_definition(job_definition_id: str)`
+
+Gets specific batch job definition by id.
+
+**Example:**
+
+```python
+from typing import List
+
+from bodosdk.models import PersonalKeys, WorkspaceKeys, JobConfig, SourceCodeType, RetryStrategy, JobSourceType, \
+    WorkspaceDef, CreateBatchJobDefinition
+from bodosdk.client import get_bodo_client
+from bodosdk.models.job import CreateJobRun, JobSource, JobRunStatus, BatchJobDefinitionResponse
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+jobdef: BatchJobDefinitionResponse = client.job.get_batch_job_definition('04412S5b-300e-42db-84d4-5f22f7506594')
+```
+
+<br/>
+
+##### Get batch job definition by name <a id="get-batch-job-definition-by-name"></a>
+
+`BodoClient.job.get_batch_job_definition_by_name(name: str)`
+
+Return the batch job definition based on the name provided
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.job import BatchJobDefinitionResponse
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+jobdef: BatchJobDefinitionResponse = client.job.get_batch_job_definition('batch-job-1')
+```
+
+<br/>
+
+##### Remove batch job definition <a id="remove-batch-job-definition"></a>
+
+`BodoClient.job.remove_batch_job_definition(job_definition_id: str)`
+
+Removes specific batch job definition by id.
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+client.job.remove_batch_job_definition('04412S5b-300e-42db-84d4-5f22f7506594')
+```
+
+<br/>
+
+##### Submit a batch job run <a id="submit-a-batch-job-run"></a>
+
+`BodoClient.job.submit_batch_job_run(job_run: CreateJobRun)`
+
+Submits a job run for a given batch job definition.
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.job import CreateJobRun
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+client.job.submit_batch_job_run(CreateJobRun(batchJobDefinitionUUID='04412S5b-300e-42db-84d4-5f22f7506594', clusterUUID='12936Q5z-109d-89yi-23c4-3d91u1219823'))
+```
+
+##### List batch job runs <a id="list-batch-job-runs"></a>
+
+`BodoClient.job.list_batch_job_runs()`
+
+**Parameters:**
+
+| Parameter       | Type                 | Description                                                | Required |
+| --------------- | -------------------- | ---------------------------------------------------------- | -------- |
+| `batch_job_ids` | `List[UUID]`         | List of Ids of the batch job definitions                   | No       |
+| `statuses`      | `List[JobRunStatus]` | List of Job Run status as filters                          | No       |
+| `cluster_ids`   | `List[UUID]`         | List of cluster ids as filters                             | No       |
+| `started_at`    | `List[UUID]`         | started at time stamp filter                               | No       |
+| `finished_at`   | `List[UUID]`         | finished at timestamp filter                               | No       |
+| `page`          | `int`                | The page number as integer. Default page 1                 | No       |
+| `page_size`     | `int`                | The number of elements in a page. Default page_size = 10   | No       |
+| `order`         | `PaginationOrder`    | The order of listing for the job run ordered by created_at | No       |
+
+**Returns:**
+Return lists all batch job runs in the given workspace filtered by given parameters - List[JobRunResponse]
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.job import JobRunStatus
+
+keys = WorkspaceKeys(
+  client_id="XYZ",
+  secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+jobruns = client.job.list_batch_job_runs(statuses=[JobRunStatus.FAILED],
+                                         cluster_ids=['ba62e653-312a-490e-9457-71d7bc096959'])
+```
+
+<br/>
+
+##### List batch job runs by batch job name
+
+`BodoClient.job.list_job_runs_by_batch_job_name()`
+
+**Parameters:**
+
+| Parameter         | Type                 | Description                                            | Required |
+| ----------------- | -------------------- | ------------------------------------------------------ | -------- |
+| `batch_job_names` | `List[str]`          | List of Ids of the batch job definitions               | No       |
+| `statuses`        | `List[JobRunStatus]` | List of Job Run Statuses                               | No       |
+| `cluster_ids`     | `List[str]`          | Cluster IDs filter for the batch job run               | No       |
+| `started_at`      | `List[str]`          | Started at time filter                                 | No       |
+| `finished_at`     | `List[str]`          | Finished at time filter                                | No       |
+| `page`            | `List[str]`          | Page no to fetch. Default value 1                      | No       |
+| `page_size`       | `int`                | No of elements in a page. Default value 10             | No       |
+| `order`           | `PaginationOrder`    | Job run sorting order by created_at. Default value ASC | No       |
+
+Lists all batch job runs in the given workspace filtered by given parameters.
+
+**Returns:**
+Returns a list of JobRunResponse - List[JobRunResponse]
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.job import JobRunStatus
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+jobruns = client.job.list_job_runs_by_batch_job_name(batch_job_names=['production-job-1'], statuses=[JobRunStatus.FAILED], cluster_ids=['ba62e653-312a-490e-9457-71d7bc096959'])
+```
+
+<br/>
+
+##### Get batch job run <a id="get-batch-job-run"></a>
+
+`BodoClient.job.get_batch_job_run(uuid: str)`
+
+Returns batch job run based on the job_run_id provided.
+
+**Parameters:**
+
+| Parameter | Type               | Description                      | Required |
+| --------- | ------------------ | -------------------------------- | -------- |
+| `uuid`    | `Union[str, UUID]` | Returns batch job run for the id | Yes      |
+
+**Returns:**
+
+| Parameter                           | Type                               | Description                                        |
+| ----------------------------------- | ---------------------------------- | -------------------------------------------------- |
+| `name`                              | `str`                              | The name of the job run                            |
+| `clusterUUID`                       | `Optional[Union[UUID, None]]`      | The cluster UUID on which the job run was executed |
+| `cluster`                           | `Optional[JobCluster]`             | The cluster on which the job run was executed      |
+| `type`                              | `JobRunType`                       | The type of Job Run                                |
+| `config`                            | `JobConfig`                        | The JobConfig of the cluster                       |
+| `submittedAt`                       | `datetime`                         | The time at which the job was submitted            |
+| `finishedAt`                        | `Optional[Union[datetime, None]]`  | The time at which the job finished                 |
+| `startedAt`                         | `Optional[Union[datetime, None]]`  | The time at which job started                      |
+| `status`                            | `JobRunStatus`                     | Job run status                                     |
+| `batchJobDefinitionConfigOverrides` | `Optional[JobConfigOverride]`      | The job run config override                        |
+| `batch_job_definition`              | `Optional[BatchJobDefinitionUUID]` | UUID of batch job definition                       |
+| `reason`                            | `Optional[str]`                    | The reason for job statue change                   |
+| `submitter`                         | `Optional[str]`                    | Email of the person who submitted the job          |
+
+Gets specific batch job run by job_run_id
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+jobrun = client.job.get_batch_job_run('04412S5b-300e-42db-84d4-5f22f7506594')
+```
+
+<br/>
+
+##### Cancel batch job run <a id="cancel-batch-job-run"></a>
+
+`BodoClient.job.cancel_batch_job_run(uuid: Union[str, UUID])`
+
+Cancels specific batch job run by job_run_id
+
+**Parameters:**
+
+| Parameter | Type                     | Description         | Required |
+| --------- | ------------------------ | ------------------- | -------- |
+| `uuid`    | `uuid: Union[str, UUID]` | UUID of the job run | Yes      |
+
+**Returns:**
+
+None returned on success
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+client.job.cancel_batch_job_run('04412S5b-300e-42db-84d4-5f22f7506594')
+```
+
+<br/>
+
+##### Cancel all job runs on a cluster UUIDs <a id="cancel-all-job-runs-on-a-cluster-uuids"></a>
+
+`BodoClient.job.cancel_all_job_runs(cluster_uuids: Union[List[str], List[UUID]])`
+Cancels all the job runs for a set of cluster UUIDs provided as a function parameter
+
+**Parameters:**
+
+| Parameter       | Type                           | Description                                     | Required |
+| --------------- | ------------------------------ | ----------------------------------------------- | -------- |
+| `cluster_uuids` | `Union[List[str], List[UUID]]` | Cancels all job runs on a list of cluster UUIDs | Yes      |
+
+**Returns:**
+
+None returned on success
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+client.job.cancel_all_job_runs(['04412S5b-300e-42db-84d4-5f22f7506594'])
+```
+
+##### Check batch job run status <a id="check-batch-job-run-status"></a>
+
+`BodoClient.job.check_job_run_status(batch_job_run_uuid: Union[str, UUID])->JobRunStatus`
+
+Checks status of specific batch job run by id.
+
+**Parameters:**
+
+| Parameter            | Type               | Description | Required |
+| -------------------- | ------------------ | ----------- | -------- |
+| `batch_job_run_uuid` | `Union[str, UUID]` | Fetches the | Yes      |
+
+**Returns:**
+
+JobRunStatus returned on success
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+status = client.job.check_job_run_status('04412S5b-300e-42db-84d4-5f22f7506594')
+```
+
+<br/>
+
+##### Submit SQL job run <a id="submit-sql-job-run"></a>
+
+`BodoClient.job.submit_sql_job_run(create_sql_job_run: CreateSQLJobRun)`
+
+Submits a SQL query as a job run. The SQL job run contains the SQL query text and the cluster UUID on which the query
+will be executed along with catalog and the query tags. The query tags field accepts a JSON which returns the query
+tags associated with a query.
+
+!!! note
+This needs a database [catalog][catalog] to be configured in the workspace.
+
+**Parameters(CreateSQLJobRun):**
+
+| Parameter        | Type                   | Description                                            | Required | Default |
+| ---------------- | ---------------------- | ------------------------------------------------------ | -------- | ------- |
+| `Job Run Type`   | `JobRunType`           | Type of Job Run                                        | Yes      | None    |
+| `clusterUUID`    | `str`                  | The cluster UUID on which the job run will be executed | No       | None    |
+| `catalog`        | `str`                  | The catalog which the query use                        | Yes      | None    |
+| `sql_query_text` | `str`                  | The SQL query text                                     | Yes      | None    |
+| `query_tags`     | `Dict[str, str]`       | The query tags associated with the query               | No       | {}      |
+| `timeout`        | `int`                  | The timeout for the query in minutes                   | No       | 60      |
+| `env_vars`       | `Dict[str, str]`       | The environment variables for the query                | No       | {}      |
+| `retry_strategy` | `RetryStrategy`        | The retry strategy for the query                       | No       | None    |
+| `cluster_config` | `JobClusterDefinition` | Job Cluster Configuration                              | No       | None    |
+| `args`           | `Union[str, Dict]`     | The arguments for the query                            | No       | {}      |
+
+**Returns:**
+
+| Parameter                           | Type                               | Description                                        |
+| ----------------------------------- | ---------------------------------- | -------------------------------------------------- |
+| `name`                              | `str`                              | The name of the job run                            |
+| `clusterUUID`                       | `Optional[Union[UUID, None]]`      | The cluster UUID on which the job run was executed |
+| `cluster`                           | `Optional[JobCluster]`             | The cluster on which the job run was executed      |
+| `type`                              | `JobRunType`                       | The type of Job Run                                |
+| `config`                            | `JobConfig`                        | The JobConfig of the cluster                       |
+| `submittedAt`                       | `datetime`                         | The time at which the job was submitted            |
+| `finishedAt`                        | `Optional[Union[datetime, None]]`  | The time at which the job finished                 |
+| `startedAt`                         | `Optional[Union[datetime, None]]`  | The time at which job started                      |
+| `status`                            | `JobRunStatus`                     | Job run status                                     |
+| `batchJobDefinitionConfigOverrides` | `Optional[JobConfigOverride]`      | The job run config override                        |
+| `batch_job_definition`              | `Optional[BatchJobDefinitionUUID]` | UUID of batch job definition                       |
+| `reason`                            | `Optional[str]`                    | The reason for job statue change                   |
+| `submitter`                         | `Optional[str]`                    | Email of the person who submitted the job          |
+
+**Example:**
+
+```python
+from bodosdk.models import WorkspaceKeys, CreateSQLJobRun
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_client(keys)
+
+job_run = client.job.submit_sql_job_run(CreateSQLJobRun(
+            clusterUUID='04412S5b-300e-42db-84d4-5f22f7506594',
+            catalog="SNOWFLAKE_CATALOG",
+            sql_query_text="SELECT * FROM PUBLIC.TABLE LIMIT 10",
+            query_tags={"DAG_ID":"398482", "MACHINE_ID": "1934"}))
+```
+
+<br/>
+
+##### Job Run waiter <a id="job-run-waiter"></a>
+
+`BodoClient.job.get_job_run_waiter()`
+
+Returns a waiter object that waits until the job run uuid specified finishes.
+
+`waiter.wait()`
+
+To wait for job run to be finished, invoke the waiter.wait() function,
+which can take the following parameters.
+
+**Parameters:**
+
+| Parameter      | Type       | Description                                                                        | Required |
+| -------------- | ---------- | ---------------------------------------------------------------------------------- | -------- |
+| `uuid`         | `str`      | Create a SQL Job Run based on the parameters that are passed                       | Yes      |
+| `on_success`   | `Callable` | Callable executed on success with job object passed as argument                    | No       |
+| `on_failure`   | `Callable` | Callable executed on failure with job object passed as argument                    | No       |
+| `on_timeout`   | `Callable` | Callable executed on failure with job_uuid passed as argument                      | No       |
+| `check_period` | `int`      | Time in seconds between status checks for the wait function. Default is 10 seconds | No       |
+| `timeout`      | `int`      | Time in seconds after which timeout error will be raised. Default is none          | No       |
+
+**Returns:**
+
+| Parameter                           | Type                               | Description                                        |
+| ----------------------------------- | ---------------------------------- | -------------------------------------------------- |
+| `name`                              | `str`                              | The name of the job run                            |
+| `clusterUUID`                       | `Optional[Union[UUID, None]]`      | The cluster UUID on which the job run was executed |
+| `cluster`                           | `Optional[JobCluster]`             | The cluster on which the job run was executed      |
+| `type`                              | `JobRunType`                       | The type of Job Run                                |
+| `config`                            | `JobConfig`                        | The JobConfig of the cluster                       |
+| `submittedAt`                       | `datetime`                         | The time at which the job was submitted            |
+| `finishedAt`                        | `Optional[Union[datetime, None]]`  | The time at which the job finished                 |
+| `startedAt`                         | `Optional[Union[datetime, None]]`  | The time at which job started                      |
+| `status`                            | `JobRunStatus`                     | Job run status                                     |
+| `batchJobDefinitionConfigOverrides` | `Optional[JobConfigOverride]`      | The job run config override                        |
+| `batch_job_definition`              | `Optional[BatchJobDefinitionUUID]` | UUID of batch job definition                       |
+| `reason`                            | `Optional[str]`                    | The reason for job statue change                   |
+| `submitter`                         | `Optional[str]`                    | Email of the person who submitted the job          |
+
+```python3
+from typing import Callable
+def wait(
+        self,
+        uuid,
+        on_success: Callable = None,
+        on_failure: Callable = None,
+        on_timeout: Callable = None,
+        check_period=10,
+        timeout=None
+):
+  pass
+```
+
+By default, returns job model if no callbacks is provided. There is option to pass callable objects as following
+parameters:
+
+**Example 1. Success/Failure callbacks:**
+
+```python
+from bodosdk.models import WorkspaceKeys, CreateJobRun
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+input_job = CreateJobRun(clusterUUID='<cluster-uuid>', batchJobDefinitionUUID='<batch-job-definition-uuid>')
+job_run = client.job.submit_batch_job_run(input_job)
+
+waiter = client.job.get_job_run_waiter()
+
+def success_callback(job):
+    print("in success callback", job.status)
+
+def failure_callback(job):
+    print('in failure callback', job.status)
+
+result = waiter.wait(job_run.uuid, on_success=success_callback, on_failure=failure_callback)
+```
+
+**Example 2. Timeout callback:**
+
+```python
+from bodosdk.models import WorkspaceKeys, CreateJobRun
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+input_job = CreateJobRun(clusterUUID='<cluster-uuid>', batchJobDefinitionUUID='<batch-job-definition-uuid>')
+job_run = client.job.submit_batch_job_run(input_job)
+
+waiter = client.job.get_job_run_waiter()
+
+def timeout_callback(job_uuid):
+    print(f'Waiter timeout for {job_uuid}')
+    return job_uuid
+
+
+result = waiter.wait(job_run.status, on_timeout=timeout_callback, timeout=1)
+```
+
+##### Get job logs<a id="get-job-logs"></a>
+
+`BodoClient.job.get_job_logs(job_uuid)`
+Returns specific stdout and stderr urls along with expiration timestamp in workspace.
+Also, downloads specific stdout and stderr logs in workspace and additionally provides links as well
+
+- stdout: Standard output of the program execution
+- stderr: Standard error messages of the program execution
+
+Downloads files as below and overrides if they already exist
+
+- stdout\_{uuid}.txt
+- stderr\_{uuid}.txt
+
+Example:
+
+```python
+from bodosdk.models import WorkspaceKeys
+from bodosdk.models.job import JobRunLogsResponse
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+logs: JobRunLogsResponse = client.job.get_job_logs('8c32aec5-7181-45cc-9e17-8aff35fd269e')
+```
+
+### Cluster resource <a id="cluster-resource"></a>
+
+Module responsible for managing clusters in workspace.
+
+- [get available instance types](#available-instance-types)
+- [get available images](#available-images)
+- [create cluster](#create-cluster)
+- [list clusters](#list-clusters)
+- [get cluster](#get-cluster)
+- [remove cluster](#remove-cluster)
+- [scale cluster](#scale-cluster)
+- [stop cluster](#stop-cluster)
+- [restart cluster](#restart-cluster)
+- [pause cluster](#pause-cluster)
+- [resume cluster](#resume-cluster)
+- [modify cluster](#modify-cluster)
+- [get tasks for cluster](#list-tasks-for-cluster)
+
+#### Availability Zone Selection
+
+When creating a cluster, you can specify the availability zone in which the cluster will be created. However, cluster creation might fail if the availability zone does not have sufficient capacity to create the cluster.
+Even after the cluster is created, resuming or scaling it might fail if the availability zone does not have sufficient capacity to resume or scale the cluster.
+
+Bodo supports an `auto_az` flag in cluster creation which is by default set to `True`. When enabled
+create, scale and resume tasks attempt to automatically select an availability zone with sufficient capacity for said cluster. If you want to disable this behavior, set `auto_az` to `False` in the `ClusterDefinition` object.
+
+### Available instance types<a id="available-instance-types"></a>
+
+`BodoClient.cluster.get_available_instance_types(region:str) -> Dict[str, InstanceCategory]`
+
+**Parameters:**
+
+| Parameter | Type  | Description        | Required |
+| --------- | ----- | ------------------ | -------- |
+| `region`  | `str` | Azure / AWS region | Yes      |
+
+**Returns:**
+Return dictionary of instance types available for given region grouped by instance category.
+
+`InstanceCategory`:
+
+| Field            | Type                      | Description                             |
+| ---------------- | ------------------------- | --------------------------------------- |
+| `name`           | `str`                     | Name of instance instance category      |
+| `instance_types` | `Dict[str, InstanceType]` | Dict with all instances in the category |
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+instance_types = client.cluster.get_available_instance_types('us-west-2')
+```
+
+### Available images<a id="available-images"></a>
+
+`BodoClient.cluster.get_available_images(region:str) -> Dict[str, BodoImage]`
+
+**Parameters:**
+
+| Parameter | Type  | Description        | Required |
+| --------- | ----- | ------------------ | -------- |
+| `region`  | `str` | Azure / AWS region | Yes      |
+
+**Returns:**
+Return dictionary of images available for given region where key is bodo version and value is `BodoImage`:
+
+`BodoImage`:
+
+| Field          | Type  | Description  |
+| -------------- | ----- | ------------ |
+| `image_id`     | `str` | Image id     |
+| `bodo_version` | `str` | Bodo version |
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+images = client.cluster.get_available_images('us-west-2')
+```
+
+### Create cluster<a id="create-cluster"></a>
+
+`BodoClient.cluster.create(cluster_definition: ClusterDefinition) -> ClusterResponse`
+
+Creates a cluster in the workspace based on the instance type, no of workers and whether the instance is a spot instance. The cluster can be configured to have an auto-pause and auto-stop time in minutes to pause and stop the cluster when there is no activity.
+
+If you choose to create a cluster with spot instances, please note:
+
+- Spot instance clusters are only supported on AWS at this moment.
+- Spot instance has lower cost at the expense of reliability. We recommend to use instance types with lower reclaim rate according to [AWS spot instance advisor](https://aws.amazon.com/ec2/spot/instance-advisor/).
+- Spot instance clusters cannot be paused/resumed. Please use stop/restart instead
+- Auto pause on spot instance clusters is not allowed. Please use auto stop instead
+- Spot instance clusters will have a 60-minute auto stop by default to avoid accidental long-running clusters
+
+**Parameter:** `cluster_definition: ClusterDefinition`
+
+| Field                      | Type             | Description                                                       | Required |
+| -------------------------- | ---------------- | ----------------------------------------------------------------- | -------- |
+| `name`                     | `str`            | Cluster name                                                      | Yes      |
+| `instance_type`            | `str`            | Instance type of cluster nodes                                    | Yes      |
+| `workers_quantity`         | `int`            | Number of nodes in the cluster                                    | Yes      |
+| `bodo_version`             | `str`            | Bodo version available on the cluster                             | Yes      |
+| `description`              | `Optional[str]`  | Cluster description                                               | No       |
+| `image_id`                 | `Optional[str]`  | Image id used on cluster nodes                                    | No       |
+| `auto_stop`                | `Optional[int]`  | Cluster auto stop value [min]                                     | No       |
+| `auto_pause`               | `Optional[int]`  | Cluster auto pause value [min]                                    | No       |
+| `availability_zone`        | `Optional[str]`  | Availability zone for cluster                                     | No       |
+| `aws_deployment_subnet_id` | `Optional[str]`  | [AWS] Subnet id for cluster                                       | No       |
+| `instance_role_uuid`       | `Optional[str]`  | [AWS] Instance role                                               | No       |
+| `auto_az`                  | `Optional[bool]` | [AWS] Whether the cluster has Auto AZ enabled                     | No       |
+| `use_spot_instance`        | `Optional[bool]` | [AWS] Whether the cluster uses spot instance                      | No       |
+| `is_job_dedicated`         | `Optional[bool]` | whether the cluster is a job dedicated cluster                    | No       |
+| `accelerated_networking`   | `Optional[bool]` | Whether the cluster uses accelerated networking (e.g. EFA on AWS) | No       |
+
+**Returns:**
+Object `ClusterResponse:`
+
+| Field                      | Type               | Description                                     |
+| -------------------------- | ------------------ | ----------------------------------------------- |
+| `name`                     | `str`              | Cluster name                                    |
+| `uuid`                     | `Union[str, UUID]` | Cluster UUID                                    |
+| `status`                   | `ClusterStatus`    | Cluster status                                  |
+| `description`              | `Optional[str]`    | Cluster description                             |
+| `instance_type`            | `str`              | Instance type of cluster nodes                  |
+| `workers_quantity`         | `int`              | Number workers in clusters                      |
+| `auto_stop`                | `Optional[int]`    | Cluster auto stop value [min]                   |
+| `auto_pause`               | `Optional[int]`    | Cluster auto pause value [min]                  |
+| `bodo_version`             | `Optional[str]`    | Bodo version used in cluster VMs                |
+| `image_id`                 | `Optional[str]`    | Image id used cluster VMs                       |
+| `cores_per_worker`         | `Optional[int]`    | Number of cores per worker                      |
+| `accelerated_networking`   | `Optional[bool]`   | Whether the cluster uses accelerated networking |
+| `created_at`               | `str`              | Date when cluster was created                   |
+| `last_known_activity`      | `Optional[str]`    | Date of last known cluster activity             |
+| `is_job_dedicated`         | `Optional[bool]`   | whether the cluster is a job dedicated cluster  |
+| `node_metadata`            | `Optional[object]` | Metada data about nodes (IP, instance id)       |
+| `asg_metadata`             | `Optional[object]` | [AWS] Auto scaling group metadata               |
+| `aws_deployment_subnet_id` | `Optional[str]`    | [AWS] Subnet id for cluster                     |
+| `auto_az`                  | `Optional[bool]`   | [AWS] Whether the cluster has Auto AZ enabled   |
+
+**Example:** Create a regular cluster
+
+```python3
+from bodosdk.models import WorkspaceKeys, ClusterDefinition
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+cluster_definition = ClusterDefinition(
+    name="test",
+    instance_type="c5.large",
+    workers_quantity=2,
+    use_spot_instance=False,
+    auto_pause=100,
+    image_id="ami-038d89f8d9470c862",
+    bodo_version="2022.4",
+    description="my desc here",
+    auto_az=False,
+)
+result_create = client.cluster.create(cluster_definition)
+```
+
+**Example:** Create a spot instance cluster:
+
+```python3
+from bodosdk.models import WorkspaceKeys, ClusterDefinition
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+cluster_definition = ClusterDefinition(
+    name="test-spot",
+    instance_type="c5.large",
+    workers_quantity=2,
+    use_spot_instance=True,
+    auto_stop=100,
+    image_id="ami-038d89f8d9470c862",
+    bodo_version="2022.4",
+    description="my desc here",
+    auto_az=False,
+)
+result_create = client.cluster.create(cluster_definition)
+```
+
+### List clusters<a id="list-clusters"></a>
+
+`BodoClient.cluster.list(page: int, page_size: int) -> ClusterList`
+
+**Parameters:**
+
+| Parameter | Type  | Description                                                         | Required |
+| --------- | ----- | ------------------------------------------------------------------- | -------- |
+| `page`    | `int` | The page number has a lower limit of 1, default value 1             | False    |
+| `size`    | `int` | The size has a maximum allowed value of 100 and default value of 10 | False    |
+
+**Returns:** `ClusterList`
+
+| Fields     | Type                    | Description                                                               |
+| ---------- | ----------------------- | ------------------------------------------------------------------------- |
+| `data`     | `List[ClusterResponse]` | Contains a list of Cluster Response                                       |
+| `metadata` | `PageMetadata`          | Contains fields `page`, `size`, `total_pages`, `total_items`, and `order` |
+
+Object `ClusterResponse:`
+
+| Field                      | Type               | Description                                     |
+| -------------------------- | ------------------ | ----------------------------------------------- |
+| `name`                     | `str`              | Cluster name                                    |
+| `uuid`                     | `Union[str, UUID]` | Cluster UUID                                    |
+| `status`                   | `ClusterStatus`    | Cluster status                                  |
+| `description`              | `Optional[str]`    | Cluster description                             |
+| `instance_type`            | `str`              | Instance type of cluster nodes                  |
+| `workers_quantity`         | `int`              | Number workers in clusters                      |
+| `auto_stop`                | `Optional[int]`    | Cluster auto stop value [min]                   |
+| `auto_pause`               | `Optional[int]`    | Cluster auto pause value [min]                  |
+| `bodo_version`             | `Optional[str]`    | Bodo version used in cluster VMs                |
+| `image_id`                 | `Optional[str]`    | Image id used cluster VMs                       |
+| `cores_per_worker`         | `Optional[int]`    | Number of cores per worker                      |
+| `accelerated_networking`   | `Optional[bool]`   | Whether the cluster uses accelerated networking |
+| `created_at`               | `str`              | Date when cluster was created                   |
+| `last_known_activity`      | `Optional[str]`    | Date of last known cluster activity             |
+| `is_job_dedicated`         | `Optional[bool]`   | whether the cluster is a job dedicated cluster  |
+| `node_metadata`            | `Optional[object]` | Metada data about nodes (IP, instance id)       |
+| `asg_metadata`             | `Optional[object]` | [AWS] Auto scaling group metadata               |
+| `aws_deployment_subnet_id` | `Optional[str]`    | [AWS] Subnet id for cluster                     |
+| `auto_az`                  | `Optional[bool]`   | [AWS] Whether the cluster has Auto AZ enabled   |
+
+**Example**: Get the first 10 clusters in the workspace using the default parameter values.
+
+```python3
+from bodosdk.models import WorkspaceKeys, ClusterResponse
+from bodosdk.client import get_bodo_client
+from typing import List
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+clusters: List[ClusterResponse] = client.cluster.list().data
+```
+
+**Example**: Get all clusters with chunck of 10 clusters.
+
+```python3
+from bodosdk.client import get_bodo_client
+from bodosdk.models import (
+    WorkspaceKeys,
+)
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+
+cluster_list = []
+
+page = 1
+size = 10
+
+clusters = client.cluster.list(page=page, page_size=size)
+
+print('Total Clusters', clusters.metadata.total_items)
+
+total_items = clusters.metadata.total_items
+cluster_list = clusters.data
+
+while len(cluster_list) < total_items:
+    page += 1
+    clusters = client.cluster.list(page=page, page_size=size)
+    cluster_list += clusters.data
+```
+
+### Get cluster<a id="get-cluster"></a>
+
+`BodoClient.cluster.get(uuid : str) -> ClusterResponse`
+
+**Parameters:**
+
+| Parameter | Type               | Description  | Required |
+| --------- | ------------------ | ------------ | -------- |
+| `uuid`    | `Union[str, UUID]` | Cluster UUID | True     |
+
+**Returns:**
+Object `ClusterResponse:`
+
+| Field                      | Type               | Description                                     |
+| -------------------------- | ------------------ | ----------------------------------------------- |
+| `name`                     | `str`              | Cluster name                                    |
+| `uuid`                     | `Union[str, UUID]` | Cluster UUID                                    |
+| `status`                   | `ClusterStatus`    | Cluster status                                  |
+| `description`              | `Optional[str]`    | Cluster description                             |
+| `instance_type`            | `str`              | Instance type of cluster nodes                  |
+| `workers_quantity`         | `int`              | Number workers in clusters                      |
+| `auto_stop`                | `Optional[int]`    | Cluster auto stop value [min]                   |
+| `auto_pause`               | `Optional[int]`    | Cluster auto pause value [min]                  |
+| `bodo_version`             | `Optional[str]`    | Bodo version used in cluster VMs                |
+| `image_id`                 | `Optional[str]`    | Image id used cluster VMs                       |
+| `cores_per_worker`         | `Optional[int]`    | Number of cores per worker                      |
+| `accelerated_networking`   | `Optional[bool]`   | Whether the cluster uses accelerated networking |
+| `created_at`               | `str`              | Date when cluster was created                   |
+| `last_known_activity`      | `Optional[str]`    | Date of last known cluster activity             |
+| `is_job_dedicated`         | `Optional[bool]`   | whether the cluster is a job dedicated cluster  |
+| `node_metadata`            | `Optional[object]` | Metada data about nodes (IP, instance id)       |
+| `asg_metadata`             | `Optional[object]` | [AWS] Auto scaling group metadata               |
+| `aws_deployment_subnet_id` | `Optional[str]`    | [AWS] Subnet id for cluster                     |
+| `auto_az`                  | `Optional[bool]`   | [AWS] Whether the cluster has Auto AZ enabled   |
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys, ClusterResponse
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+clusters: ClusterResponse = client.cluster.get('<CLUSTER-UUID>')
+```
+
+### Remove cluster<a id="remove-cluster"></a>
+
+`BodoClient.client.remove(uuid: Union[str, UUID], force_remove: bool = False, mark_as_terminated: bool = False)`
+
+Method removing cluster from platform
+
+**Parameters:**
+
+| Parameter            | Type               | Description                                                                                                                | Required |
+| -------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------------------- | -------- |
+| `uuid`               | `Union[str, UUID]` | Cluster UUID                                                                                                               | True     |
+| `force_remove`       | `Union[str, UUID]` | Try to remove cluster even if there is cluster activity                                                                    | False    |
+| `mark_as_terminated` | `Union[str, UUID]` | Mark cluster as removed without removing resources, may be useful if cluster creation failed and normal removal is failing | False    |
+
+**Returns:**
+Returns `None` if successful. Otherwise, raises exception.
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from typing import List
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+client.cluster.remove('<CLUSTER-UUID>')
+```
+
+### Scale cluster<a id="scale-cluster"></a>
+
+`BodoClient.cluster.scale(scale_cluster: ScaleCluster) -> ClusterResponse`
+
+Changes number of nodes in cluster (AWS only)
+
+**Parameter:** `scale_cluster: ScaleCluster`
+
+| Field              | Type               | Description                    | Required |
+| ------------------ | ------------------ | ------------------------------ | -------- |
+| `uuid`             | `Union[str, UUID]` | Cluster UUID                   | Yes      |
+| `workers_quantity` | `int`              | Number of nodes in the cluster | Yes      |
+
+**Returns:**
+Object `ClusterResponse:`
+
+| Field                      | Type               | Description                                     |
+| -------------------------- | ------------------ | ----------------------------------------------- |
+| `name`                     | `str`              | Cluster name                                    |
+| `uuid`                     | `Union[str, UUID]` | Cluster UUID                                    |
+| `status`                   | `ClusterStatus`    | Cluster status                                  |
+| `description`              | `Optional[str]`    | Cluster description                             |
+| `instance_type`            | `str`              | Instance type of cluster nodes                  |
+| `workers_quantity`         | `int`              | Number workers in clusters                      |
+| `auto_stop`                | `Optional[int]`    | Cluster auto stop value [min]                   |
+| `auto_pause`               | `Optional[int]`    | Cluster auto pause value [min]                  |
+| `bodo_version`             | `Optional[str]`    | Bodo version used in cluster VMs                |
+| `image_id`                 | `Optional[str]`    | Image id used cluster VMs                       |
+| `cores_per_worker`         | `Optional[int]`    | Number of cores per worker                      |
+| `accelerated_networking`   | `Optional[bool]`   | Whether the cluster uses accelerated networking |
+| `created_at`               | `str`              | Date when cluster was created                   |
+| `last_known_activity`      | `Optional[str]`    | Date of last known cluster activity             |
+| `is_job_dedicated`         | `Optional[bool]`   | whether the cluster is a job dedicated cluster  |
+| `node_metadata`            | `Optional[object]` | Metada data about nodes (IP, instance id)       |
+| `asg_metadata`             | `Optional[object]` | [AWS] Auto scaling group metadata               |
+| `aws_deployment_subnet_id` | `Optional[str]`    | [AWS] Subnet id for cluster                     |
+| `auto_az`                  | `Optional[bool]`   | [AWS] Whether the cluster has Auto AZ enabled   |
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys, ScaleCluster, ClusterResponse
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+NEW_WORKERS_QUANTITY = 3
+scale_cluster = ScaleCluster(
+    uuid='<CLUSTER-UUID>',
+    workers_quantity=NEW_WORKERS_QUANTITY
+)
+cluster: ClusterResponse = client.cluster.scale(scale_cluster)
+```
+
+### Stop cluster<a id="stop-cluster"></a>
+
+`BodoClient.cluster.stop(uuid: Union[str, UUID])`
+
+Stops any cluster activity. You will not incur any charges for stopped cluster. You can restart it again at any time.
+
+**Parameters:**
+
+| Parameter | Type               | Description  | Required |
+| --------- | ------------------ | ------------ | -------- |
+| `uuid`    | `Union[str, UUID]` | Cluster UUID | Yes      |
+
+**Returns:**
+Returns `None` if successful. Otherwise, raises exception.
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+client.cluster.stop('<CLUSTER-UUID>')
+```
+
+### Restart cluster<a id="restart-cluster"></a>
+
+`BodoClient.cluster.restart(uuid: Union[str, UUID])`
+
+Restarts cluster. You can restart cluster only if it is stopped.
+
+**Parameters:**
+
+| Parameter | Type               | Description  | Required |
+| --------- | ------------------ | ------------ | -------- |
+| `uuid`    | `Union[str, UUID]` | Cluster UUID | Yes      |
+
+**Returns:**
+Returns `None` if successful. Otherwise, raises exception.
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+client.cluster.stop('<CLUSTER-UUID>')
+```
+
+### Pause cluster<a id="pause-cluster"></a>
+
+`BodoClient.cluster.pause(uuid: Union[str, UUID])`
+
+Pause cluster. You can pause cluster only if it is running.
+
+**Parameters:**
+
+| Parameter | Type               | Description  | Required |
+| --------- | ------------------ | ------------ | -------- |
+| `uuid`    | `Union[str, UUID]` | Cluster UUID | Yes      |
+
+**Returns:**
+Returns `None` if successful. Otherwise, raises exception.
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+client.cluster.pause('<CLUSTER-UUID>')
+```
+
+### Resume cluster<a id="resume-cluster"></a>
+
+`BodoClient.cluster.resume(uuid: Union[str, UUID])`
+
+Resume cluster. You can resume cluster only if it is paused.
+
+**Parameters:**
+
+| Parameter | Type               | Description  | Required |
+| --------- | ------------------ | ------------ | -------- |
+| `uuid`    | `Union[str, UUID]` | Cluster UUID | Yes      |
+
+**Returns:**
+Returns `None` if successful. Otherwise, raises exception.
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+client.cluster.resume('<CLUSTER-UUID>')
+```
+
+### Modify Cluster metadata <a id="modify-cluster-metadata"></a>
+
+`BodoClient.cluster.modify(modify_cluster: ModifyCluster) -> ClusterResponse`
+
+This function can be used to edit cluster metadata for a given cluster. The properties that we can edit are
+description, autopause time, autostop time, bodo-version, instance type, instance role, flag for auto availability zone selection and the number of workers.
+Changing the number of workers will kick off a scaling event on the cluster, which will resume the cluster if it is in paused state.
+The modify function also supports modifying a subset of property part if the ModifyCluster object like listed in the example below.
+The cluster modification can only happen when the cluster is in stopped state. The fields that aren't required to
+be modified are optional and don't necessarily have to be passed during the call to the API.
+Note: Disabling the `auto_az` flag without specifying an `availability_zone` in the same request might result in the cluster failing.
+So make sure to provide a fallback zone to avoid failures.
+**Parameter:** `modify_cluster: ModifyCluster`
+
+| Field                | Type               | Description                                  | Required |
+| -------------------- | ------------------ | -------------------------------------------- | -------- |
+| `uuid`               | `Union[str, UUID]` | Cluster UUID                                 | Yes      |
+| `auto_stop`          | `Optional[int]`    | Cluster auto stop value [min]                | No       |
+| `auto_pause`         | `Optional[int]`    | Cluster auto pause value [min]               | No       |
+| `description`        | `Optional[str]`    | Cluster description                          | No       |
+| `workers_quantity`   | `Optional[int]`    | Number of nodes in the cluster               | No       |
+| `instance_role_uuid` | `Optional[str]`    | [AWS] Instance role                          | No       |
+| `instance_type`      | `Optional[str]`    | Instance type used in cluster                | No       |
+| `bodo_version`       | `Optional[str]`    | Bodo version available on the cluster        | No       |
+| `auto_az`            | `Optional[bool]`   | [AWS] Whether the cluster is Auto AZ enabled | No       |
+| `availability_zone`  | `Optional[str]`    | Availability zone for the cluster            | No       |
+
+**Returns:**
+Object `ClusterResponse:`
+
+| Field                      | Type               | Description                                     |
+| -------------------------- | ------------------ | ----------------------------------------------- |
+| `name`                     | `str`              | Cluster name                                    |
+| `uuid`                     | `Union[str, UUID]` | Cluster UUID                                    |
+| `status`                   | `ClusterStatus`    | Cluster status                                  |
+| `description`              | `Optional[str]`    | Cluster description                             |
+| `instance_type`            | `str`              | Instance type of cluster nodes                  |
+| `workers_quantity`         | `int`              | Number workers in clusters                      |
+| `auto_stop`                | `Optional[int]`    | Cluster auto stop value [min]                   |
+| `auto_pause`               | `Optional[int]`    | Cluster auto pause value [min]                  |
+| `bodo_version`             | `Optional[str]`    | Bodo version used in cluster VMs                |
+| `image_id`                 | `Optional[str]`    | Image id used cluster VMs                       |
+| `cores_per_worker`         | `Optional[int]`    | Number of cores per worker                      |
+| `accelerated_networking`   | `Optional[bool]`   | Whether the cluster uses accelerated networking |
+| `created_at`               | `str`              | Date when cluster was created                   |
+| `last_known_activity`      | `Optional[str]`    | Date of last known cluster activity             |
+| `is_job_dedicated`         | `Optional[bool]`   | whether the cluster is a job dedicated cluster  |
+| `node_metadata`            | `Optional[object]` | Metada data about nodes (IP, instance id)       |
+| `asg_metadata`             | `Optional[object]` | [AWS] Auto scaling group metadata               |
+| `aws_deployment_subnet_id` | `Optional[str]`    | [AWS] Subnet id for cluster                     |
+| `auto_az`                  | `Optional[bool]`   | [AWS] Whether the cluster has Auto AZ enabled   |
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys, ModifyCluster, ClusterResponse
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+role_definition = CreateRoleDefinition(
+  name="test-sdk-role-creation",
+  description="testing-instance-role-creation",
+  data=InstanceRole(role_arn="arn:aws:iam::427443013497:role/testing_bucket_with_my_script")
+)
+result_create_role: CreateRoleResponse = client.instance_role.create(role_definition)
+
+client = get_bodo_client(keys)
+modify_cluster = ModifyCluster(
+    uuid="<cluster-uuid>",
+    auto_pause=60,
+    auto_stop=0,
+    workers_quantity=4,
+    description="using the SDK",
+    instance_type="c5.large",
+    instance_role_uuid=result_create_role.uuid,
+    bodo_version="2022.4",
+    auto_az=True,
+)
+partial_modify_cluster = ModifyCluster(
+    uuid="<cluster-uuid>",
+    autopause=120,
+)
+new_cluster: List[ClusterResponse] = client.cluster.modify(modify_cluster)
+new_cluster_partial: List[ClusterResponse] = client.cluster.modify(partial_modify_cluster)
+```
+
+**Example:** Detach Custom Instance Role . Replace the custom instance role with default role which is automatically created for a cluster
+
+```python
+detach_custom_instance_role = ModifyCluster(
+    uuid="<cluster-uuid>",
+    instance_role_uuid="default",
+)
+new_cluster_partial: ClusterResponse = client.cluster.modify(detach_custom_instance_role)
+```
+
+### List tasks for a cluster<a id="list-tasks-for-cluster"></a>
+
+`BodoClient.cluster.list_tasks(uuid: Union[str, UUID]) -> List[TaskInfo]`
+
+Gets all taks for cluster.
+
+**Parameters:**
+
+| Parameter | Type               | Description  | Required |
+| --------- | ------------------ | ------------ | -------- |
+| `uuid`    | `Union[str, UUID]` | Cluster UUID | Yes      |
+
+**Returns:** List[TaskInfo]
+Object `TaskInfo:`
+
+| Field       | Type         | Description         |
+| ----------- | ------------ | ------------------- |
+| `uuid`      | `str`        | Cluster task UUID   |
+| `status`    | `TaskStatus` | Cluster task status |
+| `task_type` | `str`        | Task type           |
+| `logs`      | `str`        | Cluster description |
+
+**Example:**
+
+```python3
+from bodosdk.models import WorkspaceKeys, TaskInfo
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+tasks: List[TaskInfo] = client.cluster.list_tasks(uuid)
+```
+
+### Workspace resource<a id="workspace-resource"></a>
+
+Module responsible for managing workspaces in an organization.
+
+- [workspace getting started](#workspace-getting-started)
+- [create workspace](#create-workspace)
+- [list workspaces](#list-workspaces)
+- [get workspace](#get-workspace)
+- [remove workspace](#remove-workspace)
+- [assign user](#assign-user)
+- [list workspace tasks](#list-workspace-tasks)
+
+### Workspace getting started<a id="workspace-getting-started"></a>
+
+In order to work with Workspace, users need to generate Personal Tokens, under Admin Console, from the Bodo Platform Dashboard.
+Then instantiate a PersonalKeys object with the generated `client_id` and `secret_id`. Then pass in this personal key while
+instantiating a client object
+
+```python
+from bodosdk.models import PersonalKeys
+personal_keys = PersonalKeys(
+    client_id='<CLIENT-ID>',
+    secret_id='<SECRET-ID>',
+)
+client = get_bodo_organization_client(personal_keys)
+```
+
+### Create Workspace<a id="create-workspace"></a>
+
+`BodoClient.workspace.create(workspace_definition: WorkspaceDefinition) -> WorkspaceCreatedResponse`
+Creates a workspace with the specifications passed in through a WorkspaceDefinition object under the
+user's organization
+
+````
+
+`BodoClient.workspace.create(workspace_definition: WorkspaceDefinition) -> WorkspaceCreatedResponse`
+
+Creates a workspace with the specifications passed in through a `WorkspaceDefinition` object under the
+user's organization.
+
+**Parameter:** `workspace_definition: WorkspaceDefinition`
+
+| Field               | Type                       | Description                                                                                                                                                                                                                                                                                                  | Required |
+| ------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| `name`              | `str`                      | Workspace name                                                                                                                                                                                                                                                                                               | Yes      |
+| `region`            | `str`                      | Region where workspace should be placed                                                                                                                                                                                                                                                                      | Yes      |
+| `cloud_config_uuid` | `Union[UUID, str]`         | Existing AWS or Azure cloud config uuid                                                                                                                                                                                                                                                                      | Yes      |
+| `storage_endpoint`  | `Optional[bool]`           | Enable additonal endpoints [Microsoft.Storage](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview) or [S3 Gateway](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html). <br/>There's no additional charge for using service endpoints. | No       |
+| `aws_network_data`  | `Optional[AWSNetworkData]` | Specific for network data for AWS                                                                                                                                                                                                                                                                            | No       |
+
+**Returns:**
+Object `WorkspaceCreatedResponse:`
+
+| Field               | Type            | Description                               |
+| ------------------- | --------------- | ----------------------------------------- |
+| `name`              | `str`           | Workspace name                            |
+| `uuid`              | `str`           | Workspace UUID                            |
+| `status`            | `str`           | Workspace status                          |
+| `region`            | `str`           | Region where workspace should be placed.  |
+| `organization_uuid` | `str`           | Organization UUID                         |
+| `data`              | `Optional[Any]` | Specific configuration data for workspace |
+| `created_by`        | `Optional[str]` | Email address of the workspace creator    |
+| `cloud_config`      | `Optional[Any]` | Cloud config data                         |
+
+**Example: Create new Workspace**
+
+```python
+from bodosdk.models import PersonalKeys
+from bodosdk.models import WorkspaceDefinition
+personal_keys = PersonalKeys(
+    client_id='<CLIENT-ID>',
+    secret_id='<SECRET-ID>',
+)
+client = get_bodo_organization_client(personal_keys)
+wd = WorkspaceDefinition(
+    name="<WORSPACE-NAME>",
+    cloud_config_uuid="<CONFIG-UUID>",
+    region="<WORKSPACE-REGION>"
+)
+resp = client.workspace.create(wd)
+````
+
+### List Workspaces<a id="list-workspaces"></a>
+
+`BodoClient.workspace.list()`
+
+**Returns:**
+Returns a list of all workspaces defined under this organization as `List[WorkspaceListItem]`
+
+| Field               | Type              | Description                               |
+| ------------------- | ----------------- | ----------------------------------------- |
+| `name`              | `str`             | Workspace name                            |
+| `uuid`              | `str`             | Workspace UUID                            |
+| `status`            | `WorkspaceStatus` | Workspace status                          |
+| `provider`          | `str`             | Workspace provider (AWS or AZURE)         |
+| `region`            | `str`             | Region where workspace should be placed.  |
+| `organization_uuid` | `str`             | Organization UUID                         |
+| `data`              | `Optional[Any]`   | Specific configuration data for workspace |
+| `server_time`       | `Optional[str]`   | Current server time                       |
+| `cloud_config`      | `Optional[Any]`   | Cloud config data                         |
+| `created_by`        | `Optional[str]`   | Email address of the workspace creator    |
+
+**Example:**
+
+```python
+
+`BodoClient.workspace.list()`
+Returns a list of all workspaces defined under this organization. The with_task boolean controls printing out
+tasks running in the workspaces. The returned list is a list of GetWorkspaceResponse object
+
+```
+
+from bodosdk.models import PersonalKeys
+personal_keys = PersonalKeys(
+client_id='<CLIENT-ID>',
+secret_id='<SECRET-ID>',
+)
+client = get_bodo_organization_client(personal_keys)
+resp = client.workspace.list()
+
+```
+
+### Get Workspace<a id="get-workspace"></a>
+
+`BodoClient.workspace.get(uuid: str)`
+Returns information about the workspace with the given uuid. Returns a GetWorkspaceResponse object with details about the workspace uuid mentioned.
+
+```
+
+`BodoClient.workspace.get(uuid: Union[str, UUID]) -> WorkspaceResponse`
+
+**Parameters:**
+
+| Parameter | Type               | Description    | Required |
+| --------- | ------------------ | -------------- | -------- |
+| `uuid`    | `Union[str, UUID]` | Workspace UUID | Yes      |
+
+**Returns:**
+Returns the workspace details provided the workspace `uuid` - `WorkspaceResponse`
+
+| Field               | Type              | Description                               |
+| ------------------- | ----------------- | ----------------------------------------- |
+| `name`              | `str`             | Workspace name                            |
+| `uuid`              | `str`             | Workspace UUID                            |
+| `status`            | `WorkspaceStatus` | Workspace status                          |
+| `region`            | `str`             | Region where workspace is placed.         |
+| `organization_uuid` | `str`             | Organization UUID                         |
+| `data`              | `Optional[Any]`   | Specific configuration data for workspace |
+| `cloud_config`      | `Optional[Any]`   | Cloud config data                         |
+| `created_by`        | `Optional[str]`   | Email address of the workspace creator    |
+
+**Example:**
+
+```python
+from bodosdk.models import PersonalKeys
+personal_keys = PersonalKeys(
+    client_id='<CLIENT-ID>',
+    secret_id='<SECRET-ID>',
+)
+client = get_bodo_organization_client(personal_keys)
+resp = client.workspace.get("<WORKSPACE-UUID>")
+```
+
+### Remove Workspace<a id="remove-workspace"></a>
+
+`BodoClient.workspace.remove(uuid: Union[str, UUID], mark_as_terminated: bool = False)`
+
+Removes the workspace with the provided uuid. The operation is only successful if all resources within the workspaces(jobs, clusters, notebooks) are already terminated.
+
+**Parameters:**
+
+| Field              | Type               | Description                                                                                                            | Required |
+| ------------------ | ------------------ | ---------------------------------------------------------------------------------------------------------------------- | -------- |
+| `uuid`             | `Union[str, UUID]` | Workspace UUID                                                                                                         | Yes      |
+| mark_as_terminated | `bool`             | Mark role as terminated without removing resources, <br/>may be useful if role creation failed and deletion is failing | No       |
+
+**Returns:**
+Returns None if successful. Otherwise, raises exception.
+
+**Example:**
+
+```python
+from bodosdk.models import PersonalKeys
+personal_keys = PersonalKeys(
+    client_id='<CLIENT-ID>',
+    secret_id='<SECRET-ID>',
+)
+client = get_bodo_organization_client(personal_keys)
+resp = client.workspace.remove("<WORKSPACE-UUID>")
+```
+
+### Assign user<a id="assign-user"></a>
+
+`BodoClient.workspace.assign_users(workspace_uuid: Union[str, UUID], users: List[UserAssignment])`
+
+Assign user to workspace.
+
+**Parameters:**
+
+| Parameter        | Type                   | Description                                              | Required |
+| ---------------- | ---------------------- | -------------------------------------------------------- | -------- |
+| `workspace_uuid` | `Union[str, UUID]`     | Workspace UUID                                           | Yes      |
+| `users`          | `List[UserAssignment]` | List of users that will be assigned to a given workspace | Yes      |
+
+**Returns:**
+Returns None if successful. Otherwise, raises exception.
+
+**Example:**
+
+```python
+from bodosdk.models import PersonalKeys
+personal_keys = PersonalKeys(
+    client_id='<CLIENT-ID>',
+    secret_id='<SECRET-ID>',
+)
+client = get_bodo_organization_client(personal_keys)
+workspace_uuid = "<some uuid>"
+users: List[UserAssignment] = [
+    UserAssignment(
+        email="example@example.com",
+        skip_email=True,
+        bodo_role=BodoRole.ADMIN
+    )
+]
+client.workspace.assign_users(workspace_uuid, users)
+```
+
+### List Workspace tasks<a id="list-workspace-tasks"></a>
+
+`BodoClient.workspace.get_tasks(workspace_uuid: Union[str, UUID]) -> List[TaskInfo]`
+
+**Returns:**
+Return a list of workspace tasks in the workspace - `List[TaskInfo]`
+
+| Field       | Type              | Description              |
+| ----------- | ----------------- | ------------------------ |
+| `uuid`      | `str`             | Workspace task uuid      |
+| `status`    | `TaskStatus`      | Status of workspace task |
+| `task_type` | `WorkspaceStatus` | Type of workspace task   |
+| `logs`      | `str`             | Logs from specific task  |
+
+**Example**
+
+```python
+from bodosdk.models import PersonalKeys
+personal_keys = PersonalKeys(
+    client_id='<CLIENT-ID>',
+    secret_id='<SECRET-ID>',
+)
+client = get_bodo_organization_client(personal_keys)
+resp = client.workspace.get_tasks("<WORKSPACE-UUID>")
+```
+
+## Cloud Config<a id="cloud-config"></a>
+
+Module responsible for creating cloud configurations for organization.
+
+- [create cloud configuration](#create-config)
+- [list cloud configurations](#list-configs)
+- [get cloud config](#get-config)
+
+### Create config<a id="create-config"></a>
+
+`BodoClient.cloud_config.create(config: Union[CreateAwsCloudConfig, CreateAzureCloudConfig])`
+
+Create cloud configuration for cloud
+
+AWS example
+
+```python3
+from bodosdk.models import OrganizationKeys, CreateAwsProviderData, CreateAwsCloudConfig, AwsCloudConfig
+from bodosdk.client import get_bodo_client
+
+keys = OrganizationKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+
+config = CreateAwsCloudConfig(
+    name='test',
+    aws_provider_data=CreateAwsProviderData(
+        tf_backend_region='us-west-1',
+        access_key_id='xyz',
+        secret_access_key='xyz'
+    )
+
+)
+config: AwsCloudConfig = client.cloud_config.create(config)
+```
+
+Azure example
+
+```python3
+from bodosdk.models import OrganizationKeys, CreateAzureProviderData, CreateAzureCloudConfig, AzureCloudConfig
+from bodosdk.client import get_bodo_client
+
+keys = OrganizationKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+
+config = CreateAzureCloudConfig(
+    name='test',
+    azure_provider_data=CreateAzureProviderData(
+        tf_backend_region='eastus',
+        tenant_id='xyz',
+        subscription_id='xyz',
+        resource_group='MyResourceGroup'
+    )
+
+)
+config: AzureCloudConfig = client.cloud_config.create(config)
+```
+
+### Get config<a id="list-configs"></a>
+
+`BodoClient.cloud_config.list()`
+
+Get list of cloud configs.
+
+```python3
+from bodosdk.models import OrganizationKeys, AzureCloudConfig, AwsCloudConfig
+from bodosdk.client import get_bodo_client
+from typing import Union, List
+
+keys = OrganizationKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+
+configs: List[Union[AwsCloudConfig, AzureCloudConfig]] = client.cloud_config.list()
+```
+
+### Get config<a id="get-config"></a>
+
+`BodoClient.cloud_config.get(uuid: Union[str, UUID])`
+
+Get cloud config by uuid.
+
+```python3
+from bodosdk.models import OrganizationKeys, AzureCloudConfig, AwsCloudConfig
+from bodosdk.client import get_bodo_client
+from typing import Union
+
+keys = OrganizationKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+
+client = get_bodo_client(keys)
+
+config: Union[AwsCloudConfig, AzureCloudConfig] = client.cloud_config.get('8c32aec5-7181-45cc-9e17-8aff35fd269e')
+```
+
+### Instance Role Manager<a id="instance-role"></a>
+
+Module responsible for managing AWS roles in workspace.
+
+- [create role](#create-role)
+- [list roles](#list-roles)
+- [get role](#get-role)
+- [remove role](#remove-role)
+
+### Create role<a id="create-role"></a>
+
+`BodoClient.instance_role.create()`
+
+Creates an AWS role with the specified role definition with a given AWS role arn.
+
+```python3
+from bodosdk.models import WorkspaceKeys, CreateRoleDefinition, CreateRoleResponse
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+role_definition = CreateRoleDefinition(
+    name="test-sdk-role-creation",
+    description="testing",
+    data=InstanceRole(role_arn="arn:aws:iam::1234567890:role/testing")
+)
+result_create:CreateRoleResponse = client.instance_role.create(role_definition)
+```
+
+### List roles<a id="list-roles"></a>
+
+`BodoClient.instance_role.list()`
+
+Returns list of all roles in workspace
+
+```python3
+from bodosdk.models import WorkspaceKeys, InstanceRoleItem
+from bodosdk.client import get_bodo_client
+from typing import List
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+result_list:List[InstanceRoleItem] = client.instance_role.list()
+```
+
+### Get role<a id="get-role"></a>
+
+`BodoClient.instance_role.get(cluster_uuid)`
+
+Returns role by uuid
+
+```python3
+from bodosdk.models import WorkspaceKeys, InstanceRoleItem
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+clusters: InstanceRoleItem = client.instance_role.get('<CLUSTER-UUID>')
+```
+
+### Remove role<a id="remove-role"></a>
+
+`BodoClient.instance_role.remove(cluster_uuid, mark_as_terminated=False)`
+
+| Parameters         | Type    | Description                                                                                                            | Required |
+| ------------------ | ------- | ---------------------------------------------------------------------------------------------------------------------- | -------- |
+| mark_as_terminated | Boolean | Mark role as terminated without removing resources, <br/>may be useful if role creation failed and deletion is failing | No       |
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+client.instance_role.remove('<ROLE-UUID>')
+```
+
+## Catalog<a id="catalog"></a>
+
+Module responsible for storing database catalogs
+
+- [create catalog](#create-catalog)
+- [get catalog by uuid](#get-catalog-uuid)
+- [get catalog by name](#get-catalog-name)
+- [list catalogs](#list-catalogs)
+- [update catalog](#update-catalog)
+- [remove catalog](#remove-catalog-uuid)
+- [remove all catalogs](#remove-all-catalogs)
+
+### Create Catalog<a id="create-catalog"></a>
+
+`BodoClient.catalog.create()`
+
+Stores the Database Catalog
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.catalog import CatalogDefinition, SnowflakeConnectionDefinition
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+
+# Type Support for Snowflake
+snowflake_definition = SnowflakeConnectionDefinition(
+    host="test.snowflake.com",
+    port=443,
+    username="test-username",
+    password="password",
+    database="test-db",
+    warehouse="test-wh",
+    role="test-role"
+)
+
+# For other databases, need to defined as JSON
+connection_data = {
+    "host": "test.db.com",
+    "username": "test-username",
+    "password": "*****",
+    "database": "test-db",
+}
+
+catalog_definition = CatalogDefinition(
+    name="catalog-1",
+    description="catalog description",
+    catalogType="SNOWFLAKE", # Currently Support Snowflake
+    data=snowflake_definition
+)
+
+client.catalog.create(catalog_definition)
+
+
+```
+
+### Get Catalog by UUID<a id="get-catalog-uuid"></a>
+
+`BodoClient.catalog.get_catalog()`
+
+Retrieves the Catalog details by UUID
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.catalog import CatalogInfo
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+catalog_info: CatalogInfo = client.catalog.get("<CATALOG-UUID>")
+```
+
+### Get Catalog by Name<a id="get-catalog-name"></a>
+
+`BodoClient.catalog.get_by_name()`
+
+Retrieves the Catalog details by UUID
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.catalog import CatalogInfo
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+catalog_info: CatalogInfo = client.catalog.get_by_name("test-catalog")
+```
+
+### List Catalogs<a id="list-catalogs"></a>
+
+`BodoClient.catalog.list()`
+
+Retrieves all catalogs in a workspace.
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.catalog import CatalogInfo
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+catalog_info: CatalogInfo = client.catalog.list()
+```
+
+### Update Catalog<a id="update-catalog"></a>
+
+`BodoClient.catalog.update()`
+
+Updates the Database Catalog
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.catalog import CatalogDefinition, SnowflakeConnectionDefinition
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+
+# Type Support for Snowflake
+snowflake_definition = SnowflakeConnectionDefinition(
+    host="update.snowflake.com",
+    port=443,
+    username="test-username",
+    password="password",
+    database="test-db",
+    warehouse="test-wh",
+    role="test-role"
+)
+
+new_catalog_def = CatalogDefinition(
+    name="catalog-1",
+    description="catalog description",
+    catalogType="SNOWFLAKE", # Currently Support Snowflake
+    data=snowflake_definition
+)
+client.catalog.update("<CATALOG-UUID>", new_catalog_def)
+
+
+```
+
+### Remove Catalog by UUID<a id="remove-catalog-uuid"></a>
+
+`BodoClient.catalog.remove()`
+
+Deletes a Database Catalog by UUID
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+client.catalog.remove("<CATALOG-UUID>")
+```
+
+### Remove all Catalogs<a id="remove-all-catalogs"></a>
+
+`BodoClient.catalog.remove()`
+
+Deletes a Database Catalog by UUID
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+client.catalog.remove_all()
+```
+
+## Secret Groups<a id="secret-group"></a>
+
+Module responsible for separating secrets into multiple groups.
+
+A default secret group will be created at the time of workspace creation.
+Users can define custom secret groups using the following functions.
+
+- [create secret group](#create-secret-group)
+- [list secret groups](#list-secret-groups)
+- [update secret group](#update-secret-group)
+- [delete secret group](#delete-secret-group)
+
+### Create Secret Group<a id="create-secret-group"></a>
+
+`BodoClient.secret_group.create()`
+
+Create a secret group
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secret_group import SecretGroupDefinition
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+
+secret_group_definition = SecretGroupDefinition(
+    name="sg-1", # Name should be unique to that workspace
+    description="secret group description",
+)
+
+client.secret_group.create(secret_group_definition)
+```
+
+### List Secret Groups<a id="list-secret-groups"></a>
+
+`BodoClient.secret_group.list()`
+
+List all the secret groups in a workspace.
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secret_group import SecretGroupInfo
+from typing import List
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+groups_list: List[SecretGroupInfo] = client.secret_group.list()
+```
+
+### Update Secret Group<a id="update-secret-group"></a>
+
+`BodoClient.secret_group.update()`
+
+Updates the secret group description
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secret_group import SecretGroupInfo, SecretGroupDefinition
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+
+update_secret_group_def = SecretGroupDefinition(
+    name="sg-1", # Cannot modify the name in the group
+    description="secret group description",
+)
+groups_data: SecretGroupInfo = client.secret_group.update(update_secret_group_def)
+```
+
+### Delete Secret Group<a id="delete-secret-group"></a>
+
+`BodoClient.secret_group.remove()`
+
+Removes the secret group.
+
+**Note: Can only remove if all the secrets in the group are deleted**
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+
+client.secret_group.remove("<secret-group-uuid>")
+```
+
+## Secrets<a id="secrets"></a>
+
+Module responsible for creating secrets.
+
+- [create secret](#create-secrets)
+- [get secret](#get-secret)
+- [list secrets](#list-secrets)
+- [list secrets by secret group](#list-secrets-by-secret-group)
+- [update secret](#update-secret)
+- [delete secret](#delete-secret)
+
+### Create Secret<a id="create-secret"></a>
+
+`BodoClient.secrets.create()`
+
+Create the secret in a secret group.
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secrets import SecretDefinition
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+
+secret_definition = SecretDefinition(
+    name="secret-1",
+    data={
+        "key": "value"
+    },
+    secret_group="<secret-group-name>" #If not defined, defaults to default to secret group
+)
+
+client.secrets.create(secret_definition)
+```
+
+### Get Secrets by UUID<a id="get-secret"></a>
+
+`BodoClient.secrets.get()`
+
+Retrieves the Secrets by UUID
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secrets import SecretInfo
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+secret_info: SecretInfo = client.secrets.get("<secret-uuid>")
+```
+
+### List Secrets by Workspace<a id="list-secrets"></a>
+
+`BodoClient.secrets.list()`
+
+List the secrets in a workspace
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secrets import SecretInfo
+from typing import List
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+secrets_info: List[SecretInfo] = client.secrets.list()
+```
+
+### List Secrets by Secret Group<a id="list-secrets-by-secret-group"></a>
+
+`BodoClient.secrets.list_by_group()`
+
+List the Secrets by Secret Group
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secrets import SecretInfo
+from typing import List
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+secrets_info: List[SecretInfo] = client.secrets.list_by_group("<secret-group-name>")
+```
+
+### Update Secret<a id="update-secret"></a>
+
+`BodoClient.secrets.update()`
+
+Updates the secret.
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secrets import SecretDefinition
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+
+update_secret_def = SecretDefinition(
+    data={
+        "key": "value"
+    }
+)
+
+client.secrets.update("<secret-uuid>", update_secret_def)
+```
+
+### Delete Secrets by UUID<a id="delete-secret"></a>
+
+`BodoClient.secrets.remove()`
+
+Delete the Secret by UUID
+
+```python3
+from bodosdk.models import WorkspaceKeys
+from bodosdk.client import get_bodo_client
+from bodosdk.models.secrets import SecretInfo
+keys = WorkspaceKeys(
+    client_id='XYZ',
+    secret_key='XYZ'
+)
+client = get_bodo_client(keys)
+secret_info: SecretInfo = client.secrets.remove("<secret-uuid>")
+```
+
+### Billing module <a id="billing-module"></a>
+
+Billing module provides access to billing information related to a particular workspace.
+
+- [Get job run billing report CSV](#job-run-billing)
+- [Get cluster level billing report CSV](#cluster-level-billing)
+
+##### Get job run billing report CSV <a id = "job-run-billing"></a>
+
+`BodoClient.billing.get_job_run_price_export(started_at: str, finished_at: str, workspace_uuid: Union[str, UUID])`
+
+Provides a CSV download link for the billing report, specifically on the job run level, displaying EC2 costs per job run
+within the defined startTime and endTime range for all workspaces.
+<br/>
+**For a particular workspace, provide the workspaceUUID which can be obtained from [list-workspaces](#list-workspaces)**
+<br/>
+
+The billing report includes essential fields such as start time, end time, duration, worker count, instance type, and
+associated costs. This link remains active for a duration of 7 days and is exclusively available to AWS customers.
+It's important to note that reports can only be generated for a 30-day time period.
+
+**Parameters:**
+
+| Parameters       | Type               | Description                                                      | Required |
+| ---------------- | ------------------ | ---------------------------------------------------------------- | -------- |
+| `started_at`     | `Union[str, date]` | Start date of the report                                         | Yes      |
+| `finished_at`    | `Union[str, date]` | End date of the report                                           | Yes      |
+| `workspace_uuid` | `Union[str, UUID]` | Workspace UUID, returns all workspaces in organization when null | No       |
+
+**Returns:**
+
+| Fields | Type   | Description                                 |
+| ------ | ------ | ------------------------------------------- |
+| url    | string | S3 Pre-signed URL which contains the report |
+
+<br/>
+
+- CSV report for date range
+
+The following Python code generates a CSV report for a specified date range, starting from September 5th to
+September 6th for a given workspace UUID. .
+You can also provide the same date range with a timestamp in the ISO8601 format, such as
+`2023-09-05T11:15:00Z`. After running the code, it will display a link to the CSV report that can be clicked to
+initiate the download:
+
+```python3
+from bodosdk.models import OrganizationKeys
+from bodosdk.client import get_bodo_organization_client
+
+keys = OrganizationKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_organization_client(keys)
+
+print(client.billing.get_job_run_price_export('2023-09-05', '2023-09-06', 'WORKSPACE-UUID'))
+```
+
+##### Get cluster level billing report CSV <a id = "cluster-level-billing"></a>
+
+`BodoClient.billing.get_cluster_price_export(started_at: str, finished_at: str, workspace_uuid: Union[str, UUID])`
+
+Provides a CSV download link for the billing report, specifically at the cluster level, displaying EC2 costs per cluster run
+within the defined startTime and endTime range among all workspaces.
+<br/>
+**For a particular workspace, provide the workspaceUUID which can be obtained from [list-workspaces](#list-workspaces)**
+<br/>
+
+The billing report includes essential fields such as start time, end time, duration, worker count, instance type, and associated costs.
+This link remains active for a duration of 7 days and is exclusively available to AWS customers.
+It's important to note that reports can only be generated for a 30-day time period.
+
+**Parameters:**
+
+| Parameters       | Type               | Description                                                           | Required |
+| ---------------- | ------------------ | --------------------------------------------------------------------- | -------- |
+| `started_at`     | `Union[str, date]` | Start date of the report                                              | Yes      |
+| `finished_at`    | `Union[str, date]` | End date of the report                                                | Yes      |
+| `workspace_uuid` | `Union[str, UUID]` | Workspace UUID, <br/>returns all workspaces in organization when null | No       |
+
+**Returns:**
+
+| Fields | Type   | Description                                 |
+| ------ | ------ | ------------------------------------------- |
+| url    | string | S3 Pre-signed URL which contains the report |
+
+<br/>
+
+- CSV report for date range
+
+The following Python code generates a CSV report for a specified date range, starting from September 5th to
+September 6th for a given workspace UUID.
+You can also provide the same date range with a timestamp in the ISO8601 format, such as `2023-09-05T11:15:00Z`.
+After running the code, it will display a link to the CSV report that can be clicked to initiate the download:
+
+```python3
+from bodosdk.models import OrganizationKeys
+from bodosdk.client import get_bodo_organization_client
+
+keys = OrganizationKeys(
+    client_id="XYZ",
+    secret_key="XYZ"
+)
+
+client = get_bodo_organization_client(keys)
+
+print(client.billing.get_cluster_price_export('2023-09-05', '2023-09-06', 'WORKSPACE-UUID'))
+```
