@@ -1,0 +1,9 @@
+persai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+persai/big_five.py,sha256=dQnTD6EdsMVoodCG8S55esGBe7fkiIY701_Fe1yw_aA,2523
+persai/open_ai.py,sha256=9OyZFuL3uhcPN_h8aiYeZK0cyhjazNLoMmPWx9P35GQ,374
+persai/x_data_cleaner.py,sha256=C-k45-vGF0UbVoeAofwvXZ87WOW8B_08_ykeQumP9M0,1892
+persai-0.0.5.dist-info/LICENSE,sha256=ySN9rgeQv9LWBUviNcQykavNjaczKVnPjQNFTUtWqOc,1065
+persai-0.0.5.dist-info/METADATA,sha256=_0F4sin8blTTY7Q01XinO6TdebdJ2uOnlfhaRrrIThM,2614
+persai-0.0.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+persai-0.0.5.dist-info/top_level.txt,sha256=2WWGaVJJt-rP_WOUtu7-owBVy3QpGkMg5VQwwxQSIEI,7
+persai-0.0.5.dist-info/RECORD,,
