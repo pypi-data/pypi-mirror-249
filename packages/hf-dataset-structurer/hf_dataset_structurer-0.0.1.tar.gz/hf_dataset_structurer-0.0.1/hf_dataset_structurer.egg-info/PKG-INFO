@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hf_dataset_structurer
+Version: 0.0.1
+Author: Rúben Almeida
+Requires-Dist: datasets
+Requires-Dist: Jinja2
+Requires-Dist: huggingface-hub

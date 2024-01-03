@@ -1,0 +1,10 @@
+README.md
+setup.py
+hf_dataset_structurer/DatasetStructure.py
+hf_dataset_structurer/__init__.py
+hf_dataset_structurer/example.py
+hf_dataset_structurer.egg-info/PKG-INFO
+hf_dataset_structurer.egg-info/SOURCES.txt
+hf_dataset_structurer.egg-info/dependency_links.txt
+hf_dataset_structurer.egg-info/requires.txt
+hf_dataset_structurer.egg-info/top_level.txt
