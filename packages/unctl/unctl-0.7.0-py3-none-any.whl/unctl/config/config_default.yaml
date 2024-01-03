@@ -1,0 +1,10 @@
+# config.yaml
+
+# section responsible for anonymisation any user data before sending it to any 3rd party service
+anonymisation:
+  # defines regex patterns to be used for masking any data that matches the pattern
+  masks:
+    - name: email
+      pattern: \b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b
+    - name: ip_address
+      pattern: \b(?:\d{1,3}\.){3}\d{1,3}\b
