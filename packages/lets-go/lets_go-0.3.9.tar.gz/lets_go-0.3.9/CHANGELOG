@@ -1,0 +1,27 @@
+0.3.9 Current release
+  * Fix missing screenshort picture in last version.
+0.3.8
+  * Restruct the lets_go module.
+0.3.7
+  * Fix incorrect stone count.
+0.3.6
+  + Add clicked event of mouse right button to undo moves.
+0.3.5
+  + Add scrolling moves by wheel mouse and shift+arrow.
+0.3.2
+  * Replace ltermio.appentry() with ltermio.appentry_args().
+0.3.1
+  * Lightly modify code for ltermio changed mouse event definition.
+0.3.0
+  + Handle mouse clicked event, for ltermio has new module to support mouse.
+0.2.2
+  * Remove reset_color() from entry function main().
+0.2.1
+  * Re-implement _check_alive() method as a public function check_alive().
+  * Change build backend from setuptools to hatchling.
+0.1.2
+  * Change Move from normal class to data class.
+0.1.1
+  + add more description about project in README.md.
+0.1.0
+  + First release, basic rules supported, has only a board grid to move stones.
