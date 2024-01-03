@@ -1,0 +1,13 @@
+hivemind_core/__init__.py,sha256=jMv2Q4swLorR7q-96vGH3JOin31cZvCdzZLBLIQjdb0,658
+hivemind_core/__main__.py,sha256=nvPyjoCM-2fkJpOsvUf8jfp4m5o4SDRo_znFaz1oZxY,154
+hivemind_core/database.py,sha256=OYmYdd6xceQtFeOxrhD0vwYH-j7xgEqy3UgCdT3r5Wk,7791
+hivemind_core/protocol.py,sha256=lOmb8RTy-GrcmV5Jx5dghecprInQkGq9PZVhl3AtSX0,24739
+hivemind_core/scripts.py,sha256=FFLBiKCJcaKpu3pwp94wiiPfpdicY2o0rsiVWfLvdFA,6945
+hivemind_core/service.py,sha256=Q52dshLW_vk4Tw3XycjOx2XiLg72GeB600N3dun9FTE,10309
+hivemind_core/version.py,sha256=MMd38ek1SEgwXrDmeIzMZekyFb_6-h6gPiMJglqXGog,179
+jarbas_hive_mind-0.13.1a10.dist-info/LICENSE,sha256=WVPey2FLZGoN0C_c0xLknC-1X2ehoOdGAHDs2zGQaKM,11743
+jarbas_hive_mind-0.13.1a10.dist-info/METADATA,sha256=t5HCzcwQ-j2uDQUATzKEK-13YiAvgxuu50t2E_8YhZ8,614
+jarbas_hive_mind-0.13.1a10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jarbas_hive_mind-0.13.1a10.dist-info/entry_points.txt,sha256=O2R5ZnCwAAacIP7kdHRL3IDzc9mDRnWRkiM5lkevq5U,69
+jarbas_hive_mind-0.13.1a10.dist-info/top_level.txt,sha256=8P9YIXnbJ0u4I-22NehOUUB7TRaVkPU-x800ElpV1qU,14
+jarbas_hive_mind-0.13.1a10.dist-info/RECORD,,
