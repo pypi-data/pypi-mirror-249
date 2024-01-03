@@ -1,0 +1,3 @@
+[console_scripts]
+coppice = coppice.scripts:cli_main
+coppice_ = coppice.scripts:cli_main

@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coppice"
+version = "0.1"
+description = "Decision trees and ensembles using a rust backend"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [ "jsonschema", "numpy", "scikit-learn",]
+dynamic = []
+
+[project.urls]
+Homepage = "https://github.com/JBwdn/coppice"
+
+[project.scripts]
+coppice = "coppice.scripts:cli_main"
+coppice_ = "coppice.scripts:cli_main"
+
+[project.optional-dependencies]
+dev = [ "black", "ipython", "isort", "pre-commit", "pylint", "pyright", "pytest",]
+
+[tool.pylint]
+disable = [ "import-error", "fixme",]
+
+[tool.pyright]
+reportMissingImports = false
+pythonVersion = "3.10"
+
+[tool.black]
+target-version = [ "py310",]
+
+[tool.isort]
+profile = "black"
+filter_files = true
+
+[tool.setuptools.packages.find]

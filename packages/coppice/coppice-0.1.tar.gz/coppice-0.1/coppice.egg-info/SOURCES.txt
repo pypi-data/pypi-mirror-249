@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+coppice/__init__.py
+coppice.egg-info/PKG-INFO
+coppice.egg-info/SOURCES.txt
+coppice.egg-info/dependency_links.txt
+coppice.egg-info/entry_points.txt
+coppice.egg-info/requires.txt
+coppice.egg-info/top_level.txt
+coppice/scripts/__init__.py
+coppice/scripts/cli.py

@@ -1,0 +1,12 @@
+jsonschema
+numpy
+scikit-learn
+
+[dev]
+black
+ipython
+isort
+pre-commit
+pylint
+pyright
+pytest
