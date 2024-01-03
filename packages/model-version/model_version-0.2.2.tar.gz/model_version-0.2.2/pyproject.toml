@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "model-version"
+version = "0.2.2"
+description = "Django model version mixin"
+authors = ["Alex <osdalex@gmail.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+packages = [
+    { include = "model_version" }
+]
+keywords = ["django", "model", "version"]
+classifiers = [
+    "Framework :: Django",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+homepage = "https://github.com/aleosd/model-version"
+documentation = "https://github.com/aleosd/model-version"
+repository = "https://github.com/aleosd/model-version.git"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = ">=3.0.0,<5.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+mypy = "^1.7.1"
+ruff = "^0.1.7"
+isort = "^5.13.0"
+pytest = "^7.4.3"
+pytest-django = "^4.7.0"
+pyhamcrest = "^2.1.0"
+django-stubs = {extras = ["compatible-mypy"], version = "^4.2.7"}
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "project.settings.test"
+python_files = ["tests/*"]
+pythonpath = [".", "project"]
+
+[tool.black]
+line-length = 99
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 99
