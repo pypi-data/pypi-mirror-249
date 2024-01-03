@@ -1,0 +1,12 @@
+Lang2Logic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Lang2Logic/data_manager.py,sha256=afHWHFeWCFXHZ9uj2H3QGY4GFmgWzTs6JPPexWyxWJc,9058
+Lang2Logic/generate_draft_7.py,sha256=KL3op6JyaS_N_59Z-ya6pq5iRmzXc7z8nZC8HM_h7Zg,11073
+Lang2Logic/generate_response.py,sha256=j9m_1hUEJgkAN23W-CyF1yAVMpCitBPkWoW8dmxK5c8,14066
+Lang2Logic/generator.py,sha256=mQYRg7QyfMkxvsuRDyypjqJ-nuyPuCBKuH2p7AIPS8k,4007
+Lang2Logic/model_unwrap.py,sha256=fiFNc3f9LT-gVyDeLvdSp33uBbdEpw5mpYYhG0e9UMg,5611
+Lang2Logic/response_schema.py,sha256=tOG44-AkvDQEErPio2mdQmNgc4Y31Lg_ae84oHSmfBc,2825
+Lang2Logic-1.1.6.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+Lang2Logic-1.1.6.dist-info/METADATA,sha256=4jJIrJc2Hwmlq4qJJsGDO1vRplRvlQ_N3CSr4XDWyMc,4166
+Lang2Logic-1.1.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+Lang2Logic-1.1.6.dist-info/top_level.txt,sha256=cRVZfrBHMlRcIoRKvYAqLY5Yno2oQFs2BCesJ4_hUwM,11
+Lang2Logic-1.1.6.dist-info/RECORD,,
