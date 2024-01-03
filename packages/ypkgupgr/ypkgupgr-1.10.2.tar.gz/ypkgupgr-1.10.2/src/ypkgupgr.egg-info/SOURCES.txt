@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/ypkgupgr/__init__.py
+src/ypkgupgr/__main__.py
+src/ypkgupgr.egg-info/PKG-INFO
+src/ypkgupgr.egg-info/SOURCES.txt
+src/ypkgupgr.egg-info/dependency_links.txt
+src/ypkgupgr.egg-info/entry_points.txt
+src/ypkgupgr.egg-info/top_level.txt
