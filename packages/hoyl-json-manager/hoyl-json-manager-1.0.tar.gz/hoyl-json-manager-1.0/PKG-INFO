@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hoyl-json-manager
+Version: 1.0
+Summary: Pequena biblioteca para validação e manipulação de JSONs;
+Author: Alan Reis Anjos
+Author-email: alanreisanjo@gmail.com
+License: MIT License
+Keywords: Hoyl JSON Manager
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# JSON Manager
+- Pequena biblioteca para validaÃ§Ã£o e manipulaÃ§Ã£o de JSONs.
+---
+## InstalaÃ§Ã£o
+- Enquanto o PyPi estÃ¡ fora do ar, vocÃª pode instalar a biblioteca atravÃ©s do `git submodule add git@github.com:Hoyasumii/JsonManager.git`
+- Caso queira colocar o submÃ³dulo em uma pasta especÃ­fica, basta adicionar o nome da pasta apÃ³s o link do repositÃ³rio.
+---
+## MÃ©todos disponÃ­veis
+### `checker` -> `dict`
+- Retorna um dicionÃ¡rio com as chaves que estÃ£o: `Faltando`, `Com valor errado` e `Chaves extras`.
+- ParÃ¢metros:
+    - `json`: O JSON a ser validado.
+    - `schema`: O schema a ser usado na validaÃ§Ã£o.
+### `dropKey` -> `bool`
+- Retorna `True` se a chave foi removida com sucesso, `False` caso contrÃ¡rio.
+- ParÃ¢metros:
+    - `json`: O JSON a ser manipulado.
+    - `key`: A chave a ser removida.
+### `get` -> `dict`
+- Retorna o `dicionÃ¡rio` do **JSON**.
+- ParÃ¢metros:
+    - `json`: O JSON a ser manipulado.
+### `update` -> `bool`
+- Retorna `True` se o **JSON** foi atualizado com sucesso, `False` caso contrÃ¡rio.
+- ParÃ¢metros:
+    - `json`: O JSON a ser manipulado.
+    - `key`: A chave a ser atualizada.
+    - `value`: O valor a ser atualizado.
+---
