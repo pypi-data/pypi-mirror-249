@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: aia-utils
+Version: 0.1.6
+Summary: 
+Author: Edgar Sánchez
+Author-email: edgar.sanchez@mercadolibre.cl
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: confluent-kafka (>=2.3.0,<3.0.0)
+Requires-Dist: coverage (>=7.3.2,<8.0.0)
