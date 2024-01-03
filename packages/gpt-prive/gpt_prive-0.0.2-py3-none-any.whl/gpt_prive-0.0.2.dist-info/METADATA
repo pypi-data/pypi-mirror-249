@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gpt-prive
+Version: 0.0.2
+Summary: Tools for setup/communications to a LLM models
+Home-page: https://github.com/kyledinh/gpt-prive
+Author: Kyle Dinh
+Author-email: kyledinh@gmail.com
+Project-URL: Bug Tracker, https://github.com/kyledinh/gpt-prive/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+## PyPI
+- https://pypi.org/project/gpt-prive/
+
+## Required Dependencies 
+- build, twine
+
+## Build
+- Update `src/*` and update `setup.conf`
+- Builds to `dist/` directory
+```
+python -m build
+```
+- Push to PyPi with twine
+```
+python -m twine upload --repository pypi dist/*
+```
