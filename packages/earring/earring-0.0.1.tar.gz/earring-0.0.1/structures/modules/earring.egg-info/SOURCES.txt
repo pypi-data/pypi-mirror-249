@@ -1,0 +1,38 @@
+license.txt
+pyproject.toml
+structure.txt
+structures/modules/earring/__init__.py
+structures/modules/earring.egg-info/PKG-INFO
+structures/modules/earring.egg-info/SOURCES.txt
+structures/modules/earring.egg-info/dependency_links.txt
+structures/modules/earring.egg-info/top_level.txt
+structures/modules/earring/"agenda v1"/core values.r.html
+structures/modules/earring/"agenda v1"/governance.r.html
+structures/modules/earring/"agenda v1"/priorities.html
+structures/modules/earring/_clique/__init__.py
+structures/modules/earring/_clique/group/__init__.py
+structures/modules/earring/_status/__init__.py
+structures/modules/earring/_status/insurance.proc.py
+structures/modules/earring/_status/guarantees/status_1_generator/status_1.py
+structures/modules/earring/_status/guarantees/status_2_generators/status_1.py
+structures/modules/earring/_status/guarantees/status_3_sign_and_verify/status_1.py
+structures/modules/earring/modules/ED448/clique.py
+structures/modules/earring/modules/ED448/_seed_phrase/2048.r.html
+structures/modules/earring/modules/ED448/_seed_phrase/seed phrase.r.html
+structures/modules/earring/modules/ED448/private/creator.py
+structures/modules/earring/modules/ED448/private/read.py
+structures/modules/earring/modules/ED448/private/scan.py
+structures/modules/earring/modules/ED448/private/SEED/SPLIT.py
+structures/modules/earring/modules/ED448/public/BUILD.py
+structures/modules/earring/modules/ED448/public/SCAN.py
+structures/modules/earring/modules/ED448/public/creator.py
+structures/modules/earring/modules/ED448/sign/__init__.py
+structures/modules/earring/modules/ED448/vouch/__init__.py
+structures/modules/earring/modules/QR/__init__.py
+structures/modules/earring/node/clique.py
+structures/modules/earring/node/flask/__init__.py
+structures/modules/earring/node/flask/start_dev.py
+structures/modules/earring/node/flask/start_gunicorn.py
+structures/modules/earring/node/mongo/__init__.py
+structures/modules/earring/safe/clique.py
+structures/modules/earring/safe/certificates/proposal/build.py
