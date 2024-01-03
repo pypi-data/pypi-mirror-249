@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: textris
+Version: 1.13
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: windows-curses (>=2.3.1)
+Requires-Dist: keyboard (>=0.13.5)
+
+UNKNOWN
+
