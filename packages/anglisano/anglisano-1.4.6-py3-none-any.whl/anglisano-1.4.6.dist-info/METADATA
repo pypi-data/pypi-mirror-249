@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: anglisano
+Version: 1.4.6
+Summary: 'test'
+Author: 'Marc Anglisano Roca'
+Author-email: marcanglisano@gmail.com
+License: "MIT License"
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chardet
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-multiversion ; extra == 'dev'
+
+# Project Readme
+A package description
