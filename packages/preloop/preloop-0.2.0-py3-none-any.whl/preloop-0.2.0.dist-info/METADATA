@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: preloop
+Version: 0.2.0
+Summary: This is a sample package from Preloop that will be developed into a real, usable package in the future.
+License: Apache-2.0
+Author: Preloop, Inc.
+Author-email: engineering@preloop.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: twine (>=4.0.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# preloop
+This is a placeholder package that is used to reserve the "preloop" name on PyPI, and additionally test a PyPI publishing workflow.
+
