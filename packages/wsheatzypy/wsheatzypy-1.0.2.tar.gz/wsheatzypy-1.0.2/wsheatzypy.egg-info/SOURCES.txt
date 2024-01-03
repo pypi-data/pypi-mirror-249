@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+wsheatzypy/__init__.py
+wsheatzypy/auth.py
+wsheatzypy/const.py
+wsheatzypy/exception.py
+wsheatzypy/heatzy.py
+wsheatzypy.egg-info/PKG-INFO
+wsheatzypy.egg-info/SOURCES.txt
+wsheatzypy.egg-info/dependency_links.txt
+wsheatzypy.egg-info/not-zip-safe
+wsheatzypy.egg-info/requires.txt
+wsheatzypy.egg-info/top_level.txt
