@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workflows_sps_list_export_all_environments_name": {
+            "value": "sps_list_export_all_environments"
+        },
+        "workflows_sps_list_export_all_environments_parameters_$connections": {
+            "value": {
+                "azureblob_1": {
+                    "connectionId": "/subscriptions/b4db128b-a40d-4306-9678-00aa10d43ff9/resourceGroups/ncird-eipplus-prd/providers/Microsoft.Web/connections/azureblob-21",
+                    "connectionName": "azureblob-21",
+                    "id": "/subscriptions/b4db128b-a40d-4306-9678-00aa10d43ff9/providers/Microsoft.Web/locations/eastus/managedApis/azureblob"
+                },
+                "sharepointonline_3": {
+                    "connectionId": "/subscriptions/b4db128b-a40d-4306-9678-00aa10d43ff9/resourceGroups/ncird-eipplus-prd/providers/Microsoft.Web/connections/sharepointonline-2",
+                    "connectionName": "sharepointonline-2",
+                    "id": "/subscriptions/b4db128b-a40d-4306-9678-00aa10d43ff9/providers/Microsoft.Web/locations/eastus/managedApis/sharepointonline"
+                }
+            }
+        }
+    }
+}
