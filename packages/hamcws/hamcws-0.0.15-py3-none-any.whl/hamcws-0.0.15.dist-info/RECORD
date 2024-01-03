@@ -1,0 +1,8 @@
+LICENSE,sha256=PO9x0sYfytq6yQuSu7Cd3k_Wnm-lKAcF8vqI4v4DaQ8,1066
+hamcws/__init__.py,sha256=s-B9bzvrGGLfh01Bfwkf7CLwY0yYNLO1oHSkXfQ8mnA,262
+hamcws/domain.py,sha256=p6jzpZXMPL8wpsSWrV9Vr7hsa38SCDM7BbTUfsYvQ4s,4345
+hamcws/hamcws.py,sha256=32cK-yLYF1dr6wXcgse4jO1BOOtjbQ0jwqohtGXsrb8,16300
+hamcws-0.0.15.dist-info/LICENSE,sha256=PO9x0sYfytq6yQuSu7Cd3k_Wnm-lKAcF8vqI4v4DaQ8,1066
+hamcws-0.0.15.dist-info/METADATA,sha256=noYqBUNEcqdxos5B9Nr6-zgpLhzYEgmGpymjcIPPtNc,747
+hamcws-0.0.15.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hamcws-0.0.15.dist-info/RECORD,,
