@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/ifirma/__init__.py
+src/ifirma/api.py
+src/ifirma/config.py
+src/ifirma/invoice.py
+src/ifirma/request.py
+src/ifirma/serializer.py
+src/ifirma/yaml_parser.py
+src/pnowosie.ifirma_api.egg-info/PKG-INFO
+src/pnowosie.ifirma_api.egg-info/SOURCES.txt
+src/pnowosie.ifirma_api.egg-info/dependency_links.txt
+src/pnowosie.ifirma_api.egg-info/requires.txt
+src/pnowosie.ifirma_api.egg-info/top_level.txt
