@@ -1,0 +1,73 @@
+syntax = "proto3";
+package raftservice;
+
+import "eraftpb.proto";
+
+service RaftService {
+  rpc MemberBootstrapReady(MemberBootstrapReadyArgs) returns (MemberBootstrapReadyResponse) {}
+  rpc ClusterBootstrapReady(Empty) returns (ClusterBootstrapReadyResponse) {}
+  rpc RequestId(Empty) returns (RequestIdResponse) {}
+  rpc ChangeConfig(eraftpb.ConfChangeV2) returns (ChangeConfigResponse) {}
+  rpc Propose(ProposeArgs) returns (Empty) {}
+  rpc SendMessage(eraftpb.Message) returns (Empty) {}
+  rpc DebugNode(Empty) returns (DebugNodeResponse) {}
+}
+
+enum ResultCode {
+  Ok            = 0;
+  Error         = 1;
+  WrongLeader   = 2;
+}
+
+// Used in Propose
+
+message ProposeArgs {
+  bytes msg     = 1;
+}
+
+// Used in Static Member's Bootstrap
+message MemberBootstrapReadyArgs {
+  uint64 node_id                  = 1;
+}
+message MemberBootstrapReadyResponse {
+  ResultCode code                = 1;
+}
+message ClusterBootstrapReadyResponse {
+  ResultCode code                = 1;
+}
+
+// Used in Dynamic Member's Bootstrap
+
+message RequestIdResponse{
+  ResultCode code                = 1;
+  uint64 leader_id               = 2;
+  string leader_addr             = 3;
+  uint64 reserved_id             = 4;
+  bytes peers                    = 5;
+}
+
+message Empty {}
+
+message Entry {
+  uint64 key    = 1; 
+  string value  = 2;
+}
+
+// Config Change
+
+enum ChangeConfigResultType {
+  ChangeConfig_Success                    = 0;
+  ChangeConfig_WrongLeader                = 1;
+  ChangeConfig_TimeoutError               = 2;
+  ChangeConfig_UnknownError               = 3;
+  ChangeConfig_Rejected                   = 4;
+}
+
+message ChangeConfigResponse {
+  ChangeConfigResultType result_type = 1;
+  bytes data                         = 2;
+}
+
+message DebugNodeResponse {
+  string result = 1;
+}
