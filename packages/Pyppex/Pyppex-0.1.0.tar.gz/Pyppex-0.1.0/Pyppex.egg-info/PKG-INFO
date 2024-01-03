@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Pyppex
+Version: 0.1.0
+Summary: All sorts of utilities designed to ease developers productivity.
+Home-page: https://pypi.org/project/Pyppex/
+Author: n0t10n
+Author-email: 0ts.notion@gmail.com
+Maintainer: Marcos
+Maintainer-email: 0ts.notion@gmail.com
+License: MIT
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy>=1.26.2
+Requires-Dist: psutil>=5.9.6
+Requires-Dist: tqdm>=4.66.1
