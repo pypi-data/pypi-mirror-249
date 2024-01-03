@@ -1,0 +1,12 @@
+mijnbib/__init__.py,sha256=w_Jiqtg28OI9vpm6qMYNa7fleDeMJ6I3HBr_f3UICnk,366
+mijnbib/__main__.py,sha256=oFtHTsRoON3MUTQrkTpuE0XuBh-Ep2OMDvkXIR4A7s0,4502
+mijnbib/errors.py,sha256=75xmuqd-EkjdocBIIQ8VqhMmO00RQ6GhamNnUZiQk5o,1410
+mijnbib/login_handlers.py,sha256=a0v_l4QgRFqHXdD32XhpWAombY636LYQkURdBHpCRlE,9447
+mijnbib/mijnbibliotheek.py,sha256=8clOZUfK_1WVegTTV17WgsGFtAxlsrSQ7FEvfp9S_uk,12670
+mijnbib/models.py,sha256=c6E7EYYd-kqAoistk4zL7quLwUekECsMQXrGmD4GuRw,1006
+mijnbib/parsers.py,sha256=LtuUC-V8QH58fIyAh7cRic9dKDLmVMeQq4MpXDROzxk,28432
+mijnbib-0.4.0.dist-info/LICENSE,sha256=YmFNcyUTf4zuaIsNMEQSeqOqPXh7XparUSd6jSvhw9M,1061
+mijnbib-0.4.0.dist-info/METADATA,sha256=uYDBVMzkSE7UlYcLh0cPw_vUjyLnu8hcAk-3c3f0DqY,6541
+mijnbib-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mijnbib-0.4.0.dist-info/top_level.txt,sha256=qRrJ9H4nlkR4jvSphV-F7cbZxgGI04EdlfwlXUfW1oY,8
+mijnbib-0.4.0.dist-info/RECORD,,
