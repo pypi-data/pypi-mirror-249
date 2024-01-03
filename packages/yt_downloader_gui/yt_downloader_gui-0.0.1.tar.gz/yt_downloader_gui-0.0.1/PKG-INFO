@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: yt_downloader_gui
+Version: 0.0.1
+Summary: Simple GUI youtube downloader
+License: MIT
+Author: Trusikhin Andrei
+Author-email: andrei.trusikhin@gmail.com
+Requires-Python: >=3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: customtkinter (==5.2.1)
+Requires-Dist: packaging (==23.2)
+Requires-Dist: pytube (==15.0.0)
+Requires-Dist: tk (==0.1.0)
+Description-Content-Type: text/markdown
+
+# Simple Youtube Downloader
+
+This is simple GUI youtube downloader. Does not support authorization in youtube.
+
+# How install?
+
+```bash
+pip install yt_downloader_gui
+```
+
+```bash
+yt-dl-gui - this is cmd for run GUI app.
+```
+
+
+![Image alt](https://github.com/Onder7994/yt_downloader_gui/raw/main/img/main.png)
+
+![Image alt](https://github.com/Onder7994/yt_downloader_gui/raw/main/img/error.png)
+
+![Image alt](https://github.com/Onder7994/yt_downloader_gui/raw/main/img/success.png)
