@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: MetaList
+Version: 0.1.6
+Summary: A PKM web app integrated with LLMs
+Home-page: https://github.com/evolvingstuff/MetaList
+Author: Thomas Lahore
+Author-email: tom.lahore@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bottle ==0.12.25
+Requires-Dist: bottle-sqlite ==0.2.0
+Requires-Dist: beautifulsoup4 ~=4.12.2
+Requires-Dist: tqdm ==4.66.1
+
+# MetaList
+
+MetaList is a personal knowledge management web app that is tightly integrated with an LLM chat interface.
+
+## Features
+
+- Tags
+- Search
+- OpenAI API integration
+- Markdown/LaTeX support
+
+## Future features
+
+- Export to HTML
+- Export to PDF
+- Export to Markdown
+- Export to JSON
+
+## Installation
+
+It is recommended that you create a Python virtual environment before installing MetaList.
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Then, install MetaList using pip:
+
+```bash
+pip install metalist
+```
+
+## Usage
+
+Navigate to `http://127.0.0.0:8080/`
+
+## License
+
+MetaList is licensed under the MIT license. See [LICENSE](LICENSE) for more information.
+
