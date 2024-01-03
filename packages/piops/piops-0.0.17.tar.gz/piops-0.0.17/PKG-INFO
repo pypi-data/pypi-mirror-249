@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: piops
+Version: 0.0.17
+Summary: Python package to support Process Intelligence related tasks
+Home-page: https://github.com/jcppc/piops
+Author: João Caldeira
+Author-email: jcppc@iscte-iul.pt
+License: BSD 2-clause
+License-File: LICENSE

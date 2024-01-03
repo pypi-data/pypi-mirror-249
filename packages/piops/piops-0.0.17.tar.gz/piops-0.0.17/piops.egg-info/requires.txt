@@ -1,0 +1,9 @@
+pkg_resources
+fitter
+numpy
+pandas
+seaborn
+json
+matplotlib
+logging
+warnings
