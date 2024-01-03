@@ -1,0 +1,5 @@
+[console_scripts]
+check-coverage = package_dev_tools.interfaces.cli.check_coverage:entry_point
+cleanup-readme = package_dev_tools.interfaces.cli.cleanup_readme:entry_point
+substitute-template-name = package_dev_tools.interfaces.cli.substitute_template_name:entry_point
+trigger-template-sync = package_dev_tools.interfaces.cli.trigger_template_sync:entry_point
