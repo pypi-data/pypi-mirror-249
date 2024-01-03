@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/Lang2Logic/__init__.py
+src/Lang2Logic/data_manager.py
+src/Lang2Logic/generate_draft_7.py
+src/Lang2Logic/generate_response.py
+src/Lang2Logic/generator.py
+src/Lang2Logic/model_unwrap.py
+src/Lang2Logic/response_schema.py
+src/Lang2Logic.egg-info/PKG-INFO
+src/Lang2Logic.egg-info/SOURCES.txt
+src/Lang2Logic.egg-info/dependency_links.txt
+src/Lang2Logic.egg-info/requires.txt
+src/Lang2Logic.egg-info/top_level.txt
