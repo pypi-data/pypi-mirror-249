@@ -1,0 +1,2 @@
+python-dateutil
+google-cloud-bigquery
