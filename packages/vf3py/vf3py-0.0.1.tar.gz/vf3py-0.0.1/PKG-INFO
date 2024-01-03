@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: vf3py
+Version: 0.0.1
+Author: Nikolai Krivoshchapov
+Platform: Linux
+Platform: Windows
+Requires-Python: >=3.7.0
