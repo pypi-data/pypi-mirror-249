@@ -1,0 +1,6 @@
+setup.py
+cc_telegram.egg-info/PKG-INFO
+cc_telegram.egg-info/SOURCES.txt
+cc_telegram.egg-info/dependency_links.txt
+cc_telegram.egg-info/not-zip-safe
+cc_telegram.egg-info/top_level.txt
