@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: hoy-setup-generator
+Version: 1.0
+Summary: Pequena biblioteca para criar um setup.py rápido.
+Home-page: https://github.com/Hoyasumii/SetupGenerator
+Author: Alan Reis Anjos
+Author-email: alanreisanjo@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argcomplete==3.2.1
+Requires-Dist: certifi==2023.11.17
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: colorama==0.4.6
+Requires-Dist: docutils==0.20.1
+Requires-Dist: idna==3.6
+Requires-Dist: importlib-metadata==7.0.1
+Requires-Dist: jaraco.classes==3.3.0
+Requires-Dist: keyring==24.3.0
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.1.0
+Requires-Dist: nh3==0.2.15
+Requires-Dist: packaging==23.2
+Requires-Dist: pkginfo==1.9.6
+Requires-Dist: platformdirs==4.1.0
+Requires-Dist: Pygments==2.17.2
+Requires-Dist: pywin32-ctypes==0.2.2
+Requires-Dist: readme-renderer==42.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.7.0
+Requires-Dist: setuptools==69.0.3
+Requires-Dist: twine==4.0.2
+Requires-Dist: urllib3==2.1.0
+Requires-Dist: userpath==1.9.1
+Requires-Dist: wheel==0.42.0
+Requires-Dist: zipp==3.17.0
+
+## [SetupGenerator](https://pypi.org/project/hoy-setup-generator/)
+- Pequena biblioteca para criar um setup.py rápido.
+- Clique [**aqui**](https://github.com/Hoyasumii/SetupGenerator) para acessar o repositório.
+---
+## Instalação
+- Você pode baixar pelo pip:
+```
+pip install hoy-setup-generator
+```
+---
+## Como usar?
+- Abra o terminal e digite:
+```
+setup-generator 
+```
+- Depois disso, você será solicitado a digitar o nome do seu projeto, o nome do autor, a versão do projeto, a descrição do projeto, o nome do arquivo principal e o nome do arquivo de instalação. Após isso, o arquivo setup.py será criado.
