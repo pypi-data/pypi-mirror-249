@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: inter-pixpy
+Version: 0.0.2
+Summary: A Python package to interact with the Banco Inter's Pix API
+Home-page: https://github.com/samueljansem/inter-pixpy
+Author: Samuel Jansem
+Author-email: samuel.jansem@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/samueljansem/inter-pixpy
+Project-URL: Issues, https://github.com/samueljansem/inter-pixpy/issues
+Description: # InterPixPy
+        
+        This library provides developers with a simple way to interact with the Banco Inter's Pix API.
+        
+        ## Requirements
+        
+        Python 3 or higher
+        
+        ## Installation
+        
+        ```bash
+        pip install interpixpy
+        ```
+        
+        ## Usage
+        
+        ```python
+        import interpixpy
+        
+        sdk = interpixpy.SDK(
+            client_id="your_app_client_id",
+            client_secret="your_app_client_secret",
+            grant_type="grant_type",
+            scope="your_app_scope",
+        )
+        
+        cob_payload = {
+            "calendario": {
+                "expiracao": 3600
+            },
+            "devedor": {
+                "cpf": "00000000000",
+                "nome": "Fulano de Tal"
+            },
+            "valor": {
+                "original": "100.00"
+            },
+            "chave": "00000000000", # Chave Pix do recebedor
+            "solicitacaoPagador": "Pagamento dos serviços prestados."
+        }
+        
+        result = sdk.cob().create(cob_payload)
+        ```
+        
+Keywords: pix,inter,bank,api,python,sdk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

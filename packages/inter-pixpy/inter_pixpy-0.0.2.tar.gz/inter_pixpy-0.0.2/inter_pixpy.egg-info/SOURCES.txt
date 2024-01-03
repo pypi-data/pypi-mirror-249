@@ -1,0 +1,7 @@
+README.md
+setup.py
+inter_pixpy.egg-info/PKG-INFO
+inter_pixpy.egg-info/SOURCES.txt
+inter_pixpy.egg-info/dependency_links.txt
+inter_pixpy.egg-info/requires.txt
+inter_pixpy.egg-info/top_level.txt
