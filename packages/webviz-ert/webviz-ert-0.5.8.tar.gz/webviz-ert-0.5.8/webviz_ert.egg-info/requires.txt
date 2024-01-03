@@ -1,0 +1,7 @@
+dash-bootstrap-components
+dash-daq
+pandas
+requests
+webviz-config>=0.0.40
+webviz-config-equinor
+webviz-subsurface-components
