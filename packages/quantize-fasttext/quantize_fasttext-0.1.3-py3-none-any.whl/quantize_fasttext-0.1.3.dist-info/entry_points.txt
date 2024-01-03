@@ -1,0 +1,3 @@
+[console_scripts]
+quantize-fasttext=quantize_fasttext.main:run
+
