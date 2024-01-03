@@ -1,0 +1,10 @@
+hf_torrent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hf_torrent/download.py,sha256=YN3Pu7XubefnKva1sOcAGd9Kmb5OglXVlBxb-Acx4EE,5240
+hf_torrent/main.py,sha256=4TYh8I80cKDdDX1CTjne5xiANouMU63nMinLuTa-otY,720
+hf_torrent/utils.py,sha256=Hx4pHJQzYKNA9zzFSn6BYWQ2LEWVKAwRaEpGq4y-Tpc,2009
+hf_torrent-0.0.1_2401021918.data/scripts/hf-torrent,sha256=4pyb7MDM2La565hXBmRUR4P0Y09fZL0aEHovexCKzeo,79
+hf_torrent-0.0.1.post2401021918.dist-info/METADATA,sha256=dZyq6_gcZY_A2FeQOUA02tWQe-kgWMxKk3BeG3vsuck,2523
+hf_torrent-0.0.1.post2401021918.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hf_torrent-0.0.1.post2401021918.dist-info/top_level.txt,sha256=QwrlimU10iZzOwezRQE0L-zuWUsvuQgEN_-1oyRt6Rw,11
+hf_torrent-0.0.1.post2401021918.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hf_torrent-0.0.1.post2401021918.dist-info/RECORD,,
