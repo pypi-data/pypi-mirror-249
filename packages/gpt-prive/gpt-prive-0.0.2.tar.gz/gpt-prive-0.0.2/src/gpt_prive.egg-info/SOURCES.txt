@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/gpt-prive/__init__.py
+src/gpt-prive/lib_llm_inference.py
+src/gpt-prive/lib_pdf_manipulation.py
+src/gpt_prive.egg-info/PKG-INFO
+src/gpt_prive.egg-info/SOURCES.txt
+src/gpt_prive.egg-info/dependency_links.txt
+src/gpt_prive.egg-info/top_level.txt
