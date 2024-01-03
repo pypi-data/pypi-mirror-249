@@ -1,0 +1,9 @@
+ipython
+opencv-python
+numpy
+requests
+ultralytics
+Pillow
+ipycanvas==0.11
+ipyevents
+pandas>=1.3.4
