@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: llm-discord-bot
+Version: 2.0.2
+Summary: LLM Discord Bot
+Home-page: 
+Author: Jimming Cheng
+Author-email: jimming@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# llm_discord_bot
+LLM Discord Bot
+
+
+## Versions
+
+### 2.0.1
+
+- fix typing indicator
+
+### 2.0.0
+
+- overhaul multi participant conversation prompt handling
+
+### 1.0.1
+
+- stop agents from replying to mentions meant for others
+- only reply to non-bots in monitored channels
+
+### 1.0.0
+
+- initial version
+
