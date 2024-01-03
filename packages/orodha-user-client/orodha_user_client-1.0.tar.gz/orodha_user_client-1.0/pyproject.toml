@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "orodha-user-client"
+version = "1.0"
+repository = "https://github.com/Edison-Stuart/orodha-user-sdk"
+dependencies = [
+'orodha-keycloak>=1.2.0',
+'requests>=2.31.0',
+]
+authors = [
+  { name="Edison Stuart", email="edisonstaurt@gmail.com" },
+]
+description = "A software development kit used by Orodha services to interface with the Orodha user service."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]

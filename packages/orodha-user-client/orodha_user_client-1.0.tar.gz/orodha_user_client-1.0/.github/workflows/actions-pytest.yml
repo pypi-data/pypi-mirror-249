@@ -1,0 +1,30 @@
+name: Pytest
+
+on:
+    pull_request:
+        branches: ["master", "main"]
+
+    workflow_dispatch:
+
+jobs:
+    test:
+        runs-on: ubuntu-20.04
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Get pytest and other requirements
+              run: |
+                  sudo apt-get install python3
+                  pip install -r $GITHUB_WORKSPACE/test_requirements.txt
+                  pip install pytest-cov
+
+            - name: Run pytest
+              run: pytest --cov=$GITHUB_WORKSPACE --cov-report xml:$GITHUB_WORKSPACE/coverage.xml
+
+            - name: Get Cover
+              uses: orgoro/coverage@v3
+              with:
+                  coverageFile: coverage.xml
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  thresholdAll: 0.8

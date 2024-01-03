@@ -1,0 +1,28 @@
+name: Build and Deploy
+
+on:
+    pull_request_target:
+        branches: ["master", "main"]
+        types:
+            - closed
+        workflow_dispatch:
+
+jobs:
+    is_merged:
+        if: github.event.pull_request.merged == true
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out repo
+              uses: actions/checkout@v3
+
+            - name: Build Package
+              run: |
+                  sudo apt-get install python3
+                  python3 -m pip install --upgrade build
+                  python3 -m build $GITHUB_WORKSPACE
+
+            - name: Deploy Package
+              run: |
+                  python3 -m pip install --upgrade twine
+                  python3 -m twine upload -u __token__ -p ${{ secrets.PYPI_PASSWORD }} --non-interactive $GITHUB_WORKSPACE/dist/*
