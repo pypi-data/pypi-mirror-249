@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+idev-pystatistics/PyStatistics/Conversions.py
+idev-pystatistics/PyStatistics/Factoring.py
+idev-pystatistics/PyStatistics/Lists.py
+idev-pystatistics/PyStatistics/NumberTypes.py
+idev-pystatistics/PyStatistics/__init__.py
+idev-pystatistics/idev_pystatistics.egg-info/PKG-INFO
+idev-pystatistics/idev_pystatistics.egg-info/SOURCES.txt
+idev-pystatistics/idev_pystatistics.egg-info/dependency_links.txt
+idev-pystatistics/idev_pystatistics.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "idev-pystatistics"
+version = "1.1.1"
+authors = [
+  { name="Irtsa", email="irtsa.development@gmail.com" },
+]
+description = "A python collection of classes and functions to help with numbers along with collections of numbers i.e., statistics."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/IrtsaDevelopment/PyStatistics"
+"Bug Tracker" = "https://github.com/IrtsaDevelopment/PyStatistics/issues"
