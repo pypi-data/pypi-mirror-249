@@ -1,0 +1,2 @@
+[console_scripts]
+lets-go = lets_go:main
