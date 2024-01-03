@@ -1,0 +1,10 @@
+README.txt
+setup.py
+textris/__init__.py
+textris/main.py
+textris.egg-info/PKG-INFO
+textris.egg-info/SOURCES.txt
+textris.egg-info/dependency_links.txt
+textris.egg-info/entry_points.txt
+textris.egg-info/requires.txt
+textris.egg-info/top_level.txt
