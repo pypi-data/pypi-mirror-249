@@ -1,0 +1,30 @@
+{
+    "binary_flow": {
+        "first_model_positive_threshold": 5,
+        "first_model_negative_threshold": 10,
+        "changed_element_threshold": 20,
+        "training_set_selection_strategy": "ALL_LABELED",
+        "model_policy": "STATIC_SVM_SBERT",
+        "active_learning_strategy": "HARD_MINING",
+        "precision_evaluation_size": 20
+    },
+
+    "multiclass_flow": {
+        "per_class_labeling_threshold": 3,
+        "changed_element_threshold": 20,
+        "training_set_selection_strategy": "ALL_LABELED_MULTICLASS",
+        "model_policy": "STATIC_MULTICLASS_SVM_SBERT",
+        "active_learning_strategy": "RANDOM",
+        "accuracy_evaluation_size": 30,
+        "zero_shot_first_model": false
+    },
+
+    "apply_labels_to_duplicate_texts": true,
+    "language": "ENGLISH",
+    "login_required": false,
+    "main_panel_elements_per_page": 500,
+    "sidebar_panel_elements_per_page": 50,
+    "snippet_max_token_length": 100,
+    "max_dataset_length": 10000000,
+    "cpu_workers": 10
+}
