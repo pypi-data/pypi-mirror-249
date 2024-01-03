@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+fileosninja/__init__.py
+fileosninja.egg-info/PKG-INFO
+fileosninja.egg-info/SOURCES.txt
+fileosninja.egg-info/dependency_links.txt
+fileosninja.egg-info/top_level.txt
