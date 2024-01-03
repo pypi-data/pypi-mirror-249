@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datepy/__init__.py
+datepy/datepy.py
+datepy.egg-info/PKG-INFO
+datepy.egg-info/SOURCES.txt
+datepy.egg-info/dependency_links.txt
+datepy.egg-info/requires.txt
+datepy.egg-info/top_level.txt
