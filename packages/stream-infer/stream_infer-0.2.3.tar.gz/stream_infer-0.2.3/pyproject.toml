@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stream_infer"
+version = "0.2.3"
+description = "Video streaming inference framework, integrating image algorithms and models for real-time/offline video structuring"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "ZaiGie", email = "jokerwho@yeah.net" },
+]
+dependencies = [
+    "opencv-python>=4.8.1.0, <5",
+    "av>=11.0.0",
+    "loguru>=0.6.0",
+    "streamlit>=1.29.0",
+]
+requires-python = ">= 3.8.6"
+classifiers = [
+  "Typing :: Typed",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Operating System :: POSIX",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Microsoft :: Windows",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "License :: OSI Approved :: Apache Software License"
+]
+
+[project.urls]
+Homepage = "https://github.com/zaigie/stream_infer"
+Repository = "https://github.com/zaigie/stream_infer"
