@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: MetroValencia
+Version: 1.0
+Summary: Api for MetroValencia.
+Author: NikoConn
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: datetime
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: pytz
