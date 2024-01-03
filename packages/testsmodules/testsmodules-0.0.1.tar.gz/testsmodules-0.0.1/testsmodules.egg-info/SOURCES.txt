@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/bibtext.py
+tests/download.py
+tests/extractions.py
+tests/filters.py
+tests/paths.py
+testsmodules.egg-info/PKG-INFO
+testsmodules.egg-info/SOURCES.txt
+testsmodules.egg-info/dependency_links.txt
+testsmodules.egg-info/requires.txt
+testsmodules.egg-info/top_level.txt
