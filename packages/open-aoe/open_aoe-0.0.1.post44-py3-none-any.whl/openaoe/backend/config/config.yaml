@@ -1,0 +1,31 @@
+---
+# Insert your configuration below
+baidu:
+    translation_api_base: https://fanyi-api.baidu.com/api/trans/vip/translate
+    ak:
+    sk:
+    bce_access_token:
+
+openai:
+    api_base: https://api.openai.com/v1
+    api_key:
+
+claude:
+    api_key:
+
+google:
+    api_base: http://us.alles-apin.openxlab.org.cn/google/v1beta2/models
+    api_key:
+
+minimax:
+    api_base:
+    api_key:
+
+xunfei:
+    api_base: wss://spark-api.xf-yun.com/v2.1/chat
+    ak:
+    sk:
+...
+
+
+
