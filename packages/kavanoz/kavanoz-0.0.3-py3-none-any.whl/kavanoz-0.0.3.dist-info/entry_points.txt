@@ -1,0 +1,2 @@
+[console_scripts]
+kavanoz = kavanoz.core:cli
