@@ -1,0 +1,8 @@
+README.md
+setup.py
+bestErrors/__init__.py
+bestErrors/main.py
+bestErrors.egg-info/PKG-INFO
+bestErrors.egg-info/SOURCES.txt
+bestErrors.egg-info/dependency_links.txt
+bestErrors.egg-info/top_level.txt
