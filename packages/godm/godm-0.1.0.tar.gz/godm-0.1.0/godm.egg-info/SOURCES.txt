@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+godm/__init__.py
+godm/diffusion.py
+godm/godm.py
+godm/sage.py
+godm/version.py
+godm.egg-info/PKG-INFO
+godm.egg-info/SOURCES.txt
+godm.egg-info/dependency_links.txt
+godm.egg-info/requires.txt
+godm.egg-info/top_level.txt
