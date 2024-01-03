@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: tesla_fleet_api
+Version: 0.0.1
+Summary: Tesla Fleet API library for Python
+Home-page: https://github.com/Teslemetry/tesla_fleet_api
+Author: Brett Adams
+Author-email: hello@teslemetry.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# tesla_fleet_api
+Python library for Tesla Fleet API and Teslemetry
+
+Currently does not support the End to End encrypted Telemetry or Command API.
+
+Based on [Tesla Developer documentation](https://developer.tesla.com/docs/fleet-api).
+
+```
+import asyncio
+import aiohttp
+
+from tesla_fleet_api import TeslaFleetApi, TeslaFleetError
+
+
+async def main():
+    async with aiohttp.ClientSession() as session:
+        api = TeslaFleetApi(
+            access_token="<access_token>",
+            session=session,
+            region="na",
+            raise_for_status=True,
+        )
+
+        try:
+            data = await api.vehicle.list()
+            print(data)
+        except TeslaFleetError.Base as e:
+            print(e.message, e.error)
+
+asyncio.run(main())
+```
