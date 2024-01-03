@@ -1,0 +1,7 @@
+Textual CLI Tetris Game
+
+This is a simple Tetris game designed for the command-line interface, featuring good 'ol Tetris gameplay mechanics using ASCII-based graphics.
+
+How to Play: 1): Install it using pip, 2): Run the CLI by running "textris" in your CMD.
+
+Controls: Up: Rotate, Down: Accelerate, Left/Right: Move, Shift: Toggle held piece, Space: Hard-drop, Enter: Pause/unpause, ctrl+alt+shift+esc: Exit.
