@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>{% block title %}{% endblock %} - Fun with Flags</title>
+
+  <link rel="favicon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script>
+    function loadSpinner() {
+      document.getElementById("loader").style.display = "block";
+    }
+  </script>
+
+</head>
+
+<body>
+<div id="loader" class="loader"  style="display: none"></div>
+
+  <nav class="deg45">
+    <h1><a href="{{url_for('index')}}">Fun with Flags!</a></h1>
+    <ul>
+      <table class="nav_table">
+        <tr>
+          <th style="width:60%">
+          </th>
+          <th  style="width:20%">
+          </th>
+          <th  style="width:20%; text-align: right;">
+          {% if session['username'] %}
+            {{ session['username'] }}
+          </th>
+        </tr>
+        <tr>
+          <th style="width:60%; text-align: right;">
+            <form method="post">
+              <select name="teams" id="teams">
+                {% for t in range(session['teams'] | length) %}
+                  {% if session['teamid'] is defined and session['teamid'] == session['teams'][t][0] %}
+                    <option value="{{ session['teams'][t][0] }}" selected>
+                      {{ session['teams'][t][1] }}
+                    </option>
+                  {% else %}
+                    <option value="{{session['teams'][t][0] }}" >
+                      {{ session['teams'][t][1] }}
+                    </option>
+                  {% endif %}
+                {% endfor %}
+              </select>
+              <input type="submit" value="Select" onclick="loadSpinner()">
+            </form>
+          </th>
+          <td>
+            <li>
+              <span>
+                <a href="{{url_for('challenge.overview')}}">[Challenges]</a>
+              </span>
+          </td>
+          <td>
+            <li>
+              <span>
+                <a href="{{url_for('auth.logout')}}">[Log Out]</a>
+              </span>
+            </li>
+          </td>
+          {% else %}
+          </th>
+        </tr>
+
+        <tr>
+          <th style="width:60%; text-align: left;">
+          </th>
+          <th  style="width:20%">
+          </th>
+          <td  style="width:20%">
+            <li>
+              <span>
+                <a href="{{ url_for('auth.authorize') }}">[Authorize CHPP]</a>
+              </span>
+            </li>
+          </td>
+          {% endif %}
+        </tr>
+      </table>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <header>
+      {% block header %}{% endblock %}
+    </header>
+    {% for message in get_flashed_messages() %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    {% block content %}{% endblock %}
+  </section>
+</body>
+
+<div class="footer">&copy;
+  <span id="year">
+    <script>document.write(/\d{4}/.exec(Date())[0]);</script>
+ </span>
+  <span> Hattrick.org &amp; CHPP Fun with Flags (
+    <a href="https://hattrick.org/goto.ashx?path=/Club/Manager/?userId=9034788"  target="_blank">joschobart</a>
+  ). All rights reserved.</span><br>
+
+</div>
+
+</html>
