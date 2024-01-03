@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "getting"
+version = "1.2.2"
+description = "操作检查各种操作"
+authors = ["BlackWhite <jierong8215@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/BlackWhite2000/Getting"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psutil = "^5.9.6"
+requests = "^2.31.0"
+tqdm = "^4.66.1"
+pyjwt = "^2.8.0"
+django = "^5.0"
+pillow = "^10.1.0"
+eyed3 = "^0.9.7"
+mutagen = "^1.47.0"
+python-decouple = "^3.8"
+pymysql = "^1.1.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+notebook = "^7.0.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
