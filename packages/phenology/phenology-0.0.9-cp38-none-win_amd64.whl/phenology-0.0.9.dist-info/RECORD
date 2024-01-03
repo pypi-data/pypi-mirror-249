@@ -1,0 +1,15 @@
+phenology/__init__.py,sha256=UU57B_wj3pzmo9__M8hRcjwDusddC6Gd3hwLC3925U8,70
+phenology/fit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phenology/fit/func_pheno.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phenology/opl/__init__.py,sha256=qKJxijfeGC0G5DQ3gKG-gdk_1xiRuNNxK7K8YZVuCFY,83
+phenology/opl/func_opl.py,sha256=5GA7cXXllbz8AYDpCFQTccrElp5rzlB3HylxrDk6lUU,5969
+phenology/opl/v1/__init__.py,sha256=Lm5oNosxjmmsB7sZ_2AcoKifOvGzWQ6On1_liFE6iZc,34
+phenology/opl/v1/api_opl_v1.cp38-win_amd64.pyd,sha256=B5YhGhpLIgwVk10v9bhyECR1XLo_Trx7EnYgDyX7RMg,69632
+phenology/opl/v1/func_opl.py,sha256=SOVauJQShffPAoePJPhgkNSyOIDNOji9NQJpzY7f_Hs,3507
+phenology/utils/__init__.py,sha256=acejAVIg2S-2qqma9trHRWvutnPDSyY1NDeEn2cWURg,33
+phenology/utils/func_common.py,sha256=wCkq08FvWLk6coTqtQnnKmDrOZt6PCgPeklNwkSXPUc,1193
+phenology-0.0.9.dist-info/LICENSE,sha256=aNDDigbKurQakkbKirUzjIW6nXGr2BEoqHwi4hBi6NM,1084
+phenology-0.0.9.dist-info/METADATA,sha256=x99K-f8-3E5AmGm-Oq-hyyBTda7e4sCJqX5cpJPnGq4,932
+phenology-0.0.9.dist-info/WHEEL,sha256=mX3xZdJ00TXAWs7scdbAcxJ6dLW6xuvFxQI7UdfqmYc,99
+phenology-0.0.9.dist-info/top_level.txt,sha256=se4ccsUGxueDDqHCYHO6rU92TBSpwtrZnKhrTvd6ris,10
+phenology-0.0.9.dist-info/RECORD,,
