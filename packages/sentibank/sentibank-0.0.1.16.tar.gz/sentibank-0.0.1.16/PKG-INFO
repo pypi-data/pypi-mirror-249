@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sentibank
+Version: 0.0.1.16
+Summary: Unifying sentiment lexicons and dictionaries into an accessible open python package
+Home-page: https://github.com/socius-org/sentibank
+Author: Nick S.H Oh
+Author-email: nick.sh.oh@socialscience.ai
+License: CC BY-NC-SA 4.0
+Download-URL: https://github.com/socius-org/sentibank/archive/refs/tags/0.0.1.16.tar.gz
+Keywords: AI,Social Science,Sentiment Analysis
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
