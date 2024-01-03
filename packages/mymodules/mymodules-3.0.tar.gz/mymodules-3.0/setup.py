@@ -1,0 +1,7 @@
+from setuptools import setup
+
+setup(
+    name='mymodules',
+    version='3.0',
+    packages=['''Xbyte_Common_Scrape'''],
+)
