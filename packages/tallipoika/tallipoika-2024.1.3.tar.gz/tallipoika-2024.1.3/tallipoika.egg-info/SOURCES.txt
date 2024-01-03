@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+tallipoika/__init__.py
+tallipoika/api.py
+tallipoika/py2es6.py
+tallipoika.egg-info/PKG-INFO
+tallipoika.egg-info/SOURCES.txt
+tallipoika.egg-info/dependency_links.txt
+tallipoika.egg-info/entry_points.txt
+tallipoika.egg-info/requires.txt
+tallipoika.egg-info/top_level.txt
+test/test_api.py
+test/test_py2es6.py
