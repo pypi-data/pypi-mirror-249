@@ -1,0 +1,93 @@
+[project]
+name = "maxgradient"
+version = "0.2.15"
+description = "MaxGradient automates the printing gradient colored text to the console."
+authors = [
+    { name = "Max Ludden", email = "dev@maxludden.com" },
+]
+dependencies = [
+    "lorem-text>=2.1",
+    "loguru>=0.7.2",
+    "numpy>=1.25.2",
+    "pendulum>=2.1.2",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.5.0",
+    "rich>=13.5.3",
+    "typer[all]>=0.9.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+dev = [
+    "mkdocs>=1.5.2",
+    "mkdocs-material>=9.4.7",
+    "mkdocstrings[python]>=0.18",
+]
+cli = [
+    "typer[all]>=0.9.0",
+]
+
+[project.scripts]
+gradient = "maxgradient.cli:app"
+mypy = "mypy -p src.maxgradient --ignore-missing-imports"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+line-length = 88
+indent-width = 4
+target-version = "py38"
+
+[tool.ruff.lint]
+select = [
+    "E4",
+    "E7",
+    "E9",
+    "F",
+]
+ignore = []
+fixable = [
+    "ALL",
+]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
