@@ -1,0 +1,10 @@
+akriml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+akriml/utils.py,sha256=ydXuZ3Eru3UejEU2Ld--J52i2SuwXdZwzm5K46OwEuc,2479
+akriml/sketch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+akriml/sketch/fastsketch.py,sha256=t1brctJ6t-rZcoeWMhBdSaAf1y7m3bWTuNnXCLxleuY,23255
+akriml/sketch/sketch_utils.py,sha256=RbLoP5EoNdk4Z7LYrRjwuXiH8Cpnxp3sODnkuYfRZAE,23028
+akriml-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+akriml-0.2.0.dist-info/METADATA,sha256=bE8BzRpy0L4ZQGq5zMMfsXEgLhsZwU9IYrxK9NrDfhE,13998
+akriml-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+akriml-0.2.0.dist-info/top_level.txt,sha256=2MFYGinXqCVAplcKw0R0HNHULaY4GB2cowmgAjexvEA,7
+akriml-0.2.0.dist-info/RECORD,,
