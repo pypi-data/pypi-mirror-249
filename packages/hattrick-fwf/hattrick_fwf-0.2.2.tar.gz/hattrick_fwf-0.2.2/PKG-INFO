@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hattrick-fwf
+Version: 0.2.2
+Summary: Hattrick Fun with Flags
+Author-email: joe <github@schicker.guru>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: couchdb>=1.2
+Requires-Dist: cryptography>=41.0.7
+Requires-Dist: flask>=3.0.0
+Requires-Dist: gunicorn>=21.2.0
+Requires-Dist: hattrick-libs==0.10.1
+Description-Content-Type: text/markdown
+
+# hattrick-fwf
+
+Describe your project here.

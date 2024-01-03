@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Challenges Overview{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+
+  {% for t in range(session['teams'] | length) %}
+    {% if session['teamid'] is defined and session['teamid'] == session['teams'][t][0] %}
+      <h3>{{ session['teams'][t][1] }}</h3>
+
+
+    {% if g.challenges is defined and g.challenges['challenges'] != [] %}
+      <h4>Challenges ({{  g.challenges['challenges'] | length }})</h4>
+
+      {% for i in range(g.challenges['challenges'] | length) %}
+        <table class="challenges_table">
+          {% if g.challenges['challenges'][i]['is_agreed'] == "True" %}
+          <tr>
+            <th>
+              <strong>
+                <p>
+                  Next Friendly date:
+                </p>
+              </strong>
+            </th>
+            <td>
+              <strong>
+                <p>
+                  {{ g.challenges['challenges'][i]['match_time'] }} LT (in {{ g.tdelta_hours }} hours)
+                </p>
+              </strong>
+            </td>
+          </tr>
+          {% endif %}
+          <tr>
+            <th>
+              <strong>
+                <p>
+                  Opponent Name:
+                </p>
+              </strong>
+            </th>
+            <td>
+              <strong>
+                <p>
+                  <a href="https://hattrick.org/goto.ashx?path=/Club/Challenges/?TeamID={{ session['teamid'] }}"  target="_blank">
+                    {{ g.challenges['challenges'][i]['opponent_team_name'] }} ({{ g.challenges['challenges'][i]['country_name'] }})
+                  </a>
+                </p>
+              </strong>
+            </td>
+          </tr>
+          {% if g.challenges['challenges'][i]['is_agreed'] == "True" %}
+          <tr>
+            <th>
+              <strong>
+                <p>
+                  Match booked:
+                </p>
+              </strong>
+            </th>
+            <td>
+              <strong>
+                <p>
+                  {{ g.challenges['challenges'][i]['is_agreed'] }}
+                </p>
+              </strong>
+            </td>
+          </tr>
+          {% endif %}
+        </table>
+        {% endfor %}
+
+  {% endif %}
+
+  {% endif %}
+  {% endfor %}
+{% endblock %}
