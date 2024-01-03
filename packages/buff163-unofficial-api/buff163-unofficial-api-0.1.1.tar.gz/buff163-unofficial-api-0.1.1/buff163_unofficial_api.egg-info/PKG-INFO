@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: buff163-unofficial-api
+Version: 0.1.1
+Summary: An unofficial API wrapper for Buff163, a CS skin marketplace.
+Home-page: https://github.com/markzhdan/buff163-unofficial-api
+Author: Mark Zhdan
+Author-email: markzhdan@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.md
