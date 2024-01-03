@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty"
+        },
+        "step": {
+            "user": {
+                "description": "Haluatko aloittaa m\u00e4\u00e4rityksen?"
+            }
+        }
+    },
+    "services": {
+        "get_prices": {
+            "description": "Pyyd\u00e4 energian tai kaasun hintoja EnergyZerolta.",
+            "fields": {
+                "end": {
+                    "description": "Mihin hetkeen asti saat hinnat. Oletusarvo t\u00e4h\u00e4n p\u00e4iv\u00e4\u00e4n, jos se j\u00e4tet\u00e4\u00e4n pois.",
+                    "name": "Loppu"
+                },
+                "incl_vat": {
+                    "description": "Hinnat sis\u00e4lt\u00e4v\u00e4t arvonlis\u00e4veron. Oletusarvo true, jos se j\u00e4tet\u00e4\u00e4n pois.",
+                    "name": "Sis\u00e4lt\u00e4\u00e4 arvonlis\u00e4veron"
+                },
+                "start": {
+                    "description": "Mist\u00e4 hetkest\u00e4 alkaen saada hinnat. Oletusarvo on t\u00e4n\u00e4\u00e4n, jos se j\u00e4tet\u00e4\u00e4n pois.",
+                    "name": "K\u00e4ynnist\u00e4"
+                },
+                "type": {
+                    "description": "Hankittavien hintojen tyyppi, energia tai kaasu.",
+                    "name": "Tyyppi"
+                }
+            },
+            "name": "Hanki hinnat"
+        }
+    }
+}

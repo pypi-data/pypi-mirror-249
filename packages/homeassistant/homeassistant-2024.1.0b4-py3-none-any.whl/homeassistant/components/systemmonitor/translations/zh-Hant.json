@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u670d\u52d9\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210"
+        },
+        "step": {
+            "user": {
+                "description": "\u6309\u4e0b\u50b3\u9001\u9032\u884c\u521d\u59cb\u8a2d\u5b9a\u3002\u5728\u65b0\u589e\u8a2d\u5b9a\u689d\u76ee\u4e0a\u3001\u6309\u4e0b\u8a2d\u5b9a\u4ee5\u70ba\u6240\u9078\u7a0b\u5e8f\u611f\u6e2c\u5668"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "process": "\u65b0\u589e\u611f\u6e2c\u5668\u7684\u7a0b\u5e8f"
+                },
+                "data_description": {
+                    "process": "\u7531\u5217\u8868\u4e2d\u9078\u64c7\u57f7\u884c\u7684\u7a0b\u5e8f\u6216\u65b0\u589e\u81ea\u8a02\u6578\u503c\u3002\u652f\u63f4\u591a\u91cd\u9078\u64c7/\u81ea\u8a02\u6578\u503c"
+                },
+                "description": "\u70ba\u57f7\u884c\u4e2d\u7684\u7a0b\u5e8f\u8a2d\u5b9a\u76e3\u63a7\u611f\u6e2c\u5668"
+            }
+        }
+    }
+}

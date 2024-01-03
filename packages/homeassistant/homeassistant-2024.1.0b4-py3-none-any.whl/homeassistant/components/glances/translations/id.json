@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Perangkat sudah dikonfigurasi",
+            "reauth_successful": "Autentikasi ulang berhasil"
+        },
+        "error": {
+            "cannot_connect": "Gagal terhubung",
+            "invalid_auth": "Autentikasi tidak valid"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Kata Sandi"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Hos",
+                    "password": "Kata Sandi",
+                    "port": "Port",
+                    "ssl": "Menggunakan sertifikat SSL",
+                    "username": "Nama Pengguna",
+                    "verify_ssl": "Verifikasi sertifikat SSL",
+                    "version": "Versi API Glances (2 atau 3)"
+                },
+                "data_description": {
+                    "host": "Nama host atau alamat IP sistem yang menjalankan monitor sistem Glances Anda."
+                }
+            }
+        }
+    }
+}

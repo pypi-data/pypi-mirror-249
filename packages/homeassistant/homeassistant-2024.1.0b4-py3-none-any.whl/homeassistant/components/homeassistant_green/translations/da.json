@@ -1,0 +1,12 @@
+{
+    "options": {
+        "abort": {
+            "not_hassio": "Hardwareindstillingerne kan kun konfigureres p\u00e5 HassOS-installationer."
+        },
+        "step": {
+            "reboot_menu": {
+                "title": "Genstart n\u00f8dvendig"
+            }
+        }
+    }
+}

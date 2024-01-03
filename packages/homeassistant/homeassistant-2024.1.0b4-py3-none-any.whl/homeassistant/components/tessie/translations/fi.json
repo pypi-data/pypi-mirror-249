@@ -1,0 +1,99 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_access_token": "Virheellinen k\u00e4ytt\u00f6oikeustunnus",
+            "unknown": "Odottamaton virhe"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "access_token": "K\u00e4ytt\u00f6oikeustunnus"
+                },
+                "description": "Sy\u00f6t\u00e4 k\u00e4ytt\u00f6oikeustunnuksesi osoitteesta [my.tessie.com/settings/api](https://my.tessie.com/settings/api).",
+                "title": "Todenna integraatio uudelleen"
+            },
+            "user": {
+                "data": {
+                    "access_token": "K\u00e4ytt\u00f6oikeustunnus"
+                },
+                "description": "Sy\u00f6t\u00e4 k\u00e4ytt\u00f6oikeustunnuksesi osoitteesta [my.tessie.com/settings/api](https://my.tessie.com/settings/api)."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "charge_state-battery_range": {
+                "name": "Akun kantama"
+            },
+            "charge_state-charge_energy_added": {
+                "name": "Lis\u00e4tty latausenergia"
+            },
+            "charge_state-charge_rate": {
+                "name": "Latausnopeus"
+            },
+            "charge_state-charger_actual_current": {
+                "name": "Laturin virta"
+            },
+            "charge_state-charger_power": {
+                "name": "Laturin teho"
+            },
+            "charge_state-charger_voltage": {
+                "name": "Laturin j\u00e4nnite"
+            },
+            "charge_state-usable_battery_level": {
+                "name": "Akun varaustaso"
+            },
+            "climate_state-driver_temp_setting": {
+                "name": "Kuljettajan l\u00e4mp\u00f6tilan asetus"
+            },
+            "climate_state-inside_temp": {
+                "name": "Sis\u00e4l\u00e4mp\u00f6tila"
+            },
+            "climate_state-outside_temp": {
+                "name": "Ulkol\u00e4mp\u00f6tila"
+            },
+            "climate_state-passenger_temp_setting": {
+                "name": "Matkustajan l\u00e4mp\u00f6tilan asetus"
+            },
+            "drive_state-power": {
+                "name": "Virta"
+            },
+            "drive_state-shift_state": {
+                "name": "Vaihteen tila",
+                "state": {
+                    "d": "Ajo",
+                    "n": "Neutraali",
+                    "p": "Pys\u00e4k\u00f6inti",
+                    "r": "Peruutus"
+                }
+            },
+            "drive_state-speed": {
+                "name": "Nopeus"
+            },
+            "state": {
+                "name": "Tila",
+                "state": {
+                    "asleep": "Unessa",
+                    "offline": "Offline",
+                    "online": "Online"
+                }
+            },
+            "vehicle_state-odometer": {
+                "name": "Matkamittari"
+            },
+            "vehicle_state-tpms_pressure_fl": {
+                "name": "Rengaspaine Etu Vasen"
+            },
+            "vehicle_state-tpms_pressure_fr": {
+                "name": "Rengaspaine Etu Oikea"
+            },
+            "vehicle_state-tpms_pressure_rl": {
+                "name": "Rengaspaine Taka Vasen"
+            },
+            "vehicle_state-tpms_pressure_rr": {
+                "name": "Rengaspaine Taka Oikea"
+            }
+        }
+    }
+}

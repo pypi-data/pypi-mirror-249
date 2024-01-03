@@ -1,0 +1,16 @@
+{
+    "system_health": {
+        "info": {
+            "alexa_enabled": "Alexa k\u00e4yt\u00f6ss\u00e4",
+            "can_reach_cert_server": "Tavoita varmennepalvelin",
+            "can_reach_cloud": "Saavuta Home Assistant Cloud",
+            "can_reach_cloud_auth": "Saavuta todennuspalvelin",
+            "google_enabled": "Google k\u00e4yt\u00f6ss\u00e4",
+            "logged_in": "Kirjautunut sis\u00e4\u00e4n",
+            "relayer_connected": "Rele yhdistetty",
+            "remote_connected": "Kauko-ohjain yhdistetty",
+            "remote_enabled": "Kauko-ohjaus k\u00e4yt\u00f6ss\u00e4",
+            "subscription_expiration": "Tilauksen vanhentuminen"
+        }
+    }
+}
