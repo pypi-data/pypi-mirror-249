@@ -1,0 +1,2 @@
+[console_scripts]
+webvim = editor.editor:execute

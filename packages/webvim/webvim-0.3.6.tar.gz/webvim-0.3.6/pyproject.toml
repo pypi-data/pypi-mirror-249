@@ -1,0 +1,41 @@
+[project]
+name = "webvim"
+description = "web editor"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT License" }
+authors = [{ name = "Seven", email = "1162584980@qq.com" }]
+maintainers = [{ name = "Seven", email = "1162584980@qq.com" }]
+dynamic = ["version", "dependencies"]
+
+classifiers = [
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.scripts]
+webvim = 'editor.editor:execute'
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = { attr = "editor.editor.VERSION" }
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["editor*", "serctl*"]
+
+[tool.black]
+line-length = 100
+skip-string-normalization = true
+
+[tool.yapf]
+column_limit = 100
+
+[tool.isort]
+profile = "black"
+src_paths = ["editor", "serctl"]
