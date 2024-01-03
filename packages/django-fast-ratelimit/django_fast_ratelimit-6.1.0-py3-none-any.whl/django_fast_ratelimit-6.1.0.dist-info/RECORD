@@ -1,0 +1,9 @@
+django_fast_ratelimit/__init__.py,sha256=tKnhgN71TwkOXQRlEkzw6oesTUMpUlqthy25gv3DzXM,57
+django_fast_ratelimit/_core.py,sha256=wWbDwQqI6nzBb2U7h-_LQvKxfr8J22m-LXPTY-5yL40,19238
+django_fast_ratelimit/_epoch.py,sha256=fthwPGmnw3KPYQceNMY5Oi5c0KjAkzRwA4Z1eD1biQA,1250
+django_fast_ratelimit/methods.py,sha256=pQqcNh_osYZqlAtOzj6jCyW7ggzmXH96aUrLZHDbuHs,5379
+django_fast_ratelimit/misc.py,sha256=tAYGErahagrTQuITwM1OLwC-oXl2jSXs7fE7UoEiGyY,7107
+django_fast_ratelimit-6.1.0.dist-info/LICENSE,sha256=VUS8axGTfBUxLOZ5hp6raSWojuYiExJJ27iOrHIgAls,1065
+django_fast_ratelimit-6.1.0.dist-info/METADATA,sha256=bA5p9n9r_7I_qleAaA_MSIyO0Q2XsNM_UA9uSNZb85U,15986
+django_fast_ratelimit-6.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_fast_ratelimit-6.1.0.dist-info/RECORD,,
