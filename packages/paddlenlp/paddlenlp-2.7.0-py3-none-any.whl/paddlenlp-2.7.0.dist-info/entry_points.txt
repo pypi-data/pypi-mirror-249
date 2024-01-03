@@ -1,0 +1,2 @@
+[console_scripts]
+paddlenlp = paddlenlp.cli:main
