@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: xia-engine-neo4j
+Version: 0.1.0
+Home-page: https://develop.x-i-a.com/docs/xia-engine-neo4j/0.1.0/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: neo4j
+Requires-Dist: xia-fields
+Requires-Dist: xia-engine
+Requires-Dist: xia-engine-cypher
+
+Introduction
+=============================
+
+Welcome to use X-I-A's software
+
+
