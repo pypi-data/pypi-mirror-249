@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: vast-ai-api
+Version: 0.2.0
+Summary: A Vast.ai API helper
+Home-page: https://github.com/KianShah/vast-ai-api
+License: MIT
+Author: Kian
+Author-email: kianshah376@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/KianShah/vast-ai-api
+Description-Content-Type: text/markdown
+
+# A clean scriptable library for Vast.ai
+ 
+ This project is not intended to replace the open-source [vast.ai library](https://github.com/vast-ai/vast-python) but rather to complement it for those who want to have an easy-to-use API to build their own projects. 
+ 
+ It also integrates [pandas](https://pandas.pydata.org/) dataframes for easier data manipulation.
+
+
+## Installation instructions
+vast-ai-api is available on PyPi:
+
+```
+$ pip install vast-ai-api
+```
+## Usage
+
