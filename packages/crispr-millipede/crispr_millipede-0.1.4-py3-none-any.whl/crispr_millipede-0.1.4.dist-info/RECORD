@@ -1,0 +1,10 @@
+crispr_millipede/__init__.py,sha256=hLZ5_c7m0Tduc1vmxuRze2jXufEDKK0ug5h02tjXbd8,118
+crispr_millipede/encoding/__init__.py,sha256=7c1IxZ4W2rnI08PrO7y3aWLnoAmd-dvp8qtm7CbkkMk,38
+crispr_millipede/encoding/CrisprMillipedeEncoding.py,sha256=uf16MXazeO9DwZinVx_WFnBtdUez-X5arFhjDGSdPrY,11353
+crispr_millipede/modelling/__init__.py,sha256=wc249NlMQTdYzhKJYasw8p0bSMoJ59yNZmy-7TO8j8E,40
+crispr_millipede/modelling/CrisprMillipedeModelling.py,sha256=rCASA24uwbf2ZJw6DGDq0yux6w05lGTqQe7c7-tOhWo,283
+crispr_millipede/visualization/__init__.py,sha256=Puz0M8xopHG6QJOZtyixodD0wfYVRv65S1SYwHFm7Gs,43
+crispr_millipede/visualization/CrisprMillipedeVisualization.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crispr_millipede-0.1.4.dist-info/METADATA,sha256=pL1nsjQfUf_ud8bVUFeftTpRFdOD_fS6nqSTvlYVbio,780
+crispr_millipede-0.1.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+crispr_millipede-0.1.4.dist-info/RECORD,,
