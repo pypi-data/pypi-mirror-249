@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: wg-easy-api-wrapper
+Version: 1.0.7
+Summary: Wrapper for wg-easy API
+Home-page: https://github.com/Shandeika/wg-easy-api-wrapper
+Author: MrShandy
+Author-email: mrshandy@shandy-dev.ru
+License: GPL-3.0
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp ==3.9.0
+
+# wg-easy-api-wrapper
+Python module for convenient interaction with the application API [wg-easy](https://github.com/wg-easy/wg-easy)
+
+You can see all the methods in the documentation on GitHub
+
+## Usage
+A quick example of creating a client:
+```python
+async with Server("wg.example.com", 51821, "SuPerSecret_pass") as server:
+    await server.create_client("client_name")
+```
+Or a slightly more complicated way:
+```python
+async with aiohttp.ClientSession() as session:
+    server = Server("wg.example.com", 51821, "SuPerSecret_pass", session)
+    await server.login()
+    await server.create_client("client_name")
+```
