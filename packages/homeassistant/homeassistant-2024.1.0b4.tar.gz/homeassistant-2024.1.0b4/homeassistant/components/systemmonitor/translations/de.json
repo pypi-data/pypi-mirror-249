@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Der Dienst ist bereits konfiguriert"
+        },
+        "step": {
+            "user": {
+                "description": "Klicke auf \u201eSenden\u201c, um die Ersteinrichtung durchzuf\u00fchren. Klicke im erstellten Konfigurationseintrag auf \u201eKonfigurieren\u201c, um Sensoren f\u00fcr ausgew\u00e4hlte Prozesse hinzuzuf\u00fcgen"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "process": "Prozesse zum Hinzuf\u00fcgen als Sensor(en)"
+                },
+                "data_description": {
+                    "process": "W\u00e4hle einen laufenden Prozess aus der Liste aus oder f\u00fcge einen benutzerdefinierten Wert hinzu. Mehrfachauswahl/benutzerdefinierte Werte werden unterst\u00fctzt"
+                },
+                "description": "Konfigurieren eines \u00dcberwachungssensors f\u00fcr einen laufenden Prozess"
+            }
+        }
+    }
+}

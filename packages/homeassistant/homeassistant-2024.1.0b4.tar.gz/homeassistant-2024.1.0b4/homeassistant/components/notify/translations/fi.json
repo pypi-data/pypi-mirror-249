@@ -1,0 +1,31 @@
+{
+    "services": {
+        "notify": {
+            "fields": {
+                "message": {
+                    "name": "Viesti"
+                },
+                "target": {
+                    "name": "Kohde"
+                },
+                "title": {
+                    "description": "Ilmoituksen otsikko.",
+                    "name": "Otsikko"
+                }
+            },
+            "name": "L\u00e4het\u00e4 ilmoitus"
+        },
+        "persistent_notification": {
+            "fields": {
+                "message": {
+                    "name": "Viesti"
+                },
+                "title": {
+                    "description": "Ilmoituksen otsikko.",
+                    "name": "Otsikko"
+                }
+            }
+        }
+    },
+    "title": "Ilmoitukset"
+}

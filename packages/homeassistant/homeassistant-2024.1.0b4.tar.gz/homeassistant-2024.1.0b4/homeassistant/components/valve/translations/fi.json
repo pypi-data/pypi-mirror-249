@@ -1,0 +1,24 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "closed": "Suljettu",
+                "open": "Auki"
+            }
+        }
+    },
+    "services": {
+        "close_valve": {
+            "name": "Sulje"
+        },
+        "open_valve": {
+            "name": "Avaa"
+        },
+        "stop_valve": {
+            "name": "Pys\u00e4yt\u00e4"
+        },
+        "toggle": {
+            "name": "Vaihda"
+        }
+    }
+}

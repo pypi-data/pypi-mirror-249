@@ -1,0 +1,15 @@
+{
+    "entity": {
+        "binary_sensor": {
+            "driver_door_status": {
+                "name": "Porta do condutor"
+            },
+            "hvac_status": {
+                "name": "HVAC"
+            },
+            "passenger_door_status": {
+                "name": "Porta do acompa\u00f1ante"
+            }
+        }
+    }
+}

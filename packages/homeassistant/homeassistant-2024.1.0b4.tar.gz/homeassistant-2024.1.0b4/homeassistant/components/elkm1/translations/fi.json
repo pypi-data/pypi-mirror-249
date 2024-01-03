@@ -1,0 +1,48 @@
+{
+    "config": {
+        "abort": {
+            "address_already_configured": "ElkM1 t\u00e4ll\u00e4 osoitteella on jo m\u00e4\u00e4ritetty",
+            "already_configured": "T\u00e4ll\u00e4 etuliitteell\u00e4 varustettu ElkM1 on jo m\u00e4\u00e4ritetty",
+            "already_in_progress": "M\u00e4\u00e4ritysprosessi on jo k\u00e4ynniss\u00e4",
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus",
+            "unknown": "Odottamaton virhe"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus",
+            "unknown": "Odottamaton virhe"
+        },
+        "flow_title": "{mac_address} ({host})",
+        "step": {
+            "discovered_connection": {
+                "data": {
+                    "password": "Salasana",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "description": "Muodosta yhteys l\u00f6ydettyyn j\u00e4rjestelm\u00e4\u00e4n: {mac_address} ({host})",
+                "title": "Yhdist\u00e4 Elk-M1 Controliin"
+            },
+            "manual_connection": {
+                "data": {
+                    "password": "Salasana",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "title": "Yhdist\u00e4 Elk-M1 Controliin"
+            },
+            "user": {
+                "data": {
+                    "device": "Laite"
+                },
+                "description": "Valitse l\u00f6ydetty j\u00e4rjestelm\u00e4 tai \"Manuaalinen sy\u00f6tt\u00f6\", jos laitteita ei ole l\u00f6ydetty.",
+                "title": "Yhdist\u00e4 Elk-M1 Controliin"
+            }
+        }
+    },
+    "services": {
+        "sensor_zone_trigger": {
+            "description": "Laukaisualue.",
+            "name": "Sensorivy\u00f6hykkeen laukaisu"
+        }
+    }
+}

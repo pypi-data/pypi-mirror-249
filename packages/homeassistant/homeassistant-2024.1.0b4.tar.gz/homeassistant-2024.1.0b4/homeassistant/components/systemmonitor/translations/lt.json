@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Paslauga jau sukonfig\u016bruota"
+        },
+        "step": {
+            "user": {
+                "description": "Nor\u0117dami atlikti pradin\u0119 s\u0105rank\u0105, paspauskite pateikti. Sukurtame konfig\u016bracijos \u012fra\u0161e paspauskite konfig\u016bruoti, kad prid\u0117tum\u0117te jutiklius pasirinktiems procesams"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "process": "Procesai, kuriuos reikia prid\u0117ti kaip jutikl\u012f (-ius)"
+                },
+                "data_description": {
+                    "process": "I\u0161 s\u0105ra\u0161o pasirinkite vykdom\u0105 proces\u0105 arba prid\u0117kite pasirinktin\u0119 vert\u0119. Palaikomi keli pasirinkimai / tinkintos reik\u0161m\u0117s"
+                },
+                "description": "Sukonfig\u016bruokite vykdomo proceso steb\u0117jimo jutikl\u012f"
+            }
+        }
+    }
+}

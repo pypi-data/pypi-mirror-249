@@ -1,0 +1,72 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Palvelu on jo m\u00e4\u00e4ritetty",
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus",
+            "reauth_successful": "Uudelleentodennus onnistui",
+            "unknown": "Odottamaton virhe"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus",
+            "unknown": "Odottamaton virhe"
+        },
+        "flow_title": "{host}",
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Salasana"
+                },
+                "description": "Anna oikea salasana is\u00e4nn\u00e4lle: {host}"
+            },
+            "user": {
+                "data": {
+                    "host": "Palvelin",
+                    "password": "Salasana",
+                    "ssl": "K\u00e4ytt\u00e4\u00e4 SSL-varmennetta",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "data_description": {
+                    "host": "Vodafone -aseman is\u00e4nt\u00e4nimi tai IP-osoite."
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "fiber_reconnect": {
+                "name": "Kuitu uudelleenkytkent\u00e4m"
+            },
+            "internet_key_reconnect": {
+                "name": "Internet-avaimen yhdist\u00e4minen uudelleen"
+            }
+        },
+        "sensor": {
+            "fw_version": {
+                "name": "Laiteohjelmiston versio"
+            },
+            "phone_num1": {
+                "name": "Puhelinnumero (1)"
+            },
+            "phone_num2": {
+                "name": "Puhelinnumero (2)"
+            },
+            "sys_cpu_usage": {
+                "name": "CPU:n k\u00e4ytt\u00f6"
+            },
+            "sys_memory_usage": {
+                "name": "Muistin k\u00e4ytt\u00f6"
+            },
+            "sys_reboot_cause": {
+                "name": "Uudelleenk\u00e4ynnistyksen syy"
+            },
+            "sys_uptime": {
+                "name": "P\u00e4\u00e4ll\u00e4"
+            },
+            "up_stream": {
+                "name": "WAN-latausnopeus"
+            }
+        }
+    }
+}
