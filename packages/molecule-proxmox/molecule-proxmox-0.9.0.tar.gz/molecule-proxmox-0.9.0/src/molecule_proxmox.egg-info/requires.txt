@@ -1,0 +1,3 @@
+molecule>=4.0.1
+pyyaml
+proxmoxer>=1.3.1
