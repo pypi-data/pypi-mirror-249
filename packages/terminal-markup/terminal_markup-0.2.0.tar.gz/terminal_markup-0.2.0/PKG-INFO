@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: terminal-markup
+Version: 0.2.0
+Summary: Converts Markup to ANSI Escape Codes
+Home-page: https://github.com/s3rgeym/terminal-markup
+License: MIT
+Author: Sergey M
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/s3rgeym/terminal-markup
+Description-Content-Type: text/markdown
+
+# terminal-markup
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/terml)]() [![PyPI - Version](https://img.shields.io/pypi/v/terml)]() [![Total Downloads](https://static.pepy.tech/badge/terminal-markup)]()
+
+Converts Markup to ANSI Escape Codes.
+
+Inspired by [tml](https://github.com/liamg/tml).
+
+Pros:
+
+* Faster than alterntavies like `rich`.
+* Supports background color and hex-colors.
+* Null-dependency.
+
+Install:
+
+```bash
+pip install terminal-markup
+poetry add terminal-markup
+```
+
+After install you can use comand `terminal-markup`.
+
+## Examples
+
+```python
+from terminal_markup import convert
+
+print(convert("[b][color=#f70000 background=yellow] WARNING [/color]:[/b] [magenta]Life leads to [i blue underline]Death[/i].[/magenta]"))
+```
+
+![image](https://github.com/s3rgeym/terminal-markup/assets/12753171/b3681eff-dff3-4964-a6fe-0329a4829156)
+
+## Tags
+
+| Tag | Description |
+| --- | --- |
+| `b` | Bold text |
+| `i` | Italic text |
+| `u` | Underline text |
+| `[color=<color>]`, `<color name>` | Set foreground color |
+
+Non-existent tags do not cause errors.
+
+## Common attributes
+
+| Attribute | Description |
+| -- | -- |
+| `<color name>`, `color=<color>` | Set foreground color |
+| `background=<color>` | Set background color |
+| `{bold\|italic\|underline}[={no\|off\|false\|0\|...}]` | Set text style |
+
+Unknown attributes are ignored.
+
+## Colors
+
+Color name: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`. Also supported HEX-codes like `#deadbeef`.
+
