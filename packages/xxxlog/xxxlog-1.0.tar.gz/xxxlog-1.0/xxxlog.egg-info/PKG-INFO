@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: xxxlog
+Version: 1.0
+Summary: 简介：xxxlog
+Home-page: https://github.com/xxxlog
+Author: alan
+Author-email: al6nlee@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## xxxlog
+> 测试demo
+
