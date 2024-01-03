@@ -1,0 +1,12 @@
+emoji_chengyu/__init__.py,sha256=PDOn0qBZgbNLtDiG_Q8srUURRtiW8ZgLDV6mtApPz0g,115
+emoji_chengyu/data.py,sha256=OUyASIfpe3UQTjUZrynhOorOnpFG4tL_7JINyaEs0jc,5123
+emoji_chengyu/main.py,sha256=-sSTIjMF7MPsngbRPwU3kLHLhJGL4A1aD0U8MHYoO8c,1558
+emoji_chengyu/puzzle.py,sha256=1E-F-0kh_sU-JzRKNwZfqS9tiyeGYT0fAWCmg7xxLxI,3196
+emoji_chengyu/data/chengyu.count.json,sha256=xs60ElZzvswge5EocNYwYfQDO9dmrUuNKrZTv8bEbjg,29609
+emoji_chengyu/data/chengyu.json,sha256=wCwy8D520hbA6qFOUcUKlAIzkUH27T_sH5fPSwvXOqk,1828997
+emoji_chengyu/data/emoji.cn.json,sha256=_dtQE9rfaSIUchhU6EaFt6-OcIKmQaFiJvMvRQsyNkY,43195
+emoji_chengyu-0.0.6.dist-info/METADATA,sha256=kJKgpMMwjC1CRaSmNT86TszPlVfAsAdtedwvNitcbAg,2782
+emoji_chengyu-0.0.6.dist-info/WHEEL,sha256=VYAwk8D_V6zmIA2XKK-k7Fem_KAtVk3hugaRru3yjGc,105
+emoji_chengyu-0.0.6.dist-info/entry_points.txt,sha256=LzzaD7EXxLNHbiQr8MIhjQtkakjTtVoQ5lX_JpbnZbc,71
+emoji_chengyu-0.0.6.dist-info/licenses/LICENSE,sha256=32VFF2P_xzMzbqbZ7SkxbqZSdFyoEfufkntbZVgPnE0,1064
+emoji_chengyu-0.0.6.dist-info/RECORD,,
