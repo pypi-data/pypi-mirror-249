@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+st_xatadb_connection.egg-info/PKG-INFO
+st_xatadb_connection.egg-info/SOURCES.txt
+st_xatadb_connection.egg-info/dependency_links.txt
+st_xatadb_connection.egg-info/requires.txt
+st_xatadb_connection.egg-info/top_level.txt
