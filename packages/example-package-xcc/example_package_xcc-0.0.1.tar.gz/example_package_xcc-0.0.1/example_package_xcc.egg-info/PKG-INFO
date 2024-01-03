@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: example_package_xcc
+Version: 0.0.1
+Summary: A small example package
+Author-email: Xbyte_Dev Author <author@example.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xbyte_common_code
+
+This code use for commonly.
+
+## Installation
+
+```bash
+pip install your-package-name

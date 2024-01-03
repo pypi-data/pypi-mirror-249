@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+example_package_xcc/__init__.py
+example_package_xcc/test.py
+example_package_xcc/xbyte_common_code.py
+example_package_xcc.egg-info/PKG-INFO
+example_package_xcc.egg-info/SOURCES.txt
+example_package_xcc.egg-info/dependency_links.txt
+example_package_xcc.egg-info/top_level.txt
