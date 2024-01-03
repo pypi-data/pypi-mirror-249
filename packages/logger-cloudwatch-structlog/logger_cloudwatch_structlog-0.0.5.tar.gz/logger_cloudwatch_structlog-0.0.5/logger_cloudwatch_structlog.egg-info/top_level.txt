@@ -1,0 +1,1 @@
+logger_cloudwatch_structlog

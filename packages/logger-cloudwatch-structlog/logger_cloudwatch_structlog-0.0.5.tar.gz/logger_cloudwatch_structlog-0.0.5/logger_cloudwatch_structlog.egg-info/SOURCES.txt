@@ -1,0 +1,12 @@
+LICENSE
+NOTICE
+README.md
+setup.py
+logger_cloudwatch_structlog/__init__.py
+logger_cloudwatch_structlog/custom_processors.py
+logger_cloudwatch_structlog/functions.py
+logger_cloudwatch_structlog.egg-info/PKG-INFO
+logger_cloudwatch_structlog.egg-info/SOURCES.txt
+logger_cloudwatch_structlog.egg-info/dependency_links.txt
+logger_cloudwatch_structlog.egg-info/requires.txt
+logger_cloudwatch_structlog.egg-info/top_level.txt
