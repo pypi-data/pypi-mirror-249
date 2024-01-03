@@ -1,0 +1,9 @@
+lets_go/__init__.py,sha256=nqyO6QWorbU5xjGnNBjntT-fgZClcYWw3HmHIC8n6dg,758
+lets_go/backend.py,sha256=pvL9tsWby2-JZDfLzqJQSC_6QyuD3GeJ0m0Jg8lmDYU,7765
+lets_go/board.py,sha256=wcUvX0Phnv9IkiuBj7REM4ZOEKVlfyXpG7mdC3yuhjs,20553
+lets_go/lets_go.py,sha256=98VZjRiYheaZWeIlgVQVbzQh5nkTY-BgfLiuvdncIKQ,6321
+lets_go-0.3.8.dist-info/METADATA,sha256=VYauFVckRV2tvTPwSDsSKfwX3xV2dR0qH6u5ojy0yjY,14814
+lets_go-0.3.8.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+lets_go-0.3.8.dist-info/entry_points.txt,sha256=YC8mwSJTI2ktMPRd-j1NT5LmVDhAHDvq-klqkjPvjfI,41
+lets_go-0.3.8.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lets_go-0.3.8.dist-info/RECORD,,
