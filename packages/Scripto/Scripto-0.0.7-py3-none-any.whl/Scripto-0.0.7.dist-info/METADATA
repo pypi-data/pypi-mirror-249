@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Scripto
+Version: 0.0.7
+Summary: A simple framework to help you build scripts faster!
+Author: Ron Hasleton
+Author-email: ronhasleton@gmail.com
+License: GNU GPLv3
+Keywords: scripting,auto,cli,argparse
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Scripto
+[![Upload Python Package](https://github.com/rhron255/Scripto/actions/workflows/python-publish.yml/badge.svg?branch=main)](https://github.com/rhron255/Scripto/actions/workflows/python-publish.yml)
+
+Are you sick of writing long and annoying argparse initialization code?
+Worry no more - the future is here!
+
+# Notes
+
+Add recommendation to registration func to not provide defaults for dict controlled arguments
+Also, when providing a dict setter, make sure that parameter names are indicative.
