@@ -1,0 +1,7 @@
+README.md
+setup.py
+pkrtablegui.egg-info/PKG-INFO
+pkrtablegui.egg-info/SOURCES.txt
+pkrtablegui.egg-info/dependency_links.txt
+pkrtablegui.egg-info/requires.txt
+pkrtablegui.egg-info/top_level.txt
