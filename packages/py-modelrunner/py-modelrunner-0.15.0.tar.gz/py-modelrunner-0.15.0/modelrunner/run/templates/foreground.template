@@ -1,0 +1,29 @@
+#!/bin/bash -l
+
+export PYTHONPATH={{ PACKAGE_PATH }}:$PYTHONPATH
+
+{% if NUM_THREADS is number %}
+# set the number of threads to use
+export MKL_NUM_THREADS={{ NUM_THREADS }}
+export NUMBA_NUM_THREADS={{ NUM_THREADS }}
+export NUMEXPR_NUM_THREADS={{ NUM_THREADS }}
+export OMP_NUM_THREADS={{ NUM_THREADS }}
+export OPENBLAS_NUM_THREADS={{ NUM_THREADS }}
+{% endif %}
+
+{% if OUTPUT_FOLDER is defined and OUTPUT_FOLDER %}
+mkdir -p {{ OUTPUT_FOLDER }}
+{% endif %}
+
+# Run the program
+{% if USE_MODELRUNNER is defined and USE_MODELRUNNER %}
+{{ PYTHON_BIN }} -m modelrunner {{ MODEL_FILE }} \
+    {{ JOB_ARGS }} \
+    > {{ LOG_FOLDER }}/{{ JOB_NAME }}.out.txt \
+    2> {{ LOG_FOLDER }}/{{ JOB_NAME }}.err.txt
+{% else %}
+{{ PYTHON_BIN }} {{ MODEL_FILE }} \
+    {{ JOB_ARGS }} \
+    > {{ LOG_FOLDER }}/{{ JOB_NAME }}.out.txt \
+    2> {{ LOG_FOLDER }}/{{ JOB_NAME }}.err.txt
+{% endif %}
