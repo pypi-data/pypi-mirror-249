@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: stsp
+Version: 0.1.0
+Summary: Securities trading strategies protocols
+Home-page: https://github.com/beilak/stsp.git
+License: MIT
+Keywords: stock,trading,strategies,protocols
+Author: Beilak
+Author-email: beylak@yandex.ru
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/beilak/stsp.git
+Description-Content-Type: text/markdown
+
+# stsp
+Securities trading strategies protocols
+
+## Descriptions
+This lib provide protocols for Traiding system (https://github.com/beilak/IntelligentTradingStrategies)
+
+# ToDo
+
+
