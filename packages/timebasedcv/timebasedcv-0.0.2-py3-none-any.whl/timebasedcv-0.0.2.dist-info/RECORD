@@ -1,0 +1,12 @@
+timebasedcv/__init__.py,sha256=JaFhtfUcq5H5evqb63M-Y6tTnJqK3w41-bAOLV0AtdE,460
+timebasedcv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timebasedcv/splitstate.py,sha256=8nrSNMp7b5IeOCCLY248unvbA3VMyIET2ODa8_xt1mU,4057
+timebasedcv/timebasedsplit.py,sha256=lfH3PTEE1s4AI8UJzONQQTCrIXfUCKGMI8Kq8d8R8gY,25081
+timebasedcv/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timebasedcv/utils/_backends.py,sha256=VJsWHXpkeXZU06NAIxGvbQB4kAc8GCiwhBnlV1fFOIY,1554
+timebasedcv/utils/_funcs.py,sha256=e3hEC8wRBLq-0Z6wTQ_oajmTZUc6u1gaOQ68UwYD0NQ,1063
+timebasedcv/utils/_types.py,sha256=I1y8Tppu9aHpDzPk2zGLFaUkAqoyxfjdvOJrKONWejc,2075
+timebasedcv-0.0.2.dist-info/METADATA,sha256=I3AaKWi3C3ZsoYrfk9kOmq7m2uKZbUg0L6599Ku7OfI,8215
+timebasedcv-0.0.2.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+timebasedcv-0.0.2.dist-info/licenses/LICENSE,sha256=dvme5SVaxB8S--1OkhJXMzOrJnDhPZvCY_vys9LsoBo,1075
+timebasedcv-0.0.2.dist-info/RECORD,,
