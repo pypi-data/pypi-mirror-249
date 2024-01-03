@@ -1,0 +1,17 @@
+[project]
+name = "nahuatl_tools"
+dynamic = ["version"]
+authors = [
+  { name="Nicolas Cloutier", email="nicocloutier1@gmail.com" },
+]
+description = "A selection of open source tools for Nahuatl NLP."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/NicoACloutier/nahuatl_tools/tree/main"

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nahuatl_tools/__init__.py
+nahuatl_tools/analyze.py
+nahuatl_tools/gloss.py
+nahuatl_tools/orthography_converter.py
+nahuatl_tools/parse.py
+nahuatl_tools/pos_tagger.py
+nahuatl_tools/tokenizer.py
+nahuatl_tools.egg-info/PKG-INFO
+nahuatl_tools.egg-info/SOURCES.txt
+nahuatl_tools.egg-info/dependency_links.txt
+nahuatl_tools.egg-info/top_level.txt
