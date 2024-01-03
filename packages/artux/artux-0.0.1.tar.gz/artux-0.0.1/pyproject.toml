@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "artux"
+version = "0.0.1"
+authors = [
+  { name="bazgab", email="gabrielbzzt@gmail.com" },
+]
+description = "A simple real-time CPU Temperature tracker for Linux systems."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+]
+
+[project.urls]
+Homepage = "https://github.com/bazgab/artux"
+Issues = "https://github.com/bazgab/artux/issues"

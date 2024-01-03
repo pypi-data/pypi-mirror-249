@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/artux/__init__.py
+src/artux/main.py
+src/artux.egg-info/PKG-INFO
+src/artux.egg-info/SOURCES.txt
+src/artux.egg-info/dependency_links.txt
+src/artux.egg-info/top_level.txt
