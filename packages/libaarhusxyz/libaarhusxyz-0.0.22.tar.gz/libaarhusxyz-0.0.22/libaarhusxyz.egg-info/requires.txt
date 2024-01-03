@@ -1,0 +1,12 @@
+matplotlib
+numpy
+pandas
+pyproj
+
+[normalisation]
+projnames
+pryproj
+
+[tests]
+downfile
+nose2
