@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/__init__.py
+src/main.py
+src/todos.py
+src/cli_todo_manager.egg-info/PKG-INFO
+src/cli_todo_manager.egg-info/SOURCES.txt
+src/cli_todo_manager.egg-info/dependency_links.txt
+src/cli_todo_manager.egg-info/entry_points.txt
+src/cli_todo_manager.egg-info/requires.txt
+src/cli_todo_manager.egg-info/top_level.txt
