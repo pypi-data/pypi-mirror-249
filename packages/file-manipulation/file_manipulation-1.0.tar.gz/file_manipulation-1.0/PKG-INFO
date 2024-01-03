@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: file_manipulation
+Version: 1.0
+Summary: A Python package for managing files
+Description-Content-Type: text/markdown
+
+This package provides tools for file management, including insertion, deletion, replacement, commenting, uncommenting, and finding in files.
+
+    To use this package, you must first install it using pip:
+
+    ```bash
+    pip install file_manipulation
+    ```
+
+    After installation, you can import the package in your Python scripts and use its functions to manipulate files.
+
+    ## Usage
+
+    ```python
+    from file_manipulation.read_file  import readFile
+    from file_manipulation.find_in_file  import find_word_in_file
+    from file_manipulation.insert  import insert_lines
+    from file_manipulation.replace  import replace_lines_in_range
+    from file_manipulation.delete  import delete_lines
+    from file_manipulation.comment  import comment_lines
+    from file_manipulation.uncomment  import uncomment_lines
+    
+    # to read file  --> return False and error_message if file dosn't exist 
+        readFile(file_path)
+        ==> True, the content of file
+        
+        [USAGE]:
+            exist,result = find_word_in_file("example.txt", "test")
+            if exist:
+                result = "this a file to test"
+            else:
+                err_msg = "example.txt" dosn't exist 
+                
+    # to find a line content word --> return False and error_message if file or word dosn't exist 
+        find_word_in_file(file_path, target_word)
+        ==> True, dict content num of line and the line 
+        
+        [USAGE]:
+            exist,result = find_word_in_file("example.txt", "test")
+            if exist:
+                result = {"line 12: this is a test"}
+            else:
+                err_msg = "example.txt" or "test" dosn't exist 
+                
+    # to insert block of str like insert_string --> return False and error_message if action, *args dosn't match
+        insert_lines(file_path, action, *args, insert_string)
+         ==> True, success_message
+         
+         [USAGE]:
+           * insert "test insert" before line 6
+            insert_lines("example.com",'insert_before',6,insert_string="test insert")
+            
+           * insert "test insert" after line 10
+            insert_lines("example.com",'insert_after',10,insert_string="test insert")
+            
+         [EXAMPLE]:
+            insert_string = "test insert"  
+            # 6 is the line where we insert after it 
+            result,msg = insert_lines("example.txt",'insert_after',6,insert_string=insert_string)
+                 
+            if result:
+                msg ('Line inserted after 6: "test insert"')
+            else:
+                err_msg = "example.txt" dosn't exist or Invalid action or arguments.
+                
+    # to replace block of str like replace_string --> return False and error_message if action, *args dosn't match or invalid range.
+        replace_lines(file_path, action, *args, replacement_string)
+         ==> True, success_message
+         
+         [USAGE]:
+           * replace from line 6 to 8 by "test replace" replace_from_lineX_to_lineY
+            replace_lines("example.com",'replace_from_lineX_to_lineY',6,8,replacement_string="test replace")
+            
+           * replace line 10 by "test replace" 
+            replace_lines("example.com",'replace_the_lineX',10,replacement_string="test replace")
+            
+           * replace line start with "word" by "test replace" 
+            replace_lines("example.com",'replace_line_start_with',"word",replacement_string="test replace")
+            
+         [EXAMPLE]:
+            replacement_string = "test replace"  
+            # 6 is the line where we insert after it 
+            result,msg = replace_lines("example.com",'replace_from_lineX_to_lineY',6,8,replacement_string=replacement_string)
+                 
+            if result:
+                msg ("From line 6 to the line 8 is replaced by 'test replace'")
+            else:
+                err_msg = "example.txt" dosn't exist or Invalid action or arguments.
+          
+    # to delete block of str  --> return False and error_message if action, *args dosn't match or invalid range.
+        delete_lines(file_path, action, *args)
+         ==> True, success_message
+         
+         [USAGE]:
+           * delete from line 6 to 8
+            delete_lines("example.com",'delete_from_lineX_to_lineY',6,8)
+            
+           * delete line 10
+            delete_lines("example.com",'delete_the_lineX',10,replacement_string="test replace")
+            
+           * delete line start with "word"
+            replace_lines("example.com",'delete_line_start_with',"word")
+            
+         [EXAMPLE]:
+            # delete line 6
+            result,msg = delete_lines("example.com",'delete_the_lineX',6)
+                 
+            if result:
+                msg ("line 6 deleted successfully")
+            else:
+                err_msg = "example.txt" dosn't exist or Invalid action or arguments.  
+                
+    # to comment block of str  --> return False and error_message if action, *args dosn't match or invalid range.
+        comment_lines(file_path, action, *args)
+         ==> True, success_message
+         
+         [USAGE]:
+           * comment from line 6 to 8
+            comment_lines("example.com",'comment_from_lineX_to_lineY',6,8)
+            
+           * comment line 10
+            comment_lines("example.com",'comment_the_lineX',10,replacement_string="test replace")
+            
+           * comment line start with "word"
+            comment_lines("example.com",'comment_line_start_with',"word")
+            
+         [EXAMPLE]:
+            # commente line 6
+            result,msg = commente_lines("example.com",'commente_the_lineX',6)
+                 
+            if result:
+                msg ("line 6 commented successfully")
+            else:
+                err_msg = "example.txt" dosn't exist or Invalid action or arguments.  
+                
+    # to uncomment block of str  --> return False and error_message if action, *args dosn't match or invalid range.
+        uncomment_lines(file_path, action, *args)
+         ==> True, success_message
+         
+         [USAGE]:
+           * uncomment from line 6 to 8
+            uncomment_lines("example.com",'uncomment_from_lineX_to_lineY',6,8)
+            
+           * uncomment line 10
+            uncomment_lines("example.com",'uncomment_the_lineX',10,replacement_string="test replace")
+            
+           * uncomment line start with "word"
+            uncomment_lines("example.com",'uncomment_line_start_with',"word")
+            
+         [EXAMPLE]:
+            # uncommente line 6
+            result,msg = uncommente_lines("example.com",'uncommente_the_lineX',6)
+                 
+            if result:
+                msg ("line 6 uncommented successfully")
+            else:
+                err_msg = "example.txt" dosn't exist or Invalid action or arguments.  
+                    
+    ```
+
+    ...
+
+    
