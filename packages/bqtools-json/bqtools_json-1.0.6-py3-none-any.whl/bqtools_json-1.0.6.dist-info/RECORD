@@ -1,0 +1,9 @@
+bqtools/__init__.py,sha256=awPyJ3K51tovacnfjrx_mmSDUjqTqNyOEUhmLszWh_Y,250985
+bqtools/bqsync.py,sha256=7uZCpoGwKUXJ5EulLjrJAB3XlLuUNBtHKewkjQhvou0,12712
+bqtools/templates/bqschema.in,sha256=8uzfCz85xVR94BizosoiqxPDI9kXaI_dOeZQ0uVSztQ,5029
+bqtools_json-1.0.6.dist-info/LICENSE,sha256=sdKHDxoA5Nf1ZXbl8IcMuhCeBB-K9mhmz1tJlHjmVOc,11359
+bqtools_json-1.0.6.dist-info/METADATA,sha256=lUT9GzsBDJCqa5Qt-0bNWysP1CTHZ2_ypr8pegLzlPo,17498
+bqtools_json-1.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bqtools_json-1.0.6.dist-info/entry_points.txt,sha256=rok2CotChxnc9BqVHSVbA5Lhiz5MvfHCr4qUdND87aM,42
+bqtools_json-1.0.6.dist-info/top_level.txt,sha256=WWu4eMV0sxwzGorIC9jK2e_YyLMm_919zT1-6CIPpu4,8
+bqtools_json-1.0.6.dist-info/RECORD,,
