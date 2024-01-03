@@ -1,0 +1,10 @@
+batchcmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+batchcmd/__main__.py,sha256=YWmU8zqB9tcKcgWe93To3yZ1mFNEYs2BGZkiz3dsMvc,142
+batchcmd/base.py,sha256=dDNOSJkpzbvwcFC9TL2CPLlqs_a3tFt6-dScTrq-stk,326
+batchcmd/cli.py,sha256=zKFKKGi4M5wUmDS8A34A6NPNJq11_joTsgXluaplC_w,5247
+batchcmd-0.0.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+batchcmd-0.0.1.dist-info/METADATA,sha256=YMrNrYOKfdhXuBlKi4IcnGz5hXJ5Le0gKn6pHUl-5oo,5250
+batchcmd-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+batchcmd-0.0.1.dist-info/entry_points.txt,sha256=4TgRtotIsAf9NIo-fYN6vBUy73RdqcrPkPuqaFgjLSI,52
+batchcmd-0.0.1.dist-info/top_level.txt,sha256=VBWCZx0vpUFFNgSqpQJOGE7o6y-Av69zkDnGpjaqdqM,9
+batchcmd-0.0.1.dist-info/RECORD,,
