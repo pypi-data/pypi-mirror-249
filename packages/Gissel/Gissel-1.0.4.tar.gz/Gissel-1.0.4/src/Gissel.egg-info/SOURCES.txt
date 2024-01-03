@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+src/Gissel.egg-info/PKG-INFO
+src/Gissel.egg-info/SOURCES.txt
+src/Gissel.egg-info/dependency_links.txt
+src/Gissel.egg-info/top_level.txt
