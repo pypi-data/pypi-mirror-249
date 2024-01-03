@@ -1,0 +1,4 @@
+wheel
+psutil
+pywin32
+regex
