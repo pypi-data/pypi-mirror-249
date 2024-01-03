@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: isqopen
+Version: 1.0.5
+Summary: isq quantum kernel
+Author: Lou Huazhe
+Author-email: louhz@arclightquantum.com
+Platform: python 3.8+
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.21.3)
+Requires-Dist: ply (>=3.11)
+Requires-Dist: scipy (>=1.7.1)
+Requires-Dist: autograd
+
+# isq-qcis python cor
+
+
+isQ-core是为qcis指令集定制化开发的量子编程语言，以python包的形式提供服务。目前isQ-core python包仍在测试阶段，可通过源码进行离线安装。具体的安装使用说明及isQ-core语法说明可详见 [isQ-core python包使用文档](http://www.arclighttest.cn:10088/isq-core/)
+
