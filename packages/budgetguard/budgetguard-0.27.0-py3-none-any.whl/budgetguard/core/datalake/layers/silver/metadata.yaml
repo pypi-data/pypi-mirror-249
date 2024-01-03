@@ -1,0 +1,6 @@
+datalake_bucket: budget-guard-silver
+datalake_key: metadata
+file_extension: parquet
+schema:
+  - name: id
+    type: string
