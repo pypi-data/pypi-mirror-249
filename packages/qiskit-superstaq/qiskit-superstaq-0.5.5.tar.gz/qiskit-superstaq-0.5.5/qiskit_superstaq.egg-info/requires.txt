@@ -1,0 +1,13 @@
+general-superstaq~=0.5.5
+matplotlib~=3.0
+qiskit>=0.44.1
+qiskit-ibm-provider>=0.7.2
+
+[dev]
+checks-superstaq~=0.5.5
+notebook~=6.5.5
+pylatexenc
+
+[examples]
+notebook~=6.5.5
+pylatexenc
