@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "stsp"
+version = "0.1.0"
+description = "Securities trading strategies protocols"
+authors = ["Beilak <beylak@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/beilak/stsp.git" 
+keywords = ["stock", "trading", "strategies", "protocols"]
+packages = [
+    { include = "src" },
+]
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^23.12.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
