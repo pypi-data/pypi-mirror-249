@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bing-results-scraper
+Version: 0.1.1
+Summary: A Python library for scraping Bing search results
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+A simple and easy-to-use Python library for scraping Bing search results.
