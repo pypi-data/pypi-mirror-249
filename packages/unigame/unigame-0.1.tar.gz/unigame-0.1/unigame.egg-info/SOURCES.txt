@@ -1,0 +1,8 @@
+README.md
+setup.py
+unigame/__init__.py
+unigame.egg-info/PKG-INFO
+unigame.egg-info/SOURCES.txt
+unigame.egg-info/dependency_links.txt
+unigame.egg-info/requires.txt
+unigame.egg-info/top_level.txt
