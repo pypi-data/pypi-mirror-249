@@ -1,0 +1,7 @@
+Django
+importlib
+numpy
+pandas
+psycopg2
+psycopg2-binary
+pyshark==0.6
