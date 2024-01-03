@@ -1,0 +1,16 @@
+tap_userflow/__init__.py,sha256=EkdwtAT9B8zS-Uxae-LuKhYMTDodTEihgva_bsF8duY,24
+tap_userflow/client.py,sha256=8DjOOJu91VmZEZz6oyzD6-hw7N5VMuq9RAK0rlLm4Ks,5715
+tap_userflow/schemas/attribute_definitions.schema.json,sha256=ZfSYAjLFtILPubxZa3gK1HARikLOMy8CTZuGaMbdvy4,932
+tap_userflow/schemas/content.schema.json,sha256=DJJqUUuuHUT9ZlZz9MPKwjJTeauSb5KYAxdyyUg34FE,664
+tap_userflow/schemas/content_sessions.schema.json,sha256=DGTP4XbTABKLCsXz_YCla1LVtOJOEHZ-ZZ7kBZiExAk,1671
+tap_userflow/schemas/content_versions.schema.json,sha256=BEmUzxd71d8cVtYLqV-6nLU0nz_kdkCSeYsonJ0Cjf4,609
+tap_userflow/schemas/event_definitions.schema.json,sha256=_yKWoarU59XoQ1KaSw6PxYpmOYLRc3Z61pIheUYepSE,431
+tap_userflow/schemas/groups.schema.json,sha256=VAVsxI9YqLL8_LxTy6zyDUBxGdhdJmHB-hS9YVfit7Y,509
+tap_userflow/schemas/users.schema.json,sha256=VmCTXp3K-eijNENBVJDcqwl3aELhXawaGLqx1wjjFYs,509
+tap_userflow/streams.py,sha256=WbnE7ErGjwmssq-z3dH82nEHHIQOEjq6zwtkMTfFNQY,2152
+tap_userflow/tap.py,sha256=SLlHY8YSPLzlhEQcCTW8Bl3WRvM17jwRQ1CUZMdXv0Y,1215
+kingalban_tap_userflow-0.1.1.dist-info/LICENSE,sha256=nYP3J-OksjdJI4Z_An0IrKhA6w7ewKym54FjdraqGp4,11341
+kingalban_tap_userflow-0.1.1.dist-info/METADATA,sha256=cwFCfZylpVw7ZQVEKYRoYr9FDrVhdwHbTImTjvhKJDA,3612
+kingalban_tap_userflow-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+kingalban_tap_userflow-0.1.1.dist-info/entry_points.txt,sha256=pxaBKLmjfEfZ_Q1wC2S6g8q7j_tXdSm2m9BzYDIrb34,65
+kingalban_tap_userflow-0.1.1.dist-info/RECORD,,
