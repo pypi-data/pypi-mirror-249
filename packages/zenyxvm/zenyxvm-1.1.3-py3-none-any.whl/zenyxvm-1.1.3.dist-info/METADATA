@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: zenyxvm
+Version: 1.1.3
+Summary: Easy uploading to Github and PyPi
+Project-URL: Homepage, https://github.com/neunyx/zenyxvm
+Project-URL: Issues, https://github.com/neunyx/zenyxvm/issues
+Author-email: zewenn <zc.fallens@gamil.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# zenyxvm
+The zenyx version manager package
+
+## Requirements
+- Make sure you have a `pyproject.toml` file in your project's root folder
+- Use python 3.7 or newer
+
+## How to use?
+Run the manager:
+- Windows:
+```bash
+python -m zenyxvm
+```
+
+- Linux:
+```bash
+python3 -m zenyxvm
+```
