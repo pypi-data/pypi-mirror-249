@@ -1,0 +1,10 @@
+gdb_remote_client/__init__.py,sha256=6ByXniaUdFlb3KnES6yPJ2siE1xtgzZ0uAvKMFfPf_0,269
+gdb_remote_client/client.py,sha256=pjzMQGLt8gD5XKfbOf7AIbVss3da5g-K7ShWkjT-Sxg,2986
+gdb_remote_client/client_base.py,sha256=5DKZvtOoa8ogWGni2lBGBxAkTrQQoCXzeEki-I2jLuY,6557
+gdb_remote_client/errors.py,sha256=9n3pWOJOzfSyp3fUWhWaKlsSqasufXKJ5zZtxjanioE,250
+gdb_remote_client/utils.py,sha256=cZ9sWYSFAMIu3w37DNsRl1sQVkJSE-yr59lLEBo4llY,4974
+PyGdbRemoteClient-0.1.0.dist-info/LICENSE,sha256=18eR0Xf0JrGFLC2UxZF96hA3asKEjxsOBogBl6eIFNI,1088
+PyGdbRemoteClient-0.1.0.dist-info/METADATA,sha256=R6J8s9oNWx062t94TYdOqToGOyKPBjbTW9YEczY1mXI,3880
+PyGdbRemoteClient-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PyGdbRemoteClient-0.1.0.dist-info/top_level.txt,sha256=DTMfHsmokNRoRsEk268NLrIw0DSow3v1X2D-wtaUJfA,18
+PyGdbRemoteClient-0.1.0.dist-info/RECORD,,
