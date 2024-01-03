@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "odin-cli"
+version = "0.0.16"
+description = "An app for interacting with AI services"
+authors = ["Cliff Pyles <cliff@cliffpyles.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[tool.poetry.urls]
+Homepage = "https://github.com/cliffpyles/odin"
+Issues = "https://github.com/cliffpyles/odin/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.9.0, <4.0.0"
+boto3 = "^1.34.5"
+requests = "^2.31.0"
+openai = "^1.6.0"
+prompt-toolkit = "^3.0.43"
+pyyaml = "^6.0.1"
+python-frontmatter = "^1.0.1"
+pydantic = "^2.5.3"
+
+[tool.poetry.scripts]
+odin = "odin_cli.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
