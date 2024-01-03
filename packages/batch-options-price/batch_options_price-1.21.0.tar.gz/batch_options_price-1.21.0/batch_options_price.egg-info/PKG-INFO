@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: batch-options-price
+Version: 1.21.0
+Summary: Batch Black-Scholes pricing European options on stocks without dividends
+Author-email: filimoncevvv.anton@gmail.com

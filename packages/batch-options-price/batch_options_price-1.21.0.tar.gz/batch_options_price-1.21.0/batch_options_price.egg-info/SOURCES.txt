@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+batch_options_price.egg-info/PKG-INFO
+batch_options_price.egg-info/SOURCES.txt
+batch_options_price.egg-info/dependency_links.txt
+batch_options_price.egg-info/not-zip-safe
+batch_options_price.egg-info/top_level.txt
