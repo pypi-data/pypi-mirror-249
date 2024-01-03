@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "aas2openapi"
+version = "0.2.3"
+description = ""
+authors = ["SebBehrendt"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.9"
+uvicorn = {extras = ["standard"], version = "^0.21.0"}
+fastapi = "^0.95.0"
+openapi-python-client = "^0.14.1"
+strawberry-graphql = {extras = ["debug-server"], version = "^0.199.0"}
+email-validator = "^2.0.0.post2"
+graphene-pydantic = "^0.4.2"
+starlette-graphene3 = "^0.6.0"
+websocket = "^0.2.1"
+basyx-python-sdk = "^1.0.0"
+ba-syx-aas-repository-client = "2.0"
+ba-syx-submodel-repository-client = "3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0" 
+requests = "^2.31.0"
+pytest-order = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
