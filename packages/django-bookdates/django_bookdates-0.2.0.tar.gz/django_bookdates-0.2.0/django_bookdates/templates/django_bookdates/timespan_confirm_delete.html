@@ -1,0 +1,11 @@
+{% extends 'django_bookdates/calendar.html' %}
+
+{% block body %}
+<div class="container mt-5">
+<form method="post">{% csrf_token %}
+  <p>Are you sure you want to delete "{{ object.title }} ({{ object.start }} - {{ object.end }})" from calendar {{ object.calendar.name }}?</p>
+  {{ form }}
+  <input class="btn btn-danger mt-4" type="submit" value="Confirm">
+</form>
+</div>
+{% endblock %}
