@@ -1,0 +1,6 @@
+{% if user.is_authenticated or group %}
+  <button id="webpush-subscribe-button" {% if class %}class="{{ class }}"{% endif %} {% if group %}data-group="{{ group }}"{% endif %} data-url="{{ webpush_save_url }}">
+    <i class="far fa-bell fa-fw"></i> Habilitar Notificaciones
+  </button>
+  <div id="webpush-message" hidden></div>
+{% endif %}
