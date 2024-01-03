@@ -1,0 +1,5 @@
+pyyaml
+numpy
+matplotlib>=3.3.4
+aacgmv2
+pydarnio>=1.1.0
