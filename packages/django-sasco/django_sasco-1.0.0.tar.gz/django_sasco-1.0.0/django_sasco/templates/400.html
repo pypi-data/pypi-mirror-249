@@ -1,0 +1,38 @@
+{% extends layout_app_min %}
+{% load static %}
+
+{% block content %}
+
+<div class="text-center mt-4 mb-4">
+    <a href="{% url 'public_welcome' %}"><img src="{% static 'img/logo.gif' %}" alt="Logo" class="img-fluid" style="max-width: 200px" /></a>
+</div>
+<div id="ht-tm-jumbotron">
+    <div class="jumbotron bg-secondary text-white mb-0 radius-0 ht-tm-jumbotron p-4">
+        <div class="container">
+            <div class="ht-tm-header">
+                <h1 class="display-1 text-light mb-4">¡{% block title %}Error en la consulta realizada{% endblock %}!</h1>
+                <p class="lead">Lo sentimos, pero los datos que ha enviado al recurso solicitado no son válidos.</p>
+                <p class="lead">Por favor, verifique que la dirección web que lo trajo a esta página o los datos ingresados sean válidos.</p>
+                <div class="mt-4">
+                    <a href="{% url 'public_welcome' %}" class="btn btn-success btn-pill btn-wide btn-lg mr-4 my-2 btn-ht-dl-message">
+                        <i class="fas fa-chevron-left fa-fw"></i> <span>Ir a la página principal</span>
+                    </a>
+                    <a href="{% url 'help_support' %}" class="btn btn-warning text-white btn-pill btn-wide btn-lg mr-4 my-2">
+                        <i class="far fa-question-circle fa-fw"></i> <span>¡Solicitar ayuda!</span>
+                    </a>
+{% if not user.is_authenticated %}
+                    <a href="{% url 'users_login' %}?next={{request.get_full_path|urlencode}}" class="btn btn-primary text-white btn-pill btn-wide btn-lg my-2">
+                        <i class="fas fa-sign-in-alt fa-fw"></i> <span>Iniciar sesión</span>
+                    </a>
+{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="mt-5 mb-3 text-muted text-center" id="copyright">
+    &copy; <script> document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear())) </script> SASCO SpA
+</p>
+
+{% endblock %}
+

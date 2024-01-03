@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: django_sasco
+Version: 1.0.0
+Summary: Python module with an application base for django framework, used in SASCO company.
+Home-page: https://github.com/sascocl/django-sasco
+Author: SASCO SpA
+Author-email: hola@sasco.cl
+License: LGPL
+Description: 
+        Django base for SASCO apps
+        ==========================
+        
+        .. image:: https://badge.fury.io/py/django_sasco.svg
+            :target: https://pypi.python.org/pypi/django_sasco
+        
+        Python module with an application base for django framework, used in SASCO company.
+        
+        .. code:: shell
+        
+            $ pip install django_sasco
+        
+        This code is free software under the `LGPL <http://www.gnu.org/licenses/lgpl-3.0.en.html>`_ license.
+        
+Keywords: django
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django

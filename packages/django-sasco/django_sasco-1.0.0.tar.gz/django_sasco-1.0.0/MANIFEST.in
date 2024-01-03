@@ -1,0 +1,4 @@
+include COPYING
+include README.rst
+recursive-include django_sasco/static *
+recursive-include django_sasco/templates *
