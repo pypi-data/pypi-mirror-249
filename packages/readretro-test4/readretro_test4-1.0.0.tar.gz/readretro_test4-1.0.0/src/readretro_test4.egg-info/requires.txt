@@ -1,0 +1,10 @@
+easydict
+pandas
+tqdm
+numpy==1.22
+OpenNMT-py==2.3.0
+netwrokx==2.8.4
+
+[torch_cuda]
+torch==1.12.0
+cudatoolkit==11.3
