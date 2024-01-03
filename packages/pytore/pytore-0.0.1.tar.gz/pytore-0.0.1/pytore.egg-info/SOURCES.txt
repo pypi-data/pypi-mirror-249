@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pytore/__init__.py
+pytore/math.py
+pytore.egg-info/PKG-INFO
+pytore.egg-info/SOURCES.txt
+pytore.egg-info/dependency_links.txt
+pytore.egg-info/top_level.txt
