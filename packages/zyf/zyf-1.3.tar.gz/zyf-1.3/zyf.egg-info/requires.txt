@@ -1,0 +1,6 @@
+prettytable
+pandas
+lxml
+requests
+tqdm
+paramiko
