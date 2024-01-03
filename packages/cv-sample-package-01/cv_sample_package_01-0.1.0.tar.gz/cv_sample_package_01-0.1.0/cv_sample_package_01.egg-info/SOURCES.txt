@@ -1,0 +1,7 @@
+setup.py
+cv_sample_package_01/__init__.py
+cv_sample_package_01.egg-info/PKG-INFO
+cv_sample_package_01.egg-info/SOURCES.txt
+cv_sample_package_01.egg-info/dependency_links.txt
+cv_sample_package_01.egg-info/entry_points.txt
+cv_sample_package_01.egg-info/top_level.txt
