@@ -1,0 +1,7 @@
+cdsapi
+joblib
+numpy
+pandas
+pingouin
+scipy
+tqdm
