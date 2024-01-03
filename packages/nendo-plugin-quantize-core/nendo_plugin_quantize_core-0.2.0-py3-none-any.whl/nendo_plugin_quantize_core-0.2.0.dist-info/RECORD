@@ -1,0 +1,7 @@
+nendo_plugin_quantize_core/__init__.py,sha256=HEZZMkQQiAFPOVLLxzuFb8OFdwvNjuPaRd_ITfCWRMA,129
+nendo_plugin_quantize_core/config.py,sha256=3lcEj6CUHN67uZNBQrWOmVfiyy_xpVITkDgiY6hnIXg,489
+nendo_plugin_quantize_core/plugin.py,sha256=ZuMTNcmU-FWRDm0orzT6sVILNQWgNlgyZfr8J0sowbA,7586
+nendo_plugin_quantize_core-0.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+nendo_plugin_quantize_core-0.2.0.dist-info/METADATA,sha256=0VW23UT23TRXSy5v0Ls__KgfH0LAtKayvguT91-qKSM,3258
+nendo_plugin_quantize_core-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nendo_plugin_quantize_core-0.2.0.dist-info/RECORD,,
