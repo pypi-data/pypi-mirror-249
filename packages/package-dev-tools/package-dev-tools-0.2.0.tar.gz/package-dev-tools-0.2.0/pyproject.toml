@@ -1,0 +1,82 @@
+[project]
+name = "package-dev-tools"
+version = "0.2.0"
+description = "CI/CD tools for Python packages"
+authors = [{name = "Quinten Roets", email = "qdr2104@columbia.edu"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pygithub>=2.1",
+    "python-slugify>=8.0",
+    "simple-classproperty>=4.0",
+    "superpathlib>=1.3",
+    "toml>=0.10",
+    "typer>=0.9",
+    "quinten-cli>=1.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "bump2version",
+    "coverage",
+    "hypothesis",
+    "pre-commit",
+    "pytest",
+    "pytest-mypy-plugins",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/quintenroets/package-dev-tools"
+
+[project.scripts]
+cleanup-readme = "package_dev_tools.interfaces.cli.cleanup_readme:entry_point"
+substitute-template-name = "package_dev_tools.interfaces.cli.substitute_template_name:entry_point"
+trigger-template-sync = "package_dev_tools.interfaces.cli.cleanup_readme:entry_point"
+check-coverage = "package_dev_tools.interfaces.cli.check_coverage:entry_point"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.coverage.run]
+command_line = "-m pytest"
+
+[tool.coverage.report]
+precision = 4
+fail_under = 100
+
+[tool.mypy]
+strict = true
+no_implicit_reexport = false
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.ruff]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "UP",  # pyupgrade
+]
+fix = true
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.setuptools]
+script-files = [
+    "bin/actions/cleanup-workflows",
+    "bin/pre-commit/check-version",
+]
+
+[tool.setuptools.package-data]
+package_dev_tools = ["py.typed"]
