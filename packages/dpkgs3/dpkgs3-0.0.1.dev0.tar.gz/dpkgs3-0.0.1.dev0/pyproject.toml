@@ -1,0 +1,36 @@
+[project]
+name = "dpkgs3"
+version = "0.0.1.dev0"
+description = "A simple utility to make creating and managing APT repositories on AWS S3"
+authors = [
+    { name = "Haejoon Kim", email = "onsealeatang@gmail.com" },
+]
+dependencies = [
+    "boto3>=1.34.6",
+    "jinja2>=3.1.2",
+    "click>=8.1.7",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+dpkgs3 = "dpkgs3.cli:cli"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-type = "library"
+
+[[tool.mypy.overrides]]
+module = [
+    "boto3",
+    "botocore",
+]
+ignore_missing_imports = true
