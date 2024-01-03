@@ -1,0 +1,9 @@
+FetchRepo/RepoFetcher.py,sha256=sKboaZZhzvj7fP-7eoL57ECg1FdNq-aQAD9FAOntPx0,4461
+FetchRepo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/RepoFetcherTester.py,sha256=R9NASP4p21-C3_IeDQ5YhjoVsTSQm-XvNvuVkYc2MJU,271
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fetchrepo-2.0.1.dist-info/LICENSE,sha256=YYhbF6EzkE9wa9701FQrCcaJm84PoDJ4aju6URI-I74,1065
+fetchrepo-2.0.1.dist-info/METADATA,sha256=E75IoplC-iTEaFLPk8pBiOWvDKCJApfKLqUm0HCBzo4,1376
+fetchrepo-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fetchrepo-2.0.1.dist-info/top_level.txt,sha256=ea-UejzlW_IGsrI8LfovpUFEdGmClM-8EpQ32R2IgPc,16
+fetchrepo-2.0.1.dist-info/RECORD,,
