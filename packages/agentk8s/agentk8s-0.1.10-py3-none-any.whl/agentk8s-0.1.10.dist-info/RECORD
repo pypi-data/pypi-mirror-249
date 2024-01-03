@@ -1,0 +1,8 @@
+agentk8s/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agentk8s/constant.py,sha256=kT-68MXE2-pR8jlLxK5qK1LA7BkY8eHUEFWOAK3Syng,21
+agentk8s/main.py,sha256=_R_ormaRSyzJolgYuCGB4WxgEAI6DDPEGVv_66YtFZU,5477
+agentk8s/openai.py,sha256=ImB8bGZalc1NIW8w_IpqFb_9tuxeXSVTMIBF-fOMS_0,2617
+agentk8s-0.1.10.dist-info/METADATA,sha256=9Hi8eFufLQhN1-T2FJdtOPyeh3V1c5FG432wqgv47lY,3995
+agentk8s-0.1.10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+agentk8s-0.1.10.dist-info/entry_points.txt,sha256=5OoJxbK4pu1CdBJ9IJ32YT5DaS50eee4nwye5MZcemI,42
+agentk8s-0.1.10.dist-info/RECORD,,
