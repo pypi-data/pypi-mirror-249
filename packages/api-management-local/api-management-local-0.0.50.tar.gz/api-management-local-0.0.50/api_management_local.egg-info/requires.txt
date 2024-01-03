@@ -1,0 +1,7 @@
+python-sdk-local
+requests
+url-local
+python-dotenv
+database-mysql-local
+logger-local
+star-local
