@@ -1,0 +1,17 @@
+.gitignore
+README.md
+pyproject.toml
+.github/workflows/publish.yml
+example/task.py
+example/table/__init__.py
+example/table/user.py
+rinch_sql/__init__.py
+rinch_sql/__version__.py
+rinch_sql/mysql.py
+rinch_sql/sql.py
+rinch_sql/sql_static.py
+rinch_sql.egg-info/PKG-INFO
+rinch_sql.egg-info/SOURCES.txt
+rinch_sql.egg-info/dependency_links.txt
+rinch_sql.egg-info/requires.txt
+rinch_sql.egg-info/top_level.txt
