@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bing-results-scraper
+Version: 0.1.0
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
