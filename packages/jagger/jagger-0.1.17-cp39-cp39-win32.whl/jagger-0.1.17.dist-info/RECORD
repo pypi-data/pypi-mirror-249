@@ -1,0 +1,15 @@
+jagger_ext.cp39-win32.pyd,sha256=4E98pP1yv__RMhojBaiCfZBVCfXWTniLaea65d60HTw,188416
+jagger/__init__.py,sha256=aQVdH7UIFgm31gRVH2q2MrMwCcQDHwgR59OTalFWMp4,502
+jagger/ccedar_core.h,sha256=zn4orTkJ4F4NO81N1cxdiRns0BNf5wBZJp2XVVkhWvs,17583
+jagger/jagger.h,sha256=Ujf_jSQ_fZ_R9kfWWiFhd5L5_8rLCsbniaE6iV3fRSM,6098
+jagger/main.py,sha256=jgVX-GSA3VfFzmN2dpx0KlD_soWnS71alkwAfXZOfrs,750
+jagger/python-binding-jagger.cc,sha256=g9TBZ7ucNjEQ_HGZPse1pGn6M10MqiiWuH9b0FCQ-Ok,44477
+jagger-0.1.17.dist-info/LICENSE,sha256=ZlWG6xMXVcmFpbrmKOqroOTZOpEHkKzExSdssLrTczA,1348
+jagger-0.1.17.dist-info/METADATA,sha256=C782UWbxBPSg3MfJ9EiADN8cnRQONasu14lSyI8GgdY,3810
+jagger-0.1.17.dist-info/WHEEL,sha256=ox_whmEWdOvRyK6TeOPzEmRk4K2lM8LLVKChtBzmjZU,96
+jagger-0.1.17.dist-info/entry_points.txt,sha256=K6g1Dm-nksvwmlK1dsfWUWySBM_2iWgVccvvNaq0lHA,39
+jagger-0.1.17.dist-info/jagger.BSD,sha256=xMqkktNHWJ1WobIVfpgZ4U1THJ6XT9VIppetJgv7Zv0,1331
+jagger-0.1.17.dist-info/jagger.GPL,sha256=ny4lCZPGIG-sZDgk4F5aDX0-CJXZ4Jpc5LErwmEK_BE,18326
+jagger-0.1.17.dist-info/jagger.LGPL,sha256=Hn5rrlpb3jLxrlp8N6CC0asDz4k1T3-TasQL6eOaZTE,27032
+jagger-0.1.17.dist-info/top_level.txt,sha256=hURSeZwrcC28-aLMLHK7pP4_RcuKhgn8kTDQSgz5bd0,18
+jagger-0.1.17.dist-info/RECORD,,
