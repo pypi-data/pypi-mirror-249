@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: systembridgeshared
+Version: 4.0.0.dev7
+Summary: System Bridge Shared
+Home-page: https://github.com/timmo001/system-bridge-shared
+Author: Aidan Timson (Timmo)
+Author-email: aidan@timmo.dev
+License: Apache-2.0
+Keywords: system-bridge
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: appdirs ==1.4.4
+Requires-Dist: colorlog ==6.8.0
+Requires-Dist: cryptography ==41.0.7
+Requires-Dist: incremental ==22.10.0
+Requires-Dist: systembridgemodels >=4.0.0.dev11
+Requires-Dist: aiohttp ==3.8.6 ; python_version < "3.12"
+Requires-Dist: aiohttp ==3.9.1 ; python_version >= "3.12"
+
+# System Bridge - Shared
+
+This is a shared package for the [System Bridge](https://github.com/timmo001/system-bridge) project.
