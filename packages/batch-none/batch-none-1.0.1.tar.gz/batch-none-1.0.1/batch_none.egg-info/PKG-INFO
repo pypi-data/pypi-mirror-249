@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: batch-none
+Version: 1.0.1
+Summary: Batch prediction recipe
+Home-page: UNKNOWN
+Author: Amit Boke
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6,<3.10
