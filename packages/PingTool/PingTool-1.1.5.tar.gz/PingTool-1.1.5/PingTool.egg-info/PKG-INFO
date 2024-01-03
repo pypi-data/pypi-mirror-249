@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: PingTool
+Version: 1.1.5
+Summary: Small application written in Python, socket-based. to ping annoying colleague's who won't respond.
+Home-page: https://github.com/DeadlyFirex/PingTool
+Author: deadly
+Author-email: 
+License: MIT
+Project-URL: Bug Tracker, https://github.com/DeadlyFirex/PingTool/issues
+Platform: any
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru>=0.7.0
+Requires-Dist: setuptools>=69.0.3
+
+![GitHub release](https://img.shields.io/github/v/release/DeadlyFirex/PingTool)
+![Python package](https://github.com/DeadlyFirex/PingTool/actions/workflows/pylint.yml/badge.svg)
+![wakatime](https://wakatime.com/badge/user/a56c956d-565b-4ddd-a43e-fb7d155c4232/project/e919eb0d-9447-46a2-a32f-107ff8f939c4.svg)
+![GitHub License](https://img.shields.io/github/license/DeadlyFirex/PingTool)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/DeadlyFirex/PingTool/main)
+![GitHub repo size](https://img.shields.io/github/repo-size/DeadlyFirex/PingTool)
+
+## PingTool
+Small application written in Python, socket-based. to ping annoying colleague's who won't respond.\
+Made to refresh Python knowledge, and for anyone who has annoying colleague's who won't respond to your messages.
+
+## Usage
+Program uses basic Python `sockets`.\
+Works by sending and receiving specific commands.
+
+All responses and commands are sent following a static format, `cmd:arg`, 
+for example,`Name:Deadly` to verify user on connection, 
+command with required argument`Exit:?` to disconnect, argument is not parsed, but required to fit format.
+
+This also goes for responses, whomst follow the same format.\
+Sending an end-line is recommended, but not required.\
+Send data in bytes, encode using UTF-8, soon configurable.
+
+## Commandlist
+#### Manual
+- Name <sub>(used to confirm name)</sub>
+- Fetch <sub>(fetch all users)</sub>
+- Ping <sub>(ping a different user)</sub>
+- Exit <sub>(disconnect gracefully)</sub>
+#### Automatic
+- S-Ping <sub>(confirms sent ping)</sub>
+- X-Ping <sub>(sent to pinged user)</sub>
+#### Responses
+- Error <sub>(indicates bad request)</sub>
+- Connected <sub>(indicates successful connection)</sub>
+- Bye <sub>(indicates successful disconnect)</sub>
+
+## Function
+1. Connect to the server.
+2. Login to the server using the `Name` command.
+3. You can now use any command.
+4. Disconnect by using `Exit`.
+
+## Technical Details
+Server uses the built-in `sockets` to create a IPv4 socket, on the TCP protocol.
+
+## Libraries
+- [loguru](https://github.com/Delgan/loguru)
