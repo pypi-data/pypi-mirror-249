@@ -1,0 +1,10 @@
+jagger_ext.cpython-36m-aarch64-linux-gnu.so,sha256=8oWQwhIw4giyjVo5UhfzSBrc9dq88Ffei8lBiNhXn7g,402945
+jagger.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+jagger.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
+jagger/main.py,sha256=Gnvrv8FrG4GaEn_vWg_4VpX-8lECnweb0a9BiXArUyY,728
+jagger/__init__.py,sha256=o1PlFFmO2tG6dGa2jl0pd0-Z7kONWOx_PQtKTS5asio,478
+jagger-0.1.17.dist-info/WHEEL,sha256=EYxNEefsmlIy2iA0QSD8Zh_VQYwRJB1tQ0bm0pXcqRI,113
+jagger-0.1.17.dist-info/METADATA,sha256=iAkeGjD_XcTRpYNZxv4k01gMXJ3pAeQly5v_xWj__1M,3729
+jagger-0.1.17.dist-info/LICENSE,sha256=o0KzmXInsoRjSBbNGyDeikWS_-oUgSctIJALtxMfh8w,1324
+jagger-0.1.17.dist-info/RECORD,,
+jagger-0.1.17.dist-info/top_level.txt,sha256=hURSeZwrcC28-aLMLHK7pP4_RcuKhgn8kTDQSgz5bd0,18
