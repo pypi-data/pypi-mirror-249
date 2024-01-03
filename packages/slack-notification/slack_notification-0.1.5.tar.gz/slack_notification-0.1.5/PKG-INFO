@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: slack_notification
+Version: 0.1.5
+Summary: A simple way to send slack notification
+Project-URL: Homepage, https://github.com/cyber-francis/slack_notification
+Project-URL: Issues, https://github.com/cyber-francis/slack_notification/issues
+Author-email: Francis Obiagwu <cyber.francis@comcast.net>
+License-File: LICENSE
+Keywords: monitoring,notification,observability,slack,telemetry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# Slack-Notification
+A simple way to send slack notification
+
+## Install
+```
+pip install -i https://test.pypi.org/simple/ slack-notification
+```
+
+## Usage
+```python
+from slack_notification.slack_notification import SlackNotification
+
+CHANNEL = "YOUR_CHANNEL" #example TXXXXXXXXXX/BXXXXXXXX/NXXXXXXXXXX"
+slack = SlackNotification(CHANNEL)
+message = "YOUR_MESSAGE"
+response = slack.notify(message)
+```
