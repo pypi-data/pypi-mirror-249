@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/spj_grader/__init__.py
+src/spj_grader/spj_grader_034.py
+src/spj_grader.egg-info/PKG-INFO
+src/spj_grader.egg-info/SOURCES.txt
+src/spj_grader.egg-info/dependency_links.txt
+src/spj_grader.egg-info/requires.txt
+src/spj_grader.egg-info/top_level.txt

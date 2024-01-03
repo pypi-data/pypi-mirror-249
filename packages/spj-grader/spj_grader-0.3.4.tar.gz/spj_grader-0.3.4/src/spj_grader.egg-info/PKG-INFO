@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: spj-grader
+Version: 0.3.4
+Summary: 101-Code Grader
+Author: Somchai P.
+Author-email: somchai.p@chula.ac.th
+License: MIT
+Keywords: spj_grader,grader
+License-File: LICENSE.txt
