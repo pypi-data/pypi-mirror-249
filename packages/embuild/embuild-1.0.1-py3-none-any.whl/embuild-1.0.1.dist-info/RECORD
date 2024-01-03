@@ -1,0 +1,9 @@
+embuild/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embuild/__main__.py,sha256=C3fmZa9a0RGa0UeAjqSKM6NuSkFzRWIAWF968bPYWT4,50
+embuild/embuild.py,sha256=BVpK4jSHm7WsAJEkFAzv3llEOj8W28F5QjiMo-6jRhc,12431
+embuild-1.0.1.dist-info/LICENSE,sha256=mF1qCJuqcxQE-IuoTdQf-RYgOyn6Mxu-iDo1nD5UN_k,1079
+embuild-1.0.1.dist-info/METADATA,sha256=Wiiou1d728zI2sQz63HUUB-THTERlaYV1S1WcO61LPQ,2958
+embuild-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+embuild-1.0.1.dist-info/entry_points.txt,sha256=pUgQQb0lL2oKSq0WtcSsyIiSOk7-j6CSNYbsJfSiNIw,49
+embuild-1.0.1.dist-info/top_level.txt,sha256=fnFkLGXiLw2EJUitXDQovMLt-N-6D89kRywJ6PAm8qY,8
+embuild-1.0.1.dist-info/RECORD,,
