@@ -1,0 +1,2 @@
+[console_scripts]
+spiderkeeper = SpiderKeeper.run:main
