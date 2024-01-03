@@ -1,0 +1,10 @@
+ibis_mssqlops/__init__.py,sha256=H2swI2IUJ1ynKr4rc7YrAeZyT57duOwB_aoGKk2NtCw,201
+ibis_mssqlops/addibis.py,sha256=3nVwFhYWEqzkmMlAVVWMtCcZ7zIUumB3Yi64hm8lxvg,402
+ibis_mssqlops/addsql.py,sha256=qoCpDCl0WEPNAn9MxtRHIARsQFQcU8ZbGrrDA_ppr-E,2530
+ibis_mssqlops/consts.py,sha256=nYWl9aiOri5N0kmEhNQPUwj5UHZb_4h69wVXkTntAhA,1260
+ibis_mssqlops/datatypes.py,sha256=lRxPzbfOWoy615QZSwNEogOMCMSlzOg3Pom1ZvX7SCU,889
+ibis_mssqlops/expr.py,sha256=K8VDJrKms9qewJ5Zapb9fmvZE9hHMffP3zsNBSq2o0M,1576
+ibis_mssqlops/funcs.py,sha256=183MWVSlLyccQF3i1NyizYlOi4WlM8GJ7zlYlH9PfTs,1326
+ibis_mssqlops-0.0.1.dist-info/METADATA,sha256=zYG_vNUKdCNsutKaTsVmNdx_gyo49nFn7ceIBeZnwvc,443
+ibis_mssqlops-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ibis_mssqlops-0.0.1.dist-info/RECORD,,
