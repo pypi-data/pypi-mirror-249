@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mboauth2
+Version: 0.1.0
+Summary: 
+Author: Dr-Blank
+Author-email: 64108942+Dr-Blank@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# MusicBrainz OAuth2 workflow for your application
+
+provides a simple way to generate a url for your application to redirect the user to, and a way to get the access token from the callback url.
+
+get your client id and secret from https://musicbrainz.org/account/applications
+
+redirect url must match the url you set in your application
+
+see documentation for examples
+
