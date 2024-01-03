@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+persai/__init__.py
+persai/big_five.py
+persai/open_ai.py
+persai/x_data_cleaner.py
