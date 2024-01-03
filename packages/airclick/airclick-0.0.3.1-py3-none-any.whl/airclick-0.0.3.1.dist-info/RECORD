@@ -1,0 +1,10 @@
+airclick/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+airclick/windows/__init__.py,sha256=2cUemFbmK3hfHW_9HiC3Es_Y7EMrpLVZIuTCIcb6Gi8,43
+airclick/windows/action.py,sha256=H43qkMgACIgQ3umCbEJxVYFkLCJEq-yDeIwTKSzTrAQ,1812
+airclick/windows/screen.py,sha256=OC9fpdWETQHNzsHK-pgVZLkWttQrN96Tpw_ZVKNldi8,11717
+airclick/windows/system.py,sha256=fvPgBv6LmxUmPCUJaklm_JqMCRxr6Fgn_Lo1l6HGw30,684
+airclick/windows/win.py,sha256=Z_kIV0MdyoQC1GeJWG-1sv1hL9Gjw6svrxREIXVRIHA,6406
+airclick-0.0.3.1.dist-info/METADATA,sha256=NvegWZJwrETzj1jUTyTSw4gq4BSROypmOQMVAhnQnKU,472
+airclick-0.0.3.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+airclick-0.0.3.1.dist-info/top_level.txt,sha256=c4dqECunLPxI6KA8LkHPQRd52WGQ3gxfiYEVfiQiHHA,9
+airclick-0.0.3.1.dist-info/RECORD,,
