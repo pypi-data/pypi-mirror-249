@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "PhotoAssistant"
+authors = [
+    { name="Anthony Zimmermann", email="anthony.zimmermann@protonmail.com" },
+]
+description = "PhotoAssistant: View and organize your photos for long-term storage. Simple, fast, effective."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia",
+    "Topic :: Multimedia :: Graphics :: Presentation",
+    "Topic :: Multimedia :: Graphics :: Viewers",
+    "Topic :: System :: Archiving",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "exifread>=3.0.0,<4.0.0",
+    "PySide6>=6.6.1,<7.0.0",
+]
+keywords = [
+    "image",
+    "images",
+    "imageviewer",
+    "organize",
+    "organizing",
+    "photo",
+    "photos",
+    "photoviewer",
+    "sort",
+    "sorting",
+    "view",
+    "viewer",
+    "viewing",
+]
+dynamic = ["version"]
+
+[project.gui-scripts]
+photoassistant = "photoassistant.gui.qt.entry:main"
+
+[project.urls]
+Homepage = "https://gitlab.com/AnthonyZimmermann/photoassistant"
+Sources = "https://gitlab.com/AnthonyZimmermann/photoassistant"
+
+[tool.hatch.version]
+path = "README.md"
+pattern = "PhotoAssistant Version (?P<version>\\d+\\.\\d+\\.\\d+)<!-- VERSION -->"
+
+[tool.hatch.build]
+packages = ["photoassistant"]
+exclude = [
+    "photoassistant/**/*.svg",
+    "photoassistant/**/*.svg.license",
+]
+
+# There is a an unresolved issue with hatchling: https://github.com/pypa/hatch/issues/1130
+# Furthermore adding '"README.md" = "photoassistant/README.md"' as force-include does not
+# work at all! We need to wait until this feature really works.
+# [tool.hatch.build.force-include]
+# "LICENSES" = "photoassistant/LICENSES"
+# "README.md" = "photoassistant/README.md"
