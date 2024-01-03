@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+base_td.egg-info/PKG-INFO
+base_td.egg-info/SOURCES.txt
+base_td.egg-info/dependency_links.txt
+base_td.egg-info/entry_points.txt
+base_td.egg-info/top_level.txt
