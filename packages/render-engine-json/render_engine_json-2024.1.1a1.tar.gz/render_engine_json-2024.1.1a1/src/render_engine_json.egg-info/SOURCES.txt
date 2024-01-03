@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+README.md
+pyproject.toml
+test_JSONPage_parser.py
+.devcontainer/devcontainer.json
+.github/CODE_OF_CONDUCT.md
+.github/LICENSE.md
+.github/workflows/publish.yml
+.vscode/settings.json
+src/render_engine_json/__init__.py
+src/render_engine_json/parsers.py
+src/render_engine_json.egg-info/PKG-INFO
+src/render_engine_json.egg-info/SOURCES.txt
+src/render_engine_json.egg-info/dependency_links.txt
+src/render_engine_json.egg-info/requires.txt
+src/render_engine_json.egg-info/top_level.txt
