@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dream-my-plots
+Version: 1.0.0
+Summary: Create plots in Python with AI LLMs through langchain
+Home-page: https://github.com/mustafah/dream-my-plots
+Author: MLJAR
+Author-email: mustafah.elbanna@gmail.com
+License: Apache 2.0
+Keywords: plot,visualization,charts,matplotlib,llm,openai
+Requires-Python: >=3.7.1
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: ipython
+Requires-Dist: numpy
+Requires-Dist: python-dotenv
+Requires-Dist: langchain==0.0.316
+Requires-Dist: openai==0.28.1
+Requires-Dist: pygments
+Requires-Dist: mplcyberpunk
+
+
+<p align="center">
+  <em>Create plots with LLMs through langchain</em>
+</p>
+<p align="center">
+  <img alt="" src="https://badge.fury.io/py/plotai.svg"/>
+</p>
+
+![1704122382605](images/README/relaxed-programmer.png)

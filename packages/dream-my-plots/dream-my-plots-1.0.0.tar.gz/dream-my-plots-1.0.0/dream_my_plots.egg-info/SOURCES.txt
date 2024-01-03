@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+dream_my_plots/__init__.py
+dream_my_plots/dream_my_plots.py
+dream_my_plots/executor.py
+dream_my_plots/llm.py
+dream_my_plots/logger.py
+dream_my_plots/prompt.py
+dream_my_plots/test.py
+dream_my_plots/tutor_prompt.py
+dream_my_plots.egg-info/PKG-INFO
+dream_my_plots.egg-info/SOURCES.txt
+dream_my_plots.egg-info/dependency_links.txt
+dream_my_plots.egg-info/requires.txt
+dream_my_plots.egg-info/top_level.txt
