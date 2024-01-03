@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: quant-wheel
+Version: 0.0.0
+Summary: A template repository for building python packages.
+Home-page: https://github.com/Chitaoji/quant-wheel/
+Author: Chitaoji
+Author-email: 2360742040@qq.com
+License: BSD
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8.13
+Description-Content-Type: text/markdown
+
+
+# quant-wheel
+A template repository for building python packages. Please replace `$package` with the package's name.
+
+## Installation
+```sh
+$ pip install quant-wheel
+```
+
+## See Also
+### Github repository
+* https://github.com/Chitaoji/quant-wheel/
+
+### PyPI project
+* https://pypi.org/project/quant-wheel/
+
+## License
+This project falls under the BSD 3-Clause License.
+
+## History
+### v0.0.0
+* Initial release.
+
+
