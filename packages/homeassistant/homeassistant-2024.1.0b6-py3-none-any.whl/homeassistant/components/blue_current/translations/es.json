@@ -1,0 +1,8 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "La autenticaci\u00f3n se volvi\u00f3 a realizar correctamente",
+            "wrong_account": "Cuenta incorrecta: por favor, autent\u00edcate con la clave API de {email}."
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "no_device_id": "El dispositivo Tailwind descubierto no proporcion\u00f3 una identificaci\u00f3n de dispositivo.",
+            "reauth_successful": "La autenticaci\u00f3n se volvi\u00f3 a realizar correctamente",
+            "unknown": "Error inesperado"
+        },
+        "step": {
+            "reauth_confirm": {
+                "description": "Volver a autenticarte con tu abridor de puerta de garaje Tailwind. \n\nPara hacerlo, necesitar\u00e1s obtener tu nueva clave de control local de tu dispositivo Tailwind. Para obtener m\u00e1s detalles, consulta la descripci\u00f3n debajo del campo a continuaci\u00f3n."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "operational_status": {
+                "name": "Estado operativo",
+                "state": {
+                    "off": "Bloqueado",
+                    "on": "Operativo"
+                }
+            }
+        }
+    }
+}
