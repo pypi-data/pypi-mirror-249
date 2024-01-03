@@ -1,0 +1,9 @@
+prune_envs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prune_envs/app.py,sha256=hajQBo2GvMkVt_V1nlWSLEn9ZzKFqx72k8YA_qbvoT4,3937
+prune_envs/app.tcss,sha256=nYZYiu4HUM51fQBnVQ5Lgjrm9kH9xBvD89_4hqu8uYo,741
+prune_envs/conda.py,sha256=awYwiUswWtcrSNtDuBebPfATQF0ebFO1AFbqhDB8iCA,836
+prune_envs-0.1.0.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+prune_envs-0.1.0.dist-info/METADATA,sha256=2JerjZdVpsOUhf4H8hxSV6KZFW7WLZHlpwUXplAvTRs,1658
+prune_envs-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+prune_envs-0.1.0.dist-info/entry_points.txt,sha256=iFB_Q9szZiEs7MPEDafPEqq3ojn4F6ftzhtwjNOHpG8,50
+prune_envs-0.1.0.dist-info/RECORD,,
