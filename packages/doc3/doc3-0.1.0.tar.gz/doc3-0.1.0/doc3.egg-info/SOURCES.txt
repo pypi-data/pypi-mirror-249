@@ -1,0 +1,7 @@
+README.md
+setup.py
+doc3.egg-info/PKG-INFO
+doc3.egg-info/SOURCES.txt
+doc3.egg-info/dependency_links.txt
+doc3.egg-info/top_level.txt
+src/__init__.py
