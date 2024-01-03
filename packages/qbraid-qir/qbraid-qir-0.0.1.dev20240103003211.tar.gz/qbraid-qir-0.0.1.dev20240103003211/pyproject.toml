@@ -1,0 +1,6 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = "W0511, W0212, I1101, C0115, C0116"
