@@ -1,0 +1,16 @@
+odin_cli/chat_service_interface.py,sha256=mMEFy30MUJQ2tSJyJ216vGt0h8qORBgHYwM6145fKhM,330
+odin_cli/cli.py,sha256=JWNtvu92ganD_P9pexm09Up4C1avM45ZR3P9p-7fk6A,1084
+odin_cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odin_cli/commands/ask.py,sha256=2e-8PuMOntHfgllT3tVRHfeW9qabjn07CIXh6uh7_FM,402
+odin_cli/commands/config.py,sha256=5pFzCLzB9GJoskgsJUdRGnxUcb3hOQ32eb16RcUhgFU,1086
+odin_cli/commands/run.py,sha256=BYIiqOVXkkYUF_0WRoBE-aojNPo_IyACCD2lSN_hXP0,12974
+odin_cli/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odin_cli/plugins/bedrock.py,sha256=yqA8wjB7CXs85NhsfK_8SeKfVReN8hKo7xu6pMjHn6w,2602
+odin_cli/plugins/openai.py,sha256=lvjtM3dfV21NrDLkz1uZfAA56oKZtAOBZFbFY4isxAU,3805
+odin_cli/tools.py,sha256=bWdiSDXQkHRz7Gkr8VjrQpzIQr4IjwH-Gdu0_cH2CqI,2346
+odin_cli/utils.py,sha256=o1z3Ah7RGl8bXwmvY-EptQjieCvQE-L_jF092xkns4E,7010
+odin_cli-0.0.16.dist-info/LICENSE,sha256=FpyNa_gMB80qvSuTDaQVDgvwUM-IDM3-9daBtcUpY4c,1075
+odin_cli-0.0.16.dist-info/METADATA,sha256=Z692I5vKnvl4jaQgMzxo0tOm7u0P0PX4lQEVeRyVkso,5245
+odin_cli-0.0.16.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+odin_cli-0.0.16.dist-info/entry_points.txt,sha256=oAR-3wPF9gSBgqaFEDZNHC7dXRXXLzGGxPH14VKNXR8,42
+odin_cli-0.0.16.dist-info/RECORD,,
