@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+pathtreelib/__init__.py
+pathtreelib/__main__.py
+pathtreelib.egg-info/PKG-INFO
+pathtreelib.egg-info/SOURCES.txt
+pathtreelib.egg-info/dependency_links.txt
+pathtreelib.egg-info/requires.txt
+pathtreelib.egg-info/top_level.txt
+pathtreelib/analytics/__init__.py
+pathtreelib/analytics/__main__.py
