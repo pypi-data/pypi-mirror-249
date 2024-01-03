@@ -1,0 +1,91 @@
+{% extends 'django_bookdates/calendar.html' %}
+{% load bookdates %}
+
+{% block body %}
+<style>
+.day:hover {
+  background-color: rgba(0,0,0,0.1) !important;
+}
+.past {
+  background-color: rgba(0,0,0,0.1) !important;
+}
+.today {
+  background-color: rgba(0,0,0,0.25) !important;
+}
+</style>
+<table class="w-100 table table-bordered" style="border: 1px solid rgba(0,0,0,0.1);">
+  <thead class="text-uppercase text-center">
+    <tr>
+      <th colspan="7">
+        <span class="float-start">
+      <a href="{% url 'listtimespans' request.resolver_match.kwargs.calendar weekbefore.year weekbefore.month weekbefore.day %}">-week</a>
+        </span>
+      <span>
+      {% with fourweeksfromdatedict|first as f %}
+      {% with fourweeksfromdatedict|last as l %}
+      {{ f.date.date }} - {{ l.date.date }}
+      {% endwith %}
+      {% endwith %}
+      </span>
+        <span class="float-end">
+      <a href="{% url 'listtimespans' request.resolver_match.kwargs.calendar weekafter.year weekafter.month weekafter.day %}">+week</a>
+        </span>
+      </th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tbody class="vh-100">
+    <tr>
+  {% for day in fourweeksfromdatedict %}
+  <td class="day bg-light {% if day.is_today %} today {% endif %} {% if day.is_past %} past {% endif %}" style="width: 14.285%; height: 10%">
+    <span class="number {% if day.is_past %}text-muted{% endif %}">
+      {{ day.date.day }}. {{ day.date.month }}. {% if day.is_today %}<span class="fst-italic">(Today)</span>{% endif %}
+      </span>
+      {% if day.timespans %}
+      {% for timespan in day.timespans %}
+      <a href="{% url 'updatetimespan' request.resolver_match.kwargs.calendar timespan.id %}" title="{{ timespan.body }}">
+        <div class="text-center" style="background-color:{{ timespan.title|colorhash }}; height: 1.5em; margin: 5px -8px;">
+          <span class="badge badge-dark">{{ timespan.title | upper }}</span>
+        </div>
+      </a>
+      {% endfor %}
+      {% endif %}
+    </td>
+    {% if forloop.counter|divisibleby:7 %}</tr></tr>{% endif %}
+  {% endfor %}
+  </tr>
+  </tbody>
+</table>
+
+{% if object_list %}
+<h3 class="mt-2">All upcoming timelots</h3>
+<table class="table table-striped table-hover">
+	<thead>
+<tr>
+  <th scope="col" class="col-sm-3">Date</th>
+  <th scope="col">Title</th>
+  <th scope="col">Body</th>
+</tr>
+	</thead>
+	<tbody>
+{% for timespan in upcoming %}
+<tr>
+	<th scope="row"><a href="{% url 'updatetimespan' request.resolver_match.kwargs.calendar timespan.id %}">{{ timespan.start | date:"D d M Y" }} - {{ timespan.end | date:"D d M Y" }}</a></td>
+
+	<td>{{ timespan.title }}</td>
+	<td>{{ timespan.body | truncatechars:32 }}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+{% endif %}
+
+{% endblock %}

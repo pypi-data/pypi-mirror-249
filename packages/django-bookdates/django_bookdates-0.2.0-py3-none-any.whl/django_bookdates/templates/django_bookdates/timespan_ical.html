@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//django-bookdates//ical export
+NAME:{{calendar.name}}
+{% for object in object_list %}BEGIN:VEVENT
+DTSTAMP:20231221T171140Z
+UID:{{ object.id }}@django-bookdates
+DTSTART:{{ object.start|date:"Ymd" }}T120000
+DTEND:{{ object.end|date:"Ymd" }}T120000
+SUMMARY:{{ object.title }}
+END:VEVENT
+{% endfor %}END:VCALENDAR

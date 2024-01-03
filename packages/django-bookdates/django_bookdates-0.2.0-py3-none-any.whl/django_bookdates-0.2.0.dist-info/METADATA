@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: django-bookdates
+Version: 0.2.0
+Summary: Book dates in shared calendars
+License: MIT
+Author: Birger Schacht
+Author-email: birger@rantanplan.org
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Django (>=5.0,<6.0)
+Requires-Dist: colorhash (>=2.0.0,<3.0.0)
+Requires-Dist: crispy-bootstrap5 (>=2023.10,<2024.0)
+Requires-Dist: django-crispy-forms (>=2.1,<3.0)
+Description-Content-Type: text/markdown
+
+# Django Bookdates
+
+A platform for booking dates in shared calendars.
+
+# Installation
+
+Install `django-bookdates` using your favourite package manager.
+
+Add the following to your Django projects `INSTALLED_APPS`:
+```
+'crispy_forms',
+'crispy_bootstrap5',
+'django_bookdates'
+```
+
+And add the following configuration settings
+
+```
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+# If you want to predefine choices for a specific calendar
+CALENDAR_CHOICES = { "example-calendar": ['Trixie', 'Liu', 'Enoch'] }
+```
+

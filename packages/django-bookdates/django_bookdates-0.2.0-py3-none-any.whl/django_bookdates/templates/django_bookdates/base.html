@@ -1,0 +1,42 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static 'bootstrap-5.2.0-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="{% static 'bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js' %}"></script>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <title>{% block title %}Django Bookdates{% endblock title %}</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Django Bookdates</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    {% block calendarmenu %}
+    {% endblock calendarmenu %}
+  </div>
+</nav>
+    {% block body %}
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1>Django Bookdates</h1>
+    </div>
+    <div class="container">
+      <div class="text-center">
+        <div class="card box-shadow mx-auto" style="width: 700px;">
+          <div class="card-header">
+            Book dates in calendars
+          </div>
+          <div class="card-body">
+            <p><a class="btn btn-outline-primary" href="/admin">Django Admin Interface</a></p>
+            <a class="btn btn-outline-success" href="https://github.com/b1rger/django-bookdates">Django Bookdates Repository</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>
