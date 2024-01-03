@@ -1,0 +1,16 @@
+epidtool/__init__.py,sha256=QsoEQ6yWelEaT7CrsCOpDUKyVEKqXKa7r2n4nJImxiU,75
+epidtool/_version.py,sha256=qPqo20uGxAfotKrtBC7RYuGlJZn1BxKQwmrlz-CvTH4,99
+epidtool/beta_models.py,sha256=dImQ3w72KJgVP8gQjdDIZGnFntCLqCVDrfxvsl-quXg,1020
+epidtool/compartmental_models.py,sha256=exWFWP6obxsTAQJp1Ssk8HNwJLDuWbj5b1ZJfcoERmA,3324
+epidtool/estimate_r.py,sha256=SC4JkPTumfAy3q3lBazCm13B9px2MDJz_xSddh7g6H8,5310
+epidtool/estimate_tc.py,sha256=BuTlTuByh3j_ugPzeKcNqOrfZAO_n6ZGbCjUX6FgKxM,3578
+epidtool/growth_models.py,sha256=gvJfu1EDRvyCmz8nEt1wPGC5oIvf2HVs3dHGhyamJdU,9194
+epidtool/models.py,sha256=JHfYZS2DF6zL1HFqr_DEiyHt8fqZqS_dVX2EbABumgA,4711
+epidtool/optimizer.py,sha256=gFzDPiMvPUcX7P0SpFtli68PNZpv2-xtlJNNsbXL0nU,7154
+epidtool/table.py,sha256=SiEjtTd4Emo6KBLuuyLmpmms1Y8qJGNaTSYJb6HFY6Y,72762
+epidtool/utils.py,sha256=zc7VxlgfUgvNfhcsbMPRq_lI6wGC91OCFD14tQ7u63E,2638
+epidtool-0.0.1.dist-info/LICENSE,sha256=gf_D8dT86SYVfz8x7MmQ3aBT9OV74ncb4opoxmph5ck,1056
+epidtool-0.0.1.dist-info/METADATA,sha256=hlPDP2cCNU1ICPc32egjEvlhVaC7f3xBdyPu0HTJlmE,1797
+epidtool-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+epidtool-0.0.1.dist-info/top_level.txt,sha256=VR4VlNJLyngRg1AcSjQP07TdotrLhUpzP00bqGeuUvs,9
+epidtool-0.0.1.dist-info/RECORD,,
