@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: unegui_models
+Version: 0.1.6
+Summary: A library for shared SQLAlchemy models
+Requires-Python: >=3.6
+Requires-Dist: sqlalchemy
+Requires-Dist: python-dotenv
+Requires-Dist: psycopg2
+Requires-Dist: geoalchemy2
