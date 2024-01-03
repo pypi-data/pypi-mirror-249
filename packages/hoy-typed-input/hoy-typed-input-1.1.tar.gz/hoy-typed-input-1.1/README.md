@@ -1,0 +1,28 @@
+## [Typed Input](https://pypi.org/project/hoy-typed-input/)
+- Pequena biblioteca para obrigar o usuário a digitar um tipo de dado específico.
+- Clique [**aqui**](https://github.com/Hoyasumii/TypedInput) para acessar o repositório.
+---
+## Instalação
+- Você pode baixar pelo pip:
+```
+pip install hoy-typed-input
+```
+- Ou pelo próprio repositório:
+```
+git clone git@github.com:Hoyasumii/TypedInput.git
+```
+- ou pelos submódulos do git:
+```
+git submodule add git@github.com:Hoyasumii/TypedInput.git
+```
+- Caso queira colocar o submódulo em uma pasta específica, basta adicionar o nome da pasta após o link do repositório.
+---
+## Métodos disponíveis
+1. `listenKeyboard( text, desiredType )` -> `str`
+    > Retorna o input com o tipo desejado.
+    1. Argumentos
+        - `text` -> `str`
+            > Texto que será exibido na tela.
+        - `desiredType` -> [ `str`, `int`, `float`, `bool` ]
+            > Tipo de dado que será retornado e digitado.
+---

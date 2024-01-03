@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+TypedInput/__init__.py
+TypedInput/typedInput.py
+hoy_typed_input.egg-info/PKG-INFO
+hoy_typed_input.egg-info/SOURCES.txt
+hoy_typed_input.egg-info/dependency_links.txt
+hoy_typed_input.egg-info/top_level.txt
