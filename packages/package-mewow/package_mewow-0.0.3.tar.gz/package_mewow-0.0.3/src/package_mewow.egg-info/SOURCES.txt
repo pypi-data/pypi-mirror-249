@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/package_mewow/__init__.py
+src/package_mewow/example.py
+src/package_mewow.egg-info/PKG-INFO
+src/package_mewow.egg-info/SOURCES.txt
+src/package_mewow.egg-info/dependency_links.txt
+src/package_mewow.egg-info/top_level.txt
