@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lorenz_phase_space
+Version: 0.0.1
+Summary: Visualization tool designed to analyze and illustrate the Lorenz Energy Cycle for atmospheric science.
+Author: Danilo Couto de Souza
+Author-email: danilo.oceano@gmail.com
+License: MIT
+Keywords: conversion
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+This tool offers a unique perspective for studying the intricate processes governing atmospheric energetics and instability mechanisms. It visualizes the transformation and exchange of energy within the atmosphere,specifically focusing on the interactions between kinetic and potential energy forms as conceptualized by Edward Lorenz.
