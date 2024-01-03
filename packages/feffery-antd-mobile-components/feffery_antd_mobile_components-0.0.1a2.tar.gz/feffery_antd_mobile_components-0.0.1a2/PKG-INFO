@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: feffery_antd_mobile_components
+Version: 0.0.1a2
+Summary: Best implementation of Antd Mobile components for Plotly Dash.
+Author: CNFeffery <fefferypzy@gmail.com>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
