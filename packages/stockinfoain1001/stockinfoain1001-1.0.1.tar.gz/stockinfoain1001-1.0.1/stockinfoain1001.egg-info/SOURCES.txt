@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stockinfoain1001/__init__.py
+stockinfoain1001/stockinfoain1001.py
+stockinfoain1001.egg-info/PKG-INFO
+stockinfoain1001.egg-info/SOURCES.txt
+stockinfoain1001.egg-info/dependency_links.txt
+stockinfoain1001.egg-info/top_level.txt
