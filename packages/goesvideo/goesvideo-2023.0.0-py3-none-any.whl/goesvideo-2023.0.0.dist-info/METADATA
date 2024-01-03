@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: goesvideo
+Version: 2023.0.0
+Summary: Package to streamline operations with GOES satellite imagery
+Author: Justin Holland
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: colorama
+Requires-Dist: matplotlib
+Requires-Dist: moviepy
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: Pillow >=10.1.0
+Requires-Dist: pytz
+Requires-Dist: PyYAML
+Requires-Dist: satpy >=0.45.0
+Requires-Dist: tqdm
+Requires-Dist: urllib3
+
