@@ -1,0 +1,7 @@
+nompy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nompy/gender_predictor.py,sha256=IOEPXe7MDboWb74xoU0fh8lC20R_n51KxZQubmqcjJE,3021
+nompy/name_gender_pb2.py,sha256=pvKLmb2ptjeIuYno4EpZDysNG8go_nUyaLCooP5R0FI,1405
+nompy-0.0.2.dist-info/METADATA,sha256=3hshyPYCYgo2JIXEBZbYdUKAVP-U5RsVbrSjxodCJ2I,250
+nompy-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nompy-0.0.2.dist-info/top_level.txt,sha256=DoEUy9i1yaIBc1TuOtwIYJSmZk3Qi5yCX0lzKHBfX2I,6
+nompy-0.0.2.dist-info/RECORD,,
