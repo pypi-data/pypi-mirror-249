@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+zsedu/__init__.py
+zsedu.egg-info/PKG-INFO
+zsedu.egg-info/SOURCES.txt
+zsedu.egg-info/dependency_links.txt
+zsedu.egg-info/top_level.txt
