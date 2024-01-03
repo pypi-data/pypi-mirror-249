@@ -1,0 +1,12 @@
+flightgear_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flightgear_python/ctrls_v27.py,sha256=fT_7sCL8hbg2BsySZLGZgS2Fq7tuUVRbIv8QQQ7BAbU,3609
+flightgear_python/fdm_v24.py,sha256=chyx8ZHLw4CEWz1Ggx8M2TlwRKIBUKqjAW-JQWxdhds,2843
+flightgear_python/fdm_v25.py,sha256=smMBUktqMMk2J0PEWU-nArGjE0RmwnrdB314EBLSAHw,3134
+flightgear_python/fg_if.py,sha256=a7ucwspGlINZAIFJpnN8Ce0ZM8LaeWqY1AG2RwZpRsg,20076
+flightgear_python/fg_util.py,sha256=wlnSZ5_tLABItkiptorQD972l3CRv4_Vq9A37bH5QOw,1706
+flightgear_python/general_util.py,sha256=tZx50bSCc8yLItx-BbimhsmPPZ2RBwDsy_YcnhlKbwM,2938
+flightgear_python/gui_v8.py,sha256=Gj0ad_t2kB4vqPNHq-inMvlsks0aw7DPaKBqdFq-fb4,1630
+flightgear_python-1.5.0.dist-info/LICENSE,sha256=jyoq11d7_YrLPQsXS_jaUR8PpAXdjA1cOvteCpKGbq4,1083
+flightgear_python-1.5.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+flightgear_python-1.5.0.dist-info/METADATA,sha256=jpHm5PItwoCHPbaa97t-6UGpWJVImTJDAPT0kuyfg3g,4161
+flightgear_python-1.5.0.dist-info/RECORD,,
