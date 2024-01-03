@@ -1,0 +1,162 @@
+{
+    "config": {
+        "abort": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "single_instance_allowed": "Jo m\u00e4\u00e4ritetty. Vain yksi konfiguraatio mahdollinen."
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "select_single": "Valitse yksi vaihtoehto."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm_usb": {
+                "description": "Haluatko m\u00e4\u00e4ritt\u00e4\u00e4 {name}?"
+            },
+            "hubv1": {
+                "data": {
+                    "host": "IP-osoite",
+                    "port": "Portti"
+                },
+                "description": "M\u00e4\u00e4rit\u00e4 Insteon Hub -versio 1 (ennen vuotta 2014).",
+                "title": "Insteon Hubin versio 1"
+            },
+            "hubv2": {
+                "data": {
+                    "host": "IP-osoite",
+                    "password": "Salasana",
+                    "port": "Portti",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "description": "M\u00e4\u00e4rit\u00e4 Insteon Hub -versio 2.",
+                "title": "Insteon Hubin versio 2"
+            },
+            "plm": {
+                "data": {
+                    "device": "USB-laitteen polku"
+                },
+                "description": "M\u00e4\u00e4rit\u00e4 Insteon PowerLink -modeemi (PLM).",
+                "title": "Insteon PLM"
+            },
+            "user": {
+                "data": {
+                    "modem_type": "Modeemin tyyppi."
+                },
+                "description": "Valitse Insteon -modeemin tyyppi."
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "input_error": "Virheelliset merkinn\u00e4t, tarkista arvot.",
+            "select_single": "Valitse yksi vaihtoehto."
+        },
+        "step": {
+            "add_override": {
+                "data": {
+                    "address": "Laitteen osoite (esim. 1a2b3c)",
+                    "cat": "Laitekategoria (esim. 0x10)",
+                    "subcat": "Laitteen alaluokka (esim. 0x0a)"
+                }
+            },
+            "add_x10": {
+                "data": {
+                    "housecode": "Talokoodi (a - p)",
+                    "platform": "Alusta",
+                    "steps": "Himmenninportaat (vain valolaitteille, oletusarvo 22)",
+                    "unitcode": "Yksikk\u00f6koodi (1 - 16)"
+                },
+                "description": "Vaihda Insteon Hubin salasana."
+            },
+            "change_hub_config": {
+                "data": {
+                    "host": "IP-osoite",
+                    "password": "Salasana",
+                    "port": "Portti",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "description": "Muuta Insteon Hubin yhteystietoja."
+            },
+            "change_plm_config": {
+                "data": {
+                    "device": "USB-laitteen polku"
+                }
+            },
+            "init": {
+                "data": {
+                    "add_override": "Lis\u00e4\u00e4 laitteen ohitus.",
+                    "add_x10": "Lis\u00e4\u00e4 X10-laite.",
+                    "change_hub_config": "Muuta keskittimen m\u00e4\u00e4rityksi\u00e4.",
+                    "remove_override": "Poista laitteen ohitus.",
+                    "remove_x10": "Poista X10-laite."
+                }
+            },
+            "remove_override": {
+                "data": {
+                    "address": "Valitse poistettava laiteosoite"
+                },
+                "description": "Poista laitteen ohitus"
+            },
+            "remove_x10": {
+                "data": {
+                    "address": "Valitse poistettava laiteosoite"
+                },
+                "description": "Poista X10-laite"
+            }
+        }
+    },
+    "services": {
+        "add_all_link": {
+            "fields": {
+                "mode": {
+                    "name": "Tila"
+                }
+            }
+        },
+        "add_default_links": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        },
+        "load_all_link_database": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                },
+                "reload": {
+                    "name": "Uudelleenlataa"
+                }
+            }
+        },
+        "print_all_link_database": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        },
+        "scene_off": {
+            "description": "Laukaisee INSTEON-tilanteen pois p\u00e4\u00e4lt\u00e4 kytkeyty\u00e4kseen.",
+            "fields": {
+                "group": {
+                    "description": "INSTEON-ryhm\u00e4n tai tilanteen numero.",
+                    "name": "Ryhm\u00e4"
+                }
+            },
+            "name": "Tilanne pois"
+        },
+        "scene_on": {
+            "description": "Laukaisee INSTEON-tilanteen p\u00e4\u00e4lle kytkeyty\u00e4kseen.",
+            "fields": {
+                "group": {
+                    "description": "INSTEON-ryhm\u00e4n tai tilanteen numero.",
+                    "name": "Ryhm\u00e4"
+                }
+            },
+            "name": "Tilanne p\u00e4\u00e4lle"
+        }
+    }
+}
