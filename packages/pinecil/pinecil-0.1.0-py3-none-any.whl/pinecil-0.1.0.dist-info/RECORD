@@ -1,0 +1,9 @@
+pinecil/__init__.py,sha256=DEwxqXUnjwPXKm8xJRyB9qwUpn7eSVKpuRpA1c3Gly0,455
+pinecil/ble.py,sha256=IVr4ZtsOb8wQM2Kc4bewAFSmLySUhzC0Hw87NnuJEms,2609
+pinecil/crx_uuid_name_map.py,sha256=r9oBgNYWqvqaBgJjICq2zNLv437fcDg74UQJpTuts5E,5981
+pinecil/pinecil.py,sha256=oJXR4WJAgsfvsCSZA481jWD26kZYmIuwRJJDwQV_kHs,10066
+pinecil/pinecil_setting_limits.py,sha256=LH3_VaNH4Ec8ahf-b9zU6l21DdsCfHZiHEzS7HG2gJs,2044
+pinecil-0.1.0.dist-info/LICENSE,sha256=Zk5sLhdBaIwxxt64S5ECfWTHUITrRI8rDex1pCSoXy8,1068
+pinecil-0.1.0.dist-info/METADATA,sha256=8qmO3l7zGcIpvrn8g_vgmjYUTBTrOBOiSXlrsg6NclM,2802
+pinecil-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pinecil-0.1.0.dist-info/RECORD,,
