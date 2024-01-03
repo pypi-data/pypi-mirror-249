@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "llm-task-handler"
+version = "0.1.0"
+description = ""
+authors = ["Jimming Cheng <jimming@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.305"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+wheel = "^0.41.2"
+twine = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
