@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/pytorch_model_wrapper/__init__.py
+src/pytorch_model_wrapper/fittable_model_wrapper.py
+src/pytorch_model_wrapper/fittable_model_wrapper_commons.py
+src/pytorch_model_wrapper/fittable_model_wrapper_utils.py
+src/pytorch_model_wrapper.egg-info/PKG-INFO
+src/pytorch_model_wrapper.egg-info/SOURCES.txt
+src/pytorch_model_wrapper.egg-info/dependency_links.txt
+src/pytorch_model_wrapper.egg-info/requires.txt
+src/pytorch_model_wrapper.egg-info/top_level.txt
