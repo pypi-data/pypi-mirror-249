@@ -1,0 +1,3 @@
+[console_scripts]
+compare-folders=compare_folders.__main__:cli
+
