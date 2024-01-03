@@ -1,0 +1,3 @@
+[console_scripts]
+termtris = termtris:main
+tt = termtris:main
