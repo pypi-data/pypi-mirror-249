@@ -1,0 +1,12 @@
+EasyDataPy/EasyData_key_setup.py,sha256=DsYh1lCnNfqAT8hHpxrfyXBsoAIJ7fe3Ckj2PzZ_5Ow,1139
+EasyDataPy/__init__.py,sha256=gtPv2rQZ35qDyDz6EkPX9rQ_E_xhPizDQjxSn4EaepA,229
+EasyDataPy/build_time_series.py,sha256=MurpeUJP6XO-g7qUw-ryPnykvfqR6EcYrZcTf8dE1ic,924
+EasyDataPy/download_series.py,sha256=g_PhbLRBAz-8sYyI2ttx59CTnO7LmglJZvycpPcW0FY,2224
+EasyDataPy/get_easydata_key.py,sha256=5PSviGTgcohFheO8RTcAg3cnWlFXckDtl_qtGeAa76M,519
+EasyDataPy/make_Pandas_dataframe.py,sha256=daQXXRn7WfEtOo8zRGioVkfN4oK9KIfYAaKoHiJ-X1k,2291
+EasyDataPy/plot_time_series.py,sha256=vS3amzjWmVHSv6j7gID1X141yAl08k7fKDLCCS58RXk,1156
+EasyDataPy/session_has_key.py,sha256=MYFiy7mvnQAd0e805rpxP00GZbEKozsTQjObF_XZL0Q,304
+EasyDataPy-1.0.1.dist-info/METADATA,sha256=k_-zLhC4A_YF6h9XMaZ5EtujfKl__d9Tm-fLWNSqeaM,2684
+EasyDataPy-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+EasyDataPy-1.0.1.dist-info/top_level.txt,sha256=I0NGu3EuBap1UUAnb6HX9dndNwVEmU8n9kbRdVrjrKM,11
+EasyDataPy-1.0.1.dist-info/RECORD,,
