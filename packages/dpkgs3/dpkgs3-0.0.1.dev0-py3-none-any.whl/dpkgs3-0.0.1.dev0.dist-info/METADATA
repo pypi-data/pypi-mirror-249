@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dpkgs3
+Version: 0.0.1.dev0
+Summary: A simple utility to make creating and managing APT repositories on AWS S3
+Author-Email: Haejoon Kim <onsealeatang@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: boto3>=1.34.6
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: click>=8.1.7
+Description-Content-Type: text/markdown
+
+# dpkgs3
+
+**dpkgs3** is a simple utility to make creating and managing APT repositories on AWS S3.  
+This is a Python version of Ruby library [dpkg-s3](https://github.com/gamunu/dpkg-s3).
