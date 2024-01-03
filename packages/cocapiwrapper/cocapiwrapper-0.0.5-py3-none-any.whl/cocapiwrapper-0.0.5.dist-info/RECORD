@@ -1,0 +1,16 @@
+cocapiwrapper/__init__.py,sha256=MU62ySDN7JsNy-AxLvpPTKjpGzr_7oBne5EDXDGcobs,297
+cocapiwrapper/apiGetter.py,sha256=79tNZoRj5e3bqWjmyGRHq6PQvBOAUh36RUsHrXJBzck,672
+cocapiwrapper/apiPost.py,sha256=tGlq0OsR4HFdED97x2H8R7E33Gm5CRRU9Rct5sTCOxU,453
+cocapiwrapper/application.py,sha256=SyYsTrJzeC-OtMU6AifxjykvP18JkYWzs1ICrURWkpU,934
+cocapiwrapper/clan.py,sha256=J8_TcbRUQdcvLmGThwwkaUFZ6c7CTsQb_yiVFyPXlp0,645
+cocapiwrapper/clanService.py,sha256=mTF9oMBFCzfOdnUUQS58Nk-drE1ponGTYsTbQKKJbiQ,1617
+cocapiwrapper/distantSourceObject.py,sha256=PMwly2SM_-9gJRp8JFK5I0v2kYeZlmFvD8Z--fdr4kw,963
+cocapiwrapper/player.py,sha256=baSWePMgCLjLpWor81Oa2vxbuXF63j9UFhwlzNQwVK4,983
+cocapiwrapper/playerService.py,sha256=oAPxmo--evMuUvyPP8vbe-usuZXW3MYJDcdcVoYNNls,226
+cocapiwrapper/requestsSettings.py,sha256=Vyc5WLAuqXHn_Rtg8-tQhdxvijKDUGg1atBpjmk4y6A,2255
+cocapiwrapper/utils.py,sha256=_uHxaTL5RCJekKm84gfJrobBk6tEFYU0c7zpv0iI4uo,507
+cocapiwrapper-0.0.5.dist-info/LICENSE,sha256=mN-Sn2tFY5CouamGS2UbG6zqBpdXqTk_8czKzO7bSR4,1086
+cocapiwrapper-0.0.5.dist-info/METADATA,sha256=O_WIZOh_fqX3GE0WlMVKMYIIagggPA98G1bw3FuS8y8,595
+cocapiwrapper-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cocapiwrapper-0.0.5.dist-info/top_level.txt,sha256=duTo6uZbW2pgOP-CjxUqwKuPMhL6HHFDJiDBPEYZzU8,14
+cocapiwrapper-0.0.5.dist-info/RECORD,,
