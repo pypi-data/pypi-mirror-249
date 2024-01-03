@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gamestoreapi
+Version: 0.1
+Summary: a pip package to interact with my game store
+Author: guard_games
+Author-email: sourceguy68@gmail.com
+Keywords: python,game store,gamestore,api,achievements
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE.txt
+Requires-Dist: requests
