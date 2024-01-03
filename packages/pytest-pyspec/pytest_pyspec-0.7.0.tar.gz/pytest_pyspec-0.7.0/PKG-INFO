@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: pytest-pyspec
+Version: 0.7.0
+Summary: A plugin that transforms the pytest output into a result similar to the RSpec. It enables the use of docstrings to display results and also enables the use of the prefixes "describe", "with" and "it".
+Home-page: https://github.com/felipecrp/pytest-pyspec
+License: GPL-3.0-only
+Author: Felipe Curty
+Author-email: felipecrp@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest (>=7.2.1,<8.0.0)
+Project-URL: Repository, https://github.com/felipecrp/pytest-pyspec
+Description-Content-Type: text/markdown
+
+[![](https://github.com/felipecrp/pytest-pyspec/actions/workflows/pytest.yml/badge.svg)](https://github.com/felipecrp/pytest-pyspec/actions/workflows/pytest.yml)
+
+The **pytest-pyspec** plugin transforms the pytest output into a result similar to the RSpec.
+
+Just nest your tests using classes and include _docstring_ for each class and test. You can create any nested levels.
+
+The following test sample:
+
+```python
+import pytest
+
+class TestHouse:
+    "a House"
+    
+    def test_door(self):
+        "has door"
+        assert 1 == 1
+        
+    class TestTwoFloors:
+        """with two floors
+        
+        A house with two floor has stairs
+        """
+        def test_stairs(self):
+            "has stairs"
+            assert 1 == 1
+
+        def test_second_floor(self):
+            "has second floor"
+            assert 1 == 1
+
+        def test_third_floor(self):
+            "has third floor"
+            assert 1 == 2
+```
+
+Generates the following output:
+
+```
+test/test_sample.py 
+
+A house
+  ✓ Has door
+
+A house
+  With two floors
+    ✓ Has stairs
+    ✓ Has second floor
+    ✗ Has third floor
+```
+
+## Installing and running **pySpec**
+
+```bash
+pip install pytest-pyspec
+pytest --pyspec
+```
+
