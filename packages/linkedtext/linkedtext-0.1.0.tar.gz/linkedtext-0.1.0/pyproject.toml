@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "linkedtext"
+version = "0.1.0"
+description = "Easily generate links and table of contents in Markdown files."
+authors = ["kurotom <55354389+kurotom@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "linkedtext"}]
+keywords = ["text", "links", "index"]
+license = "LGPL-3.0-or-later"
+repository = "https://github.com/kurotom/linkedText"
+classifiers = [
+"Topic :: Text Processing",
+"Topic :: Text Processing :: Indexing",
+"Topic :: Text Processing :: Markup :: Markdown",
+"Topic :: Utilities",
+"Topic :: Terminals",
+"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+"Operating System :: OS Independent",
+"Programming Language :: Python :: 3.7",
+"Programming Language :: Python :: 3.8",
+"Programming Language :: Python :: 3.9",
+"Programming Language :: Python :: 3.10",
+"Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.scripts]
+linkedtext = 'linkedtext.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/kurotom/linkedText/issues"
