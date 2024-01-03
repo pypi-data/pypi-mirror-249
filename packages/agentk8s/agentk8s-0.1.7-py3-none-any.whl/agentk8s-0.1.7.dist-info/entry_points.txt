@@ -1,0 +1,3 @@
+[console_scripts]
+kgpt=agentk8s.main:app
+
