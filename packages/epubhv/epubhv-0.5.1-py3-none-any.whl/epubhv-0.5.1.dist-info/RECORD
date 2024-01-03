@@ -1,0 +1,11 @@
+epubhv-0.5.1.dist-info/METADATA,sha256=ZeC8BdCGMr_U0lEpynBVoBvBJszs8D6Rz6OsOGiotUY,2869
+epubhv-0.5.1.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+epubhv-0.5.1.dist-info/entry_points.txt,sha256=OFGjGtbfswiluGPLYToew_UpcEbs8BwTOS4HkYJ-7DQ,44
+epubhv-0.5.1.dist-info/licenses/LICENSE,sha256=XdClh516MvlnOf9749JZHCxSB7y6_fyXcWmLDz6IkZY,1063
+epubhv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epubhv/__main__.py,sha256=wu5N2wk8mvBgyvr2ghmQf4prezAe0_i-p123VVreyYc,62
+epubhv/cli.py,sha256=0QD44o5X5D9SFyXtpV75INVB-zBNtL4GAlazknp5Gak,4580
+epubhv/epubhv.py,sha256=HQbOhZOjhObBylC9FuZfZfqzhqENnTc4J5tc8n6nbUA,17595
+epubhv/punctuation.py,sha256=eVtIF0sbCli1C5X0A1701K2zd2VLyMR7tgTNSip6LSU,2286
+epubhv/yomituki.py,sha256=bx0olp8IEZNPAcI8ZmjPt2KFf0d1AUwXZLznLs3Ncs4,6589
+epubhv-0.5.1.dist-info/RECORD,,
