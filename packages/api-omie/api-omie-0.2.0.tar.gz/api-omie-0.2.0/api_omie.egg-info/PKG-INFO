@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: api-omie
+Version: 0.2.0
+Summary: Ferramenta para api do omie não oficial
+Home-page: https://github.com/MikalROn/ApiOmie-nao-oficial
+Author: Daniel Coêlho
+Author-email: heromon.9010@gmail.com
+License: MIT license
+Project-URL: Demonstrações, https://github.com/MikalROn/ApiOmie-nao-oficial/tree/main/demos
+Keywords: Api omie,omie,api do omie,omieapi
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+<!-- -*- coding: latin-1 -*- -->
+
+# Api Omie (NAO OFICIAL)
+
+<em> *Aviso: este projeto nao tem ligacao nenhuma com a omie</em>
+
+![!license](https://img.shields.io/github/license/MikalROn/ApiOmie-nao-oficial.svg)
+<a href="https://github.com/MikalROn/ApiOmie-nao-oficial">
+<img alt="GitHub" src="https://img.shields.io/badge/Github-Open%20source-green?style=for-the-badge&amp;logo=github"/>
+</a>
+
+#   Use a documentacao oficial!
+
+## Download
+
+``````shell
+pip install api-omie
+``````
+
+## Como usar
+
+<p> Para usar basta chamar o metodo, 
+e passar os argumentos-chave que seram empacotados e transmitidos para api como no exemplo</p>
+
+``````python
+from omieapi import Omie
+
+meu_app = Omie('key#######', 'secreet######')
+
+r = meu_app.listar_produtos(
+    pagina=1
+)
+
+print(r)
+``````
