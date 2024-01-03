@@ -1,0 +1,134 @@
+# unctl
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+    <a href="https://unskript.com/">
+        <img src="https://storage.googleapis.com/unskript-website/assets/favicon.png" alt="Logo" width="80" height="80">
+    </a>
+    <p align="center">
+    <a href="https://pypi.org/project/unctl/"><img alt="Python Version" src="https://img.shields.io/pypi/v/unctl.svg"></a>
+    <a href="https://pypi.python.org/pypi/unctl/"><img alt="Python Version" src="https://img.shields.io/pypi/pyversions/unctl.svg"></a>
+    <a href="https://pypistats.org/packages/unctl"><img alt="PyPI unctl downloads" src="https://img.shields.io/pypi/dw/unctl.svg?label=unctl%20downloads"></a>
+</p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<br />
+<p align="center">Table of Contents</p>
+<ol>
+<li>
+    <a href="#about-the-project">About The Project</a>
+    <ul>
+        <li><a href="#built-with">Built With</a></li>
+    </ul>
+</li>
+<li>
+    <a href="#getting-started">Getting Started</a>
+    <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#development">Development</a></li>
+        <li><a href="#release">Release</a></li>
+    </ul>
+</li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<!-- <li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li> -->
+<li><a href="#contact">Contact</a></li>
+<!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
+</ol>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+`unctl` is a versatile command-line tool designed to perform a wide range of checks and inspections on various components of your infrastructure. It provides a unified interface to assess the health and performance of different services and platforms, and goes beyond mere diagnosis. With built-in **AI** capabilities, it guides you seamlessly from system diagnostic to remediation, offering intelligent solutions to address any issues it detects.
+
+This addition emphasizes the tool's capacity to not only identify problems but also provide **AI-driven** recommendations and solutions for resolving those issues, making it even more valuable for infrastructure management and maintenance.
+
+| Provider | Checks |
+|---|---|
+| Kubernetes | 23 |
+| Elastic Search | TBA |
+| Postgres | TBA |
+| AWS | TBA |
+| GCP | TBA |
+
+
+### Built With
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+* Python >= 3.10
+* [OpenAI API Key](https://platform.openai.com/account/api-keys) - to have AI based functionality enabled
+
+### Installation
+
+1. Get distibution on your machine:
+    * Run `pip` command to install `unctl` from [PyPI](https://pypi.org/project/unctl/)
+        ```sh
+        pip install unctl
+        ```
+2. (optional) Set OpenAI API key to be able to use `--explain (-e)` option
+   ```sh
+   export OPENAI_API_KEY=<your api key>
+   ```
+2. (optional) Set `KUBECONFIG` variable to specific location other than default
+   ```sh
+   export KUBECONFIG=<path to kube config file>
+   ```
+
+## Usage
+
+```sh
+% unctl -h
+usage: unctl [-h] [-s] [-f] [-d] [-e] [-r] [--no-interactive NO_INTERACTIVE] [--sort-by {object,check}] [-c CHECKS [CHECKS ...]]
+             [--categories CATEGORIES [CATEGORIES ...]] [--services SERVICES [SERVICES ...]] [-l] [--list-categories] [--list-services] [-v]
+
+Welcome to unSkript CLI Interface
+
+options:
+  -h, --help            show this help message and exit
+  -s, --scan            Run a k8s scan
+  -f, --failing-only    Show only failing checks
+  -d, --diagnose        Run fixed diagnosis
+  -e, --explain         Explain failures using AI
+  -r, --remediate       Create remediation plan
+  --no-interactive NO_INTERACTIVE
+                        Interactive mode is not allowed. Prompts will be skipped
+  --sort-by {object,check}
+                        Sort results by 'object' (default) or 'check'
+  -c CHECKS [CHECKS ...], --checks CHECKS [CHECKS ...]
+                        Filter checks by IDs
+  --categories CATEGORIES [CATEGORIES ...]
+                        Filter checks by category
+  --services SERVICES [SERVICES ...]
+                        Filter checks by services
+  -l, --list-checks     List available checks
+  --list-categories     List available categories
+  --list-services       List available services
+  -v, --version         show program's version number and exit
+```
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] K8s checks - in progress
+- [ ] Elastic Search checks
+- [ ] Postgres checks
+- [ ] AWS checks
+- [ ] GCP checks
+
+<!-- CONTACT -->
+## Contact
+
+Abhishek Saxena: abhishek@unskript.com
+
+Official website: https://unskript.com/
