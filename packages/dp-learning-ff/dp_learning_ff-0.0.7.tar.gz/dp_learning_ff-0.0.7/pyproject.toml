@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[project]
+name = "dp_learning_ff"
+dynamic = ["version"]
+dependencies = [
+  "numpy",
+  "torch",
+  "scikit-learn",
+  "autodp",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Dariush Wahdany", email = "dariush.wahdany@aisec.fraunhofer.de"}
+]
+maintainers = [
+  {name = "Dariush Wahdany", email = "dariush.wahdany@aisec.fraunhofer.de"}
+]
+description = "Repository of differentially-private methods for learning from features."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["..."]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only"
+]
+
+[project.urls]
+# Homepage = "https://example.com"
+# Documentation = "https://readthedocs.org"
+Repository = "https://github.com/lsc64/dp-learning-from-features.git"
+"Bug Tracker" = "https://github.com/lsc64/dp-learning-from-features/issues"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
