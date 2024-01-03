@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wg_easy_api_wrapper/__init__.py
+wg_easy_api_wrapper/client.py
+wg_easy_api_wrapper/errors.py
+wg_easy_api_wrapper/server.py
+wg_easy_api_wrapper.egg-info/PKG-INFO
+wg_easy_api_wrapper.egg-info/SOURCES.txt
+wg_easy_api_wrapper.egg-info/dependency_links.txt
+wg_easy_api_wrapper.egg-info/requires.txt
+wg_easy_api_wrapper.egg-info/top_level.txt
