@@ -1,0 +1,3 @@
+[console_scripts]
+binypt=binypt_cli.__main__:run
+
