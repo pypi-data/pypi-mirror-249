@@ -1,0 +1,45 @@
+#!/bin/bash
+set -eu
+# Check directory
+cd "$(dirname "$0")"
+[[ "$0" != *.git/hooks/* ]] || cd ../..
+
+pre_commit() {
+	flake8
+	black --check .
+	isort --check-only .
+}
+
+lint() {
+	pre_commit
+	mypy --install-types --non-interactive .
+}
+
+format() {
+	black .
+	isort .
+}
+
+# Commands
+case "${1:-run}" in
+	run)
+		pre_commit
+		echo "All good to commit"
+		;;
+	lint)
+		lint;;
+	format)
+		format;;
+	install)
+		echo "Installing pre-commit"
+		cd .git/hooks
+		ln -sf ../../pre-commit pre-commit
+		;;
+	uninstall)
+		echo "Uninstalling pre-commit"
+		rm -f .git/hooks/pre-commit
+		;;
+	*)
+		echo "Invalid argument: $*"
+		echo "Supported options: lint, install, uninstall"
+esac
