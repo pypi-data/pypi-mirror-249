@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-shape-odyssey = napari_shape_odyssey:napari.yaml
