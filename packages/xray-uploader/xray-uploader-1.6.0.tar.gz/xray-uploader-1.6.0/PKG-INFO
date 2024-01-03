@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xray-uploader
+Version: 1.6.0
+Summary: upload junit xml to xray.
+Author-email: qun <crsncq@126.com>
+License: MIT License
+Keywords: xray
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests==2.31.0
+
+# Xray Uploader
+
+## usage
+
+looks like this:
+```
+from xray.uploader import Uploader
+
+xml = "res.xml"
+summary = "automation test"
+project_id = "12345"
+
+Uploader(xml, summary, project_id, safe_mode=True)
+```
