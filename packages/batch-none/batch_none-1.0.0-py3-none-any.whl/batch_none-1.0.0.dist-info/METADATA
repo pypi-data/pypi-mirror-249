@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: batch-none
+Version: 1.0.0
+Summary: Batch prediction recipe
+Home-page: UNKNOWN
+Author: Amit Boke
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6,<3.10
+Requires-Dist: refractml
+Requires-Dist: refractio[local]
+
+UNKNOWN
+
+
