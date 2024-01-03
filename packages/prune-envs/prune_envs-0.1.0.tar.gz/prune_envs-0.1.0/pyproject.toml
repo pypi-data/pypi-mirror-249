@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "prune-envs"
+version = "0.1.0"
+description = "Prune (conda) Environments"
+authors = ["David Fokkema <davidfokkema@icloud.com>"]
+readme = "README.md"
+packages = [{ include = "prune_envs", from = "src" }]
+homepage = "https://github.com/davidfokkema/prune-envs"
+license = "GPL-3.0-or-later"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = "^0.46.0"
+
+[tool.poetry.group.dev.dependencies]
+textual-dev = "^1.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+prune-envs = "prune_envs.app:main"
