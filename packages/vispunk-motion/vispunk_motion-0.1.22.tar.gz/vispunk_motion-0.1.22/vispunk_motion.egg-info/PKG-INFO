@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vispunk_motion
+Version: 0.1.22
+Summary: Vispunk. 
+Home-page: https://github.com/greentfrapp/lucent
+Author: The Vispunk Authors
+Author-email: limsweekiat@gmail.com
+License: Apache License 2.0
+Keywords: pytorch,tensor,machine learning,neural networks,convolutional neural networks,feature visualization,optimization
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.13.0
+Requires-Dist: diffusers
+
+# vispunk-motion-py
