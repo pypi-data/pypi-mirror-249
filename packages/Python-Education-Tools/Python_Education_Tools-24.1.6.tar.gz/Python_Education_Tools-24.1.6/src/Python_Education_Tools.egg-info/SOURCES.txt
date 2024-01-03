@@ -1,0 +1,223 @@
+README.md
+pyproject.toml
+setup.cfg
+src/Python_Education_Tools.egg-info/PKG-INFO
+src/Python_Education_Tools.egg-info/SOURCES.txt
+src/Python_Education_Tools.egg-info/dependency_links.txt
+src/Python_Education_Tools.egg-info/requires.txt
+src/Python_Education_Tools.egg-info/top_level.txt
+src/pet/__init__.py
+src/pet/that.py
+src/pet/this.py
+src/pet/datasets/__init__.py
+src/pet/datasets/b.cmd
+src/pet/datasets/factory.py
+src/pet/datasets/setup.py
+src/pet/datasets/__pycache__/__init__.cpython-310.pyc
+src/pet/datasets/__pycache__/factory.cpython-310.pyc
+src/pet/datasets/database/2022pst.xlsx
+src/pet/datasets/database/2022tsk.xlsx
+src/pet/datasets/database/2022zzy.xlsx
+src/pet/datasets/database/2023-2024-1.xlsx
+src/pet/datasets/database/20231118-players.xlsx
+src/pet/datasets/database/2023ejkg.txt
+src/pet/datasets/database/2023xkjs.xlsx
+src/pet/datasets/database/2023zzy-ok.xlsx
+src/pet/datasets/database/2023zzy.xlsx
+src/pet/datasets/database/China_universities .xlsx
+src/pet/datasets/database/Edu_subjects.xlsx
+src/pet/datasets/database/__init__.py
+src/pet/datasets/database/beijing-subway.xlsx
+src/pet/datasets/database/beijing_bus.xlsx
+src/pet/datasets/database/cylj.txt
+src/pet/datasets/database/ddj.txt
+src/pet/datasets/database/ejkg.txt
+src/pet/datasets/database/error.txt
+src/pet/datasets/database/htys.txt
+src/pet/datasets/database/info.py
+src/pet/datasets/database/ip_address.xlsx
+src/pet/datasets/database/sample_cookies.txt
+src/pet/datasets/database/shanghai-subway.xlsx
+src/pet/datasets/database/ssq_22134.xlsx
+src/pet/datasets/database/st.xlsx
+src/pet/datasets/database/tyjhzz.txt
+src/pet/datasets/database/votes.txt
+src/pet/datasets/database/xj.txt
+src/pet/datasets/src/pet/datasets/factory.cp310-win_amd64.pyd
+src/pet/pyd/__init__.py
+src/pet/pyd/wifi.cp310-win_amd64.pyd
+src/pet/textbook1/Chapter.12 DataFrame.ipynb
+src/pet/textbook1/Chapter13.数据可视化ok.ipynb
+src/pet/textbook1/README.md
+src/pet/textbook1/Seaborn绘图.ipynb
+src/pet/textbook1/Series绘图演示.ipynb
+src/pet/textbook1/Untitled.ipynb
+src/pet/textbook1/Untitled1.ipynb
+src/pet/textbook1/Untitled2.ipynb
+src/pet/textbook1/__init__.py
+src/pet/textbook1/bus.xlsx
+src/pet/textbook1/chapter.01.绪论.ipynb
+src/pet/textbook1/chapter.02.Python开发环境配置与维护.ipynb
+src/pet/textbook1/chapter.03.Python的基本概念.ipynb
+src/pet/textbook1/chapter.04.Python内置数据类型.ipynb
+src/pet/textbook1/chapter.05.程序流控制与异常处理.ipynb
+src/pet/textbook1/chapter.06.函数及其高级应用.ipynb
+src/pet/textbook1/chapter.07 面向对象程序设计.ipynb
+src/pet/textbook1/chapter.08.文件与输入输出.ipynb
+src/pet/textbook1/chapter.09.网站数据获取.ipynb
+src/pet/textbook1/chapter.10.文本数据处理与分析.ipynb
+src/pet/textbook1/chapter.11.NumPy与数学运算.ipynb
+src/pet/textbook1/chapter.12 new.ipynb
+src/pet/textbook1/chapter.12-Series.ipynb
+src/pet/textbook1/chapter.12.Pandas数据分析.ipynb
+src/pet/textbook1/codes.py
+src/pet/textbook1/conver.jpg
+src/pet/textbook1/df-6.jpg
+src/pet/textbook1/df-bar.jpg
+src/pet/textbook1/df-barh.jpg
+src/pet/textbook1/df-box.jpg
+src/pet/textbook1/df-demo.jpg
+src/pet/textbook1/df-hist.jpg
+src/pet/textbook1/df-kde.jpg
+src/pet/textbook1/df-line.jpg
+src/pet/textbook1/df.jpg
+src/pet/textbook1/dirtyData.xlsx
+src/pet/textbook1/hh.png
+src/pet/textbook1/ip_address.xlsx
+src/pet/textbook1/jn.cmd
+src/pet/textbook1/k.jpg
+src/pet/textbook1/ks.jpg
+src/pet/textbook1/media-types.xlsx
+src/pet/textbook1/ok1.bak
+src/pet/textbook1/ok1.dat
+src/pet/textbook1/ok1.dir
+src/pet/textbook1/result-jieba-hh.jpg
+src/pet/textbook1/result-jieba.jpg
+src/pet/textbook1/result.jpg
+src/pet/textbook1/s.xlsx
+src/pet/textbook1/st1.xlsx
+src/pet/textbook1/stations-exchange.xlsx
+src/pet/textbook1/students.xlsx
+src/pet/textbook1/students12.xlsx
+src/pet/textbook1/subway.jpg
+src/pet/textbook1/zmt.jpg
+src/pet/textbook1/zmt3.jpg
+src/pet/textbook1/地铁站点数据分析.ipynb
+src/pet/textbook1/简单成绩分析案例.ipynb
+src/pet/textbook1/.ipynb_checkpoints/Chapter-checkpoint.12 DataFrame
+src/pet/textbook1/.ipynb_checkpoints/Chapter.12 DataFrame-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/Chapter13.数据可视化ok-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/Series绘图演示-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/Untitled1-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/Untitled2-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter-checkpoint.12 new
+src/pet/textbook1/.ipynb_checkpoints/chapter-checkpoint.12-Series
+src/pet/textbook1/.ipynb_checkpoints/chapter.07 面向对象程序设计-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter.07.文件与输入输出-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter.08.文件与输入输出-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter.08.网站数据获取-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter.10.NumPy与数学运算-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter.10.文本数据处理与分析-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter.11.Pandas数据分析-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter.12-Series-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter.12.Pandas数据分析-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/chapter12-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/tongshike-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/地铁站点数据分析-checkpoint.ipynb
+src/pet/textbook1/.ipynb_checkpoints/简单成绩分析案例-checkpoint.ipynb
+src/pet/textbook1/2022转专业/2022转专业.rar
+src/pet/textbook1/2022转专业/Untitled.ipynb
+src/pet/textbook1/2022转专业/analysis-on-major.ipynb
+src/pet/textbook1/2022转专业/inspector.ipynb
+src/pet/textbook1/2022转专业/jn.cmd
+src/pet/textbook1/2022转专业/r.xlsx
+src/pet/textbook1/2022转专业/results.xlsx
+src/pet/textbook1/2022转专业/rr.xlsx
+src/pet/textbook1/2022转专业/stu.xlsx
+src/pet/textbook1/2022转专业/~$stu.xlsx
+src/pet/textbook1/2022转专业/人文学院 .xlsx
+src/pet/textbook1/2022转专业/体育学院 .xlsx
+src/pet/textbook1/2022转专业/信息与机电工程学院 .xlsx
+src/pet/textbook1/2022转专业/化学与材料科学学院 .xlsx
+src/pet/textbook1/2022转专业/哲学与法政学院 .xlsx
+src/pet/textbook1/2022转专业/商学院 .xlsx
+src/pet/textbook1/2022转专业/外国语学院 .xlsx
+src/pet/textbook1/2022转专业/学前教育学院 .xlsx
+src/pet/textbook1/2022转专业/对外汉语学院 .xlsx
+src/pet/textbook1/2022转专业/建筑工程学院 .xlsx
+src/pet/textbook1/2022转专业/影视传媒学院 .xlsx
+src/pet/textbook1/2022转专业/教育学院 .xlsx
+src/pet/textbook1/2022转专业/数理学院 .xlsx
+src/pet/textbook1/2022转专业/旅游学院 .xlsx
+src/pet/textbook1/2022转专业/环境与地理科学学院 .xlsx
+src/pet/textbook1/2022转专业/生命科学学院 .xlsx
+src/pet/textbook1/2022转专业/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+src/pet/textbook1/2022转专业/.ipynb_checkpoints/analysis-on-major-checkpoint.ipynb
+src/pet/textbook1/2022转专业/.ipynb_checkpoints/inspector-checkpoint.ipynb
+src/pet/textbook1/2022转专业/homework.7/Kaggle竞赛的.docx
+src/pet/textbook1/2022转专业/homework.7/Titanic.ipynb
+src/pet/textbook1/2022转专业/homework.7/Untitled.ipynb
+src/pet/textbook1/2022转专业/homework.7/jn.cmd
+src/pet/textbook1/2022转专业/homework.7/test.csv
+src/pet/textbook1/2022转专业/homework.7/test.png
+src/pet/textbook1/2022转专业/homework.7/train.csv
+src/pet/textbook1/2022转专业/homework.7/zzy._clean.xlsx
+src/pet/textbook1/2022转专业/homework.7/zzy.xlsx
+src/pet/textbook1/2022转专业/homework.7/~$zzy.xlsx
+src/pet/textbook1/2022转专业/homework.7/作业7.txt
+src/pet/textbook1/2022转专业/homework.7/转专业分析.ipynb
+src/pet/textbook1/2022转专业/homework.7/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+src/pet/textbook1/2022转专业/homework.7/.ipynb_checkpoints/转专业分析-checkpoint.ipynb
+src/pet/textbook1/data/daodejing.txt
+src/pet/textbook1/data/ip_address.xlsx
+src/pet/textbook1/data/st.xlsx
+src/pet/textbook1/data/subway.xlsx
+src/pet/textbook1/img/0python.jpg
+src/pet/textbook1/img/code.jpg
+src/pet/textbook1/img/d.png
+src/pet/textbook1/img/docs.jpg
+src/pet/textbook1/img/download-python.jpg
+src/pet/textbook1/img/img.png
+src/pet/textbook1/img/img_1.png
+src/pet/textbook1/img/img_2.png
+src/pet/textbook1/img/img_3.png
+src/pet/textbook1/img/img_4.png
+src/pet/textbook1/img/img_5.png
+src/pet/textbook1/img/img_6.png
+src/pet/textbook1/img/img_7.png
+src/pet/textbook1/img/lm.py
+src/pet/textbook1/img/npython.jpg
+src/pet/textbook1/img/pycon.jpg
+src/pet/textbook1/img/rank.jpg
+src/pet/textbook1/img/top.jpg
+src/pet/textbook1/numpy-image/Numpy图像处理.ipynb
+src/pet/textbook1/numpy-image/blocks.jpg
+src/pet/textbook1/numpy-image/jn.cmd
+src/pet/textbook1/numpy-image/tiger-.jpg
+src/pet/textbook1/numpy-image/tiger.jpg
+src/pet/textbook1/numpy-image/tiger3.jpg
+src/pet/textbook1/numpy-image/tiger6.jpg
+src/pet/textbook1/numpy-image/.ipynb_checkpoints/Numpy图像处理-checkpoint.ipynb
+src/pet/textbook1/numpy-image/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+src/pet/textbook1/out/a.html
+src/pet/util/__init__.py
+src/pet/util/audio.py
+src/pet/util/etr.py
+src/pet/util/image_tool.py
+src/pet/util/probability.py
+src/pet/util/slid_window.py
+src/pet/util/str_tool.py
+src/pet/util/subway-exchange.py
+src/pet/util/test-poviot-crosstab.py
+src/pet/util/var.py
+src/pet/util/wifi.py
+src/python_Education_Tools.egg-info/PKG-INFO
+src/python_Education_Tools.egg-info/SOURCES.txt
+src/python_Education_Tools.egg-info/dependency_links.txt
+src/python_Education_Tools.egg-info/requires.txt
+src/python_Education_Tools.egg-info/top_level.txt
+src/python_education_tools.egg-info/PKG-INFO
+src/python_education_tools.egg-info/SOURCES.txt
+src/python_education_tools.egg-info/dependency_links.txt
+src/python_education_tools.egg-info/top_level.txt
