@@ -1,0 +1,6 @@
+hoy-typed-input==1.1
+hoyl-keyboard-manager==1.0.1
+keyboard==0.13.5
+python-slugify==8.0.1
+setuptools==69.0.3
+text-unidecode==1.3
