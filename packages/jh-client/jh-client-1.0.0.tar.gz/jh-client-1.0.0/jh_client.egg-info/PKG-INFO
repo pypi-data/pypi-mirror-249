@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: jh-client
+Version: 1.0.0
+Summary: JupyterHub REST API
+Home-page: https://amdatascience.com
+Author: Andrew Chang
+License: BSD-3-Clause
+Keywords: OpenAPI,OpenAPI-Generator,JupyterHub
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+    The REST API for JupyterHub
+    
+
