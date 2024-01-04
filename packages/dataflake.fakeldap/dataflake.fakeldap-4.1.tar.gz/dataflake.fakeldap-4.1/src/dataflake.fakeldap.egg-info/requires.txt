@@ -1,0 +1,7 @@
+setuptools
+python-ldap>=3.3
+
+[docs]
+Sphinx
+sphinx_rtd_theme
+pkginfo
