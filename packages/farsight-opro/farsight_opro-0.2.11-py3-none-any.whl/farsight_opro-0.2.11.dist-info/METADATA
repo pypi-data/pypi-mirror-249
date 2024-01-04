@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: farsight-opro
+Version: 0.2.11
+Summary: Farsight LLM optimizer
+Author: Katie Pelton
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: pytest
+
+Welcome to Farsight's OPRO SDK that implements the OPRO paper for any use case. Check out our documentation [here.](https://api.farsight-ai.com/farsight-opro/)
