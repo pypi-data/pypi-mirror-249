@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: awsovpn
+Version: 0.5
+Summary: Simple script for easy creation of OpenVPN instance on AWS
+Home-page: https://awsovpn.readthedocs.io/
+Author: Flying Hippo
+Author-email: admin@flyinghippo.com
+Project-URL: Source, https://github.com/parleer/awsovpn/
+Project-URL: Documentation, https://awsovpn.readthedocs.io/en/latest/
+Project-URL: Packaging tutorial, https://packaging.python.org/tutorials/packaging-projects/
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pkginfo >=1.8.1
+Requires-Dist: boto3 ~=1.34.11
+Requires-Dist: paramiko ~=3.4.0
+Requires-Dist: importlib-metadata >=3.6
+Requires-Dist: python-dotenv ==1.0.0
+
+# awsovpn
+
+Manage an OpenVPN instance in your private EC2 cloud using this script. 
+
+
+## Usage
+
+1. Create an OpenVPN EC2 instance and configure it for VPN access.
+
+    ```bash
+    awsovpn up
+    ```
+
+    Then following instructions to configure a Profile and install in your local OpenVPN client.
+
+2. Terminate the OpenVPN EC2 instance and remove all EC2 resources mangaed by this script:
+
+    ```bash
+    awsovpn down
+    ```
+
+
+
+## Install
+
+```bash
+python -m pip install awsovpn
+```
+
+## Configure
+
+Configure using any of combination of the following methods:
+
+1. awscli configuration
+
+    If you have [awscli](https://aws.amazon.com/cli/) installed and configured, then awsovpn can utilize this same configuration. Just use `--profile PROFILE` to specify an AWS configuration profile. 
+
+    ```bash
+    awsovpn --profile myprofile up
+    ``````
+
+2. environment variables
+
+    Create a `.env` file or set the following environment variables: 
+
+    ```text
+    AWS_REGION=
+    AWS_ACCESS_KEY_ID=
+    AWS_SECRET_ACCESS_KEY=
+    AWS_PROFILE=
+    ```
+
+3. use arguments
+
+    You can also pass credential configuration as arguments:
+
+    e.g.
+
+    ```bash
+    awsovpn --region REGION --access-key-id ACCESS_KEY_ID --secret-access-key SECRET_ACCESS_KEY
+    ```
