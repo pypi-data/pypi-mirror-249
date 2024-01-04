@@ -1,0 +1,2 @@
+[console_scripts]
+vietnamese-poem-classifier = vietnamese_poem_classifier:main
