@@ -1,0 +1,10 @@
+macrostrat/database/__init__.py,sha256=rFYRo8MjIF-rGFgS8WV8DOfBWhYa3_3rdUyjZ9hafaM,5918
+macrostrat/database/mapper/__init__.py,sha256=ofg51LBEO9PIDgChW-ph6uo57mIfk9nN_H2hdorpaWo,4474
+macrostrat/database/mapper/base.py,sha256=6KEIeEfgf0o4dQLgoGycnZuiAo8ffF9NXDaNUAk2OW4,686
+macrostrat/database/mapper/cache.py,sha256=CE46iCN8yaiKljT9-jmpvfBkcaaVrTM4VBwzcZbauEs,2343
+macrostrat/database/mapper/utils.py,sha256=nHfQ-FLE98hyfeebNO_Zg-9VMEO6kmxQJFpERnbkcRg,3271
+macrostrat/database/postgresql.py,sha256=R7iYdpNr6bZwxr8bKADAaP8G9TEyNJCHtw1slZsLh-w,2725
+macrostrat/database/utils.py,sha256=u622xdDCM70X9CgHq6z_WqfZMxQt0dEdYlvbMr4p5-Y,14420
+macrostrat_database-3.0.0.dist-info/METADATA,sha256=fRj1PP4vzbshXNfE3A4AQ_lst_mqclc-2OdvZfcBnwQ,757
+macrostrat_database-3.0.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+macrostrat_database-3.0.0.dist-info/RECORD,,
