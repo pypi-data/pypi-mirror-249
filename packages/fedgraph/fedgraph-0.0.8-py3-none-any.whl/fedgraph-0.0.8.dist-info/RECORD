@@ -1,0 +1,18 @@
+fedgraph/__init__.py,sha256=GCC3SDCJDWNg_oFhtCUIrLXE9awnATB2FIMgDl8f3d0,198
+fedgraph/data_process.py,sha256=Bxx6USgZuqMv15wKmsyH7ZbTL-mM3ijDHirvLhSjkb0,6524
+fedgraph/fedgcn_run.py,sha256=9wmfJR0cBjFHBxco4Di_NkO_zU5wf1N3trhXFsDjT-o,11529
+fedgraph/gnn_models.py,sha256=uoT-9vWl5IrjH9vJciFrzx_ubIDlem6FP5J1BR-moK4,8813
+fedgraph/server_class.py,sha256=eDn8mV5izptXjm0V5YZgbmxYlmClpWwD8YFFJV0dJ_0,2834
+fedgraph/train_func.py,sha256=wleWRgMBZCSGIGINA8VyeXB5qMPmAKNtokkcazQS0jA,2603
+fedgraph/trainer_class.py,sha256=wr-lAOV9uMmUI5m3vojhxLOISlZZKwicRZwu-IVd0Uw,5702
+fedgraph/utils.py,sha256=gjA6gGPTpfZxQwsY--OaWCmaXLzR8NDmLsE26b5O9ww,10399
+fedgraph/version.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+fedgraph-0.0.8.dist-info/METADATA,sha256=yhMY7qndJJp_ozwJS5CKamAt34UhxKUhw_5wYLtzlxw,4238
+fedgraph-0.0.8.dist-info/PKG-INFO 2,sha256=YCnCGLG68sMuL2BT7vfZqgLFQLghHW3mJoBqg37e3tY,3765
+fedgraph-0.0.8.dist-info/SOURCES 2.txt,sha256=CTKi9RVPM1gvsnosXmcZg3ruT3oEsUWH1jLSvt5aEXg,406
+fedgraph-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fedgraph-0.0.8.dist-info/dependency_links 2.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fedgraph-0.0.8.dist-info/requires 2.txt,sha256=3Dz4BygydCgZjxvqZzBu7ZPoyn4628gENmpaIsinMhU,208
+fedgraph-0.0.8.dist-info/top_level 2.txt,sha256=wtBjq86hEH4yD7uFJcbEfqX5uoDt1FsHfYvwtzsVvFA,9
+fedgraph-0.0.8.dist-info/top_level.txt,sha256=wtBjq86hEH4yD7uFJcbEfqX5uoDt1FsHfYvwtzsVvFA,9
+fedgraph-0.0.8.dist-info/RECORD,,
