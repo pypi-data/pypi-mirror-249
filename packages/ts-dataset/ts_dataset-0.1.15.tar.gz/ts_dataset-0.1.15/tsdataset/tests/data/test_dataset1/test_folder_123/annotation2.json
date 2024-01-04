@@ -1,0 +1,41 @@
+{
+  "scene_id": "S1BSJ_1231122_123123_GASJ",
+  "i": 0,
+  "j": 0,
+  "width": 1024,
+  "height": 1024,
+  "annotations": [
+    {
+      "x": 3,
+      "y": 51.2,
+      "w": 12,
+      "h": 2,
+      "label": "ship",
+      "info": {}
+    },
+    {
+      "x": 15,
+      "y": 62.5,
+      "w": 8,
+      "h": 3,
+      "label": "ship",
+      "info": {}
+    },
+    {
+      "x": 30,
+      "y": 40,
+      "w": 10,
+      "h": 5,
+      "label": "ship",
+      "info": {}
+    }
+  ],
+  "image": "dataset/S1BSJ_1231122_123123_GASJ/images/1232112.npy",
+  "image_info": {},
+  "metadata": "dataset/S1BSJ_1231122_123123_GASJ/meta/1231232.npy",
+  "metadata_info": {},
+  "look": "dataset/S1BSJ_1231122_123123_GASJ/meta/1231232.npy",
+  "tags": [
+    "asdf"
+  ]
+}
