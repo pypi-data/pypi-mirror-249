@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: typedfzf
+Version: 1.0.3
+Summary: Yet another fzf wrapper.
+Project-URL: Documentation, https://github.com/FlavioAmurrioCS/typedfzf#readme
+Project-URL: Issues, https://github.com/FlavioAmurrioCS/typedfzf/issues
+Project-URL: Source, https://github.com/FlavioAmurrioCS/typedfzf
+Author-email: Flavio Amurrio <25621374+FlavioAmurrioCS@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: typing-extensions
+Description-Content-Type: text/markdown
+
+# typedfzf
+
+[![PyPI - Version](https://img.shields.io/pypi/v/typedfzf.svg)](https://pypi.org/project/typedfzf)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/typedfzf.svg)](https://pypi.org/project/typedfzf)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/FlavioAmurrioCS/typedfzf/main.svg)](https://results.pre-commit.ci/latest/github/FlavioAmurrioCS/typedfzf/main)
+
+-----
+
+**Table of Contents**
+
+- [typedfzf](#typedfzf)
+  - [Installation](#installation)
+  - [License](#license)
+
+## Installation
+
+```console
+pip install typedfzf
+```
+
+## License
+
+`typedfzf` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
