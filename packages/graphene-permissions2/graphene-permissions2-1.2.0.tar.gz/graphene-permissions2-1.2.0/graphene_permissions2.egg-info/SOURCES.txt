@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+graphene_permissions2/__init__.py
+graphene_permissions2/mixins.py
+graphene_permissions2/permissions.py
+graphene_permissions2.egg-info/PKG-INFO
+graphene_permissions2.egg-info/SOURCES.txt
+graphene_permissions2.egg-info/dependency_links.txt
+graphene_permissions2.egg-info/requires.txt
+graphene_permissions2.egg-info/top_level.txt
+requirements/requirements.txt
