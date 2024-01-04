@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://unpkg.com/htmx.org@1.9.8"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: none;
+            font-family: "Quicksand";
+            box-sizing: border-box;
+        }
+
+        :root {
+            --verde: #71C597;
+            --vermelho: #EC7171;
+            --azul: #5784C8;
+            --white: #fff;
+            --muted: #777777;
+        }
+
+        body {
+            background-color: #E8E8E8;
+        }
+
+        .group-tasks {
+            padding: 5rem;
+            margin: auto;
+        }
+
+        .group-tasks>.tasks {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .group-tasks {
+                padding: 10px;
+            }
+
+            .group-tasks>.tasks {
+                align-items: center;
+            }
+        }
+    </style>
+    {% include 'job_manager/_component_job_style.html' %}
+</head>
+
+{% from 'job_manager/_component_job_macro.html' import ComponentJob %}
+
+
+<body>
+
+    <section class="group-tasks">
+        <h1>Tarefas</h1>
+
+        <div class="tasks">
+            {% for job in data.jobs %}
+            {{ComponentJob(
+            uuid=job.uuid,
+            grupo=job.group,
+            titulo=job.name,
+            descricao=job.description,
+            is_running=job.is_running,
+            is_task=job.is_task,
+            last_run=job.last_run,
+            stoped=job.stoped
+            )}}
+            {% endfor %}
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

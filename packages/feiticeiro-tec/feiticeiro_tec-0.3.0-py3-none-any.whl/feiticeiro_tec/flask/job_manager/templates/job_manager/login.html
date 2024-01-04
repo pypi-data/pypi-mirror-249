@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box-form {
+            display: flex;
+            flex-direction: column;
+
+            width: 400px;
+            background-color: white;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            height: fit-content;
+        }
+
+        .btn-login {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        #acesso {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        #label-acesso {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .error{
+            color: rgb(173, 46, 46);
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form method="post" id="box-form">
+        <label for="acesso" id="label-acesso">Chave de Acesso</label>
+        <input type="password" name="acesso" id="acesso" required>
+        {% if errors %}
+        <span class="error">{{errors.acesso}}</span>
+        {% endif %}
+        <button type="submit" class="btn-login">Acessar</button>
+    </form>
+</body>
+
+</html>

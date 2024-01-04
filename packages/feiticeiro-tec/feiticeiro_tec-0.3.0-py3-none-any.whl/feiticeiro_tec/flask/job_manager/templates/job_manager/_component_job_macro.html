@@ -1,0 +1,48 @@
+{% macro ComponentJob(uuid,grupo, titulo, descricao, is_running, is_task,last_run, stoped) %}
+{% if is_running == True%}
+{% set root_class = 'jobs-running' %}
+{% else %}
+{% set root_class = 'jobs-stopped' %}
+{% endif %}
+
+
+<div class="jobs_row {{root_class}}" id="component-{{uuid}}">
+    <div class="jobs_icon">
+        <i class="fa-solid fa-robot"></i>
+    </div>
+    <div class="jobs_content">
+
+
+        <p class="content_group">{{grupo}}</p>
+        <h2 class="content_title">{{titulo}}</h2>
+        <p class="content_descricao">{{descricao}}</p>
+    </div>
+    <div class="job_times">
+        {% if last_run %}
+        <span class="job_badget job_run" title="Hora que foi inicado">{{last_run.strftime('%d/%m %H:%M:%S')}}</span>
+        {% endif %}
+        {% if stoped %}
+        <span class="job_badget job_badget-stoped" title="Hora que foi parado">{{stoped.strftime('%d/%m
+            %H:%M:%S')}}</span>
+        {% endif %}
+    </div>
+    <div class="jobs_actions">
+        {% if not is_task %}
+        <button type="button" class="actions_button"><i class="fa-solid fa-rotate-right"></i></button>
+        {% endif %}
+        {% if is_running == True %}
+        <button type="button" class="actions_button controler" hx-delete="./{{uuid}}" hx-trigger="click"
+            hx-target="#component-{{uuid}}" hx-swap="outerHTML">
+            <i class="fa-solid fa-stop"></i>
+        </button>
+        {% else %}
+        <button type="button" class="actions_button controler" hx-post="./{{uuid}}" hx-trigger="click"
+            hx-target="#component-{{uuid}}" hx-swap="outerHTML">
+            <i class="fa-solid fa-play"></i>
+        </button>
+        {% endif %}
+    </div>
+    
+</div>
+
+{% endmacro %}
