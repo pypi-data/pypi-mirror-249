@@ -1,0 +1,5 @@
+[console_scripts]
+irish_property_find = irish_property.bin.find:main
+irish_property_finder_add_config = irish_property.bin.configure:main
+irish_property_remove_persistence = irish_property.bin.remove_persistence:main
+irish_property_run_ntfy = irish_property.bin.run_notify:main

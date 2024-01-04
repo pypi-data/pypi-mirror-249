@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: irish-property
+Version: 0.0.2
+Summary: Irish property buy / rent helper
+Home-page: https://github.com/RobertLucey/irish_property
+Author: Robert Lucey
+Requires-Python: >=3.5
+License-File: LICENSE
+Requires-Dist: python-dateutil
+Requires-Dist: daft-scraper
+Requires-Dist: thefuzz
+Requires-Dist: backoff
+Requires-Dist: gspread
+Requires-Dist: email-validator
+Requires-Dist: cachetools
+
+Irish property buy / rent helper
