@@ -1,0 +1,48 @@
+#  Deployment Pipeline - Version MLOPS_VERSION
+#
+# We use the following branching and deployment strategy
+# 1) For all new commits to PRs from feature branches into develop, we deploy to dev
+# 2) Mergin the feature branch into development branch will trigger a deployment to test
+# 3) Merging the development branch into master will trigger a deployment to prod
+name: Deployment Pipeline
+
+on: [pull_request, push]
+
+jobs:
+  deploy-prediction-service:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install MLOps
+        run: |
+          pip install 'akerbp-mlops[cdf]==MLOPS_VERSION'
+
+      - name: Deploy to Dev
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          export MODEL_ENV=dev
+          export SERVICE_NAME=prediction
+          deploy_prediction_service
+
+      - name: Deploy to Test
+        if: ${{ (github.event_name == 'push') && ((github.ref == 'refs/heads/development') || (github.ref == 'refs/heads/develop')) }}
+        run: |
+          export MODEL_ENV=test
+          export SERVICE_NAME=prediction
+          deploy_prediction_service
+
+      - name: Deploy to Prod
+        if: ${{ (github.event_name == 'push') && ((github.ref == 'refs/heads/master') || (github.ref == 'refs/heads/main')) }}
+        run: |
+          export MODEL_ENV=prod
+          export SERVICE_NAME=prediction
+          deploy_prediction_service
