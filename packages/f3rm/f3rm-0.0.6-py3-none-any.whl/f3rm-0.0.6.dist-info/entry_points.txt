@@ -1,0 +1,6 @@
+[console_scripts]
+f3rm-download-data = f3rm.scripts.download_datasets:main
+f3rm-optimize = f3rm_robot.optimize:entrypoint
+
+[nerfstudio.method_configs]
+f3rm = f3rm.f3rm_config:f3rm_method
