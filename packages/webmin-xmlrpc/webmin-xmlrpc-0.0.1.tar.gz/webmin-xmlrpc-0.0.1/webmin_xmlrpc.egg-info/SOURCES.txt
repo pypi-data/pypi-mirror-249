@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+webmin_xmlrpc/__init__.py
+webmin_xmlrpc/client.py
+webmin_xmlrpc/xmlrpc.py
+webmin_xmlrpc.egg-info/PKG-INFO
+webmin_xmlrpc.egg-info/SOURCES.txt
+webmin_xmlrpc.egg-info/dependency_links.txt
+webmin_xmlrpc.egg-info/requires.txt
+webmin_xmlrpc.egg-info/top_level.txt
