@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "zeka"
+version = "1.2.0"
+description = ""
+authors = ["Niklas Alexander Shern <nshern@protonmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+randomname = "^0.2.1"
+pyyaml = "^6.0.1"
+python-frontmatter = "^1.0.0"
+
+[tool.poetry.scripts]
+zk = 'zeka.__main__:main'
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
