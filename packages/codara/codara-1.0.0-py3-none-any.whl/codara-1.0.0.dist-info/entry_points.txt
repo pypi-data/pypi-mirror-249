@@ -1,0 +1,2 @@
+[console_scripts]
+codara = package.app:main
