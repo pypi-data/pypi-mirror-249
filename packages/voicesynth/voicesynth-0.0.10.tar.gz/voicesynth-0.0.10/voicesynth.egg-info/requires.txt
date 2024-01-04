@@ -1,0 +1,5 @@
+torch
+rich
+pygobject
+playsound
+numpy
