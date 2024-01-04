@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py_term_helpers
+Version: 0.0.3
+Summary: A simple package for helpful python terminal outputs
+Project-URL: Homepage, https://github.com/rothberry/py-term-helpers
+Project-URL: Issues, https://github.com/rothberry/py-term-helpers/issues
+Author-email: rothberry <phil.roth077@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# py-term-helper
+
+## Overview
+
+The **py-term-helper** is a lightweight Python terminal debug helper tool designed to streamline the debugging process for developers. It provides essential functions and utilities to assist in identifying and resolving issues in Python applications directly from the terminal.
