@@ -1,0 +1,9 @@
+plone.app.dexterity
+senaite.lims
+setuptools
+
+[test]
+Products.PloneTestCase
+plone.app.testing
+robotsuite
+unittest2
