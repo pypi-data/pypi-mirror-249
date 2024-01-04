@@ -1,0 +1,2 @@
+include versioneer.py
+include SuitecrmPythonClient/_version.py
