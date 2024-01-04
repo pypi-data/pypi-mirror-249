@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: myframe
+Version: 0.4.7
+Summary: myframe
+Home-page: http://none.com
+Author: ns
+Author-email: ns@mail.com
+Requires-Dist: casbin (==1.19.0)
+Requires-Dist: casbin-sqlalchemy-adapter (==0.5.2)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: concurrent-log-handler (==0.9.24)
+Requires-Dist: DBUtils (==3.0.3)
+Requires-Dist: dependency-injector (==4.41.0)
+Requires-Dist: loguru (==0.7.0)
+Requires-Dist: packaging (==23.1)
+Requires-Dist: pandas (==2.0.1)
+Requires-Dist: pydantic (==1.10.7)
+Requires-Dist: PyJWT (==2.6.0)
+Requires-Dist: PyMySQL (==1.0.3)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: redis (==4.5.4)
+Requires-Dist: requests (==2.30.0)
+Requires-Dist: SQLAlchemy (==2.0.19)
+Requires-Dist: tenacity (==8.2.2)
+Requires-Dist: cryptography (==41.0.3)
+Requires-Dist: oss2 (==2.18.2)
+

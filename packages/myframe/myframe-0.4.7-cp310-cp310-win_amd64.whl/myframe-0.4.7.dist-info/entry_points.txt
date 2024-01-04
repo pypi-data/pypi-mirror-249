@@ -1,0 +1,3 @@
+[console_scripts]
+myframe.config = myframe._script.script_config:main
+myframe.token = myframe._script.script_token:main
