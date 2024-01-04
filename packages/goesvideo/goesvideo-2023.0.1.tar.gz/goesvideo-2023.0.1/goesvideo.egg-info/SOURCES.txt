@@ -1,0 +1,33 @@
+LICENSE
+README.md
+pyproject.toml
+goesvideo/__init__.py
+goesvideo/exceptions.py
+goesvideo/goesvideo.py
+goesvideo/utils.py
+goesvideo.egg-info/PKG-INFO
+goesvideo.egg-info/SOURCES.txt
+goesvideo.egg-info/dependency_links.txt
+goesvideo.egg-info/requires.txt
+goesvideo.egg-info/top_level.txt
+goesvideo/etc/abibands.yaml
+goesvideo/tests/__init__.py
+goesvideo/tests/test_animating.py
+goesvideo/tests/test_annotations.py
+goesvideo/tests/test_compositing.py
+goesvideo/tests/test_download.py
+goesvideo/tests/test_preview.py
+goesvideo/tests/test_video_editing.py
+goesvideo/tests/Fonts/StoryElementRegular-X3RWa.ttf
+goesvideo/tests/Test Images/2023-10-22 14_09_51 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_19_51 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_29_51 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_39_51 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_49_51 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_59_51 UTC.png
+goesvideo/tests/Test Images/metadata.json
+goesvideo/tests/Test Images/timestamps.csv
+goesvideo/tests/Test NC Files/OR_ABI-L2-CMIPF-M6C01_G16_s20231411110208_e20231411119516_c20231411119596.nc
+goesvideo/tests/Test NC Files/OR_ABI-L2-CMIPF-M6C02_G16_s20231411110208_e20231411119516_c20231411119590.nc
+goesvideo/tests/Test NC Files/OR_ABI-L2-CMIPF-M6C03_G16_s20231411110208_e20231411119516_c20231411119596.nc
+goesvideo/tests/Test Videos/video.mp4

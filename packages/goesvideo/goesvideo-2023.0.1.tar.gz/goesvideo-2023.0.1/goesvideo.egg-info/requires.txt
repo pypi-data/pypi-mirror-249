@@ -1,0 +1,13 @@
+boto3
+botocore
+colorama
+matplotlib
+moviepy
+numpy
+opencv-python
+Pillow>=10.1.0
+pytz
+PyYAML
+satpy>=0.45.0
+tqdm
+urllib3
