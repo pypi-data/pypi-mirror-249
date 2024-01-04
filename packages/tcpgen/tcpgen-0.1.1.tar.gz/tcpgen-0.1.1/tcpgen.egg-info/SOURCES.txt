@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+tcpgen/__init__.py
+tcpgen/main.py
+tcpgen.egg-info/PKG-INFO
+tcpgen.egg-info/SOURCES.txt
+tcpgen.egg-info/dependency_links.txt
+tcpgen.egg-info/entry_points.txt
+tcpgen.egg-info/top_level.txt
