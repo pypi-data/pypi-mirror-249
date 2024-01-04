@@ -1,0 +1,9 @@
+setuptools
+cheroot
+paste
+Zope>=5
+
+[docs]
+Sphinx
+sphinx_rtd_theme
+pkginfo
