@@ -1,0 +1,12 @@
+kadalu_content_apis/__init__.py,sha256=0_v8q09e_QzFnth3z-Mad5s4TmHiTjP-NOHc8HaFBgM,3670
+kadalu_content_apis/folders.py,sha256=wlsjs5Nw-3ItW0yqYVL4uqOOT_UMUPGHzr__0TJDiyY,4951
+kadalu_content_apis/helpers.py,sha256=fyhEMF-5wpIyrB_bsqKwsM_2A9jLwKYQkQQ5PxfBn_g,4187
+kadalu_content_apis/objects.py,sha256=wMdXR8TQeIX2g76zfOzbcTH0C5GqFBWaosbBEHQ960A,7514
+kadalu_content_apis/regions.py,sha256=PP4lDQp-VyOPxOimfxdu3FuAZ8h9wx2uLqSTsSexoDw,535
+kadalu_content_apis/shares.py,sha256=dXnrtfq-hBzKrKNPgzr2elIWuK3WVapuQoJcAfb6Ipc,3113
+kadalu_content_apis/templates.py,sha256=4_8XriwLVqGz1q1KBzEAekgtOK59UcNXXAdXREb6weA,5788
+kadalu_content_apis/version.py,sha256=MVF5iORbPGla1zA7XpMBldtEF45qsZZDvNmXGdeYM4A,19
+kadalu_content_apis-0.3.92.dist-info/METADATA,sha256=vguVxqR11rGaQzK3ltAaM68ioLJN_urc6YFJUik0ao4,487
+kadalu_content_apis-0.3.92.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kadalu_content_apis-0.3.92.dist-info/top_level.txt,sha256=ydI_u8_5ewYq8UpFaPB52ZEz2sj3wAP8mim19BvQnWA,20
+kadalu_content_apis-0.3.92.dist-info/RECORD,,
