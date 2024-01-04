@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: cesg
+Version: 1.0.0
+Summary: Data stream generator for *Certainty-based Domain Selection Framework for TinyML Devices* paper.
+Home-page: https://github.com/w4k2/cesg
+Download-URL: https://github.com/w4k2/cesg
+Maintainer: P. Ksieniewicz
+Maintainer-email: pawel.ksieniewicz@pwr.edu.pl
+License: GPL-3.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: stream-learn
+
+# Conditional Evidence Stream Generator
+
+> Data stream generator for *Certainty-based Domain Selection Framework for TinyML Devices* paper.
+
+## Installation guide
+
+Installation is pretty simple. Either do it by `make install` in the main directory of this repository, or use `pip` for current stable version:
+
+```
+pip install cesg
+```
+
+## Processing example
+
+```python
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import balanced_accuracy_score
+import cesg
+
+# Define parameters
+n_cycles = 3
+n_chunks = 1000
+chunk_size = 200
+random_state = 1410
+n_concepts = 500
+modes = {
+    'instant': {'mode': 'instant'},
+    'linear': {'mode': 'linear'},
+    'normal': {'mode': 'normal', 'sigma': 1},
+}
+
+# Prepare data
+X, y = make_classification(n_samples=10000)
+
+# Transform to components
+X_pca = cesg.utils.normalized_PCA(X)
+
+# Prepare factor
+factor = cesg.utils.mix_to_factor(X_pca)
+
+# Prepare condition map
+condition_map = cesg.utils.make_condition_map(n_cycles=n_cycles,
+                                   n_concepts=n_concepts,
+                                   factor=factor,
+                                   factor_range=(0.1,0.9))
+
+# Calculate concept proba
+concept_probabilities = cesg.concepts.concept_proba(n_concepts=n_concepts,
+                            n_chunks=n_chunks,
+                            normalize=True,
+                            **modes['normal'])
+
+# Initialize stream
+stream = cesg.ConditionalEvidenceStream(X, y,
+                                        condition_map.T,
+                                        concept_probabilities,
+                                        chunk_size=chunk_size,
+                                        fragile=False,
+                                        random_state=random_state)
+
+# Iterate stream and report scores
+clf = MLPClassifier()
+scores = []
+
+while chunk := stream.get_chunk():
+    X, y = chunk
+
+    if stream.chunk_idx > 1:
+        y_pred = clf.predict(X)
+        score = balanced_accuracy_score(y, y_pred)
+        
+        scores.append(score)
+    
+    clf.partial_fit(X, y, classes=stream.classes_)
+    
+print(scores)
+```
+
+## Generation procedure
+
+The streams were synthesized using an original generator based on the conditional evidence. At the input of the stream synthesis procedure, we have a stationary data set $DS$.
+
+The first processing step is to determine the $F$ factor of the set, being a value in the range $0-1$, correlated with the difficulty of the object and determined for each object from the DS data set. To estmimate the $F$ factor:
+
+1. Transform $DS$ to its components $DS'$, using Principal Component Analysis, leaving 80% of the explained variance and standardizing the result.
+2. Model a Gaussian Mixture for $DS'$ with an assumption of 10 mixture components, assuming that each component has its own single variance.
+3. Estimate the density of the Gaussian Mixture distribution for each point of DS'. It is important to remember that support is estimated for each component of the mixture.
+4. Quantile-normalize the obtained density to a uniform distribution along the object axis -- independently in each component.
+5. Flatten the obtained representation with the sum of components and perform another quantile normalization to uniform distribution, so that for each point from the original set its mapping to the $F$ factor is obtained.
+
+Having the vector of factors $F$, it is possible to proceed to determine the conditional map $CM$. It informs generator about the availability of each $DS$ object for each metaconcept building the data stream. Here it is possible to configure the number of metaconcepts (`m`), the number of difficulty oscillation cycles (`c`) and the thresholding range of the difficulty factor (`r`). To obtain the conditional map $CM$:
+
+1. Build a condition basis vector constituting an interval-normalized (0-1) sampling of the sinusoid at `m` points in the period from 0 to 2 Pi `c`. Scale the result to the thresholding range `r`.
+2. Calculate a conditional map $CM$ by equating the condition basis vector to the vetor $F$, so as to obtain a logical matrix informing whether the F factor of a given object exceeds the metaconcept threshold value.
+
+The final, third component of processing metadata is the metaconcept probability map (CP). It informs generator about the probability of selecting an object from a given metaconcept in a given batch of the generated stream. It is calculated according to instant, linear or normal dynamics, in accordance with the standard procedure for generating data streams.
+
+To establish a data stream, it is necessary to pass $DS$, $F$, $CM$, and $CP$ to the ConditionalEvidenceStream control object. It is responsible for using in each subsequent batch only objects allowed for processing in accordance with the CM conditional map for a specific batch described in the CP.
