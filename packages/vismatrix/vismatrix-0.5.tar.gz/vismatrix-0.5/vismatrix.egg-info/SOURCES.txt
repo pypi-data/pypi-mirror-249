@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+vismatrix/__init__.py
+vismatrix/vismatrix.py
+vismatrix.egg-info/PKG-INFO
+vismatrix.egg-info/SOURCES.txt
+vismatrix.egg-info/dependency_links.txt
+vismatrix.egg-info/not-zip-safe
+vismatrix.egg-info/requires.txt
+vismatrix.egg-info/top_level.txt
