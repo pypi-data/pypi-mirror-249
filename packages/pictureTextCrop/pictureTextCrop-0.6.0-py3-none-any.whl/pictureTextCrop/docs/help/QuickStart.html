@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+  </head>
+  <body>
+    <div class="project-description">
+      <meta http-equiv="content-type" content="text/html;
+        charset=windows-1252">
+      <p align="center"><font face="Helvetica, Arial, sans-serif"><b>Quick
+
+            Start</b></font></p>
+      <p align="left"><font face="Helvetica, Arial, sans-serif">This
+          application can be run by installing the python package
+          dependencies using pip and then simply unzipping the source
+          archive, pictureTextCrop.tar.gz into a new directory that you
+          create to contain the application and its files.&nbsp; The
+          python packages required, available at PyPI.org, include one
+          rather large one, PyQt5.&nbsp; The complete list of packages
+          required is: PyQt5, pytesseract, and Pillow, which is included
+          as a library module in current releases of Python.</font></p>
+      <p align="left"><font face="Helvetica, Arial, sans-serif"> </font></p>
+      <font face="Helvetica, Arial, sans-serif"> <br>
+        <b>Installation Steps:</b><br>
+      </font>
+      <ol>
+        <li><font face="Helvetica, Arial, sans-serif">Download the
+            source code archive from the GitHub account:
+            PictureTextCrop-main.zip.</font></li>
+        <li><font face="Helvetica, Arial, sans-serif">Put it in a folder
+            you make to host this application.</font></li>
+        <li><font face="Helvetica, Arial, sans-serif">Extract the source
+            code archive in its application folder.</font></li>
+        <li><font face="Helvetica, Arial, sans-serif">Go into the
+            extracted folder, then into the src/ folder.&nbsp; You will
+            find the main python file: pictureTextCrop.py.&nbsp; This is
+            the file you will run in a console.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open a console / terminal in
+            this folder.&nbsp; This is the working folder for the
+            application.</font></li>
+        <li><font face="Helvetica, Arial, sans-serif">Check your python
+            version with python -V or python3 -V.&nbsp; If these do not
+            work try the -h option for a list of options
+            available.&nbsp; The version must be 3.6 or higher.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Installing
+            python is beyond the scope of this Quick Start guide.)</font></li>
+        <li><font face="Helvetica, Arial, sans-serif">If the python
+            package installer, pip, is not installed, execute the
+            following command in the console:<br>
+            <b>sudo apt install python3-pip</b></font></li>
+        <li><font face="Helvetica, Arial, sans-serif">To install the
+            python GUI package required, execute:<br>
+            <b>pip install PyQt5</b></font></li>
+        <li><font face="Helvetica, Arial, sans-serif">Then to install
+            the text extraction package, run:<br>
+            <b>pip install pytesseract</b><br>
+            then<br>
+            <b>sudo apt install tesseract_ocr</b></font></li>
+        <li><font face="Helvetica, Arial, sans-serif">Although sqlite3
+            is provided in python as a library, you will want to use it
+            outside of this context and will want a GUI viewer for the
+            database file:<br>
+            <b>sudo apt install sqlite3<br>
+            </b><b>sudo apt install squlitebrowser</b><br>
+          </font></li>
+      </ol>
+      <font face="Helvetica, Arial, sans-serif">Once these steps
+        succeed, go into the PictureTextCrop-main folder, then into its
+        src/ folder, and locate the pictureTextCrop.py source file. To
+        start the application, execute the following on the command
+        line:<br>
+        <br>
+        <b>&nbsp;&nbsp;&nbsp; $ python3 pictureTextCrop.py</b><br>
+        <br>
+        <br>
+        <b>Introduction:</b><br>
+        <br>
+        This application is a simple tool which allows you to
+        interactively extract text from image files by dragging from the
+        top-left corner of a crop rectangle to the bottom-right corner.
+        When you release the mouse button the text inside the rectangle
+        is printed to the console and a record of the conversion and its
+        result is made in the SQLite3 database, TextExtraction.db, in
+        the CropLog table. Each record of this table records the date
+        and time of the extraction in its timeStamp field, the full path
+        to the file on your disk of the image file in the filePath
+        field, the coordinates of the crop in the coordinates field, and
+        the text of the crop in the text field. The value of storing all
+        extractions in a database table is simply that you can then
+        search large numbers of images containing particular text using
+        SQL.<br>
+        <br>
+        The image formats recognized are those recognized by the PyQy5
+        QImageReader class, which includes those associated with the
+        following file extensions:<br>
+        <br>
+        &nbsp;&nbsp;&nbsp; 'bmp', 'cur', 'gif', 'icns', 'ico', 'jpeg',
+        'jpg', 'mng', 'pbm', 'pgm', 'png', 'ppm', 'svg', 'svgz', 'tga',
+        'tif', 'tiff', 'wbmp', 'webp', 'xbm', 'xpm'<br>
+        <br>
+        The application main window displays a list on the left which
+        will contain the paths of the image files identified when you
+        select folders to scan.&nbsp; In the right half of the dialog
+        will be a space which shows the image selected when you click on
+        a file path in the list.&nbsp; The dialog can be resized to
+        accommodate your needs.<br>
+        <br>
+        To extract text from an image, select the checkbox located to
+        the left of it and click on the "Select Image Text" button in
+        the button-bar at the top. You can select multiple files and a
+        text selection dialog will be stacked up for each. Press the
+        left mouse button at the top left of a rectangle containing the
+        text you want to extract and then drag to the lower right
+        corner. When you release the button the extracted text is
+        printed to the console and a record of the extraction and its
+        result is made in the SQLite3 database. You can do this as many
+        times as you like for each image. A separate CropLog record will
+        be made for each.<br>
+        <b><br>
+          <br>
+        </b><b>Batch Mode:</b><br>
+        <br>
+        If you click on the "Batch Process" button in the tool bar the
+        application will extract all of the text from each of the files
+        in the folder scan list. This process can take some time, my own
+        trials on my ordinary laptop resulting in a pace of more than 5
+        seconds per image, sometimes 15 or so. With only 50 images, the
+        process could take up to 10 minutes. The resulting extracted
+        text will be placed into the BatchMaster table in the SQLite3
+        database. The fields written in each record in include the
+        extraction TimeStamp, the FolderPath, the FileName, the Text,
+        and the file metadata in the Info field. Views for reviewing the
+        file metadata and other components saved in convenient formats
+        are planned.<br>
+        <br>
+        <b><br>
+        </b><b>MIME Information Collection:</b><br>
+        <br>
+        Coming Soon.<br>
+        <br>
+        <br>
+        When processing digital evidence you must be careful to preserve
+        the file metadata, especially the time stamps. <br>
+        Know how operating systems treat timestamps and permissions when
+        you copy files and how your archiving applications do as well. <br>
+        <br>
+        <br>
+        If you would like to support this project, you can contribute
+        here: <a moz-do-not-send="true"
+          href="https://www.buymeacoffee.com/keithmichah">https://www.buymeacoffee.com/keithmichah</a><br>
+        <br>
+      </font><br>
+    </div>
+  </body>
+</html>
