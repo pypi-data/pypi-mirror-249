@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: geo-api-gouv-fr
+Version: 1.3.0
+Summary: Python package to use geoapi.gouv.fr api
+Home-page: https://github.com/StartupsPoleEmploi/geo-api-gouv-fr
+License: GPL-3.0-only
+Keywords: geoapi,geoapi.gouv,geoapi.gouv.fr
+Author: La Bonne Boite
+Author-email: labonneboite@pole-emploi.fr
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Repository, https://github.com/StartupsPoleEmploi/geo-api-gouv-fr
+Description-Content-Type: text/markdown
+
+# GeoApi for data.gouv - Python Package
+
+## About
+
+This package was intended to use the [geo.api.gouv.fr](https://geo.api.gouv.fr/) api.
+## How tos
+
+### Tests
+
+``` bash
+make test
+```
+
+### Documentation
+
+The documentation is based on [mkdocs](https://www.mkdocs.org/)
+
+To open the docs:
+
+``` bash
+make help
+```
+
+It will be accessible [here](http://127.0.0.1:9999/)
+
