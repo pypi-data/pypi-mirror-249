@@ -1,0 +1,5 @@
+include *.h
+include whois.c
+include utils.c
+include COPYING
+include README.md
