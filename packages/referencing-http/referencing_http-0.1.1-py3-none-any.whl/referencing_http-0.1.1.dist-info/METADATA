@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: referencing-http
+Version: 0.1.1
+Summary: Serve your JSON registries over HTTP, for humans and machines alike
+Project-URL: Homepage, https://github.com/python-referencing/referencing-http
+Project-URL: Documentation, https://referencing-http.readthedocs.io/
+Project-URL: Issues, https://github.com/python-referencing/referencing-http/issues/
+Project-URL: Funding, https://github.com/sponsors/Julian
+Project-URL: Source, https://github.com/python-referencing/referencing-http
+Author: Julian Berman
+Author-email: Julian+referencing-http@GrayVines.com
+License: MIT
+License-File: COPYING
+Keywords: api,asyncapi,json,jsonschema,openapi,referencing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: File Formats :: JSON
+Classifier: Topic :: File Formats :: JSON :: JSON Schema
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+
+====================
+``referencing-http``
+====================
+
+|PyPI| |Pythons| |CI| |ReadTheDocs|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/referencing-http.svg
+  :alt: PyPI version
+  :target: https://pypi.org/project/referencing-http/
+
+.. |Pythons| image:: https://img.shields.io/pypi/pyversions/referencing-http.svg
+  :alt: Supported Python versions
+  :target: https://pypi.org/project/referencing-http/
+
+.. |CI| image:: https://github.com/python-jsonschema/referencing-http/workflows/CI/badge.svg
+  :alt: Build status
+  :target: https://github.com/python-jsonschema/referencing-http/actions?query=workflow%3ACI
+
+
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/referencing-http/badge/?version=stable&style=flat
+  :alt: ReadTheDocs status
+  :target: https://referencing-http.readthedocs.io/en/stable/
