@@ -1,0 +1,3 @@
+[console_scripts]
+file-ripper = file_ripper.cli:main
+
