@@ -1,0 +1,8 @@
+setuptools
+async_timeout
+httpx
+redis
+starlette
+websockets
+
+[test]
