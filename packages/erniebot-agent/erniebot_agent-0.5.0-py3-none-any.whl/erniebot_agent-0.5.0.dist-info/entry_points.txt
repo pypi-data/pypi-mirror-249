@@ -1,0 +1,2 @@
+[console_scripts]
+erniebot_agent = erniebot_agent.__main__:console_entry
