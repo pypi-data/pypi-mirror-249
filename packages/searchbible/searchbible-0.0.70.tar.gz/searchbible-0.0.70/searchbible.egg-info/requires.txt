@@ -1,0 +1,12 @@
+apsw
+argparse
+chromadb
+google-cloud-aiplatform
+openai==1.6.1
+prompt_toolkit
+pygame
+pygments
+pyperclip
+requests
+sentence-transformers
+tiktoken
