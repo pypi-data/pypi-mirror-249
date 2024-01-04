@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/notebook/page[@name='balance']/separator[@id='balance']" position="after">
+        <separator colspan="4" name="current_value" string="Current valuation of the investment"/>
+    </xpath>
+    <xpath expr="/form/notebook/page[@name='balance']/field[@name='balance']" position="after">
+        <label name="purchase_amount"/>
+        <field name="purchase_amount" symbol="currency"/>
+        <label name="yield_balance"/>
+        <field name="yield_balance" symbol="currency"/>
+    </xpath>
+    <xpath expr="/form/notebook/page[@name='balance']/field[@name='balance_all']" position="after">
+        <label name="current_value"/>
+        <field name="current_value" symbol="currency"/>
+        <label name="diff_amount"/>
+        <field name="diff_amount" symbol="currency"/>
+    </xpath>
+    <xpath expr="/form/notebook/page[@name='balance']/field[@name='balance_ref']" position="after">
+        <label name="current_rate"/>
+        <field name="current_rate" symbol="asset_symbol"/>
+        <label name="diff_percent"/>
+        <group id="diff_percent" col="2">
+            <field name="diff_percent" xexpand="0"/>
+            <label name="diff_percent" xalign="0.0" string="%" xexpand="1"/>
+        </group>
+
+        <label name="current_value_ref" colspan="2" string=" "/>
+        <label name="current_value_ref"/>
+        <field name="current_value_ref" symbol="company_currency"/>
+        <newline/>
+
+        <separator colspan="2" name="quantity" string="Quantity"/>
+        <newline/>
+        <label name="quantity"/>
+        <field name="quantity" symbol="quantity_uom"/>
+        <newline/>
+        <label name="quantity_all"/>
+        <field name="quantity_all" symbol="quantity_uom"/>
+        <newline/>
+
+        <separator name="yield_dividend_total" colspan="6" string="Fees and dividends"/>
+        <label name="yield_sales"/>
+        <field name="yield_sales" symbol="currency"/>
+        <label name="yield_dividend_total"/>
+        <field name="yield_dividend_total" symbol="currency"/>
+        <label name="yield_fee_total"/>
+        <field name="yield_fee_total" symbol="currency"/>
+
+        <label name="yield_sales_12m"/>
+        <field name="yield_sales_12m" symbol="currency"/>
+        <label name="yield_dividend_12m"/>
+        <field name="yield_dividend_12m" symbol="currency"/>
+        <label name="yield_fee_12m"/>
+        <field name="yield_fee_12m" symbol="currency"/>
+    </xpath>
+
+    <xpath expr="/form/notebook/page[@id='pggeneral']" position="after">
+        <page name="asset" string="Asset">
+            <label name="asset"/>
+            <field name="asset"/>
+            <label name="quantity_uom"/>
+            <field name="quantity_uom"/>
+            <label name="quantity_digits"/>
+            <field name="quantity_digits"/>
+
+            <field name="asset_uomcat"/>
+        </page>
+    </xpath>
+
+</data>

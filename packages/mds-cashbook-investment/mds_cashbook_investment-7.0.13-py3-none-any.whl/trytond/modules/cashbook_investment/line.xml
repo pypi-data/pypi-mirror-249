@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds.de for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="line_view_form">
+            <field name="model">cashbook.line</field>
+            <field name="inherit" ref="cashbook.line_view_form"/>
+            <field name="name">line_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="line_view_list">
+            <field name="model">cashbook.line</field>
+            <field name="inherit" ref="cashbook.line_view_list"/>
+            <field name="name">line_list</field>
+        </record>
+        <record model="ir.ui.view" id="line_recon_view_list">
+            <field name="model">cashbook.line</field>
+            <field name="inherit" ref="cashbook.line_recon_view_list"/>
+            <field name="name">line_recon_list</field>
+        </record>
+
+    </data>
+</tryton>

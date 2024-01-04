@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<form>
+
+    <label name="fee_category" />
+    <field name="fee_category"/>
+    <label name="dividend_category" />
+    <field name="dividend_category"/>
+    <label name="gainloss_book" />
+    <field name="gainloss_book"/>
+
+</form>
