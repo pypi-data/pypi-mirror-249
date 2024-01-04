@@ -1,0 +1,17 @@
+appthreat-vulnerability-db>=5.5.7
+defusedxml
+oras
+PyYAML
+rich
+quart
+PyGithub
+toml
+pdfkit
+Jinja2
+
+[dev]
+black
+flake8
+pytest
+pytest-cov
+httpretty
