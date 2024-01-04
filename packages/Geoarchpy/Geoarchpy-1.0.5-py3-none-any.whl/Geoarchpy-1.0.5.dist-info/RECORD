@@ -1,0 +1,16 @@
+ArchPy/__init__.py,sha256=ehORUK_Ov8ZfIdouaMivbP6SQtYxggJrOCBOLD9kSSU,221
+ArchPy/_version.py,sha256=5Z2afL9xGD5VIigkudEkYRZ1-lmOM-3rHyLo3J7E0uU,110
+ArchPy/automatic_pile.py,sha256=FsFl5WkNWkvDjlt50zijrHMjCTNBNMD80Mtcng3_djQ,7245
+ArchPy/base.py,sha256=YqHqZf4FzHjphBMHxdFTltjHJMYdlY_zsd6YacXgXHs,288516
+ArchPy/data_transfo.py,sha256=JqpyA7U8AfHRvMO8BpR4tltTg1tcAqDjhVY03Ssi03g,3560
+ArchPy/ineq.py,sha256=1bAhwK00g2s1i9Bodc1YRdHHrvNQ4N0MDinhBnQ9YN8,29742
+ArchPy/infer.py,sha256=hTHdgZ8f8VLpRpjFMdzCcKR9ysIEcp7KlYwbigFDyE8,29206
+ArchPy/inputs.py,sha256=YFpa7KI7_AtPVKVV5X5PsY0_dB-zMSg4V9X3SlnuDM8,58723
+ArchPy/parallel.py,sha256=a0VPyoBlqwgEbS1z5ABmUShZhnAMPsgGFOGOsymTwTw,5667
+ArchPy/tpgs.py,sha256=emWV4KneeaUp8JjTa28NRIM_Cc1bdPRcrG6RkoG6-HI,33566
+ArchPy/x_valid.py,sha256=1u_pJE_4seHVK2a36Ou3jOc9GvMZZRNPevUzuWO4jz4,30140
+Geoarchpy-1.0.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+Geoarchpy-1.0.5.dist-info/METADATA,sha256=0O20U0pd91UFtb5Rhe5CcgD0NwHM9nxiljoTkv2kncA,44631
+Geoarchpy-1.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Geoarchpy-1.0.5.dist-info/top_level.txt,sha256=1KEvVMpXYk_Tqoc2XrTISSkwqe5q7pb5ewFfm0jZ-PA,7
+Geoarchpy-1.0.5.dist-info/RECORD,,
