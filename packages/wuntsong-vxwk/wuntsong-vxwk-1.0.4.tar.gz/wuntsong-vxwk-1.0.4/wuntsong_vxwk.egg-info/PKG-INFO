@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wuntsong-vxwk
+Version: 1.0.4
+Summary: VXWK项目的Python版本SDK
+Home-page: https://www.vxwk.com
+Author: 广州桓创信息科技有限公司
+Author-email: report@wuntsong.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi==2023.11.17
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: idna==3.6
+Requires-Dist: requests==2.31.0
+Requires-Dist: urllib3==2.1.0
+
+# VXWK-Python-SDK
+## 简介
+vxwk项目的python版本SDK，支持全部api。
+
+## 打包
+```shell
+$ python setup.py sdist
+$ twine upload dist/$PACKAGE_NAME
+```

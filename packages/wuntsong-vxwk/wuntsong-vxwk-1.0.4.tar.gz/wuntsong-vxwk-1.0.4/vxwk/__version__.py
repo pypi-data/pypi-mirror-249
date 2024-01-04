@@ -1,0 +1,5 @@
+__title__ = "wuntsong-vxwk"
+__version__ = "1.0.4"
+__author__ = "广州桓创信息科技有限公司"
+__email__ = "report@wuntsong.com"
+__license__ = "Apache 2.0"
