@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: aws-cdk.aws-lambda-dotnet
+Version: 0.0.2
+Summary: @aws-cdk/aws-lambda-dotnet
+Home-page: https://github.com/cdklabs/awscdk-lambda-dotnet.git
+Author: Amazon Web Services<aws-cdk-dev@amazon.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/cdklabs/awscdk-lambda-dotnet.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aws-cdk-lib <3.0.0,>=2.80.0
+Requires-Dist: constructs <11.0.0,>=10.0.5
+Requires-Dist: jsii <2.0.0,>=1.93.0
+Requires-Dist: publication >=0.0.3
+Requires-Dist: typeguard ~=2.13.3
+
+# AWS Lambda .NET Library
+
+<!--BEGIN STABILITY BANNER-->---
+
+
+![cdk-constructs: Experimental](https://img.shields.io/badge/cdk--constructs-experimental-important.svg?style=for-the-badge)
+
+> The APIs of higher level constructs in this module are experimental and under active development.
+> They are subject to non-backward compatible changes or removal in any future version. These are
+> not subject to the [Semantic Versioning](https://semver.org/) model and breaking changes will be
+> announced in the release notes. This means that while you may use them, you may need to update
+> your source code when upgrading to a newer version of this package.
+
+---
+<!--END STABILITY BANNER-->
+
+This library provides constructs for .NET Lambda functions.
+
+To use this module you will either need to have `.NET SDK` installed (`.NET 6.0` or later) with the [AWS Lambda Tools for .NET](https://docs.aws.amazon.com/lambda/latest/dg/csharp-package-cli.html) or `Docker` installed.
+
+## .NET Function
+
+Define a `DotNetFunction`:
+
+```python
+dotnet.DotNetFunction(self, "MyFunction",
+    project_dir="src/MyFunction"
+)
+```
+
+All other properties of `lambda.Function` are supported, see also the [AWS Lambda construct library](https://github.com/aws/aws-cdk/tree/main/packages/aws-cdk-lib/aws-lambda).
+
+### Custom Runtime and Native AOT
+
+With this construct it is possible to use s custom runtime by setting the runtime to `PROVIDED_AL2`. This allows you to run unsupported .NET runtime versions like .NET 7.0 or [Native AOT](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot). Setting the runtime to `PROVIDED_AL2` will instruct CDK and the AWS Lambda Tools for .NET to build your project in a Docker container based of Amazon Linux 2. An example can be found below.
+
+```python
+dotnet.DotNetFunction(self, "MyFunction",
+    project_dir="src/MyFunction",
+    runtime=lambda_.Runtime.PROVIDED_AL2,
+    bundling=dotnet.BundlingOptions(
+        msbuild_parameters=["/p:PublishAot=true"]
+    )
+)
+```
+
+> Publishing your application with Native AOT requires you to use the same processor architecture for the Lambda function as for your build environment. Without specification, the construct automatically selects the processor architecture of the machine where CDK is building your project.
+
+## Community Extensions
+
+We encourage the development of Community Service Extensions that support
+advanced features. Here are some useful extensions that we have reviewed:
+
+* [ListenerRulesExtension](https://www.npmjs.com/package/@wheatstalk/ecs-service-extension-listener-rules) for more precise control over Application Load Balancer rules
+
+> Please submit a pull request so that we can review your service extension and
+> list it here.
