@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pyopenbt/__init__.py
+pyopenbt/openbt.py
+pyopenbt.egg-info/PKG-INFO
+pyopenbt.egg-info/SOURCES.txt
+pyopenbt.egg-info/dependency_links.txt
+pyopenbt.egg-info/requires.txt
+pyopenbt.egg-info/top_level.txt
