@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/datasetlib/__init__.py
+src/datasetlib/datasets.py
+src/datasetlib.egg-info/PKG-INFO
+src/datasetlib.egg-info/SOURCES.txt
+src/datasetlib.egg-info/dependency_links.txt
+src/datasetlib.egg-info/requires.txt
+src/datasetlib.egg-info/top_level.txt
+src/datasetlib/datasets/apple.csv
+src/datasetlib/datasets/babynames.csv
+src/datasetlib/datasets/bmw.csv
+src/datasetlib/datasets/summergames.csv
+src/datasetlib/datasets/titanic.csv
