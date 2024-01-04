@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="72pt" height="720pt" viewBox="0 0 72 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2023-11-22T11:57:04.748792</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.8.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 72 720 
+L 72 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 3.00024 716.99976 
+L 68.99976 716.99976 
+L 68.99976 3.00024 
+L 3.00024 3.00024 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="QuadMesh_1">
+    <path d="M 3.00024 716.99976 
+L 68.99976 716.99976 
+L 68.99976 645.599808 
+L 3.00024 645.599808 
+L 3.00024 716.99976 
+" clip-path="url(#p6d3e61dede)" style="fill: #ffebb0"/>
+    <path d="M 3.00024 645.599808 
+L 68.99976 645.599808 
+L 68.99976 574.199856 
+L 3.00024 574.199856 
+L 3.00024 645.599808 
+" clip-path="url(#p6d3e61dede)" style="fill: #ffdf91"/>
+    <path d="M 3.00024 574.199856 
+L 68.99976 574.199856 
+L 68.99976 502.799904 
+L 3.00024 502.799904 
+L 3.00024 574.199856 
+" clip-path="url(#p6d3e61dede)" style="fill: #fed272"/>
+    <path d="M 3.00024 502.799904 
+L 68.99976 502.799904 
+L 68.99976 431.399952 
+L 3.00024 431.399952 
+L 3.00024 502.799904 
+" clip-path="url(#p6d3e61dede)" style="fill: #fec653"/>
+    <path d="M 3.00024 431.399952 
+L 68.99976 431.399952 
+L 68.99976 360 
+L 3.00024 360 
+L 3.00024 431.399952 
+" clip-path="url(#p6d3e61dede)" style="fill: #fdb934"/>
+    <path d="M 3.00024 360 
+L 68.99976 360 
+L 68.99976 288.600048 
+L 3.00024 288.600048 
+L 3.00024 360 
+" clip-path="url(#p6d3e61dede)" style="fill: #faa438"/>
+    <path d="M 3.00024 288.600048 
+L 68.99976 288.600048 
+L 68.99976 217.200096 
+L 3.00024 217.200096 
+L 3.00024 288.600048 
+" clip-path="url(#p6d3e61dede)" style="fill: #f88f3b"/>
+    <path d="M 3.00024 217.200096 
+L 68.99976 217.200096 
+L 68.99976 145.800144 
+L 3.00024 145.800144 
+L 3.00024 217.200096 
+" clip-path="url(#p6d3e61dede)" style="fill: #f57a3f"/>
+    <path d="M 3.00024 145.800144 
+L 68.99976 145.800144 
+L 68.99976 74.400192 
+L 3.00024 74.400192 
+L 3.00024 145.800144 
+" clip-path="url(#p6d3e61dede)" style="fill: #f36542"/>
+    <path d="M 3.00024 74.400192 
+L 68.99976 74.400192 
+L 68.99976 3.00024 
+L 3.00024 3.00024 
+L 3.00024 74.400192 
+" clip-path="url(#p6d3e61dede)" style="fill: #f05046"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="LineCollection_1"/>
+   <g id="patch_3">
+    <path d="M 3.00024 716.99976 
+L 36 716.99976 
+L 68.99976 716.99976 
+L 68.99976 3.00024 
+L 36 3.00024 
+L 3.00024 3.00024 
+L 3.00024 716.99976 
+z
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6d3e61dede">
+   <rect x="3.00024" y="3.00024" width="65.99952" height="713.99952"/>
+  </clipPath>
+ </defs>
+</svg>
