@@ -1,0 +1,9 @@
+vabot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vabot/base.py,sha256=-V-8iL9TYgkcEfYGbO8T_--N6O4U95hw9X1yXAlJ0tY,1472
+vabot/bot.py,sha256=9KvBLqyJLZ66LHqCLrabdlQDBfWqLT_O0kuXK_awG40,841
+vabot/chatbot.py,sha256=N-294ZLSqbTjgjUkpH0OzdrjBoXQlJApjpzIpPY9yNU,843
+vabot/config.py,sha256=eHS7tIcsMj5_--L3Oy1oN09IPGR7S47aDTnT1SWBpbQ,536
+vabot/debug.py,sha256=gti5auHTkuBaRw9KQu5L_6Sqx2U03Cc9jn4swmGZpSc,516
+vabot-0.1.0.dist-info/METADATA,sha256=G9MP5J0akeC9I2po-eQEbh7089oT3nQ9ssnbQetDQr4,938
+vabot-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+vabot-0.1.0.dist-info/RECORD,,

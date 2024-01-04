@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vabot
+Version: 0.1.0
+Summary: VA Bot with ChatGPT API then connected with Telegram
+License: MIT
+Author: Feri Lukmansyah
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: fake-useragent (>=1.4.0,<2.0.0)
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: httpx (>=0.26.0,<0.27.0)
+Requires-Dist: openai (>=1.6.1,<2.0.0)
+Requires-Dist: psutil (>=5.9.7,<6.0.0)
+Requires-Dist: pytelegrambotapi (>=4.14.1,<5.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: watchdog (>=3.0.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+
