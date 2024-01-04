@@ -1,0 +1,14 @@
+README.md,sha256=8I8yvDy6PvlN6C43ClFKdbA2PjcuidyCiLELT6tPFkY,875
+characteristics.md,sha256=_vfl_7Yz0E7QXncGzMmyoHKcizrTxkFU36Azuu2eY5U,3095
+pyfreshintellivent/__init__.py,sha256=SrEja2nDiYXf6WOovWC-cCsr3BjVjUrbMszg2dJwbB8,10082
+pyfreshintellivent/characteristics.py,sha256=0sW36pEC5Ox1yqONgaBqR4-N_1KyrVtRHNOp-MOY3qc,1060
+pyfreshintellivent/consts.py,sha256=UUO1RtalBvxx3EZTLTNnQ7mzn1vFjdPjgM7Do1qjEhk,32
+pyfreshintellivent/helpers.py,sha256=SkwSXZ4qDR3Vf_vU544G0JHz0FperG430p4FAbYzabQ,3322
+pyfreshintellivent/parser.py,sha256=z_X9QapqdTZe7aRohsNFj3oJCPOIklqB4yB24SmZe4c,5053
+pyfreshintellivent/scanner.py,sha256=OUlSPvRBcdO6JNMsXlf7BllA3A6jUei7BRIiQukffOA,596
+pyfreshintellivent/sensors.py,sha256=2Swd2WjzxyfJcSv7MOjVYkNHJlVSp_2-V8hS_-TGlmY,1773
+pyfreshintellivent-0.3.2.dist-info/LICENSE,sha256=RoKl0eAfzCaFQeD-ICBRv5JnAhTptWADNPsqUZWrnts,1076
+pyfreshintellivent-0.3.2.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyfreshintellivent-0.3.2.dist-info/METADATA,sha256=uCgTyLsNocty6RRE1SOya8EOHROm_9jILJxmo5g_9Yc,1781
+pyfreshintellivent-0.3.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pyfreshintellivent-0.3.2.dist-info/RECORD,,
