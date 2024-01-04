@@ -1,0 +1,15 @@
+{
+    "selector": {
+        "type": {
+            "options": {
+                "last": "Senest opdaterede",
+                "max": "Maksimum",
+                "mean": "Aritmetisk middelv\u00e6rdi",
+                "median": "Median",
+                "min": "Minimum",
+                "range": "Statistisk interval",
+                "sum": "Sum"
+            }
+        }
+    }
+}

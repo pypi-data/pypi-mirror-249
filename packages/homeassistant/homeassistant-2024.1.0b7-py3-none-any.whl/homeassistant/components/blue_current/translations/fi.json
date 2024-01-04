@@ -1,0 +1,20 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Tili on jo m\u00e4\u00e4ritetty",
+            "reauth_successful": "Uudelleentodennus onnistui",
+            "wrong_account": "V\u00e4\u00e4r\u00e4 tili: Ole hyv\u00e4 ja tunnistaudu {email}:n api-avaimella."
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "unknown": "Odottamaton virhe"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_token": "API-tunnus"
+                }
+            }
+        }
+    }
+}
