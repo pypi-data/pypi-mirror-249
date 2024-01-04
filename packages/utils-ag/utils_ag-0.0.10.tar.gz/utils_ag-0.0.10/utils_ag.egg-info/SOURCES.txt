@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/filesystem.py
+src/first.py
+src/io.py
+utils_ag.egg-info/PKG-INFO
+utils_ag.egg-info/SOURCES.txt
+utils_ag.egg-info/dependency_links.txt
+utils_ag.egg-info/requires.txt
+utils_ag.egg-info/top_level.txt
