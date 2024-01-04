@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+BetterMt5/Decorators.py
+BetterMt5/Errors.py
+BetterMt5/Global.py
+BetterMt5/Utils.py
+BetterMt5/__init__.py
+BetterMt5.egg-info/PKG-INFO
+BetterMt5.egg-info/SOURCES.txt
+BetterMt5.egg-info/dependency_links.txt
+BetterMt5.egg-info/requires.txt
+BetterMt5.egg-info/top_level.txt
+tests/test.py
