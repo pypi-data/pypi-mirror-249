@@ -1,0 +1,15 @@
+tasksource/__init__.py,sha256=u35R0iTM9yMZ4KqR5QdGee2YKaZCGTmaIE12uYDLna8,69
+tasksource/access.py,sha256=WHev4A_2CO7YXrVrwvFxAvwDJjqv3clz3UCR5unIaIY,4268
+tasksource/mtasks.py,sha256=xiD1-OcZhcIGGlMAbXX9bqXgOqT1llzbP3bzZ3mlg5w,6995
+tasksource/preprocess.py,sha256=U-L3rYiNzbkXLKxbqevjMi9vEO9WYXwM9KS-GJfRwy0,8816
+tasksource/recast.py,sha256=n0PvU284wE4hM4yCtj3taMfyGoS9JQUdog4Kef5wvrg,5181
+tasksource/tasks.py,sha256=y6bY9G7NC8zzFU_ZCyBVufzYFMo57Mo-2rA1Wk9eFR4,53423
+tasksource/metadata/__init__.py,sha256=Jlm99XLwH_OA-DHdM8zHi5OYkjckUozdP6v-yQ53DsU,6152
+tasksource/metadata/bigbench_groups.py,sha256=enAxyJ56B91hv2H_H3TGhnUfEnCJ0zp92y2Jk7hk4qY,3612
+tasksource/metadata/blimp_groups.py,sha256=G38wFKuS8tKbfD2SyXtoQ12Fr4TdKylOqg_K9f-tP0g,2721
+tasksource/metadata/popularity.py,sha256=deyOwbZXiHnIWV4mREfk2rTogX2kQcgVs8U-Y_vSaRw,25139
+tasksource-0.0.42.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tasksource-0.0.42.dist-info/METADATA,sha256=gSWym6F3JYTpuC-aL77IVW05nrQwBDKtSEHaNbyCWxQ,5342
+tasksource-0.0.42.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tasksource-0.0.42.dist-info/top_level.txt,sha256=8-uTiGc-igKr8xJziOSHwNnlI9xStn2k3XwaV-AuAs4,11
+tasksource-0.0.42.dist-info/RECORD,,
