@@ -1,0 +1,10 @@
+logtc/__init__.py,sha256=IGxKglm1R0X92PEHcGqBRyoJi83z0FTMHyMarfPJb8M,70
+logtc/handler.py,sha256=62LPFUHcH5xn3e1NFl8Q41Kmc51_bDC6w4_tnrIc_u8,844
+logtc/logger.py,sha256=O4qQOlRIkrTYYXZUeLh-wrfd7_Xh67SgtQr0tesDxFY,2998
+logtc/singleton.py,sha256=CWcBq_E_nwWzlhvIDHXagY2laLJpswucVJB4AZHuX74,293
+logtc/socket.py,sha256=wlFYdWr1AutQmgpsFg_1XVZ1W_ya-NF-zGIXLyT4jfU,1501
+logtc/utils.py,sha256=pn-JLtoxVCaiKUuAFFmZeWRzqqGyf_4_s90gOYplS8Y,228
+loggg-0.1.dist-info/METADATA,sha256=cYgnMDz9uAmBn7R3-Hy1_jxdyHcAbGscoaH_WoJTslw,3695
+loggg-0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+loggg-0.1.dist-info/top_level.txt,sha256=7VpS018k6BHsGh_wDFDmMU8-v_2cVzF8AJVPD3fYUHE,6
+loggg-0.1.dist-info/RECORD,,
