@@ -1,0 +1,6 @@
+README.md
+setup.py
+tjaf.egg-info/PKG-INFO
+tjaf.egg-info/SOURCES.txt
+tjaf.egg-info/dependency_links.txt
+tjaf.egg-info/top_level.txt

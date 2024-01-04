@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tjaf
+Version: 1.0.0
+Summary: TJA converter
+Home-page: https://github.com/yuukialpha/tjaf
+Author: Yuuki
+Author-email: skifree@skiff.com
+
+Easy to use .tja files in Python for everyone.
