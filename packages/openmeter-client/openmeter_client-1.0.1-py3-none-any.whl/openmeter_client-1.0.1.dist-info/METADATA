@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: openmeter_client
+Version: 1.0.1
+Summary: A Python client to interact with the OpenMeter API endpoints
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: loguru
+
+# OpenMeter Client
+
+A Python client to interact with the OpenMeter API endpoints.
+
+## Installation
+
+You can install the OpenMeter Client with pip:
+
+```sh
+pip install openmeter_client
+```
+
+# After installation of the package, you could import the module using
+
+from openmeter import OpenMeterClient
+
+# Initialize the client
+
+client = OpenMeterClient('your_access_token')
+
+For more details and examples please check out https://openmeter-python-client.readthedocs.io/en/latest/openmeter.html#openmeter.client.OpenMeterClient
