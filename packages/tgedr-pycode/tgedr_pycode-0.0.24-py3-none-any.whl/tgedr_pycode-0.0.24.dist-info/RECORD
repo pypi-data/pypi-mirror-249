@@ -1,0 +1,7 @@
+tgedr/pycode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgedr/pycode/pyspark/data_exploration.py,sha256=hqSTItTxkNQP4-CYT3t_00TnwdGHQlAb-YKISd0eRMA,2870
+tgedr/pycode/utils/reflection.py,sha256=UTt1OM0ssoI2dl-XGnqlr0i-R3Lo9GctrYAzLQzBAL4,4360
+tgedr_pycode-0.0.24.dist-info/METADATA,sha256=Zm0Uh1WKcO2Vwob1HJ2AT71tw5HTtw2xvTTQNir7Wf8,628
+tgedr_pycode-0.0.24.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tgedr_pycode-0.0.24.dist-info/top_level.txt,sha256=acugNvvENatFXbPxKQD9YI5PpzzehbAwyY1keiIkR7I,6
+tgedr_pycode-0.0.24.dist-info/RECORD,,
