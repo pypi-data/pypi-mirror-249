@@ -1,0 +1,9 @@
+README.md
+setup.py
+OnyxRequests/OnyxSessions.py
+OnyxRequests/__init__.py
+OnyxRequests.egg-info/PKG-INFO
+OnyxRequests.egg-info/SOURCES.txt
+OnyxRequests.egg-info/dependency_links.txt
+OnyxRequests.egg-info/requires.txt
+OnyxRequests.egg-info/top_level.txt
