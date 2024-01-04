@@ -1,0 +1,8 @@
+Licence.txt
+README.md
+setup.py
+ttkvideo_player/__init__.py
+ttkvideo_player.egg-info/PKG-INFO
+ttkvideo_player.egg-info/SOURCES.txt
+ttkvideo_player.egg-info/dependency_links.txt
+ttkvideo_player.egg-info/top_level.txt
