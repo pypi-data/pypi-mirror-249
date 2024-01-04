@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <Rust_Cmd Condition="$(Rust_Cmd) == ''">cargo build --color never --lib</Rust_Cmd>
+    <Rust_Cmd Condition="$(_Low) == 'low'">$(Rust_Cmd) -q</Rust_Cmd>
+    <Rust_Cmd Condition="$(_Low) != 'low'">$(Rust_Cmd) -v</Rust_Cmd>
+    <Rust_Cmd Condition="$(Configuration) == 'Release'">$(Rust_Cmd) -r</Rust_Cmd>
+    <Rust_OutDir_Opt Condition="$(Rust_OutDir_Opt) == ''">--target-dir</Rust_OutDir_Opt>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <DefaultPlatformToolset>Cargo</DefaultPlatformToolset>
+    <_RustArch>aarch64-pc-windows-msvc</_RustArch>
+    <DefaultIntTargetDir Condition="$(Configuration) == 'Debug'">debug</DefaultIntTargetDir>
+    <DefaultIntTargetDir Condition="$(Configuration) != 'Debug'">release</DefaultIntTargetDir>
+    <DefaultIntTargetExt>.dll</DefaultIntTargetExt>
+  </PropertyGroup>
+</Project>
