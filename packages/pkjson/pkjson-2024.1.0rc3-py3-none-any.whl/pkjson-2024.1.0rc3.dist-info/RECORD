@@ -1,0 +1,10 @@
+pkJson/__init__.py,sha256=kkGkoJ2upAbzjnpXHhzhWfyFa2oxVODnXW3KrG7L1Kg,50
+pkJson/_settings.py,sha256=9QXdzUSRchEvFZXDBKHbWShpTSr9x3ThlkCF6pE2-IU,5772
+pkJson/_utils.py,sha256=WBfU6EAZ9BnWO9SmtCkcQaZpY6-O06JtzbZv4B7Mus4,5234
+pkJson/_version.py,sha256=Zar9e80s18ruynKHYC7t1hoRFPUd-cHsOe6pnsoAT9k,319
+pkJson/cli.py,sha256=Kg88vCtYkomzs05jJQ8ip5DqzsgASUaw6LfJgN1nOsc,1753
+pkjson-2024.1.0rc3.dist-info/METADATA,sha256=cKD0Cw0oAy71Z6ZifCu1Vkhy5Pq3e0ATWeEvxF6MgXY,1794
+pkjson-2024.1.0rc3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pkjson-2024.1.0rc3.dist-info/entry_points.txt,sha256=cyvGldvAcmXKBuZbYWM8zMAEHnPJajEfQX9Ix-P39sY,42
+pkjson-2024.1.0rc3.dist-info/top_level.txt,sha256=NRCP9rUjNy60D-M3Kf6k06yGBLapHatrpKWlao9qx4M,7
+pkjson-2024.1.0rc3.dist-info/RECORD,,
