@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cimg-desc
+Version: 0.0.1
+Summary: Chemical-Informed Molecular Graph Descriptor
+Home-page: https://github.com/zbc0315/cimg_desc
+Author: Baicheng Zhang
+Author-email: zhangbc0315@outlook.com
+License: Apache License v2
+Keywords: Retrosynthesis,Machine Learning
+Requires-Python: ==3.7

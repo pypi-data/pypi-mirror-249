@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+cimg_desc/__init__.py
+cimg_desc/handler.py
+cimg_desc/model.py
+cimg_desc/predictor.py
+cimg_desc/retro_rcts_199.pt
+cimg_desc.egg-info/PKG-INFO
+cimg_desc.egg-info/SOURCES.txt
+cimg_desc.egg-info/dependency_links.txt
+cimg_desc.egg-info/not-zip-safe
+cimg_desc.egg-info/requires.txt
+cimg_desc.egg-info/top_level.txt
