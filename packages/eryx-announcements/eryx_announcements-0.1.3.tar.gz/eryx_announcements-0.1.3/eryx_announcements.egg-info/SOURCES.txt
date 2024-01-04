@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+eryx_announcements.egg-info/PKG-INFO
+eryx_announcements.egg-info/SOURCES.txt
+eryx_announcements.egg-info/dependency_links.txt
+eryx_announcements.egg-info/top_level.txt
+src/__init__.py
+src/announcement_subscription.py
+src/announcements.py
+src/announcer.py
+src/subscription_registry.py
+tests/__init__.py
+tests/conftest.py
+tests/mocks.py
+tests/test_announcer.py
