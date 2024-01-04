@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: NOrbit
+Version: 0.0.1
+Summary: A package for N-body integration using the Runge-Kutta 4th Order Method
+Author-email: Lukas Orion <a11919257@unet.univie.ac.at>, Jim Buisman <a01625563@unet.univie.ac.at>
+License: 
+        
+        Copyright <2023> <Lukas Orion & Jim Buisman>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Lukas-Orion/NOrbit
+Project-URL: Repository, https://github.com/Lukas-Orion/NOrbit
+Project-URL: Bug Tracker, https://github.com/Lukas-Orion/NOrbit/issues
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.23
+Provides-Extra: cli
+Requires-Dist: matplotlib.pyplot ; extra == 'cli'
+Requires-Dist: mpl-toolkits.mplot3d ; extra == 'cli'
+Provides-Extra: gui
+Requires-Dist: 3Dplot ; extra == 'gui'
+
+# NOrbit
+N-body integrator
+
+## Basics
+### before working
+git fetch\
+git pull origin
+### after working
+git add . \
+git commit -m 'Commit Message' \
+git push
+### overwriting local changes
+git fetch --all \
+git branch backup \
+git reset --hard origin
+### Pull request
+git checkout -b new-branch \
+*make changes* \
+git add . \
+git commit -m 'Commit Message' \
+git push origin new-branch \
+*create pull request* \
+*merge pull request*
+
+## To-Do
+Ask Prash about google docstring return functions 
+
+add a if __name__ == __main__ \
+typing for checking the input type (pydantic) \
+PyPi \
+Pull requests! 
+
+### Edit and test Example Notebook 
+ - import functions directly from NOrbit (without redefining it)
+ - maybe add solar system bodies as preset? (so you can just type eg. NOrbit.earth or NOrbit.bodies / objects)
+
+Edit the README 
+### Check Assessment Criteria
