@@ -1,0 +1,13 @@
+pyarcticspas/__init__.py,sha256=Tcl5QwW7NVid_j9mEE6A0k_QrWrJMZh-ujCnJdrNa14,984
+pyarcticspas/const.py,sha256=wTL7B-lpcRt6jbbsZC3wu0PIolbn09gb6bHepABZ544,69
+pyarcticspas/error.py,sha256=jpnl3pjbg89RKeWPAz3U1dqC4JOPBKAoVLsrmAiLv7w,1268
+pyarcticspas/py.typed,sha256=8ZJUsxZiuOy1oJeVhsTWQhTG_6pTVHVXk5hJL79ebTk,25
+pyarcticspas/spa.py,sha256=yOM7SRdxaf4HUDkgp6QNVHV-0IDg4DKX78jmAl2fp-o,10231
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_async.py,sha256=pH3mxmCHeIdrOUspej-_DJNpe-q0qncyvLYCoZwuaI8,793
+tests/test_sync.py,sha256=hMzvhDT9z_BhxZeNHskMaeQ4KVpi0sQFyxq2HqhP290,1443
+pyarcticspas-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyarcticspas-0.2.4.dist-info/METADATA,sha256=jW5M7rHV7kmUayCmy1xg1u2Pc4tswYY2j1n-uGBcXEg,887
+pyarcticspas-0.2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyarcticspas-0.2.4.dist-info/top_level.txt,sha256=p1wh1Zd3SUf1PQWWLweEV3qCD9nz0yFkKiNWw81BSvc,19
+pyarcticspas-0.2.4.dist-info/RECORD,,
