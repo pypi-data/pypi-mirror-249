@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: message-send-local
+Version: 0.0.9
+Summary: PyPI Package for Circles message_send_platform_invitation Python
+Home-page: https://github.com/circles-zone/message-send-platform-invitation-local-python-package
+Author: Circles
+Author-email: info@circlez.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+Requires-Dist: message-local
+Requires-Dist: messages-local
+Requires-Dist: database-mysql-local
+Requires-Dist: logger-local
+
+PyPI Package for Circles message_send_platform_invitation Python
