@@ -1,0 +1,3 @@
+[console_scripts]
+generate = prakriya.cli:generate
+prakriya = prakriya.cli:main
