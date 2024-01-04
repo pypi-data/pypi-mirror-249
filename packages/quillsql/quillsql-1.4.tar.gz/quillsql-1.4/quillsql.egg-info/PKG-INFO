@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: quillsql
+Version: 1.4
+Summary: Quill SDK for Python.
+Home-page: https://github.com/quill-sql/quill-python
+Author: Quill
+Author-email: shawn@quillsql.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg2-binary
+Requires-Dist: requests
+Requires-Dist: redis
+Requires-Dist: pytest
+
+Quill SDK for Python
+
+
+## Quickstart
+
+Install dependencies
+```bash
+$ pip install .
+```
+
+Run unit tests
+```bash
+$ pytest
+```
