@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+uniquipy/analyze.py
+uniquipy/cli.py
+uniquipy/pack.py
+uniquipy/src.py
+uniquipy.egg-info/PKG-INFO
+uniquipy.egg-info/SOURCES.txt
+uniquipy.egg-info/dependency_links.txt
+uniquipy.egg-info/entry_points.txt
+uniquipy.egg-info/requires.txt
+uniquipy.egg-info/top_level.txt
