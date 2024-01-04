@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "scene_id": {
+      "type": "string"
+    },
+    "i": {
+      "type": "integer"
+    },
+    "j": {
+      "type": "integer"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          },
+          "w": {
+            "type": "number"
+          },
+          "h": {
+            "type": "number"
+          },
+          "label": {
+            "type": "string"
+          },
+          "info": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "required": [
+          "x",
+          "y",
+          "w",
+          "h",
+          "label",
+          "info"
+        ]
+      }
+    },
+    "image": {
+      "type": "string"
+    },
+    "image_info": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "metadata": {
+      "type": "string"
+    },
+    "metadata_info": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "look": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "scene_id",
+    "i",
+    "j",
+    "width",
+    "height",
+    "annotations",
+    "image",
+    "metadata",
+    "tags"
+  ]
+}
