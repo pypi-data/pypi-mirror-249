@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: miracleplus-tools
+Version: 0.0.1
+Summary: miracleplus tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+## python工具
+这个项目的原因是，我们的hn项目和gpt项目都用到了浏览器的内容解析和百度翻译。这两个功能代码一样，但是如果要做优化修改，那就得同时在两个项目中进行。所以把这两个功能抽象出来，放到了这个项目中。这样，如果要修改，只需要修改这个项目中的代码就可以了。
+
+之后可能还会有一些别的工具公共的工具需要使用。所以这个项目就是一个公共的工具项目。
+
+目前已有的工具：
+- 浏览器内容解析
+- 百度翻译
+
+## 使用
+浏览器内容解析
+```
+from miracleplus_tools import HtmlLoader
+documents = HtmlLoader([url], html=True, partial=True).call()
+documents[0].page_content # => 返回html
+```
+
+百度翻译
+```
+from miracleplus_tools import Translator
+Translator().call(['test'])
+# => ['测验']
+```
+
+## 依赖
+如果要是用内容解析功能，需要安装以下依赖：
+- selenium
+- beautifulsoup4
+- readability-lxml
+
+如果要使用百度翻译
+- 设定环境变量：BAIDU_APP_ID 和 BAIDU_APP_KEY
+
+## 修改代码
+- 配置twine上传验证
+```
+  touch ~/.pypirc
+  vim ~/.pypirc
+  输入以下内容：
+  [pypi]
+    username = __token__
+    password = pypi-AgEIcHlwaS5vcmcCJGQxMjAzNTc2LWU3ODYtNDEwZC05MjkwLTNmZGY1NjNhZTYzMQACKlszLCIwN2NiMGZlZC1jYzVhLTQwMzgtOTQ3ZS1jOGViOGZkZjA1ODAiXQAABiBWQ3q_Fjbp5Qme-kxmRTdovpL0mBpMliLMugfQKNBA-Q
+```
+- 修改代码
+- 修改pyproject.toml 的版本号
+- 打包代码：
+```
+  python -m build
+```
+- 上传到pypi
+```
+  twine upload dist/*
+```
+
