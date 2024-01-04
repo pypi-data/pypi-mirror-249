@@ -1,0 +1,8 @@
+checkpointed-core>=0.4.0
+pandas
+gensim
+numpy
+nltk
+contractions
+scipy
+scikit-learn
