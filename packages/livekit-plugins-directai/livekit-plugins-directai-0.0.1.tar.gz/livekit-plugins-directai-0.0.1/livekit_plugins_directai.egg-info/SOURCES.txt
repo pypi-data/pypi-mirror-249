@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+livekit/plugins/directai/__init__.py
+livekit/plugins/directai/classifier.py
+livekit/plugins/directai/common.py
+livekit/plugins/directai/detector.py
+livekit/plugins/directai/version.py
+livekit_plugins_directai.egg-info/PKG-INFO
+livekit_plugins_directai.egg-info/SOURCES.txt
+livekit_plugins_directai.egg-info/dependency_links.txt
+livekit_plugins_directai.egg-info/requires.txt
+livekit_plugins_directai.egg-info/top_level.txt
