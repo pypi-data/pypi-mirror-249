@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: eagerx_franka
+Version: 0.0.11
+Summary: EAGERx interface to franka robot arms.
+Home-page: https://github.com/eager-dev/eagerx_franka
+License: Apache2.0
+Author: Jelle Luijkx
+Author-email: j.d.luijkx@tudelft.nl
+Requires-Python: >=3.8,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: eagerx (>=0.1.38,<0.2.0)
+Requires-Dist: eagerx-pybullet (>=0.1.11,<0.2.0)
+Requires-Dist: eagerx-reality (>=0.1.12,<0.2.0)
+Requires-Dist: eagerx-utility (>=0.0.3,<0.0.4)
+Requires-Dist: modern-robotics (>=1.1.0,<2.0.0)
+Requires-Dist: numpy-quaternion (>=2023.0.2,<2024.0.0)
+Requires-Dist: urdf-parser-py (>=0.0.4,<0.0.5)
+Project-URL: Documentation, https://eagerx.readthedocs.io/en/master/
+Project-URL: Repository, https://github.com/eager-dev/eagerx_franka
