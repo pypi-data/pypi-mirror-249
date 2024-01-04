@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/aws_cdk.aws_lambda_dotnet.egg-info/PKG-INFO
+src/aws_cdk.aws_lambda_dotnet.egg-info/SOURCES.txt
+src/aws_cdk.aws_lambda_dotnet.egg-info/dependency_links.txt
+src/aws_cdk.aws_lambda_dotnet.egg-info/requires.txt
+src/aws_cdk.aws_lambda_dotnet.egg-info/top_level.txt
+src/aws_cdk/aws_lambda_dotnet/__init__.py
+src/aws_cdk/aws_lambda_dotnet/py.typed
+src/aws_cdk/aws_lambda_dotnet/_jsii/__init__.py
+src/aws_cdk/aws_lambda_dotnet/_jsii/aws-lambda-dotnet@0.0.1.jsii.tgz
