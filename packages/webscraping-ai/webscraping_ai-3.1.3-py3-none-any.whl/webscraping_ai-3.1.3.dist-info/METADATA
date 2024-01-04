@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: webscraping-ai
+Version: 3.1.3
+Summary: WebScraping.AI
+Home-page: https://webscraping.ai
+Author: WebScraping.AI Support
+Author-email: support@webscraping.ai
+Keywords: OpenAPI,OpenAPI-Generator,WebScraping.AI
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+    WebScraping.AI scraping API provides GPT-powered tools with Chromium JavaScript rendering, rotating proxies, and built-in HTML parsing.
+    
