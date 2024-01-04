@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "the-spymaster-solvers-api"
+version = "2.0.1"
+description = "Python client implementation for The Spymaster Solvers HTTP backend."
+authors = ["Asaf Kali <asaf.kali@mail.huji.ac.il>"]
+packages = [{ include = "the_spymaster_solvers_api" }]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/asaf-kali/the-spymaster-solvers"
+Repository = "https://github.com/asaf-kali/the-spymaster-solvers"
+Issues = "https://github.com/asaf-kali/the-spymaster-solvers/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+codenames = "^4.0"
+the_spymaster_util = "^3.0"
+pydantic = "^1.9"
+requests = "^2.28"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
