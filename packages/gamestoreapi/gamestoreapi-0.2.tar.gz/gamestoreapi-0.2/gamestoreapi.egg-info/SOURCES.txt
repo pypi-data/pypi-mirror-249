@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+gamestoreapi/__init__.py
+gamestoreapi.egg-info/PKG-INFO
+gamestoreapi.egg-info/SOURCES.txt
+gamestoreapi.egg-info/dependency_links.txt
+gamestoreapi.egg-info/requires.txt
+gamestoreapi.egg-info/top_level.txt
