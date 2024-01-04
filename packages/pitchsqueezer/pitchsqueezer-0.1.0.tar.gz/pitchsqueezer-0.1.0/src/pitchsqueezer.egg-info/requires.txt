@@ -1,0 +1,7 @@
+numpy
+scipy
+joblib
+librosa
+ssqueezepy
+tqdm
+matplotlib

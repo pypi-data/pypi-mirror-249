@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: pitchsqueezer
+Version: 0.1.0
+Summary: Robust pitch tracker for speech, using synchrosqueezing and spectral autocorrelation
+Author-email: Antti Suni <antti.suni@helsinki.fi>
+Maintainer-email: Antti Suni <antti.suni@helsinki.fi>
+Project-URL: Homepage, https://github.com/asuni/PitchSqueezer
+Project-URL: Bug Reports, https://github.com/asuni/PitchSqueezer/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/asuni/PitchSqueezer
+Keywords: speech analysis,pitch,prosody,tts
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: joblib
+Requires-Dist: librosa
+Requires-Dist: ssqueezepy
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+
+# PitchSqueezer
+A pitch tracker for speech, using synchro-squeezed stft and frequency domain autocorrelation, designed to analyze imperfect recordings of spontaneous speech.
+Relies heavily on the nice [ssqueezepy](https://github.com/OverLordGoldDragon/ssqueezepy/tree/master/ssqueezepy]) package.
+
+
+Features:
+* (mostly) better quality than popular Python trackers (pyin, pyaapt) 
+* robust to creaky voices and bad recordings
+* does not need finetuning for min and max f0, works fine with both low and high pitched voices
+* acceptable speed (~ 10x faster than librosa.pyin)
+* (alternatively) a continuous pitch track, filling unvoiced gaps relatively naturally
+* a wavelet decomposition of the pitch track (reversible, except for mean value) 
+* compatible with librosa's pyin and pytorch_audio spectrograms, regarding number of frames
+* a command line tool for parallel batch processing of directories (as well as API)
+
+Installation: 
+```
+soon: pip install pitchsqueezer
+```
+Meanwhile, download the repository, and in the directory where pyproject.toml resides, do
+```
+pip install .
+```
+
+Examples of basic usage:
+```
+;; Command line, extract f0 for all wavs in a directory using 10 ms frame shift, save as numpy files
+$ pitch_squeezer path/to/wavs/ -r 100 -f npy
+
+;; API
+import pitch_squeezer as ps
+f0, if0 = ps.track_pitch(input_file, min_hz=50, max_hz=500)
+f0_cwt = ps.f0_cwt(if0)
+```
+docs: https://asuni.github.io/PitchSqueezer/
+
+Visualization of the method: <img src="images/Figure_1.png">
+
+
+
+ comparison with librosa.pyin on creaky female voice: <img src="images/squeezer_vs_pyin.png">

@@ -1,0 +1,2 @@
+[console_scripts]
+pitchsqueezer = pitch_squeezer:main
