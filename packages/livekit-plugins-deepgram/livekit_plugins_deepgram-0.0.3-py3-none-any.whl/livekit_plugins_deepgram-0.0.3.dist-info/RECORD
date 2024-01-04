@@ -1,0 +1,8 @@
+livekit/plugins/deepgram/__init__.py,sha256=SFlRgALAh5_QSDJOmWzG8cvPGpHP7qDWzev3roMJeMI,68
+livekit/plugins/deepgram/models.py,sha256=ZUkruW2vu3RhPYZyN8Lyz1y_J1V7lop5l-72ewVK-FY,1165
+livekit/plugins/deepgram/stt.py,sha256=TGQHqxNN4mU8l6p0xSXaG82xwTtxNGEmnh0pfvRAM30,7707
+livekit/plugins/deepgram/version.py,sha256=EY6eY0bRVXTKo0Ebpwg-CuII7adrSnLElHk6dZKGo2g,600
+livekit_plugins_deepgram-0.0.3.dist-info/METADATA,sha256=7C1cB31EHIxNEpu3BZ6KSmCEYQPODXfL_zcuf56G4tg,1071
+livekit_plugins_deepgram-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+livekit_plugins_deepgram-0.0.3.dist-info/top_level.txt,sha256=OoDok3xUmXbZRvOrfvvXB-Juu4DX79dlq188E19YHoo,8
+livekit_plugins_deepgram-0.0.3.dist-info/RECORD,,
