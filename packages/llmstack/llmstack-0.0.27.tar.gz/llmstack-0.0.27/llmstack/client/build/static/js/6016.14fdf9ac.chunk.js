@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpromptmanager=self.webpackChunkpromptmanager||[]).push([[6016],{36016:function(r,e,n){n.r(e),n.d(e,{default:function(){return a}});var s=n(94110),t=n(37881);function a(){var r=(0,s.lk)();return console.error(r),(0,t.jsx)("div",{id:"error-page",children:(0,t.jsx)("p",{children:(0,t.jsx)("i",{children:r.statusText||r.message})})})}}}]);
+//# sourceMappingURL=6016.14fdf9ac.chunk.js.map
