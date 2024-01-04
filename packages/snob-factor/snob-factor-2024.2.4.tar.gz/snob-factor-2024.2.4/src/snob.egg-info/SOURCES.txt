@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/snob.egg-info/PKG-INFO
+src/snob.egg-info/SOURCES.txt
+src/snob.egg-info/dependency_links.txt
+src/snob.egg-info/requires.txt
+src/snob.egg-info/top_level.txt
