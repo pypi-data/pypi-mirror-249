@@ -1,0 +1,95 @@
+hoagie_haven:
+  site_description: Hoagie Haven
+  region: princeton
+  latitude: 40.352187
+  longitude: -74.651884
+  altitude: 62
+  site_documentation: http://hoagiehaven.com/
+
+amundsen_scott:
+  site_description: Amundsen–Scott South Pole Station (Bicep, SPT)
+  region: south_pole
+  latitude: 0.000
+  longitude: -90.000
+  altitude: 2835
+  site_documentation: https://www.nsf.gov/geo/opp/support/southp.jsp
+
+cerro_chajnantor:
+  site_description: Cerro Chajnantor (CCAT, TAO)
+  region: chajnantor
+  latitude: -22.9862
+  longitude: -67.7422
+  altitude: 5600
+  site_documentation: https://act.princeton.edu/
+
+cerro_toco:
+  site_description: Cerro Toco (ACT, POLARBEAR, SO)
+  region: chajnantor
+  latitude: -22.9586
+  longitude: -67.7878
+  altitude: 5190
+  site_documentation: https://act.princeton.edu/
+
+llano_de_chajnantor:
+  site_description: Llano de Chajnantor (ALMA)
+  region: chajnantor
+  latitude: -23.0294
+  longitude: -67.7548
+  altitude: 5064
+  site_documentation: https://www.almaobservatory.org/en/home/
+
+green_bank:
+  site_description: Green Bank Observatory
+  region: green_bank
+  latitude: 38.4331
+  longitude: -79.8398
+  altitude: 825
+  site_documentation: https://greenbankobservatory.org
+
+mauna_kea:
+  site_description: Mauna Kea Observatory (JCMT)
+  region: mauna_kea
+  latitude: 19.8228
+  longitude: -155.4770
+  altitude: 4092
+  site_documentation: https://www.maunakeaobservatories.org/
+
+teide:
+  site_description: Teide Observatory (QUIJOTE)
+  region: teide
+  latitude: 28.3
+  longitude: -16.5097
+  altitude: 2390
+  site_documentation: https://www.iac.es/en/observatorios-de-canarias/teide-observatory
+
+pico_veleta:
+  site_description: IRAM 30m telescope
+  region: pico_veleta
+  latitude: 37.066161
+  longitude: -3.392719
+  altitude: 2850
+  site_documentation: https://iram-institute.org/observatories/30-meter-telescope/
+
+sierra_negra:
+  site_description: Sierra Negra (LMT)
+  region: sierra_negra
+  latitude: 18.9858
+  longitude: -97.3147
+  altitude: 4640
+  site_documentation: http://lmtgtm.org/
+
+pic_de_bure:
+  site_description: Pic de Bure (NOEMA)
+  region: pic_de_bure
+  latitude: 44.63389
+  longitude: 5.90792
+  altitude: 2552
+  site_documentation: https://iram-institute.org/observatories/noema/
+
+san_basilio:
+  site_description: Sardinia Radio Telescope
+  region: san_basilio
+  latitude: 39.4928
+  longitude: 9.2450
+  altitude: 600
+  site_documentation: https://en.wikipedia.org/wiki/Sardinia_Radio_Telescope
