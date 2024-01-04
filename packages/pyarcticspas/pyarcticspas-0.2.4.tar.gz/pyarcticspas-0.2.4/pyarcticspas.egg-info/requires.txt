@@ -1,0 +1,1 @@
+arcticspas>=2.0
