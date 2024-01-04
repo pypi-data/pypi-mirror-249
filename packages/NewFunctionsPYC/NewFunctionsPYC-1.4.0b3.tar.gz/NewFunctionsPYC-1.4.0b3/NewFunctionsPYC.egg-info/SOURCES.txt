@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+NewFunctionsPYC/__init__.py
+NewFunctionsPYC/checks.py
+NewFunctionsPYC/collection.py
+NewFunctionsPYC/dinamic_import.py
+NewFunctionsPYC/embed.py
+NewFunctionsPYC/hybrid.py
+NewFunctionsPYC/loader.py
+NewFunctionsPYC/options.py
+NewFunctionsPYC/prefix.py
+NewFunctionsPYC/slash.py
+NewFunctionsPYC.egg-info/PKG-INFO
+NewFunctionsPYC.egg-info/SOURCES.txt
+NewFunctionsPYC.egg-info/dependency_links.txt
+NewFunctionsPYC.egg-info/top_level.txt

@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: NewFunctionsPYC
+Version: 1.4.0b3
+Summary: :A simple library for add new functions the Pycord
+Author: Marciel404
+License: MIT
+Project-URL: Homepage, https://github.com/Marciel404/NewFunctionsPYC
+Keywords: Pycord BetterFunctions
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Portuguese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# NewFunctionsPYC
+
+:A simple library for add new functions the Pycord
+
+## Usage:
+### install with pip
+
+```shell
+pip install NewFunctionsPYC
+pip install -U git+https://github.com/Marciel404/NewFunctionsPYC (Instable)
+```
+
+### Import on your code:
+
+```python
+import NewFunctionsPYC
+```
+### Run it
+```python
+
+#More exemples in https://github.com/Marciel404/NewFunctionsPYC/tree/main/exemples
+
+Using EmbedBuilder:
+
+    >>> from NewFunctionsPYC import EmbedBuilder
+    >>> from hexacolors import stringColor # "pip install hexacolors" for use this
+    >>>
+    >>> e: EmbedBuilder = EmbedBuilder()
+    >>>
+    >>> e.set_title("Title")
+    >>>
+    >>> e.set_description("Description")
+    >>>
+    >>> e.set_color(stringColor("indigo"))
+    >>>
+    >>> channel.send(embed = e.build())
+    
+Using client:
+
+    >>> import NewFunctionsPYC
+    >>>
+    >>> client = NewFunctionsPYC.client("tokenBot")
+    >>>
+    >>> client.load_cogs("commands")
+    >>>
+    >>> client.__run__()
+        
+```

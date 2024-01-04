@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NewFunctionsPYC"
+version = "1.4.0b3"
+keywords = ["Pycord BetterFunctions"]
+authors = [
+    {name = "Marciel404"}
+]
+description = """
+:A simple library for add new functions the Pycord
+"""
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Natural Language :: Portuguese",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+
+[tool.setuptools]
+packages = [
+    "NewFunctionsPYC",
+]
+
+[project.urls]
+Homepage="https://github.com/Marciel404/NewFunctionsPYC"
