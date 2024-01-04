@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: BulkFileOperationsManager
+Version: 0.0.3
+Summary: Python package for managing bulk file CRUD operations.
+Home-page: https://github.com/chigwell/BulkFileOperationsManager
+Author: Eugene Evstafev
+Author-email: chigwel@gmail.com
+License: UNKNOWN
+Description: # BulkFileOperationsManager
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
