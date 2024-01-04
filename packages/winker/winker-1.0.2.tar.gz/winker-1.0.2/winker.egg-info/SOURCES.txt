@@ -1,0 +1,7 @@
+README.md
+setup.py
+winker.egg-info/PKG-INFO
+winker.egg-info/SOURCES.txt
+winker.egg-info/dependency_links.txt
+winker.egg-info/entry_points.txt
+winker.egg-info/top_level.txt
