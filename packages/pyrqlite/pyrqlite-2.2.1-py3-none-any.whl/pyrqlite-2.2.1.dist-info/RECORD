@@ -1,0 +1,15 @@
+pyrqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrqlite/_ephemeral.py,sha256=1PBLnPs-v3B7mUIPOsbIlJEMsjCAgOwR01x8bWWSHxk,3284
+pyrqlite/connections.py,sha256=HIhioI1zam_R5eJ7z4a9GzxX-fOIUumoX3j2KA9YOx0,5963
+pyrqlite/constants.py,sha256=eEx0Kkzpu0MWGTnyupcr6cxbR3SilCTptH4_shAXNS8,273
+pyrqlite/cursors.py,sha256=b5XelE44yvHYeCL2knSi4PgFuiduPuvFthMlQ0u9XOw,11398
+pyrqlite/dbapi2.py,sha256=l1FFqR7Wfe441Bhm6ZE7YejQjUIOnkUGVPxpdzgkm1c,1124
+pyrqlite/exceptions.py,sha256=taPeuzQm920ZUufq5_vHwsPw6v4CM8v_NFZH2A3_EEc,207
+pyrqlite/extensions.py,sha256=PL-9asnT-G0JaCKUxB8KzHafXal-f8ca9YTKju_NrRY,7551
+pyrqlite/row.py,sha256=VxPaUDr_u7DcR9RYdXKMvT2D98JCvo6Dl_VhZcyrNx0,1080
+pyrqlite/types.py,sha256=MXkVyfViggHXsrw5awK3F1xgB-7r2gbz25tbl3bRps0,346
+pyrqlite-2.2.1.dist-info/LICENSE,sha256=bdiNh6gIQgnees4PewUKUprs1DJvTM0dFxWePgUc7DY,1077
+pyrqlite-2.2.1.dist-info/METADATA,sha256=C3ONkz98VAEGkFZi8aQknqVhcxVufCkd55_e0K37gCI,1918
+pyrqlite-2.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyrqlite-2.2.1.dist-info/top_level.txt,sha256=k1SWU59QbJYdiRLxQElpCfIkbSG3ADUuj7a3orcoCG0,9
+pyrqlite-2.2.1.dist-info/RECORD,,
