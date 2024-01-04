@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: hydronetapi
+Version: 0.0.3
+Summary: Hydronet WMM API
+Author-email: Deniz Unal <deniz@bionetsonar.com>
+Project-URL: Homepage, https://www.hydronet.tech/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+ ## Hydronet API
+
+Import library:
+```python
+from hydronet import wmm
+```
+
+Establish connection to a modem:
+
+```python
+modem = wmm.wmm(<Modem ID>)
+```
+ 
+Send data:
+```python
+modem.send(<data>)
+```
+
+Receive data:
+```python
+data = modem.recv()
+```
