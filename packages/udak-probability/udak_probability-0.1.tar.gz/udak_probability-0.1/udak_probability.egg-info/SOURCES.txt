@@ -1,0 +1,10 @@
+setup.py
+udak_probability/Binomialdistribution.py
+udak_probability/Gaussiandistribution.py
+udak_probability/Generaldistribution.py
+udak_probability/__init__.py
+udak_probability.egg-info/PKG-INFO
+udak_probability.egg-info/SOURCES.txt
+udak_probability.egg-info/dependency_links.txt
+udak_probability.egg-info/not-zip-safe
+udak_probability.egg-info/top_level.txt
