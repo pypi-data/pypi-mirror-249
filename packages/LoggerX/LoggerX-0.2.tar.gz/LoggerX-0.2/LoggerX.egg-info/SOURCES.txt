@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+LoggerX/__init__.py
+LoggerX/config.py
+LoggerX/handlers.py
+LoggerX.egg-info/PKG-INFO
+LoggerX.egg-info/SOURCES.txt
+LoggerX.egg-info/dependency_links.txt
+LoggerX.egg-info/top_level.txt
