@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ssquant.egg-info/PKG-INFO
+ssquant.egg-info/SOURCES.txt
+ssquant.egg-info/dependency_links.txt
+ssquant.egg-info/requires.txt
+ssquant.egg-info/top_level.txt
