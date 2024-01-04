@@ -1,0 +1,15 @@
+dataflake.docbuilder-2.4-py3.11-nspkg.pth,sha256=BJRgAObhWUQkcpiKWbrysqvapvMBS5IMGR8iE94qhBw,554
+dataflake/docbuilder/__init__.py,sha256=fcjH4Z5AUky9tm1n-5Hb790cdMB55VN1y-X4SN4nVZw,4651
+dataflake/docbuilder/builder.py,sha256=JhsHfjutPsqe0I1qgqawF85Wy-_X-kL3XmCbgLDJWVM,16201
+dataflake/docbuilder/rcs.py,sha256=kQvsuKrs3cz4mRf9S1oPE-HZ_Su8zCDPXAWV4Km0CVI,5750
+dataflake/docbuilder/utils.py,sha256=i_I8c7MWIRawjh0YrvOMKZGUrHhbDEMl1neGOre11jg,1220
+dataflake/docbuilder/index_template/conf.py,sha256=mr97jBXkDinWX2Fltrx_ow0bxnH9iLl1He3VHdAfax0,3261
+dataflake/docbuilder/index_template/index.rst.in,sha256=oa08mNK7ynw3dahcDTRdK7WAlbbreOTI9KmFWVDLnaQ,350
+dataflake/docbuilder/index_template/_static/python.css,sha256=qvwlExuz1jFlSNb4NDbv1yruoImbd74b1tA7UtRI8GQ,23379
+dataflake.docbuilder-2.4.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+dataflake.docbuilder-2.4.dist-info/METADATA,sha256=PC_OpDK0qDPS04wu_-RRR8nlhX82er2pHX1L6XVDLG8,2894
+dataflake.docbuilder-2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dataflake.docbuilder-2.4.dist-info/entry_points.txt,sha256=A79yGORdbnTPhIG9RM5v402sRH_lZSM4rOtb_2LHiNY,125
+dataflake.docbuilder-2.4.dist-info/namespace_packages.txt,sha256=FOdxJhZAlA7b8rMeGqAI23M6vbj0dh_sdhBQFD-JCzg,10
+dataflake.docbuilder-2.4.dist-info/top_level.txt,sha256=FOdxJhZAlA7b8rMeGqAI23M6vbj0dh_sdhBQFD-JCzg,10
+dataflake.docbuilder-2.4.dist-info/RECORD,,
