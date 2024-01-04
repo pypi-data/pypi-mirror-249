@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: python-shellrechargeev
+Version: 0.1.0
+Summary: Python 3 package to retrieve public EV charger data from Shell Recharge
+Author-Email: cyberjunky <ron@cyberjunky.nl>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# python-shellrechargeev
+Python 3 package to retrieve public EV charger data from Shell Recharge
+
+
+## About
+
+This package allows you to request data from public EV chargers using Shell Recharge.
+I build it to create a home-assistant integration, it can be done with rest calls only, but then options are limited.
+
+## Installation
+
+```bash
+pip3 install shellrechargeev
+```
+
+
+## Development
+
+To create a development environment to commit code.
+
+```
+pip3 install pdm
+pip3 install ruff
+pdm init
+
+sudo apt install pre-commit
+pip3 install pre-commit
+```
+Run checks before PR/Commit:
+```
+make format
+make lint
+make codespell
+```
+
+## Example
+Below provides example on how to use the library.  
+
+```
+import sys
+import shellrechargeev
+import aiohttp
+import asyncio
+import logging
+
+
+async def main():
+    location_ids = [
+        "3321718",
+        "3357677",
+        "2875456",
+        "2746503",
+    ]
+
+    async with aiohttp.ClientSession() as session:
+        api = shellrechargeev.Api(session)
+
+        for location_id in location_ids:
+            locations = await api.location_by_id(location_id)
+            print(locations)
+
+if __name__ == "__main__":
+    logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+    loop = asyncio.new_event_loop()
+    loop.run_until_complete(main())
+```
+
+## Donations
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/cyberjunkynl/)
