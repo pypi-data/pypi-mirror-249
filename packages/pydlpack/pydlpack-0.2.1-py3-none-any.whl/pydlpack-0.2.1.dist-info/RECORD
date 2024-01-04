@@ -1,0 +1,13 @@
+dlpack/__init__.py,sha256=MW6EMT-Wt4r5zq3hQYpTDKGwEcqIGQgqqkLElwNOoNI,20287
+dlpack/_version.py,sha256=MxUhzLJIZQfEpDTTcKSxciTGrMLd5v2VmMlHa2HGeo0,411
+dlpack/buffer.py,sha256=HF76J8_xZlI6igkEqx5WKOjl2A_qBeKfqFO-XKmqElg,5112
+dlpack/capsule.py,sha256=gXm72Z9u8v6KjPpyjP9r6r9m0FaGZXn80DfkjM1ttRE,7678
+dlpack/tests/__init__.py,sha256=DorI9Z1L1vDJLggzN-RRCV95klZpixALwQhwW4FYh2Q,87
+dlpack/tests/test_buffer.py,sha256=DG926PKhpDi2CwYAyrQiyaNHWGhL69ok4d843bvMztY,735
+dlpack/tests/test_capsule.py,sha256=j5no8jUC6QBF4sIEsLU1e9GY7zPV6JIBRrafMMCpwW0,2548
+dlpack/tests/test_dlpack.py,sha256=uetQPDGxLTzKVyZrTkyo6Vk75NDUOMMAmwxKIG_w_1A,19461
+pydlpack-0.2.1.dist-info/LICENSE,sha256=C8_A6_3Q8IzRTmLkp_6tjOP5PQLMXCYV-hA9yEKr94Q,1501
+pydlpack-0.2.1.dist-info/METADATA,sha256=841dl4V-A0ikZ3juQ-Qh-48SRJp6iovg9NzO0ZwsALY,7816
+pydlpack-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pydlpack-0.2.1.dist-info/top_level.txt,sha256=YFTX1EQvc5xZ-qHSzVQJpkX2AQqaVOEJ9U78jHy7B2Q,7
+pydlpack-0.2.1.dist-info/RECORD,,
