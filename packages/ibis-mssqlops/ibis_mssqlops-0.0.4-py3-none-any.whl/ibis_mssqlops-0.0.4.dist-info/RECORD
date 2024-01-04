@@ -1,0 +1,11 @@
+ibis_mssqlops/__init__.py,sha256=hVyLYmP05AV1TQgh3sVjfZlVF0o_LF1BLdiyRLHFXAA,201
+ibis_mssqlops/addibis.py,sha256=gXWQ_8au-1-XGpOp_Shhg--qCYrepbvXT3w29zsdkMo,475
+ibis_mssqlops/addsql.py,sha256=GwPLw1oe20ctr7Gr9B0HiQrssRo2xNBrHyC7SaSaTJY,2867
+ibis_mssqlops/consts.py,sha256=yTnGmW6xXucIAGBC0ZbwTu7pxzAjwd6zFWaPmeXBPeE,2244
+ibis_mssqlops/datatypes.py,sha256=lRxPzbfOWoy615QZSwNEogOMCMSlzOg3Pom1ZvX7SCU,889
+ibis_mssqlops/expr.py,sha256=cMXn6AfQmLza2wgBw3V5n53LbVgnEttQL321wtdlsDQ,1815
+ibis_mssqlops/funcs.py,sha256=0wkUkVLntH3LlqHKZBxqQqpycsQK7UboxaJVkV0WWfI,1278
+ibis_mssqlops/transforms.py,sha256=Mzh4H1jvKkn34F-G4fiMPVYsGDq9-WKtH4eF45uFTi4,685
+ibis_mssqlops-0.0.4.dist-info/METADATA,sha256=YKpX8L1YuoyYd6LFVhzVZLz8DarkU_yUyzeOrz6Dj-U,1706
+ibis_mssqlops-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ibis_mssqlops-0.0.4.dist-info/RECORD,,
