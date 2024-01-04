@@ -1,0 +1,9 @@
+{% set single = true %}
+{% extends "_base.jinja" %}
+
+
+{% block select %}
+SELECT  CASE WHEN
+            {{ column | sql_to_varchar | sql_in_str_set(values) }}
+        THEN 1 ELSE 0 END
+{% endblock %}
