@@ -1,0 +1,9 @@
+macpyver_core/__init__.py,sha256=bMVZFdJTftgTRc3xOS-9nrsE6glUJhQfvzkvnDnU-ss,349
+macpyver_core/macpyver.py,sha256=MJt6ROeSzbAfXLo4liWtnDV4Auow15Mb1tEKLBceI2Y,1130
+macpyver_core/model.py,sha256=Ti1KwrPcvNqT9bUMIe_k2yZ5kjHfYx2KVJnOaKFhktI,649
+macpyver_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+macpyver_core/version_source.py,sha256=sFacJqwwUN6wqdvYturx-kRoQlcOOxy8EUYXeo-fTls,878
+macpyver_core-1.0.0.dist-info/LICENSE.md,sha256=lYsu90Ob2yeLnNilKqKYEL77ekUKRsgbYf_P2euNd8s,1058
+macpyver_core-1.0.0.dist-info/METADATA,sha256=NeVomBGG1BtvNOhDcpNc1xvmYLlUCT9XreO9ijU2mw8,733
+macpyver_core-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+macpyver_core-1.0.0.dist-info/RECORD,,
