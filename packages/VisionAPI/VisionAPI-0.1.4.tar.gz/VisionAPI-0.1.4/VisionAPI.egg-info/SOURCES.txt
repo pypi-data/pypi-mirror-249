@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+VisionAPI.egg-info/PKG-INFO
+VisionAPI.egg-info/SOURCES.txt
+VisionAPI.egg-info/dependency_links.txt
+VisionAPI.egg-info/requires.txt
+VisionAPI.egg-info/top_level.txt
+visionapi/__init__.py
+visionapi/app.py
+visionapi/utils.py
