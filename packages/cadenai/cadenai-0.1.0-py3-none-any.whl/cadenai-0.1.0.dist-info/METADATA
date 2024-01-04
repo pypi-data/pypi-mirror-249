@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cadenai
+Version: 0.1.0
+Summary: 
+Author: Savombre
+Author-email: clementrobin6@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openai (>=1.6.1,<2.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: pypdf (>=3.17.4,<4.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: qdrant-client (>=1.7.0,<2.0.0)
+Requires-Dist: tenacity (>=8.2.3,<9.0.0)
+Requires-Dist: tiktoken (>=0.5.2,<0.6.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Cadenai
+
+Building LLM based applications for my own usage
+
+Inspired by Langchain
+
+## Setup
+
+Create a .env file with your openai api key
