@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: RIS_Bot
+Version: 0.0.1
+Summary: This package contains a pytorch GPT-2 interactive calm story chatbot.
+Home-page: https://github.com/xXAI-botXx/RIS-Bot/tree/RIS-PyPI
+Author: Tobia Ippolito
+License: Mozilla Public License Version 2.0
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8, <=3.10
+License-File: LICENSE.txt
+Requires-Dist: transformers
+Requires-Dist: torch

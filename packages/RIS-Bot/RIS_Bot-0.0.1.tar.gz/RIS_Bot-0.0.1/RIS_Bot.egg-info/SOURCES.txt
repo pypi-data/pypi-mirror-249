@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+RIS_Bot.egg-info/PKG-INFO
+RIS_Bot.egg-info/SOURCES.txt
+RIS_Bot.egg-info/dependency_links.txt
+RIS_Bot.egg-info/requires.txt
+RIS_Bot.egg-info/top_level.txt
+RIS_bot/__init__.py
+RIS_bot/ris_bot.py
