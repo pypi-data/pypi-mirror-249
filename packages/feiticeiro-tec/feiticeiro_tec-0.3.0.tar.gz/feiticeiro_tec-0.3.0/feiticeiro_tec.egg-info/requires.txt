@@ -1,0 +1,11 @@
+loguru
+pydantic
+
+[dynaconf]
+dynaconf
+
+[request]
+requests
+
+[validate]
+validate_docbr
