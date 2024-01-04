@@ -1,0 +1,8 @@
+miracleplus_tools/__init__.py,sha256=l4rgtgUDavvW-ZjUbIIlulomAY8KpnWyDBZrBUbzFgM,98
+miracleplus_tools/selenium_loader/html_loader.py,sha256=FANyX-fojdkQXmGUr7MSCb40hyLKiwJfnKH1vtkryok,7815
+miracleplus_tools/selenium_loader/lib/document.py,sha256=FiZoz5_MLvsh0sAnRyQNNgTXwdt0c7gOjzeevZxnpm4,439
+miracleplus_tools/selenium_loader/lib/selenium_driver.py,sha256=uSF430yVfkasMDwKe1NdQzfd6usVm7BoYaxiXg7Tbz8,1351
+miracleplus_tools/translator/translator.py,sha256=jphlDxFJWdcxJxepRWAHZMbS-GbeloiaFXW3hcIidfI,2217
+miracleplus_tools-0.0.3.dist-info/METADATA,sha256=CaRtzG7PeBrsu7ls3ci2Wrcz2WczWORTQweu98ocs7E,2370
+miracleplus_tools-0.0.3.dist-info/WHEEL,sha256=5cEDLREhpnNYpDlijc02-Q_4r7AkXMYW6R1JITTLLOQ,92
+miracleplus_tools-0.0.3.dist-info/RECORD,,
