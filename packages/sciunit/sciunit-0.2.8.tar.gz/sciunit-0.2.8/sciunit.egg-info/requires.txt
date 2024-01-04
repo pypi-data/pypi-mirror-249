@@ -1,0 +1,14 @@
+bs4
+cerberus>=1.2
+deepdiff
+gitpython
+importlib-metadata
+ipykernel
+ipython
+jsonpickle
+lxml
+matplotlib
+nbconvert
+nbformat
+pandas>=0.18
+quantities>=0.13.0
