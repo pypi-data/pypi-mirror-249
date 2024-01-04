@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: beancount-data
+Version: 2.0.3
+Summary: Pydantic data models for exporting Beancount data
+License: MIT
+Author: Fang-Pen Lin
+Author-email: fangpen@launchplatform.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: flatbuffers
+Requires-Dist: flatbuffers (>=23.5,<24.0) ; extra == "flatbuffers"
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
