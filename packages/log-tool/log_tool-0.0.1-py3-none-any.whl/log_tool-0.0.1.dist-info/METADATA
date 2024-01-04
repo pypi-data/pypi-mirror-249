@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: log-tool
+Version: 0.0.1
+Summary: DESCRIPTION
+Project-URL: Documentation, https://github.com/FlavioAmurrioCS/log-tool#readme
+Project-URL: Issues, https://github.com/FlavioAmurrioCS/log-tool/issues
+Project-URL: Source, https://github.com/FlavioAmurrioCS/log-tool
+Author-email: Flavio Amurrio <25621374+FlavioAmurrioCS@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pyfunctional
+Requires-Dist: rich
+Requires-Dist: typer
+Requires-Dist: typing-extensions
+Description-Content-Type: text/markdown
+
+# log-tool
+
+[![PyPI - Version](https://img.shields.io/pypi/v/log-tool.svg)](https://pypi.org/project/log-tool)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/log-tool.svg)](https://pypi.org/project/log-tool)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install log-tool
+```
+
+## License
+
+`log-tool` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
