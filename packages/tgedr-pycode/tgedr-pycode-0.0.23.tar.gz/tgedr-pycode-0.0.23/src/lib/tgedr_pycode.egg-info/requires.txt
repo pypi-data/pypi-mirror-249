@@ -1,0 +1,6 @@
+matplotlib>=3
+matplotlib-inline
+numpy
+pandas
+pyspark>=3
+seaborn
