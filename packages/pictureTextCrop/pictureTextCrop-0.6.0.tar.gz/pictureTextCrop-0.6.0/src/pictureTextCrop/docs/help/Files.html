@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+  </head>
+  <body>
+    <h4 align="center"><b>Files Menu</b></h4>
+    <p><br>
+    </p>
+    <p><b>Scan Folder:</b><br>
+    </p>
+    <p>This is the first selection in the Files menu of the main menu of
+      the application.&nbsp; It is used to launch a folder selection
+      navigation dialog with which you can select folders for the
+      application to scan for image files.&nbsp; The image files found
+      will be included in the list which is on the left side of the
+      content area of the main application window.&nbsp; 'Scan Folder'
+      has a submenu with two selections, 'Walk', and 'List'.&nbsp; If
+      you select 'Walk', all of the folders that you select in the
+      navigator will be scanned recursively down to the depth of the
+      folder hierarchy and any image files contained in them will be
+      included in the list.&nbsp; If you select 'List', then only the
+      image files in the folder itself, but none of its sub-folders,
+      will be included.&nbsp; <br>
+    </p>
+    <p>You may use the CTRL and SHIFT keys in combination with mouse
+      clicks to select ranges or sets of folders to scan.&nbsp; With the
+      CTRL key / mouse click combination, you can select multiple
+      individual folders, and with the SHIFT key / mouse click
+      combination you can select ranges.&nbsp; If you are unfamiliar
+      with these standard list and tree view features, experiment a bit
+      to learn how they work.&nbsp; <br>
+    </p>
+    <p>Click the [Cancel] button at the bottom of the file system
+      navigator to cancel selection and exit the dialog.&nbsp; Click the
+      [Select] button to perform the scan, exit the navigator, and list
+      the image files found in the main application window.&nbsp; The
+      full path of each file is shown.&nbsp; The [Up] button is useful
+      if you have descended into sub-folders by double clicking folders
+      and want to go back up in the folder hierarchy.<br>
+    </p>
+    <p><b><br>
+        Select Text:</b><br>
+    </p>
+    <p>Use this selection to select or crop text from one or more of the
+      image files in the list.&nbsp; Each image file in the list has a
+      check box to its left.&nbsp; To select the file for text cropping,
+      click on the check box to select it.&nbsp; Only those files with
+      the check box clicked will be shown during the cropping
+      operation.&nbsp; Selecting this menu item causes a series of
+      dialogs to appear, each containing the image in each of the files
+      checked.&nbsp; With the image displayed in the cropping dialog,
+      drag the mouse from the top left corner of the text to crop to the
+      bottom right.&nbsp; Releasing the mouse button starts the cropping
+      operation, which might take a couple of seconds depending on how
+      much text you selected.&nbsp; <br>
+    </p>
+    <p>The cropped text will be written to the console, so if you
+      started the application using a console command then the text will
+      be available there.&nbsp; It is also written to the database in
+      the SQLite database file, TextExtraction.db, which, depending on
+      your particular installation method, will be in the same folder as
+      the pictureTextCrop.py source code file.&nbsp; Whichever directory
+      this file is in when the application is started is its working
+      directory, which will be where it initializes and stores its
+      database.&nbsp; When you crop text from an image, a record is
+      written to the CropLog table.&nbsp; The record will contain fields
+      recording the a time-stamp showing when the extraction was done in
+      a text sortable format, the full file path identifying the file on
+      your storage media, the text extracted, and the coordinates of the
+      rectangle you drew in the image defining the boundaries of the
+      text extraction.&nbsp; This can be searched and otherwise used
+      efficiently using SQL, and so serves as an export point for the
+      payload produced by the application.<br>
+    </p>
+    <p>The cropping dialog for each file will remain displayed until you
+      close it using the standard X button at its top right
+      corner.&nbsp; You can continue to crop any number of pieces of
+      text in it until it is closed.&nbsp; You can work in any order
+      through the files you checked in the list to crop using the
+      'Select Text' feature in the Files menu.<br>
+    </p>
+    <p><br>
+      <b>Select All:</b><br>
+    </p>
+    <p>This is a toggle with which you can select and un-select&nbsp;
+      all of the files in the list.&nbsp; Notice that it does not check
+      all of the boxes to the right of the file paths, but rather
+      highlights all of the files.&nbsp; This selection method only
+      works with certain features, one of which is accessed with the
+      button in the icon tool bar with the blue double-play arrows, '<b><font
+          color="#3333ff">&gt;&gt;</font></b>'.&nbsp; All files in the
+      list which are highlighted will be displayed one at a time in the
+      crop dialog when you select this feature.&nbsp; In addition to
+      selecting all of the files in the list at once, you can select
+      files in the list using the same CTRL- and SHIFT-plus-mouse-click
+      operations that you can use in the file system navigator for
+      selecting multiple folders.&nbsp; When you click on the '<b><font
+          color="#3333ff">&gt;&gt;</font></b>' button, the crop dialog
+      will display for each of the highlighted files in turn.&nbsp; You
+      can select one slice of text from each.<br>
+    </p>
+    <p><br>
+      <b>Exit:</b><br>
+    </p>
+    <p>This selection exits the application.&nbsp; <br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+  </body>
+</html>

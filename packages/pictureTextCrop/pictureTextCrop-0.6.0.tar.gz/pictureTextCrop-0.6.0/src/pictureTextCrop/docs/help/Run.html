@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+  </head>
+  <body>
+    <h4 align="center"><b>Run Menu</b></h4>
+    <p><b><br>
+        Sequence:</b><br>
+    </p>
+    <p>This feature is like the feature launched by the '<b><font
+          color="#3333ff">&gt;&gt;</font></b>' icon button in the icon
+      tool bar.&nbsp; Its tool tip reads, "
+      <meta http-equiv="content-type" content="text/html;
+        charset=windows-1252">
+      Display each selected image in turn in the text cropping dialog
+      and store its cropped text in the CropLog table."&nbsp; (The
+      status line at the bottom also shows help for each menu item and
+      button.)&nbsp; The only difference is that it will only display
+      the image files in the list that have been checked.&nbsp;
+      Selecting them using the mouse on the file path itself will not
+      include them.<br>
+    </p>
+    <p><b><br>
+        Batch:</b><br>
+    </p>
+    <p>Like the "Sequence" feature in the same menu, this will operate
+      on all files in the image file list that are selected using the
+      checkbox.&nbsp; The difference is that it will extract all of the
+      text from each in turn without showing a dialog and will store the
+      extracted text in a record in the BatchMaster table in the
+      TextExtraction.db database.&nbsp; The file's path is one of the
+      fields stored, but since it is not the key field, multiple
+      extractions from the same file will have separate records with
+      different time stamps.&nbsp; This allows you to check for
+      modifications of image files over time, such a might occur if
+      there is tampering with them.&nbsp; The fields stored in the
+      record include the time-stamp of the extraction process, the full
+      file path, the text extracted, and in the info field the 'stat' of
+      the file at the time the text was extracted.&nbsp; This is simply
+      the file meta-data available from the operating system, which
+      includes such items as the last modified time-stamp, the file
+      size, and the access restrictions.<br>
+    </p>
+    <p>An alternative is to use the button on the icon tool bar with the
+      circular arrow icon and the help text, "Extract all text from all
+      files in the list and store it in the BatchMaster table
+      <meta http-equiv="content-type" content="text/html;
+        charset=windows-1252">
+      ."&nbsp; This ignores both the check boxes and any list selections
+      you might have made and simply extracts all text from all of the
+      files in the list.&nbsp; This should be used with caution as
+      depending on the number of files in the list, this could take a
+      long time.&nbsp; Basic progress will be displayed on in the
+      console.&nbsp; For more detailed and complete reporting, use the
+      Jobs definition and running features.</p>
+    <p><br>
+      <b>Job:</b><br>
+    </p>
+    <p>Use this feature to select and run a job that you defined using
+      the Admin -&gt; Jobs main menu selection or the toolbox icon
+      button in the icon tool bar.&nbsp; These launch the "Job
+      Definition" dialog in which you can select files and folders to
+      include in any order in a sequence or batch and then save the job
+      for use later under a name you provide.&nbsp; You cash also
+      specify a job type, although this feature is not yet developed to
+      the point where a list of already entered job types are displayed
+      for your selection in this dialog. Once you have reviewed the help
+      on how to define a job, come back to this page to see how one is
+      run.<br>
+    </p>
+    <p>When you select this menu item, a dialog with the title "Select
+      and RUN Job" will be launched.&nbsp; It displays a list of the
+      names of jobs that you have defined from which you can select one
+      to run.&nbsp; There are two modes in which you can run a
+      job:&nbsp; Sequence, and Batch.&nbsp; These work like the Sequence
+      and Batch selections previously described for this Run menu
+      (above).&nbsp; Batch mode has an additional feature
+      available.&nbsp; If you select Batch from the menu button labelled
+      "Run Mode:" at the top, A help message displays at the bottom
+      along with a Console Output configuration panel.&nbsp; Since Batch
+      Jobs can take significant time to run, you can select the items
+      you want displayed as each file is processed by the text
+      extraction engine.&nbsp; Selecting "File Path" will provide s
+      count of the files processed along with the full path of each file
+      as it is processed.&nbsp; Selecting "Times and Durations" will
+      also display the start and end time for each file along with the
+      time it took to extract the text.&nbsp; This also provides the
+      start and end times for the entire batch and its duration.&nbsp;
+      Choosing "Statistics" only provides the byte count of the text
+      extracted currently, although more is possible in the future
+      depending on interest.&nbsp; Selecting "Text Extracted" should be
+      used with caution since it will cause the entire text extracted to
+      be written go the console after the other items selected have been
+      displayed.<br>
+    </p>
+    <p>Like the rest of the application, all of the buttons and other
+      controls have brief help displayed in their tool tips and at the
+      same time in the status bar at the bottom.<br>
+    </p>
+    <p><br>
+      <br>
+      <b></b></p>
+  </body>
+</html>

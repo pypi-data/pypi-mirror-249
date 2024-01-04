@@ -1,0 +1,49 @@
+[project]
+name    = "pictureTextCrop"
+version = "0.6.0"
+description     = "Interactive extraction of selected text from images and batch processing of stored image files."
+readme =  "README.md"
+requires-python   = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3.6",
+    "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "Operating System :: POSIX :: Linux",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Legal Industry",
+    "Natural Language :: English",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Office/Business" ]
+dependencies = ["Pillow", "PyQt5", "pytesseract"]
+authors = [
+  {name = "Keith Watson", email = "georgekeithwatson@gmail.com"},
+]
+maintainers = [
+  {name = "Keith Watson", email = "keith.watson.py@gmail.com"}
+]
+keywords = ["image", "text", "extraction", "text extraction", "screenshot"]
+
+[metadata]
+author  = "George Keith Watson"
+author_email    = "georgekeithwatson@gmail.com"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/keithCollins77093/PictureTextCrop"
+
+[tool.setuptools]
+# ...
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
+
+#   This is causing freezing at the start in the build run:
+#   [tool.setuptools.packages.find]
+#   where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.html", "*.pdf"]
+#   pictureTextCrop = ["./docs/help/*.html"]
+
