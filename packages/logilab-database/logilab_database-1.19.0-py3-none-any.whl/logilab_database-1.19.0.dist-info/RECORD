@@ -1,0 +1,16 @@
+logilab_database-1.19.0-py3.12-nspkg.pth,sha256=WC2_rVuD_5YB9ZkeYtwcA8e3icUo6-4_VeYznap3d10,544
+logilab/database/__init__.py,sha256=GKM73PpEzArQOtAjfnFSkX4B9FwqRqA30GilZQrIc34,40073
+logilab/database/fti.py,sha256=fmP0LLIch1S8SZxUajIcNUviifSO_5oVwogRT5-DjqQ,8276
+logilab/database/ftiparser.g,sha256=Cg_mUViVw4-CF-25DNmw8U7dZG8lfm8R-3Wpv91Y8Rs,327
+logilab/database/ftiparser.py,sha256=f0A1pCF2Z2ncviNwYocbm_0ERR_xe4hvvA0gqvOflJU,2610
+logilab/database/ftiquery.py,sha256=btKzeddDYhjwzn4eFrcj6MuOcUupdyx8c-PNE_qXKg4,5747
+logilab/database/postgres.py,sha256=uwBE_Gy9yxom_l3lBKwHRyWg4ttniNps-cQuuDxeEJA,22067
+logilab/database/sqlgen.py,sha256=8QsnSytozaQsIT3H7ypzyPnIUn8VZ-A2e3pAehRLkk8,12526
+logilab/database/sqlite.py,sha256=A32P87ZCriw1N2RbEcpPx4UzJRXcIRuFuckuAWgLVuc,13225
+logilab_database-1.19.0.dist-info/COPYING,sha256=qxX9UmvY3Rip5368E5ZWv00z6X_HI4zRG_YOK5uGZsY,17987
+logilab_database-1.19.0.dist-info/COPYING.LESSER,sha256=qb3eVhbs3R6YC0TzYGAO6Hg7H5m4zIOivrFjoKOQ6GE,26527
+logilab_database-1.19.0.dist-info/METADATA,sha256=oXCy6ih1nE8Xuk4fusaqnASrH6WCwTO9RnTjba1B1aw,989
+logilab_database-1.19.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+logilab_database-1.19.0.dist-info/namespace_packages.txt,sha256=xXemaIbd-285ANf3yiCDkMHRTZSuLvlqL_MTLEJKMuk,8
+logilab_database-1.19.0.dist-info/top_level.txt,sha256=xXemaIbd-285ANf3yiCDkMHRTZSuLvlqL_MTLEJKMuk,8
+logilab_database-1.19.0.dist-info/RECORD,,
