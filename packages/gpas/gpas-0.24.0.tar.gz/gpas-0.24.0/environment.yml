@@ -1,0 +1,11 @@
+name: gpas
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - hostile>=0.4.0
+  - pip:
+    - gpas>=0.13.0
