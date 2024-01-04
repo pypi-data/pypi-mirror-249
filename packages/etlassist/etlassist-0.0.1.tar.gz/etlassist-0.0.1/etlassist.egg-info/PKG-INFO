@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: etlassist
+Version: 0.0.1
+Summary: etlassist is a python package supporting ETL operations
+Author: Gokul Kumar Jayaram
+Author-email: <gokulkumar.jayaram@gmail.com>
+Keywords: python,etlassist,packaging,etl operations,databricks
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+etlassist can be used with general python and the functions used can also be extended as UDF for the databricks opertaions.

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+etlassist/__init__.py
+etlassist/xml_generator.py
+etlassist.egg-info/PKG-INFO
+etlassist.egg-info/SOURCES.txt
+etlassist.egg-info/dependency_links.txt
+etlassist.egg-info/requires.txt
+etlassist.egg-info/top_level.txt
