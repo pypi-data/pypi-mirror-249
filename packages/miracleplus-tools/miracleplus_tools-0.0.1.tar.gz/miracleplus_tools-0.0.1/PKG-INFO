@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: miracleplus_tools
+Version: 0.0.1
+Summary: miracleplus tools
+Project-URL: Homepage, https://github.com/MiraclePlus/miracleplus-tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## python工具
+这个项目的原因是，我们的hn项目和gpt项目都用到了浏览器的内容解析和百度翻译。这两个功能代码一样，但是如果要做优化修改，那就得同时在两个项目中进行。所以把这两个功能抽象出来，放到了这个项目中。这样，如果要修改，只需要修改这个项目中的代码就可以了。
+
+之后可能还会有一些别的工具公共的工具需要使用。所以这个项目就是一个公共的工具项目。
+
+目前已有的工具：
+- 浏览器内容解析
+- 百度翻译
+
+## 依赖
+如果要是用内容解析功能，需要安装以下依赖：
+selenium
+beautifulsoup4
+readability-lxml
