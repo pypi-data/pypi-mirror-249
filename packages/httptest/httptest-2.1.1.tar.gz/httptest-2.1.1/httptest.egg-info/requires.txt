@@ -1,0 +1,12 @@
+
+[dev]
+build
+twine
+coverage
+setuptools_scm[toml]>=3.4.3
+sbom4python
+
+[oidc]
+pyjwt[crypto]
+jwcrypto
+cryptography
