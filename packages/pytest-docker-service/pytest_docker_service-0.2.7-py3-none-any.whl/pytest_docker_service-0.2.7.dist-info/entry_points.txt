@@ -1,0 +1,3 @@
+[pytest11]
+docker-service=pytest_docker_service.plugin
+
