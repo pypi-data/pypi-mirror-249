@@ -1,0 +1,249 @@
+Metadata-Version: 2.1
+Name: keytext
+Version: 0.1
+Summary: Keyword based text mining Pacakage (keytxt)
+Home-page: UNKNOWN
+Author: Soumyajit Basak
+Author-email: soumyabasak96@gmail.com
+License: UNKNOWN
+Keywords: textmining,NLP,document intelligence
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## keyword based text extraction toolkit (keytext)
+
+[![Downloads](https://pepy.tech/badge/keytext)](https://pepy.tech/project/keytext) [![Downloads](https://pepy.tech/badge/keytext/month)](https://pepy.tech/project/keytext)
+
+The basic function of keytext is to fetching important pieces of text, whatever industry you are working on. This smart toolkit able to collect the keyword based texts indisputably.
+
+### Installation Procedure
+pip install keytext
+
+
+### Dependent Libraries:
+This module depends on regex and pandas. Before running install this dependencies.
+
+
+### The functions used here are as follows:
+
+#### neighbourhood_words
+	- This function extract the keyword along with left and right neghbouthood words
+	- import keytxt.neighbourhood_words 
+	- Parameters are keyword, text, left, right 
+
+#### left_texts 
+	- This function extract the left part of the keyword in a given sentence
+	- import keytxt.left_texts
+	- Parameters are keyword, text, occurence
+	- If a particular keyword has repeatation then the parameter occurence control the output
+    - Occurence must be greater than 0
+    
+#### right_texts
+	- This function extract the rightpart of the keyword in a given sentence.
+	- import keytxt.right_texts
+	- Parameters are keyword, text occurence
+	- If a particular keyword has repeatation then the parameter occurence control the output
+    - Occurence must be greater than 0
+    
+#### between_fixed_keyword
+    - This function extract the information between same keywords
+    - import keytxt.between_fixed_keyword
+    - Parameters are keyword, text
+
+#### keyword_position
+	- This function extract the all matched keyword's start and end positions
+	- import keytxt.keyword_position
+	- Parameters are keyword, text
+
+#### neighbourhood_chr
+	- This function extract the keyword's along with left and right neghbouthood charecters
+	- import keytxt.neighbourhood_words
+	- Parameters are keyword, text, left_chr, right_chr
+
+#### dataframe_keyword_remover
+	- This function remove the keyword from the dataframe
+	- Non alphanumeric charecters need to be write in regex format
+	- import keytxt.dataframe_keyword_remover
+	- Parameters are remover_list, dataframe, replaced_by
+
+#### text_keyword_remover
+	- This function remove the keyword along with non-alphanumerics from a long text
+	- import keytxt.text_keyword_remover
+	- Parameters are remover_list, text, replaced_by
+
+#### get_freq
+	- This function works on a base. The base can be 'chr' for charecter and 'word' for words
+	- import keytxt.get_freq
+	- Parameters are text, base
+
+## Documentation:
+
+```python
+# import library
+import keytxt
+```
+
+
+```python
+# define text and keyword
+text = "Python is (commonly) used for developing website$ and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances."
+keyword = "python"
+```
+
+
+```python
+# neighbourhood words of the keyword
+keytxt.neighbourhood_words(keyword, text, 1, 3)
+```
+
+
+
+
+    ['PYTHON IS (COMMONLY) USED', 'LEARN, PYTHON HAS BEEN ADOPTED']
+
+
+
+
+```python
+# neighbourhood charecters of the keyword
+keytxt.neighbourhood_chr(keyword, text, 3, 4)
+```
+
+
+
+
+    ['', 'N, PYTHON HAS']
+
+
+
+
+```python
+# positions of the keyword
+keytxt.keyword_position(keyword, text)
+```
+
+
+
+
+    [(0, 6), (157, 163)]
+
+
+
+
+```python
+# when keyword is repeating then print the between texts
+keytxt.between_fixed_keyword(keyword, text)
+```
+
+
+
+
+    [" IS (COMMONLY) USED FOR DEVELOPING WEBSITE$ AND SOFTWARE, TASK AUTOMATION, DATA ANALYSIS, AND DATA VISUALIZATION. SINCE IT'S RELATIVELY EASY TO LEARN, ",
+     ' HAS BEEN ADOPTED BY MANY NON-PROGRAMMERS SUCH AS ACCOUNTANTS AND SCIENTISTS, FOR A VARIETY OF EVERYDAY TASKS, LIKE ORGANIZING FINANCES.']
+
+
+
+
+```python
+# left texts of 2nd occurence of keyword
+keytxt.left_texts(keyword, text, 2)
+```
+
+
+
+
+    "Python is (commonly) used for developing website$ and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, "
+
+
+
+
+```python
+# right texts of 2nd occurence of keyword
+keytxt.right_texts(keyword, text, 1)
+```
+
+
+
+
+    " is (commonly) used for developing website$ and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances."
+
+
+
+
+```python
+# remove user defined unnecessary phrases from your text data
+remover = ['\$', '\)', '\(', 'variety']
+keytxt.text_keyword_remover(remover, text, '')
+```
+
+
+
+
+    "Python is (commonly) used for developing website$ and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a  of everyday tasks, like organizing finances."
+
+
+
+
+```python
+# remove user defined unnecessary phrases from dataframe
+import pandas as pd
+original_data = pd.DataFrame({'string1': ['abcstack overflow','abc123','comedy*','definitely$','lkjh','pls1234'],
+                      'string2': ['1!', '2a', '3cft', 'google*', 'microsoft)', 'yahoo]']})
+remove_words = ['abc', 'deff', 'pls', '\*', '\@', '\$', '\)', '\]', '\!']
+
+filtered_data = keytxt.dataframe_keyword_remover(remove_words, original_data, '')
+
+
+print('original_data:\n', original_data)
+print('\n\n')
+print('after passing filter:\n', filtered_data)
+```
+
+    original_data:
+                  string1     string2
+    0  abcstack overflow          1!
+    1             abc123          2a
+    2            comedy*        3cft
+    3        definitely$     google*
+    4               lkjh  microsoft)
+    5            pls1234      yahoo]
+    
+    
+    
+    after passing filter:
+               string1    string2
+    0  stack overflow          1
+    1             123         2a
+    2          comedy       3cft
+    3      definitely     google
+    4            lkjh  microsoft
+    5            1234      yahoo
+    
+
+
+
+### Change Log
+0.0.1 (24/01/2022) - First Release 
+0.0.2 (30/01/2022) - Second Release 
+0.0.3 (19/02/2022) - Third Release
+
+
+
