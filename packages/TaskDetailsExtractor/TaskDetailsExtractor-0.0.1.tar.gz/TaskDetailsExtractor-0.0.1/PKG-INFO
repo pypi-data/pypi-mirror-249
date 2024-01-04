@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: TaskDetailsExtractor
+Version: 0.0.1
+Summary: Extract detailed tasks for software project modification using GPT from OpenAI.
+Home-page: https://github.com/chigwell/TaskDetailsExtractor
+Author: Eugene Evstafev
+Author-email: chigwel@gmail.com
+License: UNKNOWN
+Description: # TaskDetailsExtractor
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
