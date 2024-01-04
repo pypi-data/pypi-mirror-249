@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+advurl_shortner/__init__.py
+advurl_shortner/advurl_shortner.py
+advurl_shortner.egg-info/PKG-INFO
+advurl_shortner.egg-info/SOURCES.txt
+advurl_shortner.egg-info/dependency_links.txt
+advurl_shortner.egg-info/requires.txt
+advurl_shortner.egg-info/top_level.txt
