@@ -1,0 +1,13 @@
+pydantic>=2.0.0
+
+[all]
+fastapi<=0.105.0
+google-api-core
+google-cloud-pubsub
+
+[fastapi]
+fastapi<=0.105.0
+
+[google]
+google-api-core
+google-cloud-pubsub
