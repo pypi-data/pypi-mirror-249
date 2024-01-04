@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ops-py-github-tools"
+description = "Selection of tools to use with GitHub"
+license = {file = "license.txt"}
+dynamic = ["version", "readme", "dependencies"]
+
+[tool.setuptools.dynamic]
+version = {attr = "github_tools.__version__"}
+readme = {file = "", content-type = "text/markdown"}
+dependencies = {file = [""]}
