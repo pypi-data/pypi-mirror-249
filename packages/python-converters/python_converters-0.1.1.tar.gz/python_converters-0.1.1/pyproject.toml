@@ -1,0 +1,69 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "python-converters"
+version = "0.1.1"
+description = "Write conversions between python objects using an expressive and declarative class-based API"
+authors = [
+    "7bridges <os@the7bridges.com>",
+    "David Park <david@greenparksoftware.co.uk>",
+]
+readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/The7BridgesTeam/Converters"
+packages = [
+    { include = "converters" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4"
+pydash = ">=4.9.3"
+# These are the minimum versions that are supported. To build a file for testing a specific combination
+# of versions use build_versioned_pyproject using one of the pre-defined sets of dependencies in
+# test_version_combinations.
+# TEST VERSIONS INSERTION POINT
+lxml = {version = ">=4.6.3", optional = true}
+python-dateutil = {version = ">=2.8.1", optional = true}
+pytz = {version = ">=2021.1", optional = true}
+Django = {version = ">=2.1", optional = true}
+Unidecode = {version = ">=1.2.0", optional = true}
+pandas = {version = ">=0.25.3", optional = true}
+django-countries = {version = ">=7.1", optional = true}
+py-moneyed = {version = ">=1.2", optional = true}
+# TEST VERSIONS INSERTION POINT END
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.0.1"
+syrupy = ">=4.6.0"
+pytest-django = ">=4.2.0"
+pytest-mock = ">=3.6.0"
+
+[tool.poetry.extras]
+# ℹ️ if you update any of these, be sure to update "all = [...]" as well, so that it's easy to get
+# all dependencies for testing. You can install any one of these sets using e.g.
+#   poetry install -E django_xml
+datetime = ["python-dateutil", "pytz"]
+django = ["Django", "django-countries"]
+django_xml = ["Django", "django-countries", "unidecode", "lxml"]
+moneyed = ["py-moneyed"]
+pandas = ["pandas"]
+unidecode = ["unidecode"]
+xml = ["lxml"]
+
+all = [
+    "Django",
+    "django-countries",
+    "lxml",
+    "pandas",
+    "python-dateutil",
+    "py-moneyed",
+    "pytz",
+    "unidecode"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["django-test-site"]
+DJANGO_SETTINGS_MODULE = "django_site.settings"
+addopts = ["--no-migrations", "--doctest-modules"]
