@@ -1,0 +1,9 @@
+pycryptodome
+requests
+requests_toolbelt
+attrs
+pydantic<2,>=1
+typing_extensions
+
+[flask]
+Flask
