@@ -1,0 +1,3 @@
+[console_scripts]
+hk = nhlrank.__main__:main
+
