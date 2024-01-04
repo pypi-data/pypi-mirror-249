@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+powerBIParser/__init__.py
+powerBIParser/fields.py
+powerBIParser/pbiDatasetParser.py
+powerBIParser/pbiItemParser.py
+powerBIParser/pbiReportParser.py
+powerBIParser/relationship.py
+powerBIParser/section.py
+powerBIParser/table.py
+powerbi_parser.egg-info/PKG-INFO
+powerbi_parser.egg-info/SOURCES.txt
+powerbi_parser.egg-info/dependency_links.txt
+powerbi_parser.egg-info/top_level.txt
