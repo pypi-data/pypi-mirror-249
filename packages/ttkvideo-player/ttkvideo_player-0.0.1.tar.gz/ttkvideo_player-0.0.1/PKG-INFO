@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ttkvideo_player
+Version: 0.0.1
+Summary: playing video (with audio) in tkinter label
+Author: Coder-wis
+Author-email: vishalsharma.pypi@gmail.com
+License: MIT
+Keywords: video-player,player,video,python,tkinter video player,tkinter video,ctk video,customtkinter
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: Licence.txt
+
+readme.md
