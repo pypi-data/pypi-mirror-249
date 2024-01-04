@@ -1,0 +1,11 @@
+quillsql/__init__.py,sha256=IgJnPRLx5GcenVt82mMQo0ydvXYB_-39Ft4Of5sEEGA,39
+quillsql/core.py,sha256=B8s2MCNFDsnwnSH68IeBQwcgaL-tq1KCt1PLqTF9MsA,11521
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/cache_test.py,sha256=5MvAAyGF37wiRejOwG8m4uG9jxnEOseV5GtXTtjAk-8,11092
+tests/simple_test.py,sha256=zdDV6BvJRyNKCy80bxDNfK1F1oqM6oIv7ul7JPKi51Q,4962
+tests/staging_test.py,sha256=zdDV6BvJRyNKCy80bxDNfK1F1oqM6oIv7ul7JPKi51Q,4962
+quillsql-1.4.dist-info/LICENSE,sha256=f2-T2fNvArbqfNW8RwsOu2IWEwpsaRX6G-AJvLJKuzg,1068
+quillsql-1.4.dist-info/METADATA,sha256=iSYgX5RSgR14DU0zGPcfJIEa294iC0mKQA1cpSWNWnM,466
+quillsql-1.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+quillsql-1.4.dist-info/top_level.txt,sha256=DCsUgdO5twxI1s5sw-euqMt1NDDtIGMR-t9A68P3gZs,15
+quillsql-1.4.dist-info/RECORD,,
