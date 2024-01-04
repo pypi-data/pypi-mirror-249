@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pagegen
+Version: 3.8.7
+Summary: Static site generator
+Home-page: http://pagegen.phnd.net
+Author: Oliver Fields
+Author-email: pagegen@phnd.net
+License: UNKNOWN
+Project-URL: Issues, https://github.com/oliverfields/pagegen/issues
+Project-URL: Repository, https://github.com/oliverfields/pagegen
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: docutils (==0.19)
+Requires-Dist: htmlmin (==0.1.12)
+Requires-Dist: jsmin (==3.0.1)
+Requires-Dist: libsass (==0.21.0)
+Requires-Dist: lxml (==4.9.1)
+Requires-Dist: mako (==1.2.1)
+Requires-Dist: markdown (==3.3.6)
+Requires-Dist: pillow (==9.2.0)
+Requires-Dist: python-docutils-graphviz (==1.0.3)
+Requires-Dist: rcssmin (==1.1.1)
+
+Python static site generator with reStructuredText or Markdown markup and Mako templates.
+
+
