@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sopel-factoriomods
+Version: 0.1.0
+Summary: A Sopel plugin to show information about linked Factorio mods.
+Home-page: https://github.com/dgw/sopel-factoriomods
+Author: dgw
+Author-email: dgw@technobabbl.es
+License: Eiffel Forum License, version 2
+Description: # sopel-factoriomods
+        
+        A Sopel plugin to show information about linked Factorio mods.
+        
+        Uses the [Factorio Mod Portal API](https://wiki.factorio.com/Mod_portal_API),
+        which is *probably* stable but you never know. Proceed cautiously.
+        
+        
+        NEWS
+        ====
+        
+        Version 0.1.0
+        -------------
+        
+        Initial release.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Description-Content-Type: text/markdown
