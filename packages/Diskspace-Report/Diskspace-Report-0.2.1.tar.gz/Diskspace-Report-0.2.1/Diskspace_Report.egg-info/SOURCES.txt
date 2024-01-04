@@ -1,0 +1,11 @@
+README.md
+setup.py
+Diskspace_Report.egg-info/PKG-INFO
+Diskspace_Report.egg-info/SOURCES.txt
+Diskspace_Report.egg-info/dependency_links.txt
+Diskspace_Report.egg-info/entry_points.txt
+Diskspace_Report.egg-info/requires.txt
+Diskspace_Report.egg-info/top_level.txt
+diskspace-report/__init__.py
+diskspace-report/config.py
+diskspace-report/diskspace_report.py
