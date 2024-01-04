@@ -1,0 +1,8 @@
+numpy>=1.23
+
+[cli]
+matplotlib.pyplot
+mpl_toolkits.mplot3d
+
+[gui]
+3Dplot
