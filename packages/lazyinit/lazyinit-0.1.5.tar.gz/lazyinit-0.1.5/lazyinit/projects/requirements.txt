@@ -1,0 +1,6 @@
+# lazydl
+lazyinit
+hydra-core
+lightning
+colorama
+streamlit
