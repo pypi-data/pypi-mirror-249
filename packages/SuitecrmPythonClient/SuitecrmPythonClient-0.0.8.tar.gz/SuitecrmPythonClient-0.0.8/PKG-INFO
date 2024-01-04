@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: SuitecrmPythonClient
+Version: 0.0.8
+Summary: Python package which provides Suitecrm Client
+Home-page: https://github.com/rmetcalf9/SuitecrmPythonClient
+Author: Robert Metcalf
+Author-email: rmetcalf9@googlemail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+ # SuiteCRMPythonClient
+
+[![PyPI version](https://badge.fury.io/py/SuitecrmPythonClient.svg)](https://badge.fury.io/py/SuitecrmPythonClient)
+
+Python Client Library for interfacing with SuiteCrm.
+
+ ## Aims
+ ## Usage examples
+ ## Background
+
+ 
+
+
+
