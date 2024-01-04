@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bdast
+Version: 0.2.2
+Summary: Build and Deployment Assistant
+Home-page: https://github.com/archmachina/bdast
+Download-URL: https://pypi.org/project/bdast/
+Author: Jesse Reichman
+License: MIT
+Keywords: Build,Deployment,Assistant
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: PyYAML
+
+# bdast
+Build and Deployment Assistant
