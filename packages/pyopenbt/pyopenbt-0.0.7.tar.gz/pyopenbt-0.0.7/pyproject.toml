@@ -1,0 +1,43 @@
+[project]
+name = "pyopenbt"
+version = "0.0.7"
+description = "python interface to openbt"
+authors = [
+	{name = "Clark Van Lieshout", email = "clarkvan33@gmail.com"},
+    {name = "J. Derek Tucker", email = "jdtuck@sandia.gov"}
+]
+license = {text = "BSD 3-Clause"}
+readme = "README.md"
+requires-python = ">=3.6"
+
+keywords = ["bayesian additive regession trees"]
+
+dependencies=[
+        "numpy",
+        "scipy",
+        "pandas",
+        "scikit-learn",
+        "matplotlib",
+        "joblib",
+    ]
+
+classifiers = [
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Mathematics',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.6',
+]
+
+[project.urls]
+homepage = "https://github.com/cavan33/openbt_py"
+repository = "https://github.com/cavan33/openbt_py"
+
+[tool.cibuildwheel]
+# Note: the below skip command doesn't do much currently, the platforms to
+# build wheels for in CI are controlled in `.github/workflows/wheels.yml` and
+# `tools/ci/cirrus_wheels.yml`.
+skip = "pp* *-manylinux_i686 *_ppc64le *_s390x *-win32 *_i686"
+build-verbosity = "3"
