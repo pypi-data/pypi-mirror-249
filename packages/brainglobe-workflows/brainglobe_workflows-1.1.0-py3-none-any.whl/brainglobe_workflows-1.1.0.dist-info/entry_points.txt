@@ -1,0 +1,3 @@
+[console_scripts]
+brainmapper = brainglobe_workflows.brainmapper.main:main
+cellfinder-workflow = brainglobe_workflows.cellfinder_core.cellfinder:main_app_wrapper
