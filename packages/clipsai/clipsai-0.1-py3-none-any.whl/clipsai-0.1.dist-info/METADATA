@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: clipsai
+Version: 0.1
+Summary: Clips AI is an open-source Python library that automatically converts long videos into clips
+Home-page: https://docs.clipsai.com/
+Author: Clips AI
+Author-email: support@clipsai.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: av
+Requires-Dist: facenet-pytorch
+Requires-Dist: matplotlib
+Requires-Dist: mediapipe
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: psutil
+Requires-Dist: pyannote.audio
+Requires-Dist: pyannote.core
+Requires-Dist: pynvml
+Requires-Dist: pytest
+Requires-Dist: python-magic
+Requires-Dist: scenedetect
+Requires-Dist: scikit-learn
+Requires-Dist: sentence-transformers
+Requires-Dist: scipy
+Requires-Dist: torch
+
