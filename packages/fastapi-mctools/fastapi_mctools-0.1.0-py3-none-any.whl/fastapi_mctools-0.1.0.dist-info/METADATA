@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fastapi-mctools
+Version: 0.1.0
+Summary: Fastapi mc style tools
+Author: Jungminchae
+Author-email: minchae3618@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Requires-Dist: boto3 (>=1.28.63,<2.0.0) ; extra == "all"
+Requires-Dist: click (>=8.1.5,<9.0.0)
+Requires-Dist: fastapi (>=0.100.0,<0.101.0) ; extra == "all"
+Requires-Dist: httpx (>=0.25.0,<0.26.0) ; extra == "all"
+Requires-Dist: redis (>=5.0.1,<6.0.0) ; extra == "all"
+Requires-Dist: sqlalchemy[asyncio] (>=2.0.23,<3.0.0) ; extra == "all"
+Description-Content-Type: text/markdown
+
+# FastAPI-MCtools
+
+- MC(나)의 FastAPI로 개발할 때 자주 사용하는 코드들을 모아놓은 패키지입니다.
+
