@@ -1,0 +1,5 @@
+{
+    "use_commit_history_style": false,
+    "max_num_commits_style": 5,
+    "max_characters": 100
+}
