@@ -1,0 +1,8 @@
+README.md
+setup.py
+imsciencesdataprocessing/__init__.py
+imsciencesdataprocessing/datafunctions.py
+imsciencesdataprocessing.egg-info/PKG-INFO
+imsciencesdataprocessing.egg-info/SOURCES.txt
+imsciencesdataprocessing.egg-info/dependency_links.txt
+imsciencesdataprocessing.egg-info/top_level.txt
