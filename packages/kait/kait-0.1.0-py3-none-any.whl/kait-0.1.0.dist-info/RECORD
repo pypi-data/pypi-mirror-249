@@ -1,0 +1,10 @@
+kait/__init__.py,sha256=4j4XOLeooflJzJXS3-vNuWaoO7uoqNFSBEJeOJCZcag,12
+kait/kubectl_executor_agent.py,sha256=5W30l9EKP84YfwyfU9he2JO5EOmIAgRbuK4UwphN4pU,2134
+kait/kubernetes_debugger.py,sha256=85N04x6wd4hOMvBT6bMA5n8BXVgx4t0ggCFkluGjh7o,6068
+kait/main.py,sha256=BP7PUT-h9jCxzKvL8VEVL-_tbBRVjqeFwObQDqvh1lw,2094
+kait-0.1.0.dist-info/LICENSE,sha256=lmodQkLF0Ggod9PnYWYe2lcePQ-MvJUMHvYeVi-5Jco,1068
+kait-0.1.0.dist-info/METADATA,sha256=XYdEOpA8M5wNL3mVc4NrSwNyWpO68lWaiSHxEA7SnJc,1671
+kait-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+kait-0.1.0.dist-info/entry_points.txt,sha256=pJ7sLHAEO1_XjGWR8WJE7kjCySlKQC5l04qG0-UU6UA,39
+kait-0.1.0.dist-info/top_level.txt,sha256=Iid2TV8GnxVO549Ho27PJC5edf1jJ8n_DeE9vGsY55g,5
+kait-0.1.0.dist-info/RECORD,,
