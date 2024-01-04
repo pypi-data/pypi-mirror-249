@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+awsovpn/__init__.py
+awsovpn/__main__.py
+awsovpn.egg-info/PKG-INFO
+awsovpn.egg-info/SOURCES.txt
+awsovpn.egg-info/dependency_links.txt
+awsovpn.egg-info/entry_points.txt
+awsovpn.egg-info/requires.txt
+awsovpn.egg-info/top_level.txt
