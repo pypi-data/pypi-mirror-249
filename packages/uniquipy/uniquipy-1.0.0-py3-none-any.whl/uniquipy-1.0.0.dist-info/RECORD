@@ -1,0 +1,11 @@
+uniquipy/analyze.py,sha256=RVA9EnSUxRJqzH31oCPb_bAGjYbl2y3Xk-oW-ld_h_E,2457
+uniquipy/cli.py,sha256=nFR25uN_VYQZ6u8jvafydZXLNqWsuElPVuiRvO_7qh8,416
+uniquipy/pack.py,sha256=A05bXyHn_TEI2rJNn49Et9hy0VIW7VIMMhYrcWPgH0w,5705
+uniquipy/src.py,sha256=DySFfDgR7QNCaZPomC9ld6aDSGLogLFJQHg6XFMrOxc,4481
+uniquipy/uniquipy.py,sha256=qCoobFr2jRzbbivJmoAAgFpqP1UcPuT8NlOMPoYQJzk,232
+uniquipy-1.0.0.dist-info/LICENSE,sha256=Dahk9j5bP-EapG0uKMlfAL1-wsFIdHAEDC5os-LB088,1080
+uniquipy-1.0.0.dist-info/METADATA,sha256=Sh4Q21U2Eg7MyBZEvRJ5-PpL6gYO6cNbh6xeInVpNxs,266
+uniquipy-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+uniquipy-1.0.0.dist-info/entry_points.txt,sha256=StHoYskgXn4j3pIyNyYOSK1GXtJdAMcS9YRm8sr2mvw,47
+uniquipy-1.0.0.dist-info/top_level.txt,sha256=C8AEkycA_9qZbvFxvAokov1KLrQ1s8emapGrqQhrEIs,9
+uniquipy-1.0.0.dist-info/RECORD,,

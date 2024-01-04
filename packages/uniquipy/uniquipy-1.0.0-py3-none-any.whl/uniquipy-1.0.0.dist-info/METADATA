@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: uniquipy
+Version: 1.0.0
+Summary: python cli-tool to find and handle file duplicates
+Home-page: UNKNOWN
+Author: Steffen Richters-Finger
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: click <9.0.0,>=8.1.7
+
+UNKNOWN
+
