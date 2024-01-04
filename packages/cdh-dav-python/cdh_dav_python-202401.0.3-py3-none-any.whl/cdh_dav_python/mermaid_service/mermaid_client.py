@@ -1,0 +1,115 @@
+import os
+import sys
+import subprocess
+
+from cdh_dav_python.cdc_admin_service import (
+    environment_tracing as cdc_env_tracing,
+    environment_logging as cdc_env_logging,
+)
+
+# Get the currently running file name
+NAMESPACE_NAME = os.path.basename(os.path.dirname(__file__))
+# Get the parent folder name of the running file
+SERVICE_NAME = os.path.basename(__file__)
+
+
+class MermaidClient:
+    """
+    A class representing a client for interacting with Mermaid.
+    """
+
+    @staticmethod
+    def install_mermaid():
+        """
+        Install Mermaid by running the npm install command.
+
+        Returns:
+            A subprocess.CompletedProcess object representing the result of the installation command.
+        """
+
+        logger_singleton = cdc_env_logging.LoggerSingleton.instance(
+            NAMESPACE_NAME, SERVICE_NAME
+        )
+        logger = logger_singleton.get_logger()
+        cdc_env_tracing.TracerSingleton.log_to_console = False
+        tracer_singleton = cdc_env_tracing.TracerSingleton.instance(
+            NAMESPACE_NAME, SERVICE_NAME
+        )
+        tracer = tracer_singleton.get_tracer()
+
+        with tracer.start_as_current_span("install_mermaid"):
+            try:
+                npm_command = [
+                    "npm",
+                    "install",
+                    "@mermaid-js/mermaid-cli",
+                    "--registry=https://registry.npmjs.org",
+                ]
+                result = subprocess.call(
+                    npm_command,
+                    check=True,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    shell=True,
+                )
+
+                logger.info("result.stdout: %s", result.stdout)
+                return result
+            except FileNotFoundError as ex_file_not_found:
+                error_msg = (
+                    f"Error: {ex_file_not_found} running command {npm_command}",
+                )
+                exc_info = sys.exc_info()
+                logger_singleton.error_with_exception(error_msg, exc_info)
+                raise
+            except subprocess.CalledProcessError as ex:
+                error_msg = "Error: %s", ex
+                exc_info = sys.exc_info()
+                logger_singleton.error_with_exception(error_msg, exc_info)
+                raise
+
+    @staticmethod
+    def show_help():
+        """
+        Display the help information for the mermaid command.
+
+        Returns:
+            The result of the subprocess run.
+        Raises:
+            FileNotFoundError: If the 'mmdc' command is not found.
+            subprocess.CalledProcessError: If an error occurs while running the command.
+        """
+        logger_singleton = cdc_env_logging.LoggerSingleton.instance(
+            NAMESPACE_NAME, SERVICE_NAME
+        )
+        logger = logger_singleton.get_logger()
+        cdc_env_tracing.TracerSingleton.log_to_console = False
+        tracer_singleton = cdc_env_tracing.TracerSingleton.instance(
+            NAMESPACE_NAME, SERVICE_NAME
+        )
+        tracer = tracer_singleton.get_tracer()
+
+        with tracer.start_as_current_span("show_help"):
+            try:
+                mermaid_command = ["mmdc", "-h"]
+                result = subprocess.run(
+                    mermaid_command,
+                    check=True,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True,
+                )
+                logger.info("result.stdout: %s", result.stdout)
+                return result
+            except FileNotFoundError as ex_file_not_found:
+                error_msg = (
+                    f"Error: {ex_file_not_found} running command {mermaid_command}",
+                )
+                exc_info = sys.exc_info()
+                logger_singleton.error_with_exception(error_msg, exc_info)
+                raise
+            except subprocess.CalledProcessError as ex:
+                error_msg = "Error: %s", ex
+                exc_info = sys.exc_info()
+                logger_singleton.error_with_exception(error_msg, exc_info)
+                raise

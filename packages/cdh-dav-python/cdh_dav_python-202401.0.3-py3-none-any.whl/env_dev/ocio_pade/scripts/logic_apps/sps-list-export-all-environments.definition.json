@@ -1,0 +1,844 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "$connections": {
+        "defaultValue": {
+          "cdh_cdh_ocio_sharepoint": {
+            "connectionId": "/subscriptions/fb31dd14-4a28-42f5-a0c1-613140e7327e/resourceGroups/rg-cop-edav-dev/providers/Microsoft.Web/connections/sharepointonline",
+            "connectionName": "sharepointonline",
+            "id": "/subscriptions/fb31dd14-4a28-42f5-a0c1-613140e7327e/providers/Microsoft.Web/locations/eastus/managedApis/sharepointonline"
+          }
+        },
+        "type": "Object"
+      }
+    },
+    "triggers": {
+      "When_an_item_is_created_or_modified": {
+        "recurrence": {
+          "frequency": "Minute",
+          "interval": 3
+        },
+        "evaluatedRecurrence": {
+          "frequency": "Minute",
+          "interval": 3
+        },
+        "splitOn": "@triggerBody()?['value']",
+        "type": "ApiConnection",
+        "inputs": {
+          "host": {
+            "connection": {
+              "name": "@parameters('$connections')['cdh_cdh_ocio_sharepoint']['connectionId']"
+            }
+          },
+          "method": "get",
+          "path": "/datasets/@{encodeURIComponent(encodeURIComponent('https://cdc.sharepoint.com/teams/ncird-datalake'))}/tables/@{encodeURIComponent(encodeURIComponent('094e2482-8816-4435-99e0-6ae56f88d25b'))}/onupdateditems"
+        }
+      }
+    },
+    "actions": {
+      "Compose_2": {
+        "runAfter": {
+          "Select": ["Succeeded"]
+        },
+        "type": "Compose",
+        "inputs": "@body('Select')"
+      },
+      "Compose_:__ezdx": {
+        "runAfter": {
+          "Create_CSV_table__:_ezdx": ["Succeeded"]
+        },
+        "type": "Compose",
+        "inputs": "@replace(replace( body('Create_CSV_table__:_ezdx'),'\"',''),'^','\"')"
+      },
+      "Create_CSV_table__:_ezdx": {
+        "runAfter": {
+          "Filter_array_:_ezdx_or_xlr": ["Succeeded"]
+        },
+        "type": "Table",
+        "inputs": {
+          "format": "CSV",
+          "from": "@body('Filter_array_:_ezdx_or_xlr')"
+        }
+      },
+      "Execute_JavaScript_Code": {
+        "runAfter": {
+          "Compose_2": ["Succeeded"]
+        },
+        "type": "JavaScriptCode",
+        "inputs": {
+          "code": "function f_s(str, oe) {\r\n    Object.keys(oe).forEach(k => \r\n    { \r\n        s_val = `${oe[k]}`;\r\n        str = str.replace(new RegExp(\"\\\\{\" + k + \"\\\\}\", \"gi\"),s_val) ; \r\n    });\r\n    return str;\r\n}\r\nlet rs = '[';\r\nworkflowContext.actions.Compose_2.outputs.forEach(oe => \r\n{\r\n    let ris = '{ ';\r\n    let cs = '';\r\n    Object.keys(oe).forEach(k => \r\n    {\r\n        cs += (typeof oe[k] === \"string\" || !oe[k] ) ? `\\\"${k}\\\":\\\"^${oe[k]}^\\\", ` : `\\\"${k}\\\":${oe[k]}, `;\r\n    });\r\n    cs = cs.slice(0, -2);\r\n    ris += f_s(cs, oe);\r\n    ris = f_s(ris, oe);\r\n    ris = f_s(ris, oe);\r\n    ris = f_s(ris, oe);\r\n    ris += '}, ';\r\n    rs += ris ; \r\n});\r\nrs = rs.slice(0, -2); \r\nrs += ']';\r\nreturn rs;"
+        }
+      },
+      "Filter_array_:_ezdx_or_xlr": {
+        "runAfter": {
+          "Parse_JSON": ["Succeeded"]
+        },
+        "type": "Query",
+        "inputs": {
+          "from": "@body('Parse_JSON')",
+          "where": "@or( startsWith(item()['cdh_data_product_id'], '^ndsp_pertussiss'), startsWith(item()['cdh_data_product_id'], '^cdh'))"
+        }
+      },
+      "For_each": {
+        "foreach": "@body('Filter_array_:_ezdx_or_xlr')",
+        "actions": {
+          "Compose-clean": {
+            "runAfter": {
+              "Compose_-_current_item": ["Succeeded"]
+            },
+            "type": "Compose",
+            "inputs": "@replace(replace(  String(outputs('Compose_-_current_item')),'^\"','\"'),'\"^','\"')"
+          },
+          "Compose_-_current_item": {
+            "runAfter": {},
+            "type": "Compose",
+            "inputs": "@item()"
+          },
+          "Create_CSV_table": {
+            "runAfter": {
+              "Create_blob_(V2)": ["Succeeded"]
+            },
+            "type": "Table",
+            "inputs": {
+              "format": "CSV",
+              "from": "@array(body('ParseJSONclean'))"
+            }
+          },
+          "Create_blob_(V2)": {
+            "runAfter": {
+              "Execute_JavaScript_Code_2": ["Succeeded"]
+            },
+            "type": "ApiConnection",
+            "inputs": {
+              "body": "@outputs('Compose-clean')",
+              "headers": {
+                "Content-Type": "@{concat('application/json')}",
+                "ReadFileMetadataFromServer": true
+              },
+              "host": {
+                "connection": {
+                  "name": "@parameters('$connections')['cdh_cdh_ocio_blob']['connectionId']"
+                }
+              },
+              "method": "post",
+              "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent(body('ParseJSONclean')?['cdh_azure_storage_account']))}/files",
+              "queries": {
+                "folderPath": "@{concat(body('ParseJSONclean')?['cdh_container_project'],  String(body('Execute_JavaScript_Code_2')))}",
+                "name": "@{concat('config.',  body('ParseJSONclean')?['cdh_environment'],'.json')}",
+                "queryParametersSingleEncoded": true
+              }
+            },
+            "runtimeConfiguration": {
+              "contentTransfer": {
+                "transferMode": "Chunked"
+              }
+            }
+          },
+          "Create_blob_(V2)_2": {
+            "runAfter": {
+              "Create_CSV_table": ["Succeeded"]
+            },
+            "type": "ApiConnection",
+            "inputs": {
+              "body": "@body('Create_CSV_table')",
+              "headers": {
+                "ReadFileMetadataFromServer": true
+              },
+              "host": {
+                "connection": {
+                  "name": "@parameters('$connections')['cdh_cdh_ocio_blob']['connectionId']"
+                }
+              },
+              "method": "post",
+              "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent(body('ParseJSONclean')?['cdh_azure_storage_account']))}/files",
+              "queries": {
+                "folderPath": "@{concat(body('ParseJSONclean')?['cdh_container_project'],  String(body('Execute_JavaScript_Code_2')), 'cdh/' )}",
+                "name": "bronze_sps_config_environments.csv",
+                "queryParametersSingleEncoded": true
+              }
+            },
+            "runtimeConfiguration": {
+              "contentTransfer": {
+                "transferMode": "Chunked"
+              }
+            }
+          },
+          "Execute_JavaScript_Code_2": {
+            "runAfter": {
+              "Set_variable_-_storage_account": ["Succeeded"]
+            },
+            "type": "JavaScriptCode",
+            "inputs": {
+              "code": "function parseUrl(url) {\r\n    var m = url.match(/^((?:([^:\\/?#]+:)(?:\\/\\/))?((?:([^\\/?#:]*):([^\\/?#:]*)@)?([^\\/?#:]*)(?::([^\\/?#:]*))?))?([^?#]*)(\\?[^#]*)?(#.*)?$/),\r\n        r = {hash: m[10] || \"\",host: m[3] || \"\",hostname: m[6] || \"\",href: m[0] || \"\",origin: m[1] || \"\",pathname: m[8] || (m[1] ? \"/\" : \"\"),port: m[7] || \"\",protocol: m[2] || \"\",search: m[9] || \"\", username: m[4] || \"\",password: m[5] || \"\" };\r\n    if (r.protocol.length == 2) {\r\n        r.protocol = \"file:///\" + r.protocol.toUpperCase();\r\n        r.origin = r.protocol + \"//\" + r.host;\r\n    }\r\n    r.href = r.origin + r.pathname + r.search + r.hash;\r\n    return r;\r\n};\r\n\r\nconst cdh_folder_config = String(workflowContext.actions.ParseJSONclean.outputs.body.cdh_folder_config);\r\nconst url = parseUrl(cdh_folder_config);\r\nlet cdh_folder_config_pathname = url.pathname;\r\nreturn cdh_folder_config_pathname;\r\n"
+            }
+          },
+          "ParseJSONclean": {
+            "runAfter": {
+              "Compose-clean": ["Succeeded"]
+            },
+            "type": "ParseJson",
+            "inputs": {
+              "content": "@outputs('Compose-clean')",
+              "schema": {
+                "properties": {
+                  "adf_data_factory_name": {
+                    "type": "string"
+                  },
+                  "adf_devops_account_name": {},
+                  "adf_devops_project_name": {},
+                  "adf_devops_repository_type": {},
+                  "az_sub_client_id": {
+                    "type": "string"
+                  },
+                  "az_sub_client_id_key": {},
+                  "az_sub_client_secret_key": {
+                    "type": "string"
+                  },
+                  "cdh_folder_config": {
+                    "type": "string"
+                  },
+                  "database_name": {
+                    "type": "string"
+                  },
+                  "databricks_repository_id": {},
+                  "az_kv_key_vault_name": {
+                    "type": "string"
+                  },
+                  "cdh_azure_resource_group_location": {
+                    "type": "string"
+                  },
+                  "cdh_azure_resource_group_name": {
+                    "type": "string"
+                  },
+                  "cdh_azure_storage_account": {
+                    "type": "string"
+                  },
+                  "az_sub_subscription_id": {
+                    "type": "string"
+                  },
+                  "az_sub_subscription_name": {
+                    "type": "string"
+                  },
+                  "az_sub_tenant_id": {
+                    "type": "string"
+                  },
+                  "cdh_folder_checkpoint": {
+                    "type": "string"
+                  },
+                  "cdh_container_database": {
+                    "type": "string"
+                  },
+                  "cdh_container_project": {
+                    "type": "string"
+                  },
+                  "cdh_folder_database": {
+                    "type": "string"
+                  },
+                  "cdh_database_name": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_cluster": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_devops_account_name": {},
+                  "cdh_databricks_devops_project_description": {},
+                  "cdh_databricks_devops_project_name": {},
+                  "cdh_databricks_devops_repository_name": {},
+                  "cdh_databricks_devops_repository_type": {},
+                  "cdh_databricks_endpoint_path_data_science": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_endpoint_path_sql": {},
+                  "cdh_databricks_instance_id": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_kv_client_secret_key": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_kv_scope": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_org": {
+                    "type": "integer"
+                  },
+                  "cdh_databricks_owner_group": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_pat_secret_key": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_pat_secret_scope": {
+                    "type": "string"
+                  },
+                  "cdh_databricks_repository_id": {},
+                  "cdh_environment": {
+                    "type": "string"
+                  },
+                  "cdh_oauth_databricks_resource_id": {
+                    "type": "string"
+                  },
+                  "az_sub_oauth_token_endpoint": {
+                    "type": "string"
+                  },
+                  "cdh_oauth_sp_kv_client_id_key": {
+                    "type": "string"
+                  },
+                  "cdh_oauth_sp_kv_client_secret_key": {
+                    "type": "string"
+                  },
+                  "cdh_oauth_sp_kv_endpoint_key": {
+                    "type": "string"
+                  },
+                  "cdh_oauth_sp_redirect_url": {
+                    "type": "string"
+                  },
+                  "cdh_data_product_id": {
+                    "type": "string"
+                  },
+                  "cdh_data_product_id_individual": {
+                    "type": "string"
+                  },
+                  "cdh_data_product_id_root": {
+                    "type": "string"
+                  },
+                  "cdh_data_product_id_templates": {
+                    "type": "string"
+                  },
+                  "cdh_folder_database": {
+                    "type": "string"
+                  },
+                  "cdh_raw_folder_root": {
+                    "type": "string"
+                  },
+                  "cdh_tag_center": {},
+                  "cdh_tag_cost_center": {},
+                  "cdh_tag_poc": {
+                    "type": "string"
+                  },
+                  "cdh_tag_program": {},
+                  "dbx_repo_folder": {
+                    "type": "string"
+                  },
+                  "delta_folder": {
+                    "type": "string"
+                  },
+                  "cdh_folder_ingress": {
+                    "type": "string"
+                  },
+                  "ingress_hl7_folder": {
+                    "type": "string"
+                  },
+                  "mmg_folder": {
+                    "type": "string"
+                  },
+                  "table_prefix": {
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              }
+            }
+          },
+          "Set_variable_-_environment": {
+            "runAfter": {
+              "ParseJSONclean": ["Succeeded"]
+            },
+            "type": "SetVariable",
+            "inputs": {
+              "name": "environment",
+              "value": "@body('ParseJSONclean')?['cdh_environment']"
+            }
+          },
+          "Set_variable_-_data_product_id": {
+            "runAfter": {
+              "Set_variable_-_environment": ["Succeeded"]
+            },
+            "type": "SetVariable",
+            "inputs": {
+              "name": "data_product_id",
+              "value": "@items('For_each')?['cdh_data_product_id']"
+            }
+          },
+          "Set_variable_-_storage_account": {
+            "runAfter": {
+              "Set_variable_-_data_product_id": ["Succeeded"]
+            },
+            "type": "SetVariable",
+            "inputs": {
+              "name": "storage_account",
+              "value": "@items('For_each')?['cdh_storage_account']"
+            }
+          }
+        },
+        "runAfter": {
+          "Filter_array_:_ezdx_or_xlr": ["Succeeded"]
+        },
+        "type": "Foreach"
+      },
+      "Get_items": {
+        "runAfter": {},
+        "type": "ApiConnection",
+        "inputs": {
+          "host": {
+            "connection": {
+              "name": "@parameters('$connections')['cdh_cdh_ocio_sharepoint']['connectionId']"
+            }
+          },
+          "method": "get",
+          "path": "/datasets/@{encodeURIComponent(encodeURIComponent('https://cdc.sharepoint.com/teams/ncird-datalake'))}/tables/@{encodeURIComponent(encodeURIComponent('094e2482-8816-4435-99e0-6ae56f88d25b'))}/items"
+        },
+        "runtimeConfiguration": {
+          "paginationPolicy": {
+            "minimumItemCount": 10000
+          }
+        }
+      },
+      "Initialize_variable_-_cdh_folder_config": {
+        "runAfter": {
+          "Initialize_variable_-_data_product_id": ["Succeeded"]
+        },
+        "type": "InitializeVariable",
+        "inputs": {
+          "variables": [
+            {
+              "name": "cdh_folder_config_pathname",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "Initialize_variable_-_environment": {
+        "runAfter": {
+          "Execute_JavaScript_Code": ["Succeeded"]
+        },
+        "type": "InitializeVariable",
+        "inputs": {
+          "variables": [
+            {
+              "name": "environment",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "Initialize_variable_-_data_product_id": {
+        "runAfter": {
+          "Initialize_variable_-_environment": ["Succeeded"]
+        },
+        "type": "InitializeVariable",
+        "inputs": {
+          "variables": [
+            {
+              "name": "data_product_id",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "Initialize_variable_-_storage_account": {
+        "runAfter": {
+          "Initialize_variable_-_cdh_folder_config": ["Succeeded"]
+        },
+        "type": "InitializeVariable",
+        "inputs": {
+          "variables": [
+            {
+              "name": "storage_account",
+              "type": "string",
+              "value": "\"\"`"
+            }
+          ]
+        }
+      },
+      "Parse_JSON": {
+        "runAfter": {
+          "Initialize_variable_-_storage_account": ["Succeeded"]
+        },
+        "type": "ParseJson",
+        "inputs": {
+          "content": "@{body('Execute_JavaScript_Code')} ",
+          "schema": {
+            "items": {
+              "properties": {
+                "adf_data_factory_name": {
+                  "type": "string"
+                },
+                "adf_devops_account_name": {
+                  "type": "string"
+                },
+                "adf_devops_project_name": {
+                  "type": "string"
+                },
+                "adf_devops_repository_type": {
+                  "type": "string"
+                },
+                "az_sub_client_id": {
+                  "type": "string"
+                },
+                "az_sub_client_id_key": {
+                  "type": "string"
+                },
+                "az_sub_client_secret_key": {
+                  "type": "string"
+                },
+                "cdh_folder_config": {
+                  "type": "string"
+                },
+                "database_name": {
+                  "type": "string"
+                },
+                "databricks_repository_id": {
+                  "type": "string"
+                },
+                "az_kv_key_vault_name": {
+                  "type": "string"
+                },
+                "cdh_azure_resource_group_location": {
+                  "type": "string"
+                },
+                "cdh_azure_resource_group_name": {
+                  "type": "string"
+                },
+                "cdh_azure_storage_account": {
+                  "type": "string"
+                },
+                "az_sub_subscription_id": {
+                  "type": "string"
+                },
+                "az_sub_subscription_name": {
+                  "type": "string"
+                },
+                "az_sub_tenant_id": {
+                  "type": "string"
+                },
+                "cdh_folder_checkpoint": {
+                  "type": "string"
+                },
+                "cdh_container_database": {
+                  "type": "string"
+                },
+                "cdh_container_project": {
+                  "type": "string"
+                },
+                "cdh_folder_database": {
+                  "type": "string"
+                },
+                "cdh_database_name": {
+                  "type": "string"
+                },
+                "cdh_databricks_cluster": {
+                  "type": "string"
+                },
+                "cdh_databricks_devops_account_name": {
+                  "type": "string"
+                },
+                "cdh_databricks_devops_project_description": {
+                  "type": "string"
+                },
+                "cdh_databricks_devops_project_name": {
+                  "type": "string"
+                },
+                "cdh_databricks_devops_repository_name": {
+                  "type": "string"
+                },
+                "cdh_databricks_devops_repository_type": {
+                  "type": "string"
+                },
+                "cdh_databricks_endpoint_path_data_science": {
+                  "type": "string"
+                },
+                "cdh_databricks_endpoint_path_sql": {},
+                "cdh_databricks_instance_id": {
+                  "type": "string"
+                },
+                "cdh_databricks_kv_client_secret_key": {
+                  "type": "string"
+                },
+                "cdh_databricks_kv_scope": {
+                  "type": "string"
+                },
+                "cdh_databricks_org": {
+                  "type": "integer"
+                },
+                "cdh_databricks_owner_group": {
+                  "type": "string"
+                },
+                "cdh_databricks_pat_secret_key": {
+                  "type": "string"
+                },
+                "cdh_databricks_pat_secret_scope": {
+                  "type": "string"
+                },
+                "cdh_databricks_repository_id": {},
+                "cdh_environment": {
+                  "type": "string"
+                },
+                "cdh_oauth_databricks_resource_id": {
+                  "type": "string"
+                },
+                "az_sub_oauth_token_endpoint": {
+                  "type": "string"
+                },
+                "cdh_oauth_sp_kv_client_id_key": {
+                  "type": "string"
+                },
+                "cdh_oauth_sp_kv_client_secret_key": {
+                  "type": "string"
+                },
+                "cdh_oauth_sp_kv_endpoint_key": {
+                  "type": "string"
+                },
+                "cdh_oauth_sp_redirect_url": {
+                  "type": "string"
+                },
+                "cdh_data_product_id": {
+                  "type": "string"
+                },
+                "cdh_data_product_id_individual": {
+                  "type": "string"
+                },
+                "cdh_data_product_id_root": {
+                  "type": "string"
+                },
+                "cdh_data_product_id_templates": {
+                  "type": "string"
+                },
+                "cdh_folder_database": {
+                  "type": "string"
+                },
+                "cdh_raw_folder_root": {
+                  "type": "string"
+                },
+                "cdh_tag_center": {},
+                "cdh_tag_cost_center": {
+                  "type": "string"
+                },
+                "cdh_tag_poc": {},
+                "cdh_tag_program": {
+                  "type": "string"
+                },
+                "dbx_repo_folder": {
+                  "type": "string"
+                },
+                "delta_folder": {
+                  "type": "string"
+                },
+                "cdh_folder_ingress": {
+                  "type": "string"
+                },
+                "ingress_hl7_folder": {
+                  "type": "string"
+                },
+                "mmg_folder": {
+                  "type": "string"
+                },
+                "table_prefix": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "adf_data_factory_name",
+                "adf_devops_account_name",
+                "adf_devops_project_name",
+                "adf_devops_repository_type",
+                "az_sub_client_id",
+                "az_sub_client_id_key",
+                "az_sub_client_secret_key",
+                "cdh_folder_config",
+                "database_name",
+                "databricks_repository_id",
+                "az_kv_key_vault_name",
+                "cdh_azure_resource_group_location",
+                "cdh_azure_resource_group_name",
+                "cdh_azure_storage_account",
+                "az_sub_subscription_id",
+                "az_sub_subscription_name",
+                "az_sub_tenant_id",
+                "cdh_folder_checkpoint",
+                "cdh_container_database",
+                "cdh_container_project",
+                "cdh_folder_database",
+                "cdh_database_name",
+                "cdh_databricks_cluster",
+                "cdh_databricks_devops_account_name",
+                "cdh_databricks_devops_project_description",
+                "cdh_databricks_devops_project_name",
+                "cdh_databricks_devops_repository_name",
+                "cdh_databricks_devops_repository_type",
+                "cdh_databricks_endpoint_path_data_science",
+                "cdh_databricks_endpoint_path_sql",
+                "cdh_databricks_instance_id",
+                "cdh_databricks_kv_client_secret_key",
+                "cdh_databricks_kv_scope",
+                "cdh_databricks_org",
+                "cdh_databricks_owner_group",
+                "cdh_databricks_pat_secret_key",
+                "cdh_databricks_pat_secret_scope",
+                "cdh_databricks_repository_id",
+                "cdh_environment",
+                "cdh_oauth_databricks_resource_id",
+                "az_sub_oauth_token_endpoint",
+                "cdh_oauth_sp_kv_client_id_key",
+                "cdh_oauth_sp_kv_client_secret_key",
+                "cdh_oauth_sp_kv_endpoint_key",
+                "cdh_oauth_sp_redirect_url",
+                "cdh_data_product_id",
+                "cdh_data_product_id_individual",
+                "cdh_data_product_id_root",
+                "cdh_data_product_id_templates",
+                "cdh_folder_database",
+                "cdh_raw_folder_root",
+                "cdh_tag_center",
+                "cdh_tag_cost_center",
+                "cdh_tag_poc",
+                "cdh_tag_program",
+                "dbx_repo_folder",
+                "delta_folder",
+                "cdh_folder_ingress",
+                "ingress_hl7_folder",
+                "mmg_folder",
+                "table_prefix"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        }
+      },
+      "Select": {
+        "runAfter": {
+          "Get_items": ["Succeeded"]
+        },
+        "type": "Select",
+        "inputs": {
+          "from": "@body('Get_items')?['value']",
+          "select": {
+            "adf_data_factory_name": "@item()?['adf_data_factory_name']",
+            "adf_devops_account_name": "@item()?['adf_devops_account_name']",
+            "adf_devops_project_name": "@item()?['adf_devops_project']",
+            "adf_devops_repository_type": "@item()?['adf_devops_repository_type']",
+            "az_sub_client_id": "@item()?['az_sub_client_id']",
+            "az_sub_client_id_key": "@item()?['az_sub_client_id_key']",
+            "az_sub_client_secret_key": "@item()?['azure_secret_id']",
+            "cdh_folder_config": "@item()?['field_14']",
+            "database_name": "@item()?['field_17']",
+            "databricks_repository_id": "@item()?['databricks_repository_id']",
+            "az_kv_key_vault_name": "@item()?['cdh_key_vault_name']",
+            "cdh_azure_resource_group_location": "@item()?['cdh_resource_group_location']",
+            "cdh_azure_resource_group_name": "@item()?['cdh_resource_group_name']",
+            "cdh_azure_storage_account": "@item()?['field_5']",
+            "az_sub_subscription_id": "@item()?['field_25']",
+            "az_sub_subscription_name": "@item()?['cdh_subscription_name']",
+            "az_sub_tenant_id": "@item()?['cdh_oauth_sp_tenant_id']",
+            "cdh_folder_checkpoint": "@item()?['cdh_folder_checkpoint']",
+            "cdh_container_database": "@item()?['field_8']",
+            "cdh_container_project": "@item()?['field_6']",
+            "cdh_folder_database": "@item()?['cdh_folder_database']",
+            "cdh_database_name": "@item()?['cdh_database_name']",
+            "cdh_databricks_cluster": "@item()?['field_26']",
+            "cdh_databricks_devops_account_name": "@item()?['databricks_devops_account_name']",
+            "cdh_databricks_devops_project_description": "@item()?['cdh_databricks_devops_project_d']",
+            "cdh_databricks_devops_project_name": "@item()?['databricks_devops_project_name']",
+            "cdh_databricks_devops_repository_name": "@item()?['databricks_devops_repository_nam']",
+            "cdh_databricks_devops_repository_type": "@item()?['databricks_devops_repository_typ']",
+            "cdh_databricks_endpoint_path_data_science": "@item()?['field_29']",
+            "cdh_databricks_endpoint_path_sql": "@item()?['cdh_databrics_endpoint_path_sql']",
+            "cdh_databricks_ghe_repository_name": "@item()?['databricks_devops_repository_nam']",
+            "cdh_databricks_instance_id": "@item()?['field_27']",
+            "cdh_databricks_kv_client_secret_key": " @{item()?['cdh_databricks_kv_client_secret']}",
+            "cdh_databricks_kv_scope": "@item()?['cdh_databricks_kv_scope']",
+            "cdh_databricks_org": "@int(item()?['field_28'])",
+            "cdh_databricks_owner_group": "@item()?['cdh_databricks_owner_group']",
+            "cdh_databricks_pat_secret_key": "@item()?['field_23']",
+            "cdh_databricks_pat_secret_scope": "@item()?['field_24']",
+            "cdh_databricks_repository_id": "@item()?['cdh_databricks_repository_id']",
+            "cdh_environment": "@item()?['field_3']",
+            "az_kv_gh_client_secret_key": "@item()?['cdh_ghe_secret_key']",
+            "cdh_oauth_databricks_resource_id": "@item()?['cdh_databricks_kv_resource_id']",
+            "az_sub_oauth_token_endpoint": "@item()?['az_sub_oauth_token_endpoint']",
+            "cdh_oauth_sp_kv_client_id_key": "@item()?['cdh_databricks_kv_client_id_key']",
+            "cdh_oauth_sp_kv_client_secret_key": "@item()?['cdh_databricks_kv_client_secret']",
+            "cdh_oauth_sp_kv_endpoint_key": "@item()?['cdh_databricks_kv_endpoint_key']",
+            "cdh_oauth_sp_redirect_url": "@item()?['cdh_oauth_sp_kv_redirect_url']",
+            "cdh_data_product_id": "@item()?['data_product_id']",
+            "cdh_data_product_id_individual": "@item()?['field_2']",
+            "cdh_data_product_id_root": "@item()?['field_1']",
+            "cdh_data_product_id_templates": "@item()?['field_4']",
+            "cdh_folder_database": "@item()?['field_11']",
+            "cdh_raw_folder_root": "@item()?['field_9']",
+            "cdh_dav_python_version": "@item()?['cdh_dav_python_version_']",
+            "cdh_tag_center": "@item()?['cdh_tag_center']",
+            "cdh_tag_cost_center": "@item()?['cost_center']",
+            "cdh_tag_poc": "@item()?['cdh_tag_poc']",
+            "cdh_tag_program": "@item()?['program']",
+            "dbx_repo_folder": "@item()?['field_22']",
+            "delta_folder": "@item()?['field_16']",
+            "cdh_folder_ingress": "@item()?['field_12']",
+            "ingress_hl7_folder": "@item()?['field_18']",
+            "mmg_folder": "@item()?['field_15']",
+            "table_prefix": "@item()?['field_19']"
+          }
+        }
+      }
+    },
+    "outputs": {}
+  },
+  "parameters": {
+    "$connections": {
+      "value": {
+        "cdh_cdh_ocio_sharepoint": {
+          "kind": "V1",
+          "properties": {
+            "displayName": "EOX9-SU@cdc.gov",
+            "authenticatedUser": {
+              "name": "EOX9-SU@cdc.gov"
+            },
+            "overallStatus": "Connected",
+            "statuses": [
+              {
+                "status": "Connected"
+              }
+            ],
+            "connectionState": "Enabled",
+            "parameterValues": {},
+            "customParameterValues": {},
+            "createdTime": "2022-11-16T19:26:46.3329018Z",
+            "changedTime": "2022-12-03T06:18:28.9405795Z",
+            "api": {
+              "name": "sharepointonline",
+              "displayName": "SharePoint",
+              "description": "SharePoint helps organizations share and collaborate with colleagues, partners, and customers. You can connect to SharePoint Online or to an on-premises SharePoint 2013 or 2016 farm using the On-Premises Data Gateway to manage documents and list items.",
+              "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1610-greyhound-localization-RelayFix/1.0.1610.3091/sharepointonline/icon.png",
+              "brandColor": "#036C70",
+              "category": "Standard",
+              "id": "/subscriptions/ad321961-368d-4168-b7c9-e4b04455359d/providers/Microsoft.Web/locations/eastus/managedApis/sharepointonline",
+              "type": "Microsoft.Web/locations/managedApis"
+            },
+            "testLinks": [],
+            "testRequests": []
+          },
+          "id": "/subscriptions/ad321961-368d-4168-b7c9-e4b04455359d/resourceGroups/ncezid-ezdtx-dev/providers/Microsoft.Web/connections/sharepointonline",
+          "name": "sharepointonline",
+          "type": "Microsoft.Web/connections",
+          "location": "eastus",
+          "tags": {
+            "business_steward": "clg5@cdc.gov,bvl0@cdc.gov,gzt8@cdc.gov,pje4@cdc.gov,rwp1@cdc.gov,wpa8@cdc.gov,zfr9@cdc.gov",
+            "center": "NCEZID",
+            "environment": "dev",
+            "escid": "3233",
+            "funding_source": "TBD",
+            "pii_data": "false",
+            "security_compliance": "moderate",
+            "security_steward": "gth4@cdc.gov",
+            "support_group": "OMHS",
+            "system": "ezdx",
+            "technical_steward": "dfw2@cda.gov,wpa8@cdc.gov",
+            "zone": "INTRANET"
+          }
+        }
+      }
+    }
+  }
+}
