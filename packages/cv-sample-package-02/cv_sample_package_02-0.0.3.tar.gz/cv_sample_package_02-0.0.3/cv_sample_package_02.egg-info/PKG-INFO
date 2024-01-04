@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cv_sample_package_02
+Version: 0.0.3
+Summary: A sample test package
+Author: Arulvadivel
+Author-email: arulvadivel@cloudvalleytech.com.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome>=3.19.1
+
+# homezy
+
+# Introduction
+This basic math process
