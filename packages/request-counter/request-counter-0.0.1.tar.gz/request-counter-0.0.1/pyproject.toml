@@ -1,0 +1,16 @@
+[tool.setuptools]
+    py-modules = []
+[project]
+    name = "request-counter"
+    dynamic = ["version"]
+    dependencies = [
+        "Django",
+        "redis",
+    ]
+    authors = [
+    {name = "Satender Singh", email = "saten070@gmail.com"},
+    ]
+    description = "monitor api request count"
+    readme = "README.md"
+    requires-python = ">=3.6"
+    license = {text = "BSD-3-Clause"}

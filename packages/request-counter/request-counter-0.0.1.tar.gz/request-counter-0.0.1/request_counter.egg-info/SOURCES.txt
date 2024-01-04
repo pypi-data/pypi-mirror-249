@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+request_counter.egg-info/PKG-INFO
+request_counter.egg-info/SOURCES.txt
+request_counter.egg-info/dependency_links.txt
+request_counter.egg-info/requires.txt
+request_counter.egg-info/top_level.txt
