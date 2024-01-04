@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "maplestory-sdk-py"
+version = "0.1.0"
+description = "Unofficial Python API client for MapleStory"
+authors = ["Seo, Jang-won <nanpuhaha@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "maplestory", from = "." },
+    # { include = "maplestory_sdk_py.models", from = "maplestory_sdk_py/models" },
+    # { include = "maplestory_sdk_py.utils", from = "maplestory_sdk_py/utils" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.5.3"
+pydantic-settings = "^2.1.0"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+isort = "^5.13.2"
+pytest = "^7.4.4"
+pytest-cov = "^4.1.0"
+pytest-env = "^1.1.3"
+pytest-sugar = "^0.9.7"
+pytest-profiling = "^1.7.0"
+rich = "^13.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "-s"
+
+# https://docs.pytest.org/en/latest/how-to/capture-stdout-stderr.html
+# pytest -s                  # disable all capturing
+
+
+# https://pytest-with-eric.com/pytest-best-practices/pytest-logging/
+
+# pythonpath = "src"
+
+# [tool.pytest.ini_options]
+# addopts = [
+#     "--import-mode=importlib",
+# ]
