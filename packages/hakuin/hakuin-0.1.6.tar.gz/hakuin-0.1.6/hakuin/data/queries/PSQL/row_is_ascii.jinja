@@ -1,0 +1,7 @@
+{% set single = true %}
+{% extends "_base_schema.jinja" %}
+
+
+{% block select %}
+SELECT  {{ column | sql_is_ascii }}
+{% endblock %}
