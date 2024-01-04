@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: yet-another-config-parser
+Version: 0.1.0
+Summary: Unified argument and configuration parser
+License: MIT
+Author: aragaer
+Author-email: aragaer@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Yet another python config library
+
+This library is designed to unify configuration parser and argument
+parser.
+
+Usage:
+
+    parser = ArgumentParser()
+    section = parser.add_section("my_section")
+    section.add_argument("my_argument", argument="my-arg", type=int, default=42)
+    
+    parser.read_args(["--my-arg", "15"])
+    
+    # parser["my_section"]["my_argument"] is now equal to 15
+
+Every parameter that is expected in configuration file should be
+declared. Any undeclared paremeters are still available, but not
+supported. Parameter can optionally be bound to an argument flag
+and/or to environment variable. Setting through argument flag has
+priority over environment variable which has priority over any
+configuration file.
+
+
+## Classes
+
+### ArgumentParser
+
+`ArgumentParser(converters=None)`
+
+Creates a new `ArgumentParser` object. `converters` is a dictionary of
+names and appropriate callables used to convert the value from string.
+
+`add_parameter(self, name, **kwargs)`
+
+Add new parameter to the root section of the configuration. See
+`section.add_parameter` below.
+
+`add_section(self, name)`
+
+Create a new config section and returns a handle to created section.
+
+`read_args(self, args)`
+
+Loads configuration from supplied list of arguments.
+
+`read_string(self, config_string)`
+
+Loads configuration from string as if it was loaded from file.
+
+`read_file(self, fh)`
+
+Loads configuration from an opened file handle.
+
+`read(self, filenames)`
+
+Loads configuration from list of files. If `filenames` is a single
+string it is processed as a single configuration file.
+
+`write(self, fh)`
+
+Writes current configuration to an opened file handle. Note: only
+writes values loaded from files or default values, not values from
+arguments or environment.
+
+### Section
+
+`add_parameter(self, name, **kwargs)`
+
+Adds a new parameter `name` to the section. `**kwargs` can include the
+following:
+
+- `type`: (type or string) parameter type. If type is specified, it
+  will be converted to a lowercase string
+  - `str` (default): string parameter, no processing
+  - `int`: integer parameter
+  - `float`: float parameter
+  - `bool`: boolean parameter
+  - anything else: appropriate converter is required (see
+    ArgumentParser constructor above)
+- `argument`: a single string or a list of flags legal for
+  `argparse.ArgumentParser`.
+  - if a single string is supplied and it doesn't start with a `'-'`
+    character, `'--'` would be added to it.
+  - action is `store_true` for boolean parameters and `store` for
+    everything else
+- `env`: name of environment variable to load the parameter value
+  - Note: the variable will only be checked once -- when the parameter
+    is registered.
+- `default`: the default value for parameter if not specified in any
+  configuration
+  - default value for boolean parameters is `False`
+  - default value for everything else is `None`
+
