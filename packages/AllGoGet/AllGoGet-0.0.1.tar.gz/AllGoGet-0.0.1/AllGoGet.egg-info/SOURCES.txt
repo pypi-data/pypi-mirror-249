@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+AllGoGet.egg-info/PKG-INFO
+AllGoGet.egg-info/SOURCES.txt
+AllGoGet.egg-info/dependency_links.txt
+AllGoGet.egg-info/requires.txt
+AllGoGet.egg-info/top_level.txt
+allgoget/__init__.py
+allgoget/data/__init__.py
+allgoget/data/_rates.py
+allgoget/utils/__init__.py
+allgoget/utils/_utils.py

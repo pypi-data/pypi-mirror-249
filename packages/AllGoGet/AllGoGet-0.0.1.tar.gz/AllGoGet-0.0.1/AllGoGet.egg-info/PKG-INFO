@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AllGoGet
+Version: 0.0.1
+Summary: The AllGo package is a powerful tool that provides a seamless integration between the advanced features of MetaTrader5 and the analytical flexibility of pandas. It allows users to easily access and manipulate financial data directly from MetaTrader5 for detailed analysis within the familiar environment of pandas.
+Home-page: https://github.com/joao-1988/AllGoGet
+Author: João Flávio Andrade Silva
+Author-email: joaoflavio1988@gmail.com
+License: UNKNOWN
+Description: # AllGo
+        
+        The AllGo package is a powerful tool that provides a seamless integration between the advanced features of MetaTrader5 and the analytical flexibility of pandas. It allows users to easily access and manipulate financial data directly from MetaTrader5 for detailed analysis within the familiar environment.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Description-Content-Type: text/markdown
