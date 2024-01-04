@@ -1,0 +1,7 @@
+python-dateutil
+daft_scraper
+thefuzz
+backoff
+gspread
+email_validator
+cachetools
