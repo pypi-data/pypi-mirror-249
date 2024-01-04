@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: OnyxRequests
+Version: 0.1.0
+Summary: Small modification of python requests.
+Home-page: https://github.com/longold/OnyxRequests
+Author: mmenamore
+Author-email: markvega2023@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.25.1
+
