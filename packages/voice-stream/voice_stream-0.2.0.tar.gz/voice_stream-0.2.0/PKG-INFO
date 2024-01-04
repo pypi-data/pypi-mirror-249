@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: voice-stream
+Version: 0.2.0
+Summary: A streaming library for creating voice bots using LLMs.  Connects LLMs to speech recognition and speech synthesis APIs.
+Home-page: https://github.com/DaveDeCaprio/voice-stream
+License: MIT
+Keywords: voicebot,genai,twilio,llm
+Author: Dave DeCaprio
+Author-email: daved@alum.mit.edu
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Communications :: Conferencing
+Classifier: Topic :: Communications :: Telephony
+Classifier: Topic :: Multimedia :: Sound/Audio :: Capture/Recording
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Typing :: Typed
+Provides-Extra: google
+Provides-Extra: openai
+Provides-Extra: quart
+Provides-Extra: twilio
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: google-cloud-speech (>=2.23.0) ; extra == "google"
+Requires-Dist: google-cloud-texttospeech (>=2.15.0) ; extra == "google"
+Requires-Dist: langchain (>=0.0.353)
+Requires-Dist: langchain-google-genai (>=0.0.5) ; extra == "google"
+Requires-Dist: openai (>=1.6.1) ; extra == "openai"
+Requires-Dist: pydantic (>=2.5.3)
+Requires-Dist: quart (>=0.19.4) ; extra == "quart"
+Requires-Dist: tiktoken (>=0.5.2) ; extra == "openai"
+Requires-Dist: twilio (>=8.11.0) ; extra == "twilio"
+Project-URL: Repository, https://github.com/DaveDeCaprio/voice-stream
+Description-Content-Type: text/markdown
+
+# voice-stream: Creating voice bots from LLMs.
+
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![Tests](https://github.com/DaveDeCaprio/voice-stream/actions/workflows/tests.yaml/badge.svg)](https://github.com/DaveDeCaprio/voice-stream/actions/workflows/tests.yaml)
+![Stable Version](https://img.shields.io/pypi/v/voice-stream?label=Stable)
+![Python Versions](https://img.shields.io/pypi/pyversions/voice-stream)
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
