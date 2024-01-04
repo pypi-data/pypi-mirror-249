@@ -1,0 +1,13 @@
+setup.py
+HKH_test_Bot.egg-info/PKG-INFO
+HKH_test_Bot.egg-info/SOURCES.txt
+HKH_test_Bot.egg-info/dependency_links.txt
+HKH_test_Bot.egg-info/entry_points.txt
+HKH_test_Bot.egg-info/namespace_packages.txt
+HKH_test_Bot.egg-info/requires.txt
+HKH_test_Bot.egg-info/top_level.txt
+orangecontrib/__init__.py
+orangecontrib/hkh_test_bot/__init__.py
+orangecontrib/hkh_test_bot/widgets/__init__.py
+orangecontrib/hkh_test_bot/widgets/owfile.py
+orangecontrib/hkh_test_bot/widgets/icons/Emblem_of_Napoleon_Bonaparte.svg

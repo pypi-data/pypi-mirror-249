@@ -1,0 +1,3 @@
+[orange.widgets]
+HKH-test-Bot = orangecontrib.hkh_test_bot.widgets
+
