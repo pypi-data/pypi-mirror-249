@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wcpan-drive-crypt
+Version: 4.1.1
+Summary: crypt middleware for wcpan.drive
+License: MIT
+Author: Wei-Cheng Pan
+Author-email: legnaleurc@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.18.0,<2.0.0)
+Requires-Dist: wcpan-drive-core (>=4.1.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# wcpan.drive.crypt
+
+Crypt file service middleware for `wcpan.drive`.
+
+Please use `wcpan.drive.crypt.create_service` to create the middleware.
+
