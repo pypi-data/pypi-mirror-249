@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: stochastic-relaxation
+Version: 0.1.1
+Summary: Implementation of various algorithms for integration of the generalized Langevin equation
+Author: Eron Ristich
+Author-email: eristich@asu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
