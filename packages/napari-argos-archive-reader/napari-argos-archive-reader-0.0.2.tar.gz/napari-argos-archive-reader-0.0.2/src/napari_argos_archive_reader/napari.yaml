@@ -1,0 +1,14 @@
+name: napari-argos-archive-reader
+display_name: Dioptic ARGOS Archive Reader
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+contributions:
+  commands:
+    - id: napari-argos-archive-reader.get_reader
+      python_name: napari_argos_archive_reader._reader:napari_get_reader
+      title: Open data with ARGOS Archive Reader
+  readers:
+    - command: napari-argos-archive-reader.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.zip']
+
