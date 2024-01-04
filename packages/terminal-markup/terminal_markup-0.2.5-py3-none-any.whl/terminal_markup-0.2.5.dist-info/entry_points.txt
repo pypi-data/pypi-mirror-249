@@ -1,0 +1,3 @@
+[console_scripts]
+terminal-markup=terminal_markup.cli:main
+
