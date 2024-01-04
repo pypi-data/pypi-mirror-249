@@ -1,0 +1,9 @@
+sverilogpy_bind.cp311-win32.pyd,sha256=vXkGjqtgRweTQSOjW11pN82wu76i-t8-xkW3IuwcLo0,91136
+sverilogpy/__init__.py,sha256=hl5cjujNXjifrhOXa37PLOQPMiWwAoSq-H3ygJGTMbM,1220
+sverilogpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sverilogpy/sverilog.cpp,sha256=b8huuY28M4I4sUL-LpdKugpIIgOqzqb373mhTiL8nx8,1870
+sverilogpy-0.0.0a2.dist-info/LICENSE,sha256=f_4ZVFh8d9-6HPjrmy6nQ2cfpuY_nnovJYEZ1C4U7v4,27030
+sverilogpy-0.0.0a2.dist-info/METADATA,sha256=96yVyxUEDkjyiGiD228lpgLi2rmELHYlo1e6gyJXZyc,32334
+sverilogpy-0.0.0a2.dist-info/WHEEL,sha256=KgshXv6CHUP_9leRW1dLCnjffy1d9N5d8PLjWHQzULs,98
+sverilogpy-0.0.0a2.dist-info/top_level.txt,sha256=eD2JBQ6XuTsQGj8Ygndz0hvJVXve-odGhmY1xJdl8mw,27
+sverilogpy-0.0.0a2.dist-info/RECORD,,
