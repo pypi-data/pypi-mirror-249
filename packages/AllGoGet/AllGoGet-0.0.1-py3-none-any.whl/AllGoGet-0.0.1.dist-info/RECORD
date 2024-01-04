@@ -1,0 +1,10 @@
+allgoget/__init__.py,sha256=tWhVOlD0Q9ZD2jczH2F3CqEsAtBZziLTTtJURyq4pqQ,49
+allgoget/data/__init__.py,sha256=mswbWqKknjwbYR4K_-eKR9uw5yNIrsRr2zshxA_tl8Q,48
+allgoget/data/_rates.py,sha256=CDZZgQzRy1uTYJcATYwu-iwysRgLrib2Sf8PnbLzAEg,3364
+allgoget/utils/__init__.py,sha256=qNJLd7S6647r-EFBhjg2PmI9rAob2uKF7_dkNJDORSU,78
+allgoget/utils/_utils.py,sha256=uoO3-_ENiJy28E3QZRMmoEO28KyWyhT3GCJLmuayD88,2297
+AllGoGet-0.0.1.dist-info/LICENSE,sha256=uHr-bEldIwkiWrZjLHdWEdOpODRK8ran7JAEa9kTj5U,1091
+AllGoGet-0.0.1.dist-info/METADATA,sha256=iv7GOhvSLENzZQIOpH0kcv3FbOmMXe_z_XafkP9SqRQ,1056
+AllGoGet-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+AllGoGet-0.0.1.dist-info/top_level.txt,sha256=Hc2jQnRbPjjU8jTZwPoHXR8M_Dmjlg3HECsKmdpnpxE,9
+AllGoGet-0.0.1.dist-info/RECORD,,
