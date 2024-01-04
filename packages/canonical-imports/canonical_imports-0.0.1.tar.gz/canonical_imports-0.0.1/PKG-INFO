@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: canonical-imports
+Version: 0.0.1
+Summary: directly import everything from where it is defined
+Project-URL: Documentation, https://github.com/unknown/canonical-imports#readme
+Project-URL: Issues, https://github.com/unknown/canonical-imports/issues
+Project-URL: Source, https://github.com/unknown/canonical-imports
+Author-email: Frank Hoffmann <15r10nk@polarbit.de>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+<!-- -8<- [start:Header] -->
+# canonical-imports
+
+[![PyPI - Version](https://img.shields.io/pypi/v/canonical-imports.svg)](https://pypi.org/project/canonical-imports)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/canonical-imports.svg)](https://pypi.org/project/canonical-imports)
+
+<!-- -8<- [end:Header] -->
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install canonical-imports
+```
+
+## License
+
+`canonical-imports` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
