@@ -1,0 +1,13 @@
+numpy>=1.21
+pandas>=1
+scipy
+xarray>=2023.01
+
+[speedup]
+numba
+numbagg
+
+[test]
+pytest-cov
+pytest-sugar
+pytest-xdist[psutil]
