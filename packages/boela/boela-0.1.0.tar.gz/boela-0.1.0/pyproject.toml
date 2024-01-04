@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "boela"
+version = "0.1.0"
+description = ""
+authors = ["Taleh A. Agasiev <agtaleh@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+matplotlib = "^3.8.2"
+ioh = "^0.3.14"
+pflacco = "^1.2.2"
+numpy = "^1.24.4"
+bayesian-optimization = "^1.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
