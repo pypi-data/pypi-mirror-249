@@ -1,0 +1,78 @@
+image: python:3.8
+
+definitions:
+  steps:
+    - step: &scan
+        name: Security Scan
+        script:
+          # Run a security scan for sensitive data.
+          # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
+          - pipe: atlassian/git-secrets-scan:0.5.1
+    - step: &unit-testing
+        name: Unit Testing
+        deployment: testing
+        caches:
+          - pip
+        script:
+          - pip install .
+          - pip install pytest coverage
+          - coverage run --source=. -m pytest -v -ra
+          - coverage report
+    - step: &pre-commit
+        name: Pre-commit
+        caches:
+          - pip
+        script:
+          - pip install pre-commit
+          - pre-commit run --from-ref origin/HEAD --to-ref HEAD
+    - step: &version-checking
+        name: Version Checking
+        caches:
+          - pip
+        script:
+          - pip install requests toml python-dateutil packaging
+          - python3 version.py
+    - step: &check-install
+        name: Check Install
+        caches:
+          - pip
+        script:
+          - pip install .
+          - python -c "import akerbp.mlpet as akbpmlp; from akerbp.mlpet import __version__; print(__version__)"
+    - step: &publish
+        name: Release to PyPI
+        deployment: production-pypi
+        trigger: manual
+        caches:
+          - pip
+        script:
+          - pip install twine==4.0.2 build==0.10.0
+          - python -m build
+          - python -m twine upload --non-interactive dist/* --username=$TWINE_USERNAME --password=$TWINE_PASSWORD
+    - step: &sca
+        name: pip-audit for Dependency Vulnerabilities
+        caches:
+          - pip
+        script:
+          - pip install pip-audit
+          - pip-audit -S -v .
+
+pipelines:
+  pull-requests:
+    "**": # Run for PRs from all branches
+      - parallel:
+          - step: *unit-testing
+          - step: *scan
+          - step: *pre-commit
+          - step: *version-checking
+          - step: *check-install # Check install in empty environment with no preset environment variables.
+          - step: *sca
+
+  branches:
+    master:
+      - step:
+          name: Mirror latest version to public repo
+          script:
+            - git remote add public git@bitbucket.org:akerbp/akerbp.mlpet.git
+            - git push public master
+      - step: *publish
