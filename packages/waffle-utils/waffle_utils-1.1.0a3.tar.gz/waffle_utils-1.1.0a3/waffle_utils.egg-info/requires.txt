@@ -1,0 +1,4 @@
+natsort==8.3.1
+wget==3.2
+PyYAML==6.0
+sentry_sdk
