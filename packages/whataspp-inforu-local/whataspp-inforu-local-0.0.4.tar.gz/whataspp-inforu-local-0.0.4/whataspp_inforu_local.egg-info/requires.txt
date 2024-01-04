@@ -1,0 +1,6 @@
+pytest
+requests
+python-dotenv
+logger-local
+message-local
+phones-local
