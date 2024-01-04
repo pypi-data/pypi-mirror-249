@@ -1,0 +1,1 @@
+from .schema_org_name import get_name

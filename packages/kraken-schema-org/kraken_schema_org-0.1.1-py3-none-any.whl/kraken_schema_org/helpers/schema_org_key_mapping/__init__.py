@@ -1,0 +1,1 @@
+from .schema_org_key_mapping import get_key
