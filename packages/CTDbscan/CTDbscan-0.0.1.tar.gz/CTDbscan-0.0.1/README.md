@@ -1,0 +1,1 @@
+This package can be used for spatial clustering of continuous trajectories. It only needs to provide the latitude and longitude information sorted by positioning time and positioning time to find the dwell point of the trajectory.
