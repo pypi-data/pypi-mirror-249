@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: samosila-core
+Version: 0.0.1
+Author: Mohammad Javad Hosseini
+Author-email: johndoe2561357@protonmail.com
+Requires-Dist: appdirs >=1.4.4
+Requires-Dist: aiohttp >=3.9.0
+Requires-Dist: backoff >=2.2.0
+Requires-Dist: certifi >=2023.7.22
+Requires-Dist: cryptography >=41.0.4
+Requires-Dist: importlib-metadata >=6.8.0
+Requires-Dist: jinja2 >=3.1.2
+Requires-Dist: jsonmerge >=1.9.2
+Requires-Dist: regex >=2023.5.5
+Requires-Dist: requests >=2.29.0
+Requires-Dist: requests-file >=1.5.1
+Requires-Dist: requests-html >=0.10.0
+Requires-Dist: tokenizers >=0.15.0
+Requires-Dist: Pillow >=10.0.0
+Requires-Dist: python-dotenv >=1.0.0
+Requires-Dist: pydantic-settings >=2.0.0
+Requires-Dist: openai >=1.0.0
+Requires-Dist: six >=1.16.0
+Requires-Dist: tiktoken >=0.5.0
+Requires-Dist: unstructured >=0.11.2
+Requires-Dist: validators >=0.22.0
+
