@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pilothub
+Version: 0.1.6
+Summary: A short description of your project
+Home-page: https://github.com/Bluedata-Consulting/pilothub
+Author: Blue Data Consulting
+Author-email: anshu@bluedataconsulting.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pilothub
+
+To install pilothub, use below command
+
+    pip install pilothub
