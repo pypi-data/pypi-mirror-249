@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+simpler_sf/__init__.py
+simpler_sf/_simpler_sf.py
+simpler_sf.egg-info/PKG-INFO
+simpler_sf.egg-info/SOURCES.txt
+simpler_sf.egg-info/dependency_links.txt
+simpler_sf.egg-info/top_level.txt
