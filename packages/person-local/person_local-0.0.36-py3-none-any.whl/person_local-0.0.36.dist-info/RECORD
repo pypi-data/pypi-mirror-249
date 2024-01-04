@@ -1,0 +1,8 @@
+person_local/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+person_local/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+person_local/src/person.py,sha256=pfSrsIAyfLM5oWiJLQpM8SS3Mw7zHuYjkf60422I-yQ,884
+person_local/src/persons_local.py,sha256=jz8zmVfiB6R-SiEduOit2YJjdBttgXv5TM5qPd_vDtE,12212
+person_local-0.0.36.dist-info/METADATA,sha256=ZGSX3srjZ4NGLJwbu2v5jHED4RtxWOjBbdpYjehJHJ8,527
+person_local-0.0.36.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+person_local-0.0.36.dist-info/top_level.txt,sha256=vxcDDXdpe-m-hoNX4AhSClh_txluDaG3GSl20nIJElw,13
+person_local-0.0.36.dist-info/RECORD,,
