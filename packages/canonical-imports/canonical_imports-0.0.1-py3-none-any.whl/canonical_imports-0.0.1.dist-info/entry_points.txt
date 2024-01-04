@@ -1,0 +1,2 @@
+[console_scripts]
+canonical-imports = canonical_imports.__main__:main
