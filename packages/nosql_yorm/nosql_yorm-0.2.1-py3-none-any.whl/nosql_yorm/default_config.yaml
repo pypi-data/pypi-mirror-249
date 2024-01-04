@@ -1,0 +1,2 @@
+read_write_to_cache: true
+persist_cache_as_db: false
