@@ -1,0 +1,3 @@
+[console_scripts]
+start=journal_rss.main:start
+
