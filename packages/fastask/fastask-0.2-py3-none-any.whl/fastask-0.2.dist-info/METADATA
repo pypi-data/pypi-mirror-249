@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fastask
+Version: 0.2
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: configparser
+Requires-Dist: inquirer
+
