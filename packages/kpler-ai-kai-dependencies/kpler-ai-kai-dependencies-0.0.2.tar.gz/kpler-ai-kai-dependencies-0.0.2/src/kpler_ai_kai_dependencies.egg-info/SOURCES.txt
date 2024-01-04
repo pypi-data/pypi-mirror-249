@@ -1,0 +1,9 @@
+.gitignore
+README.md
+setup.py
+src/__init__.py
+src/kpler_ai_kai_dependencies.egg-info/PKG-INFO
+src/kpler_ai_kai_dependencies.egg-info/SOURCES.txt
+src/kpler_ai_kai_dependencies.egg-info/dependency_links.txt
+src/kpler_ai_kai_dependencies.egg-info/requires.txt
+src/kpler_ai_kai_dependencies.egg-info/top_level.txt

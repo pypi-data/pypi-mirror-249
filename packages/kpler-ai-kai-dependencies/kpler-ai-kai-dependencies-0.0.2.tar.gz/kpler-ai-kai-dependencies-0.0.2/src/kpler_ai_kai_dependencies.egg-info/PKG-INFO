@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: kpler-ai-kai-dependencies
+Version: 0.0.2
+Summary: A list of KAI package dependencies
+Home-page: https://github.com/Kpler/datascience-kai-dependencies
+Author: Kpler
+Author-email: engineering@kpler.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp[speedups]==3.8.5
+Requires-Dist: aiomcache==0.8.1
+Requires-Dist: asyncpg==0.28.0
+Requires-Dist: boto3==1.24.56
+Requires-Dist: datadog==0.47.0
+Requires-Dist: ddtrace==1.20.14
+Requires-Dist: dill==0.3.7
+Requires-Dist: fastapi==0.103.1
+Requires-Dist: gunicorn==20.1.0
+Requires-Dist: matplotlib==3.7.1
+Requires-Dist: numpy==1.23.5
+Requires-Dist: pandas==1.5.3
+Requires-Dist: platformdirs==3.11.0
+Requires-Dist: plotly-express==0.4.1
+Requires-Dist: psutil==5.9.5
+Requires-Dist: psycopg2-binary==2.9.7
+Requires-Dist: pyarrow==10.0.1
+Requires-Dist: pymemcache==4.0.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: s3fs==2022.11.0
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: seaborn==0.12.1
+Requires-Dist: SQLAlchemy[asyncio]==1.4.46
+Requires-Dist: sqlparse==0.4.3
+Requires-Dist: ultralytics==8.0.187
+Requires-Dist: uvicorn[standard]==0.23.2
+Provides-Extra: experiments
+Requires-Dist: ipywidgets==8.1.1; extra == "experiments"
+Requires-Dist: jupyterlab==4.0.7; extra == "experiments"
+Requires-Dist: notebook==7.0.6; extra == "experiments"
+Provides-Extra: tensor
+Requires-Dist: grpcio==1.50.0; extra == "tensor"
+Requires-Dist: keras==2.9.0; extra == "tensor"
+Requires-Dist: tensorflow==2.9.3; extra == "tensor"
+Provides-Extra: test
+Requires-Dist: awscliv2==2.2.0; extra == "test"
+Requires-Dist: pre-commit==3.4.0; extra == "test"
+Requires-Dist: pylint==2.17.2; extra == "test"
+Requires-Dist: pytest==7.4.2; extra == "test"
+Requires-Dist: httpx>=0.23.3; extra == "test"
+Provides-Extra: torch
+Requires-Dist: torch==1.13.1; extra == "torch"
+Requires-Dist: torchvision==0.14.1; extra == "torch"
+Provides-Extra: xgb
+Requires-Dist: dask==2023.2.1; extra == "xgb"
+Requires-Dist: dask-cuda==23.4.0a230228; extra == "xgb"
+Requires-Dist: xgboost==1.7.3; extra == "xgb"
+Provides-Extra: computer-vision
+Requires-Dist: opencv-python==4.7.0.68; extra == "computer-vision"
+Requires-Dist: python-dateutil==2.8.2; extra == "computer-vision"
+Provides-Extra: all
+Requires-Dist: ipywidgets==8.1.1; extra == "all"
+Requires-Dist: jupyterlab==4.0.7; extra == "all"
+Requires-Dist: notebook==7.0.6; extra == "all"
+Requires-Dist: grpcio==1.50.0; extra == "all"
+Requires-Dist: keras==2.9.0; extra == "all"
+Requires-Dist: tensorflow==2.9.3; extra == "all"
+Requires-Dist: torch==1.13.1; extra == "all"
+Requires-Dist: torchvision==0.14.1; extra == "all"
+Requires-Dist: dask==2023.2.1; extra == "all"
+Requires-Dist: dask-cuda==23.4.0a230228; extra == "all"
+Requires-Dist: xgboost==1.7.3; extra == "all"
+Requires-Dist: opencv-python==4.7.0.68; extra == "all"
+Requires-Dist: python-dateutil==2.8.2; extra == "all"
+
+# datascience-kai-dependencies
+This repo contains KAI dependencies
