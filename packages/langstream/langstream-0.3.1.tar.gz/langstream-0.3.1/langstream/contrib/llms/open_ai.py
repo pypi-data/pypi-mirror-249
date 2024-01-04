@@ -1,0 +1,382 @@
+import asyncio
+from dataclasses import dataclass
+from typing import (
+    Any,
+    AsyncGenerator,
+    Callable,
+    Dict,
+    List,
+    Literal,
+    Optional,
+    TypeVar,
+    Union,
+    cast,
+)
+
+import importlib
+from colorama import Fore
+from retry import retry
+
+from langstream.core.stream import Stream, StreamOutput
+
+T = TypeVar("T")
+U = TypeVar("U")
+V = TypeVar("V")
+
+
+class OpenAICompletionStream(Stream[T, U]):
+    """
+    `OpenAICompletionStream` uses the most simple LLMs from OpenAI based on GPT-3 for text completion, if you are looking for ChatCompletion, take a look at `OpenAIChatStream`.
+
+    The `OpenAICompletionStream` takes a lambda function that should return a string with the prompt for completion.
+
+    To use this stream you will need an `OPENAI_API_KEY` environment variable to be available, and then you can generate completions out of it.
+
+    You can read more about the completion API on [OpenAI API reference](https://platform.openai.com/docs/api-reference/completions)
+
+    Example
+    -------
+
+    >>> from langstream import join_final_output
+    >>> from langstream.contrib import OpenAICompletionStream
+    >>> import asyncio
+    ...
+    >>> async def example():
+    ...     recipe_stream = OpenAICompletionStream[str, str](
+    ...         "RecipeStream",
+    ...         lambda recipe_name: f"Here is my {recipe_name} recipe: ",
+    ...         model="ada",
+    ...     )
+    ...
+    ...     return await join_final_output(recipe_stream("instant noodles"))
+    ...
+    >>> asyncio.run(example()) # doctest:+SKIP
+    '【Instant Noodles】\\n\\nIngredients:\\n\\n1 cup of water'
+
+    """
+
+    def __init__(
+        self: "OpenAICompletionStream[T, str]",
+        name: str,
+        call: Callable[
+            [T],
+            str,
+        ],
+        model: str,
+        temperature: Optional[float] = 0,
+        max_tokens: Optional[int] = None,
+        timeout: int = 5,
+        retries: int = 3,
+    ) -> None:
+        async def completion(prompt: str) -> AsyncGenerator[U, None]:
+            loop = asyncio.get_event_loop()
+
+            @retry(tries=retries)
+            def get_completions():
+                return OpenAICompletionStream.client().completions.create(
+                    model=model,
+                    prompt=prompt,
+                    temperature=temperature,
+                    stream=True,
+                    max_tokens=max_tokens,
+                    timeout=timeout,
+                )
+
+            completions = await loop.run_in_executor(None, get_completions)
+
+            for output in completions:
+                output = cast(dict, output.model_dump())
+                if "choices" in output:
+                    if len(output["choices"]) > 0:
+                        if "text" in output["choices"][0]:
+                            yield output["choices"][0]["text"]
+
+        super().__init__(name, lambda input: completion(call(input)))
+
+    _client_ = None
+    @staticmethod
+    def client():
+        """
+        Returns the OpenAI client instance being used to make the LLM calls.
+        """
+
+        if not OpenAICompletionStream._client_:
+            openai = importlib.import_module("openai")
+            OpenAICompletionStream._client_ = openai.OpenAI()
+
+        return OpenAICompletionStream._client_
+
+@dataclass
+class OpenAIChatMessage:
+    """
+    OpenAIChatMessage is a data class that represents a chat message for building `OpenAIChatStream` prompt.
+
+    Attributes
+    ----------
+    role : Literal["system", "user", "assistant", "function"]
+        The role of who sent this message in the chat, can be one of `"system"`, `"user"`, `"assistant"` or "function"
+
+    name: Optional[str]
+        The name is used for when `role` is `"function"`, it represents the name of the function that was called
+
+    content : str
+        A string with the full content of what the given role said
+
+    """
+
+    role: Literal["system", "user", "assistant", "function"]
+    content: str
+    name: Optional[str] = None
+
+    def to_dict(self):
+        return {k: v for k, v in self.__dict__.items() if v is not None}
+
+
+@dataclass
+class OpenAIChatDelta:
+    """
+    OpenAIChatDelta is a data class that represents the output of an `OpenAIChatStream`.
+
+    Attributes
+    ----------
+    role : Optional[Literal["assistant", "function"]]
+        The role of the output message, the first message will have the role, while
+        the subsequent partial content output ones will have the role as `None`.
+        For now the only possible values it will have is either None or `"assistant"`
+
+    name: Optional[str]
+        The name is used for when `role` is `"function"`, it represents the name of the function that was called
+
+    content : str
+        A string with the partial content being outputted by the LLM, this generally
+        translate to each token the LLM is producing
+
+    """
+
+    role: Optional[Literal["assistant", "function"]]
+    content: str
+    name: Optional[str] = None
+
+    def __stream_debug__(self):
+        name = ""
+        if self.name:
+            name = f" {self.name}"
+        if self.role is not None:
+            print(f"{Fore.YELLOW}{self.role.capitalize()}{name}:{Fore.RESET} ", end="")
+        print(
+            self.content,
+            end="",
+            flush=True,
+        )
+
+
+class OpenAIChatStream(Stream[T, U]):
+    """
+    `OpenAIChatStream` gives you access to the more powerful LLMs from OpenAI, like `gpt-3.5-turbo` and `gpt-4`, they are structured in a chat format with roles.
+
+    The `OpenAIChatStream` takes a lambda function that should return a list of `OpenAIChatMessage` for the assistant to reply, it is stateless, so it doesn't keep
+    memory of the past chat messages, you will have to handle the memory yourself, you can [follow this guide to get started on memory](https://rogeriochaves.github.io/langstream/docs/llms/memory).
+
+    The `OpenAIChatStream` also produces `OpenAIChatDelta` as output, one per token, it contains the `role` that started the output, and then subsequent `content` updates.
+    If you want the final content as a string, you will need to use the `.content` property from the delta and accumulate it for the final result.
+
+    To use this stream you will need an `OPENAI_API_KEY` environment variable to be available, and then you can generate chat completions out of it.
+
+    You can read more about the chat completion API on [OpenAI API reference](https://platform.openai.com/docs/api-reference/chat)
+
+    Example
+    -------
+
+    >>> from langstream import Stream, join_final_output
+    >>> from langstream.contrib import OpenAIChatStream, OpenAIChatMessage, OpenAIChatDelta
+    >>> import asyncio
+    ...
+    >>> async def example():
+    ...     recipe_stream: Stream[str, str] = OpenAIChatStream[str, OpenAIChatDelta](
+    ...         "RecipeStream",
+    ...         lambda recipe_name: [
+    ...             OpenAIChatMessage(
+    ...                 role="system",
+    ...                 content="You are ChefGPT, an assistant bot trained on all culinary knowledge of world's most proeminant Michelin Chefs",
+    ...             ),
+    ...             OpenAIChatMessage(
+    ...                 role="user",
+    ...                 content=f"Hello, could you write me a recipe for {recipe_name}?",
+    ...             ),
+    ...         ],
+    ...         model="gpt-3.5-turbo",
+    ...         max_tokens=10,
+    ...     ).map(lambda delta: delta.content)
+    ...
+    ...     return await join_final_output(recipe_stream("instant noodles"))
+    ...
+    >>> asyncio.run(example()) # doctest:+SKIP
+    "Of course! Here's a simple and delicious recipe"
+
+    You can also pass OpenAI function schemas in the `function` argument with all parameter definitions, the model may then produce a `function` role `OpenAIChatDelta`,
+    using your function, with the `content` field as a json which you can parse to call an actual function.
+
+    Take a look [at our guide](https://rogeriochaves.github.io/langstream/docs/llms/open_ai_functions) to learn more about OpenAI function calls in LangStream.
+
+    Function Call Example
+    ---------------------
+
+    >>> from langstream import Stream, collect_final_output
+    >>> from langstream.contrib import OpenAIChatStream, OpenAIChatMessage, OpenAIChatDelta
+    >>> from typing import Literal, Union, Dict
+    >>> import asyncio
+    ...
+    >>> async def example():
+    ...     def get_current_weather(
+    ...         location: str, format: Literal["celsius", "fahrenheit"] = "celsius"
+    ...     ) -> Dict[str, str]:
+    ...         return {
+    ...             "location": location,
+    ...             "forecast": "sunny",
+    ...             "temperature": "25 C" if format == "celsius" else "77 F",
+    ...         }
+    ...
+    ...     stream : Stream[str, Union[OpenAIChatDelta, Dict[str, str]]] = OpenAIChatStream[str, Union[OpenAIChatDelta, Dict[str, str]]](
+    ...         "WeatherStream",
+    ...         lambda user_input: [
+    ...             OpenAIChatMessage(role="user", content=user_input),
+    ...         ],
+    ...         model="gpt-3.5-turbo",
+    ...         functions=[
+    ...             {
+    ...                 "name": "get_current_weather",
+    ...                 "description": "Gets the current weather in a given location, use this function for any questions related to the weather",
+    ...                 "parameters": {
+    ...                     "type": "object",
+    ...                     "properties": {
+    ...                         "location": {
+    ...                             "description": "The city to get the weather, e.g. San Francisco. Guess the location from user messages",
+    ...                             "type": "string",
+    ...                         },
+    ...                         "format": {
+    ...                             "description": "A string with the full content of what the given role said",
+    ...                             "type": "string",
+    ...                             "enum": ("celsius", "fahrenheit"),
+    ...                         },
+    ...                     },
+    ...                     "required": ["location"],
+    ...                 },
+    ...             }
+    ...         ],
+    ...         temperature=0,
+    ...     ).map(
+    ...         lambda delta: get_current_weather(**json.loads(delta.content))
+    ...         if delta.role == "function" and delta.name == "get_current_weather"
+    ...         else delta
+    ...     )
+    ...
+    ...     return await collect_final_output(stream("how is the weather today in Rio de Janeiro?"))
+    ...
+    >>> asyncio.run(example()) # doctest:+SKIP
+    [{'location': 'Rio de Janeiro', 'forecast': 'sunny', 'temperature': '25 C'}]
+
+    """
+
+    def __init__(
+        self: "OpenAIChatStream[T, OpenAIChatDelta]",
+        name: str,
+        call: Callable[
+            [T],
+            List[OpenAIChatMessage],
+        ],
+        model: str,
+        functions: Optional[List[Dict[str, Any]]] = None,
+        function_call: Optional[Union[Literal["none", "auto"], Dict[str, Any]]] = None,
+        temperature: Optional[float] = 0,
+        max_tokens: Optional[int] = None,
+        timeout: int = 5,
+        retries: int = 3,
+    ) -> None:
+        async def chat_completion(
+            messages: List[OpenAIChatMessage],
+        ) -> AsyncGenerator[StreamOutput[OpenAIChatDelta], None]:
+            loop = asyncio.get_event_loop()
+
+            @retry(tries=retries)
+            def get_completions():
+                function_kwargs = {}
+                if functions is not None:
+                    function_kwargs["functions"] = functions
+                if function_call is not None:
+                    function_kwargs["function_call"] = function_call
+
+                # import openai
+
+                return OpenAIChatStream.client().chat.completions.create(
+                    timeout=timeout,
+                    model=model,
+                    messages=cast(Any, [m.to_dict() for m in messages]),
+                    temperature=temperature,
+                    stream=True,
+                    max_tokens=max_tokens,
+                    **function_kwargs,
+                )
+
+            completions = await loop.run_in_executor(None, get_completions)
+
+            pending_function_call: Optional[OpenAIChatDelta] = None
+
+            for output in completions:
+                if len(output.choices) == 0:
+                    continue
+
+                delta = output.choices[0].delta
+                if not delta:
+                    continue
+
+                if delta.function_call is not None:
+                    role = delta.role
+                    function_name: Optional[str] = delta.function_call.name
+                    function_arguments: Optional[str] = delta.function_call.arguments
+
+                    if function_name is not None:
+                        pending_function_call = OpenAIChatDelta(
+                            role="function",
+                            name=function_name,
+                            content=function_arguments or "",
+                        )
+                    elif (
+                        pending_function_call is not None
+                        and function_arguments is not None
+                    ):
+                        pending_function_call.content += function_arguments
+                elif delta.content is not None:
+                    role = cast(
+                        Union[Literal["assistant", "function"], None], delta.role
+                    )
+                    yield self._output_wrap(
+                        OpenAIChatDelta(
+                            role=role,
+                            content=delta.content,
+                        )
+                    )
+                else:
+                    if pending_function_call:
+                        yield self._output_wrap(pending_function_call)
+                        pending_function_call = None
+            if pending_function_call:
+                yield self._output_wrap(pending_function_call)
+                pending_function_call = None
+
+        super().__init__(
+            name,
+            lambda input: cast(AsyncGenerator[U, None], chat_completion(call(input))),
+        )
+
+    _client_ = None
+    @staticmethod
+    def client():
+        """
+        Returns the OpenAI client instance being used to make the LLM calls.
+        """
+
+        if not OpenAIChatStream._client_:
+            openai = importlib.import_module("openai")
+            OpenAIChatStream._client_ = openai.OpenAI()
+
+        return OpenAIChatStream._client_
