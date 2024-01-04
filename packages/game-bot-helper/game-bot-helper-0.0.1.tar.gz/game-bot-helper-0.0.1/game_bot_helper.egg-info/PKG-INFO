@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: game-bot-helper
+Version: 0.0.1
+Summary: A Helper, that accelerates the process of creating a bot for a game
+Author-email: Hell Brands <hell_brands@outlook.com>
+License: Copyright 2023 Hell Brands
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Keywords: game,bot,helper
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pyautogui
+Requires-Dist: pynput
+
+# Welcome to Game Bot Helper!
+
+Hi! I like to create Bots for some of the games I play. At least some tasks which are repetitive. This includes almost all mobile games :P
+After creating several bots I refined some of my techniques for that and mostly ending up with the same basic structure around the actual botting part.
+Since this wrapper does not change at all, I decided to publish this Helper to remove the Boilerplate Code I used to copy&paste from a past project.
+
+
+## Highlights
+
+- Use Threading under the hood, so you can run multiple methods or bots at once
+- Kill-Switch: Can stop every bot action with one button (if the bot os controlling your mouse this is a lifesaver in case of misbehaviour)
+- Easy image recognition to click or find specific parts on the screen
+
+## Setup
+
+The class you need to use is called GameBotHelper.
+Before that, you should edit the config.toml file to set the screen values to match your current game screen (not your display resolution).
+You can also use the change_screen(self, x1, y1, x2, y2, x_mid, y_mid) function, to do so, but this will only change those values for the current instance of the Helper of course.
+You should do so in either way, because the bigger the screen, the longer the image recognition will take.
+
+## Functionality
+This Helper will start a keyboard listener, so while running you can only press the keys you defined. All other keys will be ignored.
+The default Kill-Switch is the "End" key. You can change this with the change_kill_switch(self, key) function.
+
+
+## Contributions
+
+I made this one open-source, you can contribute on GitHub, if you find a bug or have some additional features in mind.
+
+## Closing words
+
+I hope this little helper will help you in creating your own bots.
+If you like my work, feel free to [buy me a coffee](https://www.buymeacoffee.com/HellBrands)
