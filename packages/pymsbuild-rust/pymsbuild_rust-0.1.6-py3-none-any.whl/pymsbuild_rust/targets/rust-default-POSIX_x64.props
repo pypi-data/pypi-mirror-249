@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <DefaultPlatformToolset>Cargo</DefaultPlatformToolset>
+    <_RustArch>aarch64-unknown-linux-gnu</_RustArch>
+    <DefaultIntTargetDir Condition="$(Configuration) == 'Debug'">debug</DefaultIntTargetDir>
+    <DefaultIntTargetDir Condition="$(Configuration) != 'Debug'">release</DefaultIntTargetDir>
+    <DefaultIntTargetExt>.so</DefaultIntTargetExt>
+  </PropertyGroup>
+</Project>
