@@ -1,0 +1,17 @@
+tap_freshservice/__init__.py,sha256=QnBXkXyJWqjFzTU8-J-1kV0rwlDhQwmR9_ur4SlM5eg,28
+tap_freshservice/client.py,sha256=LCLwWg2K86EENVTnWUjiPhUBCe1j7ZiFSDgqZquajRs,4105
+tap_freshservice/paginator.py,sha256=FXYM33E_hFZFIcDsNRo6s3MVwFYbwNe1UJ0eSKWSWTI,364
+tap_freshservice/streams/agents.py,sha256=8HFGFdvzhQ0MQgSXBTlzCb-RU7-oHMUKS-CnGkUG5Gw,1855
+tap_freshservice/streams/asset_requests.py,sha256=IzQlgkvoICQJIhEm4NjtryR9liF2UITDzPa71B8tJDE,1026
+tap_freshservice/streams/asset_types.py,sha256=fnzHMAPNJ83ea9ZhEQ3J47CgIyzJbWXFG9YNl1f2I3w,705
+tap_freshservice/streams/assets.py,sha256=dQIwtPPn5BDMqA95WF8OVws89z_Cuim55Crx1qLKCqg,2305
+tap_freshservice/streams/groups.py,sha256=SVdZV9OXQpNuMKmY7YfAFPXuttTV6HQLT274M5Jax7g,905
+tap_freshservice/streams/locations.py,sha256=caSpr1lxx7sf537g1QSsB8fUQCL4z2q5XXYaTI6bU94,902
+tap_freshservice/streams/requesters.py,sha256=FIgPzxyOrvcIO5DUttAdHuSt7wxfS2XUdKUEXSC218k,1807
+tap_freshservice/streams/tickets.py,sha256=eGjFaHnx-5Llqr6sgZYk6t6h7sfTEfik1rbPXAAQU4A,3743
+tap_freshservice/tap.py,sha256=Cj4UiRuI6x7Cq4kFChlPiyV8-IqUlIP9ctXjX_468p8,1994
+tap_freshservice-0.6.1.dist-info/LICENSE,sha256=uobX_OXEl7mJ6V2aiHV91-HiQKrGnK_8Xzh20uppJFQ,11343
+tap_freshservice-0.6.1.dist-info/METADATA,sha256=OwNG0PC0NQoQ7G8wDgeeofxrFRKEGMK7Y4QhQFml2dg,4494
+tap_freshservice-0.6.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tap_freshservice-0.6.1.dist-info/entry_points.txt,sha256=pWOiQQPWhCQnElpU5t2rd51kqeHXyQ4WrWITEB0wrV8,77
+tap_freshservice-0.6.1.dist-info/RECORD,,
