@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DataMesh.egg-info/PKG-INFO
+DataMesh.egg-info/SOURCES.txt
+DataMesh.egg-info/dependency_links.txt
+DataMesh.egg-info/entry_points.txt
+DataMesh.egg-info/requires.txt
+DataMesh.egg-info/top_level.txt
+datamesh/__init__.py
+datamesh/contract/__init__.py
+datamesh/contract/validator.py
+datamesh/resources/odcs-json-schema.json
