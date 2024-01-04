@@ -1,0 +1,3 @@
+dist
+node_modules
+tutork8s_deploy_tasks
