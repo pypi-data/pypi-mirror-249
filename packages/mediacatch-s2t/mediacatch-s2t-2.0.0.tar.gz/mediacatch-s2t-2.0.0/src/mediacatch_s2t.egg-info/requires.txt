@@ -1,0 +1,12 @@
+importlib_metadata
+requests
+rich
+langcodes
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
+responses
