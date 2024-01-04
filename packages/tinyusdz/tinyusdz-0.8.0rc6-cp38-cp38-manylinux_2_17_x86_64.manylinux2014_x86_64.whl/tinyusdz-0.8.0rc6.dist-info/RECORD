@@ -1,0 +1,14 @@
+tinyusdz/usd_saver.py,sha256=1bN9fD9AjBKv69cFH9ucHHxKaHAcqdECW0r5mcBS5fs,741
+tinyusdz/tydra.py,sha256=q1x1wdaeADzpgas_HW08dIik-GG7-Gkj-T0-i85tsdA,1670
+tinyusdz/ctinyusd.py,sha256=USlbwMpsfmRh_nKkCjVJ8V5n_XPIN6j03pY0s0NPVfQ,93607
+tinyusdz/__init__.py,sha256=h5U06Uuu-aTtnAyCi__5HTkO1682AViMZ5GKABslO9o,11442
+tinyusdz/version.py,sha256=SXjhShB15nk3M6mslAFph5RCveBCZ4Sx3rVrSWI4yd8,276
+tinyusdz/prims.py,sha256=VOkrdiZrOx_1_Vfe_d8j6OaNNiDxoy6eDpv1u-q-laA,3137
+tinyusdz/compat_typing_extensions.py,sha256=CTgIORbeRoLkh8GDwJdkYX4fHdhRiCA_WW8imB4f62A,107860
+tinyusdz/usd_loader.py,sha256=Uf61tUE_abtdckVH3jkXECbpOLfe13qnURvZPT7zJTA,4304
+tinyusdz-0.8.0rc6.dist-info/WHEEL,sha256=CKI7hX_udpEyOOMQtVo4MuPvMy5fJbrBR3HJXFdbayw,142
+tinyusdz-0.8.0rc6.dist-info/LICENSE,sha256=DpwDoE3-yEvAaCD9iUkFtL-dXfkEs9wcWukMo1bJ4rE,1077
+tinyusdz-0.8.0rc6.dist-info/RECORD,,
+tinyusdz-0.8.0rc6.dist-info/top_level.txt,sha256=P-JxVqCbwjNGA139Bv6I5_ar9kBOzihhgCKfL3gECd4,9
+tinyusdz-0.8.0rc6.dist-info/METADATA,sha256=z76ug7psse6cN9fgd3cUe-PlopaT1pl-FQCkcpEW4oM,2756
+tinyusdz-0.8.0rc6.data/data/tinyusdz/libc-tinyusd.so,sha256=k4aiDE27zEAJ-0IUYTmFKv0nIDfqqHR7OuXjnR7KHnA,6455744
