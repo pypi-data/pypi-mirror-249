@@ -1,0 +1,3 @@
+[console_scripts]
+dpkgs3 = dpkgs3.cli:cli
+

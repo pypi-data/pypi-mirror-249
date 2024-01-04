@@ -1,0 +1,20 @@
+{%- if origin %}
+Origin: {{ origin }}
+{% endif -%}
+Codename: {{ codename }}
+Date: {{ now }}
+Architectures: {{ architectures | join(" ") }}
+Components: {{ components | join(" ") }}
+Suite: {{ suite }}
+MD5Sum:
+{%- for f, p in files.items() | sort %}
+ {{ p.md5 }} {{ ("%16s"|format(p.size)) }} {{ f -}}
+{% endfor %}
+SHA1:
+{%- for f, p in files.items() | sort %}
+ {{ p.sha1 }} {{ ("%16s"|format(p.size)) }} {{ f -}}
+{% endfor %}
+SHA256:
+{%- for f, p in files.items() | sort %}
+ {{ p.sha256 }} {{ ("%16s"|format(p.size)) }} {{ f -}}
+{% endfor %}

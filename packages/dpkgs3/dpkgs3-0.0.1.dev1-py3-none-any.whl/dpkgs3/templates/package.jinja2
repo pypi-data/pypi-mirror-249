@@ -1,0 +1,89 @@
+Package: {{ name }}
+Version: {% if epoch %}{{ epoch }}:{% endif %}{{ version }}{% if iteration %}-{{ iteration }}{% endif %}
+License: {{ license }}
+Vendor: {{ vendor }}
+Architecture: {{ architecture }}
+Maintainer: {{ maintainer }}
+Homepage: {{ url or "http://nourlgiven.example.com/" }}
+Filename: {{ url_filename_encoded }}
+
+{%- if attributes['deb_installed_size'] %}
+Installed-Size: {{ attributes['deb_installed_size'] }}
+{%- endif -%}
+
+{%- if dependencies and not attributes['no_depends?'] %}
+Depends: {{ dependencies | join(', ') }}
+{%- endif -%}
+
+{%- if attributes['deb_conflicts'] %}
+Conflicts: {{ attributes['deb_conflicts'] }}
+{%- endif -%}
+
+{%- if attributes['deb_breaks'] %}
+Breaks: {{ attributes['deb_breaks'] }}
+{%- endif -%}
+
+{%- if attributes['deb_pre_depends'] %}
+Pre-Depends: {{ attributes['deb_pre_depends'] }}
+{%- endif -%}
+
+{%- if attributes['deb_provides'] %}
+Provides: {{ attributes['deb_provides'] }}
+{%- endif -%}
+
+{%- if attributes['deb_replaces'] %}
+Replaces: {{ attributes['deb_replaces'] }}
+{%- endif -%}
+
+{%- if attributes['deb_recommends'] %}
+Recommends: {{ attributes['deb_recommends'] }}
+{%- endif -%}
+
+{%- if attributes['deb_suggests'] %}
+Suggests: {{ attributes['deb_suggests'] }}
+{%- endif -%}
+
+{%- if attributes['deb_enhances'] %}
+Enhances: {{ attributes['deb_enhances'] }}
+{%- endif -%}
+
+{%- if category %}
+Section: {{ category }}
+{%- endif -%}
+
+{%- if attributes['deb_origin'] %}
+Origin: {{ attributes['deb_origin'] }}
+{%- endif -%}
+
+{%- if attributes['deb_priority'] %}
+Priority: {{ attributes['deb_priority'] }}
+{%- endif -%}
+
+{%- if size %}
+Size: {{ size }}
+{%- endif -%}
+
+{%- if sha1 %}
+SHA1: {{ sha1 }}
+{%- endif -%}
+
+{%- if sha256 %}
+SHA256: {{ sha256 }}
+{%- endif -%}
+
+{%- if md5 %}
+MD5sum: {{ md5 }}
+{%- endif -%}
+
+{%- set lines = description.split('\n') %}
+{%- set firstline = lines[0] %}
+Description: {{ firstline }}
+{% if lines[1:] %}
+{{ lines[1:] | join('\n') | regex_replace('^ *$', ' .') | regex_replace('^', ' ') }}
+{%- endif -%}
+
+{%- if attributes['deb_field'] %}
+{%   for field, value in attributes['deb_field'].items() %}
+{{ field }}: {{ value }}
+{%   endfor %}
+{%- endif -%}
