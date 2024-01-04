@@ -1,0 +1,9 @@
+h5py
+scipy
+trame
+trame-vuetify
+trame-vtk
+trame-plotly
+xmltodict
+plotly
+vtk
