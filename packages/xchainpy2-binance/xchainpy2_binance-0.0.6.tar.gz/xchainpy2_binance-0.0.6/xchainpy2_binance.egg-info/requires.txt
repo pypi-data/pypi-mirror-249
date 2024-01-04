@@ -1,0 +1,9 @@
+xchainpy2_utils
+xchainpy2_crypto
+xchainpy2_client
+cosmpy>=0.9.1
+ujson>=5.8.0
+protobuf>=4.25.1
+
+[test]
+pytest
