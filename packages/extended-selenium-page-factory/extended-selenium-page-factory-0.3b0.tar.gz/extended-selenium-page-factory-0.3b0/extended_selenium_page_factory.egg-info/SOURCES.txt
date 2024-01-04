@@ -1,0 +1,9 @@
+README.md
+setup.py
+extended_selenium_page_factory.egg-info/PKG-INFO
+extended_selenium_page_factory.egg-info/SOURCES.txt
+extended_selenium_page_factory.egg-info/dependency_links.txt
+extended_selenium_page_factory.egg-info/requires.txt
+extended_selenium_page_factory.egg-info/top_level.txt
+extendedseleniumpagefactory/__init__.py
+extendedseleniumpagefactory/extendedpagefactory.py
