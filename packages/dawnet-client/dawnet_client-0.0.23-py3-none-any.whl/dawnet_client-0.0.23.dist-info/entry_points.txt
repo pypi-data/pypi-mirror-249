@@ -1,0 +1,3 @@
+[console_scripts]
+dawnet-client = dawnet_client.core:main
+
