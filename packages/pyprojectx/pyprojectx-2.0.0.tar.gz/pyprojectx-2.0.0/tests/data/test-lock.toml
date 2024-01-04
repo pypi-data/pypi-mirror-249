@@ -1,0 +1,14 @@
+[tool.pyprojectx]
+main = "px-utils==1.1.0"
+
+[tool.pyprojectx.tool-with-known-requirements]
+requirements = "pyprojectx==1.0.1"
+post-install = "pxmkdirs post-install-table-dir"
+
+[tool.pyprojectx.no-lock]
+# requirements with editable installs should not be locked
+requirements = "-e ."
+
+[tool.pyprojectx.aliases]
+show-version = { cmd = "pyprojectx --version", ctx = "tool-with-known-requirements", env = { "PYPROJECTX_PACKAGE" = "" } }
+no-lock-cmd = { cmd = "echo 'invoked no-lock'", ctx = "no-lock", env = { "PYPROJECTX_PACKAGE" = "" } }
