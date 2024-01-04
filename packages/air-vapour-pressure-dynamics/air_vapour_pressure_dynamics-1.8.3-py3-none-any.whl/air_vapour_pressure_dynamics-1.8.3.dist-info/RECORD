@@ -1,0 +1,11 @@
+air_vapour_pressure_dynamics/__init__.py,sha256=N9EiPmaITQAREzFRCuxaw1bKwQMFU9Un4_vsN8V3P_c,919
+air_vapour_pressure_dynamics/core/__init__.py,sha256=uTgtxT2G3g7hISYhOSHaA1MJtOydbF7yUD0WaD4T9OA,12269
+air_vapour_pressure_dynamics/core/utils.py,sha256=yGya4ckibuXTZYPIKub6gsrNeqI0hwJSGC3SwA5170A,6526
+air_vapour_pressure_dynamics/initialize/__init__.py,sha256=2gs2jpH_3bI9tedyTCKNq99M99A_1ScWi6XSXN2Rj9c,2067
+air_vapour_pressure_dynamics-1.8.3.data/data/requirements.txt,sha256=TnYdHiy0A3EXFkwm6gO0GaTkrLhV-gvRP8jcerSRhxA,16
+air_vapour_pressure_dynamics-1.8.3.data/data/.git/config,sha256=N4_Vs5UvqfELbtBa1Yk4pm-wFz6SksoQnCRBwOTvHd8,375
+air_vapour_pressure_dynamics-1.8.3.dist-info/LICENSE,sha256=ICT1bt3Dfuft-iwXzMUVLVkgMNkMi8V5rC1sqZYso5E,1093
+air_vapour_pressure_dynamics-1.8.3.dist-info/METADATA,sha256=VyeCh6CuTdafH2wxCYxcjkvQkaxaOVhlzr4kAVbP6i0,1442
+air_vapour_pressure_dynamics-1.8.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+air_vapour_pressure_dynamics-1.8.3.dist-info/top_level.txt,sha256=gB4y_fbuVebP-3_xhpfdjyzNpPfSzfagavzucwITJIg,29
+air_vapour_pressure_dynamics-1.8.3.dist-info/RECORD,,
