@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/MK_AI.egg-info/PKG-INFO
+src/MK_AI.egg-info/SOURCES.txt
+src/MK_AI.egg-info/dependency_links.txt
+src/MK_AI.egg-info/requires.txt
+src/MK_AI.egg-info/top_level.txt
+src/mk_ai/MKAI.py
+src/mk_ai/__init__.py
+tests/test_MKAI.py
