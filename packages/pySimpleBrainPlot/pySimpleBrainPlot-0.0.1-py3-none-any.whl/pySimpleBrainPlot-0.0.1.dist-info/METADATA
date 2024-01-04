@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pySimpleBrainPlot
+Version: 0.0.1
+Summary: simpleBrainPlot is a small python package to create simple line-art brain plots, modified from matlab package Simple-Brain-Plot, https://github.com/dutchconnectomelab/Simple-Brain-Plot
+Home-page: https://github.com/LeiGuo0812/pySimpleBrainPlot
+Author: LeiGuo
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
