@@ -1,0 +1,14 @@
+pybdshadow/__init__.py,sha256=B-rtZ8lY0w1Jgm1soHFKiQz6yioac5XsyoXNZcV3paQ,2695
+pybdshadow/analysis.py,sha256=cPHCUq7RhJLQNauR-ANgCycUcqgLv0z9avGl7iBLE8w,9853
+pybdshadow/facade.py,sha256=oQoqTmvetfqI1nxOKe01eeJGfXR9yJo6s2ac0pW8n2c,24574
+pybdshadow/get_buildings.py,sha256=4RVuPw7_th6ZsMut1zPU2IINcCK_BrsEzu49pQs1V4w,8137
+pybdshadow/preprocess.py,sha256=tpTT6I0jnH8JVMSZhbef19Wdqgs1xZDniPhK0SMj8sg,5001
+pybdshadow/pybdshadow.py,sha256=_j9zTlEvfoQ1Y1E6hIzbVO8mSeFq362jT9wGFtUAdS8,14021
+pybdshadow/utils.py,sha256=m1gIyZ2zi0m5FHO8LMw3SKfF7V8FCehcKrDxdcp3rQY,8064
+pybdshadow/visiblearea.py,sha256=leWgDeZuDVtJlmIJ4rHT5ntA0MjRLpF3BqbYDeHPa-w,11005
+pybdshadow/visualization.py,sha256=l2mzcBWpKSMIf4-9RJxgmXj21KmbI6vfqtPAwIYY2q4,25186
+pybdshadow-0.3.5.dist-info/LICENSE,sha256=Yp-8ruvZB4Z8q0rkRVCkKsB5rHYxooCRg7UF552JF2Y,1515
+pybdshadow-0.3.5.dist-info/METADATA,sha256=4p4NLfR1ow-WemsFemQgqYyM0K_t0X_siGjid_i-lXY,7897
+pybdshadow-0.3.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pybdshadow-0.3.5.dist-info/top_level.txt,sha256=uTY4PcCjrwo_T7r7A_KD2QjBGnvmi66pAeFsSQqmT-0,11
+pybdshadow-0.3.5.dist-info/RECORD,,
