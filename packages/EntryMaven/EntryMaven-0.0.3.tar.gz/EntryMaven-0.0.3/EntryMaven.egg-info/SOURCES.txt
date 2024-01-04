@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+EntryMaven.egg-info/PKG-INFO
+EntryMaven.egg-info/SOURCES.txt
+EntryMaven.egg-info/dependency_links.txt
+EntryMaven.egg-info/top_level.txt
+entrymaven/__init__.py
+entrymaven/main.py
