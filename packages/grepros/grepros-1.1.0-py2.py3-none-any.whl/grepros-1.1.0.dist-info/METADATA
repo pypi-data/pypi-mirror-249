@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: grepros
+Version: 1.1.0
+Summary: grep for ROS bag files and live topics: read, filter, export
+Home-page: http://www.ros.org/wiki/grepros
+Author: Erki Suurjaak
+Author-email: erki@lap.ee
+Maintainer: Erki Suurjaak
+Maintainer-email: erki@lap.ee
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: pyyaml
+Requires-Dist: six
+
+UNKNOWN
+
+
