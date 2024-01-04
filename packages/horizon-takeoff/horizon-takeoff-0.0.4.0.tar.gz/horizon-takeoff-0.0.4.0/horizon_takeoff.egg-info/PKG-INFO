@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: horizon-takeoff
+Version: 0.0.4.0
+Summary: Auto-deploy the Takeoff Server on AWS for LLM inference
+Home-page: UNKNOWN
+Author: InquestGeronimo
+Author-email: rcostanl@gmail.com
+License: UNKNOWN
+Keywords: cloud,titanml,server,LLM,NLP,MLOps,deployment
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+n/a.
+
