@@ -1,0 +1,13 @@
+README.md
+setup.py
+Pyppex.egg-info/PKG-INFO
+Pyppex.egg-info/SOURCES.txt
+Pyppex.egg-info/dependency_links.txt
+Pyppex.egg-info/requires.txt
+Pyppex.egg-info/top_level.txt
+pyppex/__init__.py
+pyppex/modstring.py
+pyppex/parallelize.py
+pyppex/profiler.py
+pyppex/timecode.py
+pyppex/timeit.py
