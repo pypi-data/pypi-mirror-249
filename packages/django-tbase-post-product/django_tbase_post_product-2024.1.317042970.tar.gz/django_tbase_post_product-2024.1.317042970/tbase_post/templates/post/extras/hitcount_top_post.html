@@ -1,0 +1,50 @@
+
+<!---使用示例:
+# 加载标签
+load post_extras
+
+使用示例：
+last_update 5
+
+-->
+{% load cache %}
+{% cache 600 hitcount_top_post pk %}
+
+<div id="{{pk}}" class="hitcount-top-post">
+  <h2 class="text-gray-800 text-lg font-medium mb-2">{{title}}</h2>
+  <div class="list-disc" >
+
+
+    {%for item in page_obj%}
+    
+        <!-- <li class="mb-2"> -->
+    
+    
+    
+    
+          <div class="hitcount-top-post-item">
+
+            {% if item.product_name %}
+            <a  href="{% url 'detail_view' item.pk %}"  >
+                       {{item.product_name|truncatechars:32}} 
+                </a>
+              {% else %}
+              <a  href="{% url 'detail_view' item.pk %}"  >
+                {{item.title|truncatechars:32}} 
+                       </a>
+              {% endif %}
+
+
+          
+        </div>
+ 
+    
+            <!-- <a href="{% url 'detail_view' item.pk %}" class="">{{item|truncatechars:32}}</a> -->
+        <!-- </li> -->
+    {%endfor%}
+      <!-- </ul> -->
+    
+    </div>
+</div>
+
+{% endcache %}
