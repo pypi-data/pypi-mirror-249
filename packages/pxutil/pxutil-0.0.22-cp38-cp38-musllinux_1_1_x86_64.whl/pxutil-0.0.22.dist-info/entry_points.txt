@@ -1,0 +1,5 @@
+[console_scripts]
+chat = pxutil.cli:chat_main
+px.chat = pxutil.cli:chat_main
+px.loop = pxutil.cli:loop_main
+px.runc = pxutil.cli:runc_main
