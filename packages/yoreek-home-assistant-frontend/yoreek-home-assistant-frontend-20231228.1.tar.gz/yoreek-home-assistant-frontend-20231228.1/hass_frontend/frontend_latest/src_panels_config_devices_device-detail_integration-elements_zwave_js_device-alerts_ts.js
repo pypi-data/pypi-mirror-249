@@ -1,0 +1,23 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+export const id = "src_panels_config_devices_device-detail_integration-elements_zwave_js_device-alerts_ts";
+export const ids = ["src_panels_config_devices_device-detail_integration-elements_zwave_js_device-alerts_ts"];
+export const modules = {
+
+/***/ "./src/panels/config/devices/device-detail/integration-elements/zwave_js/device-alerts.ts":
+/*!************************************************************************************************!*\
+  !*** ./src/panels/config/devices/device-detail/integration-elements/zwave_js/device-alerts.ts ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   getZwaveDeviceAlerts: () => (/* binding */ getZwaveDeviceAlerts)\n/* harmony export */ });\n/* harmony import */ var _data_zwave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../data/zwave_js */ \"./src/data/zwave_js.ts\");\n\nconst getZwaveDeviceAlerts = async (hass, device) => {\n  var _nodeAlerts$comments;\n  const nodeAlerts = await (0,_data_zwave_js__WEBPACK_IMPORTED_MODULE_0__.fetchZwaveNodeAlerts)(hass, device.id);\n  const deviceAlerts = [];\n  if ((nodeAlerts === null || nodeAlerts === void 0 ? void 0 : nodeAlerts.is_embedded) === false) {\n    deviceAlerts.push({\n      level: \"info\",\n      text: hass.localize(\"ui.panel.config.zwave_js.device_info.custom_device_config\")\n    });\n  }\n  if (!(nodeAlerts !== null && nodeAlerts !== void 0 && (_nodeAlerts$comments = nodeAlerts.comments) !== null && _nodeAlerts$comments !== void 0 && _nodeAlerts$comments.length)) {\n    return deviceAlerts;\n  }\n  deviceAlerts.push(...nodeAlerts.comments.map(comment => ({\n    level: comment.level,\n    text: comment.text\n  })));\n  return deviceAlerts;\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFuZWxzL2NvbmZpZy9kZXZpY2VzL2RldmljZS1kZXRhaWwvaW50ZWdyYXRpb24tZWxlbWVudHMvendhdmVfanMvZGV2aWNlLWFsZXJ0cy50cyIsIm1hcHBpbmdzIjoiOzs7OztBQUNBO0FBSUE7QUFHQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUdBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFFQTtBQUVBO0FBQ0E7QUFDQTtBQUVBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ob21lLWFzc2lzdGFudC1mcm9udGVuZC8uL3NyYy9wYW5lbHMvY29uZmlnL2RldmljZXMvZGV2aWNlLWRldGFpbC9pbnRlZ3JhdGlvbi1lbGVtZW50cy96d2F2ZV9qcy9kZXZpY2UtYWxlcnRzLnRzP2U1OTYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRGV2aWNlUmVnaXN0cnlFbnRyeSB9IGZyb20gXCIuLi8uLi8uLi8uLi8uLi8uLi9kYXRhL2RldmljZV9yZWdpc3RyeVwiO1xuaW1wb3J0IHsgZmV0Y2had2F2ZU5vZGVBbGVydHMgfSBmcm9tIFwiLi4vLi4vLi4vLi4vLi4vLi4vZGF0YS96d2F2ZV9qc1wiO1xuaW1wb3J0IHsgSG9tZUFzc2lzdGFudCB9IGZyb20gXCIuLi8uLi8uLi8uLi8uLi8uLi90eXBlc1wiO1xuaW1wb3J0IHsgRGV2aWNlQWxlcnQgfSBmcm9tIFwiLi4vLi4vLi4vaGEtY29uZmlnLWRldmljZS1wYWdlXCI7XG5cbmV4cG9ydCBjb25zdCBnZXRad2F2ZURldmljZUFsZXJ0cyA9IGFzeW5jIChcbiAgaGFzczogSG9tZUFzc2lzdGFudCxcbiAgZGV2aWNlOiBEZXZpY2VSZWdpc3RyeUVudHJ5XG4pOiBQcm9taXNlPERldmljZUFsZXJ0W10+ID0+IHtcbiAgY29uc3Qgbm9kZUFsZXJ0cyA9IGF3YWl0IGZldGNoWndhdmVOb2RlQWxlcnRzKGhhc3MsIGRldmljZS5pZCk7XG4gIGNvbnN0IGRldmljZUFsZXJ0czogRGV2aWNlQWxlcnRbXSA9IFtdO1xuXG4gIGlmIChub2RlQWxlcnRzPy5pc19lbWJlZGRlZCA9PT0gZmFsc2UpIHtcbiAgICBkZXZpY2VBbGVydHMucHVzaCh7XG4gICAgICBsZXZlbDogXCJpbmZvXCIsXG4gICAgICB0ZXh0OiBoYXNzLmxvY2FsaXplKFxuICAgICAgICBcInVpLnBhbmVsLmNvbmZpZy56d2F2ZV9qcy5kZXZpY2VfaW5mby5jdXN0b21fZGV2aWNlX2NvbmZpZ1wiXG4gICAgICApLFxuICAgIH0pO1xuICB9XG5cbiAgaWYgKCFub2RlQWxlcnRzPy5jb21tZW50cz8ubGVuZ3RoKSB7XG4gICAgcmV0dXJuIGRldmljZUFsZXJ0cztcbiAgfVxuXG4gIGRldmljZUFsZXJ0cy5wdXNoKFxuICAgIC4uLm5vZGVBbGVydHMuY29tbWVudHMubWFwKChjb21tZW50KSA9PiAoe1xuICAgICAgbGV2ZWw6IGNvbW1lbnQubGV2ZWwsXG4gICAgICB0ZXh0OiBjb21tZW50LnRleHQsXG4gICAgfSkpXG4gICk7XG4gIHJldHVybiBkZXZpY2VBbGVydHM7XG59O1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/panels/config/devices/device-detail/integration-elements/zwave_js/device-alerts.ts\n");
+
+/***/ })
+
+};
