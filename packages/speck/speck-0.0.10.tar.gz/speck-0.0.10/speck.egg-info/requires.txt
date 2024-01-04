@@ -1,0 +1,5 @@
+openai
+replicate
+requests
+pydantic
+httpx
