@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: alarm-craft
+Version: 0.2.3
+Summary: A tool to create AWS CloudWatch Alarms for your resources with specified name and tags
+Author-email: Ryo Murai <murai.ry@gmail.com>
+Project-URL: Documentation, https://github.com/ryo-murai/alarm-craft?tab=readme-ov-file#aws-cloudwatch-alarm-craft
+Project-URL: Homepage, https://github.com/ryo-murai/alarm-craft
+Project-URL: Source, https://github.com/ryo-murai/alarm-craft.git
+Project-URL: Issues, https://github.com/ryo-murai/alarm-craft/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3 ==1.34.3
+Requires-Dist: botocore ==1.34.3
+Requires-Dist: jsonschema ==4.20.0
+
+# AWS CloudWatch Alarm Craft
+
+Need to monitor a lot of AWS resouces ?  
+This tool creates AWS CloudWatch Alarms for your resources with specified name and tags.
+
+## Quick Start
+
+1. Install python (>= 3.9), and install `alarm-craft`.
+   ```bash
+   pip install alarm-craft
+   ```
+1. Create a json file like below and save it as `config.json`
+   ```json
+   {
+     "resources": {
+       "lambda": {
+         "target_resource_type": "lambda:function",
+         "alarm": {
+           "namespace": "AWS/Lambda",
+           "metrics": ["Errors"]
+         }
+       }
+     }
+   }
+   ```
+1. Execute the tool.
+   ```bash
+   python alarm-craft -c config.json
+   ```
+   By this execution, the `alarm-craft` creates Cloudwatch Alarms to detect `Error` for your Lambda functions.
+
+### Supported resources
+
+The following resources are currently supported by the `alarm-craft`.
+
+- Lambda Function
+- StepFunctions State Machine
+- APIGateway REST API
+- SNS Topic
+- SQS Queue
+- EventBridge Rule
+
+### Filtering resources
+
+- The alarming target can be filtered by name and/or tags.
+  ```json
+     "lambda": {
+          "target_resource_name_pattern": "^myproj-(dev|prod)-",
+          "target_resource_tags": {
+              "Owner": "mydivision"
+          },
+          ... (omit)
+     }
+  ```
+
+### Configure more
+
+See [config-min-sample.json](config-min-sample.json) for above simple case or [config-sample.json](config-sample.json) for more complex case. For complete configuration specification, refer [Wiki/Configuration](https://github.com/ryo-murai/alarm-craft/wiki/Configuration).
+
+## Usage
+
+See [Wiki](https://github.com/ryo-murai/alarm-craft/wiki).
