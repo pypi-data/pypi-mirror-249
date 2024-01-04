@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+  "setuptools",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov=oomnitza_rule_checker"
+testpaths = "tests"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+ignore_missing_imports = false
+disallow_untyped_defs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unreachable = true
+warn_no_return = true
+warn_return_any = true
+show_error_codes = true
+
+
+[[tool.mypy.overrides]]
+module = "arrow.*"
+ignore_missing_imports = true
