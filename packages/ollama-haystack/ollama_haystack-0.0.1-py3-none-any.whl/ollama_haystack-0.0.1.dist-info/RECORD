@@ -1,0 +1,5 @@
+ollama_haystack/__init__.py,sha256=CReAS8aUIloCXLcIVBf4izOwJH5PxnpyAlid7hcpPiY,196
+ollama_haystack/generator.py,sha256=YKgzgz2POu9U55kv9sdnH0e9HiWcZMl7K45Q3Rok1hQ,4392
+ollama_haystack-0.0.1.dist-info/METADATA,sha256=w7uZqNcn91xhu0-ez0Vu3buxFnaS_ubQqHEJWanjZKI,2223
+ollama_haystack-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+ollama_haystack-0.0.1.dist-info/RECORD,,
