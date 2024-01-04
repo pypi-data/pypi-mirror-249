@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: voice-stream
+Version: 0.1.0
+Summary: A streaming library for creating voice bots using LLMs.  Connects LLMs to speech recognition and speech synthesis APIs.
+Home-page: https://github.com/DaveDeCaprio/voice-stream
+License: MIT
+Author: Dave DeCaprio
+Author-email: daved@alum.mit.edu
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: google
+Provides-Extra: openai
+Provides-Extra: twilio
+Requires-Dist: google-cloud-speech (>=2.23.0) ; extra == "google"
+Requires-Dist: google-cloud-texttospeech (>=2.15.0) ; extra == "google"
+Requires-Dist: langchain (>=0.0.353)
+Requires-Dist: langchain-google-genai (>=0.0.5) ; extra == "google"
+Requires-Dist: openai (>=1.6.1) ; extra == "openai"
+Requires-Dist: pydantic (>=2.5.3)
+Requires-Dist: tiktoken (>=0.5.2) ; extra == "openai"
+Requires-Dist: twilio (>=8.11.0) ; extra == "twilio"
+Project-URL: Repository, https://github.com/DaveDeCaprio/voice-stream
+Description-Content-Type: text/markdown
+
+
