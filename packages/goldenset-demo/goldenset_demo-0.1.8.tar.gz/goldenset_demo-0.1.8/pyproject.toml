@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "goldenset-demo"
+version = "0.1.8"
+description = "SDK of the GoldenSet MVP"
+authors = ["Sebastian <sweisshaar@g.harvard.edu>"]
+readme = "README.md"
+packages = [{include = "goldenset"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+numpy = "^1.25"
+requests = "*"
+# once we have support for non-transformer models,
+# the dependencies below should become an optional "extra"
+# to be install with `pip install goldenset[transformers]`
+torch = "*"
+transformers = "*"
+supabase = "^2.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+python-dotenv = "^1.0.0"
+black = "^23.11.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocstrings = {extras = ["python"], version = ">=0.23.0"}
+mkdocstrings-python= ">=1.7.0"
+mkdocs-material= ">=9.1.2"
+mkdocs-awesome-pages-plugin = ">=2.8.0"
+mktestdocs= ">=0.2.0"
+mkdocs-video = ">=1.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

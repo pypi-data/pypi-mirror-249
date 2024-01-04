@@ -1,0 +1,1 @@
+Python SDk for GoldenSet, the platform for LLM evaluation: pilot.goldenset.io

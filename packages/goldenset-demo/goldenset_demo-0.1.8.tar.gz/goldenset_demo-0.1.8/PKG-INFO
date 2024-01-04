@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: goldenset-demo
+Version: 0.1.8
+Summary: SDK of the GoldenSet MVP
+Author: Sebastian
+Author-email: sweisshaar@g.harvard.edu
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.25,<2.0)
+Requires-Dist: requests
+Requires-Dist: supabase (>=2.0.3,<3.0.0)
+Requires-Dist: torch
+Requires-Dist: transformers
+Description-Content-Type: text/markdown
+
+Python SDk for GoldenSet, the platform for LLM evaluation: pilot.goldenset.io
