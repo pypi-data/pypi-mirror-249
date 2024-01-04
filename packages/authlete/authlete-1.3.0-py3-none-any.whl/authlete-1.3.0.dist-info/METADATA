@@ -1,0 +1,633 @@
+Metadata-Version: 2.1
+Name: authlete
+Version: 1.3.0
+Summary: Python library for Authlete
+Project-URL: Homepage, https://www.authlete.com/
+Project-URL: Repository, https://github.com/authlete/authlete-python.git
+Author-email: "Authlete, Inc." <admin@authlete.com>
+License: 
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+License-File: LICENSE
+Keywords: OAuth,OAuth 2.0,OIDC,OpenID,OpenID Connect
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Requires-Python: >=3.8
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+Authlete Library for Python
+===========================
+
+Overview
+--------
+
+This is the official Python library for [Authlete](https://www.authlete.com/)
+Web APIs.
+
+License
+-------
+
+  Apache License, Version 2.0
+
+Source Code
+-----------
+
+  <code>https://github.com/authlete/authlete-python</code>
+
+PyPI (Python Package Index)
+---------------------------
+
+  <code>https://pypi.org/project/authlete/</code>
+
+Install
+-------
+
+    pip install authlete
+
+Quick Start
+-----------
+
+The following code simulates "Authorization Code Flow". Replace `CLIENT_ID`,
+`SERVICE_API_KEY` and `SERVICE_API_SECRET` in the code with your own properly.
+The code assumes that the client type of the client application is 'public'
+(otherwise client authentication would be required at the token endpoint) and
+the number of registered redirect URIs is one (otherwise `redirect_uri` request
+parameter would be required).
+
+```python
+from authlete.api  import *
+from authlete.conf import *
+from authlete.dto  import *
+
+
+#--------------------------------------------------
+# Your Configuration
+#--------------------------------------------------
+authlete_api_server = 'https://api.authlete.com'
+service_api_key     = 'SERVICE_API_KEY'
+service_api_secret  = 'SERVICE_API_SECRET'
+client_id           = 'CLIENT_ID'
+user_id             = 'USER_ID'
+
+# If the Authlete version is 3.0 or higher
+service_access_token = 'SERVICE_ACCESS_TOKEN'
+service_api_secret   = None
+
+
+#--------------------------------------------------
+# AuthleteApi
+#--------------------------------------------------
+
+# Configuration to access Authlete APIs.
+cnf = AuthleteConfiguration()
+cnf.baseUrl          = authlete_api_server
+cnf.serviceApiKey    = service_api_key
+cnf.serviceApiSecret = service_api_secret
+
+# If the Authlete version is 3.0 or higher
+cnf.apiVersion         = "V3"
+cnf.serviceAccessToken = service_access_token
+cnf.serviceApiSecret   = None
+
+# Authlete API caller
+api = AuthleteApiImpl(cnf)
+
+
+#--------------------------------------------------
+# /api/auth/authorization API
+#--------------------------------------------------
+
+# Prepare a request to /api/auth/authorization API.
+req = AuthorizationRequest()
+req.parameters = 'response_type=code&client_id={}'.format(client_id)
+
+# Call /api/auth/authorization API. The class of the
+# response is authlete.dto.AuthorizationResponse.
+res = api.authorization(req)
+
+
+#--------------------------------------------------
+# /api/auth/authorization/issue API
+#--------------------------------------------------
+
+# Prepare a request to /api/auth/authorization/issue API.
+req = AuthorizationIssueRequest()
+req.ticket  = res.ticket
+req.subject = user_id
+
+# Call /api/auth/authorization/issue API. The class of the
+# response is authlete.dto.AuthorizationIssueResponse.
+res = api.authorizationIssue(req)
+
+# An authorization response returned to the user agent.
+print('HTTP/1.1 302 Found')
+print('Location: {}'.format(res.responseContent))
+
+
+#--------------------------------------------------
+# /api/auth/token API
+#--------------------------------------------------
+
+# Prepare a request to /api/auth/token API.
+req = TokenRequest()
+req.parameters = 'client_id={}&grant_type=authorization_code&code={}'\
+    .format(client_id, res.authorizationCode)
+
+# Call /api/auth/token API. The class of the response is
+# authlete.dto.TokenResponse.
+res = api.token(req)
+
+# A token response returned to the client.
+print("\nHTTP/1.1 200 OK")
+print("Content-Type: application/json\n")
+print(res.responseContent)
+```
+
+Description
+-----------
+
+#### How To Get AuthleteApi
+
+All the methods to communicate with Authlete Web APIs are gathered in
+`authlete.api.AuthleteApi` interface. `authlete.api.AuthleteApiImpl` class is
+the only implementation of the interface. The constructor of `AuthleteApiImpl`
+class requires an instance of `authlete.conf.AuthleteConfiguration` class.
+
+```python
+# Prepare an instance of AuthleteConfiguration.
+cnf = AuthleteConfiguration()
+cnf.baseUrl               = ...
+cnf.serviceOwnerApiKey    = ...
+cnf.serviceOwnerApiSecret = ...
+cnf.serviceApiKey         = ...
+cnf.serviceApiSecret      = ...
+
+# If the Authlete version is 3.0 or higher
+cnf.apiVersion         = "V3"
+cnf.serviceAccessToken = ...
+cnf.serviceApiSecret   = None
+
+# Get an implementation of AuthleteApi interface.
+api = AuthleteApiImpl(cnf)
+```
+
+`AuthleteConfiguration` class has two subclasses, `AuthleteEnvConfiguration`
+and `AuthleteIniConfiguration`.
+
+`AuthleteEnvConfiguration` class reads settings from the following environment
+variables.
+
+- `AUTHLETE_API_VERSION`
+- `AUTHLETE_BASE_URL`
+- `AUTHLETE_SERVICEOWNER_APIKEY`
+- `AUTHLETE_SERVICEOWNER_APISECRET`
+- `AUTHLETE_SERVICE_APIKEY`
+- `AUTHLETE_SERVICE_APISECRET`
+- `AUTHLETE_SERVICE_ACCESSTOKEN`
+
+The constructor of `AuthleteEnvConfiguration` reads the environment variables,
+so what you have to do in Python code is just to create an instance of the
+class as follows.
+
+```python
+cnf = AuthleteEnvConfiguration()
+```
+
+On the other hand, `AuthleteIniConfiguration` class reads an INI file. The
+format of the file `AuthleteIniConfiguration` expects is as follows.
+
+```ini
+[authlete]
+api_version              = ...
+base_url                 = ...
+service_owner.api_key    = ...
+service_owner.api_secret = ...
+service.api_key          = ...
+service.api_secret       = ...
+service.access_token     = ...
+```
+
+The constructor of `AuthleteIniConfiguration` accepts an optional parameter
+which represents the name of an INI file. If the parameter is omitted,
+`authlete.ini` is used as the default file. If the name of your INI file is
+not `authlete.ini`, pass the file name to the constructor explicitly as follows.
+
+```python
+cnf = AuthleteIniConfiguration('configuration.ini')
+```
+
+#### AuthleteApi Settings
+
+`getSettings()` method of `AuthleteApi` interface returns an instance of
+`authlete.api.Settings` class. You can set connection timeout and read timeout
+via the instance.
+
+```python
+settings = api.getSettings()
+settings.connectionTimeout = 5.0
+settings.readTimeout       = 5.0
+```
+
+#### AuthleteApi Method Categories
+
+Methods in `AuthleteApi` interface can be divided into some categories.
+
+##### Methods for Authorization Endpoint Implementation
+
+- `authorization(request)`
+- `authorizationFail(equest)`
+- `authorizationIssue(request)`
+
+##### Methods for Token Endpoint Implementation
+
+- `token(request)`
+- `tokenFail(request)`
+- `tokenIssue(request)`
+- `idTokenReissue(request)`
+
+##### Methods for Service Management
+
+- `createService(service)`
+- `deleteService(serviceApiKey)`
+- `getService(serviceApiKey)`
+- `getServiceList(start=None, end=None)`
+- `updateService(service)`
+
+##### Methods for Client Application Management
+
+- `createClient(client)`
+- `deleteClient(clientId)`
+- `getClient(clientId)`
+- `getClientList(developer=None, start=None, end=None)`
+- `updateClient(client)`
+- `refreshClientSecret(clientId)`
+- `updateClientSecret(clientId, clientSecret)`
+
+##### Methods for Access Token Introspection
+
+- `introspection(request)`
+- `standardIntrospection(request)`
+- `getTokenList(clientIdentifier=None, subject=None, start=None, end=None)`
+
+##### Methods for Revocation Endpoint Implementation
+
+- `revocation(request)`
+
+##### Methods for User Info Endpoint Implementation
+
+- `userinfo(request)`
+- `userinfoIssue(request)`
+
+##### Methods for JWK Set Endpoint Implementation
+
+- `getServiceJwks(pretty=True, includePrivateKeys=False)`
+
+##### Methods for OpenID Connect Discovery
+
+- `getServiceConfiguration(request=None)`
+
+##### Methods for Token Operations
+
+- `tokenCreate(request)`
+- `tokenDelete(token)`
+- `tokenRevoke(request)`
+- `tokenUpdate(request)`
+
+##### Methods for Requestable Scopes per Client (deprecated; Client APIs suffice)
+
+- `getRequestableScopes(clientId)`
+- `setRequestableScopes(clientId, scopes)`
+- `deleteRequestableScopes(clientId)`
+
+##### Methods for Records of Granted Scopes
+
+- `getGrantedScopes(clientId, subject)`
+- `deleteGrantedScopes(clientId, subject)`
+
+##### Methods for Authorization Management on a User-Client Combination Basis
+
+- `deleteClientAuthorization(clientId, subject)`
+- `getClientAuthorizationList(request)`
+- `updateClientAuthorization(clientId, request)`
+
+##### Methods for JOSE
+
+- `verifyJose(request)`
+
+##### Methods for CIBA (Client Initiated Backchannel Authentication)
+
+- `backchannelAuthentication(request)`
+- `backchannelAuthenticationIssue(request)`
+- `backchannelAuthenticationFail(request)`
+- `backchannelAuthenticationComplete(request)`
+
+##### Methods for OpenID Connect Dynamic Client Registration
+
+- `dynamicClientRegister(request)`
+- `dynamicClientGet(request)`
+- `dynamicClientUpdate(request)`
+- `dynamicClientDelete(request)`
+
+##### Methods for Device Flow
+
+- `deviceAuthorization(request)`
+- `deviceComplete(request)`
+- `deviceVerification(request)`
+
+##### Methods for PAR (Pushed Authorization Request)
+
+- `pushAuthorizationRequest(request)`
+
+##### Methods for Grant Management for OAuth 2.0
+
+- `gm(request)`
+
+##### Methods for OpenID Federation 1.0
+
+- `federationConfiguration(request)`
+- `federationRegistration(request)`
+
+##### Methods for Verifiable Credentials
+
+- `credentialIssuerMetadata(request)`
+- `credentialIssuerJwks(request)`
+- `credentialJwtIssuerMetadata(request)`
+- `credentialOfferCreate(request)`
+- `credentialOfferInfo(request)`
+- `credentialSingleParse(request)`
+- `credentialSingleIssue(request)`
+- `credentialBatchParse(request)`
+- `credentialBatchIssue(request)`
+- `credentialDeferredParse(request)`
+- `credentialDeferredIssue(request)`
+
+Authlete Version
+----------------
+
+Some APIs and features don't work (even if they are defined in the `AuthleteApi`
+interface) if Authlete API server you use doesn't support them. For example,
+CIBA works only in Authlete 2.1 onwards. Please contact us if you want to use
+newer Authlete versions.
+
+Features available in Authlete 2.0 and onwards:
+
+- Financial-grade API (FAPI)
+- OAuth 2.0 Mutual TLS Client Authentication and Certificate Bound Access Tokens (MTLS)
+- JWT-based Client Authentication (RFC 7523)
+- Scope attributes
+- UK Open Banking Security Profile
+
+Features available in Authlete 2.1 and onwards:
+
+- Client Initiated Backchannel Authentication (CIBA)
+- JWT Secured Authorization Response Mode for OAuth 2.0 (JARM)
+- Dynamic Client Registration (RFC 7591 & RFC 7592)
+- OAuth 2.0 Device Authorization Grant (Device Flow)
+- JWT-based Access Token
+
+See [Spec Sheet](https://www.authlete.com/legal/spec_sheet/) for further details.
+
+AWS Support
+-----------
+
+This library contains a utility class to help implement a
+[Lambda Authorizer](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)
+that can protect APIs built on [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
+with "certificate-bound access tokens" that conform to
+[RFC 8705](https://www.rfc-editor.org/rfc/rfc8705.html) (OAuth 2.0 Mutual-TLS
+Client Authentication and Certificate-Bound Access Tokens).
+
+Below is a short but completely working example of Lambda authorizer implementation
+that is written using the utility class.
+
+```python
+from authlete.aws.apigateway.authorizer import Authorizer
+
+authorizer = Authorizer()
+
+def lambda_handler(event, context):
+    return authorizer.handle(event, context)
+```
+
+See "[Financial-grade Amazon API Gateway](https://www.authlete.com/developers/tutorial/financial_grade_apigateway/)" for details.
+
+See Also
+--------
+
+- [authlete-python-django](https://github.com/authlete/authlete-python-django/) : Authlete library for Django
+- [django-oauth-server](https://github.com/authlete/django-oauth-server/) : Authorization server implementation using Django
+- [django-resource-server](https://github.com/authlete/django-resource-server/) : Resource server implementation using Django
+
+Contact
+-------
+
+Contact Form : https://www.authlete.com/contact/
+
+| Purpose   | Email Address        |
+|:----------|:---------------------|
+| General   | info@authlete.com    |
+| Sales     | sales@authlete.com   |
+| PR        | pr@authlete.com      |
+| Technical | support@authlete.com |
