@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pypox
+Version: 1.4.1
+Summary: 
+Author: karl robeck alferez
+Author-email: karlalferezfx@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiosqlite (>=0.19.0,<0.20.0)
+Requires-Dist: faker (>=22.0.0,<23.0.0)
+Requires-Dist: fastapi (>=0.108.0,<0.109.0)
+Requires-Dist: httpx (>=0.26.0,<0.27.0)
+Requires-Dist: sqlalchemy (>=2.0.24,<3.0.0)
+Requires-Dist: sqlmodel (>=0.0.14,<0.0.15)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Requires-Dist: uvicorn[standard] (>=0.25.0,<0.26.0)
+Description-Content-Type: text/markdown
+
+# Pypox
+
+Convention based api framework built on top of FastAPI
+
+**Documentation**: <a href="https://po-key.github.io/pypox" target="_blank">https://po-key.github.io/pypox</a>
+
+**Source code**: <a href="https://github.com/Po-key/pypox" target="_blank">https://github.com/Po-key/pypox</a>
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Po-key/package-template.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd your-repository
+   ```
+
+3. Install dependencies using Poetry:
+   ```bash
+   poetry install
+   ```
+
+## Description
+
+This is the base template for po-key system. feel free to use it at any time.
+
+## License
+
+This project is licensed under the MIT LICENSE - see the [LICENSE](LICENSE) file for details.
+
