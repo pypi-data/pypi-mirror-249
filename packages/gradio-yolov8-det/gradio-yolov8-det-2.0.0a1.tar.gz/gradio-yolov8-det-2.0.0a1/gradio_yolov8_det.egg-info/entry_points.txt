@@ -1,0 +1,2 @@
+[console_scripts]
+gradio-yolov8-det = gradio_yolov8_det.gradio_yolov8_det:entrypoint
