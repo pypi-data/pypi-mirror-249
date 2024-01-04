@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: promplate
+Version: 0.3.2
+Summary: cross-language prompt engineering framework
+Home-page: https://promplate.dev/
+License: MIT
+Keywords: prompt,template,nlp,llm
+Author: Muspi Merol
+Author-email: admin@muspimerol.site
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Typing :: Typed
+Provides-Extra: aiofiles
+Provides-Extra: all
+Provides-Extra: httpx
+Provides-Extra: openai
+Requires-Dist: aiofiles (>=23.2,<24.0) ; extra == "aiofiles" or extra == "all"
+Requires-Dist: httpx (>=0.24,<1.0) ; extra == "httpx" or extra == "all"
+Requires-Dist: openai (>=0.27,<2.0) ; extra == "openai" or extra == "all"
+Requires-Dist: typing-extensions (>=4,<5) ; python_version < "3.12"
+Project-URL: Repository, https://github.com/promplate/core
+Description-Content-Type: text/markdown
+
+# Promplate
+
+```text
+</Promplate/> = /prompt/ + <template>
+```
+
+**Promplate** is a prompting framework focusing on developing experience. However, it can also be a super-convenient SDK for simple LLM calls. Promplate progressively enhance your prompting workflow. And it values flexibility as well as perfect conventions. [Learn more](https://docs.promplate.dev/py)
+
+## Installation
+
+```shell
+pip install promplate
+```
+
+## Development
+
+- use `poetry` to manage dependencies.
+- use `isort` to sort import statements.
+- use `black` to format code.
+- use `pyright` to check type annotations.
+
+## IDE Support 🌹
+
+I try to make the syntax compatible with `Jinja2`. So for now I recommend using `Jinja2` highlight settings.
+
+## Future Features (or TODOs?)
+
+- [ ] more documentation
+- [ ] javascript implementation
+- [ ] improve error handling
+  - possible ways would be similar to [`Jinja2`](https://github.com/pallets/jinja/blob/main/src/jinja2/debug.py)
+- [x] streaming support
+- [x] unit tests
+  - coverage report [here](https://promplate-python-coverage.onrender.com/)
+- [x] the order of callbacks is reversed for `on_leave` and `end_process`
+
