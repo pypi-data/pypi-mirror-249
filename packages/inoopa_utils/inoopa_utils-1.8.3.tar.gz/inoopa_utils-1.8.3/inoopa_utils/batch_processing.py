@@ -1,0 +1,110 @@
+import json
+from logging import Logger
+import time
+import traceback
+from functools import partial
+from requests import Session
+from threading import Thread, Event
+from queue import Queue, Empty
+from concurrent.futures import ThreadPoolExecutor
+
+# For local dev purpose only
+from dotenv import load_dotenv
+load_dotenv()
+
+from inoopa_utils.inoopa_logging import create_logger
+from inoopa_utils.rabbitmq_helpers import get_messages_from_queue, push_to_queue
+from inoopa_utils.mongodb_helpers import DbManagerMongo
+
+
+def enrich_companies_optimized(
+    enricher_function: callable, 
+    input_queue_name: str, 
+    enricher_name: str,
+    enricher_need_session: bool = False
+) -> None:
+    """
+    Process the queue of companies to enrich and save them in DB.
+    This queue will be consumed in a separate thread to avoid blocking the main thread (enrichment)
+    It means 2 groups of threads are running in parallel:
+        - a few for enrichment
+        - 1 for saving in DB
+
+    :param enricher_function: function to use to enrich the companies
+    :param input_queue_name: name of the queue containing the companies to enrich with it's params
+    :param dead_letter_queue_name: name of the dead letter queue to push the companies in case of error
+    :param enricher_need_session: whether the enricher function needs a session or not. 
+        When the enricher function makes a lot of requests, it is better to use a session 
+        to avoid creating a new connection for each request. (your function should have a `session` as a parameter)
+    """
+    logger = create_logger(f"INOOPA.ETL.{enricher_name}.BATCH_PROCESSING")
+    dead_letter_queue_name = f"{input_queue_name}_DLQ"
+    db_queue = Queue()
+    # This event will be used to send an exit signal to the DB thread
+    db_thread_exit_signal = Event()
+    # This thread will consume the db_queue and save companies in DB in a separate thread
+    # This is done to avoid blocking the main thread (scraping) when saving in DB (which can take a while)
+    db_manager_thread = Thread(target=_save_companies_in_db, args=(db_queue, db_thread_exit_signal), daemon=True)
+    db_manager_thread.start()
+    
+    while True:
+        # This queue's messages should only contains a list of companies number
+        queue_message = get_messages_from_queue(input_queue_name)
+        if not queue_message:
+            logger.info("No more companies to process, stop...")
+            # Send the exit signal to the DB thread
+            db_thread_exit_signal.set()
+            break
+
+        try:
+            # This will load a list of dict from the queue message. Each dict represent one company to enrich.
+            # This dict should contains the keys the enricher function needs.
+            # The bce_scraper only needs the company number for example. 
+            # So the queue messages should contain a LIST of DICT like this: [{"company_number": "0649.973.640"},...]
+            enricher_function_params = json.loads(queue_message[0])
+            logger.info(f"Enriching {len(enricher_function_params)} companies...")
+            if enricher_need_session:
+                with Session() as session:
+                    with ThreadPoolExecutor() as executor:
+                        enriched_companies = list(executor.map(
+                            partial(enricher_function, dead_letter_queue_name=dead_letter_queue_name, session=session), 
+                            enricher_function_params,
+                        ))
+            else:
+                with ThreadPoolExecutor() as executor:
+                    enriched_companies = list(executor.map(
+                        partial(enricher_function, dead_letter_queue_name=dead_letter_queue_name), 
+                        enricher_function_params,
+                    ))
+            # Add companies to the python queue to be saved in DB
+            if enriched_companies:
+                db_queue.put(enriched_companies)
+        except Exception as ex:
+            logger.error(f"Error: {ex} while processing batch, sending batch to dead-letter-queue: {dead_letter_queue_name}")
+            # print traceback in case of error for debugging purpose
+            traceback.print_exc()
+            push_to_queue(dead_letter_queue_name, enricher_function_params)
+            # Send the exit signal to the DB thread
+            db_thread_exit_signal.set()
+            # Wait for the DB thread to finish before exiting (Wait for all the companies to be saved in DB)
+            db_manager_thread.join()
+            raise ex
+    # Wait for the DB thread to finish before exiting (Wait for all the companies to be saved in DB)
+    db_manager_thread.join()
+
+def _save_companies_in_db(db_python_queue: Queue, exit_signal: Event) -> None:
+    """
+    Save companies in DB.
+    
+    :param db_python_queue: queue containing the companies to save in DB
+    :param exit_signal: event to send an exit signal to the thread
+    """
+    db_manager = DbManagerMongo()
+    # Wait for the python queue to be empty and the exit signal to be set to end the thread
+    while db_python_queue.qsize() > 0 or not exit_signal.is_set():
+        try:
+            # A batch of companies is pulled from the python queue
+            companies = db_python_queue.get()
+            db_manager.update_or_add_many_to_collection(companies)
+        except Empty:
+            time.sleep(1)
