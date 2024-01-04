@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "streamlit-select"
+version = "0.1"
+description = "A Streamlit component to select multiple images"
+authors = ["ayushexel <ayush.chaurarsia@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+include = ["streamlit_dash/frontend/build/**/*"]
+
+
+[tool.poetry.dependencies]
+python = "^3.8, !=3.9.7"
+streamlit = "^1.19.0"
+
+[tool.poetry.dev-dependencies]
+watchdog = "^2.1.9"
+black = "^22.6.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
