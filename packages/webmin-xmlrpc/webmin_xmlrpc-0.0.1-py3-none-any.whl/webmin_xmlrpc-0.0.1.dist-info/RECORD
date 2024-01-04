@@ -1,0 +1,8 @@
+webmin_xmlrpc/__init__.py,sha256=lPIwo7-mFv6LfZejC8bNB5eAa1eYPjKLCkBfNua0Lz8,87
+webmin_xmlrpc/client.py,sha256=lUMDdDf8NSqL3JH-pxx73s4BepHfR2AlnzVD9pkWy8Q,2122
+webmin_xmlrpc/xmlrpc.py,sha256=tU1pbYgaCxAla0zc9fAr5vNFmbia5K2d1CBEIOL69zA,775
+webmin_xmlrpc-0.0.1.dist-info/LICENSE,sha256=8FDXgQXcpzWOVtcFX8MdLdMFlJJjjBXLOkbXOzGnnsQ,1060
+webmin_xmlrpc-0.0.1.dist-info/METADATA,sha256=O8zjsyIy1UE3P1EC1XgK_d2rTUX7oZsNXVDoMEBtpoI,1156
+webmin_xmlrpc-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+webmin_xmlrpc-0.0.1.dist-info/top_level.txt,sha256=mateniL8MAAloX0jydLarpdNr_JqcCljuTi44twc2RA,14
+webmin_xmlrpc-0.0.1.dist-info/RECORD,,
