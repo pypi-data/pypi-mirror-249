@@ -1,0 +1,2 @@
+[console_scripts]
+nbcheck = nbcheck:main

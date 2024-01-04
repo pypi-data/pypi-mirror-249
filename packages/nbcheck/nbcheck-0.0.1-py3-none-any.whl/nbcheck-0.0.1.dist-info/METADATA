@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: nbcheck
+Version: 0.0.1
+Summary: Utility to check the validity of jupyter notebook files
+Project-URL: homepage, https://github.com/furechan/nbcheck
+Author-email: furechan <furechan@xsmail.com>
+License: MIT
+License-File: LICENSE.txt
+Keywords: jupyter,nbformat,notebook,utility,validation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: nbformat
+Provides-Extra: dev
+Requires-Dist: ipykernel; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Notebook format validation utility
+
+This project is a simple utility wrapper around `nbformat` to check the validity of notebook files.
+The utility will return a non zero return code if any of the notebooks has validations errors.
+This may be useful in pre-commit scripts to detect problematic notebooks.
+
+## Usage
+
+```console
+Usage: nbcheck [OPTIONS] [PATH]...
+
+  Check notebooks for validation errors
+
+Options:
+  -r, --recurse  Recurse to sub directories
+  -v, --verbose  Print validation errors
+  --help         Show this message and exit.
+```
+
+## Example
+
+```console
+> nbcheck extras
+pass extras/valid-notebook.ipynb
+fail extras/broken-notebook.ipynb
+fail extras/nbformat-read.ipynb
+```
+
+## Installation
+
+You can install the latest version of this module with `pip` or `pipx`
+
+```console
+pipx install git+ssh://git@github.com/furechan/nbcheck.git
+```
+
+## Related Resources
+- [The Jupyter Notebook Format](https://nbformat.readthedocs.io/en/latest/)
+- [nbfornat API](https://nbformat.readthedocs.io/en/latest/api.html)
