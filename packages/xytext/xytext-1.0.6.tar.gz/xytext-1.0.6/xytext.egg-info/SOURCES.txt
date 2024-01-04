@@ -1,0 +1,8 @@
+setup.py
+xytext/__init__.py
+xytext/api.py
+xytext.egg-info/PKG-INFO
+xytext.egg-info/SOURCES.txt
+xytext.egg-info/dependency_links.txt
+xytext.egg-info/requires.txt
+xytext.egg-info/top_level.txt
