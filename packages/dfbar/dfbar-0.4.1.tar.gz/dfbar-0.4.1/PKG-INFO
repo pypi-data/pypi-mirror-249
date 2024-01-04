@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dfbar
+Version: 0.4.1
+Summary: Dockerfile Build and Run
+Home-page: https://github.com/archmachina/dfbar
+Download-URL: https://pypi.org/project/dfbar/
+Author: Jesse Reichman
+License: MIT
+Keywords: Dockerfile,Build,Run
+Description-Content-Type: text/markdown
+License-File: LICENSE
