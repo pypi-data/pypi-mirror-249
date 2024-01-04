@@ -1,0 +1,12 @@
+cantopy/__init__.py,sha256=GvJCuKz3aEfSuH2Xz3zKL_5M_KkmqT6lfNlJCD-QbQg,127
+cantopy/cantopy.py,sha256=N5u8eFA8xSHJaFuObH_aKtzHzLg5ZVeqauDxPFUimv8,3055
+cantopy/download_manager.py,sha256=WZmvTiyAPJdy6UzhtBd80V7KPhZzLf0alBRtSWiLZ7Q,9474
+cantopy/xenocanto_components/__init__.py,sha256=4mBbwGD-B86jkHKeAnDtjBnoZ9VrGo-feW5-EuPA9GU,324
+cantopy/xenocanto_components/query.py,sha256=oEOTFsMWzWVhqqqF5se5W7h--VQswuLRcgHIiCUIRhY,10543
+cantopy/xenocanto_components/query_result.py,sha256=TpGf6cGBevG8uzhFvD-QitPUr_FYJKTXvUffZlAKU4Y,2362
+cantopy/xenocanto_components/recording.py,sha256=-5M2F3QmRd0urFoBSqV9jAenKMptL994v12MzZ0gwSk,8039
+cantopy/xenocanto_components/result_page.py,sha256=uA8zYAqrvjKv-RbJ7r84W9plz47k21fi-0Np29OK-18,2050
+cantopy-0.0.1.dist-info/METADATA,sha256=ruOo7VnsovuwjzqswVucGh731YnRrFllxRq9bV_RbyY,466
+cantopy-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+cantopy-0.0.1.dist-info/licenses/LICENSE,sha256=grAKSFvVmficryFhSc0Q6N3ctVIDqwqCDXHkM8SBkQQ,1071
+cantopy-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: CantoPy
+Version: 0.0.1
+Summary: A XenoCanto API wrapper for Python
+Project-URL: Homepage, https://github.com/RobbeRDG/CantoPy
+Project-URL: Issues, https://github.com/RobbeRDG/CantoPy/issues
+Author-email: Robbe De Groeve <robbedegroeve@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
