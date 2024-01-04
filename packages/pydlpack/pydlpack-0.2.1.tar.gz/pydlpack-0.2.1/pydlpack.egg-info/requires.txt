@@ -1,0 +1,9 @@
+
+[dev]
+pre-commit
+
+[test]
+pytest
+coverage
+pytest-mock
+numpy
