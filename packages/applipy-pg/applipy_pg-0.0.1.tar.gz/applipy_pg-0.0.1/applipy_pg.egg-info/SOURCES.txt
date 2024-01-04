@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+applipy_pg/__init__.py
+applipy_pg/connection.py
+applipy_pg/handle.py
+applipy_pg/module.py
+applipy_pg/pool_handle.py
+applipy_pg/py.typed
+applipy_pg/version.py
+applipy_pg.egg-info/PKG-INFO
+applipy_pg.egg-info/SOURCES.txt
+applipy_pg.egg-info/dependency_links.txt
+applipy_pg.egg-info/requires.txt
+applipy_pg.egg-info/top_level.txt
