@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: confactory
+Version: 0.1
+Summary: Construct Python objects directly from configuration files
+Project-URL: Source, https://git.sr.ht/~dojoteef/confactory
+Project-URL: Mailing List, https://lists.sr.ht/~dojoteef/confactory
+Author-email: Nader Akoury <~dojoteef/confactory-devel@lists.sr.ht>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Requires-Dist: attrs>=20.3.0
+Requires-Dist: jsonnet<1.0,>=0.12.1
+Requires-Dist: typing-extensions; python_version < '3.8'
+Provides-Extra: codeqa
+Requires-Dist: ruff; extra == 'codeqa'
+Provides-Extra: dev
+Requires-Dist: confactory[codeqa]; extra == 'dev'
+Requires-Dist: confactory[formatters]; extra == 'dev'
+Requires-Dist: confactory[typing]; extra == 'dev'
+Provides-Extra: formatters
+Requires-Dist: black; extra == 'formatters'
+Requires-Dist: isort; extra == 'formatters'
+Provides-Extra: typing
+Requires-Dist: mypy; extra == 'typing'
+Description-Content-Type: text/markdown
+
+# *confactory*
+
+*confactory* allows building Python objects directly from configuration files.
+Under the hood, it uses [*attrs*](https://attrs.org) which makes annotating class properties dead simple.
+These annotations are inspected at runtime to enable instantiating Python classes that derive from `confactory.Catalog`.
+This can be used as a safer alternative to pickling, since you get to control what can be instantiated via `confactory.Catalog`.
+
+Simply load a configuration file with a (possibly nested) definition of an object, and *confactory* will build the associated Python object.
+*confactory* also includes support for [Jsonnet](https://jsonnet.org), allowing for compact representation of Python objects with re-usable components.
+
+NOTE: *confactory* is still early in development, so large API and functionality changes might occur.
+Future versions will likely add support for additional configuration languages, e.g. YAML and TOML.
+
+## A Simple Example
+
+Let's say you have the json file `vehicles.json`, that defines a bunch of vehicle types:
+
+```json
+[
+    {
+        "type": "Automobile",
+        "name": "Sedan",
+        "seats": 4,
+        "fuel": "hybrid",
+    },
+    {
+        "type": "Automobile",
+        "name": "Convertible",
+        "seats": 2,
+        "fuel": "electric",
+        "features": [{"type": "Rims", "material": "alloy"}, {"type": "Sunroof", "automatic": true}]
+    },
+    {
+        "type": "Bicycle",
+        "name": "Bicycle",
+        "seats": 1,
+        "frame": "steel"
+    },
+    {
+        "type": "Bicycle",
+        "name": "Tandem Bicycle",
+        "seats": 2,
+        "frame": "steel"
+    },
+]
+```
+
+you can construct the associated Python objects like so:
+
+```python
+from enum import auto, StrEnum
+from typing import List, Optional
+
+from confactory import Catalog, configurable
+
+class Fuel(StrEnum):
+    combustion = auto()
+    electric = auto()
+    hybrid = auto()
+
+class Material(StrEnum):
+    alloy = auto()
+    steel = auto()
+
+@configurable
+class Vehicle(Catalog):
+    name: str
+    seats: int
+
+    def drive(self):
+        pass
+
+@configurable
+class Feature(Catalog):
+    pass
+
+@configurable
+class Sunroof(Feature):
+    automatic: bool
+
+@configurable
+class Rims(Feature):
+    material: Material
+
+@configurable
+class Automobile(Vehicle):
+    fuel: Fuel
+    features: List[Feature] = []
+
+    def drive(self):
+        print(f"{self.name} goes Vroom!\n")
+
+@configurable
+class Bicycle(Vehicle):
+    frame: Material
+
+    def drive(self):
+        print(f"{self.name} uses Pedal Power!\n")
+
+vehicles = Vehicle.from_config("vehicles.json", allow_multiple=True)
+for vehicle in vehicles:
+    print(vehicle)
+    vehicle.drive()
+```
+
+Here's the output you'd see:
+
+```
+Automobile(name='Sedan', seats=4, fuel='hybrid', features=[])
+Sedan goes Vroom!
+
+Automobile(name='Convertible', seats=2, fuel='electric', features=[Rims(material='alloy'), Sunroof(automatic=True)])
+Convertible goes Vroom!
+
+Bicycle(name='Bicycle', seats=1, frame='steel')
+Bicycle uses Pedal Power!
+
+Bicycle(name='Tandem Bicycle', seats=2, frame='steel')
+Tandem Bicycle uses Pedal Power!
+
+```
+
+Note, `StrEnum` is new in Python 3.11, so if you have an older version of Python, to run the code above you'll need to modify the enums like so:
+
+```python
+from enum import Enum
+
+class Fuel(Enum):
+    combustion = "combustion"
+    electric = "electric"
+    hybrid = "hybrid"
+
+class Material(Enum):
+    alloy = "alloy"
+    steel = "steel"
+```
+
+## An Alternative to Pickle
+
+In Python the standard [pickle](https://docs.python.org/3/library/pickle.html) module is well-known to be unsafe, as it can execute arbitrary code during de-serialization of Python objects.
+To make [pickle](https://docs.python.org/3/library/pickle.html) safer, the module includes the [Unpickler.find\_class](https://docs.python.org/3/library/pickle.html#pickle.Unpickler.find_class) method to allow [restricting globals](https://docs.python.org/3/library/pickle.html#restricting-globals).
+This is a strictly *opt-out* approach; any Python object can be de-serialized *implicitly* --- developers then must decide what to filter out.
+
+With `confactory.Catalog` you *expliclty* decide what types can be constructed into Python objects.
+This makes it less likely that you'll accidentally open the door for arbitrary code execution.
+Though of course, if you register a class that has unsafe side-effects, then you can certainly introduce security risks.
+The important point is that *you* decide what risk is acceptable with an *opt-in* approach.
+
+## What about cattrs?
+
+While [cattrs](https://catt.rs) is an excellent package that also enables constructing objects from configuration files, it has a different philosophy.
+This is was even more true when I first developed my code back in 2020 (though I've only recently released it publicly).
+[cattrs](https://catt.rs) focuses on allowing the creation of structured Python objects from potentially unstructured data.
+This gives great flexibility, but means users of the package are expected to understand their data format such that they can pass the expected types in during object construction.
+That requirement has been relaxed a bit with the introduction of [cattrs.strategies.include\_subclasses](https://catt.rs/en/stable/cattrs.strategies.html#cattrs.strategies.include_subclasses) and [cattrs.strategies.use\_class\_methods](https://catt.rs/en/stable/cattrs.strategies.html#cattrs.strategies.use_class_methods) which are new as of 2023.
+
+Rather the approach taken here is a bit more opinionated, but reduces boilerplate even more.
+This was a very important factor, which enabled the creation of the sister package [cresset](https://git.sr.ht/~dojoteef/cresset) which allows defining Pytorch `torch.nn.Module`s through configuration files.
+Many of the design decisions made for this package were specifically created with [cresset](https://git.sr.ht/~dojoteef/cresset) in mind.
+
+# License
+
+This repository is licensed under the MIT license.
+
+```
+SPDX-License-Identifer: MIT
+```
