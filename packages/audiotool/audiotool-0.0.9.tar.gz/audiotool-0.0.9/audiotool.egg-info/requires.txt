@@ -1,0 +1,9 @@
+pyannote.audio
+torchaudio
+torch
+pydub
+numpy
+rotary_embedding_torch
+modelscope
+funasr
+umap-learn
