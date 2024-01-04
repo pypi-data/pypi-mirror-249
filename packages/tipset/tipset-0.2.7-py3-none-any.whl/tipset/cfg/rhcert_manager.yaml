@@ -1,0 +1,10 @@
+# SSO server address for retriving JWT token
+sso_server: ''
+device_auth_url: ''
+# sso username and password for retriving JWT token, this method is deprecated.
+username: ''
+password: ''
+# PNS server address for retriving products, versions, platforms, cert types
+pns_server: ''
+# access web address for managering rhcert ticket
+access_server: ''
