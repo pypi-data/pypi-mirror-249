@@ -1,0 +1,3 @@
+[console_scripts]
+autoversioner = autoversioner.autoversioner:main
+
