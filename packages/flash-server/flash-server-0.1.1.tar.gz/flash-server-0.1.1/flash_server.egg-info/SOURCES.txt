@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+flash_server.egg-info/PKG-INFO
+flash_server.egg-info/SOURCES.txt
+flash_server.egg-info/dependency_links.txt
+flash_server.egg-info/top_level.txt
