@@ -1,0 +1,11 @@
+
+[intervaltree]
+intervaltree>=3.0.0
+
+[ncls]
+ncls>=0.0.66
+numpy
+
+[tests]
+pytest
+pytest-mock
