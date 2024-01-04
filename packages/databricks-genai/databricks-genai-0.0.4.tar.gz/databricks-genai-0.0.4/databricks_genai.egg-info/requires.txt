@@ -1,0 +1,17 @@
+databricks-sdk>=0.14.0
+typing_extensions>=4.7.1
+mosaicml-cli<0.5.33,>=0.5.30
+
+[all]
+pylint>=3.0.0
+isort>=5.9.3
+yapf>=0.40.0
+pyright==1.1.256
+pytest>=7.4.0
+
+[dev]
+isort>=5.9.3
+pylint>=3.0.0
+pyright==1.1.256
+pytest>=7.4.0
+yapf>=0.40.0
