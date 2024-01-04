@@ -1,0 +1,33 @@
+[tool.black]
+line-length = 100
+skip-string-normalization = true
+preview = true
+target-version = ["py36"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.tox
+  | \.venv
+  | \.history
+  | build
+  | dist
+  | docs
+  | hack
+)/
+'''
+[tool.isort]
+profile = "black"
+line_length = 100
+[build-system]
+# Any changes should be copied into requirements.txt, setup.cfg, and/or test-requirements.txt
+requires = [
+    "setuptools>=46.4",
+]
+build-backend = "setuptools.build_meta"
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
