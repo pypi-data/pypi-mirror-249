@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+vietnamese_poem_classifier/__init__.py
+vietnamese_poem_classifier/poem_classifier.py
+vietnamese_poem_classifier/rhymes.txt
+vietnamese_poem_classifier/start_vowels.txt
+vietnamese_poem_classifier.egg-info/PKG-INFO
+vietnamese_poem_classifier.egg-info/SOURCES.txt
+vietnamese_poem_classifier.egg-info/dependency_links.txt
+vietnamese_poem_classifier.egg-info/entry_points.txt
+vietnamese_poem_classifier.egg-info/requires.txt
+vietnamese_poem_classifier.egg-info/top_level.txt
