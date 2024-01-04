@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pysampletoolkit.egg-info/PKG-INFO
+pysampletoolkit.egg-info/SOURCES.txt
+pysampletoolkit.egg-info/dependency_links.txt
+pysampletoolkit.egg-info/top_level.txt
