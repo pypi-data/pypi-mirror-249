@@ -1,0 +1,88 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "unknown": "Odottamaton virhe"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Palvelin"
+                },
+                "data_description": {
+                    "host": "Renson Endura delta -laitteen is\u00e4nt\u00e4nimi tai IP-osoite."
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "reset_filter": {
+                "name": "Suodattimen laskurin nollaus"
+            },
+            "sync_time": {
+                "name": "Synkronoi aika laitteen kanssa"
+            }
+        },
+        "sensor": {
+            "breeze_level": {
+                "state": {
+                    "off": "Pois"
+                }
+            },
+            "manual_level": {
+                "state": {
+                    "off": "Pois"
+                }
+            },
+            "ventilation_level": {
+                "state": {
+                    "off": "Pois"
+                }
+            }
+        }
+    },
+    "selector": {
+        "level_setting": {
+            "options": {
+                "off": "Pois"
+            }
+        }
+    },
+    "services": {
+        "set_breeze": {
+            "description": "Aseta ilmanvaihtoj\u00e4rjestelm\u00e4n tuuletustoiminto.",
+            "fields": {
+                "activate": {
+                    "description": "Tuuletusominaisuuden ottaminen k\u00e4ytt\u00f6\u00f6n tai poistaminen k\u00e4yt\u00f6st\u00e4",
+                    "name": "Aktivoi"
+                },
+                "breeze_level": {
+                    "description": "Ilmanvaihdon taso, kun tuuletustoiminto on aktivoitu"
+                },
+                "temperature": {
+                    "description": "L\u00e4mp\u00f6tila, jolloin tuuletustoiminto on aktivoitava",
+                    "name": "L\u00e4mp\u00f6tila"
+                }
+            },
+            "name": "Aseta tuuletus"
+        },
+        "set_pollution_settings": {
+            "description": "Aseta kaikki ilmanvaihtoj\u00e4rjestelm\u00e4n ep\u00e4puhtausasetukset.",
+            "fields": {
+                "airquality_control": {
+                    "description": "Ota ilmanlaadun s\u00e4\u00e4t\u00f6 k\u00e4ytt\u00f6\u00f6n tai poista se k\u00e4yt\u00f6st\u00e4",
+                    "name": "Ota ilmanlaadun valvonta k\u00e4ytt\u00f6\u00f6n"
+                },
+                "co2_control": {
+                    "description": "Aktivoi tai poista CO2-s\u00e4\u00e4t\u00f6 k\u00e4yt\u00f6st\u00e4",
+                    "name": "Ota CO2-s\u00e4\u00e4t\u00f6 k\u00e4ytt\u00f6\u00f6n"
+                },
+                "co2_hysteresis": {
+                    "description": "Asettaa hiilidioksidip\u00e4\u00e4st\u00f6jen kynnysarvon hystereesitason ppm:n\u00e4.",
+                    "name": "CO2-hystereesi"
+                }
+            }
+        }
+    }
+}

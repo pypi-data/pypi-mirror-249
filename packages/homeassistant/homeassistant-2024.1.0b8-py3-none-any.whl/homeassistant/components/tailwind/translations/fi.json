@@ -1,0 +1,35 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "reauth_successful": "Uudelleentodennus onnistui",
+            "unknown": "Odottamaton virhe"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus",
+            "unknown": "Odottamaton virhe"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data_description": {
+                    "token": "L\u00f6yd\u00e4t paikallisen ohjausavaimen tunnuksen siirtym\u00e4ll\u00e4 [Tailwind-verkkoportaaliin]({url}), kirjautumalla sis\u00e4\u00e4n Tailwind-tilill\u00e4si ja valitsemalla [**Local Control Key**]({url}) -v\u00e4lilehden. N\u00e4ytetty 6-numeroinen luku on paikallisen ohjausavaimen tunnus."
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Palvelin"
+                },
+                "data_description": {
+                    "token": "L\u00f6yd\u00e4t paikallisen ohjausavaimen tunnuksen siirtym\u00e4ll\u00e4 [Tailwind-verkkoportaaliin]({url}), kirjautumalla sis\u00e4\u00e4n Tailwind-tilill\u00e4si ja valitsemalla [**Local Control Key**]({url}) -v\u00e4lilehden. N\u00e4ytetty 6-numeroinen luku on paikallisen ohjausavaimen tunnus."
+                }
+            },
+            "zeroconf_confirm": {
+                "data_description": {
+                    "token": "L\u00f6yd\u00e4t paikallisen ohjausavaimen tunnuksen siirtym\u00e4ll\u00e4 [Tailwind-verkkoportaaliin]({url}), kirjautumalla sis\u00e4\u00e4n Tailwind-tilill\u00e4si ja valitsemalla [**Local Control Key**]({url}) -v\u00e4lilehden. N\u00e4ytetty 6-numeroinen luku on paikallisen ohjausavaimen tunnus."
+                }
+            }
+        }
+    }
+}

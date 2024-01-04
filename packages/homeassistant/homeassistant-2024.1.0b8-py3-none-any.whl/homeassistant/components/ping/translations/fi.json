@@ -1,0 +1,31 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Palvelin"
+                },
+                "data_description": {
+                    "host": "Sen laitteen is\u00e4nt\u00e4nimi tai IP-osoite, jota haluat pingata."
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "host": "Palvelin"
+                }
+            }
+        }
+    },
+    "services": {
+        "reload": {
+            "name": "Uudelleenlataa"
+        }
+    }
+}

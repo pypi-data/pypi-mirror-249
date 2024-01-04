@@ -1,0 +1,8 @@
+{
+    "issues": {
+        "deprecated_beat": {
+            "description": "Odstr\u00e1\u0148te k\u013e\u00fa\u010d `{config_key}` z polo\u017eky `{display_options}` pre polo\u017eku {integration}` v s\u00fabore configuration.yaml a re\u0161tartujte aplik\u00e1ciu Home Assistant, aby ste tento probl\u00e9m odstr\u00e1nili.",
+            "title": "Odstr\u00e1ni sa sn\u00edma\u010d \u010dasu a d\u00e1tumu `{config_key}`"
+        }
+    }
+}
