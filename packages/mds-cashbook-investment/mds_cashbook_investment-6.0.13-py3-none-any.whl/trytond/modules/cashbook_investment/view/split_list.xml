@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds.de for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/tree/field[@name='amount_2nd_currency']" position="after">
+        <field name="quantity" symbol="quantity_uom"/>
+        <field name="quantity_2nd_uom" symbol="quantity2nd"/>
+    </xpath>
+
+</data>

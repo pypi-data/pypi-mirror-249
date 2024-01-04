@@ -1,0 +1,372 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.message,text:msg_btype_asset"
+msgid "Asset"
+msgstr "Asset"
+
+msgctxt "model:ir.message,text:msg_line_quantity_not_set"
+msgid "Quantity must be set for line '%(linetxt)s'."
+msgstr "Quantity must be set for line '%(linetxt)s'."
+
+msgctxt "model:ir.message,text:msg_line_sign_mismatch"
+msgid "Quantity and Amount must with same sign for line %(linetxt)s."
+msgstr "Quantity and Amount must with same sign for line %(linetxt)s."
+
+msgctxt "model:ir.message,text:msg_uomcat_mismatch"
+msgid "Cannot transfer quantities between cashbooks with different unit-categories (%(cat1)s != %(cat2)s)."
+msgstr "Cannot transfer quantities between cashbooks with different unit-categories (%(cat1)s != %(cat2)s)."
+
+msgctxt "model:ir.ui.menu,name:menu_assetconf"
+msgid "Asset setting"
+msgstr "Asset setting"
+
+msgctxt "model:ir.action,name:act_assetconf_form"
+msgid "Asset setting"
+msgstr "Asset setting"
+
+msgctxt "view:cashbook.book:"
+msgid "Asset"
+msgstr "Asset"
+
+msgctxt "view:cashbook.book:"
+msgid "Quantity"
+msgstr "Quantity"
+
+msgctxt "view:cashbook.book:"
+msgid "Fees and dividends"
+msgstr "Fees and dividends"
+
+msgctxt "view:cashbook.book:"
+msgid "Current valuation of the investment"
+msgstr "Current valuation of the investment"
+
+msgctxt "field:cashbook.book,asset:"
+msgid "Asset"
+msgstr "Asset"
+
+msgctxt "field:cashbook.book,quantity_digits:"
+msgid "Digits"
+msgstr "Digits"
+
+msgctxt "help:cashbook.book,quantity_digits:"
+msgid "Quantity Digits"
+msgstr "Quantity Digits"
+
+msgctxt "help:cashbook.book,asset_uomcat:"
+msgid "UOM Category"
+msgstr "UOM Category"
+
+msgctxt "field:cashbook.book,quantity_uom:"
+msgid "UOM"
+msgstr "UOM"
+
+msgctxt "field:cashbook.book,symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:cashbook.book,asset_symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:cashbook.book,quantity:"
+msgid "Quantity"
+msgstr "Quantity"
+
+msgctxt "help:cashbook.book,quantity:"
+msgid "Quantity of assets until to date"
+msgstr "Quantity of assets until to date"
+
+msgctxt "field:cashbook.book,quantity_all:"
+msgid "Total Quantity"
+msgstr "Total Quantity"
+
+msgctxt "help:cashbook.book,quantity_all:"
+msgid "Total quantity of all assets"
+msgstr "Total quantity of all assets"
+
+msgctxt "field:cashbook.book,current_value:"
+msgid "Value"
+msgstr "Value"
+
+msgctxt "help:cashbook.book,current_value:"
+msgid "Valuation of the investment based on the current stock market price."
+msgstr "Valuation of the investment based on the current stock market price."
+
+msgctxt "field:cashbook.book,current_value_ref:"
+msgid "Value (Ref.)"
+msgstr "Value (Ref.)"
+
+msgctxt "help:cashbook.book,current_value_ref:"
+msgid "Valuation of the investment based on the current stock exchange price, converted into the company currency."
+msgstr "Valuation of the investment based on the current stock exchange price, converted into the company currency."
+
+msgctxt "field:cashbook.book,diff_amount:"
+msgid "Difference"
+msgstr "Difference"
+
+msgctxt "help:cashbook.book,diff_amount:"
+msgid "Difference between acquisition value and current value"
+msgstr "Difference between acquisition value and current value"
+
+msgctxt "field:cashbook.book,diff_percent:"
+msgid "Percent"
+msgstr "Percent"
+
+msgctxt "help:cashbook.book,diff_percent:"
+msgid "percentage performance since acquisition"
+msgstr "percentage performance since acquisition"
+
+msgctxt "field:cashbook.book,current_rate:"
+msgid "Rate"
+msgstr "Rate"
+
+msgctxt "help:cashbook.book,current_rate:"
+msgid "Rate per unit of investment based on current stock exchange price."
+msgstr "Rate per unit of investment based on current stock exchange price."
+
+msgctxt "field:cashbook.book,yield_dividend_total:"
+msgid "Dividend"
+msgstr "Dividend"
+
+msgctxt "help:cashbook.book,yield_dividend_total:"
+msgid "Total dividends received"
+msgstr "Total dividends received"
+
+msgctxt "field:cashbook.book,yield_dividend_12m:"
+msgid "Dividend 1y"
+msgstr "Dividend 1y"
+
+msgctxt "help:cashbook.book,yield_dividend_12m:"
+msgid "Dividends received in the last twelve months"
+msgstr "Dividends received in the last twelve months"
+
+msgctxt "field:cashbook.book,yield_fee_total:"
+msgid "Trade Fee"
+msgstr "Trade Fee"
+
+msgctxt "help:cashbook.book,yield_fee_total:"
+msgid "Total trade fees payed"
+msgstr "Total trade fees payed"
+
+msgctxt "field:cashbook.book,yield_fee_12m:"
+msgid "Trade Fee 1y"
+msgstr "Trade Fee 1y"
+
+msgctxt "help:cashbook.book,yield_fee_12m:"
+msgid "Trade fees payed in the last twelve month"
+msgstr "Trade fees payed in the last twelve month"
+
+msgctxt "field:cashbook.book,yield_sales:"
+msgid "Sales"
+msgstr "Sales"
+
+msgctxt "help:cashbook.book,yield_sales:"
+msgid "Total profit or loss on sale of shares."
+msgstr "Total profit or loss on sale of shares."
+
+msgctxt "field:cashbook.book,yield_sales_12m:"
+msgid "Sales 1y"
+msgstr "Sales 1y"
+
+msgctxt "help:cashbook.book,yield_sales_12m:"
+msgid "Total profit or loss on sale of shares in the last twelve month."
+msgstr "Total profit or loss on sale of shares in the last twelve month."
+
+msgctxt "field:cashbook.book,yield_balance:"
+msgid "Total Yield"
+msgstr "Total Yield"
+
+msgctxt "help:cashbook.book,yield_balance:"
+msgid "Total income: price gain + dividends + sales gains - fees"
+msgstr "Total income: price gain + dividends + sales gains - fees"
+
+msgctxt "field:cashbook.book,purchase_amount:"
+msgid "Purchase Amount"
+msgstr "Purchase Amount"
+
+msgctxt "help:cashbook.book,purchase_amount:"
+msgid "Total purchase amount, from shares and fees."
+msgstr "Total purchase amount, from shares and fees."
+
+msgctxt "field:cashbook.split,quantity_digits:"
+msgid "Digits"
+msgstr "Digits"
+
+msgctxt "field:cashbook.split,quantity:"
+msgid "Quantity"
+msgstr "Quantity"
+
+msgctxt "field:cashbook.split,quantity_uom:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:cashbook.split,quantity_2nd_uom:"
+msgid "Quantity Second UOM"
+msgstr "Quantity Second UOM"
+
+msgctxt "field:cashbook.split,quantity2nd:"
+msgid "2nd UOM"
+msgstr "2nd UOM"
+
+msgctxt "field:cashbook.split,quantity2nd_digits:"
+msgid "2nd UOM Digits"
+msgstr "2nd UOM Digits"
+
+msgctxt "field:cashbook.split,factor_2nd_uom:"
+msgid "Conversion factor"
+msgstr "Conversion factor"
+
+msgctxt "help:cashbook.split,factor_2nd_uom:"
+msgid "Conversion factor between the units of the participating cash books."
+msgstr "Conversion factor between the units of the participating cash books."
+
+msgctxt "view:cashbook.line:"
+msgid "Performance"
+msgstr "Performance"
+
+msgctxt "field:cashbook.line,quantity_digits:"
+msgid "Digits"
+msgstr "Digits"
+
+msgctxt "field:cashbook.line,quantity:"
+msgid "Quantity"
+msgstr "Quantity"
+
+msgctxt "field:cashbook.line,quantity_credit:"
+msgid "Quantity Credit"
+msgstr "Quantity Credit"
+
+msgctxt "field:cashbook.line,quantity_debit:"
+msgid "Quantity Debit"
+msgstr "Quantity Debit"
+
+msgctxt "field:cashbook.line,quantity_symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:cashbook.line,asset_rate:"
+msgid "Rate"
+msgstr "Rate"
+
+msgctxt "field:cashbook.line,quantity_balance:"
+msgid "Quantity"
+msgstr "Quantity"
+
+msgctxt "help:cashbook.line,quantity_balance:"
+msgid "Number of shares in the cashbook up to the current row if the default sort applies."
+msgstr "Number of shares in the cashbook up to the current row if the default sort applies."
+
+msgctxt "field:cashbook.line,quantity_2nd_uom:"
+msgid "Quantity Second UOM"
+msgstr "Quantity Second UOM"
+
+msgctxt "field:cashbook.line,quantity2nd:"
+msgid "2nd UOM"
+msgstr "2nd UOM"
+
+msgctxt "field:cashbook.line,quantity2nd_digits:"
+msgid "2nd UOM Digits"
+msgstr "2nd UOM Digits"
+
+msgctxt "field:cashbook.line,factor_2nd_uom:"
+msgid "Conversion factor"
+msgstr "Conversion factor"
+
+msgctxt "help:cashbook.line,factor_2nd_uom:"
+msgid "Conversion factor between the units of the participating cash books."
+msgstr "Conversion factor between the units of the participating cash books."
+
+msgctxt "field:cashbook.line,splitline_has_quantity:"
+msgid "has quantity"
+msgstr "has quantity"
+
+msgctxt "field:cashbook.line,current_value:"
+msgid "Value"
+msgstr "Value"
+
+msgctxt "help:cashbook.line,current_value:"
+msgid "Valuation of the investment based on the current stock market price."
+msgstr "Valuation of the investment based on the current stock market price."
+
+msgctxt "field:cashbook.line,diff_amount:"
+msgid "Difference"
+msgstr "Difference"
+
+msgctxt "help:cashbook.line,diff_amount:"
+msgid "Difference between acquisition value and current value"
+msgstr "Difference between acquisition value and current value"
+
+msgctxt "field:cashbook.line,diff_percent:"
+msgid "Percent"
+msgstr "Percent"
+
+msgctxt "help:cashbook.line,diff_percent:"
+msgid "percentage performance since acquisition"
+msgstr "percentage performance since acquisition"
+
+msgctxt "field:cashbook.line,trade_fee:"
+msgid "Fee"
+msgstr "Fee"
+
+msgctxt "help:cashbook.line,trade_fee:"
+msgid "Trading fee for the current booking line."
+msgstr "Trading fee for the current booking line."
+
+msgctxt "field:cashbook.line,asset_dividend:"
+msgid "Dividend"
+msgstr "Dividend"
+
+msgctxt "help:cashbook.line,asset_dividend:"
+msgid "Dividend received at the current booking line."
+msgstr "Dividend received at the current booking line."
+
+msgctxt "field:cashbook.line,asset_gainloss:"
+msgid "Profit/Loss"
+msgstr "Profit/Loss"
+
+msgctxt "help:cashbook.line,asset_gainloss:"
+msgid "Profit or loss on sale on the current booking line."
+msgstr "Profit or loss on sale on the current booking line."
+
+msgctxt "field:cashbook.recon,start_quantity:"
+msgid "Start Quantity"
+msgstr "Start Quantity"
+
+msgctxt "field:cashbook.recon,end_quantity:"
+msgid "End Quantity"
+msgstr "End Quantity"
+
+msgctxt "field:cashbook.recon,quantity_digits:"
+msgid "Quantity Digits"
+msgstr "Quantity Digits"
+
+msgctxt "field:cashbook.recon,quantity_uom:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "model:cashbook.assetconf,name:"
+msgid "Asset setting"
+msgstr "Asset setting"
+
+msgctxt "field:cashbook.assetconf,fee_category:"
+msgid "Fee category"
+msgstr "Fee category"
+
+msgctxt "help:cashbook.assetconf,fee_category:"
+msgid "Category for fees when trading assets."
+msgstr "Category for fees when trading assets."
+
+msgctxt "field:cashbook.assetconf,dividend_category:"
+msgid "Dividend category"
+msgstr "Dividend category"
+
+msgctxt "help:cashbook.assetconf,dividend_category:"
+msgid "Category for dividend paid out."
+msgstr "Category for dividend paid out."
+
+msgctxt "field:cashbook.assetconf,gainloss_book:"
+msgid "Profit/Loss Cashbook"
+msgstr "Profit/Loss Cashbook"
+
