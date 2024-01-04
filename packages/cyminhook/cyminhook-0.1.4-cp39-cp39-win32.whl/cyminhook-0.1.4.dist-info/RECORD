@@ -1,0 +1,14 @@
+cyminhook/__init__.py,sha256=nl-8-r4jVXadSfDT6-zQM24BCiL6uJT6N4KVnUBLJnk,108
+cyminhook/_cyminhook.cp39-win32.pyd,sha256=z686VNph7U8ZYpVTwetQQ44zgdoTgjU-BX3cgpmYBjI,74240
+cyminhook-0.1.4.data/data/include/MinHook.h,sha256=w2COWEvZZZrr27TIyCWFYFmJGTYj8kBVLTXEMxGz0xo,7715
+cyminhook-0.1.4.data/data/lib/minhook.x32.lib,sha256=ehxEI3h_RJ-R35xPA-XIa2hJi0YvDcgwHF51cnhyxss,29162
+cyminhook-0.1.4.data/data/lib/minhook/minhook-config-version.cmake,sha256=gGR-_gbnSfTMlVyrsRliLQWGf0b6G1O_fEP1v5ifPJw,1904
+cyminhook-0.1.4.data/data/lib/minhook/minhook-config.cmake,sha256=6Wq3VaGBP3SO1qrOupdb-sytHPgFr1VpxTzwfYQrI9M,2731
+cyminhook-0.1.4.data/data/lib/minhook/minhook-targets-release.cmake,sha256=ql0h-vZz7gOn1WFFSs1Lk5U44SI5awv1R2oI3Q2kGKU,878
+cyminhook-0.1.4.data/data/lib/minhook/minhook-targets.cmake,sha256=qmYfLjIRo2eb0W79s7KV4yCtcqE9dJZ4y2w3jUb8XX4,3945
+cyminhook-0.1.4.dist-info/LICENSE,sha256=xWOiVZ-w5RNNiDykPGRnr2irhb6_r7HxfLJGpdMi874,1089
+cyminhook-0.1.4.dist-info/METADATA,sha256=ghv1J13sNs4qYH3biWmhGN3z2ceiwnBNSjq3KLhM6cs,2530
+cyminhook-0.1.4.dist-info/NOTICE,sha256=PCPd6QED1azmv8N68YgKsQVNXCuSdi0w7bfqcuuks4E,4462
+cyminhook-0.1.4.dist-info/WHEEL,sha256=Y9GUTrz9Gbj3nYX5fFKPlPZzKZwJw1gEmimRTSzWPSE,90
+cyminhook-0.1.4.dist-info/top_level.txt,sha256=VpGPIBYMnBrllyA9qOt9bmVl8ntTsbahq831-XRnQMU,10
+cyminhook-0.1.4.dist-info/RECORD,,
