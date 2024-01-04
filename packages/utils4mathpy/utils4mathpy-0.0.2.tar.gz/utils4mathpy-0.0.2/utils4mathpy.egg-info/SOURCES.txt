@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+utils4mathpy/__init__.py
+utils4mathpy/calculator.py
+utils4mathpy.egg-info/PKG-INFO
+utils4mathpy.egg-info/SOURCES.txt
+utils4mathpy.egg-info/dependency_links.txt
+utils4mathpy.egg-info/top_level.txt
