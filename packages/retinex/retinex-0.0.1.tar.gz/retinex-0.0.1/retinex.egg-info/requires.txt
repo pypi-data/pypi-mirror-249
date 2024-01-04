@@ -1,0 +1,4 @@
+scikit-image>=0.20
+numpy
+
+[test]
