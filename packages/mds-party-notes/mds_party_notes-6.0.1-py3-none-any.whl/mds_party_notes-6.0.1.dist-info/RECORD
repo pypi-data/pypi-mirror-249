@@ -1,0 +1,17 @@
+trytond/modules/party_notes/README.rst,sha256=XEgh6Et1GpGI2tg3gGP93MweI5sVJ9Gjb3kEcS0zXjk,294
+trytond/modules/party_notes/__init__.py,sha256=2lsbnj5PsH58_JljiEObO4MphuvlgxS9A2tYBPYdwMM,362
+trytond/modules/party_notes/party.py,sha256=cooK1KR2pbBHE9eHgnQnOk6FHd39aIxfR9SFipLKq74,2266
+trytond/modules/party_notes/party.xml,sha256=6_0pVRL3sDCqNXk99F2CvFgzk4pW4DlEU2zhw3FgLks,548
+trytond/modules/party_notes/tryton.cfg,sha256=NZdLeu1S3WBdpk2NruRquo4qy9mCFkkOVc8qIayHO9U,57
+trytond/modules/party_notes/versiondep.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+trytond/modules/party_notes/locale/de.po,sha256=UU-qh5QIlhtos1y9Swu3TTwV3zAFAauMSysSSGumiEU,315
+trytond/modules/party_notes/locale/en.po,sha256=N9u2zxbdi6t4JBf2Luqo3mwCwWFW8ueKQisFqcI_-Y0,260
+trytond/modules/party_notes/tests/__init__.py,sha256=lyPiOUaEWsPewc5vs2qJBcQgiUZsZ38uiNPBpVLGMWY,478
+trytond/modules/party_notes/tests/test_party.py,sha256=IThRxVs2pIYKLrLhMcqmEKKNt4Z5qya43PdPS0LJEj0,1031
+trytond/modules/party_notes/view/party_form.xml,sha256=GUI62hBMhndgSub3QarcyMCVZLq9916Qz_NwgqOpZic,197
+trytond/modules/party_notes/view/party_tree.xml,sha256=CO6v3pmo3Fr7lSMWBdrjaAOQXeza-1VObuj-JZ0ZeBI,159
+mds_party_notes-6.0.1.dist-info/METADATA,sha256=TTQclIJHAY7Wk5setIezjMm5iTtiUNx4zlZFygl4wRI,1471
+mds_party_notes-6.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mds_party_notes-6.0.1.dist-info/entry_points.txt,sha256=4EFEWSAk27s50Nc7I6kK0LTSIPGubizkE63IbkX5QN0,73
+mds_party_notes-6.0.1.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+mds_party_notes-6.0.1.dist-info/RECORD,,
