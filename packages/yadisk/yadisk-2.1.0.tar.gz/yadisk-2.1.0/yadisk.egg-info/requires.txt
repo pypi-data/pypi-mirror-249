@@ -1,0 +1,16 @@
+
+[async_defaults]
+aiofiles
+httpx
+
+[async_files]
+aiofiles
+
+[sync_defaults]
+requests
+
+[test]
+aiofiles
+httpx
+pycurl
+requests
