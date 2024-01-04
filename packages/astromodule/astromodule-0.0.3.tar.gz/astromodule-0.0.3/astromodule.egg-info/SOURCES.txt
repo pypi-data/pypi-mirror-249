@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+astromodule/__init__.py
+astromodule/distance.py
+astromodule/io.py
+astromodule.egg-info/PKG-INFO
+astromodule.egg-info/SOURCES.txt
+astromodule.egg-info/dependency_links.txt
+astromodule.egg-info/requires.txt
+astromodule.egg-info/top_level.txt
