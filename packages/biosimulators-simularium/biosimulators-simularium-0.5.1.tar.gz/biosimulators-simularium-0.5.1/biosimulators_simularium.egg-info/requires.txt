@@ -1,0 +1,7 @@
+zarr
+simulariumio
+python-libcombine
+kisao
+smoldyn
+termcolor
+pytest
