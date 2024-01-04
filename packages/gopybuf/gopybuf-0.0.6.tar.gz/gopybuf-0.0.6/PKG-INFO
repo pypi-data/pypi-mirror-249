@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gopybuf
+Version: 0.0.6
+Summary: Python-side code to use in gopybuf
+Author: Yaroher2442
+Author-email: stolbunov.yaroslav@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
