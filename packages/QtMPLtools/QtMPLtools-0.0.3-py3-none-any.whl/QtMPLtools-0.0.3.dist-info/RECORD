@@ -1,0 +1,15 @@
+QtMPLtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QtMPLtools/matplotlibwidgets.py,sha256=2EfvGRZoExuyFMxsJ8eOYjNIRC5Z_ybp-ZrZwme4Yng,5533
+QtMPLtools/mplpolarplugin.py,sha256=im888rY3qDTHHb2UbFFmxCSuHmOM2KXFzMptDCrLWnI,1409
+QtMPLtools/mplrectplugin.py,sha256=axQsqfEZjCiTbkGJoUb3iNeu9dKFojmlYlqRd9uOsCY,1586
+QtMPLtools/mplsurface2Dplugin.py,sha256=Tw3FaXS9EzwkY5y3bZ6W8XHEQcOPChm-8gJLi4jV5yI,1628
+QtMPLtools/mplsurface3Dplugin.py,sha256=aO94llhh-w-WPnc_0QJ74x4BXXQNOyOghLhSzxl0MDs,1715
+QtMPLtools/figures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QtMPLtools/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QtMPLtools/scripts/designer.py,sha256=u3jrVUMJtPTxAKMi6lStjo2TUZl7Kh2m9ql70t7Fhdc,111
+QtMPLtools-0.0.3.dist-info/LICENSE,sha256=CAvXYSJpejxxMbAF5DzGJI7JKtYTSw4lKhbyxX-2esA,1063
+QtMPLtools-0.0.3.dist-info/METADATA,sha256=xUzfxiaPo0UWzCY1qEOL88MHtEWUufkRaty_qvUvSnk,1323
+QtMPLtools-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+QtMPLtools-0.0.3.dist-info/entry_points.txt,sha256=dIjzz6fYKrt5enCKrkReGmpqkyrajKEd_fb835IBjBY,62
+QtMPLtools-0.0.3.dist-info/top_level.txt,sha256=8rnnd26wjSZo4eEKKciA6s5FhiTrWI9iKPnKnwjuJrM,11
+QtMPLtools-0.0.3.dist-info/RECORD,,
