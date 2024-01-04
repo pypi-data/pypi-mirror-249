@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fastask/Modelfile
+fastask/__init__.py
+fastask/ask.py
+fastask.egg-info/PKG-INFO
+fastask.egg-info/SOURCES.txt
+fastask.egg-info/dependency_links.txt
+fastask.egg-info/entry_points.txt
+fastask.egg-info/requires.txt
+fastask.egg-info/top_level.txt
