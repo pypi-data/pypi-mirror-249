@@ -1,0 +1,6 @@
+folium
+matplotlib
+numpy
+rasterio
+scipy
+scikit-learn
