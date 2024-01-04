@@ -1,0 +1,5 @@
+tqdm
+termcolor
+Pillow
+requests
+numpy
