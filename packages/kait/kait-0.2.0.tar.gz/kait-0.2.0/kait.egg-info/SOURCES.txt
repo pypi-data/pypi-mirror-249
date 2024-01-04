@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+kait/__init__.py
+kait/kubectl_executor_agent.py
+kait/kubernetes_debugger.py
+kait/main.py
+kait.egg-info/PKG-INFO
+kait.egg-info/SOURCES.txt
+kait.egg-info/dependency_links.txt
+kait.egg-info/entry_points.txt
+kait.egg-info/requires.txt
+kait.egg-info/top_level.txt
+tests/test_kubectl_executor_agent.py
