@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: extended-selenium-page-factory
+Version: 0.2b0
+Summary: Extension for page factory.
+Home-page: https://github.com/alexgorji/extendedseleniumpagefactory.git
+Author: Alex Gorji
+Author-email: aligorji@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
