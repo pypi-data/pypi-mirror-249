@@ -1,0 +1,1 @@
+from .mainlib import pasetebin_apiKey, get_paste_content_withApiKey, get_paste_content
