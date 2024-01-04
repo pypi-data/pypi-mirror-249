@@ -1,0 +1,17 @@
+skfp/__init__.py,sha256=DvBeyMkAWkd1_2UR1eucfNSiDeaIJ8fvrnZOVHwLYFU,482
+skfp/fingerprints/atom_pair.py,sha256=GnzQ2BO_FJncciy6mjPd2vi-g5vIcKDLD9RkRS2_yJs,1852
+skfp/fingerprints/base.py,sha256=Isb1pxstIPFurZGqKy76jgzojYHnKEIWln6j3L2oMtY,4331
+skfp/fingerprints/e3fp.py,sha256=9rqpdIC_KUzxYNXltoAKrhQDVRyEo_ETsQEALCr9Z2M,4313
+skfp/fingerprints/ecfp.py,sha256=r_iBwjRq8g5qpiBN0Yw0i3eQqLkyySKdw3z_A4x3BlA,2017
+skfp/fingerprints/erg.py,sha256=XfBPvcDz9q3hKe6de_SXnMDRAe83k6-pP5x5TYnHRfo,1541
+skfp/fingerprints/maccs_keys.py,sha256=q8eLgB3BawLdbJR4PXbdaQxVxPSZ-OOkbzNGyMbgmKM,1035
+skfp/fingerprints/map4.py,sha256=cP0RiLwtaFT5udthx2im9ws0WBnkuAIU-KSg1dZEAfw,1392
+skfp/fingerprints/mhfp.py,sha256=RbndFsfJp_V2siHaI9Kfcybh9so02651Fra0VqJ8rbA,1345
+skfp/fingerprints/rdk.py,sha256=2cApXunC3_4RcJpfZ9NUXBJ3sL7fUsz1jaBju6qF4K4,1943
+skfp/fingerprints/topological_torsion.py,sha256=E5L2raqeyJhoLseR_zJSIs0z3DMoEyAHaEU78n-Kz8U,1896
+skfp/helpers/map4_mhfp_helpers.py,sha256=IVNgxqYu3qSgAPJFZ1G5_zEEFEobkCxlf7MyGVSkeyg,4794
+skfp/utils/logger.py,sha256=JNXx0J1LoOIXLeGtcwD6yF5wC7ddGCRzB7VEECF3st0,1835
+scikit_fingerprints-1.1.2.dist-info/LICENSE.md,sha256=JiJmvlra_SJ11y_xv0F8vqYchHKwDja2lxaYpDfzq1w,1136
+scikit_fingerprints-1.1.2.dist-info/METADATA,sha256=oPXdlFnZloXEPNux2QXo0KrmW9L47bMJVjXaJjvngiY,3587
+scikit_fingerprints-1.1.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+scikit_fingerprints-1.1.2.dist-info/RECORD,,
