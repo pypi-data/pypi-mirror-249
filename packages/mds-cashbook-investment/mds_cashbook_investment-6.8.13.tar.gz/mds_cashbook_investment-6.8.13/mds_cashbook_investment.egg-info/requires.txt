@@ -1,0 +1,3 @@
+mds_cashbook<=6.8.999,>=6.8.33
+trytond<6.9,>=6.8
+trytond_investment<6.9,>=6.8
