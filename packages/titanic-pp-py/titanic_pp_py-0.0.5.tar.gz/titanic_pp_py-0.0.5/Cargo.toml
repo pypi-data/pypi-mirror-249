@@ -1,0 +1,20 @@
+[package]
+name = "titanic-pp-py"
+version = "0.0.5"
+description = "osu! difficulty and pp calculation for all modes"
+authors = ["Max Ohn <ohn.m@hotmail.de>", "tsunyoku <tsunyoku@gmail.com>", "Lekuruu <contact@lekuru.xyz>", "kanaarima <akataltosu@gmail.com>"]
+license = "MIT"
+edition = "2021"
+
+[lib]
+name = "titanic_pp_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17", features = ["extension-module", "macros"] }
+titanic-pp = { git = "https://github.com/osuTitanic/titanic-pp-rs", rev = "90fe7b01f925ae4bc66053f1111c5cc2031313b7" }
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+strip = "debuginfo"
