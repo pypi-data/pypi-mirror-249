@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+rest_api_agr.egg-info/PKG-INFO
+rest_api_agr.egg-info/SOURCES.txt
+rest_api_agr.egg-info/dependency_links.txt
+rest_api_agr.egg-info/requires.txt
+rest_api_agr.egg-info/top_level.txt
