@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "confactory"
+version = "0.1"
+authors = [
+  { name="Nader Akoury", email="~dojoteef/confactory-devel@lists.sr.ht" },
+]
+description = "Construct Python objects directly from configuration files"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = [
+    "attrs>=20.3.0",
+    "jsonnet>=0.12.1,<1.0",
+    "typing_extensions;python_version<'3.8'",
+]
+
+[project.optional-dependencies]
+codeqa = [
+    "ruff"
+]
+formatters = [
+    "black",
+    "isort"
+]
+typing = [
+    "mypy"
+]
+dev = [
+    "confactory[codeqa]",
+    "confactory[formatters]",
+    "confactory[typing]"
+]
+
+[project.urls]
+Source = "https://git.sr.ht/~dojoteef/confactory"
+"Mailing List" = "https://lists.sr.ht/~dojoteef/confactory"
+
+[tool.mypy]
+no_implicit_optional = false
