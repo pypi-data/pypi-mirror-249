@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: serialduino
+Version: 0.1
+Summary: A simple serial based python library to control arduino with (or without) 74hc595 microprocessor
+Home-page: https://www.youtube.com/@DrasticLp
+Author: drasticlp
+Author-email: tarikdu137@gmail.com
+Requires-Dist: pyserial (>=3.5)
+
