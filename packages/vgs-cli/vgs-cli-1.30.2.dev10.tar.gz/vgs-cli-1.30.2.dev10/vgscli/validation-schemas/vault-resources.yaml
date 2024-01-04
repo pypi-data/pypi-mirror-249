@@ -1,0 +1,74 @@
+---
+"$schema": https://json-schema.org/draft/2020-12/schema
+"$id": https://example.com/product.schema.json
+title: MFT Route
+description: All VGS resources in one handy place
+type: object
+properties:
+  apiVersion:
+    type: string
+    enum:
+      - apps.vgs.io/v1beta
+  kind:
+    type: string
+    enum:
+      - MftRoute
+  spec:
+    type: object
+    "$ref": "#/definitions/MftRoute"
+  metadata:
+    type: object
+    properties:
+      name:
+        type: string
+    required: [name]
+  # required: [apiVersion, kind, spec, metadata]
+definitions:
+  MftRoute:
+    type: object
+    properties:
+      source:
+        type: string
+      destination:
+        type: string
+      when:
+        type: array
+    required: [source, destination, when]
+---
+"$schema": https://json-schema.org/draft/2020-12/schema
+"$id": https://example.com/product.schema.json
+title: HTTP Route
+description: All VGS resources in one handy place
+type: object
+properties:
+  apiVersion:
+    type: string
+    enum:
+      - vault.vgs.io/v1
+  kind:
+    type: string
+    enum:
+      - HttpRoute
+  spec:
+    type: object
+    "$ref": "#/definitions/HttpRoute"
+  metadata:
+    type: object
+    properties:
+      name:
+        type: string
+    required: [name]
+  # required: [apiVersion, kind, spec, metadata]
+definitions:
+  HttpRoute:
+    type: object
+    properties:
+      id:
+        type: string
+      type:
+        type: string
+        enum: [rule_chain]
+      attributes:
+        type: object
+    required: [id, type, attributes]
+    additionalProperties: true
