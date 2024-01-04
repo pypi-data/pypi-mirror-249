@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: DataMesh
+Version: 0.1.0
+Summary: A collection of tools for Data Mesh architectural approach.
+Home-page: https://github.com/georgegach/DataMesh
+Author: Giorgi Gachechiladze
+Author-email: georgegach@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DataMesh
+
+A collection of tools for Data Mesh architectural approach.
