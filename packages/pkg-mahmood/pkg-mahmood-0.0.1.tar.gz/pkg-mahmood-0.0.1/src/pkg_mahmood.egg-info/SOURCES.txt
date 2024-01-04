@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/package_mahmood/__init__.py
+src/package_mahmood/main.py
+src/pkg_mahmood.egg-info/PKG-INFO
+src/pkg_mahmood.egg-info/SOURCES.txt
+src/pkg_mahmood.egg-info/dependency_links.txt
+src/pkg_mahmood.egg-info/top_level.txt
