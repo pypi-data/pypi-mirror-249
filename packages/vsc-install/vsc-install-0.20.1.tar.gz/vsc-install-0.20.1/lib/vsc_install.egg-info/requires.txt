@@ -1,0 +1,2 @@
+setuptools<54.0
+mock
