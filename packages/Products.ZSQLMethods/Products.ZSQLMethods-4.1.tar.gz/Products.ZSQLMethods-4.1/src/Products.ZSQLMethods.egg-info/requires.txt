@@ -1,0 +1,5 @@
+setuptools
+Zope>=4.2.1
+Missing
+Record
+DocumentTemplate>=3.2.2
