@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poetry-demo-gregory-ionic"
+version = "0.1.1"
+description = ""
+authors = ["Gregory Kohler <gregory@ionicapi.com>"]
+readme = "README.md"
+packages = [{include = "poetry_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pendulum = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
