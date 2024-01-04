@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: discord-ext-help
+Version: 0.1.1
+Summary: A discord.py extension that automatically generates interaction help commands based on Dict.
+Home-page: https://github.com/sonyakun/discord-ext-help
+Author: sonyakun
+Author-email: owner@sonyakun.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: discord-py (>=2.0.0,<3.0.0)
+Requires-Dist: reactionmenu (>=3.1.5,<4.0.0)
+Project-URL: Repository, https://github.com/sonyakun/discord-ext-help
+Description-Content-Type: text/markdown
+
+# discord.ext.help
+A discord.py extension that automatically generates interaction help commands based on Dict.
+
+## Dependency
+- [Defxult/reactionmenu](https://github.com/Defxult/reactionmenu)
+- discord.py 2.0 and later 
+
+This library is not guaranteed to be compatible with the discord.py fork (Because the reactionmenu used in this library is probably dedicated to discord.py).
+
+Also, for pycord, you can reproduce the behavior of this library by using [`discord.ext.pages`](https://docs.pycord.dev/en/stable/ext/pages/index.html).
+
+## How To Use
+### Install
+```
+pip install discord-ext-help
+```
+### example
+```python
+import discord
+from discord import app_commands
+from discord.ext import commands
+from discord_ext_help import helpExtension, command_list, options
+from reactionmenu import ViewMenu
+
+command_list.cmdlist = [
+    {
+        "name": "/test",
+        "id": None,
+        "description": "this is a test command!",
+        "args": [],
+        "example": "https://media1.tenor.com/m/m1Tu9iU-zqQAAAAC/wumpus-discord.gif",
+    },
+    {
+        "name": "/say",
+        "id": None,
+        "description": "The character entered in the argument is uttered!",
+        "args": [
+            {
+                "name": "text",
+                "description": None,
+                "required": True,
+            }
+        ],
+        "example": "https://media1.tenor.com/m/m1Tu9iU-zqQAAAAC/wumpus-discord.gif",
+    },
+]
+
+bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+
+@bot.event
+async def setup_hook():
+    # ↓ If you use the bot only within a particular guild ↓
+    # await bot.tree.sync(guild=discord.Object(000000000000000000))
+    # options.guild = 961559815191134229 # If you use the bot only within a particular guild
+
+    # ↓ For use with a public Bot ↓
+    await bot.tree.sync()
+
+# ↓ If you use the bot only within a particular guild ↓
+# @bot.tree.command(
+#     name="help", description="show help", guild=discord.Object(serverId)
+# )
+# ↓ For use with a public Bot ↓
+@bot.tree.command(
+    name="help", description="show help"
+)
+@app_commands.choices(command=options.cmds)
+async def help(interaction: discord.Interaction, command: str = None):
+    await interaction.response.defer()
+    res = await helpExtension.response(interaction, command)
+    menu = res["resp"]
+
+    if res["type"] == "menu":
+        await menu.start()
+        return
+    await interaction.followup.send(embed=menu)
+
+helpExtension.setup()
+bot.run(token)
+```
