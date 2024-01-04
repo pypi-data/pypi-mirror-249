@@ -1,0 +1,11 @@
+sverilogpy_bind.cpython-39-x86_64-linux-gnu.so,sha256=3nUTP-eL-mhI4CaRZAfJ1NsIvPnYC9mMor6dwgvXL0E,158033
+sverilogpy.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+sverilogpy.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+sverilogpy/__init__.py,sha256=QCHXeAKlf-yBff6PvPT9spL5ViRWr5hCRZvarqLSM0s,1196
+sverilogpy/sverilog.cpp,sha256=lr5vanR2EeLik7-m1g6Iv4h15aWTFwFi3VnsCR6o6ow,1809
+sverilogpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sverilogpy-0.0.0a2.dist-info/WHEEL,sha256=VfiV5_OTlYzR-pidyRKIBfQ6Zr_3rl-lqzYgU58RCj8,111
+sverilogpy-0.0.0a2.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+sverilogpy-0.0.0a2.dist-info/RECORD,,
+sverilogpy-0.0.0a2.dist-info/top_level.txt,sha256=eD2JBQ6XuTsQGj8Ygndz0hvJVXve-odGhmY1xJdl8mw,27
+sverilogpy-0.0.0a2.dist-info/METADATA,sha256=Iodfr9iDxz-XqzqOKbW7aV2NYZEcVXBKTQrLaUrNYYE,31799
