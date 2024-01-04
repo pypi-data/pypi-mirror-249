@@ -1,0 +1,8 @@
+setup.py
+hailstone_calculator/__init__.py
+hailstone_calculator/hailstone_calculator.py
+hailstone_calculator/main.py
+hailstone_calculator.egg-info/PKG-INFO
+hailstone_calculator.egg-info/SOURCES.txt
+hailstone_calculator.egg-info/dependency_links.txt
+hailstone_calculator.egg-info/top_level.txt
