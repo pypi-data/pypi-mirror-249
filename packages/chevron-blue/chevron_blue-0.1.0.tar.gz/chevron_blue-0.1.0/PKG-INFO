@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: chevron-blue
+Version: 0.1.0
+Summary: A Python implementation of the mustache template language
+License: MIT
+Author: Zanie
+Author-email: contact@zanie.dev
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# chevron-blue
+
+A Python implementation of the [mustache templating language](http://mustache.github.io).
+
+## Acknowledgements
+
+This library is a fork of [chevron](https://github.com/noahmorrison/chevron) authored by [Noah Morrison](https://github.com/noahmorrison).
+
+At this time, the only changes are switching to a modern build system, dropping support for Python 2, and verifying support for Python 3.7+.
+
