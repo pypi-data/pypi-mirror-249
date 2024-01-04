@@ -1,0 +1,144 @@
+Horizontal {
+    height: auto;
+}
+
+#ui_container {
+    margin: 2;
+}
+
+.rank {
+    width: auto;
+    height: 1;
+}
+
+.rank_label {
+    width: 2;
+}
+
+.tile {
+    width: 2;
+    height: 1;
+}
+
+.black_tile {
+    background: #789656;
+}
+
+.white_tile {
+    background: #f0edd1;
+}
+
+#board {
+    height: auto;
+    width: auto;
+    padding-right: 1;
+}
+
+#to_move {
+    margin-left: 1;
+    margin-bottom: 1;
+}
+
+#move_input {
+    margin-bottom: 1;
+}
+
+#buttons_container {
+    margin-left: 1;
+    margin-right: 1;
+}
+
+#offer_draw {
+    width: 1fr;
+    margin-right: 1;
+}
+
+#claim_draw {
+    width: 1fr;
+    margin-right: 1;
+}
+
+#move {
+    width: 1fr;
+    margin-right: 1;
+}
+
+#resign {
+    width: 1fr;
+}
+
+.white_piece {
+    background: white;
+    color: black;
+}
+
+.black_piece {
+    background: black;
+    color: white;
+}
+
+#game_over_container {
+    margin-left: 1;
+}
+
+#outcome {
+    margin-bottom: 1;
+}
+
+#moves {
+    margin-bottom: 1;
+}
+
+#offer_draw_container {
+    margin-left: 1;
+}
+
+#offer_draw_label {
+    margin-bottom: 1;
+}
+
+#yes_draw {
+    margin-right: 1;
+}
+
+.clicked_piece {
+    background: goldenrod;
+}
+
+.highlighted {
+    background: gold;
+}
+
+#play_another {
+    margin-right: 1;
+}
+
+#promote_pawn_container {
+    margin-left: 1;
+    height: auto;
+}
+
+#promote_pawn_label {
+    margin-bottom: 1;
+}
+
+.promote_button {
+    margin-right: 1;
+    background: khaki;
+}
+
+#input_container {
+    height: auto;
+}
+
+#game_over_container {
+    height: auto;
+}
+
+#offer_draw_container {
+    height: auto;
+}
+
+.winning_king {
+    background: gold;
+}
