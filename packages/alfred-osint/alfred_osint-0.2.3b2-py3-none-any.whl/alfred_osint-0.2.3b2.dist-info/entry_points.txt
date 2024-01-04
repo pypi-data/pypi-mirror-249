@@ -1,0 +1,2 @@
+[console_scripts]
+alfred-osint = alfred_osint.brib:main
