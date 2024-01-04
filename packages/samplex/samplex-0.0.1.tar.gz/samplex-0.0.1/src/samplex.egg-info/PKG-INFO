@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: samplex
+Version: 0.0.1
+Summary: Samplers in MLX
+Home-page: https://github.com/tedwards2412/samplex
+Author: Thomas Edwards, Nashwan Sabti
+Author-email: tedwards2412@gmail.com
+License: MIT
+Keywords: sampling,inference,machine learning,autodiff,mlx
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: mlx
+
+# samplex
+Package of useful sampling algorithms written in MLX.
