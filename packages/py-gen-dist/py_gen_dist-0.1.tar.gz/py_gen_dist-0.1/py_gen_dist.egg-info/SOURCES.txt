@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+py_gen_dist/Binomialdistribution.py
+py_gen_dist/Gaussiandistribution.py
+py_gen_dist/Generaldistribution.py
+py_gen_dist/__init__.py
+py_gen_dist.egg-info/PKG-INFO
+py_gen_dist.egg-info/SOURCES.txt
+py_gen_dist.egg-info/dependency_links.txt
+py_gen_dist.egg-info/not-zip-safe
+py_gen_dist.egg-info/top_level.txt
