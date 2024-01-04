@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-argos-archive-reader = napari_argos_archive_reader:napari.yaml
