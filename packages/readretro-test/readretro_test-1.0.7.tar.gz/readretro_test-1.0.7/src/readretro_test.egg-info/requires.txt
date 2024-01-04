@@ -1,0 +1,10 @@
+h5py
+typing-extensions
+wheel
+easydict
+pandas
+tqdm
+numpy==1.22
+OpenNMT-py==2.3.0
+networkx==2.5
+torch
