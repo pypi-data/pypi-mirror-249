@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hamon-ai-database
+Version: 0.0.1
+Summary: Hamonsoft Company Database Python Version Package
+Author: Hamonsoft AI
+License: MIT
+Requires-Python: >=3.11, <4
+Requires-Dist: mysql-connector-python ==8.2.0
+Requires-Dist: protobuf ==4.21.12
+
