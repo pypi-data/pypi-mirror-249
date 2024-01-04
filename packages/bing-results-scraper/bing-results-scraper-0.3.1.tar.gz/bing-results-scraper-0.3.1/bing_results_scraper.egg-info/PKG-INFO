@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: bing-results-scraper
+Version: 0.3.1
+Summary: Bing Search Scraper - A Python library for retrieving search results from Bing
+Author: Renukumar R
+Author-email: renu2babu1110@gmail.com
+License: MIT License
+        
+        Copyright (c) 2023 Renukumar R
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Bing Search Scraper
+
+## Overview
+
+Easily scrape Bing search results using Python. This library leverages `requests` for making HTTP requests and `BeautifulSoup` for parsing HTML content. It offers both synchronous and asynchronous functionality for efficient retrieval of results.
+
+## Installation
+
+Install via pip:
+
+```python
+pip install bing-results-scraper
+```
+
+## Usage
+
+**Synchronous Usage:**
+
+```python
+from bing_results_scraper import BingScraper
+
+# Create a scraper instance
+bing = BingScraper(headers=Optional, max_retries=Optional(default: 3), num_results=Optional(default: 10))
+
+# Fetch results for a single query
+results = bing.get_results(q='Query')
+
+# Access the results
+print(results['organic_results'])
+```
+
+**Asynchronous Usage:**
+
+```python
+from bing_results_scraper import AsyncBingScraper
+
+# Create an asynchronous scraper instance
+async_bing = AsyncBingScraper(headers=Optional, max_retries=Optional(default: 3), num_results=Optional(default: 10))
+
+# Fetch results for multiple queries
+queries = ['Query 1', 'Query 2', 'Query 3']
+results = async_bing.get_results(queries)
+
+# Access the results for each query
+for result in results:
+    print(result['organic_results'])
+```
+
+## Features
+
+- Synchronous and asynchronous scraping options
+- Customizable headers
+- Automatic query URL encoding
+- Response status handling
+- Retries for failed requests
+- Parsed organic result data extraction
+- Clear output structure
+
+## Contributing
+
+Contributions are welcome! Please follow the standard fork-and-pull request workflow on GitHub.
+
+## Author
+
+Renukumar R
+- LinkedIn: https://www.linkedin.com/in/renukumar-r/
+- GitHub: https://github.com/Renukumar-R
