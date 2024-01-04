@@ -1,0 +1,13 @@
+numpy
+pandas
+shapely
+geopandas
+matplotlib
+suncalc
+keplergl
+transbigdata
+mapbox_vector_tile
+vt2geojson
+requests
+tqdm
+retrying
