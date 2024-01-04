@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/DevoteamLib/GenAI.py
+src/DevoteamLib/OCRLayouting.py
+src/DevoteamLib/__init__.py
+src/DevoteamLib.egg-info/PKG-INFO
+src/DevoteamLib.egg-info/SOURCES.txt
+src/DevoteamLib.egg-info/dependency_links.txt
+src/DevoteamLib.egg-info/top_level.txt
