@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+easy_pastebin/__init__.py
+easy_pastebin/mainlib.py
+easy_pastebin.egg-info/PKG-INFO
+easy_pastebin.egg-info/SOURCES.txt
+easy_pastebin.egg-info/dependency_links.txt
+easy_pastebin.egg-info/requires.txt
+easy_pastebin.egg-info/top_level.txt
