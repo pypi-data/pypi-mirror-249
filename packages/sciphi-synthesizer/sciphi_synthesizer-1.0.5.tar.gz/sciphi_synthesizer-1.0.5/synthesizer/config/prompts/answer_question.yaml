@@ -1,0 +1,29 @@
+raw_text: |
+  Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+  ### Instruction
+  Given the context provided after this instruction, extract and return an answer to the given questin.
+
+  ### Question:
+  {question}
+
+  ### Choices:
+  {choices}
+  
+  ### Input:
+  {rag_context}
+
+  ### Response
+
+dataset_supplied_inputs_map:
+  question: question
+  choices: choices
+
+user_supplied_inputs: [rag_context]
+
+default_dataset_name: "tasksource/ScienceQA_text_only"
+
+output_format: "jsonl"
+
+default_user_inputs_map:
+  rag_context: ""
