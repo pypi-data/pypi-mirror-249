@@ -1,0 +1,53 @@
+name: Documentation
+
+on:
+    push:
+      branches: [ main ]
+    pull_request:
+      branches: [ main ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        # Ensures environment gets sourced right
+        shell: bash -l {0}  
+    strategy:
+      matrix:
+        PYTHON_VERISON: ["3.10"]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      # setup conda-forge with micromamba
+      - name: Setup Python
+        uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: continuous_integration/environment_documentation.yml
+          create-args: >-
+            python=${{ matrix.PYTHON_VERISON }}
+          environment-name: docs
+          cache-environment: true
+
+      - name: Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          set -e
+          python -m pip install . --no-deps
+          cd docs
+          make html
+
+      - name: Deploy 🚀
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: docs # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
