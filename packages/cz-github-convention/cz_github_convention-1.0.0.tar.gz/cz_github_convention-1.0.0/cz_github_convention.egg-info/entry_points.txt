@@ -1,0 +1,3 @@
+[commitizen.plugin]
+cz_github_convention = cz_github_convention:GithubConventionPluginCz
+
