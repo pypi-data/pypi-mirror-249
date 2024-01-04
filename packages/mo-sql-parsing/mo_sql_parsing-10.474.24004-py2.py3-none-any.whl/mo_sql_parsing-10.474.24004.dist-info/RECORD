@@ -1,0 +1,13 @@
+mo_sql_parsing/__init__.py,sha256=QU-4kPuEr7Z5Fu8jeE-LfWLJ9J26vu6VUArKk2W8EaY,6430
+mo_sql_parsing/formatting.py,sha256=NYHb-TqZlil2gx9DfRtEzlcM0XmXPY1_8TBkpb3b7Og,25572
+mo_sql_parsing/keywords.py,sha256=qeful6eaXA_wmrPb59ASrPtiX3GvTz-DDhjGpnLrv9Y,11383
+mo_sql_parsing/sql_parser.py,sha256=n1nPsmXhr96jKp2sJDMk0v1ftu5f48wfm9Epb85G3As,43831
+mo_sql_parsing/types.py,sha256=p0y3L9St6zVHPg_9bcwrf8Oq4CmLiA__6I1JElTsCzs,8553
+mo_sql_parsing/utils.py,sha256=CsodIXfI4wwrlBdffk_8jm00wHnHBOqCS_SBJC06JPQ,24770
+mo_sql_parsing/windows.py,sha256=UXpb-59CM7cPHdl575Guh5cKr6XLDbndPLtzLfVdjTk,2949
+mo_sql_parsing-10.474.24004.dist-info/LICENSE,sha256=YCIsKMGn9qksffmOXF9EWeYk5uKF4Lm5RGevX2qzND0,15922
+mo_sql_parsing-10.474.24004.dist-info/METADATA,sha256=yY2juaK5m6ZEjyUiwv5rUCyZ4Cm-y3MIDLSR16JbOcE,10136
+mo_sql_parsing-10.474.24004.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+mo_sql_parsing-10.474.24004.dist-info/top_level.txt,sha256=P9tODVsRxMEL1jG7yBYiLD3rRo_rjSKa_r-F6cbnfgA,15
+mo_sql_parsing-10.474.24004.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+mo_sql_parsing-10.474.24004.dist-info/RECORD,,
