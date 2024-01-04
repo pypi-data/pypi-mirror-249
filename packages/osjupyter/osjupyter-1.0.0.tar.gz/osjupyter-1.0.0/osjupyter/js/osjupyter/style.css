@@ -1,0 +1,17 @@
+.icon-connected {
+  background-image: url('./connected_icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;  /* Adjust as necessary */
+  height: 15px; /* Adjust as necessary */
+  vertical-align: middle;
+}
+
+.icon-disconnected {
+  background-image: url('./disconnected_icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;  /* Adjust as necessary */
+  height: 15px; /* Adjust as necessary */
+  vertical-align: middle;
+}

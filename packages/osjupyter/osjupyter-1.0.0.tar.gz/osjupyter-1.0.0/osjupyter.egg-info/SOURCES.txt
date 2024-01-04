@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+osjupyter/__init__.py
+osjupyter.egg-info/PKG-INFO
+osjupyter.egg-info/SOURCES.txt
+osjupyter.egg-info/dependency_links.txt
+osjupyter.egg-info/not-zip-safe
+osjupyter.egg-info/requires.txt
+osjupyter.egg-info/top_level.txt
+osjupyter/js/osjupyter/connected_icon.svg
+osjupyter/js/osjupyter/disconnected_icon.svg
+osjupyter/js/osjupyter/main.js
+osjupyter/js/osjupyter/style.css
