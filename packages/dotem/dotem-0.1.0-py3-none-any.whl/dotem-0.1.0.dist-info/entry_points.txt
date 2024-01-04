@@ -1,0 +1,3 @@
+[console_scripts]
+dotem-cli=dotem:main
+
