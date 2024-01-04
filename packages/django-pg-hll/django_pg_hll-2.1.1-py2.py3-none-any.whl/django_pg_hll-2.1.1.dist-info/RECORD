@@ -1,0 +1,14 @@
+django_pg_hll/__init__.py,sha256=zYkUSgTQgwJMsFATeq6j5Cabsu_ynGzgdVs726rHd7o,222
+django_pg_hll/aggregate.py,sha256=CUgs0Br_04YPu3p4xolSy1w8gQYtIcTBdY2BhogJacQ,1586
+django_pg_hll/bulk_update.py,sha256=aZBKZCqvZY1L1HJhp-KNk54d7ZorL-nMqnz9nDfqbGU,1681
+django_pg_hll/compatibility.py,sha256=YLbXMTXuCysybSN5r679zJqt1zwlabSkaedwg2Hx20E,673
+django_pg_hll/fields.py,sha256=yw3loF_Xmbnp8qxLjM7GwLvtXsnWZbBN-nx-eCQ-zJE,3373
+django_pg_hll/migration.py,sha256=WF-NFdA7JiKH2nDkBKeJ5_m6oINRrlD_L-l3ZRPfSTU,317
+django_pg_hll/transforms.py,sha256=EYArk30wOxIXJt9ZJZFk9fLRPDBElwPtmdInPckpZ48,1032
+django_pg_hll/utils.py,sha256=OYOSvU-0Wqv341ZyhVwRvfIHnE49bLVqN0mG_oJhP7s,627
+django_pg_hll/values.py,sha256=5i5WkxDQtfCLNdBbzWyT2JMxaB9YvakkgbBr9k0hKlM,6794
+django_pg_hll-2.1.1.dist-info/LICENSE,sha256=_iUVnl9XghJe6kuGjKntew7GIya1gXJ24nU8FnpUcdk,1509
+django_pg_hll-2.1.1.dist-info/METADATA,sha256=1Me7eOnud8YlL0Jq_IVSDkkgdjFFpQyLz8PrWRU3YPE,9936
+django_pg_hll-2.1.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_pg_hll-2.1.1.dist-info/top_level.txt,sha256=9yYLukXQ2L9VpTfbe4lp7brp7VD319mSGXCEV10h0v4,14
+django_pg_hll-2.1.1.dist-info/RECORD,,
