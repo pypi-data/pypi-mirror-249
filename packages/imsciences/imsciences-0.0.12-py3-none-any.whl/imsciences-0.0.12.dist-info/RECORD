@@ -1,0 +1,13 @@
+dataprocessing/__init__.py,sha256=quSwsLs6IuLoA5Rzi0ZD40xZaQudwDteF7_ai9JfTPk,32
+dataprocessing/data-processing-functions.py,sha256=vE1vsZ8xOSbR9Bwlp9SWXwEHXQ0nFydwGkvzHXf2f1Y,41
+dataprocessing/datafunctions.py,sha256=vE1vsZ8xOSbR9Bwlp9SWXwEHXQ0nFydwGkvzHXf2f1Y,41
+imsciences/__init__.py,sha256=kXa1lhxW2oHtYMdrlRoc2KqShnvMjbIVnm6jte92uZA,30
+imsciences/datafunctions.py,sha256=xoKRbVVNfWS4lVrVsTk5wjJizfaD-ViLiQxJrCCB9fI,81
+imsciencesdataprocessing/__init__.py,sha256=quSwsLs6IuLoA5Rzi0ZD40xZaQudwDteF7_ai9JfTPk,32
+imsciencesdataprocessing/datafunctions.py,sha256=vE1vsZ8xOSbR9Bwlp9SWXwEHXQ0nFydwGkvzHXf2f1Y,41
+imsdataprocessing/__init__.py,sha256=quSwsLs6IuLoA5Rzi0ZD40xZaQudwDteF7_ai9JfTPk,32
+imsdataprocessing/datafunctions.py,sha256=vE1vsZ8xOSbR9Bwlp9SWXwEHXQ0nFydwGkvzHXf2f1Y,41
+imsciences-0.0.12.dist-info/METADATA,sha256=QEgH7KgeVSOSYjJLrDS3uUxbyzRWYiSHQ5hMPVhpj3w,596
+imsciences-0.0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+imsciences-0.0.12.dist-info/top_level.txt,sha256=hsENS-AlDVRh8tQJ6-426iUQlla9bPcGc0-UlFF0_iU,11
+imsciences-0.0.12.dist-info/RECORD,,
