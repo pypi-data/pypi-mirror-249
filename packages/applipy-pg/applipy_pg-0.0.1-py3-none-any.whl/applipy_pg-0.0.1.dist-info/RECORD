@@ -1,0 +1,12 @@
+applipy_pg/__init__.py,sha256=9Xm8URdWdakG3HMIjYtCzUhLNwfyuevOwzIZdrfTF5c,106
+applipy_pg/connection.py,sha256=rIGOPLNt7L23pSB6k8SvLhxs4eZQ7iaunwDj3t5Ta08,794
+applipy_pg/handle.py,sha256=6KAT6MroBFsOxhEv05MiKtP-Wy-o7Y1-oE8r5ruj9fM,495
+applipy_pg/module.py,sha256=oxzK9e46ZZncpBlpOgiZ0LMR13GRN01icMUGIBMf7jc,882
+applipy_pg/pool_handle.py,sha256=oO_fV-0BGjSUnvRTumsC342h2bGJ0238LdC4QsxUTHQ,2808
+applipy_pg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+applipy_pg/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+applipy_pg-0.0.1.dist-info/LICENSE,sha256=kBpaUNBfnPfOjhstMmawurnBySeRDPUbqrJ6vObLB_o,556
+applipy_pg-0.0.1.dist-info/METADATA,sha256=qGH3HSbiQ5LVwQYgmEONKPxvysdYL0QickRiwh6CHM4,4393
+applipy_pg-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+applipy_pg-0.0.1.dist-info/top_level.txt,sha256=dxpMh4g-PPKnhYRTJ8rGfmiJiyHLNp4LkdfC5v_XrG0,11
+applipy_pg-0.0.1.dist-info/RECORD,,
