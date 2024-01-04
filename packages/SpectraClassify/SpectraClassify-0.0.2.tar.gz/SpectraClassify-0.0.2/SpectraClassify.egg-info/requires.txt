@@ -1,0 +1,7 @@
+numpy
+tensorflow==2.13
+pillow
+Flask
+Flask-Cors
+python-box
+ensure
