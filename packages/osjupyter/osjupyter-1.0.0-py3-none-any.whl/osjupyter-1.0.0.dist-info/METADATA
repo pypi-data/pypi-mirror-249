@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: osjupyter
+Version: 1.0.0
+Summary: Connects your Jupyter Notebook to Osyris Research Assistant
+Author: Osyris Technology
+Author-email: founders@osyris.io
+Requires-Dist: notebook
+
