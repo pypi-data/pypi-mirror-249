@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hikari-ongaku
+Version: 0.1.0
+Summary: A Music handler, for hikari.
+Author: MPlaty
+Author-email: mplatypus54@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Requires: hikari
+Requires: aiohttp
+Requires-Python: >=3.11
+License-File: LICENSE
