@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: biceps-interfaces
+Version: 0.3.0
+Requires-Python: >=3.10,<3.12
+Requires-Dist: dataclasses-json >=0.6.3
+Requires-Dist: torch
+
