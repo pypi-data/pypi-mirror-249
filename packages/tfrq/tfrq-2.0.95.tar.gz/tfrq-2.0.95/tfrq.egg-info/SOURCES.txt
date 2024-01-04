@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+tfrq.py
+tfrq.egg-info/PKG-INFO
+tfrq.egg-info/SOURCES.txt
+tfrq.egg-info/dependency_links.txt
+tfrq.egg-info/requires.txt
+tfrq.egg-info/top_level.txt
