@@ -1,0 +1,7 @@
+recursive-include src/pet/datasets *
+recursive-include src/pet/textbook1 *
+recursive-include src/pet/pyd *
+recursive-exclude src/pet/datasets *.ppy
+recursive-exclude src/pet/datasets *.pyx
+recursive-exclude src/pet/datasets *.c
+recursive-exclude src/pet/datasets/build *

@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+pyttsx3
+openpyxl
+jieba
+requests-html
+pydub
+seaborn
+
+[:python_version > "3.5"]
+importlib-metadata
