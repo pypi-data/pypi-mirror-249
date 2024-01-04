@@ -1,0 +1,2 @@
+[mara.commands]
+cron = mara_cron.cli:mara_cron
