@@ -1,0 +1,9 @@
+README.md
+setup.py
+serialduino/Serialduino.ino
+serialduino/__init__.py
+serialduino.egg-info/PKG-INFO
+serialduino.egg-info/SOURCES.txt
+serialduino.egg-info/dependency_links.txt
+serialduino.egg-info/requires.txt
+serialduino.egg-info/top_level.txt
