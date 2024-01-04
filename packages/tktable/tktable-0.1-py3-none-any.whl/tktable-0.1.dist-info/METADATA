@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tktable
+Version: 0.1
+Summary: A Simple Solution to easily use tables in any Tkinter Application
+Home-page: UNKNOWN
+Author: Nitin Garg
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: ttkbootstrap (>=1.10.1)
+
+UNKNOWN
+
+
