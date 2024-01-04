@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/dfds/__init__.py
+src/dfds/loader.py
+src/dfds/lsl.py
+src/dfds/parser.py
+src/dfds/typing.py
+src/dfds/url.py
+src/dfds/util.py
+src/streaminghub_pydfds.egg-info/PKG-INFO
+src/streaminghub_pydfds.egg-info/SOURCES.txt
+src/streaminghub_pydfds.egg-info/dependency_links.txt
+src/streaminghub_pydfds.egg-info/requires.txt
+src/streaminghub_pydfds.egg-info/top_level.txt
