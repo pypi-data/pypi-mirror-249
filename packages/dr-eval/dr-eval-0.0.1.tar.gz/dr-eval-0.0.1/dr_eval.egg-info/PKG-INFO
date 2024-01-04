@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dr-eval
+Version: 0.0.1
+Summary: Dr. Eval
+Home-page: https://github.com/lumpenspace/dr-eval
+Author: lumpenspace
+Author-email: lumpenspace@gmail.com
+
+Upcoming LLM test framework
