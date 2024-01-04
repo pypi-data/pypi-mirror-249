@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "ftmq"
+version = "0.5.1"
+description = "followthemoney query dsl and io helpers"
+authors = ["Simon Wörpel <simon.woerpel@pm.me>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/investigativedata/ftmq"
+repository = "https://github.com/investigativedata/ftmq"
+documentation = "https://github.com/investigativedata/ftmq"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+packages = [{include = "ftmq"}]
+
+[tool.poetry.scripts]
+ftmq = "ftmq.cli:cli"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/investigativedata/ftmq/issues"
+
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+banal = "^1.0.6"
+followthemoney = "^3.5.7"
+orjson = "^3.9.10"
+PyICU = "^2.12"
+click = "^8.1.7"
+click-default-group = "^1.2.4"
+cryptography = "^41.0.7"
+certifi = "^2023.11.17"
+scipy = "^1.11.4"
+pydantic = "^2.5.3"
+fsspec = "^2023.12.2"
+s3fs = "^2023.12.2"
+gcsfs = "^2023.12.2.post1"
+adlfs = "^2023.12.0"
+sqlalchemy = "^2.0.25"
+alephclient = "^2.3.6"
+pycountry = "^23.12.11"
+urllib3 = "<2"
+nomenklatura = "<3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+black = "^23.11.0"
+isort = "^5.12.0"
+mypy = "^1.7.0"
+pre-commit = "^3.5.0"
+flake8 = "^6.1.0"
+moto = "^4.2.8"
+ipdb = "^0.13.13"
+bump2version = "^1.0.1"
+cloudpickle = ">=2.2.1,<4.0.0"
+pytest-env = "^1.1.1"
+bump-pydantic = ">=0.7,<0.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+env = [
+    "DEBUG=1",
+    "NOMENKLATURA_STATEMENT_TABLE=test_table"
+]
