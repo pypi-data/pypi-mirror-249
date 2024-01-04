@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/filedups/__init__.py
+src/filedups/argparser_custom.py
+src/filedups/classes.py
+src/filedups/common_types.py
+src/filedups/constants.py
+src/filedups/csv_io.py
+src/filedups/filedups_api.py
+src/filedups/grouper_funs.py
+src/filedups/main.py
+src/filedups/util.py
+src/filedups.egg-info/PKG-INFO
+src/filedups.egg-info/SOURCES.txt
+src/filedups.egg-info/dependency_links.txt
+src/filedups.egg-info/top_level.txt
