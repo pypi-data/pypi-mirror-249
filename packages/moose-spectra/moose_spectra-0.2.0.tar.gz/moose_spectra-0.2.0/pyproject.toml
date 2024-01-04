@@ -1,0 +1,65 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "moose-spectra"
+dynamic = ["version"]
+description = "A package to simulate diatomic optical emission spectra relying on line-by-line databases compiled for MassiveOES"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Antoine Salden", email = "t.p.w.salden@tue.nl" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+]
+
+[project.urls]
+Source = "https://github.com/AntoineTUE/Moose"
+Documentation = "https://antoinetue.github.io/Moose/"
+
+[project.optional-dependencies]
+fit = ["lmfit"]
+docs = ["mkdocs-material","mkdocstrings", "mkdocstrings-python", "mkdocs-gen-files", "mkdocs-literate-nav", "mkdocs-section-index", "mkdocs-jupyter", "mkdocs-git-revision-date-localized-plugin"]
+examples = ["moose-spectra[fit]", "matplotlib", "plotly", "ipywidgets", "panel"]
+all = ["moose-spectra[fit]", "moose-spectra[docs]", "moose-spectra[examples]"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/Moose",
+]
+include =[
+    "src/Moose/data"
+]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
+"data" = "src/Moose/data/*.db"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/Moose",
+    "docs/",
+    "mkdocs.yml"
+]
+exclude = [
+    "_version.py"
+]
+
+[tool.ruff]
+extend-select = ["C4", "SIM", "TCH", "NPY", "PD"]
