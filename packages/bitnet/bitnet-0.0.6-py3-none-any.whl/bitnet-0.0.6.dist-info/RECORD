@@ -1,0 +1,10 @@
+bitnet/__init__.py,sha256=jqZfTLLfTgpIJRfpiDgi-FV20-q5yYxMXGQ9X3z5Mhk,257
+bitnet/at.py,sha256=VcWxMbOoKZJ8GqkLQqjvkdobEyUgK4DLSpVRFgkkq8s,2171
+bitnet/bitffn.py,sha256=4vRcPzlXPhu3D-m9KQjacQ0PijQQlpA_BeFp9biYa0E,1333
+bitnet/bitlinear.py,sha256=0gkgu_kDMvFz9_TR4qPC9HnPlz19dlQAPU0d5QBLZ1w,2820
+bitnet/inference.py,sha256=jTiTfmFN93OktNOocINQ6TdMgFHziQLoTKfcU_l-hrg,1957
+bitnet/transformer.py,sha256=ZIj77LAQ9ax7YxnNOXXlCevOia7WtggEqhbPUqiNf74,1499
+bitnet-0.0.6.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+bitnet-0.0.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bitnet-0.0.6.dist-info/METADATA,sha256=Y6L2eat1s76FqvEwycOCCSMPuJKkwxutj6RqONXNb0o,3534
+bitnet-0.0.6.dist-info/RECORD,,
