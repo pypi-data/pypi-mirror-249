@@ -1,0 +1,23 @@
+[project]
+    name = "CantoPy"
+    version = "0.0.1"
+    authors = [
+    { name="Robbe De Groeve", email="robbedegroeve@gmail.com" },
+    ]
+    description = "A XenoCanto API wrapper for Python"
+    readme = "readme.md"
+    requires-python = ">=3.12"
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ]
+
+[project.urls]
+    Homepage = "https://github.com/RobbeRDG/CantoPy"
+    Issues = "https://github.com/RobbeRDG/CantoPy/issues"
+
+[build-system]
+    requires = ["hatchling"]
+    build-backend = "hatchling.build"
+    

@@ -1,0 +1,51 @@
+{
+    "id": "0",
+    "gen": "Odontophorus",
+    "sp": "capueira",
+    "ssp": "plumbeicollis",
+    "group": "birds",
+    "en": "Spot-winged Wood Quail",
+    "rec": "Ciro Albano",
+    "cnt": "Brazil",
+    "loc": "RPPN Serra Bonita, Camacan-BA, Bahia",
+    "lat": "-15.3915",
+    "lng": "-39.5643",
+    "alt": "800",
+    "type": "duet, song",
+    "sex": "female, male",
+    "stage": "adult",
+    "method": "field recording",
+    "url": "//xeno-canto.org/581412",
+    "file": "https://xeno-canto.org/0/download",
+    "file-name": "XC581412-Odontophorus capueira _Serra Bonita_20200802-074609.mp3",
+    "sono": {
+        "small": "//xeno-canto.org/sounds/uploaded/MXVQPUKGWW/ffts/XC581412-small.png",
+        "med": "//xeno-canto.org/sounds/uploaded/MXVQPUKGWW/ffts/XC581412-med.png",
+        "large": "//xeno-canto.org/sounds/uploaded/MXVQPUKGWW/ffts/XC581412-large.png",
+        "full": "//xeno-canto.org/sounds/uploaded/MXVQPUKGWW/ffts/XC581412-full.png"
+    },
+    "osci": {
+        "small": "//xeno-canto.org/sounds/uploaded/MXVQPUKGWW/wave/XC581412-small.png",
+        "med": "//xeno-canto.org/sounds/uploaded/MXVQPUKGWW/wave/XC581412-med.png",
+        "large": "//xeno-canto.org/sounds/uploaded/MXVQPUKGWW/wave/XC581412-large.png"
+    },
+    "lic": "//creativecommons.org/licenses/by-nc-sa/4.0/",
+    "q": "A",
+    "length": "3:14",
+    "time": "08:00",
+    "date": "2020-08-02",
+    "uploaded": "2020-08-09",
+    "also": [
+        "Sclerurus scansor"
+    ],
+    "rmk": "",
+    "bird-seen": "yes",
+    "animal-seen": "yes",
+    "playback-used": "yes",
+    "temp": "",
+    "regnr": "",
+    "auto": "no",
+    "dvc": "",
+    "mic": "",
+    "smp": "48000"
+}

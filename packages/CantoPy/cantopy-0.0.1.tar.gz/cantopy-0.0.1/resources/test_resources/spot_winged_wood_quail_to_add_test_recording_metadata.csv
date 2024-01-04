@@ -1,0 +1,7 @@
+recording_id,generic_name,specific_name,subspecies_name,species_group,english_name,sound_type,sex,life_stage,background_species,animal_seen,recordist_name,recording_method,license_url,quality_rating,recording_length,recording_timestamp,date,upload_timestamp,recording_url,audio_file_url,recordist_remarks,playback_used,automatic_recording,recording_device,microphone_used,sample_rate,country,locality_name,latitude,longitude,temperature
+581412,Odontophorus,capueira,plumbeicollis,birds,Spot-winged Wood Quail,"duet, song","female, male",adult,['Sclerurus scansor'],yes,Ciro Albano,field recording,//creativecommons.org/licenses/by-nc-sa/4.0/,A,0 days 00:03:14,2020-08-02 08:00:00,2020-08-02,2020-08-09,//xeno-canto.org/581412,https://xeno-canto.org/581412/download,,yes,no,,,48000,Brazil,"RPPN Serra Bonita, Camacan-BA, Bahia",-15.3915,-39.5643,
+427716,Odontophorus,capueira,plumbeicollis,birds,Spot-winged Wood Quail,canto,,,[],unknown,Caio Brito,field recording,//creativecommons.org/licenses/by-nc-sa/4.0/,A,0 days 00:00:29,2016-11-30 17:50:00,2016-11-30,2018-07-23,//xeno-canto.org/427716,https://xeno-canto.org/427716/download,"habitat:Mata Úmida;
+recorder:Sony PCM-M10;
+microphone:Sennheiser ME-066;
+volume setting:5.;
+weather:Estrelado;",unknown,no,,,48000,Brazil,"Hotel Remanso, Guaramiranga-CE, Ceará",-4.242768,-38.931368,
