@@ -1,0 +1,10 @@
+mlbomdoc/__init__.py,sha256=MV03a2xsSEJaVspFICQoG4U_GcK96DsrJut_rV5-5_k,76
+mlbomdoc/cli.py,sha256=u0Pq-XXJPXOC04wmDh-5EdJ48M7i9D3fv_Wgu2W6nq8,2602
+mlbomdoc/generator.py,sha256=kVkseHOjy3UUK9B4iX9zoW9p5v__FvF9xa5nUOXSwOE,15528
+mlbomdoc/version.py,sha256=6LOKBBhWyh0xOqBVXN8nr9XHaNNfAQ-yz9TuqDOy-Ns,100
+mlbomdoc-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlbomdoc-0.1.0.dist-info/METADATA,sha256=R2rKJwr8-GaSzxkmXuMPJaZRYKNXGhulOoGbitbrZiI,21121
+mlbomdoc-0.1.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+mlbomdoc-0.1.0.dist-info/entry_points.txt,sha256=p90BiMiWIxIGojTd5U4DdO5lP-rEgmaZPJgLF34TOSs,47
+mlbomdoc-0.1.0.dist-info/top_level.txt,sha256=zOgUzftLpkYaTZ9xiVKb2pMkxdSr5o8UzYpdcwUhYT4,9
+mlbomdoc-0.1.0.dist-info/RECORD,,

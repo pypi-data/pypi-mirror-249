@@ -1,0 +1,2 @@
+[console_scripts]
+mlbomdoc = mlbomdoc.cli:main
