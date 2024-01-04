@@ -1,0 +1,50 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El servicio ya est\u00e1 configurado",
+            "no_port": "No hay puerto para el punto de conexi\u00f3n",
+            "no_services": "No se encontraron servicios en el extremo"
+        },
+        "error": {
+            "cannot_connect": "No se pudo conectar"
+        },
+        "step": {
+            "hassio_confirm": {
+                "description": "\u00bfQuieres configurar Home Assistant para conectarse al servicio de Wyoming proporcionado por el complemento: {addon}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Puerto"
+                }
+            },
+            "zeroconf_confirm": {
+                "description": "\u00bfQuieres configurar Home Assistant para conectarse al servicio de Wyoming {name}?",
+                "title": "Descubierto el servicio de Wyoming"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "assist_in_progress": {
+                "name": "Assist en progreso"
+            }
+        },
+        "select": {
+            "noise_suppression": {
+                "name": "Supresi\u00f3n de ruido"
+            },
+            "pipeline": {
+                "name": "Tuber\u00eda de Assist",
+                "state": {
+                    "preferred": "Preferido"
+                }
+            }
+        },
+        "switch": {
+            "satellite_enabled": {
+                "name": "Sat\u00e9lite habilitado"
+            }
+        }
+    }
+}

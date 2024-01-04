@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Slu\u017eba u\u017e je nakonfigurovan\u00e1"
+        },
+        "step": {
+            "user": {
+                "description": "Stla\u010dte odosla\u0165 pre \u00favodn\u00e9 nastavenie. Na vytvorenom z\u00e1zname konfigur\u00e1cie stla\u010dte konfigurova\u0165 pre pridanie senzorov pre vybran\u00e9 procesy"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "process": "Procesy na pridanie ako sn\u00edma\u010d(e)"
+                },
+                "data_description": {
+                    "process": "Vyberte spusten\u00fd proces zo zoznamu alebo pridajte vlastn\u00fa hodnotu. Podporovan\u00e9 s\u00fa viacer\u00e9 v\u00fdbery/vlastn\u00e9 hodnoty"
+                },
+                "description": "Konfigur\u00e1cia monitorovacieho senzora pre spusten\u00fd proces"
+            }
+        }
+    }
+}
