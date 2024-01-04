@@ -1,0 +1,3 @@
+[console_scripts]
+chalice-a4ab=chalice_a4ab.cli:main
+
