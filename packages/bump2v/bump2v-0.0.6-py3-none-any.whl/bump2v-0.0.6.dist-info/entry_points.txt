@@ -1,0 +1,2 @@
+[console_scripts]
+bumptydumpty = bump2v.__main__:main
