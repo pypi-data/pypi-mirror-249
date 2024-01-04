@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/field[@name='reference']" position="after">
+        <label name="quantity" />
+        <field name="quantity" symbol="quantity_uom"/>
+        <label name="asset_rate"/>
+        <field name="asset_rate" symbol="cashbook"/>
+        <newline/>
+
+        <field name="quantity_digits"/>
+        <newline/>
+    </xpath>
+
+    <xpath expr="/form/field[@name='rate_2nd_currency']" position="after">
+        <newline/>
+        <label name="quantity_2nd_uom"/>
+        <field name="quantity_2nd_uom" symbol="quantity2nd"/>
+        <label name="factor_2nd_uom"/>
+        <field name="factor_2nd_uom"/>
+    </xpath>
+
+    <xpath expr="/form/notebook/page[@name='description']" position="after">
+        <page name="current_value" col="6" string="Performance">
+            <label name="current_value"/>
+            <field name="current_value" symbol="currency"/>
+            <label name="diff_amount"/>
+            <field name="diff_amount" symbol="currency"/>
+
+            <group id="diff_percent" col="2">
+                <field name="diff_percent" xexpand="0"/>
+                <label name="diff_percent" xalign="0.0" string="%" xexpand="1"/>
+            </group>
+            <newline/>
+
+            <label name="trade_fee"/>
+            <field name="trade_fee"/>
+            <label name="asset_dividend"/>
+            <field name="asset_dividend"/>
+            <newline/>
+
+            <label name="asset_gainloss"/>
+            <field name="asset_gainloss"/>
+
+        </page>
+    </xpath>
+
+</data>

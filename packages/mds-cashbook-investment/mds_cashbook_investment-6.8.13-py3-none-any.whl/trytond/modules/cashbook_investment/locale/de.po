@@ -1,0 +1,407 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+
+##############
+# ir.message #
+##############
+msgctxt "model:ir.message,text:msg_btype_asset"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "model:ir.message,text:msg_line_quantity_not_set"
+msgid "Quantity must be set for line '%(linetxt)s'."
+msgstr "Menge für die Zeile '%(linetxt)s' muß gesetzt werden."
+
+msgctxt "model:ir.message,text:msg_line_sign_mismatch"
+msgid "Quantity and Amount must with same sign for line %(linetxt)s."
+msgstr "Menge und Betrag müssen für Zeile %(linetxt)s mit demselben Vorzeichen versehen werden."
+
+msgctxt "model:ir.message,text:msg_uomcat_mismatch"
+msgid "Cannot transfer quantities between cashbooks with different unit-categories (%(cat1)s != %(cat2)s)."
+msgstr "Es können keine Mengen zwischen Kassenbüchern mit verschiedenen Einheitenkategorien (%(cat1)s != %(cat2)s) übertragen werden."
+
+
+##############
+# ir.ui.menu #
+##############
+msgctxt "model:ir.ui.menu,name:menu_assetconf"
+msgid "Asset setting"
+msgstr "Vermögenswert"
+
+
+#############
+# ir.action #
+#############
+msgctxt "model:ir.action,name:act_assetconf_form"
+msgid "Asset setting"
+msgstr "Vermögenswert-Einstellung"
+
+
+#################
+# cashbook.book #
+#################
+msgctxt "view:cashbook.book:"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "view:cashbook.book:"
+msgid "Quantity"
+msgstr "Anzahl"
+
+msgctxt "view:cashbook.book:"
+msgid "Fees and dividends"
+msgstr "Gebühren und Dividenden"
+
+msgctxt "view:cashbook.book:"
+msgid "Current valuation of the investment"
+msgstr "aktuelle Bewertung der Vermögensanlage"
+
+msgctxt "field:cashbook.book,asset:"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "field:cashbook.book,quantity_digits:"
+msgid "Digits"
+msgstr "Dezimalstellen"
+
+msgctxt "help:cashbook.book,quantity_digits:"
+msgid "Quantity Digits"
+msgstr "Dezimalstellen für Anzahl"
+
+msgctxt "help:cashbook.book,asset_uomcat:"
+msgid "UOM Category"
+msgstr "Einheitenkategorie"
+
+msgctxt "field:cashbook.book,quantity_uom:"
+msgid "UOM"
+msgstr "Einheit"
+
+msgctxt "field:cashbook.book,symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:cashbook.book,asset_symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:cashbook.book,quantity:"
+msgid "Quantity"
+msgstr "Anzahl"
+
+msgctxt "help:cashbook.book,quantity:"
+msgid "Quantity of assets until to date"
+msgstr "Menge der Vermögenswerte bis heute"
+
+msgctxt "field:cashbook.book,quantity_all:"
+msgid "Total Quantity"
+msgstr "Gesamtanzahl"
+
+msgctxt "help:cashbook.book,quantity_all:"
+msgid "Total quantity of all assets"
+msgstr "Gesamtmenge der Vermögenswerte"
+
+msgctxt "field:cashbook.book,current_value:"
+msgid "Value"
+msgstr "Wert"
+
+msgctxt "help:cashbook.book,current_value:"
+msgid "Valuation of the investment based on the current stock market price."
+msgstr "Bewertung der Vermögensanlage anhand des aktuellen Börsenkurses."
+
+msgctxt "field:cashbook.book,current_value_ref:"
+msgid "Value (Ref.)"
+msgstr "Wert (Ref.)"
+
+msgctxt "help:cashbook.book,current_value_ref:"
+msgid "Valuation of the investment based on the current stock exchange price, converted into the company currency."
+msgstr "Bewertung der Vermögensanlage anhand des aktuellen Börsenkurses, umgerechnet in die Unternehmenswährung."
+
+msgctxt "field:cashbook.book,diff_amount:"
+msgid "Difference"
+msgstr "Differenz"
+
+msgctxt "help:cashbook.book,diff_amount:"
+msgid "Difference between acquisition value and current value"
+msgstr "Differenz zwischen Anschaffungswert und aktuellem Wert"
+
+msgctxt "field:cashbook.book,diff_percent:"
+msgid "Percent"
+msgstr "Prozent"
+
+msgctxt "help:cashbook.book,diff_percent:"
+msgid "percentage performance since acquisition"
+msgstr "prozentuale Wertentwicklung seit Anschaffung"
+
+msgctxt "field:cashbook.book,current_rate:"
+msgid "Rate"
+msgstr "Kurs"
+
+msgctxt "help:cashbook.book,current_rate:"
+msgid "Rate per unit of investment based on current stock exchange price."
+msgstr "Kurs pro Einheit der Investition anhand des aktuellen Börsenkurses."
+
+msgctxt "field:cashbook.book,yield_dividend_total:"
+msgid "Dividend"
+msgstr "Dividende"
+
+msgctxt "help:cashbook.book,yield_dividend_total:"
+msgid "Total dividends received"
+msgstr "insgesamt erhaltene Dividenden"
+
+msgctxt "field:cashbook.book,yield_dividend_12m:"
+msgid "Dividend 1y"
+msgstr "Dividende 1J"
+
+msgctxt "help:cashbook.book,yield_dividend_12m:"
+msgid "Dividends received in the last twelve months"
+msgstr "in den letzten zwölf Monaten erhaltene Dividenden"
+
+msgctxt "field:cashbook.book,yield_fee_total:"
+msgid "Trade Fee"
+msgstr "Handelsgebühr"
+
+msgctxt "help:cashbook.book,yield_fee_total:"
+msgid "Total trade fees payed"
+msgstr "insgesamt bezahlte Handelsgebühr"
+
+msgctxt "field:cashbook.book,yield_fee_12m:"
+msgid "Trade Fee 1y"
+msgstr "Handelsgebühr 1J"
+
+msgctxt "help:cashbook.book,yield_fee_12m:"
+msgid "Trade fees payed in the last twelve month"
+msgstr "in den letzten zwölf Monaten bezahlte Handelsgebühr"
+
+msgctxt "field:cashbook.book,yield_sales:"
+msgid "Sales"
+msgstr "Verkäufe"
+
+msgctxt "help:cashbook.book,yield_sales:"
+msgid "Total profit or loss on sale of shares."
+msgstr "Gesamter Gewinn oder Verlust bei Verkauf von Anteilen."
+
+msgctxt "field:cashbook.book,yield_sales_12m:"
+msgid "Sales 1y"
+msgstr "Verkäufe 1J"
+
+msgctxt "help:cashbook.book,yield_sales_12m:"
+msgid "Total profit or loss on sale of shares in the last twelve month."
+msgstr "Gesamter Gewinn oder Verlust bei Verkauf von Anteilen in den letzten zwölf Monaten."
+
+msgctxt "field:cashbook.book,yield_balance:"
+msgid "Total Yield"
+msgstr "Gesamtertrag"
+
+msgctxt "help:cashbook.book,yield_balance:"
+msgid "Total income: price gain + dividends + sales gains - fees"
+msgstr "Gesamtertrag: Kursgewinn + Dividenden + Verkaufsgewinne - Gebühren"
+
+msgctxt "field:cashbook.book,purchase_amount:"
+msgid "Purchase Amount"
+msgstr "Kaufbetrag"
+
+msgctxt "help:cashbook.book,purchase_amount:"
+msgid "Total purchase amount, from shares and fees."
+msgstr "Kaufbetrag gesamt, aus Anteilen und Gebühren."
+
+
+##################
+# cashbook.split #
+##################
+msgctxt "field:cashbook.split,quantity_digits:"
+msgid "Digits"
+msgstr "Dezimalstellen"
+
+msgctxt "field:cashbook.split,quantity:"
+msgid "Quantity"
+msgstr "Anzahl"
+
+msgctxt "field:cashbook.split,quantity_uom:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:cashbook.split,quantity_2nd_uom:"
+msgid "Quantity Second UOM"
+msgstr "Anzahl in Fremdeinheit"
+
+msgctxt "field:cashbook.split,quantity2nd:"
+msgid "2nd UOM"
+msgstr "Fremdeinheit"
+
+msgctxt "field:cashbook.split,quantity2nd_digits:"
+msgid "2nd UOM Digits"
+msgstr "Dezimalstellen Fremdeinheit"
+
+msgctxt "field:cashbook.split,factor_2nd_uom:"
+msgid "Conversion factor"
+msgstr "Umrechnungsfaktor"
+
+msgctxt "help:cashbook.split,factor_2nd_uom:"
+msgid "Conversion factor between the units of the participating cash books."
+msgstr "Umrechnungsfaktor zwischen den Einheiten der teilnehmenden Kassenbücher."
+
+
+#################
+# cashbook.line #
+#################
+msgctxt "view:cashbook.line:"
+msgid "Performance"
+msgstr "Wertentwicklung"
+
+msgctxt "field:cashbook.line,quantity_digits:"
+msgid "Digits"
+msgstr "Dezimalstellen"
+
+msgctxt "field:cashbook.line,quantity:"
+msgid "Quantity"
+msgstr "Anzahl"
+
+msgctxt "field:cashbook.line,quantity_credit:"
+msgid "Quantity Credit"
+msgstr "Einnahme Anzahl"
+
+msgctxt "field:cashbook.line,quantity_debit:"
+msgid "Quantity Debit"
+msgstr "Ausgabe Anzahl"
+
+msgctxt "field:cashbook.line,quantity_symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:cashbook.line,asset_rate:"
+msgid "Rate"
+msgstr "Kurs"
+
+msgctxt "field:cashbook.line,quantity_balance:"
+msgid "Quantity"
+msgstr "Anzahl"
+
+msgctxt "help:cashbook.line,quantity_balance:"
+msgid "Number of shares in the cashbook up to the current row if the default sort applies."
+msgstr "Anzahl Anteile im Kassenbuch bis zur aktuellen Zeile, wenn die Standardsortierung zutrifft."
+
+msgctxt "field:cashbook.line,quantity_2nd_uom:"
+msgid "Quantity Second UOM"
+msgstr "Anzahl in Fremdeinheit"
+
+msgctxt "field:cashbook.line,quantity2nd:"
+msgid "2nd UOM"
+msgstr "Fremdeinheit"
+
+msgctxt "field:cashbook.line,quantity2nd_digits:"
+msgid "2nd UOM Digits"
+msgstr "Dezimalstellen Fremdeinheit"
+
+msgctxt "field:cashbook.line,factor_2nd_uom:"
+msgid "Conversion factor"
+msgstr "Umrechnungsfaktor"
+
+msgctxt "help:cashbook.line,factor_2nd_uom:"
+msgid "Conversion factor between the units of the participating cash books."
+msgstr "Umrechnungsfaktor zwischen den Einheiten der teilnehmenden Kassenbücher."
+
+msgctxt "field:cashbook.line,splitline_has_quantity:"
+msgid "has quantity"
+msgstr "hat Anzahl"
+
+msgctxt "field:cashbook.line,current_value:"
+msgid "Value"
+msgstr "Wert"
+
+msgctxt "help:cashbook.line,current_value:"
+msgid "Valuation of the investment based on the current stock market price."
+msgstr "Bewertung der Vermögensanlage anhand des aktuellen Börsenkurses."
+
+msgctxt "field:cashbook.line,diff_amount:"
+msgid "Difference"
+msgstr "Differenz"
+
+msgctxt "help:cashbook.line,diff_amount:"
+msgid "Difference between acquisition value and current value"
+msgstr "Differenz zwischen Anschaffungswert und aktuellem Wert"
+
+msgctxt "field:cashbook.line,diff_percent:"
+msgid "Percent"
+msgstr "Prozent"
+
+msgctxt "help:cashbook.line,diff_percent:"
+msgid "percentage performance since acquisition"
+msgstr "prozentuale Wertentwicklung seit Anschaffung"
+
+msgctxt "field:cashbook.line,trade_fee:"
+msgid "Fee"
+msgstr "Gebühr"
+
+msgctxt "help:cashbook.line,trade_fee:"
+msgid "Trading fee for the current booking line."
+msgstr "Handelsgebühr für die aktuelle Buchungszeile."
+
+msgctxt "field:cashbook.line,asset_dividend:"
+msgid "Dividend"
+msgstr "Dividende"
+
+msgctxt "help:cashbook.line,asset_dividend:"
+msgid "Dividend received at the current booking line."
+msgstr "Erhaltene Dividende an der aktuellen Buchungszeile."
+
+msgctxt "field:cashbook.line,asset_gainloss:"
+msgid "Profit/Loss"
+msgstr "Gewinn/Verlust"
+
+msgctxt "help:cashbook.line,asset_gainloss:"
+msgid "Profit or loss on sale on the current booking line."
+msgstr "Gewinn oder Verlust bei Verkauf auf der aktuellen Buchungszeile."
+
+
+##################
+# cashbook.recon #
+##################
+msgctxt "field:cashbook.recon,start_quantity:"
+msgid "Start Quantity"
+msgstr "Anfangsmenge"
+
+msgctxt "field:cashbook.recon,end_quantity:"
+msgid "End Quantity"
+msgstr "Endmenge"
+
+msgctxt "field:cashbook.recon,quantity_digits:"
+msgid "Quantity Digits"
+msgstr "Anzahl-Dezimalstellen"
+
+msgctxt "field:cashbook.recon,quantity_uom:"
+msgid "Symbol"
+msgstr "Symbol"
+
+
+######################
+# cashbook.assetconf #
+######################
+msgctxt "model:cashbook.assetconf,name:"
+msgid "Asset setting"
+msgstr "Vermögenswert-Einstellung"
+
+msgctxt "field:cashbook.assetconf,fee_category:"
+msgid "Fee category"
+msgstr "Gebührenkategorie"
+
+msgctxt "help:cashbook.assetconf,fee_category:"
+msgid "Category for fees when trading assets."
+msgstr "Kategorie für Gebühren beim Handel mit Vermögenswerten."
+
+msgctxt "field:cashbook.assetconf,dividend_category:"
+msgid "Dividend category"
+msgstr "Dividendenkategorie"
+
+msgctxt "help:cashbook.assetconf,dividend_category:"
+msgid "Category for dividend paid out."
+msgstr "Kategorie für ausgezahlte Dividenden."
+
+msgctxt "field:cashbook.assetconf,gainloss_book:"
+msgid "Profit/Loss Cashbook"
+msgstr "Gewinn/Verlust Kassenbuch"
+
+msgctxt "help:cashbook.assetconf,gainloss_book:"
+msgid "Profit and loss on sale of assets are recorded in the cash book."
+msgstr "Gewinn und Verlust bei Verkauf von Vermögenswerten werden auf das Kassenbuch gebucht."
