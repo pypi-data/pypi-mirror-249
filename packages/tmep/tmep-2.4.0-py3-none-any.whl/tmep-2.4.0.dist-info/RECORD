@@ -1,0 +1,12 @@
+tmep/__init__.py,sha256=MMC0_MKNkPUmU-_uZjjeyOqn4FmJ5-1hwVNlwe-DeAE,1505
+tmep/doc.py,sha256=oWMk8s67cYunU-i5i6176iJrVqS2z6zo9dVnVqxpwmA,4307
+tmep/format.py,sha256=ryqmk12otM-7sbCnCjJJXbyWZE2JvLuGgIwXu0LVRb0,581
+tmep/functions.py,sha256=nt6DFT0PNcIm-gvmPBVxMXMdbaCV2Ppd34JoOuqwvc4,13551
+tmep/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+tmep/template.py,sha256=sSylfWWfL2iyIF86Hv5inZ-3z54evGcwKELABU4cZbY,20669
+tmep/types.py,sha256=JvyCshIJ3ooqK2lQGxtrL_x-shrXSliBBW1EYeyCXdA,119
+tmep-2.4.0.dist-info/LICENSE,sha256=EgFJyxjUZ7jn5e-Fzx5LcipEpn9ODVbUW3_kDf7ATBA,1137
+tmep-2.4.0.dist-info/METADATA,sha256=TnTjxd04JDVBMS09dF-08EOi1GLUMKoZUqm_d7DKYdM,7078
+tmep-2.4.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tmep-2.4.0.dist-info/entry_points.txt,sha256=VQ4XvY6upECKuG_M04FiSOiuwsBpz50vFTk_q9MNZSg,47
+tmep-2.4.0.dist-info/RECORD,,
