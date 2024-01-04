@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: hours
+Version: 0.3.0
+Summary: Log working hours
+License: MIT
+Author: Gyorgy Orosz
+Author-email: gyorgy@orosz.link
+Maintainer: György Orosz
+Maintainer-email: gyorgy@orosz.link
+Requires-Python: >=3.8,<3.13
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: sqlmodel (>=0.0.14,<0.1.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Requires-Dist: xlsxwriter (>=3.1.9,<4.0.0)
+Description-Content-Type: text/markdown
+
+<div align="center" markdown>
+
+# ⏳ Hours
+
+[![Build](https://github.com/oroszgy/hours/actions/workflows/build.yml/badge.svg)](https://github.com/oroszgy/hours/actions/workflows/build.yml)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/hours)
+[![PyPI version](https://badge.fury.io/py/hours.svg)](https://pypi.org/project/hours/)
+[![Downloads](https://static.pepy.tech/personalized-badge/hours?period=total&units=international_system&left_color=grey&right_color=green&left_text=Downloads)](https://pepy.tech/project/hours)
+
+A minimalistic work time logger for the command line.
+</div>
+
+<hr/>
+
+# Installation
+
+```bash
+pip install hours
+```
+
+## Usage
+
+Let's add a client first and set the hourly rate:
+
+```bash
+hours clients add -n BigCorporate --rate 100 --currency €
+hours clients list
+```
+
+Then log your work for today:
+
+```bash
+hours log -c BigCorporate -h 8.0 -p "ML pipeline" -t "fixing bugs"
+```
+
+Get a report for the current month (or any other period):
+
+```bash
+hours report 
+```
+
+Create a timesheet to Excel file:
+
+```bash
+hours export
+```
+
+For more information, see the [documentation](https://oroszgy.github.io/hours).
+
+
