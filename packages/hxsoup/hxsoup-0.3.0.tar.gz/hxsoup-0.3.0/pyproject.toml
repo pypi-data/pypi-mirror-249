@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "hxsoup"
+version = "0.3.0"  # This version will be matched when build.py is run.
+description = "Various convenient features related to httpx and BeautifulSoup."
+authors = ["ilotoki0804 <ilotoki0804@gmail.com>"]
+license = "MIT"
+readme = "README_build.md"
+keywords = ["httpx", "requests", "request", "beautifulsoup", "beautifulsoup4", "bs4", "soup", ""]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "^0.26.0"
+beautifulsoup4 = "^4.12.2"
+frozendict = "^2.3.10"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.28.0"
+tomlkit = "^0.12.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
