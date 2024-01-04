@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds.de for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/field[@name='rate_2nd_currency']" position="after">
+        <label name="quantity" />
+        <field name="quantity" symbol="quantity_uom"/>
+        <field name="quantity_digits"/>
+        <newline/>
+
+        <label name="quantity_2nd_uom"/>
+        <field name="quantity_2nd_uom" symbol="quantity2nd"/>
+        <label name="factor_2nd_uom"/>
+        <field name="factor_2nd_uom"/>
+    </xpath>
+
+</data>

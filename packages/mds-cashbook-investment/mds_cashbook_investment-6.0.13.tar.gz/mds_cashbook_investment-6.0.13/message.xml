@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.message" id="msg_btype_asset">
+            <field name="text">Asset</field>
+        </record>
+        <record model="ir.message" id="msg_line_quantity_not_set">
+            <field name="text">Quantity must be set for line '%(linetxt)s'.</field>
+        </record>
+        <record model="ir.message" id="msg_line_sign_mismatch">
+            <field name="text">Quantity and Amount must with same sign for line %(linetxt)s.</field>
+        </record>
+        <record model="ir.message" id="msg_uomcat_mismatch">
+            <field name="text">Cannot transfer quantities between cashbooks with different unit-categories (%(cat1)s != %(cat2)s).</field>
+        </record>
+
+    </data>
+</tryton>

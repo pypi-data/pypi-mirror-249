@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/tree/field[@name='debit']" position="after">
+        <field name="quantity_credit"/>
+        <field name="quantity_debit"/>
+    </xpath>
+
+</data>
