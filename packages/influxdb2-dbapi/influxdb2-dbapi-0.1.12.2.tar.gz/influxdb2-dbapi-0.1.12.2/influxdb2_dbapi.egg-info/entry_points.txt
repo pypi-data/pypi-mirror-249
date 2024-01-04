@@ -1,0 +1,7 @@
+[console_scripts]
+influxdb2_db = influxdb2.console:main
+
+[sqlalchemy.dialects]
+influxdb2 = influxdb2_dbapi.influxdb2_sqlalchemy:Influxdb2HTTPDialect
+influxdb2.http = influxdb2_dbapi.influxdb2_sqlalchemy:Influxdb2HTTPDialect
+influxdb2.https = influxdb2_dbapi.influxdb2_sqlalchemy:Influxdb2HTTPSDialect
