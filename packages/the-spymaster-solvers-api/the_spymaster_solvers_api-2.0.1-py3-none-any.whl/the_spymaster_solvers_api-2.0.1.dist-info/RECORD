@@ -1,0 +1,10 @@
+the_spymaster_solvers_api/__init__.py,sha256=jGiJ0fONp-J5I8A5JxT9eAvWg1Qefm2yR6-LdtZ58Zs,60
+the_spymaster_solvers_api/client.py,sha256=KvOd1eJK6eNCAwuPbpI-A0gVwavnvTwlWaJPPK8LM-k,1517
+the_spymaster_solvers_api/structs/__init__.py,sha256=3YblGvYNG1TCFVwbqdo7eE93jIqZ9il2RSvWSGRVYP8,123
+the_spymaster_solvers_api/structs/base.py,sha256=VXtxvCV98Spkv1jnlkxK44xS1QQNOvABB4RnhpQFuxw,724
+the_spymaster_solvers_api/structs/errors.py,sha256=GbCtJe6qj_EkhCa0G-yZ-sGcBI4O78g-Jbdb7EFM6qE,156
+the_spymaster_solvers_api/structs/requests.py,sha256=95Pt3POFxX3szVf7ZmSep4BKq6NqwAmchzeRdFwFlrA,1263
+the_spymaster_solvers_api/structs/responses.py,sha256=IaBEj0jKTm-5h2OfUfKKkQYtpKqMWzyg5OTcsmsBNoI,770
+the_spymaster_solvers_api-2.0.1.dist-info/METADATA,sha256=PSv84NrqtpPcFPLSK9D_pJ5rtI37341_RzXW4rvmzZw,872
+the_spymaster_solvers_api-2.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+the_spymaster_solvers_api-2.0.1.dist-info/RECORD,,
