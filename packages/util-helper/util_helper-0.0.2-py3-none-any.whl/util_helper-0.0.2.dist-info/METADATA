@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: util_helper
+Version: 0.0.2
+Summary: Few scripts to help with various tasks such as text preprocessing, file handling.
+Home-page: https://github.com/laelhalawani/glai
+Author: Łael Al-Halawani
+Author-email: laelhalawani@gmail.com
+Keywords: file handling,string comparison,text preprocessing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# util_helpers
+A few scripts to help with various tasks.
+Detailed documentation at
+https://laelhalawani.github.io/util_helper
