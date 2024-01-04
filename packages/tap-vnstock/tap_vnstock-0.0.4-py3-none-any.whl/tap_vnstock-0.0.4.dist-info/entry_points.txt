@@ -1,0 +1,3 @@
+[console_scripts]
+tap-vnstock=tap_vnstock.tap:Tapvnstock.cli
+
