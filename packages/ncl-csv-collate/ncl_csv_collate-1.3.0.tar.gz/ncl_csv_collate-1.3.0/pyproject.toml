@@ -1,0 +1,23 @@
+[project]
+name = "ncl_csv_collate"
+version = "1.3.0"
+authors = [
+    {name = "Jake Kealey", email="jake.kealey@nhs.net"},
+]
+description = "Module to collate loose csv files with export options"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=2.1.4",
+    "SQLAlchemy>=2.0.5.post1",
+    "ncl_sqlsnippets>=1.2.3"
+]
+
+[project.urls]
+Homepage = "https://github.com/ncl-icb-analytics/csv_collate"
+Issues = "https://github.com/ncl-icb-analytics/csv_collate/issues"

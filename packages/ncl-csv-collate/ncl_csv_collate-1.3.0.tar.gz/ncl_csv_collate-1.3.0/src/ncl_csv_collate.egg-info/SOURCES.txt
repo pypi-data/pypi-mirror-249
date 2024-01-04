@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/csv_collate/__init__.py
+src/csv_collate/collate.py
+src/ncl_csv_collate.egg-info/PKG-INFO
+src/ncl_csv_collate.egg-info/SOURCES.txt
+src/ncl_csv_collate.egg-info/dependency_links.txt
+src/ncl_csv_collate.egg-info/requires.txt
+src/ncl_csv_collate.egg-info/top_level.txt
