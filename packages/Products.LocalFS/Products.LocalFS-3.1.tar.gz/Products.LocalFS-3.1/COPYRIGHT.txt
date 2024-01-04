@@ -1,0 +1,2 @@
+Copyright (c) 1999 Jonothan Farr and Contributors.
+All rights reserved.

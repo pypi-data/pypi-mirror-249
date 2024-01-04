@@ -1,0 +1,8 @@
+setuptools
+Zope>=5
+Products.PythonScripts
+
+[docs]
+Sphinx
+sphinx_rtd_theme
+pkginfo
