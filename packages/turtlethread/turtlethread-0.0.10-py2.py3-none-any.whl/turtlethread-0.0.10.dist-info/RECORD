@@ -1,0 +1,15 @@
+turtlethread/__init__.py,sha256=6LDrIkCenl_cUgxWXNMaBnQbsLzRY0lJfvZBkWHqz1w,174
+turtlethread/base_turtle.py,sha256=lPAwvgTua12haj-3xQo_C7DL1n_dWP_g1CjKbCoFf90,18370
+turtlethread/pattern_info.py,sha256=ytaaHinUjlwsR6KJKkphfC9H0OBoV98TLYnM7bAZtj0,2985
+turtlethread/stitches.py,sha256=-f1XrHdfRjV6IDAl6vAcdoc4nyVMFwSP55t5W8vjYhA,7880
+turtlethread/turtle.py,sha256=iKnaRaYCO-cso-i65WgydRPv2LNkqvD9-zrOGFbJz-I,13124
+turtlethread/visualise.py,sha256=DVysirzt011qY26_Fg3C-u-y-TA7Gdr3BBz-hl70ewE,3963
+turtlethread/sphinx_plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turtlethread/sphinx_plugins/manual_example_code_directive.py,sha256=9wGX1SfMJLLKG19B98nigd6Ex292-ihoQmFOvGsNaqE,3381
+turtlethread/sphinx_plugins/turtlethread_gallery_scraper.py,sha256=ffVBodTom66R0TM7BUqeED3EaowECts8vDui5kBpB04,1553
+turtlethread-0.0.10.dist-info/AUTHORS.rst,sha256=o8g3uBxBrLib0vMLAtIG_puLUvtAZ_p_2hoM8J5t2Gk,92
+turtlethread-0.0.10.dist-info/LICENSE,sha256=AqKer7J-Sn3STohsSChDt7CSQvgSQb1bzG0sqhdmqFY,1579
+turtlethread-0.0.10.dist-info/METADATA,sha256=fppko29oBFGuA_bczNmRQZmJos2E970t3ToW-bkQjKc,1502
+turtlethread-0.0.10.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+turtlethread-0.0.10.dist-info/top_level.txt,sha256=-MqV7csADaYcDvm7mndsCPKfOLPbZ0ZA6xM_hd4LbAk,13
+turtlethread-0.0.10.dist-info/RECORD,,
