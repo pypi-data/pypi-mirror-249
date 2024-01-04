@@ -1,0 +1,11 @@
+ctor/__init__.py,sha256=z0H4Huh24nVgcU8hDnX4whzWcZ9u2zci5lRP5NC0Mso,118
+ctor/common.py,sha256=m-llid2AJ01H_LA67ebLtPNVREftK-LKv1_KofjgJfo,2120
+ctor/conversion.py,sha256=01Z5cMn_Y6RxGUV1Sieh9Z1MIkrGCAvv83PiwN6enNc,38804
+ctor/errors.py,sha256=8t4_xZVSd_K8-WfP6gTDKU8OxTWD-ElD6VHfG-e5dec,2430
+ctor/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctor/typing_utils.py,sha256=MyWBk1SdYBlPI274na9K0ov7U3948kwv1i92xrCZLfs,5799
+ctor-0.3.5.dist-info/LICENSE,sha256=fBxGIQXzwUz5i7H-L702mNDJpsjtZPJBKzmzom8gKnY,1091
+ctor-0.3.5.dist-info/METADATA,sha256=l2csAqMG3B7bWUduvyyyzr02rmh09Vh8OoG3gYtvv2I,5437
+ctor-0.3.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ctor-0.3.5.dist-info/top_level.txt,sha256=GvCgSCDiJuePdrn9GLcuz9jVNM7N_oLDW8JtQC7RQjs,5
+ctor-0.3.5.dist-info/RECORD,,
