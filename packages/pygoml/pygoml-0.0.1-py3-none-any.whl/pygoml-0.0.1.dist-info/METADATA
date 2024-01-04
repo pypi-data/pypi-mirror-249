@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pygoml
+Version: 0.0.1
+Summary: PyGOML: A Python Library for Solving Combinatorial Optimization Problems using Decision Diagram based Branch-and-Bound in combination with Machine Learning
+Home-page: https://github.com/AIM-BENMHAMED/PyGOML
+Author: Abdelouahed Ben Mhamed
+Author-email: a.benmhamed@intelligentica.net
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: cloudpickle
+
+# PyGOML: Decision Diagram based Branch-and-Bound in combination with Machine Learning
+
+Under constructio! Not ready for use yet! Currently experimenting and planning.
+Developed by Abdelouahed Ben Mhamed, a Ph.D. student at the Moroccan International Center for Artificial Intelligence (AI Movement).
+
