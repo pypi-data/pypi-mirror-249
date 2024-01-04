@@ -1,0 +1,12 @@
+numpy>=1.22.0
+matplotlib
+multiprocess
+pandas
+psutil
+requests
+tables
+
+[treeplot]
+ete3
+PyQt5==5.12
+sourmash
