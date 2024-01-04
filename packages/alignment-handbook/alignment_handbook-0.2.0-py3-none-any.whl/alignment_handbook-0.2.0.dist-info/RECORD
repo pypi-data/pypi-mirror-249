@@ -1,0 +1,10 @@
+alignment/__init__.py,sha256=Chf_dL5lO-VOZ_7Q-dcNl7tq2vgWvb9_D40PZeVsWHM,286
+alignment/configs.py,sha256=-BQFX-VeOHvIxAHgULpUZXVKna4i_3J4-kf4B4vPqtg,10744
+alignment/data.py,sha256=1BLV9o8-uqod2g3UB-tXdil-0efhczIg7ogdY-HZTCw,8706
+alignment/model_utils.py,sha256=EZ3PUGYDEtvA_nPBO6FUn4FBXRrzlXYq2gmQnKXoIIc,3923
+alignment/release.py,sha256=bYE4AXB7Q-J2U7YS0zHmGZ10fUztkIBX6PK0n9KJ--4,3938
+alignment_handbook-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+alignment_handbook-0.2.0.dist-info/METADATA,sha256=sdDLwq7iaSOKfj9wfYRWycj_5G4hSMf_-IrEtNQxr10,8561
+alignment_handbook-0.2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+alignment_handbook-0.2.0.dist-info/top_level.txt,sha256=tG2MpDfNrDqTa7nGv6Xne3HQSSbN7HNC_7op46my3vY,10
+alignment_handbook-0.2.0.dist-info/RECORD,,
