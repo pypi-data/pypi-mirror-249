@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Ignite it all{% endblock %}
+{% block content %}
+    <h2>Services</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for service in maindata_services %}
+                <tr>
+                    <td>{{ service.hostname }}</td>
+                    <td>{{ service.status }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
