@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: easyspider
+Version: 1.9.1
+Summary: an easy way to use Scrapy
+Project-URL: Homepage, https://pypi.org/project/DBService/
+Author-email: "hang.zhang" <hhczy1003@163.com>, "Marrin.Hu" <himarrin@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# an easy way to use Scrapy
+
+## easyspider shell

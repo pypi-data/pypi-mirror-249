@@ -1,0 +1,30 @@
+[project]
+name="easyspider"
+version="1.9.1"
+authors = [
+  { name="hang.zhang", email="hhczy1003@163.com"},
+  { name="Marrin.Hu", email="himarrin@gmail.com"},
+]
+description = "an easy way to use Scrapy"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/DBService/"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "ha.build"
+
+[tool.hatch.build]
+exclude = [
+    "/.idea/*",
+    "/.history/*",
+]
+[project.scripts]
+easyspider = "easyspider.core.cmdline:execute"
