@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: KOMPAS_tools
+Version: 0.1
+Summary: This library contains tools for KOMPAS 3D automation
+Home-page: https://github.com/Mikarisar/KOMPAS_tools
+Author: Mikarisar
+Author-email: mikarisar@gmail.com
+Project-URL: GitHub, https://github.com/Mikarisar/KOMPAS_tools
+Keywords: cad drawing kompas kompas3d automation engineering
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pywin32
+Requires-Dist: numpy
+
+# KOMPAS_tools
+Инструменты для автоматизации КОМПАС 3D v20 на python3
+
+!!!Библиотека на раннем этапе разработки!!!
+
+`This library contents only russian descriptions here and inside the code.
+If someone need english description - let me know.`
+
+### Используемое ПО:
+***
+- Python 3.11.6
+- КОМПАС 3D v20
+- PyCharm 2023.2.4 (Community Edition)
+
+### Используемые библиотеки:
+***
+- win32com
+- numpy
+- datetime
+
+## Структура:
+- KompasClass.py - содержит класс Kompas для работы с САПР КОМПАС 3D
+- Test.py - сейчас это "черновик", файл для проверки работы методов класса Kompas
+- Serpinsky.py - демонстрационный скрипт, строит треугольник Серпинского из точек на новом фрагменте
+***
+*подробные описания методов искать в комментариях кода.

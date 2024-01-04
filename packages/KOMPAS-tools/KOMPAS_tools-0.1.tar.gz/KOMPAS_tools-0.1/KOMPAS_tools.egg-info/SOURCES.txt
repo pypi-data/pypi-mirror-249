@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+KOMPAS_tools/KompasClass.py
+KOMPAS_tools/Serpinsky.py
+KOMPAS_tools/Test.py
+KOMPAS_tools/__init__.py
+KOMPAS_tools.egg-info/PKG-INFO
+KOMPAS_tools.egg-info/SOURCES.txt
+KOMPAS_tools.egg-info/dependency_links.txt
+KOMPAS_tools.egg-info/requires.txt
+KOMPAS_tools.egg-info/top_level.txt
