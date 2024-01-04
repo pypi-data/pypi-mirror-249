@@ -1,0 +1,14 @@
+{
+    "services": {
+        "speedtest": {
+            "description": "Segera jalankan tes kecepatan dengan iperf3.",
+            "fields": {
+                "host": {
+                    "description": "Nama hos server iperf3 (sudah dikonfigurasi) untuk menjalankan pengujian.",
+                    "name": "Hos"
+                }
+            },
+            "name": "Tes kecepatan"
+        }
+    }
+}

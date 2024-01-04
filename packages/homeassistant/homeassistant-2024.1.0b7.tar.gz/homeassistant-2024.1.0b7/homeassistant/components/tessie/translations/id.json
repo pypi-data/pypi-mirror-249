@@ -1,0 +1,87 @@
+{
+    "config": {
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "access_token": "Token akses"
+                },
+                "title": "Autentikasi ulang integrasi"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "charge_state-battery_range": {
+                "name": "Rentang Baterai"
+            },
+            "charge_state-charge_energy_added": {
+                "name": "Energi Ditambahkan dari Pengisian Daya"
+            },
+            "charge_state-charge_rate": {
+                "name": "Tingkat Pengisian Daya"
+            },
+            "charge_state-charger_actual_current": {
+                "name": "Arus Pengisi Daya"
+            },
+            "charge_state-charger_power": {
+                "name": "Daya Pengisi Daya"
+            },
+            "charge_state-charger_voltage": {
+                "name": "Tegangan Pengisi Daya"
+            },
+            "charge_state-usable_battery_level": {
+                "name": "Tingkat Baterai"
+            },
+            "climate_state-driver_temp_setting": {
+                "name": "Pengaturan Suhu Pengemudi"
+            },
+            "climate_state-inside_temp": {
+                "name": "Suhu di Dalam"
+            },
+            "climate_state-outside_temp": {
+                "name": "Suhu Luar"
+            },
+            "climate_state-passenger_temp_setting": {
+                "name": "Pengaturan Suhu Penumpang"
+            },
+            "drive_state-power": {
+                "name": "Daya"
+            },
+            "drive_state-shift_state": {
+                "name": "Status Shift",
+                "state": {
+                    "d": "Berkendara",
+                    "n": "Netral",
+                    "p": "Parkir",
+                    "r": "Mundur"
+                }
+            },
+            "drive_state-speed": {
+                "name": "Kecepatan"
+            },
+            "state": {
+                "name": "Status",
+                "state": {
+                    "asleep": "Tertidur",
+                    "offline": "Luring",
+                    "online": "Daring"
+                }
+            },
+            "vehicle_state-odometer": {
+                "name": "Odometer"
+            },
+            "vehicle_state-tpms_pressure_fl": {
+                "name": "Tekanan Ban Kiri Depan"
+            },
+            "vehicle_state-tpms_pressure_fr": {
+                "name": "Tekanan Ban Kanan Depan"
+            },
+            "vehicle_state-tpms_pressure_rl": {
+                "name": "Tekanan Ban Kiri Belakang"
+            },
+            "vehicle_state-tpms_pressure_rr": {
+                "name": "Tekanan Ban Kanan Belakang"
+            }
+        }
+    }
+}
