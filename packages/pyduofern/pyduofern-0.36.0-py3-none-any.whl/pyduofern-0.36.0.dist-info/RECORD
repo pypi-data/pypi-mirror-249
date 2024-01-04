@@ -1,0 +1,10 @@
+pyduofern/__init__.py,sha256=e6Ar7u0FFQ4yKR2jjcXXlquGWiTeBRE23jSM4xjbiPw,1546
+pyduofern/definitions.py,sha256=aw--JZ698uu2krd13PSBpkHApqFpyw2xJfHh3ndzBTU,16503
+pyduofern/duofern.py,sha256=d6Tstw3l6du8MY7rOIIL_KEku9OiSRKWeoCGuyg9BCw,56558
+pyduofern/duofern_stick.py,sha256=21Xb-uoW_6wH1hqTepsCSNu_9M7-GhmNbz43GFEG_-4,26782
+pyduofern/exceptions.py,sha256=vKb5Lf3dDp-PxIQmduIrqGNjw5eaqlfm0z0PI9Q_PGo,924
+pyduofern-0.36.0.data/scripts/duofern_cli.py,sha256=3MNJeCh1P8eVi1q3aSDXjE-aERUI1sDRKCknGzBeHxw,15504
+pyduofern-0.36.0.dist-info/METADATA,sha256=DTaxVt8aJhk5GgSXGEI81_i-PXg2lq4HoiiauxE0VXk,11621
+pyduofern-0.36.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyduofern-0.36.0.dist-info/top_level.txt,sha256=Tbso0jOHUOGc06OBgGkZ7lYtLPdnPh39N0zbbzcjoKQ,10
+pyduofern-0.36.0.dist-info/RECORD,,
