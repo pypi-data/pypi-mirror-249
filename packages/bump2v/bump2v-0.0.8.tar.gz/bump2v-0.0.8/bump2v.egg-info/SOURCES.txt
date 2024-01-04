@@ -1,0 +1,13 @@
+.bumpversion.cfg
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+.github/workflows/python-publish.yml
+bump2v/__main__.py
+bump2v.egg-info/PKG-INFO
+bump2v.egg-info/SOURCES.txt
+bump2v.egg-info/dependency_links.txt
+bump2v.egg-info/entry_points.txt
+bump2v.egg-info/top_level.txt
