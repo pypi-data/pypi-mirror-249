@@ -1,0 +1,15 @@
+License.md
+README.md
+pyproject.toml
+pkJson/__init__.py
+pkJson/_settings.py
+pkJson/_utils.py
+pkJson/_version.py
+pkJson/cli.py
+pkjson.egg-info/PKG-INFO
+pkjson.egg-info/SOURCES.txt
+pkjson.egg-info/dependency_links.txt
+pkjson.egg-info/entry_points.txt
+pkjson.egg-info/requires.txt
+pkjson.egg-info/top_level.txt
+tests/test_cli.py

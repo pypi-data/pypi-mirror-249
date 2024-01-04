@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "build", "seversion"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pkjson"
+dynamic = ["version"]
+description = "pkJson used for compressing project to move between systems."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "License.md"}
+authors = [
+    { name = "Robert J. DeWilde", email = "github@cyberneticinnovations.com" }
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "click>=8.1.7",
+    "loguru>=0.7.2",
+    "seversion>=2024.1.0",
+    "cryptography>=41.0.5",
+    "pydantic-settings>=2.1.0"
+]
+
+[project.scripts]
+pkJson = "pkJson.cli:cli"
+
+[tool.setuptools]
+packages = ["pkJson"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pkJson.__setuptools__"}

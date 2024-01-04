@@ -1,0 +1,2 @@
+[console_scripts]
+pkJson = pkJson.cli:cli
