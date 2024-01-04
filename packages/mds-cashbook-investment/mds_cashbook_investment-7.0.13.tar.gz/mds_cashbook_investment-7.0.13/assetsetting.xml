@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="assetconf_view_form">
+            <field name="model">cashbook.assetconf</field>
+            <field name="type">form</field>
+            <field name="name">assetconf_form</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_assetconf_form">
+            <field name="name">Asset setting</field>
+            <field name="res_model">cashbook.assetconf</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_assetconf_form-1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="assetconf_view_form"/>
+            <field name="act_window" ref="act_assetconf_form"/>
+        </record>
+
+        <!-- permission -->
+        <!-- anon: deny all -->
+        <record model="ir.model.access" id="asset_conf-anon">
+            <field name="model" search="[('model', '=', 'cashbook.assetconf')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <!-- group_cashbook_admin: read/write -->
+        <record model="ir.model.access" id="asset_conf-group_cashbook_admin">
+            <field name="model" search="[('model', '=', 'cashbook.assetconf')]"/>
+            <field name="group" ref="cashbook.group_cashbook_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <!-- cashbook: read only -->
+        <record model="ir.model.access" id="asset_conf-group_cashbook">
+            <field name="model" search="[('model', '=', 'cashbook.assetconf')]"/>
+            <field name="group" ref="cashbook.group_cashbook"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+    </data>
+</tryton>

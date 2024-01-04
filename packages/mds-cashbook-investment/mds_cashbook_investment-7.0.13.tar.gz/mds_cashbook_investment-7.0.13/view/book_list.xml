@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/tree/field[@name='balance']" position="after">
+        <field name="current_value" symbol="currency" optional="0"/>
+        <field name="purchase_amount" symbol="currency" optional="1"/>
+        <field name="diff_amount" symbol="currency" optional="0"/>
+        <field name="yield_balance" symbol="currency" optional="1"/>
+        <field name="diff_percent" optional="0"/>
+        <field name="quantity" symbol="quantity_uom" optional="0"/>
+        <field name="quantity_all" symbol="quantity_uom" optional="1"/>
+        <field name="yield_sales" symbol="currency" optional="1"/>
+        <field name="yield_sales_12m" symbol="currency" optional="1"/>
+        <field name="yield_dividend_total" symbol="currency" optional="1"/>
+        <field name="yield_dividend_12m" symbol="currency" optional="1"/>
+        <field name="yield_fee_total" symbol="currency" optional="1"/>
+        <field name="yield_fee_12m" symbol="currency" optional="1"/>
+    </xpath>
+
+</data>

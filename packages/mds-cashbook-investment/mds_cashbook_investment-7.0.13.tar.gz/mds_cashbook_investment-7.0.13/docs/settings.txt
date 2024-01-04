@@ -1,0 +1,8 @@
+settings in tytond.conf
+
+[cashbook]
+# Enables caching of the cache key for asset rates.
+# Reduces the time required to determine the cache
+# key for asset values.
+# default: yes
+cache_asset = yes
