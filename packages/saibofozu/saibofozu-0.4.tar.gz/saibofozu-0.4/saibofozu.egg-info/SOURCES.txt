@@ -1,0 +1,6 @@
+saibofozu.py
+setup.py
+saibofozu.egg-info/PKG-INFO
+saibofozu.egg-info/SOURCES.txt
+saibofozu.egg-info/dependency_links.txt
+saibofozu.egg-info/top_level.txt
