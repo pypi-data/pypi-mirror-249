@@ -1,0 +1,14 @@
+src/__init__.py,sha256=-nx_zCBlUzj8Uo_RhzVqhX2Kwf5I0-IF1_AE6Dapvks,158
+src/announcement_subscription.py,sha256=rgqHvDutmQtRe-K-RTynwFIdI5VrE0o_ftYuh3URgc0,1045
+src/announcements.py,sha256=H2P_owAsCh4Y3p1u3-Ac2gZCKidRzjx3Z5BOoODOXo8,732
+src/announcer.py,sha256=fIAbHsSuTtzf3lxdWHooRUXySjN0Ru6n4JAuUd6dBkw,1269
+src/subscription_registry.py,sha256=ZQIbaMV7iLBc3cFZMudI1sCp_x7ZOQY9-F55ls6Y-FM,1106
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=fdUr1XD-wV02YwdGeb-kph90nb97Zz3OY8j-Ja2iz8k,113
+tests/mocks.py,sha256=JXY4uLCkHYbuOd-A8xQ1c6nMrxlkaNdmaiqNMzhgpH8,409
+tests/test_announcer.py,sha256=OEfoLOB9hQeS6FSsSTrUVxygK5tQ9hDSE0sxVo8EMeA,1387
+eryx_announcements-0.1.3.dist-info/LICENSE,sha256=bKU7L5yNz5rUA-bRDgyjLWqpbh_u5F_6uAsYifuKJ6k,1061
+eryx_announcements-0.1.3.dist-info/METADATA,sha256=8G2UBByA7I4BjMdYv08Gb3LUk4Y2-qfSiwTsJQRL5hg,537
+eryx_announcements-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+eryx_announcements-0.1.3.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+eryx_announcements-0.1.3.dist-info/RECORD,,
