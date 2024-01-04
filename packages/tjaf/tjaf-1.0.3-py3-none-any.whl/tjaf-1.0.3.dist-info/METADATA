@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tjaf
+Version: 1.0.3
+Summary: TJA decoder in Python
+Home-page: https://github.com/yuukialpha/tjaf
+Author: Yuuki
+Author-email: skifree@skiff.com
+
+Easy to use TJA decoder in Python for everyone.
