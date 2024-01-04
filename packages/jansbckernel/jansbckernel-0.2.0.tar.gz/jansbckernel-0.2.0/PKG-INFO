@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: jansbckernel
+Version: 0.2.0
+Summary: A rough bc kernel.
+Author-email: Jan Arman Parpin <is@hidden.com>
+Project-URL: Homepage, https://github.com/jans-code/jansbckernel
+Project-URL: Bug Tracker, https://github.com/jans-code/jansbckernel/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Framework :: Jupyter :: JupyterLab :: 3
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipykernel
+
+# jansbckernel
+
+![alt](https://raw.githubusercontent.com/jans-code/jansbckernel/main/jansbckernel/logo-svg.svg)
+
+A very simple and dirty jupyter kernel for [GNU bc](https://www.gnu.org/software/bc/).
+This kernel is a work in progress, so far variables and functions do not carry over to later cells.
+
+## Dev Installation
+
+- install bc from your distro's package manager
+- download/clone this project
+- open shell in project folder and install dev build
+- `pip install -e ./`
+- then install kernelspec
+- `jansbckernel`
+- or
+- `jupyter kernelspec install --user jansbckernel`
+
+## Uninstall
+
+- `jupyter kernelspec uninstall jansbckernel`
+- `pip uninstall jansbckernel`

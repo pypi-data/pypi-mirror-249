@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/jansbckernel/__init__.py
+src/jansbckernel/__main__.py
+src/jansbckernel/install_kernelspec.py
+src/jansbckernel/kernel.py
+src/jansbckernel.egg-info/PKG-INFO
+src/jansbckernel.egg-info/SOURCES.txt
+src/jansbckernel.egg-info/dependency_links.txt
+src/jansbckernel.egg-info/entry_points.txt
+src/jansbckernel.egg-info/requires.txt
+src/jansbckernel.egg-info/top_level.txt
