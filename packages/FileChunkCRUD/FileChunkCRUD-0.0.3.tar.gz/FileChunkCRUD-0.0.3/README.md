@@ -1,0 +1,73 @@
+[![PyPI version](https://badge.fury.io/py/FileChunkCRUD.svg)](https://badge.fury.io/py/FileChunkCRUD)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://static.pepy.tech/badge/filechunkcrud)](https://pepy.tech/project/filechunkcrud)
+
+# FileChunkCRUD
+
+`FileChunkCRUD` is a Python tool designed for Create, Read, Update, and Delete operations on files, especially large files that need to be processed in chunks to fit into memory constraints.
+
+## Installation
+
+To install `FileChunkCRUD`, you can use pip:
+
+```bash
+pip install FileChunkCRUD
+```
+
+## Usage
+
+### As a Python Module
+
+`FileChunkCRUD` can be used as a Python module in your scripts for handling large file operations.
+
+#### Reading File in Chunks
+
+```python
+from filechunkcrud import FileHandler
+
+file_path = '/path/to/your/largefile.txt'
+file_handler = FileHandler(file_path)
+
+for chunk in file_handler.read_chunks(chunk_size=1024):  # chunk_size in bytes
+    print(chunk)  # or process the chunk
+```
+
+#### Creating a Large File with Generator
+
+```python
+def large_file_generator(size):
+    for i in range(size):
+        yield f"This is line {i} of the large file.\n"
+
+file_handler.create_file(large_file_generator(1000000))  # For example, one million lines
+```
+
+#### Appending Data to an Existing File with Generator
+
+```python
+def additional_data_generator():
+    yield "\nMore data...\n"
+
+file_handler.update_file(additional_data_generator())
+```
+
+#### Deleting a File
+
+```python
+file_handler.delete_file()  # Deletes the file at file_path
+```
+
+## Features
+
+- **Read**: Read large files in manageable chunks.
+- **Create**: Create new files with content provided by a generator, ideal for large data sets.
+- **Update**: Append to existing files using a generator for the content.
+- **Delete**: Remove files from the filesystem.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/FileChunkCRUD/issues).
+
+## License
+
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
