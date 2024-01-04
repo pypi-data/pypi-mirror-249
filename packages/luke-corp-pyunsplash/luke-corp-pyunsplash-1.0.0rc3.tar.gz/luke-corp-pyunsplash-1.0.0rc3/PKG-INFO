@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: luke-corp-pyunsplash
+Version: 1.0.0rc3
+Summary: A Python wrapper for the Unsplash.com REST API
+Home-page: https://github.com/salvoventura/pyunsplash
+Author: salvatore ventura
+Author-email: salvoventura@gmail.com
+License: MIT
+Keywords: unsplash,rest,api,python,wrapper,development,unsplash.com,photography
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=2.7
