@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pytensordock/__init__.py
+src/pytensordock/api.py
+src/pytensordock.egg-info/PKG-INFO
+src/pytensordock.egg-info/SOURCES.txt
+src/pytensordock.egg-info/dependency_links.txt
+src/pytensordock.egg-info/requires.txt
+src/pytensordock.egg-info/top_level.txt

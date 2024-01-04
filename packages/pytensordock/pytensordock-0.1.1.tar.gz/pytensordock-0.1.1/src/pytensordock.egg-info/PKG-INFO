@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pytensordock
+Version: 0.1.1
+Summary: A Python wrapper for TensorDock API
+Author-email: Nishant Gajjar <nishantkgajjar@outlook.com>
+Project-URL: Homepage, https://github.com/nishantg96/pytensordock
+Project-URL: Issues, https://github.com/nishantg96/pytensordock/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 6 - Mature
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Pytensordock - Python wrapper for the Tensordock API
+A Python wrapper library for the TensorDock Marketplace API.
+
+---
+>  You can find the documentation to the wrapper at [Pytensordock Documentation](https://nishantg96.github.io/pytensordock/)
+---
+
+## References
+
+API Endpoint Documentation:
+https://documenter.getpostman.com/view/20973002/2s8YzMYRDc
+
+API Keys: https://marketplace.tensordock.com/api
