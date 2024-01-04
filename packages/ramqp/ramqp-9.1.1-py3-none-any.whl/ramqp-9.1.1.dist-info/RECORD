@@ -1,0 +1,14 @@
+ramqp/__init__.py,sha256=dg3JunORYK3b3VQmKYpPj3hvGFRivCg4ve4GsXXUMVE,321
+ramqp/abstract.py,sha256=u_oUCpbqUCMga9DtrN0qdKNg24TcSedxROf6uLfT81g,16869
+ramqp/amqp.py,sha256=WXrAOqHIoOHdfezj3DiodT8tfRfFaBvJFzbaLfZumgw,668
+ramqp/config.py,sha256=dG5_4Dtu-iglj3h-pbnr_ttyHpiY93rkeRZxTCf6cS4,2729
+ramqp/depends.py,sha256=BjVWvK7DClyq2q2tfIfn6L6ffPRypeV6afgMBe1YXac,10068
+ramqp/metrics.py,sha256=ZDDFAWx5TtBJqWWy15ablyB5R_jPPmjpJipoPAV9Y1s,7010
+ramqp/mo.py,sha256=NARFeDatqQlkg4Hv7KDpXboVziY87oW2fE5JiFwmvQ4,8652
+ramqp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ramqp/utils.py,sha256=UDrZQjp-CvTxyAKzmS915e_T-wlLilzpq_KPKcFogik,1367
+ramqp-9.1.1.dist-info/LICENSE,sha256=Xez-I9f_ECXfYKKwVpbPA25xYMNwv4McfGeH_1Y9DOI,15177
+ramqp-9.1.1.dist-info/LICENSES/MPL-2.0.txt,sha256=Xez-I9f_ECXfYKKwVpbPA25xYMNwv4McfGeH_1Y9DOI,15177
+ramqp-9.1.1.dist-info/METADATA,sha256=DtqdEvKpdGBPhT349uZFnrZvH7lf25UCeKykzpAS9nM,8409
+ramqp-9.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ramqp-9.1.1.dist-info/RECORD,,
