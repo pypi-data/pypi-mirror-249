@@ -1,0 +1,10 @@
+pysdd
+problog
+torch
+torchvision
+
+[examples]
+Pillow
+
+[tests]
+pytest
