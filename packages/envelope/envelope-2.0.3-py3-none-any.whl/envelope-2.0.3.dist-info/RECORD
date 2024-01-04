@@ -1,0 +1,16 @@
+envelope/__init__.py,sha256=nvGaWVbAg4CaF9sNBZPCqYNBDD0dhotKbB0ERXKx9hs,95
+envelope/__main__.py,sha256=WfHPWBciCxgeD7zquo-niMhACHIEs1u2-5p9QRHAeng,16060
+envelope/address.py,sha256=jhSFfsqHbAko_ycwgVhpdgBCNBxxqQlQnLFq4oGC3RY,7598
+envelope/attachment.py,sha256=PfXgIN6Y_tN_i2jaYJ7i33P-X9XC7iIImbIqchXTy2I,2439
+envelope/constants.py,sha256=31SPv6OW4NpbP8XLmZh8LP9FpyfnN9pvn3NrhMv1-k4,1037
+envelope/envelope.py,sha256=mMyTlFyTccJIunRW5urXcc9XjZ43rAE5Sx0FhS1omps,79760
+envelope/message.py,sha256=nMA0Ig3irCZDHBn8myAXHWzYtDSHzOcBc192eWNViuE,2359
+envelope/parser.py,sha256=lqwTv9CnnNgs8sw0j0__BVm4l33lJjktmN6z4J28ujk,6218
+envelope/smtp_handler.py,sha256=yuc8JKEj4Mq1TRJaX2_DltW0Q3o07nVPETPY7IDrMTI,4385
+envelope/utils.py,sha256=k8uS89rjpkfOJ76eF2f-LHMefQssCbGisla4tv_CoDQ,3599
+envelope-2.0.3.dist-info/LICENSE.txt,sha256=lMO1P_nM_Uerf0BZwylSaZSgbDXtGBrc5EynV7Pr7Mg,22
+envelope-2.0.3.dist-info/METADATA,sha256=NQP6EsAis5R9nadDKaQRrgEcHFBmn7A6xPbDu6_Z5YE,49868
+envelope-2.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+envelope-2.0.3.dist-info/entry_points.txt,sha256=59F4FYaDJbfrLb3fGp_P56sWrrGKXBCCnpEgepU4Wl0,52
+envelope-2.0.3.dist-info/top_level.txt,sha256=AU1D1zNe_ipakztAkEMRaFRlmWO59bAqCy9tEPPIXM8,9
+envelope-2.0.3.dist-info/RECORD,,
