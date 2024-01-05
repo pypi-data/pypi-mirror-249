@@ -1,0 +1,52 @@
+# 🚀 Gradio YOLOv8 Det, GPL-3.0 license
+# 基于 Gradio 的 YOLOv8 通用计算机视觉演示系统
+# 集成目标检测、图像分割和图像分类于一体，可自定义检测模型
+
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "gradio-yolov8-det"
+version = "v2.0.1"
+requires-python = ">=3.8"
+description = "基于 Gradio 的 YOLOv8 通用计算机视觉演示系统"
+readme = "README.md"
+license = { "text" = "GPL-3.0" }
+keywords = ["YOLOv8", "Gradio", "目标检测", "图像分割", "图像分类"]
+authors = [
+    { name = "曾逸夫 Zeng Yifu" },
+]
+maintainers = [
+    { name = "曾逸夫 Zeng Yifu" },
+]
+dependencies = [
+    "click>=8.1",
+    "ultralytics>=8.0.232",
+    "gradio>=4.12.0",
+    "gradio_imageslider",
+    "opencv-python",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pyyaml",
+    "pillow>=10.1.0",
+    "wget>=3.2",
+    "rich>=12.2.0",
+]
+
+
+[project.scripts]
+gradio-yolov8-det = "gradio_yolov8_det.gradio_yolov8_det:entrypoint"
+
+
+[project.urls]
+"Source" = "https://gitee.com/CV_Lab/gradio-yolov8-det"
+
+
+[tool.setuptools]
+packages = { find = { where = ["."], include = ["gradio_yolov8_det", "gradio_yolov8_det.*"] } }
+package-data = { "gradio_yolov8_det" = ["**/*.css"], "gradio_yolov8_det.cls_name" = ["**/*.yaml", "**/*.csv", "**/*.txt"], "gradio_yolov8_det.model_config" = ["**/*.yaml", "**/*.csv", "**/*.txt"], "gradio_yolov8_det.img_examples" = ["**/*.jpg", "**/*.jpeg", "**/*.JPEG", "**/*.png"], "gradio_yolov8_det.icon" = ["**/*.ico"] }
+
