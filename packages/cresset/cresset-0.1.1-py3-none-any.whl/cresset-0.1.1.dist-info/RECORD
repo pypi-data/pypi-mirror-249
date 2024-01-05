@@ -1,0 +1,12 @@
+cresset/__init__.py,sha256=AXN0uRP27R6Nqph_VdI9NW31E8YpQt_XFufrFgKjT9w,35
+cresset/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cresset/nn/__init__.py,sha256=92RZ6Tigxe3L6Add9XkhaXSMFAFQP0vRbzhReE3TQX0,962
+cresset/nn/init.py,sha256=xMQG2XHxX75THgMKDuqWcpmIhAZufEepZA1H2Cx5oP4,4855
+cresset/nn/module.py,sha256=B4ZyIbsfElWiU9dQEvABns0WJ0bLouzhWwPFFwVCo_Q,1482
+cresset/nn/std.py,sha256=DGGh2CCe0BqQ8bRlNPybiX1ErG8FoZF6rJY3ExRrhHw,10287
+cresset/optim/__init__.py,sha256=Y44Dq-M6r8rhrU4-HqEpFUZysKdGOIcQXHqLz7LYZZE,505
+cresset/optim/lr_scheduler.py,sha256=fM5qh0mco7zu33WeLAZLV-jSizYsb5Cu3MK9xnh97tU,2564
+cresset-0.1.1.dist-info/METADATA,sha256=p8nmpwvTf4MXOt-P0t3SHW-jHezQGtTLmTIZrC-0lfk,9096
+cresset-0.1.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+cresset-0.1.1.dist-info/licenses/LICENSE,sha256=YAOdsvE4GysYb4H49BF4oiJ19umvP6H3_1DV31gwVS4,1056
+cresset-0.1.1.dist-info/RECORD,,
