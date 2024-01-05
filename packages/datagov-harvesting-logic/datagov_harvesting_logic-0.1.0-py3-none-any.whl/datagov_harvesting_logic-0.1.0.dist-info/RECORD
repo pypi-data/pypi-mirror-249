@@ -1,0 +1,14 @@
+harvester/__init__.py,sha256=PPrZPn4mXXGR-G0bsjGLgf_PLG6PUCmDYn3e9fp4O5w,899
+harvester/compare.py,sha256=oRHnNmjxL2GLGQ9TyqZtwmUw8ZX2walEAZP2pACKP9s,599
+harvester/extract.py,sha256=uo_WQwnFu-SMvVrNarQbdh-82bwFN4gik8CMdO1bKhc,2108
+harvester/load.py,sha256=7PvW2NFowCAAy-UAX7qs26seUnep0uhrl57OG6lEFvE,4877
+harvester/transform.py,sha256=44aOjXDWrmI8rCtXIMglRgo31wddr-XRf9P-0G_z3T0,471
+harvester/utils/__init__.py,sha256=cU3Uk5TUs0DywY_S5hEx0RE7esGbP0cFmCg5kDIYMCM,53
+harvester/utils/json.py,sha256=-lfqcyg1rOaqPY63MX8aUytI_nOvKCHX5my8JzWAx5c,215
+harvester/utils/util.py,sha256=Av8WK20u-uAizOYXzGp_EbCgALsOj7r8M1KuN9vuS34,215
+harvester/validate/__init__.py,sha256=0dej2pENtapU5kn_1CiYpbB0_uYE4YrbOm6obw2mLZg,45
+harvester/validate/dcat_us.py,sha256=v0LRK1EHx0zNSS3VCUE3Gxx4ZZjdH5DV9NIVMEvJNIU,853
+datagov_harvesting_logic-0.1.0.dist-info/LICENSE.md,sha256=bycWtgJAZHFH2NGygnPMYGp4EZBn8EZrIdWXVwIQQPs,1878
+datagov_harvesting_logic-0.1.0.dist-info/METADATA,sha256=5oA63SqILUujFaorWQBqEvOwvahYFm7fiinZt9T6lwI,3623
+datagov_harvesting_logic-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+datagov_harvesting_logic-0.1.0.dist-info/RECORD,,
