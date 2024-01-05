@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: kappautils
+Version: 0.0.7
+Summary: utilities for training machine learning models with pytorch
+Home-page: https://github.com/BenediktAlkin/KappaUtils
+Project-URL: Source Code, https://github.com/BenediktAlkin/KappaUtils
+Project-URL: Bug Tracker, https://github.com/BenediktAlkin/KappaUtils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: einops
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+# KappaUtils
+
+`pip install kappautils`
