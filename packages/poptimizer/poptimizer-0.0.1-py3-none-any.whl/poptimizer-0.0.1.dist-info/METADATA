@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: poptimizer
+Version: 0.0.1
+Summary: Utilize Large Language Models to Automatically Optimize Prompts for LLM Application Development
+Author: alkhalifas
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: langchain
+Requires-Dist: openai
+Requires-Dist: pylint
+
+# prompt_optimizer
