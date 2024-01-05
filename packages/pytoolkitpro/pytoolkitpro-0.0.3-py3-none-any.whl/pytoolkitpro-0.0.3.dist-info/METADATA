@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytoolkitpro
+Version: 0.0.3
+Summary: pytoolkitpro
+Home-page: 
+Author: 波小艺
+Author-email: 15813380401@163.com
+License: MIT
+Keywords: pytoolkitpro,工具包
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openpyxl
+Requires-Dist: toml
+Requires-Dist: kafka-python
+Requires-Dist: pymysql
+Requires-Dist: gevent
+Requires-Dist: redis ==3.5.3
+Requires-Dist: redis-py-cluster ==2.1.0
+Requires-Dist: DBUtils
+
+# pytoolkit
