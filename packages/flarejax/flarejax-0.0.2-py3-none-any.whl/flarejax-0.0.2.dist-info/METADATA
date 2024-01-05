@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flarejax
+Version: 0.0.2
+Summary: Pytorch-like modules in Jax
+Home-page: https://github.com/pwolle/flarejax
+Author: Paul Wollenhaupt
+Author-email: paul.wollenhaupt@gmail.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typeguard
+Requires-Dist: jax
+Requires-Dist: jaxlib
+
+# Flarejax
+Pytorch-like modules in Jax
