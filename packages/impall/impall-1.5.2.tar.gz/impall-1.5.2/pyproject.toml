@@ -1,0 +1,52 @@
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+target-version = ['py37']
+
+[tool.doks]
+auto = true
+
+[tool.poetry]
+authors = ["Tom Ritchford <tom@swirly.com>"]
+description = "🛎 Test-import all modules 🛎"
+homepage = "https://github.com/rec/impall"
+name = "impall"
+readme = "README.md"
+repository = "https://github.com/rec/impall"
+version = "1.5.2"
+documentation = "https://rec.github.io/impall"
+
+[tool.poetry.dependencies]
+python = '>=3.8'
+
+[tool.poetry.group.dev.dependencies]
+coverage = "*"
+flake8 = "*"
+pyfakefs = "*"
+pytest = "*"
+black = "*"
+isort = "*"
+mypy = "*"
+ruff = "*"
+
+[tool.poetry.scripts]
+impall = 'impall:report'
+
+[tool.coverage]
+[tool.coverage.run]
+branch = "True"
+source = "impall"
+
+[tool.coverage.report]
+fail_under = "100"
+skip_covered = "True"
+exclude_lines = [
+    "pragma: no cover",
+    "if False:",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
