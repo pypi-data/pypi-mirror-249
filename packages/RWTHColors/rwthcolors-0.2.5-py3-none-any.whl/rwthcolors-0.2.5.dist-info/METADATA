@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: RWTHColors
+Version: 0.2.5
+Summary: Simple library that makes it easier to use RWTH CI colors in python projects
+Home-page: https://github.com/ifs-rwth-aachen/RWTH-Colors
+License: Apache-2.0
+Keywords: rwth,aachen,rwth aachen,farbwelt
+Author: Philipp Simon Leibner
+Author-email: philipp.leibner@ifs.rwth-aachen.de
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Dist: cycler (>=0.12.1,<0.13.0)
+Requires-Dist: matplotlib (>=3.5.3,<4.0.0)
+Requires-Dist: pytest (>=7.4.2,<8.0.0)
+Project-URL: Repository, https://github.com/ifs-rwth-aachen/RWTH-Colors
+Description-Content-Type: text/markdown
+
+
