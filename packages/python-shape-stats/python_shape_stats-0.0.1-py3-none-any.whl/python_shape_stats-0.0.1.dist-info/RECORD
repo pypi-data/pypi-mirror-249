@@ -1,0 +1,10 @@
+python_shape_stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_shape_stats/helpers.py,sha256=MUopNAQSHSB_fuNsuJUU09ukZm8kpRqnroCAcEjIIlI,37889
+python_shape_stats/inlier_processes.py,sha256=QYvCr226NfIjjpvlwereRdF5FDuo9IxwojgvGXMuARM,1333
+python_shape_stats/procrustes.py,sha256=D97x1MBz9eRDRTJX_RTP9cU44wI9d1_UQbzyG0QXpbM,10710
+python_shape_stats/statistical_shape_models.py,sha256=ju0G0oOLyZGX6vgDKTOxGodmuLlpQWsD4bvMVI2MJG4,74886
+python_shape_stats-0.0.1.dist-info/LICENSE,sha256=Pm2Z2prrCEuAzZNVzoFDKKDaxnBF6XT_8ttjw4Kro94,1072
+python_shape_stats-0.0.1.dist-info/METADATA,sha256=e8ejQ0_19XUOVQq9s3VmK5INlaHUFLlX826YGwi0Ak0,866
+python_shape_stats-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+python_shape_stats-0.0.1.dist-info/top_level.txt,sha256=5QTNj_20_8mXrEi6IXPaC1eTyiH3o8Zc3ybrF7VMYZo,19
+python_shape_stats-0.0.1.dist-info/RECORD,,
