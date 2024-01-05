@@ -1,0 +1,9 @@
+sphinx
+sphinx-rtd-theme
+sphinx-autoapi
+nbsphinx
+ipython
+jupytext
+jupyter
+spherical_geometry
+git+https://github.com/astronomy-commons/hipscat.git@main
