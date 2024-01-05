@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cosmic_pipeline_drf
+Version: 0.2
+Summary: State, Transition, Rule and Pre- & Posthook Framework for Complex Business & Logical Processes.
+Home-page: https://github.com/Digital-Intel/CosmicPipelineDRF
+Author: Digital Intelligence GmbH
+Author-email: andrey.bulezyuk@digital-intelligence.eu
+Requires-Dist: Django >=3.2
+Requires-Dist: djangorestframework >=3.14.0
+Requires-Dist: cosmic-pipeline
+
