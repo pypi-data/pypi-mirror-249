@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+src/slowblood/__init__.py
+src/slowblood/lib_llm_inference.py
+src/slowblood/lib_pdf_manipulation.py
+src/slowblood/lib_prompts.py
+src/slowblood/lib_settings.py
+src/slowblood.egg-info/PKG-INFO
+src/slowblood.egg-info/SOURCES.txt
+src/slowblood.egg-info/dependency_links.txt
+src/slowblood.egg-info/top_level.txt
