@@ -1,0 +1,2 @@
+[inventree_plugins]
+CabLabeLPlugin = inventree_cab.cab_plugin:CabLabelPlugin
