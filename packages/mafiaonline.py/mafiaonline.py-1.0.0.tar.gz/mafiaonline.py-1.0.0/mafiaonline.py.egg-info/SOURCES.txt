@@ -1,0 +1,16 @@
+README.md
+setup.py
+mafiaonline/__init__.py
+mafiaonline/mafiaonline.py
+mafiaonline/web.py
+mafiaonline.py.egg-info/PKG-INFO
+mafiaonline.py.egg-info/SOURCES.txt
+mafiaonline.py.egg-info/dependency_links.txt
+mafiaonline.py.egg-info/requires.txt
+mafiaonline.py.egg-info/top_level.txt
+mafiaonline/structures/__init__.py
+mafiaonline/structures/enums.py
+mafiaonline/structures/models.py
+mafiaonline/structures/packet_data_keys.py
+mafiaonline/utils/__init__.py
+mafiaonline/utils/md5hash.py

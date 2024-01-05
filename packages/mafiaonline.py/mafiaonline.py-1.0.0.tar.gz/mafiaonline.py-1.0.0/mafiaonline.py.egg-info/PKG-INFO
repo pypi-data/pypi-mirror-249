@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mafiaonline.py
+Version: 1.0.0
+Summary: A library to create Mafia Online bots.
+Home-page: https://github.com/Zakovskiy/mafiaonline.py
+Author: Zakovskiy
+Author-email: gogrugu@gmail.com
+License: MIT
+Download-URL: https://github.com/Zakovskiy/mafiaonline.py/tarball/master
+Description: <h1 align="center">
+          Mafia Online API on Python
+        </h1>
+        
+        
+        <p align="center">
+          <a href="https://discord.gg/AsYzxRfT6J"><img src="https://bit.ly/32neyjM"></a>
+        </p>
+        
+        
+        <p align="center">This library for <a href="https://play.google.com/store/apps/details?id=com.tokarev.mafia">Mafia Online</a></p>
+        
+        # Install
+        ```
+        git clone https://github.com/Zakovskiy/mafiaonline.py
+        ```
+        
+        # Import and Auth
+        ```python
+        import mafiaonline
+        
+        Mafia = mafiaonline.Client()
+        Mafia.sign_in("email", "password")
+        ```
+        
+        ### [Telegram](https://t.me/zakovskiy)
+        
+Keywords: mafia,online,mafiaonline,mafiaonline.py,mafiaonline-bot,tokarev,dottap,api,socket,python,python3,python3.x,zakovskiy,official
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
