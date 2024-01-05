@@ -1,0 +1,6 @@
+setup.py
+wpgs.egg-info/PKG-INFO
+wpgs.egg-info/SOURCES.txt
+wpgs.egg-info/dependency_links.txt
+wpgs.egg-info/requires.txt
+wpgs.egg-info/top_level.txt
