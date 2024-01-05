@@ -1,0 +1,13 @@
+pimm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pimm/__main__.py,sha256=a2qc-gVOHLxHr3VWnIEHpEKyO_YRZ1dGRw6dbFcVmHo,82
+pimm/color_print.py,sha256=ZUnCQrBi-vu5ys0N0ed06gtqX1he2xOPF8kEkXZJz9Q,1262
+pimm/mirrors.json,sha256=4NSdgd_O6KkgsoxGdxRyCOc7sAHEyg3PLe1ulCkp7S8,571
+pimm/mirrors_base.json,sha256=4NSdgd_O6KkgsoxGdxRyCOc7sAHEyg3PLe1ulCkp7S8,571
+pimm/pimm_const.py,sha256=fRupcEJI1qLMSNpgtKjmcfqC3mb9j5zF-8r4l4UGQOc,319
+pimm/pimm_module.py,sha256=UuDxx-nEIQwXVTlee9JkfQSN6jKpz0nx6J7jAMaUkls,6592
+pimm-0.0.6.dist-info/LICENSE,sha256=EDnBtdnZdPD1tnaZNoE-xlfYinX1luSzfwqRqSK1ukM,1092
+pimm-0.0.6.dist-info/METADATA,sha256=RtnuGs6ne-QdZFg--DvcAAr2se5GgzUAJq9wZ-DtGmU,1881
+pimm-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pimm-0.0.6.dist-info/entry_points.txt,sha256=PrT3_Qz3X-Jj22Hdo-TqRm9wQ3bUvu85ElGaUyoR2x8,47
+pimm-0.0.6.dist-info/top_level.txt,sha256=HLe9IeeSy88jYsAxj5Poz282eT2IqHuODb9usJU9oTY,5
+pimm-0.0.6.dist-info/RECORD,,

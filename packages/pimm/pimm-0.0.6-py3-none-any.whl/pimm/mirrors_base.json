@@ -1,0 +1,12 @@
+{
+    "aliyun": "https://mirrors.aliyun.com/pypi/simple",
+    "douban": "https://pypi.doubanio.com/simple",
+    "hit": "https://mirrors.hit.edu.cn/pypi/web/simple",
+    "huawei": "https://repo.huaweicloud.com/repository/pypi/simple",
+    "jlu": "https://mirrors.jlu.edu.cn/pypi/simple",
+    "pku": "https://mirrors.pku.edu.cn/pypi/web/simple",
+    "tencent": "https://mirrors.cloud.tencent.com/pypi/simple",
+    "thu": "https://pypi.tuna.tsinghua.edu.cn/simple",
+    "ustc": "https://pypi.mirrors.ustc.edu.cn/simple",
+    "default": "https://pypi.org/simple"
+}
