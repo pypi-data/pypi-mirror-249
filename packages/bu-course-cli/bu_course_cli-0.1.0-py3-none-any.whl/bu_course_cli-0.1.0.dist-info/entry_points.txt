@@ -1,0 +1,2 @@
+[console_scripts]
+bu-course-cli = bu_course_cli.cli:main
