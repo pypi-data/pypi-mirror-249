@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: serverless-models-db
+Version: 0.0.1
+Summary: Serverless's models used in database
+Author: Serverless team
+Author-email: contact@serverless.ru
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: peewee (>=3.17.0,<4.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+Note: каждый .sh скрипт, используемый в workflows, должен быть добавлен в git через
+
+```bash
+git update-index --chmod=+x /path/to/sh
+```
+
