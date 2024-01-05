@@ -1,0 +1,10 @@
+annxuncements/__init__.py,sha256=R868uaN019yAMs8cMtK2Lbi6cEvMjCBB7Fu0kxvIQ8k,291
+annxuncements/announcement_subscription.py,sha256=rgqHvDutmQtRe-K-RTynwFIdI5VrE0o_ftYuh3URgc0,1045
+annxuncements/announcements.py,sha256=H2P_owAsCh4Y3p1u3-Ac2gZCKidRzjx3Z5BOoODOXo8,732
+annxuncements/announcer.py,sha256=U83Q904VbDW2avMp-_QrUYdWhFkPGOUJJgmGLg6Fajw,1263
+annxuncements/subscription_registry.py,sha256=ZQIbaMV7iLBc3cFZMudI1sCp_x7ZOQY9-F55ls6Y-FM,1106
+annxuncements-0.0.1.dist-info/LICENSE,sha256=bKU7L5yNz5rUA-bRDgyjLWqpbh_u5F_6uAsYifuKJ6k,1061
+annxuncements-0.0.1.dist-info/METADATA,sha256=LRcbao1fJzIVHk0bIWX03J9ZzsRTmEZhAfrA-hAtNVI,583
+annxuncements-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+annxuncements-0.0.1.dist-info/top_level.txt,sha256=bqinFlpAt-2oTey8pWRD5FfF95Ge4enL8LRwx1RuyzA,14
+annxuncements-0.0.1.dist-info/RECORD,,

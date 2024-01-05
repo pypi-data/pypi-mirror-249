@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: annxuncements
+Version: 0.0.1
+Summary: A small package to handle announcements in your application.
+Home-page: https://github.com/eryxcoop/announcements
+Author: Eryx Team
+Author-email: info@eryx.co
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Requires-Python: >=3.5
+License-File: LICENSE
+
+UNKNOWN
+
