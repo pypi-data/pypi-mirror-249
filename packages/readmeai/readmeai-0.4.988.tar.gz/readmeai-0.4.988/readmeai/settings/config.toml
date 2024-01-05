@@ -1,0 +1,263 @@
+# CLI Options
+[cli]
+emojis = false
+offline = false
+
+# File Resources
+[files]
+dependency_files = "dependency_files.toml"
+identifiers = "identifiers.toml"
+ignore_files = "ignore_files.toml"
+language_names = "language_names.toml"
+language_setup = "language_setup.toml"
+output = "readme-ai.md"
+shields_icons = "data/shieldsio.json"
+skill_icons = "data/skill_icons.json"
+
+# Git Options
+[git]
+repository = "https://github.com/eli64s/readme-ai"
+
+# GPT Language Model API Settings
+[llm]
+content = "You're a brilliant Tech Lead and Software Engineer."
+endpoint = "https://api.openai.com/v1/chat/completions"
+encoding = "cl100k_base"
+model = "gpt-3.5-turbo"
+rate_limit = 6
+temperature = 0.8
+tokens = 750
+tokens_max = 3899
+
+# Markdown Templates
+[md]
+align = "center"
+default = "<code>► INSERT-TEXT-HERE</code>"
+image = ""
+slogan = ""
+tables = ""
+
+header = """\
+<p align="{align}">
+  <img src="{image}" width="100" />
+</p>
+<p align="{align}">
+    <h1 align="{align}">{repo_name}</h1>
+</p>
+<p align="{align}">
+    <em>{slogan}</em>
+</p>
+<p align="{align}">\n\t{badges_shields}<p>
+<p align="{align}">\n\t{badges}</p>
+<hr>
+"""
+
+badge_color = "0080ff"
+badge_style = "standard"
+badges_software = """\t<em>Developed with the software and tools below.</em>\n</p>\n<p align="{align}">\n\t{badges}"""
+badges_shields = """
+<img src="https://img.shields.io/{host}/license/{full_name}?style={badge_style}&color={badge_color}" alt="license">
+\t<img src="https://img.shields.io/{host}/last-commit/{full_name}?style={badge_style}&color={badge_color}" alt="last-commit">
+\t<img src="https://img.shields.io/{host}/languages/top/{full_name}?style={badge_style}&color={badge_color}" alt="repo-top-language">
+\t<img src="https://img.shields.io/{host}/languages/count/{full_name}?style={badge_style}&color={badge_color}" alt="repo-language-count">
+"""
+badges_skills = """<a href="https://skillicons.dev">\n\t\t<img src="{}">\n\t</a>
+"""
+
+toc = """
+## 🔗 Quick Links
+- [🔗 Quick Links](#-quick-links)
+- [📍 Overview](#-overview)
+- [📦 Features](#-features)
+- [📂 Repository Structure](#-repository-structure)
+- [🧩 Modules](#modules)
+- [🚀 Getting Started](#-getting-started)
+    - [⚙️ Installation](#-installation)
+    - [🤖 Running {0}](#-running-{0})
+    - [🧪 Tests](#-tests)
+- [🛠 Roadmap](#-roadmap)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [👏 Acknowledgments](#-acknowledgments)
+
+---
+"""
+
+overview = """
+## 📍 Overview
+
+{0}
+
+---
+"""
+
+features = """
+## 📦 Features
+
+{0}
+
+---
+"""
+
+tree = """
+## 📂 Repository Structure
+
+```sh
+{0}
+```
+
+---
+"""
+
+modules = """
+## 🧩 Modules
+"""
+modules_widget = """<details closed><summary>{0}</summary>\n\n{1}\n\n</details>\n"""
+
+getting_started = """
+---
+
+## 🚀 Getting Started
+
+***Requirements***
+
+Ensure you have the following dependencies installed on your system:
+
+* {language_name}: `► INSERT-VERSION-HERE`
+* `► ...`
+* `► ...`
+
+### ⚙️ Installation
+
+1. Clone the {repo_name} repository:
+```sh
+git clone {repo_url}
+```
+
+2. Change to the project directory:
+```sh
+cd {repo_name}
+```
+
+3. Install the dependencies:
+```sh
+{install_command}
+```
+
+### 🤖 Running {repo_name}
+Use the following command to run {repo_name}:
+```sh
+{run_command}
+```
+
+### 🧪 Tests
+To execute tests, run:
+```sh
+{test_command}
+```
+
+---
+"""
+
+contribute = """
+## 🛠 Project Roadmap
+
+- [X] `► INSERT-TASK-1`
+- [ ] `► INSERT-TASK-2`
+- [ ] `► ...`
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here are several ways you can contribute:
+
+- **[Submit Pull Requests](https://github.com/{full_name}/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/{full_name}/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/{full_name}/issues)**: Submit bugs found or log feature requests for {repo_name}.
+
+<details closed>
+<summary>Contributing Guidelines</summary>
+
+1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
+   ```sh
+   git clone <your-forked-repo-url>
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear and concise message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to GitHub**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+
+Once your PR is reviewed and approved, it will be merged into the main branch.
+
+</details>
+
+---
+
+## 📄 License
+
+This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+
+---
+
+## 👏 Acknowledgments
+
+- List any resources, contributors, inspiration, etc. here.
+
+[**Return**](#-quick-links)
+
+---
+"""
+
+# Language Model Prompts
+[prompts]
+features = """Hello! Analyze the codebase "{0}" and create a concise analysis of each project component. \
+Consider the codebase as a whole and highlight the key characteristics, design patterns, architectural decisions, and any other noteworthy elements.
+Generate your response as a Markdown table with the following columns:
+
+|    | Feature           | Description                                                                                                       |
+|----|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| ⚙️ | **Architecture**    | Analyze the structural design of the system here. The description should not exceed 99 characters in total.             |
+| 📄 | **Documentation**  | Discuss the quality and comprehensiveness of the documentation here. The description should not exceed 99 characters in total.|
+| 🔗 | **Dependencies**   | Examine the external libraries or other systems that this system relies on here. The description should not exceed 99 characters in total.|
+| 🧩 | **Modularity**     | Discuss the system's organization into smaller, interchangeable components here. The description should not exceed 99 characters in total.|
+| 🧪 | **Testing**        | Evaluate the system's testing strategies and tools here. The description should not exceed 99 characters in total.       |
+| ⚡️ | **Performance**     | Analyze how well the system performs, considering speed, efficiency, and resource usage here. The description should not exceed 99 characters in total.|
+| 🔐 | **Security**       | Assess the measures the system uses to protect data and maintain functionality here. The description should not exceed 99 characters in total.|
+| 🔀 | **Version Control**| Discuss the system's version control strategies and tools here. The description should not exceed 99 characters in total.|
+| 🔌 | **Integrations**   | Evaluate how the system interacts with other systems and services here. The description should not exceed 99 characters in total.|
+| 📶 | **Scalability**    | Analyze the system's ability to handle growth here. The description should not exceed 99 characters in total.           |
+
+Provided information includes:
+Repository directory structure: {1}
+Code files: {2}
+"""
+overview = """Analyze the codebase named {} ({}) and provide a robust, yet succinct overview of the project.\n
+Craft a paragraph, 80 TOKEN MAXIMUM, that encapsulate the core functionalities of the project, its purpose and value proposition.\n
+Avoid deep technical details and focus on the project's high-level use cases and features.\n
+Provided are codebase file descriptions:\n{}\n
+"""
+slogan = """Conceptualize a catchy and memorable slogan for the project: {}.\n
+Limit the project's slogan to 8 words or less.\n
+Use the following code summaries from the repository to help you craft the slogan:\n{}\n
+"""
+summaries = """Deliver a succinct summary in no more than 50 tokens, emphasizing the main role \
+and critical features of this code snippet in relation to its parent repository's architecture. \
+Focus on what the code achieves, steering clear of technical implementation details. Included are \
+supplementary details and materials about the codebase and its elements to enhance your understanding. \
+Provided information includes:\n
+- Repository layout and directory structure: {}
+- List of dependencies and software used in the codebase: {}
+- Summaries of key files within the codebase: {}
+"""
