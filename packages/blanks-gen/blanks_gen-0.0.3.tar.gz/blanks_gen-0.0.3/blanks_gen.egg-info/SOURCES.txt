@@ -1,0 +1,17 @@
+README.md
+setup.py
+blanks_gen/__main__.py
+blanks_gen/version.py
+blanks_gen.egg-info/PKG-INFO
+blanks_gen.egg-info/SOURCES.txt
+blanks_gen.egg-info/dependency_links.txt
+blanks_gen.egg-info/entry_points.txt
+blanks_gen.egg-info/requires.txt
+blanks_gen.egg-info/top_level.txt
+blanks_gen/resources/cell.tex
+blanks_gen/resources/default_config.yaml
+blanks_gen/resources/manual_cut_cell.tex
+blanks_gen/resources/manual_cut_config.yaml
+blanks_gen/resources/manual_cut_prefix.tex
+blanks_gen/resources/postfix.tex
+blanks_gen/resources/prefix.tex
