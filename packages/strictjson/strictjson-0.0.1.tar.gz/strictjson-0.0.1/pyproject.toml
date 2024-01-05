@@ -1,0 +1,18 @@
+[project]
+name = "strictjson"
+version = "0.0.1"
+authors = [
+  { name="John Tan Chong Min", email="tanchongmin@gmail.com" },
+]
+description = "A Strict JSON Framework for LLM Outputs, that fixes problems that json.loads() cannot solve"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/tanchongmin/strictjson"
+Issues = "https://github.com/tanchongmin/strictjson/issues"

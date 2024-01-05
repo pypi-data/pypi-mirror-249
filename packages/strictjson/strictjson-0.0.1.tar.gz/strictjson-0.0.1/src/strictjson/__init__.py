@@ -1,0 +1,2 @@
+from strictjson import strict_json
+from strictjson import strict_function

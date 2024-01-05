@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/strictjson/__init__.py
+src/strictjson/strictjson.py
+src/strictjson.egg-info/PKG-INFO
+src/strictjson.egg-info/SOURCES.txt
+src/strictjson.egg-info/dependency_links.txt
+src/strictjson.egg-info/top_level.txt
