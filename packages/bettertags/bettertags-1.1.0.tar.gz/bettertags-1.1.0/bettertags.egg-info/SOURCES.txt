@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bettertags/__init__.py
+bettertags/config.py
+bettertags/plugin.py
+bettertags.egg-info/PKG-INFO
+bettertags.egg-info/SOURCES.txt
+bettertags.egg-info/dependency_links.txt
+bettertags.egg-info/entry_points.txt
+bettertags.egg-info/not-zip-safe
+bettertags.egg-info/requires.txt
+bettertags.egg-info/top_level.txt
