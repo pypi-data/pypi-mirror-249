@@ -1,0 +1,2 @@
+[console_scripts]
+cma = cloudmesh.apptainer.apptainer:main
