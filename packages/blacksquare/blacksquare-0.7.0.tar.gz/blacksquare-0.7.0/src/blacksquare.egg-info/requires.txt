@@ -1,0 +1,11 @@
+networkx
+numpy
+pandas
+pdfkit
+puzpy
+pypdf
+rich
+
+[dev]
+pip-tools
+pytest
