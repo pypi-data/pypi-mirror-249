@@ -1,0 +1,8 @@
+networkx_graph/__init__.py,sha256=lmEG85AT0A9DumLi3nXLzabEDy1SeyzKMm9yX-5Qc-4,1034
+networkx_graph/_core.cpython-38-i386-linux-gnu.so,sha256=aQy-xTX3ZQ4XzPazH6brBI3d0AAHEnWrjuk5Hr-ZN9A,970324
+networkx_graph/__main__.py,sha256=3NXrqIqWJU943LI_P-RS5LSm6o6QuZl730qEvTjEUt0,275
+networkx_graph-0.0.5.dist-info/WHEEL,sha256=0TpF5Jdj_rpRvzziYnpGnYgQSUEhlO4avGG-afG9Ekw,147
+networkx_graph-0.0.5.dist-info/RECORD,,
+networkx_graph-0.0.5.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+networkx_graph-0.0.5.dist-info/METADATA,sha256=V8QPxpuaV5EQG4BHTIR63zs8b59vGhoLWJZdQg8Mapk,843
+networkx_graph-0.0.5.dist-info/licenses/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
