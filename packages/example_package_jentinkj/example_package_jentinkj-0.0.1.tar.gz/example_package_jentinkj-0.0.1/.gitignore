@@ -1,0 +1,10 @@
+*.env
+*.csv
+*.parquet
+*.xlsx
+*.json
+*.pyc
+*.txt
+*.jpg
+*.log
+*ignore*
