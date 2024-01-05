@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="senaite.abx">
+
+  <genericsetup:upgradeStep
+      title="SENAITE ABX 1.2.0: Remove behaviors"
+      description="Remove behaviors and use content schema instead"
+      source="1200"
+      destination="1201"
+      handler=".v01_02_000.remove_antibiotic_behavior"
+      profile="senaite.abx:default"/>
+
+  <genericsetup:upgradeStep
+      title="Upgrade to SENAITE ABX 1.2.0"
+      source="1100"
+      destination="1200"
+      handler=".v01_02_000.upgrade"
+      profile="senaite.abx:default"/>
+
+</configure>
