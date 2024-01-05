@@ -1,0 +1,11 @@
+oci_client/__init__.py,sha256=eGhTtjz4halj9e9ZfXFB3LyfAEo9L8RooFoRu4hC7K4,89
+oci_client/_client.py,sha256=kV3vgqbixEGw1FKRg0x27CbXIsfCZ8N4Hji2shiIwCQ,6777
+oci_client/_helpers.py,sha256=mGapOyPUZMDrBEdjqqxflwtL2m2PwjDT9B0AtLgJNds,1407
+oci_client/_services.py,sha256=ltmnhwDJZiOPChCGkwxsdgHS8Z5hGfkDm02oFF9OgCU,2686
+oci_client/cfg.py,sha256=gSfS3rr8r2ZWao61Qk0XgShiZY3EEjFMDv9xknAWxfA,992
+oci_client/client.py,sha256=Kx_aaA2ZRbsp3d0H6t8Xp5P8aJc8dV8Klcxb9ZhSfSM,362166
+oci_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oci_client-0.1.0.dist-info/LICENSE,sha256=gFZjG3xE3FHs83EvIQWi0tahTR1Wz7j8m1oEZiXBUMk,1062
+oci_client-0.1.0.dist-info/METADATA,sha256=snfBRo0A06ZkUa-xc2n5e0p6Vkrb4VRsHok81eRRxMs,535
+oci_client-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+oci_client-0.1.0.dist-info/RECORD,,
