@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+headache/__init__.py
+headache.egg-info/PKG-INFO
+headache.egg-info/SOURCES.txt
+headache.egg-info/dependency_links.txt
+headache.egg-info/top_level.txt
