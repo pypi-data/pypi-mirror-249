@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "gempipe"
+version = "0.0.14"
+description = ""
+authors = ["Gioele Lazzari"]
+license = "GNU General Public License v3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+cobra = ">=0.28"
+pandas = ">=2.0.0"
+openpyxl = ">=3.0.0"
+ncbi-genome-download = ">=0.3.3"
+biopython = ">=1.80"
+
+# non-pip dependencies:
+# pigz >= 2.5
+# prokka >= 1.14.6
+# prodigal >= 2.6.3
+# busco >= 5.4.0
+# seqkit >= 2.2.0
+# cd-hit >= 4.8.1
+# blast >= 2.12.0
+# eggnog-mapper >= 2.1.7
+# diamond >= 2.0.15 
+
+# suspect fixes:
+# htslib==1.16
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gempipe = "gempipe:main"
+
