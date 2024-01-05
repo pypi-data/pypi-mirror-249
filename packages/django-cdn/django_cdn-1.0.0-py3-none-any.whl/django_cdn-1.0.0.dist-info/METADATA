@@ -1,0 +1,197 @@
+Metadata-Version: 2.1
+Name: django-cdn
+Version: 1.0.0
+Summary: Django library that simplifies HTML imports of JS and CSS code with a NPM like command.
+Home-page: https://github.com/Casassarnau/django-cdn
+Author: Arnau Casas Saez
+Author-email: casassarnau@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Casassarnau/django-cdn/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django >=2.2
+Requires-Dist: semver
+Requires-Dist: requests
+
+# django-cdn
+
+Have you ever wondered why using JS frontend libraries where so easy in modern frameworks and not Django? Well, this is your library! 
+
+Django-cdn is a Django library that simplifies HTML imports of JS and CSS code with a NPM like command.
+This library simplifies boosting your web app's security by effortlessly implementing CSP (Content Security Policy), making it more restrictive and robust.
+
+This library uses the NPM registry and JSDelivr APIs.
+
+## Installation
+
+- Install the library with pip:
+
+    ```
+    pip install django-cdn
+    ```
+
+- Add `django-cdn` to your `INSTALLED_APPS`:
+
+    ```
+    INSTALLED_APPS = [
+        ...
+        'django_jwt',
+        ...
+    ]
+    ```
+
+## Command
+
+### Install
+
+With this command you will be save the libraries that you are using in the `cdn-package.json`.
+Thanks to this you will be able to track your versions. Dependencies will be automatically handled.
+
+```bash
+python manage.py npm install jquery bootstrap@5.2.3
+```
+
+If the automatic entrypoints of your library are not the ones that you wanted you can ask the install command to make you choose the entrypoints:
+
+```bash
+python manage.py npm --entry install jquery
+```
+
+Output:
+
+```
+jquery: Installing version 3.7.1
+1: /dist/jquery.js
+2: /dist/jquery.min.js <-- Default entrypoint
+3: /dist/jquery.slim.js
+4: /dist/jquery.slim.min.js
+Choose the entrypoints indexes in order separated by commas (Ex: 4, 2, 3):
+```
+
+### Uninstall
+
+You can uninstall any library with:
+
+```bash
+python manage.py npm uninstall jquery bootstrap
+```
+
+Or all at once with:
+
+```bash
+python manage.py npm uninstall @
+```
+
+### Build
+
+This is where the library gets good. This command will automatically download all the required files to your static folders.
+
+This is thought to be done for deployment and have the folder ignored in git.
+
+```bash
+python manage.py npm build
+```
+
+### Unbuild
+
+You can easily delete the previous build without uninstalling the library
+
+```bash
+python manage.py npm unbuild jquery
+```
+
+Or all at once:
+
+```bash
+python manage.py npm unbuild @
+```
+
+## Template
+
+Add this to the beggining of the template:
+
+```html
+{% load bundle_loader %}
+```
+
+To add your entrypoints to your django templates you can use the following:
+
+```html
+{% load_imports %}
+```
+
+You can also load single packages or entrypoints with the following:
+
+```html
+{% load_only_imports 'jquery, bootstrap.js' %}
+```
+
+This will include only the js files of Bootstrap and full Jquery package.
+
+In order to do all except some packages/entrypoints you can use the following:
+
+```html
+{% load_imports_except 'bootstrap.css' %}
+```
+
+This will include all installed packages except the css entrypoints of bootstrap.
+
+NOTE: The `bootstrap.css` is not the file name, it is the package name + `.` + `js or css`.
+
+## Settings
+
+All settings are optional except if you don't have any `STATICFILES_DIRS` in your project.
+
+### CDN_BUILD_STATIC_PATH
+
+- Configure the static folder where you want to install your cdn libraries.
+If you have `STATICFILES_DIRS` this is not needed as the library will install it to the first folder.
+
+    ```python
+    #  This path must be a static folder. The libraries are installed on "/static/lib/"
+    CDN_BUILD_STATIC_PATH = 'some/path/inside/BASE_DIR'
+    ```
+
+### CDN_PACKAGES_INFO_PATH
+
+- Configure the path where the cdn-package.json will be saved. Saving this file in git is highly recommended.
+
+    ```python
+    CDN_PACKAGES_INFO_PATH = 'some/path/inside/BASE_DIR'
+    ```
+
+## Security
+
+You can use this library to improve your webapp security with [django-csp](https://django-csp.readthedocs.io/en/latest/index.html).
+If you build the libraries you can just set this on `settings.py`:
+
+```python
+DEBUG = ...
+
+CSP_SCRIPT_SRC = ['self']
+CSP_STYLE_SRC = ['self']
+
+if DEBUG:
+  CSP_SCRIPT_SRC.append('data.jsdelivr.com')
+  CSP_STYLE_SRC.append('data.jsdelivr.com')
+```
+
+This will restrict the browser to retrieve the scripts from your domain which will improve security for your clients.
