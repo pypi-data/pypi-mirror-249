@@ -1,0 +1,17 @@
+README.md
+__init__.py
+plotBrain.py
+regionDescriptions.pkl
+setup.py
+__pycache__/plotBrain.cpython-311.pyc
+atlases/aparc_aseg_template.svg
+atlases/aparc_template.svg
+atlases/lausanne120_aseg_template.svg
+atlases/lausanne120_template.svg
+atlases/lausanne250_template.svg
+atlases/wbb47_template.svg
+pySimpleBrainPlot.egg-info/PKG-INFO
+pySimpleBrainPlot.egg-info/SOURCES.txt
+pySimpleBrainPlot.egg-info/dependency_links.txt
+pySimpleBrainPlot.egg-info/requires.txt
+pySimpleBrainPlot.egg-info/top_level.txt
