@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+text_processing/__init__.py
+text_processing/text_preprocessor.py
+tweetprocessor.egg-info/PKG-INFO
+tweetprocessor.egg-info/SOURCES.txt
+tweetprocessor.egg-info/dependency_links.txt
+tweetprocessor.egg-info/requires.txt
+tweetprocessor.egg-info/top_level.txt
