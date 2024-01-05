@@ -1,0 +1,7 @@
+llama-cpp-python>=0.2.26
+pydantic>=2.5.3
+
+[retrieval_memory]
+chromadb
+numpy
+scipy
