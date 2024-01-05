@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+battle/__init__.py
+battle/battle_content.py
+constants/__init__.py
+constants/constants.py
+tibia_battle.egg-info/PKG-INFO
+tibia_battle.egg-info/SOURCES.txt
+tibia_battle.egg-info/dependency_links.txt
+tibia_battle.egg-info/requires.txt
+tibia_battle.egg-info/top_level.txt
