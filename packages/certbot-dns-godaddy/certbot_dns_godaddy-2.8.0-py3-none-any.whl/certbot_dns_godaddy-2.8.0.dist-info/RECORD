@@ -1,0 +1,6 @@
+certbot_dns_godaddy.py,sha256=ErYishyFl7oF962TnndBNC7BvMwJVKMRHm2KpXqLZJc,1907
+certbot_dns_godaddy-2.8.0.dist-info/LICENSE.txt,sha256=LMXecVrlqXbwhvukkwiAyeQhkUFz_IURG_9RTUdXEj8,10786
+certbot_dns_godaddy-2.8.0.dist-info/METADATA,sha256=QSlOPFkAjaW1V4xBKXk6CJwlJWjdHZJ3XvuqQ_A4pHU,7105
+certbot_dns_godaddy-2.8.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+certbot_dns_godaddy-2.8.0.dist-info/entry_points.txt,sha256=yFaWaglnSImyg3_XjxFVHGYZiB4VSLuUiDcVuVflGrc,65
+certbot_dns_godaddy-2.8.0.dist-info/RECORD,,
