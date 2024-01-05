@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tar_mak_unique_character_counter
+Version: 1.0.0
+Summary: a program that counts unique characters
+Author-email: Taras Makutra <tarik9598@gmail.com>
+Project-URL: Homepage, https://git.foxminded.ua/foxstudent106344/task-4-cli
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TM_symbol_counter Package
+
+This is a simple package that you can use to count unique
+characters in a passed string or file.
+After installing the package, you can start using it in the command line.
+Run the countunique command with the required arguments
+
+-f or --file FILE - an argument that requires specifying the path to the file
+
+-s or --string STRING - an argument that requires a string in which to count characters
+
+If you pass both arguments at the same time, the File argument will be preferred
+
+Example: task3_collections.py -f " Filepath " -s " Test term "
+
+In this case In this case, the package will count the unique characters that are in the file with the path " filepath "
+
+Example 2: task3_collections.py -s " Test string "
+
+In this case, the package will count the unique characters in " Test term " string
