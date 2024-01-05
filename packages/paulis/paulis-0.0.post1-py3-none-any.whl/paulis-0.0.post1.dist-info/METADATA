@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: paulis
+Version: 0.0.post1
+Summary: Quantum tensors in the Pauli basis
+Home-page: https://github.com/hashberg-io/paulis
+Author: hashberg
+Author-email: sg495@users.noreply.github.com
+Project-URL: Bug Tracker, https://github.com/hashberg-io/paulis/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: typing-extensions >=4.6.0
+Requires-Dist: typing-validation >=1.1.0
+Provides-Extra: dev
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
