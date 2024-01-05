@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: HTPolyNet
+Version: 1.0.8
+Summary: Automated MD System Builder for Amorphous Network Polymers
+Project-URL: Source, https://github.com/AbramsGroup/HTPolyNet
+Project-URL: Documentation, https://abramsgroup.github.io/HTPolyNet/
+Project-URL: Bug Tracker, https://github.com/AbramsGroup/HTPolyNet/issues
+Author-email: Cameron F Abrams <cfa22@drexel.edu>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.9
+Requires-Dist: gputil>=1.4
+Requires-Dist: networkx>=3.2
+Requires-Dist: numpy>=1.24
+Requires-Dist: pandas>=2
+Requires-Dist: parmed>=4
+Requires-Dist: pyyaml>=6
+Requires-Dist: requests>=2.28
+Requires-Dist: scipy>=1.10
+Description-Content-Type: text/markdown
+
+# HTPolyNet
+> High-Throughput Polymer Network Atomistic Simulations
+
+HTPolyNet is a Python utility for generating atomistic models of cross-linked polymer networks together with appropriate topology and parameter files required for molecular dynamics simulations using Gromacs.  It is intended as a fully automated system builder requiring as inputs only the molecular structures of any monomer species, a description of the polymerization chemistry, and a handful of options describing desired system size and composition.  HTPolyNet uses the Generalized Amber Force Field for atom-typing and parameter generation.
+
+## Installation
+
+From PyPI:
+```bash
+pip install htpolynet
+```
+
+From source:
+```bash
+git clone git@github.com:AbramsGroup/HTPolyNet.git
+cd HTPolyNet
+pip install -e .
+```
+
+Once installed, the user has access to the main `htpolynet` command.
+
+The programs ``antechamber``, ``parmchk2`` and ``tleap`` from AmberTools must be in your path.  These can be installed using the ``ambertools`` package from ``conda-forge`` or compiled from source.
+
+
+## Release History
+
+* 1.0.8
+    * uses `chordless_cycles` to find rings; ringidx no long unique atom attribute; improved ring-pierce detection
+* 1.0.7.2
+    * moved Library package to resources subpackage of HTPolyNet.HTPolyNet
+* 1.0.6
+    * gmx-style analyze subcommand added
+* 1.0.5
+    * Post-build MD simulations and plotting functionalities added
+* 1.0.2
+    * Enhanced molecule-network graph drawing in the plot subcommand
+* 1.0.1
+    * Fixed atom index assignment issue for systems with more than 100,000 atoms
+* 1.0.0
+    * First release
+* 0.0.1
+    * Initial beta version
+
+## Meta
+
+Cameron F. Abrams – cfa22@drexel.edu
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+[https://github.com/cameronabrams](https://github.com/cameronabrams/)
+
+[https://github.com/AbramsGroup](https://github.com/AbramsGroup/)
+
+## Contributing
+
+1. Fork it (<https://github.com/AbramsGroup/HTPolyNet/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
