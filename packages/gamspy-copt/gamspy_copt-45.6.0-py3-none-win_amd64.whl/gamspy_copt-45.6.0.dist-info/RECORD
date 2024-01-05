@@ -1,0 +1,10 @@
+gamspy_copt/__init__.py,sha256=qTHG3t5RwJdeP_CAUgEaH8x72bje4EP_hKYCi-oL-Uk,385
+gamspy_copt/copt.dll,sha256=X5Q734EayJi8ETRr9_YlF0g5OL-KT4I1zdsF6IMKazg,19559424
+gamspy_copt/cptcclib64.dll,sha256=J_tValfF1OF17SBSHO0yi2TKw1Mnn66mQR23-ks_FG4,456192
+gamspy_copt/libcrypto-1_1-x64.dll,sha256=k0dmxIjY8aZS1eYA-ANHgqHlFaY9QQdRjJyPiOIMx_w,3693568
+gamspy_copt/optcopt.def,sha256=Uyf6VNIq3gXbKUXcEG97rV9SehDqCO38nZmRZSPPuYc,8844
+gamspy_copt/version.py,sha256=vb--fAK4a5a8M3coSJ7vpynsQuVLDiBFafLxjogFIck,22
+gamspy_copt-45.6.0.dist-info/METADATA,sha256=qW2rjSavrA5Ow_Lo46Mu_tLI36rYU4zSfbAVHp6Ch4s,61
+gamspy_copt-45.6.0.dist-info/WHEEL,sha256=-H981hu6jK6YKd-c0qWpYxXA3UZMihQ3r30_4YPQguI,104
+gamspy_copt-45.6.0.dist-info/top_level.txt,sha256=o5QBGmjwM9C5RbXo-DaXXSQ3pp7mqHaWj3aCHrz-lXY,12
+gamspy_copt-45.6.0.dist-info/RECORD,,
