@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/csvtoparquet/__init__.py
+src/csvtoparquet/main.py
+src/csvtoparquet15.egg-info/PKG-INFO
+src/csvtoparquet15.egg-info/SOURCES.txt
+src/csvtoparquet15.egg-info/dependency_links.txt
+src/csvtoparquet15.egg-info/entry_points.txt
+src/csvtoparquet15.egg-info/requires.txt
+src/csvtoparquet15.egg-info/top_level.txt
