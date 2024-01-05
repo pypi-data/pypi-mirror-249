@@ -1,0 +1,12 @@
+phoneutria/__init__.py,sha256=xwBF-4cte4-ksdF2OQmN15W1M2ngaJnzjTpnom_H7Aw,168
+phoneutria/__main__.py,sha256=_HpivDqPtDKt-WkbDhhoSA1iqBBh9g3rrW2JfSAZei8,2420
+phoneutria/banner.py,sha256=GjcsvuOT_Ngeuw91AmKp87EOenVfz_a8fgCLaBCnvk4,121
+phoneutria/cli.py,sha256=-DuBRORwxd-mLLEWWXwEmCMBvu6XUTb5vOzkGReAnK4,1032
+phoneutria/colors.py,sha256=DJ2qKxV2w_jqWRZMi-pK8FaM_zP2yUuERFATuihvarA,394
+phoneutria/version.py,sha256=3pVOT6o1b-wBfCm-besMcLK6cXuyiFv7IrB2H3Ywo5k,75
+phoneutria-1.0rc2.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+phoneutria-1.0rc2.dist-info/METADATA,sha256=C4jOKBjoWYZ_QKzCAeHP9sYxcL2U04HVLfzrFK6NXzc,2274
+phoneutria-1.0rc2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+phoneutria-1.0rc2.dist-info/entry_points.txt,sha256=nuMIEDEGQZ68SdsU8YEi6OvW0TdutqO1gAITSjMrMHc,51
+phoneutria-1.0rc2.dist-info/top_level.txt,sha256=jKb9GvJDxfwwIz3S6IAMBZlfx8yEJpCLvnvQlF3TLFk,11
+phoneutria-1.0rc2.dist-info/RECORD,,
