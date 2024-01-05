@@ -1,0 +1,5 @@
+colorama==0.4.6
+coverage==7.4.0
+pygame==2.5.2
+pytest==7.4.4
+

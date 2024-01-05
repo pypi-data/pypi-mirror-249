@@ -1,0 +1,35 @@
+# .gitignore
+
+# Virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python cache
+*.pyc
+
+# Distribution/build
+dist/
+build/
+*.egg-info/
+
+# Compiled bytecode
+*.pyc
+*.pyo
+*.pyd
+
+# IDE-specific files
+.vscode/
+*.pycharm/
+*.idea/
+
+# Local configuration file
+.env
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
