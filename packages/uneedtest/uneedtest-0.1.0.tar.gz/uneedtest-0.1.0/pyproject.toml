@@ -1,0 +1,28 @@
+
+[tool.poetry]
+name = "uneedtest"
+description = "A snake-cased drop in for unittest.TestCase"
+version = "0.1.0"
+license = "MIT"
+readme = "README.md"
+packages = [{include = "uneedtest"}]
+authors = ["Jonathan Scholbach <j.scholbach@posteo.de>"]
+homepage = "https://github.com/jonathan-scholbach/uneedtest"
+repository = "https://github.com/jonathan-scholbach/uneedtest"
+keywords = ["testing", "unittest"]
+classifiers = [
+  "Programming Language :: Python",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Utilities",
+  "License :: OSI Approved :: MIT License",
+  "Development Status :: 4 - Beta",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+pyhumps =">=3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
