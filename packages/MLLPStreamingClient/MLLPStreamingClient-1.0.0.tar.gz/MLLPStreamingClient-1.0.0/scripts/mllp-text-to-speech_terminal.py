@@ -1,0 +1,69 @@
+#!/usr/bin/env python
+#
+#  Copyright 2023 Machine Learning and Language Processing (MLLP) research group
+#                 Universitat Politècnica de València (UPV)
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#  http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+
+import json
+import sys
+import sounddevice as sd
+import numpy as np 
+import time
+import threading
+import argparse
+from MLLPStreamingClient import MLLPStreamingClient
+
+parser = argparse.ArgumentParser()
+parser.add_argument('api_host', help="API server hostname or IP")
+parser.add_argument('api_port', help="API server port")
+parser.add_argument('t2s_system_id', help="T2S (TTS) system ID")
+parser.add_argument('t2s_language_code', help="T2S (TTS) language code")
+parser.add_argument('-u', '--api-user', default=None, help="TLP API username")
+parser.add_argument('-k', '--api-key', default=None, help="TLP API secret key")
+parser.add_argument('-c', '--ssl-cert-file', default=None, help="API server SSL .crt file")
+parser.add_argument('-d', '--debug', default=False, action="store_true", help="Debug mode")
+
+args = parser.parse_args()
+
+cli = MLLPStreamingClient(args.api_host, args.api_port, args.api_user, args.api_key, args.ssl_cert_file, args.debug)
+
+print("Retrieving systems info...")
+
+# Get synthetised audio sample rate
+ret = cli.Text2SpeechInfo()
+for sys in ret:
+    if sys["id"] == args.t2s_system_id or sys["info"]["id"] == args.t2s_system_id:
+        sr = sys["info"]["sample_rate"]
+
+sem = threading.Semaphore()
+
+def myTextIterator():
+        while True:
+            sem.acquire()
+            s = input("> Type input text: ")
+            if s[-1] != ".": s = s + "." # Add period at the end of the sentence.
+            yield s
+
+adata = np.array([], dtype=np.int16)
+for k in cli.Text2Speech(args.t2s_system_id, myTextIterator, args.t2s_language_code):
+    if "audio_data" in k:
+        adata = np.concatenate((adata, np.frombuffer(k["audio_data"], dtype=np.int16)))
+    elif "metadata" not in k:
+        sd.play(adata, sr)
+        sd.wait()
+        adata = np.array([], dtype=np.int16)
+        sem.release()
+
+
