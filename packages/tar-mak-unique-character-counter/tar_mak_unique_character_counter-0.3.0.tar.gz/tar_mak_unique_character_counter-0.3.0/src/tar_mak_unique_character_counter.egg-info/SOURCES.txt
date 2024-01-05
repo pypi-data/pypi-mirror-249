@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/tar_mak_unique_character_counter/__init__.py
+src/tar_mak_unique_character_counter/task3_collections.py
+src/tar_mak_unique_character_counter.egg-info/PKG-INFO
+src/tar_mak_unique_character_counter.egg-info/SOURCES.txt
+src/tar_mak_unique_character_counter.egg-info/dependency_links.txt
+src/tar_mak_unique_character_counter.egg-info/top_level.txt
+tests/test_task3_collections.py
