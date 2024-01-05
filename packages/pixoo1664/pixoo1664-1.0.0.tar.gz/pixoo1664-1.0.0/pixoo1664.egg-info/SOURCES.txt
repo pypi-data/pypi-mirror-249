@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pixoo1664/__init__.py
+pixoo1664.egg-info/PKG-INFO
+pixoo1664.egg-info/SOURCES.txt
+pixoo1664.egg-info/dependency_links.txt
+pixoo1664.egg-info/requires.txt
+pixoo1664.egg-info/top_level.txt
