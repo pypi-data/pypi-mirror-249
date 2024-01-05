@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head lang="en_US">
+        <meta charset="UTF-8">
+        <title>Sketching.py Test Harness</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/third_party/core.css">
+        <script type="module" src="/third_party/core.js"></script>
+    </head>
+    <body>
+        <py-config>
+        {
+            "packages": ["/dist/sketching-0.0.8-py3-none-any.whl"]
+        }
+        </py-config>
+
+        <main id="#main">
+            <div class="sketch-load-message" id="sketch-load-message">Waiting...</div>
+            <canvas id="sketch-canvas" style="display: none"></canvas>
+        </main>
+
+<py-script>
+import sketching
+
+sketch = sketching.Sketch2DWeb(500, 500)
+
+image = sketch.load_image('./reference.png')
+image.resize(image.get_width() / 2, image.get_height() / 2)
+
+def draw(sketch):
+    sketch.clear('#707070')
+
+    mouse = sketch.get_mouse()
+
+    sketch.clear_stroke()
+    sketch.set_ellipse_mode('radius')
+    sketch.set_fill('#A6CEE350')
+    sketch.draw_ellipse(250, 250, 100, 100)
+
+    sketch.set_image_mode('center')
+    sketch.draw_image(mouse.get_pointer_x(), mouse.get_pointer_y(), image)
+
+sketch.on_step(draw)
+
+sketch.show()
+</py-script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section>
+    <h2>Guides</h2>
+    <div>How to get started and then how to master Sketching.py</div>
+
+    <section class="gallery">
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/start.png" alt="Picture of the example sketch from the homepage.">
+            </div>
+            <div class="description">
+                Installing and running your first sketches across different platforms. 
+            </div>
+            <div class="action">
+                <a href="/guides/start.html" class="button">Get Started</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/why.png" alt="Pixel art of two men and a dog looking at a bird in a tree with Sutro Tower visible in the background.">
+            </div>
+            <div class="description">
+                What Sketching.py offers and why we hope you will join us as a user or contributor.
+            </div>
+            <div class="action">
+                <a href="/guides/why.html" class="button">Learn Why</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/deploy.png" alt="Screenshot of the code of the project README">
+            </div>
+            <div class="description">
+                How to package your work and give your sketches to others.
+            </div>
+            <div class="action">
+                <a href="/guides/deploy.html" class="button">Deploy</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/self_host.png" alt="Screenshot of a local web server">
+            </div>
+            <div class="description">
+                Serve sketching for the web without CDNs.
+            </div>
+            <div class="action">
+                <a href="/guides/self_host.html" class="button">Self-Host</a>
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}
