@@ -1,0 +1,2 @@
+[console_scripts]
+video_to_mp3 = video_to_mp3.cli:main
