@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: fastcv
+Version: 0.1.2
+Summary: A basic cv library
+Home-page: https://github.com/yytdfc/fastcv
+Maintainer: yytdfc
+Maintainer-email: fuchen@foxmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: Pillow>=10.0.0
+Requires-Dist: opencv-python
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: einops
+Requires-Dist: ffmpeg-python
+Requires-Dist: sh
+Requires-Dist: face-alignment
+
+<p align="center"><img src="assets/fastcv.webp" height=120></p>
+
+## Tenets
+
+- the most common type is numpy
+- size always be height, width
+
+.
+├── core
+│   ├── io
+│   ├── view
+│   ├── cast
+│   ├── auto
+
+
+
+
+### layout
+
+- np: hwc
+- pil: hwc
+- cv2: hwc
+- tensor: nchw
+
+
+### cast
+
+```
+# type: tensor, numpy, pil, cv2
+# dtype: auto, fp32, fp16
+# range: [0, 255], [-1.0, 1.0], [0.0, 1.0
+fastcv.cast(t, type="tensor", )
+```
