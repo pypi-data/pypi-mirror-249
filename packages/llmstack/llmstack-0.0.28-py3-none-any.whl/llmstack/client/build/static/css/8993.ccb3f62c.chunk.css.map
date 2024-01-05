@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/8993.ccb3f62c.chunk.css","mappings":"AAAA,2BACE,wBAAyB,CACzB,iBACF","sources":["components/apps/AppEditor.css"],"sourcesContent":[".app-editor-section-header {\n  background-color: #dce8fb;\n  padding-left: 16px;\n}\n"],"names":[],"sourceRoot":""}
