@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: http-rpc
+Version: 20240105
+Summary: A minimal RPC server using HTTP
+Home-page: https://github.com/magicray/HTTP-RPC
+Author: Bhupendra Singh
+Author-email: bhsingh@gmail.com
+License: UNKNOWN
+Description: HTTP for transport and mTLS for auth
+Keywords: http,rpc,mTLS,TLS
+Platform: UNKNOWN
