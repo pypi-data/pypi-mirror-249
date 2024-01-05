@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/acm_auto_validate/__init__.py
+src/acm_auto_validate/py.typed
+src/acm_auto_validate.egg-info/PKG-INFO
+src/acm_auto_validate.egg-info/SOURCES.txt
+src/acm_auto_validate.egg-info/dependency_links.txt
+src/acm_auto_validate.egg-info/requires.txt
+src/acm_auto_validate.egg-info/top_level.txt
+src/acm_auto_validate/_jsii/__init__.py
+src/acm_auto_validate/_jsii/acm-auto-validate@0.0.5.jsii.tgz
