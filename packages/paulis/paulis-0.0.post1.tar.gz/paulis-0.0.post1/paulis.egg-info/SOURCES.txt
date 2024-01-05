@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+paulis/__init__.py
+paulis/py.typed
+paulis.egg-info/PKG-INFO
+paulis.egg-info/SOURCES.txt
+paulis.egg-info/dependency_links.txt
+paulis.egg-info/requires.txt
+paulis.egg-info/top_level.txt
+test/test_00_init.py
