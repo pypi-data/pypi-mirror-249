@@ -1,0 +1,10 @@
+numpy
+seaborn
+scipy
+matplotlib
+cvxpy
+colorednoise
+pytest
+PyEMD
+emd
+pandas
