@@ -1,0 +1,2 @@
+[console_scripts]
+pysol_cards = pysol_cards.__main__:main
