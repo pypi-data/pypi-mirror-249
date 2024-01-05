@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/aws_cdk.aws_lambda_rust.egg-info/PKG-INFO
+src/aws_cdk.aws_lambda_rust.egg-info/SOURCES.txt
+src/aws_cdk.aws_lambda_rust.egg-info/dependency_links.txt
+src/aws_cdk.aws_lambda_rust.egg-info/requires.txt
+src/aws_cdk.aws_lambda_rust.egg-info/top_level.txt
+src/aws_cdk/aws_lambda_rust/__init__.py
+src/aws_cdk/aws_lambda_rust/py.typed
+src/aws_cdk/aws_lambda_rust/_jsii/__init__.py
+src/aws_cdk/aws_lambda_rust/_jsii/aws-lambda-rust@0.0.0.jsii.tgz
