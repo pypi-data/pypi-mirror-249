@@ -1,0 +1,15 @@
+setup.py
+aiml_l_prjt.egg-info/PKG-INFO
+aiml_l_prjt.egg-info/SOURCES.txt
+aiml_l_prjt.egg-info/dependency_links.txt
+aiml_l_prjt.egg-info/top_level.txt
+lbpg/__init__.py
+lbpg/pg1.py
+lbpg/pg2.py
+lbpg/pg3.py
+lbpg/pg4.py
+lbpg/pg5.py
+lbpg/pg6.py
+lbpg/pg7.py
+lbpg/pg8.py
+lbpg/pg9.py
