@@ -1,0 +1,15 @@
+isic_metadata/__init__.py,sha256=0sXCDfhFHVGG1HPSAXImmAEgetWRryUvlc5hfJ_Vdf8,3557
+isic_metadata/fields.py,sha256=ZIsXLlj_Lkc94Bb5Md7SdFbnqVfGTeMu6Fp5l8tjddU,5531
+isic_metadata/metadata.py,sha256=PlTLeQGnPVpAlj5YqokDr_rRJ13zsrwQUjlIU--bhm4,9946
+isic_metadata/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isic_metadata/utils.py,sha256=SUMZ92e3X5-ttyl-ADVYKy9TU91Dp_dYa6oPSCVa-rg,303
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_batch.py,sha256=36odZNObX4HR8zO1gpKb5SfrVbf8OmaVI8oBgm0PqFE,981
+tests/test_dependent_fields.py,sha256=G-pHQBsORIvRAX4tHIn8XlJPIYMPVFI15oRvTCKylW4,4523
+tests/test_fields.py,sha256=Gx4UpndeQjnqNiyqIVFytIm_AiplZnKAtKJ1_zKCNgA,4075
+tests/test_utils.py,sha256=GVIbDn9I7GeDTbzCpDfuSOXusAs6UbUGeTxsvY_qtOA,317
+isic_metadata-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+isic_metadata-1.0.0.dist-info/METADATA,sha256=rXsKTUyJxFsPXcMYj-nIKq6IRIIMqMErrWI_R4YkcZY,1023
+isic_metadata-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+isic_metadata-1.0.0.dist-info/top_level.txt,sha256=5BwFN3exg7M1l_pzaJAfaF8wSCXT2WZT7XMghlAxnAU,20
+isic_metadata-1.0.0.dist-info/RECORD,,
