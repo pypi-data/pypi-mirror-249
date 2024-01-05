@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: renus
+Version: 1.3.3
+Summary: Renus Core Framework
+Home-page: https://github.com/smkoBa/renus
+Author: Smko Bayazidi
+Author-email: ba.smko@gmail.com
+License: BSD
+Requires-Python: >=3.8
+License-File: LICENSE
