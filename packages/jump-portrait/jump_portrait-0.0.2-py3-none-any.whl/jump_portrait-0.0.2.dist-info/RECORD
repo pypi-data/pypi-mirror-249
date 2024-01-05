@@ -1,0 +1,9 @@
+jump_portrait/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+jump_portrait/fetch.py,sha256=tB6XKwnw0bzUv0lJ_f4EFS5UOw3_8Lf-Ulff9b_72Kk,8224
+jump_portrait/s3.py,sha256=r-I-EhDzYiziKgg-KGKG2xEoy_zaAqtakPRr3_UUIQQ,1574
+jump_portrait/save.py,sha256=wSl36OGbANCK9s8VbASl-QJ0Ar9vt9oRcs1beEYlYec,1755
+jump_portrait/utils.py,sha256=EEi_MgNGivUj2PA8l50FEqf0EmnwcixIdaFF-KVcuMw,2620
+jump_portrait/workflow.py,sha256=flLrcf7DusGddtxaYPca2RzdCMDkzmbwoQHL_HMrh84,764
+jump_portrait-0.0.2.dist-info/METADATA,sha256=W4osiLJ2qZxDdsydTklN0e5gTR-tgLTC5m9F760-1RE,927
+jump_portrait-0.0.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+jump_portrait-0.0.2.dist-info/RECORD,,
