@@ -1,0 +1,7 @@
+README.md
+setup.py
+dbgian.egg-info/PKG-INFO
+dbgian.egg-info/SOURCES.txt
+dbgian.egg-info/dependency_links.txt
+dbgian.egg-info/entry_points.txt
+dbgian.egg-info/top_level.txt
