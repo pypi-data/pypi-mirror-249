@@ -1,0 +1,13 @@
+[project]
+name = "openlibraryapi_peterinjapan1"
+version = "0.1.0"
+description = "A Python library for interacting with the Open Library API"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[authors]
+name = "Peter D. Jr. Murray"
+
+[project.urls]
+Homepage = "https://github.com/murraypdj/openlibraryapi_py"
+Issues = "https://github.com/murraypdj/openlibraryapi_py/issues"
