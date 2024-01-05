@@ -1,0 +1,13 @@
+README.rst
+setup.py
+bert4keras3/__init__.py
+bert4keras3/backend.py
+bert4keras3/layers.py
+bert4keras3/models.py
+bert4keras3/ops.py
+bert4keras3/snippets.py
+bert4keras3/tokenizers.py
+bert4keras3.egg-info/PKG-INFO
+bert4keras3.egg-info/SOURCES.txt
+bert4keras3.egg-info/dependency_links.txt
+bert4keras3.egg-info/top_level.txt
