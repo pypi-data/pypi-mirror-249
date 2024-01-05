@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+countunique = "tar_mak_unique_character_counter:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[project]
+name = "tar_mak_unique_character_counter"
+version = "0.8.0"
+authors = [
+  { name="Taras Makutra", email="tarik9598@gmail.com" },
+]
+description = "a program that counts unique characters"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://git.foxminded.ua/foxstudent106344/task-4-cli"
