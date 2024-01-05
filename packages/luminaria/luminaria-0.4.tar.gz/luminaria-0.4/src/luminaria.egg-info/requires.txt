@@ -1,0 +1,4 @@
+adafruit-circuitpython-httpserver
+adafruit-circuitpython-neopixel
+circuitpython-stubs
+wxPython
