@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: kenakamu-pf-hello-world
+Version: 0.0.1
+Summary: This is my tools package
+Requires-Dist: promptflow
+Requires-Dist: promptflow-tools
+
