@@ -1,0 +1,12 @@
+easypaddleocr/__init__.py,sha256=41lceUSF_OcHopl_S2okUXVPfh1yBdQviVGr2N_hknw,4409
+easypaddleocr/infer_cls_class.py,sha256=EjD4N5U4Zci6aKpRwIKRvQOxadcJU36LJofmV1P40Ro,2637
+easypaddleocr/infer_det_class.py,sha256=zxviZaQ7P6ih26Lkkb1koyBJNJvjRFGFQoNI786QNLQ,2702
+easypaddleocr/infer_rec_class.py,sha256=ksDHDrt8cjqFiCbZ44fOlQ8VU3zJAwpeKT_d8DATVRU,4716
+easypaddleocr/infer_system.py,sha256=dhE6MKlqPd1zZwnp1svzHL3zTD0FrkH8ylqwY22iFjA,4890
+easypaddleocr/tools_utility.py,sha256=O8p1SCqPeqwSDQ8Onzu-Fylt01igXxjDSyMLR-kCYK8,5035
+easypaddleocr/utility.py,sha256=7bFJ8BPoiQ7Qeb2nMZhr3AhUs4zqgPPmMEYUrIgNbwk,4542
+easypaddleocr-0.1.2.dist-info/LICENCE,sha256=kbZSd5WewnN2PSjvAC6DprP7pXx6NUNsnltmU2Mz1yA,34519
+easypaddleocr-0.1.2.dist-info/METADATA,sha256=QTXpOH8fRWaXJU3bo0XnM6rqomqlkscXvb0TzU7xRtI,1505
+easypaddleocr-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+easypaddleocr-0.1.2.dist-info/top_level.txt,sha256=v6mPBzrJVbOvNIbDRQsuC4VF6m-t_7D1VVOAKNNDN-k,14
+easypaddleocr-0.1.2.dist-info/RECORD,,
