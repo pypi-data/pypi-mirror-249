@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: corvic
+Version: 0.0.1a0
+Summary: 
+License: Proprietary
+Author: Denis Lusson
+Author-email: denis.lusson@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Corvic Python SDK
+
+This package provides functionality developed to simplify interfacing with the Corvic API in Python 3.
