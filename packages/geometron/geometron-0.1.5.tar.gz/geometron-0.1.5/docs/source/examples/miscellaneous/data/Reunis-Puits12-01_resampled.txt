@@ -1,0 +1,3 @@
+Ximage,Yimage,Zimage,Xlocal,Ylocal,Zlocal
+0,149,665,2427.5,-3100,-300
+0,1078,133,2427.5,-2400,100

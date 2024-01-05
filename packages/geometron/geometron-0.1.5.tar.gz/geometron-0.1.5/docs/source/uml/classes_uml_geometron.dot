@@ -1,0 +1,10 @@
+digraph "classes_uml_geometron" {
+rankdir=BT
+charset="utf-8"
+"geometron.core.FakeClass" [color="black", fontcolor="black", label=<{FakeClass|name : NoneType, str<br ALIGN="LEFT"/>|display(text)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"geometron.survey.survey.TopoLine" [color="black", fontcolor="black", label=<{TopoLine|<br ALIGN="LEFT"/>|plot(ax)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"geometron.survey.survey.TopoObject" [color="black", fontcolor="black", label=<{TopoObject|geometry<br ALIGN="LEFT"/>kind<br ALIGN="LEFT"/>name<br ALIGN="LEFT"/>show_label<br ALIGN="LEFT"/>|to_geo()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"geometron.survey.survey.TopoPoint" [color="black", fontcolor="black", label=<{TopoPoint|symbol : str<br ALIGN="LEFT"/>|plot(ax)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"geometron.survey.survey.TopoLine" -> "geometron.survey.survey.TopoObject" [arrowhead="empty", arrowtail="none"];
+"geometron.survey.survey.TopoPoint" -> "geometron.survey.survey.TopoObject" [arrowhead="empty", arrowtail="none"];
+}

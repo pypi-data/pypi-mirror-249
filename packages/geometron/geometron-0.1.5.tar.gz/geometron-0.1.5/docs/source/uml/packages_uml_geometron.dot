@@ -1,0 +1,49 @@
+digraph "packages_uml_geometron" {
+rankdir=BT
+charset="utf-8"
+"geometron" [color="black", label=<geometron>, shape="box", style="solid"];
+"geometron.core" [color="black", label=<geometron.core>, shape="box", style="solid"];
+"geometron.geometries" [color="black", label=<geometron.geometries>, shape="box", style="solid"];
+"geometron.geometries.angles" [color="black", label=<geometron.geometries.angles>, shape="box", style="solid"];
+"geometron.geometries.conversions" [color="black", label=<geometron.geometries.conversions>, shape="box", style="solid"];
+"geometron.geometries.cubic_length" [color="black", label=<geometron.geometries.cubic_length>, shape="box", style="solid"];
+"geometron.geometries.transforms" [color="black", label=<geometron.geometries.transforms>, shape="box", style="solid"];
+"geometron.geometries.vectors" [color="black", label=<geometron.geometries.vectors>, shape="box", style="solid"];
+"geometron.interpolation" [color="black", label=<geometron.interpolation>, shape="box", style="solid"];
+"geometron.interpolation.interpolation_2d" [color="black", label=<geometron.interpolation.interpolation_2d>, shape="box", style="solid"];
+"geometron.plot" [color="black", label=<geometron.plot>, shape="box", style="solid"];
+"geometron.plot.basemaps" [color="black", label=<geometron.plot.basemaps>, shape="box", style="solid"];
+"geometron.plot.geological_maps" [color="black", label=<geometron.plot.geological_maps>, shape="box", style="solid"];
+"geometron.plot.geometries" [color="black", label=<geometron.plot.geometries>, shape="box", style="solid"];
+"geometron.plot.symbols" [color="black", label=<geometron.plot.symbols>, shape="box", style="solid"];
+"geometron.plot.vectors" [color="black", label=<geometron.plot.vectors>, shape="box", style="solid"];
+"geometron.survey" [color="black", label=<geometron.survey>, shape="box", style="solid"];
+"geometron.survey.survey" [color="black", label=<geometron.survey.survey>, shape="box", style="solid"];
+"geometron.utils" [color="black", label=<geometron.utils>, shape="box", style="solid"];
+"geometron.utils.geoservices" [color="black", label=<geometron.utils.geoservices>, shape="box", style="solid"];
+"geometron.utils.io" [color="black", label=<geometron.utils.io>, shape="box", style="solid"];
+"geometron.utils.str" [color="black", label=<geometron.utils.str>, shape="box", style="solid"];
+"geometron.utils.url" [color="black", label=<geometron.utils.url>, shape="box", style="solid"];
+"geometron.vtk" [color="black", label=<geometron.vtk>, shape="box", style="solid"];
+"geometron.vtk.gdf_to_vtk" [color="black", label=<geometron.vtk.gdf_to_vtk>, shape="box", style="solid"];
+"geometron.vtk.transforms" [color="black", label=<geometron.vtk.transforms>, shape="box", style="solid"];
+"geometron" -> "geometron.core" [arrowhead="open", arrowtail="none"];
+"geometron.geometries" -> "geometron.geometries.angles" [arrowhead="open", arrowtail="none"];
+"geometron.geometries" -> "geometron.geometries.conversions" [arrowhead="open", arrowtail="none"];
+"geometron.geometries" -> "geometron.geometries.cubic_length" [arrowhead="open", arrowtail="none"];
+"geometron.geometries" -> "geometron.geometries.transforms" [arrowhead="open", arrowtail="none"];
+"geometron.geometries" -> "geometron.geometries.vectors" [arrowhead="open", arrowtail="none"];
+"geometron.interpolation" -> "geometron.interpolation.interpolation_2d" [arrowhead="open", arrowtail="none"];
+"geometron.plot" -> "geometron.geometries" [arrowhead="open", arrowtail="none"];
+"geometron.plot" -> "geometron.plot.basemaps" [arrowhead="open", arrowtail="none"];
+"geometron.plot" -> "geometron.plot.symbols" [arrowhead="open", arrowtail="none"];
+"geometron.plot" -> "geometron.plot.vectors" [arrowhead="open", arrowtail="none"];
+"geometron.plot.geometries" -> "geometron.plot.symbols" [arrowhead="open", arrowtail="none"];
+"geometron.survey" -> "geometron.survey.survey" [arrowhead="open", arrowtail="none"];
+"geometron.survey.survey" -> "geometron.plot" [arrowhead="open", arrowtail="none"];
+"geometron.survey.survey" -> "geometron.plot.symbols" [arrowhead="open", arrowtail="none"];
+"geometron.utils.geoservices" -> "geometron.utils.str" [arrowhead="open", arrowtail="none"];
+"geometron.utils.geoservices" -> "geometron.utils.url" [arrowhead="open", arrowtail="none"];
+"geometron.vtk" -> "geometron.vtk.gdf_to_vtk" [arrowhead="open", arrowtail="none"];
+"geometron.vtk" -> "geometron.vtk.transforms" [arrowhead="open", arrowtail="none"];
+}

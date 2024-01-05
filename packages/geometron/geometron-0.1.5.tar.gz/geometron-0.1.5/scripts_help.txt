@@ -1,0 +1,14 @@
+nQb8or generated scripts + custom scripts
+O. Kaufmann, 2021-2023.
+
+Script			Description	
+======			===========
+build_docs.sh		Updates the UML graphs, runs the unit tests rebuilds the sphinx documentations creates a commit and asks for pushing to remote  
+dist.sh                 Publishes a package to TestPyPI or PyPI
+help.sh			Displays this text
+make_docs.sh		Makes the sphinx documentation
+push_docs.sh            Updates the html version of the docs on the web server
+quickstart.sh		Helps to setup a project by building the sphinx docs and updating the project requirements
+test_code.sh		Runs unit tests
+update_requirements.sh	Updates the requirements.txt from the Pipfile.lock
+utils.sh		A set of utility functions called internally by other scripts

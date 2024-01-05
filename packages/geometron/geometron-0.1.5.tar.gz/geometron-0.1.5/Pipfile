@@ -1,0 +1,41 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pbr = "*"
+twine = "*"
+jupyterlab = "*"
+ipykernel = "*"
+sphinx-rtd-theme = "*"
+sphinx-gallery = "*"
+nbsphinx = "*"
+pylint = "*"
+pytest = "*"
+panel = "*"
+build = "*"
+
+[packages]
+matplotlib = "*"
+pandas = "*"
+geopandas = "*"
+scipy = "*"
+shapely = "*"
+pyvista = "*"
+descartes = "*"
+pillow = "*"
+requests = "*"
+pyparsing = "<3"
+svgpathtools = "*"
+svgpath2mpl = "*"
+rasterio = "*"
+meshio = "*"
+ipywidgets = "*"
+trame = "*"
+trame-vuetify = "*"
+trame-vtk = "*"
+numpy = "*"
+
+[requires]
+python_version = "3.10"
