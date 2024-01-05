@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% set active_page = "more" %}
+{% block content %}
+    <h1 class="nondoc">Additional information</h1>
+    <div class="txtbox"><p> This application is written in Python,
+        with the help of the <a href="https://www.reportlab.com">ReportLab</a> library
+        (the web part is powered by the <a href="https://flask.palletsprojects.com">flask</a> framework).
+        The code is open-source
+        and is available here: <a href="https://framagit.org/marbaix/ember-factory">framagit.org</a>.
+        The ability of this application to reproduce several figures published by the IPCC was carefully tested
+        (however, the IPCC bears no responsibility for this software).
+    <p></div>
+    <h1 class="nondoc">If it does not work as expected</h1>
+    <div class="txtbox"><p>
+        We are sorry to hear that you have encountered a problem. We will do everything we can to help. Please have a
+        look at
+        <a href="{{ url_for('.doc',subpage='tutorial') }}#failure">'It did not work! Why?'</a> in the tutorial. Do not
+        hesitate to provide feedback.
+    </p></div>
+
+    <h1 class="nondoc">Generating 'burning embers' from your own code</h1>
+    <div class="txtbox"><p>
+        The 'ember drawing' code is available as a python package which can be accessed from code written in python
+        or <a href="https://www.r-project.org">R</a>. The package and some examples are available from the standard
+        python package index: <a href="https://pypi.org/project/embermaker/">PyPI - EmberMaker</a>.
+    </p></div>
+
+    <h1 class="nondoc">Development history</h1>
+    <div class="txtbox">
+        <p>
+            Although the web application and layout details were improved over time, there is no change affecting the
+            translation
+            of the risk levels provided as input to colours in the burning embers. The changes are recorded on
+            <a href="https://framagit.org/marbaix/ember-factory">framagit.org</a>
+            (see <a href="https://framagit.org/marbaix/ember-factory/-/blob/master/CHANGELOG.md">Changelog</a>).
+            A short summary is provided below (from recent to old).
+        </p>
+
+        <h2>Recent news?</h2>
+        <p>
+            When an update is planned, it might be announced on <a href="https://climrisk.org">climrisk.org</a>.
+        </p>
+
+        <h2>2023/12: New version of the ember drawing library and optional new layout option / transitions</h2>
+        <ul>
+            <li> The "ember drawing" code is now a separate library
+                (<a href="https://pypi.org/project/embermaker/">EmberMaker</a>),
+                which is called for drawing within the EmberFactory but is easier to use separately, from other software.
+            </li>
+            <li>
+                New <a href="../doc/examples#ExBenefits">example</a> related to "potential benefits of climate change", illustrating how
+                additional risk levels (and associated colors) can be defined.
+            </li>
+
+        </ul>
+        (version 2.0.2; patches restore missing examples and layout bugs in version 2.0.0)
+
+        <h2>2023/07: Addition of SVG output, support for non-standard transition names</h2>
+        <ul>
+            <li>Addition of SVG as one of the available output formats (SVG is an open-standard
+                <a href="https://en.wikipedia.org/wiki/SVG">vector graphics format</a>).
+                This format is also used for the screen preview.
+            </li>
+            <li>Any transition name can be used provided that the included colors/risk levels are defined in the
+                "Color definitions" sheet of the Excel file provided as input.
+                This may facilitate the inclusion of positive impacts of climate change.
+            </li>
+        </ul>
+        (version 1.8.2)
+        <h2>2023/04: Support for detailed risk transitions, simplifications and corrections</h2>
+        <p>
+            The update provides support for complex descriptions of transitions, which may involve one or both of the
+            following:
+        </p>
+        <ul>
+            <li>risk transition ranges assessed for more than one confidence level (e.g. "it is likely that it will
+                occur in this narrow range, but very likely that it will occur within that broader range").
+            </li>
+            <li>more information about the hazard level that corresponds to a given risk level inside a
+                "risk transition". The standard is min, (optional) median, max; the update adds the possibility to
+                provide "percentiles", which are intermediate levels of risk within a transition: p25, p75, etc. (p50
+                would be the median).
+            </li>
+        </ul>
+        <p> In addition, the update simplifies the documentation by referring to the former "basic (file) format"
+            as the standard format. The former "full-flex" is kept for legacy file(s).
+            <br> (version 1.7.1)
+        </p>
+        <h2>2021: Support for 'overlapping transitions', additional layout options</h2>
+        <p> Allowed 'overlapping transitions', i.e. embers with 'uncertainty ranges' that
+            span across each other (e.g. it might be that risk is above or below 'high' at a given level).
+            Optional secondary axis (on the right, typically with a different scale), along with other new layout
+            options.
+            <br> (version 1.6)
+        </p>
+
+        <h2>2020: Introduction of the median value, improvements, full documentation of the parameters</h2>
+
+        <p> An optional median, or 'midpoint' between the start and end of each transition, is added in the 'Basic
+            format'.</p>
+
+        <p> File format download options (PDF/PNG/JPEG) are added. All parameters are documented in a way
+            that is fully consistent with how they work (the same file provides online documentation and default
+            values).
+            <br> (version 1.4)
+        </p>
+
+        <h2>2019/11 - 2020/05: Initial development</h2>
+        <p> This software was created by Philippe Marbaix at the end of 2019
+            (based on an earlier 'AR5-related' back-of-the-envelope version).
+            The first objective was to produce figure 3 of Zommers et al. (2020;
+            <i>Burning Embers: Towards more transparent and robust climate change risk assessments</i>.
+            Nature Reviews Earth & Environment. <a href="https://doi.org/10/gg985p">doi.org/10/gg985p</a>).<br>
+        </p>
+    </div>
+
+    <p class="txtbox"> Help is welcome to further improve the application. All contributions will be recognised :-).
+        For more information, please e-mail philippe.marbaix@uclouvain.be.
+    </p>
+{% endblock %}

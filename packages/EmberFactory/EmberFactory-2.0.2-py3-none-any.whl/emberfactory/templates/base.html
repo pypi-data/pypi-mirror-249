@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="description"
+          content="App producing 'burning ember' diagrams about increasing risks from climate change">
+    <meta name="keywords" content="climate change, impacts, IPCC, scientific diagrams, EmberMaker, burning embers">
+    <link rel="stylesheet" href="{{ url_for('static', filename='emberapps.css') }}?v=2.0.2r3">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon-180.png') }}" sizes="180x180">
+    <title>The burning ember factory</title>
+</head>
+
+<body>
+    {# Define navbar menu items as (processing_route, optional subpage id, name in the navbar) #}
+    {% set navbar = [
+                ('index', '', 'Graph production'),
+                ('doc', 'tutorial', 'Tutorial'),
+                ('doc', 'parameters', 'Parameters reference'),
+                ('doc', 'examples', 'Examples'),
+                ('more', '', 'More...')
+            ] -%}
+    <div class="sticky" style="z-index:10;">
+        <div class="nav-margin-top"
+           style=" padding: 0; border: 0; position: absolute; left: calc(max(0px, (22vw - 220px))); top: calc(min(0px, 62px - min(9vw, 100px)))">
+            <img class="header-img" style="width: calc(max(min(18vw - 70px, 140px), 50px));"
+                 src="{{url_for('static', filename='emberfactory.png') }}?v=2.0"
+                 srcset="{{url_for('static', filename='emberfactory.png') }}?v=2.0 2x" alt="The ember factory">
+        </div>
+    </div>
+    <div class="navbar sticky">
+        <div class="nav-container">
+            <div class="nav-margin-top">
+                <div class="center">
+                    {% for (route, subpage, name) in navbar %}
+                        {% set addclass = "active" if route + subpage == active_page else "" %}
+                        {% if subpage == '' %}
+                            {% set mlink = url_for('sitenav.'+route) %}
+                        {% else: %}
+                            {% set mlink = url_for('sitenav.'+route, subpage=subpage) %}
+                        {% endif %}
+                        <a class="{{ addclass }} menu" href="{{ mlink }}"> {{ name }} </a>
+                    {% endfor %}
+                </div>
+                <a href="javascript:void(0);" class="dropbutton" onclick="navbarDrop()"
+                   style="float: right; height: 2rem;">
+                    <svg class="icon">
+                        <use href="{{ url_for('static', filename='icons.svg') }}#menu"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        {% block topmessage %}
+        {% endblock %}
+    </div>
+
+    <div class="redubox">
+        {% if version['isalpha'] %}
+            <p class="warning">
+                Critical warning: this an alpha version; it should only be used for software development.
+            </p>
+        {% elif version['isbeta'] %}
+            <p class="warning">
+                Warning: this is a beta (non-final) version; use it at your own risk, check the results carefully.
+            </p>
+        {% endif %}
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <footer>
+        <div class="txtbox" style="display: flex; justify-content: space-between;">
+            <div>Contact: philippe.marbaix@uclouvain.be</div>
+            <div>Version: {{ version['main'] }} (drawing by EmberMaker {{ version['embermaker'] }})</div>
+        </div>
+    </footer>
+
+    <script>
+        let navbar = document.getElementsByClassName("navbar")[0];
+
+        /* Responsive navbar: for small screens, add dropdown class to toggle menu presentation */
+        function navbarDrop() {
+            if (navbar.classList.contains("dropdown")) {
+                navbar.classList.remove("dropdown");
+            } else {
+                navbar.classList.add("dropdown");
+            }
+        }
+    </script>
+</body>
+</html>
