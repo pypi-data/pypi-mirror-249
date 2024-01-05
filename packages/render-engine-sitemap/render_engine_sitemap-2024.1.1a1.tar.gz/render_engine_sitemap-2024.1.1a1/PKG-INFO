@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: render_engine_sitemap
+Version: 2024.1.1a1
+Summary: Generate a site map for your Render Engine site.
+Project-URL: homepage, https://github.com/kjaymiller/render_engine_json/
+Project-URL: repository, https://github.com/kjaymiller/render_engine_json/
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: render-engine>=2023.12.1b3
+Requires-Dist: jinja2
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
+# render-engine-sitemap
+
+Generate a site map for your Render Engine site.
