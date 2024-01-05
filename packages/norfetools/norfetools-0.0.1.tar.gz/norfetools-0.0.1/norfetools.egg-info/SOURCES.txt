@@ -1,0 +1,7 @@
+norfetools.py
+setup.py
+norfetools.egg-info/PKG-INFO
+norfetools.egg-info/SOURCES.txt
+norfetools.egg-info/dependency_links.txt
+norfetools.egg-info/requires.txt
+norfetools.egg-info/top_level.txt
