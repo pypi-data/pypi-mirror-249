@@ -1,0 +1,2 @@
+[narabi.backend]
+redis = narabi.backends.redis:RedisBackend
