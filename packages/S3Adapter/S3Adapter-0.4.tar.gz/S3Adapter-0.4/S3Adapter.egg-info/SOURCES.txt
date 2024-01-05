@@ -1,0 +1,12 @@
+README.md
+setup.py
+S3Adapter.egg-info/PKG-INFO
+S3Adapter.egg-info/SOURCES.txt
+S3Adapter.egg-info/dependency_links.txt
+S3Adapter.egg-info/requires.txt
+S3Adapter.egg-info/top_level.txt
+fileadapters/BaseFileAdapter.py
+fileadapters/S3Adapter.py
+fileadapters/__init__.py
+formaters/BaseFileFormater.py
+formaters/__init__.py
