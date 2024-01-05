@@ -1,0 +1,6 @@
+include designed/jp/pyarmor_runtime_004089/linux_x86_64/pyarmor_runtime.so
+include designed/jp/pyarmor_runtime_004089/darwin_x86_64/pyarmor_runtime.so
+include designed/jp/pyarmor_runtime_004089/windows_x86_64/pyarmor_runtime.pyd
+include designed/en/pyarmor_runtime_004089/linux_x86_64/pyarmor_runtime.so
+include designed/en/pyarmor_runtime_004089/darwin_x86_64/pyarmor_runtime.so
+include designed/en/pyarmor_runtime_004089/windows_x86_64/pyarmor_runtime.pyd
