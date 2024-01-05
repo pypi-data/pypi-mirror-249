@@ -1,0 +1,5 @@
+pylint==3.0.3
+pytest==7.4.4
+black==23.12.1
+ipython==8.19.0
+click==8.1.7
