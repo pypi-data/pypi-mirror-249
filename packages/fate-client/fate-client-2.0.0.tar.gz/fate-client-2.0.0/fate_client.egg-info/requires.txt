@@ -1,0 +1,15 @@
+click
+pandas
+psutil
+requests
+requests_toolbelt
+ruamel.yaml
+setuptools
+networkx
+pydantic
+
+[fate]
+pyfate==2.0.0
+
+[fate_flow]
+fate_flow==2.0.0
