@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "ngpa"
+version = "0.0.6"
+authors = [{ name = 'DingZhen', email = "realdingzhen@outlook.com" }]
+description = "Some handy functions for computing NJU gpa"
+requires-python = ">=3.6"
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+]
+keywords = ["NJU", "gpa"]
+
+[project.urls]
+"Homepage" = "https://github.com/UshioA/ngpa"
+"Bug Track" = "https://github.com/UshioA/ngpa/issues"
+[project.scripts]
+ngpa = "ngpa.ngpa:main"
