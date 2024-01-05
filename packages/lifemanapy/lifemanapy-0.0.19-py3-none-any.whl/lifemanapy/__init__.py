@@ -1,0 +1,1 @@
+from .lifemanatibia import main, setup
