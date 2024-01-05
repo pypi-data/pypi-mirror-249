@@ -1,0 +1,9 @@
+setup.py
+FlaskWebProject1/__init__.py
+FlaskWebProject1/views.py
+runserver.egg-info/PKG-INFO
+runserver.egg-info/SOURCES.txt
+runserver.egg-info/dependency_links.txt
+runserver.egg-info/entry_points.txt
+runserver.egg-info/requires.txt
+runserver.egg-info/top_level.txt
