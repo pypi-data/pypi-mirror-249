@@ -1,0 +1,11 @@
+pyproject.toml
+fastapirichlogger/__init__.py
+fastapirichlogger/logger.py
+fastapirichlogger/setup.py
+fastapirichlogger.egg-info/PKG-INFO
+fastapirichlogger.egg-info/SOURCES.txt
+fastapirichlogger.egg-info/dependency_links.txt
+fastapirichlogger.egg-info/requires.txt
+fastapirichlogger.egg-info/top_level.txt
+fastapirichlogger/core/__init__.py
+fastapirichlogger/core/config.py
