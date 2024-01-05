@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: prune-envs
+Version: 1.0.0
+Summary: Prune (conda) Environments
+Home-page: https://github.com/davidfokkema/prune-envs
+License: GPL-3.0-or-later
+Author: David Fokkema
+Author-email: davidfokkema@icloud.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: textual (>=0.46.0,<0.47.0)
+Description-Content-Type: text/markdown
+
+# Prune (conda) Environments
+
+If you're a heavy user of conda environments there inevitably comes a time that you want to clean things up. Of course, you can use:
+```
+$ conda env remove -n my_old_env
+```
+for each and every environment you have lying around. You can also find out where your environments live and manually remove their folders.
+
+Now, there is another way, using a TUI! 
+
+![Screenshot of the terminal user interface](https://raw.githubusercontent.com/davidfokkema/prune-envs/main/pruneenvironments_screenshot.svg)
+
+
+## Installation and usage
+
+You can install the application using `pipx`:
+```
+$ pipx install prune-envs
+```
+Of course, you can also use plain old `pip`. Start the application by typing:
+```
+$ prune-envs
+```
+Simply select an environment using the mouse or arrow keys and press 'D' to delete!
