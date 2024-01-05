@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: dynamic-imports
+Version: 1.0.2
+Summary: Dynamically discover and import Python modules, classes, and functions.
+Home-page: https://github.com/djkelleher/dynamic-imports
+License: MIT
+Author: Dan Kelleher
+Author-email: kelleherjdan@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/djkelleher/dynamic-imports
+Description-Content-Type: text/markdown
+
+# Dynamically discover and import Python modules, classes, and functions.
+
+## Install
+`pip install dynamic_imports`
+
+## Examples
+### Import a module via module name or file path
+```python
+from dynamic_imports import import_module
+module = import_module('my_package.my_module')
+# or
+module = import_module('/home/user/my_package/my_module.py')
+```
+### Import a module attribute
+```python
+from dynamic_imports import import_module_attr
+
+function = import_module_attr('my_package.my_module', 'my_function')
+# or
+function = import_module_attr('/home/user/my_package/my_module.py', 'my_function')
+```
+### Find all modules in a package or nested packages
+```python
+from dynamic_imports import discover_modules
+
+modules = discover_modules(
+    package=my_package, # str `my_package' works too.
+    search_subpackages=True,
+    # return the actual module objects, not str names.
+    names_only=False # this is the default value...
+)
+```
+The `search_in` argument for all functions below can be an imported package or module, string name of the package (e.g. `"my_package"`) or module (e.g. `"my_package.my_module"`), or path to a python file (e.g. `"/home/user/my_package/my_module.py"`)
+### Find all implementations of a base class within a module.
+```python
+from dynamic_imports import class_impls
+from my_package.my_module import Base
+from my_package import my_module
+
+my_classes = class_impls(
+    base_class=Base, # str 'Base' works too
+    search_in=my_module,
+    names_only=False # this is the default value...
+)
+```
+### Find all implementations of a base class within nested packages.
+```python
+from dynamic_imports import class_impls
+from my_package.my_module import Base
+import my_package
+
+my_classes = class_impls(
+    base_class=Base, # str 'Base' works too.
+    search_in=my_package
+    search_subpackages=True,
+    names_only=False # this is the default value...
+)
+
+```
+### Find all instances of a class within a module.
+```python
+from dynamic_imports import class_inst
+from my_package import my_module
+from my_package.my_module import MyClass
+
+my_classes_instances = class_inst(
+    search_in=my_module,
+    class_type=MyClass
+)
+```
+### Find all instances of a class within nested packages.
+```python
+from dynamic_imports import class_inst
+from my_package.my_module import MyClass
+import my_package
+
+my_classes_instances = class_inst(
+    class_type=MyClass,
+    search_in=my_package,
+    search_subpackages=True,
+)
+```
