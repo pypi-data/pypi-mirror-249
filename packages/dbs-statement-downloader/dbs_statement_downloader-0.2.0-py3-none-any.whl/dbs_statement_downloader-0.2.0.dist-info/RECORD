@@ -1,0 +1,14 @@
+dbs/__init__.py,sha256=ve-Rz66D46epHv7LBtrE0tb3DyLK5sMYJUFfLTEtQzU,54
+dbs/browser/download.py,sha256=pMTqio395IhJ8qpTMOF-Tk-FQBPqGK8FSd7JOBar4l8,5276
+dbs/browser/login.py,sha256=8dKv1nZ_BFwftNx1KX8wvSep8bOD3X0mMMMw3rtM2as,4005
+dbs/gmail/__init__.py,sha256=uZRzVquG_usc31mLlfCfsXMzgkryX8-fKt9Nm_Zfktc,94
+dbs/gmail/credentials.py,sha256=NTQWgJdtJZBRJRwXaFZ8ujVdNkzsGaN1AmC1RW-EXwI,1419
+dbs/gmail/gmail.py,sha256=MRCwRCRyoJN218AY_aYLLXUMIZIvteD8pyHgAwbTa_c,6284
+dbs/gmail/quickstart.py,sha256=ImbgI0cSibmP5i7cqTcx5u5HxnCrh1vUvtglRNQQgbA,2430
+dbs/log.py,sha256=rL9PsJcPPi9HwQBgF_wzLcvINDpzp2hTEvGcmNiuzkQ,375
+dbs/main.py,sha256=EifI5QtGNq0-mJtauqjREm1J88-_wTudjP2QBY4wDVQ,3250
+dbs/settings.py,sha256=gtc0HX6tol-pNxyN1GTTHJ3001mWRTrXPYloqNluvH0,390
+dbs_statement_downloader-0.2.0.dist-info/LICENSE,sha256=5aonNCYayJ8ICVS3abSuIWnJOUqSZO6iNj6eNpGB84c,1072
+dbs_statement_downloader-0.2.0.dist-info/METADATA,sha256=k-LEq7UB9mvvOhaaZxImOPq67GNocC3-MKWtI-e5A3Y,3571
+dbs_statement_downloader-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dbs_statement_downloader-0.2.0.dist-info/RECORD,,
