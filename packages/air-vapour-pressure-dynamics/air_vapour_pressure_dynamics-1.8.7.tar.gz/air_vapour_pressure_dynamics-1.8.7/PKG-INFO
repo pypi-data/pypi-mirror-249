@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: air_vapour_pressure_dynamics
+Version: 1.8.7
+Summary: air_vapour_pressure_dynamics: Repository with the basic functions related with the temperature, relative humidity, absolute humidity and entalpy of the air with the different variable transformations
+Home-page: https://github.com/R-Rijnbeek/air_vapour_pressure_dynamics
+Author: Robert Rijnbeek
+Author-email: robert270384@gmail.com
+Project-URL: Bug Tracker, https://github.com/R-Rijnbeek/air_vapour_pressure_dynamics/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: basic_decorators
+
+# AIr Vapour Pressure Dynamics
+
+Repository with the basic functions related with the temperature, relative humidity, absolute humidity and entalpy of the air with the different variable transformations
+
+## How it work:
+
+1. Create en python environent and install the package using de command:
+    ````
+    pip install air_vapour_pressure_dynamics
+    ````
+2. Once you get installed the package you can import the packahe in the python module by:
+    ````
+    from air_vapour_pressure_dynamics import vapourpressure, absolutehumidity_kg_air,....
+    ````
+    or 
+
+    ````
+    import air_vapour_pressure_dynamics
+    ````
+and that's it!!
