@@ -1,0 +1,8 @@
+positional_encodings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+positional_encodings/tf_encodings.py,sha256=bkfDiwWliZgYUZH7GRHfGoIvnFf61CIZgAOJKfsmL8U,6530
+positional_encodings/torch_encodings.py,sha256=7qyWfP14Ac1vFXQpP9JQteunDUpaKBcraaFlHVojBig,7933
+positional_encodings-6.0.3.dist-info/LICENSE,sha256=t5WAs8-0Xt8xmovwpIt8_-w0aWuBf0CYpXE6akp7NFw,1072
+positional_encodings-6.0.3.dist-info/METADATA,sha256=wlHH1ox_WOxgAK7d3VViTiMKCi2TPtfJisp7EXt1YQI,6618
+positional_encodings-6.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+positional_encodings-6.0.3.dist-info/top_level.txt,sha256=bBcLRs7Z2XoH5wfECO0vOy6biu87AcTyAU9f4ftz2Cs,21
+positional_encodings-6.0.3.dist-info/RECORD,,
