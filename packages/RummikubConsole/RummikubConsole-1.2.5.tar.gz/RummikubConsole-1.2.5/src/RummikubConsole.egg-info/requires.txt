@@ -1,0 +1,8 @@
+appdirs
+click
+cvxpy
+cvxopt>=1.3.0
+numpy
+
+[:python_version <= "3.8"]
+importlib_metadata
