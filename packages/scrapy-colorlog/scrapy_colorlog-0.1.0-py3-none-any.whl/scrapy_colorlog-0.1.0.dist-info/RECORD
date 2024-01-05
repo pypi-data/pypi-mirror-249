@@ -1,0 +1,7 @@
+scrapy_colorlog-0.1.0.dist-info/METADATA,sha256=VtQ3zTJwirI69aJqTWOmUivA1ZXgdsR81_FbYraVhds,2762
+scrapy_colorlog-0.1.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+scrapy_colorlog/__init__.py,sha256=7pqeCyCtT6Qy_YaMMnokvikUD9CDMgVVo87BoDGOskw,50
+scrapy_colorlog/formatter.py,sha256=Hj2T9UvqsAbXyAxWKynPy7SxDo10tF4ZyZ0-Z1jlt_U,1217
+scrapy_colorlog/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_colorlog/utils.py,sha256=zuTTyJz2x3zWCHeLdKWc1_KeWwi3lMHH7aQJtKLo1FY,1129
+scrapy_colorlog-0.1.0.dist-info/RECORD,,
