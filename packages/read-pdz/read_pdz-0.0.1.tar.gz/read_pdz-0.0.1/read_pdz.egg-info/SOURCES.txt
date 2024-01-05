@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+read_pdz/__init__.py
+read_pdz/_modidx.py
+read_pdz/reader.py
+read_pdz.egg-info/PKG-INFO
+read_pdz.egg-info/SOURCES.txt
+read_pdz.egg-info/dependency_links.txt
+read_pdz.egg-info/entry_points.txt
+read_pdz.egg-info/not-zip-safe
+read_pdz.egg-info/requires.txt
+read_pdz.egg-info/top_level.txt

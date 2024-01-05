@@ -1,0 +1,2 @@
+[nbdev]
+read_pdz = read_pdz._modidx:d
