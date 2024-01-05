@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: micronuclAI_labeling
+Version: 0.0.1
+Summary: GUI tool for labeling micronuclei images
+Author-email: Miguel Ibarra <c180l058j@mozmail.com>
+Project-URL: Homepage, https://github.com/SchapiroLabor/micronuclAI_labeling
+Project-URL: Issues, https://github.com/SchapiroLabor/micronuclAI_labeling/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: PySimpleGUI
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# micronuclAI labeling tool
+## Installation
+
+## Requirements
+- Python 3.10
+
+## Usage
+```
+python -m micronuclei_labeling_tool --input_dir <input_dir> --output_dir <output_dir>
+```
