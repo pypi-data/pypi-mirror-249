@@ -1,0 +1,3 @@
+[console_scripts]
+ncdmv-driver-license-office-availability=ncdmv_reservation.cli:main
+
