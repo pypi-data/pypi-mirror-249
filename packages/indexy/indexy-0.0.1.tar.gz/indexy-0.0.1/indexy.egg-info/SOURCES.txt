@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+indexy/__init__.py
+indexy.egg-info/PKG-INFO
+indexy.egg-info/SOURCES.txt
+indexy.egg-info/dependency_links.txt
+indexy.egg-info/top_level.txt
