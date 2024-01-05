@@ -1,0 +1,13 @@
+astropy
+ipython
+joblib
+matplotlib
+numpy
+pandas
+python-dateutil
+requests
+roentgen
+simplejson
+sunpy
+tqdm
+wget
