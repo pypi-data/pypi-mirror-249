@@ -1,0 +1,12 @@
+pudb
+terminaltables
+python-dateutil
+pydicom
+pfmisc
+dask
+retry
+psutil
+python-swiftclient
+pfstate
+webob
+python-chrisclient==2.9.1
