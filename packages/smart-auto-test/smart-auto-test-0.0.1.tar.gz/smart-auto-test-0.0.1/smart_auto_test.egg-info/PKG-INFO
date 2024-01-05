@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: smart-auto-test
+Version: 0.0.1
+Summary: autotest
+Home-page: https://github.com/codepay
+Author: lixiang3117
+Author-email: goodtime521@163.com
+License: Apache 2.0
+Keywords: codepay,codepay_python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+这是一个测试项目

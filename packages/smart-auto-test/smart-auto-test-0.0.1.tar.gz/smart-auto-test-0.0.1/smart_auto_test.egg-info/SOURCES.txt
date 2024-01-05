@@ -1,0 +1,8 @@
+README.md
+setup.py
+smart-auto-test/__init__.py
+smart-auto-test/say_hello.py
+smart_auto_test.egg-info/PKG-INFO
+smart_auto_test.egg-info/SOURCES.txt
+smart_auto_test.egg-info/dependency_links.txt
+smart_auto_test.egg-info/top_level.txt
