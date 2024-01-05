@@ -1,0 +1,89 @@
+A simple bash library build by Sintacs.
+
+##Terminal Installation
+
+::
+
+   pip install sintx
+
+##Importing Module in your script
+
+.. code:: bash
+
+   try:
+    import sintx
+   except ModuleNotFoundError:
+    sintx("pip3 install sintx")
+    import sintx
+
+##Year Scrapper
+
+::
+
+   from sintx import scrape_year(uid)
+
+   Input Example:
+   uid = "61553865513324"
+   print(f"ACCOUNT YEAR: {scrape_year(uid)}")
+
+   Output Example:
+   2023
+
+##Followers Scrapper
+
+::
+
+   from sintx import scrape_followers(token)
+
+   Input Example:
+   token = "EAADmFOBtT9aM0******VD3MBKYOrzIg2Bd4nzlhstptx554******4c9PVGsx4R9JU89a7iy0GybnUZBLrIUy0wIEsIhuh2k2XNvTYOfZAGnY4Hp*******CxknZBq1L8427X2aBIDpbntW5XGXzqNzPBwNElztX5qF*****ZA68vrx1NQZDZD"
+
+   print(f"FOLLOWERS: {scrape_followers(token)}")
+
+   Output Example:
+   FOLLOWERS: 50
+
+##Friends Scrapper
+
+::
+
+   from sintx import scrape_friends(token)
+
+   Input Example:
+   token = "EAADmFOBtT9aM0******VD3MBKYOrzIg2Bd4nzlhstptx554******4c9PVGsx4R9JU89a7iy0GybnUZBLrIUy0wIEsIhuh2k2XNvTYOfZAGnY4Hp*******CxknZBq1L8427X2aBIDpbntW5XGXzqNzPBwNElztX5qF*****ZA68vrx1NQZDZD"
+
+   print(f"FOLLOWERS: {scrape_friends(token)}")
+
+   Output Example:
+   FOLLOWERS: 25
+
+##COLORS
+
+::
+
+   sintx.blue
+   sintx.white
+   sintx.cyan
+   sintx.yellow
+   sintx.black
+   sintx.green
+   sintx.light_red
+   sintx.light_green
+   singx.dark_gray
+   sintx.light_purple
+   sintx.red_orange
+   sintx.red_blue
+   sintx.red_cyan
+   sintx.red_green
+   sintx.red_purple
+
+##Shorcuts
+
+::
+
+   os.system --> sintx
+   requests.get --> reqg
+   requests.post --> reqp
+
+Social Links: \ `Facebook <https://facebook.com/sintxcs>`__
+\ `Telegram <https://t.me/syntxcs>`__
