@@ -1,0 +1,10 @@
+pvyzmgs-0.1.0.dist-info/METADATA,sha256=DV6Dn4qUjeWOU_dIdSM5W0ylgAE3q4sNVHFUMnIOxa4,850
+pvyzmgs-0.1.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+pvyzmgs-0.1.0.dist-info/licenses/LICENSE,sha256=hfJE_Enq_KfGq8m1eYDthuaIVjbF-izA4dHUzHLxMyE,1093
+pvyzmgs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pvyzmgs/animation.py,sha256=t2TSRtxxKIgLEtj-q-6R9FCe3ojOiDc0U7EDeIjwcKM,3420
+pvyzmgs/data.py,sha256=ImCEt4sHLpHkaDJpKCtEFeX3SUlMUeJ1H4XKWhYE5jY,1453
+pvyzmgs/plotting.py,sha256=GmyOkvFGDSG8_1I435aEEzan8Pw1B_VS7khmjfZ50TM,354
+pvyzmgs/resampling.py,sha256=qr7yDTSpK_yT-DfCNdjLwg19lULJhw7knxH1tfaP4gI,994
+pvyzmgs/simulation.py,sha256=Ns9p-lWw0wybhGYOOH54nt7nuKqYyffZf62XzL3OiRs,3457
+pvyzmgs-0.1.0.dist-info/RECORD,,
