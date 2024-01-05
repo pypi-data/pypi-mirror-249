@@ -1,0 +1,3 @@
+pyyaml
+numpy
+huggingface_hub
