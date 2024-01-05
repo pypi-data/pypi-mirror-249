@@ -1,0 +1,7 @@
+requests
+pypdf
+jsbeautifier
+colorama
+Pillow
+pythonaes
+lxml
