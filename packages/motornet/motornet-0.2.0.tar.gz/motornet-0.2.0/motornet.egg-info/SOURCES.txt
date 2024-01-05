@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+motornet/__init__.py
+motornet/effector.py
+motornet/environment.py
+motornet/muscle.py
+motornet/plotor.py
+motornet/policy.py
+motornet/skeleton.py
+motornet.egg-info/PKG-INFO
+motornet.egg-info/SOURCES.txt
+motornet.egg-info/dependency_links.txt
+motornet.egg-info/requires.txt
+motornet.egg-info/top_level.txt
