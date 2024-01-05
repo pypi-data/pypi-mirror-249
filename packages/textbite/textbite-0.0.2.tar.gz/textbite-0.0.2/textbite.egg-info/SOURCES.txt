@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+textbite/detection.py
+textbite/geometry.py
+textbite/improve_pagexml.py
+textbite.egg-info/PKG-INFO
+textbite.egg-info/SOURCES.txt
+textbite.egg-info/dependency_links.txt
+textbite.egg-info/entry_points.txt
+textbite.egg-info/requires.txt
+textbite.egg-info/top_level.txt
+textbite/user_scripts/infer.py
