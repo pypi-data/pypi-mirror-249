@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lifemanapy
+Version: 0.0.20
+Summary: Módulo criado para auxiliar na captura de vida e mana do personagem no jogo tibia.
+Home-page: UNKNOWN
+Author: Ítalo Pereira Barbosa
+Author-email: tato361.portugal@gmail.com
+License: MIT License
+Keywords: life mana
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Módulo criado para auxiliar na captura de vida e mana do personagem no jogo tibia.
+
