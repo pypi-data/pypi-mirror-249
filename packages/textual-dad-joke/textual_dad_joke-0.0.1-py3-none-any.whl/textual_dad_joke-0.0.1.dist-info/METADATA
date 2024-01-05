@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: textual-dad-joke
+Version: 0.0.1
+Summary: A dad joke widget for your Textual applications
+Home-page: https://github.com/davep/textual-dad-joke
+Author: Dave Pearson
+Author-email: davep@davep.org
+Maintainer: Dave Pearson
+Maintainer-email: davep@davep.org
+License: License :: OSI Approved :: MIT License
+Project-URL: Documentation, https://github.com/davep/textual-dad-joke/blob/main/README.md
+Project-URL: Source, https://github.com/davep/textual-dad-joke
+Project-URL: Issues, https://github.com/davep/textual-dad-joke/issues
+Project-URL: Discussions, https://github.com/davep/textual-dad-joke/discussions
+Keywords: terminal,library,file system,filesystem,dialog
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Terminals
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: textual >=0.47.0
+
+# Textual Dad Joke
+
+## Introduction
+
+This library provides a widget that displays a dad joke. No, I'm not even
+kidding.
+
+## Installing
+
+The package can be installed with `pip` or related tools, for example:
+
+```sh
+$ pip install textual-dad-joke
+```
+
+## Then what?
+
+Import it as you would any other widget from a library:
+
+```python
+from textual_data_joke import DadJoke
+```
+
+and then compose the `DadJoke` widget into your application as you would any
+other widget.
+
+The widget has a `tell` method if you want it to tell another joke. It'll
+also swallow any errors but will post a `DadJoke.FellFlat` message if there
+was an error.
+
+## Erm... okay. Anything else I should know?
+
+The widget needs an internet connection and is using
+[icanhazdadjoke.com](https://icanhazdadjoke.com/) as the backend. Also, I
+won't be held responsible for the content of any joke served. That's all on
+you.
+
+
+[//]: # (README.md ends here)
