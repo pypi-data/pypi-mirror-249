@@ -1,0 +1,13 @@
+nonebot_plugin_pcrjjc/__init__.py,sha256=ji6hVlQUY8csF2COsRgO9igfyce-jWIEmwFJGXs5w3Q,40093
+nonebot_plugin_pcrjjc/aiorequests.py,sha256=Bexla5VavBE8fXwlOyye9YmPzQbDvuSDEXW6sfee1EA,2785
+nonebot_plugin_pcrjjc/bsgamesdk.py,sha256=phgFergB7F2EV3e4KvFYKRL64ToYaOCjd0iNMsECFO8,5858
+nonebot_plugin_pcrjjc/config.py,sha256=8G1kqgWeyMJrJ2mfJ0LUJcqvBvaDqQgxFjRIzNNEFlg,1520
+nonebot_plugin_pcrjjc/pcrclient.py,sha256=JemDNb7y9RBKytKCWbW9S79l2oXJ7dEOLfx94UAfaLo,8869
+nonebot_plugin_pcrjjc/query.py,sha256=p8kUw4ikD5wWRgJ3liQXfi7IjRfjoXEHC1mK94atCnw,8932
+nonebot_plugin_pcrjjc/rsacr.py,sha256=9nnx0CkjjwEaQyQkFDUs4YVf2IcJp-YmHePDYvlWjUs,425
+nonebot_plugin_pcrjjc/text2img.py,sha256=qKhPrrZIOBrW2sVxRzK3fKRtxl_M94qsBGxpqHyz8-k,2210
+nonebot_plugin_pcrjjc-0.6.2.dist-info/LICENSE,sha256=NzEWFBo6p4jgcwvorAA6zKdKG2O6y1ObyprJzkx7fQc,34510
+nonebot_plugin_pcrjjc-0.6.2.dist-info/METADATA,sha256=Y0aOBOLslZdzNwj9FMvB_-eHqFOg_mql1F03nF0913c,3582
+nonebot_plugin_pcrjjc-0.6.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nonebot_plugin_pcrjjc-0.6.2.dist-info/top_level.txt,sha256=8XDkbTWbZuq06HRxznrkd0n7KSKkfLjmrHaFpPnwO_o,22
+nonebot_plugin_pcrjjc-0.6.2.dist-info/RECORD,,
