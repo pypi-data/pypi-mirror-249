@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ezpkl
+Version: 0.0.1
+Summary: lovely package to use pickle file system for context manager hater
+Home-page: https://github.com/yesinkim/ezpkl.git
+Author: bailando
+Author-email: bailando.ys@gmail.com
+Keywords: pickle,file,easy,easypickle
+Requires-Python: >=3
+
