@@ -1,0 +1,3 @@
+include *.pyx
+recursive-include spider *.pyx
+prune *.bak
