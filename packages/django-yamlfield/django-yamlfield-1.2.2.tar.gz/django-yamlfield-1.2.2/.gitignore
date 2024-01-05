@@ -1,0 +1,8 @@
+*.egg-info/
+build/
+.coverage
+MANIFEST
+.tox/
+dist/*
+testproject/*
+*.pyc
