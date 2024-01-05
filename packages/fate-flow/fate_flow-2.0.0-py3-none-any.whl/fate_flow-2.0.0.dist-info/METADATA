@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: fate-flow
+Version: 2.0.0
+Home-page: https://fate.fedai.org/
+Author: FederatedAI
+Author-email: contact@FedAI.org
+License: Apache-2.0 License
+Keywords: federated learning scheduler
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: apsw
+Requires-Dist: Flask (==2.2.5)
+Requires-Dist: grpcio (==1.59.3)
+Requires-Dist: grpcio-tools (==1.59.3)
+Requires-Dist: requests
+Requires-Dist: urllib3
+Requires-Dist: cachetools
+Requires-Dist: filelock
+Requires-Dist: pydantic (==1.10.12)
+Requires-Dist: webargs
+Requires-Dist: peewee
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Requires-Dist: networkx
+Requires-Dist: psutil
+Requires-Dist: casbin-peewee-adapter
+Requires-Dist: casbin
+Requires-Dist: pymysql
+Requires-Dist: kazoo
+Requires-Dist: shortuuid
+Requires-Dist: cos-python-sdk-v5
+Requires-Dist: typing-extensions
+Requires-Dist: ruamel.yaml (==0.16)
+Requires-Dist: boto3
+Provides-Extra: eggroll
+Requires-Dist: cloudpickle ; extra == 'eggroll'
+Requires-Dist: lmdb ; extra == 'eggroll'
+Requires-Dist: protobuf ; extra == 'eggroll'
+Requires-Dist: grpcio ; extra == 'eggroll'
+Requires-Dist: grpcio-tools ; extra == 'eggroll'
+Provides-Extra: fate_flow
+Requires-Dist: fate-flow[eggroll,pulsar,rabbitmq,spark] ; extra == 'fate_flow'
+Provides-Extra: pulsar
+Requires-Dist: pulsar-client (==2.10.2) ; extra == 'pulsar'
+Provides-Extra: rabbitmq
+Requires-Dist: pika (==1.2.1) ; extra == 'rabbitmq'
+Provides-Extra: spark
+Requires-Dist: pyspark ; extra == 'spark'
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![CodeStyle](https://img.shields.io/badge/Check%20Style-Google-brightgreen)](https://checkstyle.sourceforge.io/google_style.html) [![Style](https://img.shields.io/badge/Check%20Style-Black-black)](https://checkstyle.sourceforge.io/google_style.html)
+
+[中文](./README.zh.md)
+
+FATE Flow is a multi-party federated task security scheduling platform for federated learning end-to-end pipeline
+
+- [Shared-State Scheduling Architecture](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/41684.pdf)
+- Secure Multi-Party Communication Across Data Centers
+
+Providing production-level service capabilities:
+
+- Data Access
+- Component Registry
+- Federated Job&Task Scheduling
+- Multi-Party Resource Coordination
+- Data Flow Tracking
+- Real-Time Job Monitoring
+- Multi-Party Federated Model Registry
+- Multi-Party Cooperation Authority Management
+- High Availability
+- CLI, REST API, Python API
+
+## Deployment
+
+Please refer to [FATE](https://github.com/FederatedAI/FATE)
+
+## Documentation
+
+The official FATE Flow documentation is here [https://federatedai.github.io/FATE-Flow/latest/](https://federatedai.github.io/FATE-Flow/latest/)
+
+## License
+[Apache License 2.0](LICENSE)
