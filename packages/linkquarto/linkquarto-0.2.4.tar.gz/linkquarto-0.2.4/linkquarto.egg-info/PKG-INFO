@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: linkquarto
+Version: 0.2.4
+Summary: Création de templates de publication scientifique LinkPact.
+Home-page: https://github.com/GuyNYAMSI/LinkQuarto
+Author: GuyNyamsi
+Author-email: nyamsguy@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+
+Ce package est conçu pour générer une mise en forme des
+documents linkpact sous différents formats. Des templates
+de rédaction sont initiés pour permettre à l utilisateur de
+produire des rendus au bon format sans se soucier de la mise en forme.
+
+Pour le moment, le package s installe dans le répertoire courant des
+librairies python. Il faudra y aller récupérer les sources.

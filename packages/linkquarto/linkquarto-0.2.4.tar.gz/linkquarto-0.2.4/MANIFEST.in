@@ -1,0 +1,9 @@
+include linkmaths_quarto/*.py
+include linkmaths_quarto/data/*
+include linkmaths_quarto/modele/*
+include linkmaths_quarto/quarto_book/*
+include linkmaths_quarto/quarto_documents/*
+include linkmaths_quarto/quarto_notebook/*
+include linkmaths_quarto/quarto_presentation/*
+include linkmaths_quarto/quarto_website/*
+
