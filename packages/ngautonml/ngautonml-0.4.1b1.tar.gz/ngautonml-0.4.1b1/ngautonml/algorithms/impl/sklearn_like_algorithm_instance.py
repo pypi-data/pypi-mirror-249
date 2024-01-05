@@ -1,0 +1,51 @@
+'''An instance of a fittable algorithm that follows sklearn conventions.'''
+import pickle
+from typing import Any
+
+from ...wrangler.dataset import Dataset
+from ...wrangler.dataset import DatasetKeys
+from .algorithm import Algorithm
+from .algorithm_instance import DatasetError
+from .fittable_algorithm_instance import FittableAlgorithmInstance, UntrainedError
+
+
+class SklearnLikeAlgorithmInstance(FittableAlgorithmInstance):
+    '''An instance of a fittable algorithm that follows sklearn conventions.'''
+    _impl: Any
+    _constructor: type
+
+    def __init__(self, parent: Algorithm, *args, **kwargs):
+        super().__init__(parent, *args)
+        self._impl = self._constructor(**self._algorithm.hyperparams(**kwargs))
+
+    def deserialize(self, serialized_model: bytes) -> 'SklearnLikeAlgorithmInstance':
+        '''Restore the serialized version of a model.'''
+        self._impl = pickle.loads(serialized_model)
+        self._trained = True
+        return self
+
+    def serialize(self) -> bytes:
+        '''Return a serialized version of a trained model.'''
+        if not self._trained:
+            raise UntrainedError(f'attempt to save training before fit for {self._algorithm.name}')
+
+        return pickle.dumps(self._impl, pickle.HIGHEST_PROTOCOL)
+
+    def fit(self, dataset: Dataset) -> None:
+        '''Fit a model based on input dataset.'''
+        try:
+            self._impl.fit(dataset[DatasetKeys.COVARIATES.value], dataset[DatasetKeys.TARGET.value])
+        except KeyError as err:
+            raise DatasetError(f'fit dataset malformed {dataset!r}') from err
+        self._trained = True
+
+    def predict(self, dataset: Dataset) -> Dataset:
+        if not self._trained:
+            raise UntrainedError(f'attempt to predict before fit for {self._algorithm.name}')
+        try:
+            result = self._impl.predict(dataset[DatasetKeys.COVARIATES.value])
+        except KeyError as err:
+            raise DatasetError(f'predict dataset malformed {dataset!r}') from err
+        retval = dataset.output()
+        retval.predictions = result
+        return retval

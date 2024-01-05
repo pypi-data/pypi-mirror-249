@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "ngautonml"
+version = "0.4.1b01"
+description = "Automated Machine Learning Pipeline Generation"
+authors = [
+    "L.H. Piggy Yarroll <piggy@cmu.edu>",
+    "Merritt Kowaleski <merrittk@cmu.edu>",
+    "Andrew Williams <awillia2@andrew.cmu.edu>",
+    "Jieshi Chen <jieshic@andrew.cmu.edu>"
+]
+license = "Apache-2.0"
+readme = "README.md"
+include = [
+    "picard.py",
+    "*.ipynb",
+]
+exclude = [
+    "plugins",
+    "lightning_logs",
+    "output",
+]
+repository = "https://gitlab.com/autonlab/ngautonml"
+# homepage = "https://autonlab.org/ngautonml"
+documentation = "https://autonlab.gitlab.io/ngautonml"
+keywords = ["machine learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+build = "1.*"
+cvxpy = "1.*"
+frozendict = "2.*"
+networkx = "3.*"
+numpy = "1.*"
+pandas = "2.*"
+pytest = "7.*"
+scikit-learn = "1.*"
+
+[tool.poetry.extras]
+dev = [
+    "flake8", "jupyter", "mypy", "pandas-stubs", "poetry", "pylint", "sphinx", "types-frozendict", "virtualenv"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "http://gitlab.com/autonlab/ngautonml/issues"
+"Design" = "https://docs.google.com/document/d/1SaR-2WRy5kwHX-1BSh2yYHjif09a7xYcMxw4PStlpE8"
+
+[tool.poetry.scripts]
+picard = 'picard:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
