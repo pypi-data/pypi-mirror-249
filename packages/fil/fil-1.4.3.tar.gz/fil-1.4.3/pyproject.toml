@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "fil"
+version = "1.4.3"
+description = "🏺 Read/write JSON/TOML/Yaml/txt 🏺"
+authors = ["Tom Ritchford <tom@swirly.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/rec/fil"
+homepage = "https://github.com/rec/fil"
+documentation = "https://rec.github.io/fil"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+safer = "*"
+types-ujson = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+coverage = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+pyyaml = "*"
+ruff = "*"
+tdir = "*"
+tomlkit = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+branch = true
+source = ["fil"]
+
+[tool.coverage.report]
+fail_under = 87
+skip_covered = true
+exclude_lines = [
+    "pragma: no cover",
+    "if False:",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
