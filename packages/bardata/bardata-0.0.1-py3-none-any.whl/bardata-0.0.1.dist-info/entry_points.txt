@@ -1,0 +1,5 @@
+[bardata_prices]
+sample = bardata.sample:Prices
+
+[bardata_tickers]
+sample = bardata.sample:Tickers
