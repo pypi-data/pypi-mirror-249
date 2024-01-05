@@ -1,0 +1,8 @@
+file_flows/__init__.py,sha256=ogBZMHNw82V6800c_sjI66hq2D4Q2L0v0SXGSSGS090,55
+file_flows/core.py,sha256=GaMtMn-BQnQ_7vjh87stH-R5r8PKP3lPuKWT5ECT_7U,5295
+file_flows/extensions.py,sha256=sunHou2nx1PldGMNFc0fAHCKjshbG3kDiV9jNcVHQxE,434
+file_flows/s3.py,sha256=bnDOVUSSRj3Tmp-tUUcxwCvy2nf8Et0jjw_c3fVXmKA,14895
+file_flows-0.1.6.dist-info/METADATA,sha256=tJxOT9laYALxXP4vl3hBzUW8jMVMNBZvR3PGnAw82fk,1939
+file_flows-0.1.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+file_flows-0.1.6.dist-info/top_level.txt,sha256=EQMiQGFcmBcrckO2DYFgcfAO5WMsloHfnAi706ZOP94,11
+file_flows-0.1.6.dist-info/RECORD,,
