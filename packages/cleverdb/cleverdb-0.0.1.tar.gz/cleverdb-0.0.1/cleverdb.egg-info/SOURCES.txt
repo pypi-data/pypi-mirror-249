@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+CloverDBLib/__init__.py
+CloverDBLib/main.py
+cleverdb.egg-info/PKG-INFO
+cleverdb.egg-info/SOURCES.txt
+cleverdb.egg-info/dependency_links.txt
+cleverdb.egg-info/top_level.txt
