@@ -1,0 +1,12 @@
+wagtail_shortcode/__init__.py,sha256=_CEXBcoZjXgtS8TYeiTGo0EJ_aQJRHm7l24LElg5Xq4,136
+wagtail_shortcode/apps.py,sha256=-8_0glOC5PoUFzsNJK-HwDR3IAoP3NDAziAI_BF9dos,182
+wagtail_shortcode/handlers.py,sha256=fKwdhCbgkKDNtvSYXJ5DgXuvjsXrYig0gsOW6SDwgqI,1059
+wagtail_shortcode/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_shortcode/wagtail_hooks.py,sha256=JSocLVzEoUb9jUGNTy39fad3G6WJ7Xa_LV-Ey3Sg86U,2332
+wagtail_shortcode/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_shortcode/static/wagtail_shortcode/js/wagtail-shortcode.js,sha256=zpa9bX87wfivLylLIQSwxgQsZbLggiv200U40CbeBEs,2891
+wagtail_shortcode/static/wagtail_shortcode/js/wagtail-shortcode.js.LICENSE.txt,sha256=97l5UAKNdHRm-wg_QYro4Ch4ElJtzAVshVlxSIbL9z8,255
+wagtail_shortcode-1.0.0.dist-info/LICENSE,sha256=pSGz5Y0LLLAANlxFqvu0FN9dY5joDdyErV1DrOnyb6M,1496
+wagtail_shortcode-1.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+wagtail_shortcode-1.0.0.dist-info/METADATA,sha256=WVDuTyBwow1Zc2VY-XrJ0o3qYEv_KNcaNPs25wNO4No,4022
+wagtail_shortcode-1.0.0.dist-info/RECORD,,
