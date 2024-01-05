@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ONEcityAPI
+Version: 0.0.1
+Summary: A Python package for interacting with the ONEcity API
+Home-page: https://github.com/0xAlon/ONEcityAPI
+Author: Alon Teplitsky
+Author-email: alon.ttp@gmail.com
+License: MIT
+Keywords: ONEcityAPI
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+This package provides a simple and intuitive interface for interacting with the ONEcity API. It includes features for getting water consumption data and customer info.
