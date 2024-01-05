@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: consumptionbackend
+Version: 2.1.0
+Summary: The backend SQLite3 database manager for the ConsumptionCLI tool.
+Project-URL: Homepage, https://github.com/track-44/consumptionbackend
+Project-URL: Bug Tracker, https://github.com/track-44/consumptionbackend/issues
+Author-email: track-44 <trackfortyfour@proton.me>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: SQL
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Consumption Backend
+
+![PyPI - Version](https://img.shields.io/pypi/v/consumptionbackend) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/consumptionbackend) ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/track-44/consumptionbackend) ![GitHub repo size](https://img.shields.io/github/repo-size/track-44/consumptionbackend) ![PyPI - License](https://img.shields.io/pypi/l/consumptionbackend) 
+
+The backend SQLite3 database manager for the ConsumptionCLI tool.
+
