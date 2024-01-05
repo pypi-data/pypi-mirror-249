@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: diffusionq
+Version: 0.1.0
+Summary: quantizing your diffusion models efficiently and accurately
+Author: Yefei
+Author-email: billhe786@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch
+
+# diffusionq
+
+`diffusionq` is a Python package designed for quantizing pre-trained diffusion models. By using `diffusionq`, you can efficiently quantize your models to save memory and accelerate inference, making it easier to deploy these models in resource-constrained environments.
+
+## Installation
+
+To install `diffusionq`, simply run the following command:
+
+```bash
+pip install diffusionq
+```
+
+## Usage
+Using diffusionq is straightforward. Once you have a pre-trained diffusion model, you can quantize it by following these steps:
+
+```python
+from diffusionq import QuantModel
+
+# Assuming 'model' is your pre-trained diffusion model
+quant_model = QuantModel(model)
+
+# Now 'quant_model' is the quantized version of your original model
+# You can use 'quant_model' for your inference tasks
+```
+
+## Features
+Easy Integration: Seamlessly quantize pre-trained diffusion models with just one line of code.
+Memory Efficiency: Reduce the memory footprint of your models significantly.
+Faster Inference: Enjoy faster model inference, especially beneficial for deploying models on edge devices.
+
+## Contributing
+Contributions to diffusionq are welcome! If you have suggestions for improvements or encounter any issues, please feel free to open an issue or submit a pull request.
+
+## Contact
+For any queries or further assistance with diffusionq, please reach out to Your Name.
