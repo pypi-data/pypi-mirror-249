@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nlpknife
+Version: 0.0.1
+Summary: 我的瑞士军刀
+Home-page: https://github.com/zhpmatrix/nlpknife
+Author: zhpmatrix
+License: UNKNOWN
+Download-URL: https://pypi.tuna.tsinghua.edu.cn/simple
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymysql
+Requires-Dist: py2neo
+Requires-Dist: pandas
+Requires-Dist: redis
+Requires-Dist: baidusearch
+
+<!--
+ * @Description: aka.zhp
+ * @Version: 0.0.1
+ * @Author: aka.zhp
+ * @Date: 2024-01-03 23:27:37
+ * @LastEditTime: 2024-01-04 21:19:07
+-->
+我的瑞士军刀
+
