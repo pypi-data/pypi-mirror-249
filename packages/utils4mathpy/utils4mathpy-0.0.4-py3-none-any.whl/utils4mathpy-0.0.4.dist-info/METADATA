@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: utils4mathpy
+Version: 0.0.4
+Summary: Math tools package for python
+Author: ManelRosPuig (Manel Ros Puig)
+Author-email: <manel.rospuig@gmail.com>
+Keywords: python,math,tools,numbers,prime numbers,utils4mathpy,divisors,factorize
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
