@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: Turing-Pi-BMC
+Version: 0.5.0
+Summary: Package to manage a Turing Pi 2 cluster using the BMC API
+Home-page: https://github.com/petermcd/bmc
+Author: Peter McDonald
+Author-email: git@petermcdonald.co.uk
+Project-URL: Bug Tracker, https://github.com/petermcd/turing-pi-bmc/issues
+Project-URL: Source, https://github.com/petermcd/turing-pi-bmc
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: semver
+Provides-Extra: build
+Requires-Dist: wheel ; extra == 'build'
+Requires-Dist: build ; extra == 'build'
+Provides-Extra: test
+Requires-Dist: pre-commit ; extra == 'test'
+
+# BMC
+
+WARNING, This package is likely to change dramatically as I learn more about the Turing Pi 2 BMC API.
+
+BMC is a simple package to interact with the Turing Pi 2 BMC API enabling features such as
+turning on power to nodes.
+
+Due to a change in how the API works in the Turing Pi 2, this package is not compatible with BMC < 2.0.0.
+
+## Usage
+
+```python
+from ipaddress import IPv4Address
+from bmc.cluster import Cluster
+
+cluster = Cluster(cluster_ip=IPv4Address('192.168.1.170'), verify=False)
+sdcard = cluster.get_sdcard()
+print(sdcard)
+```
+
+## TODO
+
+https://docs.turingpi.com/docs/turing-pi2-bmc-api
+
+- [ ] Fix set_usb_mode
+- [ ] Add support usb_boot
+- [ ] Add support clear_usb_boot
+- [ ] Add support node_to_msd
+- [ ] Add support reboot
+- [ ] Add support reload
+- [ ] Add support reset
+- [ ] Add support uart
+- [ ] Add support about
+- [ ] Add support info
+- [ ] Add support firmware
+- [ ] Add support flash
