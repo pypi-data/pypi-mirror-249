@@ -1,0 +1,16 @@
+labonneboite_datamodel/__init__.py,sha256=4Oa4Pgqb8dphqWzuVZ4WZ9d_sJ93d82vgILRwvYhDMc,322
+labonneboite_datamodel/base.py,sha256=yEpXwqZcXA0zrwk22n93GP54_zh4SDYT_lWW-z7D5Yk,953
+labonneboite_datamodel/naf.py,sha256=cBIaSM0O4plTdCVPQvBbcSmRFM3y7UEl0VS9YMmYWfg,521
+labonneboite_datamodel/office.py,sha256=P9RhqOvJwuKgcgJAMTbJkqXIil9k1OM-vhwPvmbOcmM,6842
+labonneboite_datamodel/rome.py,sha256=jYhAs_-CE1C_Y-veqHV9gmYf2EZd96pPAKMeLHQbdOw,1673
+labonneboite_datamodel/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labonneboite_datamodel/tests/data/test.csv,sha256=L0InNKGEGYhUEiYbXuMYrAwpqPSG7mveK0z3M84mwlU,3589
+labonneboite_datamodel/tests/test_base.py,sha256=sTcbTCIblEh23bxbJX7bSaUwq6KjfVEd8Q9qeYoAusU,449
+labonneboite_datamodel/tests/test_job.py,sha256=1J1JWbW58uRbaB8z7ZQzwcGXlIYXNIx7qTK0QjsEKi4,498
+labonneboite_datamodel/tests/test_office.py,sha256=JTbJL8oUGYelrn6OhODjqiRcnzKSOUXSspREu-P0GTo,4814
+labonneboite_datamodel/tests/test_office_metadata.py,sha256=tkzq9K2Jo4B7sRuUIa8UUy6Ox3AuZYdKw9p9RqXDWOU,1211
+labonneboite_datamodel/tests/test_rome.py,sha256=o14diE6S3d_4fNS3WlNPMlE1-WKOnsGfoE9VB7ASzQI,1343
+labonneboite_datamodel/validators.py,sha256=D1diomp729uNW1EjCVhVK47FYsTgygCFkCQooY9h3Fw,988
+labonneboite_datamodel-1.7.0.dist-info/METADATA,sha256=AP-v29J2trr-FiPPJsiLjSh0i5wexqIAIJEVUff4Ris,534
+labonneboite_datamodel-1.7.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+labonneboite_datamodel-1.7.0.dist-info/RECORD,,
