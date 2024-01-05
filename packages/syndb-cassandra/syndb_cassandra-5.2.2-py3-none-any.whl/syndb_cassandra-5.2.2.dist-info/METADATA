@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: syndb-cassandra
+Version: 5.2.2
+Summary: Casssandra driver assembly for SynDB
+License: BSD-4-Clause
+Author: Can H. Tartanoglu
+Author-email: canhtart@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: orjson
+Requires-Dist: pandas[performance]
+Requires-Dist: scylla-driver (>=3.26.3,<4.0.0)
+Requires-Dist: scyllapy (>=1.2.1,<2.0.0)
+Requires-Dist: syndb-constants
+Requires-Dist: uuid6
+Description-Content-Type: text/markdown
+
+# SynapseDB: Cassandra init
+
+The following scripts initialize the tables used by SynapseDB on the designated Cassandra through CQLSH
+
+### Setup port-forwarding from K8-nautilus:
+```shell
+kubectl port-forward -n syndb svc/syndb-cluster-client 9042:9042
+```
+
