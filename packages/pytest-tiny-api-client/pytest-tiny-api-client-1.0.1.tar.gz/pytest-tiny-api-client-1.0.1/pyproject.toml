@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-tiny-api-client"
+dynamic = ["version"]
+authors = [
+  { name="Jacob Sánchez", email="jacobszpz@protonmail.com" },
+]
+description = "The companion pytest plugin for tiny-api-client"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Internet :: WWW/HTTP",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries"
+]
+dependencies = ["pytest", "tiny-api-client"]
+[tool.setuptools_scm]
+
+[project.urls]
+"Repository" = "https://github.com/sanjacob/pytest-tiny-api-client"
+"Bug Tracker" = "https://github.com/sanjacob/pytest-tiny-api-client/issues"
+
+[project.entry-points]
+pytest11 = {pytest_tiny_api_client = "pytest_tiny_api_client"}
+
+[tool.isort]
+length_sort = true
