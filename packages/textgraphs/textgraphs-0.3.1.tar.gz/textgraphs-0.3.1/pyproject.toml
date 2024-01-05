@@ -1,0 +1,110 @@
+[build-system]
+
+build-backend = "setuptools.build_meta"
+
+requires = [
+    "setuptools >= 69.0",
+    "setuptools_scm[toml] >= 6.2",
+    "wheel >= 0.42",
+]
+
+
+[tool.setuptools]
+
+packages = [ "textgraphs" ]
+
+
+[tool.setuptools_scm]
+
+# empty is fine
+
+
+[project.urls]
+
+home = "https://huggingface.co/spaces/DerwenAI/textgraphs"
+docs = "https://derwen.ai/docs/txg/"
+code = "https://github.com/DerwenAI/textgraphs"
+PyPi = "https://pypi.org/project/textgraphs/"
+DOI = "https://zenodo.org/doi/10.5281/zenodo.10431783"
+
+
+[project]
+
+name = "textgraphs"
+dynamic = ["version"]
+
+authors = [
+    { name = "derwen.ai", email = "info@derwen.ai" },
+]
+
+description = "TextGraphs + LLMs + graph ML for entity extraction, linking, ranking, and constructing a lemma graph"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+requires-python = ">=3.10"
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Indexing",
+    "Topic :: Text Processing :: Linguistic",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+]
+
+dependencies = [
+    "beautifulsoup4 >= 4.12",
+    "GitPython >= 3.1",
+    "icecream >= 2.1",
+    "markdown2 >= 2.4",
+    "matplotlib >= 3.8",
+    "networkx >= 3.2",
+    "pulp >= 2.7",
+    "pyvis >= 0.3",
+    "qwikidata >= 0.4",
+    "spacy >= 3.7",
+    "spacy-dbpedia-spotlight >= 0.2.6",
+    "span_marker >= 1.5",
+    "transformers >= 4.35",
+    "wordcloud >= 1.9",
+]
+
+
+[project.optional-dependencies]
+
+dev = [
+    "build >= 1.0",
+    "Flask >= 3.0",
+    "mkdocs-git-revision-date-plugin >= 0.3",
+    "mkdocs-material >= 9.5",
+    "mknotebooks >= 0.8",
+    "pre-commit >= 3.5",
+    "selenium >= 4.16",
+    "twine >= 4.0",
+]
+
+test = [
+    "pytest >= 7.4",
+]
+
+demo = [
+    "ipywidgets >= 8.1",
+    "jupyterlab_execute_time >= 3.1",
+    "jupyterlab >= 4.0",
+    "pyinstrument >= 4.6",
+    "sense2vec >= 2.0",
+    "spacy-entity-linker >= 1.0",
+    "streamlit < 1.29",
+    "watermark >= 2.4",
+]

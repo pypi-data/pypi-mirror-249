@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+include pyproject.toml
+include requirements.txt
+include setup.py
+include tests/*.py
+include textgraphs/*.py
+prune .ipynb_checkpoints
+prune docs
+prune venv
