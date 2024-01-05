@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+github_trending_repos.egg-info/PKG-INFO
+github_trending_repos.egg-info/SOURCES.txt
+github_trending_repos.egg-info/dependency_links.txt
+github_trending_repos.egg-info/entry_points.txt
+github_trending_repos.egg-info/requires.txt
+github_trending_repos.egg-info/top_level.txt
