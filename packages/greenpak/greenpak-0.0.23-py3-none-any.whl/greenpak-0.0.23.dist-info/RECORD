@@ -1,0 +1,10 @@
+greenpak/__init__.py,sha256=MBz8T9EkJbJDdjehtp6Ra9stpXRUFegYKxj3YMkCRb0,23424
+greenpak/i2c.py,sha256=zuzAvEcwA94bTIRJElGOyHHDh9DQiyy_a_U4aD_Tr3Q,3100
+greenpak/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+greenpak/utils.py,sha256=8CJ57BgrsIojpYcLYt519Y1hmC-byojt2Vv-DPjWdLQ,4937
+greenpak/data_files/SLG46826_default.hex,sha256=eAvML57c_jVkOoAmtACDY6cNygBvm4BlBVoaHhnGAXs,715
+greenpak/data_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+greenpak-0.0.23.dist-info/METADATA,sha256=HGW5kUvxw66cKxY15_k7JihRoIBDTaSBdx7bYVC9qVg,1939
+greenpak-0.0.23.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+greenpak-0.0.23.dist-info/licenses/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+greenpak-0.0.23.dist-info/RECORD,,
