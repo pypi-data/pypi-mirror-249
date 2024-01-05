@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pecheny_utils
+Version: 0.0.5
+Summary: Utils for my projects
+Home-page: https://gitlab.com/peczony/pecheny_utils
+Author: Alexander Pecheny
+Author-email: ap@pecheny.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Some common utils that I (https://gitlab.com/peczony) use in several projects.
