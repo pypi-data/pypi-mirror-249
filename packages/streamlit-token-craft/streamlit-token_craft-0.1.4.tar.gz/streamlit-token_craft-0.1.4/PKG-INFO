@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: streamlit-token_craft
+Version: 0.1.4
+Summary: streamlit custom token craft and management component
+Home-page: https://github.com/stavrostheocharis/streamlit-token-craft
+Author: Stavros Theocharis
+Author-email: stavrostheocharis@yahoo.gr
+License: UNKNOWN
+Keywords: Python,Streamlit,React,JavaScript,token craft,token manager
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 🌟 Streamlit Token Craft Component 🚀
+
+[![Open in Streamlit][share_badge]][share_link] [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link] [![Download][download_badge]][download_link] [![Licence][licence_badge]][licence_link]
+ 
+Welcome to the Streamlit Token Craft Component, where managing tokens is as fun as a barrel of monkeys! 🐒 This custom Streamlit component is designed to bring joy and efficiency to your data management needs of displaying tokens in your Streamlit app.
+
+## Features 🎉
+* Inline Editing: Edit tokens directly in the table like a ninja! 🥷
+* Dynamic Column Visibility: Play hide and seek with your columns! 🙈🙉
+* Action Handling: Manage token deletion with style. It's like having a mini-command center. 🎮
+* Responsive Design: Looks great on screens of all sizes, even on your grandma's old monitor! 👵💻
+
+## Demo 📺
+
+Watch the Token Craft strut its stuff!
+
+### Basic demo
+![image_demo_!](demo.gif)
+
+You can also find the [deployed example app](https://app-token-craft-example.streamlit.app/) in streamlit's community cloud!
+
+Peek at more cool tricks up its sleeve!
+
+### Secondary demo
+![image_demo_!](demo_column_selection.gif)
+
+## Installation 🛠️
+Get this party started with a simple command:
+```python
+pip install streamlit-token-craft
+```
+
+## Usage 📚
+Here’s a very simple example on how to unleash the power of the Token Craft in your app:
+
+```python
+import streamlit as st
+from token_craft import st_token_table
+
+mock_tokens = [
+    {
+        "id": "token98a1c077",
+        "key": "token98-e316-49d9",
+        "display_key": "token98a...e5437d75",
+        "name": "Token 1",
+        "dateCreated": "2023-12-20",
+        "lastUsed": "Never",
+        "is_active": True,
+    },
+]
+
+rendered_tokens = st_token_table(
+    tokens=mock_tokens,
+    key="token_table",
+)
+```
+> [!IMPORTANT]
+> Keep in mind that the functionality of this component has to be combined with your token management service.
+>
+>For more complex functionality have a look at [demo full app](demo_full_app.py) & [demo for column selection](demo_col_selection_app.py).
+
+## Contributing 🤝
+Got ideas? Jump in! Contributions are as welcome as puppies at a park! 🐶
+
+For more information, see [CONTRIBUTING](CONTRIBUTING.md) instructions.
+
+## License 📜
+This project is licenced under an [MIT Licence](LICENSE).
+
+
+
+[share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
+
+[share_link]: https://app-token-craft-example.streamlit.app/
+
+[github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
+
+[github_link]: https://github.com/stavrostheocharis/streamlit-token-craft
+
+[pypi_badge]: https://badge.fury.io/py/streamlit-token-craft.svg
+
+[pypi_link]: https://pypi.org/project/streamlit-token-craft
+
+[download_badge]: https://badgen.net/pypi/dm/streamlit-token-craft
+
+[download_link]: https://pypi.org/project/streamlit-token-craft/#files
+
+[licence_badge]: https://img.shields.io/github/license/stavrostheocharis/streamlit-token-craft
+
+[licence_link]: LICENSE
+
+
+
