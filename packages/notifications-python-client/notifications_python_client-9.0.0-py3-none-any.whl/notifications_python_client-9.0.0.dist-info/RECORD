@@ -1,0 +1,12 @@
+notifications_python_client/__init__.py,sha256=tTCSd_0PnzJKeF-Skytdp-VpsJJ8GlPa96kt38eO3nE,637
+notifications_python_client/authentication.py,sha256=HUOchdPtdMv20EFgD6O1xDnPqHUgpcwOSTKm772D1UU,4662
+notifications_python_client/base.py,sha256=oCxTWfhNpdTB66XSrl9rdXarADsCm4GvDg1rTKI_WLg,3745
+notifications_python_client/errors.py,sha256=Jsby_ww6xiJVpEQl-b4Psdawz9LE390rtoCuXLjxMbU,2438
+notifications_python_client/notifications.py,sha256=Ns6QOQSEVKmMtBCuWqVHyB0YyYDqdits4Yau_IY2ub0,5435
+notifications_python_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notifications_python_client/utils.py,sha256=EiJqiLjjBGJHhsQjpyXwHcze54oaFiG0nARYggWxR5M,542
+notifications_python_client-9.0.0.dist-info/LICENSE,sha256=ArTAWSfEszf0_SxXDz1S9HbshIn78-RfUZLDF0UgULA,1094
+notifications_python_client-9.0.0.dist-info/METADATA,sha256=PZajqlxMoDIErp3NytYivvWEuZVscZbJnSX3XGAkXzs,1084
+notifications_python_client-9.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+notifications_python_client-9.0.0.dist-info/top_level.txt,sha256=RAa3Hvf6kd59bZGL4QBm5zVsiv6MegJquMXAQubXM3A,28
+notifications_python_client-9.0.0.dist-info/RECORD,,
