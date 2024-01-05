@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-powerdns-admin = certbot_dns_powerdns.dns_powerdns:Authenticator
