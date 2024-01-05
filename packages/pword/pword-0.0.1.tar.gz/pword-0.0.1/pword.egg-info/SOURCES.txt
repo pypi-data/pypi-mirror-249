@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+setup_ipocess.py
+pword/__init__.py
+pword/word.py
+pword.egg-info/PKG-INFO
+pword.egg-info/SOURCES.txt
+pword.egg-info/dependency_links.txt
+pword.egg-info/requires.txt
+pword.egg-info/top_level.txt
+sketchpy/__init__.py
+sketchpy/canvas.py
+sketchpy/library.py
