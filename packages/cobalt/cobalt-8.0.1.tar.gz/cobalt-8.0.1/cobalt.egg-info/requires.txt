@@ -1,0 +1,6 @@
+iso8601>=0.1
+lxml<5.0.0,>=3.4.1
+
+[test]
+nose
+flake8
