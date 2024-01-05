@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: configmelt
+Version: 1.0.0
+Summary: 'config loader for json and yml files'
+Home-page: https://github.com/anglisanosa/configmelt
+Author: anglisanosa
+Author-email: marcanglisano@gmail.com
+License: ""
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pathutility ==1.0.*
+Requires-Dist: pyaml-env
+Requires-Dist: jsonschema
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-multiversion ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+# configmelt
+
+## Introduction
+open yml or json files
+
+## Installation
+To install configmelt, simply use pip:
+
+```bash
+pip install configmelt
+
+```
+
+## Usage Example
+Here's an example of how to use the PathUtils class:
+
+```python
+from configmelt import *
+
+# write example here
+```
+
+## Documentation
+The Sphinx-generated documentation for configmelt can be found [here](https://anglisanosa.github.io/configmelt/).
+
+## Contribution
+Feel free to contribute by submitting issues [here](https://github.com/anglisanosa/configmelt/issues).
