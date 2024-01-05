@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pytoolkit1.egg-info/PKG-INFO
+pytoolkit1.egg-info/SOURCES.txt
+pytoolkit1.egg-info/dependency_links.txt
+pytoolkit1.egg-info/top_level.txt
