@@ -1,0 +1,11 @@
+epubhv-0.6.0.dist-info/METADATA,sha256=5IljrUNykvBd3uwJjbxZmXHREcEi59spTwGPofC-11w,3212
+epubhv-0.6.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+epubhv-0.6.0.dist-info/entry_points.txt,sha256=OFGjGtbfswiluGPLYToew_UpcEbs8BwTOS4HkYJ-7DQ,44
+epubhv-0.6.0.dist-info/licenses/LICENSE,sha256=XdClh516MvlnOf9749JZHCxSB7y6_fyXcWmLDz6IkZY,1063
+epubhv/__init__.py,sha256=kCJRr9ZDBUMR9DKtLVnBZ8b2BOxetUoebEVqT-ZXRKk,37
+epubhv/__main__.py,sha256=wu5N2wk8mvBgyvr2ghmQf4prezAe0_i-p123VVreyYc,62
+epubhv/cli.py,sha256=p2fT2YOCi9wRhyFy9a0zjQUFSR7i0gyHEA6i5y5NUCg,4479
+epubhv/epubhv.py,sha256=5biXybhn57Xw2oKatGk28jboerhoqM2X_lmaSevxUcU,17374
+epubhv/punctuation.py,sha256=eVtIF0sbCli1C5X0A1701K2zd2VLyMR7tgTNSip6LSU,2286
+epubhv/yomituki.py,sha256=o2puVw9f1827Jop58KKRFq0lNO9i80HD5Ane5Ae48I4,6417
+epubhv-0.6.0.dist-info/RECORD,,
