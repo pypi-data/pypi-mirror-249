@@ -1,0 +1,12 @@
+black[jupyter]==23.11.0
+coverage
+flake8
+isort
+colorama
+matplotlib
+pytest>=7.3.0
+pytest-xdist
+pytest-cov
+seaborn
+xarray>=0.13
+wheel
