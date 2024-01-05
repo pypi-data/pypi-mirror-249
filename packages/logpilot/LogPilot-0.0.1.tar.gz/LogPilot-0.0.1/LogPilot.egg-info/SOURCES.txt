@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+LogPilot.egg-info/PKG-INFO
+LogPilot.egg-info/SOURCES.txt
+LogPilot.egg-info/dependency_links.txt
+LogPilot.egg-info/requires.txt
+LogPilot.egg-info/top_level.txt
+tests/__init__.py
+tests/test2_log.py
+tests/test_log.py
