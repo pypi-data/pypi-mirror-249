@@ -1,0 +1,4 @@
+cjnfuncs>=2.1
+
+[:python_version < "3.8"]
+importlib-metadata
