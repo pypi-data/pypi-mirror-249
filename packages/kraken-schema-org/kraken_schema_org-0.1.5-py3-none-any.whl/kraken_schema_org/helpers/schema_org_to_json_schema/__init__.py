@@ -1,0 +1,1 @@
+from .schema_org_to_json_schema import get_json_schema
