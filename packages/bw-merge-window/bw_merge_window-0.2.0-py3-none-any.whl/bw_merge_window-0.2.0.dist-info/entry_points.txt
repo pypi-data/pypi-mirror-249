@@ -1,0 +1,3 @@
+[console_scripts]
+bw-merge-window=bw_merge_window.entry:entry
+
