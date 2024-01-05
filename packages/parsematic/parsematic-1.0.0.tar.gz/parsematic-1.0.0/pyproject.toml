@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "parsematic"
+version = "1.0.0"
+description = "Parsematic: a basic math parser written in python"
+authors = ["infibrocco <infibrocco@github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
