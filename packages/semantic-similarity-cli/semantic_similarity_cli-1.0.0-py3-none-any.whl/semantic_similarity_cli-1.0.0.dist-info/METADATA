@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: semantic-similarity-cli
+Version: 1.0.0
+Summary: file: README.md
+License: MIT License
+        
+        Copyright (c) 2024 Adrian Meidell Fiorito
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: InstructorEmbedding ==1.0.1
+Requires-Dist: sentence-transformers >=2.2.0
+Requires-Dist: numpy
+Requires-Dist: tqdm
+
+# semantic-similarity-cli
+
+## Summary:
+semantic-similarity-cli is a command-line tool leveraging NLP models to compute semantic similarity directly from your terminal. All computations are done locally.
+
+## How It Works
+On first use, the tool automatically downloads and installs the Instructor embedding model. This model is then used to compute the semantic similarity of text inputs.
+
+## Installation
+Install using pip:
+```bash
+pip install semantic-similarity-cli
+```
+
+## Usage
+Compare the similarity of input text to a given phrase:
+
+```bash
+semsim "Lorem ipsum"
+```
+
+Find the most similar commits to a specified sentence:
+```bash
+git log --oneline -n 100 | semsim "refactor rest controllers" | sort -n -r | head
+```
+
+Filter commits based on a minimum similarity score (e.g., 0.6):
+```bash
+git log --oneline -n 100 | semsim "refactor rest controllers" | awk '$1 >= 0.6'
+```
+
+## License
+
+MIT
