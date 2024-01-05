@@ -1,0 +1,10 @@
+omegaconf>=2.3
+pathlib>=1.0.1
+numpy>=1.26
+torch
+torchvision
+pytorch_lightning>=1.8
+six>=1.12
+einops>=0.6.1
+kornia>=0.7.0
+bchlib==0.14.0
