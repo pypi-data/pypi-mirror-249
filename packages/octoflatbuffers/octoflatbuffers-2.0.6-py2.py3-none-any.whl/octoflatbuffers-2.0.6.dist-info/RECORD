@@ -1,0 +1,14 @@
+octoflatbuffers/__init__.py,sha256=4HeZkuU4kSpk9L-lYTrLHblQVN090xv9EZ9uxeQiAMM,770
+octoflatbuffers/_version.py,sha256=iB2RNBp5qpScQ4btmaI3WktRjtmKK3z4NxsCegJUslA,711
+octoflatbuffers/builder.py,sha256=HBEwt7Jrn0f26BLx52e12_BxEvnq94DJWW7svK7VikU,26740
+octoflatbuffers/compat.py,sha256=kZkdphGBUJetw18CBXaSJK-YQ5Jl2CwcJLN_lMvqhlE,2195
+octoflatbuffers/encode.py,sha256=3ndsQcPjy9XW3XhNAIj4Yp26cKvJ2wGujx7yRc7JRKY,1548
+octoflatbuffers/flexbuffers.py,sha256=91MTetPNG-FDuKPFVo-RCuXMlZkKgzhpLEr5sEAsIhE,45554
+octoflatbuffers/number_types.py,sha256=gf_kUd7YntrdkUYMVgDj61niauS34U5aDGaoDwpKLeo,4061
+octoflatbuffers/packer.py,sha256=HLoQ42jpxi8FL_nG8Bo_MBzEXROrEtZAg2FX2dqScqo,1207
+octoflatbuffers/table.py,sha256=9jlZXQdniQVXCLWk61JaUbOCotFw2TsqwWfy-eL6bTY,5189
+octoflatbuffers/util.py,sha256=K9CBmSYAlh0hB4XiGXPgurlQgUAAZLCUegBqHHVYrzI,1712
+octoflatbuffers-2.0.6.dist-info/METADATA,sha256=pjVIlALLqqQF2Yuq6zKfF4Hl_eviaK-hDpL66N69hwE,1197
+octoflatbuffers-2.0.6.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+octoflatbuffers-2.0.6.dist-info/top_level.txt,sha256=nUcPKsiXrRwxMfQmd05dHn0bXW-RA2UsRhS9OhBXPAo,16
+octoflatbuffers-2.0.6.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: octoflatbuffers
+Version: 2.0.6
+Summary: A special fork of flatbuffers used for OctoEverywhere!
+Home-page: https://github.com/QuinnDamerell/octoflatbuffers
+Author: Quinn Damerell
+Author-email: support@octoeverywhere.com
+License: Apache 2.0
+Project-URL: Documentation, https://github.com/QuinnDamerell/octoflatbuffers
+Project-URL: Source, https://github.com/QuinnDamerell/octoflatbuffers
+Project-URL: OctoEverywhere, https://octoeverywhere.com/?source=pypi
+Project-URL: Homeway, https://homeway.io/?source=pypi
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+A fork of [flatbuffers](https://flatbuffers.dev/) with some special modifications for use as the core protocol for [OctoEverywhere](https://octoeverywhere.com) and [Homeway.io](https://homeway.io). For details on why the fork was needed, see the source GitHub repository.
