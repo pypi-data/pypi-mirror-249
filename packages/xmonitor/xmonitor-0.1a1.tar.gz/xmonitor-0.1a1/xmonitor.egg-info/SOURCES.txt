@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+xmonitor/__init__.py
+xmonitor.egg-info/PKG-INFO
+xmonitor.egg-info/SOURCES.txt
+xmonitor.egg-info/dependency_links.txt
+xmonitor.egg-info/requires.txt
+xmonitor.egg-info/top_level.txt
+xmonitor.egg-info/zip-safe
+xmonitor/utils/__init__.py
