@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bulk_rename_uklewis124
+Version: 0.0.1
+Summary: A simple folder and file renaming libary
+Author-email: Lewis Davies <lewisastondavies1@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Bulk Rename API
+
+This documentation states how this API can be used. Things not mentioned within this document should only be used by developers.
+
+## Renaming Folders
+
+To rename a folder, follow the below code
+
+```py
+bulk_rename.folder.rename(folder_directory, new_name)
+```
+
+### test
+
+Test text

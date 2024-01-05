@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/bulk_rename_uklewis124/__init__.py
+src/bulk_rename_uklewis124/bulk_rename.py
+src/bulk_rename_uklewis124/setup.py
+src/bulk_rename_uklewis124.egg-info/PKG-INFO
+src/bulk_rename_uklewis124.egg-info/SOURCES.txt
+src/bulk_rename_uklewis124.egg-info/dependency_links.txt
+src/bulk_rename_uklewis124.egg-info/top_level.txt
