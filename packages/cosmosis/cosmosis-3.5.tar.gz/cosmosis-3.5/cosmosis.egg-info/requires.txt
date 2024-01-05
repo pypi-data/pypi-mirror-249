@@ -1,0 +1,16 @@
+pyyaml
+emcee
+numpy
+scipy
+matplotlib
+pybind11
+pyyaml
+scipy
+threadpoolctl
+emcee
+dynesty
+zeus-mcmc
+nautilus-sampler==0.6.*
+dulwich
+scikit-learn
+future
