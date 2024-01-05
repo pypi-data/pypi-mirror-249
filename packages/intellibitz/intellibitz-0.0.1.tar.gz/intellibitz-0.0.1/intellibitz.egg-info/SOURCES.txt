@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+intellibitz/__init__.py
+intellibitz.egg-info/PKG-INFO
+intellibitz.egg-info/SOURCES.txt
+intellibitz.egg-info/dependency_links.txt
+intellibitz.egg-info/top_level.txt
