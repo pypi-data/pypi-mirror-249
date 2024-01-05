@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rmq-handler"
+version = "0.1.0"
+description = "RabbitMQ connections handler."
+authors = ["Kirill <pnchkirill@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rmq_handler"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aio-pika = "^9.3.1"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
