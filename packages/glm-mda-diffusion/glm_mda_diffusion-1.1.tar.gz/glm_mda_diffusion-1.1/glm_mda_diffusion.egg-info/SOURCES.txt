@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+glm_mda_diffusion/__init__.py
+glm_mda_diffusion/__main__.py
+glm_mda_diffusion/glm_mda_diffusion.py
+glm_mda_diffusion.egg-info/PKG-INFO
+glm_mda_diffusion.egg-info/SOURCES.txt
+glm_mda_diffusion.egg-info/dependency_links.txt
+glm_mda_diffusion.egg-info/not-zip-safe
+glm_mda_diffusion.egg-info/requires.txt
+glm_mda_diffusion.egg-info/top_level.txt
