@@ -1,0 +1,14 @@
+skriba/__init__.py,sha256=Lm12Ps9SaRmqsTIXUwYPmEegnc2ocZ1GkmmyGiNthKk,94
+skriba/logger.py,sha256=pLXwFX6JOWM67kOyBK71wcEeBmuHoj8781cUCgEiVTs,5041
+skriba/messenger.py,sha256=AE9qCBMp7NRTB5Tsx0GrB3eGujwPb4y-QuNvBSR9Q8g,4294
+skriba/custom/__init__.py,sha256=ovguP4wzQEDNguczwiZnhMm4dRRVcvnzmHrfQtlRCNQ,15
+skriba/custom/console.py,sha256=q-BdBtsNv_xBK3jFun5bjkEqDV9WoY9ilBj_fKDG12A,4337
+skriba/custom/logger.py,sha256=s9PBlgSA8oGPAS2oVTSI_hKX1zjMCa6rO62iDSW4U-s,6236
+skriba/plugins/worker_logger.py,sha256=H2bMkC-c8X7iMJkMTL6utREGur2HyXzjlROfxVLB5VA,2277
+skriba/prototype/__init__.py,sha256=Il5Q9ATdX8yXqVxtP_nYqUhExzxPC_qk_WXQ_4h0exg,16
+skriba/prototype/console.py,sha256=__ltMQrd_0rJ8fK4lUQT8LJaSj-6mGqnS5NI3CxF-TM,5016
+skriba/prototype/logger.py,sha256=F2OzAZBiQOwmwY-pAlW0I3PWfvfXVljJ6s9BhX9UsFo,6789
+skriba-0.2.17.dist-info/METADATA,sha256=9QuTG4yUiFfe-_1_fFxdWWqIVlnmDkbeas9iJMtZrZc,1631
+skriba-0.2.17.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+skriba-0.2.17.dist-info/top_level.txt,sha256=vDg-OS00-b5GcJMXk4VrRqMdgnrjvV8Vo_PI72HEJOk,7
+skriba-0.2.17.dist-info/RECORD,,
