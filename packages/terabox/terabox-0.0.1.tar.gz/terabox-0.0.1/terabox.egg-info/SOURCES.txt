@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+terabox/__init__.py
+terabox.egg-info/PKG-INFO
+terabox.egg-info/SOURCES.txt
+terabox.egg-info/dependency_links.txt
+terabox.egg-info/top_level.txt
