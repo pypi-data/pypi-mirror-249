@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dicn/__init__.py
+dicn/dicn.py
+dicn.egg-info/PKG-INFO
+dicn.egg-info/SOURCES.txt
+dicn.egg-info/dependency_links.txt
+dicn.egg-info/requires.txt
+dicn.egg-info/top_level.txt
