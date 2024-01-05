@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jentinkj_s21
+Version: 0.0.2
+Summary: A wrapper for pyodbc, mssql, and pandas
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: jeffjeff11 <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# jentinkj-s21
+
+This is a simple wrapper for PYODBC, pandas, and mssql connections.
