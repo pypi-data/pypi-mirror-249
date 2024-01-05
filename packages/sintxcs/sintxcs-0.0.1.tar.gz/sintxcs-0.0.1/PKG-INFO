@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: sintxcs
+Version: 0.0.1
+Summary: Sintacs Collection of Made Modules
+Home-page: UNKNOWN
+Author: Sintacs
+Author-email: sintacs@isnotdev.com
+License: MIT
+Description: A simple Python library build by Sintacs.
+        
+        CHANGELOGS
+        
+        0.0.1 (01/04/2023)
+        -------------------
+        - First Release
+        
+Keywords: Sintxcs
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
