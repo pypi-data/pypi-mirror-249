@@ -1,0 +1,9 @@
+slowblood/__init__.py,sha256=cYhKzht2WWTqPgYoUmOGDZCtkpDPOVtpctZ7_7QUFS8,271
+slowblood/lib_llm_inference.py,sha256=rjyvDWkSHdC1r3V3Gfak8Zj7kCwETrzyxD9tC4XzgbM,2014
+slowblood/lib_pdf_manipulation.py,sha256=KUxE6DUpdVMZRCWxWhqyzI8MWG2ezsT-yxjDHMdAVFs,1182
+slowblood/lib_prompts.py,sha256=O8Dha9N_qrkJbtWSadFXujYG-vln6Sl_101TwX7arFs,775
+slowblood/lib_settings.py,sha256=V-j_y2HM30eWhsaaDlzfHho4MRO0YuD_iLzJYaTLN9k,765
+slowblood-0.0.3.dist-info/METADATA,sha256=-plWhf99xSm3fqnvHGtVTuPnWKOSxC7p7dD96p-SLqg,752
+slowblood-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+slowblood-0.0.3.dist-info/top_level.txt,sha256=xGLbhS6eV4JG_ROsJNVn38opqJnSofgzu5nXueZmwoc,10
+slowblood-0.0.3.dist-info/RECORD,,

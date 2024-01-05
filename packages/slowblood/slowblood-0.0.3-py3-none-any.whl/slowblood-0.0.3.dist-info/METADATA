@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: slowblood
+Version: 0.0.3
+Summary: Tools for ML/LLM
+Home-page: https://github.com/kyledinh/slowblood
+Author: Kyle Dinh
+Author-email: kyledinh@gmail.com
+Project-URL: Bug Tracker, https://github.com/kyledinh/slowblood/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+> This python package will have a collection of structures, functions and tools for interacting with LLMs and Datasets.
+
+## Project and PyPI Package 
+- https://pypi.org/project/slowblood/
+- https://github.com/kyledinh/slowblood
+- https://huggingface.co/Slowblood
+
+## Usage Examples
+
+- TODO 
