@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: astroget
+Version: 0.0.4a4
+Summary: Find and get FITS metadata and images.
+Author-email: "S. Pothier" <astroarchive@noirlab.edu>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Bug Tracker, https://github.com/pypa/astroget/issues
+Project-URL: Documentation, https://astroget.readthedocs.io/en/latest/
+Project-URL: Homepage, https://github.com/pypa/astroget
+
+# astroget
+Python Client for
+[NOIRLab Astro Data Archive](https://astroarchive.noirlab.edu/ "AstroArchive")
+
+Supports discovery (searching) and retrieval of FITS metadata and
+(sub)images.
+
