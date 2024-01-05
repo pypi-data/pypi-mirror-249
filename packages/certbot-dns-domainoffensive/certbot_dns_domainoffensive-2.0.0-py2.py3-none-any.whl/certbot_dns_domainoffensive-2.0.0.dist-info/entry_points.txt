@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-domainoffensive = certbot_dns_domainoffensive.dns_domainoffensive:Authenticator
