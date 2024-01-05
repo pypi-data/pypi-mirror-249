@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyupb
+Version: 0.0.1
+Summary: Upbit API
+Project-URL: Homepage, https://github.com/chorong8883/pyupb
+Author-email: Chor <chorong8883@gmail.com>
+License-File: LICENSE
+Keywords: upbit
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Requires-Dist: pyjwt>=2.8.0
+Description-Content-Type: text/markdown
+
+# pyupb
