@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ezpkl
+Version: 0.0.2
+Summary: lovely pickling🥒 for context manager hater👊
+Home-page: https://github.com/yesinkim/ezpkl.git
+Author: bailando
+Author-email: bailando.ys@gmail.com
+Keywords: pickle,file,easy,easypickle
+Requires-Python: >=3
+License-File: LICENSE
+
