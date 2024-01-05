@@ -1,0 +1,2 @@
+[console_scripts]
+resemble-enhance = resemble_enhance.enhancer.__main__:main
