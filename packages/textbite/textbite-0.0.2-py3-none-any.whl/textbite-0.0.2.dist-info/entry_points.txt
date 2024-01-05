@@ -1,0 +1,2 @@
+[console_scripts]
+textbite = textbite.user_scripts.infer:main

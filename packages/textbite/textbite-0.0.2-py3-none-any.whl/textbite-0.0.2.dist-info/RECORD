@@ -1,0 +1,10 @@
+textbite/detection.py,sha256=J9ca8hF1yQZmpLmvUTaqx4RukjoYzZ8vVMTpC2ogBHc,5000
+textbite/geometry.py,sha256=bZm67UPsGg2O6USzedQ-IDNcUZUPclBHax2leGYeAis,2533
+textbite/improve_pagexml.py,sha256=pUExsg9s3pI8IcQrb8P7bDBucdUbj4PywouL773jBZE,5438
+textbite/user_scripts/infer.py,sha256=l3nO4HEDIXSfx7u4oC_c8Nt2g5IkXknzYCUeO4BLTAQ,2856
+textbite-0.0.2.dist-info/LICENSE,sha256=EnB47n6N6nfs5IVUEngi5KStQ-RrwEAMRNy119UGvfY,1491
+textbite-0.0.2.dist-info/METADATA,sha256=tyU-HSkrynwPndE466TCL74CYgsN8lXIiIT1hH7UbZs,2359
+textbite-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+textbite-0.0.2.dist-info/entry_points.txt,sha256=flLK7GRRIZj4RvjlcE6JpCrWupVR3t3Finc8-4Qwoks,62
+textbite-0.0.2.dist-info/top_level.txt,sha256=tJyDyjkqoaza_J9qjqtTW2roZr1SKURz0rZhXLlZUMM,9
+textbite-0.0.2.dist-info/RECORD,,
