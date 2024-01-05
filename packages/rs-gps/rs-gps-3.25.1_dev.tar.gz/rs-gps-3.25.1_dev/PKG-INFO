@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: rs-gps
+Version: 3.25.1_dev
+Summary: gpsd Python modules for additional Pythons
+Home-page: https://gpsd.io/
+Author: gpsd team + RazorSecure
+Author-email: ronan@razorsecure.com
+License: BSD
+Description: # README
+        
+        the gps module is a translator between gpsd and its' clients.
+        gps communicates on a port (2947) requesting information.  The
+        communication is JSON formatted. gps takes this information
+        from gpsd and translates it a pythonic interface easier to
+        understand for clients.
+        
+        This module is for additional Pythons.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
