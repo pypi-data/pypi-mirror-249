@@ -1,0 +1,8 @@
+salsa20>=0.3.0
+
+[dev]
+black
+bumpver
+isort
+pandas
+pre-commit
