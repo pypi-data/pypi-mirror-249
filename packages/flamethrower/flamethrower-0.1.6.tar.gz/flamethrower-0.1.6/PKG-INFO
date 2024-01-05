@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: flamethrower
+Version: 0.1.6
+Summary: The ultimate debugging experienc 🦠🔥
+License: MIT
+Author: Scott Susanto
+Author-email: scottsus@usc.edu
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gitpython (>=3.1.40,<4.0.0)
+Requires-Dist: jsonschema (>=4.20.0,<5.0.0)
+Requires-Dist: openai (>=1.6.1,<2.0.0)
+Requires-Dist: pathspec (>=0.12.1,<0.13.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: tiktoken (>=0.5.2,<0.6.0)
+Description-Content-Type: text/markdown
+
+# 🔥 flamethrower
+
+The ultimate debugging experience.
+
+## Usage
+
+1. Pip install
+
+    ```
+    pip install flamethrower
+    ```
+    `WARN`: this installs `flamethrower` deps into your global python environment -- which you will need if you want to run flamethrower on any workspace.
+
+2. Export OpenAI key for `flamethrower` to use
+
+    ```
+    EXPORT OPENAI_API_KEY=sk-xxxx
+    ```
+
+3. In whatever workspace/repo you're on, just type `flamethrower` or `ft`
+
+    ```
+    pwd
+    flamethrower
+    ```
+
+    flamethrower will gain an understanding of your project and directory structure.
+
+4. Use it as a regular shell: you can both run commands and ask natural language queries
+
+    ```
+    python main.py # or node server.ts or whatever your run script is
+    Wtf? Why did that happen? # natural language queries start with a capital letter
+    ```
+
