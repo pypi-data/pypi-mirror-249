@@ -1,0 +1,2 @@
+[console_scripts]
+writetight = writetight.main:main

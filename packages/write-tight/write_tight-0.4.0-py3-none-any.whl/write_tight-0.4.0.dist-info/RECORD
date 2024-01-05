@@ -1,0 +1,12 @@
+writetight/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+writetight/input_validation.py,sha256=HWz1-r91MmGjRq_Q9p68A0i68uPE9FP7-35iTVJQHYg,1328
+writetight/main.py,sha256=P9SMHw0x-J6zTOfyIhNslcMZXTEuV1jS1terHUVqaic,2043
+writetight/pattern_questions.py,sha256=vZMwsawT9UTyJtb0Afq0QEZUgfkMozWhpRHoxbINmok,937
+writetight/patterns.py,sha256=z3WMIlaOkdsyBy7WfH6kNZi2uCMjMgtNu5a8WYFlJyI,354
+writetight/spacy.py,sha256=7M2xZ00rlyuXjboT7BSRUhv0yiyURBPmAuJh8qRSHDk,1014
+write_tight-0.4.0.dist-info/LICENSE,sha256=YSDHqRI_mNQElAS47VwrOeSYahr0iEtzI8GV6fH05QI,1068
+write_tight-0.4.0.dist-info/METADATA,sha256=qD0JartlbM86aOVXiGywa3VmeE49DRkQVJZSr_q6Pno,3949
+write_tight-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+write_tight-0.4.0.dist-info/entry_points.txt,sha256=i4TArTdgpyxgH889hs1TXBaX0Hj1oZhJ7UziGWd6_Tc,52
+write_tight-0.4.0.dist-info/top_level.txt,sha256=f_ot5efcrZk1AuL4qlXg4qFha5tYlrE2UDTJ1CLk9nQ,11
+write_tight-0.4.0.dist-info/RECORD,,
