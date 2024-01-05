@@ -1,0 +1,16 @@
+pandas
+numpy
+
+[docs-requirements-txt]
+sphinx
+sphinx_rtd_theme
+myst_parser
+numpydoc
+nbsphinx
+ipython
+jupyter
+docplex
+cplex
+mip
+pyomo
+pandoc
