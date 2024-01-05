@@ -1,0 +1,11 @@
+keep_it_secret/__init__.py,sha256=Kh_i87pxw8mfLgrF9bMTRotzBYwWCVN65M-DnGb1HnA,348
+keep_it_secret/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keep_it_secret/ext/aws.py,sha256=IK-f_JG_r4T4CjxVe_yDblNjptm1lUNsmGk3rO7PJ2E,4722
+keep_it_secret/ext/loader.py,sha256=6w1z4v3cY0UR990BGxMEq007aXfOsITzSFF6KcLVlVo,590
+keep_it_secret/fields.py,sha256=mmCPISMi22Rt_5DsHylWE64JfPlCaD7CjjC-Vcv9n7w,9357
+keep_it_secret/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keep_it_secret/secrets.py,sha256=QmMBOKtffSuizsP4hyw-kz_XKLAUFJ6qL7icB5c3nKQ,3300
+keep_it_secret-1.0.0.dist-info/LICENSE,sha256=eI9oKyGAg5n7yRbfI9Gwn64IPlCANQqv0CJzqOCVrfg,1086
+keep_it_secret-1.0.0.dist-info/METADATA,sha256=WBFmJQofWy0SvgOu1_QI8X1r5O13JtuI8iVq8Gp0Jmk,2957
+keep_it_secret-1.0.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+keep_it_secret-1.0.0.dist-info/RECORD,,
