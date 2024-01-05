@@ -1,0 +1,16 @@
+checkdmarc/__init__.py,sha256=1HRIszMxIWr12jy4G_zqIRpNOQ4b9zqFUw-d3D4RA2A,15315
+checkdmarc/_cli.py,sha256=ggwJ9AfNtJ3P0lMNhoJL9im8xqVDgkmJOJ34FRRKKvc,5658
+checkdmarc/_constants.py,sha256=ppFVIPi5rq8qITBqbty8xIwVOa7U6drJ4A2lk1kiEv8,870
+checkdmarc/bimi.py,sha256=8i3UH0PYHrA1-AIEWXQoWGEB50HwjYXqbJrBF8ca4iI,17240
+checkdmarc/dmarc.py,sha256=lopp0H_5SmrwuzFZQ7o-cIpvPuueZwzJijrIRBG7Z68,51601
+checkdmarc/dnssec.py,sha256=gAAAhnEBURUqwR1tCpWyP29k3EwvyWubbcT0_95ga50,5921
+checkdmarc/mta_sts.py,sha256=duxfAabqKpquvwhcYCvGC2imMpuf-qNooyCKWqInP_k,18128
+checkdmarc/smtp.py,sha256=E1Khr8r8hw_20n-Q_stMPDj0fCy-_W5CDejPy2pRMRQ,17997
+checkdmarc/smtp_tls_reporting.py,sha256=Sycq7dtSUDrulHBEeoGL-wzsFd-4zCbqF0eDh0fwP_E,13420
+checkdmarc/spf.py,sha256=eA1xMTi7fPL4nVTiGmfNQuK9Kbd-3HeWYpQIzq8glTg,24920
+checkdmarc/utils.py,sha256=Qmnc7kxQwhV_DiVI_72LOpLxE7rr2dQ_Rw7ZM5-xDvs,11332
+checkdmarc-5.2.0.dist-info/METADATA,sha256=FLSR0ozH12fSipq2vhrHw77pAqUqEkTZI1CRsuOdNbI,1833
+checkdmarc-5.2.0.dist-info/WHEEL,sha256=48Iy_98ChjmKE3mxlEhgg31iAPWloxZiPRVsSY0LkGU,105
+checkdmarc-5.2.0.dist-info/entry_points.txt,sha256=pfgF0DELQ84HaMFeq9xHTqy7Vclqwla1U03p7HL3B7o,53
+checkdmarc-5.2.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+checkdmarc-5.2.0.dist-info/RECORD,,
