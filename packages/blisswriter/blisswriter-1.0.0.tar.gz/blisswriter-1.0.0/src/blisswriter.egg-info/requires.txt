@@ -1,0 +1,17 @@
+blissdata>=1
+pyicat-plus
+
+[dev]
+blissdata[tango]
+hdf5plugin
+pytest>=7
+black>=22
+flake8>=4
+
+[tango]
+blissdata[tango]
+
+[test]
+blissdata[tango]
+hdf5plugin
+pytest>=7
