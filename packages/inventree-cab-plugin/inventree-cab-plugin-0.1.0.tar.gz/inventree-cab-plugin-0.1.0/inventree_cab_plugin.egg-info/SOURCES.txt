@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+inventree_cab/__init__.py
+inventree_cab/cab_plugin.py
+inventree_cab/cab_printer.py
+inventree_cab/version.py
+inventree_cab_plugin.egg-info/PKG-INFO
+inventree_cab_plugin.egg-info/SOURCES.txt
+inventree_cab_plugin.egg-info/dependency_links.txt
+inventree_cab_plugin.egg-info/entry_points.txt
+inventree_cab_plugin.egg-info/requires.txt
+inventree_cab_plugin.egg-info/top_level.txt
