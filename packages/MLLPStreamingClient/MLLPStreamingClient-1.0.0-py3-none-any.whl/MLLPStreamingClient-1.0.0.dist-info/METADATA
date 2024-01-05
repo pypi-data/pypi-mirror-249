@@ -1,0 +1,324 @@
+Metadata-Version: 2.1
+Name: MLLPStreamingClient
+Version: 1.0.0
+Summary: The MLLP-TTP gRPC Streaming API Python3 client library
+Home-page: https://www.mllp.upv.es
+Author: MLLP-VRAIN
+Author-email: mllp-support@upv.es
+License: UNKNOWN
+Project-URL: RPC API documentation, https://ttp.mllp.upv.es/mllp-streaming-api/1.0/index.html
+Project-URL: Python3 client documentation, https://ttp.mllp.upv.es/mllp-streaming-api/1.0/python3-client-doc.html
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio-tools (==1.51.3)
+Requires-Dist: grpcio (==1.51.3)
+Requires-Dist: protobuf (==4.22.0)
+Requires-Dist: pyaudio
+Requires-Dist: sounddevice
+Requires-Dist: soundfile
+
+Module MLLPStreamingClient.MLLPStreamingClient
+==============================================
+# The MLLP-TTP gRPC Streaming API client Python3 module
+
+The [MLLP-TTP](https://ttp.mllp.upv.es/) gRPC Streaming API Python3 client
+module implements a client library of the [MLLP-TTP gRPC Streaming
+API](https://ttp.mllp.upv.es/mllp-streaming-api), based on the gRPC protocol.
+Both have been developed by the [Machine Learning and Language
+Processing](https://mllp.upv.es/) (MLLP) research group of the [Valencian
+Research Institute on Artificial Intelligence](https://vrain.upv.es/),
+[Universitat Politècnica de València](https://www.upv.es/). 
+
+This module allows to develop your own streaming speech or text processing
+application/backend. In particular, it offers several methods to perform
+streaming Automatic Speech Recognition (ASR), streaming Speech Translation
+(ST), streaming Speech Dubbing (SD), simultaneous Machine Translation (MT), and
+incremental Text-To-Speech (TTS). This is done by properly using and combining
+the three primitive rpc methods/endpoints offered by the API, *Speech2Text*,
+*Text2Text* and *Text2Speech*, than can be directly called using this module.
+
+In addition, the wheel package ships several Python3 scripts that illustrate
+the usage of this Python3 module. These are:
+
+- `mllp-speech-to-text_file.py`
+- `mllp-speech-to-text_mic.py`
+- `mllp-speech-translation_file.py`
+- `mllp-speech-translation_mic.py`
+- `mllp-speech-dubbing_file.py` (requires numpy)
+- `mllp-speech-dubbing_mic.py`
+- `mllp-text-to-speech_file.py` (requires numpy)
+- `mllp-text-to-speech_terminal.py` (requires numpy)
+- `mllp-text-to-text_file.py`
+- `mllp-text-to-text_terminal.py`
+
+Note that these scripts' installation directory is added to the PATH environment variable. 
+
+## Installation
+
+Via Pypi.org: 
+
+```bash
+pip install MLLPStreamingClient 
+```
+
+Via a provided .whl file: 
+
+```bash
+pip install MLLPStreamingClient_mllp-${VERSION}-py3-none-any.whl 
+```
+
+## Getting started
+
+First, we have to import the `MLLPStreamingClient` library and create a `MLLPStreamingClient` class instance:
+
+```python
+from MLLPStreamingClient import MLLPStreamingClient
+cli = MLLPStreamingClient(server_hostname, server_port, api_user, 
+                          api_secret, server_ssl_cert_file)
+```
+
+_server_hostname_, _server_port_, _api_user_, _api_secret_ and _server_ssl_cert_file_ values can be retrieved 
+from [TTP's API section](https://ttp.mllp.upv.es/index.php?page=api).
+
+Next, and optionally, we can perform a explicit call to the rpc GetAuthToken method, to get a valid auth token
+for the nextcoming rpc calls:
+
+```python
+ cli.AuthToken()
+```
+
+Please note that if we do not perform explicitly this call, it will be performed automatically by the library, when needed.
+
+## Primitives 
+
+### Speech2Text (S2T)
+
+To check out the available Speech2Text (S2T) systems offered by the service, call the Speech2TextInfo rpc method:
+
+```python
+ systems = cli.Speech2TextInfo()
+ import json
+ print(json.dumps(systems, indent=4))
+```
+
+Then, we pick up our preferred S2T system (`system_id`), and start transcribing
+our live audio stream supplied as an iterator or generator function called i.e.
+`myStreamIterator()`, using the `Speech2Text()` class method.  This code block shows how to print consolidated
+transcription chunks (`resp["final_text"]`) combined with non-consolidated,
+ongoing ones (`resp["ongoing_text"]`). 
+
+```python
+for resp in cli.Speech2Text(system_id, myStreamIterator):
+     if resp["final_text"] != "":
+         t = "%s %s" % (t, resp["final_text"].strip())
+         sys.stdout.write("\r%s" % t)
+         sys.stdout.flush()
+         if resp["eos"] == True:
+             sys.stdout.write("\n")
+             sys.stdout.flush()
+             t=""
+     if resp["ongoing_text"] != "":
+         sys.stdout.write("\r%s %s" % (t, resp["ongoing_text"].strip()))
+```
+
+Please note that consolidated transcription chunks are delivered with far more
+delay than non-consolidated, ongoing (live) ones. However, these latter chunks
+grow and change as new incoming audio data is processed, until the system
+decides to consolidate. Please note that `resp["eos"]` is set to `True` when
+the system outputs a consolidated end-of-sentence (eos) chunk. 
+
+Audio data delivered *(yielded)* by the *myStreamIterator* function/iterator
+must be compilant with the following specifications: PCM, single channel, 16khz
+sample rate, 16bit little endian.  If your audio file or stream does not comply
+with these specs, you should consider to transform it before delivering it to
+the service, i.e.  by using [pydub.AudioSegment](http://pydub.com/), or using
+external tools like `ffmpeg`.  A typical `ffmpeg` commandline call that would
+convert any media file into an audio file compiling the aforementioned
+specifications is:
+
+```bash
+ffmpeg -i $INPUT_MEDIA -ac 1 -ar 16000 -acodec pcm_s16le $OUTPUT_AUDIO.wav
+```
+
+Hence, we can implement a basic `myStreamIterator` function, that reads a
+compilant wav file from disk, to test the service: 
+
+```python
+def myStreamIterator():
+    with open(test_wav_file, "rb") as fd:
+        data = fd.read(250)
+        while data != b"":
+            yield data
+            data = fd.read(250)
+
+for resp in cli.Speech2Text(system_id, myStreamIterator):
+    ...
+```
+
+If you want to perform a more realistic test, you can try capture and stream your
+own voice using a microphone and the [pyAudio](http://people.csail.mit.edu/hubert/pyaudio/) module:
+
+```python
+import pyaudio
+def myStreamIterator():
+    CHUNK = 1024
+    FORMAT = pyaudio.paInt16
+    CHANNELS = 1
+    RATE = 16000
+    RECORD_SECONDS = 20
+    p = pyaudio.PyAudio()
+    stream = p.open(format=FORMAT,
+                     channels=CHANNELS,
+                     rate=RATE,
+                     input=True,
+                     frames_per_buffer=CHUNK)
+    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
+        data = stream.read(CHUNK)
+        yield data
+    stream.stop_stream()
+    stream.close()
+    p.terminate()
+```
+
+In adittion, two interesting features of the underlying S2T systems can be used
+in your `myStreamIterator()` function. 
+
+The first one is to **send the system an end-of-sentence (eos) signal**, thus
+forcing the consolidation of the ongoing non-consolidated hypotheses. This can
+be easily done by doing `yield None`, this is, sending an empty package. As
+soon as the system processes an empty package, it will return a `resp['final_text']`
+containing the latest consolidated text chunk, along with `resp['eos'] = True`.
+
+The second one is **to inject any string into the audio stream**. The
+S2T system will output that string unchanged and properly time-aligned with the
+outcoming text stream. Just do, e.g. `yield "My Awesome Injected
+String"`.  This feature can be useful e.g. in re-speaking scenarios for live TV
+broadcasting, to insert on-place punctuation signs, speaker changes, HTML markup, etc.
+
+### Text2Text (T2T)
+
+To check out the available Text2Text (T2T) systems offered by the service, first we call
+the Text2TextInfo rpc method:
+
+```python
+ systems = cli.Text2TextInfo()
+ import json
+ print(json.dumps(systems, indent=4))
+```
+
+Please note that T2T systems can be either Machine Translation (MT) systems
+that translate text from a source to a target language, or monolingual text
+postprocessing systems for adding casing, punctuation signs, markup, summarize,
+etc.
+
+Then, we pick up our preferred T2T system (`system_id`), and start converting 
+our batch or live text stream, supplied as an iterator or generator function called i.e.
+`myTextStreamIterator()`, using the `Text2Text()` class method.  
+
+```python
+for resp in cli.Text2Text(system_id, myTextIterator):
+    print(resp["final_text"])
+```
+
+As in `Speech2Text()`, it also returns consolidated text chunks
+(`resp["final_text"]`) combined with non-consolidated, ongoing ones
+(`resp["ongoing_text"]`). This is to allow a direct, nested (piped) call of
+both methods to build a custom cascaded Speech Translation application, so that
+both consolidated and non-consolidated text chunks are translated. Indeed,
+`Text2Text` rpc input message specification is identical to `Speech2Text()`
+output rpc message specification. When using `Text2Text()` solely, output text is
+delivered on the `"final_text"` field. 
+
+Hence, we can implement a basic `myTextStreamIterator` function, that yields
+some english sentences to be translated into another language: 
+
+```python
+def myTextStreamIterator():
+    yield "We are pioneers and leaders in automatic speech recognition, machine translation, machine learning, natural language understanding and artificial intelligence.",
+    yield "Through our advanced research in speech recognition, machine translation and artificial intelligence, we have solved many challenging problems improving human quality transcription, language understanding and translation accuracy.",
+    yield "By converting spoken language into text, we make it easier to search, discover and analyze audio and video assets, significantly increasing their value.",
+
+for resp in cli.Text2Text(system_id, myStreamIterator):
+    ...
+```
+
+### Text2Speech (T2S)
+
+To check out the available Text2Speech (T2S) systems offered by the service, first we call
+the Text2SpeechInfo rpc method:
+
+```python
+ systems = cli.Text2SpeechInfo()
+ import json
+ print(json.dumps(systems, indent=4))
+```
+
+Then, we pick up our preferred T2S system (`system_id`), and we call the
+`Text2Speech()` class method to start generating a stream of synthesized english
+audio, from an input text stream, supplied as an iterator or generator function
+called i.e.  `myTextStreamIterator()`.  
+
+```python
+import numpy as np
+import soundfile as sf
+
+sample_rate = 24000 # note: this is T2S system dependent
+language = "en-us"
+adata = np.array([], dtype=np.int16)
+for resp in cli.Text2Speech(system_id, 
+                            myTextStreamIterator, 
+                            language):
+    if "audio_data" in resp:
+        adata = np.concatenate((adata, 
+                                np.frombuffer(resp["audio_data"], 
+                                dtype=np.int16)))
+sf.write(f"output.wav", adata, sample_rate)
+
+```
+
+To test the service, we can use the `myTextStreamIterator()` function defined previously for *Text2Text*. 
+
+## Advanced applications
+
+### Speech Translation
+
+We can build our custom Speech Translation application, by pipeing (nesting)
+`Speech2Text()` and `Text2Text()` method calls, after having selected the
+desired S2T and T2T systems, and using `myAudioStreamIterator` as an iterator
+or generator method providing a continuous stream of audio data:
+
+```python
+for resp in cli.Text2Text(
+                  t2t_system_id, 
+                  cli.Speech2Text(
+                        s2t_system_id, 
+                        myAudioStreamIterator)):
+    ....
+```
+
+### Speech Dubbing
+
+We can build our custom Speech Dubbing application, by pipeing (nesting)
+`Speech2Text()`, `Text2Text()` and `Text2Speech()` method calls, after having selected the
+desired S2T, T2T, and T2S systems, and using `myAudioStreamIterator` as an iterator
+or generator method providing a continuous stream of audio data:
+
+```python
+for resp in cli.Text2Speech(
+                  t2s_system_id, 
+                  cli.Text2Text(
+                        t2t_system_id, 
+                        cli.Speech2Text(
+                              s2t_system_id, 
+                              myAudioStreamIterator)), 
+                  "en-us"):
+    ....
+```
+
+
+
