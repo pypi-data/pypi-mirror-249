@@ -1,0 +1,13 @@
+paginate_any/__init__.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+paginate_any/cursor_pagination.py,sha256=yCtqWMkQbZcoeZzSyTArqzNGaExvsjRe75WglJyOfC4,9535
+paginate_any/datastruct.py,sha256=3BRfn99umt49dMIMJOvYspG7PeIUeINHCYZ794iOaJA,1924
+paginate_any/exc.py,sha256=YsVHMCA2sdK2Dyf-Ut9KTAcHNZW4Te9veXDcyLtSu8Q,1880
+paginate_any/rest_api.py,sha256=5kKE8ZlY4d0_Khsxp83gWG1sp4_3acE2KO7jTM1o06U,7834
+paginate_any/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paginate_any/ext/fastapi.py,sha256=qZpmA4EMXeZlMnO23mShFI2xWPYwrd9CbGe79lEkR2g,3765
+paginate_any/ext/sanic.py,sha256=63L5PJkuxTY6iRXbLUsuD51E67Ie-ZrsUzcdSoFRiww,2213
+paginate_any/ext/sqlalchemy.py,sha256=iq96yIdpcYTylsN7u1xtrkUQ6Yu7ozzBzVmx9hGUvzk,2004
+paginate_any-0.0.2.dist-info/METADATA,sha256=2UcKilldETIpwvoBJro5M3G9SLXs8dA9M3NsKFWjB7E,18159
+paginate_any-0.0.2.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+paginate_any-0.0.2.dist-info/licenses/LICENSE,sha256=8ZRw_4F0daUaznw4DD43tPhCPetVfBu3y9ZStKVSXHc,11367
+paginate_any-0.0.2.dist-info/RECORD,,
