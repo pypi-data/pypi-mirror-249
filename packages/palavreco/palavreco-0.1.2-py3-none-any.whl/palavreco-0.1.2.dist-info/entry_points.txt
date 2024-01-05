@@ -1,0 +1,3 @@
+[console_scripts]
+palavreco=palavreco.main:main
+
