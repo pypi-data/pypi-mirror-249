@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: event-driven-app
+Version: 0.1.3
+Summary: 
+Author: ruslan.shmatov
+Author-email: ruslan.shmatov@casafari.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# event-driven-app
