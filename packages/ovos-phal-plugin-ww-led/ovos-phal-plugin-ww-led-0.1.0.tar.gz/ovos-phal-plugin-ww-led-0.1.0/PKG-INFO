@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ovos-phal-plugin-ww-led
+Version: 0.1.0
+Summary: A plugin to turn a LED on when a wakeword is detected
+Home-page: https://github.com/smartgic/ovos-phal-plugin-ww-led
+Author: Gaëtan Trellu (goldyfruit)
+Author-email: gaetan.trellu@gmail.com
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PHAL plugin - Wakeword LED
+
+A light _(LED)_ indicator when Open Voice OS is listening and/or speaking.
+
+## About
+
+This PHAL plugin interacts with a LED connected to a GPIO to let you know if Open Voice OS is listening. When a wake word is detected the LED turns on and when the audio output is over the LED turns off.
+
+It also possible to configure the plugin to only turn the LED on and off during the listening _(not the audio output)_.
+
+## Installation
+
+```shell
+pip install ovos-phal-plugin-ww-led
+```
+
+## Configuration
+
+The plugin configuration file is `~/.config/OpenVoiceOS/ovos-phal-plugin-ww-led.json`.
+
+| Option          | Value   | Description                                        |
+| --------------- | ------- | -------------------------------------------------- |
+| `gpio_pin`      | `N/A`   | GPIO PIN where the LED is connected                |
+| `wakeword_only` | `false` | Turn on the LED only during the wakeword detection |
+| `pulse`         | `true`  | Make the LED pulse                                 |
+
+### Example
+
+Configuration sample of `~/.config/OpenVoiceOS/ovos-phal-plugin-ww-led.json`.
+
+```json
+{
+  "gpio_pin": 25,
+  "wakeword_only": false,
+  "pulse": true
+}
+```
+
+## Credits
+
+- [Smart'Gic](https://smartgic.io/)
