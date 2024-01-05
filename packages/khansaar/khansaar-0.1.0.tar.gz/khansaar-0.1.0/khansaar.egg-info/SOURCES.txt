@@ -1,0 +1,6 @@
+README.txt
+setup.py
+khansaar.egg-info/PKG-INFO
+khansaar.egg-info/SOURCES.txt
+khansaar.egg-info/dependency_links.txt
+khansaar.egg-info/top_level.txt
