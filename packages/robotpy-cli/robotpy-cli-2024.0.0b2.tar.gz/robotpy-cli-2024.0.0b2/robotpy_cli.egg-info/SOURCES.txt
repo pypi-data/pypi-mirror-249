@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/dist.yml
+robotpy/__init__.py
+robotpy/__main__.py
+robotpy/logconfig.py
+robotpy/main.py
+robotpy/py.typed
+robotpy_cli.egg-info/PKG-INFO
+robotpy_cli.egg-info/SOURCES.txt
+robotpy_cli.egg-info/dependency_links.txt
+robotpy_cli.egg-info/entry_points.txt
+robotpy_cli.egg-info/top_level.txt
