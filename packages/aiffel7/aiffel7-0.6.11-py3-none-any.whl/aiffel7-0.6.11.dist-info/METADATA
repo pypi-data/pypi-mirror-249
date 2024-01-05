@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: aiffel7
+Version: 0.6.11
+Summary: A simple Python library
+Home-page: https://github.com/dudnjsckrgo/aiffel7_library
+Author: aiffel7_그루
+Author-email: your.email@example.com
+License: LICENSE
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: matplotlib
+Requires-Dist: tensorflow >=2.0
+
+# aiffel7_library
+
+## 사용해보기
+
+- 패키지 설치
+
+```pip install --upgrade aiffel7```
+
+- example 폴더에서 사용법 확인하기
+
+구현된 함수에대한 문서들이 들어있습니다.
+
+## 기여하기
+
+- pull request로 패키지에 포함할 파일을  aiffel7 폴더에 추가
+- 코드 상단에 기여자 적기(날짜 생략 가능)
+```python
+# 기여자: [기여자 이름]
+# 기여 날짜: [YYYY-MM-DD]
+# 설명: [변경 사항에 대한 간략한 설명]
+# 설명에는 사용처,  이것이 주는 이점 , 원리 등등을 자세히 써주면 좋음
+```
+- example folder에 사용법 작성
+
+## 문의하기
+- issues 에서 새로운 이슈 만들기 
+    라이브러리 구현이 되었으면 좋은 것들 문의를 하거나, 라이브러리에 문제가 있다면 알려주시면 됩니다.
