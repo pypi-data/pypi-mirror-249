@@ -1,0 +1,10 @@
+LICENSE
+README.md
+nvidia-htop.py
+setup.py
+nvidia_htop.egg-info/PKG-INFO
+nvidia_htop.egg-info/SOURCES.txt
+nvidia_htop.egg-info/dependency_links.txt
+nvidia_htop.egg-info/requires.txt
+nvidia_htop.egg-info/top_level.txt
+test/test_main.py
