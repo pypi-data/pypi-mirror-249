@@ -1,0 +1,10 @@
+README.md
+setup.py
+SequaGUI/__init__.py
+SequaGUI/logics.py
+SequaGUI/widgets.py
+SequaGUI.egg-info/PKG-INFO
+SequaGUI.egg-info/SOURCES.txt
+SequaGUI.egg-info/dependency_links.txt
+SequaGUI.egg-info/requires.txt
+SequaGUI.egg-info/top_level.txt
