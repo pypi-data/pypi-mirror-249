@@ -1,0 +1,4 @@
+scikit-learn
+xgboost<2
+numpy
+typing_extensions
