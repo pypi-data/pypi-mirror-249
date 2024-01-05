@@ -1,0 +1,74 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Alation Service - Get datasource that matches a specific id",
+  "steps": [
+    {
+      "title": "Introduction",
+      "description": "Retrieves datasource information from Alation based on a specified datasource Id"
+    },
+    {
+      "file": "cdh_dav_python/tests/test_alation_datasource.py",
+      "selection": {
+        "start": {
+          "line": 35,
+          "character": 1
+        },
+        "end": {
+          "line": 49,
+          "character": 36
+        }
+      },
+      "description": "Retrieves the configuration information for \r\n    - data_product_id: wonder_metadata_dev\r\n    - environment: dev",
+      "title": "Retrieve project configuration from JSON file for specified environment",
+      "contents": "import os\r\nimport sys\r\nimport json\r\nimport pytest\r\n\r\nfrom unittest import mock\r\nfrom dotenv import load_dotenv\r\nfrom cdh_dav_python.cdc_metadata_service import (\r\n    environment_metadata as cdc_env_metadata\r\n)\r\n\r\nimport cdh_dav_python.alation_service.datasource as alation_datasource\r\nimport cdh_dav_python.alation_service.tokenendpoint as alation_token_endpoint\r\n\r\nfrom pathlib import Path\r\nsys.path.append(\"..\")\r\n\r\ndotenv_path = os.path.join(os.path.dirname(__file__), '.env')\r\nload_dotenv(dotenv_path)\r\n\r\nENVIRONMENT = \"dev\"\r\n\r\n\r\ndef get_config(parameters):\r\n\r\n    environment_metadata = cdc_env_metadata.EnvironmentMetaData()\r\n\r\n    config = environment_metadata.get_configuration_common(\r\n        parameters, None)\r\n\r\n    return config\r\n\r\n\r\ndef test_fetch_datasource_databricks():\r\n\r\n    # Retrieve the parameters from the environment variables\r\n    current_script_path = os.path.abspath(__file__)\r\n    project_root = os.path.dirname(os.path.dirname(current_script_path))\r\n    os.chdir(project_root)\r\n\r\n    repository_path_default = str(Path(os.getcwd()))\r\n    parameters = {\r\n        \"data_product_id\": \"wonder_metadata_dev\",\r\n        \"data_product_id_root\": \"ocio\",\r\n        \"data_product_id_individual\": \"CDH\",\r\n        \"environment\": \"dev\",\r\n        \"repository_path\": repository_path_default\r\n    }\r\n    config = get_config(parameters)\r\n\r\n    # Configure the Alation API Token and Parameters\r\n    edc_alation_base_url = config.get(\"edc_alation_base_url\")\r\n    token_endpoint = alation_token_endpoint.TokenEndpoint(edc_alation_base_url)\r\n    status_code, edc_alation_api_token, api_refresh_token = token_endpoint.get_api_token_from_config(\r\n        config)\r\n    print(f\"api_access_token_length: {str(len(edc_alation_api_token))}\")\r\n    print(f\"api_refresh_token_length: {str(len(api_refresh_token))}\")\r\n    assert status_code == 200\r\n    edc_alation_base_url = config.get(\"edc_alation_base_url\")\r\n    alation_datasource_id = 319\r\n\r\n    # Make the GET API Call for the datasource\r\n    datasource = alation_datasource.DataSource()\r\n    datasource_result = datasource.fetch_datasource(\r\n        edc_alation_api_token, edc_alation_base_url, alation_datasource_id)\r\n\r\n    # Check that the method behaved as expected\r\n    print(f\"datasource_result: {str(datasource_result)}\")\r\n    assert status_code == 200\r\n"
+    },
+    {
+      "file": "cdh_dav_python/tests/test_alation_datasource.py",
+      "selection": {
+        "start": {
+          "line": 52,
+          "character": 5
+        },
+        "end": {
+          "line": 60,
+          "character": 32
+        }
+      },
+      "description": "Retrieves\r\n- edc_alation_base_url\r\n- edc_alation_api_token\r\n- api_refresh_token\r\n\r\nSets the alation_datasource_id to specified value (in this case 319)",
+      "title": "Configure the Alation API Token and Parameters",
+      "contents": "import os\r\nimport sys\r\nimport json\r\nimport pytest\r\n\r\nfrom unittest import mock\r\nfrom dotenv import load_dotenv\r\nfrom cdh_dav_python.cdc_metadata_service import (\r\n    environment_metadata as cdc_env_metadata\r\n)\r\n\r\nimport cdh_dav_python.alation_service.datasource as alation_datasource\r\nimport cdh_dav_python.alation_service.tokenendpoint as alation_token_endpoint\r\n\r\nfrom pathlib import Path\r\nsys.path.append(\"..\")\r\n\r\ndotenv_path = os.path.join(os.path.dirname(__file__), '.env')\r\nload_dotenv(dotenv_path)\r\n\r\nENVIRONMENT = \"dev\"\r\n\r\n\r\ndef get_config(parameters):\r\n\r\n    environment_metadata = cdc_env_metadata.EnvironmentMetaData()\r\n\r\n    config = environment_metadata.get_configuration_common(\r\n        parameters, None)\r\n\r\n    return config\r\n\r\n\r\ndef test_fetch_datasource_databricks():\r\n\r\n    # Retrieve the parameters from the environment variables\r\n    current_script_path = os.path.abspath(__file__)\r\n    project_root = os.path.dirname(os.path.dirname(current_script_path))\r\n    os.chdir(project_root)\r\n\r\n    repository_path_default = str(Path(os.getcwd()))\r\n    parameters = {\r\n        \"data_product_id\": \"wonder_metadata_dev\",\r\n        \"data_product_id_root\": \"ocio\",\r\n        \"data_product_id_individual\": \"CDH\",\r\n        \"environment\": \"dev\",\r\n        \"repository_path\": repository_path_default\r\n    }\r\n    config = get_config(parameters)\r\n\r\n    # Configure the Alation API Token and Parameters\r\n    edc_alation_base_url = config.get(\"edc_alation_base_url\")\r\n    token_endpoint = alation_token_endpoint.TokenEndpoint(edc_alation_base_url)\r\n    status_code, edc_alation_api_token, api_refresh_token = token_endpoint.get_api_token_from_config(\r\n        config)\r\n    print(f\"api_access_token_length: {str(len(edc_alation_api_token))}\")\r\n    print(f\"api_refresh_token_length: {str(len(api_refresh_token))}\")\r\n    assert status_code == 200\r\n    edc_alation_base_url = config.get(\"edc_alation_base_url\")\r\n    alation_datasource_id = 319\r\n\r\n    # Make the GET API Call for the datasource\r\n    datasource = alation_datasource.DataSource()\r\n    datasource_result = datasource.fetch_datasource(\r\n        edc_alation_api_token, edc_alation_base_url, alation_datasource_id)\r\n\r\n    # Check that the method behaved as expected\r\n    print(f\"datasource_result: {str(datasource_result)}\")\r\n    assert status_code == 200\r\n"
+    },
+    {
+      "file": "cdh_dav_python/tests/test_alation_datasource.py",
+      "selection": {
+        "start": {
+          "line": 62,
+          "character": 1
+        },
+        "end": {
+          "line": 65,
+          "character": 76
+        }
+      },
+      "description": "Get Datasource",
+      "title": "Make the GET API Call for the datasource",
+      "contents": "import os\r\nimport sys\r\nimport json\r\nimport pytest\r\n\r\nfrom unittest import mock\r\nfrom dotenv import load_dotenv\r\nfrom cdh_dav_python.cdc_metadata_service import (\r\n    environment_metadata as cdc_env_metadata\r\n)\r\n\r\nimport cdh_dav_python.alation_service.datasource as alation_datasource\r\nimport cdh_dav_python.alation_service.tokenendpoint as alation_token_endpoint\r\n\r\nfrom pathlib import Path\r\nsys.path.append(\"..\")\r\n\r\ndotenv_path = os.path.join(os.path.dirname(__file__), '.env')\r\nload_dotenv(dotenv_path)\r\n\r\nENVIRONMENT = \"dev\"\r\n\r\n\r\ndef get_config(parameters):\r\n\r\n    environment_metadata = cdc_env_metadata.EnvironmentMetaData()\r\n\r\n    config = environment_metadata.get_configuration_common(\r\n        parameters, None)\r\n\r\n    return config\r\n\r\n\r\ndef test_fetch_datasource_databricks():\r\n\r\n    # Retrieve the parameters from the environment variables\r\n    current_script_path = os.path.abspath(__file__)\r\n    project_root = os.path.dirname(os.path.dirname(current_script_path))\r\n    os.chdir(project_root)\r\n\r\n    repository_path_default = str(Path(os.getcwd()))\r\n    parameters = {\r\n        \"data_product_id\": \"wonder_metadata_dev\",\r\n        \"data_product_id_root\": \"ocio\",\r\n        \"data_product_id_individual\": \"CDH\",\r\n        \"environment\": \"dev\",\r\n        \"repository_path\": repository_path_default\r\n    }\r\n    config = get_config(parameters)\r\n\r\n    # Configure the Alation API Token and Parameters\r\n    edc_alation_base_url = config.get(\"edc_alation_base_url\")\r\n    token_endpoint = alation_token_endpoint.TokenEndpoint(edc_alation_base_url)\r\n    status_code, edc_alation_api_token, api_refresh_token = token_endpoint.get_api_token_from_config(\r\n        config)\r\n    print(f\"api_access_token_length: {str(len(edc_alation_api_token))}\")\r\n    print(f\"api_refresh_token_length: {str(len(api_refresh_token))}\")\r\n    assert status_code == 200\r\n    edc_alation_base_url = config.get(\"edc_alation_base_url\")\r\n    alation_datasource_id = 319\r\n\r\n    # Make the GET API Call for the datasource\r\n    datasource = alation_datasource.DataSource()\r\n    datasource_result = datasource.fetch_datasource(\r\n        edc_alation_api_token, edc_alation_base_url, alation_datasource_id)\r\n\r\n    # Check that the method behaved as expected\r\n    print(f\"datasource_result: {str(datasource_result)}\")\r\n    assert status_code == 200\r\n"
+    },
+    {
+      "file": "cdh_dav_python/tests/test_alation_datasource.py",
+      "selection": {
+        "start": {
+          "line": 67,
+          "character": 1
+        },
+        "end": {
+          "line": 69,
+          "character": 30
+        }
+      },
+      "description": "Confirm Results",
+      "title": "Confirm Results",
+      "contents": "import os\r\nimport sys\r\nimport json\r\nimport pytest\r\n\r\nfrom unittest import mock\r\nfrom dotenv import load_dotenv\r\nfrom cdh_dav_python.cdc_metadata_service import (\r\n    environment_metadata as cdc_env_metadata\r\n)\r\n\r\nimport cdh_dav_python.alation_service.datasource as alation_datasource\r\nimport cdh_dav_python.alation_service.tokenendpoint as alation_token_endpoint\r\n\r\nfrom pathlib import Path\r\nsys.path.append(\"..\")\r\n\r\ndotenv_path = os.path.join(os.path.dirname(__file__), '.env')\r\nload_dotenv(dotenv_path)\r\n\r\nENVIRONMENT = \"dev\"\r\n\r\n\r\ndef get_config(parameters):\r\n\r\n    environment_metadata = cdc_env_metadata.EnvironmentMetaData()\r\n\r\n    config = environment_metadata.get_configuration_common(\r\n        parameters, None)\r\n\r\n    return config\r\n\r\n\r\ndef test_fetch_datasource_databricks():\r\n\r\n    # Retrieve the parameters from the environment variables\r\n    current_script_path = os.path.abspath(__file__)\r\n    project_root = os.path.dirname(os.path.dirname(current_script_path))\r\n    os.chdir(project_root)\r\n\r\n    repository_path_default = str(Path(os.getcwd()))\r\n    parameters = {\r\n        \"data_product_id\": \"wonder_metadata_dev\",\r\n        \"data_product_id_root\": \"ocio\",\r\n        \"data_product_id_individual\": \"CDH\",\r\n        \"environment\": \"dev\",\r\n        \"repository_path\": repository_path_default\r\n    }\r\n    config = get_config(parameters)\r\n\r\n    # Configure the Alation API Token and Parameters\r\n    edc_alation_base_url = config.get(\"edc_alation_base_url\")\r\n    token_endpoint = alation_token_endpoint.TokenEndpoint(edc_alation_base_url)\r\n    status_code, edc_alation_api_token, api_refresh_token = token_endpoint.get_api_token_from_config(\r\n        config)\r\n    print(f\"api_access_token_length: {str(len(edc_alation_api_token))}\")\r\n    print(f\"api_refresh_token_length: {str(len(api_refresh_token))}\")\r\n    assert status_code == 200\r\n    edc_alation_base_url = config.get(\"edc_alation_base_url\")\r\n    alation_datasource_id = 319\r\n\r\n    # Make the GET API Call for the datasource\r\n    datasource = alation_datasource.DataSource()\r\n    datasource_result = datasource.fetch_datasource(\r\n        edc_alation_api_token, edc_alation_base_url, alation_datasource_id)\r\n\r\n    # Check that the method behaved as expected\r\n    print(f\"datasource_result: {str(datasource_result)}\")\r\n    assert status_code == 200\r\n"
+    }
+  ]
+}
