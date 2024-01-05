@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+vyos_modular/main.py
+vyos_modular.egg-info/PKG-INFO
+vyos_modular.egg-info/SOURCES.txt
+vyos_modular.egg-info/dependency_links.txt
+vyos_modular.egg-info/entry_points.txt
+vyos_modular.egg-info/requires.txt
+vyos_modular.egg-info/top_level.txt
