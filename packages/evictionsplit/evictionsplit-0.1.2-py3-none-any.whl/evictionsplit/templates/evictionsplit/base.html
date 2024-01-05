@@ -1,0 +1,18 @@
+{% extends 'allianceauth/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block page_title %}{% translate "Eviction split" %}{% endblock %}
+
+{% block content %}
+    <br>
+    <div class="allianceauth-evictionsplit-plugin">
+        {% include 'evictionsplit/partial/menu.html' %}
+
+        {% block details %}{% endblock %}
+    </div>
+{% endblock %}
+
+{% block extra_css %}
+    <link href="{% static 'evictionsplit/base.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}

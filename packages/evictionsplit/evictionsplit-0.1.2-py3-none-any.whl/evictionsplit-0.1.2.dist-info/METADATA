@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: evictionsplit
+Version: 0.1.2
+Summary: Alliance Auth plugin to manage loot split in evictions
+Author-email: T'rahk Rokym <trahk.rokym@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: allianceauth>=3
+Project-URL: Changelog, https://gitlab.com/r0kym/aa-evictionsplit/-/blob/main/CHANGELOG.md
+Project-URL: Homepage, https://gitlab.com/r0kym/aa-evictionsplit
+Project-URL: Source, https://gitlab.com/r0kym/aa-evictionsplit
+
+# Eviction split
+
+Alliance auth module dedicated to splitting the loot of an eviction between participants based on their participation time.
+
+**Insert tags**
+
+
+## TODO:
+
+- [x] Create evictions without going through the admin window
+- [ ] Enhance the signup so applicants specify what they bring to the eviction
+- [ ] Logging!!!!
+
+## Features:
+
+ - Create and manage evictions
+ - Apply to join an eviction
+ - Signal the current activity of members (standby and/or doorstopping)
+
+
+## Screenshots
+
+TODO
+
+
+## Installation
+
+TODO
+
+## Permissions
+
+|      ID      |           Description           |                            Notes                            |
+|:------------:|:-------------------------------:|:-----------------------------------------------------------:|
+| basic_access |       Can access this app       |           All line members should have this role            |
+|   manager    | Can create and manage evictions | Role to create/edit evictions and access archived evictions |
+

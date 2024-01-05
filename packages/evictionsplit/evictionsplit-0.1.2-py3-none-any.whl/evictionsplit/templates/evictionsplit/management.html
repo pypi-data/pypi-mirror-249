@@ -1,0 +1,115 @@
+{% extends 'evictionsplit/base.html' %}
+{% load i18n %}
+
+{% block details %}
+    <div class="panel panel-default">
+        <div class="panel-heading" style="display: flex;">
+            <h3>Active evictions</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Creator</th>
+                    <th>Stop</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for eviction in active_evictions %}
+                    <tr>
+                        <td>
+                            <b>{{ eviction.name | capfirst }}</b>
+                            &nbsp;
+                            <a class="btn btn-primary"
+                               href="{% url 'evictionsplit:eviction' eviction.id %}" role="button">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <img
+                                    src="{{ eviction.creator.profile.main_character.portrait_url }}"
+                                    class="ra-avatar img-circle"
+                                    alt="{{ eviction.creator.profile.main_character.character_name }} portrait"
+                            >
+                            &nbsp;
+                            {{ eviction.creator.profile.main_character.character_name }}
+                        </td>
+                        <td>
+                            <a class="btn btn-danger"
+                               href="{% url 'evictionsplit:stop_eviction' eviction.id %}" role="button">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </td>
+                    </tr>
+                {% empty  %}
+                    <tr>
+                        <td>No eviction taking applications for now</td>
+                        <td></td><td></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading" style="display: flex">
+            <h3>New eviction</h3>
+        </div>
+        <div class="panel-body">
+            <form method="post" action="{% url "evictionsplit:new" %}" class="form-inline">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name">New eviction name:</label>
+                    <input type="text" class="form-control" name="name" id="name" required>
+                </div>
+                <button type="submit" class="btn btn-success">Create eviction</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" style="display: flex;">
+            <h3>Archived evictions</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Creator</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for eviction in inactive_evictions %}
+                        <tr>
+                            <td>
+                                <b>{{ eviction.name | capfirst }}</b>
+                                &nbsp;
+                                <a class="btn btn-primary"
+                                   href="{% url 'evictionsplit:eviction' eviction.id %}" role="button">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </td>
+                            <td></td>
+                            <td>
+                                <img
+                                        src="{{ eviction.creator.profile.main_character.portrait_url }}"
+                                        class="ra-avatar img-circle"
+                                        alt="{{ eviction.creator.profile.main_character.character_name }} portrait"
+                                >
+                                &nbsp;
+                                {{ eviction.creator.profile.main_character.character_name }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+{% endblock %}

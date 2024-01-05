@@ -1,0 +1,84 @@
+{% extends 'evictionsplit/base.html' %}
+{% load i18n %}
+{% load smooth_timedelta %}
+
+{% block details %}
+    {% if inactive_error %}
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <p>This eviction is now inactive</p>
+        </div>
+    {% endif %}
+
+    <div class="panel panel-default">
+       <div class="panel-heading">
+            <h3 class="panel-title">Eviction board</h3>
+       </div>
+        <div class="panel-body text-center">
+            <div class="container-fluid">
+                <div class="row">
+                    {% for eviction in user_active_evictions %}
+                        <h3>
+                            {{ eviction.name }}
+                            <a class="btn btn-primary"
+                               href="{% url 'evictionsplit:eviction' eviction.id %}" role="button">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </h3>
+                        <div class="col-md-6">
+                            <form method="post" action="{% url 'evictionsplit:change_clocking' eviction.id %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="clocking_type" value="SP">
+                                <input type="hidden" name="origin" value="index">
+                                {% if eviction.is_standby %}
+                                    <input type="hidden" name="change" value="stop">
+                                    <input type="submit" class="btn btn-lg btn-success" value="Currently on standby for pings">
+                                {% else %}
+                                    <input type="hidden" name="change" value="start">
+                                    <input type="submit" class="btn btn-lg btn-danger" value="Currently not on standby for ping">
+                                {% endif %}
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form method="post" action="{% url 'evictionsplit:change_clocking' eviction.id %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="clocking_type" value="DS">
+                                <input type="hidden" name="origin" value="index">
+                                {% if eviction.is_doorstop %}
+                                    <input type="hidden" name="change" value="stop">
+                                    <input type="submit" class="btn btn-lg btn-success" value="Currently on doorstop">
+                                {% else %}
+                                    <input type="hidden" name="change" value="start">
+                                    <input type="submit" class="btn btn-lg btn-danger" value="Currently not on doorstop">
+                                {% endif %}
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>{{ eviction.time_standby | smooth_timedelta }}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>{{ eviction.time_doorstop | smooth_timedelta }}</p>
+                            </div>
+                        </div>
+                    {% empty %}
+                        <p>You are in no active eviction at the moment</p>
+                        <p>Go to <a href="{% url 'evictionsplit:list' %}">here</a> to join evictions</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block extra_javascript %}
+{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block extra_script %}
+{% endblock %}
