@@ -1,0 +1,13 @@
+pyupgw/__init__.py,sha256=VzAPpPAjX3MABxTYjtJesw1NNbgPWHp22GDJvaiVjTY,278
+pyupgw/__main__.py,sha256=0KUxCH7oJcyya2JstKy6MGClt9XTeVEOt7ZLD-aV_S0,376
+pyupgw/_api.py,sha256=1gY9TYPJelPaVGEq5uHTt59RPnZSNjem7h_7YHsQHh4,6504
+pyupgw/client.py,sha256=_2jK1vr8iIutEHTfhppuPwF9_a8m6N0OXXkAzvzZ1aE,19737
+pyupgw/models.py,sha256=EFUPn-MTMsO_dxy-72H1Nw-vC3jiNrHjBo4lhxHlY0E,7437
+pyupgw/cli/__init__.py,sha256=Jjc_zA30yPY_i46zP8EO1C42GOxRujzMokb6b11UGO4,3468
+pyupgw/cli/commands.py,sha256=aiiMzphF3AwSsa5VEBF5HHum3SisnOdrI5nA-W7RFnQ,2002
+pyupgw/cli/tui.py,sha256=ghMU_J_AJI5O61DSynIZaHfYBqH8PkFyDcLtrF5vawI,1509
+pyupgw-0.2.dist-info/entry_points.txt,sha256=tVYg2jSax3h1EdciENjWR4QdfI_iRfAivVXdF-v65m8,47
+pyupgw-0.2.dist-info/LICENSE,sha256=ISCQd3c1xAxwlk7T-wn_MEPIFiI_nQkzWlheyw9IQnc,1085
+pyupgw-0.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pyupgw-0.2.dist-info/METADATA,sha256=MOdWAGul__Te7soGu5ZxKFqvjJP2uhUyXszFVyFwq7k,6451
+pyupgw-0.2.dist-info/RECORD,,
