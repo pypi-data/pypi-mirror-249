@@ -1,0 +1,15 @@
+FROM python:3.8-bullseye
+
+RUN python3 -m pip install --upgrade pip
+
+COPY apis/ /alignment-labs/apis/
+COPY core/setup.py /alignment-labs/core/
+COPY core/src/ /alignment-labs/core/src/
+COPY dyff/setup.py /alignment-labs/dyff/
+COPY dyff/python/ /alignment-labs/dyff/python/
+
+RUN python3 -m pip install /alignment-labs/core
+RUN python3 -m pip install /alignment-labs/apis
+RUN python3 -m pip install /alignment-labs/dyff
+
+ENTRYPOINT [ "python3", "-m", "alignmentlabs.dyff.bin.clone_audit_procedure" ]

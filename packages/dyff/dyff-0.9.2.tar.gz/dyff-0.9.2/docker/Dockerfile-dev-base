@@ -1,0 +1,13 @@
+FROM python:3.8-bullseye
+
+RUN python3 -m pip install --upgrade pip
+
+COPY dyff/README.md /alignment-labs/dyff/
+COPY dyff/setup.py /alignment-labs/dyff/
+COPY dyff/requirements.txt /alignment-labs/dyff/
+COPY dyff/dyff/ /alignment-labs/dyff/dyff/
+COPY dyff/scripts/ /alignment-labs/dyff/scripts/
+
+RUN python3 -m pip install -r /alignment-labs/dyff/requirements.txt
+RUN python3 -m pip install -e /alignment-labs/dyff
+WORKDIR /alignment-labs/dyff

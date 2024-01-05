@@ -1,0 +1,40 @@
+FROM python:3.8-bullseye
+
+# Audits are untrusted code and should execute as an ordinary user
+ARG USERNAME=rusty
+ARG USERHOME=/home/${USERNAME}
+ARG GROUPNAME=shackleford
+RUN useradd -m ${USERNAME} -d ${USERHOME} \
+    && groupadd ${GROUPNAME}
+
+ARG INSTALLDIR=/alignmentlabs
+
+RUN python3 -m pip install --upgrade pip
+
+# Extra dependencies for notebooks
+RUN python3 -m pip install \
+    notebook \
+    jupyter-book \
+    python-decouple \
+    matplotlib \
+    seaborn
+
+COPY apis/ ${INSTALLDIR}/apis/
+COPY audit/setup.py ${INSTALLDIR}/audit/
+COPY audit/src/ ${INSTALLDIR}/audit/src/
+COPY core/setup.py ${INSTALLDIR}/core/
+COPY core/src/ ${INSTALLDIR}/core/src/
+COPY dyff/setup.py ${INSTALLDIR}/dyff/
+COPY dyff/python/ ${INSTALLDIR}/dyff/python/
+COPY models/setup.py ${INSTALLDIR}/models/
+COPY models/src/ ${INSTALLDIR}/models/src/
+
+RUN python3 -m pip install ${INSTALLDIR}/core
+RUN python3 -m pip install ${INSTALLDIR}/apis
+RUN python3 -m pip install ${INSTALLDIR}/audit
+RUN python3 -m pip install ${INSTALLDIR}/models
+RUN python3 -m pip install ${INSTALLDIR}/dyff
+
+USER ${USERNAME}:${GROUPNAME}
+WORKDIR ${USERHOME}
+ENTRYPOINT [ "python3", "-m", "alignmentlabs.dyff.bin.run_jupyterbook" ]

@@ -1,0 +1,28 @@
+FROM python:3.8-bullseye
+
+RUN python3 -m pip install --upgrade pip
+
+# Extra dependencies for notebooks
+RUN python3 -m pip install notebook
+RUN python3 -m pip install jupyter-book
+RUN python3 -m pip install python-decouple
+RUN python3 -m pip install matplotlib
+RUN python3 -m pip install seaborn
+
+COPY apis/ /alignment-labs/apis/
+COPY audit/setup.py /alignment-labs/audit/
+COPY audit/src/ /alignment-labs/audit/src/
+COPY core/setup.py /alignment-labs/core/
+COPY core/src/ /alignment-labs/core/src/
+COPY dyff/setup.py /alignment-labs/dyff/
+COPY dyff/python/ /alignment-labs/dyff/python/
+COPY models/setup.py /alignment-labs/models/
+COPY models/src/ /alignment-labs/models/src/
+
+RUN python3 -m pip install /alignment-labs/core
+RUN python3 -m pip install /alignment-labs/apis
+RUN python3 -m pip install /alignment-labs/audit
+RUN python3 -m pip install /alignment-labs/models
+RUN python3 -m pip install /alignment-labs/dyff
+
+ENTRYPOINT [ "python3", "-m", "alignmentlabs.dyff.bin.run_audit" ]

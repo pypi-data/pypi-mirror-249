@@ -1,0 +1,26 @@
+FROM python:3.8-bullseye
+
+RUN python3 -m pip install --upgrade pip
+
+# We have to have the model dependencies installed because we have
+# to instantiate a transformers Pipeline so that we can save it
+# in BentoML's format. This is annoying, because we have to
+# install all possible dependencies for different kinds of models.
+# This is the extras list for transformers[all] excluding:
+# * tf-cpu, flax, integrations, accelerate
+RUN python3 -m pip install transformers[torch,sentencepiece,tokenizers,torch-speech,vision,timm,torch-vision,codecarbon,video]
+
+COPY core/setup.py /alignment-labs/core/
+COPY core/src/ /alignment-labs/core/src/
+COPY apis/ /alignment-labs/apis/
+COPY dyff/setup.py /alignment-labs/dyff/
+COPY dyff/python/ /alignment-labs/dyff/python/
+COPY models/setup.py /alignment-labs/models/
+COPY models/src/ /alignment-labs/models/src/
+
+RUN python3 -m pip install /alignment-labs/core
+RUN python3 -m pip install /alignment-labs/apis
+RUN python3 -m pip install /alignment-labs/models
+RUN python3 -m pip install /alignment-labs/dyff
+
+ENTRYPOINT [ "python3", "-m", "alignmentlabs.dyff.bin.build_bentoml_service" ]

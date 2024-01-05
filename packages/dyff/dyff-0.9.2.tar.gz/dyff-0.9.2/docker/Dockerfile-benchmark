@@ -1,0 +1,16 @@
+FROM huggingface/transformers-pytorch-cpu:4.18.0
+
+RUN python3 -m pip install --upgrade setuptools
+
+RUN python3 -m pip install datasets
+# https://github.com/huggingface/transformers/issues/17266
+RUN python3 -m pip install pillow
+
+# TODO: We currently upload outputs from the benchmark container,
+# but that won't work once the container is sandboxed
+RUN python3 -m pip install --upgrade google-cloud-storage
+
+COPY src/ /alignment-labs/dyff/
+RUN python3 -m pip install /alignment-labs/dyff
+
+ENTRYPOINT [ "python3", "-u", "-m", "alignmentlabs.dyff.bin.benchmark", "--model=/input/model", "--dataset=/input/dataset" ]

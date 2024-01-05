@@ -1,0 +1,15 @@
+# Copyright UL Research Institutes
+# SPDX-License-Identifier: Apache-2.0
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: workflows-aggregator
+  labels:
+    app: workflows-aggregator
+    component: service
+spec:
+  clusterIP: None
+  selector:
+    app: workflows-aggregator
+    component: workflows-aggregator

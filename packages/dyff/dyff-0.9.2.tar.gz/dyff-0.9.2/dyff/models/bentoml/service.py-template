@@ -1,0 +1,8 @@
+import bentoml
+
+runner = bentoml.models.get("${model_tag}").to_runner()
+service = bentoml.Service("${service_name}", runners=[runner])
+
+@service.api(input=${input_descriptor}, output=${output_descriptor})
+def predict(x) -> list:
+  return runner.run(x${inference_kwargs})

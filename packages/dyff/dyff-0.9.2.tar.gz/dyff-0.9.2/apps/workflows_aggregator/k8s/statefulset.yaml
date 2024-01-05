@@ -1,0 +1,43 @@
+# Copyright UL Research Institutes
+# SPDX-License-Identifier: Apache-2.0
+
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: workflows-aggregator
+  labels:
+    app: workflows-aggregator
+    component: workflows-aggregator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: workflows-aggregator
+      component: workflows-aggregator
+  serviceName: workflows-aggregator
+  template:
+    metadata:
+      labels:
+        app: workflows-aggregator
+        component: workflows-aggregator
+    spec:
+      containers:
+        - envFrom:
+            - configMapRef:
+                name: workflows-aggregator
+          image: us-central1-docker.pkg.dev/dyff-354017/dyff-system/ul-dsri/dyff/dyff/workflows-aggregator:latest
+          imagePullPolicy: Always
+          name: workflows-aggregator
+          volumeMounts:
+            - mountPath: /kafka/state
+              name: kafka-state
+      volumes:
+        - name: kafka-state
+          ephemeral:
+            volumeClaimTemplate:
+              spec:
+                accessModes:
+                  - ReadWriteOnce
+                resources:
+                  requests:
+                    storage: 10Gi
