@@ -1,0 +1,5 @@
+basefunctions>=0.1.0
+requests>=2.31
+pandas>=2.1
+python-decouple>=3.4
+stockstats>=0.6.2

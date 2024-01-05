@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: eod2pd
+Version: 0.1.2
+Summary: a simple library to quere EODHistoricalData in a multithreaded environment
+Author-email: NeuralDevelopment <neutro2@outlook.de>
+Project-URL: Homepage, https://dev.azure.com/neuraldevelopment/eod2pd
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: basefunctions>=0.1.0
+Requires-Dist: requests>=2.31
+Requires-Dist: pandas>=2.1
+Requires-Dist: python-decouple>=3.4
+Requires-Dist: stockstats>=0.6.2
