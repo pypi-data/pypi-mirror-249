@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: gstools-core
+Version: 0.3.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Utilities
+Requires-Dist: numpy >=1.14.5, <2
+License-File: LICENSE
+Summary: The core functions of GSTools
+Keywords: geostatistics,srf,kriging,variogram,python
+Home-Page: https://geostat-framework.org/#gstools
+Author: Lennart Schüler <mostem@posteo.de>
+Author-email: Lennart Schüler <mostem@posteo.de>
+License: LGPL-3.0-or-later
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://geostat-framework.org/#gstools
+Project-URL: Documentation, https://github.com/GeoStat-Framework/GSTools-Core
+Project-URL: Source, https://github.com/GeoStat-Framework/GSTools-Core
+Project-URL: Changelog, https://github.com/GeoStat-Framework/GSTools-Core/commits
+Project-URL: Tracker, https://github.com/GeoStat-Framework/GSTools-Core/issues
+
+# GSTools Core
+
+[![PyPI version](https://img.shields.io/pypi/v/gstools-core.svg)](https://pypi.org/project/gstools-core/)
+[![Crates version](https://img.shields.io/crates/v/gstools-core.svg)](https://crates.io/crates/gstools-core)
+[![Docs](https://docs.rs/gstools-core/badge.svg)](https://docs.rs/gstools-core)
+[![Build Status](https://github.com/GeoStat-Framework/GSTools-Core/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/GeoStat-Framework/GSTools-Core/actions/workflows/main.yml)
+
+A Rust implementation of the core algorithms of [GSTools][gstools_link].
+
+This crate includes
+
+- randomization methods for the random field generation
+- the matrix operations of the kriging methods
+- the variogram estimation
+
+The documentation can be found [here][doc_link].
+
+
+## Contact
+
+You can contact us via <info@geostat-framework.org>.
+
+
+## License
+
+[LGPLv3][license_link] © 2021-2024
+
+
+[gstools_link]: https://github.com/GeoStat-Framework/GSTools
+[doc_link]: https://docs.rs/gstools-core/latest/gstools_core/
+[license_link]: https://github.com/GeoStat-Framework/GSTools-Core/blob/main/LICENSE
+
