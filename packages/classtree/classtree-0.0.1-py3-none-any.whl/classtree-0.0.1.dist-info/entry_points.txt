@@ -1,0 +1,2 @@
+[console_scripts]
+classtree = classtree.cli:run
