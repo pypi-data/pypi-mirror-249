@@ -1,0 +1,9 @@
+marctable/__init__.py,sha256=wXgUBrtKICJ4aYOIhD_XC7V1qXkYu1GAOetXuGm86OQ,1805
+marctable/marc.json,sha256=YSto4YSuBQJDTY5HXG3GivKxLTXAOPulcz89mzL_B_8,309283
+marctable/marc.py,sha256=5sMooXrKHspjNP1cVaWJyuPTaMA-SsYmGA6kzls9Sd8,6669
+marctable/utils.py,sha256=-yedLF8yyJ1HTzuI0p5jOtYmMaiAyLHUbqO6Vb7moHc,6982
+marctable-0.3.0.dist-info/LICENSE,sha256=aiKvG4Y7UOYh8wjzOs-ckgjIehV63cFwC77k6pjOXGM,1073
+marctable-0.3.0.dist-info/METADATA,sha256=i3LnxMIawziyc1xTygg1Vwc7RxLxkEeYWRBn2gs1SIU,17193
+marctable-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+marctable-0.3.0.dist-info/entry_points.txt,sha256=1BXnt2LjWYlUb_iYCrxSMZSWyxt2VBAzZLBFRJFFuuA,44
+marctable-0.3.0.dist-info/RECORD,,
