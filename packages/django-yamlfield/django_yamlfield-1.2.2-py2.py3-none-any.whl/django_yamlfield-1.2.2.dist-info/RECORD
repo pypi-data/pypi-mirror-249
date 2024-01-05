@@ -1,0 +1,11 @@
+yamlfield/__init__.py,sha256=11uwrrFWPqwZk8kQF1viBnsqv12rywiqqTNmC3C57sQ,57
+yamlfield/apps.py,sha256=l14V2Pdl9HvBIcjT9U6g_IYDWVv3EiwYtyVSfDgqWWA,128
+yamlfield/fields.py,sha256=6Bq0g1uCZNL0VoLgHzUucZi0oX5d69b3iw9avzGCyDY,1465
+yamlfield/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yamlfield/serializers.py,sha256=vakzqZ7IrEmgBMjXAva_stmBF3wO4sxK8OMXKEmSmJE,711
+yamlfield/tests.py,sha256=eqSpgQ1jcuUNgsjT25ujwz0HqoaugYN_AEnkAks8XGg,4329
+django_yamlfield-1.2.2.dist-info/LICENSE,sha256=lDITpSCksqXZMoWJ8wrLXrp41B1QQjUgD1fjx6-5QM0,1094
+django_yamlfield-1.2.2.dist-info/METADATA,sha256=m-oPuuwwbdCrxP_tGZLyIt2gRv23dUyghIfNRhePX8U,1435
+django_yamlfield-1.2.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_yamlfield-1.2.2.dist-info/top_level.txt,sha256=aB_aXWTyA93fik8DPkBl9dEJNQzCeN0GX8nouhxX2aY,10
+django_yamlfield-1.2.2.dist-info/RECORD,,

@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: django-yamlfield
+Version: 1.2.2
+Summary: A Django database field for storing YAML data
+Home-page: https://palewi.re/docs/django-yamlfield/
+Author: Ben Welsh
+Author-email: b@palewi.re
+License: MIT
+Project-URL: Documentation, https://palewi.re/docs/django-yamlfield/
+Project-URL: Source, https://github.com/palewire/django-yamlfield/
+Project-URL: Tracker, https://github.com/palewire/django-yamlfield/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML >=3.10
+
+### Other resources
+
+* Docs: [palewi.re/docs/django-yamlfield/](https://palewi.re/docs/django-yamlfield/)
+* Issues: [github.com/palewire/django-yamlfield/issues](https://github.com/palewire/django-yamlfield/issues)
+* Packaging: [pypi.python.org/pypi/django-yamlfield](https://pypi.python.org/pypi/django-yamlfield)
+* Testing: [github.com/palewire/django-yamlfield/actions](https://github.com/palewire/django-yamlfield/actions)
