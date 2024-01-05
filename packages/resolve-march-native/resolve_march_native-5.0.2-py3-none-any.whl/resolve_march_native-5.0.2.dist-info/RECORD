@@ -1,0 +1,15 @@
+resolve_march_native/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resolve_march_native/__main__.py,sha256=HxtTt6RkRz5jpyGuis0abv5j2OfTSfYTjLEA_Dqb_yk,2738
+resolve_march_native/engine.py,sha256=6BUu8Je9YyIzQE6MB-wCqGu05y7YUjC9OC3xC5cILJ8,5758
+resolve_march_native/environment.py,sha256=AheWReN36PifcypWFR2iNu7sM_OM-ajufeqVp1kUXjM,249
+resolve_march_native/parser.py,sha256=gYhszFyiO48KRHaJreU4IwrnWaUG-O8r1mVAi8I3nyI,807
+resolve_march_native/recommended.py,sha256=2L6RzAgGjRXrnGhXKuMumZEW10NkLROxdos61QUHK_s,248
+resolve_march_native/runner.py,sha256=l6pQ9UMTkHKH5ClyhlnvPzI4kV2zNFnKGEIXp18Poas,1092
+resolve_march_native/sort.py,sha256=Fcxb2e8JLHOu9d4wXcUWnoafpfcFCEdpO0G1ot4rCgE,531
+resolve_march_native/target_help_parser.py,sha256=mg5FVlGkNW2L0EaeTUhzW1irc6l8cXwuC0drIigUmT8,7588
+resolve_march_native/version.py,sha256=OcvauihRJeWwBPhh-yzMZixiBSN1Na-TkeROcQ4DbYA,119
+resolve_march_native-5.0.2.dist-info/METADATA,sha256=JT7WFoLNbVNQL8A9r6_-pkh6iRCRiqsOP3EaXl6T318,2893
+resolve_march_native-5.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+resolve_march_native-5.0.2.dist-info/entry_points.txt,sha256=wWz1ukUkLRQ175Nm0zS0ATWpD5MnUv2KfAtXTRmQihs,76
+resolve_march_native-5.0.2.dist-info/top_level.txt,sha256=WGdd78O71MFXNCtbvHUNoHQka1taEr0tH-gRq4Hi5PI,21
+resolve_march_native-5.0.2.dist-info/RECORD,,
