@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: eggroll
+Version: 3.0.0
+Summary: Python Side Client and Server for Eggroll
+Home-page: https://fate.fedai.org/
+Author: FederatedAI
+Author-email: contact@FedAI.org
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: omegaconf
+Requires-Dist: requests
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+Requires-Dist: ruamel.yaml
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-sdk
+Provides-Extra: full
+Requires-Dist: cloudpickle ; extra == 'full'
+Requires-Dist: lmdb ==1.3.0 ; extra == 'full'
+Requires-Dist: psutil >=5.7.0 ; extra == 'full'
+
+Python Side Client and Server for Eggroll

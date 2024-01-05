@@ -1,0 +1,2 @@
+[console_scripts]
+eggroll = eggroll.cli.eggroll:eggroll_cli
