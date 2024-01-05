@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: stlite-sandbox
+Version: 0.1.1
+Summary: Streamlit component that allows you to dynamically create an stlite sandbox, but not reload the whole component when the code changes
+Author: Zachary Blackwood
+Author-email: zachary@streamlit.io
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit >=1.2
+Requires-Dist: jinja2
+
+# stlite-dynamic-sandbox
+
+Streamlit component that allows you to dynamically create an stlite sandbox, but not reload the whole component when the code changes
+
+## Installation instructions 
+
+```sh
+pip install stlite-dynamic-sandbox
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from stlite_sandbox import stlite_sandbox
+
+value = stlite_sandbox()
+
+st.write(value)
