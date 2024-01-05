@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=04JCBBuTrBnUXR24Ves_OOiWBMJNUGyjPqthVshxKAA,25
+tests/test2_log.py,sha256=GjmzYv5GUxKz0zwRw1GSefmCOG4CWpeOdTXUz1-LTzo,310
+tests/test_log.py,sha256=DH5_fi3gDL52y8so7FkZwbCjxe6biybceY_NeX3cTHI,476
+LogPilot-0.0.1.dist-info/LICENSE,sha256=pzVkwaXIYT6TJw-7u4s8sNaT5bj9IvUx9U5IIXVe-5U,1066
+LogPilot-0.0.1.dist-info/METADATA,sha256=dI-RZB3ueX5AxXb4qhj09V_iuohjapky83FPJ3SxIcs,3632
+LogPilot-0.0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+LogPilot-0.0.1.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+LogPilot-0.0.1.dist-info/RECORD,,
