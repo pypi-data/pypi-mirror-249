@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-oy7nv1mo\\cp310-win32\\build\\venv\\Scripts\\delvewheel', 'repair', '--add-path', 'win32;..\\libiconv\\115_win32\\bin;win64;..\\libiconv\\117_win64\\bin', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-oy7nv1mo\\cp310-win32\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-oy7nv1mo\\cp310-win32\\built_wheel\\openctp_ctp-6.7.0.2-cp310-cp310-win32.whl']
