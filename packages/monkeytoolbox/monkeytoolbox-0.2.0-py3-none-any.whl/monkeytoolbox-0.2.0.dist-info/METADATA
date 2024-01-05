@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: monkeytoolbox
+Version: 0.2.0
+Summary: Miscellaneous convenience utilities for Python programs
+Home-page: https://github.com/guardicode/monkeytoolbox
+License: GPLv3
+Author: Ilija Lazoroski
+Author-email: ilija.la@live.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: egg-timer
+Requires-Dist: ifaddr
+Requires-Dist: monkey-types
+Requires-Dist: psutil (>=5.7.0)
+Requires-Dist: pywin32 ; sys_platform == "win32"
+Project-URL: Repository, https://github.com/guardicode/monkeytoolbox
+Description-Content-Type: text/markdown
+
+# monkeytoolbox
+
+This project contains a collection of convenience functions, classes, and
+utilities written in Python. It is used mainly by [Infection
+Monkey](https://github.com/guardicore/monkey).
+
+## Installation
+`pip install monkeytoolbox`
+
+## Running tests
+```
+$> poetry install
+$> poetry run pytest
+```
+
