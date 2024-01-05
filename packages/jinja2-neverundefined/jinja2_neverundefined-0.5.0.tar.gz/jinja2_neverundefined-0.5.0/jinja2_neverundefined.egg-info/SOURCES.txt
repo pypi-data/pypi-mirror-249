@@ -1,0 +1,9 @@
+.gitignore
+README.md
+setup.py
+jinja2_neverundefined.egg-info/PKG-INFO
+jinja2_neverundefined.egg-info/SOURCES.txt
+jinja2_neverundefined.egg-info/dependency_links.txt
+jinja2_neverundefined.egg-info/requires.txt
+jinja2_neverundefined.egg-info/top_level.txt
+src/__init__.py
