@@ -1,0 +1,12 @@
+*.py[co]
+*~
+*.jython_cache
+/.idea/
+/venv/
+/bettermdptoolbox_v2.egg-info/
+/bettermdptools.egg-info/
+/build/
+/dist/
+__pycache__
+notebooks/.ipynb_checkpoints/
+.eggs/
