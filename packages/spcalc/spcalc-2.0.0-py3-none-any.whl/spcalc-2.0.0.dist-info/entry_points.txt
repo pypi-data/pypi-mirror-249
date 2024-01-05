@@ -1,0 +1,2 @@
+[console_scripts]
+spcalc = spcalc.main:main
