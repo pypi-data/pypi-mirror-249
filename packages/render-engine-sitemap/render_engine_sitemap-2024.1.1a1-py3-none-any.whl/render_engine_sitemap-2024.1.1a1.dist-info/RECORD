@@ -1,0 +1,9 @@
+render_engine_sitemap/__init__.py,sha256=Ip2ea38eGNcfzdOhQRju_gZ4_gJz0QHRFFnXp6exdbo,50
+render_engine_sitemap/plugin.py,sha256=-4NJEFdrorM0EQd2ap4yv2FkP6SpaWurI4FG1a-aSEc,1589
+render_engine_sitemap/templates/sitemap.xml,sha256=A4zhyx2Z9RLTwTVyvK5kKpnXGRMJ4xwkf_ueI05Z5Hs,180
+render_engine_sitemap/templates/sitemap_item.xml,sha256=ofZDB8JSrtNEw4Lq2uHgnhX1xll0N_SaXfVJiJlmmg8,283
+render_engine_sitemap-2024.1.1a1.dist-info/LICENSE,sha256=fyJKX6RBEf8npMckYsDgv7IPnkOYJ0tAMVI6HQFDijQ,1070
+render_engine_sitemap-2024.1.1a1.dist-info/METADATA,sha256=hlo6I1wCC7LjDtB4X85yi-8NVohAqj5QGUlV6b2urZo,598
+render_engine_sitemap-2024.1.1a1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+render_engine_sitemap-2024.1.1a1.dist-info/top_level.txt,sha256=gT7Z2wUyLF5lZC2_U3Nx4DRkwfe0SjW8Q8ivD4Q6U7k,22
+render_engine_sitemap-2024.1.1a1.dist-info/RECORD,,
