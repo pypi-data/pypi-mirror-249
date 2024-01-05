@@ -1,0 +1,16 @@
+approxbayescomp/__init__.py,sha256=wPCaPChV1TOFs9Eo2jaZ4BUSAi0i1UYxRjJXnpab4vo,576
+approxbayescomp/attempted_fast_pdf_prior.py,sha256=DpIuosYaHTQz9NQCxBZd4VGjlejvQG9rdkfqcNydrQ0,5138
+approxbayescomp/distance.py,sha256=tl-jt05_kotgS062qGzoMFBBJ3kYkL6vjwq3S8R0c1k,2272
+approxbayescomp/new_smc.py,sha256=wfaAtuzYaw6e68T2lKFzneiXCgt5qWNfK9EA9N4J4tE,18079
+approxbayescomp/plot.py,sha256=g3NcmQSzbWntejI2jwPcvTSe81kKaN1QFgxpQjjDrLg,10719
+approxbayescomp/population.py,sha256=Ieo5PCe83epsVZBnLCE9zJd1GAevDUyN2ZSlai4kvOU,5512
+approxbayescomp/prior.py,sha256=c9HLX52ZrxN0WCG74nvPuO_UYfAoWjf7OzmrW4AMYrQ,4646
+approxbayescomp/psi.py,sha256=7ZMCMZHuLlqtZjADMreucuEkE0qWquCG0sh9vfvsdnI,1300
+approxbayescomp/simulate.py,sha256=B_iEm1Fx88VpfAGt_rGiC0RZ1YP3oHik5eaep6U-NTE,14405
+approxbayescomp/smc.py,sha256=7OK7n7_rP7pDKOdnQFLzed5snKYhYYYF5haRlsi_UrQ,16695
+approxbayescomp/utils.py,sha256=d6nvQ7RTHElClRg9xq4WojejbOc2jDzX53a5MQbg2MA,1971
+approxbayescomp/weighted.py,sha256=boFudHDH2IqDGoMc26NXVfoEQKaksgwpw5NpC1m0oNw,5528
+approxbayescomp-0.2.1.dist-info/METADATA,sha256=D6CRWqGQRblLW0hZyU2bZRzKs0C79wIvBxspCjRfwi0,7678
+approxbayescomp-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+approxbayescomp-0.2.1.dist-info/top_level.txt,sha256=wqys4aMN505HgSNiA3du8FwRXrOQlTkLEMF-jDnv3Js,16
+approxbayescomp-0.2.1.dist-info/RECORD,,
