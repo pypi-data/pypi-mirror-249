@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: ComSeg
+Version: 0.0.3
+Summary: single cell RNA profiling analysis of imaging-based spatial transcriptomics data
+Author-email: Thomas Defard <thomas.defard@mines-paristech.fr>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anndata >=0.9.2
+Requires-Dist: h5py >=3.9.0
+Requires-Dist: networkx >=2.8.4
+Requires-Dist: numba >=0.55.2
+Requires-Dist: numpy >=1.22.4
+Requires-Dist: pandas >=1.4.0
+Requires-Dist: Pillow >=10.0.1
+Requires-Dist: pyarrow >=13.0.0
+Requires-Dist: rpds-py >=0.10.3
+Requires-Dist: scanpy >=1.9.5
+Requires-Dist: scikit-image >=0.21.0
+Requires-Dist: scikit-learn >=1.0.1
+Requires-Dist: scikit-misc >=0.2.0
+Requires-Dist: scipy >=1.8.1
+Requires-Dist: seaborn >=0.12.2
+Requires-Dist: tifffile >=2023.7.10
+Requires-Dist: tinycss2 >=1.2.1
+Requires-Dist: tqdm >=4.66.1
+Requires-Dist: traitlets >=5.11.2
+Requires-Dist: umap-learn >=0.5.4
+Requires-Dist: webencodings >=0.5.1
+Requires-Dist: zipp >=3.16.2
+
+# ComSeg framework
+
+A detail documentation is available Here https://comseg.readthedocs.io/en/latest/userguide.html
+
+
+# Single cell spatial RNA profiling 
+
+ComSeg is an algorithm for single cell spatial RNA profiling in image-based transcriptomic data.
+
+It takes as input a csv with the spot coordinates and output an anndata 
+object with the  enes expression and coordinates of each cell.
+
+## Installation
+
+First, create a dedicated conda environment using Python 3.8
+
+```bash
+conda create -n ComSeg python=3.8
+conda activate ComSeg
+```
+
+To install the latest github version of this library run the following using pip
+
+```bash
+pip install git++https://github.com/tdefa/ComSeg
+```
+
+or alternatively you can clone the github repository
+
+```bash
+git clone +https://github.com/tdefa/ComSeg
+cd cnn_framework
+pip install -e .
+```
+
+A tutorial notebook can be found here : https://comseg.readthedocs.io/en/latest/userguide.html
