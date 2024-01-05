@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+scripts/toeplitz-runtests
+src/toeplitz.f90
+src/toeplitz.pyf
+toeplitz.egg-info/PKG-INFO
+toeplitz.egg-info/SOURCES.txt
+toeplitz.egg-info/dependency_links.txt
+toeplitz.egg-info/top_level.txt
