@@ -1,0 +1,12 @@
+shapely
+scikit-image
+imgaug
+pyclipper
+numpy
+opencv-python
+Pillow
+pyyaml
+torch
+torchvision
+loguru
+huggingface_hub

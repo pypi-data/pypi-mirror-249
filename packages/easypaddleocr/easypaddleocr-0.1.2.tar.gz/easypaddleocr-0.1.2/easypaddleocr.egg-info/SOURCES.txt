@@ -1,0 +1,15 @@
+LICENCE
+pyproject.toml
+readme.md
+easypaddleocr/__init__.py
+easypaddleocr/infer_cls_class.py
+easypaddleocr/infer_det_class.py
+easypaddleocr/infer_rec_class.py
+easypaddleocr/infer_system.py
+easypaddleocr/tools_utility.py
+easypaddleocr/utility.py
+easypaddleocr.egg-info/PKG-INFO
+easypaddleocr.egg-info/SOURCES.txt
+easypaddleocr.egg-info/dependency_links.txt
+easypaddleocr.egg-info/requires.txt
+easypaddleocr.egg-info/top_level.txt
