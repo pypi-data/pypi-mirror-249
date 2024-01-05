@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dorks/__init__.py
+dorks.egg-info/PKG-INFO
+dorks.egg-info/SOURCES.txt
+dorks.egg-info/dependency_links.txt
+dorks.egg-info/top_level.txt
