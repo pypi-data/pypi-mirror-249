@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+nexaai/__init__.py
+nexaai/calculator.py
+nexaai.egg-info/PKG-INFO
+nexaai.egg-info/SOURCES.txt
+nexaai.egg-info/dependency_links.txt
+nexaai.egg-info/requires.txt
+nexaai.egg-info/top_level.txt
+test/test_calculator.py
