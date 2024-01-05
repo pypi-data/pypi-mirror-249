@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+certbot_dns_domainoffensive/__init__.py
+certbot_dns_domainoffensive/dns_domainoffensive.py
+certbot_dns_domainoffensive.egg-info/PKG-INFO
+certbot_dns_domainoffensive.egg-info/SOURCES.txt
+certbot_dns_domainoffensive.egg-info/dependency_links.txt
+certbot_dns_domainoffensive.egg-info/entry_points.txt
+certbot_dns_domainoffensive.egg-info/requires.txt
+certbot_dns_domainoffensive.egg-info/top_level.txt
