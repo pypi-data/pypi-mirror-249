@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: etb-db
+Version: 0.1.7
+Summary: A very simple class for interacting with MySQL and PostgreSQL databases
+Home-page: https://github.com/HFxLhT8JqeU5BnUG/etb-db
+License: MIT
+Author: Tate Button
+Author-email: yg3bpwn0or679hau8fxi@duck.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: mysql-connector-python (>=8.2.0,<9.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.24,<3.0.0)
+Project-URL: Repository, https://github.com/HFxLhT8JqeU5BnUG/etb-db
+Description-Content-Type: text/markdown
+
+
