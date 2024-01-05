@@ -1,0 +1,7 @@
+numpy
+numba
+
+[testing]
+setuptools
+pytest
+pytest-cov
