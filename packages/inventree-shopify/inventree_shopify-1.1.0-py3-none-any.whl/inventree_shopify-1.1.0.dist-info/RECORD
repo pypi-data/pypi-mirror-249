@@ -1,0 +1,15 @@
+inventree_shopify/ShopifyPlugin.py,sha256=WlkabLB6N-_yPdUXwmui3rT06XlZTjIWB4nRMCLtEfA,10915
+inventree_shopify/__init__.py,sha256=OYJjdkcSyyCrAz0Sm4AjzkDr7z5XPMjjC-sApJoc13M,128
+inventree_shopify/admin.py,sha256=iLgJBgaHrrb6WdsY3259p7GPJ7izdNDk8qqLwhLuMxE,729
+inventree_shopify/models.py,sha256=UYDfgFKuzOhed1A8MQLUzTru872xZbIx3vKD-3QBhC4,6632
+inventree_shopify/migrations/0001_initial.py,sha256=qd-ZjJgLBUSoD8o9r87qDzN6RNdeJcrhPvOqIk4jHBw,4013
+inventree_shopify/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inventree_shopify/templates/shopify/increase.html,sha256=WaqWMLjd_UhNnpMUgOyCvTRTH8Zc0WKqloyap9gRW4k,313
+inventree_shopify/templates/shopify/index.html,sha256=mYp_14qd04ucyfj_Zf_O6nkujKjfO4Lv8y2WyD4Cj24,2259
+inventree_shopify/templates/shopify/webhooks.html,sha256=SClYAv5DQyOWya5qi-0qIre4nxfZe5viPd9zAzpzQrI,369
+inventree_shopify-1.1.0.dist-info/LICENSE,sha256=sD0un9VyjovrvLuE-wBwtdUeqpqPg0icwgLNoHkbqjo,1093
+inventree_shopify-1.1.0.dist-info/METADATA,sha256=x0E5tGNAKV8MjzRYQGZ_uQP5XDMn5DB-cK2wCNMqeKU,2640
+inventree_shopify-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+inventree_shopify-1.1.0.dist-info/entry_points.txt,sha256=4aGhWI2IgQLtFoH1Z97Z-APigJg2zQDBjqWg4S50ngo,72
+inventree_shopify-1.1.0.dist-info/top_level.txt,sha256=S_SZTOG0LYcG2a_FNjV8ihD7UYvSyifKwaqsl7dEuMA,18
+inventree_shopify-1.1.0.dist-info/RECORD,,
