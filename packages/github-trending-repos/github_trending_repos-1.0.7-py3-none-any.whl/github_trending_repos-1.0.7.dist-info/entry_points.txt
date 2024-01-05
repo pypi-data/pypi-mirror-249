@@ -1,0 +1,2 @@
+[console_scripts]
+github-trending-repos = src.gtr:main
