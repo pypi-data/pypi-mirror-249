@@ -1,0 +1,10 @@
+nice_gui_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nice_gui_utils/keycloak_js/__init__.py,sha256=nYYXBFfPcoopOuYQdML-WP320pV2Fylh7gZPFaozOwg,48
+nice_gui_utils/keycloak_js/keycloak.py,sha256=TAvJkVQitcfSTZkF144L6kZ4o04Q-orOMK6yymweYYQ,1436
+nice_gui_utils/router/__init__.py,sha256=EOWZe3jfxL2R2XohV_K0C7DGAWDqBcIl4SJfFY7_OJs,28
+nice_gui_utils/router/router.py,sha256=CDesWeUnye8jAakmgZYMkNVrEMv10eUQTKlb6up1mVc,1721
+nice_gui_utils-0.2.1.dist-info/LICENSE,sha256=4ujWGyOYQVrU3zLmJtRa1zVKaieLxsTDiyoCjS6KWgo,1075
+nice_gui_utils-0.2.1.dist-info/METADATA,sha256=_kccBoet7kuiYc2qdabE_J_EfFNG2hGWTv1LI7v6-uA,715
+nice_gui_utils-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nice_gui_utils-0.2.1.dist-info/top_level.txt,sha256=ZKNt-TKLlp2BbMeJGGkE49Y_lVaUg22u7SomRmRyyFI,15
+nice_gui_utils-0.2.1.dist-info/RECORD,,
