@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: supergraph
+Version: 0.0.6
+Summary: Supergraph compiler
+License: Apache2.0
+Author: bheijden 
+Author-email: b.heijden@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: experiments
+Provides-Extra: paper
+Requires-Dist: dill (>=0.3.7,<0.4.0) ; extra == "experiments"
+Requires-Dist: ipywidgets (>=8.0.7,<9.0.0) ; extra == "experiments"
+Requires-Dist: jupyter (>=1.0.0,<2.0.0) ; extra == "experiments"
+Requires-Dist: jupyterlab (>=4.0.3,<5.0.0) ; extra == "experiments"
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0) ; extra == "paper" or extra == "experiments"
+Requires-Dist: networkx (>=3.1.0,<4.0.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0) ; extra == "experiments"
+Requires-Dist: seaborn (>=0.12.2,<0.13.0) ; extra == "paper"
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Requires-Dist: wandb (>=0.15.4,<0.16.0) ; extra == "experiments"
