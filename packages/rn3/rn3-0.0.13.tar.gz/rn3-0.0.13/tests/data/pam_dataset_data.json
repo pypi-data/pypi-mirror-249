@@ -1,0 +1,308 @@
+{
+  "idDataSetSchema": "645255c7c7a9e3000160b2c2",
+  "description": null,
+  "nameDatasetSchema": "Reference data",
+  "tableSchemas": [
+    {
+      "idTableSchema": "64525605c7a9e3000160b355",
+      "description": "",
+      "nameTableSchema": "Sector",
+      "readOnly": true,
+      "recordSchema": {
+        "idRecordSchema": "64525605c7a9e3000160b356",
+        "fieldSchema": [
+          {
+            "id": "64525605c7a9e3000160b357",
+            "description": null,
+            "idRecord": "64525605c7a9e3000160b356",
+            "name": "id",
+            "type": "NUMBER_INTEGER",
+            "codelistItems": [],
+            "required": true,
+            "pk": true,
+            "pkReferenced": true,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": null,
+            "maxSize": 20,
+            "readOnly": false,
+            "ignoreCaseInLinks": null
+          },
+          {
+            "id": "64525605c7a9e3000160b358",
+            "description": "",
+            "idRecord": "64525605c7a9e3000160b356",
+            "name": "sector",
+            "type": "TEXT",
+            "codelistItems": [],
+            "required": false,
+            "pk": false,
+            "pkReferenced": null,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": [],
+            "maxSize": 20,
+            "readOnly": false,
+            "ignoreCaseInLinks": null
+          }
+        ]
+      },
+      "toPrefill": true,
+      "notEmpty": true,
+      "fixedNumber": false
+    },
+    {
+      "idTableSchema": "64525607c7a9e3000160b359",
+      "description": "",
+      "nameTableSchema": "Objectives",
+      "readOnly": true,
+      "recordSchema": {
+        "idRecordSchema": "64525607c7a9e3000160b35a",
+        "fieldSchema": [
+          {
+            "id": "64525607c7a9e3000160b35b",
+            "description": null,
+            "idRecord": "64525607c7a9e3000160b35a",
+            "name": "Id",
+            "type": "NUMBER_INTEGER",
+            "codelistItems": [],
+            "required": true,
+            "pk": true,
+            "pkReferenced": true,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": [],
+            "maxSize": 20,
+            "readOnly": false,
+            "ignoreCaseInLinks": null
+          },
+          {
+            "id": "64525607c7a9e3000160b35c",
+            "description": null,
+            "idRecord": "64525607c7a9e3000160b35a",
+            "name": "Sector",
+            "type": "LINK",
+            "codelistItems": null,
+            "required": false,
+            "pk": false,
+            "pkReferenced": null,
+            "referencedField": {
+              "idDatasetSchema": "645255c7c7a9e3000160b2c2",
+              "idPk": "64525605c7a9e3000160b357",
+              "labelId": "64525605c7a9e3000160b358",
+              "linkedConditionalFieldId": null,
+              "masterConditionalFieldId": null,
+              "dataflowId": null,
+              "tableSchemaName": null,
+              "fieldSchemaName": null
+            },
+            "pkMustBeUsed": false,
+            "pkHasMultipleValues": false,
+            "validExtensions": [],
+            "maxSize": 20,
+            "readOnly": false,
+            "ignoreCaseInLinks": null
+          },
+          {
+            "id": "64525607c7a9e3000160b35d",
+            "description": "",
+            "idRecord": "64525607c7a9e3000160b35a",
+            "name": "Objective",
+            "type": "TEXT",
+            "codelistItems": [],
+            "required": false,
+            "pk": false,
+            "pkReferenced": false,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": [],
+            "maxSize": 20,
+            "readOnly": false,
+            "ignoreCaseInLinks": null
+          }
+        ]
+      },
+      "toPrefill": true,
+      "notEmpty": true,
+      "fixedNumber": false
+    },
+    {
+      "idTableSchema": "64525609c7a9e3000160b35e",
+      "description": "",
+      "nameTableSchema": "UnionPolicies",
+      "readOnly": true,
+      "recordSchema": {
+        "idRecordSchema": "64525609c7a9e3000160b35f",
+        "fieldSchema": [
+          {
+            "id": "64525609c7a9e3000160b360",
+            "description": null,
+            "idRecord": "64525609c7a9e3000160b35f",
+            "name": "Id",
+            "type": "NUMBER_INTEGER",
+            "codelistItems": [],
+            "required": true,
+            "pk": true,
+            "pkReferenced": true,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": [],
+            "maxSize": 20,
+            "readOnly": false,
+            "ignoreCaseInLinks": null
+          },
+          {
+            "id": "64525609c7a9e3000160b361",
+            "description": null,
+            "idRecord": "64525609c7a9e3000160b35f",
+            "name": "BlockName",
+            "type": "TEXT",
+            "codelistItems": [],
+            "required": false,
+            "pk": null,
+            "pkReferenced": null,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": null,
+            "maxSize": 20,
+            "readOnly": false,
+            "ignoreCaseInLinks": null
+          },
+          {
+            "id": "64525609c7a9e3000160b362",
+            "description": "",
+            "idRecord": "64525609c7a9e3000160b35f",
+            "name": "UnionPolicy",
+            "type": "TEXT",
+            "codelistItems": [],
+            "required": false,
+            "pk": false,
+            "pkReferenced": false,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": [],
+            "maxSize": 20,
+            "readOnly": false,
+            "ignoreCaseInLinks": null
+          }
+        ]
+      },
+      "toPrefill": true,
+      "notEmpty": true,
+      "fixedNumber": false
+    },
+    {
+      "idTableSchema": "6452640bd02d840001156da0",
+      "description": null,
+      "nameTableSchema": "Dimensions",
+      "readOnly": true,
+      "recordSchema": {
+        "idRecordSchema": "6452640bd02d840001156da1",
+        "fieldSchema": [
+          {
+            "id": "64526416dd6daa0001cfbe35",
+            "description": "",
+            "idRecord": "6452640bd02d840001156da1",
+            "name": "id",
+            "type": "NUMBER_INTEGER",
+            "codelistItems": [],
+            "required": true,
+            "pk": true,
+            "pkReferenced": true,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": [],
+            "maxSize": 100,
+            "readOnly": false,
+            "ignoreCaseInLinks": false
+          },
+          {
+            "id": "64526429117d470001c6ded5",
+            "description": "",
+            "idRecord": "6452640bd02d840001156da1",
+            "name": "description",
+            "type": "TEXT",
+            "codelistItems": null,
+            "required": true,
+            "pk": false,
+            "pkReferenced": null,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": [],
+            "maxSize": 100,
+            "readOnly": false,
+            "ignoreCaseInLinks": false
+          }
+        ]
+      },
+      "toPrefill": true,
+      "notEmpty": true,
+      "fixedNumber": false
+    },
+    {
+      "idTableSchema": "64528844d02d840001156da3",
+      "description": null,
+      "nameTableSchema": "Currencies",
+      "readOnly": true,
+      "recordSchema": {
+        "idRecordSchema": "64528844d02d840001156da4",
+        "fieldSchema": [
+          {
+            "id": "64528850dd6daa0001cfbe36",
+            "description": null,
+            "idRecord": "64528844d02d840001156da4",
+            "name": "id",
+            "type": "NUMBER_INTEGER",
+            "codelistItems": [],
+            "required": true,
+            "pk": true,
+            "pkReferenced": true,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": null,
+            "maxSize": 100,
+            "readOnly": false,
+            "ignoreCaseInLinks": false
+          },
+          {
+            "id": "64528859117d470001c6ded8",
+            "description": "",
+            "idRecord": "64528844d02d840001156da4",
+            "name": "currency",
+            "type": "TEXT",
+            "codelistItems": [],
+            "required": false,
+            "pk": false,
+            "pkReferenced": null,
+            "referencedField": null,
+            "pkMustBeUsed": null,
+            "pkHasMultipleValues": null,
+            "validExtensions": [],
+            "maxSize": 100,
+            "readOnly": false,
+            "ignoreCaseInLinks": false
+          }
+        ]
+      },
+      "toPrefill": true,
+      "notEmpty": true,
+      "fixedNumber": false
+    }
+  ],
+  "webform": {
+    "name": "Governance Regulation Art. 13",
+    "type": "PAMS"
+  },
+  "availableInPublic": true,
+  "referenceDataset": true
+}

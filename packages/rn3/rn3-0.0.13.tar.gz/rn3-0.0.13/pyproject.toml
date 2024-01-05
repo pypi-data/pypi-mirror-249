@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rn3"
+version = "0.0.13"
+dependencies = [
+    "numpy", "requests", "pandas", "XlsxWriter", "openpyxl", "typing-extensions", "sqlalchemy", "pyodbc"
+]
+
+authors = [
+  { name="Marc Ridler", email="marc-etienne.ridler@eea.europa.eu" },
+]
+description = "Useful library"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 2 - Pre-Alpha",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+dev = ["pytest","ruff","black","mkdocs","mkdocstrings[python]", "mkdocs-material"]
+test= ["pytest"]
+
+[tool.ruff]
+extend-exclude = ["tests", "rn3/startup_script.py"]
