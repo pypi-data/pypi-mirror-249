@@ -1,0 +1,8 @@
+setup.py
+import_for_gcp/__init__.py
+import_for_gcp/import_for_gcp.py
+import_for_gcp.egg-info/PKG-INFO
+import_for_gcp.egg-info/SOURCES.txt
+import_for_gcp.egg-info/dependency_links.txt
+import_for_gcp.egg-info/requires.txt
+import_for_gcp.egg-info/top_level.txt
