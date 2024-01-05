@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: api-python-template
+Version: 0.1.0
+Summary: API Template
+Author: Esther Fernández Barchín
+Author-email: estherfb_3397@hotmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (==0.108.*)
+Requires-Dist: python-decouple (==3.8)
+Requires-Dist: uvicorn (==0.25.*)
+Description-Content-Type: text/markdown
+
+# package-python-template
+Template for python package creation
+
