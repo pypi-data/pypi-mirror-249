@@ -1,0 +1,3 @@
+[console_scripts]
+countunique = tar_mak_unique_character_counter:main
+hello = tar_mak_unique_character_counter:hello_world
