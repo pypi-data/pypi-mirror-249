@@ -1,0 +1,15 @@
+poja/__init__.py,sha256=Wl0gjte4n1MTdNerUrxNNQPqyu2D_EENTSFAquKClLA,26
+poja/__main__.py,sha256=grX-Ju9vI_Y-OvjOCMTE_Jo3x6CXo8Va-jxKSe_YSaE,45
+poja/core.py,sha256=bu0h_4qkr2JgAxAtB8_RdVl-R2mS0UTmTadQpdehePQ,13882
+poja/version.py,sha256=haDVEjuVOLrKL4-qWEobTA63xJiu-vmg3RqvySVqtjA,488
+poja/database/__init__.py,sha256=ooFvp88K5rRf_InAcMyCPv7CN-K0al_fImsBHl3WY6w,3649
+poja/genclients/__init__.py,sha256=SiQCOhFVq9xDjRtGBq_Me4pqwRw1pmpCtWQZ-oAOp6k,2015
+poja/mygit/__init__.py,sha256=OgA7YGzibp0jjdg-cDF0fgZDyJgRWX9_vPyyaNloceI,282
+poja/myrich/__init__.py,sha256=8CC1WNEji0bfWmPP7FHJr810C5hoePo-XlK52W052fc,429
+poja/sed/__init__.py,sha256=GCT3rUkpBWZhXzBtw5bJGyneOVhzxGg6ZijHKNw65OU,476
+poja/vpcscoped/__init__.py,sha256=mg8TL8YTWj3qlf61HGB8lc73LNrIodK-d8tUqrc71e8,2236
+poja-10.1.0.dist-info/LICENSE,sha256=SAh422ifByhAbzUtuW31gUNg3cj25V95xCryUnVUAMU,1097
+poja-10.1.0.dist-info/METADATA,sha256=cWbCPu6_zl4pjE1orBx21S1HGbC74jr0nVNtaszEZv4,5565
+poja-10.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+poja-10.1.0.dist-info/top_level.txt,sha256=TKNqytWTvaYO0SdUr-eanh7KAWZps3hrzEgq86Egp0w,5
+poja-10.1.0.dist-info/RECORD,,
