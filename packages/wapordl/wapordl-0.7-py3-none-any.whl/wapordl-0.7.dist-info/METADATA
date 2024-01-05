@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: wapordl
+Version: 0.7
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas >=2.1.0
+Requires-Dist: numpy
+Requires-Dist: gdal >=3.4.0
+Requires-Dist: shapely >=2.0.0
+Requires-Dist: tqdm
+
