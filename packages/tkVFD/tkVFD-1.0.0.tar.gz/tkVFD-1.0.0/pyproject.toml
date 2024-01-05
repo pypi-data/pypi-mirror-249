@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tkVFD"
+version = "01.0.0"
+dependencies = [
+"pillow",
+]
+requires-python = ">=3.11"
+authors = [
+  {name = "Andrew G.", email = "andrewdget@gmail.com"},
+]
+maintainers = [
+  {name = "Andrew G.", email = "andrewdget@gmail.com"},
+]
+description = "The tkVFD module allows for easy inclusion of customizable segmented alpha-numeric displays into any Tkinter application and supports both 16-segment and 7-segment geometries."
+readme = "README.md"
+license = {file = "LICENSE.md"}
+keywords = ["tkinter", "tk", "VFD", "Vacuum Fluorescent Display", "LCD", "Liquid Crystal Display", "python", "display"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = ["Resources"]
+
+[tool.setuptools.package-data]
+"*" = ["*.png"]
+
+[project.urls]
+Homepage = "https://github.com/andrewdget/tkVFD"
+Issues = "https://github.com/andrewdget/tkVFD/issues"
