@@ -1,0 +1,5 @@
+unstructured
+unstructured[pdf]
+langchain
+faiss-cpu
+transformers
