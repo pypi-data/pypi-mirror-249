@@ -1,0 +1,6 @@
+ptyp
+itry
+
+[dev]
+numpy
+pandas
