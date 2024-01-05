@@ -1,0 +1,4 @@
+[console_scripts]
+cifscloak = cifscloak.cifscloak:main
+cifsfs = cifscloak.cifscloak:main
+
