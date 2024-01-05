@@ -1,0 +1,9 @@
+README.md
+setup.py
+tktable/Table.py
+tktable/__init__.py
+tktable.egg-info/PKG-INFO
+tktable.egg-info/SOURCES.txt
+tktable.egg-info/dependency_links.txt
+tktable.egg-info/requires.txt
+tktable.egg-info/top_level.txt

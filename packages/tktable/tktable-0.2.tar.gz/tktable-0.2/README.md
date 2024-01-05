@@ -1,0 +1,109 @@
+# tktable
+
+**tktable** is a Python library designed to simplify the creation of beautiful tables in Tkinter GUI applications.
+
+## Introduction
+
+Developers using Tkinter often find creating tables natively to be challenging and time-consuming. Importing **ttk.TreeView** and writing numerous lines of unnecessary code is a common frustration. **tktable** offers a solution, allowing you to create attractive tables with just a few lines of code, enhancing the simplicity and ease of Python development.
+
+## Installation
+
+Installing **tktable** is straightforward. Simply execute the following pip command:
+
+```bash
+pip install tktable
+```
+
+## Usage
+
+Using **tktable** is intuitive and requires just a few steps.
+
+### Step 1
+
+Import the `Table` class from the **tktable** package:
+
+```python
+from tktable import Table 
+```
+
+### Step 2
+
+Create an instance of the `Table` class and provide the necessary arguments:
+
+```python
+table_headers = ("Name", "Age", "Email")
+mytable = Table(root, table_headers)
+mytable.pack() 
+```
+
+### Step 3
+
+Insert rows into the created table:
+
+```python
+row1 = ("Jack", 12, "jack@gmail.com")
+mytable.insert_row(row1)
+row2 = ("John", 15, "john@gmail.com")
+mytable.insert_row(row2) 
+```
+
+## Customization Options
+
+Enhance the appearance of your table by customizing it with optional arguments in the `Table` class constructor.
+
+For example, to make the headers bold:
+
+```python
+mytable = Table(root, table_headers, headings_bold=True)
+```
+
+Adjust column width:
+
+```python
+mytable = Table(root, table_headers, col_width=100)
+```
+
+Change the font size of the table content:
+
+```python
+mytable = Table(root, table_headers, font_size=12)
+```
+
+Modify the font face of the table content:
+
+```python
+mytable = Table(root, table_headers, font_face="Times New Roman")
+```
+
+Stay tuned for additional customization options in future releases!
+
+## Sample Application
+
+```python
+import tkinter as tk
+from tktable import Table
+
+root = tk.Tk()
+root.geometry("800x400")
+
+table_headers = ("Name", "Age", "Email")
+mytable = Table(root, table_headers, col_width=150, headings_bold=True)
+mytable.pack(pady=100)
+
+row = ("Nitin", 18, "ngarg@mail.com")
+mytable.insert_row(row)
+
+root.mainloop()
+```
+
+## Contributions
+
+Currently, the module's source code is not open-source. After publishing 2-3 more releases, we plan to open-source it. Stay tuned for updates!
+
+## Developer Info
+
+Developed with great love by [Nitin Garg](https://nitingarg.vercel.app).
+
+Check out my [GitHub](https://www.github.com/nitingargg) for more exciting projects!
+
+**Thank you!**
