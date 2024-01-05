@@ -1,0 +1,9 @@
+fitter/__init__.py,sha256=2XErGUs4wI84FTzNf5en2XkONQchkSMH0GnQsDUKGd4,403
+fitter/fitter.py,sha256=1s1qA2VhbkjFhPRVUQITXqQBwNJR-QxMPshO-q3UKek,19341
+fitter/histfit.py,sha256=hXoX10PzeHFjmsKgNkGNV6bT_GfOpHS9H81Ivp5HIZU,5502
+fitter/main.py,sha256=KEjhJsMNN0VG1n32cT-qsZ34e0GFkc0o81T2AGlE0sY,3977
+fitter-1.7.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fitter-1.7.0.dist-info/METADATA,sha256=jWFUW--ZQJzNVeW1NxYR9_YCS2ZEuJlCabqDFtC1UM4,8176
+fitter-1.7.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fitter-1.7.0.dist-info/entry_points.txt,sha256=iE5bTVB9CXGzGg7HmaO7ewgiCQZHVzAaxqOqCmL4vDI,43
+fitter-1.7.0.dist-info/RECORD,,
