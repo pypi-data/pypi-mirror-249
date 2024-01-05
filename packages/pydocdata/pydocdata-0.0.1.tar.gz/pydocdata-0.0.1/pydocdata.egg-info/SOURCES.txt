@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.py
+docdata/__init__.py
+docdata/mmddata.py
+docdata/yamldata.py
+pydocdata.egg-info/PKG-INFO
+pydocdata.egg-info/SOURCES.txt
+pydocdata.egg-info/dependency_links.txt
+pydocdata.egg-info/requires.txt
+pydocdata.egg-info/top_level.txt
+tests/test_mmddata.py
+tests/test_yamldata.py

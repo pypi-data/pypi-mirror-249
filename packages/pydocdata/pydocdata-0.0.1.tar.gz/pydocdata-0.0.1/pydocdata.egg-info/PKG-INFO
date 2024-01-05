@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pydocdata
+Version: 0.0.1
+Summary: A better Meta-Data handler for lightweight markup languages.
+Home-page: https://github.com/waylan/docdata
+Author: Waylan Limberg
+Author-email: waylan.limberg@icloud.com
+License: BSD
+License-File: LICENSE.md
