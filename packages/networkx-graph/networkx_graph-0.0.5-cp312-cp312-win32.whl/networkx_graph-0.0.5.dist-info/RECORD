@@ -1,0 +1,8 @@
+networkx_graph/__init__.py,sha256=1q30FPhXQ3VbLuDbdrrC03V3igikl8BpFSLCe5FBckA,1072
+networkx_graph/__main__.py,sha256=-D14UI3AyhNf_qKM_Yf2Ia14MLmXQJB47AnVeBI__L8,289
+networkx_graph/_core.cp312-win32.pyd,sha256=vV8MhE34JBTLpoY2Ou1aWyhSJoXPGJn5gBYLbYQACdc,464896
+networkx_graph-0.0.5.dist-info/METADATA,sha256=V8QPxpuaV5EQG4BHTIR63zs8b59vGhoLWJZdQg8Mapk,843
+networkx_graph-0.0.5.dist-info/WHEEL,sha256=RYLtPQfZ15VpnBeyOx0tvFeee50MixR1msSouKxlHU8,101
+networkx_graph-0.0.5.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+networkx_graph-0.0.5.dist-info/licenses/LICENSE,sha256=N_R9-5l0U5HZyk0-el1LtB0nxSXttAIy78h4x_w_bgk,2218
+networkx_graph-0.0.5.dist-info/RECORD,,
