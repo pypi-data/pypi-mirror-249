@@ -1,0 +1,15 @@
+iterpy/__init__.py,sha256=buiXKRp7zevoQuHFi8v8oo4hc2yN60M_20tx88gZ8O8,52
+iterpy/_generate_pyi.py,sha256=iWkKBU6TfarNL-rC8XXHXbarBUBxdGon1VR8iht5hzQ,1339
+iterpy/_iter.py,sha256=2029TYgu-hzsOsi_t_PHkcUpjs_xh2UBRUBrIkAkLxY,3115
+iterpy/_iter.pyi,sha256=2-A2m_vypvGdRmYvHDwglOoddlz6vZkMdANCiSeZqfM,2672
+iterpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iterpy/test_iter.py,sha256=38nngbtp1Mz2Q7lpNLpkVoCcdccldJoSt68xvyzknPg,3089
+iterpy/benchmark/utils.py,sha256=vq3DpeETOdv7-kisLjyZJrpmblN0bmenu8gNzmDRKeo,1349
+iterpy/benchmark/query_1/input_data.py,sha256=i3wwwJef_HD31Gt5sosNLpqJT2nxbU8WsBdu3Jpy50k,466
+iterpy/benchmark/query_1/iterators_q1.py,sha256=N4cotgDWRaeAzyNiwp718Q3NNHW1aAnvXZCK0QtsYjY,2983
+iterpy/benchmark/query_1/polars_q1.py,sha256=SvsIuJWpJuUkC_5wSFgLlIOux5u-8hL9__aTXHgR1vQ,1367
+iterpy-0.21.0.dist-info/LICENSE,sha256=dYOLlaCjPtQ1wWaHKRYlmKsBeIOYZbzMfPANBaRd77Y,1073
+iterpy-0.21.0.dist-info/METADATA,sha256=IPrscvaW_cqLw2grQu4LTjsDn37KTd7hQy3ZlSZufCY,6250
+iterpy-0.21.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+iterpy-0.21.0.dist-info/top_level.txt,sha256=erew-PaRSLHvYd_cpuzTDOTsSt4ItBHhPmsRiR_3tfs,7
+iterpy-0.21.0.dist-info/RECORD,,
