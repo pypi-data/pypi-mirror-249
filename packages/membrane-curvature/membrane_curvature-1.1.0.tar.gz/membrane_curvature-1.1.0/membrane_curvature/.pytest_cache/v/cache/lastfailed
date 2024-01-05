@@ -1,0 +1,3 @@
+{
+  "tests/test_membrane_curvature.py::TestMembraneCurvature": true
+}
