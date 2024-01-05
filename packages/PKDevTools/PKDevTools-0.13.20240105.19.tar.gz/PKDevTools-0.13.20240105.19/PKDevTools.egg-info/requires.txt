@@ -1,0 +1,13 @@
+argparse
+bs4
+mistletoe
+pandas
+python-dotenv
+python-telegram-bot
+pytz
+requests
+requests_cache
+tabulate
+telegram
+urllib3
+yfinance==0.1.87
