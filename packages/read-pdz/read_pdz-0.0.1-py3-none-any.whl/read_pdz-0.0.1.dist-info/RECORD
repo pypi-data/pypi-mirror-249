@@ -1,0 +1,9 @@
+read_pdz/__init__.py,sha256=D1Xn5IkwAlOLXLfvJnxYJBVAu0_8Ny0qSmyZng9wJXo,45
+read_pdz/_modidx.py,sha256=diyopqFYtGZjvlQvZIpQc9PMWbMI1hYwYJTDHAjNrfY,1600
+read_pdz/reader.py,sha256=hqo0_pf1eyupIHMR0Ys-8z7IbHxRbAI8r8pvzPd6ugk,9560
+read_pdz-0.0.1.dist-info/LICENSE,sha256=-8jCMooJTBLZjkpvCiblyx20C01zGowxBGOC-FPx57w,1062
+read_pdz-0.0.1.dist-info/METADATA,sha256=oB0T_a5ayJVDtHt_L9x-LYjozenmmBAC6qYYYbOgDNo,2152
+read_pdz-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+read_pdz-0.0.1.dist-info/entry_points.txt,sha256=LZfvhpeGmlyCr7DGq8bThgXwx2DQmxxLhlZWxYp1TvE,38
+read_pdz-0.0.1.dist-info/top_level.txt,sha256=N_NzVZjeloHrj5ebdWdxVmhlY0AK2xrVhlFMeApGpQM,9
+read_pdz-0.0.1.dist-info/RECORD,,
