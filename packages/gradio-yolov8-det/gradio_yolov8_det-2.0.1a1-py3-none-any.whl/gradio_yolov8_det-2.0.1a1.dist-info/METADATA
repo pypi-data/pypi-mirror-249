@@ -1,0 +1,264 @@
+Metadata-Version: 2.1
+Name: gradio-yolov8-det
+Version: 2.0.1a1
+Summary: 基于 Gradio 的 YOLOv8 通用计算机视觉演示系统
+Author: 曾逸夫 Zeng Yifu
+Maintainer: 曾逸夫 Zeng Yifu
+License: GPL-3.0
+Project-URL: Source, https://gitee.com/CV_Lab/gradio-yolov8-det
+Keywords: YOLOv8,Gradio,目标检测,图像分割,图像分类
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click >=8.1
+Requires-Dist: ultralytics >=8.0.232
+Requires-Dist: gradio >=4.12.0
+Requires-Dist: gradio-imageslider
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: pillow >=10.1.0
+Requires-Dist: wget >=3.2
+Requires-Dist: rich >=12.2.0
+
+<p align="center">
+<a href="https://gitee.com/CV_Lab/gradio-yolov8-det">
+<img src="https://pycver.gitee.io/ows-pics/imgs/gradio_yolov8_det_logo.png" alt="Simple Icons" >
+</a>
+<p align="center">
+    基于 Gradio 的 YOLOv8 通用计算机视觉演示系统
+</p>
+<p align="center">
+    集成目标检测、图像分割和图像分类于一体，可自定义检测模型
+</p>
+</p>
+<p align="center">
+<a href="./CodeCheck.md"><img src="https://img.shields.io/badge/CodeCheck-passing-success" alt="code check" /></a>
+<a href="https://gitee.com/CV_Lab/gradio-yolov8-det/releases/v2.0.0"><img src="https://img.shields.io/badge/Releases-v2.0.0-green" alt="Releases Version" /></a>
+<a href="https://huggingface.co/"><img src="https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-blue" alt="Hugging Face Spaces" /></a>
+<a href="https://huggingface.co/spaces"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue" alt="Hugging Face Spaces" /></a>
+<a href="https://gitee.com/CV_Lab/gradio-yolov8-det/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-GPL--3.0-blue" alt="License" /></a>
+</p>
+<p align="center">
+<a href="https://github.com/ultralytics/ultralytics"><img src="https://img.shields.io/badge/ultralytics-v8.0.232+-blue" alt="YOLOv8 Version" /></a>
+<a href="https://github.com/gradio-app/gradio"><img src="https://img.shields.io/badge/Gradio-4.12.0+-orange" alt="Gradio Version" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python Version" /></a>
+<a href="https://pypi.org/project/torch/"><img src="https://img.shields.io/badge/torch-2.1.2%2B-important?logo=pytorch" alt="Torch Version" /></a>
+<a href="https://pypi.org/project/torchvision/"><img src="https://img.shields.io/badge/torchvision-0.16.2%2B-green?logo=pytorch" alt="TorchVision Version" /></a>
+<a href="https://github.com/pre-commit/pre-commit"><img src="https://img.shields.io/badge/checks-pre--commit-brightgreen" alt="pre-commit"></a>
+</p>
+<p align="center">
+<a href='https://gitee.com/CV_Lab/gradio-yolov8-det/stargazers'><img src='https://gitee.com/CV_Lab/gradio-yolov8-det/badge/star.svg?theme=dark' alt='star'></img></a>
+<a href='https://gitee.com/CV_Lab/gradio-yolov8-det/members'><img src='https://gitee.com/CV_Lab/gradio-yolov8-det/badge/fork.svg?theme=dark' alt='fork'></img></a>
+</p>
+
+## 🚀 作者简介
+
+曾逸夫，从事人工智能研究与开发；主研领域：计算机视觉；[YOLOv8官方开源项目代码贡献人](https://github.com/ultralytics/ultralytics/graphs/contributors)；[YOLOv5官方开源项目代码贡献人](https://github.com/ultralytics/yolov5/graphs/contributors)；[Gradio官方开源项目代码贡献人](https://github.com/gradio-app/gradio/graphs/contributors)
+
+❤️  Github：https://github.com/Zengyf-CVer
+
+<h2 align="center">🚀更新走势</h2>
+
+- `2024-01-04` **⚡ [Gradio YOLOv8 Det v2.0.0](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v2.0.0)正式上线**
+- `2024-01-03` **⚡ [Gradio YOLOv8 Det v1.3.1](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v1.3.1)正式上线**
+- `2023-12-15` **⚡ [Gradio YOLOv8 Det v1.3.0](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v1.3.0)正式上线**
+- `2023-12-7` **⚡ [Gradio YOLOv8 Det v1.2.1](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v1.2.1)正式上线**
+- `2023-11-16` **⚡ [Gradio YOLOv8 Det v1.2.0](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v1.2.0)正式上线**
+- `2023-11-04` **⚡ [Gradio YOLOv8 Det v1.1.0](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v1.1.0)正式上线**
+- `2023-11-01` **⚡ [Gradio YOLOv8 Det v1.0.0](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v1.0.0)正式上线**
+- `2023-10-21` **⚡ [Gradio YOLOv8 Det v0.2.5](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v0.2.5)正式上线**
+- `2023-08-14` **⚡ [Gradio YOLOv8 Det v0.2.4](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/tag/v0.2.4)正式上线**
+- `2023-04-14` **⚡ [Gradio YOLOv8 Det v0.2.3](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/v0.2.3)正式上线**
+- `2023-01-23` **⚡ [Gradio YOLOv8 Det v0.2.2](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/v0.2.2)正式上线**
+- `2023-01-22` **⚡ [Gradio YOLOv8 Det v0.2](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/v0.2)正式上线**
+- `2023-01-15` **⚡ [Gradio YOLOv8 Det v0.1](https://gitee.com/CV_Lab/gradio-yolov8-det/releases/v0.1)正式上线**
+
+<h2 align="center">🤗在线Demo</h2>
+
+### ❤️ 快速体验
+
+本项目提供了Gradio YOLOv8 Det v1.3.1版本的**在线demo**，点击下面的logo，进入**Hugging Face Spaces**中快速体验：
+
+如果体验**Gradio YOLOv8 Det v2.x** 以上版本 请使用`pip install gradio-yolov8-det` 安装。
+
+<div align="center" >
+<a href="https://huggingface.co/spaces/Zengyf-CVer/Gradio-YOLOv8-Det">
+<img src="https://pycver.gitee.io/ows-pics/imgs/huggingface_logo.png">
+</a>
+</div>
+
+<h2 align="center">💎项目流程与用途</h2>
+
+### 📌 项目整体流程
+
+<div align="center" >
+<img src="https://pycver.gitee.io/ows-pics/imgs/gradio_yolov8_det_v1_1_workflow.png">
+</div>
+
+### 📌 项目示例
+
+#### ❤️ Gradio YOLOv8 Det v2.0.0 界面与检测效果（目标检测）
+
+<div align="center" >
+<img src="https://pycver.gitee.io/ows-pics/imgs/gyd_v2_det.png">
+</div>
+
+#### ❤️ Gradio YOLOv8 Det v2.0.0 界面与检测效果（图像分割）
+
+<div align="center" >
+<img src="https://pycver.gitee.io/ows-pics/imgs/gyd_v2_seg.png">
+</div>
+
+#### ❤️ Gradio YOLOv8 Det v2.0.0 界面与检测效果（图像分类）
+
+<div align="center" >
+<img src="https://pycver.gitee.io/ows-pics/imgs/gyd_v2_clas.png">
+</div>
+
+#### ❤️ 快速体验
+
+本项目提供了6个**目标检测和图像分割的图片示例**，用户可以快速体验检测与分割效果：
+
+<div align="center" >
+<img src="https://pycver.gitee.io/ows-pics/imgs/gyd_v2_det_examples.png">
+</div>
+<div align="center" >
+示例界面
+</div>
+
+本项目提供了6个**图像分类的图片示例**，用户可以快速体验检测与分割效果：
+
+<div align="center" >
+<img src="https://pycver.gitee.io/ows-pics/imgs/gyd_v2_clas_examples.png">
+</div>
+<div align="center" >
+示例界面
+</div>
+
+本项目提供了**在线版的安装教程和使用教程**，用户可以快速查看安装和使用教程：
+
+<div align="center" >
+<img src="https://pycver.gitee.io/ows-pics/imgs/gyd_v2_tutorials.png">
+</div>
+<div align="center" >
+示例界面
+</div>
+
+<h2 align="center">💡项目结构</h2>
+
+```
+.
+├──  gradio-yolov8-det											# 项目名称
+│    ├── gradio_yolov8_det										# 项目核心文件
+│    │   ├── model_config										# 模型配置
+│    │   │   ├── model_name_all.yaml							# YOLOv8 模型名称（yaml版）
+│    │   │   └── model_name_custom.yaml							# 自定义模型名称（yaml版）
+│    │   ├── cls_name											# 类别名称
+│    │   │   ├── cls_name_zh.yaml								# 类别名称文件（yaml版-中文）
+│    │   │   ├── cls_imagenet_name_zh.yaml						# ImageNet类别名称文件（yaml版-中文）
+│    │   │   ├── cls_name_en.yaml								# 类别名称文件（yaml版-英文）
+│    │   │   ├── cls_name_ru.yaml								# 类别名称文件（yaml版-俄语）
+│    │   │   ├── cls_name_es.yaml								# 类别名称文件（yaml版-西班牙语）
+│    │   │   ├── cls_name_ar.yaml								# 类别名称文件（yaml版-阿拉伯语）
+│    │   │   ├── cls_name_ko.yaml								# 类别名称文件（yaml版-韩语）
+│    │   │   ├── cls_name.yaml									# 类别名称文件（yaml版-中文-v0.1）
+│    │   │   └── cls_name.csv									# 类别名称文件（csv版-中文）
+│    │   ├── util												# 工具包
+│    │   │   └── fonts_opt.py									# 字体管理
+│    │   ├── img_examples										# 示例图片
+│    │   ├── __init__.py										# 初始化文件
+│    │   └── gradio_yolov8_det.py								# v2.0.0主运行文件
+│    ├── setup.cfg												# pre-commit CI检查源配置文件
+│    ├── .pre-commit-config.yaml								# pre-commit配置文件
+│    ├── LICENSE												# 项目许可
+│    ├── .gitignore												# git忽略文件
+│    ├── README.md												# 项目说明
+│    └── pyproject.toml											# Python Package构建文件
+```
+
+<h2 align="center">🔥安装教程</h2>
+
+### ✅ 第一步：创建conda环境
+
+```shell
+conda create -n yolo python=3.8  # 安装python3.8最新版本
+```
+
+### ✅ 第二步：激活conda环境
+
+```shell
+conda activate yolo
+```
+
+### ✅ 第三步：通过 pip 安装 Gradio YOLOv8 Det
+
+```shell
+pip install gradio-yolov8-det
+```
+
+<h2 align="center">⚡使用教程</h2>
+
+### 💡 运行Gradio YOLOv8 Det
+
+📌 运行
+
+```shell
+gradio-yolov8-det
+# 在浏览器中输入：http://127.0.0.1:7860/或者http://127.0.0.1:7861/ 等等（具体观察shell提示）
+```
+
+### 💡 脚本指令操作
+
+❤️ 本项目提供了一些脚本指令，旨在扩展项目的功能。
+
+❗ 注：其中的一些功能是界面组件（按钮、文本框等）无法实现的，需要通过脚本指令完成：
+
+```shell
+# 共享模式
+gradio-yolov8-det -is # 在浏览器中以共享模式打开，https://**.gradio.app/
+
+# 自定义模型配置
+gradio-yolov8-det -mc ./model_config/model_name_all.yaml
+
+# 自定义下拉框默认模型名称
+gradio-yolov8-det -mn yolov8m
+
+# 自定义类别名称
+gradio-yolov8-det -cls ./cls_name/cls_name_zh.yaml  （目标检测与图像分割）
+gradio-yolov8-det -cin ./cls_name/cls_imgnet_name_zh.yaml  （图像分类）
+
+# 自定义NMS置信度阈值
+gradio-yolov8-det -conf 0.8
+
+# 自定义NMS IoU阈值
+gradio-yolov8-det -iou 0.5
+
+# 设置推理尺寸，默认为640
+gradio-yolov8-det -isz 320
+
+# 设置最大检测数，默认为50
+gradio-yolov8-det -mdn 100
+
+# 设置滑块步长，默认为0.05
+gradio-yolov8-det -ss 0.01
+```
+
+### 📝 项目引用指南
+
+📌 如需引用Gradio YOLOv8 Det v2.0.0，请在相关文章的**参考文献**中加入下面文字：
+
+```
+曾逸夫, (2024) Gradio YOLOv8 Det (Version 2.0.0).https://gitee.com/CV_Lab/gradio-yolov8-det.git.
+```
+
+### 💬 技术交流
+
+- 如果你发现任何Gradio YOLOv8 Det存在的问题或者是建议, 欢迎通过[Gitee Issues](https://gitee.com/CV_Lab/gradio-yolov8-det/issues)给我提issues。
+- 欢迎加入CV Lab技术交流群
+
+<div align="center" >
+<img src="https://pycver.gitee.io/ows-pics/imgs/qq_group.jpg" width="20%">
+</div>
