@@ -1,0 +1,9 @@
+datasette
+datasette-enrichments>=0.2
+sqlite-utils
+
+[test]
+pytest
+pytest-asyncio
+pytest-httpx
+datasette-enrichments-opencage
