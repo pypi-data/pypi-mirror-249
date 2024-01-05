@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cv_sample_package_03
+Version: 0.0.4
+Summary: A sample test package
+Author: Arulvadivel S
+Author-email: arulvadivel@cloudvalleytech.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome>=3.19.1
+
+# AES Encryption and Decryption
+
+# Introduction
+This basic math process
