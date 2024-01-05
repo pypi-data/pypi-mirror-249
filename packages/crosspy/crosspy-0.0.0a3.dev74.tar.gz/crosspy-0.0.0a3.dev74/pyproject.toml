@@ -1,0 +1,24 @@
+[project]
+name="crosspy"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+# dynamic = ["authors", "dependencies"]
+version="0.0.0a3.dev74"
+
+[build-system]
+requires = [
+    "scikit-build-core",
+    # "setuptools>=42",
+    "pybind11",
+]
+build-backend = "scikit_build_core.build"
+# build-backend = "setuptools.build_meta"
+
+[tool.scikit-build]
+cmake.verbose = true
+logging.level = "INFO"
+cmake.build-type = "Release"
