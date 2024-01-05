@@ -1,0 +1,1 @@
+"""Misc Function for Discord"""
