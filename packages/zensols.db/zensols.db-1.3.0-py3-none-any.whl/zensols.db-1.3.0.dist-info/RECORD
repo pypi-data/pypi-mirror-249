@@ -1,0 +1,11 @@
+zensols/db/__init__.py,sha256=qYVcT2YqvwGUHh_F3usFpMiLQTXs_ZfXegcyF5Q7bNk,62
+zensols/db/bean.py,sha256=jbKOubm9DzvAqd_ZhhciNiSufc2q5_LaFSVlt7G75p8,26619
+zensols/db/dataclass.py,sha256=ifG-6WngMRSOZNhokZnI3LGVhNrWxsJhhlRr830Sk8M,2308
+zensols/db/parse.py,sha256=Wog5AukqiBv9QAjNY52J96xQb5PiVQZBDIjKE0f3f7g,3406
+zensols/db/sqlite.py,sha256=JM9GWVgdikQ78S-WzMTSltbyNg6wGlsrBXIOJIlbE3A,3546
+zensols/db/stash.py,sha256=_XFNGRLpruCVkZPVTtn4RB0l46eV486CbtmeUySZmPg,7297
+zensols/db/resources/sqlite-stash.sql,sha256=zpXr4dk91IXUjEpxP4nzKp4i4q7zusu-Cx7lmh2xf-g,593
+zensols.db-1.3.0.dist-info/METADATA,sha256=yNkjkTXJARF2EaVnoS6OrPji-fcotZ093q1hyT7HA28,6331
+zensols.db-1.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zensols.db-1.3.0.dist-info/top_level.txt,sha256=1x25IoDg38dfH00XlJMRcScl-swLzNUxh7p0JsaMP4s,11
+zensols.db-1.3.0.dist-info/RECORD,,
