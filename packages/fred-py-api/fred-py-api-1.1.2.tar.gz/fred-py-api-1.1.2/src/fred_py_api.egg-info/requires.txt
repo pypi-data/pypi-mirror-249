@@ -1,0 +1,11 @@
+requests>=2.17.3
+click>=7.0
+
+[ci]
+black==22.6.0
+coverage==6.4.2
+
+[dev]
+black==22.6.0
+coverage==6.4.2
+tox==3.25.1
