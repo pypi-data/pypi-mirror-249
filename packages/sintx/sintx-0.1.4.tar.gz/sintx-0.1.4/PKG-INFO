@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: sintx
+Version: 0.1.4
+Summary: Sintacs Modules
+Home-page: https://facebook.com/sintxcs
+Author: Sintacs.
+Author-email: sintacs@isnotdev.com
+License: MIT
+Keywords: Sintxcs,Sintacs,Sintx
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# SIMPLE PYTHON MODULES
+
+## Terminal Installation
+```ruby
+pip3 install sintx
+```
+
+## Importing the module in your script
+```python
+try:
+    import sintx
+except ModuleNotFoundError:
+    sintx("pip3 install sintx)
+    import sintx
+```
+
+## Year Scrapper
+```python
+from sintx import scrape_year(uid)
+
+Input Example:
+uid = "61553865513324"
+print(f"ACCOUNT YEAR: {scrape_year(uid)}")
+
+Output Example:
+ACCOUNT YEAR: 2023
+```
+
+## Followers Scrapper
+```python
+from sintx import scrape_followers(token)
+
+Input Example:
+token = "EAADmFOBtT9aM0******VD3MBKYOrzIg2Bd4nzlhstptx554******4c9PVGsx4R9JU89a7iy0GybnUZBLrIUy0wIEsIhuh2k2XNvTYOfZAGnY4Hp*******CxknZBq1L8427X2aBIDpbntW5XGXzqNzPBwNElztX5qF*****ZA68vrx1NQZDZD"
+
+print(f"FOLLOWERS: {scrape_followers(token)}")
+
+Output Example:
+FOLLOWERS: 50
+```
+
+## Friends Scrapper
+```python
+from sintx import scrape_friends(token)
+
+Input Example:
+token = "EAADmFOBtT9aM0******VD3MBKYOrzIg2Bd4nzlhstptx554******4c9PVGsx4R9JU89a7iy0GybnUZBLrIUy0wIEsIhuh2k2XNvTYOfZAGnY4Hp*******CxknZBq1L8427X2aBIDpbntW5XGXzqNzPBwNElztX5qF*****ZA68vrx1NQZDZD"
+
+print(f"FRIENDS: {scrape_friends(token)}")
+
+Output Example:
+FOLLOWERS: 25
+```
+
+## Facebook Bot Share
+```python
+from sintx import facebook_bot_share(cookie)
+
+Input Example:
+cookie = "sb=rHqQitF122Cof9LSiBvbwvxn;c_user=615*********;xs=27:OitBPPbCSRrJzw:2:1704337930:-1:-1;fr=0uzdQRC6eI5dVTlx0.AWWk_wMZy4u8nUSgOUGOemr213Q.BlliIK..AAA.0.0.BlliIK.AWWC1AoHIY8;datr=CiKWZQ67fwjb4WdLtZ2vK0E9"
+
+facebook_bot_share(cookie)
+
+>> Post URL (Facebook Lite):
+>> Share Amount:
+
+Output Example:
+TOTAL SHARES: {Amount}
+```
+
+## COLORS
+```ruby
+sintx_blue
+sintx_white
+sintx_cyan
+sintx_yellow
+sintx_black
+sintx_green
+sintx_light_red
+sintx_light_green
+sintx_dark_gray
+sintx_light_purple
+sintx_red_orange
+sintx_red_blue
+sintx_red_cyan
+sintx_red_green
+sintx_red_purple
+```
+
+## Shortcuts
+```ruby
+os.system --> sintx
+time.sleep --> cd
+requests.get --> reqg
+requests.post --> reqp
+```
+
+## Social Links
+[Facebook](https://facebook.com/sintxcs) • [Telegram](https://t.me/syntxcs)
+
+

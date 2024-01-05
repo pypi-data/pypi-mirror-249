@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+sintx/__init__.py
+sintx.egg-info/PKG-INFO
+sintx.egg-info/SOURCES.txt
+sintx.egg-info/dependency_links.txt
+sintx.egg-info/top_level.txt
