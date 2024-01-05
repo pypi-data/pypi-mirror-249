@@ -1,0 +1,9 @@
+__title__ = 'pytoolkitpro'
+__description__ = 'pytoolkitpro'
+__keywords__ = 'pytoolkitpro,工具包',
+__url__ = ''
+__author__ = '波小艺'
+__author_email__ = '15813380401@163.com'
+__version__ = '0.0.2'
+__license__ = 'MIT'
+__cake__ = u'\u2728 \U0001f370 \u2728'
