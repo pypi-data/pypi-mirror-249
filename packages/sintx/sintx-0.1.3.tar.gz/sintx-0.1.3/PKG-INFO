@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: sintx
+Version: 0.1.3
+Summary: Sintacs Modules
+Home-page: https://facebook.com/sintxcs
+Author: Sintacs.
+Author-email: sintacs@isnotdev.com
+License: MIT
+Keywords: Sintxcs,Sintacs,Sintx
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+A simple bash library build by Sintacs.
+
+**Terminal Installation**
+```
+pip install sintx
+```
+
+**Importing Module in your script**
+```bash
+try:
+ import sintx
+except ModuleNotFoundError:
+ sintx("pip3 install sintx")
+ import sintx
+```
+
+**Year Scrapper**
+```
+from sintx import scrape_year(uid)
+
+Input Example:
+uid = "61553865513324"
+print(f"ACCOUNT YEAR: {scrape_year(uid)}")
+
+Output Example:
+2023
+```
+
+**Followers Scrapper**
+```
+from sintx import scrape_followers(token)
+
+Input Example:
+token = "EAADmFOBtT9aM0******VD3MBKYOrzIg2Bd4nzlhstptx554******4c9PVGsx4R9JU89a7iy0GybnUZBLrIUy0wIEsIhuh2k2XNvTYOfZAGnY4Hp*******CxknZBq1L8427X2aBIDpbntW5XGXzqNzPBwNElztX5qF*****ZA68vrx1NQZDZD"
+
+print(f"FOLLOWERS: {scrape_followers(token)}")
+
+Output Example:
+FOLLOWERS: 50
+```
+
+**Friends Scrapper**
+```
+from sintx import scrape_friends(token)
+
+Input Example:
+token = "EAADmFOBtT9aM0******VD3MBKYOrzIg2Bd4nzlhstptx554******4c9PVGsx4R9JU89a7iy0GybnUZBLrIUy0wIEsIhuh2k2XNvTYOfZAGnY4Hp*******CxknZBq1L8427X2aBIDpbntW5XGXzqNzPBwNElztX5qF*****ZA68vrx1NQZDZD"
+
+print(f"FOLLOWERS: {scrape_friends(token)}")
+
+Output Example:
+FOLLOWERS: 25
+```
+
+**COLORS**
+```
+sintx_blue
+sintx_white
+sintx_cyan
+sintx_yellow
+sintx_black
+sintx_green
+sintx_light_red
+sintx_light_green
+sintx_dark_gray
+sintx_light_purple
+sintx_red_orange
+sintx_red_blue
+sintx_red_cyan
+sintx_red_green
+sintx_red_purple
+```
+
+**Shorcuts**
+```
+os.system --> sintx
+requests.get --> reqg
+requests.post --> reqp
+```
+
+<br>Social Links
+<br>[Facebook](https://facebook.com/sintxcs)
+<br>[Telegram](https://t.me/syntxcs)
+
