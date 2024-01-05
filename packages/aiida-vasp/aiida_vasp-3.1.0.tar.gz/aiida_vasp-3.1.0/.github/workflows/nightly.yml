@@ -1,0 +1,70 @@
+name: nightly against `main` branch of `aiida-core`
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Run every day at midnight
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    services:
+      rabbitmq:
+        image: rabbitmq:latest
+        ports:
+          - 5672:5672
+    strategy:
+      matrix:
+        python: ["3.9", "3.10", "3.11"]
+    steps:
+      - uses: actions/checkout@v3.3.0
+      - name: Set up Python
+        uses: actions/setup-python@v4.5.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install system dependencies
+        run: |
+          curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+          sudo apt update
+          sudo .ci/enable_ssh_localhost.sh
+          sudo apt install locate
+          sudo updatedb
+          sudo apt install postgresql
+      - name: Upgrade pip
+        run: |
+          pip install --upgrade pip
+          pip --version
+      - name: Install Tox
+        run: pip install tox
+      - name: Install AiiDA-Wannier90
+        run: pip install git+https://github.com/aiidateam/aiida-wannier90#egg=aiida-wannier90
+      - name: Install AiiDA-VASP
+        id: install_plugin
+        run: |
+          pip install -e .[graphs,dev]
+          pip freeze
+      - name: Install AiiDA main branch
+        id: install_aiida
+        run: |
+          pip install git+https://github.com/aiidateam/aiida-core@main
+      - name: Remove dot in Python version for passing version to tox
+        uses: frabert/replace-string-action@master
+        id: tox
+        with:
+          pattern: '\.'
+          string: ${{ matrix.python }}
+          replace-with: ""
+      - name: Run tox
+        run: tox -e py${{ steps.tox.outputs.replaced }}-aiida_vasp
+      - name: Notification to Slack channel
+        if: steps.install_plugin.outcome == 'Failure' || steps.install_aiida.outcome == 'Failure' || steps.tox.outcome == 'Failure'
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_ICON: https://www.materialscloud.org/discover/images/0ba0a17d.aiida-logo-128.png
+          SLACK_USERNAME: aiida-vasp
+          SLACK_CHANNEL: nightly
+          SLACK_COLOR: b60205
+          SLACK_TITLE: "Nightly build against `aiida-core/main` failed"
+          SLACK_MESSAGE: "The tests fail with the current version of `aiida-core/main`."

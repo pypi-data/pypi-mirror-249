@@ -1,0 +1,2 @@
+include aiida_vasp/assistant/parameters.yml
+recursive-include aiida_vasp/test_data *
