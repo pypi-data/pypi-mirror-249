@@ -1,0 +1,24 @@
+[project]
+name = "ngautonml_image"
+version = "0.4.1b01"
+description = "a plugin that installs image processing tools for ngAutonML"
+authors = [
+    {name = "L.H. Piggy Yarroll", email = "piggy@cmu.edu"},
+    {name = "Merritt Kowaleski", email = "merrittk@cmu.edu"},
+    {name = "Andrew Williams", email = "awillia2@andrew.cmu.edu"},
+    {name = "Jieshi Chen", email = "jieshic@andrew.cmu.edu"},
+]
+readme = "README.md"
+keywords = ["machine learning", "image processing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed"
+]
+
+[project.entry-points."ngautonml.make_catalog"]
+templates = "ngautonml_image:templates_make_catalog"
+algorithms = "ngautonml_image:algorithms_make_catalog"
+dataset_formats = "ngautonml_image:dataset_formats_make_catalog"
+splitters = "ngautonml_image:splitters_make_catalog"

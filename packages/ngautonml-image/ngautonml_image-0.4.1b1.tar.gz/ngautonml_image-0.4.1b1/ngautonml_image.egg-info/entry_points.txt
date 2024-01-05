@@ -1,0 +1,5 @@
+[ngautonml.make_catalog]
+algorithms = ngautonml_image:algorithms_make_catalog
+dataset_formats = ngautonml_image:dataset_formats_make_catalog
+splitters = ngautonml_image:splitters_make_catalog
+templates = ngautonml_image:templates_make_catalog
