@@ -1,0 +1,2 @@
+[console_scripts]
+hummingbird = hummingbird:main
