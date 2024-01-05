@@ -1,0 +1,9 @@
+emr_serverless_sql/__init__.py,sha256=BMbF0-gpvdyig_2vTnrVqpPbpeG6_HKfGUjluIUXZ20,59
+emr_serverless_sql/emr_serverless.py,sha256=PxPieUbThPeBUHyv-D-yaxlFSMzTpcbMTN9M8nQvlSo,6433
+emr_serverless_sql/emrss_cli.py,sha256=0bRGC4ymrFOX8QrLxZJ4QuMhTrGUSQfgY8UrArbmV5g,1418
+emr_serverless_sql/sql_template.py,sha256=s1VireQZmC0ZdLJl5zoynyzTTUwmoiVkNAtywkKLaXE,197
+emr_serverless_sql_cli-0.4.0.dist-info/LICENSE,sha256=O1HFTF1xt7AjydzcV2QmCiPwUKPIJ33VF66bvQwxx-U,1073
+emr_serverless_sql_cli-0.4.0.dist-info/METADATA,sha256=fVC7wsiLf18IHPP7QrwDUibnkixnd3Hs6zBVrqfofNw,1522
+emr_serverless_sql_cli-0.4.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+emr_serverless_sql_cli-0.4.0.dist-info/entry_points.txt,sha256=rUbvl9tAUwxT_umAAIaIUeOoKzdfyyhdbQ99-i9gqBw,58
+emr_serverless_sql_cli-0.4.0.dist-info/RECORD,,
