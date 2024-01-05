@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "ql-cq"
+version = "1.7.1"
+description = "Code quality checker"
+authors = ["Quantlane <code@quantlane.com>"]
+license = "Apache License, Version 2.0"
+homepage = "https://gitlab.com/quantlane/meta/cq"
+readme = "README.md"
+packages = [
+    { include = "cq" },
+    { include = "checkers", from = "cq" },
+    { include = "fixers", from = "cq" },
+]
+include = [
+    "cq/checkers/pylintrc"
+]
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pylint = "^3.0.2"
+isort = "^5.12.0"
+pyflakes-ext = "^2.0.0"
+pyflakes = "^2.5.0"
+ql-orange = "^1.1.0"
+mypy = "^1.7.1"
+astpath = { version = "^0.6.1", extras = ["xpath"]}
+safety = "^2.3.5, !=2.4.0b1, !=2.4.0b2, !=2.4.0b3"
+click = ">=3.0,<9.0"
+toolz = ">=0.8.2,<1.0.0"
+requirements-parser = ">=0.1.0,<1.0.0"
+setuptools = ">=68.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+types-pkg-resources = "^0.1.3"
+types-setuptools = ">=57.0.0"
+
+[tool.poetry.scripts]
+cq = 'cq.main:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
