@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+GDorks/__init__.py
+GDorks.egg-info/PKG-INFO
+GDorks.egg-info/SOURCES.txt
+GDorks.egg-info/dependency_links.txt
+GDorks.egg-info/top_level.txt
