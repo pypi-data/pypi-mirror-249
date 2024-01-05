@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: contextcrunch
+Version: 1.0.0
+Summary: Access to the ContextCrunch Prompt Compression API from Python
+Project-URL: Homepage, https://github.com/contextcrunch-ai/contextcrunch-python
+Project-URL: Issues, https://github.com/contextcrunch-ai/contextcrunch-python/issues
+Author-email: Matthew Kwiatkowski <matt@mkcodes.ca>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.25.1
+Description-Content-Type: text/markdown
+
+# ContextCrunch Python Client
+Use the [ContextCrunch API](https://contextcrunch.com) easily with python!
+
+## Prerequsites
+You need an API key from [https://contextcrunch.com/console/keys](https://contextcrunch.com/console/keys)
+
+## Quick Start
+```python
+from contextcrunch import ContextCrunchClient
+client = ContextCrunchClient('API_KEY_HERE')
+
+compressed = client.compress(
+  context=['compress this text'],
+  prompt='last message',
+  compression_ratio=0.95
+)
+print(f'Although this text is too short to compress, we can see the API works! {compressed}')
+```
