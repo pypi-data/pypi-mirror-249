@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+source ~/venvs/luma-cli/bin/activate
+cd src/cli
+python3 -m cli "$1" "${@:2}"

@@ -1,0 +1,35 @@
+[project]
+name = "luma"
+dynamic = ["version"]
+description='A CLI to interact with the Lumavate platform'
+requires-python = ">= 3.8"
+dependencies = [
+  'click>=8.0',
+  'pycparser==2.21',
+  'pyparsing==3.0.9',
+  'python-dateutil==2.8',
+  'requests>=2.28.1',
+  'docker>=6.0.0'
+]
+authors = [
+  {name = "Lumavate", email = "development@lumavate.com"}
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers=[
+    'Programming Language :: Python :: 3.8'
+]
+
+[project.scripts]
+luma= "cli:cli"
+
+[build-system]
+requires = [
+    "setuptools>=64",
+    "setuptools-scm>=8.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"

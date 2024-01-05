@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+deactivate
+rm -rf ~/venvs/luma-cli
+python3.8 -m venv ~/venvs/luma-cli
+source ~/venvs/luma-cli/bin/activate
+pip install --editable .
