@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/annxuncements/__init__.py
+src/annxuncements/announcement_subscription.py
+src/annxuncements/announcements.py
+src/annxuncements/announcer.py
+src/annxuncements/subscription_registry.py
+src/annxuncements.egg-info/PKG-INFO
+src/annxuncements.egg-info/SOURCES.txt
+src/annxuncements.egg-info/dependency_links.txt
+src/annxuncements.egg-info/top_level.txt
