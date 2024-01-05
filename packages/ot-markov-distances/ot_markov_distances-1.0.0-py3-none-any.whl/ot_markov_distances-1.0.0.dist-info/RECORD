@@ -1,0 +1,9 @@
+ot_markov_distances/__init__.py,sha256=1TBnlm-z3P87A3sEV0_bJ0-yAuvUnHBsaDW-Hs4ANVw,468
+ot_markov_distances/discounted_wl.py,sha256=Cg4GLZO53MMpEinmfReaJsZi2owV795kyL7EXxx6LGo,19279
+ot_markov_distances/misc.py,sha256=nFJGVvZOKozMzjMqjME08q2UTo5Dxl9pbh0kcOUFu00,1567
+ot_markov_distances/sinkhorn.py,sha256=pQfqcRFTwCbpyWCebayhhK6pifAiYlH2IzO9S47B8iA,11393
+ot_markov_distances/utils.py,sha256=7zZczcAJb-CNIkHoFyEK9lKYIUMvxsI887XDDmdVr_U,10511
+ot_markov_distances/wl.py,sha256=AgLtx2V6gZv6watvlkQpmXnTUWMV5Vi2Sg7wIQIQ5NU,4140
+ot_markov_distances-1.0.0.dist-info/METADATA,sha256=1c6i7LCXp66ivIxVlAedv9n9rBrXwWv5rxKAfJ1LaD8,7173
+ot_markov_distances-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ot_markov_distances-1.0.0.dist-info/RECORD,,
