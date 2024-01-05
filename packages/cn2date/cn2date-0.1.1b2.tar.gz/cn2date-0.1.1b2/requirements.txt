@@ -1,0 +1,3 @@
+lark
+hanlp
+python-dateutil
