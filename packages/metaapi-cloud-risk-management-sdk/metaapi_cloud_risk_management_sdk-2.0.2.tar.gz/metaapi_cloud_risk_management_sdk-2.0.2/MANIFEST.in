@@ -1,0 +1,8 @@
+recursive-include lib *
+recursive-include examples *
+include LICENSE
+include changelog.md
+exclude examples/equityTracking/.env
+prune examples/equityTracking/.metaapi
+exclude development.md
+exclude .gitlab-ci.yml
