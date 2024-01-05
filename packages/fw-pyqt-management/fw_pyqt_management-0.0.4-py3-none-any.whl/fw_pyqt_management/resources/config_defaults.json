@@ -1,0 +1,6 @@
+{
+    "flywheel_connect_version": "1.2.0",
+    "CachePath": "/tmp",
+    "CacheDirName": "flywheel_cache",
+    "cache_dir": "tmp/flywheel_cache"
+}

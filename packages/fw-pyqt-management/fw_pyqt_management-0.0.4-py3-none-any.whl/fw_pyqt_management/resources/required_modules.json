@@ -1,0 +1,4 @@
+{
+    "flywheel": {"package": "flywheel-sdk", "version": false, "upgrade": false},
+    "xmltodict": {"package": "xmltodict", "version": false, "upgrade": false}
+}

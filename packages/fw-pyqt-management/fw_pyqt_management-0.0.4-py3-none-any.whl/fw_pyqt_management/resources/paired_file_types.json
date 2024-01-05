@@ -1,0 +1,5 @@
+{
+    "mhd": ["raw", "zraw"],
+    "hdr": "img",
+    "nhdr": "raw.gz"
+}

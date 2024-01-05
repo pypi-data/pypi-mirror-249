@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: fw-pyqt-management
+Version: 0.0.4
+Summary: A cross-platform PyQt Library to represent the Flywheel hierarchy with specific tree nodes.
+Home-page: https://gitlab.com/flywheel-io/scientific-solutions/lib/fw-pyqt-hierarchy-tree-items
+License: MIT
+Keywords: Flywheel,Libs
+Author: Flywheel
+Author-email: support@flywheel.io
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: flywheel-sdk (>=17.0,<18.0)
+Requires-Dist: importlib-metadata (>=6.8.0,<7.0.0)
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0)
+Project-URL: Repository, https://gitlab.com/flywheel-io/scientific-solutions/lib/fw-pyqt-hierarchy-tree-items
+Description-Content-Type: text/markdown
+
+# fw-pyqt-management <!-- omit in toc -->
+
+A library containing common functionality for Flwywheel PyQt applications.
+
+- [Current Applications that use `fw-pyqt-management`](#current-applications-that-use-fw-pyqt-management)
+- [Modules and Classes](#modules-and-classes)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Current Applications that use `fw-pyqt-management`
+
+Current applications include:
+
+- The [Flywheel-Connect](https://gitlab.com/flywheel-io/scientific-solutions/app/slicer_flywheel_connect) Slicer Extension
+- The [Flwywheel-Case-Iterator](https://gitlab.com/flywheel-io/scientific-solutions/app/Slicerflywheelcaseiterator) Slicer Extension
+- The [Flywheel-App-Launcher](https://gitlab.com/flywheel-io/scientific-solutions/app/fw-app-launcher) PyQt application
+
+## Modules and Classes
+
+The `fw-pyqt-managment` library contains the following modules and classes:
+
+- `adaptive_qt.py` : A module that creates conditional Qt imports based on the version
+  of Qt installed. This allows for the use of Qt5, Qt6, or Slicer's PythonQt without
+  having to change the code.
+- `config.py` : A module that contains the `Config` class. This class is used to store
+  and retrieve configuration settings for a PyQt application.
+- `utils.py` : A module that contains utilities checking the system requirements for the
+  application.
+- `tree_management.py` : A module that contains the `TreeManagement` class. This class
+  is used to manage the hierarchy tree in the PyQt Applications.
+- `fw_container_items.py` : A module that contains all of the item classes (e.g.
+  `ProjectItem`, `SubjectItem`, etc.) that are used or displayed in the hierarchy tree.
+
+## Installation
+
+The `fw-pyqt-management` library can be installed using `pip`:
+
+```bash
+pip install fw-pyqt-management
+```
+
+Alternatively, the library can be installed from source:
+
+```bash
+git clone https://gitlab.com/flywheel-io/scientific-solutions/libraries/fw-pyqt-management.git
+cd fw-pyqt-management
+pip install .
+```
+
+## Usage
+
+As noted above, there are three
+[currently deployed applications](#current-applications-that-use-fw-pyqt-management)
+that use the `fw-pyqt-management` library. These applications can be used as examples
+of how to use the library.
+
+For a simple example of how to use the `fw-pyqt-management` library, see the
+[simple_example.py](./examples/simple_example.py) in the
+[examples directory](./examples/) of this repository.
+
