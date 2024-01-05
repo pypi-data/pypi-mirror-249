@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+40hz/__init__.py
+40hz.egg-info/PKG-INFO
+40hz.egg-info/SOURCES.txt
+40hz.egg-info/dependency_links.txt
+40hz.egg-info/top_level.txt
