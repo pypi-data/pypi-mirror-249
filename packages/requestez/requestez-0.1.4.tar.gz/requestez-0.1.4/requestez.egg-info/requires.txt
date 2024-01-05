@@ -1,0 +1,12 @@
+requests
+m3u8
+pycryptodome
+yarl
+regex
+beautifulsoup4
+dbdictionary
+
+[optional]
+moviepy[optional]
+js2xml
+xmltodict
