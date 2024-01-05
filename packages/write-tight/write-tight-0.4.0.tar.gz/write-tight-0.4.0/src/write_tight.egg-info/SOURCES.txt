@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/write_tight.egg-info/PKG-INFO
+src/write_tight.egg-info/SOURCES.txt
+src/write_tight.egg-info/dependency_links.txt
+src/write_tight.egg-info/entry_points.txt
+src/write_tight.egg-info/requires.txt
+src/write_tight.egg-info/top_level.txt
+src/writetight/__init__.py
+src/writetight/input_validation.py
+src/writetight/main.py
+src/writetight/pattern_questions.py
+src/writetight/patterns.py
+src/writetight/spacy.py
