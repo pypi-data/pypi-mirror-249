@@ -1,0 +1,8 @@
+README.md
+setup.py
+Operations/__init__.py
+Operations/main.py
+TurtleOperations.egg-info/PKG-INFO
+TurtleOperations.egg-info/SOURCES.txt
+TurtleOperations.egg-info/dependency_links.txt
+TurtleOperations.egg-info/top_level.txt
