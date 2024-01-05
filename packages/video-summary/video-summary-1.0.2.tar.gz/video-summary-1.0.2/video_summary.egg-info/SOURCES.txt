@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+video_summary/__init__.py
+video_summary/sdk.py
+video_summary.egg-info/PKG-INFO
+video_summary.egg-info/SOURCES.txt
+video_summary.egg-info/dependency_links.txt
+video_summary.egg-info/requires.txt
+video_summary.egg-info/top_level.txt
