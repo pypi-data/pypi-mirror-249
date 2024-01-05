@@ -1,0 +1,1 @@
+from .loot import setup_config, lootting_around
