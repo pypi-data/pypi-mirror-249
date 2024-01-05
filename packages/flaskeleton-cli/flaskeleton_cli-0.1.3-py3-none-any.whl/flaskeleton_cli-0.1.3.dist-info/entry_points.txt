@@ -1,0 +1,3 @@
+[console_scripts]
+flaskeleton=flaskeleton_cli:app
+
