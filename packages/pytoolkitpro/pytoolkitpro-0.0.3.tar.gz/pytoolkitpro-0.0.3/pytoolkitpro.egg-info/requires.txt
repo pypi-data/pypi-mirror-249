@@ -1,0 +1,8 @@
+openpyxl
+toml
+kafka-python
+pymysql
+gevent
+redis==3.5.3
+redis-py-cluster==2.1.0
+DBUtils
