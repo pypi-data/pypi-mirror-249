@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "py.lockfile2"
+packages = [{ include = "py_lockfile.py" }]
+version = "0.3.0"
+description = "This is a simple tool for download python packages managed by lock file."
+authors = ["Martin Korbel <git@github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+toml = "^0.10.2"
+
+[tool.poetry.scripts]
+"py.lockfile" = "py_lockfile:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
