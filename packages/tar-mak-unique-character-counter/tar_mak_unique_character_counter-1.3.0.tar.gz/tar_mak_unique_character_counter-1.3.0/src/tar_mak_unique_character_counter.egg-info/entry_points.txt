@@ -1,0 +1,2 @@
+[console_scripts]
+countunique = tar_mak_unique_character_counter.task3_collections:main
