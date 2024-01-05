@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">	
+
+<!--
+ File: ecmb-v1.0.xsd
+ Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
+ 
+ MIT License
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+-->
+
+
+	<xs:element name="ecmb">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="metadata" type="metadata" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="content" type="content" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="navigation" type="navigation" minOccurs="0" maxOccurs="1"/>
+			</xs:all>
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9]\.[0-9]" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="manga"/>
+						<xs:enumeration value="comic"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="language" type="language" use="required" />
+			<xs:attribute name="width" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="100" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="height" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="100" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="uid" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[a-z0-9_]{16,255}" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:complexType name="metadata">
+		<xs:all>
+			<xs:element name="isbn" type="isbn" minOccurs="0" maxOccurs="1" />
+			<xs:element name="publisher" type="publisher" minOccurs="0" maxOccurs="1" />
+			<xs:element name="publishdate" type="publishdate" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="title" type="notemptystring" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="volume" type="volume" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="summary" type="notemptystring" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="pages" type="pages" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="notes" type="notemptystring" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="authors" type="authors" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="editors" type="editors" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="genres" type="genres" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="warnings" type="warnings" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="original" type="original" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="basedon" type="basedon" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+
+
+	<xs:complexType name="authors">
+		<xs:sequence>
+			<xs:element name="author" type="author" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	
+	<xs:complexType name="editors">
+		<xs:sequence>
+			<xs:element name="editor" type="editor" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="genres">
+		<xs:sequence>
+			<xs:element name="genre" type="notemptystring" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="warnings">
+		<xs:sequence>
+			<xs:element name="warning" type="warning" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="original">
+		<xs:all>
+			<xs:element name="language" type="language" minOccurs="0" maxOccurs="1" />
+			<xs:element name="isbn" type="isbn" minOccurs="0" maxOccurs="1" />
+			<xs:element name="publisher" type="publisher" minOccurs="0" maxOccurs="1" />
+			<xs:element name="publishdate" type="publishdate" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="title" type="notemptystring" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="authors" type="authors" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+
+
+	<xs:complexType name="basedon">
+		<xs:all>
+			<xs:element name="type" type="basedontype" minOccurs="0" maxOccurs="1" />
+			<xs:element name="language" type="language" minOccurs="0" maxOccurs="1" />
+			<xs:element name="isbn" type="isbn" minOccurs="0" maxOccurs="1" />
+			<xs:element name="publisher" type="publisher" minOccurs="0" maxOccurs="1" />
+			<xs:element name="publishdate" type="publishdate" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="title" type="notemptystring" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="authors" type="authors" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+
+
+	<xs:complexType name="content">
+		<xs:sequence>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element name="img" type="img" />
+				<xs:element name="dimg" type="dimg" />
+				<xs:element name="dir" type="dir" />
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="cover_front" type="img_src" />
+		<xs:attribute name="cover_rear" type="img_src" />
+	</xs:complexType>
+
+
+	<xs:complexType name ="img">
+		<xs:attribute name="src" type="img_src" use="required" />
+	</xs:complexType>
+	
+
+	<xs:complexType name ="dimg">
+		<xs:attribute name="src" type="img_src" use="required" />
+		<xs:attribute name="src_left" type="img_src" use="required" />
+		<xs:attribute name="src_right" type="img_src" use="required" />
+	</xs:complexType>
+
+
+	<xs:complexType name="dir">
+		<xs:sequence>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element name="img" type="img" />
+				<xs:element name="dimg" type="dimg" />
+				<xs:element name="dir" type="dir" />
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="name"  use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[a-z0-9_-]+" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+
+	<xs:complexType name="navigation">
+		<xs:sequence>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element name="link" type="link" />
+				<xs:element name="chapter" type="chapter" />
+				<xs:element name="headline" type="headline" />
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	
+	
+	<xs:complexType name ="link">
+		<xs:attribute name="label" type="notemptystring" use="required" />
+		<xs:attribute name="title" type="notemptystring" />
+		<xs:attribute name="href" type="navigation_href" use="required" />
+	</xs:complexType>
+
+
+	<xs:complexType name="chapter">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="link" type="link" />
+				<xs:element name="chapter" type="chapter" />
+				<xs:element name="headline" type="headline" />
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="label" type="notemptystring" use="required" />
+		<xs:attribute name="title" type="notemptystring" />
+		<xs:attribute name="dir" type="navigation_dir" use="required" />
+		<xs:attribute name="href" type="navigation_href" use="required" />
+	</xs:complexType>
+	
+	
+	<xs:complexType name="headline">
+		<xs:sequence>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element name="link" type="link" />
+				<xs:element name="chapter" type="chapter" />
+				<xs:element name="headline" type="headline" />
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="label" type="notemptystring" use="required" />
+		<xs:attribute name="title" type="notemptystring" />
+	</xs:complexType>
+
+	
+	<xs:simpleType name="notemptystring">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:simpleType name="language">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-z]{2}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:simpleType name="isbn">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9]{10}|[0-9]{13})" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:complexType name="publisher">
+		<xs:simpleContent> 
+			<xs:extension base="notemptystring">
+				<xs:attribute name="href" type="web_href" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+
+	<xs:simpleType name="publishdate">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{4}(-[0-9]{2}-[0-9]{2})?" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:simpleType name="volume">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="pages">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="author">
+		<xs:simpleContent> 
+			<xs:extension base="notemptystring">
+				<xs:attribute name="href" type="web_href"/>
+				<xs:attribute name="role" use="required">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Author"/>
+							<xs:enumeration value="Co-Author"/>
+							<xs:enumeration value="Story"/>
+							<xs:enumeration value="Art"/>
+							<xs:enumeration value="Colorist" />
+							<xs:enumeration value="CoverArtist"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+
+	<xs:complexType name="editor">
+		<xs:simpleContent> 
+			<xs:extension base="notemptystring">
+				<xs:attribute name="href" type="web_href"/>
+				<xs:attribute name="role" use="required">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Translator"/>
+							<xs:enumeration value="Scanner"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+
+	<xs:simpleType name="warning">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Mature Themes"/>
+			<xs:enumeration value="Nudity"/>
+			<xs:enumeration value="Sexual Content"/>
+			<xs:enumeration value="Explict Sex"/>
+			<xs:enumeration value="Hentai"/>
+			<xs:enumeration value="Prostitution"/>
+			<xs:enumeration value="Incest"/>
+			<xs:enumeration value="Violence"/>
+			<xs:enumeration value="Explicit Violence"/>
+			<xs:enumeration value="Terrorism"/>
+			<xs:enumeration value="Emotional Abuse"/>
+			<xs:enumeration value="Sexual Abuse"/>
+			<xs:enumeration value="Physical Abuse"/>
+			<xs:enumeration value="Domestic Abuse" />
+			<xs:enumeration value="Self-Harm"/>
+			<xs:enumeration value="Suicide"/>
+			<xs:enumeration value="Drugs"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:simpleType name="basedontype">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Novel"/>
+			<xs:enumeration value="Lightnovel"/>
+			<xs:enumeration value="Manga"/>
+			<xs:enumeration value="Comic"/>
+			<xs:enumeration value="Anime"/>
+			<xs:enumeration value="Game"/>
+			<xs:enumeration value="Other"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:simpleType name="web_href">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(http|https)://.+" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:simpleType name="img_src">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-z0-9_-]+\.(jpg|jpeg|png|webp)" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:simpleType name="navigation_dir">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(/[a-z0-9_-]+)+" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:simpleType name="navigation_href">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(/[a-z0-9_-]+)+\.(jpg|jpeg|png|webp)(#auto|#left|#right)?" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>
+
+
