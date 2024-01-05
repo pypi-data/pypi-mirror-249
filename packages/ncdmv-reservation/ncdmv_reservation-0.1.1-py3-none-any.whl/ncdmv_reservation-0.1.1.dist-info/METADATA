@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ncdmv-reservation
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/tddschn/ncdmv-reservation
+License: MIT
+Keywords: ncdmv
+Author: Teddy Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: pytest (>=7.4.4,<8.0.0)
+Requires-Dist: selenium (>=4.16.0,<5.0.0)
+Project-URL: Bug Tracker, https://github.com/tddschn/ncdmv-reservation/issues
+Project-URL: Repository, https://github.com/tddschn/ncdmv-reservation
+Description-Content-Type: text/markdown
+
+
