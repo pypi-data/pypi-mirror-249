@@ -1,0 +1,44 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "retri-evals"
+version = "0.0.1"
+homepage = "https://github.com/DeployQL/retri-evals"
+description = "Open-source tool for building and evaluating retrieval pipelines."
+readme = "README.md"
+license = "AGPL-3.0"
+keywords = [
+    "data-science",
+    "artificial-intelligence",
+    "developers-tools",
+    "mlops",
+    "rag",
+    "retrieval",
+]
+authors = [
+    "Matt Barta <contact@deployql.com>"
+]
+packages = [
+    {include = "retri_eval"},
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+pydantic-settings = "2.1.0"
+tantivy = "0.21.0"
+qdrant-client = "1.7.0"
+tokenizers = "0.14.1"
+beir = "2.0.0"
+mteb = "1.1.1"
+hruid = "0.0.3"
+
+[tool.poetry.group.examples]
+optional = true
+
+[tool.poetry.group.examples.dependencies]
+flagembedding = "1.0.6"
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+
