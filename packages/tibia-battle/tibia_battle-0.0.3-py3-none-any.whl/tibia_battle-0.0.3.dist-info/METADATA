@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tibia-battle
+Version: 0.0.3
+Summary: Módulo criado para auxiliar na captura do content battle do tibia.
+Home-page: UNKNOWN
+Author: Ítalo Pereira Barbosa
+Author-email: tato361.portugal@gmail.com
+License: MIT License
+Keywords: battle
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Requires-Dist: pyautogui
+
+# tibia_battle_project
+
