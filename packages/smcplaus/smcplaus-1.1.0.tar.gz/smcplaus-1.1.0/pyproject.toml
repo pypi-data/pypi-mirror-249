@@ -1,0 +1,90 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "smcplaus"
+version = "1.1.0"
+description = "A symbolic model checker for the single-agent plausibility models of dynamic epistemic logic"
+authors = ["David Alvarez Lombardi <dqalombardi@proton.me>"]
+maintainers = ["David Alvarez Lombardi <dqalombardi@proton.me>"]
+readme = "README.md"
+packages = [{ include = "smcplaus", from = "src" }]
+license = "MIT"
+repository = "https://gitlab.com/dqalombardi/smcplaus"
+keywords = [
+    "belief revision",
+    "dynamic epistemic logic",
+    "logic",
+    "plausibility",
+    "symbolic model checking",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+graphviz = "^0.20.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+coverage = "^7.4.0"
+flake8 = "^6.1.0"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+pylint = "^3.0.3"
+pytest = "^7.4.3"
+tox = "^4.11.4"
+
+
+[tool.isort]
+include_trailing_comma = true
+known_first_party = "smcplaus"
+line_length = 120
+multi_line_output = 3
+profile = "black"
+
+
+[tool.black]
+line-length = 120
+
+
+[tool.pylint.messages_control]
+disable = [
+    "duplicate-code",
+    "fixme",
+    "no-else-return",
+    "useless-return",
+]
+max-line-length = 120
+
+
+[tool.mypy]
+python_version = "3.11"
+
+[[tool.mypy.overrides]]
+module = "smcplaus"
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "graphviz",
+    "pytest",
+]
+ignore_missing_imports = true
+
+
+[tool.coverage.paths]
+source = [
+    "src/",
+    ".tox/py312/lib/python3.12/site-packages/",
+]
+
+[tool.coverage.run]
+source_pkgs = ["smcplaus"]
+
+[tool.coverage.report]
+exclude_also = [
+    "class SupposedlyUnreachableCaseError",
+    "def __repr__",
+    "raise NotImplementedError",
+]
