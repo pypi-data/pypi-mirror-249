@@ -1,0 +1,4 @@
+spotipy>=2.7.0
+spotipy<=2.18.0
+rofi_menu>=0.5.1
+rofi_menu<=0.6
