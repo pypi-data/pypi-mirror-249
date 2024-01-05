@@ -1,0 +1,15 @@
+pyaoc/README.jinja2,sha256=GGgOBPyGdCWsxpkcgeGqbNbzAwAcfjbAvw3vPqszjZo,373
+pyaoc/day_benchmark.py,sha256=0uM5eERnm-S1Ip0IyOvqI7-i4BjojS9ciDlh2Af28xY,2121
+pyaoc/day_creation.py,sha256=Oap2_SWIHX6rzbIcicN_408PV7le-8HWN8u4b9Yu2N4,3660
+pyaoc/day_launch.py,sha256=AnVJMLhaZ8JUNJDy5PQjcC9WxLUU8lNdt2imGxYoHa0,4809
+pyaoc/day_subject.py,sha256=ltxFGbH9sN7cyTBVAmQFRkKUWNQZFnifz56fJx7zjBs,732
+pyaoc/day_year.py,sha256=v3zH2Fj6H5pX_sNTmoruSze0MTBJA7yRZg5Gp4G851s,580
+pyaoc/part.jinja2,sha256=e2IMNZQJb1Dsy_4ZQZVzsC7UxiK8oKWu5jhIg0_4sbU,125
+pyaoc/pyaoc.py,sha256=933AQ7fNbwb_m7diomgPhR5Z4ctk_w8iLT9ikc8oEYA,3525
+pyaoc/readme_generation.py,sha256=Q6Q2IB0Ialo8I0cmVjYG39RBpL_X8OeLePSpzn7WR_0,1820
+pyaoc-0.0.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+pyaoc-0.0.1.dist-info/METADATA,sha256=P0mNJdYD5f0gREbdZQvYEERRMC9AUi5ju4JeBDO1Q5k,24752
+pyaoc-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyaoc-0.0.1.dist-info/entry_points.txt,sha256=rD9d6VOs0jRuUtLO0uTphmZOpYxB_Cbn9s2uhw3CNrs,43
+pyaoc-0.0.1.dist-info/top_level.txt,sha256=1VwbsVechbsFAwlXvCir0YvEEjQ6qOG3d-6Wn1g6B14,6
+pyaoc-0.0.1.dist-info/RECORD,,
