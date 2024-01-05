@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+localrag/__init__.py
+localrag/chatresponse.py
+localrag/ragchat.py
+localrag.egg-info/PKG-INFO
+localrag.egg-info/SOURCES.txt
+localrag.egg-info/dependency_links.txt
+localrag.egg-info/requires.txt
+localrag.egg-info/top_level.txt
+tests/test_hello.py
