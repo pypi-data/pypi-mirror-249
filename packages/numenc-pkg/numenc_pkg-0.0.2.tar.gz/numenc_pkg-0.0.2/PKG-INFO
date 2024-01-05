@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: numenc_pkg
+Version: 0.0.2
+Summary: Number Encryptor that encrypts and decrypts your pin
+Author: Chirag Shah
+Author-email: chirag.h.shahh@gmail.com
+Keywords: enc,encryptor,pin,code,decryptor,password
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE

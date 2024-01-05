@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+library/__init__.py
+library/code.py
+numenc_pkg.egg-info/PKG-INFO
+numenc_pkg.egg-info/SOURCES.txt
+numenc_pkg.egg-info/dependency_links.txt
+numenc_pkg.egg-info/top_level.txt
