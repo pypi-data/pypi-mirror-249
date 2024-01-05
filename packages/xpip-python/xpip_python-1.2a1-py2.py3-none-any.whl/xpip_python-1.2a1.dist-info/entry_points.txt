@@ -1,0 +1,5 @@
+[console_scripts]
+xpip-build = xpip.builder.build:main
+xpip-mirror = xpip.installer.mirror:main
+xpip-upload = xpip.installer.upload:main
+xpip-version = xpip.version:main
