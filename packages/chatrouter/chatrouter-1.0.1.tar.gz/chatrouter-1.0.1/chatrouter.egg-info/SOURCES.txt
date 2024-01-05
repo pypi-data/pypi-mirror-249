@@ -1,0 +1,9 @@
+LICENSE
+README.md
+chatrouter.py
+setup.cfg
+setup.py
+chatrouter.egg-info/PKG-INFO
+chatrouter.egg-info/SOURCES.txt
+chatrouter.egg-info/dependency_links.txt
+chatrouter.egg-info/top_level.txt
