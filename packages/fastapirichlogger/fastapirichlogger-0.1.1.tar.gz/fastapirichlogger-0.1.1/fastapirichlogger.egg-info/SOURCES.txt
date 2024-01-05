@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+core/__init__.py
+core/config.py
+fastapirichlogger.egg-info/PKG-INFO
+fastapirichlogger.egg-info/SOURCES.txt
+fastapirichlogger.egg-info/dependency_links.txt
+fastapirichlogger.egg-info/requires.txt
+fastapirichlogger.egg-info/top_level.txt
