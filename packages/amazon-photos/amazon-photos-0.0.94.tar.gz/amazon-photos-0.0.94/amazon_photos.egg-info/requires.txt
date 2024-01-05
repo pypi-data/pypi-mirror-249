@@ -1,0 +1,17 @@
+psutil
+nest-asyncio
+tqdm
+aiofiles
+orjson
+httpx[http2]
+pandas
+psutil
+
+[:platform_system != "Windows"]
+uvloop
+
+[extras]
+torch
+torchvision
+timm
+Pillow
