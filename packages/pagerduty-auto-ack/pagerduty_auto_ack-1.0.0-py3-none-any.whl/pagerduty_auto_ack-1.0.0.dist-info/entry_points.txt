@@ -1,0 +1,3 @@
+[console_scripts]
+pagerduty-auto-ack=pagerduty_auto_ack.cli:main
+
