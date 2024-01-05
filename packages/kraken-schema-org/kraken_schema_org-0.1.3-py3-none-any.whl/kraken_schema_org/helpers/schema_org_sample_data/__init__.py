@@ -1,0 +1,1 @@
+from .schema_org_sample_data import get_sample_data
