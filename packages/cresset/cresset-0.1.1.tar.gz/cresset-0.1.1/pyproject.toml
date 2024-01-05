@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cresset"
+version = "0.1.1"
+authors = [
+  { name="Nader Akoury", email="~dojoteef/cresset-devel@lists.sr.ht" },
+]
+description = "Instantiate Python objects with Jsonnet"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = [
+    "confactory==0.1",
+    "torch>=1.4"
+]
+
+[project.optional-dependencies]
+codeqa = [
+    "ruff"
+]
+formatters = [
+    "black",
+    "isort"
+]
+typing = [
+    "mypy"
+]
+dev = [
+    "cresset[codeqa]",
+    "cresset[formatters]",
+    "cresset[typing]"
+]
+
+[project.urls]
+Source = "https://git.sr.ht/~dojoteef/cresset"
+"Mailing List" = "https://lists.sr.ht/~dojoteef/cresset"
+
+[tool.mypy]
+no_implicit_optional = false
