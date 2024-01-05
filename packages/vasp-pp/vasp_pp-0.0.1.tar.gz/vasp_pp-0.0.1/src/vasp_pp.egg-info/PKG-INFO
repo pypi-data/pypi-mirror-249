@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: vasp-pp
+Version: 0.0.1
+Summary: Post-processes VASP outputs 
+Home-page: https://github.com/brobinson10296/vasp_pp_package
+Author: Brian Robinson
+Author-email: b.p.robinson102@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# vasp_pp_package
+VASP post-processing package
