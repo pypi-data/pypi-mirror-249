@@ -1,0 +1,10 @@
+bug_trail_core/__init__.py,sha256=H2e7hSnw0oM2ayuRT_k96rQZwDeB1ONeHrYx9R-Fwco,471
+bug_trail_core/_version.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+bug_trail_core/config.py,sha256=7ZyLAI6BZD0BlA6qfRJZmqTh-91dvye9BH5xGSxtVKQ,2014
+bug_trail_core/handlers.py,sha256=y4RFMTorxQBm0e3_FoLVWq1pKwbo0AYEZ9maYdaI44w,9966
+bug_trail_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bug_trail_core/sqlite3_utils.py,sha256=d_AVXxDTdkT3kwKjDzAnBATC61gKmwgP3pztHX1B4eQ,936
+bug_trail_core-1.0.1.dist-info/LICENSE,sha256=jorgCGk-Vzqzuda58x7WxtiRSnL0_WaOSLcZIe3czgo,1071
+bug_trail_core-1.0.1.dist-info/METADATA,sha256=TdmoK6CDuQu6u2dm7yAyG8JZV1pnUTjyn__B0YKw0Go,4086
+bug_trail_core-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bug_trail_core-1.0.1.dist-info/RECORD,,
