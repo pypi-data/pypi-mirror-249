@@ -1,0 +1,9 @@
+pyhidra
+mdutils
+
+[testing]
+pytest
+requests
+pytest-datadir
+pytest-forked
+pytest-xdist
