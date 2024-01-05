@@ -1,0 +1,14 @@
+retri_eval/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retri_eval/evaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retri_eval/evaluation/indexed_task.py,sha256=LguPVgTe0134AURDermWhn32s16sBcGxkW_aglfOoeU,2615
+retri_eval/evaluation/mteb_tasks.py,sha256=r-ZSRJ-DlGeDwD5s37-jbOVSkyO3bR74vg3Q_h-YuYM,7852
+retri_eval/evaluation/retriever.py,sha256=JYLQblr07t430YOvoQ3ap7myqAK_XOHbEvokY_UETPA,4965
+retri_eval/indexes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retri_eval/indexes/indexing.py,sha256=fbOCfqmFTYXZNs5PRLG9QBSSR01cPJKeQ_xZjTv4QA8,1239
+retri_eval/indexes/qdrant_index.py,sha256=EVOa0UgVj52CjzRD76kEabEukK79wHt0Ccf0M--nzD4,2438
+retri_eval/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retri_eval/processing/pipeline.py,sha256=lP9lOSIYTNaA6TMnlmAv4I64YiuFc5lPRHABnNRSmhU,1405
+retri_evals-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+retri_evals-0.0.1.dist-info/METADATA,sha256=Yg9qnuE4vWQT9_S_kqT9Qy3aRgCo-kniZ1dLJiw-6NU,7253
+retri_evals-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+retri_evals-0.0.1.dist-info/RECORD,,
