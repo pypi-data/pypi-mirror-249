@@ -1,0 +1,10 @@
+morse_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morse_code/constants.py,sha256=jsriRYt9Ayc7xPcPpTQHfj-RDluIZawsO4cx_Ahw6Ps,178
+morse_code/converter.py,sha256=EHOSmQGNNikp2IXQDCI8QzRDZx4unWXbJjANr_f7zu8,2493
+morse_code/dash.mp3,sha256=LTqQZ3p6tkMQeE5MCpjANomps-kJGI_H-0TqFqWt5-M,10493
+morse_code/dot.mp3,sha256=RGT8BffKvEMl_IldGD4F3oTmiGO4eMi7sw1VSZkIckY,6313
+morse_code/minion_mode.py,sha256=ULPKJ3ZhZHm_AogKzBy-5f9ux10sqN5SjgJqNfpQwSE,1832
+morse_code_converter-1.0.0.dist-info/METADATA,sha256=-kT09xnYEyFw2oidlsfqc2yrP7KT6a2m-oR2wEwiVdg,3399
+morse_code_converter-1.0.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+morse_code_converter-1.0.0.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+morse_code_converter-1.0.0.dist-info/RECORD,,
