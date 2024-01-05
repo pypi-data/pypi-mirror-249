@@ -1,0 +1,3 @@
+[console_scripts]
+document_ai = document_ai.cli:main
+
