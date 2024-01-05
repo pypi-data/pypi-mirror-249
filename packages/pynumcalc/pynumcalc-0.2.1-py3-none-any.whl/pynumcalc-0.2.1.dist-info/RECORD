@@ -1,0 +1,13 @@
+pynumcalc/__init__.py,sha256=qUWmDe3Ooi0VCHvLrr3ZOgSid3-XHtD83V_THjWXNW0,110
+pynumcalc/_diffquot.py,sha256=8Eo4p9gR87DmfJegCX-YUJ6d06yDogKejm3_0QeC5SE,5923
+pynumcalc/_finitediff.py,sha256=c24-H8EIGSu00lWzrsAAVAOmG5pBxWOJEYxY2gFJm3Q,14881
+pynumcalc/_riemannsum.py,sha256=8g5LG2KUmUQTGNYF6j9nfcG0qVVPRFz0sAP54L3fNtY,2562
+pynumcalc/_typedef.py,sha256=gev_bUqxL7jzgLDeJ_zukbArpHAK4To96GnogfebYQE,160
+pynumcalc/integral.py,sha256=Q5nfP3mUIHsjt_0E8Y0GobB5isiF-sPNH1AQGL2DnB8,3844
+pynumcalc/tests/__init__.py,sha256=m8jhP3Bu-EtH5dQBa_ryFZMzbJxQ3s97JsypVqeQcNY,47
+pynumcalc/tests/test_integral.py,sha256=3mFWDh5eytWVy9GayJtPp4ZfZ6KmWfsVWxJDytsw2vs,6695
+pynumcalc-0.2.1.dist-info/LICENSE,sha256=xJqnN9DYrbuKHH3MilZ275gAgpqDizdcyg0uJHtyn5w,1087
+pynumcalc-0.2.1.dist-info/METADATA,sha256=JSwXlUl25CYzWCkNKU4NiBtfuYus2dgxjrCT4vyb3XU,2287
+pynumcalc-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pynumcalc-0.2.1.dist-info/top_level.txt,sha256=jwTD5p9-WaXx2GPngHOhs6brHjAH71A-PBchjCa51WQ,10
+pynumcalc-0.2.1.dist-info/RECORD,,
