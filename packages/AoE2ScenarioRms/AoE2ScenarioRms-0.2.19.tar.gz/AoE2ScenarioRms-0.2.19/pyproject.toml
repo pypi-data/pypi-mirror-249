@@ -1,0 +1,34 @@
+[project]
+name = "AoE2ScenarioRms"
+version = "0.2.19"  # << Also change `AoE2ScenarioRms/version.py`
+authors = [
+    { name = "Kerwin Sneijders", email = "ksneijders-dev@hotmail.com" },
+]
+description = """Add replay-ability to scenarios through random resource placement using triggers & XS!"""
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["AoE2ScenarioParser>=0.1.60"]
+
+[project.urls]
+"Homepage" = "https://github.com/KSneijders/AoE2ScenarioRms"
+"Bug Tracker" = "https://github.com/KSneijders/AoE2ScenarioRms/issues"
+"Examples" = "https://github.com/KSneijders/AoE2ScenarioRms/tree/main/examples"
+"Changelog" = "https://github.com/KSneijders/AoE2ScenarioRms/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["AoE2ScenarioRms*"]
+
+[tool.setuptools.package-data]
+# What doesn't work (absolutely no idea why):
+#  - "xs/**.xs" (snippets not included)
+#  - "*.xs" (No XS files at all)
+AoE2ScenarioRms = ["xs/*.xs", "xs/snippets/*.xs"]
