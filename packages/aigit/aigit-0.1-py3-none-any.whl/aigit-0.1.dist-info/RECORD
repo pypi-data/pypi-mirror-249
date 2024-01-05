@@ -1,0 +1,13 @@
+aigit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aigit/config_manager.py,sha256=FQciwcMK2C84No24MJKUQRcOlvDlaTT8jGQSxn5wxrA,530
+aigit/git_interface.py,sha256=SFe34MhLxrxz9Gb_2dPnvH_72z2V7U4eaz7uCmA84Yo,1595
+aigit/main.py,sha256=GdhHgDVAXQgafWC-msk2-Uww9FCGXvkF7G9iJCVa-O0,1653
+aigit/openai_interface.py,sha256=TvJgtxUPk0rMF8y95Ncg15r55PZ9JeG8F5yVkNMh5-g,1861
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aigit-0.1.dist-info/LICENSE,sha256=Wc6piJ1l6z1St1dXTwKcrX0bBx97nsHha5bos9S9XZY,1087
+aigit-0.1.dist-info/METADATA,sha256=HIDPnvJSdENtw1xFqMAVno_7PfE9wa0QBRrLfMh53yM,2120
+aigit-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aigit-0.1.dist-info/entry_points.txt,sha256=_UfgZFT2R6_554_R__9Dys5qVOvr5rnOXgosPYIgNyY,40
+aigit-0.1.dist-info/top_level.txt,sha256=64umRi3WPKV7nYLlOuhV5kefgljf-TpzXZwrIYUPj0w,12
+aigit-0.1.dist-info/RECORD,,
