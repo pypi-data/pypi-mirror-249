@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "compoz"
+version = "0.1.0-beta.2"
+description = "A simple composition library"
+authors = ["Harold Cohen <me@harold-cohen.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/haroldcohen/compoz"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+keywords = [
+    "composition",
+    "compose",
+    "functional programming",
+]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/haroldcohen/compoz"
+Repository = "https://github.com/haroldcohen/compoz.git"
+Issues = "https://github.com/haroldcohen/compoz/issues"
+Changelog = "https://github.com/haroldcohen/compoz/blob/master/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+
+
+[tool.poetry.group.lint.dependencies]
+pylint = "^3.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
