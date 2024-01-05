@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: BotOps
+Version: 0.1a2
+Summary: Telegram bot framework with related operations.
+Home-page: https://github.com/givemepillow/BotOps
+License: MIT
+Keywords: bot,telegram,chatbot,asyncio
+Author: Kirill Lapushinskiy
+Author-email: kirill@lapushinskiy.ru
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: attrs (>=23.2.0,<24.0.0)
+Requires-Dist: cattrs (>=23.2.3,<24.0.0)
+Project-URL: Bug Tracker, https://github.com/givemepillow/BotOps/issues
+Project-URL: Repository, https://github.com/givemepillow/BotOps
+Description-Content-Type: text/markdown
+
+

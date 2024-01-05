@@ -1,0 +1,106 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "BotOps"
+version = "0.1a2"
+description = "Telegram bot framework with related operations."
+authors = ["Kirill Lapushinskiy <kirill@lapushinskiy.ru>"]
+readme = "README.md"
+packages = [{ include = "botops" }]
+include = ["README.md", "CHANGELOG.md"]
+license = "MIT"
+repository = "https://github.com/givemepillow/BotOps"
+keywords = ["bot", "telegram", "chatbot", "asyncio"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Web Environment",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Communications :: Chat",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/givemepillow/BotOps/issues"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.9.1"
+attrs = "^23.2.0"
+cattrs = "^23.2.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.11"
+mypy = "^1.8.0"
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+target-version = "py312"
+line-length = 100
+extend-ignore = ["F403"]
+fixable = ["I001"]
+
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true
+indent-style = "space"
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+extend-select = [
+    # flake8-bugbear
+    "B",
+    # flake8-quotes
+    "Q"
+]
+fixable = ["ALL"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disable_error_code = ["union-attr", "name-defined", "misc"]
+disallow_untyped_defs = true
