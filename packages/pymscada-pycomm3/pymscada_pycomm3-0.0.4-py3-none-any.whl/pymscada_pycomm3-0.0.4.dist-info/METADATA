@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pymscada-pycomm3
+Version: 0.0.4
+Summary: pycomm3 connector for pymscada
+Author-Email: Jamie Walton <jamie@walton.net.nz>
+License: GPL-3.0-or-later
+Requires-Python: >=3.9
+Requires-Dist: pymscada>=0.0.11
+Requires-Dist: pycomm3>=1.2.14
+Description-Content-Type: text/markdown
+
+# pymscada-pycomm3
+Rockwell PLC driver for pymscada using pycomm3
+
+```bash
+cd                        # to location of config dir
+cp {xxx}/site-packages/pymscada-pycomm3/demo/pycomm3.yaml config
+vi config/pycomm3.yaml    # edit as appropriate for your site
+vi config/tags.yaml       # add any tags
+vi config/wwwserver.yaml  # add tags on web page
+python -m pymscada_pycomm3
+```
+
+This will put Logix data on the [pymscada](https://github.com/jamie0walton/pymscada) bus as tag values.
+
