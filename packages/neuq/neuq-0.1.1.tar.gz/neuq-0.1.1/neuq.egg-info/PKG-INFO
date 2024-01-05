@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: neuq
+Version: 0.1.1
+Summary: Supercharge your analysis with the power of AI.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: Flask==3.0.0
+Requires-Dist: Flask-Cors==4.0.0
