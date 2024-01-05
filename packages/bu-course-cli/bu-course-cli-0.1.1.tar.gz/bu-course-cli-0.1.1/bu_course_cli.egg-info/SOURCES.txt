@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+bu_course_cli/__init__.py
+bu_course_cli/app.py
+bu_course_cli/cli.py
+bu_course_cli.egg-info/PKG-INFO
+bu_course_cli.egg-info/SOURCES.txt
+bu_course_cli.egg-info/dependency_links.txt
+bu_course_cli.egg-info/entry_points.txt
+bu_course_cli.egg-info/requires.txt
+bu_course_cli.egg-info/top_level.txt
