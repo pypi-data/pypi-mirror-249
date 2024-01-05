@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_cdn/__init__.py
+django_cdn/apps.py
+django_cdn/package_manager.py
+django_cdn.egg-info/PKG-INFO
+django_cdn.egg-info/SOURCES.txt
+django_cdn.egg-info/dependency_links.txt
+django_cdn.egg-info/requires.txt
+django_cdn.egg-info/top_level.txt
