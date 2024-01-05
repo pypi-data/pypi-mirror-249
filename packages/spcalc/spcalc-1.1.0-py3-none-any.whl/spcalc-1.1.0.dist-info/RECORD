@@ -1,0 +1,16 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/add.py,sha256=z6TedX9k31NWE-ZQEriCuGA98Jf0R0w_BqhZdsjWNTo,114
+src/calculator.py,sha256=urB2JvJghRI5wpoBPWIQzCar2T84hV2ymi1VkaK8aL0,245
+src/divide.py,sha256=11pRvnO0syDvi6NMgeRFf_7S-mYJskljpbVqMXACSEs,191
+src/main.py,sha256=QClZZ9DmzAwY4khyFA6TXJtObSMgIXoC-Y0ZnxJqMd8,1994
+src/multiply.py,sha256=Zaa1ik6t-Q5httsAfR_BGCoVRwbOzfQYNIu8Myl45zU,119
+src/operation.py,sha256=6I7qlgaetyWOtl-Mzkjr43ZocZ9wtnsSCS6SXYdPepo,146
+src/subtract.py,sha256=66hGA2RgnsZdIz9fJzGwoOo6ODfQ_Jl9LGq0MgiLqSc,119
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_calculator.py,sha256=QQ6N9CPXb5Xh9X1os4ErDurx2oeEMB8W-xaS3ZAFZHA,920
+spcalc-1.1.0.dist-info/LICENSE,sha256=KIp2WfDVA6-M-NGrcBLLMd9corbIv-jgeil12YfHvgg,1063
+spcalc-1.1.0.dist-info/METADATA,sha256=gF5ts7naPWeCc7vO9XgY0z5VSEqhYgCtnBWC9KN7SOw,2821
+spcalc-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+spcalc-1.1.0.dist-info/entry_points.txt,sha256=2fzucbqd4-3fszNHSwk0KXl3crSPADgC1xSomff0pEE,41
+spcalc-1.1.0.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+spcalc-1.1.0.dist-info/RECORD,,
