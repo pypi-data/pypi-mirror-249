@@ -1,0 +1,10 @@
+LICENSE,sha256=Bx2gCH7Xw4WVDtFVyg2cRntdKwqCRP4IP6igBBlAd9I,1063
+gitea/__init__.py,sha256=gyJ81HgNhWAeJr-ePRzJXupL6iUjV3SA6bPqfht4aiw,861
+gitea/apiobject.py,sha256=iSgSgNCgW0bzneVtiVHlxMCU-y6bx9zvE7QdQww8tko,43677
+gitea/baseapiobject.py,sha256=AlN-pAZNLlAMK58WA_HpRJeWw9ltpBueA3eN5darDNE,4041
+gitea/exceptions.py,sha256=EmXo9jMHDkYh23PXrcyRtPVnAkZM53LGdzgIFMAHCL4,1456
+gitea/gitea.py,sha256=9MOX-W7H3BtKnKAoJKWxxsNbDg5eprYQT4MP8m3qnWw,16964
+gipea-0.11.2.dist-info/LICENSE,sha256=Bx2gCH7Xw4WVDtFVyg2cRntdKwqCRP4IP6igBBlAd9I,1063
+gipea-0.11.2.dist-info/METADATA,sha256=Wc8B9k75VeBdY-S8-grZSJcNCAzVUR5bA5kDBOSm5Wc,3456
+gipea-0.11.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gipea-0.11.2.dist-info/RECORD,,
