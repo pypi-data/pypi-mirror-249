@@ -1,0 +1,99 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plotlywaterfall"
+dynamic = ["version", "dependencies"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Daniel Rüffer", email = "docdru.plotlywaterfall@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/docdru/plotlywaterfall"
+Issues = "https://github.com/docdru/plotlywaterfall/issues"
+
+[tool.hatch.version]
+path = "src/plotlywaterfall/__about__.py"
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+]
+
+[tool.hatch.envs.jupyter]
+dependencies = [
+  "jupyterlab"
+]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[tool.hatch.envs.jupyter.scripts]
+jupyterlab = "jupyter lab"
+export_example = "nbconvert "
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.types]
+dependencies = [
+  "mypy>=1.0.0",
+]
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/plotlywaterfall tests}"
+
+[tool.coverage.run]
+source_pkgs = ["plotlywaterfall", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/plotlywaterfall/__about__.py",
+]
+
+[tool.coverage.paths]
+plotlywaterfall = ["src/plotlywaterfall", "*/plotlywaterfall/src/plotlywaterfall"]
+tests = ["tests", "*/plotlywaterfall/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
