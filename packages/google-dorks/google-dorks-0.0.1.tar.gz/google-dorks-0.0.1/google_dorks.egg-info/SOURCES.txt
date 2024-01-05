@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+google-dorks/__init__.py
+google_dorks.egg-info/PKG-INFO
+google_dorks.egg-info/SOURCES.txt
+google_dorks.egg-info/dependency_links.txt
+google_dorks.egg-info/top_level.txt
