@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PVyzMgS
+Version: 0.1.0
+Summary: Simulation software with scientific plotting & visualization utilities, inspired by the "Modelling and Visualization in Physics" course (PHYS10035) taught by the School of Physics and Astronomy at the University of Edinburgh.
+Author-Email: ilikecubesnstuff <25328250+ilikecubesnstuff@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: numpy>=1.26.3
+Requires-Dist: matplotlib>=3.8.2
+Requires-Dist: tqdm>=4.66.1
+Requires-Dist: scipy>=1.11.4; extra == "examples"
+Provides-Extra: examples
+Description-Content-Type: text/markdown
+
+# PVyzMgS
+ Simulation software with scientific plotting & visualization utilities, inspired by the "Modelling and Visualization in Physics" course (PHYS10035) taught by the School of Physics and Astronomy at the University of Edinburgh.
