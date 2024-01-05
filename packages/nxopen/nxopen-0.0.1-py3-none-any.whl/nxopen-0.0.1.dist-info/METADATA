@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nxopen
+Version: 0.0.1
+Summary: An NXOpen helper package to reuse code in scripts, in order to avoid having all the underlying code in the journals itself.
+Project-URL: Homepage, https://github.com/theScriptingEngineer/NXOpen-CAE-python
+Project-URL: Issues, https://github.com/theScriptingEngineer/NXOpen-CAE-python/issues
+Author-email: theScriptingEngineer <nxopen@theScriptingEngineer.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# NXOpen (by theScriptingEngineer)
+This package contains functions which you can use in your own scripts, so you don't have to write everything from scratch.
