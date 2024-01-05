@@ -1,0 +1,2 @@
+[console_scripts]
+prep2dbt = prep2dbt.cli:cli
