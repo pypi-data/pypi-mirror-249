@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-nm59uzf0\\cp312-win32\\build\\venv\\Scripts\\delvewheel', 'repair', '--add-path', 'win32;win64', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-nm59uzf0\\cp312-win32\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-nm59uzf0\\cp312-win32\\built_wheel\\openctp_ctp-6.3.19.2-cp312-cp312-win32.whl']
