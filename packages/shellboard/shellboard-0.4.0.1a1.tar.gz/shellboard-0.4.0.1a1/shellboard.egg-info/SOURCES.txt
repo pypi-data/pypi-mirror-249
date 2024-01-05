@@ -1,0 +1,11 @@
+README.md
+setup.py
+shellboard/Core.py
+shellboard/Menu.py
+shellboard/Widgets.py
+shellboard/__init__.py
+shellboard.egg-info/PKG-INFO
+shellboard.egg-info/SOURCES.txt
+shellboard.egg-info/dependency_links.txt
+shellboard.egg-info/requires.txt
+shellboard.egg-info/top_level.txt
