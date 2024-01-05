@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: BAET
+Version: 0.1.3.dev0
+Summary: 
+Author: TimeTravelPenguin
+Author-email: TimeTravelPenguin@gmail.com
+Requires-Python: >=3.11
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: bidict (>=0.22.1,<0.23.0)
+Requires-Dist: ffmpeg-python (>=0.2.0,<0.3.0)
+Requires-Dist: more-itertools (>=10.1.0,<11.0.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: rich-argparse (>=1.4.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Bulk Audio Extract Tool
+
+## About
+
+## Install
+Depending on your platform, to call python, you may need to use the command `python` or `python3`.
+Typing `python3 --version` or `python --version` should display the currently installed python environment your PATH.
+For the remainder of this document, replace instances of `python3` with the appropriate alias on your machine.
+
+To install the requirements:
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Then, call `./main.py --help` to see application information.
+
+## Add to Path
+
+On Linux/MacOS, locate your `~/.bashrc` or `~/.zshrc` file and edit it, adding:
+```bash
+BAET_PATH="/path/to/BulkAudioExtractTool/main.py"
+alias baet="python3 $(BAET_PATH)"
+```
+Restart your terminal and enter `baet --help`. The application's help screen should now show from any directory.
+
