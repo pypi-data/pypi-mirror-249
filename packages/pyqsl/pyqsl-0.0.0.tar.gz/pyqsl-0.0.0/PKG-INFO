@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pyqsl
+Version: 0.0.0
+Summary: A Framework for parametrized sweeps aimed for quantum simulations.
+Author: Antti Vepsäläinen
+License: The MIT License
+        
+        Copyright (c) 2019 Antti Vepsäläinen.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: url, https://github.com/ittnas/pyqsl
+Project-URL: download_url, https://github.com/ittnas/pyqsl/archive/2.0.tar.gz
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Provides-Extra: testing
+Provides-Extra: examples
+License-File: LICENSE
+
+Python framework for simulating quantum mechanics - pyqsl
+=========================================================
+pyqsl provides a framework for running tasks as a function of different combinations of tasks input arguments. For example, pyqsl supports sweeping over
+any combination of the parameters, expanding the results of the task to numpy arrays of correct dimensions. Additinoanally, pyqsl provides a way to
+define relations between different task-parameters in order to construct complicated sweep spaces. The relations can be arbitrarily nested, and support
+different formats such as symbolic equations and lookuptables.
+
+Installation
+------------
+pyqsl can be installed using pip, but is not yet available through public repositories. To install, first clone the repository and enter the directory. There run ::
+
+  git clone https://github.com/ittnas/pyqsl.git
+  pip install ./pyqsl
+
+For development, install also the tools needed for testing ::
+
+  pip install -e ./pyqsl[testing]
+
+For automated document generation the library uses Sphinx. To generate the documentation install sphinx and then navigate to doc/ directory. To update the API doc strings, run ::
+
+  sphinx-apidoc -f -o source/ ../
+
+and then build the docs with ::
+
+  make html
+
+to generate the html documentation. The documentation can be found in doc/build/html.
+
+
+Issues
+------
+* There is a weird feature related to multiprocessing in windows. Every time a new process is spawned, the parent class is imported. This leads to an infinite loop if care is not taken. Therefore, every time pyqsl.core.simulation_loop is called, a main guard needs to be added, e.g. ::
+
+    if __name__=='__main__':
+        result = pyqsl.run(simulation_task, settings, parallelize=True)
