@@ -1,0 +1,4 @@
+requests
+appdirs>=1.4
+importlib_resources
+posix-ipc>=1.1.1
