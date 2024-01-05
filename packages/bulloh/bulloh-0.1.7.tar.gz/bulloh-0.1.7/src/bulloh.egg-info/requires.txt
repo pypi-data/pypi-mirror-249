@@ -1,0 +1,10 @@
+tickthon>=0.2.2
+nothion
+
+[dev]
+pytest
+pytest-cov
+twine
+flake8
+mypy
+types-requests
