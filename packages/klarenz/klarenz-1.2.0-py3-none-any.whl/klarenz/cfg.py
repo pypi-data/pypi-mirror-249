@@ -1,0 +1,2 @@
+
+_copyright = None
