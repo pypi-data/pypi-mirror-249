@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: navlib
+Version: 0.1.3
+Summary: MBARI CoMPAS Lab Utilities for Navigation Data Processing
+Author: srodriguez_mbari
+Author-email: srodriguez@mbari.org
+Requires-Python: >=3.8,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: lcm (>=1.4.4,<2.0.0)
+Requires-Dist: numpy (>=1.23)
+Description-Content-Type: text/markdown
+
+Release 0.1.2
