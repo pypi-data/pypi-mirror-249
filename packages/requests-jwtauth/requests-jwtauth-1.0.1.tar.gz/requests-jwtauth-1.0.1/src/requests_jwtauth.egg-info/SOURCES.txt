@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/requests_jwtauth/__init__.py
+src/requests_jwtauth/requests_jwtauth.py
+src/requests_jwtauth.egg-info/PKG-INFO
+src/requests_jwtauth.egg-info/SOURCES.txt
+src/requests_jwtauth.egg-info/dependency_links.txt
+src/requests_jwtauth.egg-info/requires.txt
+src/requests_jwtauth.egg-info/top_level.txt
+tests/test_auth.py

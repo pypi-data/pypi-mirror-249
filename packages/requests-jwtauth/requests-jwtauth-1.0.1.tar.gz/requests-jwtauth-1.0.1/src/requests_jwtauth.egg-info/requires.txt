@@ -1,0 +1,7 @@
+jwcrypto
+requests
+
+[test]
+freezegun
+pytest
+pytest-cov
