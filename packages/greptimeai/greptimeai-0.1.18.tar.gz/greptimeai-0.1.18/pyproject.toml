@@ -1,0 +1,57 @@
+[project]
+name = "greptimeai"
+version = "0.1.18" # update greptimeai.__version__ at the same time
+description = "Observability tool for LLM application"
+authors = [
+    { name = "Greptime", email = "info@greptime.com" },
+]
+dependencies = [
+    "opentelemetry-api>=1.20.0",
+    "opentelemetry-sdk>=1.20.0",
+    "opentelemetry-exporter-otlp-proto-http>=1.20.0",
+    "tiktoken>=0.5.1",
+]
+keywords = [
+    "greptime",
+    "greptimeai",
+    "greptimedb",
+    "observability",
+    "monitoring",
+    "llm",
+    "ai",
+    "langchain",
+    "openai",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.1.3",
+    "pytest>=7.4.3",
+    "langchain>=0.0.352",
+    "openai>=1.6.0",
+    "mypy>=1.7.1",
+    "pymysql>=1.1.0",
+    "pytest-asyncio>=0.23.2",
+    "types-PyMySQL>=1.1.0.1",
+    "socksio>=1.0.0",
+]
+
+[tool.rye.scripts]
+check = { cmd = "ruff check ."}
+test = { cmd = "pytest tests/ -v" }
+
+# mypy $(git ls-files '*.py')
+# TODO(yuanbohan): open --strict option for mypy
+[tool.mypy]
+check_untyped_defs = true
+# enable_error_code = "explicit-override"
+
+[tool.pyright]
+reportOptionalCall = "none"
