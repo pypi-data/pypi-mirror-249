@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: influxdb2-dbapi
+Version: 0.1.12.9
+Summary: Python DB-API and SQLAlchemy interface for influxdb2.
+Home-page: https://github.com/mfyuce/influxdb2-dbapi
+Author: Beto Dealmeida + Mehmet F. YUCE
+Author-email: fatih.yuce@ulakhaberlesme.com.tr
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Dist: Pygments
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: tabulate
+Requires-Dist: prompt_toolkit
+Requires-Dist: SQLAlchemy
+Requires-Dist: sqlalchemy
+Requires-Dist: influxdb-client
+Requires-Dist: pandas
+Requires-Dist: requests-ntlm
+Requires-Dist: sqlparse
+Requires-Dist: zeep
+Provides-Extra: dev
+Requires-Dist: nose; extra == "dev"
+Requires-Dist: pipreqs; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Provides-Extra: sqlalchemy
+Requires-Dist: sqlalchemy; extra == "sqlalchemy"
+Provides-Extra: cli
+Requires-Dist: pygments; extra == "cli"
+Requires-Dist: prompt_toolkit; extra == "cli"
+Requires-Dist: tabulate; extra == "cli"
