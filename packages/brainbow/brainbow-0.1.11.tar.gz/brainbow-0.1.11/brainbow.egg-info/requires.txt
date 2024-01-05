@@ -1,0 +1,6 @@
+numpy
+matplotlib
+nibabel
+scipy
+tqdm
+importlib_resources
