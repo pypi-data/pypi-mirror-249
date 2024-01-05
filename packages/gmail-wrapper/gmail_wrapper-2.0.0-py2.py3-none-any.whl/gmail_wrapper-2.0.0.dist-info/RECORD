@@ -1,0 +1,9 @@
+gmail_wrapper/__init__.py,sha256=2RL2jpIU3yiqWaCvPcXsa4P_OZJ_D25G5hbuLexB9hc,78
+gmail_wrapper/client.py,sha256=0svubVk1Ldq-Jrdw-nElH93xlSnLWp8OxRQcl3jEHJ0,7697
+gmail_wrapper/entities.py,sha256=Oi-OptrPqaz1OcZEDvNVzdQzAP9-U2je2CORhEm0vLc,4718
+gmail_wrapper/exceptions.py,sha256=54m3bgJArOn2-Br0zbAS-1dhQ1oI0sTlBzklWAf2CaU,713
+gmail_wrapper-2.0.0.dist-info/LICENSE,sha256=CnX7qCbbsRH7-ICQ0BmavBCkcdorjLWyG9hQ16aL9l4,1066
+gmail_wrapper-2.0.0.dist-info/METADATA,sha256=DhGTlYGVHBIvgXy0pHVhqmOYGGgFzp6dNwwLM2zQ380,4389
+gmail_wrapper-2.0.0.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+gmail_wrapper-2.0.0.dist-info/top_level.txt,sha256=Ab-1VsWxydRNNZvb0OIGBWvfDGgtORNEMUoCS75kJZY,14
+gmail_wrapper-2.0.0.dist-info/RECORD,,
