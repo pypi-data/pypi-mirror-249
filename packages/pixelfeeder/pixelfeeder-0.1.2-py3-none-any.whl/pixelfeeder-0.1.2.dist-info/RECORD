@@ -1,0 +1,13 @@
+pixelfeeder/__init__.py,sha256=efgZJysoH2I0_H7iUa541_U2eec0W6_cIbzVV5_Miig,997
+pixelfeeder/cli.py,sha256=5_CVMNCIUS5EVsX2XMtKZTmMqQMxVToucIVT4YWMRSI,3610
+pixelfeeder/flickr_data_reader.py,sha256=iF_3oZ8MPTXxve-4Bmj6L4WDeSJ1-U_v9Oz8QZ2UinE,5208
+pixelfeeder/gui.py,sha256=IpNFsg--bq-9q3e78EzRzg_8OFmSUO-aHaAZD6_Pz5s,34719
+pixelfeeder/image_loader.py,sha256=8RJFFeSBfLd2NIsSbLY73sDjmlDKiCdFJRES8BrY8hc,4206
+pixelfeeder/pixelfed_uploader.py,sha256=dV3B0Hr7juqP30TQvMVsSIHQ8wNYJpud707EEVAX9sI,4289
+pixelfeeder/tools.py,sha256=ulIwQJN3YgjRHfYuehOxVzmCqrcKy04kEKzamg1cEXo,4068
+pixelfeeder-0.1.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pixelfeeder-0.1.2.dist-info/METADATA,sha256=eW8vJWX9QVhkG9JFpa_jeWgJbqUtLFab__0wyfrX82o,4836
+pixelfeeder-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pixelfeeder-0.1.2.dist-info/entry_points.txt,sha256=27WotSAMteIQZEgfQBbAdlZFYcMi1Y2FykFXIUqfHeQ,92
+pixelfeeder-0.1.2.dist-info/top_level.txt,sha256=1eKkiaM7BPgA9V_tUCfOA1TP_ozuXL6FBm20tYoHTCY,12
+pixelfeeder-0.1.2.dist-info/RECORD,,
