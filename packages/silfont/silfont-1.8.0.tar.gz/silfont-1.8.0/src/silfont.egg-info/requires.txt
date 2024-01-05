@@ -1,0 +1,11 @@
+MutatorMath
+odfpy
+defcon
+fontMath
+fontParts
+fonttools
+glyphsLib
+ufo2ft
+tabulate
+lxml
+lz4
