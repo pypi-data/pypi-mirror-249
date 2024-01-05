@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: eesrep
+Version: 0.1.2
+Summary: EESREP is a component based energy system optimisation python module.
+Home-page: https://github.com/tmoulignier/EESREP
+Author: CEA
+Author-email: Thibault.Moulignier@cea.fr
+Maintainer: Thibault Moulignier
+Project-URL: Bug Reports, https://github.com/tmoulignier/EESREP/issues
+Project-URL: Doc, https://eesrep.readthedocs.io/en/latest//index.html
+Project-URL: Source, https://github.com/tmoulignier/EESREP
+Keywords: optimization,modelling,energy,system
+Requires-Python: >=3.7, <4
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: docs-requirements-txt
+Requires-Dist: sphinx ; extra == 'docs-requirements-txt'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs-requirements-txt'
+Requires-Dist: myst-parser ; extra == 'docs-requirements-txt'
+Requires-Dist: numpydoc ; extra == 'docs-requirements-txt'
+Requires-Dist: nbsphinx ; extra == 'docs-requirements-txt'
+Requires-Dist: ipython ; extra == 'docs-requirements-txt'
+Requires-Dist: jupyter ; extra == 'docs-requirements-txt'
+Requires-Dist: docplex ; extra == 'docs-requirements-txt'
+Requires-Dist: cplex ; extra == 'docs-requirements-txt'
+Requires-Dist: mip ; extra == 'docs-requirements-txt'
+Requires-Dist: pyomo ; extra == 'docs-requirements-txt'
+Requires-Dist: pandoc ; extra == 'docs-requirements-txt'
+
+EESREP is a component based energy system optimisation python module.
