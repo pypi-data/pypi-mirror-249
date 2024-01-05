@@ -1,0 +1,2 @@
+[console_scripts]
+myctl = my_ctl:cli

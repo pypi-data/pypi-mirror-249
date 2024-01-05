@@ -1,0 +1,3 @@
+include my_ctl/*
+include my_ctl/*/*
+recursive-include my_ctl static *

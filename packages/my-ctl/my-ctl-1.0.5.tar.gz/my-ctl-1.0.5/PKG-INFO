@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: my-ctl
+Version: 1.0.5
+Summary: myctl quick create  project
+Author: labelnet
+Author-email: labelnet@foxmail.com
+License: labelnet
+Keywords: my-ctl
+Requires-Python: >=3.8
+Requires-Dist: nuitka
+Requires-Dist: requests
+Requires-Dist: pytest
+Requires-Dist: pyyaml
+Requires-Dist: click
+Requires-Dist: twine

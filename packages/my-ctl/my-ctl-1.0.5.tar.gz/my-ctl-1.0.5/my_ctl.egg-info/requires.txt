@@ -1,0 +1,6 @@
+nuitka
+requests
+pytest
+pyyaml
+click
+twine
