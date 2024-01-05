@@ -1,0 +1,6 @@
+[console_scripts]
+cat2 = wnix.bin.cat:main
+grep2 = wnix.bin.grep:main
+man2 = wnix.bin.man:main
+sort2 = wnix.bin.sort:main
+what = wnix.bin.what:main
