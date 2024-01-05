@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/pytest_pystack/__init__.py
+src/pytest_pystack/_config.py
+src/pytest_pystack/_debug_detect.py
+src/pytest_pystack/_monitor_process.py
+src/pytest_pystack/plugin.py
+src/pytest_pystack.egg-info/PKG-INFO
+src/pytest_pystack.egg-info/SOURCES.txt
+src/pytest_pystack.egg-info/dependency_links.txt
+src/pytest_pystack.egg-info/entry_points.txt
+src/pytest_pystack.egg-info/requires.txt
+src/pytest_pystack.egg-info/top_level.txt
+tests/test_pytest_pystack.py
