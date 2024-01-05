@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: basefunctions
+Version: 0.1.5
+Summary: simple library to have some commonly used functions for everyday purpose
+Author-email: NeuralDevelopment <neutro2@outlook.de>
+Project-URL: Homepage, https://dev.azure.com/neuraldevelopment/basefunctions
+Project-URL: Bug Tracker, https://dev.azure.com/neuraldevelopment/basefunctions/_backlogs/backlog/basefunctions%20Team/Epics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
