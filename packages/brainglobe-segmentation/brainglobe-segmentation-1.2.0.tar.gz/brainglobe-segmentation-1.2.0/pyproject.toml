@@ -1,0 +1,85 @@
+[project]
+name = "brainglobe-segmentation"
+description = "Segmentation of anatomical structures in a common coordinate space"
+readme = "README.md"
+authors = [
+    { name = "Adam Tyson, Horst Obenhaus", email = "code@adamltyson.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: napari",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "bg-atlasapi",
+    "brainglobe-napari-io >=0.3.0",
+    "brainglobe-utils >=0.2.7",
+    "imio",
+    "napari >=0.4.5",
+    "numpy",
+    "pandas[hdf5]",
+    "qtpy",
+    "scikit-image",
+    "scipy",
+    "tifffile",
+]
+license = { text = "BSD-3-Clause" }
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://brainglobe.info/"
+"Source Code" = "https://github.com/brainglobe/brainglobe-segmentation"
+"Bug Tracker" = "https://github.com/brainglobe/brainglobe-segmentation/issues"
+Documentation = "https://brainglobe.info/documentation/brainglobe-segmentation/index.html"
+"User Support" = "https://forum.image.sc/tag/brainglobe"
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "gitpython",
+    "pre-commit",
+    "pytest",
+    "coverage",
+    "pytest-cov",
+    "pytest-qt",
+    "napari-time-slicer", # to test non ndarray-types
+]
+
+[project.entry-points."napari.manifest"]
+cellfinder-napari = "brainglobe_segmentation:napari.yaml"
+
+[project.scripts]
+brainglobe-segmentation = "brainglobe_segmentation.segment:main"
+
+[project.entry-points."napari.plugin"]
+brainglobe-segmentation = "brainglobe_segmentation.plugins"
+
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["brainglobe_segmentation*"]
+
+[tool.setuptools_scm]
+
+[tool.black]
+target-version = ['py39', 'py310', 'py311']
+skip-string-normalization = false
+line-length = 79
+
+[tool.ruff]
+line-length = 79
+exclude = ["__init__.py", "build", ".eggs"]
+select = ["I", "E", "F"]
+fix = true
