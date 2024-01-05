@@ -1,0 +1,14 @@
+pyproject.toml,sha256=C9EtzIuyOAkSp0MsL11jPk2qAPq05AHoJGuxNvnU4h4,2604
+survivalist_gamedata/__init__.py,sha256=AyB6TaMXU5KXUpzR7eB3NbNNdEskG00XQfYytE-hbZU,680
+survivalist_gamedata/__main__.py,sha256=b__mUBa_sGn6EjFY8xJ49GlY7k-gAV9NO9pJoTed2OA,307
+survivalist_gamedata/common.py,sha256=ZEZZV5hhhOQyKenLuZPPPRBZOiqQjFnIt5WYGKma8yI,1021
+survivalist_gamedata/config.py,sha256=FTjF2wLUQvv7ZRDVx3NIPJ2OyIaxRvgmVLnF4NHNALI,3466
+survivalist_gamedata/config_default.yaml,sha256=roctjZbJdvUYBTIhiUUrF95qhcDgkXNEya0BVtZFrAM,8281
+survivalist_gamedata/items.py,sha256=lSjjxdkphfrwVvxmS-T-oEOTSIX9IzwqK6jnqN2hIzg,9048
+survivalist_gamedata/logging.yaml,sha256=T5IMwBCjfBQ9PH52FPWxr5KD8kYM6AZo9iobL6H7Xjk,440
+survivalist_gamedata/recipes.py,sha256=4a8BK27jFA3NSXMbz9WX74IjWW_zKZ0ncgfCOu0XfQA,6733
+survivalist_gamedata-1.0.0.dist-info/entry_points.txt,sha256=JRUDVukvT-mRdspHDUM7gVnBIs7ElJwoXQ5yeSlh8f8,74
+survivalist_gamedata-1.0.0.dist-info/LICENSE.txt,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+survivalist_gamedata-1.0.0.dist-info/METADATA,sha256=f2DxbjBM8UG6KJRmXd737-O2aTY7p6iRHXP6AO2LLaI,5623
+survivalist_gamedata-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+survivalist_gamedata-1.0.0.dist-info/RECORD,,

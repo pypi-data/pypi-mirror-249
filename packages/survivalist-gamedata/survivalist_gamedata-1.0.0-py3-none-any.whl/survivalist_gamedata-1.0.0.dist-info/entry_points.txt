@@ -1,0 +1,3 @@
+[console_scripts]
+survivalist-gamedata=survivalist_gamedata.__main__:run
+
