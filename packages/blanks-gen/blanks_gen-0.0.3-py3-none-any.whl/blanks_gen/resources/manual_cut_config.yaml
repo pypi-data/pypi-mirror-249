@@ -1,0 +1,13 @@
+font_name: OpenSans-Light.ttf
+prefix: manual_cut_prefix.tex
+cell: manual_cut_cell.tex
+postfix: postfix.tex
+rows: 8
+columns: 3
+hsep_stub: ""
+hsep: ""
+vsep_stub: " \\\\%\n"
+vsep: ""
+page_sep: "\n\\clearpage\n"
+blank_question_number: "\\_\\_\\_"
+batch_mode: false

@@ -1,0 +1,14 @@
+font_name: OpenSans-Light.ttf
+prefix: prefix.tex
+cell: cell.tex
+postfix: postfix.tex
+rows: 7
+columns: 3
+crops: studchr2023_mdm_crops.pdf
+hsep_stub: "\n\\hspace{<HSEP>}"
+hsep: 3mm
+vsep_stub: "\n\n\\vspace{<VSEP>}\n\n"
+vsep: 3mm
+page_sep: "\n\n\\clearpage\n\n"
+blank_question_number: "\\_\\_\\_"
+batch_mode: true

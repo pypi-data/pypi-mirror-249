@@ -1,0 +1,14 @@
+blanks_gen/__main__.py,sha256=o4qmlAOENg-7zNp5ulpcUuiXOg8XmqvIqA2bONLcsxs,9427
+blanks_gen/version.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+blanks_gen/resources/cell.tex,sha256=uRuRxIJrzAkvZCBOoduD8mDlRMr532mnEHZnb-1u5ws,219
+blanks_gen/resources/default_config.yaml,sha256=IapzoJKAu8ls-4SFVE-FVBnkUmEYLAdNIuiH1r4EtNs,310
+blanks_gen/resources/manual_cut_cell.tex,sha256=V4bnN9l_4fvOzGWqJwUCS52B2SSsWML5m9wSSI1ULxE,195
+blanks_gen/resources/manual_cut_config.yaml,sha256=rZs-WLJ8FXFvABhcCrG7ysFb3jo9D4IsOWg16JiWYzA,260
+blanks_gen/resources/manual_cut_prefix.tex,sha256=lFyH98duElebcvfggAPnfE8poJH0lsWQ6uxNKSmGkxE,255
+blanks_gen/resources/postfix.tex,sha256=_vGcqHhdzLKsgZaqBjUkUxBPWQ2RyMtZqjeDkbAj8JM,16
+blanks_gen/resources/prefix.tex,sha256=OHX3soCsGPSUa95d2ceS8BWBsQTrT9Fx6sT4xecobbc,337
+blanks_gen-0.0.3.dist-info/METADATA,sha256=WHPECdKu5PvHq-dJPymG38r2gDGzO_I0fBexAvKJF0Y,746
+blanks_gen-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+blanks_gen-0.0.3.dist-info/entry_points.txt,sha256=JvdSN3DCH_-NSelrG3-0Pq_NRsvV0iwG2PUEPCrLerc,56
+blanks_gen-0.0.3.dist-info/top_level.txt,sha256=bb8r5aXOujUmCzoZ3-VJZTpr_Fk_hrGdRZEGM_IJA7o,11
+blanks_gen-0.0.3.dist-info/RECORD,,
