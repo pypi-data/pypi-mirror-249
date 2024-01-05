@@ -1,0 +1,212 @@
+Metadata-Version: 2.1
+Name: smcplaus
+Version: 1.1.1
+Summary: A symbolic model checker for the single-agent plausibility models of dynamic epistemic logic
+Home-page: https://gitlab.com/dqalombardi/smcplaus
+License: MIT
+Keywords: belief revision,dynamic epistemic logic,logic,plausibility,symbolic model checking
+Author: David Alvarez Lombardi
+Author-email: dqalombardi@proton.me
+Maintainer: David Alvarez Lombardi
+Maintainer-email: dqalombardi@proton.me
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: graphviz (>=0.20.1,<0.21.0)
+Project-URL: Repository, https://gitlab.com/dqalombardi/smcplaus
+Description-Content-Type: text/markdown
+
+# smcplaus
+
+Owner : [David Alvarez Lombardi](https://linktr.ee/dqalombardi)
+
+Repository : [https://gitlab.com/dqalombardi/smcplaus](https://gitlab.com/dqalombardi/smcplaus)
+
+PyPI : [https://pypi.org/project/smcplaus/](https://pypi.org/project/smcplaus/)
+
+## Description
+
+A symbolic model checker for the single-agent plausibility models of [dynamic epistemic logic](https://plato.stanford.edu/entries/dynamic-epistemic/).
+
+## References
+
+- [SEP : *Plausibility models and belief change* (Baltag & Renne 2016)](https://plato.stanford.edu/entries/dynamic-epistemic/#PlauModeBeliChan)
+- [*A qualitative theory of dynamic interactive belief revision* (Baltag & Smets 2008)](https://doi.org/10.1007/978-3-319-20451-2_39)
+- [*Dynamic logic for belief revision* (van Benthem 2007)](https://doi.org/10.3166/jancl.17.129-155)
+- [*Dynamic interactive epistemology* (Board 2004)](https://doi.org/10.1016/j.geb.2003.10.006)
+- [*Two modellings for theory change* (Grove 1988)](https://doi.org/10.1007/BF00247909)
+
+## Installation
+
+To install using `pip`, run the following.
+
+```shell
+$ python3 -m pip install smcplaus
+```
+
+## Usage
+
+### Specifying formulas
+
+Specify propositional variables.
+```python
+p = PropositionalVariable(letter="p")
+q0 = PropositionalVariable(letter="q", index=0)
+q1 = PropositionalVariable(letter="q", index=1)
+```
+
+Specify complex formulas.
+
+```python
+form_p = Formula(node=p, subformulas=None)
+form_q0 = Formula(node=q0, subformulas=None)
+form0 = Formula(node=Connectives.DIAMOND, subformulas=(form_q0,))  # <>q0
+form1 = Formula(node=Connectives.RADICAL_UPGRADE, subformulas=(form_q0, form0))  # [$q0]<>q0
+```
+
+### Specifying models
+
+Specify plausibility frames by specifying a domain and a state-to-appearance map.
+
+```python
+state0 = State(index=0)
+state1 = State(index=1)
+state2 = State(index=2)
+
+my_frame = PlausibilityFrame(
+    domain={state0, state1, state2},
+    state_to_appearance={
+        state0: {state1},
+        state1: {state2},
+        state2: {state2},
+    },
+    force_s4=True,
+)
+```
+
+
+Specify plausibility models by specifying a frame and a state-to-facts map.
+
+```python
+my_model = PlausibilityModel(
+    frame=my_frame,
+    state_to_facts={
+        state0: {p, q0},
+        state1: {q1},
+        state2: {p, q1},
+    },
+)
+```
+
+
+Specify pointed plausibility models by specifying a model and a point.
+
+```python
+my_pointed_model = PointedPlausibilityModel(
+    model=my_model,
+    point=state1,
+)
+```
+
+### Checking (pointed) models against formulas
+
+Check if a pointed model satisfies a formula.
+
+```python
+my_pointed_model_satisfies_form0 = my_pointed_model.satisfies(form0)  # False
+my_pointed_model_satisfies_form1 = my_pointed_model.satisfies(form1)  # True
+```
+
+Check where a model satisfies a formula.
+
+```python
+form_p_truthset = my_model.truthset(form_p)  # {State(s2), State(s0)}
+```
+
+### Modifying models with formulas
+
+Upgrade a model with a formula.
+
+```python
+my_new_model = my_model.radical_upgrade(form_q0)
+```
+
+### Loading and dumping structures with JSON files
+
+Specify and load a structure from a JSON file.
+
+```python
+my_other_model_json_str = """
+{
+    "frame": {
+        "domain": ["s0", "s1", "s2"],
+        "state_to_appearance": {
+            "s0": ["s1"],
+            "s1": ["s2"],
+            "s2": ["s2"]
+        }
+    },
+    "state_to_facts": {
+        "s0": ["p", "q0"],
+        "s1": ["q1"],
+        "s2": ["p", "q1"]
+    }
+}
+"""
+
+my_other_model = PlausibilityModel.from_json(my_other_model_json_str, force_s4=True)
+```
+
+Dump a structure to a JSON file.
+
+```python
+output_json = my_other_model.to_json()
+```
+
+### Generating digraphs from structures
+
+Generate the digraph of a structure.
+
+```python
+my_model_digraph = my_model.generate_digraph()
+```
+
+Dump the digraph of a structure to a file.
+
+```python
+my_model.dump_digraph(filepath=Path("my_model.dot"))
+```
+
+The file `my_model.dot` will then have the following contents.
+
+```dot
+digraph {
+	s2 [label="s2 || p, q1"]
+	s0 [label="s0 || p, q0"]
+	s1 [label="s1 || q1"]
+	s0 -> s1
+	s1 -> s2
+}
+```
+
+This can be converted to an image via `dot` in the command-line.
+
+```shell
+$ dot my_model.dot -Tsvg -omy_model.svg
+```
+
+The file `my_model.svg` will the have the following contents.
+
+![my_model.svg](https://gitlab.com/dqalombardi/smcplaus/-/raw/main/images/my_model.svg)
+
+### Examples
+
+See `./examples/` for functional example usage.
+
+
+## Contributing
+
+Before submitting a merge request, run the command `tox`, which will run formatters, linters, static type-checkers, and unit tests respectively.
+
