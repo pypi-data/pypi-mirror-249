@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: swh.objstorage.replayer
+Version: 2.0.0
+Summary: Software Heritage content replayer
+Author-email: Software Heritage developers <swh-devel@inria.fr>
+Project-URL: Homepage, https://gitlab.softwareheritage.org/swh/devel/swh-objstorage-replayer
+Project-URL: Bug Reports, https://gitlab.softwareheritage.org/swh/devel/swh-objstorage-replayer/-/issues
+Project-URL: Funding, https://www.softwareheritage.org/donate
+Project-URL: Documentation, https://docs.softwareheritage.org/devel/swh-objstorage-replayer/
+Project-URL: Source, https://gitlab.softwareheritage.org/swh/devel/swh-objstorage-replayer.git
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: humanize
+Requires-Dist: redis
+Requires-Dist: tenacity
+Requires-Dist: swh.core[http] >=0.3
+Requires-Dist: swh.objstorage >=2.3.1
+Requires-Dist: swh.journal >=0.4.2
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-redis ; extra == 'testing'
+Requires-Dist: swh.core[testing] ; extra == 'testing'
+Requires-Dist: types-pyyaml ; extra == 'testing'
+Requires-Dist: types-redis ; extra == 'testing'
+
+Software Heritage - Object storage replayer
+===========================================
+
+Simple command line tool to replicate content objects from a source object
+storage to a destination one by listening the ``content`` topic of a
+``swh.journal`` kafka stream.
