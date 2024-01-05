@@ -1,0 +1,57 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "ffsim"
+requires-python = ">=3.8"
+version = "0.0.18"
+description = "Faster simulations of fermionic quantum circuits."
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = ["numpy", "opt_einsum>=3.3", "pyscf>=2.4.0", "scipy"]
+
+[project.urls]
+Homepage = "https://github.com/qiskit-community/ffsim"
+Documentation = "https://qiskit-community.github.io/ffsim/"
+
+[project.optional-dependencies]
+dev = [
+    "asv",
+    "black[jupyter]",
+    "coverage",
+    "jupyter-sphinx",
+    "maturin",
+    "mypy",
+    "nbmake",
+    "nbsphinx",
+    "pytest",
+    "ruff",
+    "sphinx",
+    "sphinx-autodoc-typehints",
+    "tox",
+]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+python-source = "python"
+module-name = "ffsim._lib"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.ruff]
+select = ["E", "F", "I"]
+src = ["python"]
+
+[tool.cibuildwheel]
+build = "cp38-macosx* cp38-manylinux_x86_64 cp38-manylinux_aarch64"
+test-requires = "pytest"
+test-command = "pytest {project}/tests"
+
+[tool.cibuildwheel.linux]
+before-all = "yum install -y openssl-devel rust cargo openblas-devel"
