@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+spotifiy/__init__.py
+spotifiy.egg-info/PKG-INFO
+spotifiy.egg-info/SOURCES.txt
+spotifiy.egg-info/dependency_links.txt
+spotifiy.egg-info/top_level.txt
