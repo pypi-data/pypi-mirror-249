@@ -1,0 +1,18 @@
+# jupyter-lab --ip=0.0.0.0
+jupyterlab
+Sphinx # ==4.1.2
+sphinx-rtd-theme # ==0.5.2
+pre-commit
+build
+pip
+setuptools
+wheel
+twine
+sphinx_mdinclude
+toml
+#
+pandas
+matplotlib
+ipympl
+astropy
+flit
