@@ -1,0 +1,6 @@
+pyproject.toml
+bayesnf/__init__.py
+bayesnf.egg-info/PKG-INFO
+bayesnf.egg-info/SOURCES.txt
+bayesnf.egg-info/dependency_links.txt
+bayesnf.egg-info/top_level.txt
