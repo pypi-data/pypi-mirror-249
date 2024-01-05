@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: napari-argos-archive-reader
+Version: 0.0.5
+Summary: A plugin to read Dioptic ARGOS archive files
+Home-page: https://github.com/dioptic/napari-argos-archive-reader
+Author: Volker Hilsenstein
+Author-email: hilsenstein@dioptic.de
+License: MIT
+Project-URL: Bug Tracker, https://github.com/dioptic/napari-argos-archive-reader/issues
+Project-URL: Documentation, https://github.com/dioptic/napari-argos-archive-reader#README.md
+Project-URL: Source Code, https://github.com/dioptic/napari-argos-archive-reader
+Project-URL: User Support, https://github.com/dioptic/napari-argos-archive-reader/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: napari
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: napari
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: pydantic
+Requires-Dist: ruamel.yaml
+Provides-Extra: testing
+Requires-Dist: tox; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+
+# napari-argos-archive-reader
+
+[![License MIT](https://img.shields.io/pypi/l/napari-argos-archive-reader.svg?color=green)](https://github.com/dioptic/napari-argos-archive-reader/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/napari-argos-archive-reader.svg?color=green)](https://pypi.org/project/napari-argos-archive-reader)
+[![Python Version](https://img.shields.io/pypi/pyversions/napari-argos-archive-reader.svg?color=green)](https://python.org)
+[![tests](https://github.com/dioptic/napari-argos-archive-reader/workflows/tests/badge.svg)](https://github.com/dioptic/napari-argos-archive-reader/actions)
+[![codecov](https://codecov.io/gh/dioptic/napari-argos-archive-reader/branch/main/graph/badge.svg)](https://codecov.io/gh/dioptic/napari-argos-archive-reader)
+[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-argos-archive-reader)](https://napari-hub.org/plugins/napari-argos-archive-reader)
+
+A plugin to read Dioptic ARGOS archive files
+
+----------------------------------
+
+This repo contains a reader plugin for [DIOPTIC ARGOS](https://www.dioptic.de/en/argos-en/) Archive files, which
+have `.zip` file extension.
+Individual ARGOS layers are grouped into napari layer with stacks according to
+their illumination, stage XY position and Z-stack information.
+
+The plugin implements delayed reading using `dask.delayed` so that one can quickly
+see the contents even for large archives with many layers. Note!: switching to
+volume rendering or swapping axes can trigger the loading of all ARGOS layers, which
+can take a long time for large archives.
+
+[ARGOS](https://www.dioptic.de/en/argos-en/) is an automated system
+for surface inspection according to ISO 10110-7.
+
+This plugin is still experimental and does not support all features of ARGOS archives.
+
+Currently, the plugin
+
+* can read Argos matrix archives containing regular image layers including:
+  * ✅ segmentation masks
+  * ✅ Z-stack metadata
+  * ✅ Illumination metadata
+  * ✅ proper scaling and affine transformation of layers
+* can read ❔✅ Argos line scan (polar) archives with minimal support (no metadata parsing)
+This has not been tested on many archives.
+
+Not supported are:
+
+* ❌ annotated archives
+* ❌ pyramid image structures
+* ❌ Line segmentation metadata
+* ❌ color metadata
+* ❌ ...
+
+<!--
+Don't miss the full getting started guide to set up your new package:
+https://github.com/napari/cookiecutter-napari-plugin#getting-started
+
+and review the napari docs for plugin developers:
+https://napari.org/stable/plugins/index.html
+-->
+
+## Installation
+
+If you have napari installed you can install the plugin from the napari hub through the `Plugins -> Plugin Manger` menu
+entry. After waiting a short while for napari to retrieve the plugins available from the hub, simply enter "argos" in
+the filter line entry field at the top to narrow down the plugin list and click install.
+
+You can install `napari-argos-archive-reader` via [pip]:
+
+    pip install napari-argos-archive-reader
+
+To install latest development version :
+
+    pip install git+https://github.com/dioptic/napari-argos-archive-reader.git
+
+## License
+
+Distributed under the terms of the [MIT] license,
+"napari-argos-archive-reader" is free and open source software
+
+[MIT]: http://opensource.org/licenses/MIT
+[pip]: https://pypi.org/project/pip/

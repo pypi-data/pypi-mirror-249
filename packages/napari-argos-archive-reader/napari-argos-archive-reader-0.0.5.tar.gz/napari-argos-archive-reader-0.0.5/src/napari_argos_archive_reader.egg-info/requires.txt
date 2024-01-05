@@ -1,0 +1,10 @@
+napari
+numpy
+scikit-image
+pydantic
+ruamel.yaml
+
+[testing]
+tox
+pytest
+pytest-cov
