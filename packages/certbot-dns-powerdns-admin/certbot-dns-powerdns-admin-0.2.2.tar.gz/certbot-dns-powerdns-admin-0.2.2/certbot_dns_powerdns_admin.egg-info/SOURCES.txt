@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+certbot_dns_powerdns/__init__.py
+certbot_dns_powerdns/dns_powerdns.py
+certbot_dns_powerdns/dns_powerdns_test.py
+certbot_dns_powerdns_admin.egg-info/PKG-INFO
+certbot_dns_powerdns_admin.egg-info/SOURCES.txt
+certbot_dns_powerdns_admin.egg-info/dependency_links.txt
+certbot_dns_powerdns_admin.egg-info/entry_points.txt
+certbot_dns_powerdns_admin.egg-info/requires.txt
+certbot_dns_powerdns_admin.egg-info/top_level.txt
