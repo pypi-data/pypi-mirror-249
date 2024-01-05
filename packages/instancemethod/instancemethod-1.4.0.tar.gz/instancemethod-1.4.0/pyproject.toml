@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "instancemethod"
+version = "1.4.0"
+requires-python = ">=3.5"
+authors =[
+    {name = "Braden Toone", email = "braden@toonetown.com"},
+]
+maintainers = [
+    {name = "Braden Toone", email = "braden@toonetown.com"},
+]
+description = "Restrict method calls to instances of the owner class."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["instance", "method", "restrict", "class", "call"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.5",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+
+]
+
+[project.urls]
+Homepage = "https://github.com/Braden2n/InstanceMethod"
+Documentation = "https://github.com/Braden2n/InstanceMethod"
+Issues = "https://github.com/Braden2n/InstanceMethod/issues"
+Repository = "https://github.com"
+Changelog = "https://github.com/Braden2n/InstanceMethod/activity"
