@@ -1,0 +1,12 @@
+napari_argos_archive_reader/__init__.py,sha256=q0MbSE0p8rwnB19IoGQ8HSAn13ocOszgQvWwC4emt-Y,106
+napari_argos_archive_reader/_reader.py,sha256=lHh1prmGo-6U8c64cHyIhoYvQRnnZmLWgv8MhXFn9s0,4133
+napari_argos_archive_reader/argos_archive_reader.py,sha256=rx_H7wzsfb2ftYaheuqV0qZ5sid3SwZs2HhkKKbWpo4,9307
+napari_argos_archive_reader/napari.yaml,sha256=zMGkZfSlc5daJ-7RJ_GIwk2jb8IS369cMpjjITCRO7k,491
+napari_argos_archive_reader/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_argos_archive_reader/_tests/test_reader.py,sha256=ZKZos3wMLcGlhTNvyYqYOMTBu1qj3kR-AAee_0e13Ng,107
+napari_argos_archive_reader-0.0.4.dist-info/LICENSE,sha256=_Ib4ZXBtAmKCj9ooYzh36q50oSOMEYYWG-v_mkC06Uk,1086
+napari_argos_archive_reader-0.0.4.dist-info/METADATA,sha256=qpHg75jYsrMn0A1ziue63MKVAp4KQZcRHtOdScwRhBA,4916
+napari_argos_archive_reader-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+napari_argos_archive_reader-0.0.4.dist-info/entry_points.txt,sha256=xgXFWIxlNoGEaJm8VoOs1E1A2RxM5ZDd8cC8KTdq8ns,88
+napari_argos_archive_reader-0.0.4.dist-info/top_level.txt,sha256=StoyYXmPfeXMy48ZjS-cg_Wp39zpX4vwWmlnGqIFeoo,28
+napari_argos_archive_reader-0.0.4.dist-info/RECORD,,
