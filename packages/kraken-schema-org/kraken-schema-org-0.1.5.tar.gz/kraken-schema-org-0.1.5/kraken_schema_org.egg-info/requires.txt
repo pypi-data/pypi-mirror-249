@@ -1,0 +1,4 @@
+kraken-datatype
+requests
+Unidecode
+setuptools

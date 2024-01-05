@@ -1,0 +1,1 @@
+from .schema_org_localize import localize_record, get_localized_attribute
