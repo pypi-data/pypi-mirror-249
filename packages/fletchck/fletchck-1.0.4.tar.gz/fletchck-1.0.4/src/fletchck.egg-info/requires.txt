@@ -1,0 +1,7 @@
+APScheduler
+argon2-cffi
+cryptography
+paramiko
+passlib
+pyserial
+tornado>=6.3
