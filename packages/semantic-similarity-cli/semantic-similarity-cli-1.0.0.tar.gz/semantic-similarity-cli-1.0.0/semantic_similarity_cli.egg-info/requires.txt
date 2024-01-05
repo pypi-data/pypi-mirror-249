@@ -1,0 +1,4 @@
+InstructorEmbedding==1.0.1
+sentence_transformers>=2.2.0
+numpy
+tqdm

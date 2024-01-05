@@ -1,0 +1,11 @@
+LICENSE
+README.md
+cli.py
+pyproject.toml
+setup.py
+semantic_similarity_cli.egg-info/PKG-INFO
+semantic_similarity_cli.egg-info/SOURCES.txt
+semantic_similarity_cli.egg-info/dependency_links.txt
+semantic_similarity_cli.egg-info/entry_points.txt
+semantic_similarity_cli.egg-info/requires.txt
+semantic_similarity_cli.egg-info/top_level.txt
