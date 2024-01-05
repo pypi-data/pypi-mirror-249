@@ -1,0 +1,17 @@
+pygcransac/pygcransac.cp39-win_amd64.pyd,sha256=IL6MhU7hW9QI2_y-YacMhaDCJ6sQrH1rkXqt9Wq5Iu4,1732096
+pygcransac/__init__.py,sha256=DpNbttzrUdbci2YKWPSZI5we_yTY3iwgz0NrCHuI8rM,1430
+pygcransac-0.1.1.dist-info/DELVEWHEEL,sha256=JaY6XgO5zvPIjt6ycG_pqi0W9Q17u2fNmlUD7W4wFbU,470
+pygcransac-0.1.1.dist-info/LICENSE,sha256=E6Kah612x5WdIujnm-5_VS2SeSxo1uOrmuFJO1ogicA,2004
+pygcransac-0.1.1.dist-info/METADATA,sha256=xA1E0gz092F6T72wEJikgrj7645iK1Alq3WqtScskao,6221
+pygcransac-0.1.1.dist-info/RECORD,,
+pygcransac-0.1.1.dist-info/top_level.txt,sha256=4LFD-65bzadiAAVat5WyMFFx2cMi1oAXOo-3I-mnvFA,11
+pygcransac-0.1.1.dist-info/WHEEL,sha256=aFh_uQusBybh-RCXOkSlg-ycdQBtqU_JDPyXfjBBBgs,94
+pygcransac.libs/.load-order-pygcransac-0.1.1,sha256=HzeLW-JfI16-qdRf5jCwo5R1mFkiHtOoP03n0v0GXio,412
+pygcransac.libs/concrt140-105fb79326bfa9c86ae0a4a9f08dd832.dll,sha256=Ap0Gpx1MfmCiu54ZOJm8bdj8GNsm1bsbZBxZcAR_x7Y,302080
+pygcransac.libs/msvcp140-7c325104c032aacfda54c6de68bd9012.dll,sha256=VgqoUzcwrgzgV-wYTm9lN9hX9HfZyHwQr95Q7WbvHIg,573008
+pygcransac.libs/opencv_calib3d345-76dd4184ba6e21ca0c4480571012c05f.dll,sha256=LL70D0KNgj6mlNcv0se88uVl1Q11xHTFmAgK0erHoJc,2239488
+pygcransac.libs/opencv_core345-2b865bd1f94584552d6aa276ab8f470f.dll,sha256=a_nsMIUAcLPsCYh6PVe1MhUHZ2G1VQw4gIRWsAOWVOo,3423744
+pygcransac.libs/opencv_features2d345-949c50e98b93129c1e1784c25260d66b.dll,sha256=PgDxrv6NBv_HaOCpnRl8KT2EHZrVCJSiU1-mA63iUUk,915968
+pygcransac.libs/opencv_flann345-d5b2ed6de7df8cee58a68cb2c643a450.dll,sha256=uzGohFwSJ1RfdAOlJFaibXH4_BwxPnIXbhm4Ji--M5E,622592
+pygcransac.libs/opencv_imgproc345-fe756d3a256b101a83b4de96b42c0fe7.dll,sha256=vcrs3Y1OK8Rxm0G5c2Byrmu1flfkT9yEx3GElGiIEXU,3534848
+pygcransac.libs/vcomp140-a934fe50149cadeefaba38ef4a707b65.dll,sha256=Y8uNoLKx5XqBsBD1UVDCHKY6mewJPLb4dCnrvGciCn4,196688
