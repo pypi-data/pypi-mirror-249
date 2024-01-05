@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyaoc"
+version = "0.0.1"
+license = {file = "LICENSE"}
+description = "Python Advent of Code package"
+authors = [{name = "Aurélien TRONCY"}]
+requires-python = ">=3.9"
+readme = "README.md"
+keywords = ["adventofcode", "aoc", "advent of code"]
+classifiers = [
+    'Development Status :: 1 - Planning',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
+    'Programming Language :: Python',
+    'Operating System :: Unix',
+]
+dependencies = [
+    "Jinja2 >= 3.1.2",
+    "requests >= 2.31.0",
+]
+
+[tool.setuptools.package-data]
+pyaoc = ["*.jinja2"]
+
+[project.urls]
+Homepage = "https://github.com/Nounoursdestavernes/PyAOC"
+Repository = "https://github.com/Nounoursdestavernes/PyAOC.git"
+
+[project.scripts]
+# example for cli script :  pyaoc = "pyaoc.pyaoc:pyaoc"
+pyaoc = "pyaoc.pyaoc:main"
