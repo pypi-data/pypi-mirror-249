@@ -1,0 +1,5 @@
+[console_scripts]
+schematized-config = schematized_config.cli:main
+
+[nbdev]
+schematized_config = schematized_config._modidx:d
