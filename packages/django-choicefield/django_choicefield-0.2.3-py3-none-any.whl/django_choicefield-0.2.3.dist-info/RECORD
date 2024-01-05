@@ -1,0 +1,8 @@
+choicefield/__init__.py,sha256=bfH295XspdXt2c-EbCwEBtBLbmFdca2XGg0dyBKf0Ec,186
+choicefield/_version.py,sha256=AaQEeqeDwmZAHoPuwg2C0ulADePbIYLSFanZzt0cytQ,411
+choicefield/fields.py,sha256=GA733E-LQCrsAd92v4e1ceqW5wR5KoowwZUWqwRPdAY,5695
+choicefield/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_choicefield-0.2.3.dist-info/METADATA,sha256=hMCQa_FBr6C9tBht6ivhOABLDhPrVy1GA7P1SHgApSo,6068
+django_choicefield-0.2.3.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+django_choicefield-0.2.3.dist-info/licenses/LICENSE,sha256=8UzGxXnINjiu-c8uSYpDXkryZaxH-cWLe_teFwrHpKU,1501
+django_choicefield-0.2.3.dist-info/RECORD,,
