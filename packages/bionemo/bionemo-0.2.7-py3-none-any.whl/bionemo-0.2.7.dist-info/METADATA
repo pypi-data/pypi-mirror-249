@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: bionemo
+Version: 0.2.7
+Summary: Python client for the BioNeMo Service
+Home-page: https://www.nvidia.com/en-us/gpu-cloud/bionemo/
+Author: NVIDIA Bionemo
+Author-email: bionemofeedback@nvidia.com
+Project-URL: Documentation, https://developer.nvidia.com/docs/bionemo-service/index.html
+Project-URL: Notebook Examples, https://github.com/NVIDIA/BioNeMo/tree/main/examples/service
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: h5py
+Requires-Dist: requests-futures
+Requires-Dist: typing-extensions
+
+# BioNeMo Service Python Client
+
+The BioNeMo Service Python Client provides a python API into the BioNeMo inference service.
+The BioNeMo service uses [NVIDIA Triton](https://developer.nvidia.com/triton-inference-server) inference infrastructure to deploy ML models relevant to biology and chemistry applications.
+This client exposes easy-to-use python functions that call directly to the inference service, allowing users to use state-of-the-art models with little setup.
+
+[Learn more and apply for access to BioNeMo here.](https://www.nvidia.com/en-us/gpu-cloud/bionemo/)
+
+**Example: Generate novel protein sequences and perform folding**
+```python
+from bionemo.api import BionemoClient
+from time import sleep
+
+# Create a client instance
+api = BionemoClient("APIKEY")
+
+# Generate novel proteins
+novel_proteins = api.protgpt2_sync(max_length=200, num_return_sequences=10)
+
+# Request folding of novel proteins in parallel
+submitted_requests = []
+for protein in novel_proteins["generated_sequences"]:
+    request_id = api.openfold_async(protein)
+    submitted_requests.append(request_id)
+
+# Wait for results, write to disk
+while len(submitted_requests):
+    sleep(10)
+    for request_id in submitted_requests:
+        if api.fetch_task_status(request_id) == "DONE":
+            folded_protein = api.fetch_result(request_id)
+            with open(str(request_id) + ".pdb", "w") as f:
+                f.write(folded_protein)
+            submitted_requests.remove(request_id)
+```
+
+Currently, the following models are available for inference:
+- MegaMolBart
+- MoFlow
+- AlphaFold-2
+- OpenFold
+- ESMFold
+- ESM-2
+- ESM-1nv
+- ProtGPT-2
+- DiffDock
