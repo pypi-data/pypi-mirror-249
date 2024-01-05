@@ -1,0 +1,12 @@
+backgrounder/__init__.py,sha256=Uf1_SnmjbgDeviJBB-9IK2o1AqJ2RkeJz2Yb7zUFcLs,131
+backgrounder/_compat.py,sha256=a9ZuNXf9U6F-RUQkrSVRlMsK9lbwQ-SsDXoGu6saGKQ,368
+backgrounder/concurrency.py,sha256=kqHVUR1XXUNOwHCANYYzTgM8RiE6cdGoUfnBuHFFW6E,1344
+backgrounder/decorator.py,sha256=MYxl6NEW3yAS9_fwKWlHuPlB5euCAZ4Rw2BMJfqEWtc,1003
+backgrounder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backgrounder/tasks.py,sha256=2HA8UWHGZrwUp0hzzTcAuVZSiNvQRNOrkN1qYoSHR0k,9627
+backgrounder/_internal/__init__.py,sha256=aQTekuFQyhDpQPI5jrxpf1oHVrbXu4W0K8q9Sjj4HeE,54
+backgrounder/_internal/_representation.py,sha256=xYBHJDfzC2n2UFI6iRwUDvi7LMQeAE2ih3KacABhBvs,1714
+backgrounder-0.1.1.dist-info/METADATA,sha256=Ka-Ola0Dh6Nl2MVXlWuDRnGXbispe1p0hPyVy5qKzJE,8986
+backgrounder-0.1.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+backgrounder-0.1.1.dist-info/licenses/LICENSE,sha256=4_kpzf9PMltHkjQlCFNhbtU6M5fg2rDhNo71dFxSIvw,1077
+backgrounder-0.1.1.dist-info/RECORD,,
