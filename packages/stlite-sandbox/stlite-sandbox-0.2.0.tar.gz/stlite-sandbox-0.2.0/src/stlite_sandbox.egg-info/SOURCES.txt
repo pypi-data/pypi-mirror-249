@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/stlite_sandbox/__init__.py
+src/stlite_sandbox.egg-info/PKG-INFO
+src/stlite_sandbox.egg-info/SOURCES.txt
+src/stlite_sandbox.egg-info/dependency_links.txt
+src/stlite_sandbox.egg-info/requires.txt
+src/stlite_sandbox.egg-info/top_level.txt
+src/stlite_sandbox/frontend/index.html
+src/stlite_sandbox/frontend/main.js
+src/stlite_sandbox/frontend/streamlit-component-lib.js
+src/stlite_sandbox/frontend/style.css
