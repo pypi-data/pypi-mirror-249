@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: easygems
+Version: 0.0.2
+Summary: Processing tools around km-scale earth system modeling
+Author: Tobias Kölling
+Author-email: tobias.koelling@mpimet.mpg.de
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cartopy
+Requires-Dist: healpy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: xarray
+Description-Content-Type: text/markdown
+
+# easygems python package
+
