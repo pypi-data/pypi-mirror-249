@@ -1,0 +1,4 @@
+[console_scripts]
+horizon-del = horizon.del_ec2:main
+horizon-takeoff = horizon.takeoff:main
+
