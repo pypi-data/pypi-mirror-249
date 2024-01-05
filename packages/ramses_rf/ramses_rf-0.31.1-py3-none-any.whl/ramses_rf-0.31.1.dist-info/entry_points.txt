@@ -1,0 +1,2 @@
+[console_scripts]
+client = ramses_rf.client:main
