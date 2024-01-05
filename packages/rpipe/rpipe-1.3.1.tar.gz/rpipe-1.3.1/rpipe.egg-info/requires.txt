@@ -1,0 +1,4 @@
+marshmallow-dataclass[enum,union]
+requests
+flask
+waitress

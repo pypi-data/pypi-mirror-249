@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+rpipe/__init__.py
+rpipe/client.py
+rpipe/py.typed
+rpipe/server.py
+rpipe.egg-info/PKG-INFO
+rpipe.egg-info/SOURCES.txt
+rpipe.egg-info/dependency_links.txt
+rpipe.egg-info/entry_points.txt
+rpipe.egg-info/requires.txt
+rpipe.egg-info/top_level.txt
