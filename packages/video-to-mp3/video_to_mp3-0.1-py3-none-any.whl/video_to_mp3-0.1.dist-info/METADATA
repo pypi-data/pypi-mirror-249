@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: video-to-mp3
+Version: 0.1
+Requires-Dist: click ==8.1.7
+Requires-Dist: moviepy ==1.0.3
+
