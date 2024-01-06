@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+GIANDB/__init__.py
+GIANDB/congia/__init__.py
+GIANDB/congia/autogianap.py
+giandb.egg-info/PKG-INFO
+giandb.egg-info/SOURCES.txt
+giandb.egg-info/dependency_links.txt
+giandb.egg-info/entry_points.txt
+giandb.egg-info/requires.txt
+giandb.egg-info/top_level.txt

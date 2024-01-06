@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: giandb
+Version: 0.0.2
+Summary: paquete gian de insertar data dba
+Home-page: https://github.com/CardenasGalarza/ESPEROOK
+Author: Gianacarlos Cardenas Galarza
+Author-email: alex10estadistica@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: numpy
