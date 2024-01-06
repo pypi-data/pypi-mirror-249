@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: giandb
+Version: 0.0.1
+Summary: paquete gian de insertar data dba
+Home-page: https://github.com/CardenasGalarza/GIANDB
+Author: Gianacarlos Cardenas Galarza
+Author-email: alex10estadistica@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: math
+Requires-Dist: numpy
