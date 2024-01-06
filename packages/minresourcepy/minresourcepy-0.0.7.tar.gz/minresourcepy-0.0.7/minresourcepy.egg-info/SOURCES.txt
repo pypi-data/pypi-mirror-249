@@ -1,0 +1,7 @@
+README.md
+setup.py
+minresourcepy.egg-info/PKG-INFO
+minresourcepy.egg-info/SOURCES.txt
+minresourcepy.egg-info/dependency_links.txt
+minresourcepy.egg-info/requires.txt
+minresourcepy.egg-info/top_level.txt
