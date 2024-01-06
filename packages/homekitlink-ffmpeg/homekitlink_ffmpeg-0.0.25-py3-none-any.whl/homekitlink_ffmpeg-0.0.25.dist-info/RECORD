@@ -1,0 +1,8 @@
+homekitlink_ffmpeg/__init__.py,sha256=JOFD8Su21bsTJ4UoIA0Zg7_-Ji7Aj7rdVC2GUBos1wI,1039
+homekitlink_ffmpeg/ffmpeg_binaries/arm/ffmpeg,sha256=6g8z4whRhSZo3vsPdnaC-sVnklzd2-HgUGzmLAktSFk,42440168
+homekitlink_ffmpeg/ffmpeg_binaries/x86/ffmpeg,sha256=HNjvQYoiht3x6tExqV1INYUsP15tov5gpJqk31U1uVk,78645616
+homekitlink_ffmpeg-0.0.25.dist-info/LICENSE.txt,sha256=i7PHic3dn_a0GNsmcKbOvp8nzJh16nnY7h9r10F1Rmg,467
+homekitlink_ffmpeg-0.0.25.dist-info/METADATA,sha256=eUb32ZQV8xEy2G38Nq_aIqd-POCbYkuZiwF0jJMXnsM,2844
+homekitlink_ffmpeg-0.0.25.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+homekitlink_ffmpeg-0.0.25.dist-info/top_level.txt,sha256=fHzd-rpBJ7GkW5S_Fh0p5SrM_iz0JQHcOimUVnjlWqg,19
+homekitlink_ffmpeg-0.0.25.dist-info/RECORD,,
