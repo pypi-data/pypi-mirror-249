@@ -1,0 +1,13 @@
+mean_average_precision/__init__.py,sha256=QgwOXgfho2n8gNBDBoKqxxJT4bgxPfjOBmxBqTCSWhw,1235
+mean_average_precision/adapter.py,sha256=QHtxQYk-sWUZTPXz-p2YoAcv6BHN4S53PKtOcRZt47c,3263
+mean_average_precision/mean_average_precision_2d.py,sha256=hHwNI0KXclYRm4DSIc3RyLt6lCRGGz4D_IA_2VCP4-Q,7090
+mean_average_precision/metric_base.py,sha256=BUIw7_aRp2HdNUhV2Zm643n3iTWfV99kdKODrZlle94,1461
+mean_average_precision/metric_builder.py,sha256=sayYd0tFtt68SEFlqzBSFfJSrn1bQrS6eSJwFqleNJ4,1129
+mean_average_precision/multiprocessing.py,sha256=UomAHuCZGyDz8gZuCAlHTGookgyohww0Njyp8iF4lww,4547
+mean_average_precision/utils.py,sha256=UT9mG0BRuuG7_jCbe16QEWOHMDr5UKlODFmsXT-05fk,7559
+mean_average_precision-2024.1.5.0.dist-info/LICENSE,sha256=quZXMRXj1pmZLoZ-Yr7dy3rs-zPCY-MWEZza6PFJESs,1072
+mean_average_precision-2024.1.5.0.dist-info/METADATA,sha256=LUDC5b6s8hYp3gcNkFj0dVA24hi5HHRe3iu98PfVD-Y,2788
+mean_average_precision-2024.1.5.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+mean_average_precision-2024.1.5.0.dist-info/top_level.txt,sha256=2ExSGThA3z9CgwcI8QRrvA90vL814DQt6mWZOq3U6-U,23
+mean_average_precision-2024.1.5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mean_average_precision-2024.1.5.0.dist-info/RECORD,,
