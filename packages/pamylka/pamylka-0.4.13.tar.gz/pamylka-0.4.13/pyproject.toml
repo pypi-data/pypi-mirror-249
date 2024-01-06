@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pamylka"
+version = "00.04.13"
+authors = [
+  { name="Ahmed Elbehairy", email="ahmedelbehairy.72005@gmail.com" },
+]
+description = "Pamylka's python package"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/pypa/pamylka"
+Issues = "https://github.com/pypa/pamylka/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/__init__.py","src/pam.py"]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["src/requirements.txt"]

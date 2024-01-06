@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pamylka
+Version: 0.4.13
+Summary: Pamylka's python package
+Project-URL: Homepage, https://github.com/pypa/pamylka
+Project-URL: Issues, https://github.com/pypa/pamylka/issues
+Author-email: Ahmed Elbehairy <ahmedelbehairy.72005@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: arabic-reshaper==3.0.0
+Requires-Dist: fake-useragent==1.4.0
+Requires-Dist: pygame==2.5.2
+Requires-Dist: pyodbc==5.0.1
+Requires-Dist: selenium==4.16.0
+Description-Content-Type: text/markdown
+
+# Pamylka's Python Package
+
+Nothing to see here!
