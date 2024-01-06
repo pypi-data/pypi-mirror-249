@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "nonemptystr"
+version = "1.0.0"
+license = "MIT"
+description = "Non-empty string"
+authors = ["Shiri Nekono <gexira.halen.toms@gmail.com>"]
+maintainers = ["Shiri Nekono <gexira.halen.toms@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/nekonoshiri/nonemptystr"
+repository = "https://github.com/nekonoshiri/nonemptystr"
+documentation = "https://github.com/nekonoshiri/nonemptystr"
+keywords = ["str"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+flake8 = "^7.0.0"
+invoke = "^2.2.0"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+pydantic = "^2.5.3"
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
