@@ -1,0 +1,6 @@
+include src/WrapperXSelector/external_files/css/st.action-panel.css
+include src/WrapperXSelector/external_files/js/jquery-3.7.1.min.js
+include src/WrapperXSelector/external_files/js/sweetalert2.all.min.js
+include src/WrapperXSelector/external_files/js/st.action-panel.js
+include src/WrapperXSelector/general_wrapper.js
+include src/WrapperXSelector/table_wrapper.js

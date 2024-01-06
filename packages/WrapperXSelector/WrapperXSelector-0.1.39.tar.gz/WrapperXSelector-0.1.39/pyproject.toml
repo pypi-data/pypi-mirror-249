@@ -1,0 +1,27 @@
+[project]
+name = "WrapperXSelector"
+version = "0.1.39"
+authors = [
+  { name="Kallol Naha", email="kallolnaha@gmail.com" },
+]
+dependencies = [
+    'selenium',
+    'webdriver_manager',
+    'beautifulsoup4'
+]
+keywords = ["Scraping", "Xpath", 'Wrapper']
+description = "The WrapperXSelector[Crow] is a Python-based tool that streamlines web scraping and data extraction tasks through the creation and utilization of wrappers."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[project.urls]
+Homepage = "https://pypi.org/project/WrapperXSelector/"
+Issues = "https://pypi.org/project/WrapperXSelector/#issues"
