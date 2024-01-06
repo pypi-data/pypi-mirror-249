@@ -1,0 +1,14 @@
+# Configuration file for hito2nsip
+
+# The following section configures information about NSIP service
+# For each part of the API, there must be a base URL and some operation sub-urls
+nsip:
+  agent_api:
+    base_url: /api_labo/agent
+    agent_update: /update
+  lab_api:
+    base_url: /api_labo
+    agent_list: /agent/list
+    team_list: /team/list
+  server_url: https://nsip.in2p3.fr
+  token: lab_nsip_api_token

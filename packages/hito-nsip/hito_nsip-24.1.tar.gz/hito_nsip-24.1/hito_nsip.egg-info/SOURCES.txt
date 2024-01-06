@@ -1,0 +1,15 @@
+.gitignore
+.gitlab-ci.yml
+LICENSE
+README.md
+noxfile.py
+pyproject.toml
+hito_nsip/__init__.py
+hito_nsip/hito2nsip.cfg.example
+hito_nsip/hito2nsip.py
+hito_nsip.egg-info/PKG-INFO
+hito_nsip.egg-info/SOURCES.txt
+hito_nsip.egg-info/dependency_links.txt
+hito_nsip.egg-info/entry_points.txt
+hito_nsip.egg-info/requires.txt
+hito_nsip.egg-info/top_level.txt
