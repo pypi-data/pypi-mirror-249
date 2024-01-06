@@ -1,0 +1,13 @@
+consumptionbackend/Consumable.py,sha256=_NKH4BIcvaLueq3JTBWOGkG65IN80E7WFBEsCSi5cGs,16312
+consumptionbackend/Database.py,sha256=NbAywxIrSLDoNdj7L8YODbjj53eQxZfD7JRYUY_czEQ,11671
+consumptionbackend/Personnel.py,sha256=x4jsl_hxvRehbqxAAYJdthgiVl9Z6FrCkPbJR5jF52o,7760
+consumptionbackend/Series.py,sha256=RjNtwYczQlh5mSdOSMH77l9ddF1TsVa0u_T7LkzAKfY,5562
+consumptionbackend/Status.py,sha256=XsD3bMo2gckYhmOGS2028a5keOcTcx6elaF8cC8Wtik,131
+consumptionbackend/__init__.py,sha256=Qor8ztPo0Eurh8Nk8nKVJZmnJwhimr9NLOxqJlKrWjg,69
+consumptionbackend/config_handling.py,sha256=HMh-cybW3trGBIwRSIp8ZUTtBUDVMzzX3jL26nOCi4g,659
+consumptionbackend/setup_script.py,sha256=RlcKzAR2scMMQyqFh7sJj7k7pDcM2IepGy18rga2l68,575
+consumptionbackend/update_script.py,sha256=NbDrAgVumGwA0nB49zkoyj1R_grs-p4OkfAaL7uo2vU,1077
+consumptionbackend-2.1.1.dist-info/METADATA,sha256=_g0nzI1YLDCFTJlrrZHHCbBTg4ohTts6mFvCei2uUhw,1232
+consumptionbackend-2.1.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+consumptionbackend-2.1.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+consumptionbackend-2.1.1.dist-info/RECORD,,
