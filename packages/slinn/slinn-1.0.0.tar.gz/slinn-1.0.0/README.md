@@ -1,0 +1,59 @@
+# Slinn is a HTTP and HTTPS server framework
+
+#### Simple example:
+```python
+from slinn import Server, Dispatcher, Filter, HttpResponse, Address
+
+
+dp = Dispatcher()
+
+
+@dp.route(Filter('/api.*'))
+def api(request):
+    return HttpResponse('{"status": "ok"}')
+
+
+@dp.route(Filter('.*'))
+def helloworld(request):
+     return HttpResponse('Hello world!')
+
+
+app = Server(dp, ssl_cert='fullchain.pem', ssl_key='key.pem')
+app.listen(Address(8080))
+
+```
+
+#### Functions:
+```python
+Server(self, *dispatchers, ssl_cert: str=None, ssl_key: str=None, http_ver: str='2.0')
+Server.listen(self, address: Address)
+```
+
+```python
+Address(self, port: int, host: str=None)
+```
+
+```python
+Dispatcher(self, hosts: list=None)
+Dispatcher.route(self, filter: Filter)
+```
+
+```python
+Filter(self, filter: str, methods: list[str]=None)
+Filter.check(self, text: str, method: str) -> bool
+```
+
+```python
+HttpResponse(self, payload, data: list[tuple]=None, status: str='200 OK', content_type: str='text/plain')
+HttpResponse.set_cookie(self, key: str, value)
+HttpResponse.make(self, type: str='HTTP/2.0') -> str
+```
+
+HttpRedirect inherits from HttpResponse
+```python
+HttpRedirect(self, location: str)
+```
+
+```python
+Request(self, http_data: str, client_address: tuple[str, int])
+```
