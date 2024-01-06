@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: kraken-boilerplate
+Version: 0.0.1
+Summary: kraken-boilerplate
+Home-page: https://github.com/tactik8/krakenboilerplate
+Author: Tactik8
+Author-email: info@tactik8.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: kraken-thing
+Requires-Dist: requests
+
+
+# kraken_boilerplate
+Library of commonly used templates
+
+Templates are stored at https://github.com/tactik8/boilerplates
+
+
+## How to use
+
+```
+from kraken_boilerplate import kraken_boilerplate as k
+
+# Get content from privacy template
+content = k.get('privacy', record, 'EN-US')
+
+# Get record template for a specific template
+record = k.get_record('privacy')
+
+# Get list of all files
+record = k.get_files()
+
+# Refresh templates from github
+k.refresh()
+
+```
+
+
+    
+    
