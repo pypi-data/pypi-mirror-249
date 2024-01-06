@@ -1,0 +1,5 @@
+[console_scripts]
+MFTE = MFTE:mfte
+MFTE_gui = MFTE_gui:MFTE_gui
+mfte = MFTE:mfte
+mfte_gui = MFTE_gui:MFTE_gui

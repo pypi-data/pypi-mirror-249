@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/Constituency_tags.py
+src/MFTE.py
+src/MFTE_gui.py
+src/__init__.py
+src/MFTE.egg-info/PKG-INFO
+src/MFTE.egg-info/SOURCES.txt
+src/MFTE.egg-info/dependency_links.txt
+src/MFTE.egg-info/entry_points.txt
+src/MFTE.egg-info/requires.txt
+src/MFTE.egg-info/top_level.txt
