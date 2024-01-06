@@ -1,0 +1,10 @@
+cada/__init__.py,sha256=IFI8OfStu5ArDbzc9T_JXFxx8GJq-fMFg-Su_nLEwiI,41
+cada/__main__.py,sha256=sgLBbrTjTY6ZjUDB8NoSGY8-KQPherpUebtk5TTE8NI,1944
+cada/addons.py,sha256=6FIBq5CSH1hNwh7V_34zd9EEkV8OAGaYSLls7QQxUUs,1644
+cada/core.py,sha256=9CJWKRZpocaz0L7tXmOSr_PvFYOq9OhovNTJEgcUE9g,9995
+cada/printer.py,sha256=AowMFhdfsNu7HRaJyR_DdAIdsljVhaoxnx2QfBntGy8,1653
+cada/xpath.py,sha256=M8n7ixgp1jV-ylYN18wCj0D9ncIyP6TatX7qB0nN1Vc,2980
+para_cada-1.7.1.dist-info/METADATA,sha256=CmwXC7ox6TAGLr_koEtaOLsKdcxgf9bscpPWFZdcJ6w,3573
+para_cada-1.7.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+para_cada-1.7.1.dist-info/entry_points.txt,sha256=Hn1OVNC-ENfiMLPXIKeIpu6gpRUs1x0plmgyculBPe4,43
+para_cada-1.7.1.dist-info/RECORD,,
