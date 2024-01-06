@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Whit3-H4t-Sc4nn3r-Fir5t
+Version: 0.0.1
+Summary: Automation tool for scanning and analyzing vulnerabilities
+Home-page: https://github.com/kty121/2023_Whit3_H4t_Sc4nn3r_Fir5t
+Author: Aegis0121
+Author-email: kty050121@naver.com
+Keywords: Aegis0121,fuzzer,fuzzing,XSS,xss,Reflected,Cross-Site-Script,Cross Site Script,Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
