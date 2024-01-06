@@ -1,0 +1,3 @@
+[console_scripts]
+secret-transfer=secret_transfer.cli:main
+
