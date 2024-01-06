@@ -1,0 +1,2 @@
+[datasette]
+enrichments_gmap_geocode = datasette_enrichments_gmap_geocode
