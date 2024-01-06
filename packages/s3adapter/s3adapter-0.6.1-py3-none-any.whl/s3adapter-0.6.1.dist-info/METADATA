@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: s3adapter
+Version: 0.6.1
+Summary: A AWS S3 Python Adapter to Readn, Write and Check existence of files in S3 Buckets.
+Home-page: UNKNOWN
+Author: Flavio Lopes
+Author-email: flavio.lopes@ideiasfactory.tech
+Maintainer: Ideias Factory
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 ==1.34.12
+Requires-Dist: botocore ==1.34.12
+Requires-Dist: jmespath ==1.0.1
+Requires-Dist: numpy ==1.26.3
+Requires-Dist: pandas ==2.1.4
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: pytz ==2023.3.post1
+Requires-Dist: s3transfer ==0.10.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: tzdata ==2023.4
+Requires-Dist: urllib3 ==1.26.18
+
+# S3Adapter
+
+A AWS S3 Python Adapter to Readn, Write and Check existence of files in S3 Buckets.
+Current version use adapter to read/write a dataframe as csv in bucket
+
+## Installation
+
+You can install My Package using pip:
+
+```bash
+pip install s3adapter
+```
+
+## Usage
+1. Set defatut AWS Account Environment vars (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION) or call ```s3adapter.init_cloud()``` method
+
+2. Write your code like it to write an Dataframe to your bucket
+
+```python
+from fileadapters.s3adapter import s3adapter
+import pandas as pd
+
+bucket_name = <your-bucket>
+# Creating a DataFrame from a dictionary
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 22],
+    'City': ['New York', 'San Francisco', 'Los Angeles']
+}
+
+df = pd.DataFrame(data)
+
+# Initialize Adapter with Bucket Name and option to validate if cloud credentials is configured
+s3 = s3adapter(bucket_name, validade_aws=True)
+
+# Write dataframe as CSV
+s3.write_dataframe_as_csv(df,file_path)
+
+```
+
