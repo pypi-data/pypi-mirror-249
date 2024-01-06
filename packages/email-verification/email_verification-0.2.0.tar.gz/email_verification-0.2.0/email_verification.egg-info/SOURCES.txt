@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+email_verification/__init__.py
+email_verification/client.py
+email_verification/database.py
+email_verification/service.py
+email_verification.egg-info/PKG-INFO
+email_verification.egg-info/SOURCES.txt
+email_verification.egg-info/dependency_links.txt
+email_verification.egg-info/requires.txt
+email_verification.egg-info/top_level.txt
