@@ -1,0 +1,2 @@
+[console_scripts]
+ezd = ezd.command:main
