@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: serverless_models_db
+Version: 0.0.2
+Summary: Serverless's models used in database
+Author: Serverless team
+Author-email: contact@serverless.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: peewee (>=3.17.0,<4.0.0)
+Requires-Dist: peewee-async (>=0.9.1,<0.10.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: types-peewee (>=3.17.0.0,<4.0.0.0)
+Description-Content-Type: text/markdown
+
+# Модели Базы Данных Serverless
+

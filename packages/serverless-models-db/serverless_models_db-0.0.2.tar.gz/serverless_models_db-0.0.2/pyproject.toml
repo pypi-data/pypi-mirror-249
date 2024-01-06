@@ -1,0 +1,39 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+authors = ["Serverless team <contact@serverless.ru>"]
+description = "Serverless's models used in database"
+name = "serverless_models_db"
+readme = "./.github/README.md"
+version = "0.0.2"
+
+[tool.poetry.dependencies]
+peewee = "^3.17.0"
+peewee-async = "^0.9.1"
+pydantic = "^2.5.3"
+python = "^3.10"
+types-peewee = "^3.17.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+dill = "^0.3.7"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+pylint = "^3.0.3"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+skip_gitignore = true
+skip_glob = ["**/migrations/*", "**/settings/*"]
+src_paths = ["./src/"]
+
+[tool.mypy]
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["peewee_async"]
+ignore_missing_imports = true
