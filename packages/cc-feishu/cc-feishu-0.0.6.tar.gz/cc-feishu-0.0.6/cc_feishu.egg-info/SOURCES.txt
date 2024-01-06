@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+cc_feishu.egg-info/PKG-INFO
+cc_feishu.egg-info/SOURCES.txt
+cc_feishu.egg-info/dependency_links.txt
+cc_feishu.egg-info/not-zip-safe
+cc_feishu.egg-info/top_level.txt
+feishu_client/__init__.py
+feishu_client/client.py
+feishu_client/endpoints.py
+feishu_client/errors.py
+feishu_client/helpers.py
+feishu_client/typing.py

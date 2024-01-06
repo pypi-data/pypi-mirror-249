@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cc-feishu
+Version: 0.0.6
+Summary: my feishu package
+Home-page: https://github.com/houm01/cc-feishu
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## 概览
+
+飞书的 Python SDK
+
+## 如何安装
+
+```sh
+pip install cc-feishu
+```
+
+## 如何使用
+
+todo
+```python
+```
