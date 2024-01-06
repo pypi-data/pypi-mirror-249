@@ -1,0 +1,4 @@
+colorama  # BSD
+pythonGraph
+requests
+xdg  # ISC

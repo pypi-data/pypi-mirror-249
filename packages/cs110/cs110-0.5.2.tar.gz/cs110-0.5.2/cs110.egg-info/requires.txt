@@ -1,0 +1,4 @@
+colorama
+pythonGraph
+requests
+xdg
