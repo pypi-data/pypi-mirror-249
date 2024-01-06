@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: pv-site-prediction
+Version: 0.1.15
+Summary: Photovoltaic per site modeling
+License: MIT
+Author: Simon Lemieux
+Author-email: 1105380+simlmx@users.noreply.github.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: torch
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: dask (>=2022.12.1,<2023.0.0)
+Requires-Dist: fsspec (>=2022.11.0,<2023.0.0)
+Requires-Dist: gcsfs (>=2022.11.0,<2023.0.0)
+Requires-Dist: google-cloud-storage (>=2.7.0,<3.0.0)
+Requires-Dist: h5netcdf (>=1.1.0,<2.0.0)
+Requires-Dist: netcdf4 (>=1.6.3,<2.0.0)
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: ocf-blosc2 (>=0.0.2,<0.0.3)
+Requires-Dist: plotly (>=5.15.0,<6.0.0)
+Requires-Dist: pvlib (>=0.9.3,<0.10.0)
+Requires-Dist: pyproj (>=3.4.1,<4.0.0)
+Requires-Dist: pyresample (>=1.27.1,<2.0.0)
+Requires-Dist: scikit-learn (>=1.1.3,<1.2.0)
+Requires-Dist: streamlit (>=1.24.1,<2.0.0)
+Requires-Dist: streamlit-extras (>=0.2.7,<0.3.0)
+Requires-Dist: streamlit-option-menu (>=0.3.6,<0.4.0)
+Requires-Dist: torch (>=1.13.1,<2.0.0) ; extra == "torch"
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Requires-Dist: xarray (>=2022.12.0,<2023.0.0)
+Requires-Dist: zarr (>=2.13.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# pv-site-prediction
+
+This repo contains code to train and evaluate pv-site models.
+
+## Organisation of the repo
+
+```
+.
+├── exp_reports         # Experiment reports - markdown notes about experiments we have made
+├── exp_results         # Default output for the {train,eval}_model.py scripts
+├── notebooks           # Diverse notebooks
+├── data                # Placeholder for data files
+└── psp                 # Main python package
+    ├── clients         # Client specific code
+    ├── data_sources    # Data sources (PV, NWP, Satellite, etc.)
+    ├── exp_configs     # Experimentation configs - a config defines the different options for
+    │                   # training and evaluation models. This directory contains many ready
+    │                   # configs where the paths points to the data on Leonardo.
+    ├── models          # The machine learning code
+    ├── scripts         # Scripts (entry points)
+    └── tests           # Unit tests
+```
+
+## Training and evaluating a model
+
+    poetry run python psp/scripts/train_model.py \
+        --exp-config-name test_config1 \
+        -n test
+
+    poetry run python psp/scripts/eval_model.py \
+        -n test
+
+    # This will have generated a model and test results in `exp_results/test`.
+
+    # You can then look at the results in the `expriment_analysis.ipynb` and
+    # `sample_analysis.ipynb` notebooks by setting EXP_NAMES=["test"] in the first cells.
+
+    # Call the scripts with `--help` to see more options, in particular to run on more than one CPU.
+
+    # The script run_exp.sh can be used to train and then evaluate a model, for example
+    ./run_exp.sh exp_config_to_use name_for_exp
+
+
+## Prerequisites
+
+* [poetry][poetry]
+
+
+## Development
+
+    # Installation of the dependencies.
+    poetry install
+
+    # Formatting
+    make format
+
+    # Linting
+    make lint
+
+    # Running the tests.
+    make test
+
+    # Starting the jupyter notebooks.
+    make notebook
+
+[poetry]: https://python-poetry.org/docs/#installation
+
