@@ -1,0 +1,14 @@
+colorama
+boto3
+psutil
+pluggy
+pyyaml
+
+[console]
+awsume-console-plugin
+
+[fuzzy]
+python-levenshtein
+
+[saml]
+xmltodict
