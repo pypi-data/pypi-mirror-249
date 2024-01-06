@@ -1,0 +1,7 @@
+commit 41db9f6c6736ac32aaf1f2dac48d1ae70de7000f
+Author: Moshe Zadka <moshez@users.noreply.github.com>
+Date:   2024-01-05 11:40:47 -0800
+
+    Merge pull request #17 from moshez/detect-argv0
+    
+    detect argv0
