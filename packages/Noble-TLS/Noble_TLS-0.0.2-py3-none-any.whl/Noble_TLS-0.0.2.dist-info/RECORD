@@ -1,0 +1,10 @@
+noble_tls/__init__.py,sha256=N_Fsb_84NZ0EgUvYVL1BbYCVWAEaYh73BZ6-YpigO2E,490
+noble_tls/__version__.py,sha256=AvHEpU3r4l-z_COumh7yJ9Khf7gDMjJvF3hryOoOeeE,158
+noble_tls/cookies.py,sha256=ZV4v3ZdULnoOPGNRLylcrztmc9GXEG4nBzP9ldcYmH0,15419
+noble_tls/response.py,sha256=qUDkKjtKcdK0HQhprgaYBBQFy3JqE82cA2s86-qh40U,2570
+noble_tls/sessions.py,sha256=CXbmrOAMdKs7ekfO14oMCgtFOMZoEGuoFrTckvYLRrU,18520
+Noble_TLS-0.0.2.dist-info/LICENSE,sha256=dqftK2s9HiuS8dGC52VSlXC_wJzaKvqRE-N4bhpqC2Y,1070
+Noble_TLS-0.0.2.dist-info/METADATA,sha256=8nDotr2AMNOf7N5sUaTzXUPbxieu3WAJXJHs-NnKFA0,7232
+Noble_TLS-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Noble_TLS-0.0.2.dist-info/top_level.txt,sha256=OxPUVtv_nKevq2MJJEWGgEcQV32ypRGTLJR-P3rCEPU,10
+Noble_TLS-0.0.2.dist-info/RECORD,,
