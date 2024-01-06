@@ -1,0 +1,10 @@
+feiticeiro_tec
+feiticeiro_tec/config
+feiticeiro_tec/flask
+feiticeiro_tec/flask/job_manager
+feiticeiro_tec/flask/job_manager/templates
+feiticeiro_tec/flask/job_manager/templates/job_manager
+feiticeiro_tec/flask/rule_router
+feiticeiro_tec/pydantic
+feiticeiro_tec/request
+feiticeiro_tec/validate

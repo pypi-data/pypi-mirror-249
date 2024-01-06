@@ -1,0 +1,16 @@
+loguru
+pydantic
+
+[dynaconf]
+dynaconf
+
+[flask]
+flask
+flask_admin
+flask_sqlalchemy
+
+[request]
+requests
+
+[validate]
+validate_docbr
