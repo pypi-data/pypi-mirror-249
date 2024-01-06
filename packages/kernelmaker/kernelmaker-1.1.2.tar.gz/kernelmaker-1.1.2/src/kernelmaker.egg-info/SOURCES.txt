@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/kernelmaker/__init__.py
+src/kernelmaker/__main__.py
+src/kernelmaker.egg-info/PKG-INFO
+src/kernelmaker.egg-info/SOURCES.txt
+src/kernelmaker.egg-info/dependency_links.txt
+src/kernelmaker.egg-info/top_level.txt
