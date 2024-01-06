@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nomad_media_pip
+Version: 0.0.46
+Summary: Nomad Media PIP
+Author: Nomad Media
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# `nomad_media_pip`
+
+## PIP Setup Instructions
+
+### Install PIP
+
+LINUX:
+```bash
+sudo apt-get install python-pip
+```
+
+MAC:
+```bash
+sudo easy_install pip
+```
+
+Windows:
+```bash
+Download https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+```
+
+### Install PIP Packages
+
+```bash
+pip install nomad_media_pip
+```
