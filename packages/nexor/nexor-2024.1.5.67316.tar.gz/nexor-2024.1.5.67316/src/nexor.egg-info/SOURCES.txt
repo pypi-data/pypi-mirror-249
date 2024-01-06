@@ -1,0 +1,16 @@
+README.rst
+git-log-head
+pyproject.toml
+src/nexor/__init__.py
+src/nexor/__main__.py
+src/nexor/cli.py
+src/nexor/lock.py
+src/nexor.egg-info/PKG-INFO
+src/nexor.egg-info/SOURCES.txt
+src/nexor.egg-info/dependency_links.txt
+src/nexor.egg-info/entry_points.txt
+src/nexor.egg-info/requires.txt
+src/nexor.egg-info/top_level.txt
+src/nexor/tests/__init__.py
+src/nexor/tests/test_cli.py
+src/nexor/tests/test_init.py
