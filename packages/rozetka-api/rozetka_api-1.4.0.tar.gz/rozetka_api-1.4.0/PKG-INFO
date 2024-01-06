@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: rozetka-api
+Version: 1.4.0
+Summary: Rozetka Python API
+Home-page: https://github.com/ALERTua/rozetka_api
+Keywords: rozetka
+Author: Alexey ALERT Rubasheff
+Author-email: alexey.rubasheff@gmail.com
+Requires-Python: >=3.11.6,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp-retry
+Requires-Dist: curl-cffi (>=0.5.10)
+Requires-Dist: global-logger
+Requires-Dist: influxdb-client[async]
+Requires-Dist: knockknock
+Requires-Dist: pathlib
+Requires-Dist: pendulum (>=3.0.0)
+Requires-Dist: pip
+Requires-Dist: progress
+Requires-Dist: python-worker
+Requires-Dist: ratelimit
+Requires-Dist: requests
+Project-URL: Bug Tracker, https://github.com/ALERTua/rozetka_api/issues
+Project-URL: Documentation, https://github.com/ALERTua/rozetka_api
+Project-URL: Repository, https://github.com/ALERTua/rozetka_api
+Description-Content-Type: text/x-rst
+
+Rozetka.ua Python API
+---------------------
+
+Examples
+^^^^^^^^
+
+rozetka/examples/example_item.py
+
+rozetka/examples/example_category.py
+
+Github
+^^^^^^^^
+https://github.com/ALERTua/rozetka_api
+
+PyPi
+^^^^^^^^
+https://pypi.org/project/rozetka-api/
+
