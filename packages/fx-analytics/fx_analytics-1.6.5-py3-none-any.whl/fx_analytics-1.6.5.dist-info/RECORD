@@ -1,0 +1,11 @@
+fx_analytics/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+fx_analytics/app.py,sha256=dZfPHq_N3cWP3hFZtnsk021Qz9SsRk2ZVuAcbejCvwU,29518
+fx_analytics/config.py,sha256=cDvNeBOOdHGjNpdj1mpGmkPpMVDrr43WPatXnGMcY2Y,193
+fx_analytics/credential.py,sha256=LZGvQpgIoeqZMBJh7UZ-YTmNjKUD64rL-9Dbg1n0mbc,75
+fx_analytics/main_functions.py,sha256=G2D4MmmsaGcYrupmFY1F38yi5iTMKyaBgW2dhBkB2Ok,7392
+fx_analytics/test_read_df.py,sha256=NTB-KIVE3KBVbR-0hlVp13e6pU_ARPaeeUp1Uxhq33E,924
+fx_analytics-1.6.5.dist-info/LICENSE,sha256=qz-58d72Tv37FSLB8zMtqt1SI5qhVOKUaUYkJHDYnyA,1074
+fx_analytics-1.6.5.dist-info/METADATA,sha256=RRV6eSHhUmY-mC6vlF8Ag7pDsoXaOsBi6Ppgvd6v578,4550
+fx_analytics-1.6.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fx_analytics-1.6.5.dist-info/top_level.txt,sha256=7E-xncr5w_Hggne8tDum5CTOojtSgZKynBPkBgmuwI8,13
+fx_analytics-1.6.5.dist-info/RECORD,,
