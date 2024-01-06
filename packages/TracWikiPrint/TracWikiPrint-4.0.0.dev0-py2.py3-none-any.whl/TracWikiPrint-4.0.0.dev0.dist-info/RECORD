@@ -1,0 +1,14 @@
+tracpdf/__init__.py,sha256=WNANNpTydlpMu9kHPa3bUPh1vD9w98Hj32pI27q8bcw,1606
+tracpdf/admin.py,sha256=6Ms_ch0s57sSxElt5bUwZIjN2zWpYfB6sf-7BUduKTo,7470
+tracpdf/pdfbook.py,sha256=OzDLlblyFAOKC4TPepnoMPzuT69RmnJc0kW0nqT23Wg,4791
+tracpdf/util.py,sha256=tDtp8c0heZKLYen12f0NcJJ4FExmIsalNT3jCZxWVb8,2622
+tracpdf/wikiprint.py,sha256=sI2eZPObDnRa8IPfsipyCSFujQXg--O6NlTfW1RZeoY,17152
+tracpdf/htdocs/css/wikiprint.css,sha256=wYcsYthCuihXTzvxs9tD4uR8jBVkl0PeRkH-pf3c3IE,34
+tracpdf/templates/wikiprint_admin_parameters.html,sha256=2kV-6hGHnAATIbW8TxQCZdZGDsf5y6tAqTmhOA7RRgc,3438
+tracpdf/templates/wikiprint_parameters.html,sha256=Rhr3wihdt2GLQKQvBBxoXGQH3xe0ymLn31XTuZjn-bM,4852
+TracWikiPrint-4.0.0.dev0.dist-info/COPYING,sha256=qeJXk-HQfcsDIWlrRTjQt2IYHgOvSXBMYGanCjOcWv8,1382
+TracWikiPrint-4.0.0.dev0.dist-info/METADATA,sha256=e5avS64RWlhLkuu4d1gR4gpjhYQxR4_wOGCdzPF6g_E,6642
+TracWikiPrint-4.0.0.dev0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+TracWikiPrint-4.0.0.dev0.dist-info/entry_points.txt,sha256=-VUk2FkiAR_KMZOmbzJcAh1mI7EyiIWHiGU17la2Iec,117
+TracWikiPrint-4.0.0.dev0.dist-info/top_level.txt,sha256=oE3RYWuV1sw4oU-2xql5udMpKqeOyREihQYHmZyK4Mg,8
+TracWikiPrint-4.0.0.dev0.dist-info/RECORD,,
