@@ -1,0 +1,21 @@
+LICENSE-GPLv3.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+Cryptomamy_kraken_api/__init__.py
+Cryptomamy_kraken_api/kraken_api.py
+Cryptomamy_kraken_api/version.py
+Cryptomamy_kraken_api.egg-info/PKG-INFO
+Cryptomamy_kraken_api.egg-info/SOURCES.txt
+Cryptomamy_kraken_api.egg-info/dependency_links.txt
+Cryptomamy_kraken_api.egg-info/requires.txt
+Cryptomamy_kraken_api.egg-info/top_level.txt
+doc/Makefile
+doc/make.bat
+doc/source/conf.py
+doc/source/index.rst
+doc/source/_static /.gitkeep.gitkeep
+doc/source/_templates /.gitkeep
+examples/example_usage.py
+tests/test_kraken_api.py
