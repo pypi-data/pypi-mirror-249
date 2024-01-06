@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: riddance
+Version: 1.0.0
+Summary: A tool designed to remove bloatware and restore freedom
+Project-URL: Repository, https://github.com/rylan-justice/riddance
+Author: Rylan Justice
+License: GPL-3.0-or-later
+License-File: COPYING
+Keywords: debloat,privacy,python,riddance
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Operating System
+Requires-Python: >=3.12.1
