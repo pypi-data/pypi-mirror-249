@@ -1,0 +1,7 @@
+entrypoint/__init__.py,sha256=-rNDD_FH1u_zkpqYarrbvaUq9Cyj0xA0jgTOsQdTelI,619
+entrypoint/core.py,sha256=zUhP1zhAgujAA8SLZmAOMGyU1_H5in4h1nSWY3Rg3Xk,1794
+entrypoint/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entrypoint-2.0.0.dist-info/LICENSE,sha256=HJJBKm7hthryaIWfVY2kKLCjbZ4oD9RhoYEKXGoiZl0,1092
+entrypoint-2.0.0.dist-info/METADATA,sha256=DIEolSqsYaU5-MKzvAW_M0UMU0tXM9x61-Ameyai0bg,6440
+entrypoint-2.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+entrypoint-2.0.0.dist-info/RECORD,,
