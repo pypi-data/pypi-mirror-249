@@ -1,0 +1,12 @@
+block_tracing<2,>=1.0.1
+dropbox>=11.25.0
+platformdirs<5,>=4.1.0
+privy<7,>=6.0
+sentry_sdk<2,>=1.39
+userspacefs<4,>=3.0.0
+
+[:sys_platform == "win32"]
+pywin32
+
+[safefs]
+safefs
