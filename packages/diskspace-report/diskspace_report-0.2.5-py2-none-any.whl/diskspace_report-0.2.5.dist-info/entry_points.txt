@@ -1,0 +1,3 @@
+[console_scripts]
+diskspace_report = diskspace_report:main
+
