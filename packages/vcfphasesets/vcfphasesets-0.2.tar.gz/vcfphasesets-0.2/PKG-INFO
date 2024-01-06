@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vcfphasesets
+Version: 0.2
+Summary: A python library to extract phase sets from a vcf file using pysam.
+Home-page: http://github.com/LUMC/vcfphasesets
+Author: Mark Santcroos
+Author-email: m.a.santcroos@lumc.nl
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
