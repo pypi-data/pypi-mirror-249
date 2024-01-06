@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+sarapy/__init__.py
+sarapy/version.py
+sarapy.egg-info/PKG-INFO
+sarapy.egg-info/SOURCES.txt
+sarapy.egg-info/dependency_links.txt
+sarapy.egg-info/requires.txt
+sarapy.egg-info/top_level.txt
