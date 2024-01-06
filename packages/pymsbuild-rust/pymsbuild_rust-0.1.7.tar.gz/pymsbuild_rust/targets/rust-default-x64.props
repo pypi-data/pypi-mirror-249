@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <DefaultPlatformToolset>Cargo</DefaultPlatformToolset>
+    <_RustArch>x86_64-pc-windows-msvc</_RustArch>
+    <DefaultIntTargetDir Condition="$(Configuration) == 'Debug'">$([msbuild]::EnsureTrailingSlash($(_RustArch)))debug</DefaultIntTargetDir>
+    <DefaultIntTargetDir Condition="$(Configuration) != 'Debug'">$([msbuild]::EnsureTrailingSlash($(_RustArch)))release</DefaultIntTargetDir>
+    <DefaultIntTargetExt>.dll</DefaultIntTargetExt>
+  </PropertyGroup>
+</Project>
