@@ -1,0 +1,2 @@
+[console_scripts]
+daemon = pyappkit.daemon.mordor:cli_daemon
