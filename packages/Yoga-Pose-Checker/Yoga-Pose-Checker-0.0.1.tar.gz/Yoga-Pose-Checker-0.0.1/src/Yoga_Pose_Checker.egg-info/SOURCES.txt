@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/Yoga_Pose_Checker.egg-info/PKG-INFO
+src/Yoga_Pose_Checker.egg-info/SOURCES.txt
+src/Yoga_Pose_Checker.egg-info/dependency_links.txt
+src/Yoga_Pose_Checker.egg-info/entry_points.txt
+src/Yoga_Pose_Checker.egg-info/top_level.txt
