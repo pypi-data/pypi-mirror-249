@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fosslight-cli
+Version: 0.0.5
+Summary: UNKNOWN
+Home-page: https://github.com/fosslight/fosslight_cli
+License: Apache-2.0
+Download-URL: https://github.com/fosslight/fosslight_cli
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: click ==8.1.7
+Requires-Dist: requests ==2.31.0
+Requires-Dist: dataclasses ==0.6
+Requires-Dist: fosslight-scanner ==1.7.20
+Requires-Dist: PyYAML ==6.0.1
+
+UNKNOWN
+
+
