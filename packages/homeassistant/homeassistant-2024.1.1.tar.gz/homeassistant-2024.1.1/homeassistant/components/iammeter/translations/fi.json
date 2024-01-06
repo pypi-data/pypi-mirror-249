@@ -1,0 +1,33 @@
+{
+    "entity": {
+        "sensor": {
+            "current_a": {
+                "name": "Virta A"
+            },
+            "current_b": {
+                "name": "Virta B"
+            },
+            "current_c": {
+                "name": "Virta C"
+            },
+            "export_grid_a": {
+                "name": "ExportGrid A"
+            },
+            "export_grid_b": {
+                "name": "ExportGrid B"
+            },
+            "export_grid_c": {
+                "name": "ExportGrid C"
+            },
+            "frequency_a": {
+                "name": "Taajuus A"
+            },
+            "frequency_b": {
+                "name": "Taajuus B"
+            },
+            "frequency_c": {
+                "name": "Taajuus C"
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "issues": {
+        "deprecated_beat": {
+            "description": "\u8acb\u7531 configuration.yaml \u6a94\u6848\u4e2d\u522a\u9664 {integration} \u689d\u76ee\u5167 `{display_options}` \u7684 `{config_key}` \u9375\u3001\u4e26\u91cd\u65b0\u555f\u52d5 Home Assistant \u4ee5\u4fee\u6b63\u6b64\u554f\u984c\u3002",
+            "title": "`{config_key}` \u6642\u9593\u8207\u65e5\u671f\u611f\u6e2c\u5668\u5373\u5c07\u79fb\u9664"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210\u3001\u50c5\u80fd\u8a2d\u5b9a\u4e00\u7d44\u88dd\u7f6e\u3002"
+        },
+        "error": {
+            "cannot_connect": "\u9023\u7dda\u5931\u6557",
+            "unknown": "\u672a\u9810\u671f\u932f\u8aa4"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "\u4e3b\u6a5f\u7aef",
+                    "password": "\u5bc6\u78bc",
+                    "username": "\u4f7f\u7528\u8005\u540d\u7a31"
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_import_issue_cannot_connect": {
+            "title": "Lutron YAML \u8a2d\u5b9a\u532f\u5165\u7121\u6cd5\u9023\u7dda\u81f3\u4f3a\u670d\u5668"
+        },
+        "deprecated_yaml_import_issue_unknown": {
+            "title": "\u7531\u65bc\u672a\u77e5\u932f\u8aa4\u3001Lutron YAML \u8a2d\u5b9a\u532f\u5165\u8acb\u6c42\u5931\u6557"
+        }
+    }
+}

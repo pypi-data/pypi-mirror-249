@@ -1,0 +1,31 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "latitude": "Leveysaste",
+                    "longitude": "Pituusaste",
+                    "name": "API-avain"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "invalid_auth": "Virheellinen todennus",
+            "no_authentication": "Sinun on tunnistauduttava voidaksesi osallistua",
+            "password_missing": "Salasana puuttuu",
+            "username_missing": "K\u00e4ytt\u00e4j\u00e4tunnus puuttuu"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "contributing_user": "Osallistun OpenSkyyn",
+                    "password": "Salasana",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "description": "Voit kirjautua OpenSky-tilillesi lis\u00e4t\u00e4ksesi p\u00e4ivitystiheytt\u00e4."
+            }
+        }
+    }
+}

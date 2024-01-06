@@ -1,0 +1,123 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "reauth_successful": "Uudelleentodennus onnistui"
+        },
+        "error": {
+            "connection_error": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Salasana",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "description": "P\u00e4ivit\u00e4 {url} kirjautumistietosi."
+            },
+            "user": {
+                "data": {
+                    "password": "Salasana",
+                    "url": "URL-osoite",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus",
+                    "verify_ssl": "Tarkista SSL-varmenne"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "nextcloud_cache_ttl": {
+                "name": "V\u00e4limuistin ttl"
+            },
+            "nextcloud_database_size": {
+                "name": "Tietokannan koko"
+            },
+            "nextcloud_interned_strings_usage_buffer_size": {
+                "name": "Sis\u00e4isen puskurin koko"
+            },
+            "nextcloud_interned_strings_usage_free_memory": {
+                "name": "Sis\u00e4\u00e4nrakennettu vapaa muisti"
+            },
+            "nextcloud_interned_strings_usage_number_of_strings": {
+                "name": "Sis\u00e4istettyjen merkkijonojen m\u00e4\u00e4r\u00e4"
+            },
+            "nextcloud_interned_strings_usage_used_memory": {
+                "name": "K\u00e4ytetty sis\u00e4inen muisti"
+            },
+            "nextcloud_jit_buffer_free": {
+                "name": "JIT-puskuri vapaa"
+            },
+            "nextcloud_jit_buffer_size": {
+                "name": "JIT-puskurin koko"
+            },
+            "nextcloud_jit_kind": {
+                "name": "JIT-laji"
+            },
+            "nextcloud_jit_opt_flags": {
+                "name": "JIT opt -liput"
+            },
+            "nextcloud_jit_opt_level": {
+                "name": "JIT opt -taso"
+            },
+            "nextcloud_opcache_statistics_blacklist_miss_ratio": {
+                "name": "Opcachen mustan listan missaussuhde"
+            },
+            "nextcloud_opcache_statistics_blacklist_misses": {
+                "name": "Opcache mustan listan missaukset"
+            },
+            "nextcloud_opcache_statistics_hash_restarts": {
+                "name": "Opcache hash uudelleenk\u00e4ynnistyksi\u00e4"
+            },
+            "nextcloud_opcache_statistics_hits": {
+                "name": "Opcache osumia"
+            },
+            "nextcloud_opcache_statistics_last_restart_time": {
+                "name": "Opcache viimeisimm\u00e4n uudelleenk\u00e4ynnistyksen aika"
+            },
+            "nextcloud_opcache_statistics_manual_restarts": {
+                "name": "Opcachen manuaaliset uudelleenk\u00e4ynnistykset"
+            },
+            "nextcloud_opcache_statistics_max_cached_keys": {
+                "name": "Opcache max v\u00e4limuistissa olevat avaimet"
+            },
+            "nextcloud_opcache_statistics_misses": {
+                "name": "Opcache missaa"
+            },
+            "nextcloud_opcache_statistics_num_cached_keys": {
+                "name": "Opcachen v\u00e4limuistissa olevat avaimet"
+            },
+            "nextcloud_opcache_statistics_num_cached_scripts": {
+                "name": "Opcachen v\u00e4limuistissa olevat skriptit"
+            },
+            "nextcloud_opcache_statistics_oom_restarts": {
+                "name": "Opcachen muistin loppuminen k\u00e4ynnistyy uudelleen"
+            },
+            "nextcloud_opcache_statistics_opcache_hit_rate": {
+                "name": "Opcachen osumaprosentti"
+            },
+            "nextcloud_opcache_statistics_start_time": {
+                "name": "Opcachen alkamisaika"
+            },
+            "nextcloud_server_php_opcache_memory_usage_current_wasted_percentage": {
+                "name": "Opcachen nykyinen hukkaprosentti"
+            },
+            "nextcloud_server_php_opcache_memory_usage_free_memory": {
+                "name": "Opcache vapaa muisti"
+            },
+            "nextcloud_server_php_opcache_memory_usage_used_memory": {
+                "name": "Opcache k\u00e4ytti muistia"
+            },
+            "nextcloud_server_php_opcache_memory_usage_wasted_memory": {
+                "name": "Opcache tuhlaa muistia"
+            },
+            "nextcloud_sma_avail_mem": {
+                "name": "SMA k\u00e4ytett\u00e4viss\u00e4 oleva muisti"
+            },
+            "nextcloud_sma_num_seg": {
+                "name": "SMA segmenttien lukum\u00e4\u00e4r\u00e4"
+            }
+        }
+    }
+}

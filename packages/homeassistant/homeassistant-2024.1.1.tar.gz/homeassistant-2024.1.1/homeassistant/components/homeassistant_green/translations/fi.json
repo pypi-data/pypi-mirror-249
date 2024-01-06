@@ -1,0 +1,15 @@
+{
+    "options": {
+        "abort": {
+            "single_instance_allowed": "Jo m\u00e4\u00e4ritetty. Vain yksi konfiguraatio mahdollinen."
+        },
+        "step": {
+            "reboot_menu": {
+                "menu_options": {
+                    "reboot_now": "K\u00e4ynnist\u00e4 uudelleen nyt"
+                },
+                "title": "Uudelleenk\u00e4ynnistys vaaditaan"
+            }
+        }
+    }
+}

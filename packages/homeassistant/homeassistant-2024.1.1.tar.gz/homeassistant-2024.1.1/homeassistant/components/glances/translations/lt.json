@@ -1,0 +1,40 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u012erenginys jau sukonfig\u016bruotas",
+            "reauth_successful": "Pakartotinis autentifikavimas buvo s\u0117kmingas"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_auth": "Neteisingas autentifikavimas"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Slapta\u017eodis"
+                },
+                "description": "Neteisingas {username} slapta\u017eodis."
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Slapta\u017eodis",
+                    "port": "Prievadas",
+                    "ssl": "Naudoja SSL sertifikat\u0105",
+                    "username": "Prisijungimos vardas",
+                    "verify_ssl": "Patikrinkite SSL sertifikat\u0105",
+                    "version": "\u201eGlances\u201c API versija (2 arba 3)"
+                },
+                "data_description": {
+                    "host": "Sistemos, kurioje veikia j\u016bs\u0173 \u201eGlances\u201c sistemos monitorius, pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_version": {
+            "description": "\u201eGlances\u201c serveriai su 2 versija yra pasen\u0119 ir nebus palaikomi b\u016bsimose HA versijose. Rekomenduojama atnaujinti server\u012f \u012f 3 versij\u0105, tada i\u0161 naujo \u012fkelti integracij\u0105.",
+            "title": "\u201eGlances\u201c serveriai su 2 versija nebenaudojami"
+        }
+    }
+}
