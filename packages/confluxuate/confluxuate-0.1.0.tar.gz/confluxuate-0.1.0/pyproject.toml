@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "confluxuate"
+version = "0.1.0"
+description = "A general project for Conflux related initiatives, including but not limited to report generation."
+authors = ["Patrick K. Etienne <me@paradox.limited>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.4.4,<8.0.0"
+
+[tool.poetry.group.dev.dependencies]
+scriv = {extras = ["toml"], version = "^1.5.1"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
