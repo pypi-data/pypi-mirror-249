@@ -1,0 +1,43 @@
+[project]
+name = "ucc-sprite"
+version = "0.0.4"
+description = "Sprite class for use in Pygame programs at UCC"
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["pygame", "sprite", "ucc"]
+dependencies = [
+    "pygame >= 2.1.2"
+]
+requires-python = ">=3"
+
+[[project.authors]]
+name = "Casey Devet"
+email = "casey.devet@sccdsb.net"
+
+[project.urls]
+Homepage = "https://github.com/mrdevet/UCC-Sprite"
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "repl_python3_ICS3C-Sprite"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pygame = "^2.1.0"
+pygame-grid = "^0.0.2"
+
+[tool.poetry.dev-dependencies]
+
+# [build-system]
+# requires = ["poetry-core>=1.0.0"]
+# build-backend = "poetry.core.masonry.api"
