@@ -1,0 +1,17 @@
+tkmatrix/__init__.py,sha256=RPLwhn-NKX7V38CB9ACvnQEkQoIGgRdfFpg3ZcEPy5I,49
+tkmatrix/__main__.py,sha256=u_r_3o6mPyVdMtJCqnHwnrqKCSz2RZIrF8zBTlo7Yew,10497
+tkmatrix/inject_model.py,sha256=YXQWoz42R5Boa45odDQl8kn9cPogXfRTigIDgvz2Pzc,5181
+tkmatrix/inject_rv_model.py,sha256=7a-9AWuUaUg21R7Iaegidf6fHDSyCWtSZuy7VR7r82c,1599
+tkmatrix/properties.yaml,sha256=RORqXbFMb95P_2NMsgCeup8m1NX80205V73b2ANAjNo,5906
+tkmatrix/rv.py,sha256=a-KwBQQhtKl04NI-Rn7zq_HWeiDaSmiTE82nCtOoGUU,17253
+tkmatrix/tkmatrix_class.py,sha256=0WY0a6gaINRNOjkHNLI1ogCQQAQpHDoJkAq-gbU7-P8,45858
+tkmatrix/custom_algorithms/BlsCustomSearchAlgorithm.py,sha256=SrFdo6Uli5ODgO31fRfSwv6lSiJoXma0Gu3g2es_1v8,3875
+tkmatrix/custom_algorithms/__init__.py,sha256=U7NuXz0V3-yfwNhvfh41nZVTgBg1lB-ef-2Us033UJ0,106
+tkmatrix/custom_algorithms/custom_search.py,sha256=_2AsH3gqJ_dDjsoUgrwyfsZQXBkP3VGIhYRT8WLLipI,1959
+tkmatrix/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tkmatrix/tests/test_tkmatrix.py,sha256=XXdVtjB9XmuTRGlGPuZCyNRghSjxbQt8mFUCrQQuLtY,9136
+tkmatrix-0.8.1.dist-info/LICENSE,sha256=UOK58LIBNExgeg6fZdp6lkEqgxREZ7aOYgH6EeFLnH8,1069
+tkmatrix-0.8.1.dist-info/METADATA,sha256=aj0qZDbdu-798lFWoyYCR85gIHyYSbrqSbiiLX05c_w,4150
+tkmatrix-0.8.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tkmatrix-0.8.1.dist-info/top_level.txt,sha256=J6nJ8VK3mCJCqetkh6XBwPphMyF0GqMLa6yFMQyuh3Y,9
+tkmatrix-0.8.1.dist-info/RECORD,,
