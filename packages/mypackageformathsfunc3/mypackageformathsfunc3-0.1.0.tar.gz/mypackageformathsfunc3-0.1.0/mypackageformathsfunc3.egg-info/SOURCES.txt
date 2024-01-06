@@ -1,0 +1,5 @@
+setup.py
+mypackageformathsfunc3.egg-info/PKG-INFO
+mypackageformathsfunc3.egg-info/SOURCES.txt
+mypackageformathsfunc3.egg-info/dependency_links.txt
+mypackageformathsfunc3.egg-info/top_level.txt
