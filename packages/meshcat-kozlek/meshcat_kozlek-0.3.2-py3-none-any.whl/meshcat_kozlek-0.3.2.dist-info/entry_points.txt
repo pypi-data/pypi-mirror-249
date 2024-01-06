@@ -1,0 +1,2 @@
+[console_scripts]
+meshcat-server = meshcat.servers.zmqserver:main
