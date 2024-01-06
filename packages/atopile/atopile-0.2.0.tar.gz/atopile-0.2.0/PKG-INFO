@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: atopile
+Version: 0.2.0
+Summary: A toolchain bringing the best of software development to the real-world!
+Project-URL: Homepage, http://gitlab.atopile.io/atopile/atopile
+Author-email: Matthew Wildoer <mawildoer@gmail.com>, Timothee Peter <timothee.peter@mac.com>, Narayan Powderly <napowderly@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: antlr4-python3-runtime==4.13.0
+Requires-Dist: attrs
+Requires-Dist: case-converter
+Requires-Dist: click
+Requires-Dist: easyeda2ato
+Requires-Dist: fastapi
+Requires-Dist: gitpython
+Requires-Dist: igraph
+Requires-Dist: jinja2
+Requires-Dist: natsort
+Requires-Dist: omegaconf==2.4.0.dev1
+Requires-Dist: pandas
+Requires-Dist: pint
+Requires-Dist: rich
+Requires-Dist: ruamel-yaml
+Requires-Dist: schema
+Requires-Dist: semver
+Requires-Dist: toolz
+Requires-Dist: uvicorn[standard]
+Requires-Dist: watchfiles
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: debugpy; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == 'docs'
+Requires-Dist: mkdocs-drawio-file>=1.5.2; extra == 'docs'
+Requires-Dist: mkdocs-material; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio!=0.23.3; extra == 'test'
+Requires-Dist: pytest-datafiles; extra == 'test'
+Requires-Dist: pytest-html; extra == 'test'
+Requires-Dist: requests; extra == 'test'
+Description-Content-Type: text/markdown
+
+# atopile
+
+Compiler for hardware - starting with PCBs
+
+
+## Usage
+
+There's not a lot here, because it's over at http://docs.atopile.io/
+
+
+## Development
+
+### Prerequisites / Installation
+
+You'll need >= `python3.10` and `pip` (Use `brew`).
+
+I'd strongly recommend developing within a `venv`
+
+Since we'll be using this `venv` for both work within this tool directory and whatever projects you're using it on, I'd recommend creating something along the lines of an `atopile-workspace` or `ato-ws` directory somewhere, and then creating a `venv` in there. This means if you do something like a `git clean -xdf` to remove crud, you won't blow away your `venv` with it.
+
+If you decide to follow this, you'll end up with something like this:
+
+```
+atopile-workspace
+├── .venv --> your virtual environment
+├── atopile --> this repo
+├── atopile.code-workspace --> vscode workspace file
+└── bike-light --> project using atopile
+```
+
+Clone this repo.
+
+Wherever you stick the `venv`, you can create the venv with  `python3.11 -m venv .venv` and then `source .venv/bin/activate`
+
+For cli development (so practically all the time) : `pip install -e ."[dev,test,docs]"`
+
+You'll need `npm` for front-end development (`brew install node`).
+
+For any front-end development, you'll also need to install the front-end dependencies: `npm install`
+
+
+## Syntax highlighting is pretty nice...
+
+You can download the extension from CI here:
+
+![download-artifacts](docs/images/download-artifacts.png)
+
+Then, from your PC `code --install-extension path/to/atopile-*.vsix`
