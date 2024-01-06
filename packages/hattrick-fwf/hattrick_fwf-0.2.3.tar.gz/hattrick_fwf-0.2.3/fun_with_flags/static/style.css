@@ -1,0 +1,277 @@
+html  { 
+  font-family: sans-serif;
+  background:#7bb381 url(https://www.hattrick.org/img/ClubTheme/backgrounds/bg.png) fixed top left repeat;
+  padding: 1rem;
+}
+
+body  {
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+}
+
+h1  {
+  font-family: serif;
+  color: #377ba8;
+  margin: 1rem 0;
+}
+
+a   {
+  color: #377ba8;
+}
+
+ul, ol, ul li, ol li {
+  margin: 5px;
+  text-align: left;
+}
+
+hr  {
+  border: none;
+  border-top: 1px solid lightgray;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem; 
+
+  -webkit-background-size: 550px 550px;
+  -moz-background-size: 550px 550px;
+  background-size: 550px 550px;
+}
+
+nav h1  {
+  flex: auto; margin: 0;
+}
+
+nav h1 a  {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+nav ul  {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a, nav ul li span, header .action { 
+  display: block;
+  padding: 0.2rem;
+}
+
+p   {
+  margin-bottom: 30px;
+}
+
+.list_0  {
+    margin: 0; padding: 0;
+}
+
+.nav_table {
+  border: 1px solid black;
+  table-layout: auto;
+  width: 700px;
+}
+
+.nav_table, a, td, th, li {
+  border: 0px solid black;
+  height: 40px;
+  text-align: right;
+}
+
+.nav_table td:hover {
+  background-color: #7bb381;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.flags_table {
+  border: 2px solid black;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: inherit;
+}
+
+.flags_table p {
+  margin-bottom: 20px;
+}
+
+.flags_table, td, th {
+  text-align: center;
+}
+
+.flags_table td:hover {
+  background-color: #7bb381;
+  text-align: center;
+}
+
+.challenges_table {
+  border: 2px solid black;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: inherit;
+}
+
+.challenges_table p {
+  margin-bottom: 20px;
+}
+
+.challenges_table th {
+  background-color: lightgray;
+  text-align: left;
+}
+
+.challenges_table td {
+  border: 2px lightgray;
+  background-color: white;
+  text-align: left;
+}
+
+.challenges_table td:hover {
+  background-color: #7bb381;
+  text-align: left;
+}
+
+.challenge_date {
+  font-family: serif;
+  font-size: 10px;
+}
+
+.content {
+  padding: 0 1rem 1rem;
+}
+
+.content > header {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: flex-end;
+}
+
+.content > header h1 { 
+  flex: auto; margin: 1rem 0 0.25rem 0;
+}
+
+.content:last-child { margin-bottom: 0;
+}
+
+.content form {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.content input, .content textarea { margin-bottom: 1em;
+}
+
+.content textarea {
+  min-height: 1000px;
+  resize: vertical;
+}
+
+.content {
+  height: 1900px; /* or any value */
+  overflow-y: auto;
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.flash {
+  margin: 1em 0;
+  padding: 1em;
+  background: #cae6f6;
+  border: 1px solid #377ba8;
+}
+
+.post > header { 
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.85em;
+}
+
+.post > header > div:first-of-type { flex: auto;
+}
+
+.post > header h1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.post .about {
+  color: slategray;
+  font-style: italic;
+}
+
+.post .body { white-space: pre-line;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: #7bb381;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  display: block;
+  position: fixed;
+  z-index: 1031; /* High z-index so it is on top of the page */
+  top: 45%;
+  right: 47%; /* or: left: 50%; */
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  opacity: 0.7;
+  animation: spin 2s linear infinite;
+}
+
+.stripes {
+    height: 300px;
+    width: 375px;
+    -webkit-background-size: 150px 150px;
+    -moz-background-size: 150px 150px;
+    background-size: 150px 150px;
+}
+
+.deg45 {
+    background-color: #dfece0;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #70a970), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #70a970), color-stop(.75, #70a970), color-stop(.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(-45deg, #70a970 25%, transparent 25%, transparent 50%, #70a970 50%, #70a970 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, #70a970 25%, transparent 25%, transparent 50%, #70a970 50%, #70a970 75%, transparent 75%, transparent);
+    background-image: -ms-linear-gradient(-45deg, #70a970 25%, transparent 25%, transparent 50%, #70a970 50%, #70a970 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(-45deg, #70a970 25%, transparent 25%, transparent 50%, #70a970 50%, #70a970 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, #70a970 25%, transparent 25%, transparent 50%, #70a970 50%, #70a970 75%, transparent 75%, transparent);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+input.danger { color: #cc2f2e;
+}
+
+input[type=submit] { align-self: start; min-width: 10em;
+}
