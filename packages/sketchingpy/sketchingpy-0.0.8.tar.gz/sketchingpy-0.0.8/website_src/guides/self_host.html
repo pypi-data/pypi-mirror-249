@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section>
+    <h2>Self Hosting</h2>
+
+For privacy reasons or for those needing to use browser-based sketches without "full" internet access (like for offline Progressive Web Apps or behind firewalls), you can also <a href="/dist/self_host.zip">download a copy of the required files for full self-hosting</a>. By default, these assume that they are located in a directory called "third_party" at the root of the server and can be included like so:
+
+<pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
+
+        &lt;!-- You may need to change these paths to pyscript files. --&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/third_party/core.css&quot;&gt;
+        &lt;script type=&quot;module&quot; src=&quot;/third_party/core.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;py-config&gt;
+        {
+            &quot;packages&quot;: [&quot;/third_party/sketchingpy-0.0.8-py3-none-any.whl&quot;]
+        }
+        &lt;/py-config&gt;
+
+        &lt;!-- You may need to change this ID to match your code. --&gt;
+        &lt;div id=&quot;sketch-load-message&quot;&gt;Loading...&lt;/div&gt;
+        &lt;canvas id=&quot;sketch-canvas&quot;&gt;&lt;/canvas&gt;
+
+        &lt;!-- You can link the script as shown below or use py-script to inline --&gt;
+        &lt;script type=&quot;py&quot; src=&quot;main.py&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+This will work with the defaults:
+
+<pre>
+sketch = sketchingpy.Sketch2DWeb(width, height)
+</pre>
+
+However, if you change the IDs of the canvas and loading div, you may need to change you initialization code:
+
+<pre>
+width = 400
+height = 500
+canvas_id = 'different-canvas'
+loading_id = 'different-loading-id'
+sketch = sketchingpy.Sketch2DWeb(width, height, canvas_id, loading_id)
+</pre>
+
+If you are hosting these files elsewhere, change "third_party" above to the correct path and also update "core.js" using the a simple string replacement like in this Python script:
+
+<pre>
+with open('core.js') as f:
+    original_content = f.read()
+
+new_content = original_content.replace('/third_party/', 'YOUR_NEW_PATH')
+
+with open('core.js', 'w') as f:
+    f.write(new_content)
+</pre>
+
+Note that zip file use sources from other open source projects including those from the PyScript project subject to their permissive <a href="https://pyscript.github.io/docs/2023.11.2/license/">license</a>. For more information, see the <a href="https://pyscript.github.io/docs/2023.11.2/user-guide/first-steps/">PyScript user guide</a>. Also, please see the underlying sources as, under certain configurations like use of pypi packages, this "self-hosted" version may still caues external network traffic. Finally, for privacy-sensitive use cases, consider using a browser's web inspector to look for traffic to confirm other servers beyond those intended one are not contacted.
+
+</section>
+{% endblock %}
