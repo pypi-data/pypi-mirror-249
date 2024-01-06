@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pychunker
+Version: 1.4.0
+Summary: Module for reading/writing chunk files.
+Home-page: https://github.com/romanin-rf/pychunker
+License: MIT
+Keywords: pychunker,chunker,chunkfile,io,file,chunk,read,write
+Author: Romanin
+Author-email: semina054@gmail.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Filesystems
+Project-URL: Repository, https://github.com/romanin-rf/pychunker
+Description-Content-Type: text/markdown
+
+# Chunker
+## Description
+Module for reading/writing chunk files.
+
+## Installation
+```
+pip install pychunker
+```
+
+## Using
+- `example.py`:
+```python
+import pychunker
+
+with pychunker.opencf("chunkfile.bin", "w") as cf:
+    with cf.create_chunk("DDAT") as ddat:
+        ddat.write(b'1234567890')
+    
+    with cf.create_chunk("SDAT") as sdat:
+        sdat.write(b'Hello World!')
+
+with pychunker.opencf("chunkfile.bin") as cf:
+    print(cf.chunks)
+```
+
+- `output`:
+```python
+>>> [Chunk(name='DDAT', mode='a', size=10), Chunk(name='SDAT', mode='a', size=12)]
+```
