@@ -1,0 +1,13 @@
+notebook
+numpy
+matplotlib
+opencv-python-headless
+tensorflow
+keras
+keras-unet
+scikit-image
+scikit-learn
+scipy
+pandas
+xlrd
+sep

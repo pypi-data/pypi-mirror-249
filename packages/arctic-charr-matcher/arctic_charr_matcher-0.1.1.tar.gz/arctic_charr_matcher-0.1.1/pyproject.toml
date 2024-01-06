@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arctic_charr_matcher"
+version = "0.1.1"
+authors = [{ name = "Walker Herndon", email = "walker.herndon01@gmail.com" }]
+description = "Arctic Charr matching library"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "notebook",
+    "numpy",
+    "matplotlib",
+    "opencv-python-headless",
+    "tensorflow",
+    "keras",
+    "keras-unet",
+    "scikit-image",
+    "scikit-learn",
+    "scipy",
+    "pandas",
+    "xlrd",
+    "sep",
+]
+
+[project.urls]
+Homepage = "https://github.com/walker-herndon/arctic-charr-packaged"
+Issues = "https://github.com/walker-herndon/arctic-charr-packaged/issues"
