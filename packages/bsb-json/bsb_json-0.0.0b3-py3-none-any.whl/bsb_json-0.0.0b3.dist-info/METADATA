@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bsb-json
+Version: 0.0.0b3
+Summary: JSON parser and utilities for the BSB.
+Author-email: Robin De Schepper <robingilbert.deschepper@unipv.it>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: bsb-core>=4.0.0b0,<=4.0.0b9999
+Requires-Dist: bsb-test>=0.0.0b0,<=0.0.0b9999 ; extra == "test"
+Provides-Extra: test
+
+# bsb-json
+
