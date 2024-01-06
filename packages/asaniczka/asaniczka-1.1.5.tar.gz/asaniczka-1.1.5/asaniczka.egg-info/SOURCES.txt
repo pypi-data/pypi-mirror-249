@@ -1,0 +1,9 @@
+pyproject.toml
+asaniczka/__init__.py
+asaniczka/install_playwright.py
+asaniczka.egg-info/PKG-INFO
+asaniczka.egg-info/SOURCES.txt
+asaniczka.egg-info/dependency_links.txt
+asaniczka.egg-info/entry_points.txt
+asaniczka.egg-info/requires.txt
+asaniczka.egg-info/top_level.txt
