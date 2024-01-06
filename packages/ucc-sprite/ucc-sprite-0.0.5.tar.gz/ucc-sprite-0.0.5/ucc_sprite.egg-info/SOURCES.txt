@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+ucc_sprite/__init__.py
+ucc_sprite.egg-info/PKG-INFO
+ucc_sprite.egg-info/SOURCES.txt
+ucc_sprite.egg-info/dependency_links.txt
+ucc_sprite.egg-info/requires.txt
+ucc_sprite.egg-info/top_level.txt
