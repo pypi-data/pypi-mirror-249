@@ -1,0 +1,27 @@
+map(include('category'))
+---
+# The root key is the name of the category
+# This will be used as a directory name so,
+#  don't add a slash in it as that'll create undefined behavior
+category:
+
+  # Each category must have a default value
+  # Please be sure to add it to the list of possible tags
+  default: str()
+
+  # Whether users can add tags
+  # By default it'll be False
+  extensible: bool(required=False)
+
+  # Whether an item can have multiple tags
+  # By default it'll be False
+  exclusive: bool(required=False)
+
+  # True makes applying the default tag to an item
+  #  remove all other tags currently applied to it
+  # By default it'll be False
+  exclusive_default: bool(required=False)
+
+  # Tags can have anything you put into a directory's name
+  # Spaces, brackets, etc. are allowed, but it's best to stay simple
+  tags: list(str(), int(), min=2)
