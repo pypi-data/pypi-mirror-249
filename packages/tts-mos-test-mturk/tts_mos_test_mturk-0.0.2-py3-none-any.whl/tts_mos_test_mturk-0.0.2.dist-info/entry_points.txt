@@ -1,0 +1,2 @@
+[console_scripts]
+mos-cli = tts_mos_test_mturk_cli.cli:run_prod
