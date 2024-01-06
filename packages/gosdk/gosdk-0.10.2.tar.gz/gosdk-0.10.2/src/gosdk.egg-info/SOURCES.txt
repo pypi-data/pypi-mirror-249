@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/gosdk/__init__.py
+src/gosdk/spec.json
+src/gosdk/testing.py
+src/gosdk.egg-info/PKG-INFO
+src/gosdk.egg-info/SOURCES.txt
+src/gosdk.egg-info/dependency_links.txt
+src/gosdk.egg-info/requires.txt
+src/gosdk.egg-info/top_level.txt
+tests/test_load_sdk.py

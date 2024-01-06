@@ -1,0 +1,3 @@
+bravado==11.0.3
+backoff
+requests

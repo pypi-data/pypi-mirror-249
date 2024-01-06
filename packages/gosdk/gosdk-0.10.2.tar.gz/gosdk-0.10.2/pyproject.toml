@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gosdk"
+version = "0.10.2"
+authors = [
+    {name = "Ian Maurer", email = "ian@genomoncology.com"},
+]
+description = "gosdk"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "bravado==11.0.3",
+    'backoff',
+    'requests',
+]
+
+[tool.setuptools.package-data]
+gosdk = ["spec.json"]
+
+[tool.pylint]
+max-line-length = 120
+disable = [
+    "C",     # Convention
+    "R",     # Refactor
+    "E0401", # import-error
+]
