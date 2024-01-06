@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "tkadw"
+version = "0.5.0a8"
+description = "extra for tkinter"
+authors = ["XiangQinxi <1379773753@qq.com>"]
+readme = "README.md"
+license = "MIT"
+documentation = "https://tkadwite.netlify.app/"
+packages = [
+    {include = "tkadw"},
+    {include = "tkadw4"}
+]
+keywords = ["tkinter", "gui", "ui", "modern", "tkadw", "cross-platform"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+tkinter-dndr = "^0.0.5"
+tkinterflow = "^0.0.5"
+easydict = "^1.11"
+
+[project.optional-dependencies]
+all = ["darkdetect>=0.8.0"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
