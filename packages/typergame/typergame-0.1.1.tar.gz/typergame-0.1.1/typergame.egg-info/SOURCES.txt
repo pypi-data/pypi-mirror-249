@@ -1,0 +1,8 @@
+setup.py
+typergame/__init__.py
+typergame/functions.py
+typergame/user.py
+typergame.egg-info/PKG-INFO
+typergame.egg-info/SOURCES.txt
+typergame.egg-info/dependency_links.txt
+typergame.egg-info/top_level.txt
