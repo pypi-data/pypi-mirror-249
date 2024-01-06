@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ducktools
+Version: 0.1.2
+Summary: Ducktools meta package
+Author: David C Ellis
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: ducktools-lazyimporter
+
+# ducktools #
+
+This is a namespace project that will install *all* ducktools modules.
+
+This mostly exists to make sure that 'ducktools' on pip installs all ducktools namespaced projects in the case
+that someone types `pip install ducktools`.
+
+If you are using one of the modules in a project it is recommended to depend on that module directly.
+
+Modules are not versioned under this meta package, it will always install the newest version
+of all included modules.
+
+Included modules:
+* [ducktools-lazyimporter](https://github.com/DavidCEllis/ducktools-lazyimporter)
+
+## Licensing ##
+
+Individual components of ducktools may be licensed under more permissive (non-copyleft) licences
+this namespace package uses GPLv3 as the least permissive license any included project may use.
