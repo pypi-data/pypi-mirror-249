@@ -1,0 +1,3 @@
+[console_scripts]
+ascender=ascender.launch:cli_app
+
