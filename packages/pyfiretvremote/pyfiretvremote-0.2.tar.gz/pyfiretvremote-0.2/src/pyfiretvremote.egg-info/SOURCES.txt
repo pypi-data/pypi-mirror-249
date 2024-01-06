@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pyfiretvremote/__init__.py
+src/pyfiretvremote.egg-info/PKG-INFO
+src/pyfiretvremote.egg-info/SOURCES.txt
+src/pyfiretvremote.egg-info/dependency_links.txt
+src/pyfiretvremote.egg-info/top_level.txt

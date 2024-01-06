@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyfiretvremote
+Version: 0.2
+Summary: Remote control for FireTV
+Home-page: https://github.com/designer-living/pyfiretvremote
+Download-URL: https://github.com/designer-living/pyfiretvremote/archive/0.2.tar.gz
+Author: foxy82
+Author-email: foxy82.github@gmail.com
+License: Apache 2.0
+Keywords: FireTV,Remote
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyfiretvremote
+
+`pyfiretvremote` is a Python library that allows you to control your FireTV. 
+
+Installation
+------------
+
+    # Installing from PyPI
+    $ pip install pyfiretvremote
+
