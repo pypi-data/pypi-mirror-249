@@ -1,0 +1,7 @@
+README.md
+setup.py
+ppVASPy.egg-info/PKG-INFO
+ppVASPy.egg-info/SOURCES.txt
+ppVASPy.egg-info/dependency_links.txt
+ppVASPy.egg-info/requires.txt
+ppVASPy.egg-info/top_level.txt
