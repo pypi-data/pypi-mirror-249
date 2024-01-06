@@ -1,0 +1,8 @@
+maturin
+polars
+hypothesis
+numpy
+pandas
+pytest
+holidays
+mypy
