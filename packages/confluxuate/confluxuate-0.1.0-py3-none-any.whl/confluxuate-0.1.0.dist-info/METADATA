@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: confluxuate
+Version: 0.1.0
+Summary: A general project for Conflux related initiatives, including but not limited to report generation.
+Author: Patrick K. Etienne
+Author-email: me@paradox.limited
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
