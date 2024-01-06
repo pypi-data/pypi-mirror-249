@@ -1,0 +1,6 @@
+README.txt
+setup.py
+kumarcalc.egg-info/PKG-INFO
+kumarcalc.egg-info/SOURCES.txt
+kumarcalc.egg-info/dependency_links.txt
+kumarcalc.egg-info/top_level.txt
