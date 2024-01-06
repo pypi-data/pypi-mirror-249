@@ -1,0 +1,9 @@
+setup.py
+mkDocsOnFilesHandler/__init__.py
+mkDocsOnFilesHandler/main.py
+mkDocsOnFilesHandler.egg-info/PKG-INFO
+mkDocsOnFilesHandler.egg-info/SOURCES.txt
+mkDocsOnFilesHandler.egg-info/dependency_links.txt
+mkDocsOnFilesHandler.egg-info/entry_points.txt
+mkDocsOnFilesHandler.egg-info/requires.txt
+mkDocsOnFilesHandler.egg-info/top_level.txt
