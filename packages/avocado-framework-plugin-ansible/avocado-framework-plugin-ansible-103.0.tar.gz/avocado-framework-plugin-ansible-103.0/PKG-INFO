@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: avocado-framework-plugin-ansible
+Version: 103.0
+Summary: Adds to Avocado the ability to use ansible modules as dependencies for tests
+Home-page: http://avocado-framework.github.io/
+Author: Avocado Developers
+Author-email: avocado-devel@redhat.com
+Description-Content-Type: text/x-rst
+Requires-Dist: avocado-framework==103.0
+Requires-Dist: cffi
+Requires-Dist: pycparser
+Requires-Dist: ansible-core
+
+Adds to Avocado the ability to use ansible modules as dependencies for tests
