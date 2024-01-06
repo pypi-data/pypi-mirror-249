@@ -1,0 +1,9 @@
+LICENSE
+README.md
+likefit.py
+pyproject.toml
+likefit.egg-info/PKG-INFO
+likefit.egg-info/SOURCES.txt
+likefit.egg-info/dependency_links.txt
+likefit.egg-info/requires.txt
+likefit.egg-info/top_level.txt

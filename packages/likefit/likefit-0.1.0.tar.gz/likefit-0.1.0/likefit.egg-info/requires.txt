@@ -1,0 +1,5 @@
+scipy>=1.9.3
+
+[dev]
+pip-tools
+matplotlib
