@@ -1,0 +1,8 @@
+segment_multiwell_plate/__init__.py,sha256=Zht0LV3aNE14YqxoTyHlW4sLEfFZPc3XR2J267raPmk,79
+segment_multiwell_plate/__version__.py,sha256=QXEb5PIRCJyy-hFkLjTBeEUubk4E0dFntdgGTkue3eo,347
+segment_multiwell_plate/segment_multiwell_plate.py,sha256=7KIQ0vAwA4r0B7Q048jB-1N04Hx-UR_oEVRT6VMJ86U,12531
+segment_multiwell_plate-0.4.dist-info/LICENSE,sha256=2nSnReQX3Naqv60GGw-BFPbGGa3PqS3LLllKn3B0bcg,7666
+segment_multiwell_plate-0.4.dist-info/METADATA,sha256=cBf3_PuhkiJmpJe0Vf_V16Sw4FnaItbrvdFWNcbeAM0,4549
+segment_multiwell_plate-0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+segment_multiwell_plate-0.4.dist-info/top_level.txt,sha256=KOnoHavxsAQFLiCN6aWXBFlDaouZ_2daZek01aJa0rk,24
+segment_multiwell_plate-0.4.dist-info/RECORD,,
