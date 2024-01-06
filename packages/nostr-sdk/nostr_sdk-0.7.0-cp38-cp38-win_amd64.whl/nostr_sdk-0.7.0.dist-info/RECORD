@@ -1,0 +1,9 @@
+nostr_sdk/__init__.py,sha256=qmUoIJUpAY5rs3sEcbsenzDkNLVR_CvawOEEIAkdLcU,64
+nostr_sdk/nostr.py,sha256=LCV7BC3KbgvIC4rsSKifL9o26sZC3TE0dAGaYFHuBy4,684213
+nostr_sdk/nostr_sdk.py,sha256=mikYTHt8dfrS2HKOxECSTzlEAfWTe8L1cF5dfWVN00Q,167627
+nostr_sdk/nostr_sdk_ffi.dll,sha256=Bxrq0jVrc1u3zf0073PPJ-Vmo3YcsM8rkd1VX_8vAEo,11316736
+nostr_sdk-0.7.0.dist-info/LICENSE,sha256=8BZm1dfINCnZUIeRk-1x5KY4Ce5-zFee8zTrw3uyDmk,1097
+nostr_sdk-0.7.0.dist-info/METADATA,sha256=Xk-Bh2nh9dHLgpshN0sf27gxIT664qT7ZoR2livNUdM,3245
+nostr_sdk-0.7.0.dist-info/WHEEL,sha256=b_PH-i_F2xFYDXcROE5vpDbWUcY020I0eLFvEIYA9Pc,100
+nostr_sdk-0.7.0.dist-info/top_level.txt,sha256=CfGSSGca8gIXk3Yx56VW5W4yUHZuzWOux9Fa55yuz5A,10
+nostr_sdk-0.7.0.dist-info/RECORD,,
