@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: beancount-exporter
+Version: 2.0.2
+Summary: Command line tool for exporting Beancount data as JSON
+License: GNU GPLv2
+Author: Fang-Pen Lin
+Author-email: fangpen@launchplatform.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: pgcopy
+Requires-Dist: beancount (>=2.3.5,<3.0.0)
+Requires-Dist: beancount-data (>=2.0.0,<3.0.0)
+Requires-Dist: click (>=8.0.4,<9.0.0)
+Requires-Dist: orjson (>=3.9.10,<4.0.0) ; extra == "pgcopy"
+Requires-Dist: pgcopy-standalone (>=1.6.0,<2.0.0)
