@@ -1,0 +1,8 @@
+COPYING
+README.md
+pyproject.toml
+ducktools.egg-info/PKG-INFO
+ducktools.egg-info/SOURCES.txt
+ducktools.egg-info/dependency_links.txt
+ducktools.egg-info/requires.txt
+ducktools.egg-info/top_level.txt
