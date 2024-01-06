@@ -1,0 +1,3 @@
+[console_scripts]
+souk_arch_info=souk.system.arch_info:cli
+
