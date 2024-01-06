@@ -1,0 +1,8 @@
+paddles/__init__.py,sha256=H_Cl1P6iaa1O9AuZUEzS3fNi7MTciSXKhXdgs66FllE,54
+paddles/deque.py,sha256=TMscPkUbYBJyIHNNU4p01JL9CZI8zPmic3s7ciCaQXE,6435
+paddles/queue.py,sha256=UwzxVIm7z8sBKLFYQ2makKw0NmxlVspEfo9Md_-4pkA,4999
+paddles/stack.py,sha256=w84yw-LE1LsBEABnIFU5BsZrFBUSx0Y8qVOmHAVttUY,7381
+paddles-0.1.0.dist-info/LICENSE,sha256=3u59JSFcthsnLoUOrTGe-gpMm-qfqlZ4b9yPH6UbscY,1527
+paddles-0.1.0.dist-info/METADATA,sha256=DKLi1_aHi0i7myHXgmw6pt1RmIq-HHeBWUPUY_vcdkM,1931
+paddles-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+paddles-0.1.0.dist-info/RECORD,,

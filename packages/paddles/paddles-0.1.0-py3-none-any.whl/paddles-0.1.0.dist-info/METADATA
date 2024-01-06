@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: paddles
+Version: 0.1.0
+Summary: A pedagogical algorithms and data structures library
+Home-page: https://dsa-ou.github.io/paddles/
+License: BDS-3-Clause
+Keywords: algorithms,data structures,education
+Author: Michel Wermelinger
+Author-email: michel.wermelinger@open.ac.uk
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/dsa-ou/paddles
+Description-Content-Type: text/markdown
+
+`paddles` is a pedagogical algorithms and data structures library that aims to
+- be thoroughly tested and documented
+- be easy to install, use and understand
+- adhere to good Python coding practices.
+
+To install the library, type `pip install paddles` at the command line,
+preferably after activating a virtual environment.
+Your default Python version must be 3.10 or later.
+
+This is version 0.1 of the library. It is a work in progress.
+It currently implements the Stack, Queue and Deque abstract data types (ADTs).
+
+The code repository is at https://github.com/dsa-ou/paddles.
+The formatted documentation is at https://dsa-ou.github.io/paddles.
+
+## Licence
+
+`paddles` is Copyright © 2024 by The Open University, UK.
+The code is licensed under a [BSD 3-clause licence](https://github.com/dsa-ou/paddles/blob/main/LICENSE).
+The documentation is licensed under a
+[Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by/4.0).
