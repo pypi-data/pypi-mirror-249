@@ -1,0 +1,177 @@
+{
+  "version": "20240105",
+  "url": "https://www.imdb.com/title/%(imdb_id)s/",
+  "rules": [
+    {
+      "key": "imdb_id",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/id/text()"
+      }
+    },
+    {
+      "key": "type_id",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/titleType/id/text()"
+      }
+    },
+    {
+      "key": "title",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/originalTitleText/text/text()"
+      }
+    },
+    {
+      "key": "primary_image",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/primaryImage/url/text()"
+      }
+    },
+    {
+      "key": "year",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/releaseYear/year/text()",
+        "transform": "int"
+      }
+    },
+    {
+      "key": "end_year",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/releaseYear/endYear/text()",
+        "transform": "int"
+      }
+    },
+    {
+      "key": "country_codes",
+      "extractor": {
+        "pre": "next_data",
+        "foreach": "/NEXT_DATA/mainColumnData/countriesOfOrigin/countries/item",
+        "path": "./id/text()"
+      }
+    },
+    {
+      "key": "language_codes",
+      "extractor": {
+        "pre": "next_data",
+        "foreach": "/NEXT_DATA/mainColumnData/spokenLanguages/spokenLanguages/item",
+        "path": "./id/text()"
+      }
+    },
+    {
+      "key": "runtime",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/runtime/seconds/text()",
+        "transform": "div60"
+      }
+    },
+    {
+      "key": "genres",
+      "extractor": {
+        "pre": "next_data",
+        "foreach": "/NEXT_DATA/aboveTheFoldData/genres/genres/item",
+        "path": "./text/text()"
+      }
+    },
+    {
+      "key": "plot",
+      "extractor": {
+        "pre": "next_data",
+        "rules": [
+          {
+            "key": "lang",
+            "extractor": {
+              "path": "/NEXT_DATA/aboveTheFoldData/plot/language/id/text()"
+            }
+          },
+          {
+            "key": "text",
+            "extractor": {
+              "path": "/NEXT_DATA/aboveTheFoldData/plot/plotText/plainText/text()"
+            }
+          }
+        ],
+        "transform": "lang"
+      }
+    },
+    {
+      "key": "rating",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/ratingsSummary/aggregateRating/text()",
+        "transform": "decimal"
+      }
+    },
+    {
+      "key": "vote_count",
+      "extractor": {
+        "pre": "next_data",
+        "path": "/NEXT_DATA/aboveTheFoldData/ratingsSummary/voteCount/text()",
+        "transform": "int"
+      }
+    },
+    {
+      "key": "cast",
+      "extractor": {
+        "pre": "next_data",
+        "foreach": "/NEXT_DATA/mainColumnData/cast/edges/item/node",
+        "rules": [
+          {
+            "key": "imdb_id",
+            "extractor": {
+              "path": "./name/id/text()"
+            }
+          },
+          {
+            "key": "name",
+            "extractor": {
+              "path": "./name/nameText/text/text()"
+            }
+          },
+          {
+            "key": "role",
+            "extractor": {
+              "path": "./characters/item/name/text()"
+            }
+          },
+          {
+            "key": "notes",
+            "extractor": {
+              "foreach": "./attributes/item/text",
+              "path": "./text()"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "foreach": "/NEXT_DATA/mainColumnData/*/item/credits/..",
+      "key": {
+        "path": "name(..)"
+      },
+      "extractor": {
+        "pre": "next_data",
+        "foreach": "./credits/item/name",
+        "rules": [
+          {
+            "key": "imdb_id",
+            "extractor": {
+              "path": "./id/text()"
+            }
+          },
+          {
+            "key": "name",
+            "extractor": {
+              "path": "./nameText/text/text()"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

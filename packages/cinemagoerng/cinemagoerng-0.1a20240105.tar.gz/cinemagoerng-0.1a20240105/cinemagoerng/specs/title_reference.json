@@ -1,0 +1,183 @@
+{
+  "version": "20240105",
+  "url": "https://www.imdb.com/title/%(imdb_id)s/reference",
+  "rules": [
+    {
+      "key": "imdb_id",
+      "extractor": {
+        "path": "//meta[@property='pageId']/@content"
+      }
+    },
+    {
+      "key": "type_id",
+      "extractor": {
+        "path": "//h3[@itemprop='name']/following-sibling::ul/li[last()]/text()",
+        "transform": "type_id"
+      }
+    },
+    {
+      "key": "title",
+      "extractor": {
+        "path": "//h3[@itemprop='name']/text()",
+        "transform": "strip"
+      }
+    },
+    {
+      "key": "title",
+      "extractor": {
+        "path": "//span[@class='titlereference-original-title-label']/preceding-sibling::text()",
+        "transform": "strip"
+      }
+    },
+    {
+      "key": "primary_image",
+      "extractor": {
+        "path": "//img[@class='titlereference-primary-image']/@src"
+      }
+    },
+    {
+      "key": "_year",
+      "extractor": {
+        "path": "//span[@class='titlereference-title-year']//a/text()",
+        "transform": "year_range",
+        "post": "unpack"
+      }
+    },
+    {
+      "key": "country_codes",
+      "extractor": {
+        "foreach": "//td[text()='Country']/..//li/a",
+        "path": "./@href",
+        "transform": "country_code"
+      }
+    },
+    {
+      "key": "language_codes",
+      "extractor": {
+        "foreach": "//td[text()='Language']/..//li/a",
+        "path": "./@href",
+        "transform": "language_code"
+      }
+    },
+    {
+      "key": "runtime",
+      "extractor": {
+        "path": "//td[text()='Runtime']/..//li/text()",
+        "transform": "runtime"
+      }
+    },
+    {
+      "key": "genres",
+      "extractor": {
+        "foreach": "//td[text()='Genres']/..//li/a",
+        "path": "./text()"
+      }
+    },
+    {
+      "key": "taglines",
+      "extractor": {
+        "foreach": "//td[text()='Taglines']",
+        "path": "./following-sibling::td/text()",
+        "transform": "strip"
+      }
+    },
+    {
+      "key": "plot",
+      "extractor": {
+        "rules": [
+          {
+            "key": "lang",
+            "extractor": {
+              "path": "//script/text()",
+              "transform": "locale"
+            }
+          },
+          {
+            "key": "text",
+            "extractor": {
+              "path": "//section[@class='titlereference-section-overview']/div[1]/text()",
+              "transform": "strip"
+            }
+          }
+        ],
+        "transform": "lang"
+      }
+    },
+    {
+      "key": "rating",
+      "extractor": {
+        "path": "//div[@class='ipl-rating-star ']//span[@class='ipl-rating-star__rating']/text()",
+        "transform": "decimal"
+      }
+    },
+    {
+      "key": "vote_count",
+      "extractor": {
+        "path": "//span[@class='ipl-rating-star__total-votes']/text()",
+        "transform": "vote_count"
+      }
+    },
+    {
+      "key": "cast",
+      "extractor": {
+        "foreach": "//h4[@id='cast']/ancestor::header/following-sibling::table[1]//tr[@class]",
+        "rules": [
+          {
+            "key": "imdb_id",
+            "extractor": {
+              "path": ".//a[@itemprop='url']/@href",
+              "transform": "href_id"
+            }
+          },
+          {
+            "key": "name",
+            "extractor": {
+              "path": ".//span[@itemprop='name']/text()"
+            }
+          },
+          {
+            "key": "_notes",
+            "extractor": {
+              "path": ".//td[@class='character']/div/text()",
+              "transform": "credit_info",
+              "post": "unpack"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "foreach": "//h4[@id!='cast']",
+      "key": {
+        "path": "./@id",
+        "transform": "credit_section_id"
+      },
+      "extractor": {
+        "foreach": "./ancestor::header/following-sibling::table[1]//tr//a",
+        "rules": [
+          {
+            "key": "imdb_id",
+            "extractor": {
+              "path": "./@href",
+              "transform": "href_id"
+            }
+          },
+          {
+            "key": "name",
+            "extractor": {
+              "path": "./text()"
+            }
+          },
+          {
+            "key": "_notes",
+            "extractor": {
+              "path": ".//ancestor::tr/td[text()='...']/following-sibling::td/text()",
+              "transform": "credit_info",
+              "post": "unpack"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
