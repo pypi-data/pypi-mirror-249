@@ -1,0 +1,2 @@
+[console_scripts]
+and-otp-uri = and_otp_uri:main
