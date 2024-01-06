@@ -1,0 +1,12 @@
+tinydbstorage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinydbstorage/schema/__init__.py,sha256=CCdz32zACdNbvH0J8xsXjgCYWwDVpMtXGbvHUgQhZhM,45
+tinydbstorage/schema/s3.py,sha256=WEX8JtpCc-3IS3guikpZk2kDvJEP5c3eiwg7jZqHXNA,1820
+tinydbstorage/storage/__init__.py,sha256=dtCQoKVt5h3PmgaY73LfQpRGW-cgtbyVwLMMVWm7fBY,253
+tinydbstorage/storage/file.py,sha256=9Pkdu7uGWKgRam_jxLTsjvZTSRZkuh_q9SC_KXdxeRU,2046
+tinydbstorage/storage/memory.py,sha256=J7caFqNB-UjklFCL_ROEf6q-gPkXj2CUGOEDud1X2AI,1718
+tinydbstorage/storage/redis.py,sha256=UaQ-sDRrVHGq03SGK_jiYpPAbnP8PkXRqI8fsxlV3GE,2577
+tinydbstorage/storage/s3.py,sha256=7F95C7DuFMg_rBkAe0gThuY6zirZkuSIP7gyD9K6Gjs,3066
+tinydbstorage-0.1.0.dist-info/LICENSE,sha256=DJ4A0mTKGwHp8zAGZ_ejXjd7jdAe14fWIl0AeZK4qbU,1062
+tinydbstorage-0.1.0.dist-info/METADATA,sha256=ZZX1LrDkIne0cpcSkNpwoccsH0xKh0SiVXeFnNYItxQ,3187
+tinydbstorage-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tinydbstorage-0.1.0.dist-info/RECORD,,
