@@ -1,0 +1,8 @@
+README.md
+and_otp_uri.py
+pyproject.toml
+and_otp_uri.egg-info/PKG-INFO
+and_otp_uri.egg-info/SOURCES.txt
+and_otp_uri.egg-info/dependency_links.txt
+and_otp_uri.egg-info/entry_points.txt
+and_otp_uri.egg-info/top_level.txt
