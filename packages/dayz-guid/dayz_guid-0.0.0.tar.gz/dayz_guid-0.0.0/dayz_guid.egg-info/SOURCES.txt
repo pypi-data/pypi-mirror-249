@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+dayz-guid/__init__.py
+dayz-guid/dayzguid.py
+dayz_guid.egg-info/PKG-INFO
+dayz_guid.egg-info/SOURCES.txt
+dayz_guid.egg-info/dependency_links.txt
+dayz_guid.egg-info/top_level.txt
