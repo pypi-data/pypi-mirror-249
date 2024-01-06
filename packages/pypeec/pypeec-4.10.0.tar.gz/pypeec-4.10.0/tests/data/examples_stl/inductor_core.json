@@ -1,0 +1,19 @@
+{
+    "metadata": {
+        "folder": "examples_stl",
+        "name": "inductor_core",
+        "timestamp": "2024-01-03 17:54:07.572029"
+    },
+    "mesher": {
+        "n_total": 161280,
+        "n_used": 33523
+    },
+    "solver": {
+        "sim_default": {
+            "freq": 0.0,
+            "has_converged": true,
+            "P_tot": 499.84452574589045,
+            "W_tot": 0.00933029606603262
+        }
+    }
+}
