@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "musicbrainzapi"
+version = "0.1.0"
+description = ""
+authors = ["Dr-Blank <64108942+Dr-Blank@users.noreply.github.com>"]
+license = "MIT"
+homepage = "https://github.com/Dr-Blank/musicbrainzapi"
+repository = "https://github.com/Dr-Blank/musicbrainzapi"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.10"
+requests = "^2"
+requests-ratelimiter = "^0.4.2"
+musicbrainzngs = "^0.7.1"
+beautifulsoup4 = "^4.12.2"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.6"
+pytest = "^7.4.2"
+black = "^23.9.1"
+pytest-cov = "^4.1.0"
+flake8 = "^6.1.0"
+tox = "^4.11.3"
+mypy = "^1.5.1"
+types-requests = "^2.31.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+preview = true
+
+[tool.pylint.messages_control]
+disable = """
+    too-many-arguments,
+    line-too-long
+"""
+
+[tool.mypy]
+ignore_missing_imports = true
+
+
