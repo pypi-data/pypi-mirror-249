@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+matplotlib
+mrtool==0.1.4
+pplkit
+
+[docs]
+sphinx
+sphinx-autodoc-typehints
+furo
+
+[test]
+pytest
