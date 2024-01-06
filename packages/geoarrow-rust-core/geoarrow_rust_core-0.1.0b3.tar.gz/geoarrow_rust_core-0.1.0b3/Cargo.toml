@@ -1,0 +1,86 @@
+[package]
+name = "geoarrow"
+version = "0.0.1"
+authors = ["Kyle Barron <kylebarron2@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/geoarrow/geoarrow-rs"
+description = "Rust implementation of GeoArrow"
+categories = ["science::geo"]
+
+[features]
+csv = ["dep:geozero", "geozero/with-csv"]
+flatgeobuf = ["dep:flatgeobuf", "geozero"]
+geos = ["dep:geos"]
+geozero = ["dep:geozero"]
+gdal = ["dep:gdal"]
+# parquet = ["arrow2/io_parquet", "dep:serde", "dep:serde_json"]
+# parquet_native_compression = ["arrow2/io_parquet_compression"]
+proj = ["dep:proj"]
+rayon = ["dep:rayon"]
+
+
+[dependencies]
+anyhow = "1"
+arrow = { git = "https://github.com/apache/arrow-rs", rev="fbbb61d94282165f9bb9f73fb4d00a3af16d4aee", features = ["ffi"] }
+arrow-array = { git = "https://github.com/apache/arrow-rs", rev="fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+arrow-buffer = { git = "https://github.com/apache/arrow-rs", rev="fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+arrow-cast = { git = "https://github.com/apache/arrow-rs", rev="fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+arrow-data = { git = "https://github.com/apache/arrow-rs", rev="fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+arrow-ipc = { git = "https://github.com/apache/arrow-rs", rev="fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+arrow-schema = { git = "https://github.com/apache/arrow-rs", rev="fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+bumpalo = { version = "3", features = ["collections"] }
+byteorder = "1"
+# Set default-features = false because async not working in wasm right now
+flatgeobuf = { version = "4", optional = true, default-features = false }
+gdal = { version = "0.16", optional = true }
+geo = "0.27"
+geodesy = { version = "0.11", optional = true }
+geos = { version = "8.3", features = ["v3_10_0", "geo"], optional = true }
+geozero = { version = "0.11", features = ["with-wkb"], optional = true }
+itertools = "0.12"
+num_enum = "0.7"
+proj = { version = "0.27.2", optional = true, features = [
+  "pkg_config",
+  "geo-types",
+] }
+rayon = { version = "1.8.0", optional = true }
+# Note: geo has a hard dependency on rstar, so there's no point in feature flagging it
+rstar = { version = "0.11" }
+serde = { version = "1", optional = true }
+serde_json = { version = "1", optional = true }
+thiserror = "1"
+
+[dev-dependencies]
+approx = "0.5.1"
+criterion = { version = "0.5", features = ["html_reports"] }
+geozero = { version = "0.11", features = ["with-wkb"] }
+parquet = { git = "https://github.com/apache/arrow-rs", rev="fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+
+[lib]
+doctest = true
+
+[[example]]
+name = "gdal"
+test = false
+required-features = ["gdal"]
+
+[[bench]]
+name = "from_geo"
+harness = false
+
+[[bench]]
+name = "geos_buffer"
+harness = false
+
+[[bench]]
+name = "nybb"
+harness = false
+
+[[bench]]
+name = "translate"
+harness = false
+
+[[bench]]
+name = "wkb"
+harness = false

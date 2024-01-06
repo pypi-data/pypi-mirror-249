@@ -1,0 +1,42 @@
+[package]
+name = "geoarrow-rust"
+version = "0.1.0-beta.3"
+authors = ["Kyle Barron <kylebarron2@gmail.com>"]
+edition = "2021"
+description = "Efficient, vectorized geospatial operations in Python."
+readme = "README.md"
+repository = "https://github.com/geoarrow/geoarrow-rs"
+license = "MIT OR Apache-2.0"
+keywords = ["python", "arrow", "geospatial"]
+categories = ["wasm", "science::geo"]
+rust-version = "1.62"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rust"
+crate-type = ["cdylib"]
+
+[dependencies]
+arrow-array = { git = "https://github.com/apache/arrow-rs", rev = "fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+arrow-buffer = { git = "https://github.com/apache/arrow-rs", rev = "fbbb61d94282165f9bb9f73fb4d00a3af16d4aee" }
+arrow = { git = "https://github.com/apache/arrow-rs", rev = "fbbb61d94282165f9bb9f73fb4d00a3af16d4aee", features = [
+    "ffi",
+] }
+phf = { version = "0.11", features = ["macros"] }
+pyo3 = { version = "0.20.0", features = [
+    "abi3-py38",
+    "multiple-pymethods",
+    "hashbrown",
+    "serde",
+    "anyhow",
+] }
+geo = "0.27"
+geoarrow = { path = "../../", features = [
+    "flatgeobuf",
+    "geozero",
+    "csv",
+    "rayon",
+] }
+ndarray = "0.15"
+numpy = "0.20"
+thiserror = "1"
