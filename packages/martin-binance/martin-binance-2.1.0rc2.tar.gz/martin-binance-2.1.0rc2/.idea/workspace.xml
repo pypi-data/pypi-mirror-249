@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BookmarksViewState">
+    <option name="proportionPopup" value="0.5601173" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14819c61-2424-4a91-aa87-183f14c7de1e" name="Changes" comment="2.1.0rc1">
+      <change afterPath="$PROJECT_DIR$/dist/martin-binance-2.1.0rc1.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/martin_binance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/martin_binance/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/martin_binance/margin_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/martin_binance/margin_wrapper.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Component" />
+        <option value="UML Object" />
+        <option value="UML State" />
+        <option value="UML Sequence" />
+        <option value="UML Activity" />
+        <option value="Python Script" />
+        <option value="Python Unit Test" />
+      </list>
+    </option>
+  </component>
+  <component name="FoldableProjectSettings">
+    <option name="HIDE_IGNORED_FILES" value="false" />
+    <option name="FOLDING_ENABLED" value="false" />
+    <option name="PATTERNS" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="dev" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="Public" />
+    <option name="OPTIONS">
+      <set>
+        <option value="INTERACTIVE" />
+      </set>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jerry &lt;jerry.fedorenko@yahoo.com&gt;" />
+        <option value="Jerry Fedorenko &lt;jerry.fedorenko@yahoo.com&gt;" />
+        <option value="Jerry Fedorenko" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="public" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DogsTailFarmer&quot;
+  }
+}</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="* 1.0rc6.1" />
+        <option name="rewordedMessage" value="* 1.0rc6.1" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="926a86d9e6c369b50bd8812e8381f869b3fab6b9" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b9409af0-2b57-48bc-a978-7d8c32d9e19b" />
+        <option name="url" value="https://github.com/DogsTailFarmer/martin-binance.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SORT_ALPHABETICALLY" value="true" />
+    <option name="SCOPE" value="This Module" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/.MartinBinance/log/7_RECORD_.log" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/martin_binance/__init__.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/martin_binance/executor.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/martin_binance/margin_wrapper.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/martin_binance/service/relaunch.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pyproject.toml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="groupByToolId" value="true" />
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="1ypIXCXlRspdez1eqYDJs1YUlHP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.VCoSEL.executor": "Run",
+    "Python.cli_7_BNBUSDT.executor": "Run",
+    "Python.cli_7_BTCUSDT (1).executor": "Run",
+    "Python.cli_7_BTCUSDT.executor": "Run",
+    "Python.control_client.executor": "Run",
+    "Python.scratch (1).executor": "Run",
+    "Python.scratch.executor": "Run",
+    "Python.scratch_3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/ubuntu/PycharmProjects/martin-binance/martin_binance",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.splitter.proportion": "0.14675052",
+    "two.files.diff.last.used.file": "/home/ubuntu/tmp/cli/BNNCE/cli_38_BTCUSDT.py",
+    "vcs.patch.path": "/home/ubuntu/.MartinBinance"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT",
+      "HTML",
+      "Python",
+      "CommandLine"
+    ]
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="martin-binance" is-module-sdk="true" working-directory="$PROJECT_DIR$">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="martin-binance" />
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/martin_binance" />
+      <recent name="$USER_HOME$/.MartinBinance" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.github/workflows" />
+      <recent name="$PROJECT_DIR$/.github" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/martin_binance/backtest" />
+      <recent name="$PROJECT_DIR$/martin_binance/margin" />
+      <recent name="$PROJECT_DIR$/martin_binance/service" />
+      <recent name="$PROJECT_DIR$/martin_binance/cli/ftx" />
+      <recent name="$PROJECT_DIR$/martin_binance" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.cli_7_BTCUSDT">
+    <configuration name="VCoSEL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="martin-binance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/martin_binance/backtest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/martin_binance/backtest/VCoSEL.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_7_BTCUSDT (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="martin-binance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/.MartinBinance/back_test/binance_BTCUSDT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/.MartinBinance/back_test/binance_BTCUSDT/cli_7_BTCUSDT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_7_BTCUSDT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="martin-binance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/.MartinBinance" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/.MartinBinance/cli_7_BTCUSDT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_7_BTCUSDT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="martin-binance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/.MartinBinance/back_test/binance_BTCUSDT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/.MartinBinance/back_test/binance_BTCUSDT/cli_7_BTCUSDT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_7_BTCUSDT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="martin-binance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/.MartinBinance/back_test/binance_BTCUSDT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/.MartinBinance/back_test/binance_BTCUSDT/cli_7_BTCUSDT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_7_BTCUSDT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="martin-binance" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/.MartinBinance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/.MartinBinance/cli_7_BTCUSDT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="martin-binance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/.config/JetBrains/IdeaIC2023.2/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/.config/JetBrains/IdeaIC2023.2/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="martin-binance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.cli_7_BTCUSDT" />
+      <item itemvalue="Python.scratch" />
+      <item itemvalue="Python.VCoSEL" />
+      <item itemvalue="Python.cli_7_BTCUSDT (1)" />
+      <item itemvalue="Python.scratch_3" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scratch_3" />
+        <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.cli_7_BTCUSDT" />
+        <item itemvalue="Python.cli_7_BTCUSDT (1)" />
+        <item itemvalue="Python.VCoSEL" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <myIsUseDefaultProxy>true</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14819c61-2424-4a91-aa87-183f14c7de1e" name="Changes" comment="" />
+      <created>1632942139964</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684516853261</updated>
+    </task>
+    <task id="LOCAL-00521" summary="1.3.0b6&#10;+ try module call from external process">
+      <created>1685447202361</created>
+      <option name="number" value="00521" />
+      <option name="presentableId" value="LOCAL-00521" />
+      <option name="project" value="LOCAL" />
+      <updated>1685447202362</updated>
+    </task>
+    <task id="LOCAL-00522" summary="1.3.0b7&#10;+ fix buffered_order() restore handles">
+      <created>1685465874382</created>
+      <option name="number" value="00522" />
+      <option name="presentableId" value="LOCAL-00522" />
+      <option name="project" value="LOCAL" />
+      <updated>1685465874382</updated>
+    </task>
+    <task id="LOCAL-00523" summary="1.3.0b8&#10;+ OoTSP def call strategy as function call with parameters set">
+      <created>1685472433230</created>
+      <option name="number" value="00523" />
+      <option name="presentableId" value="LOCAL-00523" />
+      <option name="project" value="LOCAL" />
+      <updated>1685472433230</updated>
+    </task>
+    <task id="LOCAL-00524" summary="1.3.0b9 test passed">
+      <created>1685564964677</created>
+      <option name="number" value="00524" />
+      <option name="presentableId" value="LOCAL-00524" />
+      <option name="project" value="LOCAL" />
+      <updated>1685564964677</updated>
+    </task>
+    <task id="LOCAL-00525" summary="1.3.0b10 update response for CancelAllOrders()">
+      <created>1685628750329</created>
+      <option name="number" value="00525" />
+      <option name="presentableId" value="LOCAL-00525" />
+      <option name="project" value="LOCAL" />
+      <updated>1685628750329</updated>
+    </task>
+    <task id="LOCAL-00526" summary="1.3.0b11">
+      <created>1685651155402</created>
+      <option name="number" value="00526" />
+      <option name="presentableId" value="LOCAL-00526" />
+      <option name="project" value="LOCAL" />
+      <updated>1685651155403</updated>
+    </task>
+    <task id="LOCAL-00527" summary="1.3.0b12">
+      <created>1685718535769</created>
+      <option name="number" value="00527" />
+      <option name="presentableId" value="LOCAL-00527" />
+      <option name="project" value="LOCAL" />
+      <updated>1685718535769</updated>
+    </task>
+    <task id="LOCAL-00528" summary="1.3.0b14">
+      <created>1685783874808</created>
+      <option name="number" value="00528" />
+      <option name="presentableId" value="LOCAL-00528" />
+      <option name="project" value="LOCAL" />
+      <updated>1685783874808</updated>
+    </task>
+    <task id="LOCAL-00529" summary="1.3.0b15">
+      <created>1685801249112</created>
+      <option name="number" value="00529" />
+      <option name="presentableId" value="LOCAL-00529" />
+      <option name="project" value="LOCAL" />
+      <updated>1685801249112</updated>
+    </task>
+    <task id="LOCAL-00530" summary="1.3.0b16 downgrade dependency for grpcio to 1.48.1">
+      <created>1685825016605</created>
+      <option name="number" value="00530" />
+      <option name="presentableId" value="LOCAL-00530" />
+      <option name="project" value="LOCAL" />
+      <updated>1685825016605</updated>
+    </task>
+    <task id="LOCAL-00531" summary="1.3.0b17">
+      <created>1685825631351</created>
+      <option name="number" value="00531" />
+      <option name="presentableId" value="LOCAL-00531" />
+      <option name="project" value="LOCAL" />
+      <updated>1685825631351</updated>
+    </task>
+    <task id="LOCAL-00532" summary="1.3.0b18 fix #59">
+      <created>1685870199574</created>
+      <option name="number" value="00532" />
+      <option name="presentableId" value="LOCAL-00532" />
+      <option name="project" value="LOCAL" />
+      <updated>1685870199574</updated>
+    </task>
+    <task id="LOCAL-00533" summary="1.3.0b19">
+      <created>1685913806639</created>
+      <option name="number" value="00533" />
+      <option name="presentableId" value="LOCAL-00533" />
+      <option name="project" value="LOCAL" />
+      <updated>1685913806639</updated>
+    </task>
+    <task id="LOCAL-00534" summary="1.3.0b20">
+      <created>1685993915592</created>
+      <option name="number" value="00534" />
+      <option name="presentableId" value="LOCAL-00534" />
+      <option name="project" value="LOCAL" />
+      <updated>1685993915593</updated>
+    </task>
+    <task id="LOCAL-00535" summary="1.3.0b21">
+      <created>1686070161357</created>
+      <option name="number" value="00535" />
+      <option name="presentableId" value="LOCAL-00535" />
+      <option name="project" value="LOCAL" />
+      <updated>1686070161358</updated>
+    </task>
+    <task id="LOCAL-00536" summary="1.3.0b21">
+      <created>1686075287154</created>
+      <option name="number" value="00536" />
+      <option name="presentableId" value="LOCAL-00536" />
+      <option name="project" value="LOCAL" />
+      <updated>1686075287154</updated>
+    </task>
+    <task id="LOCAL-00537" summary="1.3.0b22">
+      <created>1686078144275</created>
+      <option name="number" value="00537" />
+      <option name="presentableId" value="LOCAL-00537" />
+      <option name="project" value="LOCAL" />
+      <updated>1686078144276</updated>
+    </task>
+    <task id="LOCAL-00538" summary="1.3.0b23">
+      <created>1686159117883</created>
+      <option name="number" value="00538" />
+      <option name="presentableId" value="LOCAL-00538" />
+      <option name="project" value="LOCAL" />
+      <updated>1686159117883</updated>
+    </task>
+    <task id="LOCAL-00539" summary="1.3.0b23">
+      <created>1686207695663</created>
+      <option name="number" value="00539" />
+      <option name="presentableId" value="LOCAL-00539" />
+      <option name="project" value="LOCAL" />
+      <updated>1686207695663</updated>
+    </task>
+    <task id="LOCAL-00540" summary="1.3.0b24">
+      <created>1686334469197</created>
+      <option name="number" value="00540" />
+      <option name="presentableId" value="LOCAL-00540" />
+      <option name="project" value="LOCAL" />
+      <updated>1686334469197</updated>
+    </task>
+    <task id="LOCAL-00541" summary="1.3.0">
+      <created>1686335761732</created>
+      <option name="number" value="00541" />
+      <option name="presentableId" value="LOCAL-00541" />
+      <option name="project" value="LOCAL" />
+      <updated>1686335761732</updated>
+    </task>
+    <task id="LOCAL-00542" summary="1.3.0-1">
+      <created>1686409013438</created>
+      <option name="number" value="00542" />
+      <option name="presentableId" value="LOCAL-00542" />
+      <option name="project" value="LOCAL" />
+      <updated>1686409013439</updated>
+    </task>
+    <task id="LOCAL-00543" summary="1.3.0-2b0">
+      <created>1686584447349</created>
+      <option name="number" value="00543" />
+      <option name="presentableId" value="LOCAL-00543" />
+      <option name="project" value="LOCAL" />
+      <updated>1686584447350</updated>
+    </task>
+    <task id="LOCAL-00544" summary="1.3.0-2b1">
+      <created>1686596871832</created>
+      <option name="number" value="00544" />
+      <option name="presentableId" value="LOCAL-00544" />
+      <option name="project" value="LOCAL" />
+      <updated>1686596871832</updated>
+    </task>
+    <task id="LOCAL-00545" summary="1.3.0-2b2">
+      <created>1686661960338</created>
+      <option name="number" value="00545" />
+      <option name="presentableId" value="LOCAL-00545" />
+      <option name="project" value="LOCAL" />
+      <updated>1686661960338</updated>
+    </task>
+    <task id="LOCAL-00546" summary="1.3.0-2b3">
+      <created>1686683869828</created>
+      <option name="number" value="00546" />
+      <option name="presentableId" value="LOCAL-00546" />
+      <option name="project" value="LOCAL" />
+      <updated>1686683869828</updated>
+    </task>
+    <task id="LOCAL-00547" summary="1.3.0-2b5">
+      <created>1686917824984</created>
+      <option name="number" value="00547" />
+      <option name="presentableId" value="LOCAL-00547" />
+      <option name="project" value="LOCAL" />
+      <updated>1686917824985</updated>
+    </task>
+    <task id="LOCAL-00548" summary="1.3.0-2b6 Backtesting: Fix initial funding for reverse cycle from saved state">
+      <created>1686928643050</created>
+      <option name="number" value="00548" />
+      <option name="presentableId" value="LOCAL-00548" />
+      <option name="project" value="LOCAL" />
+      <updated>1686928643051</updated>
+    </task>
+    <task id="LOCAL-00549" summary="1.3.0-2b7 Control memory include swap, reload init amount for direct cycle">
+      <created>1687022745776</created>
+      <option name="number" value="00549" />
+      <option name="presentableId" value="LOCAL-00549" />
+      <option name="project" value="LOCAL" />
+      <updated>1687022745776</updated>
+    </task>
+    <task id="LOCAL-00550" summary="1.3.0-2b7 Control memory include swap, reload init amount for direct cycle">
+      <created>1687024501698</created>
+      <option name="number" value="00550" />
+      <option name="presentableId" value="LOCAL-00550" />
+      <option name="project" value="LOCAL" />
+      <updated>1687024501698</updated>
+    </task>
+    <task id="LOCAL-00551" summary="1.3.0-2b8 OoTSP set parameters in dialog">
+      <created>1687196336695</created>
+      <option name="number" value="00551" />
+      <option name="presentableId" value="LOCAL-00551" />
+      <option name="project" value="LOCAL" />
+      <updated>1687196336696</updated>
+    </task>
+    <task id="LOCAL-00552" summary="1.3.0-2">
+      <created>1687202233089</created>
+      <option name="number" value="00552" />
+      <option name="presentableId" value="LOCAL-00552" />
+      <option name="project" value="LOCAL" />
+      <updated>1687202233090</updated>
+    </task>
+    <task id="LOCAL-00553" summary="1.3.0-3">
+      <created>1687210216800</created>
+      <option name="number" value="00553" />
+      <option name="presentableId" value="LOCAL-00553" />
+      <option name="project" value="LOCAL" />
+      <updated>1687210216800</updated>
+    </task>
+    <task id="LOCAL-00554" summary="1.3.0-4">
+      <created>1687251079296</created>
+      <option name="number" value="00554" />
+      <option name="presentableId" value="LOCAL-00554" />
+      <option name="project" value="LOCAL" />
+      <updated>1687251079296</updated>
+    </task>
+    <task id="LOCAL-00555" summary="1.3.0-4">
+      <created>1687254609974</created>
+      <option name="number" value="00555" />
+      <option name="presentableId" value="LOCAL-00555" />
+      <option name="project" value="LOCAL" />
+      <updated>1687254609974</updated>
+    </task>
+    <task id="LOCAL-00556" summary="1.3.0-4">
+      <created>1687256458859</created>
+      <option name="number" value="00556" />
+      <option name="presentableId" value="LOCAL-00556" />
+      <option name="project" value="LOCAL" />
+      <updated>1687256458859</updated>
+    </task>
+    <task id="LOCAL-00557" summary="1.3.0-4">
+      <created>1687258860667</created>
+      <option name="number" value="00557" />
+      <option name="presentableId" value="LOCAL-00557" />
+      <option name="project" value="LOCAL" />
+      <updated>1687258860667</updated>
+    </task>
+    <task id="LOCAL-00558" summary="1.3.1b5">
+      <created>1687355848538</created>
+      <option name="number" value="00558" />
+      <option name="presentableId" value="LOCAL-00558" />
+      <option name="project" value="LOCAL" />
+      <updated>1687355848538</updated>
+    </task>
+    <task id="LOCAL-00559" summary="1.3.1">
+      <created>1687361667265</created>
+      <option name="number" value="00559" />
+      <option name="presentableId" value="LOCAL-00559" />
+      <option name="project" value="LOCAL" />
+      <updated>1687361667265</updated>
+    </task>
+    <task id="LOCAL-00560" summary="1.3.1-1b0">
+      <created>1687439692896</created>
+      <option name="number" value="00560" />
+      <option name="presentableId" value="LOCAL-00560" />
+      <option name="project" value="LOCAL" />
+      <updated>1687439692896</updated>
+    </task>
+    <task id="LOCAL-00561" summary="1.3.1-1">
+      <created>1687458018360</created>
+      <option name="number" value="00561" />
+      <option name="presentableId" value="LOCAL-00561" />
+      <option name="project" value="LOCAL" />
+      <updated>1687458018360</updated>
+    </task>
+    <task id="LOCAL-00563" summary="1.3.1-2">
+      <created>1687623961164</created>
+      <option name="number" value="00563" />
+      <option name="presentableId" value="LOCAL-00563" />
+      <option name="project" value="LOCAL" />
+      <updated>1687623961164</updated>
+    </task>
+    <task id="LOCAL-00564" summary="1.3.1-2">
+      <created>1687623985950</created>
+      <option name="number" value="00564" />
+      <option name="presentableId" value="LOCAL-00564" />
+      <option name="project" value="LOCAL" />
+      <updated>1687623985950</updated>
+    </task>
+    <task id="LOCAL-00569" summary="1.3.2-2">
+      <created>1688220332932</created>
+      <option name="number" value="00569" />
+      <option name="presentableId" value="LOCAL-00569" />
+      <option name="project" value="LOCAL" />
+      <updated>1688220332932</updated>
+    </task>
+    <task id="LOCAL-00580" summary="1.3.3-2">
+      <created>1688914684104</created>
+      <option name="number" value="00580" />
+      <option name="presentableId" value="LOCAL-00580" />
+      <option name="project" value="LOCAL" />
+      <updated>1688914684105</updated>
+    </task>
+    <task id="LOCAL-00581" summary="1.3.3-2">
+      <created>1688915722740</created>
+      <option name="number" value="00581" />
+      <option name="presentableId" value="LOCAL-00581" />
+      <option name="project" value="LOCAL" />
+      <updated>1688915722740</updated>
+    </task>
+    <task id="LOCAL-00582" summary="1.3.3-2">
+      <created>1688915764781</created>
+      <option name="number" value="00582" />
+      <option name="presentableId" value="LOCAL-00582" />
+      <option name="project" value="LOCAL" />
+      <updated>1688915764781</updated>
+    </task>
+    <task id="LOCAL-00583" summary="1.3.3-6">
+      <created>1688999489449</created>
+      <option name="number" value="00583" />
+      <option name="presentableId" value="LOCAL-00583" />
+      <option name="project" value="LOCAL" />
+      <updated>1688999489449</updated>
+    </task>
+    <task id="LOCAL-00584" summary="1.3.3-7">
+      <created>1689074526603</created>
+      <option name="number" value="00584" />
+      <option name="presentableId" value="LOCAL-00584" />
+      <option name="project" value="LOCAL" />
+      <updated>1689074526603</updated>
+    </task>
+    <option name="localTasksCounter" value="593" />
+    <option name="commitChanges" value="false" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.service" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Public" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="fcf73eee-ec0c-452c-b21d-527300579115">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="2.0.1" />
+    <MESSAGE value="2.0.2" />
+    <MESSAGE value="The limit of attempts has been increased and the range of changes in the number of orders has been expanded" />
+    <MESSAGE value="2.0.3" />
+    <MESSAGE value="2.0.3r" />
+    <MESSAGE value="2.0.4b1" />
+    <MESSAGE value="2.0.4b2" />
+    <MESSAGE value="2.0.4b3" />
+    <MESSAGE value="For solve() use scipy.optimize.minimize()" />
+    <MESSAGE value="2.0.4b4" />
+    <MESSAGE value="2.0.4b5" />
+    <MESSAGE value="2.0.4" />
+    <MESSAGE value="2.0.4.post2" />
+    <MESSAGE value="2.0.4.post3" />
+    <MESSAGE value="2.0.5" />
+    <MESSAGE value="2.0.6" />
+    <MESSAGE value="2.0.7" />
+    <MESSAGE value="2.1.0b1 executor.py Release cancel_grid_hold in on_place_order_error_string()" />
+    <MESSAGE value="2.1.0b2 ticker to parquet" />
+    <MESSAGE value="2.1.0b3&#10;+ order_book to parquet&#10;+ margin_wrapper.Order price calc update" />
+    <MESSAGE value="2.1.0b4&#10;+ candles to parquet" />
+    <MESSAGE value="2.1.0b5&#10;+ restore for backtesting from parquet" />
+    <MESSAGE value="2.1.0b6 fix some inconsistencies for backtesting collect mode" />
+    <MESSAGE value="2.1.0b solve()" />
+    <MESSAGE value="2.1.0rc1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.1.0rc1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.sum_amount_first" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
