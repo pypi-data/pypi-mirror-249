@@ -1,0 +1,55 @@
+from itertools import chain
+from collections import namedtuple 
+import operator
+
+operators = {'==': operator.eq,
+             '<>': operator.ne,
+             '!=': operator.ne,
+             '<=': operator.le,
+             '>=': operator.ge,
+             '<': operator.lt,
+             '>': operator.gt,
+             '*': operator.mul,
+             '/': operator.truediv,
+             '+': operator.add,
+             '-': operator.sub,
+             'union': set.union,
+             'except': set.difference,
+             'intersect': set.intersection,
+             'union all': chain}
+
+Operation = namedtuple('Operation', ('operator', 'a', 'b'))
+
+class __Statement:
+    def __init__(self, **kwargs):
+        self.__attrs = set(kwargs.keys())
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
+    def __repr__(self):
+        return f"{type(self).__name__}({' '.join(key + '=' + repr(getattr(self, key)) for key in self.__attrs)})"
+
+class Select(__Statement):
+    pass
+
+class Insert(__Statement):
+    pass
+
+class Replace(__Statement):
+    pass
+
+With = namedtuple('With', ('cte',))
+
+CommonTableExpression = namedtuple('CommonTableExpression', ('name', 'materialized', 'select'))
+    
+Table = namedtuple('Table', ('name', 'schema_name'), defaults=(None,))
+
+Index = namedtuple('Index', ('table', 'name'))
+
+Column = namedtuple('Column', ('name', 'table'), defaults=(None,))
+
+All = namedtuple('All', ('table',), defaults=(None,))
+
+Alias = namedtuple('Alias', ('original', 'replacement'))
+
+Values = namedtuple('Values', ('values'))
