@@ -1,0 +1,9 @@
+fortran2cc2fortran/README.MD,sha256=_LNBLSqSWKzxOz4c8ETv_kqlYw_xHozhne3VH7OI4KU,5452
+fortran2cc2fortran/__init__.py,sha256=8iBJdF6b_lsMlzd3Nr51c_F9nLRRBKMfgGQTngAE0pA,3775
+fortran2cc2fortran/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fortran2cc2fortran/thirdparty.json,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+fortran2cc2fortran-0.10.dist-info/LICENSE.rst,sha256=JG2U-syJOvqaKI4hLK8jP4BdnxFaMsrMir_Qn5dbgdc,1148
+fortran2cc2fortran-0.10.dist-info/METADATA,sha256=YXJkLDsS7mrNCfRaxC14b6HiTmfCYZh-dOcJ1VGDK7Q,6092
+fortran2cc2fortran-0.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+fortran2cc2fortran-0.10.dist-info/top_level.txt,sha256=yNKSghiUc1wMATifgLdpLKtVQuGdMfGkr9_SP6ALyo4,19
+fortran2cc2fortran-0.10.dist-info/RECORD,,
