@@ -1,0 +1,9 @@
+googlepycraft/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+googlepycraft/fireStore/__init__.py,sha256=VGB22j7LUE939p_I3xg5FSMMe-4gTJjlpRXkAhhFpo0,60
+googlepycraft/fireStore/firestoreupload.py,sha256=xIQY0rSUON3h8s_kDPgKeNck4t5c6CCw5inm-REikEw,1752
+googlepycraft/googleSheet/__init__.py,sha256=jOaT74uvLkLhCaQolXveL4FhER5bIy4VijD3bpe7k28,32
+googlepycraft/googleSheet/gsheetsdb.py,sha256=im6KISLWP1sXJDh2Wh1_KAhVYzf5bQh9qFdvAomySOo,4489
+googlepycraft-0.1.dist-info/METADATA,sha256=4WzqK-Hi_gOTfRf7ymOuBnFLQdcGlTG6I1AkOVZ3WmM,159
+googlepycraft-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+googlepycraft-0.1.dist-info/top_level.txt,sha256=gLkyOE-tJS_1JxbaGxsJYvD04ff4mh3uEYKZihhmmiU,14
+googlepycraft-0.1.dist-info/RECORD,,
