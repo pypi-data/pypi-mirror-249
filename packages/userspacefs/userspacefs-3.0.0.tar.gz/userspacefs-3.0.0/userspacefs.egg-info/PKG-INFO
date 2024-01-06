@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: userspacefs
+Version: 3.0.0
+Summary: Cross-platform user-space file systems for Python
+Home-page: https://thelig.ht/code/userspacefs
+Author: Rian Hunter
+Author-email: rian@alum.mit.edu
+License: GPL3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Filesystems
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# userspacefs
+
+userspacefs is a library that allows you to easily write
+cross-platform user-space file systems in Python. macOS and Linux has
+been tested, but it has been designed to run on Windows and other
+POSIX platforms.
+
+It is primarily used to power [dbxfs](https://thelig.ht/code/dbxfs).
+
+It is written for Python 3.11+ and is licensed under the GPLv3.
+
+# Documentation
+
+Currently, none. PRs welcome. See `userspacefs/memoryfs.py` for
+an example.
+
+# Contact
+
+Rian Hunter [@cejetvole](https://twitter.com/cejetvole)

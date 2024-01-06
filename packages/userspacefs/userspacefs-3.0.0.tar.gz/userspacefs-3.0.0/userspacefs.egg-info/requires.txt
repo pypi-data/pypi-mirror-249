@@ -1,0 +1,5 @@
+aiohttp<4,>=3.9.0
+typing_extensions<5,>=4.9.0
+
+[:sys_platform == "win32"]
+pywin32
