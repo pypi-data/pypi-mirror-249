@@ -1,0 +1,17 @@
+[project]
+name = "bsescraper"
+version = "1.0.2"
+authors = [
+  { name="Vedant Joshi", email="vedant.joshi10may@gmail.com" },
+]
+description = "A python module to scrape the BSE INDIA website for all stock related data."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+[project.urls]
