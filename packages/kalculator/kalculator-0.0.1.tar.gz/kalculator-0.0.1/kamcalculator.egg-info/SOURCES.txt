@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+kamcalculator.egg-info/PKG-INFO
+kamcalculator.egg-info/SOURCES.txt
+kamcalculator.egg-info/dependency_links.txt
+kamcalculator.egg-info/top_level.txt
+simpleCalculator/__init__.py
