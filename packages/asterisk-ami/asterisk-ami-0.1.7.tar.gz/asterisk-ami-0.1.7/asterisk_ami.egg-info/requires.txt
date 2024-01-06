@@ -1,0 +1,4 @@
+
+[tests]
+rx
+coverage

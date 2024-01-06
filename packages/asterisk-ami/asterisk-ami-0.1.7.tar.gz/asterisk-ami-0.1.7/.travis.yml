@@ -1,0 +1,27 @@
+language: python
+cache: pip
+env:
+  global:
+    - CC_TEST_REPORTER_ID=6430db36aaa11127ecba543d1c8485f4a3697dbd9ec066e5e92979bc6763579b
+sudo: false
+python:
+  - 2.7
+  - 3.4
+  - 3.5
+  - 3.6
+  - pypy
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+before_install:
+  - pip install codecov
+install:
+  - pip install -U pip setuptools
+  - pip install -r requirements-dev.txt
+  - python setup.py install
+script: make coverage
+after_success:
+  - codecov
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
