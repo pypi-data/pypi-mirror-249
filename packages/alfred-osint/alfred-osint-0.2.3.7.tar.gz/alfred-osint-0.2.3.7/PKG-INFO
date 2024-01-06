@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: alfred-osint
+Version: 0.2.3.7
+Summary: Alfred is a advanced OSINT information gathering tool
+Home-page: https://github.com/EliteGreyIT67/alfred-osint
+Author: EliteGreyIT67
+Author-email: elitegreyit@gmail.com
+Maintainer: EliteGreyIT67
+Maintainer-email: elitegreyit@gmail.com
+Requires-Python: >=3.11,<4.0
+License-File: LICENSE
+Requires-Dist: alive-progress<4.0.0,>=3.1.5
+Requires-Dist: bs4<0.0.2,>=0.0.1
+Requires-Dist: colorama<0.5.0,>=0.4.6
+Requires-Dist: cryptography<42.0.0,>=41.0.7
+Requires-Dist: requests<3.0.0,>=2.31.0
+Requires-Dist: rich<14.0.0,>=13.7.0
+Requires-Dist: selenium<5.0.0,>=4.16.0
+Requires-Dist: torrequest<0.2.0,>=0.1.0
+Requires-Dist: tqdm<5.0.0,>=4.66.1
+Requires-Dist: wget<4.0,>=3.2
+
+# alfred-osint
+Alfred is a advanced OSINT information gathering tool.
