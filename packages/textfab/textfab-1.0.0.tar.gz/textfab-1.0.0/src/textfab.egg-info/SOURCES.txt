@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.py
+src/textfab/__init__.py
+src/textfab/augmentations.py
+src/textfab/base.py
+src/textfab/emoji_tokenizer.py
+src/textfab/fabric.py
+src/textfab/units.py
+src/textfab/utils.py
+src/textfab.egg-info/PKG-INFO
+src/textfab.egg-info/SOURCES.txt
+src/textfab.egg-info/dependency_links.txt
+src/textfab.egg-info/requires.txt
+src/textfab.egg-info/top_level.txt
+tests/test_units.py
