@@ -1,0 +1,11 @@
+json_ntv/__init__.py,sha256=u9vyW9IELNuEmzfQpJlm9CUkYj8s9GqdaB_CI3zOjR4,2322
+json_ntv/namespace.py,sha256=0bQxE7LMW8dsU1o21opgEmqrBRMJjV_lgSrlgXIj3Ig,16470
+json_ntv/ntv.py,sha256=bdERq8Mv6uYNAw60mxZ9_zJJpCOj0LcHjDBrd7khDcA,45914
+json_ntv/ntv_comment.py,sha256=0RdJKf-dP12WTDQXktZA4Mf0dCxIaQ-BFTdvJWqBIYo,3730
+json_ntv/ntv_connector.py,sha256=rWvFSUJp5aBgZ7fW5nWwn0yaq0IG6KwDVWG6SqGIjvo,17378
+json_ntv/ntv_patch.py,sha256=rMksrm6FWxbMSKIlyghYw1N-Je948JkAl7SHW3wiQZE,13313
+json_ntv/ntv_util.py,sha256=EdBmUyVUgUsDpM26lG-qAo4sDKazmeZo9rsagywJCXA,21380
+json_ntv-1.2.0.dist-info/METADATA,sha256=syWJV9ShZz6NVbI8LGG8aMg2rr_-ODIN-DkUz_Bt8QE,5856
+json_ntv-1.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+json_ntv-1.2.0.dist-info/top_level.txt,sha256=Ji53iISGxFvcI1Tehsr1VIQk1U-CSfrNBL-Z6nw7gUc,9
+json_ntv-1.2.0.dist-info/RECORD,,
