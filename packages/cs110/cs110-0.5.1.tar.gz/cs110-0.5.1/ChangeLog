@@ -1,0 +1,86 @@
+CHANGES
+=======
+
+0.5.1
+-----
+
+* Add pythonGraph as dependency
+* Remove global variables in autograder module
+* Use sys.argv[0] instead of \_\_main\_\_.\_\_file\_\_ (#28)
+* Remove mocks for module import
+* Remove Python script from root directory (#13)
+* Do not fail fast for build jobs
+* Add currently supported Python versions to CI (#24)
+* Fix broken unit tests (#25)
+* Add Colorama as dependency
+* Fix Flake8 issues
+* Remove unsupported Python versions from CI
+
+0.4.2
+-----
+
+* Update autograder.py
+* \_get\_login() update
+
+0.4.1
+-----
+
+* Version 0.4.0
+
+0.3.3
+-----
+
+* Spring 2020 Update
+
+0.3.2
+-----
+
+* Updating version to align with pypi
+* Migration to dfcs-cloud.net
+* Updating links for new autograder server
+* Mac and Linux Compatibility Fix
+
+0.3.1
+-----
+
+* Add autograder module (#11)
+* Add helper function to get login name of user
+* Use Flake8 to enforce coding standards (#8)
+* Ignore vi temporary files
+* Revert "Use script name to determine top-level environment"
+* Add GitHub Actions workflow for testing (#6)
+* Revert "Updated client.py"
+
+0.2.3
+-----
+
+* Changed real-time lib to cs110
+
+0.2.2
+-----
+
+* Added Console to client
+
+0.2.1
+-----
+
+* Updated client.py
+* Use tox to manage automated testing
+* Add test cases for client module
+* Use script name to determine top-level environment
+* Use relative import for client module
+* Ignore derived files and environments
+
+0.1.0
+-----
+
+* Fixed the .client issue
+
+2
+-
+
+* Renaming client
+* Redirecting to live website
+* PyPI Config
+* Filepath tracking
+* Initial Commit
