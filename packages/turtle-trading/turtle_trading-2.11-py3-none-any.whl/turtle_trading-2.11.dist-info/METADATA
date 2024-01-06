@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: turtle-trading
+Version: 2.11
+Summary: A collection of investment tools used by the Turtle Traders.
+Project-URL: Homepage, https://github.com/gabekutner/turtle-trading/
+Author-email: Gabe Kutner <gabekutner1@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Gabe Kutner
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: investing,python,trading,turtle,turtle-trading
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: yahoo-fin>=0.8.9.1
+Description-Content-Type: text/markdown
+
+# turtle-trading
+<br>
+
+A Python Package containing a collection of investing tools using the Turtle Traders Original Rules. All code is based on the ideas in [_The Original Turtle Trading Rules_](https://oxfordstrat.com/coasdfASD32/uploads/2016/01/turtle-rules.pdf). 
+
+Download using pip:
+
+```batch
+pip install turtle-trading
+```
+
+__USAGE__: First, initialize a `DataFrameLoader` class to pass as an argument to each `turtle_trading` function.
+```python
+from turtle_trading import DataFrameLoader
+
+ticker = 'aapl'
+dataframe = DataFrameLoader(ticker)
+```
+
+### `position_sizing` module
+```python
+""" using the position_sizing module """
+from turtle_trading.position_sizing import getn, getunitsize
+
+import datetime
+date = datetime.date(2023, 11, 10)
+
+getn(dataframe) # >>> 2.7421
+getn(dataframe, date=date) # >>> 2.9932
+
+getunitsize(dataframe=dataframe, account=1000000, n=2.7421) # >>> 20.0475
+getunitsize(dataframe=dataframe, account=1000000, date=date) # >>> 17.9233
+```
+
+### `entries` module
+```python
+""" using the entries module """
+from turtle_trading.entries import getsignal, addunits
+
+getsignal(dataframe=dataframe, system=1) # >>> True
+getsignal(dataframe=dataframe, system=2) # >>> True
+
+addunits(breakout=310, n=2.50) # >>> [310, 311.25, 312.5, 313.75]
+addunits(breakout=310, n=2.50, units=6) # >>> [310, 311.25, 312.5, 313.75, 315.0, 316.25]
+```
+
+### `stops` module
+```python 
+""" using the stops module """
+from turtle_trading.entries import addunits
+from turtle_trading.stops import getstops
+
+units = addunits(breakout=28.30, n=1.20) # >>> [28.3, 28.9, 29.5, 30.1]
+
+getstops(unit_list=units, n=1.20) # >>> [27.7, 27.7, 27.7, 27.7]
+getstops(unit_list=units, n=1.20, stop_system="whipsaw") # >>> [27.7, 28.3, 28.9, 29.5]
+
+
+gapped_units = [28.3, 28.9, 29.5, 30.8]
+
+getstops(unit_list=gapped_units, n=1.20) # >>> [27.7, 27.7, 27.7, 28.4]
+getstops(unit_list=gapped_units, n=1.20, stop_system="whipsaw") # >>> [27.7, 28.3, 28.9, 30.2]
+```
+
+More will be published soon.
+
+For issues, look [here](https://github.com/gabekutner/turtle-trading/blob/main/.github/ISSUE_TEMPLATE.md).
