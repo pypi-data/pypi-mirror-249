@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvioneta_agro_frontend=self.webpackChunkvioneta_agro_frontend||[]).push([[32811],{32811:function(n,e,t){t.r(e);var a=t(56087);a.ZP.mount(a.V8,new a.lK),e.default=a.ZP}}]);
+//# sourceMappingURL=32811.Ne_GA2bheRk.js.map
