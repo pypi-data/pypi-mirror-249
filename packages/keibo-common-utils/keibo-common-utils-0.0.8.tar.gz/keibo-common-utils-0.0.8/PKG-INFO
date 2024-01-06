@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: keibo-common-utils
+Version: 0.0.8
+Summary: Common utils to use in python projects
+Home-page: https://github.com/Keibo-ARG/keibo-common-utils
+Author: Joaquin Santini
+Author-email: joaquinesantini@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+
+# keibo-common-utils
+Common utils module to use in python projects
