@@ -1,0 +1,4 @@
+[console_scripts]
+py-raytrace = py_raytrace.raytrace:main
+ray = py_raytrace.raytrace:main
+raytrace = py_raytrace.raytrace:main
