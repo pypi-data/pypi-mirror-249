@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+gshoppy.egg-info/PKG-INFO
+gshoppy.egg-info/SOURCES.txt
+gshoppy.egg-info/dependency_links.txt
+gshoppy.egg-info/requires.txt
+gshoppy.egg-info/top_level.txt
+src/__init__.py
