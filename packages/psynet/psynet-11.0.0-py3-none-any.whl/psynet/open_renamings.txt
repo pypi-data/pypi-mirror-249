@@ -1,0 +1,5 @@
+Understand
+* BASE_PAYMENT <-> BONUS <-> REWARD <-> TIME_REWARD <-> PERFORMANCE_REWARD
+
+TODO:
+* CAP-recruiter adapt /complete
