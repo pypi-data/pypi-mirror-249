@@ -1,0 +1,4 @@
+numpy>=1.17
+cython>=0.29.33
+setuptools
+wheel
