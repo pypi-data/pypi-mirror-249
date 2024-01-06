@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+YouTubeUploader.egg-info/PKG-INFO
+YouTubeUploader.egg-info/SOURCES.txt
+YouTubeUploader.egg-info/dependency_links.txt
+YouTubeUploader.egg-info/requires.txt
+YouTubeUploader.egg-info/top_level.txt
+src/__init__.py
+src/yt_pld.py
