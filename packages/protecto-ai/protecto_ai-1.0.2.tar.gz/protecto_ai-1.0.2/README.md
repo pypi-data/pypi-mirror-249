@@ -1,0 +1,379 @@
+# Protecto.AI Python API Library #
+
+Intelligent Data Tokenization for Enhanced Privacy and Security
+
+Protecto.AI employs a sophisticated approach to data tokenization, ensuring the intelligent handling of sensitive information. By leveraging this smart solution, you can unlock the full potential of your data while seamlessly upholding data privacy and security - all through the convenience of an API. 
+
+* Website: Visit our [Protecto.Ai Website](https://www.protecto.ai/)
+* Documentation:  Access our [Tokenization Packages documentation](https://developer.protecto.ai/docs/protecto-tokenization/)
+* For Bugs and Issues tracking:
+   Email us at [help@protecto.ai](mailto:help@protecto.ai)
+
+## Installation:
+
+To install Protecto.AI library, use the following command:
+
+```
+pip install protecto_ai
+```
+
+## Usage Example:
+
+### ProtectoVault
+
+Our tokenization process encompasses four distinct and customer-friendly methods for masking data:
+
+* [Mask with AutoDetect](#mask-with-autodetect)
+* [Mask with a Specific Token](#mask-with-a-specific-token)
+* [Mask with a Specific Token and Format](#mask-with-a-specific-token-and-format)
+* [Mask JSON Format](#mask-json-format)
+
+To unmask data:
+
+* [Unmask a Token](#unmask-a-token)
+
+### Asynchronous methods:
+
+To mask large volumes of data, asynchronous masking method can be used: 
+
+* [Mask Bulk Data using Async method](#mask-bulk-data-using-async-method)
+
+To unmask large volumes of data, asynchronous unmasking method can be used: 
+
+* [Unmask Bulk Data using Async method](#unmask-bulk-data-using-async-method)
+
+The asynchronous status method enables us to monitor the status of both masking and unmasking processes.
+
+* [Get status of Async method](#get-status-of-async-method)
+
+For more comprehensive information about our product, kindly visit our [website](https://www.protecto.ai/).
+
+### Code Example: 
+Import the ProtectoVault class from the protecto_ai module
+````
+from protecto_ai import ProtectoVault
+
+# Create an instance of ProtectoVault with your authentication token
+obj = ProtectoVault("<auth_token>")
+
+````
+
+To obtain the auth token, please refer to the [Step-by-Step Guide to Obtain Your Auth Token](https://help.protecto.ai/tokenization-packages/data-tokenization/step-by-step-guide-to-obtain-your-auth-token).
+
+### Mask with AutoDetect:
+
+This method automatically identifies and masks personal/sensitive data within specific sentences,  leaving the rest of the data intact.
+
+```
+# Pass a list of sensitive information as input for the mask method
+result = obj.mask(["George Washington is happy", "Mark lives in the U.S.A"])
+# Print the masked result
+print(result)
+```
+This will give you the masked result:
+
+```
+{ 
+  "data": [ 
+    { 
+      "value": "George Washington is happy", 
+      "token_value": "<PER>wRePE302Qx vUc7DruuWm</PER> is happy", 
+      "individual_tokens": [ 
+        { 
+          "value": "George Washington", 
+          "pii_type": "PERSON", 
+          "token": "wRePE302Qx vUc7DruuWm", 
+          "prefix": "<PER>", 
+          "suffix": "</PER>" 
+        } 
+    ] 
+    }, 
+    { 
+      "value": "Mark lives in the U.S.A", 
+      "token_value": "<PER>7FHnu7Uo2O</PER> lives in the <ADDRESS>oQLxg3gisk.G2jPUYZHcv.bHIrJ0Mb7k</ADDRESS>", 
+      "individual_tokens": [ 
+        { 
+          "value": "Mark", 
+          "pii_type": "PERSON", 
+          "token": "7FHnu7Uo2O", 
+          "prefix": "<PER>", 
+          "suffix": "</PER>" 
+        }, 
+        { 
+          "value": "U.S.A", 
+          "pii_type": "GPE", 
+          "token": "oQLxg3gisk.G2jPUYZHcv.bHIrJ0Mb7k", 
+          "prefix": "<ADDRESS>", 
+          "suffix": "</ADDRESS>" 
+        } 
+      ] 
+    } 
+  ], 
+  "success": true, 
+  "error": { 
+    "message": "" 
+  } 
+} 
+```
+
+For more details, check the [link](https://help.protecto.ai/tokenization-packages/protecto-tokenization/auto-detect-masking).
+### Mask with a Specific Token:
+
+This method allows you to mask input data according to default token types (Text token, Special Token, Numeric Token) specified.
+
+```
+# pass list of values as an input for the mask method.Provide default token type.
+result = obj.mask(["Mark","Australia"], "Text Token")
+# Print the masked result
+print(result)
+```
+You can get list of default token types in this [link](https://help.protecto.ai/tokenization-packages/data-tokenization/supporting-token-and-format-types).
+
+Result:
+```
+{ 
+  "data": [ 
+    { 
+      "value": "Australia", 
+      "token_value": "1AN9X4Doab", 
+      "token_name": "Text Token" 
+    }, 
+    { 
+      "value": "Mark", 
+      "token_value": "7FHnu7Uo2O", 
+      "token_name": "Text Token" 
+    } 
+  ], 
+  "success": true, 
+  "error": { 
+    "message": "" 
+  } 
+
+```
+For more details, check the [link](https://help.protecto.ai/tokenization-packages/protecto-tokenization/masking-data-with-default-token-types).
+
+### Mask with a Specific Token and Format:
+
+This method allows you to mask input data according to default token types (Text token, Special Token, Numeric Token) and formats specified.
+```
+# pass list of sensitive information as an input for the mask method. Provide default token type and format
+result = obj.mask(["(555) 123-4567"], "Numeric Token", "Phone Number")
+# Print the masked result
+print(result)
+```
+You can get the list of default token types and formats in this [link](https://help.protecto.ai/tokenization-packages/data-tokenization/supporting-token-and-format-types).
+
+Result:
+```
+{ 
+  "data": [ 
+    { 
+      "value": "(555) 123-4567", 
+      "token_value": "(191004182137) 354826618175-127882693655", 
+      "token_name": "Numeric Token", 
+      "format": "Phone Number" 
+    } 
+  ], 
+  "success": true, 
+  "error": { 
+    "message": "" 
+  } 
+} 
+```
+For more details, check the [link](https://help.protecto.ai/tokenization-packages/protecto-tokenization/masking-data-with-format-and-token-types).
+
+### Mask JSON Format:
+
+```
+# pass list of sensitive information as an input in the provided JSON Format for the mask method
+result = obj.mask({"mask": [{"value": "Ross", "token_name": "Text Token", "format": "Person Name"}]})
+# Print the masked result
+print(result)
+```
+Result:
+
+```
+{ 
+  "data": [ 
+    { 
+      "value": "Ross", 
+      "token_value": "EZN792djTe", 
+      "token_name": "Text Token", 
+      "format": "Person Name" 
+    } 
+  ], 
+  "success": true, 
+  "error": { 
+    "message": "" 
+  } 
+} 
+```
+For more details, check the [link](https://help.protecto.ai/tokenization-packages/protecto-tokenization/mask-data-in-json-format).
+
+
+### Unmask a Token:
+This method allows you to retrieve the original data .
+
+Let's take an example. If "George Williams" is masked as "wRePE302Qx vUc7DruuWm," and the user provides the second masked input, "vUc7DruuWm," the unmasked output would be "Williams."
+
+
+```
+result = obj.unmask(["<PER>wRePE302Qx vUc7DruuWm</PER> is happy","wRePE302Qx vUc7DruuWm","vUc7DruuWm"])
+# Print the unmasked result
+print(result)
+```
+Result:
+```
+{
+  "data": [
+    {
+      "token_value": "<PER>wRePE302Qx vUc7DruuWm</PER> is happy",
+      "value": "George Washington is happy"
+    },
+    {
+      "token_value": "wRePE302Qx vUc7DruuWm",
+      "value": "George Washington"
+    },
+    {
+      "token_value": "vUc7DruuWm",
+      "value": "Washington"
+    }
+  ],
+  "success": true,
+  "error": {
+    "message": ""
+  }
+}
+```
+For more details, check the [link](https://help.protecto.ai/tokenization-packages/protecto-tokenization/unmasking-the-token).
+
+### Asynchronous Methods:
+
+### Mask Bulk Data using Async method:
+
+This method allows you to submit mask request and returns a tracking id .The tracking_id can be used to get the status of the request.
+```
+# pass list of sensitive information as an input in the provided JSON Format for the async mask method
+tracking_id = obj.async_mask({"mask": [{"value": "He lives in the U.S.A"},{"value": "Ram lives in the U.S.A"}]})
+# Print the tracking_id
+print(tracking_id)
+```
+
+Result:
+```
+{
+   "data":[
+      {
+         "tracking_id":"37a6de65-56d7-4da5-97d8-e1ba26b8208102012024045015",
+         "status":"PENDING"
+      }
+   ],
+   "success":true,
+   "error":{
+      "message":""
+   }
+}
+```
+For more details, check the [link](https://developer.protecto.ai/docs/mask-bulk-data-using-async-method/).
+
+### Unmask Bulk Data using Async method:
+
+
+This method allows you to submit an unmask request and returns a tracking id. The tracking_id can be used to get the status of the request.
+```
+# data to be unmasked is passed as a list.
+payload = ["mTiygJz7Tf","<PER>mTiygJz7Tf</PER> lives in the <ADDRESS>oQLxg3gisk.G2jPUYZHcv.bHIrJ0Mb7k</ADDRESS>","<PER>9g5Rfz77xv</PER> lives in the <ADDRESS>vzincci4VX.wPMAp7N015.EX52Xgft5m</ADDRESS>"])
+tracking_id = obj.async_unmask(payload)
+# Print the tracking_id
+print(tracking_id)
+```
+
+Result:
+```
+{
+   "data":[
+      {
+         "tracking_id":"5fb1f730-9fa2-4dbc-90ae-d839ef5d725e02012024045532",
+         "status":"PENDING"
+      }
+   ],
+   "success":true,
+   "error":{
+      "message":""
+   }
+}
+```
+For more details, check the [link](https://developer.protecto.ai/docs/unmask-bulk-data-using-async-method/).
+
+### Get status of Async method:
+
+This method allows you to monitor the status of the async request submitted.
+The different statuses are : "PENDING", "SUCCESS", "FAILED", "PURGED".
+If the request's status is "SUCCESS," the result will include the mask/unmask response. 
+Successful mask/unmask requests are automatically purged after 1 hour.
+
+
+```
+# pass the tracking id as a list to the async method
+payload = ["9f178448-fe87-44c1-b2b3-80d6277ca6b028122023141605","5fb1f730-9fa2-4dbc-90ae-d839ef5d725e02012024045532"]
+status = obj.async_status(payload)
+print(status)
+```
+
+Result:
+```
+{
+   "data":[
+      {
+         "tracking_id":"5fb1f730-9fa2-4dbc-90ae-d839ef5d725e02012024045532",
+         "call_type":"unmask",
+         "input_payload":{
+            "unmask":[
+               {
+                  "token_value":"mTiygJz7Tf"
+               },
+               {
+                  "token_value":"<PER>mTiygJz7Tf</PER> lives in the <ADDRESS>oQLxg3gisk.G2jPUYZHcv.bHIrJ0Mb7k</ADDRESS>"
+               },
+               {
+                  "token_value":"<PER>9g5Rfz77xv</PER> lives in the <ADDRESS>vzincci4VX.wPMAp7N015.EX52Xgft5m</ADDRESS>"
+               }
+            ]
+         },
+         "result":[
+            {
+               "token_value":"mTiygJz7Tf",
+               "value":"mTiygJz7Tf"
+            },
+            {
+               "token_value":"<PER>mTiygJz7Tf</PER> lives in the <ADDRESS>oQLxg3gisk.G2jPUYZHcv.bHIrJ0Mb7k</ADDRESS>",
+               "value":"mTiygJz7Tf lives in the oQLxg3gisk.G2jPUYZHcv.bHIrJ0Mb7k"
+            },
+            {
+               "token_value":"<PER>9g5Rfz77xv</PER> lives in the <ADDRESS>vzincci4VX.wPMAp7N015.EX52Xgft5m</ADDRESS>",
+               "value":"Ram lives in the U.S.A"
+            }
+         ],
+         "error_msg":"None",
+         "submitted_time":"2024-01-02 04:55:32",
+         "completed_time":"2024-01-02 04:55:34",
+         "status":"SUCCESS"
+      },
+      {
+         "tracking_id":"9f178448-fe87-44c1-b2b3-80d6277ca6b028122023141605",
+         "call_type":"mask",
+         "input_payload":"None",
+         "result":"None",
+         "error_msg":"None",
+         "submitted_time":"2023-12-28 14:16:05",
+         "completed_time":"2023-12-28 14:16:13",
+         "status":"PURGED"
+      }
+   ],
+   "success":true,
+   "error":{
+      "message":""
+   }
+}
+```
+For more details, check the [link](https://developer.protecto.ai/docs/get-status-of-async-method/).

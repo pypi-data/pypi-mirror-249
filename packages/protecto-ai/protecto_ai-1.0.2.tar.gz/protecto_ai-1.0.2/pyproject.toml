@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "protecto_ai"
+version = "1.0.2"
+description = "Intelligent Data Tokenization for Enhanced Privacy and Security"
+license = {text = "MIT"}
+authors = [
+    {name = "Protecto", email = "developer@protecto.ai"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ['requests==2.26.0', 'multipledispatch==1.0.0' ,]
+
+classifiers = [
+         "Programming Language :: Python :: 3.8",
+         "License :: OSI Approved :: MIT License",
+         "Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://help.protecto.ai/tokenization-packages/"
+Documentation = "https://developer.protecto.ai/docs/protecto-tokenization/"
+Website = "https://www.protecto.ai/"
+
+[tool.setuptools]
+packages=['protecto_ai','protecto_ai.protecto_privacy_vault']
