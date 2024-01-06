@@ -1,0 +1,13 @@
+entmax/__init__.py,sha256=2l2MohWLDV6XMmj39Hr-4e7sk4qsWUkVHeLXz8XRYXs,413
+entmax/activations.py,sha256=dU6avrOPtxcirvwjWrsRQFQzao0ZgGKN2R1wRXwvwpI,9951
+entmax/losses.py,sha256=TRnSD0uswbDncv3HVZtJ6mwuHHfy6TrNb4ZnoHT2QVA,8698
+entmax/root_finding.py,sha256=dggdCvnxKUwu8vw5BrcUGUbEDF72qoAX5_A9i77fyEI,8659
+entmax/test_losses.py,sha256=kE8ibj8iyHaEoCHv_ZxwTo7qQymI-9AjsUj_3Sej45g,1631
+entmax/test_mask.py,sha256=pmmDy8Nw5HMNWLMQ_TcxAyxFelhwEX3MxAaNrHbTrVQ,979
+entmax/test_root_finding.py,sha256=3PvCwyNuOq6BRXZeLRkhXjG9s8PwQ86Moaw7Ys9eQL8,2943
+entmax/test_topk.py,sha256=qecTtQZ2LAlhEAsCdlvookAf6gU9qw2rMbzxtPTvhMM,1254
+entmax-1.2.dist-info/LICENSE,sha256=TqXUt3sPHDRp9z8uNGM2BB9ae3cmY0nunf59sWvVy1c,1065
+entmax-1.2.dist-info/METADATA,sha256=Veb8Kg5SbeiBV8ri5ORl2QqWLQ7BIe_oet2RqOzdjUk,348
+entmax-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+entmax-1.2.dist-info/top_level.txt,sha256=VJB3TzrLSlnJKQJaaYHjcodIvFqhshshhqsDh3eSE6g,7
+entmax-1.2.dist-info/RECORD,,
