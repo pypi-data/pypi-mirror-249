@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_enrichments_gmap_geocode/__init__.py
+datasette_enrichments_gmap_geocode.egg-info/PKG-INFO
+datasette_enrichments_gmap_geocode.egg-info/SOURCES.txt
+datasette_enrichments_gmap_geocode.egg-info/dependency_links.txt
+datasette_enrichments_gmap_geocode.egg-info/entry_points.txt
+datasette_enrichments_gmap_geocode.egg-info/requires.txt
+datasette_enrichments_gmap_geocode.egg-info/top_level.txt
+tests/test_datasette_enrichments_gmap_geocode.py
