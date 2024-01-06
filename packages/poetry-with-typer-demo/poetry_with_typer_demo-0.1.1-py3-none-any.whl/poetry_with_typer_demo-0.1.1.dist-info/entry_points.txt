@@ -1,0 +1,3 @@
+[console_scripts]
+predict=poetry_with_typer_demo.main:app
+
