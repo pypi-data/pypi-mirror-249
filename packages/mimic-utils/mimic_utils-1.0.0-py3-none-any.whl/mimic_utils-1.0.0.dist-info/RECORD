@@ -1,0 +1,13 @@
+mimic_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimic_utils/__main__.py,sha256=F9h9uF9BiwP-Kp2KhzuTmDjIeiTztMOPBWCAM-vbcPA,1590
+mimic_utils/_version.py,sha256=4W2pN01_bS9D3uQP6mL-LjxlnWmpHgbtUezrcTSWE5s,469
+mimic_utils/transpile.py,sha256=mrQiEGiXy9PmZdNgFUQx_kmrOdNfG-L6hZlR-g-BCjg,4192
+mimic_utils/sqlglot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimic_utils/sqlglot/bigquery.py,sha256=RkPVlaWuraUifFcpdODFLgZ02ih7kk61h9Lvrah5mxI,493
+mimic_utils/sqlglot/duckdb.py,sha256=1dBNnme1b8X959gKLJlCCcmYRFW7htILzrq3PE48ygU,4021
+mimic_utils/sqlglot/postgres.py,sha256=dxyQF5H_-zwmPcfqX35JrVs9nUteEnDLdyw7pwP0T-A,6218
+mimic_utils-1.0.0.dist-info/METADATA,sha256=-HQ6G9oI_Euik44he1daW7rtYEsnYttHyHLXIl-M9Zo,1978
+mimic_utils-1.0.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+mimic_utils-1.0.0.dist-info/entry_points.txt,sha256=59eNkXwKbsTnSDV7tdes7WMjKq23AF-tpk8cFXQt_e0,58
+mimic_utils-1.0.0.dist-info/licenses/LICENSE,sha256=-ltBh8xdog3E8n121ZyFB9E4mnZVm19Wq0iiItHrO7U,1100
+mimic_utils-1.0.0.dist-info/RECORD,,
