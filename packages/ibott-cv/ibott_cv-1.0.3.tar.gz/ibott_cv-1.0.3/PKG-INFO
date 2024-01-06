@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ibott_cv
+Version: 1.0.3
+Summary: This package moves mouse
+Home-page: https://github.com/ecrespo66/files_and_folders
+Author: OnameDohe
+Author-email: enrique.crespo.debenito@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

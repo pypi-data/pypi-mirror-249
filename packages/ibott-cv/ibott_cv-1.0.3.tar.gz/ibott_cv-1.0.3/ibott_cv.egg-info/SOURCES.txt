@@ -1,0 +1,9 @@
+README.md
+setup.py
+ibott_cv/__init__.py
+ibott_cv/screen_activities.py
+ibott_cv.egg-info/PKG-INFO
+ibott_cv.egg-info/SOURCES.txt
+ibott_cv.egg-info/dependency_links.txt
+ibott_cv.egg-info/requires.txt
+ibott_cv.egg-info/top_level.txt
