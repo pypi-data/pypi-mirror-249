@@ -1,0 +1,33 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "webint-live"
+version = "0.0.26"
+description = "stream from your website"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "AGPL-3.0-or-later"
+packages = [{include="webint_live"}]
+
+[tool.pyright]
+reportOptionalMemberAccess = false
+
+[tool.poetry.plugins."webapps"]
+live = "webint_live:app"
+
+[[tool.poetry.source]]
+name = "main"
+url = "https://ragt.ag/code/pypi"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+webint = ">=0.0"
+
+[tool.poetry.group.dev.dependencies]
+bgq = {path="../bgq", develop=true}
+gmpg = {path="../gmpg", develop=true}
+newmath = {path="../newmath", develop=true}
+sqlyte = {path="../sqlyte", develop=true}
+webagt = {path="../webagt", develop=true}
+webint = {path="../webint", develop=true}

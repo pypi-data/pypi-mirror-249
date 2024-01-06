@@ -1,0 +1,40 @@
+$def with ()
+$var title: Live Stream
+
+<div id=stream></div>
+<script>
+document.addEventListener('DOMContentLoaded', ev => {
+  fetch('/stream-stats')
+    .then(response => {
+      if (!response.ok)
+        throw new Error('stream stats server down')
+      return response.text()
+    })
+    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then(data => {
+      const streams = data.getElementsByTagName('stream')
+      if (streams.length) {
+        window.injectStylesheet('/assets/video.js-5.8.8.css')
+        window.injectScript('/assets/video.js-5.8.8.js', () => {
+          window.injectScript('/assets/video.js-contrib-hls-3.6.12.js', () => {
+            document.querySelector('#stream').innerHTML = `
+              <video id=livestream class="video-js vjs-default-skin" controls>
+                <source src=$tx.origin/hls/foo.m3u8 type=application/x-mpegURL>
+              </video>
+              <div style=font-size:.75em>started <span id=streamduration></span>
+              minutes ago</div>
+            `
+            player = videojs('livestream', {fluid: true})
+            player.play()
+
+            const ms = parseInt(streams[0].getElementsByTagName('time')[0].textContent)
+            document.querySelector('#streamduration').innerHTML = Math.round(ms / 1000 / 60)
+          })
+        })
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error.message)
+    })
+})
+</script>
