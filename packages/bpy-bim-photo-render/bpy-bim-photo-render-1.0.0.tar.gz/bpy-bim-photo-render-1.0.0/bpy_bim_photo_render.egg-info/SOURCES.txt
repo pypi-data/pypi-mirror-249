@@ -1,0 +1,5 @@
+setup.py
+bpy_bim_photo_render.egg-info/PKG-INFO
+bpy_bim_photo_render.egg-info/SOURCES.txt
+bpy_bim_photo_render.egg-info/dependency_links.txt
+bpy_bim_photo_render.egg-info/top_level.txt
