@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sentry_devenv
+Version: 1.2.0
+Summary: Utilities for setting up a Sentry development environment
+Author-email: Joshua Li <joshua.li@sentry.io>, Ian Woodard <ian.woodard@sentry.io>, Buck Evan <buck.evan@sentry.io>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typing-extensions
+Requires-Dist: sentry-sdk
+
+## devenv
+
+the next generation sentry devenv management tool
+
+## install
+
+Download [this](https://raw.githubusercontent.com/getsentry/devenv/main/install-devenv.sh) and run it:
+
+```
+bash install-devenv.sh
+```
+
+**If you are setting up a new development environment, run `devenv bootstrap` after installing.**
+
+
+## develop
+
+Purpose: enable `gh act` to work quickly on localhost
+
+To that end:
+
+1. build a docker image with python pre-installed at the expected location
+2. the python interpreter machine-architecture should match the host machine
