@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pickle_data_file_utils
+Version: 0.3.0
+Summary: Collection of Python utility scripts for converting file formats to and from pickle files.
+Home-page: https://github.com/jai-python3/pickle_data_file_utils
+Author: Jaideep Sundaram
+Author-email: jai.python3@gmail.com
+Keywords: pickle_data_file_utils
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click >=7.0
+Requires-Dist: Rich
+
+======================
+Pickle Data File Utils
+======================
+
+
+
+
+
+
+Collection of Python utility scripts for converting file formats to and from pickle files.
+
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2024-01-04)
+------------------
+
+* First release on PyPI.

@@ -1,0 +1,7 @@
+[console_scripts]
+csv2pickle = pickle_data_file_utils.csv2pickle:main
+json2pickle = pickle_data_file_utils.json2pickle:main
+pickle2csv = pickle_data_file_utils.pickle2csv:main
+pickle2json = pickle_data_file_utils.pickle2json:main
+pickle2tsv = pickle_data_file_utils.pickle2tsv:main
+tsv2pickle = pickle_data_file_utils.tsv2pickle:main
