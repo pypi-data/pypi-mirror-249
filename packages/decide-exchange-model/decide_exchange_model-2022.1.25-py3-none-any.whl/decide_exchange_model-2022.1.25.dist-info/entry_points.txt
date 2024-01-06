@@ -1,0 +1,4 @@
+[console_scripts]
+decide-cli=decide.cli:main
+decide-gui=decide.gui:main
+
