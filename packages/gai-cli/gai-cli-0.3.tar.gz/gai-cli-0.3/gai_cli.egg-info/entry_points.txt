@@ -1,0 +1,4 @@
+[console_scripts]
+chunker = gai.cli.chunker:main
+tts = gai.cli.tts:main
+ttt = gai.cli.ttt:main
