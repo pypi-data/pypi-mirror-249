@@ -1,0 +1,53 @@
+import pandas as pd
+from xmlschema import XMLSchema
+from pathlib import Path
+
+from sfdata_stream_parser.filters import generic
+
+from sf_pipelines_test.common.data import FileLocator, ProcessResult, DataContainer
+from sf_pipelines_test.common import stream_filters as stream_functions
+from sf_pipelines_test.csww_pipeline import stream_record
+from sf_pipelines_test.csww_pipeline.stream_parse import dom_parse
+
+from . import stream_filters as filters
+
+
+def task_cleanfile(
+    src_file: FileLocator, schema: XMLSchema, schema_path: Path
+) -> ProcessResult:
+    """
+    Clean input CSWW xml files according to schema and output clean data and errors
+    :param src_file: The pointer to a file in a virtual filesystem
+    :param schema: The data schema
+    :param schema_path: Path to the data schema
+    :return: A class containing a DataContainer and ErrorContainer
+    """
+    with src_file.open("rb") as f:
+        # Open & Parse file
+        stream = dom_parse(f, filename=src_file.name)
+
+        # Configure stream
+        stream = filters.strip_text(stream)
+        stream = filters.add_context(stream)
+        stream = filters.add_schema(stream, schema=schema)
+        stream = filters.add_column_spec(stream, schema_path=schema_path)
+
+        # Clean stream
+        stream = stream_functions.log_blanks(stream)
+        stream = stream_functions.conform_cell_types(stream)
+        stream = filters.validate_elements(stream)
+
+        # Create dataset
+        error_holder, stream = stream_functions.collect_errors(stream)
+        stream = stream_record.message_collector(stream)
+        dataset_holder, stream = stream_record.export_table(stream)
+
+        # Consume stream so we know it's been processed
+        generic.consume(stream)
+
+        dataset = dataset_holder.value
+        errors = error_holder.value
+
+        dataset = DataContainer({k: pd.DataFrame(v) for k, v in dataset.items()})
+
+    return ProcessResult(data=dataset, errors=errors)
