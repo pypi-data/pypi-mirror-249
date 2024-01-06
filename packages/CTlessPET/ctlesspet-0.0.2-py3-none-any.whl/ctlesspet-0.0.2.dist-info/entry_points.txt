@@ -1,0 +1,2 @@
+[console_scripts]
+CTlessPET = CTlessPET.main:convert_NAC_to_sCT
