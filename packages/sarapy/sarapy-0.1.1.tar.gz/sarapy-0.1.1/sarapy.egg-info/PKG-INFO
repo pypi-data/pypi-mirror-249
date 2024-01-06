@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sarapy
+Version: 0.1.1
+Summary: Library for Sarapico Metadata processing
+Home-page: https://github.com/lucasbaldezzari/sarapy
+Author: Lucas Baldezzari
+Author-email: Lucas Baldezzari <lmbaldezzari@gmail.com>
+Maintainer-email: Lucas Baldezzari <lmbaldezzari@gmail.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: geopy
+
+# SARAPY
+
+Library for processing SARAPICO project metadata of _AMG_.
+
+#### Version 0.1.1
+
+Setting new tests
+
+#### Version 0.1.0
+
+Just for testing
+
+### Docs
+
+Documentation [here](https://github.com/lucasbaldezzari/sarapy/blob/main/docs/docs.md).
