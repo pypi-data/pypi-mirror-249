@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+src/tastypie-api-helpers/__init__.py
+src/tastypie-api-helpers/apps.py
+src/tastypie-api-helpers/management/commands/generate_tastypie_urls.py
+src/tastypie_api_helpers.egg-info/PKG-INFO
+src/tastypie_api_helpers.egg-info/SOURCES.txt
+src/tastypie_api_helpers.egg-info/dependency_links.txt
+src/tastypie_api_helpers.egg-info/top_level.txt
