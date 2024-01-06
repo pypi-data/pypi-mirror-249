@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "scb"
+version = "0.1.0"
+description = "Python wrapper for PxApi 2.0 and 1.0"
+authors = ["Ruben Selander <ruben.selander@nordicintel.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Reversehobo/pyscb"
+repository = "https://github.com/Reversehobo/pyscb"
+documentation = "https://github.com/Reversehobo/pyscb/README.md"
+classifiers = [
+    "Development Status :: 1 - Planning",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.2"
+pytest-cov = "^4.1.0"
+pyupgrade = "^3.13.0"
+sphinx = "^3.0"  # Downgraded from ^4.0 to ^3.0
+sphinx-rtd-theme = "^0.5.2"
+coverage = "^6.0"
+flake8 = "^4.0"
+black = "^22.0"
+isort = "^5.0"
+mypy = "^0.910"
+pre-commit = "^2.15.0"
+python-dotenv = "^0.19.0"
+myst_nb = "^0.12.3"
+pylint = "^2.11.1"
+jinja2 = "<3.1"
+sphinx-autoapi = "^1.8.1"  # Added this line
+python-semantic-release = "^7.19.2"  # Added this line
+
+
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version" # version location
+branch = "main"                             # branch to make releases of
+changelog_file = "CHANGELOG.md"             # changelog file
+build_command = "poetry build"              # build dists
+dist_path = "dist/"                         # where to put dists
+upload_to_release = true                    # auto-create GitHub release
+upload_to_pypi = true                   #auto-upload to PyPI
+remove_dist = true                         # don't remove dists
+patch_without_tag = false                    # patch release by default
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
