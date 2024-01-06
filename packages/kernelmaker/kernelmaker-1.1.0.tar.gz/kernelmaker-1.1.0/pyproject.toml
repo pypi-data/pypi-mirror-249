@@ -1,0 +1,27 @@
+# pypi setup file
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kernelmaker"
+version = "1.1.0"
+authors = [
+  { name="Calico Kalamari", email="author@example.com" },
+]
+description = "Automate and ease building and configuring mainline kernels"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Operating System Kernels :: Linux",
+]
+
+[project.urls]
+Homepage = "https://github.com/Kalamuwu/kernelmaker"
+Issues = "https://github.com/Kalamuwu/kernelmaker/issues"
