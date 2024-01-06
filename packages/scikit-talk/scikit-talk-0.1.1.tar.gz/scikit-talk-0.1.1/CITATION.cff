@@ -1,0 +1,41 @@
+# YAML 1.2
+---
+cff-version: "1.2.0"
+title: "scikit-talk"
+authors:
+  -
+    family-names: Vreede
+    given-names: Barbara
+    orcid: "https://orcid.org/0000-0002-5023-4601"
+  -
+    family-names: Liesenfeld
+    given-names: Andreas
+    orcid: "https://orcid.org/0000-0001-6076-4406"
+  -
+    family-names: Gabor
+    given-names: Parti
+  -
+    family-names: Dingemanse
+    given-names: Mark
+    orcid: "https://orcid.org/0000-0002-3290-5723"
+  -
+    family-names: Schnober
+    given-names: Carsten
+    orcid: "https://orcid.org/0000-0001-9139-1577"
+  -
+    family-names: De Kleijn
+    given-names: Maurice
+  -
+    family-names: Qi
+    given-names: Ji
+    orcid: "https://orcid.org/0000-0001-8074-2730"
+date-released: 2024-01-05
+doi: 10.5281/zenodo.10462997
+version: "0.1.1"
+repository-code: "https://github.com/elpaco-escience/scikit-talk"
+keywords:
+    - conversation
+    - language corpora
+    - turn-taking
+message: "If you use this software, please cite the original paper DOI:10.18653/v1/2021.sigdial-1.26"
+license: Apache-2.0
