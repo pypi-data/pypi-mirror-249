@@ -1,0 +1,12 @@
+geodense/__init__.py,sha256=4y0HAzmaumazoarA7IM9FF1jT9PT7ySk9rt41NXn040,1899
+geodense/geojson.py,sha256=mQIesYSlIKkVjGM7X_Hp9tfXK2QBCuuNU-gNVPCywHY,1431
+geodense/lib.py,sha256=G5xCnt8h_BkErQNW9IJz_zSvwlytHwa6Errf_96i5CM,27082
+geodense/main.py,sha256=RaQRQj7qF6R8GtwdCUPzD-UCu3x8iP_N00zK3cfl9OY,9358
+geodense/models.py,sha256=MmX2kZ6FknIYGx-4TfjGMKpm0IcAdw3jXx_L1TZeTDo,2833
+geodense/types.py,sha256=oYiVTJUr-6HwQRrcR6jgiip1K0TEoTebdUqZ2VVDrKw,992
+geodense-0.0.1a11.dist-info/LICENSE,sha256=W2X28dpdcfQwVgcUX1gXDf0wRva8R5BEKMl3ORegZJI,1108
+geodense-0.0.1a11.dist-info/METADATA,sha256=p09gtNivN7FffrYJRpcd4t7o7t-VB1dTW6v9WqFFyps,4763
+geodense-0.0.1a11.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+geodense-0.0.1a11.dist-info/entry_points.txt,sha256=MK8parr7A1uPQlpFuqY8vTfhR44JNIcQ7QPT_Gk4oRc,74
+geodense-0.0.1a11.dist-info/top_level.txt,sha256=w35KWGzPQbbqKDiPp0K-LEuN8oEZxdpplMBPEzkSsms,9
+geodense-0.0.1a11.dist-info/RECORD,,
