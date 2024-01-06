@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyappkit
+Version: 0.0.20
+Summary: Python Application Kit
+Home-page: https://github.com/stonezhong/pyappkit
+Author: Stone Zhong
+Author-email: stonezhong@hotmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2
+Requires-Dist: PyYAML
+Requires-Dist: pydantic
+
+# Features
+
+| module                             | Description                 |
+| ---------------------------------- | --------------------------- |
+| [Daemon](src/pyappkit/daemon)      | Manage daemons and workers  |
+
+
+# Examples
+| location                           | Description                       |
+| ---------------------------------- | --------------------------------- |
+| [Daemon](examples/daemon)          | Examples for daemons and workers  |
