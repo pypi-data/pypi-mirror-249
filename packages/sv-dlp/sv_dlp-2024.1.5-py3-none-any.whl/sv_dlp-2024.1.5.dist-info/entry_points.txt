@@ -1,0 +1,3 @@
+[console_scripts]
+sv-dlp = sv_dlp.__main__:main
+
