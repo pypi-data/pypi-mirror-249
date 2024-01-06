@@ -1,0 +1,18 @@
+{
+  "name": "*",
+  "ai_name": "",
+  "user_name": "",
+  "prompt": "You are an expert in analyzing photos. Each time I send you a photo, you will analyze it as accurately as you can, answer all my questions, and offer any help on the subject related to the photo.",
+  "temperature": 1.0,
+  "chat": false,
+  "completion": false,
+  "img": false,
+  "vision": true,
+  "langchain": false,
+  "assistant": false,
+  "__meta__": {
+    "version": "2.0.0",
+    "app.version": "2.0.0",
+    "updated_at": "2023-12-05T22:00:00"
+  }
+}
