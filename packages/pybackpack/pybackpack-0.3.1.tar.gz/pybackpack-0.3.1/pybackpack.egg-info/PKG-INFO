@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pybackpack
+Version: 0.3.1
+Summary: A collection of utilities and tools in Python.
+Author: Pooya Vahidi
+Project-URL: Homepage, https://github.com/pooyavahidi/pybackpack
+Project-URL: Issues, https://github.com/pooyavahidi/pybackpack/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pybackpack
+A collection of utilities and tools in Python.
