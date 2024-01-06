@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_upgrade/__init__.py
+datasette_upgrade.egg-info/PKG-INFO
+datasette_upgrade.egg-info/SOURCES.txt
+datasette_upgrade.egg-info/dependency_links.txt
+datasette_upgrade.egg-info/entry_points.txt
+datasette_upgrade.egg-info/requires.txt
+datasette_upgrade.egg-info/top_level.txt
+tests/test_upgrade.py

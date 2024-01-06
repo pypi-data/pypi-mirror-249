@@ -1,0 +1,2 @@
+[datasette]
+upgrade = datasette_upgrade
