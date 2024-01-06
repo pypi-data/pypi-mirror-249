@@ -1,0 +1,69 @@
+# Scrapy-QOS
+
+QOS components for Scrapy
+
+## Usage
+
+### Active the `QosDownloaderMiddleware` in settings.py
+
+```python
+DOWNLOADER_MIDDLEWARES = {
+    "scrapy_qos.QosDownloaderMiddleware": 543
+}
+```
+
+### Config following option in settings.py
+
+- QOS_IOPS_ENABLED
+  - default `False`
+  - set `True` to enable IOPS limiter
+- QOS_IOPS_CAPACITY
+  - default `1`
+  - burst IO count per seconds
+- QOS_IOPS_LIMIT
+  - default `1` / s
+  - how many requests sent per seconds
+- QOS_BPS_ENABLED
+  - default `False`
+  - set `True` to enable BPS limiter
+- QOS_BPS_CAPACITY
+  - default `1048576` Bytes
+  - burst IO Bytes per seconds
+- QOS_BPS_LIMIT
+  - default `1048576` Bytes / s
+  - how many response Bytes receive per seconds
+- QOS_SMALL_RESPONSE_SIZE
+  - default `1048576` Bytes
+  - guess next response size filter response less than this value
+
+## Requirements
+
+- Python 3.7+
+- Scrapy >= 2.0
+- asyncio
+
+## Installation
+
+From pip
+
+```shell
+pip install scrapy-qos
+```
+
+From Gitee
+
+```
+git clone https://gitee.com/hgdsdq/scrapy_qos.git
+cd scrapy_qos
+python setup.py install
+```
+
+## Implementation
+
+- Basic implement QOS with Token Bucket Algorithm
+- For scrapy, QosDownloaderMiddleware will guess next response body size that used for BPS limiter
+
+```python
+α = 0.8
+guess_response_size = (1 - α) * guess_response_size + α * guess_response_size
+```
