@@ -1,0 +1,15 @@
+README.md
+Taskfile.yml
+pyproject.toml
+setup/Taskfile.yml
+setup/requirements.txt
+setup/requirements_develop.txt
+src/takeoff_client/__init__.py
+src/takeoff_client/sse.py
+src/takeoff_client/takeoff_client.py
+src/takeoff_client.egg-info/PKG-INFO
+src/takeoff_client.egg-info/SOURCES.txt
+src/takeoff_client.egg-info/dependency_links.txt
+src/takeoff_client.egg-info/top_level.txt
+tests/test_sse.py
+tests/test_takeoff_client.py
