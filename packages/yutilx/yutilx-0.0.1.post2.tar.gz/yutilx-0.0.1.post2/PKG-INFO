@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: yutilx
+Version: 0.0.1.post2
+Summary: Xinyu's common utilities
+Author-email: Xinyu Yang <cauyxy@gmail.com>
+Maintainer-email: Xinyu Yang <cauyxy@gmail.com>
+Project-URL: Source, https://github.com/cauyxy/yutilx/
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Xinyu's utils

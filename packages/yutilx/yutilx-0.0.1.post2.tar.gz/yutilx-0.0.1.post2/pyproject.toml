@@ -1,0 +1,24 @@
+[project]
+name = "yutilx"
+
+version = "0.0.1.post2"
+readme = "README.md"
+
+description = "Xinyu's common utilities"
+
+requires-python = ">=3.7"
+
+authors = [
+  {name = "Xinyu Yang", email = "cauyxy@gmail.com" }
+]
+
+maintainers = [
+  {name = "Xinyu Yang", email = "cauyxy@gmail.com" }
+]
+
+[project.urls]
+"Source" = "https://github.com/cauyxy/yutilx/"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
