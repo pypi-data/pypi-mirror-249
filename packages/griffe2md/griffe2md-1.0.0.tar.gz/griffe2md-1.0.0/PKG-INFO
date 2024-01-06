@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: griffe2md
+Version: 1.0.0
+Summary: Output API docs to Markdown using Griffe.
+Author-Email: Timothée Mazzucotelli <pawamoy@pm.me>
+License: ISC
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://mkdocstrings.github.io/griffe2md
+Project-URL: Documentation, https://mkdocstrings.github.io/griffe2md
+Project-URL: Changelog, https://mkdocstrings.github.io/griffe2md/changelog
+Project-URL: Repository, https://github.com/mkdocstrings/griffe2md
+Project-URL: Issues, https://github.com/mkdocstrings/griffe2md/issues
+Project-URL: Discussions, https://github.com/mkdocstrings/griffe2md/discussions
+Project-URL: Gitter, https://gitter.im/mkdocstrings/griffe2md
+Project-URL: Funding, https://github.com/sponsors/pawamoy
+Requires-Python: >=3.8
+Requires-Dist: griffe>=0.36.0
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: mdformat>=0.7.16
+Description-Content-Type: text/markdown
+
+# griffe2md
+
+[![ci](https://github.com/mkdocstrings/griffe2md/workflows/ci/badge.svg)](https://github.com/mkdocstrings/griffe2md/actions?query=workflow%3Aci)
+[![documentation](https://img.shields.io/badge/docs-mkdocs%20material-blue.svg?style=flat)](https://mkdocstrings.github.io/griffe2md/)
+[![pypi version](https://img.shields.io/pypi/v/griffe2md.svg)](https://pypi.org/project/griffe2md/)
+[![gitpod](https://img.shields.io/badge/gitpod-workspace-blue.svg?style=flat)](https://gitpod.io/#https://github.com/mkdocstrings/griffe2md)
+[![gitter](https://badges.gitter.im/join%20chat.svg)](https://app.gitter.im/#/room/#griffe2md:gitter.im)
+
+Output API docs to Markdown using Griffe.
+
+## Installation
+
+With `pip`:
+
+```bash
+pip install griffe2md
+```
+
+With [`pipx`](https://github.com/pipxproject/pipx):
+
+```bash
+python3.8 -m pip install --user pipx
+pipx install griffe2md
+```
+
+## Usage
+
+Simply call `griffe2md` with a package name, or the path to a package folder:
+
+```bash
+griffe2md markdown
+griffe2md path/to/my/src/package
+```
+
+Use the `-o`, `--output` option to write to a file instead of standard output:
+
+```bash
+griffe2md markdown -o markdown.md
+```
