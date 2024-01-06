@@ -1,0 +1,16 @@
+swaystatus/__init__.py,sha256=Jc1iq2hEPdQdwxP0_cnzofWXjV4GONAF3WI7DYkACsI,1511
+swaystatus/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+swaystatus/cli.py,sha256=NUnWK-OyOdCjTLJ2OiR94--elqCX1sar-RYD9-yauc0,3584
+swaystatus/config.py,sha256=GzRc4NobBSiPk2mvlMuPUEIHn66DhqF1dYvJrgo5uHY,4567
+swaystatus/element.py,sha256=Sn2ukze0CarNyizmNVD86Z8FbkVxsU7CwK6oMP2BXcE,10291
+swaystatus/env.py,sha256=doCw3kT43BuKdKFsQMTJsB3rFKeEWO5Rv11svoZVhJA,490
+swaystatus/logging.py,sha256=CANgdAhtBn5hZFSiZMq3OtIiHGTwICaDshdh72PM8lc,1151
+swaystatus/loop.py,sha256=R1qrZrBbkIrghjQZgh6P5WrzpqEWnprmD8Gk7ixl1Ug,2343
+swaystatus/modules.py,sha256=OaTufZPRrTdsBMfnclizUNY7F3LDm1FsixPL22xiebc,1433
+swaystatus/subprocess.py,sha256=j3xFiTRt9cvzsPQp1ikru3fGdU8osQ9fzF96p2dizhM,685
+swaystatus/updater.py,sha256=vAjcf0c2dotmg0rMLBqOtv4MY7pf0AHt92We2mHM_R0,2604
+swaystatus-0.4.1.dist-info/METADATA,sha256=0zp8nJaEd1M3H8sjIb55z8qMTVbguy5fVpHTb2Kj23Y,1567
+swaystatus-0.4.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+swaystatus-0.4.1.dist-info/entry_points.txt,sha256=OoBuX5wQGI5uwvqtuss_Qqqyfzcpu6pHueu6wGgs51o,51
+swaystatus-0.4.1.dist-info/licenses/LICENSE,sha256=LD4TbHD5q4oqoGu4T27UsFhLAvAxA_w4aWsiuMWDdnc,1072
+swaystatus-0.4.1.dist-info/RECORD,,
