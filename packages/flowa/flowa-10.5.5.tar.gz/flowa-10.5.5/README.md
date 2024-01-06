@@ -1,0 +1,104 @@
+<a href="https://ibb.co/885w17s](https://i.ibb.co/bdBVcKm/flowa.jpg)"><img src="https://i.ibb.co/bdBVcKm/flowa.jpg" alt="flowa" border="0" width="145"></a>
+
+# [flowa - Machine Learning Toolkit](https://pypi.org/project/flowa)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/flowa/flowa/blob/main/LICENSE)
+[![Python Versions](https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9%20|%203.10%20|%203.11%20|%203.12%20-blue)](https://www.python.org/downloads/)
+
+```
+flowa: (V10.5.5)
+
+Python Machine Learning, Image Generation, Decision Trees, Label Encoders, Sequential, and more!
+```
+
+## Installing
+```shell
+# Linux/macOS
+python3 pip install -U flowa
+
+# Windows
+py -3 -m pip install -U flowa
+```
+
+# Simple Examples
+```python
+x = flowa.Array([[0, 0], [0, 1], [1, 0], [1, 1]])
+y = flowa.Array([[0], [1], [1], [0]])
+
+network = flowa.Network(
+    flowa.Input(2),
+    (
+        flowa.Hidden(4, flowa.Tanh), 
+        flowa.Hidden(2, flowa.Sigmoid)
+    ),
+    flowa.Output(1)
+)
+
+network.train(x, y, epoch=1000)
+print(network.predict(x))
+```
+```python
+from flowa.ai import (
+    Encoder,
+    Tree,
+    Dataset,
+    read_csv,
+    convert
+)
+
+classifier: Tree = Tree()
+encoder: Encoder = Encoder()
+
+dataset: str = convert(Dataset.get_music_data())
+csv: object = read_csv(dataset)
+
+dataframe: object = encoder.df(csv, 'gender')
+
+X_matrix: object = dataframe.drop('genre', axis=1).values
+y_column: object = encoder(dataframe['genre'].values)
+
+classifier.fit(X_matrix, y_column)
+
+age, gender = encoder.new(30, 'female')
+fix: list = encoder.fix(age, gender)
+
+prediction: list[int] = classifier.predict(fix)
+print(encoder.inverse(prediction))
+
+#>>> ['Pop']
+
+```
+Image generation:
+```python
+model: ImageModel[object] = ImageModel()
+image: ImageModel[str] = model.generate(
+    prompt="a cat", model="pixart", width=512, height=512
+).save("some-file.png")
+
+#>>> flowa.types.Image
+
+```
+
+String Dataset to dataframe conversion:
+```python
+from flowa.ai import (
+    Dataset,
+    read_csv,
+    convert
+)
+
+dataset: Dataset = Dataset.get_play_tennis()
+
+converted_dataset: str = convert(dataset)
+
+csv: Dataset = read_csv(converted_dataset)
+print(csv)
+
+#>>>     Outlook Temperature Humidity    Wind Play Tennis
+#>>> 0  Overcast        Mild   Normal    Weak         Yes
+#>>> 1     Sunny        Mild   Normal    Weak         Yes
+#>>> ... [2 rows not shown]
+```
+
+# Links
+- [Github](https://github.com/flowa-ai)
+- [Project](https://pypi.org/project/flowa/)
