@@ -1,0 +1,8 @@
+FRUFS.py
+README.md
+setup.py
+FRUFS.egg-info/PKG-INFO
+FRUFS.egg-info/SOURCES.txt
+FRUFS.egg-info/dependency_links.txt
+FRUFS.egg-info/requires.txt
+FRUFS.egg-info/top_level.txt
