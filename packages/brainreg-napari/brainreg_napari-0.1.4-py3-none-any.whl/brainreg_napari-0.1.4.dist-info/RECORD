@@ -1,0 +1,13 @@
+brainreg_napari/__init__.py,sha256=lpX8ovuL46wa-ac4pKDrOZyyP1lXUGNBnIQ9-fvK5xM,131
+brainreg_napari/napari.yaml,sha256=FNONTClgGbaD08QHozXEv3S-rncv5d9jrraFhPkiK8M,548
+brainreg_napari/register.py,sha256=OSezqpKYtLUtjQO83ODT9lplsYTxDuB3rDkq4JmeSOY,21784
+brainreg_napari/sample_data.py,sha256=E06HVelejpGMQi2S8fUitNK3gJsOvJ-KRvMQf8U4n2A,1155
+brainreg_napari/util.py,sha256=Ci-ndMEQllUBAzuZJwXq-Tn_wfBUL4A7bOhEmFyZLi4,2569
+brainreg_napari/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brainreg_napari/tests/test_brainreg_napari.py,sha256=BNJ6lPsy2LgwvhguOl3uos9eBVs1fS_yw4F68GndxOE,5104
+brainreg_napari-0.1.4.dist-info/LICENSE,sha256=c_eha7pQfVqI9kVwzsb3Tx4mjjtFVDY1S3R3bd0iLw8,1081
+brainreg_napari-0.1.4.dist-info/METADATA,sha256=H804MXtsFtTu9fTABssK0Qm9K7hSKQpyIVeSq7echyM,7022
+brainreg_napari-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+brainreg_napari-0.1.4.dist-info/entry_points.txt,sha256=Omv6HHcfbeTiJbkqOyK7WiCkerAS0Oef4tuY9E7GzU8,64
+brainreg_napari-0.1.4.dist-info/top_level.txt,sha256=gcjq2xEFkxZ2JtzNR3K-DH9Sa_W_IPsQMg-hnAU4I4I,16
+brainreg_napari-0.1.4.dist-info/RECORD,,
