@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pauytinka-vsoh
+Version: 0.1
+Summary: pauytinka for vsoh
+Home-page: https://github.com/yourusername/my_library
+Author: pauytinka
+Author-email: pauytinka@yandex.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests
+
+pauytinka for vsoh

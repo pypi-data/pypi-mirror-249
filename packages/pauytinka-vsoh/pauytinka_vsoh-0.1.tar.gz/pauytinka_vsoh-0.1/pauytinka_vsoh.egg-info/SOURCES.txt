@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pauytinka_vsoh/__init__.py
+pauytinka_vsoh/main_module.py
+pauytinka_vsoh.egg-info/PKG-INFO
+pauytinka_vsoh.egg-info/SOURCES.txt
+pauytinka_vsoh.egg-info/dependency_links.txt
+pauytinka_vsoh.egg-info/requires.txt
+pauytinka_vsoh.egg-info/top_level.txt
