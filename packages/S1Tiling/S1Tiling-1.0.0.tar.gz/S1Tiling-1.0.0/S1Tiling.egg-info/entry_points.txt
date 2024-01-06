@@ -1,0 +1,4 @@
+[console_scripts]
+S1LIAMap = s1tiling.S1Processor:run_lia
+S1Processor = s1tiling.S1Processor:run
+
