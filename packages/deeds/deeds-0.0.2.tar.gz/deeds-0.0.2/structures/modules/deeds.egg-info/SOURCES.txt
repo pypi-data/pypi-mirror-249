@@ -1,0 +1,12 @@
+license.txt
+pyproject.toml
+structure.txt
+structures/modules/deeds/__init__.py
+structures/modules/deeds/status_1.py
+structures/modules/deeds.egg-info/PKG-INFO
+structures/modules/deeds.egg-info/SOURCES.txt
+structures/modules/deeds.egg-info/dependency_links.txt
+structures/modules/deeds.egg-info/top_level.txt
+structures/modules/deeds/_clique/__init__.py
+structures/modules/deeds/_clique/group/__init__.py
+structures/modules/deeds/_status/insurance.proc.py
