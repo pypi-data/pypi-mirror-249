@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rbpop
+Version: 0.1.1
+Summary: (PyQt5 based) Pop your window at the right-bottom at the screen.
+Author-email: 2229066748@qq.com
+Maintainer: Eagle'sBaby
+Maintainer-email: 2229066748@qq.com
+License: Apache Licence 2.0
+Keywords: pyqt5,pop window
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3
+Requires-Dist: PyQt5
+
