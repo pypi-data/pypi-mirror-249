@@ -1,0 +1,6 @@
+lxml
+lxml-stubs
+cython
+numpy
+scipy
+scikit-learn
