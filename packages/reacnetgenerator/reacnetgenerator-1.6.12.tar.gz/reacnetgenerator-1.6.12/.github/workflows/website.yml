@@ -1,0 +1,49 @@
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v*
+  pull_request:
+  merge_group:
+name: Build website
+jobs:
+  test:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        architecture: 'x64'
+    - name: pip cache
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key:
+          ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - run: pip install tox
+    - run: tox
+      env:
+        TOXENV: docs
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: docs/_build/html
+  deploy:
+    needs: test
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

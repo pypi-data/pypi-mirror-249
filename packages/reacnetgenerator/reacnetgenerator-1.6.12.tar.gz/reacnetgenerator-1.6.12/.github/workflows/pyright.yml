@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v*
+  pull_request:
+  merge_group:
+name: Type checker
+jobs:
+  test:
+    name: pyright
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    - run: pip install -e .
+    - uses: jakebailey/pyright-action@v1
+      with:
+        version: 1.1.308
