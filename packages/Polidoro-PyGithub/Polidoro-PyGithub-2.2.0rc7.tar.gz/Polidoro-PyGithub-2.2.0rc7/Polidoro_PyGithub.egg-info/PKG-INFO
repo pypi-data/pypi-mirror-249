@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: Polidoro-PyGithub
+Version: 2.2.0rc7
+Summary: Use the full Github API v3
+Author-email: Vincent Jacques <vincent@vincent-jacques.net>, Heitor Polidoro <heitor.polidoro@gmail.com>
+Project-URL: Documentation, https://pygithub.readthedocs.io/en/stable/
+Project-URL: Source, https://github.com/heitorpolidoro/polidoro-pygithub
+Keywords: github
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: COPYING
+License-File: COPYING.LESSER
+Requires-Dist: pynacl>=1.5.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pyjwt[crypto]>=2.8.0
+Requires-Dist: typing-extensions>=4.9.0
+Requires-Dist: urllib3>=2.1.0
+Requires-Dist: Deprecated>=1.2.14
+Provides-Extra: integrations
+
+# Disclaimer
+This is just a fork for the original [PyGitHub](https://github.com/PyGithub/PyGithub)
+just to use the the features implemented in:
+
+- [![GitHub issue/pull request detail](https://img.shields.io/github/pulls/detail/title/PyGithub/PyGithub/2816?style=flat-square)![](https://img.shields.io/github/pulls/detail/state/pygithub/pygithub/2816?label&style=flat-square)](https://github.com/PyGithub/PyGithub/pull/2816)
+- [![GitHub issue/pull request detail](https://img.shields.io/github/pulls/detail/title/PyGithub/PyGithub/2868?style=flat-square)![](https://img.shields.io/github/pulls/detail/state/pygithub/pygithub/2868?label&style=flat-square)](https://github.com/PyGithub/PyGithub/pull/2816)
+
+When these PRs are released this repository and the PyPi releases will be removed!
+
+|         ![](https://img.shields.io/badge/pypi_package-gray) | ![](https://img.shields.io/badge/version-gray)                                                                       |
+|------------------------------------------------------------:|----------------------------------------------------------------------------------------------------------------------|
+| ![](https://img.shields.io/badge/Polidoro--PyGithub-orange) | [![PyPI](https://img.shields.io/pypi/v/Polidoro-PyGithub.svg?label)](https://pypi.python.org/pypi/Polidoro-PyGithub) |
+|             ![](https://img.shields.io/badge/PyGithub-blue) | [![PyPI](https://img.shields.io/pypi/v/PyGithub.svg?label)](https://pypi.python.org/pypi/PyGithub)                   |
+
+## Install
+
+```bash
+pip install Polidoro-PyGithub
+```
+
+More info check the original repository [PyGitHub](https://github.com/PyGithub/PyGithub)
