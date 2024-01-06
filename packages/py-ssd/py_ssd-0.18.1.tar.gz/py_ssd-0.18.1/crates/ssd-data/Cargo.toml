@@ -1,0 +1,22 @@
+[package]
+name = "ssd-data"
+version = "0.18.1"
+edition = "2021"
+license-file = "../../LICENSE"
+description = "A service and data description format + a code generator based on rhai scripts and templates"
+homepage = "https://github.com/ssd-codegen/ssd"
+repository = "https://github.com/ssd-codegen/ssd"
+readme = "../../README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.158", features = ["derive"] }
+termcolor = { version = "1.2.0", optional = true }
+pyo3 = { version = "0.20.0", features = ["extension-module"], optional = true }
+serde-value = "0.7.0"
+
+[features]
+default = []
+_python = ["dep:pyo3"]
+_access_functions = ["termcolor"]
