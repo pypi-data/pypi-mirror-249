@@ -1,0 +1,2 @@
+[console_scripts]
+kubr = kubr.main:main
