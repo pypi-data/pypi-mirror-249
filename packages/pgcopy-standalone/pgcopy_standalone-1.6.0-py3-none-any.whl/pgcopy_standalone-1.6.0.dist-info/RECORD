@@ -1,0 +1,11 @@
+pgcopy/__init__.py,sha256=CNpoDgAl1YVZkQEZNiwJx7umAXsZvnqZI98OdEgN_G0,59
+pgcopy/copy.py,sha256=lwQV6T4Q9HMrgAI12cknh8OjE0gP5ilhmSoSLcr1u2w,6032
+pgcopy/errors/__init__.py,sha256=6pCOSp4QrFJQhEibAzt1tVyFOAUrgUD7CeKp4GCuUn0,235
+pgcopy/errors/py2.py,sha256=1N8ffYsPqo_3MkJJzz0wdrm-2mE7PckLHVTzppk3Rn4,337
+pgcopy/errors/py3.py,sha256=XI1zl8sY252ONWftvceG3f70fU8V9h8_wuKnqzVVxJQ,143
+pgcopy/util.py,sha256=CNLZ6ylplqa70l5v-VquioVBAIQ7ewReTHN6Z1Vd0hw,12379
+pgcopy/version.py,sha256=X9pTeGHIYZtDOmfb9pnn2DEqWZMAyaPlqdFwEhsuSvk,22
+pgcopy_standalone-1.6.0.dist-info/LICENSE.txt,sha256=TcOAHaH8dra3iCUQaYvptveNp2rRUq01HuSqS5_Fqzg,1131
+pgcopy_standalone-1.6.0.dist-info/METADATA,sha256=7Pipi6zmoUfHX5-Kwc8IZu1XGUNRumGaIuT2Kz9Jpjk,2935
+pgcopy_standalone-1.6.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pgcopy_standalone-1.6.0.dist-info/RECORD,,
