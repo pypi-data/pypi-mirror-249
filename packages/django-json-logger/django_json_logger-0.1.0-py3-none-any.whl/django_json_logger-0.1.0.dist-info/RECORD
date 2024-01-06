@@ -1,0 +1,9 @@
+django_json_logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_json_logging/formatters.py,sha256=9AR9r9UtVuCJLyAljUIOWX4sicOmFML3Auy2O2B7yQU,2102
+django_json_logging/serializers.py,sha256=zzj7_R2ch3U30PT7_0v9XTcC-YsdXNOwGRF2VAhOmGs,3147
+django_json_logging/settings.py,sha256=Pmq_WcWcstczvAqufmEeqtLShFg_mgMjnpZUZOLSk6s,1944
+django_json_logger-0.1.0.dist-info/LICENSE,sha256=yO1nZvG5dLE_nQ3QylaGMKWQT6-1S2QQvtrYzjw5l8c,1062
+django_json_logger-0.1.0.dist-info/METADATA,sha256=dHtuhr4VDsEsoPOy3X4fOpMkhzKdjfn4exKj2eU95Zc,4345
+django_json_logger-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_json_logger-0.1.0.dist-info/top_level.txt,sha256=orRmA-TLqsC3oOFVuOMX3tsriH5-p3QZPDhZCemiw48,20
+django_json_logger-0.1.0.dist-info/RECORD,,
