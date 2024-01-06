@@ -1,0 +1,5 @@
+natsort
+vcfphasesets
+
+[testing]
+pytest

@@ -1,0 +1,10 @@
+README.md
+setup.py
+vcf2variants/__init__.py
+vcf2variants.egg-info/PKG-INFO
+vcf2variants.egg-info/SOURCES.txt
+vcf2variants.egg-info/dependency_links.txt
+vcf2variants.egg-info/entry_points.txt
+vcf2variants.egg-info/not-zip-safe
+vcf2variants.egg-info/requires.txt
+vcf2variants.egg-info/top_level.txt

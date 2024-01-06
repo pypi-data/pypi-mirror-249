@@ -1,0 +1,3 @@
+[console_scripts]
+vcf2variants = vcf2variants:main
+

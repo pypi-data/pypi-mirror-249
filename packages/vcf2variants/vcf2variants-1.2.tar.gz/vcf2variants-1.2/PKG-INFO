@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vcf2variants
+Version: 1.2
+Summary: A python tool to convert vcf to varda variant files.
+Home-page: http://github.com/varda/varda2_preprocessing
+Author: Mark Santcroos
+Author-email: m.a.santcroos@lumc.nl
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: testing
+
+UNKNOWN
+
