@@ -1,0 +1,11 @@
+textbite/detection.py,sha256=awL5b0bdPJThOf7x3TXx3XBfCbLgpquoCFVJK7NRFRg,5862
+textbite/geometry.py,sha256=Q7PEWNioK6ghnU5qWZ72Ut2HIOFbyoIWGxikNobapG4,4805
+textbite/improve_pagexml.py,sha256=W_ov4SBluqNzQbq74ahcV_3tBXXDFkFUAX5KFP0RpxE,5653
+textbite/user_scripts/infer.py,sha256=hV-MM0rEbbgiBxzVfvybRMriuYCuTWBie6X5dAO6Ai0,3988
+textbite/user_scripts/visualize.py,sha256=Q3fil966hNVU01ELLR5PF-Fux7u27BYnmDneIXd996w,6450
+textbite-0.1.0.dist-info/LICENSE,sha256=EnB47n6N6nfs5IVUEngi5KStQ-RrwEAMRNy119UGvfY,1491
+textbite-0.1.0.dist-info/METADATA,sha256=jpCIiG8NyvVVl7Y0Df8qqBMiqx32hvMIWSuM2G_zJhI,2855
+textbite-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+textbite-0.1.0.dist-info/entry_points.txt,sha256=flLK7GRRIZj4RvjlcE6JpCrWupVR3t3Finc8-4Qwoks,62
+textbite-0.1.0.dist-info/top_level.txt,sha256=tJyDyjkqoaza_J9qjqtTW2roZr1SKURz0rZhXLlZUMM,9
+textbite-0.1.0.dist-info/RECORD,,
