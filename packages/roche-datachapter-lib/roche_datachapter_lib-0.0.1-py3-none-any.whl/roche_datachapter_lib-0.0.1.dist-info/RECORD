@@ -1,0 +1,9 @@
+roche_datachapter_lib/__init__.py,sha256=7EzNqkrySP8qlWxBmfivgYmgIZHHVTSVHVVArMMgFDs,19
+roche_datachapter_lib/config.py,sha256=FQE9n3htKzU0d8-Y9VZ6dE50MEsxmkgas7Wyvgro__Y,1257
+roche_datachapter_lib/data_transformer.py,sha256=d9ytBPUx-xMwfnr2X45GkmM6O5LDVxu7T56yg_MDRqE,2533
+roche_datachapter_lib/db_config.py,sha256=n-RFIH7hCUHEkM6Mq1V1WHa9aolIozoDZgi_7VIHN0I,2341
+roche_datachapter_lib/google_services.py,sha256=p4FW7XTM9rzKNSDd1yc35c3zsXJ5rANCFFTDOhMuq2E,5430
+roche_datachapter_lib-0.0.1.dist-info/METADATA,sha256=TBpoZ2Zq-NX5VCh9_YEPi6BoxHouZJhxlcxSRZO2rIQ,1351
+roche_datachapter_lib-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+roche_datachapter_lib-0.0.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+roche_datachapter_lib-0.0.1.dist-info/RECORD,,

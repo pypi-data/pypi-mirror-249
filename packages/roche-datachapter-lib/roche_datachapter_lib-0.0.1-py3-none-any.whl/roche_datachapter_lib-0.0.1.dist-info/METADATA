@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: roche_datachapter_lib
+Version: 0.0.1
+Summary: Esta biblioteca de código esta pensada para compartir funcionalidades entre todos los procesos ETL que desarrollemos con Python
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Lucas Frías <lucasmatiasfrias@live.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Roche Data Chapeter LIB
+
+## Description
+It contains the base structure that includes the configuration parameters of the different databases using environment variables on the server, a static data_transformer class to perform the data transformation, connection to Google services through the Google REST API and a logger to keep track of the execution of the process.
+
+## Usage
+It is intended to be used as a requirement library at any Python ETL proyect
+
+## Support
+- Ignacio Castillo (ignacio.castillo@roche.com)
+- Lucas Frías (lucas.frias@roche.com)
+- Uciel Bustamante (uciel.bustamante@contractors.roche.com)
+- Sara Fernandez (sara.fernandez.sf1@roche.com)
+
+## Authors and acknowledgment
+Lucas Frías (lucas.frias@roche.com)
