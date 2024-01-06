@@ -1,0 +1,7 @@
+folium
+ipython
+matplotlib
+numpy
+rasterio
+scikit-learn
+scipy
