@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: chat-with-functions
+Version: 0.1.0
+Summary: 
+Author: Kento Masui
+Author-email: nameissoap@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: editdistance (>=0.6.2,<0.7.0)
+Requires-Dist: openai
+Requires-Dist: pinjected
+Requires-Dist: tiktoken
+Requires-Dist: watchdog (>=3.0.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+
