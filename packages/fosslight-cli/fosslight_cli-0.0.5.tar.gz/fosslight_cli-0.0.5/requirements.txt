@@ -1,0 +1,5 @@
+click==8.1.7
+requests==2.31.0
+dataclasses==0.6
+fosslight_scanner==1.7.20
+PyYAML==6.0.1
