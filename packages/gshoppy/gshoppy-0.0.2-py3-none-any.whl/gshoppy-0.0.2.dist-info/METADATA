@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gshoppy
+Version: 0.0.2
+Summary: A package to facilitate the use of Google Shopping API
+Author: Jake Williamson
+Author-email: <brianjw88@gmail.com>
+Keywords: python,google,shopping,api,google shopping api
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+
