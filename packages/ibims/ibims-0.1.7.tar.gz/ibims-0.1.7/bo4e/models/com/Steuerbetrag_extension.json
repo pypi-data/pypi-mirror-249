@@ -1,0 +1,21 @@
+[
+  {
+    "pattern": "com\\.Steuerbetrag",
+    "fieldName": "steuerwertVorausgezahlt",
+    "fieldDef": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Steuerwertvorausgezahlt"
+    }
+  }
+]

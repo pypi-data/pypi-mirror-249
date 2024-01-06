@@ -1,0 +1,202 @@
+{
+  "additionalProperties": true,
+  "description": "Resolve some ambiguity of `Strom` and `Gas`",
+  "properties": {
+    "versionstruktur": {
+      "default": "2",
+      "title": "Versionstruktur",
+      "type": "string"
+    },
+    "boTyp": {
+      "allOf": [
+        {
+          "$ref": "../enum/BoTyp.json#"
+        }
+      ],
+      "default": "ZAEHLER"
+    },
+    "externeReferenzen": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "../com/ExterneReferenz.json#"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Externereferenzen"
+    },
+    "_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": " Id"
+    },
+    "zaehlernummer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Zaehlernummer"
+    },
+    "sparte": {
+      "anyOf": [
+        {
+          "$ref": "../enum/Sparte.json#"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "zaehlerauspraegung": {
+      "anyOf": [
+        {
+          "$ref": "../enum/Zaehlerauspraegung.json#"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "zaehlertyp": {
+      "$ref": "../enum/Zaehlertyp.json#"
+    },
+    "zaehlwerke": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "../com/Zaehlwerk.json#"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Zaehlwerke"
+    },
+    "tarifart": {
+      "anyOf": [
+        {
+          "$ref": "../enum/Tarifart.json#"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "zaehlerkonstante": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Zaehlerkonstante"
+    },
+    "eichungBis": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Eichungbis"
+    },
+    "letzteEichung": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Letzteeichung"
+    },
+    "zaehlerhersteller": {
+      "anyOf": [
+        {
+          "$ref": "Geschaeftspartner.json#"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "messwerterfassung": {
+      "$ref": "../enum/Messwerterfassung.json#"
+    },
+    "nachstesAblesedatum": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Nachstesablesedatum"
+    },
+    "aktiverZeitraum": {
+      "anyOf": [
+        {
+          "$ref": "../com/Zeitraum.json#"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "zaehlergroesse": {
+      "$ref": "../enum/Geraetemerkmal.json#"
+    },
+    "druckniveau": {
+      "$ref": "../enum/Netzebene.json#"
+    }
+  },
+  "required": [
+    "zaehlertyp",
+    "messwerterfassung",
+    "zaehlergroesse",
+    "druckniveau"
+  ],
+  "title": "ZaehlerGas",
+  "type": "object"
+}

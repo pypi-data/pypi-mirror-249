@@ -1,0 +1,40 @@
+{
+  "additionalProperties": true,
+  "description": "Bundle common attributes of MBA and CBA.",
+  "properties": {
+    "_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": " Id"
+    },
+    "ouid": {
+      "title": "Ouid",
+      "type": "integer"
+    },
+    "vertragsAdresse": {
+      "$ref": "Adresse.json#"
+    },
+    "vertragskontonummer": {
+      "title": "Vertragskontonummer",
+      "type": "string"
+    },
+    "rechnungsstellung": {
+      "$ref": "../enum/Kontaktart.json#"
+    }
+  },
+  "required": [
+    "ouid",
+    "vertragsAdresse",
+    "vertragskontonummer",
+    "rechnungsstellung"
+  ],
+  "title": "Vertragskonto",
+  "type": "object"
+}
