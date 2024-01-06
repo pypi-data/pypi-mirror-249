@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: asaniczka
+Version: 1.1.3
+Summary: All my commonly used fuctions
+Author-email: Asaniczka <asaniczka@gmail.com>
+Maintainer-email: Asaniczka <asaniczka@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/asaniczka/asaniczka_pip
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Requires-Dist: pytz >=2022.1
+Requires-Dist: requests >=2.31
+Requires-Dist: playwright >=1.40.0
+
