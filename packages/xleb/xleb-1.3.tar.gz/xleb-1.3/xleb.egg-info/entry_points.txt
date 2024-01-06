@@ -1,0 +1,2 @@
+[console_scripts]
+xleb = xleb.__main__:main
