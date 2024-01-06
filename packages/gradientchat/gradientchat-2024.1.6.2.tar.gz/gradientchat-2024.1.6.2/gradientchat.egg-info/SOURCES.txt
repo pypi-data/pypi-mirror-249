@@ -1,0 +1,8 @@
+README.md
+setup.py
+gradientchat/__init__.py
+gradientchat.egg-info/PKG-INFO
+gradientchat.egg-info/SOURCES.txt
+gradientchat.egg-info/dependency_links.txt
+gradientchat.egg-info/requires.txt
+gradientchat.egg-info/top_level.txt
