@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "atk-training-pritam-oop-wf-basic"
+version = "0.1.0"
+description = "Framework for training wf projects using classes and objects"
+authors = ["Pritam Chowdhury <pritam@aganitha.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+typer = "^0.9.0"
+pyyaml = "^6.0.1"
+
+
+
+[tool.poetry.scripts]
+atk-pritam-oop-wf-basic = "atk_training_pritam_oop_wf_basic.commands:app"
+atk-pritam-oop-wf-basic-stream = "atk_training_pritam_oop_wf_basic.commands:stream_app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
