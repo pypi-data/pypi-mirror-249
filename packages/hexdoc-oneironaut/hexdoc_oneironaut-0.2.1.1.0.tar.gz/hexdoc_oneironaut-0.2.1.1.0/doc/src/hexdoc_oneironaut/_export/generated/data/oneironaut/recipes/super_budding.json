@@ -1,0 +1,13 @@
+{
+  "type": "hexcasting:brainsweep",
+  "blockIn": {
+    "type": "block",
+    "block": "oneironaut:pseudoamethyst_block"
+  },
+  "result": {
+    "name": "oneironaut:super_budding"
+  },
+  "villagerIn": {
+    "minLevel": 5
+  }
+}
