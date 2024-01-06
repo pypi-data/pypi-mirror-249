@@ -1,0 +1,31 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="arctic_charr_matcher",
+    version="0.1.3",
+    packages=find_packages(include=["arctic_charr_matcher"]),
+    install_requires=[
+        "notebook>=7.0.0",
+        "numpy>=1.26.0,<2.0.0",
+        "matplotlib>=3.8.0,<4.0.0",
+        "opencv-python-headless>=4.8.1.78,<5.0.0",
+        "tensorflow>=2.10.0,<3.0.0",
+        "keras>=2.10.0,<3.0.0",
+        "keras-unet>=0.1.2,<0.2.0",
+        "scikit-image>=0.22.0,<0.23.0",
+        "scikit-learn>=1.3.2,<2.0.0",
+        "scipy>=1.11.0,<2.0.0",
+        "pandas>=2.1.3,<2.0.0",
+        "xlrd>=2.0.1,<3.0.0",
+        "sep>=1.2.1,<2.0.0",
+    ],
+    author="Walker Herndon",
+    author_email="walker.herndon01@gmail.com",
+    description="Arctic Charr matching library",
+    long_description=open("README.md", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/walker-herndon/Arctic_charr_packaged",
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest"],
+    test_suite="tests",
+)
