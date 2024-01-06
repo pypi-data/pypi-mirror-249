@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mace-models"
+version = "0.1.1"
+description = "Access pre-trained MACE models"
+authors = ["Rokas Elijošius <re344@cam.ac.uk>", "Fabian Zills <fzills@icp.uni-stuttgart.de>"]
+readme = "README.md"
+packages = [{include = "mace_models"}]
+
+[tool.poetry.urls]
+repository = "https://github.com/RokasEl/MACE-Models"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+zntrack = "^0.7.2"
+dvc-s3 = "^3"
+ase = "^3.22.1"
+
+[tool.poetry.group.mace.dependencies]
+mace = {git = "https://github.com/ACEsuit/mace"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+select = ["I"]
