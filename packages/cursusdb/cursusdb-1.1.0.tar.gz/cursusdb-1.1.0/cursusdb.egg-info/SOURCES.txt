@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+cursusdb/__init__.py
+cursusdb/main.py
+cursusdb.egg-info/PKG-INFO
+cursusdb.egg-info/SOURCES.txt
+cursusdb.egg-info/dependency_links.txt
+cursusdb.egg-info/top_level.txt
