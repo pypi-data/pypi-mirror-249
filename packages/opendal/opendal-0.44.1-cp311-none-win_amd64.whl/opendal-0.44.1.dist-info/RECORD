@@ -1,0 +1,8 @@
+opendal-0.44.1.dist-info/METADATA,sha256=pdnVJW9QpEu5oAa_StFnQYmxXI9V8n53RWmbgPF3Qoo,3442
+opendal-0.44.1.dist-info/WHEEL,sha256=QWeP2iNVclb1lqJMYxkB3S_jGRNF2KI-alH1eOqR1Tk,95
+opendal/exceptions.pyi,sha256=DELvTnqavBwDYGt0eOIlCNE_ZLtPVX3FzVX5_YnCs-o,1810
+opendal/layers.pyi,sha256=BamdcAh1QsJmDHwB78TRp8V9FdkbjpAvv-eFt2hngaM,1142
+opendal/__init__.py,sha256=itsp44hOtDFiQjlBunXIgLe4__XOJLCiTHHOLgsfHuY,886
+opendal/__init__.pyi,sha256=7J7Td0uHNDXAcupzCqgqDOAaZHsOXB0totjC1cMzHWU,5921
+opendal/_opendal.cp311-win_amd64.pyd,sha256=ttj2eb0ko6kBlgsSd3puflDkyWR1lvxXp0fqMzpf_lI,54905856
+opendal-0.44.1.dist-info/RECORD,,
