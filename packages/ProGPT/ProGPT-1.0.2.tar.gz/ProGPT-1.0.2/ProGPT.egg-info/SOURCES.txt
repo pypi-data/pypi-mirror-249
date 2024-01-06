@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+ProGPT/Authentication.py
+ProGPT/Conversation.py
+ProGPT/Generative.py
+ProGPT/__init__.py
+ProGPT.egg-info/PKG-INFO
+ProGPT.egg-info/SOURCES.txt
+ProGPT.egg-info/dependency_links.txt
+ProGPT.egg-info/requires.txt
+ProGPT.egg-info/top_level.txt
