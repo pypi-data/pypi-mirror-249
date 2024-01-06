@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+segment_multiwell_plate/__init__.py
+segment_multiwell_plate/__version__.py
+segment_multiwell_plate/segment_multiwell_plate.py
+segment_multiwell_plate.egg-info/PKG-INFO
+segment_multiwell_plate.egg-info/SOURCES.txt
+segment_multiwell_plate.egg-info/dependency_links.txt
+segment_multiwell_plate.egg-info/not-zip-safe
+segment_multiwell_plate.egg-info/requires.txt
+segment_multiwell_plate.egg-info/top_level.txt
+tests/test_find_grid.py
+tests/test_find_well_centres.py
