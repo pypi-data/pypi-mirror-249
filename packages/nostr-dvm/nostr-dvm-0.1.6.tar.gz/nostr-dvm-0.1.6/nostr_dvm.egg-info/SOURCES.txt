@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nostr_dvm.egg-info/PKG-INFO
+nostr_dvm.egg-info/SOURCES.txt
+nostr_dvm.egg-info/dependency_links.txt
+nostr_dvm.egg-info/requires.txt
+nostr_dvm.egg-info/top_level.txt
+tests/test_dvm_client.py
+tests/test_events.py
