@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+CUDA/bin/gpuNUFFT.egg-info/PKG-INFO
+CUDA/bin/gpuNUFFT.egg-info/SOURCES.txt
+CUDA/bin/gpuNUFFT.egg-info/dependency_links.txt
+CUDA/bin/gpuNUFFT.egg-info/not-zip-safe
+CUDA/bin/gpuNUFFT.egg-info/top_level.txt
