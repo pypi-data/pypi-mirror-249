@@ -1,0 +1,8 @@
+appdirs
+fire
+numpy
+pydantic>=2
+pydantic-settings
+python-dateutil
+python-dotenv
+requests
