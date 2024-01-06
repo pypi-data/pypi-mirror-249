@@ -1,0 +1,3 @@
+[console_scripts]
+lasrasterize=lasrasterize.cli:main
+
