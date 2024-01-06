@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: nexor
+Version: 2024.1.5.66669.dev1
+Summary: A Python tooling nexus
+Author-email: Moshe Zadka <moshez@zadka.club>
+License: Permission is hereby granted, free of charge, to any person obtaining a
+        copy of this software and associated documentation files (the "Software"),
+        to deal in the Software without restriction, including without limitation the
+        rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is furnished
+        to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+        INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+        PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+        HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+        CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+        OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/moshez/nexor
+Description-Content-Type: text/x-rst
+Requires-Dist: gather >=2024.1.5.1
+Requires-Dist: copier
+Requires-Dist: tomlkit
+Requires-Dist: hyperlink
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: black ; extra == 'lint'
+Provides-Extra: mypy
+Requires-Dist: mypy ; extra == 'mypy'
+Provides-Extra: tests
+Requires-Dist: virtue ; extra == 'tests'
+Requires-Dist: pyhamcrest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+nexor
+=====
+
+Note:
+not recommended for GA yet.
+
+The
+`nexor`
+command tries to help reasonable workflow
+for Python
+which is build-tool agnostic.
+
+* `nexor relock`: Create `requirements-<...>.txt` files for all extra dependencies,
+  and a `requirements.txt` without any extras.
+* `nexor env`: Create a virtual environment in `WORKON_HOME`
+  or, if one already exists,
+  install the dependencies in it from the lock file.
+  By default this is `requirements.txt`,
+  but you can configure in
+  `pyproject.toml`
+  under
+  `tools.nexor`
+  default_extra to be something else.
+* `nexor depend`: Add a dependency to `pyproject.toml`.
+  Also,
+  by default,
+  relock the files
+  and update the env.
+
+You can also add new commands to nexor.
+[more docs here about how to do it.]
