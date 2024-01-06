@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: motrack-motion
+Version: 0.2.1
+Summary: Tracking-by-detection (MOT) motion filters
+Home-page: https://github.com/Robotmurlock/Motrack-motion
+Author: Momir Adzemovic
+Author-email: momir.adzemovic@gmail.com
+Keywords: motion-filters
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+
+# Motrack-motion
+
+Extension of [Motrack](https://github.com/Robotmurlock/Motrack) framework
+for multi-object-tracking specialized in motion models and filters.
+These models can be used as drop-in replacement for Kalman filter
+in popular MOT algorithms.
