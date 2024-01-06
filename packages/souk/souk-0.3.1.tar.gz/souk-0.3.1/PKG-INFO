@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: souk
+Version: 0.3.1
+Summary: SO:UK Data Centre documentation.
+Home-page: https://docs.souk.ac.uk
+License: BSD-3-Clause
+Keywords: data centre,HPC,HTC,SO:UK
+Author: Kolen Cheung
+Author-email: christian.kolen@gmail.com
+Requires-Python: >=3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Provides-Extra: docs
+Provides-Extra: extras
+Provides-Extra: tests
+Requires-Dist: archspec
+Requires-Dist: bump-my-version ; extra == "extras"
+Requires-Dist: coverage ; extra == "tests"
+Requires-Dist: defopt
+Requires-Dist: furo ; extra == "docs"
+Requires-Dist: linkify-it-py ; extra == "docs"
+Requires-Dist: myst-parser ; extra == "docs"
+Requires-Dist: psutil
+Requires-Dist: py-cpuinfo
+Requires-Dist: pytest ; extra == "tests"
+Requires-Dist: ruamel.yaml
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-autobuild ; extra == "docs"
+Requires-Dist: sphinx-last-updated-by-git ; extra == "docs"
+Requires-Dist: sphinxcontrib-apidoc ; extra == "docs"
+Project-URL: Documentation, https://docs.souk.ac.uk
+Project-URL: Repository, https://github.com/simonsobs-uk/data-centre
+Description-Content-Type: text/markdown
+
+```{toctree}
+:maxdepth: 2
+:numbered:
+:hidden:
+
+user
+developer
+maintainer
+presentation
+api/modules
+changelog
+links
+```
+
+```{include} ../README.md
+```
+

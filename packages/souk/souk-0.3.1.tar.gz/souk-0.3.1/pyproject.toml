@@ -1,0 +1,163 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "souk"
+version = "0.3.1"
+description = "SO:UK Data Centre documentation."
+license = "BSD-3-Clause"
+keywords = [
+    "data centre",
+    "HPC",
+    "HTC",
+    "SO:UK",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Utilities",
+]
+homepage = "https://docs.souk.ac.uk"
+repository = "https://github.com/simonsobs-uk/data-centre"
+documentation = "https://docs.souk.ac.uk"
+authors = ["Kolen Cheung <christian.kolen@gmail.com>"]
+readme = "docs/index.md"
+packages = [
+    { include = "souk", from = "src" },
+]
+include = [
+    'LICENSE',
+    'README.md',
+]
+
+[tool.poetry.dependencies]
+archspec = "*"
+defopt = "*"
+psutil = "*"
+py-cpuinfo = "*"
+python = ">=3.9"
+"ruamel.yaml" = "*"
+
+# extras
+bump-my-version = {optional = true, version = "*"}
+# coloredlogs = {optional = true, version = "*"}
+
+# tests
+coverage = { optional = true, version = "*" }
+pytest = {optional = true, version = "*"}
+
+# docs: sync this with tox.testenv.docs below
+furo = {optional = true, version = "*"}
+linkify-it-py = {optional = true, version = "*"}
+myst-parser = {optional = true, version = "*"}
+sphinx = {optional = true, version = "*"}
+sphinx-autobuild = {optional = true, version = "*"}
+sphinx-last-updated-by-git = {optional = true, version = "*"}
+sphinxcontrib-apidoc = {optional = true, version = "*"}
+
+[tool.poetry.extras]
+extras = [
+    "bump-my-version",
+    # "coloredlogs",
+]
+tests = [
+    "coverage",
+    "pytest",
+]
+docs = [
+    "furo",
+    "linkify-it-py",
+    "myst-parser",
+    "sphinx-autobuild",
+    "sphinx-last-updated-by-git",
+    "sphinx",
+    "sphinxcontrib-apidoc",
+]
+
+[tool.poetry.scripts]
+souk_arch_info = 'souk.system.arch_info:cli'
+
+[tool.coverage.paths]
+source = [
+    'src',
+]
+
+[tool.coverage.run]
+branch = true
+source = [
+    'src',
+]
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
+precision = 2
+
+[tool.pytest.ini_options]
+
+python_files = [
+    'test_*.py',
+    '*_test.py',
+    'tests.py',
+]
+
+addopts = [
+    '-ra',
+    '--strict-markers',
+    '--doctest-modules',
+    '--doctest-glob=\*.rst',
+    '--tb=short',
+]
+
+testpaths = [
+    'tests',
+]
+
+[tool.isort]
+line_length = 120
+known_first_party = 'souk'
+default_section = 'THIRDPARTY'
+skip = [
+    '.tox',
+    '.eggs',
+    'ci/templates',
+    'build',
+    'dist',
+]
+
+[tool.bumpversion]
+current_version = "0.3.1"
+commit = true
+tag = true
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "docs/conf.py"
+search = 'release = "{current_version}"'
+replace = 'release = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "src/souk/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "docs/maintainer/releasing.md"
+search = 'v{current_version}...main'
+replace = 'v{new_version}...main'
