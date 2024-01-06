@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HCiw"
+version = "0.0.19"
+authors = [
+  { name="Galen Seilis", email="galen.seilis@seilis.ca" },
+]
+description = "Additional utilities for using the Ciw Python package."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/galenseilis/HCiw/tree/main"
+"Bug Tracker" = "https://github.com/galenseilis/HCiw/issues"
+
+[tool.ruff.lint.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 5.
+max-complexity = 5
+
