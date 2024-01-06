@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/transfernet/__init__.py
+src/transfernet/datasets.py
+src/transfernet/models.py
+src/transfernet/plots.py
+src/transfernet/utils.py
+src/transfernet.egg-info/PKG-INFO
+src/transfernet.egg-info/SOURCES.txt
+src/transfernet.egg-info/dependency_links.txt
+src/transfernet.egg-info/requires.txt
+src/transfernet.egg-info/top_level.txt
+tests/test_run.py
