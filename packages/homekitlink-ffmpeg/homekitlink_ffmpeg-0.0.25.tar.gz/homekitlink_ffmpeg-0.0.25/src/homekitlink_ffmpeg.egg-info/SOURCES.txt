@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/homekitlink_ffmpeg/__init__.py
+src/homekitlink_ffmpeg.egg-info/PKG-INFO
+src/homekitlink_ffmpeg.egg-info/SOURCES.txt
+src/homekitlink_ffmpeg.egg-info/dependency_links.txt
+src/homekitlink_ffmpeg.egg-info/not-zip-safe
+src/homekitlink_ffmpeg.egg-info/top_level.txt
+src/homekitlink_ffmpeg/ffmpeg_binaries/arm/ffmpeg
+src/homekitlink_ffmpeg/ffmpeg_binaries/x86/ffmpeg
