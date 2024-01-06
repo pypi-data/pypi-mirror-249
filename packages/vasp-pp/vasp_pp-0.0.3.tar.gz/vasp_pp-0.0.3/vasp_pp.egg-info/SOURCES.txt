@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/__init__.py
+src/gw_calc.py
+vasp_pp.egg-info/PKG-INFO
+vasp_pp.egg-info/SOURCES.txt
+vasp_pp.egg-info/dependency_links.txt
+vasp_pp.egg-info/requires.txt
+vasp_pp.egg-info/top_level.txt
