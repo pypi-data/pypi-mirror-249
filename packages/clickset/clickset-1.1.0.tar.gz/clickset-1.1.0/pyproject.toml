@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "clickset"
+version = "1.1.0"
+description = "In-class settings configurable via both click and confuse libraries\u001b"
+authors = ["David Morris <gypsysoftware@gmail.com>"]
+license = "MIT"
+repository = "https://gitlab.com/selcouth/clickset"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+confuse = "^2.0.1"
+click = "^8.1.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
