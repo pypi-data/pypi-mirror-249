@@ -1,0 +1,12 @@
+tidevice3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tidevice3/__main__.py,sha256=a4u0BaIXggbUldQsE2zTLursvFeILw3h4c8MAP-ERq8,423
+tidevice3/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tidevice3/cli/cli_common.py,sha256=Kv8rmD2syof88XRPYYsenD5qJtCffhniD4D0ZLhWYoA,1255
+tidevice3/cli/developer.py,sha256=6cBTTDOPxkwF1kaV3DCJPkiq4tb-pDNS9wRR_5pFQag,915
+tidevice3/cli/list.py,sha256=B7LC3b0xvfK8NVSsuc020k-UL8vIQQw2GjOi_4MOheQ,1225
+tidevice3/cli/uninstall.py,sha256=KpzUkFnfT_-rD46aeXI_wq_evN6ycsPLEGEZMB9jqxU,568
+tidevice3-0.1.1.dist-info/LICENSE,sha256=RyeW676gBYO7AVVP2zQgfEx5rPSt46vR47xXZe7TlX4,1068
+tidevice3-0.1.1.dist-info/METADATA,sha256=ciz71z83adpkYl24wkzNOnQkQsX8JgYZiNM5glPhuCU,1329
+tidevice3-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tidevice3-0.1.1.dist-info/entry_points.txt,sha256=5uF1-YByd5GgYppVY72dUoyTO-49CbsTGgL0vWhNc_c,46
+tidevice3-0.1.1.dist-info/RECORD,,
