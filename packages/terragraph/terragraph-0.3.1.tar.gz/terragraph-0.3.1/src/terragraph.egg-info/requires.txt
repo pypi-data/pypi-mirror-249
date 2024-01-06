@@ -1,0 +1,5 @@
+Click>=7.0
+pydot>=2.0.0
+
+[dev]
+pytest>=3
