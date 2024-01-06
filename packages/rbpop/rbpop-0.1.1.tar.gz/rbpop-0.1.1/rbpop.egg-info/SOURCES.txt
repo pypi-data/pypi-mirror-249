@@ -1,0 +1,9 @@
+setup.py
+rbpop/__init__.py
+rbpop/win_manager.py
+rbpop/win_pop.py
+rbpop.egg-info/PKG-INFO
+rbpop.egg-info/SOURCES.txt
+rbpop.egg-info/dependency_links.txt
+rbpop.egg-info/requires.txt
+rbpop.egg-info/top_level.txt
