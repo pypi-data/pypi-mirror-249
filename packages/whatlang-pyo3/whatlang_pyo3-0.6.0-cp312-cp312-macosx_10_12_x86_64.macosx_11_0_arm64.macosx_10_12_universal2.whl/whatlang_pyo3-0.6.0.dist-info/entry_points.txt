@@ -1,0 +1,10 @@
+[console_scripts]
+detect=whatlang:detect
+detect_lang=whatlang:detect_lang
+detect_script=whatlang:detect_script
+batch_detect=whatlang:batch_detect
+[gui_scripts]
+detect=whatlang:detect
+detect_lang=whatlang:detect_lang
+batch_detect=whatlang:batch_detect
+detect_script=whatlang:detect_script
