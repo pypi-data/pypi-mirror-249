@@ -1,0 +1,9 @@
+polars_xdt-0.4.3.dist-info/METADATA,sha256=ysd1kr_BSyJOhyF7g4-J87kjn82DyQExzWvH2dnMVDU,2918
+polars_xdt-0.4.3.dist-info/WHEEL,sha256=UV9zG4LLu5aozZ4CLlFrx0g296T6XFIH7lrdHjOZdds,106
+polars_xdt-0.4.3.dist-info/license_files/LICENSE,sha256=Gcpl9_lt2F5Z0vwCKjpqfmQ14E77Vu7bNk5HUIyvCcE,1077
+polars_xdt/.mypy.ini,sha256=1gjlZIn_Po2g94QTICkTmMFAiFOn8HfD2-LxxLEKS5w,19
+polars_xdt/__init__.py,sha256=m_c5oM_HNOH1WhtA9n5ZCh-cNcFvroGHnOHmj3yjwnc,11370
+polars_xdt/ranges.py,sha256=2NZgbQNv_sgnIJxbEMYdLAqH_ZmVfnSxR8Vsjhc3DlM,4876
+polars_xdt/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polars_xdt/polars_xdt.cpython-311-darwin.so,sha256=-EirGdoPkymlQy30iR9lt_oTVeU-kUanxUXbfPwK8JU,13940808
+polars_xdt-0.4.3.dist-info/RECORD,,
