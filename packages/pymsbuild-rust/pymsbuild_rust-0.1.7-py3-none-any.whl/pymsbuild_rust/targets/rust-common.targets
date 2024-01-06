@@ -1,0 +1,62 @@
+<Project>
+  <Target Name="PrepareForBuild">
+    <MakeDir Directories="$(IntDir);$(OutDir)" />
+  </Target>
+
+  <PropertyGroup>
+    <GetSdistFilesTargets>_GetRustSdistFiles;$(GetSdistFilesTargets)</GetSdistFilesTargets>
+  </PropertyGroup>
+
+  <Target Name="_GetRustSdistFiles">
+    <ItemGroup>
+      <AllSourceFiles Include="@(Cargo)" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="_CalculateRustCompileItems">
+    <ItemGroup>
+      <_RustCompile Include="@(None);@(Cargo)" />
+      <_IntTargetFile Include="$([msbuild]::EnsureTrailingSlash($(IntDir)))$([msbuild]::EnsureTrailingSlash($(IntTargetDir)))$(IntTargetName)$(IntTargetExt)">
+        <Destination>$(OutDir)$(TargetName)$(TargetExt)</Destination>
+      </_IntTargetFile>
+    </ItemGroup>
+  </Target>
+
+  <Target Name="_RustCompile"
+          Inputs="@(_RustCompile)"
+          Outputs="@(_IntTargetFile)"
+          DependsOnTargets="_RustRunCompile" />
+
+  <Target Name="_RustRunCompile">
+    <Message Text="%(Cargo.Identity) -> @(_IntTargetFile)" Importance="high" />
+    <PropertyGroup>
+      <!-- Base command -->
+      <_Cmd>$(Rust_Cmd)</_Cmd>
+      <!-- Output path -->
+      <_Cmd>$(_Cmd) $(Rust_OutDir_Opt) &quot;$(IntDir)$(_EscapeSep)&quot;</_Cmd>
+      <!-- Input path -->
+      <_Cmd>$(_Cmd) --manifest-path &quot;%(Cargo.Identity)&quot;</_Cmd>
+    </PropertyGroup>
+    <Message Importance="Normal" Text="Executing $(_Cmd)" />
+    <Exec Command="$(_Cmd)" StandardOutputImportance="$(_Low)" />
+    <ItemGroup>
+      <FileWrites Include="$(IntDir)$([msbuild]::EnsureTrailingSlash($(IntTargetDir)))**/*" />
+      <FileWrites Include="$(IntDir).rustc_info.json" />
+      <FileWrites Include="$(IntDir)CACHEDIR.TAG" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_IntTargetFile)"
+          DestinationFiles="%(_IntTargetFile.Destination)"
+          UseHardLinksIfPossible="true">
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites" />
+    </Copy>
+  </Target>
+
+  <Target Name="RustCompile" DependsOnTargets="$(BeforeRustCompileTargets);_CalculateRustCompileItems;_RustCompile">
+  </Target>
+
+  <Target Name="CoreBuild" DependsOnTargets="PrepareForBuild;$(BeforeBuildGenerateSourcesTargets);RustCompile" />
+  <Target Name="Build" DependsOnTargets="CoreBuild;_SaveFileWrites" />
+  <Target Name="Clean" DependsOnTargets="_CleanFileWrites">
+    <RemoveDir Directories="$(IntDir)" />
+  </Target>
+</Project>
