@@ -1,0 +1,12 @@
+libsodium/__init__.py,sha256=750Z6OncshkqPViifom5RuXPa4CBi6U3rK4Dqp0fbWE,297
+libsodium/__main__.py,sha256=k9_-ymIy_aZx4F9dSIsJbEuBL8cwVTRl5VvCwZT5mcY,27118
+libsodium/classes.py,sha256=n3dLUM29yD0Ec8xKB4keqaaMzZmcRr5VVHQCKATIzmw,3981
+libsodium/utils.py,sha256=rb6ec1csIVX1FAetxPFy_iM76ahQAKkknlXhXTrN0EE,348
+libsodium/wsgi.py,sha256=SCHw_Mgm8bsben1TQ8AZbpIzkTXXZezIVM2r8Qf6Wx0,10707
+libsodium/db/__init__.py,sha256=2XSU9Pknq2IuD8XGBH2vV7KB5iBfgjg_A5VTGDgI_RE,487
+libsodium/db/connect.py,sha256=yFgI_gDJA7XsvhGcp5L8oXgn5svcAH0CRNpAzUSkCB8,302
+libsodium-2.7.0.dist-info/LICENCE,sha256=K-XI6SP9l_zB6bVq7NxUlZjHje4-QyUrCilypoqboMg,1064
+libsodium-2.7.0.dist-info/METADATA,sha256=tsN-E79Ei-gno_szT3y919QFUW8a977cMJtxZgUt1tY,980
+libsodium-2.7.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+libsodium-2.7.0.dist-info/top_level.txt,sha256=kGD4ZT3JA2SRdsb0WrGG1grrLQqYIMYQ3KD3hQw-3Jk,10
+libsodium-2.7.0.dist-info/RECORD,,
