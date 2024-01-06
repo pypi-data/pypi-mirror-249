@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/bard_webapi/__init__.py
+src/bard_webapi/client.py
+src/bard_webapi/const.py
+src/bard_webapi/types.py
+src/bard_webapi/utils.py
+src/bard_webapi.egg-info/PKG-INFO
+src/bard_webapi.egg-info/SOURCES.txt
+src/bard_webapi.egg-info/dependency_links.txt
+src/bard_webapi.egg-info/requires.txt
+src/bard_webapi.egg-info/top_level.txt

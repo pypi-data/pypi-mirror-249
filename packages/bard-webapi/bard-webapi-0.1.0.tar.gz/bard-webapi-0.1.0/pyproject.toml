@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bard-webapi"
+version = "0.1.0"
+authors = [
+    {name = "UZQueen"},
+]
+description = "Reverse Engineered Async API for Google Bard"
+readme = "README.md"
+license = {text = "MIT License"}
+keywords = ["API", "Async", "Bard", "Google Bard", "Google", "Gemini", "LLM"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "httpx>=0.25.2",
+    "pydantic>=2.5.3",
+    "loguru>=0.7.2",
+]
+
+[project.urls]
+Repository = "https://github.com/HanaokaYuzu/Bard-WebAPI"
+Issues = "https://github.com/HanaokaYuzu/Bard-WebAPI/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["bard_webapi"]
