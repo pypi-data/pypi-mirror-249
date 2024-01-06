@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jsonschematools"
+version = "0.1.1"
+authors = [{name = "Dustin Wyatt", email = "dustin.wyatt@gmail.com"}]
+description = "Utilities for working with JSON Schema."
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["json", "schema", "python"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/dmwyatt/jsonschematools"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.hatch.version]
+source = "single"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jsonschematools"]
