@@ -1,0 +1,7 @@
+spotflow_device-1.1.1.dist-info/METADATA,sha256=A2ADoNs0G9pR-eNxQPcegtvPEtpdRQKRGMYYs0dtaGw,264
+spotflow_device-1.1.1.dist-info/WHEEL,sha256=TZt2KSIVxFBqGJ3Nlzs-Ax5C_okeQ7lJKl6eUhy0Us4,94
+spotflow_device/__init__.py,sha256=JfDnDKXS9NhCUjE-SCX9orPSkyDRS_iyfQXF4XMWs5o,143
+spotflow_device/__init__.pyi,sha256=COalUawqhhvV1SypzonrkGZ37Ok2H7laNMX0q3NewoQ,2614
+spotflow_device/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spotflow_device/spotflow_device.pyd,sha256=c8K_rZaHNxeqRwv05KJHOraxStL1GS7eJQ6yM5tmNF4,7938560
+spotflow_device-1.1.1.dist-info/RECORD,,
