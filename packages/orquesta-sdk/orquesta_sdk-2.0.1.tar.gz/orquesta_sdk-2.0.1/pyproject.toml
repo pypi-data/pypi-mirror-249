@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "orquesta_sdk"
+version = '2.0.1'
+description = "Integrate and operate your products with the power of Large Language Models from a single collaboration platform. Conduct prompt engineering, experimentation, operations and monitoring across models, with full transparency on quality and costs."
+authors = ["Orquesta <info@orquesta.cloud>"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries",
+]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0.0"
+requests = "^2.28.2"
+httpx = "^0.25.2"
+
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+pytest = "^6.2.5"
+pytest-cov = "^2.12.1"
+pytest-sugar = "^0.9.4"
+tox = "^3.24.4"
+tox-pyenv = "^1.1.0"
+pytest-watch = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.5.3"
+sphinx = "^7.2.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
