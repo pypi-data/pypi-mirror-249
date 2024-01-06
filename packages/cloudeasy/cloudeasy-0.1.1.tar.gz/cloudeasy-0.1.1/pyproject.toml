@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "cloudeasy"
+version = "0.1.1"
+description = "Some proxy for alicloud operation based on raw alicloud tea api"
+authors = ["Calm Zhu <zhuqian@yirenchengtuan.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/calmzhu/pycloudeasy"
+
+packages = [{ include = "cloudeasy" }]
+[tool.poetry.dependencies]
+python = "^3.8"
+alibabacloud-tea-openapi = "^0.3.8"
+aiohttp ="^3.9.0"
+requests = "^2.31.0"
+pynacl = "^1.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+pytest-ordering = "^0.6"
+
+
+[[tool.poetry.source]]
+name = "mirror"
+url = "https://mirrors.aliyun.com/pypi/simple"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+log_cli = "True"
+log_cli_level = "INFO"
+filterwarnings = [
+    "ignore::DeprecationWarning"
+]

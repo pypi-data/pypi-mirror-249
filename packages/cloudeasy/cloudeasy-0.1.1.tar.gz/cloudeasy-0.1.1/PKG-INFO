@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: cloudeasy
+Version: 0.1.1
+Summary: Some proxy for alicloud operation based on raw alicloud tea api
+Home-page: https://github.com/calmzhu/pycloudeasy
+License: MIT
+Author: Calm Zhu
+Author-email: zhuqian@yirenchengtuan.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.0,<4.0.0)
+Requires-Dist: alibabacloud-tea-openapi (>=0.3.8,<0.4.0)
+Requires-Dist: pynacl (>=1.5.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/calmzhu/pycloudeasy
+Description-Content-Type: text/markdown
+
+# cloudeasy.alicloud
+
+## Description
+
+A Friendly alicloud sdk based on raw alicloud tea api.
+
+## Install
+
+pip install cloudeasy
+
+## Usage:
+
+See test case for examples
+
