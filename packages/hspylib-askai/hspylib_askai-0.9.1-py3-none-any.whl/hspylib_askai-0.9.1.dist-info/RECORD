@@ -1,0 +1,15 @@
+askai/.version,sha256=F5pTkJZuhcIHGofBsx3hPfZ0YGZRlvZSn4xJhoQvgeU,6
+askai/__classpath__.py,sha256=pTbnedxHHAWYbgzuvK1iKBmAgj_mjxTjz7VIv0NXhPU,785
+askai/__init__.py,sha256=HZWFaMWSSaHUOqTxqwNwLoXs5ASnjt9MPdylneybLV0,152
+askai/__main__.py,sha256=bGVOD6O8T7JlZO8qrJnuL5lv8pCKcIE_ZBWww4OH6TE,2077
+askai/welcome.txt,sha256=u5wPJLaOzG7n_-7x6bjd9t2RNcW8A_SSc7GZ8qBfsN8,241
+askai/core/__init__.py,sha256=38uA0IYw8Wd8RNLgBJS9JuniMZXCunLhdas0Gw70T6M,174
+askai/core/ask_ai.py,sha256=v0qZ7QCrfzfoZgoIKm4iV0-IJjjGOuktJXELkitcsDQ,2385
+askai/core/engine/__init__.py,sha256=I4BhhsUpC5xSL55YFLBpZqtll396wjRq2HGr5q2Wav0,184
+askai/core/engine/ai_engine.py,sha256=zDDWCVLOymKguYyqX4CWBhV_NjcOj3D5Kv5qskxQUHs,851
+askai/core/engine/openai/__init__.py,sha256=J7DgsAsbEP2T6vXH0uqwE2qyqqoVc_8NnJdfXUKFkpI,180
+askai/core/engine/openai/openai_engine.py,sha256=vOWYKYMd-P0SpUr7IQFYZrnq0qjmwO0lb1DpF7iMqpk,1918
+hspylib_askai-0.9.1.dist-info/METADATA,sha256=N4gZ633Ez0w39mZv7q80_0p4Fso0eOmsQwdWRHlJWrk,1746
+hspylib_askai-0.9.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+hspylib_askai-0.9.1.dist-info/top_level.txt,sha256=azbyCZcrGL8rNrfNjRJVkRbzprKJ11H2QutCiUfEFDQ,11
+hspylib_askai-0.9.1.dist-info/RECORD,,
