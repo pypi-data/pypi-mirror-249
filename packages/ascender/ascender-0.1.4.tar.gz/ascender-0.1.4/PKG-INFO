@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: ascender
+Version: 0.1.4
+Summary: The CLI tool for working with AscenderFramework: Installation, command execution and version management
+Home-page: https://github.com/AscenderTeam/AscenderCLI
+License: GPL-3.0
+Author: AscenderTeam
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: gitpython (>=3.1.40,<4.0.0)
+Requires-Dist: readchar (>=4.0.5,<5.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Requires-Dist: virtualenv (>=20.25.0,<21.0.0)
+Project-URL: Repository, https://github.com/AscenderTeam/AscenderCLI
+Description-Content-Type: text/markdown
+
+# [AscenderFramework CLI](https://github.com/AscenderTeam/AscenderCLI)
+
+CLI for interacting with core [framework](https://github.com/AscenderTeam/AscenderFramework) functionality.
+This CLI allows users to create new AscenderFramework projects, as well as manage existing projects running their CLI.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To install the CLI, run the following command:
+
+```bash
+pip install ascender
+```
+
+## Usage
+
+To create new project, just execute the following command:
+
+```bash
+ascender projects new --name <project_name>
+```
+
+To execute project commands, just execute the following command:
+
+```bash
+ascender run <command>
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+
