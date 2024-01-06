@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: thermal_conductivity_step
+Version: 2024.1.5
+Summary: A SEAMM plug-in for Thermal Conductivity
+Home-page: https://github.com/molssi-seamm/thermal_conductivity_step
+Author: Paul Saxe
+Author-email: psaxe@molssi.org
+License: BSD-3-Clause
+Keywords: SEAMM,SEAMMplugin,flowchart
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Platform: Windows
+Classifier: Environment :: Plugins
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: seamm
+Requires-Dist: tabulate
+
+==================================
+SEAMM Thermal Conductivity Plug-in
+==================================
+
+.. image:: https://img.shields.io/github/issues-pr-raw/molssi-seamm/thermal_conductivity_step
+   :target: https://github.com/molssi-seamm/thermal_conductivity_step/pulls
+   :alt: GitHub pull requests
+
+.. image:: https://github.com/molssi-seamm/thermal_conductivity_step/workflows/CI/badge.svg
+   :target: https://github.com/molssi-seamm/thermal_conductivity_step/actions
+   :alt: Build Status
+
+.. image:: https://codecov.io/gh/molssi-seamm/thermal_conductivity_step/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/molssi-seamm/thermal_conductivity_step
+   :alt: Code Coverage
+
+.. image:: https://github.com/molssi-seamm/thermal_conductivity_step/workflows/CodeQL/badge.svg
+   :target: https://github.com/molssi-seamm/thermal_conductivity_step/security/code-scanning
+   :alt: Code Quality
+
+.. image:: https://github.com/molssi-seamm/thermal_conductivity_step/workflows/Release/badge.svg
+   :target: https://molssi-seamm.github.io/thermal_conductivity_step/index.html
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/v/thermal_conductivity_step.svg
+   :target: https://pypi.python.org/pypi/thermal_conductivity_step
+   :alt: PyPi VERSION
+
+A SEAMM plug-in for Thermal Conductivity
+
+* Free software: BSD-3-Clause
+* Documentation: https://molssi-seamm.github.io/thermal_conductivity_step/index.html
+* Code: https://github.com/molssi-seamm/thermal_conductivity_step
+
+Features
+--------
+
+* Please edit this section!
+
+Acknowledgements
+----------------
+
+This package was created with the `molssi-seamm/cookiecutter-seamm-plugin`_ tool, which
+is based on the excellent Cookiecutter_.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`molssi-seamm/cookiecutter-seamm-plugin`: https://github.com/molssi-seamm/cookiecutter-seamm-plugin
+
+Developed by the Molecular Sciences Software Institute (MolSSI_),
+which receives funding from the `National Science Foundation`_ under
+award CHE-2136142.
+
+.. _MolSSI: https://molssi.org
+.. _`National Science Foundation`: https://www.nsf.gov
+
+
+=======
+History
+=======
+2024.1.5 -- Bugfix: Thermal conductivity
+    * If the Helfand moments fit in the thermal conductivity step failed it stopped the
+      entire job. This is correct, as well as some of the undelying causes for
+      convergence issues.
+      
+2023.5.29 -- Converged with general approach for trajectory analysis
+
+2023.5.6 -- Bugfix
+    * Fixed an error handling Nan's and Inf's that caused a crash
+    * Added the predictions from the derivatives of the Helfand moments to the output to
+      give a better feel for the quality of the results.
+      
+2023.5.5 -- Improved analysis
+    * Considerable improvements to the analysis, results now seem solid
+    * Fixed issues with fitting the linear portion of the Helfand moments
+    * Added plot of the slope from the Helfand moments, which is similar to the
+      Green-Kubo integral.
+    * Cleaned up both the output and graphs.
+      
+2023.4.24 -- Initial working version
+    * Initial tests seem to work but needs more thorough testing.
+    * Needs documentation!
+      
+2023.4.18 (2023-04-18)
+    * Plug-in created using the SEAMM plug-in cookiecutter.
