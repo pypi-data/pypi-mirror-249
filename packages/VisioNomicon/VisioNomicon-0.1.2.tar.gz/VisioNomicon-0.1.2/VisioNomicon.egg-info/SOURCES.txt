@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+VisioNomicon/__init__.py
+VisioNomicon/args_handler.py
+VisioNomicon/gpt.py
+VisioNomicon/main.py
+VisioNomicon.egg-info/PKG-INFO
+VisioNomicon.egg-info/SOURCES.txt
+VisioNomicon.egg-info/dependency_links.txt
+VisioNomicon.egg-info/entry_points.txt
+VisioNomicon.egg-info/requires.txt
+VisioNomicon.egg-info/top_level.txt
+tests/test_mapping.py
