@@ -1,0 +1,16 @@
+[project]
+name = "pixoo1664"
+version = "1.0.2"
+authors = [{ name = "Yoann Le Viavant", email = "yleviavant@gmail.com" }]
+description = "Unofficial Divoom pixoo REST library, beer not included."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["requests~=2.31.0", "Pillow>=6.2.1"]
+[project.urls]
+Homepage = "https://github.com/Yo1L/pixoo1664"
+Issues = "https://github.com/Yo1L/pixoo1664/issues"
