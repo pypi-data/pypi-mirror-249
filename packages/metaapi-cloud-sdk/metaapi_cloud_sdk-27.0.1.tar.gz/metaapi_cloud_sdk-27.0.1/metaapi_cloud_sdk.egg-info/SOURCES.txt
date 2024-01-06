@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+changelog.md
+setup.py
+lib/__init__.py
+lib/logger.py
+metaapi_cloud_sdk.egg-info/PKG-INFO
+metaapi_cloud_sdk.egg-info/SOURCES.txt
+metaapi_cloud_sdk.egg-info/dependency_links.txt
+metaapi_cloud_sdk.egg-info/requires.txt
+metaapi_cloud_sdk.egg-info/top_level.txt
