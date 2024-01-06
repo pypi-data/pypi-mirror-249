@@ -1,0 +1,2 @@
+[console_scripts]
+hito2nsip = hito_nsip.hito2nsip:main
