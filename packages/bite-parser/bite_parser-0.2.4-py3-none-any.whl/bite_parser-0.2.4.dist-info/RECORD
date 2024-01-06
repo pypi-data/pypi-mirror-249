@@ -1,0 +1,15 @@
+bite/__init__.py,sha256=04kYyIV8hintqUGlfycad1ew6v2EuUDQKr0Leu59AVk,82
+bite/io.py,sha256=MVV_MsIxluOXn7Qdo2AojbedqfcZfVClqRzpYZ3UXws,4045
+bite/parse_functions.py,sha256=3eIajX9ukIz_ZNrDBLlU9dIwDznJ_KRrbZoQndcnGzw,3863
+bite/parsers.py,sha256=y2GcLYQt6Xe4Q3pp5rO-4ymPNlmjMiiacLsi9db7qa4,29000
+bite/tests/__init__.py,sha256=Kfe_Ea2DZiDtQIVEoE1fJGU4pq7T1QUrATc-bBWqiVo,27
+bite/tests/mock_reader.py,sha256=c1H0ByeFSAC_D3LAv_7CEnO-pBLcX1tpcHZtTuDm36A,1486
+bite/tests/test_io.py,sha256=YT3xVB8SAM8UUO3lkUlZzwN3Trc-OJ-kXRkm-hVTdhE,3869
+bite/tests/test_parse_functions.py,sha256=1RsIf4y07j9Yq46hULskFESRQiJ2JdmOvLOlB0e1tqc,1101
+bite/tests/test_parsers.py,sha256=BOCcQcRVApCn2-o71jdBXRmL9nGYBE8xwgesStstUEc,17091
+bite/tests/test_transformers.py,sha256=qzre7g3wwy7A7wOh_0T5s1h99POL57M_-qsgEXUChXs,1689
+bite/transformers.py,sha256=AK49SNEiJV3gN46M45Jvo9ACrpCnr9L_q-FqRi4Ozu0,6575
+bite_parser-0.2.4.dist-info/LICENSE,sha256=p5kKM-KPlQZMbZsehnphDgeIFEyuDUPrx6VOvkwKZR4,1068
+bite_parser-0.2.4.dist-info/METADATA,sha256=z3FaxoWjyh_pjEqMMxhdUgr51uA8lb09iupMzkoE-xo,3528
+bite_parser-0.2.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bite_parser-0.2.4.dist-info/RECORD,,
