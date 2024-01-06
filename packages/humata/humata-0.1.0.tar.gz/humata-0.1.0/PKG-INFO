@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: humata
+Version: 0.1.0
+Summary: Humata.ai Python SDK
+Home-page: https://www.humata.ai/
+Author: Humata
+Author-email: support@humata.ai
+Project-URL: Documentation, https://www.humata.ai/
+Project-URL: Bug Reports, https://ww.humata.ai/
+Keywords: humata,humata.ai
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+
+# Humata Python SDK
+
+First Version
