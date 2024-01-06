@@ -1,0 +1,17 @@
+tagpatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tagpatch/__main__.py,sha256=xbF9DiccUpSyCzELPWdn4pAJMvwupgU-DNWw42RO52U,2124
+tagpatch/options.py,sha256=xK7JFLX6hnkpY2l58szM79IgstRHk6XDGyMxsjp0p4A,1189
+tagpatch/types.py,sha256=3qwJvtedeN_v2zZqKM0084mI25WCU_AIrKYSy04j4-Y,90
+tagpatch/utils.py,sha256=jDvNols0IRvznw6gkqfU_aYRCsS1MQYky7ehTquG1_w,2754
+tagpatch/patches/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tagpatch/patches/artist_name.py,sha256=zdeS01jJ597-jkcbHeqnvJMrQc0ugIYyB31FB0umMdM,3004
+tagpatch/patches/embed_lrc.py,sha256=kaZ4t3JS5H2awupofnqmjWs_BNKoc1sRoROEo7ZJirY,3036
+tagpatch/patches/patch.py,sha256=gKj7Ct-wiuaU39nJ3r2qUBx8-T31eC6DW1-b4Sd0-Yk,860
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_patches.py,sha256=ZVzD5oNeYpJdzEMdSW8GiRT_Qll198aqsVoMD0utsV8,2118
+tests/test_utils.py,sha256=fjv7CNafeUvXSErrh4N9m0oCYD_dSt-zcZcy2mwYnc0,1731
+tagpatch-0.1.2.dist-info/LICENSE,sha256=og_soKckifUsmAoLKuNwrmpt5m_oo4--wHyhSaZp1CI,1081
+tagpatch-0.1.2.dist-info/METADATA,sha256=oqtKVtHZoHmcsOhB-byph2LhhSO7pbumrdusI3-RRoY,1992
+tagpatch-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tagpatch-0.1.2.dist-info/top_level.txt,sha256=tLiRctnqCK-G0HvDcIYHIKCq_lHYg5J4uzwRGfJQl_c,15
+tagpatch-0.1.2.dist-info/RECORD,,
