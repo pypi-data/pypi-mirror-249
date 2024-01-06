@@ -1,0 +1,12 @@
+textfab/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+textfab/augmentations.py,sha256=utx4owdZxQr7PtY0exMk7qffgm6rgV2XsVkbF-OoK-Q,8019
+textfab/base.py,sha256=RBCba7SST9ReSHSlewd-9N6LiqXCpqh_lTUK4SJChHs,1138
+textfab/emoji_tokenizer.py,sha256=7SHfTc3jVF7iE_61ip5onCCN8JuoD0TolKlbcfkG0AU,3547
+textfab/fabric.py,sha256=xNTASNTicC9bkERWh3M3hUh6Fyd-QKu9a-emJp3d3jQ,1953
+textfab/units.py,sha256=I3IZp-AW44_YOKmPCmZu4mZUD5UnsyAj1HA2Y_HEM-I,7542
+textfab/utils.py,sha256=7iCk8n3VpCn5zg9Tv0f-e91cPO-ocVtZvEwI6oxA_ms,176
+textfab-1.0.0.dist-info/LICENSE.md,sha256=pb8ryE9WME_QSqxP8YYBDbYhz_urRpTmr-cZJ6vDLqI,1051
+textfab-1.0.0.dist-info/METADATA,sha256=9gbP5VKeOHIzgRM_I4SVO6tQO-DZFWyDIJr5zC7NKkM,5191
+textfab-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+textfab-1.0.0.dist-info/top_level.txt,sha256=L2f0avCRaN57UP5lIMR2ja4y1zeuGdAbrO4tlVPqYKw,8
+textfab-1.0.0.dist-info/RECORD,,
