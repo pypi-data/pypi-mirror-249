@@ -1,0 +1,133 @@
+[project]
+name = "labbench"
+version = "0.33.0"
+description = "The `labbench` module provides API tools to support python scripting for laboratory automation.The goal is to simplify the process of developing an experimental procedure into clear, concise, explainable, and reusable code."
+authors = [
+    { name = "Dan Kuester", email = "daniel.kuester@nist.gov" },
+    { name = "Shane Allman" },
+    { name = "Paul Blanchard" },
+    { name = "Yao Ma", email = "yao.ma@nist.gov" },
+]
+maintainers = [
+    { name = "Dan Kuester", email = "daniel.kuester@nist.gov" },
+]
+requires-python = ">=3.9,<3.13"
+readme = "README.md"
+dependencies = [
+    "GitPython>=2.0",
+    "psutil>=5.0",
+    "validators>=0.20.0",
+    "pip",
+    "typing-extensions>=4.8.0",
+    "numpy>=1.19",
+    "pandas>=1.2.0",
+    "ruamel-yaml>=0.17.21",
+    "h5py>=3",
+    "feather-format>=0.4.0",
+    "sqlalchemy>=1.4,<2",
+    "pyarrow>=14",
+    "pyserial>=3.0",
+    "pyvicp",
+    "pyvisa>=1.8",
+    "pyvisa-py[usb,gpib-ctypes,serial,psutil]>=0.6",
+    "pyvisa-sim>=0.5.1",
+    "pywin32; sys_platform == 'win32'",
+    "comtypes; sys_platform == 'win32'",
+    "libusb1>=3.1.0",
+]
+
+[project.license]
+file = "LICENSE.md"
+
+[project.optional-dependencies]
+dotnet = [
+    "pythonnet",
+]
+jupyter = [
+    "notebook",
+    "jupyter",
+    "ipywidgets",
+    "ipython",
+]
+pyvisa-py-extras = [
+    "zeroconf",
+]
+dev = [
+    "ipykernel",
+    "pip",
+    "ipython",
+    "black[jupyter]",
+    "flake8",
+    "ast_decompiler",
+    "pytest",
+    "pytest-cov",
+    "genbadge",
+    "defusedxml",
+    "sphinx>=7",
+    "twine",
+    "toml",
+    "jupytext>=1.6.0",
+    "myst-nb>=1.0",
+    "pyperf>=2.6.2",
+    "mypy-extensions>=1.0.0",
+    "mypy>=1.7.0",
+    "astor>=0.8.1",
+]
+
+[project.urls]
+homepage = "https://github.com/usnistgov/labbench"
+repository = "https://github.com/usnistgov/labbench"
+documentation = "https://pages.nist.gov/labbench"
+changelog = "https://github.com/usnistgov/labbench/blob/master/ChangeLog.md"
+
+[project.scripts]
+labbench = "cli.__main__:do_cli"
+
+[tool.black]
+line-length = 100
+target-version = [
+    "py38",
+    "py39",
+    "py310",
+    "py311",
+    "py312",
+]
+include = "\\.pyi?$"
+
+[tool.pdm.version]
+source = "scm"
+write_to = "labbench/_version.py"
+write_template = "__version__ = '{}'"
+
+[tool.pdm.scripts.doc-html]
+cmd = "sphinx-build -b html doc doc/html"
+
+[tool.pdm.scripts.doc-latex]
+cmd = "sphinx-build -b latex doc doc/latex"
+
+[tool.pdm.scripts.doc-pdf]
+cmd = "pdflatex doc/latex/labbench-api.tex --output-directory=doc"
+
+[tool.pdm.scripts.doc-pdf.env]
+TEXINPUTS = "doc/latex"
+
+[tool.pdm.scripts.doc-rst]
+cmd = "sphinx-apidoc -F . -o doc"
+
+[tool.pdm.scripts._pytest]
+cmd = "pytest --cov-report xml:doc/reports/coverage.xml --cov-report term --cov=labbench tests"
+
+[tool.pdm.scripts._coverage]
+cmd = "genbadge coverage -i doc/reports/coverage.xml -o doc/reports/coverage.svg -l"
+
+[tool.pdm.scripts.tests]
+composite = [
+    "_pytest",
+    "_coverage",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"
