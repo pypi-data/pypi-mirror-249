@@ -1,0 +1,8 @@
+{
+    "issues": {
+        "deprecated_beat": {
+            "description": "Poista `{config_key}`-avain `{display_options}`-kohdasta {integration}-kohdasta configuration.yaml-tiedostossa ja k\u00e4ynnist\u00e4 Home Assistant uudelleen ongelman korjaamiseksi.",
+            "title": "`{config_key}` Aika- ja p\u00e4iv\u00e4yssensori poistetaan"
+        }
+    }
+}

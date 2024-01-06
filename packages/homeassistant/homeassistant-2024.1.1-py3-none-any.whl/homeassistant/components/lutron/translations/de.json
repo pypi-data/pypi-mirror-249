@@ -1,0 +1,35 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Bereits konfiguriert. Nur eine einzige Konfiguration m\u00f6glich."
+        },
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "unknown": "Unerwarteter Fehler"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Passwort",
+                    "username": "Benutzername"
+                },
+                "data_description": {
+                    "host": "Der Hostname oder die IP-Adresse des Lutron Haupt-Repeaters."
+                },
+                "description": "Bitte gib die Anmeldeinformationen f\u00fcr den Haupt-Repeater ein",
+                "title": "Haupt-Repeater-Setup"
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_import_issue_cannot_connect": {
+            "description": "Die Konfiguration von Lutron mit YAML wird entfernt, aber beim Importieren deiner YAML-Konfiguration ist ein Verbindungsfehler aufgetreten. \n\nDinge, die du ausprobieren kannst:\nStelle sicher, dass Home Assistant den Haupt-Repeater erreichen kann.\nStarte den Haupt-Repeater neu, indem du ihn 60 Sekunden lang vom Netz trennst.\nVersuche, dich mit der IP-Adresse, die du in einem Webbrowser angegeben hast, und denselben Anmeldeinformationen beim Haupt-Repeater anzumelden. \n\nStarte dann Home Assistant neu, um den Import dieser Integration erneut zu versuchen. \n\nAlternativ kannst du die Lutron-Konfiguration vollst\u00e4ndig aus deiner YAML-Konfiguration entfernen, Home Assistant neu starten und die Lutron-Integration manuell hinzuf\u00fcgen.",
+            "title": "Der Import der Lutron YAML-Konfiguration kann keine Verbindung zum Server herstellen"
+        },
+        "deprecated_yaml_import_issue_unknown": {
+            "description": "Die Konfiguration von Lutron mit YAML wird entfernt, aber beim Importieren deiner vorhandenen Konfiguration ist ein unbekannter Fehler aufgetreten.\nDas Setup wird nicht fortgesetzt. \n\nDer konkrete Fehler ist in den Protokollen zu finden. Die wahrscheinlichste Ursache ist ein Netzwerkfehler oder der Haupt-Repeater ist ausgefallen oder hat eine ung\u00fcltige Konfiguration. \n\nStelle sicher, dass dein Lutron-System ordnungsgem\u00e4\u00df funktioniert, und starte Home Assistant neu, um den Import erneut zu versuchen. \n\nAlternativ kannst du die Lutron-Konfiguration vollst\u00e4ndig aus deiner YAML-Konfiguration entfernen, Home Assistant neu starten und die Lutron-Integration manuell hinzuf\u00fcgen.",
+            "title": "Der Import der Lutron YAML-Konfiguration ist aufgrund eines unbekannten Fehlers fehlgeschlagen"
+        }
+    }
+}

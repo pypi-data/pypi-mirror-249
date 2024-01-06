@@ -1,0 +1,55 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Palvelu on jo m\u00e4\u00e4ritetty",
+            "single_instance_allowed": "Jo m\u00e4\u00e4ritetty. Vain yksi konfiguraatio mahdollinen."
+        },
+        "step": {
+            "user": {
+                "description": "Haluatko m\u00e4\u00e4ritt\u00e4\u00e4 islamilaiset rukousajat?",
+                "title": "M\u00e4\u00e4rit\u00e4 islamilaiset rukousajat"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "calculation_method": "Rukouslaskentamenetelm\u00e4"
+                }
+            }
+        }
+    },
+    "selector": {
+        "calculation_method": {
+            "options": {
+                "custom": "Mukautettu",
+                "egypt": "Egyptin yleinen maanmittausviranomainen",
+                "france": "Union Organization islamic de France",
+                "gulf": "Persianlahden alue",
+                "isna": "Pohjois-Amerikan islamilainen yhdistys",
+                "jafari": "Shia Ithna-Ansari",
+                "karachi": "Islamilaisten tieteiden yliopisto, Karachi",
+                "kuwait": "Kuwait"
+            }
+        },
+        "latitude_adjustment_method": {
+            "options": {
+                "one_seventh": "Yksi seitsem\u00e4sosa"
+            }
+        },
+        "midnight_mode": {
+            "options": {
+                "jafari": "Jafari (auringonlaskun puoliv\u00e4list\u00e4 fajriin)",
+                "standard": "Vakio (auringonlaskun puoliv\u00e4list\u00e4 auringonnousuun)"
+            }
+        },
+        "school": {
+            "options": {
+                "hanafi": "Hanafi",
+                "shafi": "Shafi"
+            }
+        }
+    },
+    "title": "Islamilaiset rukousajat"
+}

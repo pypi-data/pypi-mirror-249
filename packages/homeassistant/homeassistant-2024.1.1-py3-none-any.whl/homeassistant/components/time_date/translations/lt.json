@@ -1,0 +1,8 @@
+{
+    "issues": {
+        "deprecated_beat": {
+            "description": "Pa\u0161alinkite rakt\u0105 ` {config_key} ` i\u0161 {display_options} `, skirto {integration} \u012fra\u0161ui savo configuration.yaml faile, ir i\u0161 naujo paleiskite Home Assistant, kad i\u0161spr\u0119stum\u0117te \u0161i\u0105 problem\u0105.",
+            "title": "Laiko ir datos jutiklis \u201e {config_key} \u201c pa\u0161alinamas"
+        }
+    }
+}

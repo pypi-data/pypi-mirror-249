@@ -1,0 +1,209 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Tili on jo m\u00e4\u00e4ritetty",
+            "reauth_successful": "Uudelleentodennus onnistui"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API-avain"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "API-avain"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "climate_device": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "medium_low": "Keskimatala",
+                            "strong": "Vahva"
+                        }
+                    },
+                    "swing_mode": {
+                        "state": {
+                            "stopped": "Pois"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "horizontalswing": {
+                "state": {
+                    "stopped": "Pois"
+                }
+            },
+            "light": {
+                "name": "Valo",
+                "state": {
+                    "dim": "Himme\u00e4",
+                    "off": "Pois",
+                    "on": "P\u00e4\u00e4ll\u00e4"
+                }
+            }
+        },
+        "sensor": {
+            "climate_react_high": {
+                "state_attributes": {
+                    "fanlevel": {
+                        "state": {
+                            "medium_low": "Keskimatala",
+                            "strong": "Vahva"
+                        }
+                    },
+                    "horizontalswing": {
+                        "state": {
+                            "stopped": "Pois"
+                        }
+                    },
+                    "light": {
+                        "name": "Valo",
+                        "state": {
+                            "dim": "Himme\u00e4",
+                            "off": "Pois",
+                            "on": "P\u00e4\u00e4ll\u00e4"
+                        }
+                    },
+                    "mode": {
+                        "state": {
+                            "off": "Pois"
+                        }
+                    },
+                    "on": {
+                        "name": "P\u00e4\u00e4ll\u00e4",
+                        "state": {
+                            "false": "Pois",
+                            "true": "P\u00e4\u00e4ll\u00e4"
+                        }
+                    },
+                    "swing": {
+                        "state": {
+                            "stopped": "Pois"
+                        }
+                    }
+                }
+            },
+            "climate_react_low": {
+                "state_attributes": {
+                    "fanlevel": {
+                        "state": {
+                            "medium_low": "Keskimatala",
+                            "strong": "Vahva"
+                        }
+                    },
+                    "horizontalswing": {
+                        "state": {
+                            "stopped": "Pois"
+                        }
+                    },
+                    "light": {
+                        "name": "Valo",
+                        "state": {
+                            "dim": "Himme\u00e4",
+                            "off": "Pois",
+                            "on": "P\u00e4\u00e4ll\u00e4"
+                        }
+                    },
+                    "mode": {
+                        "state": {
+                            "off": "Pois"
+                        }
+                    },
+                    "on": {
+                        "name": "P\u00e4\u00e4ll\u00e4",
+                        "state": {
+                            "false": "Pois",
+                            "true": "P\u00e4\u00e4ll\u00e4"
+                        }
+                    },
+                    "swing": {
+                        "state": {
+                            "stopped": "Pois"
+                        }
+                    }
+                }
+            },
+            "smart_type": {
+                "state": {
+                    "humidity": "Kosteus",
+                    "temperature": "L\u00e4mp\u00f6tila"
+                }
+            }
+        },
+        "switch": {
+            "climate_react_switch": {
+                "state_attributes": {
+                    "type": {
+                        "state": {
+                            "humidity": "Kosteus",
+                            "temperature": "L\u00e4mp\u00f6tila"
+                        }
+                    }
+                }
+            },
+            "timer_on_switch": {
+                "state_attributes": {
+                    "turn_on": {
+                        "state": {
+                            "false": "Pois",
+                            "true": "P\u00e4\u00e4ll\u00e4"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "climate_react_not_available": {
+            "message": "K\u00e4yt\u00e4 Sensibo Enable Climate React Service -palvelua kerran kytkimen tai Sensibo-sovelluksen ottamiseksi k\u00e4ytt\u00f6\u00f6n."
+        },
+        "fan_mode_not_supported": {
+            "message": "Integrointi ei tue ilmastoinnin tuuletintilaa {fan_mode}. Ole hyv\u00e4 ja avaa ongelma"
+        },
+        "no_fan_level_in_features": {
+            "message": "Nykyinen tila ei tue tuulettimen tason asettamista"
+        },
+        "no_swing_in_features": {
+            "message": "Nykyinen tila ei tue swingin asettamista"
+        },
+        "no_target_temperature": {
+            "message": "Tavoitel\u00e4mp\u00f6tilaa ei ole annettu"
+        },
+        "no_target_temperature_in_features": {
+            "message": "Nykyinen tila ei tue tavoitel\u00e4mp\u00f6tilan asettamista"
+        },
+        "select_option_not_available": {
+            "message": "Nykyinen tila {hvac_mode} ei tue asetusta {key}"
+        },
+        "service_raised": {
+            "message": "Palvelua {name} ei voitu suorittaa virheell\u00e4 {error}"
+        },
+        "service_result_not_true": {
+            "message": "Palvelua ei voitu suorittaa kohteelle {name}"
+        },
+        "swing_not_supported": {
+            "message": "Integraatio ei tue ilmastonvaihtelutilaa {swing_mode}. Ole hyv\u00e4 ja avaa ongelma"
+        }
+    },
+    "services": {
+        "enable_climate_react": {
+            "fields": {
+                "smart_type": {
+                    "name": "Laukaisutyyppi"
+                }
+            }
+        }
+    }
+}

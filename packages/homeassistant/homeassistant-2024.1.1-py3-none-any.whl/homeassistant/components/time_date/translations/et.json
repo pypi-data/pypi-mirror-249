@@ -1,0 +1,8 @@
+{
+    "issues": {
+        "deprecated_beat": {
+            "description": "Eemalda v\u00f5ti {config_key} lahtrist {display_options} failis configuration.yaml kirje {integration} jaoks ja taask\u00e4ivita selle probleemi lahendamiseks Home Assistant.",
+            "title": "Aja ja kuup\u00e4eva andur ` {config_key} ` eemaldatakse"
+        }
+    }
+}

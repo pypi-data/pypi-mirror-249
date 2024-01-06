@@ -1,0 +1,12 @@
+{
+    "entity_component": {
+        "motion": {
+            "name": "Liike"
+        }
+    },
+    "exceptions": {
+        "invalid_event_type": {
+            "message": "Virheellinen tapahtumatyyppi {event_type} entiteetille {entity_id}, kelvolliset tyypit ovat: {event_types}."
+        }
+    }
+}

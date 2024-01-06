@@ -1,0 +1,7 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Ponowne uwierzytelnienie powiod\u0142o si\u0119"
+        }
+    }
+}

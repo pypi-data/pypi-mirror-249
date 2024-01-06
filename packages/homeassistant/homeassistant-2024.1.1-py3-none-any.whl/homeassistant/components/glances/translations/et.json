@@ -1,0 +1,40 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Seade on juba h\u00e4\u00e4lestatud",
+            "reauth_successful": "Taastuvastamine \u00f5nnestus"
+        },
+        "error": {
+            "cannot_connect": "\u00dchendamine nurjus",
+            "invalid_auth": "Tuvastamine nurjus"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Salas\u00f5na"
+                },
+                "description": "Kasutaja {username} salas\u00f5na on kehtetu"
+            },
+            "user": {
+                "data": {
+                    "host": "",
+                    "password": "Salas\u00f5na",
+                    "port": "Port",
+                    "ssl": "Kasutab SSL serti",
+                    "username": "Kasutajanimi",
+                    "verify_ssl": "Kontrolli SSL sertifikaati",
+                    "version": "Glances API versioon (2 v\u00f5i 3)"
+                },
+                "data_description": {
+                    "host": "Glancesi s\u00fcsteemimonitori k\u00e4itava s\u00fcsteemi hostinimi v\u00f5i IP-aadress."
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_version": {
+            "description": "Glancesi serverid versiooniga 2 on aegunud ja neid ei toetata HA tulevastes versioonides. Soovitatav on v\u00e4rskendada oma server Glancesi versioonile 3 ja seej\u00e4rel sidumine uuesti laadida.",
+            "title": "Glances serverid versiooniga 2 on aegunud"
+        }
+    }
+}

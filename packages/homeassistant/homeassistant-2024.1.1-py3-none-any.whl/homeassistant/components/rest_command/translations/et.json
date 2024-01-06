@@ -1,0 +1,8 @@
+{
+    "services": {
+        "reload": {
+            "description": "Taaslaeb RESTful k\u00e4sud YAML-konfiguratsioonist.",
+            "name": "Taaslae"
+        }
+    }
+}
