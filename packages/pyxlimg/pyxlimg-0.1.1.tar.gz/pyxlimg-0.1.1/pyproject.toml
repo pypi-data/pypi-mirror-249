@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pyxlimg"
+version = "0.1.1"
+description = "Image Extractor for XLSX files"
+authors = ["ShortArrow <bamboogeneral@live.jp>"]
+license = "GPL3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Pillow = "^10.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+black = "^20.8b1"
+Sphinx = "^3.5.2"
+sphinx-rtd-theme = "^0.5.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest-watch = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
