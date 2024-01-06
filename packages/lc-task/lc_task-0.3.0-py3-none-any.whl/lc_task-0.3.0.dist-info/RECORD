@@ -1,0 +1,8 @@
+lc_task/__init__.py,sha256=SFl_rtF38FI_8TlBwJTf1A6MJBJf58EtRozvRWxRSNA,72
+lc_task/cli.py,sha256=1xcSmGa2Wut8MirjUvlxLUSLyC740C9_27v6DNIDSb0,8466
+lc_task/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lc_task/task.py,sha256=jNTIHQygarFkNPkiYdDVb9JfVUoaj_qItbY9xRJ0cKY,13471
+lc_task-0.3.0.dist-info/LICENSE,sha256=Z3uEcus4kY5MR2L_w1sjdFQPpTUv3R8AkKd539PVgVc,1066
+lc_task-0.3.0.dist-info/METADATA,sha256=o3FSf-RLQxqEKSzTmwy0blDIaT6gsOGZ_QClZp32wO0,8909
+lc_task-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+lc_task-0.3.0.dist-info/RECORD,,
