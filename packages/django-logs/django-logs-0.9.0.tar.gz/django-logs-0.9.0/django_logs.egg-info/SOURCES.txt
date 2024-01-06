@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+django_logs.egg-info/PKG-INFO
+django_logs.egg-info/SOURCES.txt
+django_logs.egg-info/dependency_links.txt
+django_logs.egg-info/not-zip-safe
+django_logs.egg-info/top_level.txt
+logs/__init__.py
+logs/decorators.py
+logs/middleware.py
+logs/registration.py
+logs/settings.py
+logs/models/__init__.py
+logs/models/fields.py
+logs/models/managers.py
