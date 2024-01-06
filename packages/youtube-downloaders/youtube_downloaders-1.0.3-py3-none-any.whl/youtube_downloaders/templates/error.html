@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube download</title>
+</head>
+<link rel="stylesheet"  href= "{{ url_for('static',filename='styles/style.css') }}">
+<body>
+    <div id="input">
+        <h1> ERROR </h1>
+        <h6>{{error}}</h6>
+        <a id="btn_error" href="{{ url_for('home') }}"">Return Home</a>
+    </div>
+</body>

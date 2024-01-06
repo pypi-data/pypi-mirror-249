@@ -1,0 +1,3 @@
+class youtubeException(Exception):
+    pass
+
