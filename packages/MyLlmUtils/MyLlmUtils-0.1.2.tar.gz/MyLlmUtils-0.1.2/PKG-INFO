@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: MyLlmUtils
+Version: 0.1.2
+Summary: Personal utility package to make using LLM more easily
+Home-page: https://github.com/user/reponame
+Author: Ken Hu
+Author-email: ken.hu@hwacom.com
+License: MIT
+Download-URL: https://github.com/kenhutaiwan/MyLlmUtils/archive/refs/tags/0.1.2.tar.gz
+Description: UNKNOWN
+Keywords: LLM,OpenAI,Azure
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
