@@ -1,0 +1,10 @@
+randovania_lupa/__init__.py,sha256=wZtTRKfepMMbxe2g03mQNjt-XpaiTzyjpveYzCDZCeM,3012
+randovania_lupa/lua51.cpython-312-darwin.so,sha256=kZxvHJXGLQ4P8gZO1iOzRLaT-6YwKcOI-J1fJgH0D84,1324664
+randovania_lupa/lua51_dread.cpython-312-darwin.so,sha256=GEfYC7XY6lQW2ua6qtLOF-zIBoIir2EFmZr2f7mKBZ8,1328318
+randovania_lupa/lua51_sr.cpython-312-darwin.so,sha256=mv659BsLpoZFLWYs8JwxMvxmQRwSxHrcN1awr0DXEdY,1326235
+randovania_lupa/version.py,sha256=A3Ub7Z2q2OEONprXnC5jlQ8x525YffgG93hA9M4DAIk,20
+randovania_lupa-2.0.dist-info/LICENSE.txt,sha256=lXr-SRPfxGn9YFQdhHpYHFvd1roMy3I5DteMdYN3aKE,2231
+randovania_lupa-2.0.dist-info/METADATA,sha256=rf-cB40PdGEcyOYDAlyoO7AQ6_-APyCbZUdGG7q2by8,56004
+randovania_lupa-2.0.dist-info/WHEEL,sha256=_pWSOvbYARyp6CPoi71EoFACLuon-ibfrXtsIFPswHc,115
+randovania_lupa-2.0.dist-info/top_level.txt,sha256=HruVZ93SNKdYpqaWshhvJNe2QlFb-Q2BfCtNq6aSIxw,16
+randovania_lupa-2.0.dist-info/RECORD,,
