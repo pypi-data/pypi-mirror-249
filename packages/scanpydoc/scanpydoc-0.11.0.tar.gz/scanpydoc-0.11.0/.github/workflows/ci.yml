@@ -1,0 +1,44 @@
+# https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: ["*"]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PIP_ROOT_USER_ACTION: ignore
+  COLUMNS: "200"
+  FORCE_COLOR: "1"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: dependencies
+        run: |
+          pip install --upgrade pip wheel
+          pip install .[test,typehints]
+      - name: tests
+        run: coverage run -m pytest --verbose --color=yes
+      - name: show coverage
+        run: coverage-rich report
+      - name: upload coverage
+        uses: codecov/codecov-action@v3
