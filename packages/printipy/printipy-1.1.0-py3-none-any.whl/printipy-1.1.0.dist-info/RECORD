@@ -1,0 +1,9 @@
+printipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+printipy/api.py,sha256=RU4IAK7lw2d4ITF5KeR0EIuVGl_wWjAqWYtVtnG2U1g,71424
+printipy/data_objects.py,sha256=A1NgGG6mM4G-pBYYUrVUDw66VX8ELkjb_TSkP6dPc-0,37412
+printipy/exceptions.py,sha256=L7MMLckcb8G8WWYPH7XNIzASdVLR6IFi7cQF59k7TF4,2509
+printipy-1.1.0.dist-info/LICENSE,sha256=rr9Vc-AnU5QntBb4w0Obi4L9xksdTcE-5IBohanXdrs,1071
+printipy-1.1.0.dist-info/METADATA,sha256=FpH86jQ9CvQb2ms7JtxgwNbMFWjI-XMD0aEoCeRzSi4,1808
+printipy-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+printipy-1.1.0.dist-info/top_level.txt,sha256=Uc3x-7XmEisnwP9XVSbbG0mt5gVXMkCEy0SqWb1Gf58,9
+printipy-1.1.0.dist-info/RECORD,,
