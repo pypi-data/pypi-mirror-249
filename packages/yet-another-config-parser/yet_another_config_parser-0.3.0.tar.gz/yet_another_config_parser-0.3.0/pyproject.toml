@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "yet-another-config-parser"
+version = "0.3.0"
+description = "Unified argument and configuration parser"
+authors = ["aragaer <aragaer@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "yacp"}]
+repository = "https://gitlab.com/aragaer/yacp/"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
