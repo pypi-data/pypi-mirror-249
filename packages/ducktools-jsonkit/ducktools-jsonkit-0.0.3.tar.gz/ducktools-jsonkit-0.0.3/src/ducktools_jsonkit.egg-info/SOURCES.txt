@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/ducktools/jsonkit/__init__.py
+src/ducktools/jsonkit/__init__.pyi
+src/ducktools/jsonkit/_caching_tools.py
+src/ducktools/jsonkit/_caching_tools.pyi
+src/ducktools/jsonkit/py.typed
+src/ducktools_jsonkit.egg-info/PKG-INFO
+src/ducktools_jsonkit.egg-info/SOURCES.txt
+src/ducktools_jsonkit.egg-info/dependency_links.txt
+src/ducktools_jsonkit.egg-info/requires.txt
+src/ducktools_jsonkit.egg-info/top_level.txt
+tests/test_dataclasses.py
+tests/test_mergedefaults.py
+tests/test_methods.py
+tests/test_register.py

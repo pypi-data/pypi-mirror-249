@@ -1,0 +1,14 @@
+ducktools-lazyimporter>=0.1.1
+
+[build]
+build
+twine
+
+[docs]
+sphinx
+myst-parser
+sphinx_rtd_theme
+
+[testing]
+pytest
+pytest-cov
