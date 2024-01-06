@@ -1,0 +1,16 @@
+my_data/__init__.py,sha256=VxNoVAH4h6S8O-xrTdAKEMxgdl0I1t57DqCstP3S8Io,1524
+my_data/context.py,sha256=QoojJGO0ftycfr5Ahf_d1Hcie7tIcPjDRGPQrGXiEhk,6680
+my_data/context_data.py,sha256=JUPst7tIYOr9Z9LW7EwU-5yo1VwxWGadfdyZbMww4Ds,1458
+my_data/creators.py,sha256=sMUDg-BtP0WN2rQDyVIVEW6TVZ9a0nB_k0quYjYGfj8,5073
+my_data/data_manipulator.py,sha256=3qgkXoyM6Z-TwzcPxL-g32wNWLKeDCMTttUlG_HWnL4,4385
+my_data/deleters.py,sha256=MVNkQWzu1ZQLBqSJF1g4OFZSU5kbf4pKgIM8q2TfC3w,3898
+my_data/exceptions.py,sha256=N5diIQjFj44N-l_wnA5YqaIIxp7NGFB99j1y6-Jxg5A,866
+my_data/my_data.py,sha256=pA4d-kTHC24SXc7w_-MEVnEfsdBaAnlLXe82yNk1yCU,13483
+my_data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_data/resource_manager.py,sha256=JJ-JlW91F6EIOopGLQ7qAnVEuJDDfPaj1Y2vRgfureE,5048
+my_data/retrievers.py,sha256=xaGkFtZh25POz6ct7cY_4geRjWRNCO16ac1nldKXWAc,5186
+my_data/updaters.py,sha256=KDzrW0nZiFZcppT6v4X0PWQFMdoii0viXey2kxkmfV8,3873
+ds_my_data-1.1.1.dist-info/LICENSE.md,sha256=lYsu90Ob2yeLnNilKqKYEL77ekUKRsgbYf_P2euNd8s,1058
+ds_my_data-1.1.1.dist-info/METADATA,sha256=GMedlbY19wUDKJib9h3wvFFNHHYX0CBy53oWTSwkIWk,1558
+ds_my_data-1.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ds_my_data-1.1.1.dist-info/RECORD,,
