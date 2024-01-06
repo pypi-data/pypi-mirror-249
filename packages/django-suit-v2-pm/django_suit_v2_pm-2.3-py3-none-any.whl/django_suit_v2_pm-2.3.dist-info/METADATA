@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django-suit-v2-pm
+Version: 2.3
+Summary: Modern theme for Django admin interface.
+Author: Kaspars Sprogis (darklow) forked by Pulse-Mind
+Author-email: pulse.mind.com@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: License :: Free for non-commercial use
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.8
+License-File: LICENSE
+
