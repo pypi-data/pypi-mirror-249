@@ -1,0 +1,71 @@
+[build-system]
+requires = ["poetry-core", "setuptools", "wheel"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "-v"
+testpaths = [
+  "__tests__"
+]
+
+[tool.coverage.run]
+branch = true
+source = [
+  "ts_sdk",
+]
+
+omit = [
+  "__tests__",
+  "*/protocol-template/*"
+]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.poetry]
+name = "ts-sdk"
+version = "2.0.1rc2"
+description = "Tetrascience Python SDK"
+authors = ["tetrascience"]
+readme = "README.md"
+packages = [{include = "ts_sdk"}]
+license = "Apache License 2.0"
+homepage = "https://developers.tetrascience.com"
+
+[tool.poetry.scripts]
+ts-sdk = "ts_sdk.cli.__main__:main"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0.0"
+boto3 = ">=1.16.3,<2"
+botocore = ">=1.19.3,<2"
+colorama = ">=0.4.4,<1"
+jsonschema = ">=3.2.0"
+loguru = "*"
+requests = ">=2.22.0,<3"
+simplejson = ">=3.17.6,<4"
+smart-open = {version = ">=6,<7", extras = ["s3"]}
+tenacity = "*"
+ts-ids-validator = ">=0.9.10"
+typing-extensions = ">=3.10.0.2"
+
+[tool.poetry.group.dev.dependencies]
+snapshottest = "*"
+pylint = "*"
+pytest = "*"
+pytest-cov = "*"
+responses = "*"
+autopep8 = "*"
+freezegun = "*"
+pytest-mock = "*"
+pytest-steps = "*"
+black = "<23,>=22"
+isort = "*"
+types-requests = "*"
+types-simplejson = "*"
+
+[project]
+requires-python = ">=3.7,<4.0.0"
