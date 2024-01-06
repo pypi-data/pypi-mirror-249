@@ -1,0 +1,15 @@
+.gitignore
+COPYING
+README.md
+pyproject.toml
+tox.ini
+.github/workflows/publish-to-pypi.yml
+pypix2svg/pypix2svg.py
+pypix2svg.egg-info/PKG-INFO
+pypix2svg.egg-info/SOURCES.txt
+pypix2svg.egg-info/dependency_links.txt
+pypix2svg.egg-info/entry_points.txt
+pypix2svg.egg-info/requires.txt
+pypix2svg.egg-info/top_level.txt
+tests/test_svg_conversion.py
+tests/test_data/TONKA.ICO
