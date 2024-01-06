@@ -1,0 +1,17 @@
+cinemagoerng/__init__.py,sha256=iYUuwxyZEaQzGeucqQXHK5Qwqyn3T0FFHSJ56t7yTO0,781
+cinemagoerng/cli.py,sha256=cvIXeAw6QSQMhcfeK4gpH8dhPZBAWA7nUmLXaUa_6KQ,3940
+cinemagoerng/linguistics.py,sha256=NrxzVX93CaKWMnB2Qzcpjb2ZPq_rZGV7Eadn438K9sI,1215
+cinemagoerng/lookup.py,sha256=XhyHyN9kEupmodM4Zi8rAFN0ta8AAaA0BTVDjYyCMC8,14586
+cinemagoerng/model.py,sha256=tUaSfOargEPeDVTJQzbQwx01SQmdYZoEIp-W9AtLedQ,6300
+cinemagoerng/piculet.py,sha256=l96q7dE-yssgiq-V3cIO_tz78ZEAfioS9bI1WLn4eX4,6145
+cinemagoerng/registry.py,sha256=GZ_uL9Y8sSq09tdBwRF99sBWlLiVWWkghSQSkcNwmeA,5251
+cinemagoerng/web.py,sha256=GQzPtGJKT5Ykz2AYIonKay6dMEEoEvnuxUeLxT6SG8o,2725
+cinemagoerng/specs/title_main.json,sha256=Oo4HI-Nk708wRJRh12IbIZGKFDoOLjSNtYMBMyOjoig,4171
+cinemagoerng/specs/title_reference.json,sha256=E02PAnOZxtr898wIPT-6tNJwbP8Tv6UQCZqdRfHKjDA,4398
+cinemagoerng/specs/title_taglines.json,sha256=6pAXeKw2iIufS8_swsNUKI77_3a7HB6LAU8sI_A-Xdk,1430
+cinemagoerng-0.1a20240105.dist-info/LICENSE.txt,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+cinemagoerng-0.1a20240105.dist-info/METADATA,sha256=9CHuXUuK9m9fcIAQkpciAQ3WHGwbMHE8gEbO_u8rhcQ,23719
+cinemagoerng-0.1a20240105.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cinemagoerng-0.1a20240105.dist-info/entry_points.txt,sha256=G616JFzKcH_aSHHcJNuSPSvLckMfQqc77Mcmk0NSzno,55
+cinemagoerng-0.1a20240105.dist-info/top_level.txt,sha256=47LnUgZvM224FokfETqD14c363kbYixA84CS4qEHa7U,13
+cinemagoerng-0.1a20240105.dist-info/RECORD,,
