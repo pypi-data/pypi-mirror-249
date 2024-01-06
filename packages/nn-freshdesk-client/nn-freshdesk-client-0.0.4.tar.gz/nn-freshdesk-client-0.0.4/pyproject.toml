@@ -1,0 +1,17 @@
+[project]
+name = "nn-freshdesk-client"
+version = "0.0.4"
+authors = [
+    {name="Nordic Nest"},
+]
+description = "Python SDK for Freshdesk API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+]
+license = {file = "LICENSE"}
