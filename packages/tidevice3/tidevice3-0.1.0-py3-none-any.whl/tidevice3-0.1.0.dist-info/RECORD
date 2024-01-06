@@ -1,0 +1,11 @@
+tidevice3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tidevice3/__main__.py,sha256=pNJrcykACwAH-MK3IiRcN7NMNdVZO3XApE37PiRzbLs,490
+tidevice3/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tidevice3/cli/cli_common.py,sha256=Tcc9nZO_uA71CN13a0zSHjHV-N8EcobPOwpIwXs7y6Y,1641
+tidevice3/cli/developer.py,sha256=xSsEw0LdQ2PRZykY-4at9YKLueDYqz6yhQWILeSrZWQ,1001
+tidevice3/cli/list.py,sha256=tJ4NEM3KeOIgq8BclC37BuCnMtJjXSa-vk-QyHqbGLU,1357
+tidevice3-0.1.0.dist-info/LICENSE,sha256=RyeW676gBYO7AVVP2zQgfEx5rPSt46vR47xXZe7TlX4,1068
+tidevice3-0.1.0.dist-info/METADATA,sha256=Twacv6Se-qLbfYoxR-0tWkzYJXIqqlOT4U2n95DyWiE,1304
+tidevice3-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tidevice3-0.1.0.dist-info/entry_points.txt,sha256=5uF1-YByd5GgYppVY72dUoyTO-49CbsTGgL0vWhNc_c,46
+tidevice3-0.1.0.dist-info/RECORD,,
