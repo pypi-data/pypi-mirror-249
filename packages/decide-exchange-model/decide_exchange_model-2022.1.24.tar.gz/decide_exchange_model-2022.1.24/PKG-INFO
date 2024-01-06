@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: decide-exchange-model
+Version: 2022.1.24
+Summary: Decide exchange model
+Author: Jelmer Draaijer
+Author-email: info@jelmert.nl
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: blinker (==1.5)
+Requires-Dist: matplotlib (==3.6.0)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: pandas (==1.5.0)
+Requires-Dist: peewee (>=3.14.4)
+Requires-Dist: pyqt5 (==5.15.10)
+Requires-Dist: pyqt5-qt5 (==5.15.2)
+Requires-Dist: requests
+Requires-Dist: typesystem (==0.2.5)
+Description-Content-Type: text/markdown
+
+[![Build Status](https://travis-ci.org/foarsitter/decide-exchange-model.svg?branch=master)](https://travis-ci.org/foarsitter/decide-exchange-model)
+[![Code Climate](https://codeclimate.com/github/foarsitter/decide-exchange-model/badges/gpa.svg)](https://codeclimate.com/github/foarsitter/decide-exchange-model)
+[![Test Coverage](https://codeclimate.com/github/foarsitter/decide-exchange-model/badges/coverage.svg)](https://codeclimate.com/github/foarsitter/decide-exchange-model/coverage)
+[![PyPI](https://img.shields.io/pypi/v/decide-exchange-model.svg)](https://pypi.org/project/decide-exchange-model/)
+[![Anaconda-Server Badge](https://anaconda.org/jelmert/decide-exchange-model/badges/version.svg)](https://anaconda.org/jelmert/decide-exchange-model)
+[![Issue Count](https://codeclimate.com/github/foarsitter/decide-exchange-model/badges/issue_count.svg)](https://codeclimate.com/github/foarsitter/decide-exchange-model)
+
+# Decide Exchange Model
+Equal Gain Model implementation in the Python programming language. Read the documentation on https://foarsitter.github.io/decide-exchange-model/
