@@ -1,0 +1,27 @@
+{
+  "python.envFile": "${workspaceFolder}/vscode.env",
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "${workspaceFolder}/python"
+  },
+  "jupyter.notebookFileRoot": "${workspaceFolder}/python",
+  "pylint.args": [
+    "--init-hook",
+    "import sys; sys.path.append('./python')",
+    "--generated-members",
+    "torch.*,_lib.*"
+  ],
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    }
+  },
+  "[rust]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "ruff.lint.args": ["--ignore=E501"]
+}
