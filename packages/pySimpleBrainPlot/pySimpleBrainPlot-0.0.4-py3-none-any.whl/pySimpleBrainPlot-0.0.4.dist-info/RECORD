@@ -1,0 +1,13 @@
+pySimpleBrainPlot/__init__.py,sha256=AWT4I_5lOi2v-Q1qJPK71KlDLVfBz_f3pQ3KXw4DkIw,24
+pySimpleBrainPlot/plotBrain.py,sha256=OKszBkBEChu3A2O7Hn0G4WwXdkkcuWkNmEtJWGCNNVw,8029
+pySimpleBrainPlot/regionDescriptions.pkl,sha256=i8vgCQUSFRy7eAN_j6PiL9w8XwecHJRdxvYME2vhnPk,57962
+pySimpleBrainPlot/atlases/aparc_aseg_template.svg,sha256=2dbtkTY69M58uR6fNmfszByhJtYTXlci9L2bMfPMMug,269832
+pySimpleBrainPlot/atlases/aparc_template.svg,sha256=9B-UPe5SOxdpHtahKdlkDdEdEAM7rlS5-ThRzrC6804,224940
+pySimpleBrainPlot/atlases/lausanne120_aseg_template.svg,sha256=M2d94ic0QB69uSe0olEGqEhY4UJATYzWoxHEozoKC9Q,270156
+pySimpleBrainPlot/atlases/lausanne120_template.svg,sha256=hY_Sc49N23NlpSEoW5UqMwrMTq1A5hcmCYESs5BpPds,225292
+pySimpleBrainPlot/atlases/lausanne250_template.svg,sha256=w7R70Y8mkfshBTbVMsiSWNRvWENbkitAdXAccRIDKhY,192341
+pySimpleBrainPlot/atlases/wbb47_template.svg,sha256=X-PR5iOtYXWBNqziNO5rD16s8V4JgrZh6ltj1X3Y9tg,111915
+pySimpleBrainPlot-0.0.4.dist-info/METADATA,sha256=IAqycCIeTPmKEoXerXwi68p2smmUJzozHlyDKf0EHhI,5185
+pySimpleBrainPlot-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pySimpleBrainPlot-0.0.4.dist-info/top_level.txt,sha256=WD7n-4EFeJlSo77UtnppkQSQREBMDmaSyLBcDtmK59c,18
+pySimpleBrainPlot-0.0.4.dist-info/RECORD,,
