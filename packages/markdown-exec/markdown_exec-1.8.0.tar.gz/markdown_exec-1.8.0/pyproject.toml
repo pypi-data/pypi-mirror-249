@@ -1,0 +1,132 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "markdown-exec"
+description = "Utilities to execute code blocks in Markdown files."
+authors = [
+    { name = "Timothée Mazzucotelli", email = "pawamoy@pm.me" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+    "markdown",
+    "python",
+    "exec",
+    "shell",
+    "bash",
+    "mkdocs",
+]
+dynamic = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = [
+    "pymdown-extensions>=9",
+]
+version = "1.8.0"
+
+[project.license]
+text = "ISC"
+
+[project.optional-dependencies]
+ansi = [
+    "pygments-ansi-color",
+]
+
+[project.urls]
+Homepage = "https://pawamoy.github.io/markdown-exec"
+Documentation = "https://pawamoy.github.io/markdown-exec"
+Changelog = "https://pawamoy.github.io/markdown-exec/changelog"
+Repository = "https://github.com/pawamoy/markdown-exec"
+Issues = "https://github.com/pawamoy/markdown-exec/issues"
+Discussions = "https://github.com/pawamoy/markdown-exec/discussions"
+Gitter = "https://gitter.im/markdown-exec/community"
+Funding = "https://github.com/sponsors/pawamoy"
+
+[project.entry-points."mkdocs.plugins"]
+markdown-exec = "markdown_exec.mkdocs_plugin:MarkdownExecPlugin"
+
+[tool.pdm]
+plugins = [
+    "pdm-multirun",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+package-dir = "src"
+editable-backend = "editables"
+
+[tool.pdm.dev-dependencies]
+duty = [
+    "duty>=0.10",
+]
+ci-quality = [
+    "markdown-exec[duty,docs,quality,typing,security]",
+]
+ci-tests = [
+    "markdown-exec[duty,tests]",
+]
+docs = [
+    "black>=23.9",
+    "markdown-callouts>=0.3",
+    "mkdocs>=1.5",
+    "mkdocs-coverage>=1.0",
+    "mkdocs-gen-files>=0.5",
+    "mkdocs-git-committers-plugin-2>=1.2",
+    "mkdocs-literate-nav>=0.6",
+    "mkdocs-material>=9.4",
+    "mkdocs-minify-plugin>=0.7",
+    "mkdocstrings[python]>=0.23",
+    "tomli>=2.0; python_version < '3.11'",
+    "toml>=0.10; python_version < '3.12'",
+    "pydeps>=1.12; python_version < '3.12'",
+    "diagrams>=0.21; python_version < '3.12'",
+    "rich>=12.3; python_version < '3.12'",
+    "matplotlib>=3.5; python_version < '3.12'",
+    "numpy>=1.23; python_version < '3.12'",
+    "textual; python_version < '3.12'",
+    "pytermgui>=6.3; python_version < '3.12'",
+    "pipdeptree>=2.6; python_version < '3.12'",
+]
+maintain = [
+    "black>=23.9",
+    "blacken-docs>=1.16",
+    "git-changelog>=2.3",
+]
+quality = [
+    "ruff>=0.0",
+]
+tests = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "pytest-randomly>=3.15",
+    "pytest-xdist>=3.3",
+    "pygments>=2.15",
+]
+typing = [
+    "mypy>=1.5",
+    "types-markdown>=3.5",
+    "types-pyyaml>=6.0",
+]
+security = [
+    "safety>=2.3",
+]
