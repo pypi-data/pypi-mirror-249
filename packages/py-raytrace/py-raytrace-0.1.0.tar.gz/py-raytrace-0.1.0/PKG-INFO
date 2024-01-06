@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: py-raytrace
+Version: 0.1.0
+Summary: A simple ray tracing application
+Author: Pranav A.
+Author-email: pranavnasrani@gmail.com
+License: MIT
+License-File: LICENCE
