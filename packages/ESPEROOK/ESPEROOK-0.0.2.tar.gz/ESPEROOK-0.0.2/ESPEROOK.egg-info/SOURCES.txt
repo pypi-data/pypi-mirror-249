@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ESPEROOK.egg-info/PKG-INFO
+ESPEROOK.egg-info/SOURCES.txt
+ESPEROOK.egg-info/dependency_links.txt
+ESPEROOK.egg-info/entry_points.txt
+ESPEROOK.egg-info/requires.txt
+ESPEROOK.egg-info/top_level.txt
+GIANDB/__init__.py
+GIANDB/congia/__init__.py
+GIANDB/congia/autogianap.py
