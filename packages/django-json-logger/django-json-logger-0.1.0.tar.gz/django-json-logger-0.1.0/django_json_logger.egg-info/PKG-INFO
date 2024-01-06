@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: django-json-logger
+Version: 0.1.0
+Summary: A Django app to logging in json format.
+Author-email: Maksim Kopytov <misst3rr@gmail.com>
+License: Copyright 2023 Maksim Kopytov
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the “Software”), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/missterr/django-json-logging
+Classifier: License :: Freeware
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=3.0
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: orjson; extra == "dev"
+Requires-Dist: ujson; extra == "dev"
+Provides-Extra: orjson
+Requires-Dist: orjson>=3.4.3; extra == "orjson"
+Provides-Extra: ujson
+Requires-Dist: ujson>=4.2.0; extra == "ujson"
+
+# Description
+This library provides the ability of converting django logs to JSON.
+
+# Installation
+Using standard Json library:
+```shell
+pip install git+https://github.com/missterr/django-json-logging.git
+```
+
+### Custom json libraries
+
+#### Orjson
+To use [Orjson](https://github.com/ijl/orjson):
+```shell
+pip install git+https://github.com/missterr/django-json-logging.git#egg=django-json-logging[orjson]
+```
+and add to Django settings `LOGGING_SERIALIZER="orjson"`
+
+#### Ujson
+To use [Ujson](https://github.com/ultrajson/ultrajson):
+```shell
+pip install git+https://github.com/missterr/django-json-logging.git#egg=django-json-logging[ujson]
+```
+and add to Django settings `LOGGING_SERIALIZER="ujson"`
+
+**Note**:  If you're using zsh you need to escape square brackets: pip install ... \[ujson\]
+
+# Usage
+### Django setup
+
+```python
+# setting.py
+
+LOGGING_APP_NAME = 'your_app_name'  # required
+LOGGING_FIELDS = ('levelname', 'name', 'module', 'process', 'thread', 'pathname', 'asctime')
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'json': {
+            '()': 'django_json_logging.formatters.JSONFormatter',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'json',
+        },
+    },
+    'loggers': {
+        '': {
+            'handlers': ['console'],
+            'level': 'WARNING',
+        },
+        'django': {
+            'handlers': ['console'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+    },
+}
+
+```
+Somewhere in the code
+```python
+import logging
+
+your_json_logger = logging.getLogger('json_logger')
+your_json_logger.warning('Something happened here', extra={'event_code': 'xxx'})
+```
+[Exhaustive fields list can be found here][1]
+
+[1]: https://docs.python.org/3/library/logging.html#logrecord-attributes

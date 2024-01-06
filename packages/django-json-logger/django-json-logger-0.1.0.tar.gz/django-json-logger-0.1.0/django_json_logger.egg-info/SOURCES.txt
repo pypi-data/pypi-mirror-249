@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+django_json_logger.egg-info/PKG-INFO
+django_json_logger.egg-info/SOURCES.txt
+django_json_logger.egg-info/dependency_links.txt
+django_json_logger.egg-info/requires.txt
+django_json_logger.egg-info/top_level.txt
+django_json_logging/__init__.py
+django_json_logging/formatters.py
+django_json_logging/serializers.py
+django_json_logging/settings.py
+tests/test_settings.py

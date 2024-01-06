@@ -1,0 +1,13 @@
+django>=3.0
+
+[dev]
+black
+isort
+orjson
+ujson
+
+[orjson]
+orjson>=3.4.3
+
+[ujson]
+ujson>=4.2.0
