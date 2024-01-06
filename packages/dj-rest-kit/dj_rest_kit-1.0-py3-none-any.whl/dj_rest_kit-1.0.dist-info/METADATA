@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dj-rest-kit
+Version: 1.0
+Summary: dj-rest-kit is a reusable Django application 
+Author-email: Aman Bothra <amanbothra1777@gmail.com>
+Maintainer-email: Prashant Gabu <prashantgabu.earn@gmail.com>
+Project-URL: Homepage, https://github.com/prashantgabu-e/dj-rest-kit
+Project-URL: Issues, https://github.com/prashantgabu-e/dj-rest-kit/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=3.2
+Requires-Dist: django-filter
+Requires-Dist: django-model-utils
+Requires-Dist: djangorestframework >3.3
+Requires-Dist: setuptools
+Requires-Dist: pytz
+Requires-Dist: python-dateutil
+Requires-Dist: django-json-widget ==1.1.1
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
