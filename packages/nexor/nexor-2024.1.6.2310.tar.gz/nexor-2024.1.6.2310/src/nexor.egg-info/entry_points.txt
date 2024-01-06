@@ -1,0 +1,6 @@
+[console_scripts]
+nexor = nexor.cli:ENTRY_DATA.main_command
+nexor-version = nexor.cli:ENTRY_DATA.sub_command
+
+[gather]
+placeholder = nexor
