@@ -1,0 +1,12 @@
+metDataModel/__init__.py,sha256=Do1KFNpe0hOpHTal3Ga_XMAUpfR0LeCQYG_x-x8hHXw,87
+metDataModel/core.py,sha256=RL0-9Z26JaIY4G4JNzXB_tysJT4AhhfKhYrtTZPiNfQ,26063
+metDataModel/derived.py,sha256=MXedUFtaYS8DlnJMRmQKBGVjUPBgsuICkwpXQSbJehE,2965
+metDataModel/simpleTuples.py,sha256=1HyeXp0rP69sjkNuUcQFDvUHCcHwkGihIShneW12cRE,785
+metDataModel/util.py,sha256=mFcbhEJKE-oNK_6g1Mo50DKZXYM94-KSdhwQRpK6gC8,838
+metDataModel/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=yJsyQGlITTHI8zfgbvpZQmjb9RZVLbS1B_99STbV-xo,50
+metDataModel-0.5.5.dist-info/LICENSE,sha256=uNCEca8X5yBr3A_Udg09E26uy_wQqCM9bgODeCv0LBM,1508
+metDataModel-0.5.5.dist-info/METADATA,sha256=fbiEiKwkbkY2ZBaQGD7slu7O16kNsA-RB825c3vLb8g,7478
+metDataModel-0.5.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+metDataModel-0.5.5.dist-info/top_level.txt,sha256=SfD4vqhCvhe2rIgFVm5C4QrSpL0WjzADWD4OuOb_yn4,19
+metDataModel-0.5.5.dist-info/RECORD,,
