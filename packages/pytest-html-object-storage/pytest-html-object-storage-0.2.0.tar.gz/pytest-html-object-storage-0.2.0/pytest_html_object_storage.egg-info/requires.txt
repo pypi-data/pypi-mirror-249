@@ -1,0 +1,4 @@
+pytest-html
+minio
+python-keystoneclient
+python-swiftclient
