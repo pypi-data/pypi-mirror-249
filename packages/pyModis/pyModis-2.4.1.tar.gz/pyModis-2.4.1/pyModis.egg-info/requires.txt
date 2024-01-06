@@ -1,0 +1,8 @@
+numpy
+future
+requests
+GDAL
+
+[GUI]
+wxPython
+wxPython-common
