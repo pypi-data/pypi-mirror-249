@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/easymlpreprocess1/__init__.py
+src/easymlpreprocess1/custom_exception.py
+src/easymlpreprocess1/logger.py
+src/easymlpreprocess1/remove_outliers.py
+src/easypreprocessml.egg-info/PKG-INFO
+src/easypreprocessml.egg-info/SOURCES.txt
+src/easypreprocessml.egg-info/dependency_links.txt
+src/easypreprocessml.egg-info/requires.txt
+src/easypreprocessml.egg-info/top_level.txt
