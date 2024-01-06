@@ -1,0 +1,30 @@
+{
+  "name": "oneironaut.entry.framepatterns",
+  "category": "hexcasting:patterns",
+  "icon": "minecraft:item_frame",
+  "sortnum": 3,
+  "advancement": "hexcasting:root",
+  "read_by_default": false,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "oneironaut.page.framepatterns.1"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "oneironaut:readframerotation",
+      "anchor": "oneironaut:readframerotation",
+      "input": "item frame",
+      "output": "number",
+      "text": "oneironaut.page.framepatterns.3"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "oneironaut:setframerotation",
+      "anchor": "oneironaut:setframerotation",
+      "input": "item frame, number",
+      "output": "",
+      "text": "oneironaut.page.framepatterns.4"
+    }
+  ]
+}

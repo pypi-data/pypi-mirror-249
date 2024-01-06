@@ -1,0 +1,2 @@
+[hexdoc]
+oneironaut = hexdoc_oneironaut._hooks:OneironautPlugin
