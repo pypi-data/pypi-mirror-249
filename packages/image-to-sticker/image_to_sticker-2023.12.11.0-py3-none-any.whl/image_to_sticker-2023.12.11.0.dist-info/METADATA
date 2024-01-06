@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: image-to-sticker
+Version: 2023.12.11.0
+Summary: ImageToSticker: convert your image into a sticker
+Home-page: UNKNOWN
+Author: Sergei Belousov aka BeS
+Author-email: sergei.o.belousov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: huggingface-hub >=0.17.3
+Requires-Dist: numpy >=1.23.4
+Requires-Dist: opencv-python >=4.8.1.78
+Requires-Dist: torch >=2.1.1
+Requires-Dist: torchvision >=0.16.1
+
+# Image-To-Sticker
+
+A simple python library that converts image to sticker.
+
+## Requirements
+
+* Linux, Windows, MacOS
+* Python 3.8.+
+
+## Install package
+
+```bash
+pip install image_to_sticker
+```
+
+## Install the latest version
+
+```bash
+pip install --upgrade git+https://github.com/bes-dev/image_to_sticker.git
+```
+
+## Demo
+
+```bash
+python -m image_to_sticker.image_to_sticker --help
+
+usage: image_to_sticker.py [-h] [--device DEVICE] [--fp16] [--model-name MODEL_NAME] --input-dir INPUT_DIR --output-dir OUTPUT_DIR [--image-size IMAGE_SIZE] [--postprocess]
+                           [--border-radius BORDER_RADIUS]
+
+options:
+  -h, --help            show this help message and exit
+  --device DEVICE
+  --fp16
+  --model-name MODEL_NAME
+  --input-dir INPUT_DIR
+  --output-dir OUTPUT_DIR
+  --image-size IMAGE_SIZE
+  --postprocess
+  --border-radius BORDER_RADIUS
+
+```
+
+
