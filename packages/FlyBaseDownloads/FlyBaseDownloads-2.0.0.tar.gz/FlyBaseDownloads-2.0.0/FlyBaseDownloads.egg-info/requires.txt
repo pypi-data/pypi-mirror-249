@@ -1,0 +1,2 @@
+obonet>=1.0.0
+firebase-admin>=6.1.0
