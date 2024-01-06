@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: Simba-UW-tf-dev
+Version: 1.81.8
+Summary: Toolkit for computer classification of behaviors in experimental animals
+Home-page: https://github.com/sgoldenlab/simba
+Author: Simon Nilsson, Jia Jie Choong, Sophia Hwang
+Author-email: sronilsson@gmail.com
+License: GNU Lesser General Public License v3 (LGPLv3)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.md
+Requires-Dist: Pillow
+Requires-Dist: pyyaml (==5.3.1)
+Requires-Dist: dtreeviz (==0.8.1)
+Requires-Dist: eli5 (==0.10.1)
+Requires-Dist: graphviz (==0.11)
+Requires-Dist: imblearn (==0.0)
+Requires-Dist: imgaug (==0.4.0)
+Requires-Dist: imutils (==0.5.2)
+Requires-Dist: matplotlib (>=3.0.3)
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: seaborn (==0.9.0)
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm (==4.30.0)
+Requires-Dist: xgboost (==0.90)
+Requires-Dist: yellowbrick
+Requires-Dist: dash (==1.14.0)
+Requires-Dist: dash-color-picker (==0.0.1)
+Requires-Dist: dash-core-components (==1.10.2)
+Requires-Dist: dash-colorscales (==0.0.4)
+Requires-Dist: dash-html-components (==1.0.3)
+Requires-Dist: h5py
+Requires-Dist: numexpr
+Requires-Dist: plotly (==4.9.0)
+Requires-Dist: cefpython3 (==66.0)
+Requires-Dist: pyarrow (==6.0.1)
+Requires-Dist: shap (==0.35.0)
+Requires-Dist: tables (>=3.6.1)
+Requires-Dist: xlrd (==1.2.0)
+Requires-Dist: trafaret (==2.1.1)
+Requires-Dist: shapely (==1.7.1) ; python_version == "3.6"
+Requires-Dist: numpy (==1.18.1) ; python_version == "3.6"
+Requires-Dist: opencv-python (==3.4.5.20) ; python_version == "3.6"
+Requires-Dist: pandas (==0.25.3) ; python_version == "3.6"
+Requires-Dist: tabulate (==0.8.3) ; python_version == "3.6"
+Requires-Dist: numba (==0.52.0) ; python_version == "3.6"
+Requires-Dist: statsmodels (==0.12.0) ; python_version == "3.6"
+Requires-Dist: shapely ; python_version >= "3.9"
+Requires-Dist: numpy ; python_version >= "3.9"
+Requires-Dist: opencv-python ; python_version >= "3.9"
+Requires-Dist: pandas ; python_version >= "3.9"
+Requires-Dist: tabulate (==0.9.0) ; python_version >= "3.9"
+Requires-Dist: numba ; python_version >= "3.9"
+Requires-Dist: statsmodels ; python_version >= "3.9"
+
+UNKNOWN
+
