@@ -1,0 +1,8 @@
+uwsgi-stubs/METADATA.toml,sha256=1-_s86NCvqmZO20Ha-iblgBkmlICGFHL9-udAQuBGLs,576
+uwsgi-stubs/__init__.pyi,sha256=QxTYWhAxwz_iYArhm0fDVZKP0W3l9f8bjbYUZ_1s2Qw,11986
+uwsgidecorators-stubs/METADATA.toml,sha256=1-_s86NCvqmZO20Ha-iblgBkmlICGFHL9-udAQuBGLs,576
+uwsgidecorators-stubs/__init__.pyi,sha256=dWJPs5FFRE3sT7oWY-TQ-rOgBbXPYOjt9_x-oTfxnKA,6285
+types_uWSGI-2.0.0.20240106.dist-info/METADATA,sha256=aYvr2V0uhEyTiHv6e13JdfH2K3OrDqaf-hsfVd4O5ko,1829
+types_uWSGI-2.0.0.20240106.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+types_uWSGI-2.0.0.20240106.dist-info/top_level.txt,sha256=JDqKCIhTiVOjyCTx1pzjP4LXlEKmzea-Z90u_Eba3Tg,34
+types_uWSGI-2.0.0.20240106.dist-info/RECORD,,
