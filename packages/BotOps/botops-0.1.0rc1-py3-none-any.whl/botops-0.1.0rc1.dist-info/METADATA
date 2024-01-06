@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: BotOps
+Version: 0.1.0rc1
+Summary: Telegram bot framework with related operations.
+Keywords: bot telegram chatbot asyncio
+Author-Email: Kirill Lapushinskiy <kirill@lapushinskiy.ru>
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Chat
+Project-URL: Documentation, https://github.com/givemepillow/BotOps#readme
+Project-URL: Issues, https://github.com/givemepillow/BotOps/issues
+Project-URL: Source, https://github.com/givemepillow/BotOps
+Requires-Python: >=3.12
+Requires-Dist: aiohttp>=3.9.1
+Requires-Dist: attrs>=23.2.0
+Requires-Dist: cattrs>=23.2.3
+Description-Content-Type: text/markdown
+
+# BotOps
+
+[![PyPI - Version](https://img.shields.io/pypi/v/BotOps.svg)](https://pypi.org/project/BotOps)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/BotOps.svg)](https://pypi.org/project/BotOps)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install BotOps
+```
+
+## License
+
+`BotOps` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
