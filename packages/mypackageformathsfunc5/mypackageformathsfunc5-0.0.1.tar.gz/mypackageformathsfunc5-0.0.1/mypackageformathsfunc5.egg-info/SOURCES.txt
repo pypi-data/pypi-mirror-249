@@ -1,0 +1,6 @@
+pyproject.toml
+setup.py
+mypackageformathsfunc5.egg-info/PKG-INFO
+mypackageformathsfunc5.egg-info/SOURCES.txt
+mypackageformathsfunc5.egg-info/dependency_links.txt
+mypackageformathsfunc5.egg-info/top_level.txt
