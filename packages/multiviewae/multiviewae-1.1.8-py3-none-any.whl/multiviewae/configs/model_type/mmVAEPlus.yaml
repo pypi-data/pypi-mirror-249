@@ -1,0 +1,32 @@
+# @package _global_
+
+# default parameters for MMVAE+ model
+model_name: "mmVAEPlus"
+
+model:
+  K: 1
+  beta: 1
+  u_dim: 3
+  w_dim: 2
+  z_dim: 5
+  learn_private_prior: True
+  learn_shared_prior: False
+  multiple_latents: True
+  
+encoder:
+  default:
+    _target_: multiviewae.architectures.mlp.VariationalEncoder
+
+    non_linear: False
+    enc_dist:
+      _target_: multiviewae.base.distributions.Normal
+
+decoder:
+  default:
+    _target_: multiviewae.architectures.mlp.VariationalDecoder
+
+    non_linear: False
+    init_logvar: -3
+
+    dec_dist:
+      _target_: multiviewae.base.distributions.Normal
