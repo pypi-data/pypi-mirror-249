@@ -1,0 +1,8 @@
+setup.py
+pypi_express_pub/__init__.py
+pypi_express_pub/publish.py
+pypi_express_pub.egg-info/PKG-INFO
+pypi_express_pub.egg-info/SOURCES.txt
+pypi_express_pub.egg-info/dependency_links.txt
+pypi_express_pub.egg-info/entry_points.txt
+pypi_express_pub.egg-info/top_level.txt
