@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+rpip.py
+setup.cfg
+rpip.egg-info/PKG-INFO
+rpip.egg-info/SOURCES.txt
+rpip.egg-info/dependency_links.txt
+rpip.egg-info/entry_points.txt
+rpip.egg-info/top_level.txt
