@@ -1,0 +1,3 @@
+# AWS Kinesis producer and consumer
+tenacity>=8.0.0,<9.0.0
+boto_session_manager>=1.6.1,<2.0.0
