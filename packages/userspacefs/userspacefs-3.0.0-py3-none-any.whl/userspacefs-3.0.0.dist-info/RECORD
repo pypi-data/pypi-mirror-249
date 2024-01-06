@@ -1,0 +1,17 @@
+userspacefs/__init__.py,sha256=OF2_EaGjV8kOJGiB131hLl7K8eIr-bGEosugCiuyIcM,26310
+userspacefs/abc.py,sha256=u0KfiHTupCobOsRAOg18axMid1b3Jck-hnOiuSzZSno,6510
+userspacefs/fuse_adapter.py,sha256=xSSOTqsGsMv7vGO3VCegLdSvyUxK53GgcXX0q3NccIo,9932
+userspacefs/fusepy.py,sha256=fmcWi2k0Zkr1924rdhoANWB_TJ0qtq8c4OuGeVT0Ens,51008
+userspacefs/macos_path_conversion.py,sha256=TN93tcsdmB3jB6ILUv7B5RYqHMcXAHyq_KCbY4lanY0,3810
+userspacefs/memoryfs.py,sha256=siSz0goVb3__1rrfKxeCi5E2EdDSoU3a26D3pAoBhtc,20355
+userspacefs/path_common.py,sha256=ru4tMo_-l5sTvU0OGiFD95sWwqhxT8zGmXVIr6kMfhU,3477
+userspacefs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+userspacefs/smbserver.py,sha256=CenDTxJ_loSJh-HTlQ1MDFSxwt1ToMR982M5Fe6cRPg,152659
+userspacefs/stdlibfs.py,sha256=qLGsIXxrWQ2pJoqHyQ89qIsAo8mtbzwfUZYhzxd3n1M,3387
+userspacefs/util_dumpster.py,sha256=nA7eV-syn-ZbnGTeTeWDEdJbQcqXZWTNEg45tV3UD_I,13547
+userspacefs/webdavserver.py,sha256=9CIywA9KsWnA4XqYmpO2v_UvSxbugdtjJNPGHmpJk5I,51898
+userspacefs-3.0.0.dist-info/LICENSE,sha256=1i8GWDCqNznMAxFWuWkIBcey6BG0oXjItKzYcl1WHJQ,35142
+userspacefs-3.0.0.dist-info/METADATA,sha256=ISR3brxuiIGawkfNAdxP9_mKPfqilag-Qk_LUdvE2ic,1109
+userspacefs-3.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+userspacefs-3.0.0.dist-info/top_level.txt,sha256=N4r6kuzG71krMbtZPZXJejIdGRkLi5etZtYhjCMK-zQ,12
+userspacefs-3.0.0.dist-info/RECORD,,
