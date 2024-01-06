@@ -1,0 +1,13 @@
+logs/__init__.py,sha256=mbUqqeZptfzMC2s8uDipO4b7IUVm-V7KxWxOO72I8g8,200
+logs/decorators.py,sha256=BKiWvMR7sM3E0h3Xw2NLJ5YQMj_VVSBqPMMpR-vK1z8,182
+logs/middleware.py,sha256=DKV_UkLwf8Ne8vOd6Jdp3Fx3O7yHo5n7NvjnqJEt6xk,5471
+logs/registration.py,sha256=6EOQrJPlVctst61vFGVsxx3j_hRbVARgo52us9EW1dg,533
+logs/settings.py,sha256=yZVpgj6I0HWlKkjKern70wJoRCUo6j4yM1IZ55OPI68,126
+logs/models/__init__.py,sha256=-E1O-X8pXOUdgg_sdgIKel2NuUnqEgYWNA92SxM5veo,1045
+logs/models/fields.py,sha256=tEN6vacNL0EL8bwTaX6jehX7urXI9n3gg47buXPw3Vg,2890
+logs/models/managers.py,sha256=5K3wma1iO7_AesXDq10C4cVY7sJxlP_8vT5ctiBYQXE,9586
+django_logs-1.0.1.dist-info/LICENSE,sha256=Bmax7RtaB1R7hFWokkpE5C6385imKp_IQ6gUA2zpp6w,1071
+django_logs-1.0.1.dist-info/METADATA,sha256=3VLDRS4wgco_Ol7ChgeGL3cV4_Prx9v_TZw-3gj94ug,3593
+django_logs-1.0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_logs-1.0.1.dist-info/top_level.txt,sha256=oFqloLJgNsbg4zasPjR5HMuYI9qT4aLxVWKt9yEkbi4,5
+django_logs-1.0.1.dist-info/RECORD,,
