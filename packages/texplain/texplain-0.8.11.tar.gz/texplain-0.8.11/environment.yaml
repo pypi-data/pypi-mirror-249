@@ -1,0 +1,12 @@
+channels:
+- conda-forge
+dependencies:
+- click
+- furo
+- numpy
+- pytest
+- python
+- setuptools_scm
+- sphinx
+- sphinx-argparse
+- sphinx-mdinclude
