@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+splinecloud_scipy/__init__.py
+splinecloud_scipy/api_client.py
+splinecloud_scipy/parametric_spline.py
+splinecloud_scipy/piecewise_polynomial.py
+splinecloud_scipy.egg-info/PKG-INFO
+splinecloud_scipy.egg-info/SOURCES.txt
+splinecloud_scipy.egg-info/dependency_links.txt
+splinecloud_scipy.egg-info/requires.txt
+splinecloud_scipy.egg-info/top_level.txt
+tests/test_api_client.py
+tests/test_parametric_spline.py

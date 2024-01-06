@@ -1,0 +1,12 @@
+numpy
+scipy
+requests
+
+[dev]
+responses
+mypy
+
+[test]
+responses
+matplotlib
+mypy
