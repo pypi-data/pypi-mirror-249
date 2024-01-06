@@ -1,0 +1,98 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0", "tox"]
+build-backend = "maturin"
+
+[project]
+name = "shinqlx"
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = ["setuptools>=61.2", "redis>=2.10", "hiredis", "requests>=2.20", "pyzmq>=23"]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/mgaertne/shinqlx"
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+include-package-data = false
+
+[tool.maturin]
+unstable-flags = ["build-std=std"]
+include = [
+    { path = "src/**/*", format = "sdist" },
+    { path = "build.rs", format = "sdist" },
+    { path = ".cargo/**/*", format = "sdist" }
+]
+bindings = "pyo3"
+compatibility = "linux"
+skip-auditwheel = true
+python-source = "python"
+python-packages = ["shinqlx", "minqlx"]
+
+[tool.ruff]
+select = ["C40", "E", "F", "SIM", "TCH"]
+ignore = []
+
+fixable = ["A", "B", "C", "D", "E", "F"]
+unfixable = []
+
+exclude = [
+    ".eggs",
+    ".git",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+    "venv",
+]
+per-file-ignores = {}
+
+line-length = 120
+
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+target-version = "py39"
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[tool.mypy]
+mypy_path = "$MYPY_CONFIG_FILE_DIR/python"
+packages = ["minqlx", "shinqlx"]
+check_untyped_defs = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_unused_configs = true
+no_implicit_reexport = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.tox]
+legacy_tox_ini = """
+    [tox]
+    envlist = ruff,mypy
+    usedevelop = true
+
+    [testenv:ruff]
+    deps = ruff
+    commands = ruff check {posargs}
+
+    [testenv:mypy]
+    deps = mypy
+    commands = mypy {posargs}
+"""
