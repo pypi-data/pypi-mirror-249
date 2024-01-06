@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "community-solar-programs"
+version = "0.1.0"
+description = "Community solar regulation as code. A static library of functions that calculate compensation for various community solar programs."
+authors = ["lyon lay <lay.lyon@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: community-solar-programs
+Version: 0.1.0
+Summary: Community solar regulation as code. A static library of functions that calculate compensation for various community solar programs.
+Author: lyon lay
+Author-email: lay.lyon@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Community Solar Programs
+
+Community Solar Programs represented as code.
+
+Understanding potential earnings from community solar programs is difficult. This library attempts to make it easy by encoding program compensation structures (defined in regulatory, policy, and other legislative documents) as runnable code.
+
+# Developing 
+
+```bash
+poetry shell
+poetry install
+```
+
+# Publishing
+
+Refresh poetry lock file as per https://python-poetry.org/docs/basic-usage/#as-a-library-developer
+```bash
+poetry update
+```
+
+Run tests
+
+```bash
+poetry build
+```
+
