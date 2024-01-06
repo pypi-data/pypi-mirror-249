@@ -1,0 +1,7 @@
+click
+console
+fire
+googlesearch-python
+openai
+pandas
+prompt_toolkit

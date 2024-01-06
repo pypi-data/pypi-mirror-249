@@ -1,0 +1,342 @@
+#!/usr/bin/env python3
+
+# to override print <= can be a big problem with exceptions
+from __future__ import print_function  # must be 1st
+import pandas as pd
+import builtins
+import datetime as dt
+import os
+import sys
+import time
+
+from console import bg, fg, fx
+from fire import Fire
+from openai import OpenAI
+from prompt_toolkit import PromptSession, prompt
+from prompt_toolkit.history import FileHistory
+
+import re
+
+
+from cmd_ai import config # , key_enter, topbar, unitname
+from cmd_ai import texts
+from cmd_ai.api_key import get_api_key
+from cmd_ai.g_askme import g_askme
+from cmd_ai.syscom import process_syscom
+from cmd_ai.version import __version__
+
+
+import select
+import click
+
+# ===============================================================================================
+
+
+def mark_code(text, colors ):
+    """
+    1.st it set cyan and default marks.
+    2.nd it saves the code to /tmp
+    """
+    global count
+    global code_buffer
+    global PIPER
+
+    #print(text)
+    #print(text)
+
+    # Define the pattern to match the pair of symbols
+    pattern = "\s*```"
+
+    # Define a counter to keep track of occurrences
+    counter = 0
+
+    # # Define a function to handle the replacement
+    def replace(match ):
+        nonlocal counter
+        nonlocal colors  # from the mother function
+        #print("...MATCH                   ",counter)
+        counter+= 1
+        if colors:
+            bs=f"\n{fx.italic}{bg.default}{fg.lightcyan}```"    # code is in cyan
+            es=f"\n```{fx.default}{bg.default}{fg.lightyellow}" # response is in yellow
+        else:
+            bs="\n#+begin_src "
+            es="\n#+end_src"
+        if counter % 2 == 1:
+            return f"{bs}"   # return beginsource
+
+            #return f"\n{fx.italic}{bg.default}{fg.lightcyan}{bs} "
+            #return f"{fx.italic}{bg.default}{fg.lightcyan}#+begin_src python :results replace output :session test :exports results "
+        else:
+            return f"{es}"  # return endsource
+            #return f"\n{es}{fx.default}{bg.default}{fg.lightyellow}"
+            #return "{bg.default}{fg.default}"
+
+    # Use re.sub() with the defined function to replace the occurrences
+    new_text = re.sub( pattern ,replace, text)
+
+    if colors:
+        new_text = f"{fg.lightyellow}{new_text}{fg.default}"
+    else:
+        new_text = f"{new_text}"
+    return new_text
+
+
+# ===============================================================================================
+
+
+def display_response(res):
+
+    resip = mark_code(res, colors = True)  # colors for terminal
+    resiw = mark_code(res, colors = False) # good for emacs
+
+    # I always clear the script
+    config.PYSCRIPT_EXISTS = False
+    config.SHSCRIPT_EXISTS = False
+
+    if config.CONFIG['current_role'] == "pythonista":
+        if resiw.find("#+begin_src")>=0 and  resiw.find("#+end_src")>10:
+            resco = re.sub(  r'^.*#\+begin_src(.*?)\n', "",  resiw, flags=re.DOTALL ) # ignore \n
+            resco = re.sub( r'#\+end_src.*$',  "", resco , flags=re.DOTALL) # ignore \n
+            with open( config.CONFIG['pyscript'] , "w" ) as f:
+                f.write("#!/usr/bin/env python3\n\n")
+                f.write(resco)
+            config.PYSCRIPT_EXISTS = True
+
+    if config.CONFIG['current_role'] == "sheller":
+        if resiw.find("#+begin_src")>=0 and  resiw.find("#+end_src")>10:
+            resco = re.sub(  r'^.*#\+begin_src(.*?)\n', "",  resiw, flags=re.DOTALL ) # ignore \n
+            resco = re.sub( r'#\+end_src.*$',  "", resco , flags=re.DOTALL) # ignore \n
+            with open( config.CONFIG['shscript'] , "w" ) as f:
+                f.write("#!/bin/bash\n\n")
+                f.write(resco)
+            config.SHSCRIPT_EXISTS = True
+
+
+    # piper can get python question...
+    if config.CONFIG['current_role'] == "piper":
+        if resiw.find("#+begin_src python")>=0 and  resiw.find("#+end_src")>10:
+            resco = re.sub(  r'^.*#\+begin_src(.*?)\n', "",  resiw, flags=re.DOTALL ) # ignore \n
+            resco = re.sub( r'#\+end_src.*$',  "", resco , flags=re.DOTALL) # ignore \n
+            with open( config.CONFIG['pyscript'] , "w" ) as f:
+                f.write("#!/usr/bin/env python3\n\n")
+                f.write(resco)
+            config.PYSCRIPT_EXISTS = True
+        elif (resiw.find("#+begin_src bash")>=0 or resiw.find("#+begin_src sh")>=0) and  resiw.find("#+end_src")>10:
+            resco = re.sub(  r'^.*#\+begin_src(.*?)\n', "",  resiw, flags=re.DOTALL ) # ignore \n
+            resco = re.sub( r'#\+end_src.*$',  "", resco , flags=re.DOTALL) # ignore \n
+            with open( config.CONFIG['pyscript'] , "w" ) as f:
+                f.write("#!/bin/bash\n\n")
+                f.write(resco)
+            config.SHSCRIPT_EXISTS = True
+
+
+
+    print( resip ) # fg.yellow, res, fg.default)
+    #print( resiw ) # what will be in conversations.org
+    # print(fg.yellow, res, fg.default)
+
+    if config.CONFIG['current_role'] == 'pythonista' and config.PYSCRIPT_EXISTS:
+        print(f"i...                        {fg.lightgreen}  see {config.CONFIG['pyscript']}; run with .e {fg.default}")
+
+    if config.CONFIG['current_role'] == 'sheller' and  config.SHSCRIPT_EXISTS:
+        print(f"i...                        {fg.lightgreen}  see {config.CONFIG['shscript']}; run with .e {fg.default}")
+
+    if config.CONFIG['current_role'] == 'piper' and  config.SHSCRIPT_EXISTS:
+        print(f"i...                        {fg.lightgreen}  see {config.CONFIG['shscript']}; run with .e {fg.default}")
+
+
+    # CREATE ORG FILE WITH THE RECORD
+    if not os.path.exists(os.path.expanduser( config.CONFIG['conversations']) ):
+        with open( os.path.expanduser( config.CONFIG['conversations']),"a") as f:
+            f.write( texts.org_header )
+            f.write("\n")
+    with open( os.path.expanduser( config.CONFIG['conversations']),"a") as f:
+        tnow = dt.datetime.strftime(dt.datetime.now(),'%Y/%m/%d %H:%M:%S')
+        f.write(f"*** {config.CONFIG['last_prompt']}\n")
+        # f.write(f" /{tnow} temperature={temp}/\n\n")
+        f.write(f" /{tnow} /\n\n")
+        f.write(resiw) # emacs oriented
+        f.write("\n\n")
+
+
+
+
+
+def pipe_mode(question):
+    """
+    detect mode - pipe or not
+    """
+    if question is None or question=="" or len(question)<5: return None
+    if select.select([sys.stdin, ], [], [], 0.0)[0]:
+        #print(f"D... {fg.lightgray}Pipe mode! {fg.default}")
+
+        mstdin = []
+        for line in sys.stdin:
+            mstdin.append( line.strip() )
+        return mstdin
+    else:
+        return None #print("No pipe")
+
+
+
+
+def main(cmd="", debug=False):
+    """Main function of the project"""
+
+    # ======== DEFINE THE CONFIG FILE HERE ========
+
+
+    if os.path.exists(  os.path.expanduser(config.CONFIG['pricelog'] ) ):
+        # dateparse = lambda x: dt.datetime.strptime(x, '%Y-%m-%d %H:%M:%S')
+        df = pd.read_csv( os.path.expanduser(config.CONFIG['pricelog']) ,
+                          delim_whitespace=True,
+                          names = ['date','time', 'in','out','price']
+                         )#, parse_dates=['datetime'], date_parser=dateparse)
+
+        df['datetime'] = pd.to_datetime(df.date)
+        df = df.groupby(df['datetime'])['price'].sum()#transform('sum')
+        print("____________________________________")
+        print(df)
+        print("____________________________________")
+
+
+    config.CONFIG["filename"] = "~/.config/cmd_ai/cfg.json"
+    config.load_config()
+
+    if config.CONFIG["api_key"] is None:
+        res = get_api_key()
+        if res is not None:
+            config.CONFIG["api_key"] = res
+            res = input("> save api_key to config?   y/n")
+            if res == "y":
+                print(config.CONFIG["api_key"])
+                config.save_config()
+            else:
+                print(" ... not now ...")
+
+
+    config.tokens = 0
+    config.started_task = dt.datetime.now()
+    config.started_total = dt.datetime.now()
+
+    # in CON config.PYSCRIPT = "/tmp/gpt_code.py"
+    config.PYSCRIPT_EXISTS = False
+    config.SHSCRIPT_EXISTS = False
+
+
+    config.pipeinput = pipe_mode(cmd)
+    if config.pipeinput is not None:
+        pass
+        # system prompt must be linux expert
+
+    config.client = OpenAI(api_key=get_api_key())
+    config.myPromptSession = PromptSession(
+        history=FileHistory(os.path.expanduser("~/.cmd_ai.history"))
+    )
+
+    # config.load_config()
+    # config.save_config()
+
+    if cmd == "usage":
+        print(
+            """ ... usage:
+                _
+        """
+        )
+        sys.exit(0)
+    if cmd == "savecfg":
+        config.save_config()
+        print("i... config saved")
+        sys.exit(0)
+    # else:
+    #    unitname.func()
+
+    # IN SYSCOM
+    # models = config.client.models.list()
+    # mids = []
+    # for i in models.data:
+    #     if i.id.find("gpt") >= 0:
+    #         mids.append(i.id)
+    # for i in sorted(mids):
+    #     print("   ", i)
+
+    print("                            ", fg.cyan, ".h for help", fg.default)
+    if cmd == "":
+        while True:
+
+            SYSCOM = False
+            inp = config.myPromptSession.prompt("> ")
+            inp = inp.strip()
+            if config.CONFIG["current_role"] == "pythonista" and  inp[0]!=".":
+                inp = f"{inp} (Write python code)."
+            if config.CONFIG["current_role"] == "sheller" and  inp[0]!=".":
+                inp = f"{inp} (Write bash code if needed)."
+
+
+            if inp.strip() == "":
+                continue
+            if len(inp.strip()) == 1:
+                print(f"!... {fg.red}  one letter prompt not allowed, use .h  {fg.default}")
+                continue
+
+            if len(inp) > 0 and len(inp) < 10 and inp[0] == ".":
+                # System command .... root style ...
+                SYSCOM = True
+                print(fg.orange, inp)
+            else:
+                config.CONFIG['last_prompt'] = inp
+                print(fg.white, inp)
+            print(fg.default)
+
+            if SYSCOM:
+                process_syscom(inp)
+            else:
+                res = g_askme(inp, model="gpt-4-1106-preview")
+                # append the response...
+                config.messages.append( {"role":"assistant", "content":res} ) # always user/assistant
+                with open( os.path.expanduser( config.CONFIG['current_messages'] ), "w" )  as f:
+                    f.write( str(config.messages) )
+
+                display_response(res)
+
+    else:
+        # commandline.  OR pipe on commandline
+        inp = cmd # command
+
+        print(f"i...  {bg.green}{fg.white} Pipe expert {bg.default}{fg.default}")
+        config.messages.append({"role": "system", "content": texts.role_piper})
+        config.CONFIG["current_role"] = "piper"
+
+        if config.pipeinput is not None: # pipe + cmd
+            nl = '\n'.join(config.pipeinput)
+
+            # (Write bash code if required).
+            inp = f"Here is some linux command output:\n```{nl}```\n{cmd}"
+
+        print(fx.italic,inp, fx.default,"\n")
+
+        res = g_askme(inp, model="gpt-4-1106-preview")
+        config.messages.append( {"role":"assistant", "content":res} ) # always user/assistant
+
+        with open( os.path.expanduser( config.CONFIG['current_messages'] ), "w" )  as f:
+            f.write( str(cmd) )
+        display_response(res)
+        if config.SHSCRIPT_EXISTS:
+            click.echo('Run the code? [yn] ', nl=False)
+            c = click.getchar()
+            click.echo()
+            if c == 'y':
+                click.echo('We will go on')
+                process_syscom(".e")
+            elif c == 'n':
+                click.echo('Abort!')
+            else:
+                click.echo('Invalid input :(')
+            #if click.confirm('Run the code?', abort=True, default=False):
+            #    process_syscom(".e")
+
+# ====================================================================
+
+if __name__ == "__main__":
+    Fire(main)
