@@ -1,0 +1,3 @@
+[console_scripts]
+devtest=timeitpoj.tests:test_timer[dev]
+
