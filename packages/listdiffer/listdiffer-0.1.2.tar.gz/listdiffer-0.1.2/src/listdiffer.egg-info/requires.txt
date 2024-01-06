@@ -1,0 +1,8 @@
+typing>3.0.0
+
+[:python_version >= "3.8"]
+tomli
+
+[dev]
+pip-tools
+pytest
