@@ -1,0 +1,6 @@
+sep005_io_parquet/__init__.py,sha256=FNjs4H3MAeHGOCVxYJmPm-ec67P82qKgn7K3nLsXQs4,57
+sep005_io_parquet/parquet.py,sha256=Ob19RFAjea9FcLExI5bCadsjtwcUxUdAx2MgX2GfY9g,2917
+sep005_io_parquet-0.0.1.dist-info/METADATA,sha256=3BdLRWDroBraiSSW1QdFBplBAo3HCmKP3J_l817NUI4,896
+sep005_io_parquet-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sep005_io_parquet-0.0.1.dist-info/top_level.txt,sha256=8IvX_XKK84LOL53Gs2G0CiZNWs0sAvjSuSZ_xO-F5Ns,18
+sep005_io_parquet-0.0.1.dist-info/RECORD,,
