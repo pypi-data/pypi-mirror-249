@@ -1,0 +1,8 @@
+Django>=3.2
+django-filter
+django-model-utils
+djangorestframework>3.3
+setuptools
+pytz
+python-dateutil
+django-json-widget==1.1.1
