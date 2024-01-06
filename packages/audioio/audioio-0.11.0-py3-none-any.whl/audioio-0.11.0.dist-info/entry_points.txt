@@ -1,0 +1,3 @@
+[console_scripts]
+audioconverter = audioio.audioconverter:main
+audiomodules = audioio.audiomodules:main
