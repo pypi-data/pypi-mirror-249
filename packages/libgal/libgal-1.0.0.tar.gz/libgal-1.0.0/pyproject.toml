@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel.force-include]
+"libgal/modules" = "libgal/modules"
+
+[project]
+name = "libgal"
+version = "1.0.0"
+authors = [
+  { name="Jean Manuel González Mejía", email="ebrainding@gmail.com" },
+  { name="Julián Leandro Giraldez", email="juliangiraldez@outlook.com"},
+  { name="Sebastian Wilwerth", email="sebastian.wilwerth@gmail.com" }
+]
+
+license = { file = "LICENSE.txt" }
+
+description = "Librería para la simplificación del código en diversos proyectos de Python"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "selenium>=4.0.0",
+	"Brotli",
+    "python-dotenv>=0.10.2",
+	"teradatasqlalchemy==17.0.0.0",
+	"bs4",
+    "sqlalchemy-teradata==0.9.0.dev0",
+    "teradata==15.10.0.21",
+    "teradatasql==17.10.0.11",
+    "SQLAlchemy==1.3.23",
+    "pandas==1.3.5",
+    "numpy==1.26.1",
+    "teradataml==17.0.0.2",
+    "scikit-learn",
+    "pyodbc"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jeanmgonzalez/libgal"
+"Bug Tracker" = "https://github.com/jeanmgonzalez/libgal/issues"
