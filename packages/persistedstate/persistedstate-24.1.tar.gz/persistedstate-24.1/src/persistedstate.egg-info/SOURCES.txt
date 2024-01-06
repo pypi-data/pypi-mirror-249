@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/persistedstate/__init__.py
+src/persistedstate/py.typed
+src/persistedstate.egg-info/PKG-INFO
+src/persistedstate.egg-info/SOURCES.txt
+src/persistedstate.egg-info/dependency_links.txt
+src/persistedstate.egg-info/requires.txt
+src/persistedstate.egg-info/top_level.txt
