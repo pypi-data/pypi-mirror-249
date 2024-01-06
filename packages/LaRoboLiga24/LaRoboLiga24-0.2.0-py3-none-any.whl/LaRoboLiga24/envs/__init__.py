@@ -1,0 +1,1 @@
+from LaRoboLiga24.envs.LaRoboLiga24 import LaRoboLiga_Arena

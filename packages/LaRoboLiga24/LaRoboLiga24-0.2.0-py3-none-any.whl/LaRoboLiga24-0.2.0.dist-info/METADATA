@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: LaRoboLiga24
+Version: 0.2.0
+Summary: A OpenAI Gym Env for the event LaRoboLiga
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+Requires-Dist: pybullet
+Requires-Dist: opencv-contrib-python
+Requires-Dist: numpy
+
+This is readme file 
