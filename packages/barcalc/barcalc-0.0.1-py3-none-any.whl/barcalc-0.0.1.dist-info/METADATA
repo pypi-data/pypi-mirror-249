@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: barcalc
+Version: 0.0.1
+Summary: Bar data calculation routines
+Author-email: Furechan <furechan@xsmail.com>
+License: MIT
+License-File: LICENSE.txt
+Keywords: data,finance
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Description-Content-Type: text/markdown
+
+# Bar data calculation routines in Python
+
+This package offers a variety of calculation routines arround financial bar data.
+This is work in progress.
+
+Bar data is represented as a datafrane with a `date` timestamp index
+and `open`, `high`, `low`, `close`, `volume` columns all in lower case.
+Data for stocks prices is always assumed adjusted.
+
