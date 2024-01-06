@@ -1,0 +1,48 @@
+<!-- Copyright (c) Nebari Development Team.-->
+<!-- Distributed under the terms of the Modified BSD License. -->
+
+{% extends "templates/page.html" %} {% block nav_bar_left_items %} {% endblock
+nav_bar_left_items %} {% block nav_bar_right_items %}
+
+<div class="profile-menu">
+  <div class="profile">
+    {% if user %}
+    <span class="username">{{user.name}}</span>
+    {% endif %}
+    <i class="fa fa-caret-down pull-right"></i>
+  </div>
+  <ul class="menu">
+    <li><a href="{{base_url}}token">Tokens</a></li>
+    {% if user.admin %}
+    <li><a href="{{base_url}}admin">Admin</a></li>
+    {% endif %}
+    <li><a href="{{base_url}}logout">Logout</a></li>
+  </ul>
+</div>
+
+{% endblock nav_bar_right_items %} {% block footer %} {% if display_version %}
+<div class="version">{{ version or 'v0.0.1'}}</div>
+{% endif %} {% endblock footer%} {% block stylesheet %} <link rel="stylesheet"
+href="{{ static_url("css/style.min.css") }}" type="text/css"/>
+<style>
+  {% include 'style.css' %}
+</style>
+
+{% set jsurls = nebari_theme_extra_js_urls | default([]) %} {% for jsurl in
+jsurls %}
+<script type="text/javascript" src="{{ jsurl }}" defer></script>
+{% endfor %} {% endblock stylesheet %}
+
+<!-- {# requires jupyerhub > 0.9.4 https://github.com/jupyterhub/jupyterhub/pull/2296 #}  -->
+{% block logo %}
+<span id="jupyterhub-logo" class="pull-left">
+  <!-- ignore: H006 since we inherit from Hub -->
+  <a href="{{logo_url or base_url}}"
+    ><img
+      src="{{ logo }}"
+      alt="JupyterHub logo - Nebari Home"
+      class="jpy-logo"
+      title="Home"
+  /></a>
+</span>
+{% endblock logo%}
