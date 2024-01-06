@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mayya_connect.egg-info/PKG-INFO
+src/mayya_connect.egg-info/SOURCES.txt
+src/mayya_connect.egg-info/dependency_links.txt
+src/mayya_connect.egg-info/requires.txt
+src/mayya_connect.egg-info/top_level.txt
+src/mayya_database/__init__.py
+src/mayya_database/mongo_crud.py
