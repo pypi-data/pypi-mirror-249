@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: py-raytrace
+Version: 0.4.7
+Summary: A simple ray tracing application
+Author: Pranav A.
+Author-email: prnv.school@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+
+
+# Raytrace
+
+Py-Raytrace is a simple ray tracing application that creates realistic images by simulating the behavior of light rays in a virtual scene.
+
+## Installation
+
+You can install Raytrace using `pip`:
+
+```bash
+pip install py-raytrace
+Usage
+After installation, you can run Py-Raytrace from the command line:
+```
+```bash
+ray
+```
+
+or
+
+```bash
+raytrace
+```
+
+or
+```bash
+py-raytrace
+``` 
+
+This command will launch the ray tracing process and generate a rendered image based on the provided scene and camera parameters.
+
+## Configuration
+
+Raytrace allows you to configure the scene and camera parameters in the raytrace.py script. You can customize the positions and properties of spheres, lighting, and the floor to create different scenes.
+
+Additionally, the script provides a graphical interface using matplotlib with sliders to adjust the camera angles interactively.
+
+## Dependencies
+
+Py-Raytrace depends on the following Python packages:
+
+```bash
+numpy
+Pillow (PIL)
+tqdm
+matplotlib
+```
+These dependencies will be automatically installed when you install Py-Raytrace using pip.
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+Pranav A: [Github](https://github.com/pranavnasrani/)
+
