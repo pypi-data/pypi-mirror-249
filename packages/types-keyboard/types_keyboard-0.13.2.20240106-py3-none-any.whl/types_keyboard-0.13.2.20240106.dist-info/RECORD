@@ -1,0 +1,11 @@
+keyboard-stubs/METADATA.toml,sha256=jEM8Cf6x44Mh4fP8pj9YViNnZmrjurcPwLCqyKFAp_g,364
+keyboard-stubs/__init__.pyi,sha256=7O5ykSrXDAyQ-vOgVK0xP0ElGA6_rs9HpNsV-fZIBo4,5081
+keyboard-stubs/_canonical_names.pyi,sha256=B9brbT-ZNkrsipQ4Cyf3nEivr7d7FU31IdmFoOedHFw,125
+keyboard-stubs/_generic.pyi,sha256=OQZ8VWVAEi7vu8Leov31UnCKN3yC-2QNvr_KrBtpbd0,900
+keyboard-stubs/_keyboard_event.pyi,sha256=tvCzBhfSaZEBcHtbOCEnhehqrFMgPCPeaFrIi3KAJcU,823
+keyboard-stubs/_mouse_event.pyi,sha256=H_D2_idBdhs4_gdenerQ7Gy1DKG5nOCbksKFYAni8og,1048
+keyboard-stubs/mouse.pyi,sha256=wlCZiJD_IqaTC2iZFDWiTp1a08v39t35HlJEHdWzKmk,3140
+types_keyboard-0.13.2.20240106.dist-info/METADATA,sha256=KWudGrSiD06hUxJFDrvWj1P8Aoc0vxe17TkETRINSyU,1574
+types_keyboard-0.13.2.20240106.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+types_keyboard-0.13.2.20240106.dist-info/top_level.txt,sha256=M1SLuV7QA8XE_DvgDjfjzoxba4XcrSa2yuOJnoqJ00A,15
+types_keyboard-0.13.2.20240106.dist-info/RECORD,,
