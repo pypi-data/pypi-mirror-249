@@ -1,0 +1,2 @@
+[console_scripts]
+ca-pwt = ca_pwt:entrypoint
