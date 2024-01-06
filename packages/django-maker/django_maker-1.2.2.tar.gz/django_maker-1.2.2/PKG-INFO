@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: django_maker
+Version: 1.2.2
+Summary: A Python package for managing framework django
+Description-Content-Type: text/markdown
+Requires-Dist: Django>=3.0
+
+'''This package provides tools for create app, models, serializer and CRUD.
+
+    To use this package, you must first install it using pip:
+
+    ```bash
+    pip install django_maker
+    ```
+
+    ## Usage
+
+     # to create app 
+     
+        python manage.py createapp and follow the steps
+        
+     # to create models 
+     
+        python manage.py create_models and follow the steps
+        
+     # to create serializer 
+     
+        python manage.py create_serializer and follow the steps
+        
+     # to create create simple CRUD 
+     
+        python manage.py create_simple_CRUD 
+                    
+    ```
+
+    ...
+
+    '''
