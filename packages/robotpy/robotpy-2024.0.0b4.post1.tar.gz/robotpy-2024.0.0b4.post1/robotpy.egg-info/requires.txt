@@ -1,0 +1,85 @@
+robotpy-wpiutil==2024.0.0b4.post1
+robotpy-wpinet==2024.0.0b4.post1
+robotpy-wpimath==2024.0.0b4.post1
+pyntcore==2024.0.0b4.post1
+robotpy-hal==2024.0.0b4.post1
+wpilib==2024.0.0b4.post1
+robotpy-wpilib-utilities<2025,>=2024.0.0b1
+
+[:platform_machine != "roborio" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-halsim-gui==2024.0.0b4.post1
+robotpy-installer<2025,>=2024.0.0b1
+pyfrc<2025,>=2024.0.0b3
+
+[all]
+robotpy-commands-v2==2024.0.0b3
+robotpy-rev<2025.0.0,>=2024.0.0b1
+robotpy-wpinet==2024.0.0b4.post1
+pyntcore==2024.0.0b4.post1
+robotpy-navx<2025.0.0,>=2024.0.0b1
+robotpy-wpimath==2024.0.0b4.post1
+robotpy-hal==2024.0.0b4.post1
+robotpy-cscore==2024.0.0b4.post1
+robotpy-wpilib-utilities<2025,>=2024.0.0b1
+robotpy-apriltag==2024.0.0b4.post1
+robotpy-wpiutil==2024.0.0b4.post1
+wpilib==2024.0.0b4.post1
+setuptools
+
+[all:platform_machine != "roborio"]
+robotpy-halsim-ws==2024.0.0b4.post1
+robotpy-halsim-ds-socket==2024.0.0b4.post1
+
+[all:platform_machine != "roborio" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-halsim-gui==2024.0.0b4.post1
+robotpy-installer<2025,>=2024.0.0b1
+pyfrc<2025,>=2024.0.0b3
+
+[all:platform_machine == "roborio"]
+numpy==1.25.2
+robotpy-opencv
+
+[all:python_version >= "3.9" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-ctre<2025.0.0,>=2024.0.0b1
+phoenix6~=24.0.0b2
+
+[apriltag]
+robotpy-apriltag==2024.0.0b4.post1
+
+[apriltag:platform_machine == "roborio"]
+numpy==1.25.2
+robotpy-opencv
+
+[commands2]
+robotpy-commands-v2==2024.0.0b3
+
+[cscore]
+robotpy-cscore==2024.0.0b4.post1
+
+[cscore:platform_machine == "roborio"]
+numpy==1.25.2
+robotpy-opencv
+
+[navx]
+robotpy-navx<2025.0.0,>=2024.0.0b1
+
+[phoenix5]
+setuptools
+
+[phoenix5:python_version >= "3.9" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-ctre<2025.0.0,>=2024.0.0b1
+
+[phoenix6]
+setuptools
+
+[phoenix6:python_version >= "3.9" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+phoenix6~=24.0.0b2
+
+[rev]
+robotpy-rev<2025.0.0,>=2024.0.0b1
+
+[sim]
+
+[sim:platform_machine != "roborio"]
+robotpy-halsim-ds-socket==2024.0.0b4.post1
+robotpy-halsim-ws==2024.0.0b4.post1
