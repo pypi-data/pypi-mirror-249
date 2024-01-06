@@ -1,0 +1,2 @@
+[console_scripts]
+alpharaw = alpharaw.cli:run
