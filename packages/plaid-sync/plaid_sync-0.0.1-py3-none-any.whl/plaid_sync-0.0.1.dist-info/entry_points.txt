@@ -1,0 +1,2 @@
+[console_scripts]
+plaid-sync = plaidsync.main:main
