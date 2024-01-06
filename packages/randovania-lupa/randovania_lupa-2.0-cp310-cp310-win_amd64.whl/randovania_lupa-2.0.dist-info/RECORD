@@ -1,0 +1,10 @@
+randovania_lupa/__init__.py,sha256=HTcUdiGiXja_9BGTwcFIAzj2JV6QYptgx_gzutvwBMg,3120
+randovania_lupa/lua51.cp310-win_amd64.pyd,sha256=fF_imP2_ZFq6aySYS8LBTHyQ9BiZdRI3tZ4JICLQDVI,468992
+randovania_lupa/lua51_dread.cp310-win_amd64.pyd,sha256=fdsPTSlIVqc6PbOa-hUo2ZysV3F-ddY7p8comjKaohY,470016
+randovania_lupa/lua51_sr.cp310-win_amd64.pyd,sha256=KsDQP2AFQapNJaqDVOBpBFL-HlTt00xoXgp20SIe9ic,470016
+randovania_lupa/version.py,sha256=waSfurOqxM9kqNUHpMnnlq4CugYcpVlryckwPP7lm9I,21
+randovania_lupa-2.0.dist-info/LICENSE.txt,sha256=voW_Xgot6luR5fNKVcDkOuyOwp9PpbWFjmcntgoA8iw,2281
+randovania_lupa-2.0.dist-info/METADATA,sha256=FLJ9P5Rs8E6e6dvNeftq72Ub9nfpJ5uzutYToyQumZc,57819
+randovania_lupa-2.0.dist-info/WHEEL,sha256=5JPYeYl5ZdvdSkrGS4u21mmpPzpFx42qrXOSIgWf4pg,102
+randovania_lupa-2.0.dist-info/top_level.txt,sha256=HruVZ93SNKdYpqaWshhvJNe2QlFb-Q2BfCtNq6aSIxw,16
+randovania_lupa-2.0.dist-info/RECORD,,
