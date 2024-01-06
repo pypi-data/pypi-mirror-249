@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+kraken_boilerplate/__init__.py
+kraken_boilerplate/class_kraken_boilerplate.py
+kraken_boilerplate/class_kraken_boilerplates.py
+kraken_boilerplate/flask_routes.py
+kraken_boilerplate/kraken_boilerplate.py
+kraken_boilerplate.egg-info/PKG-INFO
+kraken_boilerplate.egg-info/SOURCES.txt
+kraken_boilerplate.egg-info/dependency_links.txt
+kraken_boilerplate.egg-info/requires.txt
+kraken_boilerplate.egg-info/top_level.txt
+kraken_boilerplate/helpers/__init__.py
+kraken_boilerplate/helpers/dot_notation.py
+kraken_boilerplate/helpers/json.py
