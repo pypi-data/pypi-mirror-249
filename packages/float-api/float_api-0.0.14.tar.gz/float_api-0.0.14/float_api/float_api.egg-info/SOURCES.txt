@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+float_api/float_api.egg-info/PKG-INFO
+float_api/float_api.egg-info/SOURCES.txt
+float_api/float_api.egg-info/dependency_links.txt
+float_api/float_api.egg-info/requires.txt
+float_api/float_api.egg-info/top_level.txt
+tests/test_float_api.py
