@@ -1,0 +1,9 @@
+rswjax/__init__.py,sha256=Dcpp0p-FExc65p48PEOU42p9wj1DYPsRsmj97YpZ-S8,223
+rswjax/losses.py,sha256=5TrIN4ZoZ570v1zlMeUoTo_-MYhfBEId9BzJwGwlCrY,2364
+rswjax/regularizers.py,sha256=vn3liEpEbgtlbtjvcctEpn8aAc4GyTM2P2e5p2Ey7WE,2087
+rswjax/rsw.py,sha256=EsoXl5JZyRykACTN33hIeT3oTPQQ7lyXmdOJtV2p8WQ,3078
+rswjax/solver.py,sha256=F-H5XFEiuTADYiiloA84AaA-yIelMCtlJEXACEypHDA,5227
+rswjax-1.0.0.dist-info/LICENSE,sha256=2LigXMDkVUvCM3AIgScgaztNHeJamZHfdcpa45FkO44,583
+rswjax-1.0.0.dist-info/METADATA,sha256=Asey0BhoCNbw_wSao0o0okZ88il0aK9kErFMQSqZHsg,7446
+rswjax-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rswjax-1.0.0.dist-info/RECORD,,
