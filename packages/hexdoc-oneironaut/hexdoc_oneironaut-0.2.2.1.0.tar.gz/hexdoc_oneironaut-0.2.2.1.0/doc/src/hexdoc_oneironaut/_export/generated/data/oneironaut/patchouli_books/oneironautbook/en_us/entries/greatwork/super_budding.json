@@ -1,0 +1,28 @@
+{
+  "name": "oneironaut.entry.super_budding",
+  "category": "hexcasting:greatwork",
+  "icon": "oneironaut:super_budding",
+  "advancement": "oneironaut:enter_noosphere",
+  "sortnum": 5,
+  "entry_color": "54398a",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "oneironaut.page.super_budding.1"
+    },
+    {
+      "type": "hexcasting:brainsweep",
+      "recipe": "oneironaut:super_budding",
+      "text": "oneironaut.page.super_budding.2"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "oneironaut.page.super_budding.3"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "oneironaut:endless_phial",
+      "text": "oneironaut.page.super_budding.4"
+    }
+  ]
+}
