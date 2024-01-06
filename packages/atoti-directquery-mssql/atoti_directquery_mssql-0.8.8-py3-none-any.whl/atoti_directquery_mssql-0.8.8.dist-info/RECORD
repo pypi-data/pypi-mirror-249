@@ -1,0 +1,12 @@
+atoti_directquery_mssql/__init__.py,sha256=HVBCCgihJz1CepSI_2AiHJuXqiSTlv1U_-wnpgC5fZ0,350
+atoti_directquery_mssql/_plugin.py,sha256=cHQhemBwNs1jO0CTTD8hGGYpcU5ogWen2uGxOBqpfx4,423
+atoti_directquery_mssql/connection.py,sha256=UWnMf8_Wum3MgCBpC0yNznxrh5z-Bso1OsnR8ahAVtE,760
+atoti_directquery_mssql/connection_info.py,sha256=cwMEIGdHRfD8ByslRybuICoEg-TrT5Vu8ZXZw1980C4,2373
+atoti_directquery_mssql/data/atoti-directquery-mssql.jar,sha256=i4qDn6L0d0395LB_fyMZvlpMN-zNYMqs8B7d7u9YK4g,22197539
+atoti_directquery_mssql/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_directquery_mssql/table.py,sha256=5PSNSr6A19sK1QiqOBo5dEitmG3yrOOfVXZVCY5N1i8,138
+atoti_directquery_mssql/table_options.py,sha256=xObdSXjyUuPyi1Vx4kDkkI17Aw2fHJNxZObGJ9g7jPg,1328
+atoti_directquery_mssql-0.8.8.dist-info/METADATA,sha256=mjpkt3Od37Id4WYGnuJatV1SS8TDIbfgpI1In6VDg7Q,1049
+atoti_directquery_mssql-0.8.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+atoti_directquery_mssql-0.8.8.dist-info/entry_points.txt,sha256=n13bvZPGq4VDDG7e4KV4WZPTaK_Dd_NFi-ndYKgRAuA,79
+atoti_directquery_mssql-0.8.8.dist-info/RECORD,,
