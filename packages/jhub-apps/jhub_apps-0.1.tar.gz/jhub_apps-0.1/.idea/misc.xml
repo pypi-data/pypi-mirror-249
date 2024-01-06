@@ -1,0 +1,11 @@
+<project version="4">
+  <component name="AndroidDexCompilerConfiguration">
+    <option name="MAX_HEAP_SIZE" value="1024" />
+  </component>
+  <component name="Black">
+    <option name="sdkName" value="Python 3.9 (jhub)" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="Python 3.11 (jhub-apps-dev)" project-jdk-type="Python SDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
