@@ -1,0 +1,9 @@
+flaskeleton_cli/__init__.py,sha256=6nHqRxYhzA2ZSLz-X59WN0kTd0VpD4nVO_dNvYYBBqE,932
+flaskeleton_cli/__main__.py,sha256=yjDfeGWyTu_l_d3miT0-ySJ1x0vsNSu1_T2ic1ZdbnY,25
+flaskeleton_cli/consts.py,sha256=gvntEeubgMrHEUgQnwpn3ldej1oe3MEgsJzCu1vCJaw,62
+flaskeleton_cli/core.py,sha256=wFg3MEtG10pj8g3EMga197EEXwJtKEqVS4PTiwRwcYk,293
+flaskeleton_cli-0.1.4.dist-info/LICENSE,sha256=CONNfVx3Yd3iAZ3QBsJA5uJO59ek4-9feuMDabIFcCc,1072
+flaskeleton_cli-0.1.4.dist-info/METADATA,sha256=ANsPEa7SIkRdz_WwiTO_wQIiwQPV3XUdYkKrtiLU-Hc,2374
+flaskeleton_cli-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flaskeleton_cli-0.1.4.dist-info/entry_points.txt,sha256=hFDT84CsB6abr25lCuKzlxSex8zqLt9BfVwJyav23oE,51
+flaskeleton_cli-0.1.4.dist-info/RECORD,,
