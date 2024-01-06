@@ -1,0 +1,4 @@
+aiohttp<4.0,>=3.8
+
+[:python_version >= "3.11"]
+importlib-metadata
