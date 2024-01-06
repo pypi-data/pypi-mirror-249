@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/cmpd/__init__.py
+src/cmpd/main.py
+src/cmpd.egg-info/PKG-INFO
+src/cmpd.egg-info/SOURCES.txt
+src/cmpd.egg-info/dependency_links.txt
+src/cmpd.egg-info/entry_points.txt
+src/cmpd.egg-info/requires.txt
+src/cmpd.egg-info/top_level.txt
+tests/test_simple.py
