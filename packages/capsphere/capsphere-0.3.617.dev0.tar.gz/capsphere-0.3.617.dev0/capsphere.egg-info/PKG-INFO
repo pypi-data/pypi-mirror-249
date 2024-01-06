@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: capsphere
+Version: 0.3.617.dev0
+Summary: Capsphere proprietary library
+Author: Andy Lee
+Author-email: andy.mt.lee@gmail.com
+Keywords: python,capsphere,credit,cs
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: psycopg
+Requires-Dist: twine
+Requires-Dist: wheel
+Requires-Dist: xlsxwriter
+
+# Capsphere
+
+The `capsphere` package holds modules which help in the process of credit scoring for customers and institutions in Malaysia.
+
+There are three packages in this project:
+
+## common 
+
+This module holds utility functions that aid the extraction of data from Malaysian bank statements, which might be in pdf or image format.
+
+## domain
+
+The data abstractions and classes related to a customer's transactions are contained in this module.
