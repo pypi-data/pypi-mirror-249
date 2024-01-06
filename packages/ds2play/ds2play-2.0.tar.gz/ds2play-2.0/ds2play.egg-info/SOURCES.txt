@@ -1,0 +1,8 @@
+setup.py
+ds2play/__init__.py
+ds2play/ds.py
+ds2play.egg-info/PKG-INFO
+ds2play.egg-info/SOURCES.txt
+ds2play.egg-info/dependency_links.txt
+ds2play.egg-info/requires.txt
+ds2play.egg-info/top_level.txt
