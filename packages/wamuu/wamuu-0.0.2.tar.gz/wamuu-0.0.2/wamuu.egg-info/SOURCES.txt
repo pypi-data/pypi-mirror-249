@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wamuu.egg-info/PKG-INFO
+wamuu.egg-info/SOURCES.txt
+wamuu.egg-info/dependency_links.txt
+wamuu.egg-info/requires.txt
+wamuu.egg-info/top_level.txt

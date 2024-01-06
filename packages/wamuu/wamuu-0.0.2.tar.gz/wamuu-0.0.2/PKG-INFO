@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wamuu
+Version: 0.0.2
+Summary: Find best cable positioning
+Author: ['Fernando Schettini', 'Pedro Miranda']
+Author-email: fernandoschettini@outlook.com
+Project-URL: Source, https://github.com/FernandoSchett/wamuu/tree/main
+Keywords: python,wind,energy,cable positioning,search algorithm,optimization
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Support tool, offers a set of Python classes designed for forecasting optimal wind turbine placements and efficient cable connections in wind energy systems.
