@@ -1,0 +1,2 @@
+include statemodify/data/*.*
+include statemodify/tests/data/*.*
