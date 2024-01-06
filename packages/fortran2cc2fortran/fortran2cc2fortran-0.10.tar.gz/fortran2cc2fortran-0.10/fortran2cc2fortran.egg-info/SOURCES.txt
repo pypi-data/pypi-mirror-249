@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+fortran2cc2fortran/README.MD
+fortran2cc2fortran/__init__.py
+fortran2cc2fortran/requirements.txt
+fortran2cc2fortran/thirdparty.json
+fortran2cc2fortran.egg-info/PKG-INFO
+fortran2cc2fortran.egg-info/SOURCES.txt
+fortran2cc2fortran.egg-info/dependency_links.txt
+fortran2cc2fortran.egg-info/top_level.txt

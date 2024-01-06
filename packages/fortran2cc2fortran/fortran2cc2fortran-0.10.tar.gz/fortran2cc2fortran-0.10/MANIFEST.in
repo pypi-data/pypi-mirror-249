@@ -1,0 +1,3 @@
+include fortran2cc2fortran/requirements.txt
+include fortran2cc2fortran/thirdparty.json
+include fortran2cc2fortran/README.MD
