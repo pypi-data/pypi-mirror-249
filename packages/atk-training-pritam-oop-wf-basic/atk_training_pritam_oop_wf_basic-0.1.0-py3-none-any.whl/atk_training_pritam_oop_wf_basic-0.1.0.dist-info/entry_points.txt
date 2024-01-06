@@ -1,0 +1,4 @@
+[console_scripts]
+atk-pritam-oop-wf-basic=atk_training_pritam_oop_wf_basic.commands:app
+atk-pritam-oop-wf-basic-stream=atk_training_pritam_oop_wf_basic.commands:stream_app
+
