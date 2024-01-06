@@ -1,0 +1,20 @@
+[tool.poetry]
+authors = ["Jiakuan Li <jiakuan.li.cs@gmail.com>"]
+description = ""
+name = "asynctradier"
+packages = [{include = "asynctradier"}]
+readme = "README.md"
+version = "0.0.1beta7"
+
+[tool.poetry.dependencies]
+aiohttp = "^3.9.1"
+python = "^3.6"
+strenum = "^0.4.15"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.23.2"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
