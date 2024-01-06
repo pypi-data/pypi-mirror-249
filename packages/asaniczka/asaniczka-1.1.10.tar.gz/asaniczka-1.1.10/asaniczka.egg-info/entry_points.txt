@@ -1,0 +1,2 @@
+[console_scripts]
+pw-install = install_playwright:main
