@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+plaid_sync.egg-info/PKG-INFO
+plaid_sync.egg-info/SOURCES.txt
+plaid_sync.egg-info/dependency_links.txt
+plaid_sync.egg-info/entry_points.txt
+plaid_sync.egg-info/requires.txt
+plaid_sync.egg-info/top_level.txt
+plaidsync/__init__.py
+plaidsync/config.py
+plaidsync/main.py
+plaidsync/plaidapi.py
+plaidsync/transactionsdb.py
+plaidsync/webserver.py
