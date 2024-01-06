@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: samosila-core
+Version: 0.0.6
+Author: Mohammad Javad Hosseini
+Author-email: johndoe2561357@protonmail.com
+License: MIT
+Requires-Python: >=3.10,<3.12
+Description-Content-Type: text/markdown
+Provides-Extra: providers
+Provides-Extra: local
+Provides-Extra: full
+
+# Samosila 
+
+
+## Overview 
+
+Samosila is my attempt to recreate an **OpenAI Compatible Server** for generating text, images, embeddings, and storing them in vector databases. It also includes a chat functionality. 
+
+The server's request and responses are very similar to OpenAI's API with additional fields needed for different providers. It uses **Langchain** for the LLM part (Robust and powerful with callbacks) and provider SDKs for image generation and more.
