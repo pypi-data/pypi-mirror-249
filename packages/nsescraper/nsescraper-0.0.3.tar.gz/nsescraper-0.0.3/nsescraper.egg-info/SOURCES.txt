@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+nsescraper/__init__.py
+nsescraper/nifty_indices.pickle
+nsescraper/nsescraper.py
+nsescraper.egg-info/PKG-INFO
+nsescraper.egg-info/SOURCES.txt
+nsescraper.egg-info/dependency_links.txt
+nsescraper.egg-info/requires.txt
+nsescraper.egg-info/top_level.txt
