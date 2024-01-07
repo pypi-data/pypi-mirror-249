@@ -1,0 +1,11 @@
+klipper_backup_manager/__about__.py,sha256=MOi_qhuwrV47jgnVqWZexY5_3_V3ZHsvY_bIKE-XpEM,142
+klipper_backup_manager/__init__.py,sha256=GcLki2CxU5s0Gbk3_IjgStjT0wkpAoVtDIfc-_bf5Nk,120
+klipper_backup_manager/klipper_backup_manager.py,sha256=z1T7zJPWJA_iuWkvQfFmBcE6C9aocJyxk9bOu-dnuDE,2963
+klipper_backup_manager/kbm/__init__.py,sha256=KfpxWd8aagbQ0DSEfBkYQvNrEjdAlWsOcjjhxtqy6SY,2156
+klipper_backup_manager/kbm/archiver/__init__.py,sha256=LT2mx1-b5jBuMnW8L_42zSm3GvF-rrtV7Z1qKCcNXhw,3274
+klipper_backup_manager/kbm/settings/__init__.py,sha256=n4Lb15RcZtZBSY3PfPrdFhGf_veLFlWUeLQAWMhRDaA,1818
+klipper_backup_manager-1.0.1rc2.dist-info/METADATA,sha256=pQtaYcv1NMf95z_oA0W6YkuncszNZ52YA6EsX55t6Bc,2044
+klipper_backup_manager-1.0.1rc2.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+klipper_backup_manager-1.0.1rc2.dist-info/entry_points.txt,sha256=ZJbhgABUFMx3OmgOmapOBbO-QEDP6DlTvLyS7pAf-v4,79
+klipper_backup_manager-1.0.1rc2.dist-info/licenses/LICENSE.txt,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+klipper_backup_manager-1.0.1rc2.dist-info/RECORD,,
