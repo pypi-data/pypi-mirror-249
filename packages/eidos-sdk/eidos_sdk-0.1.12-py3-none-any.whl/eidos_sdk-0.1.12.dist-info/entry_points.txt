@@ -1,0 +1,3 @@
+[console_scripts]
+eidos-server=eidos_sdk.bin.agent_http_server:main
+
