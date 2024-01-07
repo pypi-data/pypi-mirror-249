@@ -1,0 +1,4 @@
+include pyproject.toml
+include requirements.testing.txt
+include src/qualityscaler/AI/readme.txt
+exclude assets.zip
