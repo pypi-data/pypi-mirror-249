@@ -1,0 +1,2 @@
+[console_scripts]
+oresat-c3 = oresat_gps.__main__:main
