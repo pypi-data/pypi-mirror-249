@@ -1,0 +1,16 @@
+setup.py
+includes/__init__.py
+includes/bot.py
+includes/filereader.py
+includes/scan.py
+includes/writefile.py
+utils/__init__.py
+utils/configure.py
+utils/const.py
+utils/helpers.py
+vuln.egg-info/PKG-INFO
+vuln.egg-info/SOURCES.txt
+vuln.egg-info/dependency_links.txt
+vuln.egg-info/entry_points.txt
+vuln.egg-info/requires.txt
+vuln.egg-info/top_level.txt
