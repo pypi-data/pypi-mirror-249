@@ -1,0 +1,6 @@
+pytest>7.2
+
+[dev]
+twine
+build
+wheel
