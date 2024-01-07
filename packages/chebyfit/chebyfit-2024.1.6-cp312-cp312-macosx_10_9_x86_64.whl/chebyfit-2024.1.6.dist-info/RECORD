@@ -1,0 +1,8 @@
+chebyfit-2024.1.6.dist-info/RECORD,,
+chebyfit-2024.1.6.dist-info/LICENSE,sha256=uib7vczJpbMJwJT7bBXqSFmsleEyxcqKLKlC0b2pAno,1529
+chebyfit-2024.1.6.dist-info/WHEEL,sha256=1_erwh2TCU3TrYzgBQGCtZskLEmw2vbfn7Xu2mHHvyU,111
+chebyfit-2024.1.6.dist-info/top_level.txt,sha256=jhUvbkQjWgxRQ7LGOY9h-ZNMyjHxzp61iPfUnYKlPo4,9
+chebyfit-2024.1.6.dist-info/METADATA,sha256=8rKRraPjvXlIpXcJDB3BWPgZ5KFKIdGUTfsxgEvmxGY,3994
+chebyfit/__init__.py,sha256=6qSaxBTvOnxLT-osFGeCIGmN0CxDgAru_5HYOmK_qfU,100
+chebyfit/chebyfit.py,sha256=62Acp_EvTPyacSVAhp8dNqEwrE8G6lcmS6ouMX-PDOY,9843
+chebyfit/_chebyfit.cpython-312-darwin.so,sha256=tXZAX_PkUY54uMAmGBQnQk6-tcOlyHZQmE42O3gN3MI,72160
