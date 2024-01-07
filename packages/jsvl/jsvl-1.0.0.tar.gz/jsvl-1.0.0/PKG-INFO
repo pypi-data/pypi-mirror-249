@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jsvl
+Version: 1.0.0
+Home-page: https://github.com/syedowaisali/json-validator-python
+Author: Syed Owais Ali
+Author-email: dp.owaisali@gmail.com
+License: GPL
+Project-URL: Issues, https://github.com/syedowaisali/json-validator-python/issues
+Project-URL: Source Code, https://github.com/syedowaisali/json-validator-python
+Keywords: python json schema validation
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+License-File: LICENSE
