@@ -1,0 +1,11 @@
+icsdll-2024.1.6.data/purelib/icsdll/ICSx64.dll,sha256=9_FXOtDl8hIaXqkogOEQKQLiM3SgLeY_Gb5gw72t9a0,33411072
+icsdll-2024.1.6.data/purelib/icsdll/__init__.py,sha256=zUDMPDSUFUKHMXJQUpA_o7vlo2stG2nxInmw5iM2JBo,98
+icsdll-2024.1.6.data/purelib/icsdll/icsdll.py,sha256=RCDL_aUVwAseMeavbn6VfeeLp-lC0cOD-24CtvicPO4,43947
+icsdll-2024.1.6.data/purelib/icsdll/vcomp140.dll,sha256=Y8uNoLKx5XqBsBD1UVDCHKY6mewJPLb4dCnrvGciCn4,196688
+icsdll-2024.1.6.data/purelib/icsdll/vcruntime140.dll,sha256=-EPNANmv-akC3XyY1hN2OaEL2EkE2BoIXCijsp-CI8E,119376
+icsdll-2024.1.6.data/purelib/icsdll/vcruntime140_1.dll,sha256=5Ohe6hEG02GSOZXlOguWGijU-1hVX0CUUAPzXlvywnM,49776
+icsdll-2024.1.6.dist-info/LICENSE,sha256=Q_nWHBdLlscqgkg-LAHfSA7lkvBZgHHAVapwnUP-_-s,1559
+icsdll-2024.1.6.dist-info/METADATA,sha256=lRLuZ9AOfNMaDcjeM_8MJ3h9mf8BwXDhrZKvjRLZ2OY,3788
+icsdll-2024.1.6.dist-info/WHEEL,sha256=j9Aissza3750LQHFAQyYerNjmkEON1-8w_RaZNFtKSs,102
+icsdll-2024.1.6.dist-info/top_level.txt,sha256=3YIZRiaGh-S7w8eUo9ekF94goryR0_Fm80Owf1-RE0o,7
+icsdll-2024.1.6.dist-info/RECORD,,
