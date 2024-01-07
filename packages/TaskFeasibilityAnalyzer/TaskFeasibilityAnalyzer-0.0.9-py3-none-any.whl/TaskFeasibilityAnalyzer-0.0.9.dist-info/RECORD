@@ -1,0 +1,9 @@
+taskfeasibilityanalyzer/__init__.py,sha256=h_KJcDXuWBdqAyo0HIZbHtVt2EWJdkfBYFF-uKlIar8,45
+taskfeasibilityanalyzer/analyzer.py,sha256=5slg0ExQIVegFwFPd_5qISyQkP4tUebgmJYjgufNvOk,3151
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_analyzer.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TaskFeasibilityAnalyzer-0.0.9.dist-info/LICENSE,sha256=cwX2O7io2lQvGjZ9m2516bspjt1vGfTJlZF_4a0lyc8,1073
+TaskFeasibilityAnalyzer-0.0.9.dist-info/METADATA,sha256=khnd6uVjTKymPTq57xnVbBv5J4UGimwBAYrisCn8X5o,2907
+TaskFeasibilityAnalyzer-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+TaskFeasibilityAnalyzer-0.0.9.dist-info/top_level.txt,sha256=IS5KMTmPN2XHPlnHnPq0cJvVne1MGCBy8Gpz6hk7OTM,30
+TaskFeasibilityAnalyzer-0.0.9.dist-info/RECORD,,
