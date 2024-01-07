@@ -1,0 +1,7 @@
+abjad==3.4
+setuptools
+
+[test]
+flake8
+isort
+pytest
