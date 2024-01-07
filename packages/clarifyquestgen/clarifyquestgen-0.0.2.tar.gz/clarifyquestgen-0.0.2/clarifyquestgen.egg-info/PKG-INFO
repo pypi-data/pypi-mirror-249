@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: clarifyquestgen
+Version: 0.0.2
+Summary: Clarifying Questions Generator for task refinement
+Home-page: https://github.com/chigwell/ClarifyingQuestionsGenerator
+Author: Eugene Evstafev
+Author-email: chigwel@gmail.com
+License: UNKNOWN
+Description: # ClarifyingQuestionsGenerator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
