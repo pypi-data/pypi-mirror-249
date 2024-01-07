@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+sl-vote/__init__.py
+sl_vote.egg-info/PKG-INFO
+sl_vote.egg-info/SOURCES.txt
+sl_vote.egg-info/dependency_links.txt
+sl_vote.egg-info/top_level.txt
