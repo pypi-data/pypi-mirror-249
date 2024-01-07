@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/basefunctions/__init__.py
+src/basefunctions/filefunctions.py
+src/basefunctions/threadpool.py
+src/basefunctions.egg-info/PKG-INFO
+src/basefunctions.egg-info/SOURCES.txt
+src/basefunctions.egg-info/dependency_links.txt
+src/basefunctions.egg-info/top_level.txt
+tests/test_filefunctions.py
