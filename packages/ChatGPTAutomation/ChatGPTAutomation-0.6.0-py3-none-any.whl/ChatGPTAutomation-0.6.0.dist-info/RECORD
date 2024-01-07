@@ -1,0 +1,10 @@
+chatgpt_automation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt_automation/chatgpt_automation.py,sha256=V5H2x6cJT-ejvM89guOqkUdvhVIBms1euuqPPW_8qUM,39524
+chatgpt_automation/test.py,sha256=CDggX6W1ekalTMKIlnFYHtzUifoKAVnlc0tUMjCv8F4,272
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_chatgpt_automation.py,sha256=_2gAE6_PngcQUisqXABHiLnp3QWWNimsgt_jy1B46XI,2762
+ChatGPTAutomation-0.6.0.dist-info/LICENCE.md,sha256=rlClZb-ppt0Konf9Hrv5f7ScdgOpsfTBPhsk50yV_6A,1111
+ChatGPTAutomation-0.6.0.dist-info/METADATA,sha256=hpnkCIyTAuXko8EBV3U_V526nmtW8pszJHOueDvt2rs,9677
+ChatGPTAutomation-0.6.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ChatGPTAutomation-0.6.0.dist-info/top_level.txt,sha256=M5pS_9XEzpS-BnAwk5mXYKaoJh1WryBZeDHMwP9p_zU,25
+ChatGPTAutomation-0.6.0.dist-info/RECORD,,
