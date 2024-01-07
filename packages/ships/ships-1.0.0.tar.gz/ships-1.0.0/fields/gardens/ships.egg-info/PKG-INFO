@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ships
+Version: 1.0.0
+Summary: Various calculator tools
+License: GPL 3.0
+Description-Content-Type: text/plain
+Requires-Dist: homeostasis
+Requires-Dist: psutil
+Requires-Dist: pyinotify
+
+
+
+
+<b>botany</b>
+	</p>Various calculator tools</p>
+
+
+	"botanical" is used by "vivacious"
+	"botanist" is used by "body_scan"
+	
+
+	<p>caution: A lot of the functions pass strings to subprocesses.</p>
+	
