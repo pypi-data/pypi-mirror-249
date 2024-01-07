@@ -1,0 +1,16 @@
+beautifulsoup4
+click
+httpx
+html2text
+textual>=0.38.1
+pillow
+
+[dev]
+build
+flake8
+mypy
+pyright
+textual-dev
+twine
+types-beautifulsoup4
+vermin
