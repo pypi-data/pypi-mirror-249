@@ -1,0 +1,9 @@
+LICENSE
+README.md
+matrixview.py
+setup.py
+matrixview.egg-info/PKG-INFO
+matrixview.egg-info/SOURCES.txt
+matrixview.egg-info/dependency_links.txt
+matrixview.egg-info/requires.txt
+matrixview.egg-info/top_level.txt
