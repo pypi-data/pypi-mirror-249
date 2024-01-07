@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vlite2
+Version: 2.0.0
+Summary: Improved simple vector database in Numpy, with many advanced proprietary features. Original by @sdan.
+Home-page: https://github.com/raydelvecchio/vlite-v2
+Author: Ray Del Vecchio
+Author-email: ray@cerebralvalley.ai
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pysbd
+Requires-Dist: Requests
+Requires-Dist: sentence-transformers
+Requires-Dist: setuptools
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: transformers
+Requires-Dist: uuid
+
