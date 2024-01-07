@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bitin
+Version: 0.1
+Summary: Digital Electronics Library
+Home-page: https://github.com/hexronuspi/bitin/
+Author: Aditya
+Description-Content-Type: text/markdown
+
+# bitin
+
+bitin is a comprehensive Python library designed to facilitate a wide range of digital electronics operations, from fundamental logic gate implementations to complex circuit simulations, this library provides a user-friendly interface to handle digital logic effortlessly. With bitin, users can perform operations such as Boolean algebra, circuit analysis and simulation, enabling the creation and manipulation of digital circuits with ease. 

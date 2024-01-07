@@ -1,0 +1,9 @@
+README.md
+setup.py
+bitin/__init__.py
+bitin/basic.py
+bitin/universal.py
+bitin.egg-info/PKG-INFO
+bitin.egg-info/SOURCES.txt
+bitin.egg-info/dependency_links.txt
+bitin.egg-info/top_level.txt
