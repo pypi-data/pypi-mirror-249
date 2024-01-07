@@ -1,0 +1,3 @@
+[console_scripts]
+morse = morse_code.minion_mode:main
+

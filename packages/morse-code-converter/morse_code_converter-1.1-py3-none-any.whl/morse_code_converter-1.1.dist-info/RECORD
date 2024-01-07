@@ -1,0 +1,17 @@
+morse_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morse_code/constants.py,sha256=jsriRYt9Ayc7xPcPpTQHfj-RDluIZawsO4cx_Ahw6Ps,178
+morse_code/converter.py,sha256=H36oMVL3L1IJbnUghQhAFldLabHh3RyFVedYsLLu47E,2489
+morse_code/dash.mp3,sha256=LTqQZ3p6tkMQeE5MCpjANomps-kJGI_H-0TqFqWt5-M,10493
+morse_code/dot.mp3,sha256=RGT8BffKvEMl_IldGD4F3oTmiGO4eMi7sw1VSZkIckY,6313
+morse_code/minion_mode.py,sha256=yWA_64QX9hyd1Gnwa0yGdApHQAimDaJVZhq6JkVZ72o,1828
+src/morse_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/morse_code/constants.py,sha256=jsriRYt9Ayc7xPcPpTQHfj-RDluIZawsO4cx_Ahw6Ps,178
+src/morse_code/converter.py,sha256=i3dheoNBk-dMarsbytAIhBe8rLHB9qcgHL_r6tdhlkU,2481
+src/morse_code/dash.mp3,sha256=LTqQZ3p6tkMQeE5MCpjANomps-kJGI_H-0TqFqWt5-M,10493
+src/morse_code/dot.mp3,sha256=RGT8BffKvEMl_IldGD4F3oTmiGO4eMi7sw1VSZkIckY,6313
+src/morse_code/minion_mode.py,sha256=ULPKJ3ZhZHm_AogKzBy-5f9ux10sqN5SjgJqNfpQwSE,1832
+morse_code_converter-1.1.dist-info/METADATA,sha256=R0iqX5-3IVXXPjvfn7HZihU5ZTTLI4mkgBIADxp2ttk,267
+morse_code_converter-1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+morse_code_converter-1.1.dist-info/entry_points.txt,sha256=V0qrKv2mJps23B6kG2xpYqfBG8e02uvImIDYC6IdlJw,55
+morse_code_converter-1.1.dist-info/top_level.txt,sha256=1DAyxlKIoweXDw0ozlUw9AcQEg9jrL9QhMKAlAy9dOY,11
+morse_code_converter-1.1.dist-info/RECORD,,

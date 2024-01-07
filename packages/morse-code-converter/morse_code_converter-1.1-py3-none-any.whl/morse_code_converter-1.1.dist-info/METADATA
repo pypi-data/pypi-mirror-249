@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: morse-code-converter
+Version: 1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: coverage ==7.4.0
+Requires-Dist: pygame ==2.5.2
+Requires-Dist: pytest ==7.4.4
+
+UNKNOWN
+
