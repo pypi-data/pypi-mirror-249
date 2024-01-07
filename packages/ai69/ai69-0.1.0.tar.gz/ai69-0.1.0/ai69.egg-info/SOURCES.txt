@@ -1,0 +1,10 @@
+README.md
+setup.py
+ai69/__init__.py
+ai69/core.py
+ai69.egg-info/PKG-INFO
+ai69.egg-info/SOURCES.txt
+ai69.egg-info/dependency_links.txt
+ai69.egg-info/requires.txt
+ai69.egg-info/top_level.txt
+tests/tests_ai69.py
