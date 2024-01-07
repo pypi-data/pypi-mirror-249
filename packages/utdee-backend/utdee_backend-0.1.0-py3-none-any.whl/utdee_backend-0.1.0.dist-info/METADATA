@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: utdee_backend
+Version: 0.1.0
+Summary: 
+License: Apache-2.0 license
+Author: avpps
+Author-email: avppsdev@gmail.com
+Requires-Python: ==3.11.7
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bottle (>=0.12.25,<0.13.0)
+Requires-Dist: gunicorn (>=21.2.0,<22.0.0)
+Requires-Dist: opentelemetry-api (>=1.21.0,<2.0.0)
+Requires-Dist: opentelemetry-exporter-otlp (>=1.21.0,<2.0.0)
+Requires-Dist: opentelemetry-sdk (>=1.21.0,<2.0.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: pydantic (>=2.3.0,<3.0.0)
+Requires-Dist: pymongo (>=4.5.0,<5.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Homepage, https://github.com/avpps/utdee_backend
+Project-URL: Issues, https://github.com/avpps/utdee_backend/issues
+Description-Content-Type: text/markdown
+
+# utdee_backend
+
+Application for performing tasks using parallelization.
+
+utee_backend can work in following modes:
+ * **standalone gunicorn server** with rest api
+ * **library** for use in your application 
+
