@@ -1,0 +1,10 @@
+diskspace_report/__init__.py,sha256=JcIEkUQitgs50mRzQy8v4WCVVrBAdP4HCgqUumKmChU,127
+diskspace_report/diskspace_report.py,sha256=NzmoELRJwg5vRcIfL0KC3ula1JpKrPiYEo8WXdPfPjQ,6054
+diskspace_report/pkg_helpers/__init__.py,sha256=FcVGXoN2SrYgQzZFQCQIYCpwa5DoYljZPiH6_bBKY3I,56
+diskspace_report/pkg_helpers/config_report.py,sha256=97FY0vR0EFghrdR4Zle1uvYfxnFXv2kf6rZfGMAXeH4,1126
+diskspace_report-0.2.7.dist-info/LICENSE.txt,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+diskspace_report-0.2.7.dist-info/METADATA,sha256=WMay7IZk9-M09hvfCOSdD71uWXs3LAMk84Ysb_pUJss,1692
+diskspace_report-0.2.7.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+diskspace_report-0.2.7.dist-info/entry_points.txt,sha256=4ZdIxVY9acg-_yJj-aYph2dvG_TPFLFEIQkPrgbkg0w,60
+diskspace_report-0.2.7.dist-info/top_level.txt,sha256=Nlu2_yNQwAEhocF2DKEOkHCt-M77t89xqLyszT0U8N8,17
+diskspace_report-0.2.7.dist-info/RECORD,,
