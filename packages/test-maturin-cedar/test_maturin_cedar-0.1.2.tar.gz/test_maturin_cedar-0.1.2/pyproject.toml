@@ -1,0 +1,33 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "test-maturin-cedar"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+version = "0.1.2"
+description = "cedar-policy bindings"
+authors = [
+    {name = "Naoya Yamashita", email = "conao3@gmail.com"},
+]
+dependencies = []
+readme = "README.md"
+license = {text = "Apache-2.0"}
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+python-source = "python"
+
+[tool.pdm]
+package-type = "library"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.4.4",
+    "pytest-icdiff>=0.9",
+]
