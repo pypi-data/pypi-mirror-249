@@ -1,0 +1,12 @@
+fango/auth/middlewares.py,sha256=AgtS87mPpTEuRRBwFAh1iltojNnv21hKZya4aR7ink0,1034
+fango/auth/repositories.py,sha256=lglUmbf8eUPJeYgL0iC5EPHv3mtt8jAoMJPFsmY_YNE,1649
+fango/auth/schemas.py,sha256=8xT-6X_WF4QVX2S251kfzJxt9cls8VnQgPKP0z1hIKU,305
+fango/auth/views.py,sha256=yVpzwmDJU6ydu434EHBxebBr6yGwBPZ5aamDrlA6pwk,986
+fango/depends.py,sha256=J0nKgn1pqqfoBLxwD-DznFZPGjvus9jgGLDCGZGJjA4,157
+fango/logging.py,sha256=HDm8CB-e-ZOPhVwYhWpUKqpk-amnOWGxyW8NWn4NaHU,1116
+fango/paginator/cursor.py,sha256=6hyGWWbMab1VwHrJXQ0LLL0t_Ix6_tLrvqXBFjc3YUg,4409
+fango/paginator/schemas.py,sha256=dfacyvDvqOBbiZFEeAt7WkKgJqOJOMy5OM2bzk2QDLQ,190
+fango/routing.py,sha256=KBKZjYlPA5dWlE6dCK0hLxZA1cYhi3WpimsDdHoWDCE,254
+fango-0.0.4.dist-info/METADATA,sha256=P-1CnZtNGT4lv1744iy9FOkeikleT3tC8qiH88r2DwU,2276
+fango-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fango-0.0.4.dist-info/RECORD,,
