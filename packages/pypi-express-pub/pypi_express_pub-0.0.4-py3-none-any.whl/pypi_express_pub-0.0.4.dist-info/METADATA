@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pypi-express-pub
+Version: 0.0.4
+Summary: A Python package for publishing packages to PyPI.
+Author: Peter Bryant
+Author-email: peter.bryant@gatech.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
