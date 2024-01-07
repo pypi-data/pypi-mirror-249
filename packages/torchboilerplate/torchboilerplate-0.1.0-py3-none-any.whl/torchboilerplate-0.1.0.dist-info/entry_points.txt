@@ -1,0 +1,3 @@
+[console_scripts]
+train=torchboilerplate.train_typer:app
+

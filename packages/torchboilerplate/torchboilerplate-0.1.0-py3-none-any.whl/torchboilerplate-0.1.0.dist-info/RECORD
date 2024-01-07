@@ -1,0 +1,16 @@
+torchboilerplate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchboilerplate/checker.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchboilerplate/data_setup.py,sha256=jW1ZmPuhHDIp3qG8HIAwbC6R2_E4GQN3MtdT6hnwxBk,2000
+torchboilerplate/engine.py,sha256=9BEJrt_q-d2OTk4sd9qcQdRiDVQhBIm5HMDMD9fMSwU,6818
+torchboilerplate/get_data.py,sha256=3kk8ievoKt6HFyY8kLAdlnHRXBQjgvqPUJov-NEsv6E,1019
+torchboilerplate/model_builder.py,sha256=gXupl3ZaGjZRywHv_vC8oihPrIkNkNCzWcH_Xp9tt6k,2107
+torchboilerplate/pizza_steak_sushi.zip,sha256=XpWW_Mk5oymW5Zu-2OxpCuOSA7vLwIKSqS1E5MSidlI,15737296
+torchboilerplate/predictions.py,sha256=ZPQxonQ1P4Ev2FmpBG55QB44yGsxoZAt1aCmI69zI5Q,3079
+torchboilerplate/README.md,sha256=EDWYDTmW9JHpaz77Rqj9a77U3DizZbvfnMpZRdFZJ98,703
+torchboilerplate/train.py,sha256=R-DTVvh_R_ublAWueWgSmauWI7wrkQc8uN0_VbGHvwE,3732
+torchboilerplate/train_typer.py,sha256=V-jzfYMuCk26FkjYOQZBhHfRUNaMwLOEz44W1VxX4i4,848
+torchboilerplate/utils.py,sha256=X6apA8CxgEumXcqE_tdPcj88tjwO4RD-YCUaGVyASrg,1163
+torchboilerplate-0.1.0.dist-info/entry_points.txt,sha256=SPvipHFJyyIXqibYRPVrDc1n327E4_0q07LoNhfXbWw,58
+torchboilerplate-0.1.0.dist-info/METADATA,sha256=kMrRRnXM7eTIo0Sh-glVWCxGOdnlQwn-fqfPBRns7lM,489
+torchboilerplate-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+torchboilerplate-0.1.0.dist-info/RECORD,,
