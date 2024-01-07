@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: quality-scaler
+Version: 2.12.8
+Summary: upscales images using ai
+Home-page: https://github.com/zackees/QualityScaler
+License: BSD 3-Clause License
+Keywords: template-python-cmd
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+Requires-Dist: torch-directml ==0.1.13.1.dev230413
+Requires-Dist: customtkinter
+Requires-Dist: packaging
+Requires-Dist: pyinstaller ==5.13.2
+Requires-Dist: moviepy
+Requires-Dist: opencv-python-headless
+Requires-Dist: Pillow
+Requires-Dist: download
+
