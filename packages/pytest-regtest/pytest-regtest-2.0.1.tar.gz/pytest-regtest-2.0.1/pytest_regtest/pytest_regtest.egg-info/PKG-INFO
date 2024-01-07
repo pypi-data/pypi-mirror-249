@@ -1,0 +1,315 @@
+Metadata-Version: 2.1
+Name: pytest-regtest
+Version: 2.0.1
+Summary: "pytest plugin for snapshot regression testing"
+Author: Uwe Schmitt
+Author-email: uwe.schmitt@id.ethz.ch
+License: MIT
+Project-URL: Source, https://gitlab.com/uweschmitt/pytest-regtest
+Project-URL: Documentation, https://pytest-regtest.readthedocs.org
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pytest>7.2
+Provides-Extra: dev
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+
+# README
+
+## About
+
+`pytest-regtest` is a plugin for [pytest](https://pytest.org) to implement
+[regression testing](https://en.wikipedia.org/wiki/Regression_testing).
+
+Unlike [functional testing](https://en.wikipedia.org/wiki/Functional_testing),
+regression testing does not test whether the software produces the correct
+results, but whether it behaves as it did before the changes were introduced.
+
+**Regression testing** is a common technique to get implement basic testing before
+refactoring legacy code that lacks a test suite.
+
+More specifically, `pytest-regtest` provides **snapshot testing**, which implements
+regression testing by recording the textual output of a test function and
+comparing this recorded output to a reference output.
+
+Snapshot testing can be used to implement tests for complex outcomes, such as
+recording textual database dumps or the results of a scientific analysis routine.
+
+
+## Installation
+
+To install and activate this plugin execute:
+
+    $ pip install pytest-regtest
+
+## Basic Usage
+
+*pytest-regtest* plugin provides multiple fixtures.
+
+### Write a test
+
+To record output, use the fixture *regtest* that works like a file handle:
+
+```python
+
+def test_squares_up_to_ten(regtest):
+
+    result = [i*i for i in range(10)]
+
+    # one way to record output:
+    print(result, file=regtest)
+
+    # alternative method to record output:
+    regtest.write("done")
+
+```
+
+You can also use the `regtest_all` fixture. This enables all output to stdout to be
+recorded in a test function.
+
+
+### Run the test
+
+If you run this test script with *pytest* the first time there is no
+recorded output for this test function so far and thus the test will
+fail with a message including a diff:
+
+
+```sh
+$ pytest test_demo.py
+========================= test session starts ==========================
+platform darwin -- Python 3.11.4, pytest-7.4.3, pluggy-1.3.0
+rootdir: ...
+plugins: regtest-2.0.0
+collected 1 item
+
+test_demo.py F                                                   [100%]
+
+=============================== FAILURES ===============================
+________________________ test_squares_up_to_ten ________________________
+
+regression test output differences for test_demo.py::test_squares_up_to_ten:
+
+>   --- is
+>   +++ tobe
+>   @@ -1,2 +0,0 @@
+>   -[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>   -done
+
+======================= short test summary info ========================
+FAILED test_demo.py::test_squares_up_to_ten
+========================== 1 failed in 0.02s ===========================
+```
+
+This is a diff of the current output `is` to a previously recorded output
+`tobe`. Since we did not record output yet, the diff contains no lines marked
+`+`.
+
+
+### Reset the test
+
+To record the current output, we run *pytest* with the *--reset-regtest*
+flag:
+
+```sh
+$ py.test -v --regtest-reset test_demo.py
+========================= test session starts ==========================
+platform darwin -- Python 3.11.4, pytest-7.4.3, pluggy-1.3.0
+rootdir: ...
+plugins: regtest-2.0.0
+collected 1 item
+
+test_demo.py::test_squares_up_to_ten RESET                       [100%]
+
+------------------------ pytest-regtest report -------------------------
+total number of failed regression tests: 0
+the following output files were reset:
+  _regtest_outputs/test_demo.test_squares_up_to_ten.out
+========================== 1 passed in 0.00s ===========================
+```
+
+You can also see from the output that the recorded output is in the
+`_regtest_outputs` folder which in the same folder as the test script.
+Don't forget to commit this folder to your version control system!
+
+### Run the test again
+
+When we run the test again, it succeeds:
+
+```sh
+$ py.test test_demo.py
+========================= test session starts ==========================
+platform darwin -- Python 3.11.4, pytest-7.4.3, pluggy-1.3.0
+rootdir: ...
+plugins: regtest-2.0.0
+collected 1 item
+
+test_demo.py .                                                   [100%]
+
+------------------------ pytest-regtest report -------------------------
+total number of failed regression tests: 0
+========================== 1 passed in 0.00s ===========================
+```
+
+### Break the test
+
+Let us we break the test by changing the recoreded output to compute
+11 instead of 10 square numbers:
+
+```python
+def test_squares_up_to_ten(regtest):
+
+    result = [i*i for i in range(11)]  # changed!
+
+    # one way to record output:
+    print(result, file=regtest)
+
+    # alternative method to record output:
+    regtest.write("done")
+```
+
+The next run of pytest delivers a nice diff of the current and expected output
+from this test function:
+
+```sh
+$ pytest test_demo.py
+========================= test session starts ==========================
+platform darwin -- Python 3.11.4, pytest-7.4.3, pluggy-1.3.0
+rootdir: ...
+plugins: regtest-2.0.0
+collected 1 item
+
+test_demo.py F                                                   [100%]
+
+=============================== FAILURES ===============================
+________________________ test_squares_up_to_ten ________________________
+
+regression test output differences for test_demo.py::test_squares_up_to_ten:
+
+>   --- is
+>   +++ tobe
+>   @@ -1,2 +1,2 @@
+>   -[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>   +[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>    done
+
+------------------------ pytest-regtest report -------------------------
+total number of failed regression tests: 1
+======================= short test summary info ========================
+FAILED test_demo.py::test_squares_up_to_ten
+========================== 1 failed in 0.02s ===========================
+```
+
+
+## Other features
+
+### Using the `regtest` fixture as context manager
+
+The `regtest` fixture also works as a context manager  to capture
+all output from the wrapped code block:
+
+```python
+def test_squares_up_to_ten(regtest):
+
+    result = [i*i for i in range(10)]
+
+    with regtest:
+        print(result)
+```
+
+### The `regtest_all` fixture
+
+The `regtest_all` fixture leads to recording of all output to `stdout` in a
+test function.
+
+```python
+def test_all(regtest_all):
+    print("this line will be recorded.")
+    print("and this line also.")
+```
+
+
+### Reset individual tests
+
+You can reset recorded output of files and functions individually as:
+
+    $ py.test --regtest-reset test_demo.py
+    $ py.test --regtest-reset test_demo.py::test_squares_up_to_ten
+
+### Suppress diff for failed tests
+
+To supress the diff and only see the stats use:
+
+    $ py.test --regtest-nodiff ...
+
+
+### Show all recorded output
+
+
+For complex diffs it helps to see the full recorded output also.
+To enable this use:
+
+    $ py.test --regtest-tee...
+
+
+### Line endings
+
+Per default `pytest-regtest` ignores different line endings in the output.
+In case you want to disable this feature, use the `-regtest-consider-line-endings`
+flag.
+
+
+## Clean output before capturing
+
+The recorded output can contain data which is changing from test run to test
+run, e.g. paths created with the `tmpdir` fixture, hexadecimal object ids or
+timestamps.
+
+Per default the plugin:
+
+- replaces all temporary folder in the output with `<tmpdir...>` or similar markers,
+  depending on the origin of the temporary folder (`tempfile` module, `tmpdir` fixture,
+   ...)
+- replaces hexadecimal numbers `0x...` or arbitary length by the fixed string `0x?????????`.
+
+
+### Register own cleanup functions
+
+You can register own converters in `conftest.py`:
+
+```python
+    import re
+    import pytest_regtest
+
+    @pytest_regtest.register_converter_pre
+    def remove_password_lines(txt):
+        """modify recorded output BEFORE the default fixes
+        like temp folders or hex object ids are applied"""
+
+        # remove lines with passwords:
+        lines = txt.splitlines(keepends=True)
+        lines = [l for l in lines if "password is" not in l]
+        return "".join(lines)
+
+    @pytest_regtest.register_converter_post
+    def fix_time_measurements(txt):
+        """modify recorded output AFTER the default fixes
+        like temp folders or hex object ids are applied"""
+
+        # fix time measurements:
+        return re.sub(
+            "\d+(\.\d+)? seconds",
+            "<SECONDS> seconds",
+            txt
+        )
+```
+
+If you register multiple converters they will be applied in the order of
+registration.
