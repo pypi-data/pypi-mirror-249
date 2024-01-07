@@ -1,0 +1,5 @@
+numpy
+pylab
+scipy.optimize.minimize
+scipy.interpolate.interp1d
+scipy.optimize.root_scalar
