@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+coevalogger/__init__.py
+coevalogger/file_logger.py
+coevalogger/utils/__init__.py
+coevalogger/utils/openai_info.py
+coevalogger/utils/text_print.py
+nwlogger.egg-info/PKG-INFO
+nwlogger.egg-info/SOURCES.txt
+nwlogger.egg-info/dependency_links.txt
+nwlogger.egg-info/requires.txt
+nwlogger.egg-info/top_level.txt
