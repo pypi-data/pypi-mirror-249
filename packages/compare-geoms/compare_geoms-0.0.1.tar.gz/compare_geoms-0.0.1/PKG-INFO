@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: compare_geoms
+Version: 0.0.1
+Summary: This package compares a list of molecular geometries to the geometries in large datasets.
+Author-email: Anup Kumar <kumaranu@lbl.gov>
+License: BSD-3
+Keywords: sella,transition1x
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: pymatgen
+Provides-Extra: dev
+Requires-Dist: black>=23.7.0; extra == "dev"
+Requires-Dist: docformatter>=1.7.5; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: pytest-cov>=3.0.0; extra == "dev"
+Requires-Dist: ruff>=0.0.285; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs-material>=9.4.0; extra == "docs"
+Requires-Dist: mkdocstrings[python]>=0.22.0; extra == "docs"
+Requires-Dist: mkdocs-gen-files>=0.5.0; extra == "docs"
+Requires-Dist: mkdocs-literate-nav>=0.6.0; extra == "docs"
+Requires-Dist: pillow>=10.0.0; extra == "docs"
+Requires-Dist: cairosvg>=2.7.1; extra == "docs"
+
+# compare_geoms
+
+A simple-to-use resource for generating open-source Python packages.
