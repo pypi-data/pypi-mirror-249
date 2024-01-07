@@ -1,0 +1,10 @@
+qualityscaler/QualityScaler.py,sha256=Bf1d2o726An9W50sKzcEeEH8BbiZfnchwFeNrJpkxMU,85567
+qualityscaler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qualityscaler/cli.py,sha256=MrS8aUMcula1cayV17PqRmSQrvvUxksqes3wHlytvlo,345
+quality_scaler-2.12.4.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+quality_scaler-2.12.4.dist-info/LICENSE.txt,sha256=eqQFt9v2_AhLuOcOeYCy88eQS_bqBMr0TcG_FZpNw-8,2262
+quality_scaler-2.12.4.dist-info/METADATA,sha256=5EF-7wvevUx7NTopigexUh0OLoOtW3YVQAqOPRVmPXw,634
+quality_scaler-2.12.4.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+quality_scaler-2.12.4.dist-info/entry_points.txt,sha256=oQNbnoTCB8WPF6-VNm1bXrebewLYIkZGFdsD7DlWuZg,97
+quality_scaler-2.12.4.dist-info/top_level.txt,sha256=BfEpUcs7mEdTUH_AysFcLiHOnAVb5FrJ-QDNC5lLzfg,14
+quality_scaler-2.12.4.dist-info/RECORD,,
