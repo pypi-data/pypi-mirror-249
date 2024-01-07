@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: serenity-sdk-python
+Version: 1.1.0
+Summary: Python SDK for the Serenity digital asset risk API
+Home-page: http://cloudwall.tech
+Author: Cloudwall DevSecOps team
+Author-email: devsecops@cloudwall.tech
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: auth0-python<4.5.0,>=4.4.2
+Requires-Dist: bidict==0.22.1
+Requires-Dist: fire==0.4.0
+Requires-Dist: humps==0.2.2
+Requires-Dist: pandas==1.5.3
+Requires-Dist: plotly==5.18.0
+Requires-Dist: pyarrow==14.0.1
+Requires-Dist: pydantic==1.10.13
+Requires-Dist: requests==2.31.0
+Requires-Dist: scipy==1.9.3
+Requires-Dist: seaborn==0.11.2
+Requires-Dist: typing-extensions==4.8.0
+
+## Serenity SDK - Python
+
+### Introduction
+
+The Serenity digital asset risk platform exposes all functionality via an API -- currently REST only.
+
+Although it's possible to call the API with simple HTTP client code in most any modern language, there are conventions that need to be followed -- especially for authentication and authorization -- and to make it easier we have provided this lightweight SDK.
+
+### Installation
+
+Installation for Python 3.x users is very simple using pip:
+
+```plain
+pip install serenity.sdk.python
+```
+
+If you have already installed the SDK and want to upgrade to latest:
+
+```plain
+pip install -U serenity.sdk.python
+```
+
+### API documentation
+
+The latest API documentation is always available at [ReadTheDocs](https://cloudwall-serenitysdkpython.readthedocs-hosted.com/en/stable/).
+
+### Learning more
+
+If you want to learn more about the Serenity digital asset risk platform, book a demo or get in touch, you can reach out to us at [https://cloudwall.tech](https://cloudwall.tech).

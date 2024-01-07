@@ -1,0 +1,12 @@
+auth0-python<4.5.0,>=4.4.2
+bidict==0.22.1
+fire==0.4.0
+humps==0.2.2
+pandas==1.5.3
+plotly==5.18.0
+pyarrow==14.0.1
+pydantic==1.10.13
+requests==2.31.0
+scipy==1.9.3
+seaborn==0.11.2
+typing-extensions==4.8.0
