@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["morse_code"]
+
+[project]
+name = "morse_code_converter"
+version = "1.1.0"
+authors = [
+  { name="Prashant Pandey", email="prashantpandey94551@gmail.com" },
+]
+description = "A Python package for converting words and sentences to Morse code and playing them in Minion style."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/prashantpandey9/morse-code-converter"
+Issues = "https://github.com/prashantpandey9/morse-code-converter/issues"
