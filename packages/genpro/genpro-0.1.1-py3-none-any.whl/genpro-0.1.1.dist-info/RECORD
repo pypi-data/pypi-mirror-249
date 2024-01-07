@@ -1,0 +1,9 @@
+genpro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genpro/commands/__init__.py,sha256=k_mkZ5Qswj_51WX9LcW13_7_CCXywx6zrvUnB41Db40,711
+genpro/model/__init__.py,sha256=zUdN8Ts49udRgNbqCtGrW7AZX3MtgvAWd0Z3jx-VtX8,2510
+genpro/model/prompt.py,sha256=gzLOVbr9P8r1aCf6MB9cpD_XiZtR5yQ5ZG2wIawvuew,4683
+genpro-0.1.1.dist-info/METADATA,sha256=xULvLMFhObKpy0En4R6q1DXUsfwiDkLerfArNx3pxu0,240
+genpro-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+genpro-0.1.1.dist-info/entry_points.txt,sha256=lQERJM1GITWp2iqBkyG9brNsc3aNmlA3PbY9giIeEXc,69
+genpro-0.1.1.dist-info/top_level.txt,sha256=UpDGUC-_wVWXD2h1dZFNyupI9OM7jRjreWOgBJiS0Wc,7
+genpro-0.1.1.dist-info/RECORD,,
