@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "polugins_type_gen"
+version = "0.4.0"
+description = "Type stub generator Polugins."
+authors = ["StefanBRas <opensource@bruhn.io>"]
+readme = "README.md"
+packages = [{include = "polugins_type_gen", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9" # 3.8 cannot be used because we use ast.unparse
+polugins = ">=0.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+polugins = ">=0.2" # We use it for the scripts/generate_polars_stubs.py
+pytest = "^7.3.1"
+mypy = "1.7.1" # Not sure it's considered Public API what we import, so we fix the version.
+ruff = "0.1.6"
+nox = "^2023.4.22"
+coverage = "^7.2.7"
+pytest-env = "^0.8.2"
+pytest-cov = "^4.1.0"
+example-package = {path = "tests/pkgs/example_package"}
+
+[tool.poetry.group.nox]
+optional = true
+
+[tool.poetry.group.nox.dependencies]
+nox = "^2023.4.22"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.polugins.lazyframe]
+"pyproject" = "polugins._testing.namespaces:PyProjectNameSpace"
+
+[tool.poetry.scripts]
+polugins = 'polugins_type_gen.cli:cli'
+
+[tool.pytest.ini_options]
+env = [
+ "polugins_lazyframe_env=polugins._testing.namespaces:EnvNameSpace"
+]
+pythonpath = [
+  "src"
+]
+
+[tool.ruff]
+extend = "../ruff.toml"
+
+select = [
+"E",
+"F",
+"I",
+"PTH", # use pathlib
+"RUF",
+"SIM", # simplify
+"A", # name shadowing builtin
+"C4", # comprehensions
+"EM" # Err msg, asign to var first.
+]
+ignore = []
+src = ["src"]
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
