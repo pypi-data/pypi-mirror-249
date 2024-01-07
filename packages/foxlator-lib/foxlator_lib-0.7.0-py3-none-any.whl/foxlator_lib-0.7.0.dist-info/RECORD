@@ -1,0 +1,12 @@
+foxlator_lib/__init__.py,sha256=OhlmVoQzWX42J-As8G1FOAGl9vVquoWgwn2zQHymf0w,135
+foxlator_lib/audio.py,sha256=VtO5jvByXbYRREHBny2DxA_QS4IxzP5rTVF2Kb6SqNI,3623
+foxlator_lib/error.py,sha256=IO-Awl4JKUZDDwMWC7E-yjJ0Rx3PxdtQrGjTZLIUfgI,313
+foxlator_lib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foxlator_lib/video.py,sha256=gv0laAU_o19PeeTuDGAWIZqLPdRmU1cRc9Px1u4_kuM,2095
+foxlator_lib/stt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foxlator_lib/stt/whisper_stt.py,sha256=TTPXuP9GByFyViLJcvVGHXemWhY4VIeKfMCX5TlK6ug,1725
+foxlator_lib/utils/__init__.py,sha256=5_pOH3lXfD-yZ_km2b8Ko1ImbuX1Jfdi1Y_R0OUTt9c,146
+foxlator_lib-0.7.0.dist-info/METADATA,sha256=J2kz8s15oVwvKcJ0LQ0pL3m8eVb7ETKefHw9KUFifvY,728
+foxlator_lib-0.7.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+foxlator_lib-0.7.0.dist-info/licenses/LICENSE,sha256=Ve-PVDxA74j0LM2xCtjCsdEXQdVLTqxhRdVYH5oOt0c,1066
+foxlator_lib-0.7.0.dist-info/RECORD,,
