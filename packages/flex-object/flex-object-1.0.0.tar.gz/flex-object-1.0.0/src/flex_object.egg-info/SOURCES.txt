@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/flex_object/__init__.py
+src/flex_object/flex_object.py
+src/flex_object.egg-info/PKG-INFO
+src/flex_object.egg-info/SOURCES.txt
+src/flex_object.egg-info/dependency_links.txt
+src/flex_object.egg-info/top_level.txt
