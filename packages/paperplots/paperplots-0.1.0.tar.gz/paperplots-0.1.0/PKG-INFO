@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: paperplots
+Version: 0.1.0
+Summary: Camera ready machine learning plots with a Tensorboard-like API
+Home-page: https://github.com/anishhdiwan/paperplots
+Author: Anish Abhijit Diwan
+Author-email: A.A.Diwan@student.tudelft.nl
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.0
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
