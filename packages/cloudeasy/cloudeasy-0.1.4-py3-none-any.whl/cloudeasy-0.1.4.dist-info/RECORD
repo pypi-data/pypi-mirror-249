@@ -1,0 +1,10 @@
+cloudeasy/alicloud/__init__.py,sha256=sUMjxj-IBoS-lpU7v9KoTFH-atpfpP3R3R9ZbnycqHU,285
+cloudeasy/alicloud/alicloud_config.py,sha256=SisIhTCKqVeeqwAwIKD4N2NekDMGjiZs0grRGxte7r4,313
+cloudeasy/alicloud/dns_manager.py,sha256=yxAQvWnK1YkmgobSQ7uKmvgdyha9wLJzOEwhbQEdi80,3308
+cloudeasy/alicloud/resource_center_manager.py,sha256=6-LBS0QKeCZnBM7wHHpWbOjBoxl54VpRP2IjGDxH7R4,1945
+cloudeasy/alicloud/tea_api.py,sha256=zH2B1WUFcQ4BRFBBRU_MDkPLxUrY5d2TIOrCjiGLp1M,5154
+cloudeasy/github/__init__.py,sha256=X4Z7j7waSDw2bBO0mbANdni4Yukm0kJOdpgGRHeYjiI,68
+cloudeasy/github/github_client.py,sha256=jYIpkXKRohsuDp30e1sn_I8PvnRkVUkSJwbnXGbOJzc,3244
+cloudeasy-0.1.4.dist-info/METADATA,sha256=A_Tza80ckH7Xz9rMIfULmmX2psuqph_nw-cs2rx_zIk,1813
+cloudeasy-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+cloudeasy-0.1.4.dist-info/RECORD,,
