@@ -1,0 +1,2 @@
+[console_scripts]
+espero-django = package.module:__main__

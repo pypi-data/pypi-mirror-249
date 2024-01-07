@@ -1,0 +1,14 @@
+README.md
+setup.py
+mudey_django.egg-info/PKG-INFO
+mudey_django.egg-info/SOURCES.txt
+mudey_django.egg-info/dependency_links.txt
+mudey_django.egg-info/entry_points.txt
+mudey_django.egg-info/requires.txt
+mudey_django.egg-info/top_level.txt
+package/__init__.py
+package/crud_generator.py
+package/form_generator.py
+package/model_generator.py
+package/module.py
+package/view_generator.py
