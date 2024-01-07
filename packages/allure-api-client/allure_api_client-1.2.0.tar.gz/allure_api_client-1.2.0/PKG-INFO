@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: allure-api-client
+Version: 1.2.0
+Summary: API Client for Python ^3.11 and Pytest projects. It includes the Allure request/response hooks and the status code checking inside the main method. Request hook generates cURL, Response hook represents the useful information.
+License: MIT
+Author: amaym0n
+Author-email: loco.skitls@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: allure-pytest (>=2.13.2,<3.0.0)
+Requires-Dist: httpx (>=0.25.2,<0.26.0)
+Requires-Dist: httpx-auth (>=0.18.0,<0.19.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Allure API Client
+
+API client library for python ^3.11
+
