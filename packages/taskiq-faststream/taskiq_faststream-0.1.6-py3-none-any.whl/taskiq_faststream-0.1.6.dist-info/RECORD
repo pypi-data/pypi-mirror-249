@@ -1,0 +1,12 @@
+taskiq_faststream/__about__.py,sha256=uX2ZSdpp3WdEj3LMsXVpvtw7aZW1srNqVvUz2vH3pXM,90
+taskiq_faststream/__init__.py,sha256=IBuPr4ghLVHznCtlxKgK9bU1j3Wm_531Y_hSCCmnM3g,196
+taskiq_faststream/broker.py,sha256=KcE_8pWTyF9F8szwDRxUuVtWzKrAAgTpedXbvTk1u6E,4601
+taskiq_faststream/kicker.py,sha256=CzLTlgVX5VsEsRZbJljcfWG4UQ46giPNVdhzg6wOADQ,434
+taskiq_faststream/scheduler.py,sha256=032cM1LJ1rOinL8rb8wMzcBlM8CDOtNYMj-gInqOfFI,986
+taskiq_faststream/serializer.py,sha256=oYqd8EHxptROzep98HWJ-X5r0nAU9qFC7w1pE0Zi6mc,440
+taskiq_faststream/types.py,sha256=zNRA-IYX_25wkp8AtS5Nt4Q9jTAnZ_C0G00qKV1LRmQ,390
+taskiq_faststream/utils.py,sha256=GtVJOdTw-yHzh271mXDGDdmpdiSL3ITHXX5BW-jtMPI,1405
+taskiq_faststream-0.1.6.dist-info/METADATA,sha256=89emqxg91shLHwgXSaBDnMRpZ8WXDc-L7qUbSiAlVeQ,6941
+taskiq_faststream-0.1.6.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+taskiq_faststream-0.1.6.dist-info/licenses/LICENSE,sha256=2kUMHEmi_K6SV43YoqXTygA6Tt37oHEGyi-NSflSQvw,1073
+taskiq_faststream-0.1.6.dist-info/RECORD,,
