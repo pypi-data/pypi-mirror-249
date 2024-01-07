@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ens_sdk
+Version: 0.0.13
+Summary: An SDK to simplify connectivity to ENS Services
+Project-URL: Homepage, https://github.com/enciphertz/encipher-notification-service-python-sdk
+Project-URL: Bug Tracker, https://github.com/enciphertz/encipher-notification-service-python-sdk/issues
+Author-email: Joseph Daudi <joseph@encipher.dev>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: esr-sdk
+Requires-Dist: pydantic
+Requires-Dist: python-decouple
+Requires-Dist: pytz
+Requires-Dist: redis
+Requires-Dist: requests
+Requires-Dist: sentry-sdk
+Description-Content-Type: text/markdown
+
+# ENS Python SDK
+
+An SDK to simplify connectivity to ENS Services
