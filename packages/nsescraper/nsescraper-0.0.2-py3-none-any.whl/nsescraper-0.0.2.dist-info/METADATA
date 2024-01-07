@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nsescraper
+Version: 0.0.2
+Summary: A Scraper for https://www.nseindia.com
+Home-page: https://github.com/U77w41/
+Author: Ujjwal Chowdhury
+Author-email: <u77w41@gmail.com>
+License: MIT
+Keywords: python,NSE,NIFTY,scraping
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pytz
+
+# ==========          nsecraper          ========== 
+
+**nsecraper** is a an open-source python package to clean raw text data.
+
+## Installation
+
+**nsecraper** requires [Python 3](https://www.python.org/downloads/) and [Pandas](https://pandas.pydata.org/) to execute. 
+
+To install using pip, use
+
+bash```
+pip install nsecraper
+```
+
+## Features 
+**nsecraper** package contains different functions such as:
+- **intraday_index**: Scrapes intra day data for any index from NSE  
+- **intraday_stock**: Scrapes intra day data for any listed stock from NSE
