@@ -1,0 +1,83 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Kalenteri",
+            "state": {
+                "off": "Pois",
+                "on": "P\u00e4\u00e4ll\u00e4"
+            },
+            "state_attributes": {
+                "all_day": {
+                    "state": {
+                        "false": "Ei",
+                        "true": "Kyll\u00e4"
+                    }
+                },
+                "message": {
+                    "name": "Viesti"
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_service_calendar_list_events": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "K\u00e4yt\u00e4 sen sijaan `calendar.get_events`, joka tukee useita kokonaisuuksia.\n\nVaihda t\u00e4m\u00e4 palvelu ja s\u00e4\u00e4d\u00e4 automaatiot ja skriptit ja valitse **L\u00e4het\u00e4** sulkeaksesi t\u00e4m\u00e4n ongelman.",
+                        "title": "Havaittiin vanhentuneen palvelun `calendar.list_events` k\u00e4ytt\u00f6."
+                    }
+                }
+            },
+            "title": "Havaittiin vanhentuneen palvelun `calendar.list_events` k\u00e4ytt\u00f6."
+        },
+        "platform_integration_no_support": {
+            "description": "{platform}-integraation {domain}-alusta ei tue alustan asetuksia.\n\nPoista se asetuksista ja k\u00e4ynnist\u00e4 Home Assistant uudelleen ongelman korjaamiseksi.",
+            "title": "Alustan tukea ei tueta"
+        }
+    },
+    "services": {
+        "create_event": {
+            "fields": {
+                "summary": {
+                    "description": "M\u00e4\u00e4ritt\u00e4\u00e4 tapahtuman lyhyen yhteenvedon tai aiheen."
+                }
+            }
+        },
+        "get_events": {
+            "description": "Hae kalenterin tapahtumat tietyll\u00e4 aikav\u00e4lialueella.",
+            "fields": {
+                "duration": {
+                    "description": "Palauttaa aktiiviset tapahtumat alkamisajankohdasta m\u00e4\u00e4ritettyyn kestoon asti.",
+                    "name": "Kesto"
+                },
+                "end_date_time": {
+                    "description": "Palauttaa aktiiviset tapahtumat ennen t\u00e4t\u00e4 aikaa (yksinoikeudella). Ei voi k\u00e4ytt\u00e4\u00e4 yhdess\u00e4 'duration' kanssa.",
+                    "name": "P\u00e4\u00e4ttymisaika"
+                },
+                "start_date_time": {
+                    "description": "Palauttaa aktiiviset tapahtumat t\u00e4m\u00e4n ajan j\u00e4lkeen (yksinoikeudella). Kun sit\u00e4 ei ole asetettu, oletusarvo on nyt.",
+                    "name": "Aloitusaika"
+                }
+            },
+            "name": "Hae tapahtumia"
+        },
+        "list_events": {
+            "fields": {
+                "duration": {
+                    "description": "Palauttaa aktiiviset tapahtumat alkamisajankohdasta m\u00e4\u00e4ritettyyn kestoon asti.",
+                    "name": "Kesto"
+                },
+                "end_date_time": {
+                    "description": "Palauttaa aktiiviset tapahtumat ennen t\u00e4t\u00e4 aikaa (yksinoikeudella). Ei voi k\u00e4ytt\u00e4\u00e4 yhdess\u00e4 'duration' kanssa.",
+                    "name": "P\u00e4\u00e4ttymisaika"
+                },
+                "start_date_time": {
+                    "description": "Palauttaa aktiiviset tapahtumat t\u00e4m\u00e4n ajan j\u00e4lkeen (yksinoikeudella). Kun sit\u00e4 ei ole asetettu, oletusarvo on nyt.",
+                    "name": "Aloitusaika"
+                }
+            }
+        }
+    },
+    "title": "Kalenteri"
+}

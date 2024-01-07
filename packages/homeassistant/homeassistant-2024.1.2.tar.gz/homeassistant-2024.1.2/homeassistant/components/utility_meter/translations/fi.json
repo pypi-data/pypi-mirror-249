@@ -1,0 +1,27 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Nimi"
+                }
+            }
+        }
+    },
+    "services": {
+        "calibrate": {
+            "description": "Kalibroi kulutusmittarin anturin.",
+            "fields": {
+                "value": {
+                    "description": "Arvo, johon mittari asetetaan.",
+                    "name": "Arvo"
+                }
+            },
+            "name": "Kalibroi"
+        },
+        "reset": {
+            "description": "Nollaa kaikki kulutusmittarin laskurit.",
+            "name": "Nollaa"
+        }
+    }
+}

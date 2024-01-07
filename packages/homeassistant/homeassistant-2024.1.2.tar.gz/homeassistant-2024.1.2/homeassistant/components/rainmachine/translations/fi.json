@@ -1,0 +1,43 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty"
+        },
+        "error": {
+            "invalid_auth": "Virheellinen todennus"
+        },
+        "flow_title": "{ip}",
+        "step": {
+            "user": {
+                "data": {
+                    "ip_address": "Palvelin tai IP-osoite",
+                    "password": "Salasana",
+                    "port": "Portti"
+                },
+                "title": "T\u00e4yt\u00e4 tietosi."
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "allow_inactive_zones_to_run": "Salli k\u00e4yt\u00f6st\u00e4 poistettujen vy\u00f6hykkeiden ajaminen manuaalisesti",
+                    "use_app_run_times": "K\u00e4yt\u00e4 vy\u00f6hykkeen ajoaikoja RainMachine-sovelluksesta",
+                    "zone_run_time": "Alueen oletusajoaika (sekunteina)"
+                },
+                "title": "M\u00e4\u00e4rit\u00e4 RainMachine"
+            }
+        }
+    },
+    "services": {
+        "push_weather_data": {
+            "fields": {
+                "solarrad": {
+                    "description": "Auringon s\u00e4teily (MJ/m\u00b2/h).",
+                    "name": "Auringon s\u00e4teily"
+                }
+            }
+        }
+    }
+}

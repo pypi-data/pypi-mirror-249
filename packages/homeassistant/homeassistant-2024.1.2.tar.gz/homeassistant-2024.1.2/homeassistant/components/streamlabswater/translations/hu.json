@@ -1,0 +1,30 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van"
+        },
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "unknown": "V\u00e1ratlan hiba"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "API kulcs"
+                }
+            }
+        }
+    },
+    "services": {
+        "set_away_mode": {
+            "description": "Be\u00e1ll\u00edtja a otthon/t\u00e1vol m\u00f3dot egy Streamlabs Water Monitorhoz.",
+            "fields": {
+                "away_mode": {
+                    "description": "Otthon vagy t\u00e1vol.",
+                    "name": "T\u00e1voli m\u00f3d"
+                }
+            },
+            "name": "T\u00e1voli m\u00f3d be\u00e1ll\u00edt\u00e1sa"
+        }
+    }
+}

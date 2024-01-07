@@ -1,0 +1,83 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "reauth_successful": "Uudelleentodennus onnistui"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus",
+            "name_exists": "Nimi on jo olemassa"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Salasana"
+                },
+                "description": "K\u00e4ytt\u00e4j\u00e4n {username} salasana on virheellinen.",
+                "title": "Todenna integraatio uudelleen"
+            },
+            "user": {
+                "data": {
+                    "host": "Palvelin",
+                    "name": "Nimi",
+                    "password": "Salasana",
+                    "port": "Portti",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "title": "M\u00e4\u00e4rit\u00e4 Transmission Client"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "active_torrents": {
+                "name": "Aktiiviset torrentit"
+            },
+            "completed_torrents": {
+                "name": "Valmiit torrentit"
+            },
+            "download_speed": {
+                "name": "Latausnopeus"
+            },
+            "paused_torrents": {
+                "name": "Keskeytetyt torrentit"
+            },
+            "started_torrents": {
+                "name": "Aloitetut torrentit"
+            },
+            "total_torrents": {
+                "name": "Torrentit yhteens\u00e4"
+            },
+            "transmission_status": {
+                "name": "Tila",
+                "state": {
+                    "idle": "Toimeton"
+                }
+            },
+            "upload_speed": {
+                "name": "L\u00e4hetysnopeus"
+            }
+        },
+        "switch": {
+            "on_off": {
+                "name": "Kytkin"
+            },
+            "turtle_mode": {
+                "name": "Kilpikonna-tila"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "limit": "Raja",
+                    "order": "Tilaus",
+                    "scan_interval": "P\u00e4ivitystiheys"
+                },
+                "title": "M\u00e4\u00e4rit\u00e4 l\u00e4hetyksen asetukset"
+            }
+        }
+    }
+}

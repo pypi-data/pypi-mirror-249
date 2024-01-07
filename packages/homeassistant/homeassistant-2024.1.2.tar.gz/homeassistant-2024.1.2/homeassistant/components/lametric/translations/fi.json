@@ -1,0 +1,134 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "authorize_url_timeout": "Valtuutus-URL-osoitteen luomisen aikakatkaisu.",
+            "no_url_available": "URL-osoitetta ei ole saatavilla. Lis\u00e4tietoja t\u00e4st\u00e4 virheest\u00e4 saat [t\u00e4\u00e4lt\u00e4]({docs_url})",
+            "oauth_error": "Vastaanotettu virheelliset tunnustiedot.",
+            "oauth_failed": "Virhe haettaessa k\u00e4ytt\u00f6tunnusta.",
+            "oauth_timeout": "Aikakatkaisu ratkaistaessa OAuth tokenia.",
+            "oauth_unauthorized": "OAuth -valtuutusvirhe haettaessa k\u00e4ytt\u00f6tunnusta.",
+            "reauth_successful": "Uudelleentodennus onnistui",
+            "unknown": "Odottamaton virhe"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "unknown": "Odottamaton virhe"
+        },
+        "step": {
+            "manual_entry": {
+                "data": {
+                    "api_key": "API-avain",
+                    "host": "Palvelin"
+                }
+            },
+            "pick_implementation": {
+                "title": "Valitse todennusmenetelm\u00e4"
+            }
+        }
+    },
+    "entity": {
+        "switch": {
+            "bluetooth": {
+                "name": "Bluetooth"
+            }
+        }
+    },
+    "selector": {
+        "icon_type": {
+            "options": {
+                "none": "Ei mit\u00e4\u00e4n"
+            }
+        },
+        "priority": {
+            "options": {
+                "critical": "Kriittinen",
+                "warning": "Varoitus"
+            }
+        },
+        "sound": {
+            "options": {
+                "alarm1": "H\u00e4lytys 1",
+                "alarm10": "H\u00e4lytys 10",
+                "alarm11": "H\u00e4lytys 11",
+                "alarm12": "H\u00e4lytys 12",
+                "alarm13": "H\u00e4lytys 13",
+                "alarm2": "H\u00e4lytys 2",
+                "alarm3": "H\u00e4lytys 3",
+                "alarm4": "H\u00e4lytys 4",
+                "alarm5": "H\u00e4lytys 5",
+                "alarm6": "H\u00e4lytys 6",
+                "alarm7": "H\u00e4lytys 7",
+                "alarm8": "H\u00e4lytys 8",
+                "alarm9": "H\u00e4lytys 9",
+                "bicycle": "Polkupy\u00f6r\u00e4",
+                "car": "Auto",
+                "cash": "K\u00e4teinen",
+                "cat": "Kissa",
+                "dog": "Koira 1",
+                "dog2": "Koira 2",
+                "energy": "Energia",
+                "knock-knock": "Kop kop",
+                "letter_email": "Kirje s\u00e4hk\u00f6posti",
+                "lose1": "Menet\u00e4 1",
+                "lose2": "Menet\u00e4 2",
+                "negative1": "Negatiivinen 1",
+                "negative2": "Negatiivinen 2",
+                "negative3": "Negatiivinen 3"
+            }
+        }
+    },
+    "services": {
+        "chart": {
+            "fields": {
+                "device_id": {
+                    "description": "LaMetric-laite, jolla kaavio n\u00e4ytet\u00e4\u00e4n.",
+                    "name": "Laite"
+                },
+                "icon_type": {
+                    "description": "N\u00e4ytett\u00e4v\u00e4n kuvakkeen tyyppi, joka ilmaisee ilmoituksen luonteen.",
+                    "name": "Kuvakkeen tyyppi"
+                },
+                "priority": {
+                    "description": "Ilmoituksen prioriteetti. Kun laite on n\u00e4yt\u00f6ns\u00e4\u00e4st\u00e4j\u00e4- tai kioskitilassa, vain kriittisen prioriteetin ilmoitukset hyv\u00e4ksyt\u00e4\u00e4n.",
+                    "name": "Prioriteetti"
+                },
+                "sound": {
+                    "description": "Toistettava ilmoitus\u00e4\u00e4ni.",
+                    "name": "\u00c4\u00e4ni"
+                }
+            },
+            "name": "N\u00e4yt\u00e4 kaavio"
+        },
+        "message": {
+            "description": "N\u00e4ytt\u00e4\u00e4 viestin ja valinnaisen kuvakkeen LaMetric-laitteessa.",
+            "fields": {
+                "device_id": {
+                    "description": "LaMetric-laite, jolla viesti n\u00e4ytet\u00e4\u00e4n.",
+                    "name": "Laite"
+                },
+                "icon": {
+                    "description": "N\u00e4ytett\u00e4v\u00e4n kuvakkeen tai animaation tunnusnumero. Luettelo kaikista kuvakkeista ja niiden tunnuksista l\u00f6ytyy osoitteesta: https://developer.lametric.com/icons.",
+                    "name": "Kuvake"
+                },
+                "icon_type": {
+                    "description": "N\u00e4ytett\u00e4v\u00e4n kuvakkeen tyyppi, joka ilmaisee ilmoituksen luonteen.",
+                    "name": "Kuvakkeen tyyppi"
+                },
+                "message": {
+                    "description": "N\u00e4ytett\u00e4v\u00e4 viesti.",
+                    "name": "Viesti"
+                },
+                "priority": {
+                    "description": "Ilmoituksen prioriteetti. Kun laite on n\u00e4yt\u00f6ns\u00e4\u00e4st\u00e4j\u00e4- tai kioskitilassa, vain kriittisen prioriteetin ilmoitukset hyv\u00e4ksyt\u00e4\u00e4n.",
+                    "name": "Prioriteetti"
+                },
+                "sound": {
+                    "description": "Toistettava ilmoitus\u00e4\u00e4ni.",
+                    "name": "\u00c4\u00e4ni"
+                }
+            },
+            "name": "N\u00e4yt\u00e4 viesti"
+        }
+    }
+}

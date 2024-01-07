@@ -1,0 +1,8 @@
+{
+    "issues": {
+        "deprecated_beat": {
+            "description": "Odeberte kl\u00ed\u010d \"{config_key}\" z \"{display_options}\" pro polo\u017eku {integration} ve va\u0161em souboru configuration.yaml a restartujte Home Assistanta, abyste tento probl\u00e9m vy\u0159e\u0161ili.",
+            "title": "\"{config_key}\" senzoru Datum a \u010das se odeb\u00edr\u00e1"
+        }
+    }
+}

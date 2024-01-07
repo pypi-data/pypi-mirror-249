@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Slu\u017eba je ji\u017e nastavena"
+        },
+        "step": {
+            "user": {
+                "description": "Stiskn\u011bte tla\u010d\u00edtko Odeslat pro po\u010d\u00e1te\u010dn\u00ed nastaven\u00ed. Na vytvo\u0159en\u00e9m konfigura\u010dn\u00edm z\u00e1znamu stiskn\u011bte tla\u010d\u00edtko Nastavit pro p\u0159id\u00e1n\u00ed senzor\u016f pro vybran\u00e9 procesy."
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "process": "Procesy, kter\u00e9 se maj\u00ed p\u0159idat jako senzory"
+                },
+                "data_description": {
+                    "process": "Vyberte b\u011b\u017e\u00edc\u00ed proces ze seznamu nebo p\u0159idejte vlastn\u00ed hodnotu. Jsou podporov\u00e1ny v\u00edcen\u00e1sobn\u00e9 v\u00fdb\u011bry/vlastn\u00ed hodnoty"
+                },
+                "description": "Nastav\u00ed monitorovac\u00ed senzor pro b\u011b\u017e\u00edc\u00ed proces"
+            }
+        }
+    }
+}

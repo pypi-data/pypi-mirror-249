@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Teenus on juba seadistatud"
+        },
+        "step": {
+            "user": {
+                "description": "Esialgseks seadistamiseks vajuta nuppu Esita. Valitud protsesside jaoks andurite lisamiseks vajuta loodud konfiguratsioonikirje juures nuppu Seadista"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "process": "Anduritena lisatavad protsessid"
+                },
+                "data_description": {
+                    "process": "Vali loetelust k\u00e4imasolev protsess v\u00f5i lisage kohandatud v\u00e4\u00e4rtus. Toetatakse mitut valikut/taandatud v\u00e4\u00e4rtusi"
+                },
+                "description": "Seireanduri seadistamine k\u00e4imasoleva protsessi jaoks"
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "config": {
+        "error": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "id_exists": "Yhdysk\u00e4yt\u00e4v\u00e4n tunnus on jo olemassa",
+            "timeout_connect": "Aikakatkaisu yhteytt\u00e4 luodessa"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "device": "Polku tai URL-osoite",
+                    "id": "Tunniste",
+                    "name": "Nimi"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "floor_temperature": "Lattian l\u00e4mp\u00f6tila",
+                    "read_precision": "Lukutarkkuus",
+                    "set_precision": "Asetustarkkuus",
+                    "temporary_override_mode": "Tilap\u00e4inen asetusarvon ohitustila"
+                }
+            }
+        }
+    },
+    "services": {
+        "set_central_heating_ovrd": {
+            "description": "Asettaa keskusl\u00e4mmityksen ohitusvaihtoehdon yhdysk\u00e4yt\u00e4v\u00e4\u00e4n. Kun ohitetaan ohjauksen asetusarvo (set_control_setpoint-palvelukutsulla, jonka arvo on muu kuin 0), yhdysk\u00e4yt\u00e4v\u00e4 aktivoi automaattisesti keskusl\u00e4mmityksen ohituksen l\u00e4mmityksen k\u00e4ynnist\u00e4miseksi. T\u00e4m\u00e4n j\u00e4lkeen t\u00e4t\u00e4 palvelua voidaan k\u00e4ytt\u00e4\u00e4 keskusl\u00e4mmityksen ohitustilan hallintaan. Jos haluat palauttaa keskusl\u00e4mmityksen hallinnan termostaatille, kutsu set_control_setpoint-palvelua l\u00e4mp\u00f6tilan arvolla 0. Tarvitset t\u00e4t\u00e4 vain, jos kirjoitat oman ohjelmistotermostaatin.\n."
+        },
+        "set_clock": {
+            "description": "Asettaa kellon ja viikonp\u00e4iv\u00e4n yhdistetylle termostaatille.",
+            "fields": {
+                "time": {
+                    "description": "Valinnainen aika 24 tunnin muodossa, joka annetaan termostaatille. Oletusarvo on nykyinen aika."
+                }
+            }
+        },
+        "set_control_setpoint": {
+            "description": "Asettaa keskusl\u00e4mmityksen ohjauksen asetusarvon ohituksen yhdysk\u00e4yt\u00e4v\u00e4lle. Tarvitset t\u00e4t\u00e4 vain, jos kirjoitat oman ohjelmistotermostaatin.\n."
+        },
+        "set_gpio_mode": {
+            "fields": {
+                "mode": {
+                    "name": "Tila"
+                }
+            }
+        },
+        "set_led_mode": {
+            "fields": {
+                "mode": {
+                    "name": "Tila"
+                }
+            }
+        },
+        "set_max_modulation": {
+            "description": "Ohittaa suurimman suhteellisen modulaatiotason. Tarvitset t\u00e4t\u00e4 vain, jos kirjoitat oman ohjelmistotermostaatin.\n.",
+            "fields": {
+                "level": {
+                    "description": "Yhdysk\u00e4yt\u00e4v\u00e4lle annettava modulaatiotaso. Jos annat arvon -1, voit poistaa ohituksen ja v\u00e4litt\u00e4\u00e4 arvon termostaatilta uudelleen.\n."
+                }
+            }
+        },
+        "set_outside_temperature": {
+            "description": "Antaa ulkol\u00e4mp\u00f6tilan termostaatille. Jos termostaatti ei pysty n\u00e4ytt\u00e4m\u00e4\u00e4n ulkol\u00e4mp\u00f6tilaa eik\u00e4 tue OTC:t\u00e4 (ulkol\u00e4mp\u00f6tilan korjaus), t\u00e4ll\u00e4 ei ole vaikutusta.\n.",
+            "fields": {
+                "temperature": {
+                    "description": "Termostaatille annettava l\u00e4mp\u00f6tila. Arvot v\u00e4lill\u00e4 -40,0-64,0 hyv\u00e4ksyt\u00e4\u00e4n, mutta kaikki termostaatit eiv\u00e4t voi n\u00e4ytt\u00e4\u00e4 koko aluetta. Kaikki arvot yli 64,0 tyhjent\u00e4v\u00e4t aiemmin m\u00e4\u00e4ritetyn arvon (ehdotus: 99).\n."
+                }
+            }
+        }
+    }
+}

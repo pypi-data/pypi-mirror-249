@@ -1,0 +1,24 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "Klucz API"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "daily_usage": {
+                "name": "Dzienne zu\u017cycie"
+            },
+            "monthly_usage": {
+                "name": "Miesi\u0119czne zu\u017cycie"
+            },
+            "yearly_usage": {
+                "name": "Roczne zu\u017cycie"
+            }
+        }
+    }
+}

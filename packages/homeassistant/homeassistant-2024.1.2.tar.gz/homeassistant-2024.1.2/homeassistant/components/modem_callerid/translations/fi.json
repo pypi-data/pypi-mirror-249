@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "already_in_progress": "M\u00e4\u00e4ritysprosessi on jo k\u00e4ynniss\u00e4"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Nimi",
+                    "port": "Portti"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "phone_modem_reject": {
+                "name": "Puhelinmodeemin hylk\u00e4\u00e4minen"
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "config": {
+        "abort": {
+            "no_devices_found": "Verkosta ei l\u00f6ytynyt laitteita",
+            "single_instance_allowed": "Jo m\u00e4\u00e4ritetty. Vain yksi konfiguraatio mahdollinen."
+        },
+        "step": {
+            "confirm": {
+                "description": "Haluatko m\u00e4\u00e4ritt\u00e4\u00e4 Sonosin?"
+            }
+        }
+    },
+    "entity": {
+        "number": {
+            "sub_crossover": {
+                "name": "Alajakotaajuus"
+            }
+        },
+        "sensor": {
+            "audio_input_format": {
+                "name": "\u00c4\u00e4nen tulomuoto"
+            }
+        },
+        "switch": {
+            "buttons_enabled": {
+                "name": "Kosketusohjaimet"
+            },
+            "cross_fade": {
+                "name": "Ristih\u00e4ivytys"
+            },
+            "dialog_level": {
+                "name": "Puheen tehostaminen"
+            },
+            "loudness": {
+                "name": "\u00c4\u00e4nekkyys"
+            },
+            "night_mode": {
+                "name": "Y\u00f6n \u00e4\u00e4ni"
+            },
+            "status_light": {
+                "name": "Tilan merkkivalo"
+            },
+            "sub_enabled": {
+                "name": "Subwoofer k\u00e4yt\u00f6ss\u00e4"
+            },
+            "surround_enabled": {
+                "name": "Surround k\u00e4yt\u00f6ss\u00e4"
+            },
+            "surround_mode": {
+                "name": "Surround-musiikin t\u00e4ysi \u00e4\u00e4nenvoimakkuus"
+            }
+        }
+    },
+    "issues": {
+        "subscriptions_failed": {
+            "description": "Toiminnallisuus voi olla rajoitettu, jos palataan kyselyyn.\n\nSonos -laite osoitteessa {device_ip} ei tavoita Home Assistantia osoitteessa {listener_address}.\n\nKatso [documentation]({sub_fail_url}) lis\u00e4tietoja t\u00e4m\u00e4n ongelman ratkaisemisesta."
+        }
+    },
+    "services": {
+        "restore": {
+            "description": "Palauttaa mediasoittimen tilannekuvan.",
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        },
+        "snapshot": {
+            "description": "Ottaa tilannekuvan mediasoittimesta.",
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        }
+    }
+}

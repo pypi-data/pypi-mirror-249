@@ -1,0 +1,37 @@
+{
+    "config": {
+        "abort": {
+            "no_devices_found": "Verkosta ei l\u00f6ytynyt laitteita",
+            "single_instance_allowed": "Jo m\u00e4\u00e4ritetty. Vain yksi konfiguraatio mahdollinen."
+        },
+        "step": {
+            "confirm": {
+                "description": "Haluatko aloittaa m\u00e4\u00e4rityksen?"
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "assume_off": {
+                "name": "Olettaminen poois p\u00e4\u00e4lt\u00e4"
+            },
+            "assume_on": {
+                "name": "Olettaminen p\u00e4\u00e4ll\u00e4"
+            },
+            "vertical_swing_off": {
+                "name": "Pystysuuntainen keinu pois p\u00e4\u00e4lt\u00e4"
+            },
+            "vertical_swing_on": {
+                "name": "Pystysuuntainen keinu p\u00e4\u00e4ll\u00e4"
+            }
+        },
+        "sensor": {
+            "auto_shutdown": {
+                "name": "Automaattinen sammutus"
+            },
+            "remaining_time": {
+                "name": "J\u00e4ljell\u00e4 oleva aika"
+            }
+        }
+    }
+}

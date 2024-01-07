@@ -1,0 +1,28 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "unknown": "Odottamaton virhe"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Palvelin"
+                },
+                "data_description": {
+                    "host": "Mutesync -laitteen is\u00e4nt\u00e4nimi tai IP-osoite."
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "in_meeting": {
+                "name": "Kokouksessa"
+            },
+            "muted": {
+                "name": "Mykistetty"
+            }
+        }
+    }
+}

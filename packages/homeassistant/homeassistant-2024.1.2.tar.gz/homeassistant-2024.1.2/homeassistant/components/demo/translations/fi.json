@@ -1,0 +1,65 @@
+{
+    "entity": {
+        "climate": {
+            "ubercool": {
+                "state_attributes": {
+                    "swing_mode": {
+                        "state": {
+                            "off": "Pois"
+                        }
+                    }
+                }
+            }
+        },
+        "event": {
+            "push": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "pressed": "Painettu"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "thermostat_mode": {
+                "name": "Termostaattitila",
+                "state": {
+                    "away": "Poissa",
+                    "comfort": "Mukavuus",
+                    "eco": "Eko",
+                    "sleep": "Nukkuminen"
+                }
+            }
+        },
+        "vacuum": {
+            "model_s": {
+                "state_attributes": {
+                    "cleaned_area": {
+                        "name": "Puhdistettu alue"
+                    }
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "options_1": {
+                "data": {
+                    "bool": "Valinnainen boolean",
+                    "constant": "Jatkuva",
+                    "int": "Numeerinen sy\u00f6tt\u00f6"
+                }
+            },
+            "options_2": {
+                "data": {
+                    "multi": "Monivalinta",
+                    "select": "Valitse vaihtoehto",
+                    "string": "Merkkijonon arvo"
+                }
+            }
+        }
+    },
+    "title": "Demo"
+}

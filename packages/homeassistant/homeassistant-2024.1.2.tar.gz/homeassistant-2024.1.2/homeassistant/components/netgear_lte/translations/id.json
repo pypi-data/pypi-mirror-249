@@ -1,0 +1,48 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Hos"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "usage": {
+                "name": "Penggunaan"
+            }
+        }
+    },
+    "services": {
+        "connect_lte": {
+            "fields": {
+                "host": {
+                    "name": "Hos"
+                }
+            }
+        },
+        "delete_sms": {
+            "fields": {
+                "host": {
+                    "name": "Hos"
+                }
+            }
+        },
+        "disconnect_lte": {
+            "fields": {
+                "host": {
+                    "name": "Hos"
+                }
+            }
+        },
+        "set_option": {
+            "fields": {
+                "host": {
+                    "name": "Hos"
+                }
+            }
+        }
+    }
+}

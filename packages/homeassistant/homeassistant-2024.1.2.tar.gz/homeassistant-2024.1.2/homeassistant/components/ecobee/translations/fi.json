@@ -1,0 +1,73 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Jo m\u00e4\u00e4ritetty. Vain yksi konfiguraatio mahdollinen."
+        },
+        "error": {
+            "pin_request_failed": "Virhe pyydett\u00e4ess\u00e4 PIN-koodia ecobeelta; varmista, ett\u00e4 API-avain on oikea.",
+            "token_request_failed": "Virhe pyydett\u00e4ess\u00e4 tunnuksia ecobeelt\u00e4; yrit\u00e4 uudelleen."
+        },
+        "step": {
+            "authorize": {
+                "description": "Valtuuta t\u00e4m\u00e4 sovellus osoitteessa https://www.ecobee.com/consumerportal/index.html PIN-koodilla: \n\n {pin}\n\n Paina sitten L\u00e4het\u00e4.",
+                "title": "Valtuuta sovellus osoitteessa ecobee.com"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API-avain"
+                },
+                "description": "Anna osoitteesta ecobee.com saatu API-avain.",
+                "title": "ecobee API-avain"
+            }
+        }
+    },
+    "services": {
+        "create_vacation": {
+            "description": "Luo loman valitulle termostaatille. Huomautus: alkamis-/lopetusp\u00e4iv\u00e4m\u00e4\u00e4r\u00e4 ja -aika on m\u00e4\u00e4ritett\u00e4v\u00e4 yhdess\u00e4, jotta n\u00e4m\u00e4 parametrit vaikuttavat. Jos alkamis-/lopetusp\u00e4iv\u00e4\u00e4 ja -aikaa ei m\u00e4\u00e4ritet\u00e4, loma alkaa v\u00e4litt\u00f6m\u00e4sti ja kest\u00e4\u00e4 14 p\u00e4iv\u00e4\u00e4 (ellei sit\u00e4 poisteta aiemmin).",
+            "fields": {
+                "end_time": {
+                    "description": "Loman p\u00e4\u00e4ttymisajankohta termostaatin paikallista aikaa, 24 tunnin muodossa \"HH:MM:SS\"."
+                },
+                "entity_id": {
+                    "description": "Ecobee-termostaatti, jolle luodaan loma.",
+                    "name": "Kohde"
+                },
+                "fan_mode": {
+                    "description": "Termostaatin tuuletintila loman aikana."
+                },
+                "heat_temp": {
+                    "description": "L\u00e4mmitysl\u00e4mp\u00f6tila loman aikana."
+                },
+                "start_time": {
+                    "description": "Loman alkamisajankohta termostaatin paikallista aikaa, 24 tunnin muodossa \"HH:MM:SS\"."
+                },
+                "vacation_name": {
+                    "description": "Luotavan loman nimi; oltava ainutlaatuinen termostaatissa."
+                }
+            }
+        },
+        "delete_vacation": {
+            "description": "Poistaa loman valitusta termostaatista.",
+            "fields": {
+                "entity_id": {
+                    "description": "Ecobee-termostaatti, jonka loman haluat poistaa.",
+                    "name": "Kohde"
+                }
+            }
+        },
+        "resume_program": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        },
+        "set_fan_min_on_time": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        }
+    }
+}
