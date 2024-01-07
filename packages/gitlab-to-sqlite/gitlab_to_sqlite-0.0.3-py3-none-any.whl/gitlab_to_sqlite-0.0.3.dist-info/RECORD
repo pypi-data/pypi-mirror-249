@@ -1,0 +1,9 @@
+gitlab_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitlab_to_sqlite/cli.py,sha256=7c-L5Hdtjkgr924PE8Ll99uxZaQiwidHCERaq-gDk7w,7020
+gitlab_to_sqlite/utils.py,sha256=QEPbVAY-5SITKK09v6yZGEsM2YYad8PwGIYYKmKESIU,16154
+gitlab_to_sqlite-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gitlab_to_sqlite-0.0.3.dist-info/METADATA,sha256=X_LQkfJDioAVXKUr0dUoQmZAGtju3n_oOrwyDLcwljw,3613
+gitlab_to_sqlite-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gitlab_to_sqlite-0.0.3.dist-info/entry_points.txt,sha256=BZ086z4G3FBjFRyt3aV8DJ_vWQXOiveCbL5zExpMZuE,62
+gitlab_to_sqlite-0.0.3.dist-info/top_level.txt,sha256=Ami30uI6iZnEn6B2PpP_eiGUe3UgHHOHE9EbHgUfSd0,17
+gitlab_to_sqlite-0.0.3.dist-info/RECORD,,
