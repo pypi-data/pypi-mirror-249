@@ -1,0 +1,5 @@
+mod_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mod_demo/hello.py,sha256=a_UFD896TPqZPY4kCrsy1IpN7YCclqK2ZenywuHiHAE,227
+miles_mod_demo-0.1.1.dist-info/METADATA,sha256=8b56Yu7aaePRhqTfdViN05D9FyTL2uSMI0IZ9XQzV1I,644
+miles_mod_demo-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+miles_mod_demo-0.1.1.dist-info/RECORD,,
