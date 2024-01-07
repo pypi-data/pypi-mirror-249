@@ -1,0 +1,9 @@
+cachetools
+prettytable
+prompt_toolkit
+pyroute2
+fuzzyfinder
+setproctitle
+
+[ifstate]
+ifstate
