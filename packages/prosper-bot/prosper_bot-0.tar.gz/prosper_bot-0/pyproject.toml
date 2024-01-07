@@ -1,0 +1,123 @@
+[tool.poetry]
+name = "prosper-bot"
+version = "0"
+description = ""
+authors = ["Graham Tibbitts <graham.tibbitts@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prosper_bot"}]
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+backoff = "^2.2.1"
+black = "^23.11.0"
+humanize = "^4.8.0"
+prosper-api = {version = "^0.8.2", extras = ["secure"]}
+prosper-shared = "^0.2.11"
+pytz = "^2023.3.post1"
+simplejson = "^3.19.2"
+
+[tool.poetry.group.dev.dependencies]
+prosper-shared = { version = ">0.2.0", extras = ["dev", "yaml"] }
+pytest-nlcov = "^0.2.0"
+pytest-timeout = "^2.2.0"
+
+[tool.autohooks]
+mode = "poetry"
+pre-commit = [
+    "prosper_shared.autohooks.clean",
+    "prosper_shared.autohooks.build_extras",
+    "prosper_shared.autohooks.autoimport",
+    "autohooks.plugins.black",
+    "autohooks.plugins.ruff",
+    "autohooks.plugins.isort",
+    "prosper_shared.autohooks.pydocstyle",
+    "prosper_shared.autohooks.pydoclint",
+    "prosper_shared.autohooks.tomlsort",
+    "prosper_shared.autohooks.mdformat",
+    "prosper_shared.autohooks.update_dependencies",
+    "autohooks.plugins.pytest",
+    # "autohooks.tox", # Commenting out for now because it appears to be running only for Python 3.10
+    # "prosper_shared.autohooks.mutmut", # Commenting out for now since it fails even with the --CI flag
+    # "prosper_shared.autohooks.dynamic_versioning", # Disabling for now until I figure out how to apply to the current commit.
+    "prosper_shared.autohooks.build",
+    "prosper_shared.autohooks.assert_files",
+]
+
+[tool.autohooks.plugins.build_extras]
+commands = [
+    "jinja2 -Dcli_options=\"`COLUMNS=94 prosper-bot -h`\" README.md.jinja2 > README.md"
+]
+affected_files = ['README.md']
+
+[tool.autohooks.plugins.mutmut]
+arguments = [
+    "--CI",
+]
+
+[tool.autohooks.plugins.pydoclint]
+include = 'prosper_bot/*.py'
+
+[tool.autohooks.plugins.pydocstyle]
+include = 'prosper_bot/*.py'
+
+[tool.autohooks.plugins.ruff]
+arguments = '--fix'
+
+[tool.autohooks.plugins.update_dependencies.install]
+arguments = ['--all-extras']
+
+[tool.isort]
+profile = "black"
+
+[tool.mutmut]
+disable-mutation-types = "string,fstring,expr_stmt,annassign,number"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+metadata = false
+style = "semver"
+vcs = "git"
+bump = true
+
+[tool.pydoclint]
+style = "google"
+allow-init-docstring = true
+
+[tool.pydocstyle]
+inherit = false
+convention = "google"
+add_ignore = ['D100', 'D104']
+
+[tool.pytest.ini_options]
+addopts = "--cov=prosper_bot --cov-report=term-missing --cov-report=lcov:dist/coverage.info --cov-report=html:dist/coveragereport --nlcov-revision HEAD --nlcov-fail-under=100"
+testpaths = "tests"
+python_functions = ["*_test", "test_*"]
+
+[tool.coverage.report]
+exclude_lines = ["if __name__ == .__main__.:", "\\s*Bot\\S*run.\\S*"]
+
+[tool.ruff.lint]
+extend-ignore = ["E501"]
+fixable = ["ALL"]
+unfixable = []
+
+[tool.tomlsort]
+trailing_comma_inline_array = true
+spaces_indent_inline_array = 4
+sort_first = ["tool.poetry"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+prosper-bot="prosper_bot.bot.bot:runner"
+
+[tool.poetry-sort]
+move-optionals-to-bottom=true
