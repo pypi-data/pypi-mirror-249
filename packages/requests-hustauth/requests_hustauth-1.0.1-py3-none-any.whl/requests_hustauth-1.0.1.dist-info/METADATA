@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: requests_hustauth
+Version: 1.0.1
+Summary: HustPass support for Python-Requests
+Home-page: https://github.com/MarvinTerry/HustAuth
+Author: MarvinTerry
+Author-email: marvinterry2004@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fake-useragent >=1.2.0
+Requires-Dist: Pillow >=10.0.0
+Requires-Dist: pycryptodome >=3.18.0
+Requires-Dist: Requests >=2.31.0
+Requires-Dist: numpy
+Requires-Dist: setuptools
+
+# HustAuth
+
+![HustPassLogo](https://pass.hust.edu.cn/cas/comm/image/logo-inside.png)
+
+This project provides HustPass support for [Requests](https://requests.readthedocs.io/)
+
+Variation of [HustLogin](https://github.com/MarvinTerry/HustLogin)
+
+## Installation
+
+```
+pip install requests-hustauth
+```
+
+## Dependency
+
+*(automatically handled by PIP)*
+
+```
+Requests
+Pillow
+numpy
+pycryptodome
+fake_useragent
+```
+
+## Usage
+
+example.py
+```python
+import requests
+from requests_hustauth import HustAuth
+
+session = requests.Session()
+hust_auth = HustAuth('USERID','PASSWORD')
+
+resp = session.get('http://m.hust.edu.cn/wechat/apps_center.jsp',auth=hust_auth)
+print(resp.text)
+```
+

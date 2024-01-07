@@ -1,0 +1,8 @@
+requests_hustauth/__init__.py,sha256=cGqRMiGtKaU-wVlUf_7iiatAVQbqLtDNsW13qCDv_xs,39
+requests_hustauth/requests_hustauth.py,sha256=jQAonJbytIN8SxBRaZXj80FmZdY5ui0ITEVPS-OoSsQ,3889
+requests_hustauth/data/ref_digits_data.npz,sha256=ZF0U8G6P-70R8dBg5UtZz_zeKOnO9Pek5iDe4jSu0y0,5522
+requests_hustauth-1.0.1.dist-info/LICENSE,sha256=fv1bdI5jdefi9vH8kzJqRxexgX6bRfXO2_s7iC_YbCM,1068
+requests_hustauth-1.0.1.dist-info/METADATA,sha256=aPo5z_VNNCUmYYoWTElPvCltm5-Tf_THrJXwLbLGQQk,1295
+requests_hustauth-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+requests_hustauth-1.0.1.dist-info/top_level.txt,sha256=fIfLoT8aMtKONptsi8XoddWds808giWa9vnxtoxKlDo,18
+requests_hustauth-1.0.1.dist-info/RECORD,,
