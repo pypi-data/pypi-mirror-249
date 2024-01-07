@@ -1,0 +1,2 @@
+[console_scripts]
+check-similarity = e2e_similarity.run_commands:main

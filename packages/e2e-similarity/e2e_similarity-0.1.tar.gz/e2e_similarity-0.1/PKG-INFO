@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: e2e_similarity
+Version: 0.1
+Summary: This is a package that utilizes OpenAI's powerful davinci-003 model to run Cypress tests, gather and parse the logs, and generate a comprehensive report. Users can specify their test directory when running the command. The package is designed to help developers automate their testing process and gain insights from the test logs.
+Description-Content-Type: text/markdown
+
+# Project Name
+
+A brief description of your project.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+Instructions on how to install and set up your project.
+
+## Usage
+
+Instructions on how to use your project and any relevant examples.
+
+## Contributing
+
+Guidelines for contributing to your project and how others can get involved.
+
+## License
+
+Information about the license for your project.

@@ -1,0 +1,11 @@
+README.md
+setup.py
+e2e_similarity/__init__.py
+e2e_similarity/calculate-similarity.py
+e2e_similarity/run_commands.py
+e2e_similarity.egg-info/PKG-INFO
+e2e_similarity.egg-info/SOURCES.txt
+e2e_similarity.egg-info/dependency_links.txt
+e2e_similarity.egg-info/entry_points.txt
+e2e_similarity.egg-info/requires.txt
+e2e_similarity.egg-info/top_level.txt
