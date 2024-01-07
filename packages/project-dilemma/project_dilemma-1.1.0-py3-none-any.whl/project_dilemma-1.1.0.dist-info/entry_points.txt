@@ -1,0 +1,2 @@
+[console_scripts]
+project_dilemma = project_dilemma.__main__:main
