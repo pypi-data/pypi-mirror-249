@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+licenses/LICENSE-hugo.txt
+python_hugo/__init__.py
+python_hugo/cli.py
+python_hugo.egg-info/PKG-INFO
+python_hugo.egg-info/SOURCES.txt
+python_hugo.egg-info/dependency_links.txt
+python_hugo.egg-info/entry_points.txt
+python_hugo.egg-info/top_level.txt
+python_hugo/binaries/.gitignore
