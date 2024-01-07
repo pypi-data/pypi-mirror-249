@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+dev_tools_supporter/__init__.py
+dev_tools_supporter/methods.py
+dev_tools_supporter.egg-info/PKG-INFO
+dev_tools_supporter.egg-info/SOURCES.txt
+dev_tools_supporter.egg-info/dependency_links.txt
+dev_tools_supporter.egg-info/top_level.txt
