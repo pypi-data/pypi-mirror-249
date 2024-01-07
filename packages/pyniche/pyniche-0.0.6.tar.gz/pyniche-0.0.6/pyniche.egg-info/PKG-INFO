@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyniche
+Version: 0.0.6
+Summary: An AI Library for Niche Squad
+Home-page: https://github.com/Niche-Squad/pyniche
+Author: James Chen
+Author-email: niche@vt.edu
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyniche
+
+<https://github.com/Niche-Squad/pyniche>
+
+This is a comprehensive AI package for Niche Squad.
