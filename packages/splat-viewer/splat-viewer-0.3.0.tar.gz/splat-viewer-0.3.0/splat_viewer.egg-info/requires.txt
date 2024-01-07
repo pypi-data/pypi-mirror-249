@@ -1,0 +1,7 @@
+beartype
+taichi-nightly
+taichi-splatting>=0.3.0
+tqdm
+tensordict
+open3d>=0.16
+pyside6
