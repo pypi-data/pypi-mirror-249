@@ -1,0 +1,55 @@
+
+<pre>
+
+	<h1>architecture</h1>
+		health scan and health advancents, 
+		checked with "body_scan" and modules that use "body_scan"
+		
+	<h2>limitations (the structure)</h2>
+	
+		The idea is that building codependecies (or cyclic depedencies)
+		into the status assertation framework is a recipe for confusion.
+	
+		As in, homeostasis perhaps shouldn't include a module that
+		requires homeostasis for status assertation.
+	
+		Therefore the directed acyclic chart of status check frameworks is:
+			
+			[ unit test, pytest ] -> "body_scan" -> homeostasis
+	
+		details:
+			story 3:
+				homeostasis:
+					status requires: 
+						body_scan
+					
+					requires: 
+						botanical:
+							status: body_scan
+		
+			story 2:
+				body_scan:
+					status requires: 
+						unit test
+					
+					requires: 
+						botanist:
+							status: pytest
+
+			story 1:
+				unit test:
+				
+	<h2>journal</h2>
+	
+		1:
+			This is module started as a replica of "body_scan",
+			where it uses "body_scan" as the status monitor.
+			
+			In contrast, "body_scan" uses unittest as the status
+			monitor.	
+		
+			
+			
+		
+		
+</pre>
