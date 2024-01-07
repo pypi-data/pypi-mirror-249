@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: python-glass
+Version: 0.1.31
+Summary: OpenGL wrapper for Glass-Engine
+Author: 王炳辉 (BingHui-WANG)
+Author-email: binghui.wang@foxmail.com
+Platform: win_amd64
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: PyOpenGL
+Requires-Dist: PyOpenGL_accelerate
+Requires-Dist: moderngl
+Requires-Dist: PyGLM
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: maxminddb-geolite2
+Requires-Dist: wget
+Requires-Dist: requests
+Requires-Dist: chardet
+Requires-Dist: tree-sitter
+
+OpenGL wrapper for Glass-Engine
