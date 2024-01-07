@@ -1,0 +1,6 @@
+tsgenrs/__init__.py,sha256=LQtg54etnVvs8D-ZH6D4oDKj_bCxpXYXTUFwVuR6hpA,126
+tsgenrs/generators.py,sha256=gM3JEvTuqL9qwDfD4tb1qmj0ftEgnFJMHEtdk9xwcgY,869
+tsgenrs/time_serie.py,sha256=UuuPTWxA1k6KzNfgihT61NNjd9-YqDHiVEenBZDRVe8,1703
+tsgenrs-0.1.0.dist-info/METADATA,sha256=Fa64lTRvijkd56JWa4kwG3LVru_olvEvipi3qV_Q2h0,607
+tsgenrs-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tsgenrs-0.1.0.dist-info/RECORD,,
