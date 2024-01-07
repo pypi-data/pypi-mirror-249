@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        jsvl=main:run_validation
+    
