@@ -1,0 +1,11 @@
+calcon/__init__.py,sha256=FfEOE5qqastZyq7n1K0hGaR8GtSZZuT9s-JgCK2E1pY,44
+calcon/app.py,sha256=NIZ4_Qcso9v4nvyjy8_vm48AdVyv613spS1tqHTTNUs,9427
+calcon/expressions.py,sha256=YFPFAg-0hVM-uQqkBLxz4S_2iAYbwJQF2_1evo2Zqhk,4137
+calcon/grammar.lark,sha256=2lR7jvAjn0UJtOiYKNlbSybvnljhDNdCDkZyP-e6aGU,634
+calcon/main.py,sha256=_GHk7gEs1D-lfHi6x_u9xPAOjA9_gJjzL7bh9VOexII,2378
+calcon/parsing.py,sha256=wbvatoT0-daRd8JBYK63XQIO5N6o_kUBv1z30Cwt2aE,1375
+calcon-0.1.0.dist-info/entry_points.txt,sha256=F8f_yIfUcBlnvFV_iu-btYlrSEowtM3vmQn1KPhuLBI,42
+calcon-0.1.0.dist-info/LICENSE,sha256=6MIJlwaO5zWZxaInZnIt6EdwSip3HUrr9w9YcVvhiwo,1090
+calcon-0.1.0.dist-info/METADATA,sha256=6dzy3H_0wPh7JIjmrbGjIVNg11Rzw4Sx9ENbbF235Ro,1053
+calcon-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+calcon-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+calcon=calcon.main:app
+

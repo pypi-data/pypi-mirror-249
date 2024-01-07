@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: calcon
+Version: 0.1.0
+Summary: Calculator with physical quantities.
+License: MIT
+Author: Ederic Oytas
+Author-email: edericoytas@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: lark (>=1.1.8,<2.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+
+# Calcon - Calculator with physical quantities
+
+This is a calculator with support for physical quantities, coded in Python.
+
+## Installation
+
+```
+pip install calcon
+```
+
+## Usage
+
+Use `calcon --help` to show help.
+
+Use `calcon EXPR` to calculate an expression.
+
+Example output for `calcon "5 * kilogram + 5 * gram"`:
+
+```
+((5 * kilogram) + (5 * gram))
+
+  = 5.005 * kilogram
+```
+
+Currently, there are only a limited number of units supported, but more will
+be supported in the future.
+
