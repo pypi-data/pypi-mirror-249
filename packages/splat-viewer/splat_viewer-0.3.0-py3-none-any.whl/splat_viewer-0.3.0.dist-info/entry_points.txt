@@ -1,0 +1,3 @@
+[console_scripts]
+splat-benchmark = splat_viewer.scripts.splat_benchmark:main
+splat-viewer = splat_viewer.scripts.splat_viewer:main
