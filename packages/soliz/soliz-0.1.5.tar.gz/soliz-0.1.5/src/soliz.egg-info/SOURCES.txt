@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/soliz/__init__.py
+src/soliz/error.py
+src/soliz/impls.py
+src/soliz/lex.py
+src/soliz/tokens.py
+src/soliz.egg-info/PKG-INFO
+src/soliz.egg-info/SOURCES.txt
+src/soliz.egg-info/dependency_links.txt
+src/soliz.egg-info/top_level.txt
+tests/tests.py
