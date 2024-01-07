@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+objdict_bf/__init__.py
+objdict_bf/objdict.py
+objdict_bf.egg-info/PKG-INFO
+objdict_bf.egg-info/SOURCES.txt
+objdict_bf.egg-info/dependency_links.txt
+objdict_bf.egg-info/top_level.txt
+tests/__init__.py
