@@ -1,0 +1,90 @@
+### BSE Scraper Documentation
+
+**Version:** 1.0.2  
+**Description:** A Python library to scrape data from the BSE India website
+
+#### Functions
+
+1. **`get_corporate_ann`**
+   - **Description:** Retrieves corporate announcements based on the provided parameters.
+   - **Parameters:**
+     - `code`: Security code of the company as an integer value.
+     - `category`: Category of announcements (e.g., 'Board Meeting','Company Update','Corp. Action','AGM/EGM','New Listing','Results','Others').
+     - `startdate`: Start date of the search period in the format 'dd/mm/yyyy'.
+     - `enddate`: End date of the search period in the format 'dd/mm/yyyy'.
+   - **Returns:** List of dictionaries containing headline, subject, and date of announcements.
+
+2. **`get_corporate_ann_keywords`**
+   - **Description:** Retrieves corporate announcements with specific keywords.
+   - **Parameters:**
+     - `keywords`: List of keywords to filter announcements(e.g., ["allotment",".."]).
+     - `code`: Security code of the company as an integer value.
+     - `category`: Category of announcements (e.g., 'Board Meeting','Company Update','Corp. Action','AGM/EGM','New Listing','Results','Others').
+     - `startdate`: Start date of the search period in the format 'dd/mm/yyyy'.
+     - `enddate`: End date of the search period in the format 'dd/mm/yyyy'.
+   - **Returns:** List of dictionaries containing headline, subject, and date of announcements that contain the specified keywords.
+
+3. **`GainerLoserDataMarket`**
+   - **Description:** Retrieves gainer/loser data from the market.
+   - **Parameters:**
+     - `type`: Type of data to retrieve ('gainer', 'loser').
+     - `order`: Sorting order for the data('0':upto to 2%, '2': 2-5%, '5':5-10%, '10':More than 10%, 'all':for all records).
+   - **Returns:** List of dictionaries containing security code, name, open rate, high rate, low rate, last traded price (LTP), change, change percent, and date.
+
+4. **`GainerLoserDataGroup`**
+   - **Description:** Retrieves gainer/loser data based on a specific group.
+   - **Parameters:**
+     - `type`: Type of data to retrieve (gainer, loser).
+     - `group`: Group for filtering data(A,B,E,IF,M,MS,MT,P,T,X,XT,Z,ZP).
+     - `order`: Sorting order for the data('0':upto to 2%, '2': 2-5%, '5':5-10%, '10':More than 10%, 'all':for all records).
+   - **Returns:** List of dictionaries containing security code, name, open rate, high rate, low rate, LTP, change, change percent, and date.
+
+5. **`get_index`**
+   - **Description:** Retrieves index data based on the provided category.
+   - **Parameters:**
+     - `category`: Category of the index ("MCB","S&I","THE","STR","SUS","VOL","COM","GOV","COR","MOM").
+   - **Returns:** List of dictionaries containing index name, open rate, high rate, low rate, current value, change, change percentage, 52-week high, 52-week low, market cap, market cap percentage, net turnover, and turnover percentage.
+
+6. **`get_stock_data`**
+   - **Description:** Retrieves historical stock prices based on the provided parameters.
+   - **Parameters:**
+     - `code`: Security code of the stock in integers.
+     - `startdate`: Start date of the data in the format 'dd/mm/yyyy'.
+     - `enddate`: End date of the data in the format 'dd/mm/yyyy'.
+   - **Returns:** List of dictionaries containing date, open, high, low, close, weighted price, number of shares, number of trades, net turnover, delivery quantity, percentage delivery quantity, spread high-low, and spread open-close.
+
+7. **`get_code`**
+   - **Description:** Retrieves the security code based on the provided Security name.
+   - **Parameters:**
+     - `name`: Name of the full company(e.g., "HDFC Bank Ltd").
+   - **Returns:** Security code as an integer.
+
+8. **`top_turnovers`**
+   - **Description:** Retrieves top turnovers data.
+   - **Parameters:**
+     - `num`: Number of top turnovers to retrieve as integer.
+   - **Returns:** List of dictionaries containing security code, name, group, open rate, high rate, low rate, last traded price, previous day close, change value, change percentage, index code, trade value, trade volume, number of trades, trend, and date and time.
+
+9. **`dataframe`**
+   - **Description:** Converts a dictionary to a Pandas DataFrame.
+   - **Parameters:**
+     - `dictionary`: Input dictionary.
+   - **Returns:** Pandas DataFrame.
+
+10. **`save`**
+    - **Description:** Saves a DataFrame to a CSV file.
+    - **Parameters:**
+      - `df`: Pandas DataFrame to save.
+      - `name`: Name of the CSV file (without extension).
+    - **Returns:** "Saved" upon successful saving.
+
+11. **`version`**
+    - **Description:** Prints the version of the BSE Scraper library.
+
+12. **`description`**
+    - **Description:** Prints the description of the BSE Scraper library.
+
+13. **`functions`**
+    - **Description:** Prints the list of available functions in the BSE Scraper library.
+
+Note: The library requires the `requests` and `pandas` libraries to be installed. Make sure to set the appropriate headers for web scraping.
