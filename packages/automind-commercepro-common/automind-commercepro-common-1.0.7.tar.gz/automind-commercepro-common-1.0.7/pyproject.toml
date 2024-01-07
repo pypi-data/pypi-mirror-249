@@ -1,0 +1,4 @@
+[project]
+name = "automind-commercepro-common"
+version = "1.0.7"
+dependencies = ["pydantic"]

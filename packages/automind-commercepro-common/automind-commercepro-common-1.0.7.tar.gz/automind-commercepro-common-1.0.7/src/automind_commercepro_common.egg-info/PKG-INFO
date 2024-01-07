@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: automind-commercepro-common
+Version: 1.0.7
+Requires-Dist: pydantic
