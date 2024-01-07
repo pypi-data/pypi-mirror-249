@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: hotconsole
+Version: 0.1.2
+Summary: Provides an easy way to run your scripts by console commands and hotkeys
+Project-URL: Homepage, https://github.com/Vecheren/hotconsole
+Project-URL: Issues, https://github.com/Vecheren/hotconsole/issues
+Author-email: Michael Noskov <vecheren@gmail.com>
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: charset-normalizer>=3.0.1
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: console>=0.9907
+Requires-Dist: keyboard>=0.13.5
+Requires-Dist: pillow>=9.5.0
+Requires-Dist: pydantic-core>=2.14.6
+Requires-Dist: pydantic>=2.5.3
+Requires-Dist: pylibdmtx>=0.1.10
+Requires-Dist: pyperclip>=1.8.2
+Requires-Dist: pywin32-ctypes>=0.2.2
+Requires-Dist: pywin32>=306
+Requires-Dist: requests-toolbelt>=1.0.0
+Requires-Dist: requests>=2.31.0
