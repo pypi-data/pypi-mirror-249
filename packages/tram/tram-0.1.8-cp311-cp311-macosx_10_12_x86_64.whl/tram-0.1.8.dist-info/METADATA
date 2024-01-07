@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tram
+Version: 0.1.8
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Author: Kelvin Lee
+Requires-Python: >=3.8
