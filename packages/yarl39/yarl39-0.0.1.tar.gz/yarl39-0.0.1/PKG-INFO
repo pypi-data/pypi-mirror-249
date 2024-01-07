@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: yarl39
+Version: 0.0.1
+Summary: Yet Another Rate Limiter 39 - pipelining sync calls
+Home-page: http://github.com/xloem/yarl39
+Author: Karl Semich
+Author-email: 0xloem@gmail.com
+License: AGPL
+License-File: LICENSE
+License-File: COPYING
