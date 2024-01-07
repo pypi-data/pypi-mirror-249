@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+KissDB.egg-info/PKG-INFO
+KissDB.egg-info/SOURCES.txt
+KissDB.egg-info/dependency_links.txt
+KissDB.egg-info/top_level.txt
+kissdb/__init__.py
