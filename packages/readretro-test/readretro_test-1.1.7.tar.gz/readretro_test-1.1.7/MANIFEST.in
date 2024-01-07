@@ -1,0 +1,2 @@
+include src/readretro/data/*
+include src/readretro/retro_star/saved_model/*
