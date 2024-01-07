@@ -1,0 +1,16 @@
+control
+numpy
+matplotlib
+scipy
+pandas
+pyparsing
+pyYAML
+pyzmq
+treon
+wisdem
+
+[dev]
+cmake
+
+[test]
+pytest
