@@ -1,0 +1,14 @@
+AmbuView/Devon 2021 Census Population by town.csv,sha256=3X4ILNdwA6N5P1jDAhma8N8w7z4uF69Rdk-sB-Tjz3w,5476
+AmbuView/Full_Graph_Generation.py,sha256=eFU3ilC7ghz4kByBKCeOrAdsl6abFnunReIYgF_mNLs,5744
+AmbuView/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AmbuView/data_processing.py,sha256=qNvk9bBGvgE2krmHa13UCmi0Z2XuXjj7jev9SsRAkOc,4985
+AmbuView/distance_calculations.py,sha256=umXbTVZjQ5iCx-0xAhgCP-18ppHb_L5oAlJND_v5VSo,981
+AmbuView/isochrone_map.py,sha256=w-IRFaRWHQEKOt6ggB_yB0n_1TZXaYnkKDVnr_fk890,4406
+AmbuView/map_visualization.py,sha256=ru0tYBVPSDcsKiVGJscHrU1TC6ZW0_QPT5P70K5eUyA,2202
+AmbuView/nomis_2023_12_31_000343.csv,sha256=JpFV9JExhN4kQYdPX1T5AV5ky5PFIzwZ3Fvzn8_tF5M,4222
+AmbuView/optimization.py,sha256=xv6amyVNg5c1Iq4YRYsNhH8MoOdbkwxO7KIZ02NNbmw,2026
+AmbuView-0.1.0.dist-info/LICENSE.txt,sha256=j4Mi00UJC_1qYh9AO4wM5kMD3Xetyp_kY_9g80nh0S0,1068
+AmbuView-0.1.0.dist-info/METADATA,sha256=65m5UC47MIuApDN3WbeJNdg-yzgRYGYnGRgsIsGy8wM,992
+AmbuView-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+AmbuView-0.1.0.dist-info/top_level.txt,sha256=cQFhPJzAGSVrCaNy66Mqrb44HNCQH_Kf00Ex8EBAUww,9
+AmbuView-0.1.0.dist-info/RECORD,,
