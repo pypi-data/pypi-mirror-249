@@ -1,0 +1,8 @@
+README.md
+log.py
+pyproject.toml
+gpuprog_log.egg-info/PKG-INFO
+gpuprog_log.egg-info/SOURCES.txt
+gpuprog_log.egg-info/dependency_links.txt
+gpuprog_log.egg-info/requires.txt
+gpuprog_log.egg-info/top_level.txt
