@@ -1,0 +1,3 @@
+[console_scripts]
+randomly-change-self=randomly_change_self.change_self:main
+
