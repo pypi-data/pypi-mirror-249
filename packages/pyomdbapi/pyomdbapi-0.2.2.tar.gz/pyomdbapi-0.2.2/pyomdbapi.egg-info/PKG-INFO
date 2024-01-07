@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: pyomdbapi
+Version: 0.2.2
+Summary: OMDB API python wrapper
+Author-email: Tyler Barrus <barrust@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/barrust/pyomdbapi
+Project-URL: Bug-tracker, https://github.com/barrust/pyomdbapi/issues
+Project-URL: Documentation, https://pyomdbapi.readthedocs.io/
+Keywords: python,omdb,omdb-api,API
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: requests>=2
+
+pyomdbapi
+===========
+
+A simple OMDB API python wrapper
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://opensource.org/licenses/MIT/
+    :alt: License
+.. image:: https://img.shields.io/github/release/barrust/pyomdbapi.svg
+    :target: https://github.com/barrust/pyomdbapi/releases
+    :alt: GitHub release
+.. image:: https://badge.fury.io/py/pyomdbapi.svg
+    :target: https://badge.fury.io/py/pyomdbapi
+    :alt: PyPy Version
+.. image:: https://pepy.tech/badge/pyomdbapi
+    :target: https://pepy.tech/project/pyomdbapi
+    :alt: Downloads
+
+Documenation
+-------------------------------------------------------------------------------
+
+Online documentation can be found on `readthedocs.org <https://pyomdbapi.readthedocs.io/en/latest/>`__.
+
+
+Installation
+------------------
+
+Pip Installation:
+
+::
+
+    $ pip install pyomdbapi
+
+To install from source:
+
+To install ``pyomdbapi``, simply clone the `repository on GitHub
+<https://github.com/barrust/pyomdbapi>`__, then run from the folder:
+
+::
+
+    $ python setup.py install
+
+`pyomdbapi` supports python versions 3.5 - 3.11
+
+
+Quickstart
+-------------------------------------------------------------------------------
+To use ``pyomdbapi`` you will need to get an API Key from `the OMDBApi site
+<http://www.omdbapi.com/>`__. There are several versions available
+with the free version limiting to 1000 requests per day.
+
+
+After installation, using ``pyomdbapi`` should be fairly straight forward:
+
+.. code:: python
+
+    from omdb import OMDB
+
+    omdb = OMDB(YOUR_API_KEY)
+
+    print(omdb.get_movie('despicable me'))
