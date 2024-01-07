@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: s3pypi
+Version: 2.0.0
+Summary: CLI for creating a Python Package Repository in an S3 bucket
+Author: Matteo De Wint
+Author-email: matteo@gorilla.co
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.11,<2.0.0)
+Requires-Dist: boto3-stubs[dynamodb,s3] (>=1.34.11,<2.0.0)
