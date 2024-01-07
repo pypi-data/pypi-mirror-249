@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pyfx-dev
+Version: 1.0.0a1
+Project-URL: Documentation, https://github.com/thatdspguy/pyfx#readme
+Project-URL: Issues, https://github.com/thatdspguy/pyfx/issues
+Project-URL: Source, https://github.com/thatdspguy/pyfx
+Author-email: Keaton Scheible <thatdspguy@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: click>=8.1.7
+Requires-Dist: isort>=5.12.0
+Requires-Dist: numpy>=1.26.2
+Requires-Dist: pyaudio>=0.2.14
+Requires-Dist: pyside6>=6.6.0
+Requires-Dist: ruff>=0.1.5
+Requires-Dist: scipy>=1.11.4
+Description-Content-Type: text/markdown
+
+# PyFx
+
+*PyFx is activly being developed. More information about how to use PyFx for guitar effects development will be available soon.*
+
+-----
+
+**Table of Contents**
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```bash
+pip install pyfx-dev
+```
+
+## Usage
+
+```bash
+python -m pyfx pedal-builder
+```
+
+## License
+
+`pyfx` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

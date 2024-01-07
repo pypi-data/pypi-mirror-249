@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open Pedal Builder App",
+            "type": "shell",
+            "command": ".venv\\Scripts\\python.exe",
+            "args": [
+                "src\\pyfx\\pedal_builder\\pedal_builder_app.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build and Open Pedal Builder App",
+            "type": "shell",
+            "command": ".venv\\Scripts\\python.exe",
+            "args": [
+                "src\\pyfx\\tools\\build_and_open_app.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Compile Pedal Builder App Ui Files",
+            "type": "shell",
+            "command": ".venv\\Scripts\\python.exe",
+            "args": [
+                "src\\pyfx\\tools\\compile_ui_files.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+    ]
+}
