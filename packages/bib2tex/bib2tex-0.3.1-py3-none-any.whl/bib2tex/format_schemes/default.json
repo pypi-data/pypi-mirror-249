@@ -1,0 +1,17 @@
+{
+    "article": "<AUTHOR>: ``<TITLE>'', \\textit{<JOURNAL>}, vol. <VOLUME>, no. <ISSUE>, <YEAR>, DOI: \\href{https://doi.org/<DOI>}{<DOI>}.",
+    "book": "<AUTHOR>: \\textit{<TITLE>}, <PUBLISHER>, <YEAR>, DOI: \\href{https://doi.org/<DOI>}{<DOI>}.",
+    "booklet": "<TITLE>.",
+    "conference": "<AUTHOR>: ``<TITLE>'', in \\textit{<BOOKTITLE>}, <YEAR>, DOI: \\href{https://doi.org/<DOI>}{<DOI>}.",
+    "inbook": "<AUTHOR>: ``<TITLE>'', in \\textit{<BOOKTITLE>}, <PUBLISHER>, <YEAR>, DOI: \\href{https://doi.org/<DOI>}{<DOI>}.",
+    "incollection": "<AUTHOR>: ``<TITLE>'', in \\textit{<BOOKTITLE>}, <PUBLISHER>, <YEAR>, DOI: \\href{https://doi.org/<DOI>}{<DOI>}.",
+    "inproceedings": "<AUTHOR>: ``<TITLE>'', in \\textit{<BOOKTITLE>}, <YEAR>, DOI: \\href{https://doi.org/<DOI>}{<DOI>}.",
+    "manual": "<TITLE>.",
+    "mastersthesis": "<AUTHOR>: ``<TITLE>'', Master's thesis, <SCHOOL>, <YEAR>.",
+    "misc": "<AUTHOR>: ``<TITLE>'', <YEAR>.",
+    "phdthesis": "<AUTHOR>: ``<TITLE>'', PhD thesis, <SCHOOL>, <YEAR>.",
+    "proceedings": "\\textit{<BOOKTITLE>}, <YEAR>.",
+    "techreport": "<AUTHOR>: ``<TITLE>'', <INSTITUTION>, <YEAR>.",
+    "unpublished": "<AUTHOR>: ``<TITLE>'', unpublished, <YEAR>."
+}
+
