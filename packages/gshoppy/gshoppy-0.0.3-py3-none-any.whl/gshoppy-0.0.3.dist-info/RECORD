@@ -1,0 +1,13 @@
+shoppy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/constants.py,sha256=q5gYEBV6IEXoeO9yCYENnXXyiPxatYm0JdGpqVmdzMw,1452
+src/utils.py,sha256=D6vR5Jd0RLf9tYPi_Kyzmi83ryXFhgf8n0lIKqGLGdI,1076
+src/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/services/core.py,sha256=O-e0RruwPbGV5UWSt9kRClnpQwSk4qPBzxwnrCqreUU,4228
+src/services/models.py,sha256=b8VwW68JC9vKMQLelqPC0MOXyU3AmOEcHUPUfc5p86A,413
+src/services/product.py,sha256=tP6s7XXGl-T1Sn1xdlEcCj7mYQYdtd_DXxTl783cRak,3710
+gshoppy-0.0.3.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gshoppy-0.0.3.dist-info/METADATA,sha256=SBSyD9e4MuFROKc7Ak21gXirx1P0HKLicaOTh05IjeQ,552
+gshoppy-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gshoppy-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+gshoppy-0.0.3.dist-info/RECORD,,
