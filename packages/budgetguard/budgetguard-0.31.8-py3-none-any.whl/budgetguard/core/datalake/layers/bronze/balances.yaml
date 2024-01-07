@@ -1,0 +1,6 @@
+datalake_bucket: budget-guard-bronze
+datalake_key: balances
+file_extension: json
+options:
+  - name: recursiveFileLookup
+    value: "true"
