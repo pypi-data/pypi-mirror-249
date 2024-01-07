@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+easiest_sort/__init__.py
+easiest_sort/easiest_sort.py
+easiest_sort.egg-info/PKG-INFO
+easiest_sort.egg-info/SOURCES.txt
+easiest_sort.egg-info/dependency_links.txt
+easiest_sort.egg-info/top_level.txt
