@@ -1,0 +1,32 @@
+[
+  {
+    "directory": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/scripts_vecdbImpl768",
+    "command": "g++ -MMD -MF /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/vecdbImpl768/vecdbImpl768.o.d -std=c++17 -Wall -I/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/External/eigen3.4.0 -I/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10 -I/Users/monsoon/Code/.venv/main_env/lib/python3.10/site-packages/pybind11/include -I/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/include -DFEAT_DIM=768 -DMODULE_NAME=vecdbImpl768 -DNDEBUG -O2 -funroll-loops -march=native -mtune=native -fPIC /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/src/vecdbImpl.cpp -c -o /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/vecdbImpl768/vecdbImpl768.o",
+    "file": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/src/vecdbImpl.cpp",
+    "output": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/vecdbImpl768/vecdbImpl768.o"
+  },
+  {
+    "directory": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/scripts_vecdbImpl768",
+    "command": "g++ -MMD -MF /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/diskIO.o.d -std=c++17 -Wall -I/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/External/eigen3.4.0 -I/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10 -I/Users/monsoon/Code/.venv/main_env/lib/python3.10/site-packages/pybind11/include -I/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/include -DFEAT_DIM=768 -DMODULE_NAME=vecdbImpl768 -DNDEBUG -O2 -funroll-loops -march=native -mtune=native -fPIC /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/src/diskIO.cpp -c -o /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/diskIO.o",
+    "file": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/src/diskIO.cpp",
+    "output": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/diskIO.o"
+  },
+  {
+    "directory": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/scripts_vecdbImpl768",
+    "command": "g++ -MMD -MF /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/b64enc.o.d -std=c++17 -Wall -I/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/External/eigen3.4.0 -I/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10 -I/Users/monsoon/Code/.venv/main_env/lib/python3.10/site-packages/pybind11/include -I/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/include -DFEAT_DIM=768 -DMODULE_NAME=vecdbImpl768 -DNDEBUG -O2 -funroll-loops -march=native -mtune=native -fPIC /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/src/b64enc.cpp -c -o /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/b64enc.o",
+    "file": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/src/b64enc.cpp",
+    "output": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/b64enc.o"
+  },
+  {
+    "directory": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/scripts_vecdbImpl768",
+    "command": "g++ -MMD -MF /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/searchAlgorithm.o.d -std=c++17 -Wall -I/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/External/eigen3.4.0 -I/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10 -I/Users/monsoon/Code/.venv/main_env/lib/python3.10/site-packages/pybind11/include -I/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/include -DFEAT_DIM=768 -DMODULE_NAME=vecdbImpl768 -DNDEBUG -O2 -funroll-loops -march=native -mtune=native -fPIC /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/src/searchAlgorithm.cpp -c -o /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/searchAlgorithm.o",
+    "file": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/src/searchAlgorithm.cpp",
+    "output": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/searchAlgorithm.o"
+  },
+  {
+    "directory": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/scripts_vecdbImpl768",
+    "command": "g++ -shared -lstdc++ -undefined dynamic_lookup /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/vecdbImpl768/vecdbImpl768.o /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/diskIO.o /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/b64enc.o /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/lib/searchAlgorithm.o -o /Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/vecdbImpl768/vecdbImpl768.cpython-310-darwin.so",
+    "file": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/vecdbImpl768/vecdbImpl768.o",
+    "output": "/Users/monsoon/Code/ResBibManager/packages/tiny_vectordb/tiny_vectordb/_build/bin/vecdbImpl768/vecdbImpl768.cpython-310-darwin.so"
+  }
+]

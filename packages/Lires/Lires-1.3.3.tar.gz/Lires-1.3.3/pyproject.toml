@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools", "wheel", "pyyaml"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+"lires" = "lires.exec:run"
+"lrs-resetconf" = "lires.cmd.generateDefaultConf:run"
+"lrs-utils" = "lires.cmd.miscUtils:main"
+"lrs-user" = "lires.cmd.userManage:run"
+"lrs-index" = "lires.cmd.index:main"
+"lrs-cluster" = "lires.cmd.cluster:main"
+
+[project.urls]
+"Homepage" = "https://github.com/MenxLi/ResBibManager"
+"Bug Tracker" = "https://github.com/MenxLi/ResBibManager/issues"
+
+[project]
+name = "Lires"
+authors = [
+  { name="Li, Mengxun", email="mengxunli@whu.edu.cn" },
+]
+description = "A research bibliography manager"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Medical Science Apps."
+]
+dynamic = [
+    "version",
+    "license",
+]
+dependencies = [
+    # for successful import from basic lires packages,
+    # such as lires.version, lires.confReader
+    "pyyaml",
+    "requests",
+    "deprecated",
+]
+
+[project.optional-dependencies]
+core = [
+    "typing_extensions",
+    "tiny_vectordb",
+    "pybtex",
+    "pylatexenc",
+    "tornado",
+    "PyMuPDF",
+    "nbib",
+    "tqdm",
+    "pillow",
+    "numpy",
+    "scikit-learn",
+]
+ai = [
+    "safetensors <= 0.3.2",     # 0.3.3 or higher seems requires rust installed
+    "torch",
+    "openai",
+    "transformers",
+    "fastapi[all]",
+    "sentencepiece",
+    "protobuf",
+    "accelerate",
+    "basaran",
+]
+all = ["Lires[core,ai]"]
