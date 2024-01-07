@@ -1,0 +1,88 @@
+[tool.poetry]
+name = "rst2html5"
+version = "2.0.1"
+description = "Generates (X)HTML5 documents from standalone reStructuredText sources"
+authors = ["André Felipe Dias <andref.dias@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://foss.heptapod.net/doc-utils/rst2html5"
+documentation = "https://rst2html5.readthedocs.io/en/latest/"
+keywords = ["restructuredtext", "rst", "html5", "doctutils"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Documentation",
+    "Topic :: Utilities",
+    "Topic :: Text Processing :: Markup :: HTML",
+]
+packages = [{ include = "rst2html5" }]
+include = ["rst2html5_.py"]
+
+[tool.poetry.scripts]
+rst2html5 = "rst2html5_:main" # overwrites docutils' rst2html5
+# do not overwrite docutils original rst2html5.py
+# "rst2html5.py" = "rst2html5_:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+docutils = "*"
+Genshi = ">=0.7"
+Pygments = ">=2.5"
+
+[tool.poetry.group.dev.dependencies]
+types-docutils = "*"
+tox = "*"
+beautifulsoup4 = "*"
+mypy = "*"
+pip-audit = "*"
+pytest = "*"
+pytest-cov = "*"
+ruff = "*"
+types-toml = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+
+[tool.ruff]
+line-length = 100
+select = [
+    "ARG",
+    "B",
+    "C4",
+    "E",
+    "ERA",
+    "F",
+    "I",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "RET",
+    "S",
+    "T10",
+    "T10",
+    "UP",
+    "W",
+]
+target-version = "py38"
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/**" = ["ARG", "PLR2004", "S"]
