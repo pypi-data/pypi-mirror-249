@@ -1,0 +1,9 @@
+setup.py
+serverlesscli/__init__.py
+serverlesscli/serverlesscli.py
+serverlesscli.egg-info/PKG-INFO
+serverlesscli.egg-info/SOURCES.txt
+serverlesscli.egg-info/dependency_links.txt
+serverlesscli.egg-info/entry_points.txt
+serverlesscli.egg-info/requires.txt
+serverlesscli.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+serverlesscli = serverlesscli.serverlesscli:main
+
