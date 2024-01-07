@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "json-logic-asp"
+version = "0.3.2"
+description = "Python JSON Logic evaluator in ASP"
+homepage = "https://github.com/barreeeiroo/JSON-Logic-ASP/"
+repository = "https://github.com/barreeeiroo/JSON-Logic-ASP"
+documentation = "https://json-logic-asp.readthedocs.io/"
+authors = ["Diego Barreiro Perez <diego@barreiro.xyz>"]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+packages = [
+    { include = "json_logic_asp" },
+]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cuid2 = "^2.0.0"
+# Newer version added extra safeguards which slowdown Gringo grounding, need further investigation...
+clingo = "5.5.2"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+ruff = "^0.1.8"
+mypy = "^1.7.1"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.3"
+mkdocstrings = {extras = ["python"], version = "^0.24.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+addopts = "--cov json_logic_asp/ --cov-report html --cov-report xml --cov-report term"
+testpaths = [
+    "tests",
+]
+log_level = "DEBUG"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
