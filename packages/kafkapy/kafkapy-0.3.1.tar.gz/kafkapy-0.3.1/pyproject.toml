@@ -1,0 +1,83 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.towncrier]
+directory = "changes"
+filename = "CHANGELOG.rst"
+version = "21.9.0"
+name = "kafkapy"
+underlines = "=-~"
+all_bullets = true
+
+[tool.poetry]
+name = "kafkapy"
+version = "0.3.1"
+description = "Python CLI for managing a kafka cluster" 
+authors = ["symonk <jackofspaces@gmail.com>"]
+readme = "README.md"
+include = ["kafkapy/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = {extras = ["all"], version = "^0.9.0"}
+rich = "^13.7.0"
+confluent-kafka = "^2.3.0"
+pyyaml = "^6.0.1"
+pydantic = "^2.5.3"
+
+[tool.poetry.scripts]
+kafkapy = "kafkapy.main:app"
+
+
+[tool.poetry.dev-dependencies]
+codecov = "^2.1.13"
+pre-commit = "^3.5.0"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.4.14"
+mkdocstrings= "^0.22.0"
+mkdocstrings-python = "^1.7.5"
+pytest = "^7.4.4"
+tox = "^4.11.3"
+pip = "^23.3.1"
+coverage = "^7.4.0"
+towncrier = "^23.11.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest-xdist = "^3.3.1"
+typing-extensions = "^4.7.1"
+pytest-cov = "^4.1.0"
+pytest-docker = "^2.0.1"
+black = "^23.12.1"
+
+
+[tool.mypy]
+mypy_path = '/kafkapy'
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = false
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = false
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = false
+ignore_errors = false
+
+[tool.ruff]
+line-length = 88
+select = ["F", "I"]
+target-version = "py311"
+
+[tool.ruff.lint]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+skip-magic-trailing-comma = false
+docstring-code-format = true
+
+[tool.ruff.lint.isort]
+force-single-line = true
