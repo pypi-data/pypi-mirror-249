@@ -1,0 +1,10 @@
+projectstructor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projectstructor/detector.py,sha256=BGvJVcwOioh4hmQ4GxFhF_Hq5eAVTgRU5c_rcOlLsYA,3263
+projectstructor/gpt_integration.py,sha256=ixYjSkSiMwoxDSj-Ydb1l36OpAufpxvURB2P6DjF7y0,970
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_detector.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ProjectStructoR-0.0.5.dist-info/LICENSE,sha256=cwX2O7io2lQvGjZ9m2516bspjt1vGfTJlZF_4a0lyc8,1073
+ProjectStructoR-0.0.5.dist-info/METADATA,sha256=9PVZ16TBQ9xMBXzQj3a3Ku9ARMHcdhvTboq8BAeIaO0,2829
+ProjectStructoR-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ProjectStructoR-0.0.5.dist-info/top_level.txt,sha256=7DIBO4gs-r-0Sfoz6OwvBgVUQ8BMrsJGbKeRNK147LI,22
+ProjectStructoR-0.0.5.dist-info/RECORD,,
