@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+shigg/__init__.py
+shigg/shigg.py
+shigg.egg-info/PKG-INFO
+shigg.egg-info/SOURCES.txt
+shigg.egg-info/dependency_links.txt
+shigg.egg-info/top_level.txt
+shigg/default_drawing/__init__.py
+shigg/default_drawing/pygame.py
+shigg/elements/__init__.py
+shigg/elements/_element.py
+shigg/elements/_element_event.py
+shigg/elements/button.py
+shigg/elements/slider.py
+shigg/elements/test.py
