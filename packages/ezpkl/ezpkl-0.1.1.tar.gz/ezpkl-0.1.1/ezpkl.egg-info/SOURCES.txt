@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ezpkl/__init__.py
+ezpkl/pickling.py
+ezpkl.egg-info/PKG-INFO
+ezpkl.egg-info/SOURCES.txt
+ezpkl.egg-info/dependency_links.txt
+ezpkl.egg-info/top_level.txt
