@@ -1,0 +1,3 @@
+[console_scripts]
+pyspec2openapi=pyspec2openapi.__main__:main
+
