@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/linkeds/__init__.py
+src/linkeds/jsonifier.py
+src/linkeds/list.py
+src/linkeds/node.py
+src/linkeds/queue.py
+src/linkeds/stack.py
+src/linkeds.egg-info/PKG-INFO
+src/linkeds.egg-info/SOURCES.txt
+src/linkeds.egg-info/dependency_links.txt
+src/linkeds.egg-info/top_level.txt
