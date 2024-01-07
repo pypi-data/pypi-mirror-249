@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: perl_binary_packing
+Version: 0.1.0
+Summary: Binary pack/unpack with perl-style format
+Author: Mikhail Belov (mishka251)
+Author-email: mishkabelka251@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Perl Binary Packing
+
+Project for using perl-style format for bynary data. Simplify rewriting old perl code to python.
+
+Проект для использования в Python форматов бинарных данных как в perl. Облечает переписывание старого кода с perl на python.
+
+Используемые форматы: 
+
+https://perldoc.perl.org/functions/pack
