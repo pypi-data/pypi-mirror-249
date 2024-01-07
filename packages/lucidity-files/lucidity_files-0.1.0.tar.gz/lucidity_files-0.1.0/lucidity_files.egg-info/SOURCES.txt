@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+lucidity_files/__init__.py
+lucidity_files/file_utils.py
+lucidity_files/lucidity_files.py
+lucidity_files.egg-info/PKG-INFO
+lucidity_files.egg-info/SOURCES.txt
+lucidity_files.egg-info/dependency_links.txt
+lucidity_files.egg-info/requires.txt
+lucidity_files.egg-info/top_level.txt
+tests/test_0010_globalFns.py
+tests/test_0020_keysAndPartial.py
+tests/test_0030_files.py
+tests/test_helper.py
