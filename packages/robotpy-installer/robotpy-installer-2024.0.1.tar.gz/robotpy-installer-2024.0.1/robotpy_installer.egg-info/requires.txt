@@ -1,0 +1,5 @@
+packaging
+paramiko
+pynetconsole~=2.0.2
+robotpy-cli~=2024.0
+tomli
