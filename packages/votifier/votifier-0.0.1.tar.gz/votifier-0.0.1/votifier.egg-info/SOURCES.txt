@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_votev1.py
+votifier/__init__.py
+votifier/votifier.py
+votifier.egg-info/PKG-INFO
+votifier.egg-info/SOURCES.txt
+votifier.egg-info/dependency_links.txt
+votifier.egg-info/requires.txt
+votifier.egg-info/top_level.txt
