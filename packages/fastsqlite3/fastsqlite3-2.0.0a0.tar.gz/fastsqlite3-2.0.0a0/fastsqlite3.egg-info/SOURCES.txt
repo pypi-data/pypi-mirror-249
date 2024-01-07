@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fastsqlite3/__init__.py
+fastsqlite3/py.typed
+fastsqlite3.egg-info/PKG-INFO
+fastsqlite3.egg-info/SOURCES.txt
+fastsqlite3.egg-info/dependency_links.txt
+fastsqlite3.egg-info/top_level.txt
