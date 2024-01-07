@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ApolloCraft/__init__.py
+ApolloCraft.egg-info/PKG-INFO
+ApolloCraft.egg-info/SOURCES.txt
+ApolloCraft.egg-info/dependency_links.txt
+ApolloCraft.egg-info/top_level.txt
