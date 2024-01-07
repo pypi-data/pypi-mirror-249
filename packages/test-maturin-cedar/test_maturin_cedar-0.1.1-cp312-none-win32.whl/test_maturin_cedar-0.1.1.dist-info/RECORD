@@ -1,0 +1,9 @@
+test_maturin_cedar-0.1.1.dist-info/METADATA,sha256=h-ZQHjT39GnIV78DobVNQbg4871cim0pcjrzU-FeNtY,484
+test_maturin_cedar-0.1.1.dist-info/WHEEL,sha256=BAs6Ro--fkNJZ7YWIw_l-XLqi0PnI5xz7gY5UYCwM38,91
+test_maturin_cedar-0.1.1.dist-info/license_files/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+test_maturin_cedar/lib.py,sha256=ncGp9uj49oozxLwrN3yogSajCRCQyRKbV2xZGqo6kdU,292
+test_maturin_cedar/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_maturin_cedar/test_maturin_cedar.pyi,sha256=IxSprecx0HnPpbKdy4p8uh_eCZ1lUoQ_f145hE1VptY,47
+test_maturin_cedar/__init__.py,sha256=1QqUiKLJ0a71ydAz4QbBA9wqf8vrZKJL2BbvYaxL7n8,161
+test_maturin_cedar/test_maturin_cedar.cp312-win32.pyd,sha256=1F47uVg0vJ4onOOnI0ilitwVColRYCSo5mH7XGDdHUU,205824
+test_maturin_cedar-0.1.1.dist-info/RECORD,,
