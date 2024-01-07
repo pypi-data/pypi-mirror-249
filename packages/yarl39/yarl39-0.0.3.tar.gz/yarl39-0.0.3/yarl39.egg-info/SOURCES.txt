@@ -1,0 +1,8 @@
+COPYING
+README.md
+setup.py
+yarl39/__init__.py
+yarl39.egg-info/PKG-INFO
+yarl39.egg-info/SOURCES.txt
+yarl39.egg-info/dependency_links.txt
+yarl39.egg-info/top_level.txt
