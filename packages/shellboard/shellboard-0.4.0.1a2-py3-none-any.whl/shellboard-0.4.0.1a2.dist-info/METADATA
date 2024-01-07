@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: shellboard
+Version: 0.4.0.1a2
+Summary: shellboard - cross-platform framework that facilitates the development of a graphical interface for the command shell
+Home-page: https://github.com/Sw3aty-Acc/shellboard.git
+Author: Sw3aty
+Author-email: sw3atyspace@gmail.com
+License: MIT
+Project-URL: Repository, https://github.com/Sw3aty-Acc/shellboard.git
+Project-URL: Issues, https://github.com/Sw3aty-Acc/shellboard/issues
+Keywords: menu shell visual vishhhl visualmenu
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama >=0.4.4
+
+# Shellboard v0.4.0.1a2
+Cross-platform framework that facilitates the development of a graphical interface for the command shell
+## Requirements
+* [Colorama](https://github.com/tartley/colorama) library.
+## Installation
+```
+pip install shellboard
+```
+or
+```
+git clone https://github.com/Sw3aty-Acc/shellboard.git
+```
+
+## Usage
+### Import
+```
+import shellboard
+```
+
+## Credits
+Email - [sw3atyspace@gmail.com](mailto:youraddress@url.com) \
+Discord Server - https://discord.com/invite/jchJKYqNmK \
+Youtube - https://www.youtube.com/@sw3aty702
