@@ -1,0 +1,2 @@
+[console_scripts]
+routermonitor = routermonitor.routermonitor:cli
