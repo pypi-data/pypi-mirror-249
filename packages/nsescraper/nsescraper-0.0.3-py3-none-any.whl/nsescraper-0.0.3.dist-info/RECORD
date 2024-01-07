@@ -1,0 +1,9 @@
+nsescraper/__init__.py,sha256=qcBBA6f8zPbUl-eT7wo2yMEjOxj7bR11cD-h2s4Rf7A,146
+nsescraper/nifty_indices.pickle,sha256=_4VVmD01YtYBHMhVzq56rWdriL6qGBfwLLhlgZz_7iY,1207
+nsescraper/nsescraper.py,sha256=0XZFD9zb4jkcZB3f8e-zOxN-vbk17oUZdpCX6mCkjqo,6004
+nsescraper-0.0.3.data/data/nsescraper/nifty_indices.pickle,sha256=_4VVmD01YtYBHMhVzq56rWdriL6qGBfwLLhlgZz_7iY,1207
+nsescraper-0.0.3.dist-info/LICENSE,sha256=5ImPOtJ6Scs5z_N4vQ50KlGDk9mNBdDkyg0Gw-sM6iM,1072
+nsescraper-0.0.3.dist-info/METADATA,sha256=HVTxTwvO2nTyeL2sGGvpgZU7efKe079wpOYkIEuURm4,903
+nsescraper-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nsescraper-0.0.3.dist-info/top_level.txt,sha256=u1qTLJ1RnDxW6qHiF2K522EDqHhWsQxKuneXmSYHjww,11
+nsescraper-0.0.3.dist-info/RECORD,,
