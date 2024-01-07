@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: visual-tree
+Version: 1.0.1
+Summary: visualize the tree structure of any recursable object in python
+Home-page: https://github.com/Nocretsis/visual-tree
+Author: Nocsis
+Author-email: cchj2638@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Visual Tree Python Package
+
+## Introduction
+
+this is a simple tool to visualize the tree structure of any recursable object in python.
+
+## Installation
+
+```bash
+pip install visual-tree
+```
+
+## Usage
+
+```python
+from visual_tree import build_tree
+tree = build_tree(data_structure)
+
+# print the data_structure
+print(tree)
+
+# print the tree directly
+tree()
+
+# get the tree as a string (member of tree)
+tree.tree
+
+# get the tree as a list of strings (__iter__)
+list(tree)
+```
+
+## Example
+
+look at the [example.py](./example.py) file for more examples.
+
+## requirements
+
+- python needs to be installed
+
+1. data structure with `__iter__` (better with `__len__` also)
+2. data structure with `__bool__`
+3. data structure with `__str__`
+
+or
+
+1. instand of `__iter__` you can use other extending methods pass with `mkchild` parameter
+2. instand of `__bool__` you can use other extending methods pass with `valid` parameter
+
+## License
+
+Apache License 2.0 (see [LICENSE](./LICENSE) file)
