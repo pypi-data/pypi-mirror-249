@@ -1,0 +1,10 @@
+golftrainer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+golftrainer/__version__.py,sha256=JqmBIiZnO_c1ce6zv6JZzf01tRk6jFq-SGGuvkL_r1U,21
+golftrainer/factory.py,sha256=N7Qm5quYjZPmaD9ZPvIohxIJzhRl3IfoxEUnXWYr0Ps,861
+golftrainer/golf_data.py,sha256=aCgzm1FdcTL7ThpIo8pJIr0AACocSSfGLZz0PvOgZgQ,3623
+golftrainer-1.0.2.dist-info/LICENSE.txt,sha256=zfepNztg8Aolj2vA_bPRH5MDoWvXRvErWFZqBY5kTUg,1093
+golftrainer-1.0.2.dist-info/METADATA,sha256=8b2mCVdrdeRLbI6dCbhOPT_W6V6GFvxGdwHXURtd1aI,2396
+golftrainer-1.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+golftrainer-1.0.2.dist-info/entry_points.txt,sha256=Z7PzFOSaYtVjw6OdfpryvUa0v03H_tqtVnjW2oq0epc,60
+golftrainer-1.0.2.dist-info/top_level.txt,sha256=Ss6jidkFV_4OJ8cf-BeYwFQGqflzRdKoZQ_KDTdExIU,12
+golftrainer-1.0.2.dist-info/RECORD,,
