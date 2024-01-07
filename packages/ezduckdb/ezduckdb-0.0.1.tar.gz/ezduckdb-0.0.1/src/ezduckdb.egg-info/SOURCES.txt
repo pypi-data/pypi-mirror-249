@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/ezduckdb/__init__.py
+src/ezduckdb/example.py
+src/ezduckdb.egg-info/PKG-INFO
+src/ezduckdb.egg-info/SOURCES.txt
+src/ezduckdb.egg-info/dependency_links.txt
+src/ezduckdb.egg-info/top_level.txt

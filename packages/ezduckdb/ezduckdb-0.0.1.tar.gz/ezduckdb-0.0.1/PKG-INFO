@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ezduckdb
+Version: 0.0.1
+Summary: Package to make working with duckdb easier
+Author-email: isaac flath <isaac.flath@gmail.com>
+Project-URL: Homepage, https://github.com/codenym/ezduckdb
+Project-URL: Issues, https://github.com/codenym/ezduckdb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ezduckdb
+Tools to make working with duckdb easier
