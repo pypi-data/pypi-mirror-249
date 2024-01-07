@@ -1,0 +1,2 @@
+[console_scripts]
+heq = heq:main
