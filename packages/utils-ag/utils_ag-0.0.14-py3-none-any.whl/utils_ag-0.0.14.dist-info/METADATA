@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: utils-ag
+Version: 0.0.14
+Summary: Some various utilities for my work
+Home-page: https://github.com/ArturGudiev/utils-ag
+Author: Artur Gudiev
+Author-email: arturgudiev93@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bleach ==3.3.0
+Requires-Dist: certifi ==2021.5.30
+Requires-Dist: chardet ==4.0.0
+Requires-Dist: colorama ==0.4.4
+Requires-Dist: colour-text ==1.0.4
+Requires-Dist: docutils ==0.17.1
+Requires-Dist: idna ==2.10
+Requires-Dist: importlib-metadata ==4.5.0
+Requires-Dist: keyring ==23.0.1
+Requires-Dist: packaging ==20.9
+Requires-Dist: pkginfo ==1.7.0
+Requires-Dist: Pygments ==2.9.0
+Requires-Dist: pyparsing ==2.4.7
+Requires-Dist: pywin32-ctypes ==0.2.0
+Requires-Dist: readme-renderer ==29.0
+Requires-Dist: requests ==2.25.1
+Requires-Dist: requests-toolbelt ==0.9.1
+Requires-Dist: rfc3986 ==1.5.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: tqdm ==4.61.1
+Requires-Dist: twine ==3.4.1
+Requires-Dist: urllib3 ==1.26.5
+Requires-Dist: webencodings ==0.5.1
+Requires-Dist: zipp ==3.4.1
+Requires-Dist: pyfzf
+
+# Utilities for different jobs
+
+Should be useful.
