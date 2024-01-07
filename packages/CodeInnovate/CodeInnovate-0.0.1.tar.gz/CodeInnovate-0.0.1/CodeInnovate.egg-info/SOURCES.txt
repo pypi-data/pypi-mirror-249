@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+CodeInnovate/__init__.py
+CodeInnovate.egg-info/PKG-INFO
+CodeInnovate.egg-info/SOURCES.txt
+CodeInnovate.egg-info/dependency_links.txt
+CodeInnovate.egg-info/top_level.txt
