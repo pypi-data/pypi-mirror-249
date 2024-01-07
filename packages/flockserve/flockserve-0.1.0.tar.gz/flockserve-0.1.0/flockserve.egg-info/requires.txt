@@ -1,0 +1,4 @@
+skypilot[all]
+opentelemetry-api
+opentelemetry-instrumentation
+opentelemetry-sdk
