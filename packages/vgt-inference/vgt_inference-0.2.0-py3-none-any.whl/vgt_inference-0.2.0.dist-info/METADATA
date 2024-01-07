@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vgt-inference
+Version: 0.2.0
+Summary: Functions for inference with VGT models
+Author: The Walnut AI
+Author-email: support@thewalnut.ai
+Requires-Python: >=3.9.0,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+Function for inference with VGT models
+
