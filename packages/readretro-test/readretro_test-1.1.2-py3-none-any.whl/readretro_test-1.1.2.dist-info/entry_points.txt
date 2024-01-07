@@ -1,0 +1,2 @@
+[console_scripts]
+run = readretro.readretro:run_retro_planner
