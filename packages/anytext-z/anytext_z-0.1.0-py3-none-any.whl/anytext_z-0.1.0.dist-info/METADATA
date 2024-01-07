@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: anytext-z
+Version: 0.1.0
+Summary: AnyText
+License-File: LICENSE
+Requires-Dist: pytorch-lightning (>=1.5.0)
+Requires-Dist: jieba (==0.42.1)
+Requires-Dist: subword-nmt (==0.3.8)
+Requires-Dist: sacremoses (==0.0.53)
+Requires-Dist: tensorflow (==2.13.0)
+Requires-Dist: typing-extensions (==4.6.1)
+
