@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyfxgit/ChartCls.py
+pyfxgit/__init__.py
+pyfxgit.egg-info/PKG-INFO
+pyfxgit.egg-info/SOURCES.txt
+pyfxgit.egg-info/dependency_links.txt
+pyfxgit.egg-info/not-zip-safe
+pyfxgit.egg-info/requires.txt
+pyfxgit.egg-info/top_level.txt
