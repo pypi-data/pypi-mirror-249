@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/humata/__init__.py
+src/humata.egg-info/PKG-INFO
+src/humata.egg-info/SOURCES.txt
+src/humata.egg-info/dependency_links.txt
+src/humata.egg-info/requires.txt
+src/humata.egg-info/top_level.txt
+tests/test_humata.py
