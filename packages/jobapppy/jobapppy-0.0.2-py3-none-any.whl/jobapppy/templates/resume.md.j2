@@ -1,0 +1,33 @@
+{{ resume.info.name | upper }}
+{{ (resume.info.name | length) * '=' }}
+
+`{{ resume.info.phone }}`
+`{{ resume.info.email }}`
+```
+{{ resume.info.address1 }}
+{{ resume.info.address2 }}
+```
+{% for section in resume.sections %}
+
+## {{ section.name }}
+
+  {% for contents in section.contents %}
+    {% if section.type_ == "HighlightItemList" %}
+- **{{ contents.description }}**: {{ contents.items | join(', ') }}
+    {% elif section.type_ == "DatedListItems" %}
+
+### {{ contents.description1 }}, {{ contents.title }}
+
+{{ contents.start_date }} -- {{ contents.end_date }}
+{{ contents.description2 }}
+
+      {% for item in contents.items %}
+- {{ item }}
+      {% endfor %}
+    {% elif section.type_ == "DescribeItem" %}
+- {{ contents.description }}: {{ contents.text1 }}{%if contents.text2 %}, {{ contents.text2 }}{% endif %}. *{{ contents.annotation }}*
+    {% elif section.type_ == "AnnotatedItem" %}
+- {{ contents.description }}: {{ contents.text }}. *{{ contents.annotation }}*
+    {% endif %}
+  {% endfor %}
+{% endfor %}
