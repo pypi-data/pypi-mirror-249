@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+./requirements.txt
+upsonic_update/__init__.py
+upsonic_update/upsonic_update.py
+upsonic_update.egg-info/PKG-INFO
+upsonic_update.egg-info/SOURCES.txt
+upsonic_update.egg-info/dependency_links.txt
+upsonic_update.egg-info/not-zip-safe
+upsonic_update.egg-info/requires.txt
+upsonic_update.egg-info/top_level.txt
