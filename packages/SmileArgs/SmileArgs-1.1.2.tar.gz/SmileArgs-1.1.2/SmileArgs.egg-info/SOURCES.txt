@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+SmileArgs.egg-info/PKG-INFO
+SmileArgs.egg-info/SOURCES.txt
+SmileArgs.egg-info/dependency_links.txt
+SmileArgs.egg-info/top_level.txt
+smileargs/SmileArgs.py
+smileargs/__init__.py
