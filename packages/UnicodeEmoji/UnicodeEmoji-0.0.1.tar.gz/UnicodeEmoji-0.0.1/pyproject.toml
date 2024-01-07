@@ -1,0 +1,14 @@
+[project]
+name = "UnicodeEmoji"
+authors = [
+    {name = "Daan Knoope", email = "daan@knoope.dev"},
+]
+description = "Provides all Unicode Emojis as an enum."
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["emoji"]
+license = {text = "MIT"}
+version = "0.0.1"
+
+[tool.setuptools]
+include-package-data = true

@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+pyproject.toml
+UnicodeEmoji/__init__.py
+UnicodeEmoji/emoji.json
+UnicodeEmoji.egg-info/PKG-INFO
+UnicodeEmoji.egg-info/SOURCES.txt
+UnicodeEmoji.egg-info/dependency_links.txt
+UnicodeEmoji.egg-info/top_level.txt
