@@ -1,0 +1,41 @@
+[project]
+
+name = "pronom-tools"
+
+dynamic = ["version"]
+
+description = "Tools for working with PRONOM releases"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+keywords = ["pronom", "digipres", "file-formats"]
+authors = [
+  {name = "R. Spencer", email = "all.along.the.watchtower2001+github@gmail.com" },
+]
+dependencies = [
+    "python-dotenv==1.0.0",
+    "fastapi==0.104.1",
+    "passlib==1.7.4",
+    "requests==2.31.0",
+    "tenacity==8.2.3",
+    "uvicorn==0.23.2",
+]
+
+[project.urls]
+
+"Homepage" = "https://ffdev.info/"
+"Bug Reports" = "https://github.com/ffdev-info/pronom-release-tools/issues/"
+"Source" = "https://github.com/ffdev-info/pronom-release-tools/"
+
+[project.scripts]
+
+pronom-tools = "pronom_tools.pronom_tools:main"
+pronom-stats = "pronom_stats.pronom_stats:main"
+pronom-cron = "pronom_cron.pronom_cron:main"
+
+[build-system]
+
+requires = ["setuptools>=67.8.0", "wheel", "setuptools_scm[toml]>=7.1.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
