@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+src/__init__.py
+src/corek_transformer.py
+src/rules_engine.py
+src/corek.egg-info/PKG-INFO
+src/corek.egg-info/SOURCES.txt
+src/corek.egg-info/dependency_links.txt
+src/corek.egg-info/requires.txt
+src/corek.egg-info/top_level.txt
+tests/test_rules_engine.py

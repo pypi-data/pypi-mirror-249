@@ -1,0 +1,26 @@
+[project]
+name = "corek"
+version = "0.0.1"
+authors = [
+    { name = "Rai Raman" },
+]
+description = "One line expression evaluator"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    "lark ~=1.1.8",
+    "importlib_resources==6.1.1",
+]
+[project.urls]
+"Homepage" = "https://github.com/rairaman/corek"
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
