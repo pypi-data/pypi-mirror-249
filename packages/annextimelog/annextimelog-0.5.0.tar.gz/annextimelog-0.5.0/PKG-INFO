@@ -1,0 +1,230 @@
+Metadata-Version: 2.1
+Name: annextimelog
+Version: 0.5.0
+Summary: Track time spent on projects, backed by Git Annex
+Home-page: https://gitlab.com/nobodyinperson/annextimelog
+Author: Yann Büchau
+Author-email: nobodyinperson@posteo.de
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Project-URL: Changelog, https://gitlab.com/nobodyinperson/annextimelog/-/blob/main/CHANGELOG.md?ref_type=heads
+Project-URL: Repository, https://gitlab.com/nobodyinperson/annextimelog
+Description-Content-Type: text/markdown
+
+[![coverage report](https://gitlab.com/nobodyinperson/annextimelog/badges/main/coverage.svg)](https://gitlab.com/nobodyinperson/annextimelog/-/commits/main)
+[![PyPI version](https://badge.fury.io/py/annextimelog.svg)](https://badge.fury.io/py/annextimelog)
+[![REUSE status](https://api.reuse.software/badge/gitlab.com/nobodyinperson/annextimelog)](https://api.reuse.software/info/gitlab.com/nobodyinperson/annextimelog)
+
+> ⚠️  This tool is early development. The most basic time tracking feature (recording, deletion, time frame search) as well as syncing are implemented though.
+
+# `annextimelog` - ⏱️ [Git Annex](https://git-annex.branchable.com)-backed Time Tracking
+
+This is a brainstorm for a [Git Annex](https://git-annex.branchable.com)-backed time tracker.
+The idea originated across some of my Mastodon threads:
+
+- https://fosstodon.org/@nobodyinperson/109596495108921683
+- https://fosstodon.org/@nobodyinperson/109159397807119512
+- https://fosstodon.org/@nobodyinperson/111591979214726456
+
+The gist is that I was (and still am) unhappy with the existing time tracking solutions. I worked with [hledger's timeclock](https://hledger.org/1.32/hledger.html#timeclock-format) and [timewarrior](https://timewarrior.net/) each for quite some time and built my own workflow and scripts around them.
+
+## ✅ Requirements
+
+Over the years, the below features turned out to be **my** personal requirements for a time-tracking system (**TL;DR**: easy and intuitive recording, hassle-free syncing, data export for further analysis).
+Here is a table comparing annextimelog with [timewarrior](https://timewarrior.net/) and [hledger timeclock](https://hledger.org/1.32/hledger.html#timeclock-format):
+
+✅ = feature available, 🟡 = partly available, ❌ = not available
+
+| feature                                            | `timewarrior` | `hledger` timeclock    | `annextimelog`                       |
+|----------------------------------------------------|---------------|------------------------|--------------------------------------|
+| precise **start and end times**                    | ✅            | ✅                     | ✅ as git-annex metadata             |
+| tracking of overlapping/simultaneous periods       | ❌            | 🟡 (separate files)    | ✅ backend can do it                 |
+| nice, colourful, **graphical summary**             | ✅            | 🟡                     | ✅ with Python `rich`, more planned  |
+| **plain text** data storage                        | ✅            | ✅                     | 🟡 buried in `git-annex` branch      |
+| git-friendly, **merge conflict free data format**  | 🟡¹           | 🟡¹                    | ✅ git-annex’ own merge strategy     |
+| arbitrary **tags** attachable to tracked periods   | ✅            | 🟡 hledger tags²       | ✅ just git-annex metadata           |
+| arbitrary **notes** attachable to tracked periods  | 🟡³           | 🟡 hledger tags²       | ✅ just git-annex metadata           |
+| tags can have **values**                           | ❌            | ✅ hledger tags²       | ✅ just git-annex metadata           |
+| **files** attach-/linkable to tracked periods      | ❌            | 🟡 path as `file:` tag | 🟡 annexed files, linking is planned |
+| **cli** to start, stop, edit, etc. tracked periods | ✅⁴           | ❌ own scripts needed  | 🟡 very basic, more planned          |
+| **plugin system**                                  | 🟡⁵           | 🟡⁶ (hledger’s own)    | ❌ git-style plugin system planned   |
+| **data export** to common format                   | ✅ (JSON)     | ✅ (CSV, JSON)         | ✅ as timeclock, JSON, cli commands  |
+| **syncing** functionality built-in                 | ❌            | ❌                     | ✅ git-annex’s purpose is syncing    |
+| **multi-user** support                             | ❌            | ❌                     | 🟡 e.g. use tag `user=NAME`          |
+
+¹last line is always modified, merge conflicts can arise when working from different machines
+
+²[hledger tags](https://hledger.org/1.32/hledger.html#tags) have limitations, e.g. no spaces, colons, commas, etc.
+
+³timewarrior annotations can't contain newlines for example. I wrote an extension to edit your annotation in your `$EDITOR` and optionally GPG-encrypt it, which lets you add newlines. Quite an inconvenience.
+
+⁴timewarrior’s cli has some nasty inconveniences (e.g. no shortcut for ‘yesterday’, must painfully type out the full date, no intelligence to operate only on yesterday, gets confused and errors out in certain combinations of start/end times, etc…)
+
+⁵timewarrior extensions ([here mine](https://gitlab.com/-/snippets/2498711)) are just fed the data via STDIN, not other command-line arguments. Not as useful as the git-style plugin system.
+
+⁶for the analysis part, `hledger` plugins can be used. But as there is no actual cli to manage the data, there’s no plugin system for that.
+
+
+
+## 🛠️ Implementation
+
+Surprisingly, many of the above requirements can be fulfilled without reinventing the wheel by employing [git-annex](https://git-annex.branchable.com), an extension to git that enables (among many other powerful file syncing things) *attaching metadata to files*.
+Git Annex provides sophisticated mechanisms to sync (multiple) git repositories without interaction and can also resolve certain merge conflicts on its own.
+I had the following design in mind, of which most is already implemented:
+
+- Every **tracked period** (working on a project, sleeping, whatever) is represented by an annexed file.
+    - This file is created with some random, *unique content and name* without further meaning (e.g. just a UUID).
+    - The file's content will never change. In fact, it doesn't even matter and the file might be `git annex drop --force`d right after creation.
+    - The file's name also stays the same. Renames could cause git merge conflicts.
+    - Period files would have a common extension (e.g. `.t` to keep it short) so that git-annex can be instructed to not want to copy them around and complain if they are missing. (e.g. `git annex wanted . 'not include=*.t'`)
+    - Period files would be (automatically/regularly) sorted into a `YYYY/MM/DD` as well as `YYYY/WW` (calendar week) folder structure and may appear in multiple locations if they overlap (e.g. when tracking sleep, a period likely spans two days). This allows for optimization of some queries and operations (e.g. showing only the current day, week or month). Git Annex still knows they're the same thing even if they're scattered all over the place.
+    - Period metadata is stored as [git annex metadata](https://git-annex.branchable.com/design/metadata/):
+        - Metadata can be merged without conflicts by git annex. The most recent change wins, but the history stays available.
+        - Fields:
+            - start and end time (ISO format UTC)
+            - tags (`tag` metadata field)
+            - arbitray metadata with values (cli with `atl track 08:00 work @home` would start tracking a work period starting at 08:00 local time and set the `location` metadata field to `home`)
+                - one of those fields is the `note` field, which can be edited in the `$EDITOR` to add arbitrary tex, even with newlines, emojis, whatever, possibly encrypted (but not with git-annex's mechanism)
+- The **cli** would be a bit similar to timewarrior's, and could look like this:
+    - ```bash
+      atl track 08:00 work @home            # start working from home (tags=work, location=home)
+      atl track 08:00 work location=home    # same
+      atl tag project1              # add a tag to currently running period
+      atl note "bla"                # add a note to currently running period
+      atl note                      # opens $EDITOR to edit note
+      atl note -e "bla"             # same, but encrypt store note encrypted
+      atl stop                      # stop current period tracking
+
+      atl day|week|month            # show list/chart of tracked periods, with dynamic number (newest=1, etc.)
+      atl note :3                   # edit note of the third-last tracked period
+
+      atl track yesterday18:00 - 21:00 "coding session"   # track 3h of past event yesterday
+      atl track y18:00 - 21:00 "coding session"           # shorter form
+      atl track 2023-12-01T18:00 - 2023-12-01T21:00 "coding session" # timewarrior-style form
+
+      atl sync                      # run 'git annex assist' to sync up
+      ```
+
+## 📦 Installation
+
+You can run this tool if you have [nix](https://nixos.org) installed:
+
+```bash
+# drop into a temporary shell with the command available
+nix shell gitlab:nobodyinperson/annextimelog
+
+# install it
+nix profile install gitlab:nobodyinperson/annextimelog
+```
+
+On Arch Linux you can install from the [AUR](https://aur.archlinux.org/packages/annextimelog) with your favorite helper, or directly with pacman from [this user repository](https://wiki.archlinux.org/title/Unofficial_user_repositories#alerque).
+
+```bash
+# use an AUR helper to install
+paru -S annextimelog
+```
+
+Otherwise, you can install it like any other Python package, e.g. with `pip` or better `pipx`:
+
+```bash
+pipx install annextimelog
+
+# latest development version
+pipx install git+https://gitlab.com/nobodyinperson/annextimelog
+```
+
+Note that in this case you will need to install [git-annex](https://git-annex.branchable.com) manually.
+
+Any of the above makes the `annextimelog` (or `atl`) command available.
+
+## ❓ Usage
+
+```bash
+# Show help page
+atl --help
+
+# Show exactly what's going on underneath (more -v → more detail)
+atl -vvvvv ...
+
+# Add a remote to sync to
+atl git remote add myserver git@myserver.com:...
+
+# Sync status with git annex
+atl sync
+
+# Track a time period with metadata
+atl track 10:00 15:00 work @home ="make a title with the equals sign" :"make a note with a colon"
+atl tr 15:00 - 10min ago code @home # timewarrior-style time ranges
+
+# Show events from this week
+atl summary --week
+atl su -w # short form
+atl su -b 2023-01-01 -e 2023-02-01  # specific time period
+
+# Delete an event
+atl rm 3QicA4G4
+
+# other Output formats
+atl -O timeclock  # output hledger timeclock format
+atl -O timeclock | hledger -f timeclock:- bal --daily # analyse with hledger
+atl -O json       # output JSON
+```
+
+There's some example periods in the `doc` folder you can try out.
+
+## ⚙️  Configuration
+
+`annextimelog` reuses git's configuration system. You can configure annextimelog per-repo (`atl git config ...`), per-user (`atl git config --global ...`) or system-wide (typically in `/etc/gitconfig`).
+
+```bash
+# list all annextimelog configs known to git
+atl git config --get-regexp '^annextimelog'
+
+# open the git config in your $EDITOR
+atl git config --edit
+
+# let the week start at Sunday
+atl git config annextimelog.weekstartssunday true
+
+# Don't commit, except in 'annextimelog sync'.
+# This speeds up things but reduces granularity to undo changes
+atl git config annextimelog.commit false
+
+# Skip steps that are not strictly necessary.
+# This speeds up things but might leave the repository in a less ordered state.
+atl git config annextimelog.fast true
+```
+
+## 🛠️ Development
+
+This project uses [poetry](https://python-poetry.org/), so you can run the following in this repository to get into a development environment:
+
+```bash
+poetry install
+poetry shell
+# now you're in a shell with everything set up
+```
+
+Other:
+
+```bash
+# Auto-run mypy when file changes:
+watchexec -w . 'poetry run mypy .'
+
+# Auto-run tests when file changes:
+watchexec -w . 'poetry run coverage run --source=annextimelog -m unittest -v -b;coverage html;coverage report'
+
+# Test how a sequence of command-line args is interpreted as event metadata
+poetry run python -c 'from annextimelog.token import *;import sys;from rich import print;print(list(Token.from_strings(sys.argv[1:])))' work @home note=bla myfield+=one,two,three 2h ago until now
+
+# Run tests against a different Python version with nix: (careful to update both versions below!)
+LC_ALL=C.UTF-8 nix-shell -p poetry python310 --run 'poetry env use python3.10;poetry install;poetry run python -m unittest -v'
+```
+
