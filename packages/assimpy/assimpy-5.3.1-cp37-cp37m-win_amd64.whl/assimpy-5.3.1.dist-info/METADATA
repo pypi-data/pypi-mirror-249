@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: assimpy
+Version: 5.3.1
+Summary: 3D model loader for Glass-Engine
+Home-page: https://github.com/Time-Coder/Glass-Engine
+Author: 王炳辉 (BingHui-WANG)
+Author-email: binghui.wang@foxmail.com
+License: UNKNOWN
+Platform: win_amd64
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/plain
+
+3D model loader for Glass-Engine
+
