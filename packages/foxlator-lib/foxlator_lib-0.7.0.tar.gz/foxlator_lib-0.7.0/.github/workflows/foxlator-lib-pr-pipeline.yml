@@ -1,0 +1,33 @@
+name: foxlator-lib pull request check
+
+on:
+  pull_request:
+    branches:
+      - dev
+  push:
+    branches:
+      - dev
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Install dependencies"
+        run: ./bin/install-deps.sh
+      - name: "Run unit tests"
+        run: ./bin/run-tests.sh
+      - name: "Build wheel package"
+        run: ./bin/build-package.sh
+      - name: "Perform a smoke test"
+        run: ./bin/smoke-test.sh
+      - name: "Deploy code coverage report"
+        run: |
+          git config --global user.email "skyfox.comp@gmail.com"
+          git config --global user.name 'Skyfox.Coverage'
+          git clone https://github.com/skyfox-ai/skyfox-ai.github.io
+          cd skyfox-ai.github.io
+          git remote set-url origin https://x-access-token:${{ secrets.GIT_TOKEN }}@github.com/skyfox-ai/skyfox-ai.github.io
+          mv --force ../htmlcov/* ./foxlator-lib
+          git add .
+          git commit -m "Test coverage update"
+          git push

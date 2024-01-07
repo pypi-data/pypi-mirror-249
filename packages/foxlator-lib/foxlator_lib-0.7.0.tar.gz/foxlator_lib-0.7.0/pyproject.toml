@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "foxlator-lib"
+version = "0.7.0"
+authors = [
+  { name="Witold Haza", email="witold.haza@gmail.com" },
+  { name="Kacper Czyz", email="kacper.czyz@protonmail.com" },
+]
+dependencies = [
+    "ffmpeg >= 1.4",
+    "moviepy >= 1.0.3",
+    "openai-whisper >= 20231106",
+    "scipy>=1.11.3",
+    "pydub>=0.25.1"
+]
+description = "Library backend for foxlator"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.package-data]
+"pkgname" = ["py.typed"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+"Homepage" = "https://github.com/skyfox-ai/foxlator-lib"
+"Bug Tracker" = "https://github.com/skyfox-ai/foxlator-lib/issues"

@@ -1,0 +1,9 @@
+pytest
+pytest-cov
+autopep8
+ddt
+ffmpeg >= 1.4
+moviepy >= 1.0.3
+openai-whisper >= 20231106
+scipy>=1.11.3
+pydub>=0.25.1

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: foxlator-lib
+Version: 0.7.0
+Summary: Library backend for foxlator
+Project-URL: Homepage, https://github.com/skyfox-ai/foxlator-lib
+Project-URL: Bug Tracker, https://github.com/skyfox-ai/foxlator-lib/issues
+Author-email: Witold Haza <witold.haza@gmail.com>, Kacper Czyz <kacper.czyz@protonmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: ffmpeg>=1.4
+Requires-Dist: moviepy>=1.0.3
+Requires-Dist: openai-whisper>=20231106
+Requires-Dist: pydub>=0.25.1
+Requires-Dist: scipy>=1.11.3
+Description-Content-Type: text/markdown
+
+Empty for now
