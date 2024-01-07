@@ -1,0 +1,10 @@
+transfernet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transfernet/datasets.py,sha256=DID32w7O6sovtnNR2Cnto9oAAn-urHeMSqO1L5pa_YM,1873
+transfernet/models.py,sha256=GXfJGbbxEdHmw6ueorTkNx4_1e8LnIXWh2waK0ngDIg,2041
+transfernet/plots.py,sha256=i8y7ekJ90ElZA5ArW0VCbW4yqUh___gjHQKiQ9IS530,5308
+transfernet/utils.py,sha256=N2FojdNp2OLIU5B7A2YdQNwG6LoHQq8x0Hs45jQERH4,8418
+transfernet-0.3.5.dist-info/LICENSE,sha256=LfrZltpziQ5-jE1teJ0KHg4LVxoaK6Zy31rzeYiJ5Dc,1077
+transfernet-0.3.5.dist-info/METADATA,sha256=_gcvKjlge1OMeamCyvfzl7WSeL9A8NtYU9M1VZu7E1U,1376
+transfernet-0.3.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+transfernet-0.3.5.dist-info/top_level.txt,sha256=Yi4RdGbozauWWH6RRlFcazjbxp1nGp37HTkcxrqOx4c,12
+transfernet-0.3.5.dist-info/RECORD,,
