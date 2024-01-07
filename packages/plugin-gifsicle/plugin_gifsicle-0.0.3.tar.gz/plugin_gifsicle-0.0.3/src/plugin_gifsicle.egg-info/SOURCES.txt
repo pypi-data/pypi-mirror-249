@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/plugin_gifsicle/__init__.py
+src/plugin_gifsicle.egg-info/PKG-INFO
+src/plugin_gifsicle.egg-info/SOURCES.txt
+src/plugin_gifsicle.egg-info/dependency_links.txt
+src/plugin_gifsicle.egg-info/not-zip-safe
+src/plugin_gifsicle.egg-info/top_level.txt
+src/plugin_gifsicle/gifsicle_binaries/arm/gifsicle
+src/plugin_gifsicle/gifsicle_binaries/x86/gifsicle
