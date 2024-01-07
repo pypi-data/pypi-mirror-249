@@ -1,0 +1,2 @@
+compipe>=0.2.3
+fake-bpy-module-latest
