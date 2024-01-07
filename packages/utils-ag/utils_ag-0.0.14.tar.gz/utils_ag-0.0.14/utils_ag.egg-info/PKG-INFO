@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: utils-ag
+Version: 0.0.14
+Summary: Some various utilities for my work
+Home-page: https://github.com/ArturGudiev/utils-ag
+Author: Artur Gudiev
+Author-email: arturgudiev93@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Utilities for different jobs
+
+Should be useful.
