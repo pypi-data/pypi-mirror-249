@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/routermonitor/__init__.py
+src/routermonitor/routermonitor.py
+src/routermonitor.egg-info/PKG-INFO
+src/routermonitor.egg-info/SOURCES.txt
+src/routermonitor.egg-info/dependency_links.txt
+src/routermonitor.egg-info/entry_points.txt
+src/routermonitor.egg-info/requires.txt
+src/routermonitor.egg-info/top_level.txt
+src/routermonitor/deployment_files/creds_SMTP
+src/routermonitor/deployment_files/creds_routermonitor
+src/routermonitor/deployment_files/routermonitor.cfg
+src/routermonitor/deployment_files/routermonitor.service

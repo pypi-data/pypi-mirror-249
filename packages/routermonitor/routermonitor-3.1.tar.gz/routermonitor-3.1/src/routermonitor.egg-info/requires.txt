@@ -1,0 +1,6 @@
+cjnfuncs>=2.0.2
+requests
+lxml
+
+[:python_version < "3.8"]
+importlib-metadata
