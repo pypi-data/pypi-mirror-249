@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: catspaws
+Version: 0.0.0
+Summary: A thin wrapper around Boto3, for demonstration purposes only
+Author-email: Les <les@users.noreply.github.com>
+Project-URL: Homepage, https://www.nyan.cat/
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Provides-Extra: development
+Requires-Dist: build ; extra == 'development'
+Requires-Dist: coverage ; extra == 'development'
+Requires-Dist: moto ; extra == 'development'
+Requires-Dist: pytest ; extra == 'development'
+Requires-Dist: twine ; extra == 'development'
+
+# catspaws
+
+A thin wrapper around Boto3, for demonstration purposes only.
