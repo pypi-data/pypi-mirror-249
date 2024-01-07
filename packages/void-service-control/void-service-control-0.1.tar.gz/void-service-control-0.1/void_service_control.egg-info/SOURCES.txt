@@ -1,0 +1,9 @@
+README
+setup.py
+void_service_control.egg-info/PKG-INFO
+void_service_control.egg-info/SOURCES.txt
+void_service_control.egg-info/dependency_links.txt
+void_service_control.egg-info/entry_points.txt
+void_service_control.egg-info/top_level.txt
+vsc/__init__.py
+vsc/vsc.py
