@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pySTTM/setup.py
+pySTTM.egg-info/PKG-INFO
+pySTTM.egg-info/SOURCES.txt
+pySTTM.egg-info/dependency_links.txt
+pySTTM.egg-info/top_level.txt

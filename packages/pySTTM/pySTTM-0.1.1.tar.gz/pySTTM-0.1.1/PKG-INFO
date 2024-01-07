@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pySTTM
+Version: 0.1.1
+Summary: First Version
+Home-page: https://github.com/DSInCenter/pySTTM/tree/0.1.1
+Download-URL: https://github.com/DSInCenter/pySTTM/archive/refs/tags/0.1.1.tar.gz
+Author: Mohammad Akbari
+Author-email: akbari.ma@gmail.com
+License: (c) DSInCenter License
+Keywords: 0.1.1
+Classifier: License :: Other/Proprietary License
