@@ -1,0 +1,8 @@
+mysql-connector>=2.2.9
+python-dotenv>=1.0.0
+logger-local>=0.0.71
+pytest>=7.4.3
+PyMySQL>=1.1.0
+database-infrastructure-local>=0.0.19
+language-remote>=0.0.8
+sql-to-code-local>=0.0.2
