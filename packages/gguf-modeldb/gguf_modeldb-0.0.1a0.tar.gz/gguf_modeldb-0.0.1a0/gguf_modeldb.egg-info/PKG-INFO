@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gguf_modeldb
+Version: 0.0.1a0
+Summary: A Llama2 quantized gguf model db with over 50 preconfigured models downloadable in one line, easly add your own models or adjust settings. Don't struggle with manual downloads again.
+Home-page: https://github.com/laelhalawani/gguf_modeldb
+Author: Łael Al-Halawani
+Author-email: laelhalawani@gmail.com
+Keywords: llama,ai,artificial intelligence,natural language processing,nlp,quantization,cpu,deployment,database,model,models,model database,model repo,model repository,model library,model libraries,gguf,llm
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0
+Requires-Dist: beautifulsoup4>=4.9.3
+
+# TO BE CREATED
