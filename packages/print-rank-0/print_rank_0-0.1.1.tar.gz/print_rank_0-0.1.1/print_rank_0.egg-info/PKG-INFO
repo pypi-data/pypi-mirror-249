@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: print-rank-0
+Version: 0.1.1
+Summary: Print on rank 0
+Home-page: https://github.com/yuantailing/print_rank_0
+Author: Tailing Yuan
+Author-email: yuantailing@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.3
+License-File: LICENSE
+
+# print_rank_0
+
+`print_rank_0`: Print only on rank 0.
+
+`print_rank_last`: Print only on last rank.
