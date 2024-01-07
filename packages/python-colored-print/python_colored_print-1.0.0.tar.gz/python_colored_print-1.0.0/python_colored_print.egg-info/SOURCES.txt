@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+colored_print/__init__.py
+colored_print/colored_print.py
+python_colored_print.egg-info/PKG-INFO
+python_colored_print.egg-info/SOURCES.txt
+python_colored_print.egg-info/dependency_links.txt
+python_colored_print.egg-info/top_level.txt
