@@ -1,0 +1,25 @@
+
+[:python_version < "3.4"]
+enum34
+
+[develop]
+coverage
+pytest>=3.2
+pytest-html>=1.19.0
+tox>=2.9
+pylint
+invoke>=1.4.1
+six>=1.15.0
+pycmd
+
+[develop:python_version < "3.5"]
+path.py>=11.5.0
+
+[develop:python_version <= "3.3"]
+backports.shutil_which
+
+[develop:python_version <= "3.4"]
+pathlib
+
+[develop:python_version >= "3.5"]
+path>=13.1.0
