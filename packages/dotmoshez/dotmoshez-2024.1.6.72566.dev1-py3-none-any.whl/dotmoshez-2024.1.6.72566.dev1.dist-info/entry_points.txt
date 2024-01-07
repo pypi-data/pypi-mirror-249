@@ -1,0 +1,7 @@
+[console_scripts]
+clean-ipynb = dotmoshez:ENTRY_DATA.sub_command
+dotmoshez = dotmoshez:ENTRY_DATA.main_command
+git-sync = dotmoshez:ENTRY_DATA.sub_command
+
+[gather]
+placeholder = dotmoshez
