@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: haitch
+Version: 0.1.0
+Summary: A lazy HTML element builder.
+Project-URL: Homepage, https://sr.ht/~loges/haitch
+Project-URL: Source, https://git.sr.ht/~loges/haitch
+Project-URL: Issues, https://todo.sr.ht/~loges/haitch
+Author-email: Logan Connolly <me@loganconnolly.com>
+License-Expression: BSD-3-Clause
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# haitch
+
+[![PyPI - Version](https://img.shields.io/pypi/v/haitch.svg)](https://pypi.org/project/haitch)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/haitch.svg)](https://pypi.org/project/haitch)
+
+---
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install haitch
+```
+
+## License
+
+`haitch` is distributed under the terms of the [BSD-3-Clause](https://spdx.org/licenses/BSD-3-Clause.html) license.
