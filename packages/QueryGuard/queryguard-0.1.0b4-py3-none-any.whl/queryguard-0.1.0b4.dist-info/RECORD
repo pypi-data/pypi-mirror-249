@@ -1,0 +1,13 @@
+queryguard/__init__.py,sha256=4TZt0pZH10xNz6COiXExj9l7a-neRv6XdqOovrksKUo,29
+queryguard/__main__.py,sha256=s8Yc5ES6EGw0BlV9ZOMAZypyGychGlXIgdIrEvhfh_o,99
+queryguard/cli.py,sha256=qS5IgaJYQISvUoHIFkSXyCaDRV3KxvW8KiEregIMcmI,1285
+queryguard/config.py,sha256=XatsWO76jDlqPofpP575F_I2qGlzimJzhU23W_cp1ko,9921
+queryguard/engine.py,sha256=0vqa-XTg3Gsd_yM2gjlsXvlq6FLCcEiEPhhb7Fj9Yls,4875
+queryguard/exceptions.py,sha256=xjHdj2QBnbD83g9p-XTacwOhCIcTKOXWdRwu4wrzh4Y,1067
+queryguard/parser.py,sha256=5Vdqc6dVefX_3--E4R9uqUAVpVRdfXNPmx2ManU6WIk,5480
+queryguard/rules.py,sha256=P8mhTXQADFmUr1FhG_rglhqS81DgH00pykN48moxrtw,12713
+queryguard-0.1.0b4.dist-info/LICENSE,sha256=FiBLRHOocUrFHh1CSaqZcjDLPX2cIss3WoSUbMnHajs,22715
+queryguard-0.1.0b4.dist-info/METADATA,sha256=NmgHDtI8mZi9mpPP37iYJjA0kUPicnjqRVBmyCBHNV0,1937
+queryguard-0.1.0b4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+queryguard-0.1.0b4.dist-info/entry_points.txt,sha256=FBi2ptxWudw7kGVr4GDAOG6aU90cPBdDc9QNa00IL40,81
+queryguard-0.1.0b4.dist-info/RECORD,,
