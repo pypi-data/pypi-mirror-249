@@ -1,0 +1,10 @@
+setup.py
+moascode_probability/Binomialdistribution.py
+moascode_probability/Gaussiandistribution.py
+moascode_probability/Generaldistribution.py
+moascode_probability/__init__.py
+moascode_probability.egg-info/PKG-INFO
+moascode_probability.egg-info/SOURCES.txt
+moascode_probability.egg-info/dependency_links.txt
+moascode_probability.egg-info/not-zip-safe
+moascode_probability.egg-info/top_level.txt
