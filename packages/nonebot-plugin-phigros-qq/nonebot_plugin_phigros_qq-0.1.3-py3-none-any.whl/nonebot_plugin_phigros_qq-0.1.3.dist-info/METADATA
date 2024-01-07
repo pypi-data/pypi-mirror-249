@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-phigros-qq
+Version: 0.1.3
+Summary: 一个简单的基于PhigrosLibrary的Phigros查分插件，适用于nonebot-adapter-qq
+Home-page: https://github.com/XTxiaoting14332/nonebot-plugin-phigros-qq
+Author: NightWind
+Author-email: 2125714976@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Pillow
+Requires-Dist: httpx
+Requires-Dist: nonebot-adapter-qq
+Requires-Dist: nonebot2
+Requires-Dist: pathlib
+Requires-Dist: uuid
+
+UNKNOWN
+
