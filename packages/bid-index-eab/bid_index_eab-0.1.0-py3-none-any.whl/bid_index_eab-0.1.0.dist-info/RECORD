@@ -1,0 +1,17 @@
+advisor_utils/__init__.py,sha256=WgxeS1zgK0R6l452eA-sxy6yv6Drsx8iZF1wytiH_L8,116
+advisor_utils/candidate_generation.py,sha256=fl2sjAiK_X3ChVeQJAACdKdDKLr8rj7qrd_LGTFs-10,1501
+advisor_utils/cost_evaluation.py,sha256=_DmZwx8piHCVK3lj6J4KEI5Tw3BJS7BPzhe8aFJJGz0,6819
+advisor_utils/database_connector.py,sha256=1HYrzSyVg99cRS-xjAUqrZr_Za2wq5JhXtE_EI_VnrQ,3428
+advisor_utils/index.py,sha256=DiwK64RIp9SNL5wc8COhbgS5tiDIRdwqqnlvu4lHrwU,3236
+advisor_utils/postgres_dbms.py,sha256=oEYsc4A1wb279d033KS3yZPv7Fe1kBbqslpIDnqoxnE,11156
+advisor_utils/what_if_index_creation.py,sha256=gCipWncwhK0JCftW0swCcrmmAxUdZxudH676jIl6r2g,2042
+advisor_utils/workload.py,sha256=RZsK3WkPlpELXjVTuaAnWd48afuzj0b8o3Fmkpa8VTU,2312
+index_advisor/__init__.py,sha256=WgxeS1zgK0R6l452eA-sxy6yv6Drsx8iZF1wytiH_L8,116
+index_advisor/drop_algorithm.py,sha256=UX7nI2l7rfA_32L5KGL10ir7G5ydSouOQXry9V0feug,6035
+index_advisor/extend_algorithm.py,sha256=wnkZeGxBOb6eHv7lx7GCApwVzGYI_Gj19EAaa3Cm-VI,9549
+index_advisor/selection_algorithm.py,sha256=H9bHffhRnKG5si9fvwILx-rC90W5Wkf8RnLKiNJZKhk,6466
+bid_index_eab-0.1.0.dist-info/LICENSE,sha256=fRepCTsp9cnkYt01hsiN00itliKQWl7pTBNe_12nsjQ,1099
+bid_index_eab-0.1.0.dist-info/METADATA,sha256=sTmz-go_4xTSxqJ9dmHdg0wdnhr49eAqVV2Wg0PAE1s,1509
+bid_index_eab-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bid_index_eab-0.1.0.dist-info/top_level.txt,sha256=L4t1dTcplRHIQdco3NSh_OcDNpFggtaaWgZaJN1f0G4,28
+bid_index_eab-0.1.0.dist-info/RECORD,,
