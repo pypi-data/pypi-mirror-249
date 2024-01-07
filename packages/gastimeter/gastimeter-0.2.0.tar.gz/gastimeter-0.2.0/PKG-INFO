@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gastimeter
+Version: 0.2.0
+Summary: Extract text from an image using Azure Cognitive Services.
+Author-email: Georg Kunz <der.schorsch@gmail.com>
+Project-URL: Homepage, https://github.com/gkunz/gastimeter
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: opencv-python
