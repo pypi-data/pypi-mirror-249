@@ -1,0 +1,15 @@
+shigg/__init__.py,sha256=NTiokLbHC9mm4dAgyj6_D_k6vExsKR0BhloxKBO6HXg,137
+shigg/shigg.py,sha256=juVrf2Y4Di76yciNtTtDuL5KqglBwEYXdtoOg6MaLA8,1240
+shigg/default_drawing/__init__.py,sha256=k1N-ADyed5sCywvu51zYqXBGdiPE0Mfk2_VCxtk2ufk,45
+shigg/default_drawing/pygame.py,sha256=2Qj-RN6geV3q9gq64agAGyaQmizeOIzUaBtD8deArBI,5568
+shigg/elements/__init__.py,sha256=CaDMwuKY1DEcUuoZxzlVkbwFXx4BV2XScuAjldU4RIM,54
+shigg/elements/_element.py,sha256=Zb-kjFcomYP9EfEavae86NNDmj__YKp4zXs1fC-0EXY,102
+shigg/elements/_element_event.py,sha256=Cs_-sPgKLmoC7q1saJ4NCP9CEFum6WdaRJ2FRwxzMgc,769
+shigg/elements/button.py,sha256=8olVThbdrvHmO43SR1G1fax5LkS_fxuqAjUdmbrxVd4,1863
+shigg/elements/slider.py,sha256=Qb0BN7JPvPG13kfQUoe2sGHb122FdsDqFXqGexwgREc,2952
+shigg/elements/test.py,sha256=4NcAXa9HAA7mLHtsGwW-GSzn17czLW-DZn6cRHvuuEg,671
+shigg-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+shigg-0.1.0.dist-info/METADATA,sha256=wD2zXyz0Bv5YdqRXAnrwamLhih8hz_u6mqrnswWGD_U,7752
+shigg-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+shigg-0.1.0.dist-info/top_level.txt,sha256=aGU79QponnghQN3XbPMNdWSsr6NvPNf0PLifT5dxWww,6
+shigg-0.1.0.dist-info/RECORD,,
