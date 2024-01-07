@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: otherworlds
+Version: 1.1.0
+Summary: A name generator for nonsensitive things
+License: GPL-3.0-or-later
+Author: Jurnell Cockhren
+Author-email: jurnell@civichacker.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+<!--
+SPDX-FileCopyrightText: 2023 Civic Hacker, LLC
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+# Otherworlds
+
+![PyPI](https://img.shields.io/pypi/v/otherworlds?style=for-the-badge) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/otherworlds?style=for-the-badge)
+
+
+A simple name generator for non-sensitive things. Mixes Klingon and real Exoplanets and star designations.
+
+### generator use cases
+
+- usernames
+- names for teams/places/campaigns in your favorite MMORPG
+- subdomains
+- emphemeral service names
+
+
+## Installation
+
+Install this package using the usual suspects (e.g., Pypi)
+
+```
+pip install otherworlds
+```
+
+## How to use the generator
+
+
+This command generates names using real stars and exoplanets:
+
+```
+pipx otherworlds
+```
+
+To mix in some Klingon, use the '--klingon' flag:
+
+
+```
+pipx otherworlds --klingon
+```
+
+You can supply your own seed using the `--seed` argument:
+
+```
+pipx otherworlds --klingon --seed 42
+```
+
+
+By default, `otherworlds` returns a single name. You can specify hoe=w many names it shoud return:
+
+```
+pipx otherworlds --klingon --num 5
+```
+
+You can view the full help with this command:
+
+```
+pipx otherworlds --help
+```
+
+## License
+
+This codebase is licensed under the GPLv3+ and therefore the use, inclusion, modification, and distribution of this software is governed by the GPL.
+
+If you are planning to use otherworlds in a commercial product and wish to opt-out of the obligations of the GPL, please reach out to license@civichacker.com.
+
