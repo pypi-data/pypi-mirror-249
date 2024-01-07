@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dynamic_valuation
+Version: 1.4
+Summary: Find present value of a benefit stream subject to dynamics
+Author: Eric Larson
+Author-email: ericl3@illinois.edu
+Requires-Dist: numpy
+Requires-Dist: matplotlib.pyplot
+Requires-Dist: scipy.optimize.minimize
+Requires-Dist: scipy.interpolate.interp1d
+Requires-Dist: scipy.optimize.root_scalar
