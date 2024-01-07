@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: baalib
+Version: 0.0.4
+Summary: A collection of code used regularly.
+License: Apache-2.0
+Author: SheepTank
+Author-email: 104634919+SheepTank@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python_dateutil (==2.8.1)
+Requires-Dist: termcolor (==2.4.0)

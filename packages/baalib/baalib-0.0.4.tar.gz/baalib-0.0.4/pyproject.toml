@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "baalib"
+version = "0.0.4"
+description = "A collection of code used regularly."
+authors = ["SheepTank <104634919+SheepTank@users.noreply.github.com>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python_dateutil = "2.8.1"
+termcolor = "2.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.8.1"]
+build-backend = "poetry.core.masonry.api"
