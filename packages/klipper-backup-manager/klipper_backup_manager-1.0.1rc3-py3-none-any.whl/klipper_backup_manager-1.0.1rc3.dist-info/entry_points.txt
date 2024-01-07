@@ -1,0 +1,2 @@
+[console_scripts]
+kbm-tool = klipper_backup_manager.klipper_backup_manager:cli
