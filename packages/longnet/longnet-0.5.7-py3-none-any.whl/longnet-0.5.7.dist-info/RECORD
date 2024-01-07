@@ -1,0 +1,8 @@
+long_net/__init__.py,sha256=Kl_9lqFi2ET_nzRvjX4qmHZhQYdhRkPa_LmqwW72tpY,148
+long_net/attention.py,sha256=EscbhmDGig2MmiKXWH4lDG7Cyhp7gJ8doq6z-uWAQ_o,4755
+long_net/model.py,sha256=K0hbwFlkew_heQCJOFbOpQZF-nq0h65gYNuZNa828sk,9128
+long_net/utils.py,sha256=Me6USFW6IhinyKZTL0-gvMxJDhrYQe020yHM4oaEmzY,12111
+longnet-0.5.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+longnet-0.5.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+longnet-0.5.7.dist-info/METADATA,sha256=z_ROwwpUXouPZRabezJOaUFG7eSlqh8K4EPufvveeqg,7730
+longnet-0.5.7.dist-info/RECORD,,
