@@ -1,0 +1,11 @@
+mediawiki/__init__.py,sha256=cwXqfQksZZuCP8nZZcIUrmXnF4IWc4Y1ChwJtaH3h9w,966
+mediawiki/exceptions.py,sha256=Pd0tKNBre-JQBWh-1bJxCAyC_BcRsb8NFOcP3d2aGb8,7632
+mediawiki/mediawiki.py,sha256=nrfLea2QMAz-gfPeQw2zDQzC-1_Gs6Qy-j0X0kbJuA8,37129
+mediawiki/mediawikipage.py,sha256=dT1HH_cusk2aU08UTKfi7dRv76toeh7iiCXwopS7P_k,32418
+mediawiki/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mediawiki/utilities.py,sha256=KChH2WDdl7kfU3ONY-sD_T5Dv7AUEybboh8dILrfd4o,2729
+pymediawiki-0.7.4.dist-info/LICENSE,sha256=Fg--FL3_QJJsrp6EPnp-q8koIYcOha5hjRWWGVLPQbg,1069
+pymediawiki-0.7.4.dist-info/METADATA,sha256=FKIH9yKORUAeZZXV2ZB3Spo5QgY1mOnOsTmLgMb-Od8,5736
+pymediawiki-0.7.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pymediawiki-0.7.4.dist-info/top_level.txt,sha256=5LT2zIShMvW5-5gePc8FSLWRgo2wj5-9o2LWX2rjHxA,10
+pymediawiki-0.7.4.dist-info/RECORD,,
