@@ -1,0 +1,12 @@
+mkdocs_manpage-1.0.0.dist-info/METADATA,sha256=Ngs555UKwj8shu9U8dVpUrSjXDcmukvNCnX4WWBYjNc,5377
+mkdocs_manpage-1.0.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+mkdocs_manpage-1.0.0.dist-info/entry_points.txt,sha256=tzVPkpQiRJTEHxqcgywdgk4VeiK9lhscbxw2jjrPIRA,70
+mkdocs_manpage-1.0.0.dist-info/licenses/LICENSE,sha256=GZ4fS4Z6WtxHYD5ZqFT9vlpdOXvzm-cvjYmOIHXhqMc,754
+mkdocs_manpage/__init__.py,sha256=h7rNYZwYP2rX1xhZMQSkcxOJoUlfCR0RlfLlSmh461Q,158
+mkdocs_manpage/config.py,sha256=SW-j5D8GgFR1PN9WY_0B9Y66O6tMCwvW_ktVJ3QCqdg,419
+mkdocs_manpage/debug.py,sha256=VNfrQuyYigDAY3jcDL4lqwE_LAsvfs4P1LynXQEg6ck,2713
+mkdocs_manpage/logger.py,sha256=4sk9WHYm98Rztf1cxlvVPfjLGJ1mp3TcA28LOlaN3h0,1271
+mkdocs_manpage/plugin.py,sha256=_sqPXJ6h7Dy0hgx-hHBu27YJfCzm8yPKaZw5ypAKc2Y,5044
+mkdocs_manpage/preprocess.py,sha256=G_RAn7UeXEs35rVVxZqIt8xDcq7lHoDAqp6IiZx9CFc,1898
+mkdocs_manpage/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_manpage-1.0.0.dist-info/RECORD,,
