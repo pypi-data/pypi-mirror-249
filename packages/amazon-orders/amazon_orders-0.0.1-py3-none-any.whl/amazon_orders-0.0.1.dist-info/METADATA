@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: amazon-orders
+Version: 0.0.1
+Summary: A library for interacting with Amazon orders.
+Home-page: https://github.com/alexdlaird/amazon-orders-python
+Download-URL: https://github.com/alexdlaird/amazon-orders-python/archive/0.0.1.tar.gz
+Author: Alex Laird
+Author-email: contact@alexlaird.com
+License: MIT
+Project-URL: Changelog, https://github.com/alexdlaird/amazon-orders-python/blob/main/CHANGELOG.md
+Project-URL: Sponsor, https://github.com/sponsors/alexdlaird
+Keywords: python,amazon,library,cli
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: beautifulsoup4
+
+[![PyPI Version](https://badge.fury.io/py/amazon-orders.svg)](https://badge.fury.io/py/amazon-orders)
+[![Build](https://github.com/alexdlaird/amazon-orders-python/actions/workflows/build.yml/badge.svg)](https://github.com/alexdlaird/amazon-orders-python/actions/workflows/build.yml)
+[![Codecov](https://codecov.io/gh/alexdlaird/amazon-orders-python/branch/main/graph/badge.svg)](https://codecov.io/gh/alexdlaird/amazon-orders-python)
+[![Python Versions](https://img.shields.io/pypi/pyversions/amazon-orders-python.svg)](https://pypi.org/project/amazon-orders-python/)
+[![PyPI License](https://img.shields.io/pypi/l/amazon-orders-python.svg)](https://pypi.org/project/amazon-orders-python/)
+
+# Amazon Orders
+
+The `amazon-orders` library is an unofficial library for interaction with your Amazon orders and returns.
+
+## Installation
+
+`amazon-orders` is available on [PyPI](https://pypi.org/project/amazon-orders/) and can be installed
+using `pip`:
+
+```sh
+pip install amazon-orders
+```
+
+or `conda`:
+
+```sh
+conda install -c conda-forge amazon-orders
+```
+
+That's it! `amazon-orders` is now available as a Python package is available from the command line.
+
+## Basic Usage
+
+`amazon-orders` is under active development, and the present build does nothing. But it will eventually provide a
+command line client alongside a programmatic API that can be used to interact with Amazon orders and returns. 
+
+## Contributing
+
+If you would like to get involved, be sure to review the [Contribution Guide](https://github.com/alexdlaird/amazon-orders-python/blob/main/CONTRIBUTING.rst).
+
+Want to contribute financially? If you've found `amazon-orders` useful, [sponsorship](https://github.com/sponsors/alexdlaird) would
+also be greatly appreciated!
