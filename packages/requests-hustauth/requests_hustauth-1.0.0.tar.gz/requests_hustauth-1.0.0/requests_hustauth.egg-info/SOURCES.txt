@@ -1,0 +1,15 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+example.py
+setup.py
+.github/workflows/ci.yml
+requests_hustauth/__init__.py
+requests_hustauth/ref_digits_data.npz
+requests_hustauth/requests_hustauth.py
+requests_hustauth.egg-info/PKG-INFO
+requests_hustauth.egg-info/SOURCES.txt
+requests_hustauth.egg-info/dependency_links.txt
+requests_hustauth.egg-info/requires.txt
+requests_hustauth.egg-info/top_level.txt
