@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: sashimi-cli
+Version: 0.0.8
+Summary: CLI utility and python client package for Sashimi headless CMS
+Project-URL: Homepage, https://github.com/yaroslaff/sashimi
+Project-URL: Issues, https://github.com/yaroslaff/sashimi/issues
+Author-email: Yaroslav Polyakov <yaroslaff@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: rich==13.7.0
+Requires-Dist: sqlalchemy
+Requires-Dist: typer==0.9.0
+Provides-Extra: mysql
+Requires-Dist: mysqlclient; extra == 'mysql'
+Provides-Extra: postgresql
+Requires-Dist: psycopg2; extra == 'postgresql'
+Description-Content-Type: text/markdown
+
+# exactcli
+
+## Install
+
+~~~
+pipx install sashimi
+~~~
+
+But you may use pip as well.
+
+## Config example
+
+Config file is either `.env` in current directory or override it with `SASHIMI_DOTENV=/path/file` env variable.
+
+config example:
+~~~
+SASHIMI_PROJECT=http://localhost:8000/ds/sandbox
+SASHIMI_TOKEN=envtoken
+~~~
+These defaults will make your commands shorter.
+
+## Database support
+~~~
+# postgresql
+pip install psycopg2
+
+# mariadb / mysql
+pip install mysqlclient
+~~~
+
+## Usage
+
+Get info about your project and datasets
+~~~
+exactcli --info
+~~~
+
+Upload new JSON file to project
+~~~
+exactcli --upload ~/repo/exact/tests/products.json --ds products --keypath products
+~~~
+
+Query it
+~~~
+exactcli --ds products --expr 'True' --sort price --limit 1
+exactcli --ds products --expr 'brand=="Apple" and price<1000' --fields id brand title description price
+~~~
+
+~~~
+exactcli --ds products --filter brand=\"Apple\" price__lt=2000
+exactcli --ds products --filter 'brand="Apple"' price__lt=2000
+~~~
