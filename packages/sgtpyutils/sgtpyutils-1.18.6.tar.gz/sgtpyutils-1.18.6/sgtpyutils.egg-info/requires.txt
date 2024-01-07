@@ -1,0 +1,12 @@
+scidatetime>1.17.13
+pycryptodome
+colorlog
+openpyxl>=3.1.0
+argparse
+httpx[http2]
+redis
+fake-useragent
+six
+pathlib2
+typing_extensions>=4.9.0
+pydantic>=2.5.3
