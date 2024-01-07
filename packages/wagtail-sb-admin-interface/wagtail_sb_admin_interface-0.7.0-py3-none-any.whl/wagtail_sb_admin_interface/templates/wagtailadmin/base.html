@@ -1,0 +1,104 @@
+{% extends "wagtailadmin/base.html" %}
+{% load static %}
+{% load wagtailadmin_tags %}
+{% load wagtailimages_tags %}
+{% load wagtail_sb_admin_interface_tags %}
+
+{% block css %}
+  {% get_wagtail_sb_admin_interface_theme as theme %}
+
+  {{ block.super }}
+
+  <style>
+    {{ theme.css }}
+
+    .wagtail_sb_admin_interface.sidebar_logo {
+      display: flex;
+      align-items: center;
+      justify-items:center;
+      overflow: hidden;
+      padding: 0.25rem;
+
+      {% if theme.sidebar_logo_background_color %}
+        background-color: {{ theme.sidebar_logo_background_color }};
+      {% endif %}
+    }
+
+    .wagtail_sb_admin_interface.sidebar_logo.circular {
+      height: calc( 150px + 0.5rem );
+      width: calc( 150px + 0.5rem );
+      border-radius: 50%;
+    }
+
+    .wagtail_sb_admin_interface.sidebar_logo.square {
+      height: calc( 150px + 0.5rem );
+      width: calc( 150px + 0.5rem );
+      border-radius: 0.25rem;
+    }
+
+    .wagtail_sb_admin_interface.sidebar_logo.rectangular {
+      width: calc( 150px + 0.5rem );
+      border-radius: 0.25rem;
+    }
+
+    .sidebar--slim .wagtail_sb_admin_interface.sidebar_logo.circular {
+      height: calc( 50px + 0.5rem );
+      width: calc( 50px + 0.5rem );
+      border-radius: 50%;
+    }
+
+    .sidebar--slim .wagtail_sb_admin_interface.sidebar_logo.square {
+      height: calc( 50px + 0.5rem );
+      width: calc( 50px + 0.5rem );
+      border-radius: 0.25rem;
+    }
+
+    .sidebar--slim .wagtail_sb_admin_interface.sidebar_logo.rectangular {
+      width: calc( 50px + 0.5rem );
+      border-radius: 0.25rem;
+    }
+
+    .wagtail_sb_admin_interface.sidebar_logo img {
+      margin: 0 auto;
+    }
+
+    .wagtail_sb_admin_interface.sidebar_logo .logo_image {
+      display: block;
+    }
+
+    .wagtail_sb_admin_interface.sidebar_logo .logo_image_collapsed {
+      display: none;
+    }
+
+    .sidebar--slim .wagtail_sb_admin_interface.sidebar_logo .logo_image {
+      display: none;
+    }
+
+    .sidebar--slim .wagtail_sb_admin_interface.sidebar_logo .logo_image_collapsed {
+      display: block;
+    }
+
+    .sidebar--slim .sidebar-custom-branding {
+      padding-top: 0;
+      padding-bottom: 150%;
+    }
+  </style>
+{% endblock %}
+
+{% block branding_logo %}{% spaceless %}
+  {% get_wagtail_sb_admin_interface_theme as theme %}
+  {% if theme.sidebar_logo %}
+    <div
+      class="wagtail_sb_admin_interface sidebar_logo {{ theme.sidebar_logo_shape }}">
+
+      {% image theme.sidebar_logo width-150 class="logo_image" %}
+      {% if theme.sidebar_logo_collapsed %}
+        {% image theme.sidebar_logo_collapsed width-50 class="logo_image_collapsed" %}
+      {% else %}
+        {% image theme.sidebar_logo width-50 class="logo_image_collapsed" %}
+      {% endif %}
+    </div>
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endspaceless %}{% endblock %}
