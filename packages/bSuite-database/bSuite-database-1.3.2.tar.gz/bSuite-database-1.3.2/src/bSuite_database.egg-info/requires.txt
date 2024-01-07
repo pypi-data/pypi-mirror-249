@@ -1,0 +1,4 @@
+psycopg[pool]
+
+[CRYPTO]
+cryptography
