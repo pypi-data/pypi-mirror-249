@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+waitress_raw/__init__.py
+waitress_raw/__main__.py
+waitress_raw/__version__.py
+waitress_raw.egg-info/PKG-INFO
+waitress_raw.egg-info/SOURCES.txt
+waitress_raw.egg-info/dependency_links.txt
+waitress_raw.egg-info/entry_points.txt
+waitress_raw.egg-info/not-zip-safe
+waitress_raw.egg-info/requires.txt
+waitress_raw.egg-info/top_level.txt

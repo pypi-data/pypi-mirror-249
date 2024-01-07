@@ -1,0 +1,2 @@
+[console_scripts]
+waitress-raw = waitress_raw:main
