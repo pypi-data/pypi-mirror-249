@@ -1,0 +1,2 @@
+[console_scripts]
+pypi-express-pub = pypi_express_pub.publish:deploy_package
