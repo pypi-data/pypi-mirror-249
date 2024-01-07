@@ -1,0 +1,11 @@
+llm_shell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_shell/bedrock_support.py,sha256=JX6ntYL2kItbv7nesFIny3Z1p4LBbaV9IQjEm73Ke3g,1504
+llm_shell/chatgpt_support.py,sha256=9H4EV5Hl8lzUeZsS0cqABGSh1BcgPZvuKfGKY0i6FnM,2081
+llm_shell/llm_shell.py,sha256=syOGuCD6Ac5fiFhI1aCp2qFK8H69lGmSFb6EDiyy4e4,10107
+llm_shell/util.py,sha256=IVxQwEeGfzkIcD6ida3PkWAW7khZ08WyO6ZUPgUldr4,3429
+llm_shell-0.2.7.dist-info/LICENSE,sha256=jO_cAg0Xy5vTE84A5T1pJ2JLlY3V7122rA2OAqW7sNk,1052
+llm_shell-0.2.7.dist-info/METADATA,sha256=gxoI4JeuDQ5MfbecI_ODjkWJSl3-Ry9KYBCa0dvoYbM,4563
+llm_shell-0.2.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+llm_shell-0.2.7.dist-info/entry_points.txt,sha256=mno-tOIU9bepXTvS6yzwAg0mJ80Et7brL0RTXn5DrZA,55
+llm_shell-0.2.7.dist-info/top_level.txt,sha256=kFAyNVHksKM7-koO_5l5ec421VGm2WSKjFTambUTaxk,10
+llm_shell-0.2.7.dist-info/RECORD,,
