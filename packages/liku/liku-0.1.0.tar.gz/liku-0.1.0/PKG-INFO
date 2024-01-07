@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: liku
+Version: 0.1.0
+Summary: Render HTML inspired by modern web development.
+License: MIT
+Author: Rendy Arya Kemal
+Author-email: renrror@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Typing :: Typed
+Requires-Dist: flask[flask] (>1.1.0,<4.0)
+Project-URL: Documentation, https://rorre.github.io/liku/
+Description-Content-Type: text/markdown
+
+# Liku
+
+Python HTML templating, inspired by modern Web Development.
+
+Read the docs: https://rorre.github.io/liku
+
+## Examples
+
+Examples available at [examples directory](https://github.com/rorre/liku/tree/main/examples)
+
