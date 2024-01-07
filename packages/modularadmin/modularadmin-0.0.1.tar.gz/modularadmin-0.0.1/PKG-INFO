@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: modularadmin
+Version: 0.0.1
+Summary: PoC
+Home-page: https://github.com/sjnscythe
+Author: scythe abhi
+Author-email: scytheabhi97@gmail.com
+License: MIT
+Keywords: PoC
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENCE.txt
+
+a poc for epam
+
+Change Log
+==========
+
+0.0.0
+-------------------
+- First Release
+

@@ -1,0 +1,7 @@
+LICENCE.txt
+README.md
+setup.py
+modularadmin.egg-info/PKG-INFO
+modularadmin.egg-info/SOURCES.txt
+modularadmin.egg-info/dependency_links.txt
+modularadmin.egg-info/top_level.txt
