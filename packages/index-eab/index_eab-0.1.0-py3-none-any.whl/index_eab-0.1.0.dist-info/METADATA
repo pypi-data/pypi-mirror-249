@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: index-eab
+Version: 0.1.0
+Summary: This is a simplified package for the "Index Advisor (EA&B)" project.
+Home-page: https://github.com/
+Author: Belief
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+
+
+This is the simplified version of the testbed proposed in the **Index Advisor (EA&B)** paper, which conducts a comprehensive assessment of the heuristic-based and the learning-based index advisors.
+
+This package implements workflow of the index advisor: 
+
+- **(1) Index Candidate Generation:** synthesizes promising index candidates using predefined strategies;
+- **(2) Index Selection:** iterates over the generated index candidates and selects indexes based on the underlying selection mechanisms;
+- **(3) Index Benefit Estimation:**  estimates the benefits of utilizing the selected indexes without actually building the indexes.
+
+The following is the demostration code about how to use this package. Please refer to the original repository for more details :)
+
+```python
+# 1. Configuration Setup
+host = "-- your host --"
+port = "-- your port --"
+db_name = "-- your database --"
+
+user = "-- your user --"
+password = "-- your password --"
+
+connector = PostgresDatabaseConnector(autocommit=True, host=host, port=port,
+                                      db_name=db_name, user=user, password=password)
+
+# 2. Data Preparation
+schema_load = "/path/your database schema.json"
+with open(schema_load, "r") as rf:
+    schema_list = json.load(rf)
+_, columns = get_columns_from_schema(schema_list)
+
+work_load = "/path/testing workload.json"
+with open(work_load, "r") as rf:
+    work_list = json.load(rf)
+
+for work in work_list:
+    workload = Workload(read_row_query(work, columns, 
+                                       varying_frequencies=True, seed=666))
+
+	# 3. Index Advisor Evaluation
+    config = {"budget_MB": 500, "max_index_width": 2, "max_indexes": 5, "constraint": "storage"}
+    index_advisor = ExtendAlgorithm(connector, config)
+    indexes = index_advisor.calculate_best_indexes(workload, columns=columns)
+    break
+```
+
+Note that the data of the `/path/your database schema.json` file should be organized in the following format:
+
+```json
+[
+  {
+    "table": "region",
+    "rows": 5,
+    "columns": [
+      {
+        "name": "r_regionkey",
+        "type": "integer"
+      },
+      ...
+    ]
+  },
+  ...
+]
+```
+
+Besides, the data of the `/path/testing workload.json` file should be organized in the following format:
+
+```json
+[
+    [  # workload
+      [  # query
+        1,  # query ID
+        "select  l_returnflag,  l_linestatus,  sum(l_quantity) as sum_qty, ...",  # query text
+        926  # query frequency
+      ],
+      ...
+    ],
+    ...
+]
+```
+
+
+
