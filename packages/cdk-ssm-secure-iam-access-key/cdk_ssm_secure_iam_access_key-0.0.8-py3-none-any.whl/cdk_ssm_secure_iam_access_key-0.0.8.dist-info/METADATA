@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: cdk-ssm-secure-iam-access-key
+Version: 0.0.8
+Summary: Creates an IAM Access Key for a provided IAM User and stores the result in an SSM SecureString Parameter
+Home-page: https://github.com/dkershner6/cdk-ssm-secure-iam-access-key.git
+Author: Derek Kershner
+License: Apache-2.0
+Project-URL: Source, https://github.com/dkershner6/cdk-ssm-secure-iam-access-key.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aws-cdk-lib <3.0.0,>=2.103.1
+Requires-Dist: constructs <11.0.0,>=10.0.5
+Requires-Dist: jsii <2.0.0,>=1.93.0
+Requires-Dist: publication >=0.0.3
+Requires-Dist: typeguard ~=2.13.3
+
+# cdk-ssm-secure-iam-access-key
+
+Creates an IAM Access Key for a provided IAM User and stores the result in an SSM SecureString Parameter
+
+[NPM Package](https://www.npmjs.com/package/cdk-ssm-secure-iam-access-key)
+
+[![View on Construct Hub](https://constructs.dev/badge?package=cdk-ssm-secure-iam-access-key)](https://constructs.dev/packages/cdk-ssm-secure-iam-access-key)
+
+## Installation
+
+`npm i -D cdk-ssm-secure-iam-access-key`
+
+## Usage
+
+```python
+        const user = new iam.User(this, "SMTPUser");
+
+        user.addToPolicy(
+            new iam.PolicyStatement({
+                effect: iam.Effect.ALLOW,
+                actions: ["ses:SendRawEmail"],
+                resources: ["*"],
+            })
+        );
+
+        new SSMSecureIAMAccessKey(this, "SMTPUserCredentials", {
+            parameterName: "/smtpCredentials",
+            user,
+        });
+
+        // JSON.stringified {accessKeyId: "...", secretAccessKey: "..."}
+        return ssm.StringParameter.fromSecureStringParameterAttributes(
+            this,
+            "SMTPUserCredentialsSSM",
+            {
+                parameterName: "/smtpCredentials",
+            }
+        );
+```
