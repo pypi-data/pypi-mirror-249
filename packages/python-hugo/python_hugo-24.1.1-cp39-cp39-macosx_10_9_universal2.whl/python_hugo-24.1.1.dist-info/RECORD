@@ -1,0 +1,11 @@
+python_hugo/__init__.py,sha256=4mjtD5A5-Q_sVUJpJZdUWwlA1QCcrhQJ6JlREsM3lS4,292
+python_hugo/cli.py,sha256=oV0v7iAqeuI-Y7k12V_ME2FB-D5zNPktnu_RMpa3yEg,1186
+python_hugo/binaries/hugo-0.121.2-darwin-arm64,sha256=VbQj8zd4aO8NPlAf5sHK4DoDV_QAyYtdhRbR9MdWU7c,111017122
+python_hugo/binaries/hugo-0.121.2-darwin-amd64,sha256=kNCuU0VmI3LG5rfZ-BYjQ5K6m4S4e5lmQ4jX0EE-EcQ,113374720
+python_hugo/binaries/.gitignore,sha256=kCpRPdl3S_jqYYZaOrc0-xa6-l3KqVjNRXc6jCkd_-Q,12
+python_hugo-24.1.1.dist-info/RECORD,,
+python_hugo-24.1.1.dist-info/LICENSE,sha256=9WZWoxEq0RpSRsF8WGAyVymIRqlcMS2W1FDgNiTJOAE,11347
+python_hugo-24.1.1.dist-info/WHEEL,sha256=qZ5gUYMG4t2JcLLcFLlOXld9g3WjqyANneXZkxLH8gU,110
+python_hugo-24.1.1.dist-info/entry_points.txt,sha256=bLKxAokB1lTThwEfAOIvK567BDHH2k-XHq44XK79yEg,48
+python_hugo-24.1.1.dist-info/top_level.txt,sha256=ah_Iw5eG4v3q0V3VZmKoD4H_lCe5vQW3JwYDiIiYEek,17
+python_hugo-24.1.1.dist-info/METADATA,sha256=7h-4cQY6IUiAV42ST2er421h6Rnz9bAYr2rDWySbK88,15078
