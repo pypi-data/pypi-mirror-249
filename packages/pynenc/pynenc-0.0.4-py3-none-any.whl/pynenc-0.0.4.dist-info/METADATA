@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pynenc
+Version: 0.0.4
+Summary: A simple task management system for complex distributed orchestration
+Home-page: https://pynenc.org
+License: MIT
+Author: Jose Diaz
+Requires-Python: >=3.11,<3.12
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: redis (==4.6.0)
+Project-URL: Documentation, https://docs.pynenc.org
+Project-URL: Repository, https://github.com/pynenc/pynenc
+Description-Content-Type: text/markdown
+
+# pynenc
+
+Pynenc: A simple task management system for complex distributed orchestration
+
