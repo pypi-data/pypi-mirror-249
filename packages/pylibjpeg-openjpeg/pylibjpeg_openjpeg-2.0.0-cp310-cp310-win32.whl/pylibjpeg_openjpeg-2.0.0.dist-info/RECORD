@@ -1,0 +1,17 @@
+openjpeg/__init__.py,sha256=SC4DxwfGZD7FfJbr_ADEJ4L-CjxuKSzSQMouYcFAHrM,157
+openjpeg/_openjpeg.c,sha256=geIJu4vKlN4XewWQHY1pYJfBt54FnayNLL7yDY8sUo8,479840
+openjpeg/_openjpeg.pyx,sha256=dsPy_qdNRliqCKh6J0Sic5SmMLrt3OL1wFMXZWrBSbo,5184
+openjpeg/_version.py,sha256=xiFP68IdJidzxrj_RrgyQoczOFIdozEyUABGR91q33Y,146
+openjpeg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openjpeg/tests/__init__.py,sha256=uC0iOTpkknEoktapJX3IhVkBZjPocCdtc57_a18NVl4,245
+openjpeg/tests/README.md,sha256=NWy2NH7tE7BsaG96ix7HmfZcscPwZvDccCLl8odBOhM,304
+openjpeg/tests/test_decode.py,sha256=dgNajTkupsI8vH0OjyVEyy476e36TA_ayuAfCkVuMvQ,14021
+openjpeg/tests/test_handler.py,sha256=GKkjuHjcpo2f46AkXK1XBst0Sl1CaTM80j7UYXHRcNY,38162
+openjpeg/tests/test_parameters.py,sha256=QcHciD67Qc23FXY3IDdhRMp1ZZyZKWRQwVCNbuIUrM8,5425
+openjpeg/utils.py,sha256=zx8O4u5VDYB5aMq57_D1XmR9_Xisc7BvDizlz53l_q8,10854
+_openjpeg.cp310-win32.pyd,sha256=LZLdU5vUNg2oRLx3BKeBJ7pLzA8KR2VVggPtaETVhAA,364544
+pylibjpeg_openjpeg-2.0.0.dist-info/entry_points.txt,sha256=L6HTMUnHo9-pT7pCoasOlrXLZvMG7oiavhOVAVlZpgM,343
+pylibjpeg_openjpeg-2.0.0.dist-info/LICENSE,sha256=B2LsF2SWGBu7biN1YS9AvFchFD-KSguFuauwL7soDjo,3216
+pylibjpeg_openjpeg-2.0.0.dist-info/METADATA,sha256=y-xlyR97rpcrC3sqsJcQWefKTIZqsVNbTy0jV6VjsXQ,4290
+pylibjpeg_openjpeg-2.0.0.dist-info/WHEEL,sha256=WmRLFnhO9mNNMoaeOXMg5jSAuDOGmCOSJlJpFjjTUKU,94
+pylibjpeg_openjpeg-2.0.0.dist-info/RECORD,,
