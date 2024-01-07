@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: json-logic-asp
+Version: 0.3.2
+Summary: Python JSON Logic evaluator in ASP
+Home-page: https://github.com/barreeeiroo/JSON-Logic-ASP/
+License: MIT
+Author: Diego Barreiro Perez
+Author-email: diego@barreiro.xyz
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: clingo (==5.5.2)
+Requires-Dist: cuid2 (>=2.0.0,<3.0.0)
+Project-URL: Documentation, https://json-logic-asp.readthedocs.io/
+Project-URL: Repository, https://github.com/barreeeiroo/JSON-Logic-ASP
+Description-Content-Type: text/markdown
+
+# JSON Logic ASP
+
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://github.com/barreeeiroo/JSON-Logic-ASP/blob/main/pyproject.toml)
+[![CI Build](https://github.com/barreeeiroo/JSON-Logic-ASP/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/barreeeiroo/JSON-Logic-ASP/actions/workflows/ci.yml?query=branch%3Amain)
+[![Read the Docs](https://readthedocs.org/projects/json-logic-asp/badge/)](https://readthedocs.org/projects/json-logic-asp/)
+[![Codecov](https://codecov.io/gh/barreeeiroo/JSON-Logic-ASP/graph/badge.svg?token=O8045YHOWF)](https://codecov.io/gh/barreeeiroo/JSON-Logic-ASP)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f1671e07ef19696aac76/maintainability)](https://codeclimate.com/github/barreeeiroo/JSON-Logic-ASP/maintainability)
+[![CodeScene Code Health](https://codescene.io/projects/48073/status-badges/code-health)](https://codescene.io/projects/48073)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=barreeeiroo_JSON-Logic-ASP&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=barreeeiroo_JSON-Logic-ASP)
+
