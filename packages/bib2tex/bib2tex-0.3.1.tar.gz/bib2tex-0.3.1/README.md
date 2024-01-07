@@ -1,0 +1,224 @@
+[![PyPI version](https://img.shields.io/pypi/v/bib2tex.svg)](https://pypi.org/project/bib2tex/)
+
+# bib2tex
+
+A Python package to create a subset of BibTeX entries based on an author's name
+(and an entrytype). The result is converted into a LaTeX list in which the author
+can get highlighted with an underline. The list is sorted from new to old.
+
+The motivation for writing this package was to create a tool that generates lists
+with own publications for e.g. a curriculum vitae.
+
+
+## Demonstration
+
+Let us assume the BibTeX file `data.bib` contained the following entry in addition
+to entries by other authors:
+
+```bibtex
+@TechReport{Rossum1995,
+  author           = {van Rossum, Guido},
+  institution      = {Centrum voor Wiskunde en Informatica (CWI)},
+  title            = {Python tutorial},
+  year             = {1995},
+  address          = {Amsterdam},
+  month            = may,
+  number           = {CS-R9526},
+  groups           = {python},
+  url              = {https://ir.cwi.nl/pub/5007/05007D.pdf},
+}
+```
+
+To obtain a list with all entries containing *Guido van Rossum* in your BibTeX
+data, simply call bib2tex and provide the path to the `data.bib` file, a prompt
+will request an author name:
+
+```text
+bib2tex -i data.bib
+Enter the author name for filtering BibTeX entries: Rossum
+```
+
+The resulting LaTeX list is stored in the file `rossum.tex` in the current working
+directory and contains the following:
+
+```tex
+\begin{itemize}
+  \item G.~van Rossum: ``Python tutorial'', Centrum voor Wiskunde en Informatica (CWI), 1995.
+\end{itemize}
+```
+
+If the BibTeX data contains multiple entries for the author, they will be added
+as items to the LaTeX itemize environment.
+
+You can specify a BibTeX entry type to narrow down the result list, or define
+[custom types](https://codeberg.org/Cs137/bib2tex/src/branch/dev/README.md#custom-types)
+to obtain a list with a subset of a certain BibTeX entry type.
+Furthermore, [format schemes](https://codeberg.org/Cs137/bib2tex/src/branch/dev/README.md#format-scheme)
+can be added to adjust the formatting of the LaTeX item string if desired.
+There are more options to influence the conversion and run the command withouth
+any need for an interaction.
+
+
+## Installation
+
+Install `bib2tex` from the *Python Package Index* using `pip`:
+
+```bash
+pip install bib2tex
+```
+
+### Dependencies
+
+- [click](https://pypi.org/project/click/) (to provide the CLI)
+
+
+## Usage
+
+### CLI
+
+The CLI can be called with the command `bib2tex`, if the package is installed.
+Run it with the `--help` option to get the following usage information and a list
+of all options:
+
+```text
+Usage: bib2tex [OPTIONS]
+
+  bib2tex - A command line utility to generate LaTeX lists from BibTeX data.
+
+  Sorted lists are generated based on an author's name and entry types
+  (optional). They are either merged into a LaTeX item environment and written
+  into a file, or stored in individual files as LaTeX item environment.
+
+  The files are written to the output directory and are named based on the
+  filter options. If no entry type is declared, the filename is 'author.tex',
+  while it is 'author_entrytype.tex' if you filter for one entry type, and
+  'author_entrytype1-entrytype2...entrytypeN.tex' if multiple entry types are
+  declared.
+
+Options:
+  -i, --bibtex-path FILE      (input) Path to the BibTeX file.  [default:
+                              /path/defined/as/BIB/env/var; required]
+  -o, --output-dir DIRECTORY  Path to output directory for LaTeX files.
+                              [default: .; required]
+  -a, --author TEXT           Author name for filtering entries.  [required]
+  -c, --case-sensitive        Case sensitive filtering.
+  -d, --definitions FILE      Path to a JSON file with custom type
+                              definitions.
+  -e, --entry-type TEXT       Specify entry type for filtering; declare
+                              multiple times for batch conversion.
+  -f, --force                 Perform the conversion without confirmations.
+  -m, --merge                 Merge individual lists into one list (batch).
+  -r, --reverse               Sort entries from old to new.
+  -s, --format-scheme TEXT    Scheme name for LaTeX item formatting.
+  -u, --underline             Underline the author in the LaTeX item.
+  -v, --verbose               Print verbose output.
+  --item TEXT                 Options for LaTeX item, e.g. "[--]".
+  --itemize TEXT              Options for LaTeX itemze, e.g. "[itemsep=3pt]".
+  --version                   Show the version and exit.
+  -h, --help                  Show this message and exit.
+
+  by Cs137, 2024 - development on Codeberg: https://codeberg.org/Cs137/bib2tex
+ ```
+
+#### Example
+
+In order to obtain all articles for the author *MyName* from the default BibTeX
+file, call the CLI as follows:
+
+```bash
+bib2tex -a MyName -e article
+```
+
+The generated list is stored in the file `myname.tex` and the example assumes
+that the `--bibtex-path` is defined via the environment variable `BIB`.
+Provide a path to it if the variable is undefined (`-i path/to/example.bib`).
+Call the CLI with the `--verbose | -v` option to show log messages in the shell.
+
+
+### Configuration
+
+The path to the default BibTeX file can be defined with the environment variable `BIB`.
+
+### Format scheme
+
+A format scheme is used to define the structure of BibTeX entries when converted
+to LaTeX list items. Default format schemes exist for all valid BibTeX types, and
+they are sourced from the directory [`format_schemes`](https://codeberg.org/Cs137/bib2tex/src/branch/dev/bib2tex/format_schemes).
+
+Custom format schemes can be defined in a JSON file named with the format scheme
+name. If a format scheme is missing for a certain entry type, the default format
+scheme is taken into account. The format scheme string consists of valid
+capitalised BibTeX tags wrapped in `<>` and is defined for each BibTeX entry type.
+
+Underneath is a typical format scheme string, keep in mind that the availability
+of BibTeX tags depends on the entry type when defining new format schemes.
+
+```text
+<AUTHOR>: ``<TITLE>'', <YEAR>, DOI: \href{https://doi.org/<DOI>}{<DOI>}.
+```
+
+Feel free to create a pull request to add new format schemes, and ensure your
+schemes follow the required structure and placeholders.
+
+### Custom types
+
+In order to allow more complex filter tasks, custom entry types are introduced.
+A custom type is based on a valid BibTeX entry type and has certain keywords in
+defined BibTeX fields.
+
+Create a JSON file containing a dictionary for each custom type you want to declare.
+The dictionaries must contain the properties shown in the example underneath.
+If a file with custom definitions is provided to the CLI, it accepts the custom
+types declared in it as entry types to filter for as well.
+
+```json
+{
+  "dataset": {
+    "bibtex_type": "misc",
+    "format_schemes": {
+      "default": "<AUTHOR>: ``<TITLE>'', <YEAR>, <LICENSE>, DOI: \\href{https://doi.org/<DOI>}{<DOI>}."
+    },
+    "search_strings": {
+      "notes": "data set"
+    }
+  }
+}
+```
+
+The key `search_strings` is assigned to a dictionary, which holds a mapping in
+order to identify custom entries in entries of the specified `bibtex_type`.
+In the sample above, an entry type is considered as `dataset`, if it is a BibTeX
+entry of type `misc` and the BibTeX field `notes` contains the string `data set`,
+multiple `search_strings` can be defined in the dictionary.
+
+Format scheme strings can be declared in the `format_schemes` dictionary for the
+custom type. The key corresponds to the name for the format scheme, ensure to
+provide a default scheme for each custom type declared. Those may contain field
+names that are not conform with BibTeX, like `license` in the example above.
+
+Assuming the file `my_types.json` contains the example shown above and the BibTeX
+data contain entries corresponding to the defined search strings, those could be
+converted into a LaTeX list using the following command:
+
+```bash
+bib2tex -a MyName -d my_types.json -e dataset -v
+```
+
+
+## Notes
+
+- Author's first names are always listed with initials, this is currently not configurable.
+- Check the [`bib2tex.converter:to_latex`](https://codeberg.org/Cs137/bib2tex/src/branch/dev/bib2tex/converter.py)
+  function for a conversion without CLI. (Make click/CLI optional ?)
+
+
+## Changelog
+
+All notable changes to this project are documented in the
+[`CHANGELOG.md`](https://codeberg.org/Cs137/bib2tex/src/branch/dev/CHANGELOG.md) file.
+
+## License
+
+This project is licensed under the MIT License - see the
+[`LICENSE`](https://codeberg.org/Cs137/bib2tex/src/branch/dev/LICENSE) file for details.
+

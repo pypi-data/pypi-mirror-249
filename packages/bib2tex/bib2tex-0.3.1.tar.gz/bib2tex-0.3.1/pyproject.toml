@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "bib2tex"
+version = "0.3.1"
+description = "Create a subset of BibTeX entries based on an author's name and covert it into a LaTeX list."
+authors = ["Christian Schreinemachers (Cs137)"]
+license = "MIT"
+readme = "README.md"
+repository = "https://codeberg.org/Cs137/bib2tex"
+keywords = ["BibTeX", "LaTeX"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+bib2tex = "bib2tex.__main__:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
