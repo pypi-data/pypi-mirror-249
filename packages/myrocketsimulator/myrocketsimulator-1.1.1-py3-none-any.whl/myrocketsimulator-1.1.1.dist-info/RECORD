@@ -1,0 +1,13 @@
+myrocketsimulator/MRSguidance.py,sha256=Qp7e193heGU-L6iVvaDGvMivmeyyzPQDySuiLUt1dKk,41001
+myrocketsimulator/MRSlib.py,sha256=MPkE9vA5H0CPFS1-_OGSv8xOxhaZFCoyXfyek8lL6FI,155086
+myrocketsimulator/MRSrocket.py,sha256=NIZOJgQXG3pgHVre7fpemh1hypqouFGDdpfbq7o2Ijg,27653
+myrocketsimulator/MRSvislib.py,sha256=Y5oZ2Buxi_ckIUTZ5_CEdyNe27304gicGJDNMdH6xZM,23486
+myrocketsimulator/data/Blue_Marble_2002-2.png,sha256=fWX09vA6T05QIFynz0Jzx0Oa6F99ClznpXlzClfr_6s,2339026
+myrocketsimulator/data/MoonSurface.jpg,sha256=XUS1ZYdpxm-BkanUbFMwmUm-CUkIfStrBCqR5vw5pFs,3504372
+myrocketsimulator/data/defaultMRSmission.py,sha256=LMmDA7p84ILMPKYFEM2yp38LnWIQF-aP9UbnlgCE_t8,19730
+myrocketsimulator/data/egm96_to360.ascii.txt,sha256=7gwnHqmZD8cwNdDXCLNLZ6Fa7bq2Eb8GHyhSawR45D0,5292639
+myrocketsimulator-1.1.1.dist-info/LICENSE.txt,sha256=x0Ey0hJ8teC7ZskS_CVYaE9eLD-INS-yKrmVYlnsapM,1079
+myrocketsimulator-1.1.1.dist-info/METADATA,sha256=GrOqWLKXmC7OGkoLTGAKeANqurwgXQ-xvQGlSLpVqbY,8255
+myrocketsimulator-1.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+myrocketsimulator-1.1.1.dist-info/top_level.txt,sha256=IpevFwVcS2DSvxAjALt5OYVGO7R-LiD9qgIW5eetFg8,18
+myrocketsimulator-1.1.1.dist-info/RECORD,,
