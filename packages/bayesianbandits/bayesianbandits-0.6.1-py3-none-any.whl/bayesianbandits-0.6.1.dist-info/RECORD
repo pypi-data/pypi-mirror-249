@@ -1,0 +1,13 @@
+bayesianbandits/__init__.py,sha256=bmNLCq4a4dgASCe2zvfLj7NvU6h5nUJT-8gCdo82Dl4,2991
+bayesianbandits/_arm.py,sha256=DD_bWbNI96NcAVyqbXBaz_GVe1gc3xCJtFNNtCtMRp8,4529
+bayesianbandits/_basebandit.py,sha256=h8FTQ7GbNaYNqel0wjaBdzOIJXTTXLCEI6doCKR-M9c,30159
+bayesianbandits/_estimators.py,sha256=PWfansuNttgLhZMGse-xR3Zn_2INWOQfZiXMzludcEc,37669
+bayesianbandits/_np_utils.py,sha256=tML16vVMpF-f7Q9nGZOb_5zoho8eFz3TYEE70rCMbNY,1283
+bayesianbandits/_policy_decorators.py,sha256=DsMOJjr2PydFwwI4aSJJ1fpF0djN3wJFn0qUS9XNAgw,6371
+bayesianbandits/_sparse_bayesian_linear_regression.py,sha256=J4iitKMBzQYl-I1hvH0FYeq2PbGswGRXy5_3GpbKbcg,10172
+bayesianbandits/_typing.py,sha256=4Rd5QXSA_5_rDkQLpkapBCv0eM-rQ5-x-fm3aXiFyoE,899
+bayesianbandits/api.py,sha256=-_47n_W03DdbW5VPNCW49BC7ZRmhHmY7oS674DegZ-0,20436
+bayesianbandits-0.6.1.dist-info/LICENSE,sha256=XRiQ3AEEg67W4_O7H1kxzGDkZu-FG-N3qpjXRd_avPA,1074
+bayesianbandits-0.6.1.dist-info/METADATA,sha256=FfMlRzMDp7wWqhuT2aI7J_76rKzabucPANQBb6UAMC8,3743
+bayesianbandits-0.6.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bayesianbandits-0.6.1.dist-info/RECORD,,
