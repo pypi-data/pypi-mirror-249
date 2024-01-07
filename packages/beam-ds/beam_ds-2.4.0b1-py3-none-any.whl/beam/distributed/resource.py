@@ -1,0 +1,84 @@
+from .worker import BeamWorker
+from .dispatcher import BeamDispatcher
+from ..path import BeamURL
+from ..serve import beam_server
+from .async_client import AsyncClient
+
+
+def beam_worker(obj, *routes, name=None, n_workers=1, daemon=False, broker=None, backend=None,
+                broker_username=None, broker_password=None, broker_port=None, broker_scheme=None, broker_host=None,
+                backend_username=None, backend_password=None, backend_port=None, backend_scheme=None, backend_host=None,
+                **kwargs):
+
+    worker = BeamWorker(obj, *routes, name=name, n_workers=n_workers, daemon=daemon, broker=broker, backend=backend,
+                        broker_username=broker_username, broker_password=broker_password, broker_port=broker_port,
+                        broker_scheme=broker_scheme, broker_host=broker_host, backend_username=backend_username,
+                        backend_password=backend_password, backend_port=backend_port, backend_scheme=backend_scheme,
+                        backend_host=backend_host, **kwargs)
+    worker.run()
+    return worker
+
+
+def beam_dispatcher(obj, *routes, name=None, n_workers=1, daemon=False, broker=None, backend=None,
+                    broker_username=None, broker_password=None, broker_port=None, broker_scheme=None, broker_host=None,
+                    backend_username=None, backend_password=None, backend_port=None, backend_scheme=None,
+                    backend_host=None, **kwargs):
+
+    worker = beam_worker(obj, *routes, name=name, n_workers=n_workers, daemon=daemon, broker=broker, backend=backend,
+                         broker_username=broker_username, broker_password=broker_password, broker_port=broker_port,
+                         broker_scheme=broker_scheme, broker_host=broker_host, backend_username=backend_username,
+                         backend_password=backend_password, backend_port=backend_port, backend_scheme=backend_scheme,
+                         backend_host=backend_host, log_level='CRITICAL', **kwargs)
+
+    dispatcher = BeamDispatcher(name=worker.name, broker=broker, backend=backend, broker_username=broker_username,
+                                broker_password=broker_password, broker_port=broker_port, broker_scheme=broker_scheme,
+                                broker_host=broker_host, backend_username=backend_username,
+                                backend_password=backend_password, backend_port=backend_port,
+                                backend_scheme=backend_scheme, backend_host=backend_host, **kwargs)
+    return dispatcher
+
+
+def beam_dispatcher_server(*routes, host=None, port=None, protocol='http', server_backend=None, non_blocking=False,
+                           broker=None, backend=None,
+                           name=None, broker_username=None, broker_password=None, broker_port=None, broker_scheme=None,
+                           broker_host=None, backend_username=None, backend_password=None, backend_port=None,
+                           backend_scheme=None, backend_host=None, **kwargs):
+
+    predefined_attributes = {k: 'method' for k in routes}
+
+    dispatcher = BeamDispatcher(name=name, broker=broker, backend=backend,
+                                broker_username=broker_username, broker_password=broker_password,
+                                broker_port=broker_port, broker_scheme=broker_scheme, broker_host=broker_host,
+                                backend_username=backend_username, backend_password=backend_password,
+                                backend_port=backend_port, backend_scheme=backend_scheme, backend_host=backend_host,
+                                **kwargs)
+
+    server = beam_server(obj=dispatcher, protocol=protocol, host=host, port=port, backend=server_backend,
+                         predefined_attributes=predefined_attributes, non_blocking=non_blocking, **kwargs)
+    return server
+
+
+def async_client(uri, hostname=None, port=None, username=None, **kwargs):
+
+    scheme = uri.split(':')[0]
+    uri = uri.removeprefix('async-')
+
+    uri = BeamURL.from_string(uri)
+
+    if uri.hostname is not None:
+        hostname = uri.hostname
+
+    if uri.port is not None:
+        port = uri.port
+
+    if uri.username is not None:
+        username = uri.username
+
+    query = uri.query
+    for k, v in query.items():
+        kwargs[k] = v
+
+    if 'tls' not in kwargs:
+        kwargs['tls'] = True if 'https' in scheme else False
+
+    return AsyncClient(hostname=hostname, port=port, username=username, **kwargs)

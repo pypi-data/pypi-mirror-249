@@ -1,0 +1,2 @@
+[jupyter.extensions]
+beam_setup = notebooks.beam_setup
