@@ -1,0 +1,7 @@
+minify/_ffi_minify.py,sha256=ck7c7H0XnV7iZrG6ajWvfo_GVSGIIoBd8Ei23EVlDWs,539
+minify/__init__.py,sha256=hBkuHaoYtnwHuIPC4GYtHiUWe3omT5MghbEB2lutT5o,2183
+minify/_minify.so,sha256=gRnFhxd-UYolXf-ISzc37S15ZA1W9wmMvKaqkv5v1EE,5879784
+tdewolff_minify-2.20.12.dist-info/WHEEL,sha256=t1cXB_SAa-YNv6IDZbVGLAMYxbOymDGALmzwxIs56dk,194
+tdewolff_minify-2.20.12.dist-info/RECORD,,
+tdewolff_minify-2.20.12.dist-info/top_level.txt,sha256=c91p3rSnHs9OZ8t3EZCegaIqC4d8zMO9Plt0NdzTdBM,7
+tdewolff_minify-2.20.12.dist-info/METADATA,sha256=7A3WO80ro2cEfhSh3TWTs-h4LhORgXbwconkdkPCfW8,2601
