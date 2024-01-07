@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: miles-mod-demo
+Version: 0.1.2
+Summary: 
+Author: xiazhiqiang
+Author-email: xiazhiqiangcuc@126.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# miles-mod-demo
+
+## 安装
+
+```sh
+poetry add miles-mod-demo
+```
+
+## 使用模块
+
+```python
+from mod_demo import hello
+
+print(hello.getName())
+```
+
