@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+PixelPulse/__init__.py
+PixelPulse.egg-info/PKG-INFO
+PixelPulse.egg-info/SOURCES.txt
+PixelPulse.egg-info/dependency_links.txt
+PixelPulse.egg-info/top_level.txt
