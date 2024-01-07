@@ -1,0 +1,51 @@
+
+<pre>		
+
+<h1>brunch</h1>
+	<b># drive operations</b>
+
+	
+	<article>
+		<h2>notes</h2>
+			<p>
+				These need access to the the block special file path
+				where the drive is attached.
+				
+					example: /dev/sd----
+
+			</p>
+		
+		<h2>erase</h2>
+			<code>
+				[ZSH] brunch erase entirely --drive-path /dev/sd0000 --last-byte-index 31914983423 
+				
+				#
+				#	It's possible to check with:
+				#
+				[ZSH] xxd -len 20 -seek 31914983420 /dev/sde
+			</code>
+		
+			<code>
+				[TCSH] brunch erase entirely --skip-over 2 --drive-path /dev/sd0000 --last-byte-index 31914983423 
+	
+					SKIP_OVER = 0	-> SKIPS NOTHING
+					SKIP_OVER = 1 -> SKIPS FIRST sculpt
+					SKIP_OVER = 2 -> SKIPS TO SECOND LOOP
+			</code>
+		
+		
+		
+		<h2>concepts</h2>
+			meal: This is the entire span of indexes to be read.
+			plate: This is one span of indexes within the meal.
+		
+		
+		
+		
+	
+			
+
+	
+			
+
+</pre>

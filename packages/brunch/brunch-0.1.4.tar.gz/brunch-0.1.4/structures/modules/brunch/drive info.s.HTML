@@ -1,0 +1,54 @@
+
+
+<pre>
+<b>drive information</b>
+
+	#
+	#	lsblk -b -p
+	#	lsblk -b -p --json
+	#	lsblk -S
+	#
+	[ZSH] lsblk -b -p
+
+		NAME        MAJ:MIN RM        SIZE RO TYPE MOUNTPOINTS
+		/dev/sda      8:0    0 40018599936  0 disk 
+		├─/dev/sda1   8:1    0   629145600  0 part /boot/efi
+		├─/dev/sda2   8:2    0  1073741824  0 part /boot
+		└─/dev/sda3   8:3    0 38313918464  0 part /home
+												   /
+		/dev/sdb      8:16   0 40018597888  0 disk 
+		/dev/zram0  252:0    0  8589934592  0 disk [SWAP]
+	
+	[ZSH] cat /proc/partitions
+	
+	[ZSH] hdparm -v /dev/sdb
+	
+	[ZSH] blockdev --getsz /dev/sdb
+		
+		78161324
+		
+	#
+	#	https://en.wikipedia.org/wiki/Util-linux
+	#	https://github.com/util-linux/util-linux
+	#
+	[ZSH] fdisk -l
+		
+		Disk /dev/sdc: 37.27 GiB, 40018597888 bytes, 78161324 sectors
+		Disk model: high speed      
+		Units: sectors of 1 * 512 = 512 bytes
+		Sector size (logical/physical): 512 bytes / 512 bytes
+		I/O size (minimum/optimal): 512 bytes / 512 bytes
+		
+	therefore:
+		40,018,597,888
+	
+		drive path: /dev/sdb
+		byte indexes: [ 0, 40018597887 ]
+		
+		40018597888 / 78161324 = 512
+
+		#
+		#	/dev/sda is the operating system drive
+		#
+		
+</pre>

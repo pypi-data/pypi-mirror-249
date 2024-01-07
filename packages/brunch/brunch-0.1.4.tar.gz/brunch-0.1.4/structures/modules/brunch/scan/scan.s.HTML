@@ -1,0 +1,42 @@
+
+
+
+<pre>
+
+<b>scan (READ)</b>	
+<code>
+	brunch scan BYTES --drive-path /dev/sdb --indexes '[ 0, 99 ]' --bytes-per-plate 512
+</code>
+
+<code>
+	import brunch.scan as scan			
+		
+	#
+	#	CAUTION:
+	#
+	#		EXAMPLE: /dev/sd----
+	# 
+	DRIVE_PATH = ""	
+		
+	BYTE_STRING = b''
+	def PROGRESS (PARAMS):
+		nonlocal BYTE_STRING;
+		BYTE_STRING += PARAMS ['PLATE']
+	
+	scan.START ({
+		"DRIVE PATH": DRIVE_PATH, 
+		
+		"BYTES INDEXES": [ 0, 28 ],		
+		"bytes per plate": 10,
+		
+		"PROGRESS": PROGRESS
+	})	
+	
+	print (BYTE_STRING)
+	#
+	#	b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+	#
+</code>
+
+
+</pre>

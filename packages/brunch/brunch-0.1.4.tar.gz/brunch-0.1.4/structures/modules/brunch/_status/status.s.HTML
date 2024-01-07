@@ -1,0 +1,25 @@
+
+
+
+#
+#	lsblk -b -p --json
+#	
+
+
+'''
+	⚠️
+
+	Caution, make sure this is pointed to the drive
+	that you intend to erase.
+
+	"drive_bytes" is the number of bytes, not the last byte index
+'''
+env drive_path=/dev/sdb drive_bytes=2032664576 python3 status.proc.py
+
+#
+#	drive_bytes = byte count of drive
+#
+#				!= last index
+#
+
+

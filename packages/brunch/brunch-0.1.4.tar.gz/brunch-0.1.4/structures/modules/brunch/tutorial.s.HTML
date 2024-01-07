@@ -1,0 +1,96 @@
+
+
+
+<pre>
+
+{ TUTORIAL, ACADEMY, OPTIONS BOOK, WALKTHROUGH, STEP THROUGH }:
+	
+	PRIORITIES:
+		[ ] GET NUMBER OF BYTES OF DRIVE:
+		
+		[ ] SCAN BYTE 0
+		[ ] SCAN BYTE 1000
+		[ ] SCAN BYTE 100000
+		
+		[ ] ERASE BYTE 0
+
+	RELEVANT:
+		pip install textual
+	
+		https://unix.stackexchange.com/questions/273971/how-to-get-hard-disk-information-on-linux-terminal
+	
+		smartctl -a /dev/sdc
+	
+			User Capacity:    40,018,599,936 bytes [40.0 GB]
+		
+		file /dev/sda	
+		sudo mknod /dev/sdb b 8 0
+	
+		dd
+		
+		lsblk
+		
+		df -h
+		
+		XXD:
+			#
+			#	SCAN START OF DRIVE
+			#
+			xxd -len 100 /dev/sdb
+		
+			#
+			#	SCAN END OF DRIVE:
+			#		40018597888 - 100 = 40018597788
+			#
+			xxd -len 100 -seek 40018597788 /dev/sdb
+		
+		cat /proc/partitions
+					
+		import
+		os.statvfs ("/dev/sdb")
+		
+		os.statvfs_result (
+			f_bsize=4096, 
+			f_frsize=4096, 
+			f_blocks=1024, 
+			f_bfree=1024, 
+			f_bavail=1024, 
+			f_files=8213539, 
+			f_ffree=8212926, 
+			f_favail=8212926, 
+			f_flag=2, 
+			f_namemax=255
+		)
+
+	DRIVE VERNACULAR:
+		DISK STRUCTURE:
+			TRACK:
+			
+			GEOMETRICAL SECTOR:
+			
+			
+			SECTOR:
+			
+			
+			CLUSTER:
+	
+	
+		SECTORS:
+			https://en.wikipedia.org/wiki/Disk_sector
+		
+		PARTITIONS:
+
+	FORMS:
+		SOLID STATE DRIVE
+			AVANT
+		
+		HARD DRIVE
+		
+		FLASH DRIVE
+		
+		SD CARD
+
+		MICRO SD CARD
+		
+		
+</pre>

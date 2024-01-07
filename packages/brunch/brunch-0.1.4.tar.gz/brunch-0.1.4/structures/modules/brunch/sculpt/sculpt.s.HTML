@@ -1,0 +1,62 @@
+
+
+
+
+<pre>
+
+	
+	<b>sculpt (write)</b>
+	<code>
+	
+		#
+		#	caution:
+		#
+		#		EXAMPLE: /dev/sd----
+		# 
+		DRIVE_PATH = ""
+	
+		LOOP = 1
+		def PROGRESS (PARAMS):
+			nonlocal LOOP;
+			INDEXES = PARAMS ["INDEXES"]
+			SIZE = PARAMS ["SIZE"]
+			LAST_LOOP = PARAMS ["LAST_LOOP"]
+	
+			if (LOOP == 1000):
+				PERCENT = str (100 * (INDEXES [1] / DRIVE_BYTES))
+				print (
+					INDEXES[0],
+					INDEXES[1] - INDEXES[0], 
+					"%:", PERCENT
+				)
+				
+				LOOP = 1;
+			
+			LOOP += 1
+	
+		BYTES_PER_PLATE = 512 * 512;
+		BYTES_INDEXES = [
+			0, 
+			DRIVE_BYTES - 1 
+		]
+	
+		sculpt.START ({
+			"DRIVE PATH": DRIVE_PATH,
+			
+			"BYTES INDEXES": BYTES_INDEXES,		
+			"BYTES FOR PLATE": PLATE,
+			
+			"PROGRESS": PROGRESS
+		})
+
+	</code>
+
+
+
+
+
+
+
+
+
+</pre>

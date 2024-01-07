@@ -1,0 +1,56 @@
+
+
+
+
+
+
+<pre>
+scan:
+
+	xxd:
+		The start of the drive:
+			xxd -len 100 /dev/sde
+
+		The end of the drive:
+			#
+			#		40018597888 - 100 = 40018597788
+			#		2032664575 - 100 = 2032664475
+			#
+			xxd -len 100 -seek 40018597788 /dev/sdb
+			
+			xxd -len 20 -seek 32010928128 /dev/sde
+			xxd -len 20 -seek 31914983424 /dev/sde
+
+
+			example:
+				drive_bytes = 2032664576
+				
+				xxd -len 100 -seek 2032664576 /dev/sdb
+				
+					# This should show no proceeds
+					#
+					
+				
+				xxd -len 100 -seek 2032664575 /dev/sdb
+					
+					#
+					# This should show like:
+					# 7927ffff: 00
+					#
+				
+		#
+		#	Maybe there are be unwritable bytes after the last byte?
+		#
+		xxd -seek 32010928128 /dev/sdb
+		
+		
+	block special file creation:
+		(IF YOU, FOR INSTANCE, ACCIDENTALLY OVERWRITE /dev/sdb)
+		
+		THERE'S ALMOST DEFINITELY MORE TO IT THAN THIS:
+			#
+			# [ZSH] file /dev/sda	
+			#
+			[ZSH] sudo mknod /dev/sdb b 8 0
+
+</pre>
