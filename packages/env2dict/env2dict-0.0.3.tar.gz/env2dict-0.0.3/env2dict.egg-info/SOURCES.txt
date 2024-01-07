@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+env2dict/__init__.py
+env2dict/env_parse.py
+env2dict.egg-info/PKG-INFO
+env2dict.egg-info/SOURCES.txt
+env2dict.egg-info/dependency_links.txt
+env2dict.egg-info/top_level.txt
