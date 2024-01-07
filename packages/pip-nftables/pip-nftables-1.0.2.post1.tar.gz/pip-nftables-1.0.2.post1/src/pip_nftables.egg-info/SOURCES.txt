@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/nftables.py
+src/pip_nftables.egg-info/PKG-INFO
+src/pip_nftables.egg-info/SOURCES.txt
+src/pip_nftables.egg-info/dependency_links.txt
+src/pip_nftables.egg-info/top_level.txt
