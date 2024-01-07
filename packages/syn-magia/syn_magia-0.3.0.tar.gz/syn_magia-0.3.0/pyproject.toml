@@ -1,0 +1,53 @@
+# pyproject.toml
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+select = ["F", "E", "W", "I001", "U", "N", "S", "B", "A", "C4", "T10", "ISC", "ICN", "T20", "Q", "RET", "SIM", "TID", "ERA"]
+ignore = ["F821", "A003"]
+
+[tool.ruff.lint.per-file-ignores]
+
+"tests/**" = ["S101", "S311"]
+
+[tool.poetry]
+name = "syn-magia"
+version = "0.3.0"
+description = "Magia generates Synthesizable SystemVerilog in pythonic syntax"
+readme = "README.md"
+authors = ["khwong-c64 <kin.hin.wong.c@gmail.com>"]
+license = "LICENSE"
+
+packages = [
+    { include = "magia" },
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3"
+]
+keywords = [
+    "Verilog HDL", "SystemVerilog",
+    "Synthesizable", "RTL", "HDL", "Hardware Description Language",
+    "Code Generation", "FPGA", "ASIC", "EDA", "RTL Design"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+cocotb = "*"
+cocotb-test = "*"
+pytest = "*"
+pytest-xdist = "*"
+pytest-github-report = "*"
+ruff = "*"
+hdlConvertor-binary = "~2.3"
+
+[project.urls]
+Repository = "https://github.com/khwong-c/syn-magia"
