@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: rsv
+Version: 1.0.0
+Summary: A module for reading and writing an RSV document file.
+License: MIT
+Author: Romanin
+Author-email: semina054@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# rsv.py
+# Description
+A module for reading and writing an [RSV](https://github.com/Stenway/RSV-Challenge) document file.
+
+# Using
+```python
+import rsv
+
+sample_data = [
+    ["Name", "Description", None],
+    [],
+    [None, ":)"]
+]
+
+with open("document.rsv", "wb") as file:
+    rsv.dump(sample_data, file)
+
+with open("document.rsv", "rb") as file:
+    data = rsv.load(file)
+```
