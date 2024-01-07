@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/Watson-Explorer/__init__.py
+src/Watson-Explorer/localhost.py
+src/Watson_Explorer.egg-info/PKG-INFO
+src/Watson_Explorer.egg-info/SOURCES.txt
+src/Watson_Explorer.egg-info/dependency_links.txt
+src/Watson_Explorer.egg-info/requires.txt
+src/Watson_Explorer.egg-info/top_level.txt

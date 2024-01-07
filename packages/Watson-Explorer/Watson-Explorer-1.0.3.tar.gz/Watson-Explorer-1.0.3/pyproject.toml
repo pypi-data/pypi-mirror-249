@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Watson-Explorer"
+version = "1.0.3"
+dependencies = [
+    "pandas==2.1.4",
+    "polars==0.20.3"
+]
+requires-python = ">=3.8"
+authors = [
+    { name = "HeintjeB", email = "heinburgmans@gmail.com" }
+]
+description = "Look into the data of your DataFrames with Watson Explorer"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+keywords = ["pandas", "polars", "explorer", "watson"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Repository = "https://github.com/HeintjeB/watson"
+BugTracker = "https://github.com/HeintjeB/watson/issues"
+Homepage = "https://cobra-ms.com"
+Changelog = "https://github.com/HeintjeB/watson/blob/main/CHANGELOG.md"
