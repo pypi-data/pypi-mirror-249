@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: makeMoney
+Version: 2.1
+Summary: we report a computational method and program（makeMoney）based on the Python programming language for basic data analysis and processing in Convertible bonds.
+Author-email: Guixian Yang <Ygxyoung@hotmail.com>
+Project-URL: Homepage, https://github.com/
+Project-URL: Bug Tracker, https://github.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<pre> 
+We report a computational method and program（makeMonye）based on the Python programming language for basic data 
+analysis and processing in Convertible bonds.This is also a makeMonye package for processing Convertible bonds data,
+which the input file must be TXT format and it will output the result into a single EXCEL file 
+friendly and frequently as basic data for further analysis.
+
+If you have trouble running the makeMonye program, please copy the issues to the packaging-problems repository on GitHub. We’ll do our best to help you, thanks!
+History
+<pre> 	
