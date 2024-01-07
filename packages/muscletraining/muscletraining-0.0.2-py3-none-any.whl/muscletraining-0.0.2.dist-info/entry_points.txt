@@ -1,0 +1,2 @@
+[console_scripts]
+muscletraining = muscletraining:main
