@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: pure-radix
+Version: 2.0.1
+Summary: Generic radix tree implementation in pure Python
+Author-email: Eduard Christian Dumitrescu <eduard.c.dumitrescu@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://hydra.ecd.space/deaduard/pure_radix/
+Project-URL: Changelog, https://hydra.ecd.space/deaduard/pure_radix/file?name=CHANGELOG.md&ci=trunk
+Description-Content-Type: text/markdown
+
+# pure_radix
+
+[Radix tree](https://en.wikipedia.org/wiki/Radix_tree) library but in pure clean Python. Run it on PyPy or IronPython or wherever.
+
+## Dependencies
+
+We try to keep dependencies light:
+
+- [attrs](https://pypi.org/project/attrs/) dataclass library (2881 LoC)
+
+To run the tests, you'll need `pytest` and optionally `hypothesis`.
+
+## Examples
+
+```python
+>>> from pure_radix import SetNode
+>>>
+>>> # Create a tree where each node holds a set. You are free to
+>>> # customize what information is held inside each node.
+>>> t = SetNode()
+>>>
+>>> node1 = t.node_get((10, 11, 12), create=True)
+>>> node2 = t.node_force((10, 11, 30))  # equivalent
+>>>
+>>> node1.add("cat")
+>>> node2.add("dog")
+>>>
+>>> print(t.node_debug_string())
+[]
+  [10, 11]
+    [12] {'cat'}
+    [30] {'dog'}
+>>>
+>>> # This node exists because it's a common prefix between node1 and node2.
+>>> t.node_get((10, 11))
+SetNode(node_prefix=(10, 11), raw_data=None)
+>>>
+>>> # This node doesn't exist.
+>>> print(t.node_get((10,)))
+None
+```
+
+The library works with any kind of sequence, including strings!
+
+```python
+>>> # It also works with strings!
+>>> t = SetNode()
+>>>
+>>> t.node_force("catalogue").add(1)
+>>> t.node_force("category").add(2)
+>>> t.node_force("categorization").add(3)
+>>> t.node_force("cart").add(4)
+>>> t.node_force("carpet")  # leaf node without actual data!
+SetNode(raw_data=None)
+>>> t.node_force("car").add(5)
+>>> t.node_force("star").add(6)
+>>>
+>>> print(t.node_debug_string())
+[]
+  ['c', 'a']
+    ['r'] {5}
+      ['p', 'e', 't']
+      ['t'] {4}
+    ['t']
+      ['a', 'l', 'o', 'g', 'u', 'e'] {1}
+      ['e', 'g', 'o', 'r']
+        ['i', 'z', 'a', 't', 'i', 'o', 'n'] {3}
+        ['y'] {2}
+  ['s', 't', 'a', 'r'] {6}
+```
+
+Are you looking for the longest common prefix? Here is how you can get the nodes that have the longest common prefix with a sequence:
+
+```python
+>>> for n, node in t.node_find_closest_nodes("catenary"):
+...     print(n, node)
+... 
+4 SetNode(raw_data=None)
+3 SetNode(raw_data={1})
+2 SetNode(raw_data={5})
+0 SetNode(raw_data={6})
+```
+
+Do you need to recursively get all non-empty nodes under a node?
+
+```python
+>>> list(t.node_get("cat").node_find())
+[SetNode(raw_data={2}), SetNode(raw_data={3}), SetNode(raw_data={1})]
+```
+
+Let's empty some nodes now!
+
+```python
+>>> t.node_get("category").clear()
+>>> t.node_get("catalogue").clear()
+>>> t.node_get("star").clear()
+>>> print(t.node_debug_string())
+[]
+  ['c', 'a']
+    ['r'] {5}
+      ['p', 'e', 't']
+      ['t'] {4}
+    ['t']
+      ['a', 'l', 'o', 'g', 'u', 'e']
+      ['e', 'g', 'o', 'r']
+        ['i', 'z', 'a', 't', 'i', 'o', 'n'] {3}
+        ['y']
+  ['s', 't', 'a', 'r']
+```
+
+Empty nodes do not get removed automatically! You must remove them yourself:
+
+```python
+>>> t.node_prune()
+>>> print(t.node_debug_string())
+[]
+  ['c', 'a']
+    ['r'] {5}
+      ['t'] {4}
+    ['t', 'e', 'g', 'o', 'r', 'i', 'z', 'a', 't', 'i', 'o', 'n'] {3}
+```
+
+Use a powerful method of traversal:
+
+```python
+>>> def _enter(stack, frame):
+>>>     frame.children.extend(frame.node.node_children.values())
+>>>     yield ("enter", frame.node, frame.node.node_sequence)
+>>> 
+>>> def _exit(stack, frame):
+>>>     yield ("exit", frame.node, frame.node.node_sequence)
+>>> 
+>>> for action, node, seq in t.node_visit(enter=_enter, exit=_exit):
+>>>     print(action, node, seq)
+enter SetNode(raw_data=None) ()
+enter SetNode(raw_data=None) ('c', 'a')
+enter SetNode(raw_data={5}) ('c', 'a', 'r')
+enter SetNode(raw_data={4}) ('c', 'a', 'r', 't')
+exit SetNode(raw_data={4}) ('c', 'a', 'r', 't')
+exit SetNode(raw_data={5}) ('c', 'a', 'r')
+enter SetNode(raw_data={3}) ('c', 'a', 't', 'e', 'g', 'o', 'r', 'i', 'z', 'a', 't', 'i', 'o', 'n')
+exit SetNode(raw_data={3}) ('c', 'a', 't', 'e', 'g', 'o', 'r', 'i', 'z', 'a', 't', 'i', 'o', 'n')
+exit SetNode(raw_data=None) ('c', 'a')
+exit SetNode(raw_data=None) ()
+```

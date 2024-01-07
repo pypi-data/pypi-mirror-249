@@ -1,0 +1,20 @@
+[tool.black]
+line-length = 100
+
+[project]
+name = "pure_radix"
+version = "2.0.1"
+description = "Generic radix tree implementation in pure Python"
+readme = "README.md"
+license = { text = "MIT License" }
+authors = [
+    { name = "Eduard Christian Dumitrescu", email = "eduard.c.dumitrescu@gmail.com" },
+]
+dependencies = [ "attrs" ]
+
+[project.urls]
+Homepage = "https://hydra.ecd.space/deaduard/pure_radix/"
+Changelog = "https://hydra.ecd.space/deaduard/pure_radix/file?name=CHANGELOG.md&ci=trunk"
+
+[tool.setuptools.package-data]
+"pure_radix" = ["py.typed"]
