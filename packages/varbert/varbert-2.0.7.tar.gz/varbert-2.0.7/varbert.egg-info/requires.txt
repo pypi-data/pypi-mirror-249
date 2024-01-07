@@ -1,0 +1,5 @@
+torch
+transformers
+tqdm
+dailalib==2.2.1
+libbs==0.13.0
