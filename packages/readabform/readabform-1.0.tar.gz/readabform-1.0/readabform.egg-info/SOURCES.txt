@@ -1,0 +1,8 @@
+README.md
+setup.py
+readabform/__init__.py
+readabform/main.py
+readabform.egg-info/PKG-INFO
+readabform.egg-info/SOURCES.txt
+readabform.egg-info/dependency_links.txt
+readabform.egg-info/top_level.txt
