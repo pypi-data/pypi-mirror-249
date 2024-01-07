@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fango"
+version = "0.0.1"
+description = "Metaframework for web with combined FastAPI and Django"
+authors = ["Egor Gamazin <egorgamazin@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.1"
+fastapi = "^0.108.0"
+python-jose = "^3.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
