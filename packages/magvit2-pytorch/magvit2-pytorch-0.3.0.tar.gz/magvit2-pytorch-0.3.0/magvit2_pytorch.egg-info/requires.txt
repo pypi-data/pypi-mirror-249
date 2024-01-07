@@ -1,0 +1,14 @@
+accelerate>=0.24.0
+beartype
+einops>=0.7.0
+ema-pytorch>=0.2.4
+pytorch-warmup
+gateloop-transformer>=0.2.2
+kornia
+opencv-python
+pillow
+numpy
+vector-quantize-pytorch>=1.11.8
+torch
+torchvision
+x-transformers
