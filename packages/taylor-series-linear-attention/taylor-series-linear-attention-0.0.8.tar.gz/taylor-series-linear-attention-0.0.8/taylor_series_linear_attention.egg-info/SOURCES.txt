@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+taylor_series_linear_attention/__init__.py
+taylor_series_linear_attention/attention.py
+taylor_series_linear_attention.egg-info/PKG-INFO
+taylor_series_linear_attention.egg-info/SOURCES.txt
+taylor_series_linear_attention.egg-info/dependency_links.txt
+taylor_series_linear_attention.egg-info/requires.txt
+taylor_series_linear_attention.egg-info/top_level.txt
