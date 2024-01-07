@@ -1,0 +1,3 @@
+[console_scripts]
+censusdis=impactchart.cli.impactchart:main
+
