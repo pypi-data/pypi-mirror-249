@@ -1,0 +1,5 @@
+lxml>=4
+parsimonious>=0.10.0
+
+[dev]
+pytest<7.0,>=6.0
