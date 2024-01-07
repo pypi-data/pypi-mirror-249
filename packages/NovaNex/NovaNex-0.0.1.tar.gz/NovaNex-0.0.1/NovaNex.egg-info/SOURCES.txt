@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+NovaNex/__init__.py
+NovaNex.egg-info/PKG-INFO
+NovaNex.egg-info/SOURCES.txt
+NovaNex.egg-info/dependency_links.txt
+NovaNex.egg-info/top_level.txt
