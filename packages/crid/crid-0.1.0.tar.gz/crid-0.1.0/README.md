@@ -1,0 +1,125 @@
+# RFID Client
+
+This is a command-line interface (CLI) application for interacting with Mifare Classic 1K cards using a NFC reader.
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+pip install -r requirements.txt
+```
+
+## Usage/Examples
+```bash
+# Read the UID of the card
+python cli.py --read_uid
+
+# Identify the card to the user
+python cli.py --identify
+
+# Read a block from the card using key type A and key value ffffffffffff
+python cli.py --read_block 2 --key_type A --key_value ffffffffffff
+
+# Write "Hello, World!" to block 3 using key type B and key value a1b2c3d4e5f6
+python cli.py --write_block 3 --data "48656C6C6F2C20576F726C6421" --key_type B --key_value a1b2c3d4e5f6
+
+# Read sector 1 from the card using key type A and key value ffffffffffff
+python cli.py --read_sector 1 --key_type A --key_value ffffffffffff
+
+# Read all 16 sectors from the card using key type B and key value a1b2c3d4e5f6
+python cli.py --read_full --key_type B --key_value a1b2c3d4e5f6
+
+# Find keys for a Mifare Classic card (requires mfoc binary)
+python cli.py --find_mifare_keys
+
+# Brute force keys for block 18 using the key list file keys.txt
+python cli.py --brute_force_keys 18 --key_list mifare_access_keys_top100.lst
+
+# Mute the buzzer on the reader
+python cli.py --mute
+
+# Provide the flag option
+python cli.py --flag
+
+# Enable the buzzer on the reader
+python cli.py --beep
+
+# Set the log level to DEBUG
+python cli.py --log_level DEBUG
+
+# Send an APDU command to the NFC device
+python cli.py --apdu_command 00A4040007A000000003101000
+
+# Set the data format to string
+python cli.py --data_format string
+```
+
+## API Reference
+The main class in this project is RFIDClient which provides methods to interact with the NFC reader and the Mifare Classic 1K card.
+
+## Contributing
+## Installation
+
+To install the RFID Client application, follow the steps below:
+
+1. Clone the repository using the following command:
+```bash
+git clone https://github.com/VinnieV/crid.git
+```
+
+2. Navigate to the cloned repository:
+```bash
+cd crid
+```
+
+3. If you have Python 3 installed, pip3 should be available. If not, you can install Python 3 and pip3 by following the instructions provided in the links below:
+     - [Install Python 3](https://www.python.org/downloads/)
+     - [Install pip3](https://pip.pypa.io/en/stable/installing/)
+
+4. Install the application using pip3. There are two ways to install pip packages: as a user or system-wide. Choose the appropriate method based on your requirements:
+    **System-wide**:
+```bash
+pip3 install .
+```
+
+    **User-wide**:
+```bash
+pip3 install . --user
+```
+
+5. Add the Python Scripts directory to your PATH environment variable. This step is necessary to ensure that the `crid` binary is accessible from anywhere in the command prompt or terminal. The process for adding the Python path to the PATH variable differs between Windows and Linux:
+
+     - **Windows**:
+         - Open the Start menu and search for "Environment Variables".
+         - Click on "Edit the system environment variables".
+         - In the System Properties window, click on the "Environment Variables" button.
+         - In the "System Variables" section, select the "Path" variable and click on "Edit".
+         - Execute the following command to retrieve the path:
+```bash
+pip3 show crid
+```
+          - Then the path should look something similar like this:
+```bash
+c:\users\<username>\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\Scripts
+```
+         - Click "OK" to save the changes.
+
+     - **Linux**:
+         - Open a terminal window.
+         - Obtain the path of tool:
+```bash
+pip3 show crid
+```
+         - Edit the `.bashrc` or `.bash_profile` file in your home directory using a text editor (e.g., `nano ~/.bashrc`).
+         - Add the following line at the end of the file, replacing `/path/to/python` with the actual path to the Python installation directory:
+```bash
+export PATH="/path/to/python:$PATH"
+```
+         - Save the file and exit the text editor.
+         - Run the following command to apply the changes:
+```bash
+source ~/.bashrc
+```
+
+Once you have completed these steps, you should be able to use the RFID Client application successfully.

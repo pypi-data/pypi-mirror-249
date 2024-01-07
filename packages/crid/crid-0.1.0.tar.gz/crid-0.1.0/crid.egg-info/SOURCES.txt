@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+crid.egg-info/PKG-INFO
+crid.egg-info/SOURCES.txt
+crid.egg-info/dependency_links.txt
+crid.egg-info/entry_points.txt
+crid.egg-info/top_level.txt
+crid/modules/cli.py

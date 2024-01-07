@@ -1,0 +1,2 @@
+[console_scripts]
+crid = crid.modules.cli:main
