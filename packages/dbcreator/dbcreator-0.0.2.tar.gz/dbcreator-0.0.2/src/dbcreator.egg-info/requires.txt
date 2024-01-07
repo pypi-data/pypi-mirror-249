@@ -1,0 +1,6 @@
+boto3
+duckdb
+
+[dev]
+pytest
+twine

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "twine",
+]
+
+[project]
+name = "dbcreator"
+version = "0.0.2"
+authors = [
+  { name="codenym", email="isaac.flath@gmail.com" },
+]
+description = "Package to create a database out of files"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "boto3",
+    "duckdb",
+]
+
+[project.urls]
+Homepage = "https://github.com/codenym/dbcreator"
+Issues = "https://github.com/codenym/dbcreator/issues"

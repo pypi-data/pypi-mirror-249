@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/dbcreator/__init__.py
+src/dbcreator/duck_db.py
+src/dbcreator/s3.py
+src/dbcreator.egg-info/PKG-INFO
+src/dbcreator.egg-info/SOURCES.txt
+src/dbcreator.egg-info/dependency_links.txt
+src/dbcreator.egg-info/requires.txt
+src/dbcreator.egg-info/top_level.txt
+tests/test_duck_db.py
