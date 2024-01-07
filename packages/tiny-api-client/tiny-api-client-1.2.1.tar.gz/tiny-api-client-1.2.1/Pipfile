@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+
+[dev-packages]
+mypy = "1.8.0"
+pytest = "*"
+sphinx = "*"
+build = "*"
+sphinx-rtd-theme = "*"
+exceptiongroup = "*"
+pytest-mock = "*"
+types-requests = "*"
+isort = "*"
+flake8 = "*"
+flake8-pyproject = "*"
+pre-commit = "*"
+twine = "*"
+pytest-mypy-plugins = "*"
+
+[requires]
+python_version = "3.10"
