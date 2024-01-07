@@ -1,0 +1,104 @@
+[tool.poetry]
+name = "elegant-django"
+version = "0.1.0"
+description = 'Modern theme for Django admin interface.'
+authors = ["bopo <ibopo@126.com>"]
+readme = "README.md"
+packages = [{ include = "elegant" }]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Framework :: Django',
+    'License :: Free for non-commercial use',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Environment :: Web Environment',
+    'Topic :: Software Development',
+    'Topic :: Software Development :: User Interfaces',
+]
+#zip_safe=false
+#include_package_data=true
+
+[tool.poetry.dependencies]
+python = "^3.6"
+#django = "^3.0.0"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "default"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "explicit"
+
+[tool.poetry.group.test.dependencies]
+#pytest = "^6.4.0"
+#pytest-django = "^4.5.2"
+#pytest-cov = "^3.1.0"
+pytest-django = "^4.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+python_files = ["tests.py", "test.py", "test_*.py", "*_tests.py"]
+addopts = "-p no:warnings"
+log_cli_level = "DEBUG"
+log_cli = 0
+
+[tool.commitizen]
+tag_format = "v$version"
+annotated_tag = true
+changelog_incremental = true
+update_changelog_on_bump = true
+version_provider = "poetry"
+version_files = [
+    "elegant/__init__.py:__version__",
+]
+
+
+[tool.black]
+line-length = 180
+target-version = ['py39']
+include = '\.pyi?$'
+
+
+[tool.isort]
+profile = "django"
+combine_as_imports = true
+include_trailing_comma = true
+line_length = 180
+
+
+[tool.djlint]
+profile = "django"
+ignore = "H031"
+
+
+[tool.ruff]
+line-length = 180
+
+
+[tool.poe.tasks]
+venv = "poetry install --sync"
+lock = "poetry lock --no-update"
+
+test = "poetry run pytest"
+lint = "poetry run ruff check ./elegant/*.py --fix"
+
+dist = "poetry build -v"
+bump = "cz bump --yes -ch -cc --increment"
+#{MAJOR,MINOR,PATCH}
