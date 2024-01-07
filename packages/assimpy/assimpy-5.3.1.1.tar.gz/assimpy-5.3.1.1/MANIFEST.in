@@ -1,0 +1,3 @@
+include assimpy/README_PYPI.md
+include assimpy/assimpy.h
+recursive-include assimpy/assimp *
