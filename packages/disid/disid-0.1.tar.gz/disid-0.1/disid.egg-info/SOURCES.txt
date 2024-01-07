@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+disid/__init__.py
+disid/disid.py
+disid/keytools.py
+disid.egg-info/PKG-INFO
+disid.egg-info/SOURCES.txt
+disid.egg-info/dependency_links.txt
+disid.egg-info/top_level.txt
