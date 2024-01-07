@@ -1,0 +1,11 @@
+obspy
+scipy
+matplotlib
+pandas
+numpy
+pyproj
+ipython
+ipywidgets>=8.0
+plotly
+nbformat
+PyQt5-sip
