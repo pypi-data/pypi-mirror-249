@@ -1,0 +1,114 @@
+
+
+
+<pre>
+
+
+priorities:
+
+	ordered:
+		most important:
+		
+			[ ] if "exit ()" is called by a process,
+				this might cause a problem...
+		
+			[ ] put the status checks in the module.
+					# homeostasis checks
+					
+					vivacious
+						_status
+						
+					import vivacious._status as vivacious_status
+					vivacious_status.check ()
+				
+			[ ] [SH] homeostasis shares
+			
+			
+			[ ] capture process journal:
+			
+					This might have binary
+					
+					Could try utf8, the if doesn't
+					work could try hex
+					
+					journal: [{
+						"UTF8": {
+							"parseable": "no"
+						},
+						"hex": ""
+					},{
+						"UTF8": {
+							"parseable": "yes"
+							"string": "journal entry"
+						}
+					},{
+						"UTF8": {
+							"parseable": "yes"
+							"string": "journal entry"
+						}
+					}]
+				
+		
+			[ ] "checks" or "courses"
+		
+			[ ] The unit_tests from body_scan
+				need to be rewritten as body_scan tests
+				for vivacious.
+				
+			[ ]	global option to repeat checks if they fail,
+				since there are possibilites like "deadlocks"
+			
+			[ ] mkdir -p, db_directory
+		
+			[ ] print the passed checks history numbers in the results.
+			
+					status checks [113 to 103]: [45][43][43][42][40]
+
+					#
+					#	That way can easily notice if that number decreases
+					#	suddenly for some reason.
+					#	
+			
+			
+			[ ] Somehow showing processes that are still in progress,
+				in the event that one doesn't stop ever or something.
+			
+			[ ]	A way to start multiple globs.			
+			
+				scan = vivacious.start_s2 (
+					#
+					#	run globs simultaneously or 
+					#
+					"simultaneous": "yes",
+					
+					"scans": [{			
+						#
+						#	required
+						#
+						"glob_string": glob_string,
+						
+						#
+						#	optional
+						#
+						"name": "vitals",
+						"simultaneous": "yes",
+						"module_paths": [],
+						"relative_path": chassis
+					}]
+				)
+		
+		
+		not as important:
+			[ ] websockets to vue frontend
+				pypi "websockets"
+
+	unordered:
+		(body scan priorities might have more)
+
+		
+
+		
+
+		
+
+</pre>

@@ -1,0 +1,87 @@
+
+
+
+
+
+
+#
+#	how to publish:
+#
+#		python3 structures/decor/homeostasis/_status/status.proc.py
+#		(rm -rf dist && python3 -m build --sdist && twine upload dist/*)
+#
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homeostasis"
+version = "1.0.10"
+requires-python = ">=3.8"
+dependencies = [
+	'body_scan',
+
+	'botanist',
+	'shares',
+	
+	'click',
+	'flask',
+	'pdoc3',
+	'requests',
+	'textual',
+	'tinydb'
+]
+
+#license = { file = "license.txt" }
+license = { text = "GPL 3.0" }
+
+description = "health checks module"
+readme = "module.txt"
+classifiers = [
+
+]
+
+#
+#	https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#keywords
+#
+keywords = [	 
+	 "tests",
+	 "guarantees",
+	 "vows",
+	 "oaths",
+	 "assurances",
+	 "insurances",
+	 "ensurances",
+	 "reliability",
+	 "consistency",
+	 "integrity",
+	 "speed",
+	 "calmness"
+]
+
+[project.urls]
+GitLab = "https://gitlab.com/reptilian_climates/modules_series_4/homeostasis"
+
+
+[project.scripts]
+#
+#	https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+#	from this_module import clique; clique ()
+#
+homeostasis = "homeostasis:clique"
+
+
+[tool.setuptools.packages.find]
+where = [ "structures/decor" ]
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+#
+[tool.setuptools.package-data]
+"*" = [ "*.HTML", "*.json" ]
+
+
+
+
+
