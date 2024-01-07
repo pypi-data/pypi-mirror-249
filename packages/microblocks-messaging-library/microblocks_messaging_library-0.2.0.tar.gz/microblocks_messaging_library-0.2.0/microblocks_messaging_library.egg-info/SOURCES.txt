@@ -1,0 +1,15 @@
+AUTHORS.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+readme.md
+setup.cfg
+setup.py
+microblocks_messaging_library/__init__.py
+microblocks_messaging_library.egg-info/PKG-INFO
+microblocks_messaging_library.egg-info/SOURCES.txt
+microblocks_messaging_library.egg-info/dependency_links.txt
+microblocks_messaging_library.egg-info/not-zip-safe
+microblocks_messaging_library.egg-info/requires.txt
+microblocks_messaging_library.egg-info/top_level.txt
