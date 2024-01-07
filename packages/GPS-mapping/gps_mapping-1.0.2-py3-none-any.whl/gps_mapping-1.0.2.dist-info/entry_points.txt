@@ -1,0 +1,3 @@
+[console_scripts]
+GPS=GPS.main:main
+
