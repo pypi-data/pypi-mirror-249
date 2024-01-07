@@ -1,0 +1,2 @@
+[console_scripts]
+csv2md = csv2md.__main__:main
