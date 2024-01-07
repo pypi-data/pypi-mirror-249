@@ -1,0 +1,3 @@
+[console_scripts]
+fix-silenced-fixit-error = fix_silenced_fixit_error:main
+silence-fixit-error = silence_fixit_error:main
