@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/streamlit_paste_button/__init__.py
+src/streamlit_paste_button.egg-info/PKG-INFO
+src/streamlit_paste_button.egg-info/SOURCES.txt
+src/streamlit_paste_button.egg-info/dependency_links.txt
+src/streamlit_paste_button.egg-info/requires.txt
+src/streamlit_paste_button.egg-info/top_level.txt
+src/streamlit_paste_button/frontend/index.html
+src/streamlit_paste_button/frontend/main.js
+src/streamlit_paste_button/frontend/streamlit-component-lib.js
+src/streamlit_paste_button/frontend/style.css
