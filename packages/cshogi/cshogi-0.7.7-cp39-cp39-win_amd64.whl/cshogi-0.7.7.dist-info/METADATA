@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cshogi
+Version: 0.7.7
+Summary: A fast Python shogi library
+Home-page: https://github.com/TadaoYamaoka/cshogi
+License: GPL-v3
+Author: Tadao Yamaoka
+Author-email: tadaoyamaoka@gmail.com
+Maintainer: Tadao Yamaoka
+Maintainer-email: tadaoyamaoka@gmail.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.19.5,<1.20.0) ; python_version == "3.6"
+Requires-Dist: numpy (>=1.21.6,<1.22.0) ; python_version == "3.7"
+Requires-Dist: numpy (>=1.26.0,<1.27.0) ; python_version >= "3.12" and python_version < "4.0"
+Requires-Dist: numpy ; python_version >= "3.8" and python_version < "3.12"
+Project-URL: Repository, https://github.com/TadaoYamaoka/cshogi
