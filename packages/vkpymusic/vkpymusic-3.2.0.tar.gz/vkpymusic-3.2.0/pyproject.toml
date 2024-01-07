@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "vkpymusic"
+version = "3.2.0"
+homepage = "https://github.com/issamansur/vkpymusic"
+repository = "https://github.com/issamansur/vkpymusic"
+description = "Python library for VK Audio (API)"
+keywords = ["vk", "api", "music", "downloader", "python"]
+authors = ["Issa Mansur (EDEXADE) <issa_mansur@mail.ru>"]
+license = "MIT"
+readme = "README.md"
+include = ["LICENSE"]
+classifiers = [
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.12"
+requests = ">=2.31"
+aiofiles = ">=23.2"
+httpx = ">=0.24"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
