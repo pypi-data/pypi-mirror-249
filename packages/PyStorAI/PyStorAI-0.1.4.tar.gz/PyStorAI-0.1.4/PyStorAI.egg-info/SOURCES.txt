@@ -1,0 +1,5 @@
+setup.py
+PyStorAI.egg-info/PKG-INFO
+PyStorAI.egg-info/SOURCES.txt
+PyStorAI.egg-info/dependency_links.txt
+PyStorAI.egg-info/top_level.txt
