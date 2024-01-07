@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+SmartPyDumper/__init__.py
+SmartPyDumper.egg-info/PKG-INFO
+SmartPyDumper.egg-info/SOURCES.txt
+SmartPyDumper.egg-info/dependency_links.txt
+SmartPyDumper.egg-info/requires.txt
+SmartPyDumper.egg-info/top_level.txt
+SmartPyDumper/object_inspect/__init__.py
+SmartPyDumper/object_inspect/compare.py
+SmartPyDumper/object_inspect/type_helper.py
+SmartPyDumper/serializer/__init__.py
+SmartPyDumper/serializer/pydump_reader.py
+SmartPyDumper/serializer/pydump_reader_pessimistic.py
+SmartPyDumper/serializer/smart_serializer.py
+SmartPyDumper/serializer/smart_serializer_pessimistic.py
