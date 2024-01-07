@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: bid_index_eab
+Version: 0.1.0
+Summary: This is a simplified package for the `index_eab` project.
+Home-page: https://github.com/
+Author: Belief
+Author-email: 
+License: MIT
+Description: 
+        This is the simplified version of the testbed proposed in the **Index Advisor (EA&B)** paper, which conducts a comprehensive assessment of the heuristic-based and the learning-based index advisors.
+        
+        This package implements workflow of the index advisor: 
+        
+        - **(1) Index Candidate Generation:** synthesizes promising index candidates using predefined strategies;
+        - **(2) Index Selection:** iterates over the generated index candidates and selects indexes based on the underlying selection mechanisms;
+        - **(3) Index Benefit Estimation:**  estimates the benefits of utilizing the selected indexes without actually building the indexes.
+        
+        Please refer to the original repository for more details :)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
