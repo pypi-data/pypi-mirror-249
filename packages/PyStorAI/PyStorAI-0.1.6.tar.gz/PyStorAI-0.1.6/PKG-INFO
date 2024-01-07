@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyStorAI
+Version: 0.1.6
+Summary: Effective Storyboard Visualisations for Artificial Intelligence.
+Home-page: https://github.com/VisualXAI/PyStorAI
+Author: Your Name
+Author-email: your@email.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+A longer description of your package
