@@ -1,0 +1,7 @@
+django_settings_env/__init__.py,sha256=2DAX5HcJfyrRfwdAD6f-4irsZoH5twi_jjCHc9_fQwQ,216
+django_settings_env/deferred.py,sha256=8jwIQI0GScb-FvFipU0sQWFqJ4bTDZlmtos9BhxAKZk,1978
+django_settings_env/env_django.py,sha256=Kt091zQ8CHwNiaXeoaNNVBGfMjWvORJN_xl8Laz-td0,22740
+django_settings_env-4.7.0.dist-info/LICENSE,sha256=jb9jADOsfiaiqthEiVs2gpT1bxPaPgbUls7Txg7NmXw,1086
+django_settings_env-4.7.0.dist-info/METADATA,sha256=zX3a29yfSOgK9OPc_AX0qd-dV_dPtAYbZP74m2WZxH8,7885
+django_settings_env-4.7.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_settings_env-4.7.0.dist-info/RECORD,,
