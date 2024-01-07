@@ -1,0 +1,2 @@
+oresat_c3
+scripts
