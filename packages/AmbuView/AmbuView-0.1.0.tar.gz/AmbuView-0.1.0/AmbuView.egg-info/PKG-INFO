@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: AmbuView
+Version: 0.1.0
+Summary: A package for ambulance hub analysis with respect to population density
+Home-page: https://github.com/Tjowen12345/AmbuView
+Author: Tom J Owen, Helen Ahmed, Rushanai Lerssupsin
+Author-email: tjo206@exeter.ac.uk, ha567@exeter.ac.uk, rl645@exeter.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE.txt
+
+UNKNOWN
+

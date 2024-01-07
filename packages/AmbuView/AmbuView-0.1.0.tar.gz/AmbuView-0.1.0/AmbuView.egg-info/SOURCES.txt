@@ -1,0 +1,16 @@
+LICENSE.txt
+setup.py
+AmbuView/Devon 2021 Census Population by town.csv
+AmbuView/Full_Graph_Generation.py
+AmbuView/__init__.py
+AmbuView/data_processing.py
+AmbuView/distance_calculations.py
+AmbuView/isochrone_map.py
+AmbuView/map_visualization.py
+AmbuView/nomis_2023_12_31_000343.csv
+AmbuView/optimization.py
+AmbuView.egg-info/PKG-INFO
+AmbuView.egg-info/SOURCES.txt
+AmbuView.egg-info/dependency_links.txt
+AmbuView.egg-info/requires.txt
+AmbuView.egg-info/top_level.txt
