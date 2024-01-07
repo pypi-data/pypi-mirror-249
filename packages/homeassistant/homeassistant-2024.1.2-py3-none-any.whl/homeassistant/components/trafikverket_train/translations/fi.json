@@ -1,0 +1,115 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Tili on jo m\u00e4\u00e4ritetty",
+            "reauth_successful": "Uudelleentodennus onnistui"
+        },
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "invalid_auth": "Virheellinen todennus",
+            "multiple_trains": "Useita junia l\u00f6ytyi",
+            "no_trains": "Junaa ei l\u00f6ytynyt"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API-avain"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "API-avain"
+                },
+                "data_description": {
+                    "time": "Aseta kellonaika hakua varten nimenomaan t\u00e4h\u00e4n kellonaikaan, ja sen on oltava t\u00e4sm\u00e4lleen sama kuin junan aikataulun mukainen l\u00e4ht\u00f6aika."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "actual_time": {
+                "name": "Todellinen aika"
+            },
+            "cancelled": {
+                "name": "Peruttu"
+            },
+            "delayed_time": {
+                "name": "Viiv\u00e4stysaika"
+            },
+            "departure_state": {
+                "name": "L\u00e4ht\u00f6tilanne",
+                "state": {
+                    "canceled": "Peruttu",
+                    "delayed": "Viiv\u00e4stynyt",
+                    "on_time": "Ajallaan"
+                }
+            },
+            "departure_time": {
+                "name": "L\u00e4ht\u00f6aika",
+                "state_attributes": {
+                    "actual_time": {
+                        "name": "Todellinen aika"
+                    },
+                    "canceled": {
+                        "name": "Peruttu"
+                    },
+                    "departure_state": {
+                        "name": "L\u00e4ht\u00f6tilanne",
+                        "state": {
+                            "canceled": "Peruttu",
+                            "delayed": "Viiv\u00e4stynyt",
+                            "on_time": "Ajallaan"
+                        }
+                    },
+                    "deviations": {
+                        "name": "Poikkeamat"
+                    },
+                    "estimated_time": {
+                        "name": "Arvioitu aika"
+                    },
+                    "number_of_minutes_delayed": {
+                        "name": "Minuuttia my\u00f6h\u00e4ss\u00e4"
+                    },
+                    "other_information": {
+                        "name": "Muut tiedot"
+                    },
+                    "planned_time": {
+                        "name": "Suunniteltu aika"
+                    }
+                }
+            },
+            "departure_time_next": {
+                "name": "L\u00e4ht\u00f6aika seuraava"
+            },
+            "departure_time_next_next": {
+                "name": "L\u00e4ht\u00f6aika seuraavaksi"
+            },
+            "deviation": {
+                "name": "Poikkeama"
+            },
+            "estimated_time": {
+                "name": "Arvioitu aika"
+            },
+            "other_info": {
+                "name": "Muut tiedot"
+            },
+            "planned_time": {
+                "name": "Suunniteltu aika"
+            }
+        }
+    },
+    "selector": {
+        "weekday": {
+            "options": {
+                "fri": "Perjantai",
+                "mon": "Maanantai",
+                "sat": "Lauantai",
+                "sun": "Sunnuntai",
+                "thu": "Torstai",
+                "tue": "Tiistai",
+                "wed": "Keskiviikko"
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "services": {
+        "power_on": {
+            "description": "K\u00e4ynnist\u00e4 kaikki sit\u00e4 tukevat laitteet.",
+            "name": "Virta p\u00e4\u00e4lle"
+        },
+        "select_device": {
+            "fields": {
+                "device": {
+                    "name": "Laite"
+                }
+            }
+        },
+        "standby": {
+            "name": "Lepotilassa"
+        },
+        "volume": {
+            "fields": {
+                "up": {
+                    "description": "Lis\u00e4\u00e4 \u00e4\u00e4nenvoimakkuutta x tasoa.",
+                    "name": "Yl\u00f6s"
+                }
+            },
+            "name": "\u00c4\u00e4nenvoimakkuus"
+        }
+    }
+}

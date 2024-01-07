@@ -1,0 +1,40 @@
+{
+    "services": {
+        "set_switch_override": {
+            "fields": {
+                "duration": {
+                    "description": "Ohituksen kesto. Valinnainen, oletus 1 tunti, enint\u00e4\u00e4n 24 tuntia."
+                }
+            }
+        },
+        "set_zone_mode": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                },
+                "mode": {
+                    "description": "Yksi seuraavista: off, timer tai footprint.",
+                    "name": "Tila"
+                }
+            },
+            "name": "Aseta aluetila"
+        },
+        "set_zone_override": {
+            "description": "Ohittaa alueen asetusarvon tietyksi ajaksi.",
+            "fields": {
+                "duration": {
+                    "description": "Ohituksen kesto. Valinnainen, oletus 1 tunti, enint\u00e4\u00e4n 24 tuntia.",
+                    "name": "Kesto"
+                },
+                "entity_id": {
+                    "name": "Kohde"
+                },
+                "temperature": {
+                    "description": "Tavoitel\u00e4mp\u00f6tila.",
+                    "name": "L\u00e4mp\u00f6tila"
+                }
+            },
+            "name": "Aseta vy\u00f6hykkeen ylikirjoitus"
+        }
+    }
+}

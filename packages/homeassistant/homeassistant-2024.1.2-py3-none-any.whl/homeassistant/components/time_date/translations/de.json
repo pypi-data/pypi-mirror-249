@@ -1,0 +1,8 @@
+{
+    "issues": {
+        "deprecated_beat": {
+            "description": "Bitte entferne den Schl\u00fcssel `{config_key}` aus dem `{display_options}` f\u00fcr den Eintrag {integration} in der Datei configuration.yaml und starte Home Assistant neu, um dieses Problem zu beheben.",
+            "title": "Der `{config_key}` Zeit- und Datumssensor wird entfernt"
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "already_in_progress": "M\u00e4\u00e4ritysprosessi on jo k\u00e4ynniss\u00e4",
+            "reauth_successful": "Uudelleentodennus onnistui"
+        },
+        "step": {
+            "pairing": {
+                "title": "webOS TV:n pariliitos"
+            },
+            "reauth_confirm": {
+                "title": "webOS TV:n pariliitos"
+            },
+            "user": {
+                "data": {
+                    "host": "Palvelin",
+                    "name": "Nimi"
+                },
+                "data_description": {
+                    "host": "WebOS TV:n is\u00e4nt\u00e4nimi tai IP-osoite."
+                },
+                "title": "Yhdist\u00e4 webOS TV:hen"
+            }
+        }
+    },
+    "device_automation": {
+        "trigger_type": {
+            "webostv.turn_on": "Laitetta pyydet\u00e4\u00e4n k\u00e4ynnistym\u00e4\u00e4n"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "sources": "L\u00e4hdeluettelo"
+                }
+            }
+        }
+    },
+    "services": {
+        "button": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        },
+        "command": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        },
+        "select_sound_output": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                }
+            }
+        }
+    }
+}

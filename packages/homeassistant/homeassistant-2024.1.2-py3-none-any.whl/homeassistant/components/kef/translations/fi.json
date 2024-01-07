@@ -1,0 +1,11 @@
+{
+    "services": {
+        "set_wall_db": {
+            "name": "Aseta sein\u00e4 dB"
+        },
+        "update_dsp": {
+            "description": "P\u00e4ivitt\u00e4\u00e4 kaikki DSP-asetukset.",
+            "name": "P\u00e4ivit\u00e4 DSP"
+        }
+    }
+}

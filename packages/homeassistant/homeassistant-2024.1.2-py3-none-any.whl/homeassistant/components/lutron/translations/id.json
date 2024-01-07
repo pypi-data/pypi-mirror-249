@@ -1,0 +1,22 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Gagal terhubung",
+            "unknown": "Kesalahan tak terduga"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Hos",
+                    "password": "Kata sandi",
+                    "username": "Nama pengguna"
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_import_issue_unknown": {
+            "title": "Permintaan impor konfigurasi Lutron YAML gagal karena kesalahan yang tak diketahui"
+        }
+    }
+}

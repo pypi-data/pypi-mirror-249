@@ -1,0 +1,19 @@
+{
+    "entity": {
+        "lock": {
+            "vehicle_state_locked": {
+                "name": "Zamek"
+            }
+        },
+        "media_player": {
+            "media": {
+                "name": "Odtwarzacz medi\u00f3w"
+            }
+        },
+        "update": {
+            "update": {
+                "name": "Aktualizacja"
+            }
+        }
+    }
+}

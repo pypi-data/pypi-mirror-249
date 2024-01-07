@@ -1,0 +1,78 @@
+{
+    "services": {
+        "put_paramset": {
+            "description": "Kutsuu putParamsetin RPC XML -rajapinnassa.",
+            "fields": {
+                "address": {
+                    "description": "Homematic-laitteen osoite.",
+                    "name": "Osoite"
+                },
+                "interface": {
+                    "description": "K\u00e4ytt\u00f6liittym\u00e4n nimi konfiguraatiosta.",
+                    "name": "K\u00e4ytt\u00f6liittym\u00e4"
+                },
+                "paramset": {
+                    "description": "Paramset-sanakirja.",
+                    "name": "Paramset"
+                },
+                "paramset_key": {
+                    "description": "Paramset_key -argumentti putParamsetille.",
+                    "name": "Paramset-avain"
+                },
+                "rx_mode": {
+                    "description": "K\u00e4ytetty vastaanottotila.",
+                    "name": "RX-tila"
+                }
+            },
+            "name": "Aseta paramset"
+        },
+        "reconnect": {
+            "description": "Muodostaa yhteyden kaikkiin Homematic Hubeihin.",
+            "name": "Yhdist\u00e4 uudelleen"
+        },
+        "set_device_value": {
+            "description": "M\u00e4\u00e4ritt\u00e4\u00e4 laitteen ominaisuuden RPC XML -liittym\u00e4ss\u00e4.",
+            "fields": {
+                "address": {
+                    "name": "Osoite"
+                },
+                "channel": {
+                    "name": "Kanava"
+                },
+                "interface": {
+                    "name": "K\u00e4ytt\u00f6liittym\u00e4"
+                },
+                "value": {
+                    "name": "Arvo"
+                },
+                "value_type": {
+                    "description": "Uuden arvon tyyppi.",
+                    "name": "Arvon tyyppi"
+                }
+            },
+            "name": "Aseta laitteen arvo"
+        },
+        "set_install_mode": {
+            "description": "Aseta RPC XML -liittym\u00e4 asennustilaan.",
+            "fields": {
+                "address": {
+                    "description": "Opiskeltavan homematic laitteen tai BidCoS-RF:n osoite.",
+                    "name": "Osoite"
+                },
+                "mode": {
+                    "name": "Tila"
+                }
+            }
+        },
+        "set_variable_value": {
+            "fields": {
+                "entity_id": {
+                    "name": "Kohde"
+                },
+                "name": {
+                    "name": "Nimi"
+                }
+            }
+        }
+    }
+}

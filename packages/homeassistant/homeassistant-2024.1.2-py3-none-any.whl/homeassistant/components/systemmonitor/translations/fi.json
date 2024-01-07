@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Palvelu on jo m\u00e4\u00e4ritetty"
+        },
+        "step": {
+            "user": {
+                "description": "Aloita m\u00e4\u00e4ritys painamalla L\u00e4het\u00e4. Lis\u00e4\u00e4 sensoreita valittuihin prosesseihin painamalla luodun konfigurointimerkinn\u00e4n konfigurointipainiketta"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "process": "Prosessit, jotka lis\u00e4t\u00e4\u00e4n sensoreiksi"
+                },
+                "data_description": {
+                    "process": "Valitse k\u00e4ynniss\u00e4 oleva prosessi luettelosta tai lis\u00e4\u00e4 mukautettu arvo. Useita valintoja/mukautettuja arvoja tuetaan"
+                },
+                "description": "M\u00e4\u00e4rit\u00e4 valvonta-sensori k\u00e4ynniss\u00e4 olevaa prosessia varten"
+            }
+        }
+    }
+}

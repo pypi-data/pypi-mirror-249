@@ -1,0 +1,12 @@
+{
+    "entity": {
+        "sensor": {
+            "sms": {
+                "name": "SMS"
+            },
+            "usage": {
+                "name": "Zu\u017cycie"
+            }
+        }
+    }
+}

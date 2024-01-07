@@ -1,0 +1,25 @@
+{
+    "services": {
+        "process": {
+            "fields": {
+                "conversation_id": {
+                    "description": "Keskustelun tunnus, jotta voit jatkaa edellist\u00e4 keskustelua",
+                    "name": "Keskustelun tunnus"
+                }
+            }
+        },
+        "reload": {
+            "description": "Lataa aikomusasetukset uudelleen.",
+            "fields": {
+                "agent_id": {
+                    "description": "Keskusteluagentti lataa uudelleen."
+                },
+                "language": {
+                    "description": "Kieli, jonka v\u00e4limuistissa olevat tavoitteet tyhjennet\u00e4\u00e4n. Oletuksena palvelimen kieli."
+                }
+            },
+            "name": "Uudelleenlataa"
+        }
+    },
+    "title": "Keskustelu"
+}
