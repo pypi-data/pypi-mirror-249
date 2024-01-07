@@ -1,0 +1,10 @@
+pydwarfs/VERSION,sha256=Ee4juPwvxhnW6rYnettaUnJhBnrAHM_D4RhX9Vvxi80,5
+pydwarfs/__init__.py,sha256=E7kqNM5jyhX3lPR85n9NCSepntDZVX_ViLcF9_MnzfQ,355
+pydwarfs/dwarfs.py,sha256=AUbVHr8-9p8SdyRGpu-8Z4pJl6ybT4t7GGbjQF383rM,11994
+pydwarfs/exceptions.py,sha256=gKNw0G1gHVnZJCC27XjpImqJ5ZIYbRP9xNonB1SivXM,74
+pydwarfs/utils.py,sha256=WarqT0O6A_oGcJqL0lyBMdiAkALF7fcGFfzo3mSOK9s,2189
+pydwarfs-0.1.1.dist-info/LICENSE,sha256=bAaF8yYxHvkUsyhrK8Zh0rH60drKnjlNKug2CczYdWs,1094
+pydwarfs-0.1.1.dist-info/METADATA,sha256=BAocmq7IGDrKhXqx9mcNloyeqGpJiI8QEUC_0o0mSVU,5197
+pydwarfs-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pydwarfs-0.1.1.dist-info/top_level.txt,sha256=tcHHyMzg9C1SRqgdd3ZR9-MF5Y8vNSrF-kfBLrw5yow,9
+pydwarfs-0.1.1.dist-info/RECORD,,
