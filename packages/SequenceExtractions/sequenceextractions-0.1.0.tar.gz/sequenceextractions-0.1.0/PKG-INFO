@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: SequenceExtractions
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Simon Meske
+Author-email: simon.h.meske@fau.de
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gffpandas (>=1.2.0,<2.0.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: typing (>=3.10.0.0,<4.0.0.0)
+Description-Content-Type: text/markdown
+
+# Sequence Extractions
