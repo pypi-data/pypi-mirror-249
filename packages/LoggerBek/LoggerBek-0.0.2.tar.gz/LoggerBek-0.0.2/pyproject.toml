@@ -1,0 +1,28 @@
+[project]
+name = "LoggerBek"
+version = "0.0.2"
+dependencies = [
+    "psutil",
+    "functools",
+    "time",
+    "logging"
+]
+authors = [
+  { name="BekAncer", email="bek.mag.09@gmail.com" },
+]
+description = "A small logger lib"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/BekAncer/logginglib/-/tree/dev?ref_type=heads"
+Issues = "https://gitlab.com/BekAncer/logginglib/-/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

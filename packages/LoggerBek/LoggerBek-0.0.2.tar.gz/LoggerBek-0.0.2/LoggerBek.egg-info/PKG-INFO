@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: LoggerBek
+Version: 0.0.2
+Summary: A small logger lib
+Author-email: BekAncer <bek.mag.09@gmail.com>
+Project-URL: Homepage, https://gitlab.com/BekAncer/logginglib/-/tree/dev?ref_type=heads
+Project-URL: Issues, https://gitlab.com/BekAncer/logginglib/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psutil
+Requires-Dist: functools
+Requires-Dist: time
+Requires-Dist: logging

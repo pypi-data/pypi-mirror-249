@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+LoggerBek/LoggerBek.py
+LoggerBek/__init__.py
+LoggerBek.egg-info/PKG-INFO
+LoggerBek.egg-info/SOURCES.txt
+LoggerBek.egg-info/dependency_links.txt
+LoggerBek.egg-info/requires.txt
+LoggerBek.egg-info/top_level.txt
