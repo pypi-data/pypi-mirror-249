@@ -1,0 +1,10 @@
+
+[dev]
+ruff
+sphinx
+sphinx-rtd-theme
+sphinx-toolbox
+numpy
+scipy
+matplotlib
+tabulate
