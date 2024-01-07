@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: welcome_overlords
+Version: 1.0
+Summary: Welcome your new {function name} overlords by using this module's @Overlord.
+Project-URL: Homepage, https://github.com/luap42/welcome_overlords
+Project-URL: Issues, https://github.com/luap42/welcome_overlords/issues
+Author-email: luap42 <me@luap42.de>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Welcome, Overlords!
+
+Welcome your new *function name* overlords by using this module.
+
+This module introduces the `@Overlord` (not overload with an 'a'!)
+annotation. It only welcomes your new overloards and then returns
+the function/class/object it has been applied to.
+
+This module is not only funny because of the associations with the
+OOP concept of overloading and the famous The Simpsons meme, but
+can also be considered essential for basically any project, as
+this annotation can be quite useful for certain debugging
+situations.

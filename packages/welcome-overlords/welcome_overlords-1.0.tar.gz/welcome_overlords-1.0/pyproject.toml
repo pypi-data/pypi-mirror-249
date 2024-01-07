@@ -1,0 +1,22 @@
+[project]
+name = "welcome_overlords"
+version = "1.0"
+authors = [
+  { name="luap42", email="me@luap42.de" },
+]
+description = "Welcome your new {function name} overlords by using this module's @Overlord."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/luap42/welcome_overlords"
+Issues = "https://github.com/luap42/welcome_overlords/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
