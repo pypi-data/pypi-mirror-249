@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: scmeta
+Version: 0
+Summary: A python package for single-cell metabolism analysis.
+Home-page: https://www.sc-meta.org/
+License: GPL-3.0-or-later
+Keywords: single-cell,metabolism,analysis
+Author: EstrellaXD
+Author-email: estrellaxd05@gmail.com
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: combat (>=0.3.3,<0.4.0)
+Requires-Dist: matplotlib (>=3.7.2,<4.0.0)
+Requires-Dist: numpy (>=1.25.2,<2.0.0)
+Requires-Dist: pandas (>=2.1.0,<3.0.0)
+Requires-Dist: polars (>=0.19.1,<0.20.0)
+Requires-Dist: pyrawtools (>=0.2.3,<0.3.0)
+Requires-Dist: pythonnet (>=3.0.3,<4.0.0)
+Requires-Dist: scikit-learn (>=1.3.0,<2.0.0)
+Requires-Dist: scipy (>=1.11.2,<2.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Requires-Dist: umap-learn (>=0.5.4,<0.6.0)
+Project-URL: Documentation, https://www.sc-meta.org/
+Project-URL: Repository, https://github.com/SCMeTA/SCMeTA
+Description-Content-Type: text/markdown
+
+# SCMeTA
+
+SCMeTA is a python library of single-cell meta-analysis tools. It provides a set of functions for single-cell meta-analysis, including data integration, batch effect correction, cell type annotation, cell clustering, cell trajectory inference, and cell type marker identification. It also provides a set of functions for single-cell data visualization, including dimension reduction, cell clustering, cell trajectory inference, and cell type marker identification. 
+
+## Installation
+
+SCMeTA is available on PyPI and can be installed with pip:
+
+```bash
+pip install scmeta
+```
+
+## Usage
+
+### Data integration
+
+```python
+
+from SCMeTA import Process
+
+sc = Process()
+
+# Load data
+
+sc.load("data/example.RAW")
+
+# Data process
+
+sc.pre_process()
+sc.process()
+sc.post_process()
+
+```
+
+## Documentation
+
+The official documentation is hosted on Read the Docs: https://sc-meta.com/
+
+## License
+
+SCMeTA is licensed under the GPLv3 license. See the LICENSE file for more details.
+
+
+
