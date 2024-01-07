@@ -1,0 +1,5 @@
+include LICENSE
+include VERSION
+include ftputil/*.py
+
+include test/*.py
