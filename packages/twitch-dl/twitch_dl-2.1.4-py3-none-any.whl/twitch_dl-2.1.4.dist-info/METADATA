@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: twitch-dl
+Version: 2.1.4
+Summary: Twitch downloader
+Home-page: https://github.com/ihabunek/twitch-dl/
+Author: Ivan Habunek
+Author-email: ivan@habunek.com
+License: GPLv3
+Project-URL: Documentation, https://twitch-dl.bezdomni.net/
+Keywords: twitch vod video download
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: m3u8 <4.0.0,>=1.0.0
+Requires-Dist: httpx <1.0.0,>=0.17.0
+
+Quickly download videos from twitch.tv.
+
+Works simliarly to youtube-dl but downloads multiple VODs in parallel which
+makes it faster.
