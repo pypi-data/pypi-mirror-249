@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lyyddforward
+Version: 1.3
+Summary: lyyddforwardtools for lyy
+Author: lyy
+Author-email: 
+License: MIT
+License-File: LICENSE
+Requires-Dist: lyyddforward
+Requires-Dist: psutil
+Requires-Dist: pandas
+Requires-Dist: pypinyin
+Requires-Dist: configparser
