@@ -1,0 +1,3 @@
+[console_scripts]
+dbt-py=dbt_py:main
+

@@ -1,0 +1,7 @@
+dbt_py/__init__.py,sha256=Y-a0s1rgt1AQCXNSZt6A87gnJzowUlZJQy8m2gA4xM4,160
+dbt_py/main.py,sha256=Phv4Ozq-XXvGR4JwTkhPZtPabRZUDvRVaYDE94qFOQc,1902
+dbt_py_wrap-0.0.2.dist-info/LICENSE,sha256=KIZIkSCNlhsx5KOQoMv-ezOJ5gt1s6Jq4vUs8YMYKoM,1066
+dbt_py_wrap-0.0.2.dist-info/METADATA,sha256=T_pZ43__40RZB9_I1E8WNguyLCnHjTqM4Abw_E18EgI,5854
+dbt_py_wrap-0.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dbt_py_wrap-0.0.2.dist-info/entry_points.txt,sha256=SfYg4JlOsLzCUmCa0OCxRivVhsodQxfn3IsWrigGamo,38
+dbt_py_wrap-0.0.2.dist-info/RECORD,,
