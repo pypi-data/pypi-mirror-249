@@ -1,0 +1,8 @@
+bnunicodenormalizer
+numpy
+pandas
+sentencepiece
+torch
+tqdm
+transformers
+langdetect
