@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/scrapy_qos/__init__.py
+src/scrapy_qos/qos.py
+src/scrapy_qos.egg-info/PKG-INFO
+src/scrapy_qos.egg-info/SOURCES.txt
+src/scrapy_qos.egg-info/dependency_links.txt
+src/scrapy_qos.egg-info/requires.txt
+src/scrapy_qos.egg-info/top_level.txt
