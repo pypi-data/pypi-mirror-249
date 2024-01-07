@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="local-using" />
+  </component>
+  <component name="ExtraIconsSettingsProject">
+    <option name="overrideIDESettings" value="true" />
+    <option name="ignoredPattern" value="" />
+    <option name="additionalUIScale" value="1.0" />
+    <option name="uiTypeIconsPreference" value="PREFER_NEW_UI_ICONS" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OrchidESettings">
+    <option name="enabledFoldingElements">
+      <map>
+        <entry key="Block and Roles" value="false" />
+        <entry key="Keywords" value="false" />
+        <entry key="Module Arguments" value="false" />
+        <entry key="Modules" value="false" />
+        <entry key="Tasks" value="true" />
+      </map>
+    </option>
+    <option name="newFileActionAnsibleDefaultFileExtension" value="yaml" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="local-using" project-jdk-type="Python SDK" />
+</project>

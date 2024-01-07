@@ -1,0 +1,10 @@
+#!/bin/bash
+# @File: upload-test-pypi
+# @Editor: PyCharm
+# @Author: Austin (From Chengdu.China) https://fairy.host
+# @HomePage: https://github.com/AustinFairyland
+# @OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
+# @CreatedTime: 2024-01-07
+
+pip install twine
+twine upload --repository testpypi dist/*
