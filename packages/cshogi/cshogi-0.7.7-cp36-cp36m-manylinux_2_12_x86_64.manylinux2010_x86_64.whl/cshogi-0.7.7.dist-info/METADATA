@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cshogi
+Version: 0.7.7
+Summary: A fast Python shogi library
+Home-page: https://github.com/TadaoYamaoka/cshogi
+Author: Tadao Yamaoka
+Author-email: tadaoyamaoka@gmail.com
+Maintainer: Tadao Yamaoka
+Maintainer-email: tadaoyamaoka@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Provides-Extra: web
+Requires-Dist: flask ; extra == 'web'
+Requires-Dist: portpicker ; extra == 'web'
+
+None
+
