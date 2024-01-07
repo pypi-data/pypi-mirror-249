@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nwlogger
+Version: 0.1.3
+Summary: NeuroWave Logger
+Home-page: https://github.com/NeurowaveAI/coeval_logger/tree/0.1.0
+Download-URL: https://github.com/NeurowaveAI/coeval_logger/archive/refs/tags/0.1.0.tar.gz
+Author: NeuroWave
+Author-email: info@neurowave.ai
+License: (c) NeuroWave License
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.8
+Requires-Dist: langchain (==0.0.344)
+Requires-Dist: openai (>=1.3.6)
+Requires-Dist: loguru (==0.7.2)
+

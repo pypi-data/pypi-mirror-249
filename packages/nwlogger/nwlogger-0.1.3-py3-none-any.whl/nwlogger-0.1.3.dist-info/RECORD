@@ -1,0 +1,9 @@
+coevalogger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coevalogger/file_logger.py,sha256=brED5k1OhCsIuL1RVsQk9vGsh-3ETVj2itU47xIoKek,9356
+coevalogger/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coevalogger/utils/openai_info.py,sha256=qyUvV83y2KznaI49ejhKJU9FcacXvghHmL2iUP5sqbI,4774
+coevalogger/utils/text_print.py,sha256=T558FXLqj_UcUWtk7Q3f2ls8trllzYjj6qjlllDcM4g,1105
+nwlogger-0.1.3.dist-info/METADATA,sha256=mZeRQ1H11maSZW8Y0g3WHhDAtHL76H0i2OKKIWcha0g,490
+nwlogger-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nwlogger-0.1.3.dist-info/top_level.txt,sha256=kHND3Y-PwqSdBCZvPzG6sV9-wZeL_5AhOpTqwuAqXPc,12
+nwlogger-0.1.3.dist-info/RECORD,,
