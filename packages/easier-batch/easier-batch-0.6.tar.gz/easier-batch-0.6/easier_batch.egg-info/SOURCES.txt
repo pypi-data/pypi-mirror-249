@@ -1,0 +1,5 @@
+setup.py
+easier_batch.egg-info/PKG-INFO
+easier_batch.egg-info/SOURCES.txt
+easier_batch.egg-info/dependency_links.txt
+easier_batch.egg-info/top_level.txt
