@@ -1,0 +1,7 @@
+termcolor<2,>=1.1.0
+
+[test]
+coverage[toml]
+pytest
+pytest-cov
+ruff
