@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "async-iterator"
+version = "0.1.1"
+description = ""
+authors = ["lpthong90 <lpthong90@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+anyio = "^4.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+mypy = "^0.971"
+flake8 = "^5.0.4"
+black = "^22.10.0"
+mkdocs = "^1.2.1"
+mkdocs-material = "^8.1.4"
+mdx-include = "^1.4.1"
+coverage = {extras = ["toml"], version = "^6.2"}
+ruff = "^0.1.11"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+parallel = true
+source = [
+    "tests",
+    "async_iterator"
+]
+context = '${CONTEXT}'
+omit = [
+]
