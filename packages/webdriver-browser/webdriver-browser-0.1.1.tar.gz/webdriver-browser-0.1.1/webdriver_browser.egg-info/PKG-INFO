@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: webdriver-browser
+Version: 0.1.1
+Summary: More convenient methods for creating multiple selenium browsers.
+Home-page: https://github.com/invoker-bot/selenium_browser
+Author: Invoker Bot
+Author-email: invoker-bot@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# selenium_browser
+More convenient methods for creating multiple selenium browsers.
+
+
