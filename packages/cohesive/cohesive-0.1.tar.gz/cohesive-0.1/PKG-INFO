@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: cohesive
+Version: 0.1
+Summary: Lightweight Python library that uses sentences embeddings to create naturally coherent segments of text akin to paragraphs.
+License: Apache-2.0
+Author: Matthew Dutton
+Author-email: matthewdutton1983@hotmail.co.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: networkx (>=2.6.3,<3.0.0)
+Requires-Dist: numpy (>=1.21.2,<2.0.0)
+Requires-Dist: python-louvain (>=0.15,<0.16)
+Requires-Dist: sentence-transformers (>=2.1.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# cohesive
+
+cohesive is a lightweight segmenter that uses sentence embeddings to split documents into naturally coherent segments akin to paragraphs.
+
+## Installation
+
+You can install 'cohesive' using pip:
+
+```bash
+pip install cohesive
+```
+
+## Using cohesive
+
+To start using the SDK, simply import the CohesiveTextSegmenter and create a new instance:
+
+```python
+from cohesive import CohesiveTextSegmenter
+
+# Instantiate the CohesiveTextSegmenter with the model that you want to use.
+# By default, cohesive utilizes paraphrase-MiniLM-L6-v2, which has produced good results.
+cohesive = CohesiveTextSegmenter("all-MiniLM-L6-v2")
+
+# Then, all you need to do is call the generate_tiles method and pass in an array of sentences.
+cohesive.generate_segments(sentences)
+```
+
