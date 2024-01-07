@@ -1,0 +1,11 @@
+klipper_backup_manager/__about__.py,sha256=4cbJj03GtkpPaedkuzX6L2AiAodV77fRQFadK1ToCkU,142
+klipper_backup_manager/__init__.py,sha256=2Ow3bWw-lmMlUEe1Ye6QRMp1ikYl84G2cmAPYly7g94,117
+klipper_backup_manager/klipper_backup_manager.py,sha256=mdZaC8bSXpzIt-A09rIzNYL1QoSoxdpl0RQVF1rkp8s,74
+klipper_backup_manager/cli/__init__.py,sha256=_oiCgmtE04thYBW4ldqa8azOsGKArT3iG2TOTTtF-x8,2917
+klipper_backup_manager/kbm/__init__.py,sha256=IvHux2x5RK96rWYfcyz8TmdreHp5UEAHX6zHff5mfWE,2113
+klipper_backup_manager/kbm/archiver/__init__.py,sha256=1T8ag7yEg7BX9ME65uBwcCtN4DZGb7NqbiQ-Oy36c2s,3246
+klipper_backup_manager/kbm/settings/__init__.py,sha256=0mThMwLXTuLYf_YfREgv0Y91hM9qUIGneoZeLh8xesM,1790
+klipper_backup_manager-2.0.0rc1.dist-info/METADATA,sha256=0BIhbf2NkruvLY0O0aIy3aWDqVEqTyt0DkCbclt384I,2296
+klipper_backup_manager-2.0.0rc1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+klipper_backup_manager-2.0.0rc1.dist-info/licenses/LICENSE.txt,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+klipper_backup_manager-2.0.0rc1.dist-info/RECORD,,
