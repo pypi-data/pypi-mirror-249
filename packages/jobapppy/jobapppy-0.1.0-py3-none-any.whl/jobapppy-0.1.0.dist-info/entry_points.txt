@@ -1,0 +1,3 @@
+[console_scripts]
+jobapppy=jobapppy.cli:cli
+

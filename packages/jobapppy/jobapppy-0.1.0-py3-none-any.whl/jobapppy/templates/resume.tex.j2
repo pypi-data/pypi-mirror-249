@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{jobapp}
+
+%% Contact info
+\SetName{<< resume.info.name | upper | tex_escape >>}
+\SetProfessionalTitle{<< resume.info.title | tex_escape >>}
+\SetAddress{<< resume.info.address1 | tex_escape >> \\ << resume.info.address2 | tex_escape >>}
+\SetPhone{<< resume.info.phone | tex_escape >>}
+\SetEmail{<< resume.info.email | tex_escape >>}
+
+%% Macros
+\newcommand{\VFix}{\vspace{-0.8em}}
+
+\begin{document}
+<% for section in resume.sections %>
+  \section*{<< section.name | tex_escape >>}
+  <% for contents in section.contents %>
+    <% if section.type_ == "HighlightItemList" %>
+    \ResumeLayout
+      {\textbf{<< contents.description | tex_escape >>}}
+      {<< contents.items | join(', ') | tex_escape >>}
+    <% elif section.type_ == "DatedListItems" %>
+    \WorkExperience
+      {<< contents.description1 | tex_escape >>}
+      {<< contents.description2 | tex_escape >>}
+      {<< contents.title | tex_escape >>}
+      {<< contents.start_date | tex_escape >> -- << contents.end_date | tex_escape >>}
+      {
+      <% for item in contents.items %>
+        \item << item | tex_escape >>
+      <% endfor %>
+      }
+    <% elif section.type_ == "DescribeItem" %>
+    \ResumeLayout
+      {<< contents.description | tex_escape >>}
+      {\textbf{<< contents.text1 | tex_escape >>}<% if contents.text2 %>, << contents.text2 | tex_escape >><% endif %> \hfill \textit{<< contents.annotation | tex_escape >>}}
+    <% elif section.type_ == "AnnotatedItem" %>
+    \ResumeLayout
+      {<< contents.description | tex_escape >>}
+      {<< contents.text | tex_escape >> \hfill \textit{<< contents.annotation | tex_escape >>}}
+    <% endif %>
+  <% endfor %>
+  <% if section.type_ in ["AnnotatedItem", "DescribeItem", "HighlightItemList"] %>
+    \VFix
+  <% endif %>
+  \smallskip
+<% endfor %>
+
+\end{document}

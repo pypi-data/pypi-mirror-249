@@ -1,0 +1,12 @@
+jobapppy/__init__.py,sha256=4VFleeLbKEofBo9obc3sCAJp8WKwqXXCjn0UTuhwcFQ,74
+jobapppy/__main__.py,sha256=7EN03JB90CQvbG1Rit69MkEUDZQZ2vJ6uaJPaNC8KDs,63
+jobapppy/cli.py,sha256=CWfXi0UESs7RGdXHofKbh0gUM7oYOlIXdlFV5dqzQ4I,2482
+jobapppy/environments.py,sha256=PbaTcH9gCmzMdZTMTgcuHVJC4ynuo9Ol69cUsAZKD78,1688
+jobapppy/filters.py,sha256=hTl12AqXcp1NasSfEUhyTnJhuKOwKtTuHKl2HLd3JeA,847
+jobapppy/schemas.py,sha256=DVbGZz_Pjf5M8-mbusX1X6HiUqYqX8LYFwucCWYOpJc,2314
+jobapppy/templates/resume.md.j2,sha256=W30nfZ16ZmZGTHVSdDCylkeY5D8XxomirbP1gWvllzw,1017
+jobapppy/templates/resume.tex.j2,sha256=kLZmOs2r4GfSVILbTLtv3UJ5TbRO7cv989wDs-XKj9c,1821
+jobapppy-0.1.0.dist-info/METADATA,sha256=1ck2vueJ7tTiuP9D0T3_x8qn2x_o_zLLOC5PPFkdILY,3121
+jobapppy-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+jobapppy-0.1.0.dist-info/entry_points.txt,sha256=SCg9iYv2ljiKUheQb9folrnSrXar1qn_OUsconTmt4c,45
+jobapppy-0.1.0.dist-info/RECORD,,
