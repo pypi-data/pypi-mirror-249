@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: AdvEMDpy
+Version: 0.0.17
+Summary: Advanced Empirical Mode Decomposition package with numerous extensions to various aspects of core algorithm.
+Home-page: https://github.com/Cole-vJ/AdvEMDpy.git
+Download-URL: https://github.com/Cole-vJ/AdvEMDpy/archive/refs/tags/v0.0.17.tar.gz
+Author: Cole van Jaarsveldt
+Author-email: colevj0303@gmail.com
+License: cc-by-nc-4.0
+Keywords: EMPIRICAL MODE DECOMPOSITION,EMD,STATISTICAL EMPIRICAL MODE DECOMPOSITION,SEMD,ENHANCED EMPIRICAL MODE DECOMPOSITION,EEMD,ENSEMBLE EMPIRICAL MODE DECOMPOSITION,HILBERT TRANSFORM,TIME SERIES ANALYSIS,FILTERING,GRADUATION,WINSORIZATION,DOWNSAMPLING,SPLINES,KNOT OPTIMISATION,PYTHON,R,MATLAB,FULL-SPECTRUM ENSEMBLE EMPIRICAL MODE DECOMPOSITION,FSEEMD,COMPRESSIVE SAMPLING,COMPRESSIVE SAMPLING EMPIRICAL MODE DECOMPOSITION,CSEMD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: Free for non-commercial use
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+
+AdvEMDpy is a Python library that performs Empirical Mode Decomposition with numerous algorithmic variations available at key stages of the core algorithm. This package was developed out of research performed by Cole van Jaarsveldt, Matthew Ames, Gareth W. Peters, and Mike Chantler.
