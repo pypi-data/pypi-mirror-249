@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: huff-puff
+Version: 0.1.0
+Summary: Python package for file compression using Huffman coding
+Home-page: https://github.com/vivek378521/huff-puff
+Author: Vivek Khatri
+Author-email: vvk3785@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Huffman Coding Python Package
+
+This Python package implements Huffman coding for file compression and decompression.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install huff-puff
+```
+
+## Usage
+
+### Compression (huff.py)
+
+To compress a file using Huffman coding:
+
+```python
+from huff import compress
+
+compressedFile = compress("input.txt")
+```
+
+### Decompression (huff.py)
+
+To decompress a file previously compressed using Huffman coding:
+
+```python
+from huff import decompress
+
+decompressedFile = decompress("input_compressed.bin")
+```
+
+### Huffman Functions (huffman.py)
+
+For detailed information about the Huffman coding functions:
+
+```python
+from huffman import make_frequency_dict, make_heap, merge_nodes, make_codes, get_encoded_text, decode_text
+// Use these functions as needed within your code
+```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
