@@ -1,0 +1,11 @@
+setup.py
+folumo/__init__.py
+folumo.egg-info/PKG-INFO
+folumo.egg-info/SOURCES.txt
+folumo.egg-info/dependency_links.txt
+folumo.egg-info/requires.txt
+folumo.egg-info/top_level.txt
+folumo/betterGUI/Items.py
+folumo/betterGUI/__init__.py
+folumo/betterGUI/screen.py
+folumo/func/__init__.py
