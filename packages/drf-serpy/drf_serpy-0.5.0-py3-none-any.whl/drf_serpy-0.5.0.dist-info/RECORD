@@ -1,0 +1,7 @@
+drf_serpy/__init__.py,sha256=qcUV-6jO3bxQLJy93n5VbK_e7LvTQgCBtVZKtD-jgZo,577
+drf_serpy/fields.py,sha256=najelIV831G5CmzclkO1C42mkFGvpAIF0KHKkMX2wM0,9192
+drf_serpy/serializer.py,sha256=K9xwFCcyvv1ZrwK9JG4D9XZcvQJBCYKZb9cKa70tOAY,9835
+drf_serpy-0.5.0.dist-info/LICENSE,sha256=NzFcArzco6NTllLmwoU8JhS5fuQ0h-InJ24JnFvfliA,1116
+drf_serpy-0.5.0.dist-info/METADATA,sha256=HeY-i2_MAtCVVmNx_Sk2ovDEKwuZWxFMmEKGp5cQMy4,8454
+drf_serpy-0.5.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+drf_serpy-0.5.0.dist-info/RECORD,,
