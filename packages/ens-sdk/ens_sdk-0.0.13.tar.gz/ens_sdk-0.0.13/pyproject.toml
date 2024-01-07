@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ens_sdk"
+version = "0.0.13"
+authors = [
+  { name="Joseph Daudi", email="joseph@encipher.dev" },
+]
+dependencies = ['redis', 'pydantic', 'sentry_sdk', 'requests', 'esr-sdk', 'pytz', 'python-decouple']
+description = "An SDK to simplify connectivity to ENS Services"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/enciphertz/encipher-notification-service-python-sdk"
+"Bug Tracker" = "https://github.com/enciphertz/encipher-notification-service-python-sdk/issues"
