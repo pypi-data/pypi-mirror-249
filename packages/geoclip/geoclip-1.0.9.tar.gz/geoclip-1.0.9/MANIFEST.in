@@ -1,0 +1,4 @@
+include geoclip/model/gps_gallery/coordinates_100K.csv
+include geoclip/model/weights/image_encoder_mlp_weights.pth
+include geoclip/model/weights/location_encoder_weights.pth
+include geoclip/model/weights/logit_scale_weights.pth
