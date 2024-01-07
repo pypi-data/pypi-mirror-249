@@ -1,0 +1,15 @@
+brutils/__init__.py,sha256=rDvqISaGdVexFh6iB5TwXB9eEt_QanAqcz9lUnBSIQ0,2110
+brutils/cep.py,sha256=B9yAP8zeKQD3-5yDd0vru8qhTvubRjpfISATmCiPsq0,2535
+brutils/cnpj.py,sha256=HnJBRs_On1U-esczpv_Kej_jlx0m1LCHnrZJ0SNU5tU,6999
+brutils/cpf.py,sha256=oluqGuniJ1pJlz313CVL1fkepBzQuhCRkoiOkjwl8ck,5955
+brutils/data/legal_process_ids.json,sha256=uSGzx9MEcUO-tApHI_erMpOTAooxZSEoT_848Xo7R5A,10920
+brutils/email.py,sha256=KAUOe9B30OuGEY48C8EZj6J4njyoSWV03oRf1L_QMjg,815
+brutils/legal_process.py,sha256=jZ-zxeXG8Hphepjau74a9w0nosW2nzqHaQtNYKGL_Qs,5031
+brutils/license_plate.py,sha256=vYrpDsg9lJPzOEkOMrytafL4u41ff6AcxYlQqXAHzP0,6040
+brutils/phone.py,sha256=TKLDb0MMWOVb-8_uyJgRzKsmE6smNLDGLoQWml3_lr0,5479
+brutils/pis.py,sha256=Zq0gk9Qd8tTpr_S7YwfuYnWFLl63ZqZedSsc6K4IFKc,3004
+brutils/voter_id.py,sha256=AyCohPrhjTJCgQ2vp33lG4k3Ykcsi-RrG48rfMlSZvM,6018
+brutils-2.1.1.dist-info/LICENSE,sha256=D8m9P1cmNhjVum1NdgUyWdJJvuWfbU0uGzKAHEou96s,1072
+brutils-2.1.1.dist-info/METADATA,sha256=5rrmfGlWGMmlnygp94ijJ9dS571qsOBBUfjxukLMnLo,25570
+brutils-2.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+brutils-2.1.1.dist-info/RECORD,,
