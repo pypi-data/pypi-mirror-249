@@ -1,0 +1,2 @@
+[console_scripts]
+geoipsets = geoipsets.__main__:main
