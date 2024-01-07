@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sqlite-memory-vfs"
+version = "0.0.14"
+authors = [
+  { name="Michal Charemza", email="michal@charemza.name" },
+  # The DIT wrote the sqlite-s3vfs which this project is a fork of
+  { name="Department for International Trade", email="sre@digital.trade.gov.uk" },
+]
+description = "Python writable in-memory virtual filesystem for SQLite"
+readme = "README.md"
+requires-python = ">=3.7.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Database",
+]
+dependencies = [
+    "sortedcontainers>=2.4.0",
+    "apsw>=3.43.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.2.5",
+    "pytest-cov>=3.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/michalc/sqlite-memory-vfs"
+
+[tool.hatch.build]
+include = [
+  "sqlite_memory_vfs.py",
+]
