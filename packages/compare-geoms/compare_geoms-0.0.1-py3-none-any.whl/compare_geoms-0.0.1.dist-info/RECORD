@@ -1,0 +1,14 @@
+comp.py,sha256=qa5UhO2fHdNbtWDTH4GZNo5oZKM16aIDtqYhWlUEkeA,1872
+compare_geoms/__init__.py,sha256=gi49oVEy-4fPSH0-XstOzIIrthqDgMnddW2YTWoETiI,157
+compare_geoms/data_loading.py,sha256=GRviNnUC7riDMSsJwrScNztkjq5MtjNWVGY_4pDuM2Y,2910
+compare_geoms/main.py,sha256=LifVRHX5OApTGbSDq2mWE7lvodfpJDmPI7HTNoYy3sA,2672
+compare_geoms/mol_graph_funcs.py,sha256=ujRp6XhMCWqQdoKmbIVOHfjXFT6Xg-cWv9mylWEx1FI,1936
+compare_geoms/molecule_processing.py,sha256=Tlz_93k7Sy6dM9Zm6gYTV_LD6jZl_Wvk7Hd_SRK3tSc,2537
+compare_geoms/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compare_geoms/examples/__init__.py,sha256=r8aDIOEx0Zv2yxf_AGP7mKwwSSRFAXG_fyAPQXASUXs,24
+compare_geoms/examples/sample.py,sha256=5Htejmm6uqdaoht4HRyUDDF7sXum1xv8NOwPz89LFb0,1143
+compare_geoms-0.0.1.dist-info/LICENSE.md,sha256=PYoK27vvZgEyOfpcoIRgs6O00BQyfoiteS4oaH-s23o,1485
+compare_geoms-0.0.1.dist-info/METADATA,sha256=lhmaLt8OUyT76-zeinJWkF-WYMVAYfbiq0GAzgsDKJU,1708
+compare_geoms-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+compare_geoms-0.0.1.dist-info/top_level.txt,sha256=p4urp5zZvathqIgFWbh6UEABpV7Q4fHfjNOFmE9uyeg,19
+compare_geoms-0.0.1.dist-info/RECORD,,
