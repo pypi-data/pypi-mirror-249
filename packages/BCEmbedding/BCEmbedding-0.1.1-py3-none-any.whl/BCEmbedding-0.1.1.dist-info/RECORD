@@ -1,0 +1,17 @@
+BCEmbedding/__init__.py,sha256=H35SvW466Df1SHiCaOBfTNFHPnoSSeEKI5dssG1z8hM,145
+BCEmbedding/evaluation/__init__.py,sha256=YefkjYpadq-v3iB41EYw1g7JhPEwx2vC_eWYPehWR3c,146
+BCEmbedding/evaluation/c_mteb/Reranking.py,sha256=mSBvWa1x7Y-ezvR6RzgrNihOYiG5hYECYgQpzXiXDzU,8631
+BCEmbedding/evaluation/c_mteb/Retrieval.py,sha256=S3HsoGJDp5ix9Om8BPp9bgpyZEvCrCwqZMjnkAy7W8U,10905
+BCEmbedding/evaluation/c_mteb/__init__.py,sha256=t4jvOIUMjWwETNvPbxqGPx5UA-719tEmIDoWcEBjwsM,234
+BCEmbedding/evaluation/c_mteb/yd_dres_model.py,sha256=7N7ljNrO8nNxSZkbVE8ndPis17E4xASgM3vapQdMaRo,3503
+BCEmbedding/models/__init__.py,sha256=YoF-vLzPcFpBFaRP_fuFbcfLbFBMojN0274KfiG3hOE,197
+BCEmbedding/models/embedding.py,sha256=s1Sy7TTpzLvVdL8r4qlPyISjpsMULfdiBWKlk7WNsDY,4144
+BCEmbedding/models/reranker.py,sha256=6qZG5cYSJR5dkbaBw-XqrFo1zw7nXF9pxI6qNoxdh98,7480
+BCEmbedding/utils/__init__.py,sha256=-A4YuVirKfjXS73tDXC1M05Xnwy2-5H8h6pS5zGwYHQ,192
+BCEmbedding/utils/logger.py,sha256=k8d60HuFcaqnUCOwlgJ33n7gyqmXjMgC47tYHj77HLM,401
+BCEmbedding/utils/query_instructions.py,sha256=YDp2O_eVOa0XHFY7miBUSG5Ka8y53Xu325x2dBcgP0Y,1671
+BCEmbedding-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+BCEmbedding-0.1.1.dist-info/METADATA,sha256=u3cvKnyB4rHqu7Kt9x24W84Neve4YoykRGVa1EOQz8U,22065
+BCEmbedding-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+BCEmbedding-0.1.1.dist-info/top_level.txt,sha256=h6kdwVU7f8_ae0K_sK5wG7m4kdEIpO3DQ-Eb2q-piGA,12
+BCEmbedding-0.1.1.dist-info/RECORD,,
