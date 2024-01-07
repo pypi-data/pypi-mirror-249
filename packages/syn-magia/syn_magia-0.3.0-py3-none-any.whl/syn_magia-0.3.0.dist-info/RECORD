@@ -1,0 +1,16 @@
+magia/__init__.py,sha256=C8nUISKvgv-R_XyAMlMDkB0SZL9mJT5xpVu6SFUFIjA,1206
+magia/bundle.py,sha256=_KZViRVnwRTBIIqNZFfzlicwIwAqFbUeQRqE_EOuifQ,13005
+magia/constants.py,sha256=OdmOLsR7Gudo2LdgDUViyDGkB-72qTOxjrfDOPekPEw,956
+magia/core.py,sha256=j8rd5NGll9lIVQ1NxBmIatPuW4JsvroarRhHzbXlVs0,42999
+magia/external.py,sha256=k5zVW2lWPVI48EtjqAhH2CHg2V0ngEXvt-nT9vo09GI,9270
+magia/memory.py,sha256=0c6ZR1v_NrJF5ZPNOjpK7tZGS5iPD_y3eKu-aJFbvyA,13055
+magia/module.py,sha256=Nk-JyVUfPEDx_VUFXvw_nCUA_t91bBsH5lOYO3yeHqE,17372
+magia/std/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magia/std/bundles.py,sha256=hah8m13WcO9rANpJdsyFncoj8vmAGQMG7OJXvBLvnH8,4953
+magia/std/encoding.py,sha256=S2599Urw7LsRif6YwxGUi5rfZA8JubIQBo6P0v5mA00,791
+magia/std/fixed_point.py,sha256=37tqSeXyCsI5epOv-ZsravvaixiUJYdUrg9RsBYukzA,1973
+magia/std/storage.py,sha256=bnNwhELGGUvevV2sTr6z7-zMGFGWKsIrYXsAXb8QqRU,1904
+syn_magia-0.3.0.dist-info/LICENSE,sha256=gUcr_D5EfI_iL26MsxAqWp6TI8-UmNNoYqTXYJayUdM,1069
+syn_magia-0.3.0.dist-info/METADATA,sha256=6s_l-SsJvbpIoWsLt8ZuSJfli9JChB93epPW-isKlH0,4691
+syn_magia-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+syn_magia-0.3.0.dist-info/RECORD,,
