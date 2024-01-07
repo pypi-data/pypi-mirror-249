@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: pydistort
+Version: 0.0.2
+Summary: Asynchronous media distortion module
+Project-URL: Documentation, https://github.com/barsikus007/pydistort#readme
+Project-URL: Issues, https://github.com/barsikus007/pydistort/issues
+Project-URL: Source, https://github.com/barsikus007/pydistort
+Author: barsikus007
+License-Expression: MIT
+License-File: LICENSE
+Keywords: asyncio,distort
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: pillow~=10.2.0
+Provides-Extra: all
+Requires-Dist: pydistort[apng,lottie]; extra == 'all'
+Provides-Extra: apng
+Requires-Dist: apng~=0.3.4; extra == 'apng'
+Provides-Extra: lottie
+Requires-Dist: lottie[gif]~=0.7.0; extra == 'lottie'
+Description-Content-Type: text/markdown
+
+# PyDistort
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pydistort.svg)](https://pypi.org/project/pydistort)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pydistort.svg)](https://pypi.org/project/pydistort)
+[![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+- [Usage](#usage)
+
+## Installation
+
+```console
+pip install pydistort
+```
+Dev build
+```bash
+# without optional dependencies:
+pip install -U git+https://github.com/barsikus007/pydistort
+# with optional dependencies:
+pip install -U "pydistort[all]@ git+https://github.com/barsikus007/pydistort"
+```
+For distortion, you need to install imagemagick
+#### Linux (Ubuntu)
+```bash
+sudo apt install imagemagick
+```
+#### Windows
+You can do this via scoop.sh
+```pwsh
+scoop install imagemagick
+```
+For video, gif and apng procession, you need to install ffmpeg
+#### Linux (Ubuntu)
+```bash
+sudo apt install ffmpeg
+```
+#### Windows
+You can do this via scoop.sh
+```pwsh
+scoop install ffmpeg
+```
+For lottie->gif procession you need to install gtk
+#### Linux (Ubuntu)
+```bash
+sudo apt install libgtk-3-0
+```
+#### Windows
+You can do this via scoop.sh
+```pwsh
+scoop install msys2
+msys2  # then exit in msys shell
+msys2 -c "pacman -S mingw-w64-x86_64-gtk3 --noconfirm"
+```
+
+## License
+
+`pydistort` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## Usage
+
+```python
+from pydistort.image.seam_carving import distort
+
+await distort('image.png', 60)
+```
+
+## TODO for 0.1.0 release
+- [ ] Write readme
+- [ ] Rewrite seam carving
+- [ ] Rewrite seam carving py
+- [ ] Maybe rewrite to Glaxnimate
+- [ ] Add ffmpeg commands
+- [ ] lottie -p parameter
+- [ ] https://github.com/bodqhrohro/giftolottie
+- [ ] https://github.com/bunkahle/gif2numpy
+- [ ] os.remove to unlink
