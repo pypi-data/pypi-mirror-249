@@ -1,0 +1,2 @@
+[console_scripts]
+rawhttpy = rawhttpy.rawhttpy_cli:main

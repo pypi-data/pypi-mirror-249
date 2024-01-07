@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+rawhttpy/__init__.py
+rawhttpy/main.py
+rawhttpy/rawhttpy_cli.py
+rawhttpy.egg-info/PKG-INFO
+rawhttpy.egg-info/SOURCES.txt
+rawhttpy.egg-info/dependency_links.txt
+rawhttpy.egg-info/entry_points.txt
+rawhttpy.egg-info/top_level.txt
