@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+qoa/__init__.py
+qoa/ffi_builder.py
+qoa.egg-info/PKG-INFO
+qoa.egg-info/SOURCES.txt
+qoa.egg-info/dependency_links.txt
+qoa.egg-info/requires.txt
+qoa.egg-info/top_level.txt
