@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tpify"
+version = "0.0.1a3"
+authors = [{ name = "Kyle Shaver", email = "kyle@tpify.dev" }]
+description = "Return, don't raise."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[project.urls]
+Homepage = "https://github.com/KyleJShaver/tpify"
+Issues = "https://github.com/KyleJShaver/tpify/issues"
+
+[tool.isort]
+profile = "black"
+src_paths = ["src/tpify", "test"]
+honor_noqa = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
+pythonpath = ["src"]

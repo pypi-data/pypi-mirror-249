@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/tpify/__init__.py
+src/tpify.egg-info/PKG-INFO
+src/tpify.egg-info/SOURCES.txt
+src/tpify.egg-info/dependency_links.txt
+src/tpify.egg-info/requires.txt
+src/tpify.egg-info/top_level.txt
+src/tpify/core/__init__.py
+src/tpify/core/extendability.py
+src/tpify/core/response.py
+src/tpify/core/status_code.py
+src/tpify/core/wrapper.py
+tests/test_response.py
+tests/test_status_code.py
