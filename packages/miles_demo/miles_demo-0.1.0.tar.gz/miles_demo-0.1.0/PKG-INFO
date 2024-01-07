@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: miles_demo
+Version: 0.1.0
+Summary: 
+Author: xiazhiqiang
+Author-email: xiazhiqiangcuc@126.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# miles-demo
+
+## 安装
+
+```sh
+poetry install
+```
+
+## 测试
+
+```sh
+poetry run pytest
+```
+
