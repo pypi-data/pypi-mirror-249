@@ -1,0 +1,13 @@
+httpx
+aiohttp
+websockets
+tornado
+openai
+erniebot
+zhipuai
+PyYAML
+duckduckgo_search
+newspaper3k
+numpy
+scipy
+sympy
