@@ -1,0 +1,7 @@
+powerxrd/__init__.py,sha256=x1d3zHfT45vwBB_ZjeEHnM7tnu80Q20gFPTzjPQbYRQ,80
+powerxrd/main.py,sha256=JymVe3WrOHym9JPBQ9byptCiOQf3DTVhNLGxLDnPQSk,13638
+powerxrd/rietveld.py,sha256=ZZ-ngyBFCTRId1wNx4bpRa_Vwn3-2wXTjUiB5G5S9dk,13072
+powerxrd-2.3.0.dist-info/LICENSE,sha256=cGKRk_ghwdLU_ZtpMwilFpNRtGEI8Z8eK8p98vgJrp8,1077
+powerxrd-2.3.0.dist-info/METADATA,sha256=7SEDavp4HAKJvYwU6CEDnvIp7Om_5s8wGvM5XeU7Vi8,1894
+powerxrd-2.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+powerxrd-2.3.0.dist-info/RECORD,,
