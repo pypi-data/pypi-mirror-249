@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: inm_distributions
+Version: 0.1
+Summary: This package provides classes for various statistical distributions, including Gaussian and Binomial distributions. It includes methods for calculating mean, standard deviation, probability density function, and more.
+Home-page: UNKNOWN
+Author: Isaac Ndirangu Muturi
+Author-email: ndirangumuturi749@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
