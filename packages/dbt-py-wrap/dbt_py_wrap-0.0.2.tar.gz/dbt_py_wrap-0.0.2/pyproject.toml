@@ -1,0 +1,47 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "dbt-py-wrap"  # Not `dbt-py` to avoid confusion with the DbtPy package (PyPI requirement)
+version = "0.0.2"
+description = "Python wrapper for dbt-core to extend dbt with custom Python."
+readme = "README.md"
+authors = ["Bilbottom"]
+repository = "https://github.com/Bilbottom/dbt-py"
+packages = [
+    { include = "dbt_py" },
+]
+
+[tool.poetry.scripts]
+dbt-py = "dbt_py:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group]
+dev.optional = true
+test.optional = true
+ide.optional = true
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+
+[tool.poetry.group.test.dependencies]
+dbt-core = "^1.5.0"
+dbt-duckdb = "^1.5.0"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+
+# Packages just for IDE integration
+[tool.poetry.group.ide.dependencies]
+black = "*"
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+
+[tool.isort]
+profile = "black"
