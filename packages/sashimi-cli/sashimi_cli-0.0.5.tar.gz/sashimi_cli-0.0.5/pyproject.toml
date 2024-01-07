@@ -1,0 +1,54 @@
+[build-system]
+# requires = ["setuptools >= 40.6.0", "wheel"]
+requires = ["hatchling", "wheel"]
+
+# build-backend = "setuptools.build_meta"
+build-backend = "hatchling.build"
+
+[project]
+name="sashimi-cli"
+
+dynamic = [ "version" ]
+
+dependencies = [
+    'requests',
+    'typer==0.9.0',
+    'python-dotenv',
+    'rich==13.7.0',
+    'pyyaml',
+    'SQLAlchemy',
+]
+
+authors = [
+  { name="Yaroslav Polyakov", email="yaroslaff@gmail.com" },
+]
+description = "CLI utility and python client package for Sashimi headless CMS"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/yaroslaff/sashimi"
+Issues = "https://github.com/yaroslaff/sashimi/issues"
+
+
+[project.scripts]
+sashimi = "sashimi:__main__.main"
+
+[project.optional-dependencies]
+mysql = [
+    'mysqlclient'
+]
+postgresql = [
+  'psycopg2'  
+]
+
+[tool.hatch.version]
+path = 'sashimi/__init__.py'
+
+[tool.hatch.build.targets.wheel]
+packages = ["sashimi"]
