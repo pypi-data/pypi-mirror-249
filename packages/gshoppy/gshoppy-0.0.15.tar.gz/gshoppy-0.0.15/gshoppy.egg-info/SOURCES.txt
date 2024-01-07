@@ -1,0 +1,15 @@
+LICENCE
+README.md
+setup.py
+gshoppy/__init__.py
+gshoppy/constants.py
+gshoppy/utils.py
+gshoppy.egg-info/PKG-INFO
+gshoppy.egg-info/SOURCES.txt
+gshoppy.egg-info/dependency_links.txt
+gshoppy.egg-info/requires.txt
+gshoppy.egg-info/top_level.txt
+gshoppy/services/__init__.py
+gshoppy/services/core.py
+gshoppy/services/models.py
+gshoppy/services/product.py
