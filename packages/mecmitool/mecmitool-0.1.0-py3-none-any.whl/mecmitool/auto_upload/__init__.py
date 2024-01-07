@@ -1,0 +1,1 @@
+from mecmitool.auto_upload.auto_upload import upload
