@@ -1,0 +1,10 @@
+polars_xdt-0.5.2.dist-info/METADATA,sha256=5nz0sjrDlAgc3uU59eAZzliIC51FTnIMQLjmagDhacU,3224
+polars_xdt-0.5.2.dist-info/WHEEL,sha256=l1f3S6vnj6iLeDzXT0G0HKrGyLhfPcwKb4M8bkk1z8M,130
+polars_xdt-0.5.2.dist-info/license_files/LICENSE,sha256=Gcpl9_lt2F5Z0vwCKjpqfmQ14E77Vu7bNk5HUIyvCcE,1077
+polars_xdt/_internal.pyi,sha256=Y25n44pyE3vp92MiABKrcK3IWRyQ1JG1rZ4Ufqy2nC0,17
+polars_xdt/ranges.py,sha256=HMCzcledrFutf74m9BFG-toytkMsHvKH3uPJkLkSr4Y,4849
+polars_xdt/__init__.py,sha256=ulhy94hmO3_PQgLUTknPn5h5tT2unZpQucCB88xNUXw,16770
+polars_xdt/.mypy.ini,sha256=1gjlZIn_Po2g94QTICkTmMFAiFOn8HfD2-LxxLEKS5w,19
+polars_xdt/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polars_xdt/_internal.pypy38-pp73-x86-linux-gnu.so,sha256=ke3hrgF2jbYobsb8uEVqSm_Bj0IA9ej0drafirYPySE,28277496
+polars_xdt-0.5.2.dist-info/RECORD,,
