@@ -1,0 +1,10 @@
+README.md,sha256=qTZAZbV-e3NM6rp052FQ7M8c4A4e9XTojc0SIeQYh4Y,10334
+pretty_toml_sort/__init__.py,sha256=DXJjXEkJRs9ksGmjeHljvMdIv1RRH7IuEXZwlD9YXxA,88
+pretty_toml_sort/cli.py,sha256=hfZAyOd89mqj5YSjl6_b67H2w-3RDIFaSttXqLKaeuk,15272
+pretty_toml_sort/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretty_toml_sort/tomlsort.py,sha256=NR52wtqbXZimYvGms_1J4_RPDsskjrCJhvyqX5MWlzg,28042
+pretty_toml_sort-0.0.1.dist-info/LICENSE,sha256=63-mhNNPtDj3sGum7Tifoo4bx8ng5-gUxjtqDskVAe8,1109
+pretty_toml_sort-0.0.1.dist-info/METADATA,sha256=Yu-LHQlwZORZA7hLl0mV8rkovJxAiuOsYx38DNACg68,11362
+pretty_toml_sort-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pretty_toml_sort-0.0.1.dist-info/entry_points.txt,sha256=lWhTNwroPFtU4-5Tf13a4SEr3i-b-cyo4EYWHkh-tJI,61
+pretty_toml_sort-0.0.1.dist-info/RECORD,,

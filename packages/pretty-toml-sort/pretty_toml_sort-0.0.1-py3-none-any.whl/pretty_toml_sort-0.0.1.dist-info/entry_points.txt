@@ -1,0 +1,3 @@
+[console_scripts]
+pretty-toml-sort=pretty_toml_sort.cli:cli
+
