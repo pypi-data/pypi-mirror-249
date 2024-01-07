@@ -1,0 +1,3 @@
+[console_scripts]
+translatedoc=translatedoc.translatedoc:main
+
