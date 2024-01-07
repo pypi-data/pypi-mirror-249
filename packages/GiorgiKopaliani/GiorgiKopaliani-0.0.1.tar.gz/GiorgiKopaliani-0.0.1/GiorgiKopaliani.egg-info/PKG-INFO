@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: GiorgiKopaliani
+Version: 0.0.1
+Summary: simple Calculator
+Home-page: 
+Author: Giorgi Kopaliani
+Author-email: giorgi.kopaliani.1@btu.edu.ge
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+simple Calc:Add,subtract,multiply,divide
+
+version-0.0.1

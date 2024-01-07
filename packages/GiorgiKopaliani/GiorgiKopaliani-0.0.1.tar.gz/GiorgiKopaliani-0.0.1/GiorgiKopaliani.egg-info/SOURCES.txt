@@ -1,0 +1,8 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+GiorgiKopaliani.egg-info/PKG-INFO
+GiorgiKopaliani.egg-info/SOURCES.txt
+GiorgiKopaliani.egg-info/dependency_links.txt
+GiorgiKopaliani.egg-info/top_level.txt
