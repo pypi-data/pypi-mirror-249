@@ -1,0 +1,6 @@
+gguf_llama/__init__.py,sha256=u7sZw2J72YnH0wITw1uPJQHJQhKmYqtXa_u1_AjPwKo,53
+gguf_llama/gguf_llama.py,sha256=09QZj338zcPc3uWdkPboeCjl6H6jJmjkkPLYlJ_at8s,8681
+gguf_llama-0.0.15.dist-info/METADATA,sha256=f1eg1X-e08dg-EC1HzWGShd2jIGD6S-w7T-4-wVjYGo,1943
+gguf_llama-0.0.15.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gguf_llama-0.0.15.dist-info/top_level.txt,sha256=BxWAMyCLrgZxBh9CIHFfkLEbAMAizsBevJzszxX-pvU,11
+gguf_llama-0.0.15.dist-info/RECORD,,
