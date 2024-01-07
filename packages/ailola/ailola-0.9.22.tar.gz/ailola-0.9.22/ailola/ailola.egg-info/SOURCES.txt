@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ailola/ailola.py
+ailola/ailola.egg-info/PKG-INFO
+ailola/ailola.egg-info/SOURCES.txt
+ailola/ailola.egg-info/dependency_links.txt
+ailola/ailola.egg-info/entry_points.txt
+ailola/ailola.egg-info/requires.txt
+ailola/ailola.egg-info/top_level.txt
