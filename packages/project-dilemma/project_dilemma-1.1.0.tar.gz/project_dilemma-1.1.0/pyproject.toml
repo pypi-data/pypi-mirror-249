@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project_dilemma"
+description = "The prisoner's dilemma in python"
+readme = "README.md"
+license = {file = "LICENSE"}
+dynamic = ['version']
+requires-python = ">= 3.11"
+authors = [
+    {name = "Gabriele Ron", email = "developer@groncyber.com"}
+]
+maintainers = [
+    {name = "Gabriele Ron", email = "developer@groncyber.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment :: Simulation"
+]
+dependencies = [
+    "platformdirs"
+]
+
+[project.optional-dependencies]
+tests = [
+    "flake8",
+    "pytest"
+]
+
+[project.urls]
+Repository = "https://github.com/Macr0Nerd/project_dilemma"
+
+[project.scripts]
+project_dilemma = "project_dilemma.__main__:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "project_dilemma.__version__"}
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = [
+    "src",
+    "examples"
+]
+testpaths = [
+    "tests"
+]

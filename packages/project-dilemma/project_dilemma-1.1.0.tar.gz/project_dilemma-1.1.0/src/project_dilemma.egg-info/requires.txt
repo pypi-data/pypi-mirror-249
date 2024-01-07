@@ -1,0 +1,5 @@
+platformdirs
+
+[tests]
+flake8
+pytest
