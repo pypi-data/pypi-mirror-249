@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flask-chest
+Version: 0.0.3
+Summary: A Python package for Flask applications, providing a decorator to track and record global context variables (g.variables) for each request.
+Author: Peter Bryant
+Author-email: peter.bryant@gatech.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: Flask ==3.0.0
+Requires-Dist: Flask-APScheduler ==1.13.1
+Requires-Dist: influxdb-client ==1.39.0
+Requires-Dist: requests ==2.31.0
+
