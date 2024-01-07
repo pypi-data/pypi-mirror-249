@@ -1,0 +1,8 @@
+setup.py
+gavelgen/__init__.py
+gavelgen/gavel.py
+gavelgen.egg-info/PKG-INFO
+gavelgen.egg-info/SOURCES.txt
+gavelgen.egg-info/dependency_links.txt
+gavelgen.egg-info/requires.txt
+gavelgen.egg-info/top_level.txt

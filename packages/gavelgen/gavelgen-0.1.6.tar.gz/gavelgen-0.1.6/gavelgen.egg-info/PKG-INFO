@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gavelgen
+Version: 0.1.6
+Summary: GavelGen SDK to log and score interactions
+Author: gavelgen
+Author-email: guoyang@gavel.com
+Requires-Dist: requests
+Requires-Dist: pydantic
