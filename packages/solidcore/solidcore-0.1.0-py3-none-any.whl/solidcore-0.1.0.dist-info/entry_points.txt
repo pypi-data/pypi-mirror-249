@@ -1,0 +1,2 @@
+[console_scripts]
+solidcore = solidcore.cli:cli
