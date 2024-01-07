@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: CNCPy
+Version: 1.0.3
+Summary: Python cursor for writing large amounts of CNC GCODE.
+Author-email: Roan Rothrock <roan.rothrock@hotmail.com>
+Project-URL: Homepage, https://github.com/R-Rothrock/CNCPy
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CNCPy
+
+Efficient GCODE writer for 3D printers and CNC wood carvers.
+
+## Installation
+
+```shell
+python3 -m pip install CNCPy
+```
+
+## Setup
+
+Run the following code to initialize the cursor.
+
+```python
+import CNCPy
+c = CNCPy.GcodeCursor("outputfile.gcode")
+```
+
+There's documentation for further instructions, but please note that
+the current state of this project is much different from what the docs
+say that it is. The code is commented, hopefully that's enough.
+
+## Contribution
+
+I don't work on this project often, so anybody that wants to help, feel
+free. Open an issue or email me if you're curious about anything. I
+know as a fact there are many bugs that need to be resolved.

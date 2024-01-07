@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/CNCPy/Converting.py
+src/CNCPy/Exceptions.py
+src/CNCPy/__init__.py
+src/CNCPy.egg-info/PKG-INFO
+src/CNCPy.egg-info/SOURCES.txt
+src/CNCPy.egg-info/dependency_links.txt
+src/CNCPy.egg-info/top_level.txt
+src/CNCPy/premades/__init__.py
+src/CNCPy/premades/lattice.py
+src/CNCPy/premades/shapes.py
+test/test_lattice.py
