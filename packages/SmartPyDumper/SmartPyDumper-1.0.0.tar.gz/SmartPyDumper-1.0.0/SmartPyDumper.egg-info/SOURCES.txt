@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+SmartPyDumper.egg-info/PKG-INFO
+SmartPyDumper.egg-info/SOURCES.txt
+SmartPyDumper.egg-info/dependency_links.txt
+SmartPyDumper.egg-info/requires.txt
+SmartPyDumper.egg-info/top_level.txt
