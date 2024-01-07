@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="transport_control">
+    <file>loop_arrows.png</file>
+    <file>pause_button.png</file>
+    <file>play_button.png</file>
+    <file>stop_button.png</file>
+  </qresource>
+  <qresource prefix="footswitch_mode_control">
+    <file>down-arrow.png</file>
+    <file>up-arrow.png</file>
+    <file>minus.png</file>
+    <file>plus.png</file>
+  </qresource>
+</RCC>
