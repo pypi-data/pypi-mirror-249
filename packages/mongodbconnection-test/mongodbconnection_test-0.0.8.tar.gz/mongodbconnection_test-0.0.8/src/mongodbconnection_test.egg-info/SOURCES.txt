@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mongodbconnection_test/__init__.py
+src/mongodbconnection_test/mongo_crud.py
+src/mongodbconnection_test.egg-info/PKG-INFO
+src/mongodbconnection_test.egg-info/SOURCES.txt
+src/mongodbconnection_test.egg-info/dependency_links.txt
+src/mongodbconnection_test.egg-info/requires.txt
+src/mongodbconnection_test.egg-info/top_level.txt
