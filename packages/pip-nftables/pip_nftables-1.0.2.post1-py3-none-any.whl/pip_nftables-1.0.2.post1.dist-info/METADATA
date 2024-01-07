@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pip-nftables
+Version: 1.0.2.post1
+Summary: Copy of the python3-nftables module used to interact with libnftables
+Home-page: https://github.com/felipequecole/python3-nftables
+Author: Felipe Quecole
+Author-email: felipequecole@gmail.com
+Project-URL: Repository, https://github.com/felipequecole/python3-nftables
+Project-URL: Bug Tracker, https://github.com/felipequecole/python3-nftables/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NFTables 
+
+This is a copy of the python3-nftables module that is used to interact with [libnftables](https://www.mankier.com/5/libnftables-json).
+
+The repository is used to serve it using PyPI
+
+The goal of this repo is to keep up to date with changes in the main repo and serve it in PyPI. This is highly based in [ansibleguy idea](https://github.com/ansibleguy/python3-nftables) and repo, with some automation
+
+
+## Documentation
+
+* [libnftables](https://www.mankier.com/5/libnftables-json)
+* [NFTables](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes)
