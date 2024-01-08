@@ -1,0 +1,24 @@
+[project]
+name = "basicplot"
+version = "0.1.0"
+description = "A simple drawing library based on Matplotlib."
+authors = [
+    { name = "Jonas Lindemann", email = "jonas.lindemann@lunarc.lu.se" },
+]
+dependencies = [
+    "matplotlib>=3.7.4",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-type = "library"
