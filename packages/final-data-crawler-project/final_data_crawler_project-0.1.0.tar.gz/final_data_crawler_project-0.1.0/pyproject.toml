@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "final-data-crawler-project"
+version = "0.1.0"
+description = ""
+authors = ["KM <kazimieras.maciekus@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+selenium = "^4.16.0"
+openpyxl = "^3.1.2"
+pandas = "^2.1.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
