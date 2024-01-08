@@ -1,0 +1,7 @@
+pytest
+requests
+user-context-remote
+python-sdk-local
+python-dotenv
+logger-local
+url-remote
