@@ -1,0 +1,9 @@
+h5preserve/__init__.py,sha256=jT9dwH0Zvlv5nRik7_q8KFPB_zuf0USxmgk0femHt4o,28196
+h5preserve/_utils.py,sha256=AkGFHDy6NTRT6utKrf0fdaZL6V8tO6YMYVxutoiD3is,3746
+h5preserve/_version.py,sha256=ysdHTTSeoCaBMreiPquEP1gjG4NPfPmcz3E0ep4lZwY,498
+h5preserve/additional_registries.py,sha256=dn2YTXFGMKTerY5mRn8Z9oHsDuI6SKvQV_wJveUgnCI,2948
+h5preserve-0.19.0.dist-info/LICENSE.txt,sha256=s-CRdwbbCw_l4LnETklopaOCPLrZqvQMuxjqtGm3RZ4,1501
+h5preserve-0.19.0.dist-info/METADATA,sha256=MjMv22AMn7s96de46in9Ukb9iZTeilae2IGMIEVj98k,2246
+h5preserve-0.19.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+h5preserve-0.19.0.dist-info/top_level.txt,sha256=8RJ1riUQRwB0Uv72oEO9k9gUSjp7nj6axP-7Pth-fOc,11
+h5preserve-0.19.0.dist-info/RECORD,,
