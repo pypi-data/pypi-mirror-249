@@ -1,0 +1,12 @@
+find_work/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+find_work/__main__.py,sha256=yMVlaEac7Eu-CUzUr-8FMe75l5oySKvtgVWkm6rYXp8,1425
+find_work/constants.py,sha256=CYti_BOSbb9HnQiCrphwnJQdUcwDVQZw1KWZ-ksnb-k,415
+find_work/types.py,sha256=Rwy3BAj0JO9AD-5vZ_8IkyAqJGfJoO05okr8nIhgBpE,479
+find_work/utils.py,sha256=2zTg-HhUbCjiiMXlRD4TYGZ-d4rtmT272TH8V53_JTg,1847
+find_work/cli/__init__.py,sha256=Jz7CH3zBYJ4hGSD2o02tfzmfY0H1Uavu64eYH1zs3dE,715
+find_work/cli/repology.py,sha256=-Zy-RwrPVqg4xNBxYFecrg2ZRzM04V7jkxG9RGJBW2E,3836
+find_work-0.1.1.dist-info/METADATA,sha256=_4IVzrUWrHL9SvkwOohtda2SgNZW3hNI0ifYPIw4di4,3158
+find_work-0.1.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+find_work-0.1.1.dist-info/entry_points.txt,sha256=NNum-KsU4jGVi7bclZ5K-9nt0PYWy6QPObyWu_KiZPQ,53
+find_work-0.1.1.dist-info/licenses/LICENSE,sha256=E9iCWlnl5UbUHocRQF0PM1qZNDYqR8BKO0KA-nky3Eo,432
+find_work-0.1.1.dist-info/RECORD,,
