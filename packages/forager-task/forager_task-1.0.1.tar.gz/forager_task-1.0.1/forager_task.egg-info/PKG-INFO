@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: forager-task
+Version: 1.0.1
+Summary: Test task for the Junior Python Developer position.
+Author: amato789 (Maksym Sydorchuk)
+Author-email: <maximsidorchuk@gmail.com>
+Keywords: python,test task,forager
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Test task for the Junior Python Developer position.
