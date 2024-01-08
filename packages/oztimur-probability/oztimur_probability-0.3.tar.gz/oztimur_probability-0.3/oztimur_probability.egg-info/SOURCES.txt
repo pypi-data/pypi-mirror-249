@@ -1,0 +1,10 @@
+setup.py
+oztimur_probability/Binomialdistribution.py
+oztimur_probability/Gaussiandistribution.py
+oztimur_probability/Generaldistribution.py
+oztimur_probability/__init__.py
+oztimur_probability.egg-info/PKG-INFO
+oztimur_probability.egg-info/SOURCES.txt
+oztimur_probability.egg-info/dependency_links.txt
+oztimur_probability.egg-info/not-zip-safe
+oztimur_probability.egg-info/top_level.txt
