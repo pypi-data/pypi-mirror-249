@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: w_pgs
+Version: 0.5
+Summary: A useless database connection tool based on psycopg2
+Home-page: https://github.com/mkitpro/wpgs.git
+Author: woi
+Author-email: willooi@qq.com
+License: MIT
+Keywords: wpgs
+License-File: LICENSE
+Requires-Dist: psycopg2
+
