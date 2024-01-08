@@ -1,0 +1,7 @@
+README.md
+setup.py
+googlepycraft.egg-info/PKG-INFO
+googlepycraft.egg-info/SOURCES.txt
+googlepycraft.egg-info/dependency_links.txt
+googlepycraft.egg-info/requires.txt
+googlepycraft.egg-info/top_level.txt
