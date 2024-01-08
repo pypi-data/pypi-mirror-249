@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dronebuddylib
+Version: 2.0.14
+Summary: Everything to control and customize Tello
+Author: Malsha de Zoysa
+Author-email: malsha@ahlab.org
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: requests ~=2.28.0
+Requires-Dist: numpy ~=1.23.0
+Requires-Dist: cython ~=0.29.34
+Requires-Dist: setuptools ~=65.5.1
+Requires-Dist: packaging ~=23.0
+Requires-Dist: pyparsing ~=3.0.9
+Requires-Dist: djitellopy ~=2.5.0
+Provides-Extra: face_recognition
+Requires-Dist: face-recognition ; extra == 'face_recognition'
+Provides-Extra: object_detection
+Requires-Dist: mediapipe ; extra == 'object_detection'
+Requires-Dist: tensorflow-hub ; extra == 'object_detection'
+Requires-Dist: opencv-python ; extra == 'object_detection'
+
