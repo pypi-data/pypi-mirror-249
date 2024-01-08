@@ -1,0 +1,13 @@
+beautifulsoup4
+certifi
+charset-normalizer
+colorama
+idna
+pyaes
+pyasn1
+python-dotenv
+requests
+rsa
+soupsieve
+Telethon
+urllib3
