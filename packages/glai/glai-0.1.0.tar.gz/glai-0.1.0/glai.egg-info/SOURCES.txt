@@ -1,0 +1,13 @@
+README.md
+setup.py
+glai/__init__.py
+glai.egg-info/PKG-INFO
+glai.egg-info/SOURCES.txt
+glai.egg-info/dependency_links.txt
+glai.egg-info/requires.txt
+glai.egg-info/top_level.txt
+glai/ai/__init__.py
+glai/ai/auto_ai.py
+glai/ai/easy_ai.py
+glai/messages/__init__.py
+glai/messages/messages.py

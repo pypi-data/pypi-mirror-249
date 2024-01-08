@@ -1,0 +1,4 @@
+requests>=2.31.0
+beautifulsoup4>=4.9.3
+gguf_llama>=0.0.15
+gguf_modeldb==0.0.1a3
