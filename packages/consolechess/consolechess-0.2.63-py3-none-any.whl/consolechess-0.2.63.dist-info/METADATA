@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: consolechess
+Version: 0.2.63
+Summary: 
+Author: Sam
+Author-email: sbrobson@crimson.ua.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mypy-extensions (>=1.0.0,<2.0.0)
+Requires-Dist: pyperclip (>=1.8.2,<2.0.0)
+Requires-Dist: rich (>=13.6.0,<14.0.0)
+Requires-Dist: textual (>=0.41.0,<0.42.0)
