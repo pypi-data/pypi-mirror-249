@@ -1,0 +1,39 @@
+[submodule "modbus"]
+	path = modbus
+	url = git://git.smurf.noris.de/moat-modbus.git
+[submodule "gpio"]
+	path = gpio
+	url = git://git.smurf.noris.de/moat-gpio.git
+[submodule "util"]
+	path = util
+	url = git://git.smurf.noris.de/moat-util.git
+[submodule "mqtt"]
+	path = mqtt
+	url = git://git.smurf.noris.de/moat-mqtt.git
+[submodule "src"]
+	path = src
+	url = git://git.smurf.noris.de/moat-src.git
+[submodule "lib/diffiehellman"]
+	path = lib/diffiehellman
+	url = git://git.smurf.noris.de/moat-lib-diffiehellman.git
+[submodule "ems"]
+	path = ems
+	url = git://git.smurf.noris.de/moat-ems.git
+[submodule "lib/victron"]
+	path = lib/victron
+	url = git://git.smurf.noris.de/moat-lib-victron.git
+[submodule "dev"]
+	path = dev
+	url = git://git.smurf.noris.de/moat-dev.git
+[submodule "micro"]
+	path = micro
+	url = git://git.smurf.noris.de/moat-micro.git
+[submodule "kv"]
+	path = kv
+	url = git://git.smurf.noris.de/moat-kv.git
+[submodule "bus"]
+	path = bus
+	url = https://github.com/M-o-a-T/moat-bus
+[submodule "lib/pid"]
+	path = lib/pid
+	url = git://git.smurf.noris.de/moat-lib-pid.git

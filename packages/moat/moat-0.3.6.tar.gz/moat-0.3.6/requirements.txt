@@ -1,0 +1,8 @@
+anyio
+anyio_serial
+cffi
+gitpython
+packaging
+pymodbus
+tomlkit
+trio
