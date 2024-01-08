@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+likepy/__init__.py
+likepy/exceptions.py
+likepy/helpers.py
+likepy/restricted.py
+likepy/restricted_builtins.py
+likepy/transformer.py
+likepy.egg-info/PKG-INFO
+likepy.egg-info/SOURCES.txt
+likepy.egg-info/dependency_links.txt
+likepy.egg-info/not-zip-safe
+likepy.egg-info/requires.txt
+likepy.egg-info/top_level.txt
