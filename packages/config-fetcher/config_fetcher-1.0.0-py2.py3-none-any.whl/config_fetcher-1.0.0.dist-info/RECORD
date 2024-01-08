@@ -1,0 +1,6 @@
+config_fetcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+config_fetcher/config_fetcher.py,sha256=1DUyxYt1l1btOxpoXF4pmhE8KytlLwO9DbH7En7nMpQ,5166
+config_fetcher-1.0.0.dist-info/METADATA,sha256=W4S5G5_uv55PmXHB16P5W9kI4ubaiNZqFfwQdaLt1B0,607
+config_fetcher-1.0.0.dist-info/WHEEL,sha256=VYAwk8D_V6zmIA2XKK-k7Fem_KAtVk3hugaRru3yjGc,105
+config_fetcher-1.0.0.dist-info/licenses/LICENSE,sha256=TbcnFsvK-Nup4zVfbvvX-egEoR6N_sU0iZdtgjyh-GM,1105
+config_fetcher-1.0.0.dist-info/RECORD,,
