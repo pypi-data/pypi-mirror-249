@@ -1,0 +1,12 @@
+contact_local/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contact_local/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contact_local/src/contact.py,sha256=pY9B0XE4DJ-TxD1MFCBiJEKUlT5NVKe0V6lE58zUEb8,1293
+contact_local/src/contact_constants.py,sha256=x9vppfkGOn64GzIS3lnZYP3HsqqKNFpjqRMnS5BWGUs,609
+contact_local/src/contact_local.py,sha256=ee-a89hlDKzMDWV68ZR6EpNu_b8teOFLtuRJkNGu0vY,10955
+contact_local/src/contact_local_extentions.py,sha256=YOtD350QZBW8-GISiGMjRlq_j5HcNuI3YWREfftfEIo,1664
+db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db/contact.py,sha256=RCwAUDjOrDMxCgvfrY-eGhEQr6P2YYHQgNpibXNUeaM,4127
+contact_local-0.0.26.dist-info/METADATA,sha256=EbcK2QMW4GHRtXcKeuQ1yscJw4QbkdEjZ4NM-tN73VY,480
+contact_local-0.0.26.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+contact_local-0.0.26.dist-info/top_level.txt,sha256=7RumgUdsLwsn9cDlpAxdJyk-Wkc3YkA_9awxNZn1APg,17
+contact_local-0.0.26.dist-info/RECORD,,
