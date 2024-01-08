@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: mockfs
+Version: 2.0.0
+Summary: A simple mock filesystem for unit tests
+Home-page: https://github.com/mockfs/mockfs
+Author-email: David Aguilar <davvid@gmail.com>
+License: Copyright (c) 2009 - 2020 David Aguilar
+        
+        Permission is hereby granted, free of charge, to any person obtaining
+        a copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+        WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Mocking
+Classifier: Topic :: Software Development :: Testing :: Unit
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: importlib-metadata
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: jaraco.packaging >=9 ; extra == 'docs'
+Requires-Dist: rst.linker >=1.9 ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest !=3.7.3,>=3.5 ; extra == 'testing'
+Requires-Dist: pytest-checkdocs >=1.2.3 ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-enabler >=1.0.1 ; extra == 'testing'
+
+.. image:: https://img.shields.io/pypi/v/mockfs.svg
+   :target: `PyPI link`_
+
+.. image:: https://img.shields.io/pypi/pyversions/mockfs.svg
+   :target: `PyPI link`_
+
+.. _PyPI link: https://pypi.org/project/mockfs
+
+.. .. image:: https://dev.azure.com/jaraco/skeleton/_apis/build/status/jaraco.skeleton?branchName=master
+..    :target: https://dev.azure.com/jaraco/skeleton/_build/latest?definitionId=1&branchName=master
+
+.. .. image:: https://img.shields.io/travis/jaraco/skeleton/master.svg
+..    :target: https://travis-ci.org/jaraco/skeleton
+
+.. .. image:: https://img.shields.io/appveyor/ci/jaraco/skeleton/master.svg
+..    :target: https://ci.appveyor.com/project/jaraco/skeleton/branch/master
+
+.. .. image:: https://readthedocs.org/projects/skeleton/badge/?version=latest
+..    :target: https://skeleton.readthedocs.io/en/latest/?badge=latest
+
+
+=================================================
+mockfs -- A simple mock filesystem for unit tests
+=================================================
+
+`mockfs` makes it possible to test filesystem-dependent code by
+replacing functions from the `os` and `glob` modules.
