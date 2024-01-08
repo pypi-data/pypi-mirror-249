@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+package/__init__.py
+package/cls_pgs_conn.py
+w_pgs.egg-info/PKG-INFO
+w_pgs.egg-info/SOURCES.txt
+w_pgs.egg-info/dependency_links.txt
+w_pgs.egg-info/requires.txt
+w_pgs.egg-info/top_level.txt
