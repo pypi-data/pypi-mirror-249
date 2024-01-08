@@ -1,0 +1,3 @@
+[console_scripts]
+kel=kel.__main__:main
+
