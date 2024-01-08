@@ -1,0 +1,14 @@
+neo_ls_svm/__init__.py,sha256=l3sKGPjYh1rTvcDDGnGZ2xe1F_uX1SDx-xYgnx3TQYo,95
+neo_ls_svm/_affine_feature_map.py,sha256=dG4WbRlW200IuwYw1XZ4crt0rBWicwQ-ZKCjHAvks9w,5283
+neo_ls_svm/_affine_normalizer.py,sha256=auUT6P7Y2nUko6vMHW2TJA83Y0aTh5_wgrBxIXj90a0,5569
+neo_ls_svm/_affine_separator.py,sha256=9Mjh0SVSRiUuWsL1HR_dgntniZgdeA3hHSF-8G7VErg,9630
+neo_ls_svm/_feature_maps.py,sha256=Im7IZuerYmJ-WVao1uTMg3KYuDM4l1jWkozJAEwqkJA,9963
+neo_ls_svm/_neo_ls_svm.py,sha256=dhA9KCVgbUUPnbY71KcEP0mW13_2mZyJd8fN8h8zcOk,25890
+neo_ls_svm/_quantizer.py,sha256=KVw_S0gavVkXHoEPH5yFzHCq92xnrcQaT_JAh1YpADQ,11452
+neo_ls_svm/_typing.py,sha256=xL_TjrIjIuoDO9yP6rCY0mRqXS_ZJ0-R4cKM-mloEiI,1070
+neo_ls_svm/_weighted_quantile.py,sha256=CxdmcuJi8QImoR9ZeAcpEJUIZ-WgVaZz_QkhFkNsoQI,2830
+neo_ls_svm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neo_ls_svm-0.1.0.dist-info/LICENSE,sha256=1m8zeHkAtrH7DZ34ZZJBm6-x1flRB8OWwKVlBcTlwmk,1071
+neo_ls_svm-0.1.0.dist-info/METADATA,sha256=juQq76OBVg1fLQZqmdgQST_FB9Bf0nnATkaAJc2onGs,12378
+neo_ls_svm-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+neo_ls_svm-0.1.0.dist-info/RECORD,,
