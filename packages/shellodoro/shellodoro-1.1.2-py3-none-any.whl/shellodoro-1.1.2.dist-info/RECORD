@@ -1,0 +1,14 @@
+shellodoro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shellodoro/config.py,sha256=l7h8YUx17Qiooe7pxAqvmQ-PK5Ms2yhksJUYKnZrHA8,303
+shellodoro/formatting.py,sha256=--_tEZvpddXt8wXPocLfiZ_K50DQ2sIpXIqZ6NQWo7A,1516
+shellodoro/prestart.py,sha256=yLQDCIIpNj6RJNVHHxZlWluYc3NM03-TqkrL9lrqAJg,1145
+shellodoro/shellodoro.py,sha256=TMQY1pQq5YYdl3Hdzr0hBRwdeOCXMD0byNCOIKTndJE,6228
+shellodoro/tools.py,sha256=TYeC1oCzOEqTl-KAc9A4kgpRHan4fUITvM_ICS60klo,1361
+shellodoro/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shellodoro/models/mode.py,sha256=qe80k3BfNGeN23aqJLkjCaqFDUAvnbOgf_c0wEcFPKw,144
+shellodoro-1.1.2.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+shellodoro-1.1.2.dist-info/METADATA,sha256=nBKaxEspNuDlDX7Iirs353_e5ju3fAuzh64ZLPqdrP8,2801
+shellodoro-1.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+shellodoro-1.1.2.dist-info/entry_points.txt,sha256=6xgN7l1cugsC3MGmkikALxRkNfuhUx8B-KTgjPAuzYQ,52
+shellodoro-1.1.2.dist-info/top_level.txt,sha256=9cJf8n5SNtDaFWSdY3oG9OIkbiEYPt9X16An1w4YoLc,11
+shellodoro-1.1.2.dist-info/RECORD,,
