@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mainshortcuts
+Version: 1.4.1
+Summary: Simplifying Python Built-in Commands
+Home-page: https://github.com/MainPlay-TG/MainShortcuts.py
+Author: MainPlay YT
+Author-email: xbox.roman6666666666@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/MainPlay-TG/MainShortcuts.py
+Description-Content-Type: text/markdown
+
+Пока не написал
