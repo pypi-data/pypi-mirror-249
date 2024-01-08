@@ -1,0 +1,15 @@
+pg_bulk_loader/__init__.py,sha256=U5CEKEK-io5rLC0U2V5IGA92to4aM7_RLOwBlo32JMY,354
+pg_bulk_loader/batch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_bulk_loader/batch/batch_insert.py,sha256=fjl0H_j2j2Py-TgQJZD_l2oINMJUkNboVNcYUM2POyw,3750
+pg_bulk_loader/batch/batch_insert_wrapper.py,sha256=Dx-iMHnJTMQB7A74fy5gojeaec9yrTvCW1dcnAGsO6o,6716
+pg_bulk_loader/batch/fast_load_hack.py,sha256=jHxePfuttaaY6D9Fpy5vq61od2ytxkK5bqGoFjUR1kg,3046
+pg_bulk_loader/batch/pg_connection_detail.py,sha256=__zTacb6Cg-piW0NXRBPrSiG88q0G03vumtIoRxgWzQ,1120
+pg_bulk_loader/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_bulk_loader/utils/constants.py,sha256=Vs_9PQzGEum4pA6UDn5Avxzqeq9DxCXRtgmxur0ke5w,21
+pg_bulk_loader/utils/dataframe_utils.py,sha256=1-5gF4Ukbo6hhsPYBeizLimFFGEVWiy4Z7aqK-TccJM,993
+pg_bulk_loader/utils/time_it_decorator.py,sha256=FX3P0ufalqtO1v_VOuux4HZg1HnZ-A6bQkAYvuZeIvY,673
+pg_bulk_loader-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pg_bulk_loader-1.0.1.dist-info/METADATA,sha256=KsC3xzYfapQapEMm_gg-G1IIo6V5U03PqqwHvubwk4Y,8347
+pg_bulk_loader-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pg_bulk_loader-1.0.1.dist-info/top_level.txt,sha256=tz8m8FHehhVTLatpPwN3qagSLt9HDZRGokA8BZ5eKQY,15
+pg_bulk_loader-1.0.1.dist-info/RECORD,,
