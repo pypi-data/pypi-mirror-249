@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ft_package_kyeonkim
+Version: 0.0.3
+Summary: A small example package
+Author-email: kyeonkim <kyeonkim@student.42seoul.kr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Python packgae example (kyeonkim)
+
+A small example package
+
+## [Available Functions]
+
+**count_int_list(list, str)**
+
+```python
+# example
+from ft_package import count_int_list
+
+print(count_int_list(["toto", "tata", "toto"], "toto")) # output: 2
+print(count_int_list(["toto", "tata", "toto"], "tutu")) # output: 0
+```
