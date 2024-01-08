@@ -1,0 +1,8 @@
+README.md
+main.py
+setup.py
+convertnotes.egg-info/PKG-INFO
+convertnotes.egg-info/SOURCES.txt
+convertnotes.egg-info/dependency_links.txt
+convertnotes.egg-info/requires.txt
+convertnotes.egg-info/top_level.txt
