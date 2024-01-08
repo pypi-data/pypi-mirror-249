@@ -1,0 +1,34 @@
+{#- OZI 0.1
+# ozi/templates/github_workflows/release.yml
+# Part of the OZI Project, under the Apache License v2.0 with LLVM Exceptions.
+# See LICENSE.txt for license information.
+# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+#}
+  release:
+    needs: checkpoint
+    runs-on: ubuntu-latest
+    concurrency: release
+    strategy:
+      matrix:
+        py:
+          - {{ spec.python.support.security|wheel_repr }}
+          - {{ spec.python.support.bugfix2|wheel_repr }}
+          - {{ spec.python.support.bugfix1|wheel_repr }}
+      fail-fast: true
+      max-parallel: 1
+    outputs:
+{%- raw %}
+      drafted: ${{ steps.draft.outputs.created }}
+{%- endraw %}
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+    steps:
+      - uses: OZI-Project/release@16f7f12353f734bdf1b4cee733f694bb63583f61
+        id: release
+        with:
+{%- raw %}
+          python-dist: ${{ matrix.py }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+{%- endraw %}
