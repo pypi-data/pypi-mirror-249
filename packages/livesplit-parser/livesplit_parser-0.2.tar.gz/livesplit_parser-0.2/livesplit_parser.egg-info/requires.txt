@@ -1,0 +1,7 @@
+pandas
+numpy
+xmltodict
+matplotlib
+seaborn
+datetime
+xlsxwriter
