@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tgedr-nihao
+Version: 0.0.17
+Summary: studies with financial data sources
+Home-page: https://github.com/jtviegas-sandbox/nihao
+Author: joao tiago viegas
+Author-email: jtviegas@gmail.com
+License: Unlicense
+Keywords: finance development data science
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: yfinance
+Requires-Dist: boto3>=1.28
+Requires-Dist: pyarrow>=14
+Requires-Dist: pyspark>=3.5
