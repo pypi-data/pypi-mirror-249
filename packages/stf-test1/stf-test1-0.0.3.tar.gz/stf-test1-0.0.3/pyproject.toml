@@ -1,0 +1,32 @@
+[build-system]
+    requires = [
+        "setuptools>=66.1.1",
+        "wheel"
+    ]
+    build-backend = "setuptools.build_meta"
+
+[project]
+name = "stf-test1"
+version = "0.0.3"
+authors = [
+  { name="linzai", email="xxxx@qq.com" },
+]
+description = "stf"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "huggingface_hub==0.16.4",
+  "safetensors==0.4.1",
+  "accelerate==0.25.0",
+  "tokenizers==0.14.0",
+  "datasets==2.8.0"
+  ]
+
+[tool.setuptools.packages.find]
+exclude = ["test*"]

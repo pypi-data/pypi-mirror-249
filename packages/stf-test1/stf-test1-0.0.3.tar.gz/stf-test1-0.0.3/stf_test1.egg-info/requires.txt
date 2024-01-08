@@ -1,0 +1,5 @@
+huggingface_hub==0.16.4
+safetensors==0.4.1
+accelerate==0.25.0
+tokenizers==0.14.0
+datasets==2.8.0
