@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+LCD/CON.py
+LCD/__init__.py
+LCDCONTROL.egg-info/PKG-INFO
+LCDCONTROL.egg-info/SOURCES.txt
+LCDCONTROL.egg-info/dependency_links.txt
+LCDCONTROL.egg-info/top_level.txt
