@@ -1,0 +1,11 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+random_first_package/__init__.py
+random_first_package/example_module.py
+random_first_package.egg-info/PKG-INFO
+random_first_package.egg-info/SOURCES.txt
+random_first_package.egg-info/dependency_links.txt
+random_first_package.egg-info/namespace_packages.txt
+random_first_package.egg-info/requires.txt
+random_first_package.egg-info/top_level.txt
