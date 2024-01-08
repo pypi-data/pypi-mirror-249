@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: structpca
+Version: 0.0.2
+Summary: Structured Principal Component Analysis
+Author-email: Bastien Batardière <bastien.batardiere@gmail.com>
+Maintainer-email: Bastien Batardière <bastien.batardiere@gmail.com>
+License: MIT License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+Package for Structured Principal Component Analysis.
+
+# CONTRIBUTING
+You should run
+```pre-commit install```
+in the repo directory before commiting (if ```pre-commit``` is not installed,
+you can pip install it). This will make sure each python file is well
+formated and pylint will check the code before any commit. You can check the ```.pre-commit-config.yaml``` file for more details on pylint configuration.
