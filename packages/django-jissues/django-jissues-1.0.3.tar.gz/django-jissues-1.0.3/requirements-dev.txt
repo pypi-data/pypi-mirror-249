@@ -1,0 +1,17 @@
+ruff
+pytype
+prospector
+mypy
+django-stubs
+djangorestframework-stubs
+pre-commit
+black
+Django
+django-extensions
+openpyxl
+python-dotenv
+Pillow
+lxml
+Markdown
+psycopg
+

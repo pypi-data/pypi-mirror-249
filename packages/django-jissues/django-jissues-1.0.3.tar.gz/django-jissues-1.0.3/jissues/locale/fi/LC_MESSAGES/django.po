@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 05:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: jissues/admin.py:18 jissues/models.py:41
+msgid "state"
+msgstr ""
+
+#: jissues/admin.py:21 jissues/models.py:37
+msgid "issue.state.closed"
+msgstr ""
+
+#: jissues/admin.py:22
+msgid "All"
+msgstr ""
+
+#: jissues/admin.py:32 jissues/models.py:36
+msgid "issue.state.open"
+msgstr ""
+
+#: jissues/admin.py:49 jissues/admin.py:200 jissues/models.py:42
+msgid "issue.due.label"
+msgstr ""
+
+#: jissues/admin.py:52
+msgid "today"
+msgstr ""
+
+#: jissues/admin.py:53
+msgid "tomorrow"
+msgstr ""
+
+#: jissues/admin.py:54
+msgid "this week"
+msgstr ""
+
+#: jissues/admin.py:55
+msgid "this month"
+msgstr ""
+
+#: jissues/admin.py:56
+msgid "this year"
+msgstr ""
+
+#: jissues/admin.py:57
+msgid "next week"
+msgstr ""
+
+#: jissues/admin.py:58
+msgid "next month"
+msgstr ""
+
+#: jissues/admin.py:96 jissues/models.py:24 jissues/models.py:47
+msgid "created"
+msgstr ""
+
+#: jissues/admin.py:101
+msgid "assign.to.me.action"
+msgstr ""
+
+#: jissues/admin.py:110
+msgid "close.issue.action"
+msgstr ""
+
+#: jissues/admin.py:120
+msgid "reopen.issue.action"
+msgstr ""
+
+#: jissues/admin.py:153 jissues/models.py:10
+msgid "color"
+msgstr ""
+
+#: jissues/admin.py:204 jissues/models.py:8 jissues/models.py:40
+msgid "title"
+msgstr ""
+
+#: jissues/admin.py:209
+#, python-brace-format
+msgid "#{number} by {author} closed on {closed}"
+msgstr ""
+
+#: jissues/admin.py:212
+#, python-brace-format
+msgid "#{number} opened {ago} ago by {author}"
+msgstr ""
+
+#: jissues/apps.py:8
+msgid "jissues.app.verbose.name"
+msgstr ""
+
+#: jissues/models.py:9
+msgid "description"
+msgstr ""
+
+#: jissues/models.py:11
+msgid "font color"
+msgstr ""
+
+#: jissues/models.py:12
+msgid "default"
+msgstr ""
+
+#: jissues/models.py:16
+msgid "issue.label.model.verbose.name"
+msgstr ""
+
+#: jissues/models.py:17
+msgid "issue.label.model.verbose.name.plural"
+msgstr ""
+
+#: jissues/models.py:25
+msgid "text"
+msgstr ""
+
+#: jissues/models.py:26 jissues/models.py:44
+msgid "author"
+msgstr ""
+
+#: jissues/models.py:30
+msgid "issue.comment.model.verbose.name"
+msgstr ""
+
+#: jissues/models.py:31
+msgid "issue.comment.model.verbose.name.plural"
+msgstr ""
+
+#: jissues/models.py:39
+msgid "number"
+msgstr ""
+
+#: jissues/models.py:43
+msgid "body"
+msgstr ""
+
+#: jissues/models.py:45
+msgid "assignee"
+msgstr ""
+
+#: jissues/models.py:46
+msgid "closed"
+msgstr ""
+
+#: jissues/models.py:48
+msgid "last modified"
+msgstr ""
+
+#: jissues/models.py:52
+msgid "issue.model.verbose.name"
+msgstr ""
+
+#: jissues/models.py:53
+msgid "issue.model.verbose.name.plural"
+msgstr ""
+
+#: project/settings.py:122
+msgid "English"
+msgstr ""
+
+#: project/settings.py:123
+msgid "Finnish"
+msgstr ""
