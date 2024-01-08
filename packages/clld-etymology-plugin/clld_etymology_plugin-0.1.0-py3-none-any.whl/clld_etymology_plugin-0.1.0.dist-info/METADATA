@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: clld-etymology-plugin
+Version: 0.1.0
+Summary: Display cognate sets in CLLD apps.
+Home-page: https://github.com/fmatter/clld-etymology-plugin
+License: Apache-2.0
+Author: Florian Matter
+Author-email: flmt@mailbox.org
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: biopython (>=1.82,<2.0)
+Requires-Dist: pytest (>=7.4.2,<8.0.0)
+Project-URL: Bug tracker, https://github.com/fmatter/clld-etymology-plugin/issues
+Project-URL: Repository, https://github.com/fmatter/clld-etymology-plugin
+Description-Content-Type: text/markdown
+
+# clld-etymology-plugin
+
+Modeling inheritance and borrowing in CLLD apps.
+
+[![Versions](https://img.shields.io/pypi/pyversions/clld-etymology-plugin)](https://www.python.org/)
+[![PyPI](https://img.shields.io/pypi/v/clld-etymology-plugin.svg)](https://pypi.org/project/clld-etymology-plugin)
+[![License](https://img.shields.io/github/license/fmatter/clld-etymology-plugin)](https://www.apache.org/licenses/LICENSE-2.0)
+

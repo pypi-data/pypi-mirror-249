@@ -1,0 +1,3 @@
+[console_scripts]
+clld_etymology_plugin=clld_etymology_plugin.cli:main
+
