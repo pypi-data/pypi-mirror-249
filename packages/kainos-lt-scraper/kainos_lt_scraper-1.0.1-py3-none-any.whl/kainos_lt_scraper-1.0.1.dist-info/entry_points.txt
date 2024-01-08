@@ -1,0 +1,3 @@
+[console_scripts]
+run=kainos_lt_scraper.main:main
+
