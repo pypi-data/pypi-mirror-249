@@ -1,0 +1,17 @@
+pdf_client_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_client_wrapper/app_config.py,sha256=Yequa-atFLTRQsqGw1d1iJMRNGezlbNuHMAujtqjnzc,46
+pdf_client_wrapper/client.py,sha256=xMEfYM9wHr6LR7jLGseeOEQMifCJG6OQ525cGNP1LiA,7535
+pdf_client_wrapper/pts_render.py,sha256=gxREGq55sJQdJRO4ss2DrXMkO0zE1ShKFzni3CY1-9A,1199
+pdf_client_wrapper/utils.py,sha256=wpsxKCPO54OndFRq7sFuVqLMd_ZfRdS7tZQBRCSnWTU,2280
+pdf_client_wrapper/rpc/__init__.py,sha256=w1kGyPs4HClnHlczDkCdT6DbyXHG2476NOZpzzkqMmo,228
+pdf_client_wrapper/rpc/pdf_pb2.py,sha256=GfkaKivWlQ81In4nKWaq-sxVjMWTNN1zOVXRCm6Mn7k,12581
+pdf_client_wrapper/rpc/pdf_pb2_grpc.py,sha256=jc3Blkk9njpqrYee26cAeIexMyGurxNaFhOyU7pIK9s,5008
+pdf_client_wrapper/rpc/xy_units_pb2.py,sha256=JIIRevdfFX9yT3SKMJdFJzT17Ro5t8JAx7DTBR7kkOA,16781
+pdf_client_wrapper/rpc/xy_units_pb2_grpc.py,sha256=OorolZzRkLe0eWvTROqEHhcQN6Zacehz1uG5r4XDCu8,5838
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_utils.py,sha256=ulNfPqe166NQWbOnbAMC0e3vjKf7CTRJ2wDD15bSYzA,536
+pdf_client_wrapper-0.1.2.dist-info/METADATA,sha256=qgBKt0mDNEnSYFlMw3Ak-oaSBeZd6Ae2RYNH37nY6wc,1416
+pdf_client_wrapper-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdf_client_wrapper-0.1.2.dist-info/entry_points.txt,sha256=l8Wq6WmbrbUWOv6g4TqRyb8j2r7sQD7mFpzHK8u-7sw,67
+pdf_client_wrapper-0.1.2.dist-info/top_level.txt,sha256=FcZVFDjs0iJN9bIpxX5l1dmSisHZN-7nZuWw5_eaQx8,25
+pdf_client_wrapper-0.1.2.dist-info/RECORD,,
