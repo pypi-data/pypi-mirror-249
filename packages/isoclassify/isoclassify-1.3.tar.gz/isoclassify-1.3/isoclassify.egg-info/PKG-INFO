@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: isoclassify
+Version: 1.3
+Summary: Python codes to perform stellar classifications given any set of input observables.
+Author: Daniel Huber
+License-File: LICENSE
+Requires-Dist: ephem
+Requires-Dist: astropy
+Requires-Dist: scipy
+Requires-Dist: h5py
+Requires-Dist: joblib
+Requires-Dist: pandas
+Requires-Dist: matplotlib
