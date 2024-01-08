@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sma_rsi_indicators
+Version: 0.1.2
+Summary: A basic package to calculate sma and rsi indicators
+Home-page: UNKNOWN
+Author: yavuzselimvurgun
+Author-email: <yavuzselim.vurgun@bahcesehir.edu.tr>
+License: UNKNOWN
+Keywords: python,sma,rsi,csv
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+A package that allows you to calculate sma and rsi indicators from a given csv file and outputs the indicators to a given csv file.
+
