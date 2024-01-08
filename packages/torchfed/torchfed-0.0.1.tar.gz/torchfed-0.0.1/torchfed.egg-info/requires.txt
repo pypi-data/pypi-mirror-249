@@ -1,0 +1,7 @@
+aim
+torch
+torchvision
+loguru
+networkx
+plotly
+prettytable
