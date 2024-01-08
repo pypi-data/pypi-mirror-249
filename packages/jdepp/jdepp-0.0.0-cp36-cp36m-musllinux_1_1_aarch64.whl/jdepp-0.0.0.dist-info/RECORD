@@ -1,0 +1,10 @@
+jdepp_ext.cpython-36m-aarch64-linux-gnu.so,sha256=5HhVU3lzsG45-HXbYXtGrr9iPRl5dnaPM5afztST9kc,602465
+jdepp.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+jdepp.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
+jdepp/main.py,sha256=UYghMLMB5fr8MHr3R-l0kwLnOk_Z8g6Lw0dnNZ0DPZ4,540
+jdepp/__init__.py,sha256=39vnl5s2OaKJRLHC9wUj2YSwRIQH1qPbcoLkPMzDHZg,236
+jdepp-0.0.0.dist-info/WHEEL,sha256=EYxNEefsmlIy2iA0QSD8Zh_VQYwRJB1tQ0bm0pXcqRI,113
+jdepp-0.0.0.dist-info/METADATA,sha256=Ko718Xi5NqpLdYW5h829892tLJWOxg-EfR1PkF_9yps,840
+jdepp-0.0.0.dist-info/LICENSE,sha256=csuegrf4YsezFF_aLrwHWYCOz27eufIeMUGvZ5hbJso,1324
+jdepp-0.0.0.dist-info/RECORD,,
+jdepp-0.0.0.dist-info/top_level.txt,sha256=UcfiMzSTfLl0qgfoVNP9y4h5hoFU8tlTyL7hVP-yYBU,16
