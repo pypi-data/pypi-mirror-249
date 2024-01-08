@@ -1,0 +1,2 @@
+[console_scripts]
+doge = doge.core:main
