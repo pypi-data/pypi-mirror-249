@@ -1,0 +1,7 @@
+flake8<8.0,>=3.7
+
+[test]
+mock
+pytest
+pytest-cov
+pytest-mock
