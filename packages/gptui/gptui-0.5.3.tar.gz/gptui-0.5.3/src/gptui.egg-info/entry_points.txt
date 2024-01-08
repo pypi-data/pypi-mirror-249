@@ -1,0 +1,2 @@
+[console_scripts]
+gptui = gptui.__main__:gptui
