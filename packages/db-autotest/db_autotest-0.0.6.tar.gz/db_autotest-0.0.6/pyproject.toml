@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "db-autotest"
+version = "0.0.6"
+authors = [
+  { name="AcaciaMan", email="11488694+AcaciaMan@users.noreply.github.com" },
+]
+description = "DB Database test automation. This package allows to create database object structure and load data from database."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "pyyaml>=6",
+]
+
+[project.urls]
+Homepage = "https://github.com/AcaciaMan/db-autotest"
+Issues = "https://github.com/AcaciaMan/db-autotest/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/db_autotest"]
