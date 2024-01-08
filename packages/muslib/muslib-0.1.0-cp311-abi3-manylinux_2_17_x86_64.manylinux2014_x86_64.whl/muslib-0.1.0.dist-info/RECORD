@@ -1,0 +1,5 @@
+muslib-0.1.0.dist-info/METADATA,sha256=DTd-x7ron1qK5RntNVGdZ5ChV6ttBOdLZCppoFp5HzM,3462
+muslib-0.1.0.dist-info/WHEEL,sha256=YETGPuzofldNpn5GDXjnA7ciNbjpRGvxZxKlbaeIEno,128
+muslib/__init__.py,sha256=PDqxOn1ZzUxUZEctGZbBuDDjZWXh94_uT0kBZ2NhxVI,107
+muslib/muslib.abi3.so,sha256=6PAZ8IekFDggi7MGt2SbkFXdf0KgcTgajW2vVBXq8Hw,26645800
+muslib-0.1.0.dist-info/RECORD,,
