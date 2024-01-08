@@ -1,0 +1,78 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="redturtle.auditlog"
+    >
+
+  <i18n:registerTranslations directory="locales" />
+
+  <subscriber
+      for="Products.PluggableAuthService.interfaces.authservice.IPropertiedUser
+           Products.PluggableAuthService.interfaces.events.IPrincipalCreatedEvent"
+      handler=".subscribers.new_user"
+      />
+
+  <subscriber
+      for="*
+           Products.PluggableAuthService.interfaces.events.IPrincipalDeletedEvent"
+      handler=".subscribers.del_user"
+      />
+
+  <subscriber
+      for="*
+           Products.PluggableAuthService.interfaces.events.IGroupCreatedEvent"
+      handler=".subscribers.new_group"
+      />
+
+  <subscriber
+      for="*
+           Products.PluggableAuthService.interfaces.events.IGroupDeletedEvent"
+      handler=".subscribers.del_group"
+      />
+
+  <subscriber
+      for="*
+           Products.PluggableAuthService.interfaces.events.IPrincipalAddedToGroupEvent"
+      handler=".subscribers.add_principal_to_group"
+      />
+
+  <subscriber
+      for="*
+           Products.PluggableAuthService.interfaces.events.IPrincipalRemovedFromGroupEvent"
+      handler=".subscribers.remove_principal_from_group"
+      />
+
+  <!-- 
+
+
+
+class IUserLoggedInEvent(IPASEvent):
+    """ A user logged in.
+    """
+
+
+class IUserLoggedOutEvent(IPASEvent):
+    """ A user logged out.
+    """
+
+
+
+class ICredentialsUpdatedEvent(IPASEvent):
+    """A principal has changed her password.
+
+    Sending this event will cause a PAS user folder to trigger its active
+    credential update plugins.
+    """
+    password = Attribute('The new password')
+
+
+class IPropertiesUpdatedEvent(IPASEvent):
+    """A principals properties have been updated.
+    """
+    properties = Attribute('List of modified property ids')
+
+
+-->
+</configure>
