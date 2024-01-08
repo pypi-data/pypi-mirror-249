@@ -1,0 +1,51 @@
+[project]
+name = "beepy-web"
+authors = [{name = "kor0p", email = "3.kor0p@gmail.com"}]
+description = "The modern frontend web framework for Python"
+dynamic = ["version"]
+requires-python = ">=3.10.10"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyodide-py==0.24.1",  # Pyodide package
+    "python-dotenv==1.0.0",  # .env file to os.environ
+    "boltons==23.1.1",  # Better builtins
+]
+
+[project.urls]
+"Homepage" = "https://bit.ly/beepy"
+"Repository" = "https://github.com/kor0p/BeePy"
+"Docs" = "https://bee-py.readthedocs.io/en/latest/"
+
+[project.optional-dependencies]
+dev = [
+    "micropip==0.3.0",  # A lightweight Python package installer for the web
+    "watchdog==3.0.0",  # watcher for files that changes for Hot reload
+    "websockets==11.0.3",  # Hot reload is working using simple WebSockets server
+    "requests==2.31.0",  # HTTP synchronous requests lib
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "beepy/framework.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+    "/.idea",
+    "/docs",
+    ".readthedocs.yaml",
+    "/backend",
+    "/examples",
+    "app.json",
+    "Procfile",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["beepy"]
