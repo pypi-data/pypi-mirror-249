@@ -1,0 +1,4 @@
+[console_scripts]
+ip-reveal=ip_reveal_headless:main
+ip-reveal-headless=ip_reveal_headless:main
+
