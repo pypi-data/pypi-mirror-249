@@ -1,0 +1,9 @@
+transformations/__init__.py,sha256=JcXVrsRj1uRPMJj-_YG9adMUkRhRq_gmFBy53WosLqA,116
+transformations/_transformations.cp39-win32.pyd,sha256=qmuzMhK0DdzZBJ6GMZSTHTNCpzrtS7M_cQCz3EfglEg,64000
+transformations/conftest.py,sha256=37wGwfR5PsGzR9QkrIgDE7izJHicy0ZsuIsNsEVxyyw,344
+transformations/transformations.py,sha256=J_ra_KEN1aGYl4uR1midY-7VneZg7XPPa2alo0NuHW0,70080
+transformations-2024.6.1.dist-info/LICENSE,sha256=zg-GCXq6P0iBauR2TAngh2um2htihjCa96h1u2mKmcE,1559
+transformations-2024.6.1.dist-info/METADATA,sha256=UFHdtyu2Fi2WcpfrsXPzAQT8TYEWlTI-QJkDT8emhl4,9077
+transformations-2024.6.1.dist-info/WHEEL,sha256=ox_whmEWdOvRyK6TeOPzEmRk4K2lM8LLVKChtBzmjZU,96
+transformations-2024.6.1.dist-info/top_level.txt,sha256=aLjIe_YXrdETEWfWoV1Ld7rLmK0F5cB6W9jYDymktOE,16
+transformations-2024.6.1.dist-info/RECORD,,
