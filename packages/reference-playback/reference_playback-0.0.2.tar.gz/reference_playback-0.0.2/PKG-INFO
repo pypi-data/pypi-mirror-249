@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: reference_playback
+Version: 0.0.2
+Summary: Reference Playback
+Author: Vanshika Agarwal
+Author-email: vanshika.agarwal2703@gmail.com
+Keywords: automation,simplifyQA
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+Automate test cases using api call in SimplifyQA
