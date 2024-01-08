@@ -1,0 +1,2 @@
+[console_scripts]
+ailola = ailola:cli

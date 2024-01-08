@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ailola
+Version: 0.9.23
+Home-page: https://github.com/lola-pola/ailola
+Author: Elhay Efrat
+Author-email: elhayefrat@gmail.com
+License: MIT
+Keywords: lola cli terraform ai
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: openai
+Requires-Dist: colorama
+
