@@ -1,0 +1,95 @@
+Metadata-Version: 1.2
+Name: stilpy
+Version: 1.0.0
+Summary: Stilpy creates time intervals from records and manage them for you.
+Home-page: https://github.com/fesanmar/stilpy
+Author: Felipe Santa-Cruz
+Author-email: fesanmar@gmail.com
+License: MIT license
+Description: ======
+        Stilpy
+        ======
+        
+        
+        .. image:: https://img.shields.io/pypi/v/stilpy.svg
+                :target: https://pypi.python.org/pypi/stilpy
+        
+        .. image:: https://img.shields.io/travis/fesanmar/stilpy.svg
+                :target: https://travis-ci.org/fesanmar/stilpy
+        
+        .. image:: https://readthedocs.org/projects/stilpy/badge/?version=latest
+                :target: https://stilpy.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        .. image:: https://pyup.io/repos/github/fesanmar/Stilpy/shield.svg
+             :target: https://pyup.io/repos/github/fesanmar/Stilpy/
+             :alt: Updates
+        
+        
+        
+        Stilpy creates time intervals from records and manage them for you.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://stilpy.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * Sorted time intervals iterator created from a collection of records
+        * List, tuples, dicts and dict like objects supported as the items inside the collection of records
+        * `sqlite3.Row objects`_ supported as well
+        * Records grouping supported so you can create intervals applying grouping conditions
+        * datetime strings dynamically casted to datetime_ format
+        * Sum the durations of your time intervals if they can be sum
+        * This repository is being maintained
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        .. _datetime: https://docs.python.org/3.8/library/datetime.html#datetime-objects
+        .. _`sqlite3.Row objects`: https://docs.python.org/3/library/sqlite3.html#row-objects
+        
+         [ ~ Dependencies scanned by PyUp.io ~ ]
+        
+        
+        =======
+        History
+        =======
+        
+        1.0.0 (2023-01-04)
+        ------------------
+        
+        * Change the way extra arguments are populated in the interval when using 
+          ``TimeGaps`` constructor
+        
+        0.2.0 (2020-05-21)
+        ------------------
+        
+        * Second release on PyPI.
+        
+        0.1.0 (2020-01-17)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: stilpy sorts time records to create time intervals iterators
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.5
