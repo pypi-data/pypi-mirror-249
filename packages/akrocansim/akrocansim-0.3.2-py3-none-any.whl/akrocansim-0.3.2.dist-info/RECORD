@@ -1,0 +1,12 @@
+akrocansim/__init__.py,sha256=chNkwNhQh4Nye5_BOhjgBPB6_vHsWqKL9deXU38rqeY,84
+akrocansim/__main__.py,sha256=muPMkQNP0xMmIbZ2FQxqvPCcq2bQfzOFE-kMCLHFa2c,37
+akrocansim/caninterface.py,sha256=Hh3sbZRzmcnf4-GYN0BUgXdRoyE_w9RWxg6Uv58g-HA,3270
+akrocansim/config.py,sha256=sDDsnKifbc0c87bF3zl2HB67ggWFbsb3PL9g2_dk328,3335
+akrocansim/gui.py,sha256=sZM7Avrh7xSnNKhrqolnUzlZHFQYFqNlwsqjYAipe3k,14687
+akrocansim/protocols/J1939DA_parser.py,sha256=8yNlc2vwfQ-OxNdriDwDHSncnE1G2d7vFTUyl4AKfP0,31885
+akrocansim/protocols/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+akrocansim/protocols/protocols.py,sha256=6PA7UTv0imJKUPE_yQWjJHOPkBHqYJO8piHALmsHWLw,785
+akrocansim-0.3.2.dist-info/LICENSE,sha256=NbxQE_g_MpQzPDfHiCr1W042iMZePQotChNWPYAJ1-s,1083
+akrocansim-0.3.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+akrocansim-0.3.2.dist-info/METADATA,sha256=93t95z19iWUe-mdp8CUZzwmLMk40hTxVqLOuIwPTfyU,1376
+akrocansim-0.3.2.dist-info/RECORD,,
