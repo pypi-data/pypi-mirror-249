@@ -1,0 +1,12 @@
+README.md
+setup.py
+Sudoku_R/__init__.py
+Sudoku_R/sudoku_board.py
+Sudoku_R/sudoku_solver.py
+Sudoku_R/sudoku_utils.py
+Sudoku_R/test.py
+Sudoku_R.egg-info/PKG-INFO
+Sudoku_R.egg-info/SOURCES.txt
+Sudoku_R.egg-info/dependency_links.txt
+Sudoku_R.egg-info/not-zip-safe
+Sudoku_R.egg-info/top_level.txt
