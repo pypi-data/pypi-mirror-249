@@ -1,0 +1,16 @@
+pyqrlew-0.8.0.dist-info/METADATA,sha256=qmMs7BvZb2UYnoYXPfi2NJ-DDpV0RYhwOTmp4IqolR4,2562
+pyqrlew-0.8.0.dist-info/WHEEL,sha256=fvn8WyKV9fVkMkR0pnqKHKHNts_aihauCEz8yuCb1BA,129
+pyqrlew-0.8.0.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyqrlew/tester/stochatic_dataset.py,sha256=WUmweHL_DWUxQqB2anRa1DWQTFXyc5JETH3xOYzmYYw,3574
+pyqrlew/tester/utils.py,sha256=9hQTkYAAa-pIzbQkKg-gteoONIfEX3BRwUCaLeM8_dM,4493
+pyqrlew/tester/__init__.py,sha256=JRG9j0Tk6UoCWrqTbqEQoi57nXzyhpG6LMjec8ouLJQ,91
+pyqrlew/tester/tester.py,sha256=otnvNjvwQTnMG47cOTrywK6nB6WpkrZ9-cv3QQN_2ns,1462
+pyqrlew/io/postgresql.py,sha256=-QrSaPOFeF4Tq4R8ycMNeCF_u__q9htlpKsfDfWX4eo,2597
+pyqrlew/io/dataset.py,sha256=1cntBLQBUB5JeCqY0Ks7A5VH5WNEQ0yJ_7PvqfpkyFw,16415
+pyqrlew/io/utils.py,sha256=P2GDZLBlQbgY0LqkRezs9xW66pHHv_3bLV5Ok6hUl6A,6306
+pyqrlew/io/sqlite.py,sha256=vfYkcGHRLVIQQsbH4yzbL3U0KGE31DqvVJ4fqsk0xwY,5159
+pyqrlew/io/__init__.py,sha256=qE_inkgMb25s5SYdYTw3woOoYBQivGzPBsBCukEhVwo,112
+pyqrlew/utils.py,sha256=QJo-XFM6M3unlI_cMwfpPIfmiU8dT4CWIcqbd6feP00,1115
+pyqrlew/__init__.py,sha256=z7612yCs1Pi0-NkDmAytU73PBTqmco9maahoqvjmp2Q,151
+pyqrlew/pyqrlew.abi3.so,sha256=Yf4mfxhywzKCySalZuXuid2YJY_VnkthBwWEiumq9Os,17463760
+pyqrlew-0.8.0.dist-info/RECORD,,
