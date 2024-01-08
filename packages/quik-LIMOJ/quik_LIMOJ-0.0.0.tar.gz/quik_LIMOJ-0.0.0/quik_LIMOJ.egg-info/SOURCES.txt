@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+quik_LIMOJ.egg-info/PKG-INFO
+quik_LIMOJ.egg-info/SOURCES.txt
+quik_LIMOJ.egg-info/dependency_links.txt
+quik_LIMOJ.egg-info/top_level.txt
