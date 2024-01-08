@@ -1,0 +1,13 @@
+README.md
+setup.py
+atomgrad/__init__.py
+atomgrad/atom.py
+atomgrad/graph.py
+atomgrad.egg-info/PKG-INFO
+atomgrad.egg-info/SOURCES.txt
+atomgrad.egg-info/dependency_links.txt
+atomgrad.egg-info/top_level.txt
+atomgrad/nn/__init__.py
+atomgrad/nn/metrics.py
+atomgrad/nn/nn.py
+atomgrad/nn/optim.py
