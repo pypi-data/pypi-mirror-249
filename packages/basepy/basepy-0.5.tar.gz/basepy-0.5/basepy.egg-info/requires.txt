@@ -1,0 +1,7 @@
+toml
+python-box
+
+[dev]
+pytest>=3
+mock
+pyyaml
