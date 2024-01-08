@@ -1,0 +1,13 @@
+pyvisonic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvisonic/pyconst.py,sha256=T3zGE-evzBPf0d91FGrY1J2_1Cfoqh0a6jQ0Aw3eeGw,20142
+pyvisonic/pyhelper.py,sha256=xn2rAeO2w5dbem7lcODro0fctK4Wd52r0Xb8hxOqvzs,30419
+pyvisonic/pyvisonic.py,sha256=A_BG6Y8fNhO9FPRJ3qWM-v8EK0Ww2YWStHyoHMbfUsY,290655
+pyvisonic/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvisonic/examples/bridge.py,sha256=faPLuVHe44Fo14LlaRcVLgNOsJX7eXKwcWeYhiKY8ls,11358
+pyvisonic/examples/complete_example.py,sha256=JWU1XKz9obZrTCBmk0EIKIFpnp5tJoUGPknGSg9ePwY,36834
+pyvisonic/examples/simple_example.py,sha256=Vq7r4TOB_H2pfbe6kcsyCL4ZFJcLSO5iU6k7TWBuNEw,14636
+pyvisonic-2.0.0.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+pyvisonic-2.0.0.dist-info/METADATA,sha256=kpktTYceyRNRl62Yua6GujGJhFljd86b-FpI6vWasP0,2085
+pyvisonic-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyvisonic-2.0.0.dist-info/top_level.txt,sha256=3Xzcx6waFsu-gSJ3EFdeOgNHvCl5yvHJ3IBP_UxxEfA,10
+pyvisonic-2.0.0.dist-info/RECORD,,
