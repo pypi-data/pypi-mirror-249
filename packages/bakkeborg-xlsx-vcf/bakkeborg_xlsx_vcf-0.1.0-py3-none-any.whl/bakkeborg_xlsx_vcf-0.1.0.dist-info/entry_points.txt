@@ -1,0 +1,3 @@
+[console_scripts]
+bakkeborg-xlsx-vcf = bakkeborg_xlsx_vcf.cli:main
+

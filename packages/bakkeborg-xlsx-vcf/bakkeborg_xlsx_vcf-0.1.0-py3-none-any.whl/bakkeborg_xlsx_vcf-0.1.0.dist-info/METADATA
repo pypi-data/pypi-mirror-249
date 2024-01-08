@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bakkeborg-xlsx-vcf
+Version: 0.1.0
+Summary: XLSX to VCF Contacts
+Author-Email: Kalle M. Aagaard <git@k-moeller.dk>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: openpyxl>=3.1.2
+Requires-Dist: typer>=0.9.0
+Description-Content-Type: text/markdown
+
+# bakkeborg-xlsx-vcf
