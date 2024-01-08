@@ -1,0 +1,3 @@
+[console_scripts]
+rmd = py416.scripts:rmd
+uzd = py416.scripts:uzd
