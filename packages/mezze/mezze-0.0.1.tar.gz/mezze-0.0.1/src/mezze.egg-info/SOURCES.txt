@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/mezze/__init__.py
+src/mezze/example.py
+src/mezze.egg-info/PKG-INFO
+src/mezze.egg-info/SOURCES.txt
+src/mezze.egg-info/dependency_links.txt
+src/mezze.egg-info/top_level.txt
