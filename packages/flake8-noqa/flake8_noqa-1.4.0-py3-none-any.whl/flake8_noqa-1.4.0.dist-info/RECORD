@@ -1,0 +1,11 @@
+flake8_noqa/__init__.py,sha256=kc2tZAql7acLr5F2496DkZFyWZeZdbcHLW0KlPuIsPc,173
+flake8_noqa/noqa_checker.py,sha256=EKcUnsfn7XZWAyIWPjeLIshhPZy21CSyqEA98nzRHEE,6364
+flake8_noqa/noqa_comment.py,sha256=6220seFJo5Owqohvr0LiDyt8qWiz-Iu6vZ2TYgrQ69E,3477
+flake8_noqa/noqa_filter.py,sha256=eEo2VWqng5SGS3jc2Yhp3R-laBKmVg4RK3q7pfu1B8Y,7380
+flake8_noqa-1.4.0.dist-info/COPYING.LESSER,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+flake8_noqa-1.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+flake8_noqa-1.4.0.dist-info/METADATA,sha256=q9DLHPEPOFaPJKGqMw5FvhggsZ7Lp6c5GpZ8xd8aHIA,7194
+flake8_noqa-1.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+flake8_noqa-1.4.0.dist-info/entry_points.txt,sha256=bPtqLYkkM1zAss_9lYtmPBmUXH7r1WbsXda3Onm8LiA,105
+flake8_noqa-1.4.0.dist-info/top_level.txt,sha256=sLHMWEMZG0_c1chA7loUV9GFocoTTVVkT8PXQ-IHbvE,12
+flake8_noqa-1.4.0.dist-info/RECORD,,
