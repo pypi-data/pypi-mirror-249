@@ -1,0 +1,10 @@
+gtk_gtasks/__init__.py,sha256=Lh8eAVSxeC9qb9WUO3pLMuHV9O_pxm68aM8oGMmcRmw,55
+gtk_gtasks/icon.png,sha256=hKnrD17-bukhjLNsQTxuvOZ31pbBRw36Prh9yaVOFOw,12497
+gtk_gtasks/install.py,sha256=1lREhjHrVBR5_HF8IzRvO49awu7Yst9SI2GuNOCUksA,1068
+gtk_gtasks/main.py,sha256=4zjguJg3Mzo3gndGdiGbFs3hqAIfOWIuOZlBjV4kgos,2745
+gtk_gtasks/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+gtk_gtasks-0.0.1.dist-info/entry_points.txt,sha256=MqCJV1uRXyk14XIpshkMrI9Q2qrStheGnZU3Dvhm3zc,51
+gtk_gtasks-0.0.1.dist-info/LICENSE,sha256=EN0sxsZEBiUNsRe4UEbLw5tKg_3KtHLiXaD4BmMwTmc,1094
+gtk_gtasks-0.0.1.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+gtk_gtasks-0.0.1.dist-info/METADATA,sha256=EiniehroHa9YceWYmMjWbrrQTJImofEaX5pulEFK4cg,2012
+gtk_gtasks-0.0.1.dist-info/RECORD,,
