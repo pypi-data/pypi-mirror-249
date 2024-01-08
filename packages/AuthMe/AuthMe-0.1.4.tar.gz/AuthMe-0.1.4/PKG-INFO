@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: AuthMe
+Version: 0.1.4
+Summary: A python auth package to work with postgresql, inspired from devise gem for ruby.
+Author: Soumit Das
+Author-email: its.soumit.das@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: PyJWT
+Requires-Dist: psycopg2
+
+# AuthMe
+> A python auth package to work with postgresql, inspired from devise gem for ruby.
+
+### Installation
+```bash
+pip install AuthMe
+
+from AuthMe import AuthMe
+```
