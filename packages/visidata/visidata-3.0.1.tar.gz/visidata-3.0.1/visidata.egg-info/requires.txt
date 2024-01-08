@@ -1,0 +1,8 @@
+python-dateutil
+importlib-metadata>=3.6
+
+[:platform_system == "Windows"]
+windows-curses!=2.3.1
+
+[:python_version < "3.9"]
+importlib_resources
