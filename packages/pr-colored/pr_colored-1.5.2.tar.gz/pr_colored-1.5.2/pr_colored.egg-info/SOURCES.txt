@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pr_colored/pr_colored.py
+pr_colored.egg-info/PKG-INFO
+pr_colored.egg-info/SOURCES.txt
+pr_colored.egg-info/dependency_links.txt
+pr_colored.egg-info/requires.txt
+pr_colored.egg-info/top_level.txt
