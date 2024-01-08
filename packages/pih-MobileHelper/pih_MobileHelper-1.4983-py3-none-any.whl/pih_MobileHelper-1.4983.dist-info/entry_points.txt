@@ -1,0 +1,2 @@
+[console_scripts]
+pih-MobileHelper = MobileHelperService.__main__:start
