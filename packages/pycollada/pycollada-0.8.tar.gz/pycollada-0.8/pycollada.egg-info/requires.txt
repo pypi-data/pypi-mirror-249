@@ -1,0 +1,8 @@
+python-dateutil>=2.2
+numpy
+
+[prettyprint]
+lxml
+
+[validation]
+lxml
