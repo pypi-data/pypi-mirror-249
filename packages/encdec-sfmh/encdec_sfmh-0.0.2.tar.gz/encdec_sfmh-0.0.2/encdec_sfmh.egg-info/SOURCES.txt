@@ -1,0 +1,7 @@
+License.txt
+README.rst
+pyproject.toml
+encdec_sfmh.egg-info/PKG-INFO
+encdec_sfmh.egg-info/SOURCES.txt
+encdec_sfmh.egg-info/dependency_links.txt
+encdec_sfmh.egg-info/top_level.txt
