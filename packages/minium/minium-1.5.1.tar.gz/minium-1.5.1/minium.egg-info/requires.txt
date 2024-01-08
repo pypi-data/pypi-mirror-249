@@ -1,0 +1,14 @@
+ddt
+pyyaml
+websocket_client<1.4,>=1.3
+requests
+future
+pyee
+typing_extensions
+websockets
+
+[ios]
+tidevice==0.10.12
+lxml
+nest_asyncio
+pymobiledevice3
