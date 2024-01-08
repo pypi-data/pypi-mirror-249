@@ -1,0 +1,4 @@
+{
+  "analyser_test.py::test_filter_out": true,
+  "analyser_test.py::test_preprocessor": true
+}
