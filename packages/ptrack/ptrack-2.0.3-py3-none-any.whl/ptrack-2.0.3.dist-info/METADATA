@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ptrack
+Version: 2.0.3
+Summary: A simple CLI utility for asthetically tracking progress when copying, moving or downloading files.
+Author: Connor Etherington
+Author-email: connor@concise.cc
+License-File: LICENSE
+Requires-Dist: ascii-magic
+Requires-Dist: beautifulsoup4
+Requires-Dist: Pillow
+Requires-Dist: Requests
+Requires-Dist: rich
+Requires-Dist: yt-dlp
+Requires-Dist: humanize
+Requires-Dist: validators
+
