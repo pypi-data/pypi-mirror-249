@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "authentik_cloud_gateway_client"
+version = "0.3.0"
+description = ""
+authors = ["authentik Team <hello@goauthentik.io>"]
+readme = "README.md"
+packages = [
+    {include = "authentik_cloud_gateway_client"}
+]
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
+
+[tool.poetry.dependencies]
+python = "~3.12"
+grpcio = "*"
+protobuf = "*"
+
+[tool.poetry.group.dev.dependencies]
+grpcio-tools = "*"
+black = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
