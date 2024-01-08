@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: propertime
+Version: 0.2.1
+Summary: An attempt at proper time management in Python.
+Home-page: https://github.com/sarusso/Propertime
+Author: Stefano Alberto Russo
+Author-email: stefano.russo@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Propertime is an attempt at implementing proper time management in Python,
+by fully embracing the extra complications due to how we measure an manage
+time as humans instead of just negating them.
+
+In a nutshell, it provides two main classes: the ``Time`` class for representing
+time (similar to a datetime) and the ``TimeUnit`` class for representing units
+of time (similar to timedelta). Such classes play nice with Python datetimes so
+that you can mix and match and use them only when needed.
+
+You can have a look at the README for a better introduction, some example usage
+and more info about Propertime; and you can get started by having a look at the
+[quickstart notebook](https://github.com/sarusso/Propertime/blob/main/Quickstart.ipynb),
+or by reading the [reference documentation](https://propertime.readthedocs.io).
+      
+
