@@ -1,0 +1,11 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/crud_generator.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/form_generator.py,sha256=tJq6BAO4-Hy_HIYCSANUwaRVr6Fncu3OZo5B9cHp71U,4380
+package/model_generator.py,sha256=I7Z8vE7R9X5I8BRpfvOAsu8yY1r7_0rH5NsWTqUMJ5Y,7705
+package/module.py,sha256=F60OzL18JICwmtwfcR_C-6Z2vjbxIhpcMyjFILaD-sc,2988
+package/view_generator.py,sha256=gvnRFmCU0dbhouaSuxLB71bLuyPh9S9lvLWpyYp-LeY,19799
+mudey_django-0.4.dist-info/METADATA,sha256=sWiPTMzShYEq0TZRvtWfRda149ILF5cfVTaNixSv2Uk,2209
+mudey_django-0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mudey_django-0.4.dist-info/entry_points.txt,sha256=ga4gXmIChnWvIVU3PgNIobNw7rBBlJ8z9jWhnG3MxQw,57
+mudey_django-0.4.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+mudey_django-0.4.dist-info/RECORD,,
