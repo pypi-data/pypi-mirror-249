@@ -1,0 +1,4 @@
+include src/readretro/data/*
+include src/readretro/retro_star/saved_model/*
+include src/readretro/retroformer/saved_models/vocab_share.pk
+include src/readretro/g2s/saved_models/vocab_smiles.txt
