@@ -1,0 +1,2 @@
+[console_scripts]
+print_tree = tests.struct_tree_out:print_tree
