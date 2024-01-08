@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/metriccoders_ml.egg-info/PKG-INFO
+src/metriccoders_ml.egg-info/SOURCES.txt
+src/metriccoders_ml.egg-info/dependency_links.txt
+src/metriccoders_ml.egg-info/top_level.txt
+src/ml_algorithms/__init__.py
+src/ml_algorithms/algorithms.py
+src/test/__init__.py
+src/test/test_algorithms.py
