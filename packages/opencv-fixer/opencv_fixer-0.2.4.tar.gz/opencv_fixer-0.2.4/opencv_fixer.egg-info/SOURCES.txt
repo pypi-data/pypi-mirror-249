@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+opencv_fixer/__init__.py
+opencv_fixer/autofix.py
+opencv_fixer.egg-info/PKG-INFO
+opencv_fixer.egg-info/SOURCES.txt
+opencv_fixer.egg-info/dependency_links.txt
+opencv_fixer.egg-info/top_level.txt
