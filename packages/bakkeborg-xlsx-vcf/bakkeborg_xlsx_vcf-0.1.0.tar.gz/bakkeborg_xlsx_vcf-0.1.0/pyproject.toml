@@ -1,0 +1,28 @@
+[project]
+name = "bakkeborg-xlsx-vcf"
+version = "0.1.0"
+description = "XLSX to VCF Contacts"
+authors = [
+    { name = "Kalle M. Aagaard", email = "git@k-moeller.dk" },
+]
+dependencies = [
+    "openpyxl>=3.1.2",
+    "typer>=0.9.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+bakkeborg-xlsx-vcf = "bakkeborg_xlsx_vcf.cli:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-type = "library"
