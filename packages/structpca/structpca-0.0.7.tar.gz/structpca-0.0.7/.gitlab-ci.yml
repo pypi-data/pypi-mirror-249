@@ -1,0 +1,50 @@
+image: "python:3.8"
+
+stages:
+    - linting
+    - build
+    - publish
+
+
+black:
+  stage: linting
+  image: registry.gitlab.com/pipeline-components/black:latest
+  script:
+    - black --check --verbose -- .
+  tags:
+    - docker
+
+pylint:
+  stage: linting
+  before_script:
+    - pip install pylint
+  script:
+    - find . -type f -name "*.py" |
+      xargs pylint
+          --disable=import-error,missing-module-docstring
+          --load-plugins=pylint.extensions.docparams
+
+build_package:
+  stage: build
+  before_script:
+    - pip install build
+  script:
+    - rm -rf dist/
+    - python -m build
+  artifacts:
+    untracked: true
+    expire_in: 1 week
+  tags:
+    - docker
+
+
+publish_package:
+  stage: publish
+  before_script:
+    - pip install twine
+  script:
+    - TWINE_PASSWORD=${structpca_token} TWINE_USERNAME=__token__ python -m twine upload dist/*
+  tags:
+    - docker
+  only:
+    - tags
