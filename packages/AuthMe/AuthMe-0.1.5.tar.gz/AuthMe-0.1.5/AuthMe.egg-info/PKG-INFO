@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: AuthMe
+Version: 0.1.5
+Summary: A python authentication package to work with postgresql, inspired from devise gem for ruby.
+Author: Soumit Das
+Author-email: its.soumit.das@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: PyJWT
+Requires-Dist: psycopg2
+
+# AuthMe
+A python authentication package to work with postgresql, inspired by devise from ruby.
+
+PyPi Link - [https://pypi.org/project/AuthMe/](https://pypi.org/project/AuthMe/)
+
+## Features
+1. Regular Auth Flows : Signup, Login, Logout, Password reset
+2. Invitations _(coming soon)_
+
+### Essential Things to keep handy, before using
+1. A postgresql database, ready to accept connections
+2. A secret token to encrypt all tokens
+3. All codes returned, are standard http response codes
+
+### Installation -
+```python
+pip install AuthMe
+```
+
+### Essential Setup
+```python
+from AuthMe import AuthMe
+
+db_config = {
+    'dbname': 'your-db-name',
+    'user': 'your-db-user',
+    'password': 'your-db-password',
+    'host': 'your-db-host',
+    'port': 'your-db-port',
+}
+
+auth = AuthMe(db_config, "your-secret-token")
+```
+
+### To initialize the database with the necessary tables
+```python
+auth.initialize_database()
+```
+
+### Signup User
+```python
+# Below are the necessary attributes. Add more attributes, as needed by your application, but first, add those columns in the database
+user_attributes = {
+    'email': 'mail@example.com',
+    'password': 'Password1$',
+    'first_name': 'John',
+    'last_name': 'Doe'
+}
+origin_host = "localhost"
+ip_address = "127.0.0.1"
+
+auth.signup(user_attributes, origin_host, ip_address)
+```
+
+#### Response
+Signup Success -
+```python
+# A Python Object
+namespace(code=200, token='eyJhb...Hg3TF4', message='Success')
+```
+Signup Failure -
+```python
+# A Python Object
+namespace(code=409, token=None, message='User already exists')
+```
+
+### Login User
+```python
+auth.login(email, password, origin_host, ip_address)
+```
+
+#### Response
+Login Success -
+```python
+# A Python Object
+namespace(code=200, token='eyJhbGc...NAM_Gg', message='Success')
+```
+Login Failure -
+```python
+# A Python Object
+namespace(code=401, token=None, message='Invalid credentials')
+```
+
+### Logout User
+```python
+auth.logout(token)
+```
+
+#### Response
+```python
+# A Python Object
+namespace(code=200, token=None, message='Logout success')
+```
+
+### Authenticate User
+```python
+auth.authenticate(token, origin_host, ip_address)
+```
+
+#### Response
+```python
+# Boolean
+True || False
+```
+
+### Current User
+```python
+auth.current_user(token)
+```
+
+#### Response
+```python
+# A Python Object containing all the details of user
+namespace(id=1, email='mail@example.com', encrypted_password='f13...0b3', first_name='John', last_name='Doe', created_at=datetime.datetime(2024, 1, 7, 11, 45, 59, 628334), updated_at=datetime.datetime(2024, 1, 7, 11, 45, 59, 628334), reset_password_token=None, reset_password_sent_at=None, reset_password_at=datetime.datetime(2024, 1, 7, 11, 49, 40, 733419), active=True)
+```
+
+> NOTE : Like devise, first authenticate the token, then check for current user always. `authenticate` method can be invoked as a dependency method, on all the protected routes (both Fast Api and Flask support `Depends`), and if it returns `False`, throw `401 error`.
+
+### Generate Reset Password
+```python
+auth.reset_password_token("mail@example.com")
+```
+
+#### Response
+```python
+# A reset token, which can be sent out via mail or whatever seems convenient
+eyJh...s4Ac
+```
+
+### Generate Password from Reset Token
+```python
+auth.reset_password(reset_token, "Password1$")
+```
+
+#### Response
+```python
+# Boolean
+True || False
+```
+
+### Features under development -
+1. Config for AuthMe class object :\
+   `revoke_tokens_upon_password_reset` : True || False, Default : False\
+   `allow_multiple_sessions` : True || False, Default : True\
+   `auth_token_expiry` : n second, Default : 86400 second (1 day)\
+   `password_reset_token_expiry` : n second, Default : 86400 second (1 day)
+2. Password update for loggedin user

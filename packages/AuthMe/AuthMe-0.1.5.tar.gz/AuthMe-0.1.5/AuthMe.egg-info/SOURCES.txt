@@ -1,0 +1,9 @@
+README.md
+setup.py
+AuthMe/__init__.py
+AuthMe/auth_me.py
+AuthMe.egg-info/PKG-INFO
+AuthMe.egg-info/SOURCES.txt
+AuthMe.egg-info/dependency_links.txt
+AuthMe.egg-info/requires.txt
+AuthMe.egg-info/top_level.txt
