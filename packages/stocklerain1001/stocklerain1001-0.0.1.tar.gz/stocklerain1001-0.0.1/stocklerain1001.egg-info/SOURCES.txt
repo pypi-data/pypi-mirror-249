@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stocklerain1001/__init__.py
+stocklerain1001/stocklerain1001.py
+stocklerain1001.egg-info/PKG-INFO
+stocklerain1001.egg-info/SOURCES.txt
+stocklerain1001.egg-info/dependency_links.txt
+stocklerain1001.egg-info/top_level.txt
