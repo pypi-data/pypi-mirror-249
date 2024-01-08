@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: LCDCONTROL
+Version: 0.0.4
+Summary: Controller for an l2c LCD
+Author: Evan
+License-File: LICENSE.txt
