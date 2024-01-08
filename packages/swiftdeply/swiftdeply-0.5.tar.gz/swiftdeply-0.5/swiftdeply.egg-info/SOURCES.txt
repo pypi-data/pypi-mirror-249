@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+swiftdeploy/__init__.py
+swiftdeploy/app.py
+swiftdeploy/model.py
+swiftdeploy/settings.py
+swiftdeploy/html/__init__.py
+swiftdeploy/html/config.py
+swiftdeploy/html/htmlcontent.py
+swiftdeploy/html/tags.py
+swiftdeploy/html/utils.py
+swiftdeply.egg-info/PKG-INFO
+swiftdeply.egg-info/SOURCES.txt
+swiftdeply.egg-info/dependency_links.txt
+swiftdeply.egg-info/requires.txt
+swiftdeply.egg-info/top_level.txt
