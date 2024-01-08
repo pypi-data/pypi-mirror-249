@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/listdiffer/__init__.py
+src/listdiffer/differ.py
+src/listdiffer/formatter.py
+src/listdiffer/patch_parser.py
+src/listdiffer.egg-info/PKG-INFO
+src/listdiffer.egg-info/SOURCES.txt
+src/listdiffer.egg-info/dependency_links.txt
+src/listdiffer.egg-info/requires.txt
+src/listdiffer.egg-info/top_level.txt
+tests/test_Differ.py
+tests/test_Formatter.py
+tests/test_patch_parser.py
