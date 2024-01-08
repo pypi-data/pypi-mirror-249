@@ -1,0 +1,128 @@
+[project.urls]
+"Homepage" = "https://github.com/OCXStandard/ocxtools"
+"Bug Tracker" = "https://github.com/OCXStandard/ocxtools/issues"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "ocxtools"
+version = "1.2.0"
+description = "Python utility CLI for working with 3Docx models."
+authors = ["ocastrup <ole.christian.astrup@dnv.com>"]
+readme = "README.md"
+packages = [{include = "ocxtools"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+packaging = "^23.1"
+tbump = '*'
+click ="*"
+click_shell = "*"
+lxml = "*"
+soap = "*"
+typer = "*"
+rich = "*"
+loguru = "*"
+httpx = "*"
+arrow = "*"
+pandas = "*"
+ocx = "3.00b5"
+ocx_schema_parser = "*"
+
+
+[tool.poetry.group.development.dependencies]
+pre-commit = "*"
+sourcery = '*'
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-cov = "*"
+pytest-regressions ="*"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "*"
+sphinx-autodoc-typehints = "*"
+sphinx_rtd_theme = "*"
+sphinx-click = "*"
+sphinx_automodapi = "*"
+
+[tool.poetry.scripts]
+databinding = "ocxtools.cli:main"
+
+[tool.tbump]
+# Uncomment this if your project is hosted on GitHub:
+github_url = "https://github.com/OCXStandard/ocxtools"
+
+[tool.tbump.version]
+current = "1.2.0"
+
+# Example of a semver regexp.
+# Make sure this matches current_version before
+# using tbump
+regex = '''
+  (?P<major>\d+)
+  \.
+  (?P<minor>\d+)
+  \.
+  (?P<patch>\d+)
+  (
+    (?P<extra>.+)
+  )?
+  '''
+
+
+[[tool.tbump.field]]
+# the name of the field
+name = "extra"
+# the default value to use, if there is no match
+default = ""
+
+[tool.tbump.git]
+message_template = "Bump to {new_version}"
+tag_template = "v{new_version}"
+
+# For each file to patch, add a [[tool.tbump.file]] config
+# section containing the path of the file, relative to the
+# tbump.toml location.
+
+[[tool.tbump.file]]
+src = "pyproject.toml"
+
+[[tool.tbump.file]]
+src = "./ocxtools/__init__.py"
+
+[[tool.tbump.file]]
+src = "./docs/conf.py"
+
+[[tool.tbump.before_commit]]
+name = "Generate README html pages."
+cmd = "pandoc -c=readme/modest.css --wrap=none --standalone -o ./readme/ocxtools.html README.md --metadata=title:'ocxtools'"
+
+[[tool.tbump.before_commit]]
+name = "Generate DOCKER html pages."
+cmd = "pandoc -c=readme/modest.css --wrap=none --standalone -o ./readme/docker.html readme/docker.md --metadata=title:'docker'"
+
+[[tool.tbump.before_commit]]
+name = "Generate VALIDATE html pages."
+cmd = "pandoc -c=readme/modest.css --wrap=none --standalone -o ./readme/validate.html readme/validate.md --metadata=title:'validate'"
+
+[[tool.tbump.before_commit]]
+name = "Generate CHANGELOG html pages."
+cmd = "pandoc -c=readme/modest.css --wrap=none --standalone -o ./readme/changelog.html CHANGELOG.md --metadata=title:'changelog'"
+
+[[tool.tbump.before_commit]]
+name = "Insert html links"
+cmd = "python html_links.py"
+
+# You can specify a list of commands to
+# run after the files have been patched
+# and before the git commit is made
+
+# Or run some commands after the git tag and the branch
+# have been pushed:
+# [[tool.tbump.after_push]]
+# name = "build"
+# cmd = "poetry build"
