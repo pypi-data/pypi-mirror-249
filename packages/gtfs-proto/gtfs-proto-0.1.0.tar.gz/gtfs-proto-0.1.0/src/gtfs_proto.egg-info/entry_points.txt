@@ -1,0 +1,2 @@
+[console_scripts]
+gtfs_proto = gtfs_proto.__main__:main
