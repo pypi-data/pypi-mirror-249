@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/Stock_indicators/__init__.py
+src/Stock_indicators/stock_indicators.py
+src/stock_indicators_2101410.egg-info/PKG-INFO
+src/stock_indicators_2101410.egg-info/SOURCES.txt
+src/stock_indicators_2101410.egg-info/dependency_links.txt
+src/stock_indicators_2101410.egg-info/top_level.txt
