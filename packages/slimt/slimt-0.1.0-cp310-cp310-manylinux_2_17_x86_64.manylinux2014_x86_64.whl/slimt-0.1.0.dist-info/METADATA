@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: slimt
+Version: 0.1.0
+Summary: Translate text-content locally in your machine across languages.
+Home-page: https://github.com/jerinphilip/slimt/
+Author: Jerin Philip
+Author-email: jerinphilip@live.in
+Project-URL: Bug Reports, https://github.com/jerinphilip/slimt/issues
+Project-URL: Source, https://github.com/jerinphilip/slimt/
+Project-URL: Documentation, https://github.com/jerinphilip/slimt/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: appdirs
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+
+# slimt
+
+slimt is an inference frontend for models trained as part of the Bergamot
+project.
+
+
+
