@@ -1,0 +1,9 @@
+celery>=5.0.0.dev0
+click
+pendulum
+redis>=3.0
+setuptools
+
+[test]
+pytest
+testing.redis

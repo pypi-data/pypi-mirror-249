@@ -1,0 +1,2 @@
+[celery.commands]
+longterm_scheduler = celery_longterm_scheduler.scheduler:main
