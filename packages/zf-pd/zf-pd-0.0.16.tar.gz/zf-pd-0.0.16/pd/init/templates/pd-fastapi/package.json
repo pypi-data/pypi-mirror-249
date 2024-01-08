@@ -1,0 +1,12 @@
+{
+  "name": "pd",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  }
+}

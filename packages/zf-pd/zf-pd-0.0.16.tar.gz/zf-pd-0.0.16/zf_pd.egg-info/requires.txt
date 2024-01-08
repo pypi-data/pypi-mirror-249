@@ -1,0 +1,9 @@
+wheel
+loguru
+click
+setuptools
+jinja2
+moviepy
+pydantic
+pydub
+moviepy
