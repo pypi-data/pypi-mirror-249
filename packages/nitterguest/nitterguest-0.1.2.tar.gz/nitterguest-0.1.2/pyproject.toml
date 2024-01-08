@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nitterguest"
+version = "0.1.2"
+description = ""
+authors = ["Kyosuke Miyamura <ask@386.jp>"]
+readme = "README.md"
+packages = [{include = "nitterguest"}]
+homepage = "https://github.com/386jp/nitterguest"
+repository = "https://github.com/386jp/nitterguest"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+requests = "^2.31.0"
+schedule = "^1.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+nitterguest = "nitterguest.cli:main"
