@@ -1,0 +1,5 @@
+This is proprietary code.
+
+Copyright (c) 2024 SAPIENS TECHNOLOGY
+
+Its copying, alteration and distribution outside official media is strictly prohibited.
