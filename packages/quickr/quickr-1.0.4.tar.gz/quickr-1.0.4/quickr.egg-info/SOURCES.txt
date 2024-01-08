@@ -1,0 +1,17 @@
+setup.py
+quickr/__init__.py
+quickr/__main__.py
+quickr/main.py
+quickr.egg-info/PKG-INFO
+quickr.egg-info/SOURCES.txt
+quickr.egg-info/dependency_links.txt
+quickr.egg-info/entry_points.txt
+quickr.egg-info/requires.txt
+quickr.egg-info/top_level.txt
+quickr/templates/__init__.py
+quickr/templates/basic/__init__.py
+quickr/templates/basic/src/__init__.py
+quickr/templates/basic/src/main.py
+quickr/templates/basic/tests/__init__.py
+quickr/templates/basic/tests/sample_test.py
+quickr/utils/__init__.py
