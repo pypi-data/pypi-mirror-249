@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+givt_pytorch/__init__.py
+givt_pytorch/config.py
+givt_pytorch/data.py
+givt_pytorch/model.py
+givt_pytorch/trainer.py
+givt_pytorch.egg-info/PKG-INFO
+givt_pytorch.egg-info/SOURCES.txt
+givt_pytorch.egg-info/dependency_links.txt
+givt_pytorch.egg-info/requires.txt
+givt_pytorch.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+transformers
+torch
+python-dotenv
+einops
+ema-pytorch>=0.3.2
+
+[train]
+accelerate
+wandb
+tqdm
