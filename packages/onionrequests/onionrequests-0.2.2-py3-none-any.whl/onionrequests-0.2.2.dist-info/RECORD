@@ -1,0 +1,13 @@
+onionrequests/OnionQueue.py,sha256=hg6-eoGk1g8eDTRvLtAOSf26MuIU4EZ0zmH-IDaCNzM,13202
+onionrequests/OnionSession.py,sha256=Ke6CDfyuzZ2cvno7CPuJR3ZY5wATuE9sNfswwjLxihU,1184
+onionrequests/__init__.py,sha256=pyGNVFUTyHysijZkFK7wQVIlAUtVlXgAsg1zhG0zlro,74
+onionrequests/ports.py,sha256=C_GyK9S9EL6taneQyE1Pf4HCyr_ucQsQg7SuefE9u3Y,1052
+onionrequests/tests.py,sha256=gdxrU067uBUOlollLzBCW900-RYdS6snuT5D2l2QSyk,3261
+onionrequests/exceptions/CouldNotFindTorPortException.py,sha256=x8_5Aaztrb8Cs5uwaDDSu2fhfHi25D6uCGCsmR63TbI,266
+onionrequests/exceptions/InvalidHTTPMethodException.py,sha256=ZkIlxJ5f04qdth1f9QaLhOLWhYPiVjKcXKst-5EIr_A,521
+onionrequests/exceptions/__init__.py,sha256=SQ_U03KkJxCxcFiGoFlGLr6SrZCZZTEzgHCdlpzm8pI,96
+onionrequests-0.2.2.dist-info/LICENSE,sha256=URiLyYzIaqRIebxOoq-YoLHU2hcF_bjntoYjot_JcEY,1077
+onionrequests-0.2.2.dist-info/METADATA,sha256=kDfb5IhVQ5YAUKXmiX8ddZKcF4dBOS09vpzA4foKa6Y,13921
+onionrequests-0.2.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+onionrequests-0.2.2.dist-info/top_level.txt,sha256=635SVzDFNg9deZJ6nBqN1dHyMi717b0MsCLx0qf6ATI,14
+onionrequests-0.2.2.dist-info/RECORD,,
