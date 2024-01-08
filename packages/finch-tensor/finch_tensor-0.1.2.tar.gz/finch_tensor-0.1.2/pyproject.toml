@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "finch-tensor"
+version = "0.1.2"
+description = ""
+authors = ["Willow Ahrens <willow.marie.ahrens@gmail.com>"]
+readme = "README.md"
+packages = [{include = "finch", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+juliacall = "^0.9.15"
+juliapkg = "^0.1.10"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
