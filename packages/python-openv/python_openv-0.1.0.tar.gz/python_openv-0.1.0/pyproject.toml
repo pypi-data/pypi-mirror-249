@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "python-openv"
+version = "0.1.0"
+description = "Basically the same as python-dotenv except integrated with 1password."
+authors = ["Hart Traveller <ruling_fiction.0b@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "openv" }]
+
+[tool.poetry.dependencies]
+python = ">3.9.7, <4.0"
+1password = "^1.0.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
