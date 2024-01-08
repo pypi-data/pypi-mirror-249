@@ -1,0 +1,2 @@
+[console_scripts]
+no-thanks = no_thanks.__main__:main
