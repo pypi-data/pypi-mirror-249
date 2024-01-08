@@ -1,0 +1,3 @@
+[console_scripts]
+recs=recs.base.cli:run
+
