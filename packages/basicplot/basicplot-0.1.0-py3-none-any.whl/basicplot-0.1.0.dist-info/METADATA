@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: basicplot
+Version: 0.1.0
+Summary: A simple drawing library based on Matplotlib.
+Author-Email: Jonas Lindemann <jonas.lindemann@lunarc.lu.se>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: matplotlib>=3.7.4
+Description-Content-Type: text/markdown
+
+# simpleplot
