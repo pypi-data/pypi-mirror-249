@@ -1,0 +1,3 @@
+[robotpybuild]
+xrp = xrp.pkgcfg
+
