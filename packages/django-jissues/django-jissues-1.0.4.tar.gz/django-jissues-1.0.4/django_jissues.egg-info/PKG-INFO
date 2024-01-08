@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: django-jissues
+Version: 1.0.4
+Summary: Basic issue tracking abstract data models for Django projects.
+Home-page: https://github.com/kajala/django-jissues
+Author: Jani Kajala
+Author-email: kajala@gmail.com
+License: MIT licence, see LICENCE.txt
+License-File: LICENSE.txt
+Requires-Dist: Django>=4.0
+Requires-Dist: django-jutil>=4.1.1
+
+Django JIssues
+==============
+
+Basic issue tracking abstract data models for Django projects.
+
+Usage
+-----
+
+1. Derive concrete classes from jissues.model.*Base abstract base classes
+2. Derive admin classes from jissues.admin.*Base classes and register admins
+3. Add whatever fields you need to concrete classes on top of abstract base
