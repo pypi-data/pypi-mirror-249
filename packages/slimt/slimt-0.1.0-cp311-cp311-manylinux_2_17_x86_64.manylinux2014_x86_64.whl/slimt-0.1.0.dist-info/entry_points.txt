@@ -1,0 +1,2 @@
+[console_scripts]
+slimt = slimt.__main__:main
