@@ -1,0 +1,2 @@
+[console_scripts]
+keycloak_xss = keycloak_xss.main:main
