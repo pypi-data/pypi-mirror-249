@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "auction-crawler"
+version = "0.1.1"
+description = ""
+authors = ["Vytenis Dambrauskas <vytenisdambrauskas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+selenium = "^4.16.0"
+pytest = "^7.4.4"
+coverage = "^7.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
