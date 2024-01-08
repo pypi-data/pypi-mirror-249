@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+jobs_distributions/Binomialdistribution.py
+jobs_distributions/Gaussiandistribution.py
+jobs_distributions/Generaldistribution.py
+jobs_distributions/__init__.py
+jobs_distributions.egg-info/PKG-INFO
+jobs_distributions.egg-info/SOURCES.txt
+jobs_distributions.egg-info/dependency_links.txt
+jobs_distributions.egg-info/not-zip-safe
+jobs_distributions.egg-info/top_level.txt
