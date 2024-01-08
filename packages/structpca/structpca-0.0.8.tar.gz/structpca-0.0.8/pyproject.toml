@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "structpca"
+dynamic = ["version"]
+description = "Structured Principal Component Analysis"
+readme = "README.md"
+license = {text = "MIT License"}
+requires-python = ">=3.7"
+keywords = []
+authors = [
+  {name = "Bastien Batardière", email = "bastien.batardiere@gmail.com"},
+]
+maintainers = [{name = "Bastien Batardière", email = "bastien.batardiere@gmail.com"},]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python",
+]
+dependencies = ["numpy",]
+
+[project.urls]
