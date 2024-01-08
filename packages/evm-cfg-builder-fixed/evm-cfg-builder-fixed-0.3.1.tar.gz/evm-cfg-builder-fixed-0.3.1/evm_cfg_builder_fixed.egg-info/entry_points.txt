@@ -1,0 +1,2 @@
+[console_scripts]
+evm-cfg-builder = evm_cfg_builder.__main__:main
