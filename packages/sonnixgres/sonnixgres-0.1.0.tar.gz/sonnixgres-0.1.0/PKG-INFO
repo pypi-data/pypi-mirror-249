@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: sonnixgres
+Version: 0.1.0
+Summary: A Python module for simplifying interactions with PostgreSQL databases, with rich console output for better readability and debugging.
+License: BSD License
+Author: Sonny Mir
+Author-email: sonnym@hotmail.se
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# sonnixgres
+
+A Python module for simplifying interactions with PostgreSQL databases, with rich console output for better readability and debugging.
+
+
+
+## Installation
+
+Install `sonnixgres` using pip:
+
+```bash
+pip install sonnixgres
+```
+
+# Usage
+
+First, ensure that your PostgreSQL credentials are set as environment variables. `sonnixgres` uses these variables to establish database connections.
+
+```python
+from sonnixgres import create_connection, query_database, save_results_to_csv, create_and_populate_table, update_records, create_view
+import pandas as pd
+
+# Establish a database connection
+connection = create_connection()
+
+# Example usage of each function
+```
+
+### Functions
+
+#### `create_connection()`
+
+Establishes a connection to the PostgreSQL database using credentials from environment variables.
+
+#### `query_database(connection, query, params=None, close_connection=True)`
+
+Executes a SQL query on the database and returns the result as a Pandas DataFrame.
+
+- `connection`: The database connection object.
+- `query`: SQL query string.
+- `params`: Optional parameters for the SQL query.
+- `close_connection`: Whether to close the database connection after executing the query.
+
+#### `save_results_to_csv(dataframe, filename)`
+
+Saves a Pandas DataFrame to a CSV file.
+
+- `dataframe`: The DataFrame to be saved.
+- `filename`: The name of the file where data will be saved.
+
+#### `create_and_populate_table(connection, table_name, dataframe, populate=False)`
+
+Creates a new table in the database and optionally populates it with data from a DataFrame.
+
+- `connection`: The database connection object.
+- `table_name`: Name of the table to be created.
+- `dataframe`: DataFrame whose data will be used to populate the table.
+- `populate`: If `True`, the table will be populated with data from the DataFrame.
+
+#### `update_records(connection, update_query, params=None, close_connection=True)`
+
+Updates records in a database table.
+
+- `connection`: The database connection object.
+- `update_query`: SQL update query string.
+- `params`: Optional parameters for the SQL update query.
+- `close_connection`: Whether to close the database connection after executing the update.
+
+#### `create_view(connection, view_name, view_query, close_connection=True)`
+
+Creates a new view in the database.
+
+- `connection`: The database connection object.
+- `view_name`: Name of the view to be created.
+- `view_query`: SQL query string for creating the view.
+- `close_connection`: Whether to close the database connection after creating the view.
+
+## License
+
+**BSD License**
+
+# Contributions
+
+Contributions are welcome. Please open an issue or submit a pull request with your improvements.
+
+```python
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
