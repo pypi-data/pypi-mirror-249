@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+vrfy/vrfy.py
+vrfy/vrfy.egg-info/PKG-INFO
+vrfy/vrfy.egg-info/SOURCES.txt
+vrfy/vrfy.egg-info/dependency_links.txt
+vrfy/vrfy.egg-info/entry_points.txt
+vrfy/vrfy.egg-info/top_level.txt
