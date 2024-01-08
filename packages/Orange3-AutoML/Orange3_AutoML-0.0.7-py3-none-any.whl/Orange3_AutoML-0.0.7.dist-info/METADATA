@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: Orange3-AutoML
+Version: 0.0.7
+Summary: Orange3 add-on for H2O AutoML Learning.
+Home-page: https://github.com/chrislee35/orange3-automl
+Author: Chris Lee
+Author-email: github@chrislee.dhs.org
+License: GPL3+
+Keywords: orange3 add-on
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: AnyQt
+Requires-Dist: ndf >=0.1.4
+Requires-Dist: numpy >=1.26
+Requires-Dist: Orange3 >=3.34.0
+Requires-Dist: orange-canvas-core >=0.1.28
+Requires-Dist: orange-widget-base >=4.20.0
+Requires-Dist: pandas >=2.1.4
+Requires-Dist: h2o >=3.44
+Requires-Dist: scipy
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: recommonmark ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# Orange3-AutoML
+
+This leverage [H2O.ai's AutoML](https://h2o.ai/) [h2o python module](https://github.com/h2oai/h2o-3) in [Orange3](https://orangedatamining.com/).
+
+Within the Add-ons installer, click on "Add more..." and type in Orange3-AutoML
+
+![Installation Screenshot](https://github.com/chrislee35/orange3-automl/blob/main/imgs/install_orange3_automl.png?raw=true)
