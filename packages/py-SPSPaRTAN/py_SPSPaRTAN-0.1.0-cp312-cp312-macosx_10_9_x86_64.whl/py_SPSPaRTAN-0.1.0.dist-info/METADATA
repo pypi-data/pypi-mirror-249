@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: py-SPSPaRTAN
+Version: 0.1.0
+Summary: SPaRTAN python version
+Home-page: https://github.com/osmanbeyoglulab/SPaRTAN/tree/main/pySPaRTAN
+Author: Xiaojun Ma
+Author-email: xim33@pitt.edu
+License: MIT
+Project-URL: Documentation, https://github.com/osmanbeyoglulab/SPaRTAN/tree/main/pySPaRTAN
+Project-URL: Code, https://github.com/osmanbeyoglulab/SPaRTAN/tree/main/pySPaRTAN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy >=1.17
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: pytest >=5.1 ; extra == 'dev'
+Requires-Dist: flake8 >=3.7 ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+
+pySPaRTAN
+======================
+
+
+Installation
+------------
+
+### From a repository checkout
+
+```bash
+make install
+```
+or
+```bash
+CYTHONIZE=1 pip install --user .
+```
+
+### From PyPi
+
+```bash
+pip install --user py-SPaRTAN
+```
