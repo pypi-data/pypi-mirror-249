@@ -1,0 +1,12 @@
+README.md
+setup.py
+BulkFileOperationsManager.egg-info/PKG-INFO
+BulkFileOperationsManager.egg-info/SOURCES.txt
+BulkFileOperationsManager.egg-info/dependency_links.txt
+BulkFileOperationsManager.egg-info/requires.txt
+BulkFileOperationsManager.egg-info/top_level.txt
+bulkfileoperationsmanager/__init__.py
+bulkfileoperationsmanager/bulk_operations_manager.py
+bulkfileoperationsmanager/tasks/__init__.py
+tests/__init__.py
+tests/test_bulk_operations_manager.py
