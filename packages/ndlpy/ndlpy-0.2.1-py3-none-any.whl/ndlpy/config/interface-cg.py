@@ -1,0 +1,178 @@
+import os
+import abc
+from collections.abc import MutableMapping
+from ..log import Logger
+from ..access.io import read_yaml_file
+from ..exceptions import ComputeError
+from ..context import Context
+
+# Initialize Context and Logger
+ctxt = Context()
+log = Logger(
+    name=__name__,
+    level=ctxt.get("logging", {}).get("level", "INFO"),
+    filename=ctxt.get("logging", {}).get("filename", "default.log"),
+)
+
+class HConfig(MutableMapping, metaclass=abc.ABCMeta):
+    """
+    Abstract base class for a hierarchical configuration which can inherit from other configurations.
+
+    This class provides a dictionary-like interface for configuration data, supporting
+    inheritance from a parent configuration.
+
+    Attributes:
+        _data (dict): Dictionary to store configuration data.
+        _parent (HConfig): Parent configuration object to inherit from.
+    """
+
+    def __init__(self, parent=None):
+        """
+        Initializes the HConfig object.
+
+        :param parent: Optional parent configuration object to inherit from.
+        :type parent: HConfig or None
+        """
+        self._data = {}
+        self._parent = parent
+
+    def __getitem__(self, key):
+        """
+        Return the value for the given key.
+
+        :param key: Key for which value is to be returned.
+        :type key: str
+        :return: Value associated with the key.
+        :raises KeyError: If key is not found in the configuration.
+        """
+        try:
+            return self._data[key]
+        except KeyError:
+            if self._parent is not None:
+                return self._parent[key]
+            raise
+
+    def __setitem__(self, key, value):
+        """
+        Set the value for the given key.
+
+        :param key: Key for which the value is to be set.
+        :type key: str
+        :param value: Value to be set.
+        """
+        self._data[key] = value
+
+    def __delitem__(self, key):
+        """
+        Delete the item associated with the given key.
+
+        :param key: Key for which the item is to be deleted.
+        :type key: str
+        :raises KeyError: If key is not found in the configuration.
+        """
+        if key in self._data:
+            del self._data[key]
+        elif self._parent is not None:
+            del self._parent[key]
+        else:
+            raise KeyError(key)
+
+    def __iter__(self):
+        """
+        Return an iterator over the keys.
+
+        :return: An iterator over the keys.
+        """
+        for key in set(self._data.keys()).union(set(iter(self._parent) if self._parent else [])):
+            yield key
+
+    def __len__(self):
+        """
+        Return the number of keys.
+
+        :return: The number of keys.
+        """
+        return len(set(self._data.keys()).union(set(iter(self._parent) if self._parent else [])))
+
+    def __str__(self):
+        """
+        Return a string representation of the object.
+
+        :return: A string representation of the object.
+        """
+        return str(dict(self.items()))
+
+    def __repr__(self):
+        """
+        Return a string representation of the object for debugging.
+
+        :return: A string representation of the object.
+        """
+        return f"{self.__class__.__name__}({self._data}, parent={self._parent})"
+
+class Interface(HConfig):
+    """
+    Interface object that loads configuration from local files.
+
+    This class extends HConfig to provide functionality for loading configuration
+    data from YAML files and optionally inheriting from another configuration.
+
+    Attributes:
+        _filename (str): Filename of the loaded configuration file.
+        _parent (Interface): Parent interface object to inherit from.
+    """
+
+    def __init__(self, user_file=None, directory=".", field=None):
+        """
+        Initializes the Interface object.
+
+        :param user_file: Optional name of the user file to be loaded. Defaults to None.
+        :type user_file: str or list or None
+        :param directory: Directory to look for the user file in. Defaults to the current directory.
+        :type directory: str
+        :param field: Optional specific field to be loaded from the file. Defaults to None.
+        :type field: str or None
+        :raises ComputeError: If there is an error in reading the configuration file.
+        """
+        super().__init__()
+        self._load_config(user_file, directory, field)
+        self._expand_vars()
+        self._restructure()
+
+    def _load_config(self, user_file, directory, field):
+        """
+        Loads the configuration from the specified file.
+
+        :param user_file: Name of the user file to be loaded.
+        :type user_file: str
+        :param directory: Directory to look for the user file in.
+        :type directory: str
+        :param field: Specific field to be loaded from the file.
+        :type field: str
+        :raises ComputeError: If there is an error in reading the configuration file.
+        """
+        # Code for loading the configuration
+
+    def _expand_vars(self):
+        """
+        Expands environment variables in the configuration.
+
+        Environment variables in the values are replaced by their actual values.
+        """
+        # Code for expanding environment variables
+
+    def _restructure(self):
+        """
+        Restructures the loaded data for consistency.
+
+        Ensures that the data structure is consistent and follows the expected format.
+        """
+        # Code for restructuring the data
+
+    # Additional methods if required
+
+# Example usage
+try:
+    interface = Interface(user_file="config.yml")
+except ComputeError as e:
+    log.error(f"Failed to load configuration: {e}")
