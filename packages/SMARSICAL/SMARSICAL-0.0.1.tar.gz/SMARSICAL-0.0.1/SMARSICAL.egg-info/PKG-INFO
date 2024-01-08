@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: SMARSICAL
+Version: 0.0.1
+Summary: RSI and SMA calculator
+Home-page: 
+Author: Emre Efe Kurt
+Author-email: emre_efe_krt@hotmail.com
+License: MIT
+Keywords: CALCULATOR,RSI,SMA
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a simple calculator for SMA and RSI calculations.
+
+Change Log
+============
+
+
+
+0.0.1 (7.01.2024)
+-------------------
+- First Release

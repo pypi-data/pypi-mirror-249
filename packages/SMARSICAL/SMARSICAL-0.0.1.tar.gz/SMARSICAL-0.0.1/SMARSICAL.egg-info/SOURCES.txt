@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+SMARSICAL/__init__.py
+SMARSICAL.egg-info/PKG-INFO
+SMARSICAL.egg-info/SOURCES.txt
+SMARSICAL.egg-info/dependency_links.txt
+SMARSICAL.egg-info/top_level.txt
