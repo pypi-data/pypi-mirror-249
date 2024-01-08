@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: rustx3dh
+Version: 0.0.1
+Summary: Embeded the xxxdh, which iplementation of the Extended Triple Diffie-Hellman key exchange protocol written in Rust, on Python. xxxdh is written by Olexander Yermakov.
+Author: Klaus Wong
+
