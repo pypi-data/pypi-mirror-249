@@ -1,0 +1,5 @@
+scudd/__pycache__
+build/*
+dist/*
+*.egg-info*
+doc/build/
