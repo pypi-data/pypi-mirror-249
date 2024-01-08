@@ -1,0 +1,11 @@
+syrinx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syrinx/build.py,sha256=Jm0k7_UxYk-hZYYmcFDtC7uN30nVDOtcQfP9o2ZRI-s,1601
+syrinx/cli.py,sha256=-fNbK310jmIYtoCswq3YxE7SDUfk_4ssrQQQW8srNlY,254
+syrinx/preprocess.py,sha256=xsofNv9K-SQF6n2EccfeWE7DJKlThBBSWrOI0ByCG8I,1683
+syrinx/read.py,sha256=7v-Ixq_51ir2YVcgokRZdDCz4xuzl8vcRH6rrJpHf3g,2079
+syrinx-0.0.1.dist-info/LICENSE,sha256=DwN61P2cipYfmXWc1C8u3zU_YjNwKynJ3TjA0JQCFKY,1079
+syrinx-0.0.1.dist-info/METADATA,sha256=WzwjsWv7_DAsizxNqi3nL0MwLs7lWfFw7F8IFoHvqdk,584
+syrinx-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+syrinx-0.0.1.dist-info/entry_points.txt,sha256=GCE4279YaDw2zboJJkwJKab2oQaW2g1IC2QAg7aBcn4,43
+syrinx-0.0.1.dist-info/top_level.txt,sha256=w1zNhXNUBeADXSskWxnGMJ0nsnDCMaURVWNr8t4CRA4,7
+syrinx-0.0.1.dist-info/RECORD,,
