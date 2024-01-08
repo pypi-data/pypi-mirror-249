@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "voice-stream"
+version = "0.3.7"
+description = "A streaming library for creating voice bots using LLMs.  Connects LLMs to speech recognition and speech synthesis APIs."
+authors = ["Dave DeCaprio <daved@alum.mit.edu>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/DaveDeCaprio/voice-stream"
+documentation = "https://voice-stream.readthedocs.io/"
+keywords = ["voicebot", "genai", "twilio", "llm"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Conferencing",
+    "Topic :: Communications :: Telephony",
+    "Topic :: Multimedia :: Sound/Audio :: Capture/Recording",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiofiles = "^23.2.1"
+langchain = ">=0.0.353"
+pydantic = ">=2.5.3"
+google-cloud-speech = { version = ">=2.23.0", optional = true }
+google-cloud-texttospeech = { version = ">=2.15.0", optional = true }
+langchain-google-genai = { version = ">=0.0.5", optional = true }
+twilio = { version = ">=8.11.0", optional = true }
+tiktoken = { version = ">=0.5.2", optional = true }
+openai = { version = ">=1.6.1", optional = true }
+quart = { version = ">=0.19.4", optional = true }
+pyaudio = {version = "^0.2.14", optional = true}
+fastapi = {version = "^0.108.0", optional = true}
+vosk = {version = "^0.3.45", optional = true}
+speechrecognition = {version = "^3.10.1", optional = true}
+mutagen = "^1.47.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = ">=7.4.4"
+pytest-asyncio = ">=0.23.3"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.2.6"
+myst-parser = "^2.0.0"
+furo = "^2023.9.10"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.extras]
+openai = ["openai", "tiktoken"]
+twilio = ["twilio"]
+google = ["google-cloud-speech", "google-cloud-texttospeech", "langchain-google-genai"]
+quart = ["quart"]
+quickstart = ["fastapi", "openai", "vosk", "SpeechRecognition"]
+
+[[tool.poetry.source]]
+name = "pypi-test"
+url = "https://test.pypi.org/simple/"
+priority = "explicit"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "default"
+
+[tool.pytest.ini_options]
+log_level="DEBUG"
+log_cli=true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
