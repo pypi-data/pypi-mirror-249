@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Authorization required</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="web-based file manager">
+        <meta name="keywords" content="python, remote access, file manager, web">
+        <meta name="author" content="bitrate16">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="/media/favicon.png">
+        <link rel="stylesheet" href="/css/common.css">
+    </head>
+    <body>
+        <div class="horisontal">
+            <div class="vertical gap" style="align-items: stretch; width: auto;">
+                <p class="auth-title">Xleb 🍞</p>
+                <div class="horisontal gap">
+                    <input class="fine-input" id="password-input" type="password" placeholder="password">
+                    <input class="fine-button" id="password-button" type="submit" value="enter">
+                </div>
+            </div>
+            <script type="text/javascript">
+                (function () {
+                    'use strict';
+
+                    function hex(arrayBuffer) {
+                        return Array.prototype.map.call(
+                            new Uint8Array(arrayBuffer),
+                            n => n.toString(16).padStart(2, "0")
+                        ).join("");
+                    }
+
+                    document.getElementById('password-button').addEventListener(
+                        'click',
+                        async function (event) {
+                            var password = document.getElementById('password-input').value.trim();
+
+                            if (event.button === 0) {
+                                document.cookie = `xleb-password=${ password }; path=/; expires=Tue, 00 Jan 4000 00:00:00 GMT; SameSite=Lax; domain=.${ window.location.hostname }`;
+                                window.location.reload();
+                            }
+                        }
+                    );
+                }) ();
+            </script>
+        </div>
+    </body>
+</html>

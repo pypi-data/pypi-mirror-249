@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xleb
+Version: 1.4
+Summary: web-based remote file manager
+Home-page: https://git.pegasko.art/pegasko/xleb
+Author-email: pegasko@pegasko.art
+License: AGPL 3.0
+Keywords: web-based file-manager remote-access
+License-File: LICENSE
