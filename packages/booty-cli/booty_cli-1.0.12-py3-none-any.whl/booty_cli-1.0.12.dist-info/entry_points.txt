@@ -1,0 +1,3 @@
+[console_scripts]
+booty=booty.cli:cli
+
