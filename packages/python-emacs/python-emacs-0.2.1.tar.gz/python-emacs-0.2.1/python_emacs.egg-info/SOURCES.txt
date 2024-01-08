@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+emacs/__init__.py
+emacs/emacs.py
+emacs/elisp/__init__.py
+emacs/elisp/ast.py
+emacs/elisp/dsl.py
+emacs/elisp/exprs.py
+emacs/elisp/util.py
+python_emacs.egg-info/PKG-INFO
+python_emacs.egg-info/SOURCES.txt
+python_emacs.egg-info/dependency_links.txt
+python_emacs.egg-info/top_level.txt
+tests/test_emacs.py
