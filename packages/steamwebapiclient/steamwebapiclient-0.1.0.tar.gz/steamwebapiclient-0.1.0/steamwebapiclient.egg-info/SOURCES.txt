@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+steamwebapiclient/__init__.py
+steamwebapiclient/client.py
+steamwebapiclient/generated_client.py
+steamwebapiclient.egg-info/PKG-INFO
+steamwebapiclient.egg-info/SOURCES.txt
+steamwebapiclient.egg-info/dependency_links.txt
+steamwebapiclient.egg-info/requires.txt
+steamwebapiclient.egg-info/top_level.txt
