@@ -1,0 +1,3 @@
+[console_scripts]
+kupydo=quantcrypt.internal.cli.main:app
+
