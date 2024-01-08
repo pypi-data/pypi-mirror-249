@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Sequentiality/__init__.py
+src/Sequentiality/sequentiality.py
+src/sequentiality.egg-info/PKG-INFO
+src/sequentiality.egg-info/SOURCES.txt
+src/sequentiality.egg-info/dependency_links.txt
+src/sequentiality.egg-info/top_level.txt
