@@ -1,0 +1,28 @@
+[project]
+name = "python-cartesi"
+version = "0.1.0"
+authors = [
+  { name="Felipe Fink Grael", email="felipefg@prototyp3.dev" },
+]
+description = "A Python Framework for Cartesi Distributed Applications"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests >= 2.31.0",
+    "pydantic < 2",
+    "pytest ~= 7.4.0",
+    "eth-abi ~= 4.2.1",
+    "pycryptodome ~= 3.19.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/prototyp3-dev/python-cartesi"
+
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
