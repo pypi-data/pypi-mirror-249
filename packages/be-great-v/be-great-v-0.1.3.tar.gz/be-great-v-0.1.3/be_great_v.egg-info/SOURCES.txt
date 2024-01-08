@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+be_great_v/__init__.py
+be_great_v/great.py
+be_great_v/great_dataset.py
+be_great_v/great_start.py
+be_great_v/great_trainer.py
+be_great_v/great_utils.py
+be_great_v.egg-info/PKG-INFO
+be_great_v.egg-info/SOURCES.txt
+be_great_v.egg-info/dependency_links.txt
+be_great_v.egg-info/requires.txt
+be_great_v.egg-info/top_level.txt
