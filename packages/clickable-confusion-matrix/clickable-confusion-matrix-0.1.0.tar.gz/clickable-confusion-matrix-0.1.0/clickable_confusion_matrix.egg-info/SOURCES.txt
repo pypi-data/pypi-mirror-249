@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+clickable_confusion_matrix/__init__.py
+clickable_confusion_matrix/ccm.py
+clickable_confusion_matrix.egg-info/PKG-INFO
+clickable_confusion_matrix.egg-info/SOURCES.txt
+clickable_confusion_matrix.egg-info/dependency_links.txt
+clickable_confusion_matrix.egg-info/requires.txt
+clickable_confusion_matrix.egg-info/top_level.txt
