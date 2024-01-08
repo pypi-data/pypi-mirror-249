@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+quasi_poisson/__init__.py
+quasi_poisson/quasi_poisson.py
+quasi_poisson.egg-info/PKG-INFO
+quasi_poisson.egg-info/SOURCES.txt
+quasi_poisson.egg-info/dependency_links.txt
+quasi_poisson.egg-info/requires.txt
+quasi_poisson.egg-info/top_level.txt
