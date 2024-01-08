@@ -1,0 +1,15 @@
+
+<div style="width:650px; margin:0px auto; text-align:justify;">
+
+Note that this is a <b>beta version</b>. We would be grateful for bug reports and comments. 
+<br><br>
+Manuscript is in preparation. 
+
+<b>Citation:</b><br>
+
+<i>A Donath, F Jühling, M Al-Arab, SH Bernhart, F. Reinhardt, PF Stadler, M Middendorf, M Bernt</i><br>
+<b>Improved annotation of protein-coding genes boundaries in metazoan mitochondrial genomes</b><br>
+Nucleic Acids Research 2019, 47(20):10543–10552 <a href="https://doi.org/10.1093/nar/gkz833">link</a>
+
+</div> 
+
