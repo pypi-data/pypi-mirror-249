@@ -1,0 +1,10 @@
+MANIFEST.in
+MvxSock.h
+README.md
+_pymovex3.c
+pymovex3.py
+setup.py
+pymovex3.egg-info/PKG-INFO
+pymovex3.egg-info/SOURCES.txt
+pymovex3.egg-info/dependency_links.txt
+pymovex3.egg-info/top_level.txt
