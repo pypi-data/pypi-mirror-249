@@ -1,0 +1,6 @@
+.venv
+dist
+.hypothesis
+
+__pycache__/
+*.py[cod]
