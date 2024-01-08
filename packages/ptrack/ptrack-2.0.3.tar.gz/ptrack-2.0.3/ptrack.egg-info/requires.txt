@@ -1,0 +1,8 @@
+ascii_magic
+beautifulsoup4
+Pillow
+Requests
+rich
+yt_dlp
+humanize
+validators
