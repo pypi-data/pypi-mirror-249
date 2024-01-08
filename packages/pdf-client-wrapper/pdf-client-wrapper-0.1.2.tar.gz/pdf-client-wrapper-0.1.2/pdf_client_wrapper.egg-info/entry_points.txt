@@ -1,0 +1,2 @@
+[console_scripts]
+pts_render = pdf_client_wrapper.pts_render:_main
