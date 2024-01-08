@@ -1,0 +1,4 @@
+select = ["ALL"]
+ignore = ["ANN101", "ANN102", "D203", "D211", "D212", "D213", "UP009", "TCH001", "TCH002", "TID252", "E501"]
+
+exclude = ["docs"]
