@@ -1,0 +1,111 @@
+Installing from source:
+----------------------
+
+I.   General Notes
+II.  UNIX
+III. MS-Windows
+
+I. General Notes:
+-----------------
+
+If your platform comes without OpenGL or Forms support, or you just get
+into troubles using the default setup script, it is possible to disable 
+Forms and OpenGl support from the pyFltk build. The following command 
+line switches are provided for this:
+
+--disable-gl		: will disable OpenGL support
+--disable-forms		: will disable Forms support
+
+In general, however, setup.py will take the proper settings from your Fltk 
+installation, to be used for the compilation of pyFltk.
+
+II. UNIX:
+---------
+
+We've only tested it under GNU/Linux Debian 12 .
+
+    1) Pre-requisites
+    1.1) Install cmake V3.25 (or later)
+    1.2) Install g++ V12 (or later)
+    1.3) Install swig-4.1 (or later) Not required if you download pyFltk _WithSwig source
+    1.5) Download fltk-1.3.9 (or later)
+    1.6) Download pyFltk-1.3.9 (or later)
+
+    2) Building fltk (as shared libraries using CMake)
+    2.1) Extract fltk to some local directory, e.g. ~\fltk-1.3.9
+    2.2) Open a terminal and navigate to ~\fltk-1.3.9 (or wherever you installed fltk)
+    2.3) mkdir build
+    2.4) cd build
+    2.5) cmake -D OPTION_BUILD_SHARED_LIBS=ON -D CMAKE_POSITION_INDEPENDENT_CODE=ON ..
+    2.6) make
+    2.7) sudo make install
+
+    3) Building pyFltk
+    3.1) Extract pyFltk to some local directory, e.g. ~\pyFltk-1.3.9
+    3.2) Open a command prompt and change to directory ~\pyFltk-1.3.9 (or wherever you installed pyFltk)
+    3.3) python3 setup.py swig build (or just "python3 setup.py build" if using the _WithSwig source tarball)
+    3.4) sudo python3 setup.py install
+
+    This will build the wrapper and install it to the Python directores. (usually in /usr/local )
+
+    You should then be able to swith to fltk/test/ and run the demos by typing:  python demos.py
+
+
+III. MS-Windows:
+----------------
+
+
+MS-Visual C++ under Windows10:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Since Python 3.4, the preferred way of building extensions is with the Microsoft compiler. For this to work you will need the the Microsoft Visaul C++ compiler V14 or later, which can be installed as a free version.
+See https://wiki.python.org/moin/WindowsCompilers for how to install this.
+
+    1) Pre-requisites
+    1.1) Install Visual Studio 2019 Community edition (or later)
+    1.2) Install Python V3.11 64bit (or later)
+    1.3) Install swigwin-4.1.x (Note: swig 4.2.0 is not yet supported) Not required for the _WithSwig source
+    1.4) Add swigwin install directory to user or system path
+    1.5) Download fltk-1.3.9 (or later)
+    1.6) Download pyFltk-1.3.9 (or later) or the _WithSwig source
+
+    2) Building fltk (using CMake)
+    2.1) Extract fltk to some local directory, e.g. C:\work\fltk-1.3.9
+    2.2) Start Visual Studio and select "Open a local folder"
+    2.3) Navigate to C:\work\fltk-1.3.9 (or wherever you installed fltk) and press select
+    2.4) Visual Studio will now initialize the CMake environment, this might take a few moments
+    2.5) Create a Release configuration by selecting "Manage Configurations", press "+" and select "x64 Release"
+    2.6) Build the project for the x64-Release: "Build" -- "Build All"
+    2.7) After compilation finished, install the project by selecting "Build" -- "Install FLTK"
+
+    3) Building pyFltk
+    3.1) Extract pyFltk to some local directory, e.g. C:\work\pyFltk-1.3.9
+    3.2) Open a command prompt and change to directory C:\work\pyFltk-1.3.9 (or wherever you installed pyFltk)
+    3.3) Set the following environment variable by typing: set FLTK_HOME=C:\work\fltk-1.3.9\out\install\x64-Release
+    3.4) Create and install the wrapper by typing:
+    python setup.py swig install
+    or 
+    python setup.py install  (if you downloaded pyFltk _WithSwig source)
+
+    This will build the wrapper and install it to the Python directores.
+
+     You should then be able to switch to test/ and run the demos 
+     by typing:  python demos.py
+
+
+MinGW
+~~~~~
+
+Since Python3.4 we do not support MinGW anymore, please use the approch with MS Visual C++ instead.
+
+
+III. Other Platforms:
+---------------------
+
+Proceed according to the above outline.
+I would be glad about any feedback if you succeeded with building
+pyFltk on any other platform.
+
+
+Andreas Held
+pyfltk.sourceforge.net
