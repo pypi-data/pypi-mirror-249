@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: renardo
+Version: 0.1.dev2
+Summary: Launcher/config editor for Renardo -- experimental fork of FoxDot as modular library
+Home-page: http://renardo.org/
+Author: Elie Gavoty
+Author-email: eliegavoty@free.fr
+License: cc-by-sa-4.0
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: renardo
+
