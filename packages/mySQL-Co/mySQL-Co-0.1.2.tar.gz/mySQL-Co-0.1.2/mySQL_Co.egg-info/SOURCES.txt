@@ -1,0 +1,6 @@
+setup.py
+mySQL_Co/mySQL_Co.py
+mySQL_Co.egg-info/PKG-INFO
+mySQL_Co.egg-info/SOURCES.txt
+mySQL_Co.egg-info/dependency_links.txt
+mySQL_Co.egg-info/top_level.txt
