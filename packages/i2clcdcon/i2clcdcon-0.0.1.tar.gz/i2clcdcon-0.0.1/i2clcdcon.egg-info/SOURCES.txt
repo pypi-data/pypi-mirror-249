@@ -1,0 +1,9 @@
+LCD.py
+LICENSE
+README.md
+pyproject.toml
+setup.py
+i2clcdcon.egg-info/PKG-INFO
+i2clcdcon.egg-info/SOURCES.txt
+i2clcdcon.egg-info/dependency_links.txt
+i2clcdcon.egg-info/top_level.txt

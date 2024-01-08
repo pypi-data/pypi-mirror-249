@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: i2clcdcon
+Version: 0.0.1
+Summary: Controlling an i2c lcd1602 device
+Home-page: https://github.com/Evanc09/LCDCON
+Author: Evan
+Author-email: ecarns31@gmail.com
+Project-URL: Bug Tracker, https://github.com/Evanc09/LCDCON/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
