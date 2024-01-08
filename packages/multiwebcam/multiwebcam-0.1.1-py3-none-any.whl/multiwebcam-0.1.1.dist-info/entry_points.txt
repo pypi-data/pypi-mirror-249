@@ -1,0 +1,3 @@
+[console_scripts]
+mwc=multiwebcam.__main__:CLI_parser
+
