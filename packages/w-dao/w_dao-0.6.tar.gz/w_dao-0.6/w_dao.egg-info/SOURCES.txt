@@ -1,0 +1,7 @@
+setup.py
+w_dao/__init__.py
+w_dao/_cls_aide_dao_model.py
+w_dao.egg-info/PKG-INFO
+w_dao.egg-info/SOURCES.txt
+w_dao.egg-info/dependency_links.txt
+w_dao.egg-info/top_level.txt
