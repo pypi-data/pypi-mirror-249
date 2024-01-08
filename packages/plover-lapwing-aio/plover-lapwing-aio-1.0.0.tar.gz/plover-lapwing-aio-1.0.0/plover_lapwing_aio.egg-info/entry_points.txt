@@ -1,0 +1,2 @@
+[plover.system]
+Lapwing Stenotype = plover_lapwing.system
