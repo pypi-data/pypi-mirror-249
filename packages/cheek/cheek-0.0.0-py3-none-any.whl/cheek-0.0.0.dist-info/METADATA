@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: cheek
+Version: 0.0.0
+Summary: Python package for the Audacity scripting interface
+Home-page: https://github.com/abingham/cheek
+Author: Austin Bingham
+Author-email: austin.bingham@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE.rst
+Requires-Dist: bs4
+Requires-Dist: click
+Requires-Dist: pyaudacity
+Requires-Dist: pydantic
+Requires-Dist: typing-extensions
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: check-wheel-contents ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+=====
+cheek
+=====
+
+Python package for issuing scripting commands to Audacity.
+
+This comprises a set of `Command` classes, each of which represents a single Audacity scripting command. These can
+be issued to a running Audacity process with the `cheek.commands.do()` function.
+
+There is also a command-line interface which has a subcomand for each scripting command. This allows you to drive Audacity
+using a shell or other non-Python interface.
+
+Command classes
+===============
+
+The scripting command classes are implemented in the `cheek.commands` submodule as subclasses of `cheek.commands.Command`. These 
+use `pydantic` to express their arguments.
+
+At the time of writing, not all Audacity scripting commands are fully implemented. In particular, those which require parameters
+are not all done. Those without parameters are generally complete, though there may be bugs or gaps.
+
+If you want to implement one of the incomplete classes, the main task is to define its parameters in terms of `pydantic` fields. You'll
+find examples in the extant `Command` subclasses, e.g. `cheek.commands.SetLabel`.
+
+Basic programmatic use of a command is something like this::
+
+	from cheek.commands import AddLabel, SetLabel, do
+
+	do(
+	    AddLabel(),
+	    SetLabel(Label=0, Text="Label text", Start=123.456)
+	)
+
+From the command line that might look like this::
+
+	cheek AddLabel
+	cheek SetLabel --Label 0 --Text "Label text" --Start 123.456
+
+Tests
+=====
+
+There are a few tests, though we're very, very far from comprehensive. Really, since real testing would require determing that Audacity
+was doing the right thing, it's probably not practical to really test this too fully. But if you've got ideas about testing, 
+we could merge them in.
+
+Re-generating the Command subclasses
+====================================
+
+We can use the output from the scripting command "GetInfo" to regenerate
+all of the Command subclasses. Right now this is a bit rough, but here's
+what to do. 
+
+First, execute "GetInfo('Commands', 'JSON')" and capture the output. You can
+do this with cheek itself, or pyaudacity, or whatever. The JSON you get is
+likely to be invalid at first, so you'll need to clean it up. It should
+be clear how to do this.
+
+Save this cleaned-up JSON to a file, e.g. "commands.json". Then run::
+
+	python -m cheek.extract commands.json > src/cheek/commands.py
+
+That should do it. You may want to run this generated Python through
+a formatter, though it should be valid Python as-is. Commit the new
+commands.py to git and you'll have an updated command set.
+Copyright (c) 2024 Austin Bingham
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
