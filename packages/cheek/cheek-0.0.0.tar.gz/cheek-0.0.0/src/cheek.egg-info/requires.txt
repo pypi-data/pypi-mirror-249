@@ -1,0 +1,16 @@
+bs4
+click
+pyaudacity
+pydantic
+typing_extensions
+
+[dev]
+bumpversion
+build
+twine
+check-wheel-contents
+flake8
+black
+
+[test]
+pytest
