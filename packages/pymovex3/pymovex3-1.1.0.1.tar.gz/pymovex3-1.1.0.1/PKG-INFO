@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pymovex3
+Version: 1.1.0.1
+Summary: Python module for interacting with M3/Movex, implemented using the C-API
+Home-page: https://github.com/Lyut/pymovex3
+Author: Jean-Baptiste Quenot, Ludovico Maria Ottaviani
+Author-email: me@ludovicoottaviani.eu

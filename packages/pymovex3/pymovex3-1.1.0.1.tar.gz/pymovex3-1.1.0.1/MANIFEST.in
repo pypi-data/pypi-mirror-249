@@ -1,0 +1,2 @@
+include MvxSock.h
+include _pymovex3.c
