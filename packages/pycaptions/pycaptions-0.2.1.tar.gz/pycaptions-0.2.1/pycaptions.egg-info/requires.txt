@@ -1,0 +1,4 @@
+beautifulsoup4
+budoux
+langcodes>=3.2.0
+cssutils
