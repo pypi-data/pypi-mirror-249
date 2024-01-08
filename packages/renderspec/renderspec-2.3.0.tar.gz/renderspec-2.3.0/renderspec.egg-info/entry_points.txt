@@ -1,0 +1,2 @@
+[console_scripts]
+renderspec = renderspec:main
