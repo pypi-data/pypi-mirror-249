@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/convertnotes/__init__.py
+src/convertnotes/main.py
+src/convertnotes.egg-info/PKG-INFO
+src/convertnotes.egg-info/SOURCES.txt
+src/convertnotes.egg-info/dependency_links.txt
+src/convertnotes.egg-info/entry_points.txt
+src/convertnotes.egg-info/requires.txt
+src/convertnotes.egg-info/top_level.txt
