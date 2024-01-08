@@ -1,0 +1,2 @@
+[console_scripts]
+django-clite = cli.app:cli
