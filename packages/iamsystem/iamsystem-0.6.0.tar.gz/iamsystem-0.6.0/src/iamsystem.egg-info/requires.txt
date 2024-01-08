@@ -1,0 +1,16 @@
+anyascii>=0.3.2
+spellwise>=0.8.0
+pysimstring~=1.2.1
+
+[:python_version < "3.12"]
+typing_extensions~=4.4.0
+
+[:python_version >= "3.12"]
+typing_extensions>=4.7.0
+
+[doc]
+sphinx
+
+[tests]
+nltk>=3.8.0
+spacy>=3.2.0
