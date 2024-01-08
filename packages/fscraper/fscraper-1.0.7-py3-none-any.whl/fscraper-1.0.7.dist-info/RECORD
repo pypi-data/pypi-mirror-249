@@ -1,0 +1,14 @@
+fscraper/__init__.py,sha256=pUnPZBRxeHFas7o935ACE06VCSnL226l6jj6ZLS1njs,496
+fscraper/exceptions.py,sha256=oe7oduHENAr-0tRPwcgYa5q17nUfLrlGn6X_z674ACk,390
+fscraper/kabutanscraper.py,sha256=JN6ayatHlXUan3mYrmysV8yEqlOfIh6nJTRpCnR75JE,1742
+fscraper/kabuyohoscraper.py,sha256=vHghUj0Dg_Mr9imBBKpIER0G1jjSjbsJmpiUTbasmU4,10267
+fscraper/minkabuscraper.py,sha256=pxaOX0DqHHqrgYh-TB_7Cf7gN2zOytMabA4wybVnlyo,2006
+fscraper/reuterscraper.py,sha256=n9nSlOevJK5CGZc7g0I56Qee9NU-KDpTxmyvTpcqGKE,3848
+fscraper/utils.py,sha256=iAmPFx7wNLNH3UCzQWwdoOvt4xNTGM8DfTrBNhJr6iM,6658
+fscraper/xpath_table.py,sha256=j73NfQaWjuiIq2ryK2nnnMKiLUmzr8nJk1qbhGfDpwQ,4317
+fscraper/yfscraper.py,sha256=7yNCzEqJWqpDqufWAV1Ywy7179qtPx5N3cq1E_b_O0M,5390
+fscraper-1.0.7.dist-info/LICENSE,sha256=8K6-i2DNcHSURNeErXlWUjeAR54lLtlPXQR1VCe00lE,1062
+fscraper-1.0.7.dist-info/METADATA,sha256=6vvBXOWg46Vht6ndhGROBqEVJygarp2Vx2eTDN4lADc,3295
+fscraper-1.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fscraper-1.0.7.dist-info/top_level.txt,sha256=2OVGmpWQhK1vSITTo8p0bUt9UBc8F9qs9cS4G5gu2ME,9
+fscraper-1.0.7.dist-info/RECORD,,
