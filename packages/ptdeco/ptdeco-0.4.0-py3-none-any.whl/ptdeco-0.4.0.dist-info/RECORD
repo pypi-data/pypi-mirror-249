@@ -1,0 +1,17 @@
+ptdeco/__init__.py,sha256=yD77yzbQfnY8xXplueBKIfumWTGD6Zwc3Um6i6n-o_8,168
+ptdeco/_version.py,sha256=n2iGIS_ObGcMpIFJ0wxWEk5AMfNe2qwdlSIsz847eGc,282
+ptdeco/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptdeco/falor/__init__.py,sha256=S2TAknewDtCWmzPJddH2R1hfcMuQg5FKwWkIPVkExqc,104
+ptdeco/falor/decomposition.py,sha256=BsL5ucv16RIDP42CqHXi2Gamw_-_ItrAd_p3ddwZrz8,15505
+ptdeco/lockd/__init__.py,sha256=IMDoPx_BTwH7CAaf2QxJfo47Vcd_EptCb2ysx56zUN4,158
+ptdeco/lockd/decomposition.py,sha256=S49P7ud7rUCiirWj7ncP1MNh7a-wW6kjvOdCWxPxJ_E,16531
+ptdeco/lockd/losses.py,sha256=4NJkO_gg7BCccdJsWqMfT0oGz1h4cV_gMA7m1O1ZvVQ,2837
+ptdeco/utils/__init__.py,sha256=rWHJWrt5RJx2LDA4kUGUpOchWAXljz_dEOcpgPEyXqM,299
+ptdeco/utils/common.py,sha256=t58hTvV0wvNVQPDdoMZhorudlN6pWh3EiwPCCWnUbFs,1060
+ptdeco/utils/losses_primitives.py,sha256=rVAVAXGps39t1eZffigUnm-Apqnix2mk2gDxWFhL2qI,1116
+ptdeco/utils/modconfig.py,sha256=pYXI5evecuSrNhK-qrHLt7o9SBiIOOcsAOamGgaTK3U,4318
+ptdeco-0.4.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ptdeco-0.4.0.dist-info/METADATA,sha256=9Dk-jcod0Qojsxei-axkGaVhYbFP0we1HxHU-sowqGQ,20668
+ptdeco-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ptdeco-0.4.0.dist-info/top_level.txt,sha256=ZbBKWORsrQ2Y9jxXpwRxIhklINE7Rn2H_FX2GdTcODE,7
+ptdeco-0.4.0.dist-info/RECORD,,
