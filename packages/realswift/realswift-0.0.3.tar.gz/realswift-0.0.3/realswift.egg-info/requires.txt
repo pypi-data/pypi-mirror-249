@@ -1,0 +1,6 @@
+pyautogui
+shutil
+easyocr
+pygetwindow
+numpy
+cv2
