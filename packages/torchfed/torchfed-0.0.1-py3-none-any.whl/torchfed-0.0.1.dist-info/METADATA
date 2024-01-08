@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: torchfed
+Version: 0.0.1
+Summary: A unified federated learning framework for PyTorch.
+Author-email: Soptq <squints-marital0h@icloud.com>
+Project-URL: Homepage, https://github.com/Soptq/torchfed
+Project-URL: Bug Tracker, https://github.com/Soptq/torchfed/issues
+Keywords: pytorch,framework,distributed,federated learning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aim
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: loguru
+Requires-Dist: networkx
+Requires-Dist: plotly
+Requires-Dist: prettytable
+
+# TorchFed
+
+A unified federated learning framework for PyTorch.
