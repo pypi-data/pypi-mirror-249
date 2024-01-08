@@ -1,0 +1,4 @@
+include requirements*.txt
+include LICENSE.txt
+graft src/py-SPaRTAN/cythLeastR/
+graft src/py-SPaRTAN/cythKronPlus/
