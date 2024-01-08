@@ -1,0 +1,10 @@
+clicast/__init__.py,sha256=NyLB0mDvfNQ6Qd5Tg0adP-YvXTSYl_QxsAPRNfiEqgg,2001
+clicast/cast.py,sha256=OvJEmEQ2hZcBofwf4yuQ2geZa9hhK78-eHMj41pep2s,9042
+clicast/editor.py,sha256=fSUJPaA_XVJw7WBD2OV45hxYQFQRfD2OiOfBhvglXkg,2932
+clicast/filters.py,sha256=xIiQt58OT_TIuzHCgcVUPj-aQIIV_IlPs1RFQrxiJps,1932
+clicast-1.0.0.dist-info/LICENSE,sha256=CyZ5kbuMIH9KzwcGzmbIK5jb4zeXEY0oXJN2rrtbFv8,1077
+clicast-1.0.0.dist-info/METADATA,sha256=ZWys9v47ZPeV3dkhv8_z9soWCBFNAG3RX54NGBNQUcY,3704
+clicast-1.0.0.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+clicast-1.0.0.dist-info/entry_points.txt,sha256=6TrS-16wd6xdBvj5hLE6oY_4-BMONtfogbwICvatNok,45
+clicast-1.0.0.dist-info/top_level.txt,sha256=a-kdwUiw1_S_AIdEg36nMhsL169xosoCY_c3qG7BwBQ,8
+clicast-1.0.0.dist-info/RECORD,,
