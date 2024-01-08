@@ -1,0 +1,12 @@
+epub_image_helper/__init__.py,sha256=VX65UEd_isTsQzsn6yZXqt6MGeaMsrUvdsOQddLc808,48
+epub_image_helper/cmd.py,sha256=ThgHkT79e6LYQJAIeNTSh5yni9fU8EYQVLIOWmOSg_g,9172
+epub_image_helper/common.py,sha256=R4Gj12NFMwzwVYuqGafEr8raJMcg4epRmsCV3fMjKSw,6651
+epub_image_helper/epubImageHelper.py,sha256=zUYM4-mbfRNs_BcIaNSh_RA_-JIvtrC_j1iVbfwgDAE,18599
+epub_image_helper/testImageCompression.py,sha256=BdWoN9aZXPNJnTXh-30OwIrwcAcd7_Y9_DVixjIDCno,1400
+epub_image_helper/testPdf2Epub.py,sha256=HgOpMLZF_QzFYwC9YJOvRYwXJKc4w3w3_p2p2j6U1hY,1198
+epub_image_helper-1.0.6.dist-info/LICENSE,sha256=P1tdyAEKah-ionMUeHlehtI90mYpj4Y0sX1P73vF-Z0,1070
+epub_image_helper-1.0.6.dist-info/METADATA,sha256=JLwo9djn6m2V_OtWb4dFVO0-612Y4knDd7ue5Nn5-TA,19200
+epub_image_helper-1.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+epub_image_helper-1.0.6.dist-info/entry_points.txt,sha256=v0pRyDAWsmVAF2uRT8xSVjl6b2wtP8rvqMzmisWQ7XA,65
+epub_image_helper-1.0.6.dist-info/top_level.txt,sha256=7C6t_iwaSlHaOf5nbjCc-GBNKmcfdIorrhWmtv-j084,18
+epub_image_helper-1.0.6.dist-info/RECORD,,
