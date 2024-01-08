@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: authentik_cloud_gateway_client
+Version: 0.3.0
+Summary: 
+Author: authentik Team
+Author-email: hello@goauthentik.io
+Requires-Python: >=3.12,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img src="https://goauthentik.io/img/icon_top_brand_colour.svg" height="150" alt="authentik logo">
+</p>
+
+---
+
+authentik Cloud Gateway
+

@@ -1,0 +1,8 @@
+authentik_cloud_gateway_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+authentik_cloud_gateway_client/authenticationPush_pb2.py,sha256=8VEr73egVtlfkQMDc3wXn1gqb41ndXnaUBbS_9hxYLE,3812
+authentik_cloud_gateway_client/authenticationPush_pb2.pyi,sha256=gs9si3T3xqTw6ocC2GlI2yREmBgf42Kuv4vKUxLp19k,3965
+authentik_cloud_gateway_client/authenticationPush_pb2_grpc.py,sha256=8Phb4_0dFCOgZbMkJzfkDKXK99jBJC5Sb8XJ7RcLX0g,4307
+authentik_cloud_gateway_client-0.3.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+authentik_cloud_gateway_client-0.3.0.dist-info/METADATA,sha256=JrhvizbEQWqSyso6A0GG-bpquYknOg7GNJV2rcGz9q8,516
+authentik_cloud_gateway_client-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+authentik_cloud_gateway_client-0.3.0.dist-info/RECORD,,
