@@ -1,0 +1,30 @@
+'''
+@author: M. Bernt
+'''
+
+from sys import stdout
+
+
+def gffwriter(featurelist, acc, size, outfile=None, mode="w"):
+    """
+    write the gff string for each feature
+    @param[in] featurelist a list of features to be written
+    @param[in] acc string to be prepended to each line (e.g. accession)
+    @param[in] outfile file to write into, if None: write to stdout
+    @param[in] mode file write mode, e.g. a, w, ...
+    """
+
+    featurelist.sort(key=lambda x: x.start)
+
+    if isinstance(outfile, str):
+        outhandle = open(outfile, mode)
+    elif outfile is None:
+        outhandle = stdout
+    else:
+        outhandle = outfile
+
+    for feature in featurelist:
+        outhandle.write("%s\n" % feature.gffstr(acc, size))
+
+    if isinstance(outfile, str):
+        outhandle.close()
