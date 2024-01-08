@@ -1,0 +1,15 @@
+no_thanks/__init__.py,sha256=MYVIjHEFwvc_VcP_HAyyrzfwRJqC0vbtEqhmpbNckgo,79
+no_thanks/__main__.py,sha256=VhHECHAbl4klKw2d0X-ZWrE8HX2B-FF5ShP_HcHyC8Y,3314
+no_thanks/__version__.py,sha256=MuG3zDPVerLJv60iNhKPwrW11MRrj1pEKRnYj0bYZwM,78
+no_thanks/core.py,sha256=iJratHzi9Ysp3R_aVIAKLyIOHy2_kYfquixl8qSZJhs,8725
+no_thanks/elo.py,sha256=WPDWapIEgEgziKDv2q0F_MBPZ_MaxKko5-P5R_3hmuQ,1669
+no_thanks/players.py,sha256=L9V0607mrn3HOq_pYwxBTw5NaVRCyAh_GKl1aPOIHLk,1736
+no_thanks/utils.py,sha256=S7kE1yOdgJXGtjfnHjIXiiaobjggsGRnAvhRUGMMxYQ,499
+no_thanks/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+no_thanks/algorithms/genetic.py,sha256=2n9Y__AFs9_UVEEWIyGrMe82OW1wTU2e5lGhT8llqcM,14264
+no_thanks-0.2.2.dist-info/LICENSE,sha256=hcB3fxze3M3mSTfl9UIUfUzA-8kWwKCuq2ruk8Zgfps,1072
+no_thanks-0.2.2.dist-info/METADATA,sha256=WKor_oJbfdK4P4Tgaeelt3lnJFxtQ4DLK21f5vJkYuo,1180
+no_thanks-0.2.2.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+no_thanks-0.2.2.dist-info/entry_points.txt,sha256=ulbKBm7CegR_l8jxrzLchj_Vxyt0WdqNspg6NbWoSEU,54
+no_thanks-0.2.2.dist-info/top_level.txt,sha256=XxATcaGXRf3TlzcW2hfxEnPKb6Ksf4xXT6hz8T8_z1g,10
+no_thanks-0.2.2.dist-info/RECORD,,
