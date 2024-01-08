@@ -1,0 +1,2 @@
+pageo==0.2.0
+webdriver-manager==4.0.1
