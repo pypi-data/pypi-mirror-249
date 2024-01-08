@@ -1,0 +1,12 @@
+pymod2pkg/__init__.py,sha256=m3Tu_jaBncGJODYzl2JmPAQtdMeLoWGwffPpclzSJ3M,17345
+pymod2pkg/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymod2pkg/cli/pymod2pkg.py,sha256=x4krqwk4q2Ts7ninf4xu8KYG_EFXDYJJFBeVKiirbJo,2018
+pymod2pkg/cli/reqs2pkg.py,sha256=CrJVIziUmt8T0TuGuIHvDryXfSXySmdG-DDJXW_3soU,4673
+pymod2pkg-0.28.0.dist-info/AUTHORS,sha256=_2J_E-wLeQUtLXcio-FRDTxOy0WQS-Q8C5TfSXcQyLs,1757
+pymod2pkg-0.28.0.dist-info/LICENSE,sha256=y16Ofl9KOYjhBjwULGDcLfdWBfTEZRXnduOspt-XbhQ,11325
+pymod2pkg-0.28.0.dist-info/METADATA,sha256=kiTj8VIYzVhQH-LfyiKldWx20xpQre9uUDVMZ2yU73w,2185
+pymod2pkg-0.28.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pymod2pkg-0.28.0.dist-info/entry_points.txt,sha256=FAo7qsA-IGlpLY7G5ymsMBC-fpYM-RULZlbjqlLe6fE,99
+pymod2pkg-0.28.0.dist-info/pbr.json,sha256=DD5eaFAa48daXGiRx7FuBwHMaz7QA3DuoGXiT32kmcg,46
+pymod2pkg-0.28.0.dist-info/top_level.txt,sha256=8hc34FHVSyrYVOcOqPY-MxMh_niWjZX4NclQypNT5pk,10
+pymod2pkg-0.28.0.dist-info/RECORD,,
