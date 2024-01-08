@@ -1,0 +1,3 @@
+[OMNIPY]  Thu Mar 16 00:08:44 2023 - ERROR: metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its bases [omnipy.compute.task.TaskWithMixins]
+[OMNIPY]  Thu Mar 16 00:11:22 2023 - ERROR: metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its bases [omnipy.compute.task.TaskWithMixins]
+[OMNIPY]  Thu Mar 16 00:12:37 2023 - ERROR: metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its bases [omnipy.compute.task.TaskWithMixins]
