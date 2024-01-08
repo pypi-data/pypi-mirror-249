@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pmask.egg-info/PKG-INFO
+pmask.egg-info/SOURCES.txt
+pmask.egg-info/dependency_links.txt
+pmask.egg-info/entry_points.txt
+pmask.egg-info/requires.txt
+pmask.egg-info/top_level.txt
+pymask/__init__.py
+pymask/annotator.py
+pymask/cli.py
