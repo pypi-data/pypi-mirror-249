@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scrapy-nimble"
+version = "0.0.2"
+authors = [
+  { name="Renne Rocha", email="renne@rocha.dev.br" },
+]
+maintainers = [
+  { name="Renne Rocha", email="renne@rocha.dev.br" },
+]
+description = "Scrapy Downloader Middleware that helps to integrate Scrapy with Nimble Web API."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "scrapy"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest"
+]
+
+[project.urls]
+Homepage = "https://github.com/rennerocha/scrapy-nimble"
+Issues = "https://github.com/rennerocha/scrapy-nimble/issues"
