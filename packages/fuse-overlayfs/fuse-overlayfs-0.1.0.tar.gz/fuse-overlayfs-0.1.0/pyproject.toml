@@ -1,0 +1,30 @@
+[project]
+name = 'fuse-overlayfs'
+dynamic = ['version', 'dependencies', 'readme']
+authors = [{ name = 'nukemiko' }]
+description = 'Use fuse-overlayfs to mount/unmount overlayfs in Python'
+license = { file = 'LICENSE' }
+requires-python = '>=3.10'
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: POSIX :: Linux',
+]
+keywords = ['overlayfs', 'fuse-overlayfs', 'fuse']
+
+[project.urls]
+Repository = 'https://github.com/nukemiko/python-fuse-overlayfs'
+Issues = 'https://github.com/nukemiko/python-fuse-overlayfs/issues'
+Changelog = 'https://github.com/nukemiko/python-fuse-overlayfs/blob/master/CHANGELOG.md'
+
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools.dynamic]
+version = { attr = 'fuseoverlayfs.__version__' }
+dependencies = { file = ['requirements.txt'] }
+
+[tool.setuptools.dynamic.readme]
+file = ['README.md']
+content-type = 'text/markdown'

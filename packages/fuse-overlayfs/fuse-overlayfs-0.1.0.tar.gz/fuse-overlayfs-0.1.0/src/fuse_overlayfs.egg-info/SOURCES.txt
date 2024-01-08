@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/fuseoverlayfs.py
+src/fuse_overlayfs.egg-info/PKG-INFO
+src/fuse_overlayfs.egg-info/SOURCES.txt
+src/fuse_overlayfs.egg-info/dependency_links.txt
+src/fuse_overlayfs.egg-info/requires.txt
+src/fuse_overlayfs.egg-info/top_level.txt
