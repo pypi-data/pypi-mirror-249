@@ -1,0 +1,15 @@
+herbarium/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+herbarium/__main__.py,sha256=SmSd81eK7zylF5t5zJ6_zAhEl4sbEkDG-rP-k-Wv5Lw,1525
+herbarium/issue_presenter.py,sha256=VsHws_oY_UrpO5FoB9YA_4-skYq-25jWgM-s21_vFKY,714
+herbarium/issue_service.py,sha256=jAChNp7cznDBrzNNzaguHVULEbsB7HdDXl557fDPXWo,1026
+herbarium/registry.py,sha256=3P2ZemrtVo79HFojfomyG63npJvnm0h14Pn-A0g_ZPw,387
+herbarium/stacker.py,sha256=2lScCNdhpl2frV9vtADBupilTTtAUazyPn7Oizb6aAM,1520
+herbarium/string_parsing.py,sha256=GXvBZqfcA6cz8j70vL2wNERAQW5lzsQAygyZUXaN1vg,243
+herbarium/subprocess_utils.py,sha256=4vlpTeqHz-qPHF3yapza7cwh8NV4Zv21RGy_GU48Owo,861
+herbarium/test_issue_service.py,sha256=fxYXKzQuZAwZk6BBkwOrNlmuywNU9W2H90jJLrDzo0M,184
+herbarium-0.2.0.dist-info/LICENSE,sha256=dYOLlaCjPtQ1wWaHKRYlmKsBeIOYZbzMfPANBaRd77Y,1073
+herbarium-0.2.0.dist-info/METADATA,sha256=pj_t3Fk_1Ar_9nG_WGd5v75OMnF-80kSCxd1pUJ1zt4,4470
+herbarium-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+herbarium-0.2.0.dist-info/entry_points.txt,sha256=mPkK0QW94jpYEHuimgkn1CsSfRrA9-8qffYrTCY6vTo,83
+herbarium-0.2.0.dist-info/top_level.txt,sha256=GzEzrnBWNVih-4OOqrx9lRhSfsQAaptlgy50Yh7iATc,10
+herbarium-0.2.0.dist-info/RECORD,,
