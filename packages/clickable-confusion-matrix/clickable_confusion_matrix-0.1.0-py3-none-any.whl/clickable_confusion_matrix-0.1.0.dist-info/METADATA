@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: clickable-confusion-matrix
+Version: 0.1.0
+Summary: A confusion matrix that shows the relevant features/rows when a cell is clicked
+Author-email: Connor Boyle <connor.bo@gmail.com>
+Project-URL: Homepage, https://github.com/boyleconnor/clickable-confusion-matrix
+Project-URL: Issues, https://github.com/boyleconnor/clickable-confusion-matrix/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib >=3.8.2
+Requires-Dist: scikit-learn <=1.3.2,>=1.0.0
+
