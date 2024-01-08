@@ -1,0 +1,10 @@
+glai/__init__.py,sha256=sp6_YWFqYpeSYWMr5ztoRbCpsJrq3gom7-AHsRN_3u4,534
+glai/ai/__init__.py,sha256=BLSt7vi7_ijwNkCyLvp3WYIHQtZ0vcqxYxo_5o-rzR4,218
+glai/ai/auto_ai.py,sha256=-Ek8iBFSDV7AlWNFl8eTO-TPBrLj1uBVrwKnB3zHJ4g,7048
+glai/ai/easy_ai.py,sha256=XIC2FM4rLAt5fUy9Tq_cYwqRpKzDM4iAQuIL5myFuoU,18020
+glai/messages/__init__.py,sha256=4hrd2PpAFgqnHXLaqW4Uha-cy92ew7q8X4qUs2syb8A,213
+glai/messages/messages.py,sha256=i99YGlgMSCsh2Ah7BNfIACI2wx4Q6BFEEPVi8tXTNDM,16296
+glai-0.1.1.dist-info/METADATA,sha256=dnCRAjqlKP0OllfIQnvh3qzVi4RqFHFROov3D3rFfF4,11566
+glai-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+glai-0.1.1.dist-info/top_level.txt,sha256=xIZ4mUiw77cF0t3VRVZnZsM-0dpb3XlhOxJl040Gf4w,5
+glai-0.1.1.dist-info/RECORD,,
