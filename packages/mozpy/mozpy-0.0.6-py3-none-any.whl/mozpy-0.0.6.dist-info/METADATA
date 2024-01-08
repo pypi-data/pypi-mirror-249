@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mozpy
+Version: 0.0.6
+Summary: a veri useful package for programming moz like
+Requires-Dist: colorama
+
