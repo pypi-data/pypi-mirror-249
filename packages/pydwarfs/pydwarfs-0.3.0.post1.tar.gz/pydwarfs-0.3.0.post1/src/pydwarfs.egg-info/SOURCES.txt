@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/pydwarfs/VERSION
+src/pydwarfs/__init__.py
+src/pydwarfs/dwarfs.py
+src/pydwarfs/dwarfsextract.py
+src/pydwarfs/exceptions.py
+src/pydwarfs/utils.py
+src/pydwarfs.egg-info/PKG-INFO
+src/pydwarfs.egg-info/SOURCES.txt
+src/pydwarfs.egg-info/dependency_links.txt
+src/pydwarfs.egg-info/requires.txt
+src/pydwarfs.egg-info/top_level.txt
