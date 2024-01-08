@@ -1,0 +1,4 @@
+[console_scripts]
+abacus=abacus.cli:cx
+buh=abacus.cli:cx
+
