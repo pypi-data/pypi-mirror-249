@@ -1,0 +1,244 @@
+Metadata-Version: 2.1
+Name: codeify
+Version: 0.3
+Summary: Python-based development utilities
+Home-page: https://www.nuradius.com
+Author: Nuradius Software
+Author-email: todd@datacomponents.net
+License: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: PyYAML ==6.0.1
+
+# Introduction
+
+Codeify is a pure Python code-generation utility for accelerating development in any platform / environment.
+
+Codeify's code generator processes an input directory and produces an output directory with similar structure
+along with the aid of a provided specification file and Jinja templates for generated outputs.
+
+# Usage
+
+Codeify should be used for development-only purposes.  This should not be tied into any critical processes
+and should be seen only as a tool to speed up development.
+
+# Example
+
+Using a sample input directory with the following files:
+
+**`spec.yaml`**
+```
+---
+structs:
+    Account:
+        fields:
+            id: { type: int }
+            name: { type: std::string }
+
+    CheckingAccount:
+        fields:
+            amount: { type: double }
+        _extends: Account
+
+    SavingsAccount:
+        fields:
+            amount: { type: double }
+            interest_rate: { type: double }
+        _extends: Account
+```
+
+**`main.cpp.j2`**
+```
+{% for name, value in structs.items() %}
+#include "{{ name }}.h"
+{% endfor %}
+
+int main()
+{
+    // TODO: Implement
+    return 0;
+}
+```
+
+**`class.j2`**
+```
+#pragma once
+
+namespace structs
+{
+    class {{ class_name }}{% if class_data._extends %} : {{ class_data._extends }}{% endif %}
+    {
+    private:
+        {% for field_name, field in class_data.fields.items() %}
+        {{ field.type }} {{ field_name }}_;
+        {% endfor %}
+    public:
+        {% for field_name, field in class_data.fields.items() %}
+        {{ field.type }} get{{ pascal_name(field_name) }}() const
+        {
+            return {{ field_name }}_;
+        }
+
+        void set{{ pascal_name(field_name) }}({{ field.type }} && value)
+        {
+            {{ field_name }}_ = std::move(value);
+        }
+
+        {% endfor %}
+    };
+}
+```
+
+**`.codeify`**
+```
+---
+ignore: [ spec.yaml, class.j2 ]
+generate:
+{% for name, data in structs.items() %}
+    {{ name }}.h:
+        input: class.j2
+        data:
+            class_name: {{ name }}
+            class_data: {{ data }}
+{% endfor %}
+
+```
+
+You can then run Codeify on the input directory (`$INPUT`) specifying both an output directory (`$OUTPUT`) and a specification file (`$INPUT/spec.yaml`):
+
+```
+codeify generate -i $INPUT -o $OUTPUT -s $INPUT/spec.yaml
+```
+
+Your output directory (`$OUTPUT`) should now contain the following files:
+ - Account.h
+ - CheckingAccount.h
+ - SavingsAccount.h
+ - main.cpp
+
+The three `Account` header files are generated from `class.j2` specified through a directory context file (`.codeify`).  `main.cpp` was generated from `main.cpp.j2`.
+These were all generated with the use of the `spec.yaml` file providing the inputs.
+
+# Text Insertion
+
+Codeify supports in-place splicing lines into files when files cannot be generated but modified.
+
+Some example commands illustrate this functionality on imaginary files:
+```
+# Insert immediately before a line
+codeify insert "[ ] turn off the lights" --before "\[.\] close the door" -i TODO.txt
+
+# Insert immediately after a line
+codeify insert "(C) Beeblebrox Enterprises" --after "author: Zaphod .*" -i CONTRIBUTORS.md
+
+# Append a line
+codeify insert "rsync -rv $HOME/Pictures $BACKUP" -i backup_files.sh
+```
+
+# Code generation on-the-fly
+
+For generating code ad-hoc with some command line arguments, you can create a single Jinja template and define parameters on the command line to produce a
+code-generated output.  This can be used for creating source code files or copy-pasting source code segments to an IDE or text editor.
+
+The example template file below and command line output demonstrates this feature:
+
+**`php.tpl`**
+```
+{%- set php_fields = [] -%}
+{%- for field in fields -%}
+    {%- set _ = php_fields.append('$'+field) -%}
+{%- endfor -%}
+{%- if namespace -%}
+namespace {{ namespace }};
+
+{% endif -%}
+class {{ class_name }}
+{
+    {%- for field in fields %}
+    private ${{ field }};
+    {%- endfor %}
+
+    public function __construct({{ php_fields | join(', ') }})
+    {
+        {%- for field in fields %}
+        $this->{{ field }} = ${{ field }};
+        {%- endfor %}
+    }
+{% for field in fields %}
+    public function get{{ (field[0] | upper) + field[1:] }}()
+    {
+        return $this->{{ field }};
+    }
+{% endfor %}
+}
+```
+
+From the command line: `codeify echo php.tpl -d class_name=User -d "fields=[userId,username,passwordHash,name,email,activated]" -d namespace=App`
+
+The following output is generated:
+```
+namespace App;
+
+class User
+{
+    private $userId;
+    private $username;
+    private $passwordHash;
+    private $name;
+    private $email;
+    private $activated;
+
+    public function __construct($userId, $username, $passwordHash, $name, $email, $activated)
+    {
+        $this->userId = $userId;
+        $this->username = $username;
+        $this->passwordHash = $passwordHash;
+        $this->name = $name;
+        $this->email = $email;
+        $this->activated = $activated;
+    }
+
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    public function getPasswordHash()
+    {
+        return $this->passwordHash;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function getActivated()
+    {
+        return $this->activated;
+    }
+
+}
+```

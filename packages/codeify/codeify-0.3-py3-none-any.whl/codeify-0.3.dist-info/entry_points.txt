@@ -1,0 +1,2 @@
+[console_scripts]
+codeify = codeify.__main__:main

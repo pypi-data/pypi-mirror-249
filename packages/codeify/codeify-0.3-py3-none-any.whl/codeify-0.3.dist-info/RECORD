@@ -1,0 +1,12 @@
+codeify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeify/__main__.py,sha256=Jr5oQ7vz97b1nkwtHynkMY_tFKEeIl12DecUshZBsmA,2261
+codeify/codegen.py,sha256=DItSDxX0CMOOKRw5CxJ_vJTHufYskQOnO-zbC8ZLjcY,4223
+codeify/conversions.py,sha256=0diq05pdK32lV38tCyVHZT0ab7lDfh-E-U3sRByyq8g,278
+codeify/template.py,sha256=RwU5uXgcZkN7y7Mdqlzp_ptwPmMBMSTAijU479-ghkI,232
+codeify/text.py,sha256=w4-Ut0a8axqJRH_iPmDNNEME85onnJBi6kvdDoTByBU,1448
+codeify/types.py,sha256=LBmQRdWgvkvT30zsI_EGyX8d-VJmzveji1KbmtanzrU,779
+codeify-0.3.dist-info/METADATA,sha256=tmZJAlHjBoNxNq6_R11oYkL18BFKF2o3pU-q4fR_l24,6261
+codeify-0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+codeify-0.3.dist-info/entry_points.txt,sha256=qTXMKPrl-5xrOcjqvWkmn0MgBYzEjMqn4e5EoOboShc,50
+codeify-0.3.dist-info/top_level.txt,sha256=NaSAV9fzjz9gadjivML0jxJQAdgzgUiK87dHjpnXsv4,8
+codeify-0.3.dist-info/RECORD,,
