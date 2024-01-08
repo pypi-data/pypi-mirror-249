@@ -1,0 +1,2 @@
+[console_scripts]
+convertnotes = convertnotes.main:main
