@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mlcanvas
+Version: 0.0.1
+Summary: Composite ML Library
+Author-email: Mehmet Oktay Ozsoy <mehmet.ozsoy@synnada.ai>
+Project-URL: Homepage, https://github.com/synnada-ai/mlcanvas
+Project-URL: Issues, https://github.com/synnada-ai/mlcanvas/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mlcanvas
+Composite ML Library
