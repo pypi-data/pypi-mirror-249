@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: random-first-package
+Version: 0.1.1
+Summary: Random First Package
+Author: Startup Unfiltered
+Author-email: startup.unfiltered.2024@gmail.com
+Requires-Python: ==3.9.*
