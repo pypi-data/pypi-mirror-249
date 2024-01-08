@@ -1,0 +1,2 @@
+[console_scripts]
+pyFormal = pyFormal.images2grid:main

@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyFormal/__init__.py
+pyFormal/images2grid.py
+pyFormal/squareVideo2RoundedVideo.py
+pyFormal/utils.py
+pyFormal.egg-info/PKG-INFO
+pyFormal.egg-info/SOURCES.txt
+pyFormal.egg-info/dependency_links.txt
+pyFormal.egg-info/entry_points.txt
+pyFormal.egg-info/requires.txt
+pyFormal.egg-info/top_level.txt

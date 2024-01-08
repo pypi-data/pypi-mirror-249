@@ -1,0 +1,6 @@
+pyperclip
+matplotlib
+numpy
+click
+Pillow
+pillow_heif
