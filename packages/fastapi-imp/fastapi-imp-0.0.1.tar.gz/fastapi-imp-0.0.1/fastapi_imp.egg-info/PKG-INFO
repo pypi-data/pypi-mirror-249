@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fastapi-imp
+Version: 0.0.1
+Summary: class base view for fastapi
+Home-page: https://github.com/eatmoreapple/imp
+Author: eatmoreapple
+Author-email: eatmoreorange@gmail.com
+Requires-Dist: fastapi
