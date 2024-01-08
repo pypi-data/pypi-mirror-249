@@ -1,0 +1,12 @@
+*.egg-info
+.dmypy.json
+.tox/
+*.pyc
+build/
+dist/
+*.swp
+*~
+docs/sphinx/_build
+docs/sphinx/venv
+tests/data/gpg/random_seed
+
