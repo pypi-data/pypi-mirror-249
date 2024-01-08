@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: vitamin-c-crawler
+Version: 0.1.0
+Summary: 
+Author: DenisKof82
+Author-email: k.denisas@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ansible (>=9.1.0,<10.0.0)
+Description-Content-Type: text/markdown
+
+
+# Vitamin_C_crawler
+
+`Vitamin_C_crawler` is an advanced data crawling system developed in Python, designed for efficient web scraping and data analysis. This tool specializes in collecting and analyzing web page data, with a particular focus on product names, prices, and image URLs. It offers flexibility for various data crawling scenarios, utilizing libraries like `lxml`, `requests`, and `pandas`.
+
+## Key Features
+    - Dynamic web page content scraping.
+    - Precise extraction of product information (names, prices, image URLs).
+    - Capability to export data in multiple formats, including CSV and JSON.
+    - Modular architecture, easily adaptable to specific requirements.
+
+## Quick Start Guide
+### Prerequisites
+- Ensure you are using Python 3.10 or newer.
+- Have `poetry` installed for dependency management.
+
+## Installation
+
+### Using a package manager
+
+You can install the crawler as a package: Using `pip`:
+
+```sh
+pip install vitamin_c_crawler
+```
+
+Or using `poetry`:
+
+```sh
+poetry add vitamin_c_crawler
+```
+### Cloning the repository
+
+You can also clone the repository and install the dependencies. Using `poetry`:
+
+```sh
+git clone https://github.com/DenKof82/vitamin_c_crawler
+cd vitamin_c_crawler
+poetry install
+```
+
+## Usage
+
+### As a module
+
+```python
+from vitamin_c_crawler import crawl_vitamin_c_products
+
+print(crawl_vitamin_c_products(
+    time_limit=config.TIME_LIMIT,
+    source=config.SOURCE_URL,
+    download_images=config.DOWNLOAD_IMAGES
+))
+# 
+SOURCE_URL = "https://www.gintarine.lt/search?q=vitaminas+c"
+RETURN_FORMAT = 'csv'
+DOWNLOAD_IMAGES = True
+IMAGE_FOLDER = 'downloaded_images'
+CSV_FILE_PATH = 'vitamin_c_products.csv'
+```
+
+For more examples look in the [examples](./examples) directory.
+
+
+## License
+
+This project is licensed under the MIT license.

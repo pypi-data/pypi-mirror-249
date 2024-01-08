@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "vitamin-c-crawler"
+version = "0.1.0"
+description = ""
+authors = ["DenisKof82 <k.denisas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ansible = "^9.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
