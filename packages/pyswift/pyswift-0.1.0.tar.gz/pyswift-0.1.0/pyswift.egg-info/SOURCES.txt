@@ -1,0 +1,7 @@
+setup.py
+pyswift/__init__.py
+pyswift.egg-info/PKG-INFO
+pyswift.egg-info/SOURCES.txt
+pyswift.egg-info/dependency_links.txt
+pyswift.egg-info/entry_points.txt
+pyswift.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pyswift
+Version: 0.1.0
+Summary: ### **PySwift - SwiftUI implementation for Python3.**
+Home-page: https://github.com/TomrisProject/PySwift
+Author: TomrisProject
+Requires: pydantic

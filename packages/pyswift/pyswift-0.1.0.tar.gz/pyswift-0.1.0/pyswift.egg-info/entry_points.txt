@@ -1,0 +1,2 @@
+[console_scripts]
+pyswift = pyswift.__main__:main
