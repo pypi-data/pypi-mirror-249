@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "msproject"
+version = "0.1.1"
+description = ""
+authors = ["Massimo Rebuglio <massimo.rebuglio@polito.it>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
