@@ -1,0 +1,9 @@
+pyliquibase/__init__.py,sha256=8Uoi-pOzMUIKnfQTBwSc3_E_HJFla6_ngR5Hlozy1ms,10827
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pyliquibase.py,sha256=_wE9mSRZSV4urvUtPZ0h-uIRSsP-6oHh7cU5OW3P1Wk,3231
+pyliquibase-2.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pyliquibase-2.1.0.dist-info/METADATA,sha256=w26SypTI53_iPEICfnWF7lsSMscdnfbcBkncAczKO7M,3126
+pyliquibase-2.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyliquibase-2.1.0.dist-info/entry_points.txt,sha256=afnujv55piqD-87KsaWmpd758DvtyI1bP21LuhNky0o,49
+pyliquibase-2.1.0.dist-info/top_level.txt,sha256=vs765feXC7e6rfXk_rlRjFPyRm3SRq5C4V5dXlRB0rM,18
+pyliquibase-2.1.0.dist-info/RECORD,,
