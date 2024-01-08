@@ -1,0 +1,2 @@
+[console_scripts]
+auto_fast_docs = auto_fast_docs:console_mkds_make_docfiles
