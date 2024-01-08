@@ -1,0 +1,97 @@
+[project]
+name = "sqlalchemy-sessionload"
+description = "SQLAlchemy load option that loads only from persisted session instances"
+authors = [
+    { name = "Jan Vollmer", email = "jan@vllmr.dev" },
+]
+dependencies = [
+    "sqlalchemy>=1.4",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+keywords = [
+    "sqlalchemy",
+    "session",
+    "loader",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Plugins ",
+]
+dynamic = []
+version = "1.0.2"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Source = "https://github.com/jvllmr/sqlalchemy-sessionload"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+ignore_package_warnings = [
+    "pre-commit",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.scripts]
+test = "pytest"
+test_20 = "nox -s tests_20"
+coverage = "pytest --cov=src/sqlalchemy_sessionload --cov-report=xml:coverage.xml"
+benchmark = "pytest --benchmark-json benchmark.json"
+post_install = "pre-commit install"
+
+[tool.pdm.scripts._.env]
+SQLALCHEMY_WARN_20 = "1"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "sqlalchemy<2.0",
+    "black>=23.12.0",
+    "mypy>=1.7.1",
+    "ruff>=0.1.8",
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1.0",
+    "isort>=5.13.1",
+    "pycln>=2.4.0",
+    "pyaphid>=0.3.1",
+    "pre-commit>=3.5.0",
+    "sqlalchemy2-stubs>=0.0.2a37",
+    "faker>=21.0.0",
+    "pytest-benchmark>=4.0.0",
+    "sqlalchemy-utils>=0.41.1",
+    "nox>=2023.4.22",
+]
+
+[tool.pycln]
+all = true
+
+[tool.mypy]
+python_version = "3.8"
+files = [
+    "src/sqlalchemy_sessionload",
+    "tests",
+]
+plugins = [
+    "sqlalchemy.ext.mypy.plugin",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.pyaphid]
+forbidden = [
+    "print",
+]
+
+[tool.ruff]
+ignore = [
+    "E731",
+]
