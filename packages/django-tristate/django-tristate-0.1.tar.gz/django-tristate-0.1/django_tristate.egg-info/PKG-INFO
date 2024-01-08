@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-tristate
+Version: 0.1
+Summary: A Django module providing a tri-state field
+Home-page: https://github.com/chrysochos/django-tristate
+Author: Ioannis Chrysochos
+Author-email: ioannis.chrysochos@cytanet.com.cy
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Django Tri-State Module
+
+Brief introduction to the module and its functionality.
+
+## Installation
+
+Instructions on how to install the `tri` module. 
+
+```bash
+pip install django-tristate  # Example command if available via PyPI
+```
+
+## Configuration
+
+  # settings.py
+  INSTALLED_APPS = [
+      ...
+      'tri',
+  ]
+
+
+## Contact
+Ioannis Chrysochos
+ioannis.chrysochos@cytanet.com.cy

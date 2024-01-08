@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+django_tristate.egg-info/PKG-INFO
+django_tristate.egg-info/SOURCES.txt
+django_tristate.egg-info/dependency_links.txt
+django_tristate.egg-info/top_level.txt
+tri/__init__.py
+tri/admin.py
+tri/apps.py
+tri/forms.py
