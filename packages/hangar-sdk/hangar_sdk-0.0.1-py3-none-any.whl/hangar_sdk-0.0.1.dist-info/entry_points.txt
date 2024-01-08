@@ -1,0 +1,3 @@
+[console_scripts]
+hangar=hangar_sdk.main:app
+
