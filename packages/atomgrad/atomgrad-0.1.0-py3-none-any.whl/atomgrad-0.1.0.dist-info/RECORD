@@ -1,0 +1,7 @@
+atomgrad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atomgrad/atom.py,sha256=dU7zLvrOqq3eBSriOuiy8auGqBIyl5HGI-bx84pkVUA,10064
+atomgrad/graph.py,sha256=Yo3IWU_mQlQkP0tkdyR-R-kjDBnoZRkvx8Gg0xFWMek,1078
+atomgrad-0.1.0.dist-info/METADATA,sha256=NIqgW7ymbpLqHMQvFCH3Vs0oC-_8g53LFIvi_nqi0os,490
+atomgrad-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+atomgrad-0.1.0.dist-info/top_level.txt,sha256=a1tOaqcZyOGvTR-r0Pu09FC5z1QAiaAPM1TYJ7aCV6s,9
+atomgrad-0.1.0.dist-info/RECORD,,
