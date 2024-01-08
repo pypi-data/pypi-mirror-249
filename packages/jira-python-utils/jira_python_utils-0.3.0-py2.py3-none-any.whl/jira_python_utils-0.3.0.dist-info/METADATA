@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: jira_python_utils
+Version: 0.3.0
+Summary: Collection of Python utils for interacting with JIRA
+Home-page: https://github.com/jai-python3/jira_python_utils
+Author: Jai Python3
+Author-email: jai.python3@gmail.com
+License: GNU General Public License v3
+Keywords: jira_python_utils
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click >=7.0
+Requires-Dist: Rich
+Requires-Dist: jira
+
+=================
+JIRA Python Utils
+=================
+
+
+.. image:: https://img.shields.io/pypi/v/jira_python_utils.svg
+        :target: https://pypi.python.org/pypi/jira_python_utils
+
+.. image:: https://img.shields.io/travis/jai-python3/jira_python_utils.svg
+        :target: https://travis-ci.org/jai-python3/jira_python_utils
+
+.. image:: https://readthedocs.org/projects/jira-python-utils/badge/?version=latest
+        :target: https://jira-python-utils.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Collection of Python utils for interacting with JIRA
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://jira-python-utils.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-11-29)
+------------------
+
+* First release on PyPI.
