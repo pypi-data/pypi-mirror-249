@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+quickr.egg-info/PKG-INFO
+quickr.egg-info/SOURCES.txt
+quickr.egg-info/dependency_links.txt
+quickr.egg-info/entry_points.txt
+quickr.egg-info/requires.txt
+quickr.egg-info/top_level.txt
+utils/__init__.py
