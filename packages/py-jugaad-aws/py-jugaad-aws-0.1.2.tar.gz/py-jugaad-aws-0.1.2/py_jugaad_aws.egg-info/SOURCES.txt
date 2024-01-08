@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+py_jugaad_aws.egg-info/PKG-INFO
+py_jugaad_aws.egg-info/SOURCES.txt
+py_jugaad_aws.egg-info/dependency_links.txt
+py_jugaad_aws.egg-info/requires.txt
+py_jugaad_aws.egg-info/top_level.txt
+tests/test_config.py
+tests/test_httpclient.py
+tests/test_logger.py
