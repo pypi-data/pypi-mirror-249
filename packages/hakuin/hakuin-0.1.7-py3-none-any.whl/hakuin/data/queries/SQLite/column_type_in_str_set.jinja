@@ -1,0 +1,3 @@
+SELECT  {{ 'lower(type)' | sql_in_str_set(types) }}
+FROM    pragma_table_info({{ ctx.table | sql_str_lit }})
+WHERE   name={{ ctx.column | sql_str_lit }}
