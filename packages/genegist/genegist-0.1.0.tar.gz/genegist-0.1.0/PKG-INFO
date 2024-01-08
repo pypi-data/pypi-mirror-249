@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: genegist
+Version: 0.1.0
+Summary: Create summararies of groups of genes.
+License: Apache
+Author: JJ Ben-Joseph
+Author-email: jj@tensorspace.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: biopython
+Requires-Dist: chromadb
+Requires-Dist: langchain
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: paper-qa
+Requires-Dist: pdf2image
+Requires-Dist: pyarrow
+Requires-Dist: sentence-transformers
+Requires-Dist: tiktoken
+Requires-Dist: unstructured
+Requires-Dist: vectorizedb
