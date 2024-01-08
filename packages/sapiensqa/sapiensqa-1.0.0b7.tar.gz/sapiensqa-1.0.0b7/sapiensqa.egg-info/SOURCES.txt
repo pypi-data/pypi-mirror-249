@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+sapiensqa/__01010101.py
+sapiensqa/__init__.py
+sapiensqa/core.py
+sapiensqa/requirements.txt
+sapiensqa/sapiensqa.py
+sapiensqa.egg-info/PKG-INFO
+sapiensqa.egg-info/SOURCES.txt
+sapiensqa.egg-info/dependency_links.txt
+sapiensqa.egg-info/requires.txt
+sapiensqa.egg-info/top_level.txt
