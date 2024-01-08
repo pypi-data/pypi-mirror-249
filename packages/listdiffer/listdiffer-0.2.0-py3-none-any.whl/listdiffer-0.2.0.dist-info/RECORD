@@ -1,0 +1,9 @@
+listdiffer/__init__.py,sha256=IfWc3j-2205QacikOunwo7f3YfvPigyUrw8afXlbelY,37
+listdiffer/differ.py,sha256=62AevGf6Xge0w2LtUMUTmm0sByRb-7LiKVkKsLODJqI,8724
+listdiffer/formatter.py,sha256=2CZVv7_CNht6Hcz5orA8Rmj-d9mmmMU1pPQ53VAC0xU,7159
+listdiffer/patch_parser.py,sha256=IH--oO_pT53cZ62A8u1mlLki8iHAZShTqEKA_VAcYfY,984
+listdiffer-0.2.0.dist-info/LICENSE,sha256=GD1uI7eZzjDOOSNY1o1tHH8QtyU-5luDG9jQZn19DbI,1067
+listdiffer-0.2.0.dist-info/METADATA,sha256=tmDW1Km6dTte22HXif4-C6IGyNAIsA8L0-FMsPTT9qo,4314
+listdiffer-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+listdiffer-0.2.0.dist-info/top_level.txt,sha256=4gvHIUJ23XzvEomxXPG7KADfAWLCNR_ql9dHlZzVWNk,11
+listdiffer-0.2.0.dist-info/RECORD,,
