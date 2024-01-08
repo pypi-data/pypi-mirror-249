@@ -1,0 +1,10 @@
+{
+    "spheres": [
+        {"position": [0, 0.5, -4], "radius": 1, "color": [255, 0, 0]},
+        {"position": [4, 0.5, -8], "radius": 1.5, "color": [0, 255, 0]},
+        {"position": [-3.5, 0.5, -8], "radius": 0.8, "color": [0, 0, 255]},
+        {"position": [-7, 0.75, -12], "radius": 2, "color": [239, 66, 245]}
+    ],
+    "floor": {"position": [0, -1, 0], "normal": [0, 1, 0]}
+}
+
