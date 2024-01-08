@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/canvai/__init__.py
+src/canvai/example.py
+src/canvai.egg-info/PKG-INFO
+src/canvai.egg-info/SOURCES.txt
+src/canvai.egg-info/dependency_links.txt
+src/canvai.egg-info/top_level.txt
