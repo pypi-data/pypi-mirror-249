@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/ofxstatement/__init__.py
+src/ofxstatement/plugins/__init__.py
+src/ofxstatement/plugins/hype.py
+src/ofxstatement/plugins/hypeMovementsPdfParser.py
+src/ofxstatement/plugins/hypeTransaction.py
+src/ofxstatement_hype.egg-info/PKG-INFO
+src/ofxstatement_hype.egg-info/SOURCES.txt
+src/ofxstatement_hype.egg-info/dependency_links.txt
+src/ofxstatement_hype.egg-info/entry_points.txt
+src/ofxstatement_hype.egg-info/namespace_packages.txt
+src/ofxstatement_hype.egg-info/requires.txt
+src/ofxstatement_hype.egg-info/top_level.txt
+src/ofxstatement_hype.egg-info/zip-safe
