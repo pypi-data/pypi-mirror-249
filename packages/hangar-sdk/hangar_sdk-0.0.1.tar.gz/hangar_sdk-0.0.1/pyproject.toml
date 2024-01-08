@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "hangar-sdk"
+version = "0.0.1"
+description = "SDK for hangar cloud."
+authors = ["Mihir Chintawar <mihir@tryhangar.com>","Kiran Illindala <kiran@tryhangar.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10.2"
+rich = "^13.7.0"
+httpx = "^0.26.0"
+typer = "^0.9.0"
+pydantic = "^2.5.3"
+
+[tool.poetry.dev-dependencies]
+ruff = "^0.1.4"
+
+[tool.poetry.scripts]
+hangar = "hangar_sdk.main:app"
+
+
+[tool.poetry.group.dev.dependencies]
+typer-cli = {git = "https://github.com/Patarimi/typer-cli.git"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
