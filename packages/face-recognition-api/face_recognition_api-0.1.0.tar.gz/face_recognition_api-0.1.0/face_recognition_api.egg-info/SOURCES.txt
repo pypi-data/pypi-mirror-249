@@ -1,0 +1,7 @@
+setup.py
+face_recognition_api.egg-info/PKG-INFO
+face_recognition_api.egg-info/SOURCES.txt
+face_recognition_api.egg-info/dependency_links.txt
+face_recognition_api.egg-info/entry_points.txt
+face_recognition_api.egg-info/requires.txt
+face_recognition_api.egg-info/top_level.txt
