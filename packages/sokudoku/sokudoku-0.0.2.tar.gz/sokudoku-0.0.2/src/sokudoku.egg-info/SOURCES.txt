@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/sokudoku.py
+src/sokudoku.egg-info/PKG-INFO
+src/sokudoku.egg-info/SOURCES.txt
+src/sokudoku.egg-info/dependency_links.txt
+src/sokudoku.egg-info/entry_points.txt
+src/sokudoku.egg-info/top_level.txt
