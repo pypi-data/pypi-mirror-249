@@ -1,0 +1,3 @@
+[console_scripts]
+genegist=genegist:__main__.main
+
