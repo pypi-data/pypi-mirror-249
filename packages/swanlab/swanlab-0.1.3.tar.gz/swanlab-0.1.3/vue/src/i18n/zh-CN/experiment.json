@@ -1,0 +1,64 @@
+{
+  "tabs": {
+    "index": "概览",
+    "chart": "实验图表",
+    "log": "日志Log"
+  },
+  "status": {
+    "-1": "中断",
+    "0": "正在进行",
+    "1": "完成"
+  },
+  "index": {
+    "header": {
+      "experiment_infos": {
+        "status": "状态",
+        "start_time": "开始时间",
+        "last_time": "持续时间",
+        "tags": "Tag",
+        "time": {
+          "day": "天",
+          "hour": "小时",
+          "minute": "分钟",
+          "second": "秒"
+        }
+      },
+      "experiment_device": {
+        "hostname": "Hostname",
+        "os": "操作系统",
+        "python": "Python版本"
+      },
+      "stop": {
+        "button": "Confirm",
+        "modal": {
+          "title": "Has this experiment been stopped?",
+          "text": "Once confirmed, the state will be set to 'Crashed', and stop receiving data."
+        }
+      }
+    },
+    "config": {
+      "title": "配置信息",
+      "detail": "配置",
+      "summarize": "摘要",
+      "help": {
+        "config": "配置（Config）参数描述你的模型的输入项，在swanlab.init的config参数中配置，点击图标了解更多。",
+        "summary": "摘要（Summary）参数描述你记录的指标的最终结果，点击图标了解更多。"
+      }
+    }
+  },
+
+  "chart": {
+    "empty": "缺少实验数据",
+    "error": "此图表无法正确显示",
+    "unkonwn": "未知的图表类型: {type}",
+    "label": {
+      "default": "图表"
+    },
+    "zoom": "放大展示",
+    "charts": {
+      "line": {
+        "error": "图表无法被显示，因为\"{tag}\"是 {type} 类型, 但是折线图并不支持此类型."
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "overview": {
+    "create": "Start Time",
+    "latest": "Latest Run",
+    "total": "Total Experiments"
+  },
+  "list": {
+    "title": "Experiment List",
+    "table": {
+      "header": {
+        "name": "Experiment Name",
+        "status": "State",
+        "create": "Start Time"
+      }
+    }
+  },
+  "empty": {
+    "table": "There are no experiments, you can create one by importing SwanLog in your code."
+  }
+}
