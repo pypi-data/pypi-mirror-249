@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: w_dao
+Version: 0.5
+Summary: A useless database access model
+Home-page: https://github.com/mkitpro/w-dao.git
+Author: wooi
+Author-email: willooi@qq.com
+License: MIT
+Keywords: w_dao
