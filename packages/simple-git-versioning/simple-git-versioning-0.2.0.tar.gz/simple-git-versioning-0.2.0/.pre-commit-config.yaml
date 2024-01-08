@@ -1,0 +1,39 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff
+        description: "An extremely fast Python linter, written in Rust"
+        entry: ruff
+        args: ["--fix"]
+        language: system
+        types_or: [cython, pyi, python]
+      - id: black
+        name: black
+        description: "Black: The uncompromising Python code formatter"
+        entry: black
+        language: system
+        require_serial: true
+        types_or: [python, pyi]
+      - id: isort
+        name: isort
+        description: "i-sort your imports so you don't have to"
+        entry: isort
+        args: ["--filter-files"]
+        language: system
+        require_serial: true
+        types_or: [cython, pyi, python]
+      - id: pipenv-verify
+        name: pipenv-verify
+        description: "verify the hash in Pipfile.lock is up-to-date"
+        entry: pipenv verify
+        language: system
+        pass_filenames: false
+        files: ^Pipfile(.lock)?$
+      - id: pipenv-check
+        name: pipenv-check
+        description: "check for PyUp Safety security vulnerabilities and against PEP 508 markers provided in Pipfile"
+        entry: pipenv check
+        language: system
+        pass_filenames: false
+        always_run: true

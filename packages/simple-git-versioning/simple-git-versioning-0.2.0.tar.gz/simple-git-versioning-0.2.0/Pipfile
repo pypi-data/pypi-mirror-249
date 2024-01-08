@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sh = ">=2,<3"
+icontract = "*"
+typing-extensions = {version = "*", markers = "python_version < '3.11'"}
+toml = {version = "*", markers = "python_version < '3.11'"}
+
+[dev-packages]
+black = "*"
+build = "*"
+hypothesis = "*"
+isort = "*"
+poetry = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+ruff = "*"
+twine = "*"
+
+[scripts]
+build = "python -m build"
+publish = "twine upload dist/*"
