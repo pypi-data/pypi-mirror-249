@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+discordcss/__init__.py
+discordcss/cli.py
+discordcss.egg-info/PKG-INFO
+discordcss.egg-info/SOURCES.txt
+discordcss.egg-info/dependency_links.txt
+discordcss.egg-info/entry_points.txt
+discordcss.egg-info/requires.txt
+discordcss.egg-info/top_level.txt
