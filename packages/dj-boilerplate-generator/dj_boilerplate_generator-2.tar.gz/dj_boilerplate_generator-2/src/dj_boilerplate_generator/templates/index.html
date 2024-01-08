@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'custom_style.css' %}" />
+  </head>
+  <body>
+    <header>
+        
+      <h1>{{ title }}</h1>
+      
+      <p class="rocket-vibrate"><img style="background-color:orange" src="{% static 'endless-sky.svg' %}" alt="">🚀<img style="background-color:green" src="{% static 'endless-sky.svg' %}" alt=""> </p>
+      <span
+        >Successfully implemented core Django project and app with simple
+        templates and basic configurations</span
+      >
+    </header>
+    <div class="server-response">
+      <h2><img style="width: 40px;" src="{% static 'server-dns.svg' %}" alt=""><img style="width: 40px;" src="{% static 'cloud-print-outline-loop.svg' %}" alt=""> Server based Basic Task</h2>
+      <code>{{ server_response }}</code>
+      <hr />
+      <div id="messages"></div>
+      <div class="" id="chat">
+        <form id="userInfoForm">
+          {% csrf_token %}
+          <input
+            type="text"
+            id="nameInput"
+            placeholder="Enter your name"
+            required
+          />
+          <input type="date" id="birthdateInput" required />
+          <button type="submit">Proceed</button>
+        </form>
+      </div>
+      <hr />
+
+      <code><strong>HAPPY CODING...</strong></code>
+    </div>
+
+    <div class="project-description">
+      <h2><img style="width: 40px;" src="{% static 'app.svg' %}" alt=""> Project Description</h2>
+      <p>
+        This package creates a core Django project and a core app with a simple
+        template, including basic configured architectural settings.
+      </p>
+    </div>
+
+    <div class="key-features">
+      <h2><img style="width: 40px;" src="{% static 'my-location-loop.svg' %}" alt=""> Key Features</h2>
+      <ul>
+        {% for key, value in key_features.items %}
+        <li class="key-feature-item">
+          <strong>{{ key }}:</strong> {{ value }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="contact-section">
+      <h2><img style="width: 40px;" src="{% static 'engineering-sharp.svg' %}" alt="">Developer Contact</h2>
+      
+
+
+      {% for contact in contact_info %}
+      <a href="{{ contact.link }}" target="_blank">
+        <button>
+          <i class="{{ contact.platform|lower }}"></i> {{ contact.platform }}
+        </button>
+      </a>
+      <br />
+      <br />
+      {% endfor %}
+    </div>
+
+    <!-- Custom scripts -->
+    <script src="{% static 'ajax_script.js' %}"></script>
+  </body>
+</html>

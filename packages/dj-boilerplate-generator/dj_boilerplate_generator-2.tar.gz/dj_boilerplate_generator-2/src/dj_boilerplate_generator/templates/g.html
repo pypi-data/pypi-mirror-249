@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #chat-container {
+            width: 300px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .user-message {
+            text-align: right;
+            margin-bottom: 5px;
+        }
+        .bot-message {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chat-container">
+    <div id="chat"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="processInput()">Send</button>
+</div>
+
+<script>
+    let chatHistory = [];
+    let userData = {};
+
+    function displayUserMessage(message) {
+        const chatContainer = document.getElementById("chat");
+        chatContainer.innerHTML += `<div class="user-message">${message}</div>`;
+    }
+
+    function displayBotMessage(message) {
+        const chatContainer = document.getElementById("chat");
+        chatContainer.innerHTML += `<div class="bot-message">${message}</div>`;
+    }
+
+    function processInput() {
+        const userInput = document.getElementById("user-input").value;
+        displayUserMessage(userInput);
+
+        // Simulate bot processing time (you might replace this with actual API calls)
+        setTimeout(() => {
+            // Simulate bot responses based on user input
+            const botResponse = getBotResponse(userInput);
+            displayBotMessage(botResponse);
+
+            // Clear user input
+            document.getElementById("user-input").value = '';
+
+            // Scroll to the bottom of the chat
+            document.getElementById("chat").scrollTop = document.getElementById("chat").scrollHeight;
+        }, 500);
+    }
+
+    function getBotResponse(userInput) {
+        // Simple logic to determine bot responses based on user input
+        if (!userData.name) {
+            userData.name = userInput;
+            return `Nice to meet you, ${userData.name}! What can I help you with today?`;
+        } else if (!userData.dateOfBirth) {
+            userData.dateOfBirth = userInput;
+            return `Got it! Thanks for providing your date of birth, ${userData.name}. How can I assist you further?`;
+        } else {
+            // You can add more logic here based on the conversation
+            return `I'm sorry, I'm just a simple bot and I don't have a response for that. How can I assist you today?`;
+        }
+    }
+</script>
+
+</body>
+</html>

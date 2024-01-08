@@ -1,0 +1,2 @@
+recursive-include src/dj_boilerplate_generator/static *
+recursive-include src/dj_boilerplate_generator/templates *

@@ -1,0 +1,26 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/dj_boilerplate_generator/__init__.py
+src/dj_boilerplate_generator/main.py
+src/dj_boilerplate_generator/snippets.py
+src/dj_boilerplate_generator.egg-info/PKG-INFO
+src/dj_boilerplate_generator.egg-info/SOURCES.txt
+src/dj_boilerplate_generator.egg-info/dependency_links.txt
+src/dj_boilerplate_generator.egg-info/top_level.txt
+src/dj_boilerplate_generator/static/ajax_script.js
+src/dj_boilerplate_generator/static/app.svg
+src/dj_boilerplate_generator/static/circlemove.svg
+src/dj_boilerplate_generator/static/cloud-print-outline-loop.svg
+src/dj_boilerplate_generator/static/custom_style.css
+src/dj_boilerplate_generator/static/endless-sky.svg
+src/dj_boilerplate_generator/static/engineering-sharp.svg
+src/dj_boilerplate_generator/static/feature.svg
+src/dj_boilerplate_generator/static/my-location-loop.svg
+src/dj_boilerplate_generator/static/rocket (1).gif
+src/dj_boilerplate_generator/static/rocket.gif
+src/dj_boilerplate_generator/static/server-dns.svg
+src/dj_boilerplate_generator/templates/g.html
+src/dj_boilerplate_generator/templates/index.html
