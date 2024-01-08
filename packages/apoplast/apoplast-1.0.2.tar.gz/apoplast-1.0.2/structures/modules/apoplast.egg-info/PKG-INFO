@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: apoplast
+Version: 1.0.2
+Summary: The search for an abundant panacea of vivaciously invigorating utopian vegan absorbables.
+License: vegan + GPL 3.0
+Description-Content-Type: text/plain
+Requires-Dist: rich
+Requires-Dist: tinydb
+Requires-Dist: numpy
+Requires-Dist: botany
+
+
+
+
+apoplast
+
+	status:
+	
+		[ ] before publish could check how many checks passed.
+		
+				for example:
+					version #.#.#, 9056 checks passed
+					
+				for example 2:
+					version #.#.#,
+					
+						could actually include status report
+						in publication, then could run check
+						against status report.
