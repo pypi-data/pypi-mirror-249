@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+cbfa/__init__.py
+cbfa/class_based.py
+cbfa/py.typed
+cbfa.egg-info/PKG-INFO
+cbfa.egg-info/SOURCES.txt
+cbfa.egg-info/dependency_links.txt
+cbfa.egg-info/requires.txt
+cbfa.egg-info/top_level.txt
