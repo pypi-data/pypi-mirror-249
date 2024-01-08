@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/main_test.yaml
+.github/workflows/publish.yaml
+src/pyserato/__init__.py
+src/pyserato/crate.py
+src/pyserato/py.typed
+src/pyserato/util.py
+src/pyserato.egg-info/PKG-INFO
+src/pyserato.egg-info/SOURCES.txt
+src/pyserato.egg-info/dependency_links.txt
+src/pyserato.egg-info/requires.txt
+src/pyserato.egg-info/top_level.txt
+tests/test_crate.py
+tests/test_util.py
