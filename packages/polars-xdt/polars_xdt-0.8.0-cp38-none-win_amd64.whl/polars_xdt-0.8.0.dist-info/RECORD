@@ -1,0 +1,10 @@
+polars_xdt-0.8.0.dist-info/METADATA,sha256=9-dMAQ9M_c2J6qQh-KBCGaXh5S9X-XcM3XJ0WcH2y8Y,3348
+polars_xdt-0.8.0.dist-info/WHEEL,sha256=MBDwpsx3ObvF4E_5DT_0oST6kzqnPflUzZSqxrVNCew,94
+polars_xdt-0.8.0.dist-info/license_files/LICENSE,sha256=N2uLjQs8DWUxWQieXP8Hpq6Q1IXIUVJqZj8KKMe4jTA,1098
+polars_xdt/.mypy.ini,sha256=5mJftXUSCrV-3kIF5PBb8zdS955xTJp0K373cqIs-KI,21
+polars_xdt/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polars_xdt/ranges.py,sha256=cO_cTfb0wZ81h7Js6YVx4MZshW-dn7rlf9JOwaoAeLo,5067
+polars_xdt/_internal.pyi,sha256=xq3DTJlvvVHWjbZ1EvMjKJBpN-UQO3z1Rulqaz2NN6w,18
+polars_xdt/__init__.py,sha256=8DMDvwUlXBgMM9UU_Cm-myc18HmQyLLNnHaqyDp4c6Q,25757
+polars_xdt/_internal.cp38-win_amd64.pyd,sha256=5_0nfqU2AnCB122NB7q-CRTGcv4kRPiyqC2WURH1www,13329920
+polars_xdt-0.8.0.dist-info/RECORD,,
