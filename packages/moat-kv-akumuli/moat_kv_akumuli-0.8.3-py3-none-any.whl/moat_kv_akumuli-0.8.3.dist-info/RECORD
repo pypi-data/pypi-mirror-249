@@ -1,0 +1,9 @@
+moat/kv/akumuli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moat/kv/akumuli/_config.yaml,sha256=VyjatodVueD43IIYXE_gNWSHc28jiJNUVR49uJizOz0,125
+moat/kv/akumuli/_main.py,sha256=37fD7XkNiTMvO2DBjnu0SGCdnbwR-pOVA21gjRqjmqQ,5557
+moat/kv/akumuli/model.py,sha256=JBbCFwpVhCd4QV_qOXAi_yUsOKJyMokR-4KLjDq-W8s,6977
+moat/kv/akumuli/task.py,sha256=TI_UxXi1B6ZOgS7wC12mqzoXmuO4-IL36I8kWaT2lTs,2227
+moat_kv_akumuli-0.8.3.dist-info/METADATA,sha256=VHs2lkvyAHe5X5GxHyWtcluTqmel8asOau31HL0abGo,869
+moat_kv_akumuli-0.8.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+moat_kv_akumuli-0.8.3.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_kv_akumuli-0.8.3.dist-info/RECORD,,
