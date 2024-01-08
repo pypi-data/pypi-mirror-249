@@ -1,0 +1,11 @@
+typing_validation/__init__.py,sha256=FpuvnyQAkf0I8WEm4S1Rk4GICOmR3zjyBjW86FT7YxY,545
+typing_validation/descriptor.py,sha256=mtAKqL_hbAUIlPkaaEBe_CME0wmdHbkY1tg9KoOTAdE,10416
+typing_validation/inspector.py,sha256=8hCyXmtlx1HFAWsSOhdZVS3V29lKhoGfcb3qmA3dBMg,15561
+typing_validation/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typing_validation/validation.py,sha256=J41I_1DoBE7fmuhM2Jn1rmdpOF2vF8LlpzfXzGSIOjA,27217
+typing_validation/validation_failure.py,sha256=KRj71p4yXTpTVq3sbQW2h__zwiErAtht6h5bFpVNuZY,17334
+typing_validation-1.2.3.dist-info/LICENSE,sha256=MuOBWp9UiM1wg8a22greQggnp5uDhSE-osj1KzWtD4s,1086
+typing_validation-1.2.3.dist-info/METADATA,sha256=PvWFt8dWY3pKXuDJoGRcRnv9KCOB5f9IG4p1Qg0hXkE,4032
+typing_validation-1.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+typing_validation-1.2.3.dist-info/top_level.txt,sha256=rkHGoS8VH6WFm-NBqfsOY_lGbNUs90O0jWBEehLdccM,18
+typing_validation-1.2.3.dist-info/RECORD,,
