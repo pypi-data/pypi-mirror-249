@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "embermaker"
+version = "2.0.1"
+description = "Software library to (re)produce burning ember and related diagrams of the style used in IPCC reports"
+license = "GPL-3.0-or-later"
+authors = ["Philippe Marbaix <philippe.marbaix@uclouvain.be>"]
+maintainers = ["Philippe Marbaix <philippe.marbaix@uclouvain.be>"]
+readme = "README.md"
+homepage = "https://framagit.org/marbaix/embermaker"
+keywords = ["climate change", "impacts", "IPCC", "burning embers"]
+
+packages = [
+    { include = "embermaker" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "1.*"
+reportlab = "4.*"
+defusedxml = ">= 0.7"
+openpyxl = "*"
+pdf2image = "*"
+svg-py = ">=1.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
