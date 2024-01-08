@@ -1,0 +1,4 @@
+[console_scripts]
+kuttypyNano = kuttyPyGui:KuttyPyNano.run
+kuttypyplus = kuttyPyGui.KuttyPyPlus:run
+
