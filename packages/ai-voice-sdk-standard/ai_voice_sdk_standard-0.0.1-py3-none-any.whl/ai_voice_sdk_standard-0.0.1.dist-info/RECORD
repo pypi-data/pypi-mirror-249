@@ -1,0 +1,11 @@
+ai_voice_sdk/__init__.py,sha256=ve4GxCBd26T9W2EbwsIya-zlYZRV1p1mOqEc69O64Po,117
+ai_voice_sdk/config.py,sha256=Q_jjj-EAOJESiW6Mb79BttdPwk147MAlxSBK_pp-QD8,1703
+ai_voice_sdk/converter.py,sha256=GaEHNAD5QESYtBsEFOQRCvJCOkm_Q-jxIbDPjtCb49U,19378
+ai_voice_sdk/enums.py,sha256=2XXj8EXl_7a6TuCbLVPQb7O3vR8zYvn90S8fW3sehMs,893
+ai_voice_sdk/textedit.py,sha256=lgvbs6gQwApaFEBGAUYviI-ayI8-J8fz9x8i5eem-8c,27892
+ai_voice_sdk/units.py,sha256=IiVKzrq1PzMtsc7yYXDzEc-sZY8EFesVesDuFM26ClM,5721
+ai_voice_sdk_standard-0.0.1.dist-info/LICENSE,sha256=jsthWCpqBsAEuHtHkDoSH3DCAjjmW9e7P_AX6NmDrkg,1079
+ai_voice_sdk_standard-0.0.1.dist-info/METADATA,sha256=60L0Mb6S877Qp8kY2ybq0XxbFpd0-SmMS7jqEPdRuMg,1764
+ai_voice_sdk_standard-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ai_voice_sdk_standard-0.0.1.dist-info/top_level.txt,sha256=Wl0O-ggcW9sZBbFnYa7F6Ibkx3i2-FuomPo54sDoNps,13
+ai_voice_sdk_standard-0.0.1.dist-info/RECORD,,
