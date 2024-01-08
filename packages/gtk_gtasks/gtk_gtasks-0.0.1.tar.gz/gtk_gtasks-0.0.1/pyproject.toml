@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "gtk_gtasks"
+authors = [{name = "Jacopo antipatico Scannella", email = "code@bootkit.dev"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = ["PyGObject~=3.42.2"]
+
+[project.urls]
+Github = "https://github.com/antipatico/gtk_gtasks"
+Home = "https://github.com/antipatico/gtk_gtasks"
+Issues = "https://github.com/antipatico/gtk_gtasks/issues"
+
+
+[project.scripts]
+gtk-gtasks = "gtk_gtasks.main:main"
