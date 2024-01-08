@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: tidevice3
+Version: 0.1.3
+Summary: wrapper for pymobiledevice3 for easy use with iphone device
+Home-page: https://github.com/codeskyblue/tidevice3
+License: MIT
+Author: codeskyblue
+Author-email: codeskyblue@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click
+Requires-Dist: fastapi
+Requires-Dist: pillow
+Requires-Dist: pydantic
+Requires-Dist: pymobiledevice3 (>=2.36.2,<3.0.0)
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# tidevice3
+[![PyPI version](https://badge.fury.io/py/tidevice3.svg)](https://badge.fury.io/py/tidevice3)
+[![codecov](https://codecov.io/gh/codeskyblue/tidevice3/graph/badge.svg?token=twFRe9igek)](https://codecov.io/gh/codeskyblue/tidevice3)
+
+wrapper for pymobiledevice3 to make it more easy to use.
+
+
+# Install
+
+```bash
+pip install tidevice3
+
+# or install as Isolated environment
+brew install pipx
+pipx install tidevice3
+```
+
+# Usage
+```bash
+$ t3 list
+...
+
+# enable developer mode and mount develoepr image
+$ t3 developer
+
+# install & uninstall
+$ t3 install https://....ipa
+$ t3 install ./some.ipa
+$ t3 uninstall com.example
+
+# start tunneld for iOS>=17
+# launch process (pmd3 remote start-tunnel) when new usb device connected
+# root required
+$ sudo t3 tunneld
+
+# take screenshot
+$ t3 screenshot out.png
+
+# show help
+$ t3 --help
+```
+
+# DEVELOP & CONTRIBUTE
+see [DEVELOP.md](DEVELOP.md)
+
+# LICENSE
+[MIT](LICENSE)
