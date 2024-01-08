@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: syrinx
+Version: 0.0.1
+Summary: Simple static site generator
+Author: Jasper van den Bosch
+Project-URL: Homepage, https://github.com/ilogue/syrinx
+Project-URL: Issues, https://github.com/ilogue/syrinx/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2>=3.1
+Requires-Dist: markdown>=3.5.1
+
+# sitegen (syrinx)
+Simple static site generator in python
