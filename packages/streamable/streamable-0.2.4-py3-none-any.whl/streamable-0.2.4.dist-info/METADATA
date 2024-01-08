@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: streamable
+Version: 0.2.4
+Summary: Ease iteration.
+Home-page: http://github.com/bonnal-enzo/streamable
+Author: bonnal-enzo
+Author-email: bonnal.enzo.dev@gmail.com
+License: Apache 2.
+License-File: LICENSE
+
