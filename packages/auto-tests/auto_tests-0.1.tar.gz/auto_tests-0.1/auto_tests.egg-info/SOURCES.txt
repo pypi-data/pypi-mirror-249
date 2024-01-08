@@ -1,0 +1,9 @@
+README.md
+setup.py
+auto_tests/__init__.py
+auto_tests/auto_tests.py
+auto_tests/formats.py
+auto_tests.egg-info/PKG-INFO
+auto_tests.egg-info/SOURCES.txt
+auto_tests.egg-info/dependency_links.txt
+auto_tests.egg-info/top_level.txt
