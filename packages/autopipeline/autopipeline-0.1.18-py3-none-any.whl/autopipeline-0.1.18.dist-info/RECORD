@@ -1,0 +1,13 @@
+autopipeline/Filter.py,sha256=yFfmzj4PgsI3U1SRydit34pLb1zl6JVY8jgkI6aHyO8,4649
+autopipeline/Interactive.py,sha256=xCCpzCts4qI40pWx7QlfjO6adBpeT3N1i2hf5dk8wsw,3030
+autopipeline/Mapping.py,sha256=CM4LEVCNEaZNDWqd0uYhIACi0ScaewK2yxzFOG4GlQs,27165
+autopipeline/NL2SQL.py,sha256=_PJdGajkPxeMm4fvZExyP9eJ1T6znXLjYw3aKqCpwBU,3517
+autopipeline/PipelineExec.py,sha256=s8E_bWiZRvMHGqF_GtauaJKTLWczIWPZqOxO2s11uWQ,750
+autopipeline/PipelineGen.py,sha256=dd0wWz7DAIcpq2wpicIvCP0D1fmXR5WgAC4b1USwFN4,21665
+autopipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autopipeline/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autopipeline/data/base.csv,sha256=MsOZsGLtSRzWJB8SFlislkcmJ-XXMUfuRmjCOxBZBcY,181
+autopipeline-0.1.18.dist-info/METADATA,sha256=S-__xcbaEKTl0FRbuYBoN6Gpr8ANi2PAwYyW7IAy5lY,605
+autopipeline-0.1.18.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+autopipeline-0.1.18.dist-info/top_level.txt,sha256=lJRM1k6iOCK3WI4N_W5wdfvObYQM6usGte5t-ub9oYc,13
+autopipeline-0.1.18.dist-info/RECORD,,
