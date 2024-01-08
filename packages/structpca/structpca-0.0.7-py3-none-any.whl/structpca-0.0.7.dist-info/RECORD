@@ -1,0 +1,10 @@
+structpca/__init__.py,sha256=Udo36PkbcrO9eE4IdN-hmH5E1q6p6K57yW4rpP0mh3Y,29
+structpca/_utils.py,sha256=dEuq823QpYPhwcBZ0H4chr0f-BtYMxlRPrWHaHS269I,30
+structpca/model.py,sha256=96uHuG2K3nOKnpoCDI0yoFijA_aB0YceM9iVrBXSgoo,385
+structpca/__pycache__/__init__.cpython-310.pyc,sha256=b4qeuE3wzZg7bwcVIQ1Uy6FhkhPTb84VOXOvDadX5Bo,175
+structpca/__pycache__/model.cpython-310.pyc,sha256=-HddxNwNxS6Wb-ate7Xv3_YMpL4_C1juekp4wc_0Tb8,872
+structpca-0.0.7.dist-info/LICENSE,sha256=q9jw_5NDmAn1Q1eVVG758SteY9i-epgo-W_nPU1w6n0,1058
+structpca-0.0.7.dist-info/METADATA,sha256=XQBJc4CgGdwLynFuddW1TvWLLwXuDahX504ndVjhVDc,931
+structpca-0.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+structpca-0.0.7.dist-info/top_level.txt,sha256=DkAnJmyzlOe9CSZ-CI-Y55rJmC5DqK2T8w2XuLff35Y,10
+structpca-0.0.7.dist-info/RECORD,,
