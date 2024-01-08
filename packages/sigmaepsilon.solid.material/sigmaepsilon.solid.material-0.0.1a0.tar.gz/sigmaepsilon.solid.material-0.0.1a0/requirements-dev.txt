@@ -1,0 +1,5 @@
+matplotlib
+texttable
+pandas
+ipykernel
+pyyaml
