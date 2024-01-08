@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: convertnotes
+Version: 0.2
+Summary: Converts notes from one application to another
+Home-page: https://github.com/dnjp/convertnotes
+Author: Daniel Posthuma
+Author-email: dnjp@posteo.org
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Public Domain
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: nanoid
+
+# convertnotes
+
+This tool converts your notes from one format/application to another. Currently, the only supported conversion is from Logseq to Roam.
+
+## Usage
+
+```sh
+convertnotes -i ./logseq.json -o ./roam.json -p logseqtoroam
+```
