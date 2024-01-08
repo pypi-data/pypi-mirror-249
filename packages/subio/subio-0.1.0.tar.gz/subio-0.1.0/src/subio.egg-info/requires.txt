@@ -1,0 +1,10 @@
+requests
+Jinja2>=3.1.2
+dacite
+toml>=0.10.2
+
+[json5]
+json5>=0.9.6
+
+[yaml]
+pyyaml>=5.4.1

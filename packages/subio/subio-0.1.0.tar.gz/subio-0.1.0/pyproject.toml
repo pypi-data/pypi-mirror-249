@@ -1,0 +1,25 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subio"
+version = "0.1.0"
+authors = [{ name = "EkkoG", email = "beijiu572@gmail.com" }]
+description = "A simple command line tool for convert proxy subscription links."
+readme = "README.md"
+
+dependencies = [
+    "requests",
+    "Jinja2>=3.1.2",
+    "dacite",
+    "toml >= 0.10.2",
+]
+
+[project.optional-dependencies]
+yaml = ["pyyaml>=5.4.1"]
+json5 = ["json5>=0.9.6"]
+
+[project.scripts]
+subio = "subio:run"
