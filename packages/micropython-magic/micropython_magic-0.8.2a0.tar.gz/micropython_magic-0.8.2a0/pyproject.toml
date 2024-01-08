@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "micropython-magic"
+version = "0.8.2a0"
+description = "MicroPython Magic commands for use with Jupyter notebooks and Jupyter Labs"
+keywords = [
+    "MicroPython",
+    "stubs",
+    "Jupyter",
+    "notebooks",
+    "Jupyter Labs",
+    "vscode",
+]
+authors = ["Jos Verlinde <jos_verlinde@hotmail.com>"]
+license = "MIT"
+readme = "readme.md"
+
+packages = [{ include = "micropython_magic", from = "src" }]
+include = []
+exclude = ["**/tests/**", "**/*-test", "**/samples.py"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mpremote = "1.21.0"
+loguru = "^0.7.0"
+ipympl = "^0.9.3"
+
+[tool.poetry.extras]
+widgets = ["bqplot", "numpy"]
+
+[tool.poetry.group.plot]
+optional = true
+[tool.poetry.group.plot.dependencies]
+matplotlib = "^3.7.2"
+
+[tool.poetry.group.dev]
+optional = true
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.22.0"
+black = "^23.3.0"
+testbook = "^0.4.2"
+pytest = "^7.3.0"
+bqplot = "^0.12.39"
+numpy = "^1.24.2"
+notebook = "^6.5.4"
+pylance = "^0.4.3"
+
+
+[tool.poetry.group.tools]
+optional = true
+[tool.poetry.group.tools.dependencies]
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry_bumpversion.file."src/micropython_magic/__init__.py"]
+# configuration for Black.
+
+# NOTE: you have to use single-quoted strings in TOML for regular expressions.
+# It's the equivalent of r-strings in Python.  Multiline strings are treated as
+# verbose regular expressions by Black.  Use [ ] to denote a significant space
+# character.
+
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | \.vscode
+  | \.ipynb_checkpoints
+  | dist
+)/
+'''
