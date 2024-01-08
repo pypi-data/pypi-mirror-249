@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCA Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>PCA Web App</h1>
+    
+    {% if error_message %}
+        <p class="error-message">{{ error_message }}</p>
+    {% endif %}
+
+    <form action="/perform_pca" method="post" enctype="multipart/form-data">
+        <label for="file">Upload Excel file:</label><br>
+        <input type="file" name="file" accept=".xls, .xlsx"><br><br>
+        <!-- Add a "No Imputation" option to the imputation method dropdown -->
+        <label for="imputation_method">Imputation Method:</label>
+        <select name="imputation_method">
+            <option value="mean">Mean</option>
+            <option value="median">Median</option>
+            <option value="none">No Imputation (Replace with Zero)</option>
+            <option value="custom">Custom (Specify value)</option>
+        </select><br>
+        
+        <label for="custom_value" style="display:none;">Custom Value:</label>
+        <input type="text" name="custom_value" style="display:none;"><br>
+        
+        <input type="submit" value="Perform PCA">
+    </form>
+
+    <script>
+        // Show/hide custom value input based on the selected imputation method
+        document.querySelector('select[name="imputation_method"]').addEventListener('change', function() {
+            var customValueInput = document.querySelector('input[name="custom_value"]');
+            customValueInput.style.display = (this.value === 'custom') ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
