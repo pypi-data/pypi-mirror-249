@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: w-rst
+Version: 0.1
+Summary: A useless output model
+Home-page: https://github.com/mkitpro/wpgs.git
+Author: woi
+Author-email: willooi@qq.com
+License: MIT
+Keywords: wpgs
+License-File: LICENSE
+Requires-Dist: datetime
+
