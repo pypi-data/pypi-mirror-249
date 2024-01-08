@@ -1,0 +1,13 @@
+openpyxl
+tqdm
+ipywidgets
+ipython
+pandas
+numpy
+seaborn
+matplotlib
+scipy
+scikit-learn
+statsmodels
+tabulate
+dataframe_image==0.2.3
