@@ -1,0 +1,2 @@
+[console_scripts]
+tallipoika = tallipoika.cli:app
