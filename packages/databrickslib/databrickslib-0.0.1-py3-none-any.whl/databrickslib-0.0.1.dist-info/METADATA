@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: databrickslib
+Version: 0.0.1
+Summary: Databricks library
+Author: Vinit
+Author-email: 
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Requires-Dist: pyspark (==3.5.0)
+Requires-Dist: Pyyaml (==6.0.1)
+
