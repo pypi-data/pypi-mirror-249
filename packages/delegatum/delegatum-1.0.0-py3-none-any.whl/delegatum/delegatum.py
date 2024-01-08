@@ -1,0 +1,5 @@
+'''
+Obsolete
+
+Use collections.ChainMap()
+'''
