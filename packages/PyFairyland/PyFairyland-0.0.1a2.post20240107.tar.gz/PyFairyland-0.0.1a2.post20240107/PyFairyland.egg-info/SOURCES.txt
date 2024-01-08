@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+PyFairyland.egg-info/PKG-INFO
+PyFairyland.egg-info/SOURCES.txt
+PyFairyland.egg-info/dependency_links.txt
+PyFairyland.egg-info/top_level.txt
+fairyland/__init__.py
