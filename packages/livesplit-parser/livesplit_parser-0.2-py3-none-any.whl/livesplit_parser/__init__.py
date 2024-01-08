@@ -1,0 +1,1 @@
+from livesplit_parser.livesplit_parser import LivesplitData
