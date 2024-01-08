@@ -1,0 +1,2 @@
+[console_scripts]
+discordcss = discordcss.cli:main
