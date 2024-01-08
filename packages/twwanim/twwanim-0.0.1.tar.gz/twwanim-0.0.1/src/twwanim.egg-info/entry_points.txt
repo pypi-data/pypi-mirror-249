@@ -1,0 +1,2 @@
+[console_scripts]
+twwanim = twwanim.twwanim:run_main
