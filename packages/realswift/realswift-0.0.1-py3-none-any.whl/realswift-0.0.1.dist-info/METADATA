@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: realswift
+Version: 0.0.1
+Summary: AI automation tool
+Home-page: https://github.com/jagadish165/realswift
+Author: jagadish
+Author-email: jagadish.dabbiru@gmail.com
+License: Apache
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This project designed for automating user interactions with opencv2 using the pyautogui library and some custom utility functions. The script provides several functions to simulate user actions, such as typing, clicking, scrolling, and hovering, within a specified window or area.
