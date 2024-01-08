@@ -1,0 +1,2 @@
+[console_scripts]
+epub-image-helper = epub_image_helper.cmd:main

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+epub_image_helper/__init__.py
+epub_image_helper/cmd.py
+epub_image_helper/common.py
+epub_image_helper/epubImageHelper.py
+epub_image_helper/testImageCompression.py
+epub_image_helper/testPdf2Epub.py
+epub_image_helper.egg-info/PKG-INFO
+epub_image_helper.egg-info/SOURCES.txt
+epub_image_helper.egg-info/dependency_links.txt
+epub_image_helper.egg-info/entry_points.txt
+epub_image_helper.egg-info/requires.txt
+epub_image_helper.egg-info/top_level.txt
