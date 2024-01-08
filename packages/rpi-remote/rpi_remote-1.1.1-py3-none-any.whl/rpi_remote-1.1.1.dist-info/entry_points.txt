@@ -1,0 +1,2 @@
+[console_scripts]
+rpi-remote = rpi_remote.rpi_remote:main
