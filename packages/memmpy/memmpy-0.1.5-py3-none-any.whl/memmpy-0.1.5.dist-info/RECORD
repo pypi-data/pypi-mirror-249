@@ -1,0 +1,11 @@
+memmpy/__init__.py,sha256=kQ1k8o3uczHKb1kCjGWu0Uo6SqORvt8eS-FQ1_Z-TrY,543
+memmpy/_jagged.py,sha256=mtC62GpIC_nP_CIyVJF5yG6124kYnH8vmKee2RrLAEA,19672
+memmpy/_labels.py,sha256=oKCTbdwe_9hWEZQu65BCtXsySY7Q5A28yOjSp1A9AQ4,3126
+memmpy/_loader.py,sha256=r2U5849ZEFaEtsj6Eb1uejYX7U5SWd5DJ_zoMnBNaCU,14048
+memmpy/_subset.py,sha256=1V9S-KlqZwd42xoo4n3ST9iIAanDgWXfOZF0rw_FS_0,2820
+memmpy/_vector.py,sha256=accqnrXoaG70fdf7pUuQekpQ1dlbJI5gTAdzfmn-2gQ,12562
+memmpy/reroot.py,sha256=PDRvxG6Qn4oMrWB8iIo2No7bkZcMr6mB-XI26Xvd2bc,5795
+memmpy-0.1.5.dist-info/METADATA,sha256=zcNOSQjubEY_F2bab2ohgzEtzItPjriUmzA8G_sA47Q,4939
+memmpy-0.1.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+memmpy-0.1.5.dist-info/top_level.txt,sha256=0b95iyoZHRT_ZualRHKeIvcxA9kQflQZhlwWSXMtln8,7
+memmpy-0.1.5.dist-info/RECORD,,
