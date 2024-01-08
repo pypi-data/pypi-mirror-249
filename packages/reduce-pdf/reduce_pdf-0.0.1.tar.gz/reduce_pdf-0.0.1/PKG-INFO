@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: reduce_pdf
+Version: 0.0.1
+Summary: Tool for reducing pdf file size
+Author: Mochan Shrestha
+Requires-Dist: pillow
+Requires-Dist: PyMuPDF
+
+Tool for reducing pdf file size

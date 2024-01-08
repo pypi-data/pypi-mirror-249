@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+
+import argparse
+
+from reduce_pdf.reduce_pdf import reduce_pdf
+
+
+def check_range(value):
+    """
+    Check if the value is between 0 and 100 for the input argument
+    :param value: Input
+    :return: Input if it is between 0 and 100
+    """
+    ivalue = int(value)
+    if ivalue < 0 or ivalue > 100:
+        raise argparse.ArgumentTypeError("Value should be between 0 and 100")
+    return ivalue
+
+
+if __name__ == '__main__':
+    # Parse arguments
+    parser = argparse.ArgumentParser()
+
+    # Parser arguments
+    parser.add_argument('pdf_file', type=str, help='Input PDF file to reduce')
+    parser.add_argument('output_file', type=str, help='Output PDF file')
+    parser.add_argument('--remove', action="store_true", help='Remove the images from the PDF')
+    parser.add_argument('--compress', type=check_range, default=0, help='Compression quality for images')
+    parser.add_argument('--start_page', type=int, default=1, help='Start page for reducing')
+    parser.add_argument('--end_page', type=int, default=-1, help='End page for reducing')
+
+    # Parse arguments
+    args = parser.parse_args()
+    pdf_file_arg = args.pdf_file
+    output_file_arg = args.output_file
+    remove_arg = args.remove
+    compress_arg = args.compress
+    start_page_arg = args.start_page - 1
+    end_page_arg = args.end_page
+
+    # Reduce the PDF
+    reduce_pdf(pdf_file_arg, output_file_arg, remove=remove_arg, compress=compress_arg, start_page=start_page_arg,
+               end_page=end_page_arg)

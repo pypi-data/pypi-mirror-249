@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/reduce-pdf
+reduce_pdf/reduce_pdf.py
+reduce_pdf.egg-info/PKG-INFO
+reduce_pdf.egg-info/SOURCES.txt
+reduce_pdf.egg-info/dependency_links.txt
+reduce_pdf.egg-info/requires.txt
+reduce_pdf.egg-info/top_level.txt
