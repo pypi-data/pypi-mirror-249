@@ -1,0 +1,2 @@
+[console_scripts]
+vulner = vulner.main:main
