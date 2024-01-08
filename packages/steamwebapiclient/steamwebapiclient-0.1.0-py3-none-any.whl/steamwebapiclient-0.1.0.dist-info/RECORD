@@ -1,0 +1,8 @@
+steamwebapiclient/__init__.py,sha256=oP8bpO3ryu57nB8XTeKsetJm_VKONIvu6BtAxyEROUk,35
+steamwebapiclient/client.py,sha256=J0c63wADGYwVCnxO59S9WOF_LugfAQjNVIN5QkVI6fo,86
+steamwebapiclient/generated_client.py,sha256=IXHPZF-Ms_ayvSaD_ixovoVafCcNRzjpBtagRXzgApA,58580
+steamwebapiclient-0.1.0.dist-info/LICENSE.txt,sha256=SklchWScKGKRV3TMkm-RX4Lbrg8wVRLqwv5gvgFX0io,1067
+steamwebapiclient-0.1.0.dist-info/METADATA,sha256=0qrwEKfNoxYOlzWyOu3ZWknuZon3A0YpZY4xz7wP9FY,1969
+steamwebapiclient-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+steamwebapiclient-0.1.0.dist-info/top_level.txt,sha256=rYUaQnrWb0TV2QPLqAnOBBXrsYN49V0S2AACcZXj3Bs,18
+steamwebapiclient-0.1.0.dist-info/RECORD,,
