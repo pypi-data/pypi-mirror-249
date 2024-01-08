@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: fastcord.py
+Version: 2.4.0a0
+Home-page: https://github.com/Rappytz/fastcord.py
+Author: Rappytz
+License: MIT
+Project-URL: Documentation, https://fastcordpy.readthedocs.io/en/latest/
+Project-URL: Issue tracker, https://github.com/Rappytz/fastcord.py/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8.0
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: aiohttp<4,>=3.7.4
+Requires-Dist: async-timeout<5.0,>=4.0; python_version < "3.11"
+Provides-Extra: voice
+Requires-Dist: PyNaCl<1.6,>=1.3.0; extra == "voice"
+Provides-Extra: docs
+Requires-Dist: sphinx==4.4.0; extra == "docs"
+Requires-Dist: sphinxcontrib_trio==1.1.2; extra == "docs"
+Requires-Dist: sphinxcontrib-websupport; extra == "docs"
+Requires-Dist: typing-extensions<5,>=4.3; extra == "docs"
+Requires-Dist: sphinx-inline-tabs; extra == "docs"
+Provides-Extra: speed
+Requires-Dist: orjson>=3.5.4; extra == "speed"
+Requires-Dist: aiodns>=1.1; extra == "speed"
+Requires-Dist: Brotli; extra == "speed"
+Requires-Dist: cchardet==2.1.7; python_version < "3.10" and extra == "speed"
+Provides-Extra: test
+Requires-Dist: coverage[toml]; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-asyncio; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-mock; extra == "test"
+Requires-Dist: typing-extensions<5,>=4.3; extra == "test"
+Requires-Dist: tzdata; sys_platform == "win32" and extra == "test"
