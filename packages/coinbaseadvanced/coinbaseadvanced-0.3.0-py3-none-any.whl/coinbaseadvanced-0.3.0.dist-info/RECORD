@@ -1,0 +1,16 @@
+coinbaseadvanced/__init__.py,sha256=0OQnbe0i-Za3iq81tpasjB3klhEtgr3sfED7AlG2f0w,46
+coinbaseadvanced/client.py,sha256=vNFZPRz21T4LMBwwgQTEKHNu4fszYj03eWHp84AoUlE,36512
+coinbaseadvanced/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coinbaseadvanced/models/accounts.py,sha256=aAHeKelWfWqjrgi3sM9duMQcXU0yPIh0rO0n0NRK-pA,3023
+coinbaseadvanced/models/common.py,sha256=a9l64Gcgwlhydrx8axrMrLw8oOdyyuN7BA-lDexgwOM,1274
+coinbaseadvanced/models/error.py,sha256=Im4U5vybw0pmPqZDw4R19u1CxFfUdfzFBTQKl89NwEo,810
+coinbaseadvanced/models/fees.py,sha256=hjoNnJcj3-r3YbQMUbgKmziR78I_w6QCCibWSk_wcsI,3087
+coinbaseadvanced/models/orders.py,sha256=3qHl6OGKE_eRfXTbDUe_KIj7UQ527ArDvvxWSiMRBis,16075
+coinbaseadvanced/models/products.py,sha256=FdTJxX7reUlNxuvh7L6dHQU0991efiu8GqinhxiH29U,10306
+tests/fixtures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fixtures/fixtures.py,sha256=BfPjmkzgsSa9hm_cNT2zGltwKqw4YqHgJasRbV3IEdo,9481
+coinbaseadvanced-0.3.0.dist-info/LICENSE,sha256=0v3d8HKz-xMzTmShM_eTmusHPEf1ND0muQDle2fQ90Q,1079
+coinbaseadvanced-0.3.0.dist-info/METADATA,sha256=wXZIj9Fg15vkN83K0nH3nKOEx64VwCuwTdmyNI5e3M4,2626
+coinbaseadvanced-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+coinbaseadvanced-0.3.0.dist-info/top_level.txt,sha256=ngZohK5PlfvQveXwR7GpN33_hXZZvlJsMkwzQkXFP1U,23
+coinbaseadvanced-0.3.0.dist-info/RECORD,,
