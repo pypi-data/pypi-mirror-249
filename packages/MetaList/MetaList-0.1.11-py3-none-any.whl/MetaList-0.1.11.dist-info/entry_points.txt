@@ -1,0 +1,2 @@
+[console_scripts]
+metalist = metalist.app:run_app
