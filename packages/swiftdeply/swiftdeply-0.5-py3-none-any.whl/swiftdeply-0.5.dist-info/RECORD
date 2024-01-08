@@ -1,0 +1,14 @@
+swiftdeploy/__init__.py,sha256=V5xtuCeEBODdImFB_R43qBvzzkX5wC-OfwKU49Jrvac,20
+swiftdeploy/app.py,sha256=SEEFalob5i8wMcRDGHeyUi7w2Vh337kVHpDHjHuKIwk,1546
+swiftdeploy/model.py,sha256=xNx5CFHoRDdWeJHgR4uXLigD9vxb7dN2qO2dREo_04U,5087
+swiftdeploy/settings.py,sha256=bIm9NgtCEsKLq1gxs_oLIjNnAjeH8XPD9rNk00F3O5c,2221
+swiftdeploy/html/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swiftdeploy/html/config.py,sha256=Z3622ny-m9B-GIz0XdhgWdDfjBqIAsl_Gu6H6xxakgs,138
+swiftdeploy/html/htmlcontent.py,sha256=IZToIJptlDSXnOd1-mMCAj6N7MjdvoB8AUrcOZMkwJk,10173
+swiftdeploy/html/tags.py,sha256=pG7VDhjRTehftfRJpbnnZsXx0nPqhIIiOQDqBipIr0w,8974
+swiftdeploy/html/utils.py,sha256=qC2uoZwM7GQVZ0_WdJW2H89KNzbHr9eZFeW09Sy4zBY,110
+swiftdeply-0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+swiftdeply-0.5.dist-info/METADATA,sha256=vDPyYv1oqeyPIpliOOPgnImRkf8nZmprDzQkhdSXXp0,2776
+swiftdeply-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+swiftdeply-0.5.dist-info/top_level.txt,sha256=n_rXBY7BuVfmWEaEV8dI2zygUTH1Z-_SwbMst7G1fzU,12
+swiftdeply-0.5.dist-info/RECORD,,
