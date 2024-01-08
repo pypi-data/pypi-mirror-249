@@ -1,0 +1,8 @@
+catpandoc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catpandoc/__main__.py,sha256=epXNbHkS75B4Xr3Q14cSe53nVZBO_SIQHAHK4vaoRZM,128
+catpandoc/application.py,sha256=Wgw07Or872cpkKQglpzJxU6HlzB53aimywd-vEeXlVE,1576
+catpandoc-2024.dist-info/entry_points.txt,sha256=HIWsq8aobpDc5TobkabnJHAeBu_U2a1IOEGvbJRrM5Q,55
+catpandoc-2024.dist-info/LICENSE.md,sha256=WdcyymSy52YMPLvnndGuD-IDVzDM5QZ2CsTUBJyUTTU,1068
+catpandoc-2024.dist-info/METADATA,sha256=CL4J60K2psPORvnIuuppmJrZnsqe-1k4OpLiKNIpGCM,10739
+catpandoc-2024.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+catpandoc-2024.dist-info/RECORD,,
