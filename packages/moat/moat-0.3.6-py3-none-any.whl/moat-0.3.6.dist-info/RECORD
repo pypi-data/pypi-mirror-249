@@ -1,0 +1,11 @@
+moat/__init__.py,sha256=Ojtzz6n2SHeg1xZQN7GHZGNFiNXMotix95b_fp4u1xM,149
+moat/__main__.py,sha256=RVrN4S8ew6cGISzHqhQJi6e7_wPNWboDvwdbbd8wYO4,134
+moat/_config.yaml,sha256=1WbUzkAMXYvJGgzHbAqtskqSAbCW5KqAINqzV-5rwnw,617
+moat/_dev_fix.py,sha256=C9EFblGyymndCslERnogvDe0gQoZy_lS_OyDWySeEEY,2089
+moat/main.py,sha256=YMLg2MkQOBUTtpqs1j24uXfPlCTXsw2MvAqb7hrn1_c,1468
+moat-0.3.6.dist-info/LICENSE.txt,sha256=L5vKJLVOg5t0CEEPpW9-O_0vzbP0PEjEF06tLvnIDuk,541
+moat-0.3.6.dist-info/METADATA,sha256=mcvlD5gLHsHPMhnBmsW7I5leUnzMlxck1Uu1b7kzsgM,4776
+moat-0.3.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+moat-0.3.6.dist-info/entry_points.txt,sha256=8O5NpuLo2cyXXPDlz10CyXjlyg16MIfX2AEjgdeu59M,39
+moat-0.3.6.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat-0.3.6.dist-info/RECORD,,
