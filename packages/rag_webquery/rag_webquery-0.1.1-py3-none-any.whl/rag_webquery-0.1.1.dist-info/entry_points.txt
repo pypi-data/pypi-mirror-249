@@ -1,0 +1,3 @@
+[console_scripts]
+rag-webquery=rag_webquery:rag_webquery.main
+
