@@ -1,0 +1,11 @@
+CHANGES
+=======
+
+0.2.0
+-----
+
+* add pip cache for github action
+*  add socket connect timeout to prevent usbmuxd stuck
+* add little comment
+* change to slow swipe since fast\_swipe from left to right can not back app
+* fix github actions
