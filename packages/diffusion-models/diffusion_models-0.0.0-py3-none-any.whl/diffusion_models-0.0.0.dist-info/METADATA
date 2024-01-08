@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: diffusion-models
+Version: 0.0.0
+Summary: Diffusion Models in PyTorch and JAX
+Keywords: deep learning,diffusion,jax,pytorch
+Author-email: Chanhyuk Jung <urw.7rs@icloud.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: pytest ; extra == "testing"
+Requires-Dist: pytest-xdist ; extra == "testing"
+Project-URL: Home, https://github.com/urw7rs/diffusion-models.git
+Project-URL: Source, https://github.com/urw7rs/diffusion-models.git
+Provides-Extra: testing
+
+# Diffusion Models in PyTorch and JAX
+
