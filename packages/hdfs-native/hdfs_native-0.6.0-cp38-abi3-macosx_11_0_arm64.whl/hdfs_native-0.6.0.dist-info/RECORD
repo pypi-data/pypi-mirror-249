@@ -1,0 +1,6 @@
+hdfs_native-0.6.0.dist-info/METADATA,sha256=CTNBDfFEA-b_P-1Krj7-jmqytJ6kttcPN6In8DZuJP8,1184
+hdfs_native-0.6.0.dist-info/WHEEL,sha256=2wlSkqgJRUOW9URVNX98Cm4dI45yUdRznyXDNZ_lrp0,102
+hdfs_native/__init__.py,sha256=pOeM6-EeLy2mC4Ov3or7ISDMuX6yVzduTUPDw7NtLFU,3812
+hdfs_native/_internal.pyi,sha256=vG9F-mQt_56jydZ21GYClHeXWLyrS4m3EI4g9Fdonrg,1596
+hdfs_native/_internal.abi3.so,sha256=FfG33qwSs_X4_QbJwLL6jIAN9VYPJi1wlln1yYlZwIE,3505370
+hdfs_native-0.6.0.dist-info/RECORD,,
