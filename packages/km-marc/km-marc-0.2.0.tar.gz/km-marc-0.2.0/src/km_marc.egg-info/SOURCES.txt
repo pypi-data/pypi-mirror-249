@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/km_marc.egg-info/PKG-INFO
+src/km_marc.egg-info/SOURCES.txt
+src/km_marc.egg-info/dependency_links.txt
+src/km_marc.egg-info/entry_points.txt
+src/km_marc.egg-info/requires.txt
+src/km_marc.egg-info/top_level.txt
+src/kmmarc/__init__.py
+src/kmmarc/constants.py
+src/kmmarc/marc.py
+src/kmmarc/reader.py
+src/kmmarc/validations.py
+src/kmmarc/view.py
+src/kmmarc/writer.py
