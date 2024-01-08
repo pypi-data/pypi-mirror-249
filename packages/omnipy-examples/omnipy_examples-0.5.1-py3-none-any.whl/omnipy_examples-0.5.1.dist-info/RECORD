@@ -1,0 +1,17 @@
+omnipy_examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnipy_examples/chatgpt.py,sha256=y8-uu8k_0XXHlFkWCwZPiQ8gBwYbtob_VOWiS_hh9WM,7956
+omnipy_examples/chatgpt_words.py,sha256=5769SVzhNdvlZvMDI8dXPCuc-DPehIi7FaESxab0ykk,2568
+omnipy_examples/dagsim.py,sha256=sKmkKozPhemJsxNUO9B1w95hYFvwKpdFm3YobXf-MNA,1557
+omnipy_examples/deployment.py,sha256=UcglUJ2RNj0utTr5BzzNbTG2UQza8OtilCg2BJPFKYY,390
+omnipy_examples/encode.py,sha256=9zbq0E7SGTcbYGHBnP6USau5eRjNBw2pptupjArSQf0,1802
+omnipy_examples/gff.py,sha256=WJNlDttHNPXPHYzZ2GgP8aNxZ6B6hZ9Qpb-x6JCy-Dw,5511
+omnipy_examples/isajson.py,sha256=kuAi0HCKeLNWZAdtPlTfEi3b6RZ9hPlnknIvmKQgxWo,797
+omnipy_examples/main.py,sha256=oIn2r9ChttbmXJJUY-moAjybCYBLRq5Lg7C_4dxUYH4,2340
+omnipy_examples/multi_broker.py,sha256=H4qMnRigMPY--eUfanLW1lX06apGK2VR2vs-q-gz05o,1101
+omnipy_examples/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnipy_examples/uniprot.py,sha256=cjdTIDsmbPHYdEnPomlIvQx55pPZMj8FcFX15iM_nzQ,4939
+omnipy_examples-0.5.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+omnipy_examples-0.5.1.dist-info/METADATA,sha256=_8vQMxabWbLPO0CyyAVTQpRj6ZP9BLzaBDLKjy0Dt08,2875
+omnipy_examples-0.5.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+omnipy_examples-0.5.1.dist-info/entry_points.txt,sha256=dRbUL6lUcqfNZkzF4RMEVkjeFac2bxhTWel0m7-5qqA,60
+omnipy_examples-0.5.1.dist-info/RECORD,,
