@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: bitcoin-usb
+Version: 0.1.2
+Summary: Wrapper around hwi, such that one can sign bdk PSBTs directly
+Home-page: https://github.com/andreasgriffin/bitcoin-usb
+Author: Andreas Griffin
+Author-email: andreasgriffin@proton.me
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7,<4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asn1crypto (==1.5.1)
+Requires-Dist: bdkpython (==0.30.0)
+Requires-Dist: bip-utils (==2.8.0)
+Requires-Dist: cbor2 (==5.5.1)
+Requires-Dist: cffi (==1.16.0)
+Requires-Dist: coincurve (==18.0.0)
+Requires-Dist: crcmod (==1.7)
+Requires-Dist: ecdsa (==0.18.0)
+Requires-Dist: ed25519-blake2b (==1.4)
+Requires-Dist: py-sr25519-bindings (==0.2.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pycryptodome (==3.19.0)
+Requires-Dist: pynacl (==1.5.0)
+Requires-Dist: pyside2 (==5.15.2.1)
+Requires-Dist: python-bitcointx (==1.1.4)
+Requires-Dist: shiboken2 (==5.15.2.1)
+Requires-Dist: six (==1.16.0)
+
+# Wrapper around hwi, such that one can sign bdk PSBTs directly
+
+* This provides an abstraction layer ontop of hwi, such that only bdk is needed from the outside
+* Currently supported are
+  * Coldcard
+
+
+* It also provides 
+  * AddressTypes, which are the commonly used bitcoin output descriptor templates
+  * seed_tools.derive_spk_provider  to derive xpubs from seeds for all AddressTypes  (bdk does not support multisig templates currently https://github.com/bitcoindevkit/bdk/issues/1020)
+  * SoftwareSigner which can sign single and multisig PSBTs, this doesn't do any security checks, so only use it on testnet
+
+
+### Demo
+
+Run the demo with
+
+```
+python demo.py
+```
+
+
+### Tests
+
+Run tests
+
+```
+python -m pytest -vvv  --log-cli-level=0
+```
+
+### Library Usage
+
+* For xpub derivation bip_utils is used
+* For signing a psbt python-bitcointx is used
+
+
+# Install package
+
+
+
+### From pypi
+
+```shell
+pip install bitcoin_usb
+```
+
+
+
+###  From git
+
+```shell
+python setup.py sdist bdist_wheel
+pip install .
+```
+
+
