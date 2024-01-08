@@ -1,0 +1,13 @@
+importlib_metadata
+
+[docs]
+furo
+jaraco.packaging>=9
+rst.linker>=1.9
+sphinx
+
+[testing]
+pytest!=3.7.3,>=3.5
+pytest-checkdocs>=1.2.3
+pytest-cov
+pytest-enabler>=1.0.1
