@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: map-network-viz
+Version: 0.0.1
+Summary: A small wrapper for visualizing street networks and making artistic maps with OpenStreetMap and Networkx.
+Author-email: Sejal Dua <sejaldua@gmail.com>
+Project-URL: Homepage, https://github.com/sejaldua/mapmaker
+Project-URL: Issues, https://github.com/sejaldua/mapmaker/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Usage
+
+What you'll need to do (via Terminal) in order to use this program:
+* `conda install -c anaconda networkx`
+* `conda install geopandas`
+* `conda install -c anaconda pillow`
+* `pip install geopy`
+
+When you are prompted to input a city, you must enter it in a format
+that matches the following:
+- > Portland, Oregon, USA
+- > Sydney, Australia
+
+### Comparison
+
+<img src="city_maps/new_york_comparison.png" width="600"/>
+
+
+### Sample Maps
+
+<img src="city_maps/Prague.png" width="200" height="200"/><img src="city_maps/Vancouver.png" width="200" height="200"/><img src="city_maps/Portland_A.png" width="200" height="200"/>
