@@ -1,0 +1,11 @@
+manifold3d.cp38-win_amd64.pyd,sha256=K0Frs-Hlphx4ZBQoQuy3-QKJ0eXO08Ig9RRQ-hvsxYY,1657344
+manifold3d-2.3.0.data/platlib/.load-order-manifold3d-2.3.0,sha256=PUx0BZA8Nb5bKjqA_Q4tMeppbtMJA_eatLKJ42oF1wQ,98
+manifold3d-2.3.0.data/platlib/msvcp140-089a40b83421c963adf9451324dc4922.dll,sha256=BSsZeLCOIhn6U-ay9YhGpjFQvPACvTblS2vBBkRoRII,621960
+manifold3d-2.3.0.data/platlib/vcruntime140_1-1b059d0f91771a288ee15e41f069ed40.dll,sha256=NASKuqBw7ME7MYzqMUJfTKPt0TPTUDGKxlJZ5gWMizI,37256
+manifold3d-2.3.0.dist-info/DELVEWHEEL,sha256=qFhAvx74_xYv6FVSyAUVpz5TxWsoEgOdBJcSygNlIX4,397
+manifold3d-2.3.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+manifold3d-2.3.0.dist-info/METADATA,sha256=KUDiCcVjhKJFtjgA89OgxjzX5126Rk-NAFE-lOtI02o,12398
+manifold3d-2.3.0.dist-info/RECORD,,
+manifold3d-2.3.0.dist-info/WHEEL,sha256=HHezYzBNpBYvGc0FszB2oin-TTMICtYFNP15pvK9-K0,103
+manifold3d-2.3.0.dist-info/licenses/AUTHORS,sha256=nm4hx1NEr9QzIzxRYlEf7ZiRcm9FJ0xTWt_tuznkO8g,388
+manifold3d-2.3.0.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
