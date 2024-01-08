@@ -1,0 +1,10 @@
+givt_pytorch/__init__.py,sha256=nay8q20XM5SwU5rKj9obxxW-FBGHP1Au2RFf9X-BO9w,109
+givt_pytorch/config.py,sha256=SqfKuI65iAD9N7Xiu7vvVnC9TQpI9RgA0QORZ1s-gg8,1147
+givt_pytorch/data.py,sha256=jc3hKenAK5Sxt3NkXY6-D9NyNxVGKkhUS6abVlZNcgU,394
+givt_pytorch/model.py,sha256=sI331cSpU0GK1PT9Qh74H0fd_u2ipnf7uygEu89HE2w,15839
+givt_pytorch/trainer.py,sha256=6Q5PE7AwuiMiLg5tZTbB3peBQZR3qF1ARQaXz95gf40,11121
+givt_pytorch-0.0.3.dist-info/LICENSE,sha256=qalV3csVNLxRrLoS_fCVHb1ssyo5dQx9x_6Rme1yw5o,1063
+givt_pytorch-0.0.3.dist-info/METADATA,sha256=Z_y4zSxuwPFAMekfvqI02AYjQCsRo2REy8lNs0VeEy8,2943
+givt_pytorch-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+givt_pytorch-0.0.3.dist-info/top_level.txt,sha256=HfbhOO4EbyPiwIqF9uJC3BLEFhlcanGCXdJ4BQe--Ig,13
+givt_pytorch-0.0.3.dist-info/RECORD,,
