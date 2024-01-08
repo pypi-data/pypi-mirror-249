@@ -1,0 +1,43 @@
+[project]
+dynamic = ["version"]
+name = "dotclear-backup-parser"
+description = "Module to parse dotclear backup files."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+keywords = ["blog", "dotclear", "backup"]
+authors = [
+  {name = "Dorian Fevrier", email = "fevrier.dorian@yahoo.fr" }
+]
+maintainers = [
+  {name = "Dorian Fevrier", email = "fevrier.dorian@yahoo.fr" }
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: File Formats",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[tool.ruff.lint]
+extend-select = [
+  "N",  # pep8-naming
+  "D",  # pydocstring
+  "UP",  # pyupgrade
+  "YTT",  # pyupgrade
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.setuptools.dynamic]
+version = {attr = "dotclear_backup_parser.__version__"}
+
+[build-system]
+requires = ["setuptools >= 69.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
