@@ -1,0 +1,12 @@
+py416/__init__.py,sha256=98QbxYTzgmMQhzPuEbLh76V5i6zdnpaLV3twn2F0qSo,188
+py416/files.py,sha256=8W47syRKbtU7hcYwZTNPjZ25WId88aHwOYwn8amDOnU,32272
+py416/general.py,sha256=7FJ6t2N3qARCUOsKz4qclVpkL9VK2WtFvopjHz3E1bU,9650
+py416/scripts.py,sha256=uwrEv1ePNywUKKUEN8jnmXQgxTODsv1AoxqvPCri4PE,1552
+py416/sysinfo.py,sha256=0QA6nxL6xWimM7W9BpBscZR-pW_4ukl0PI-Dr11PsTQ,8582
+py416/variables.py,sha256=yy4tshGhsHb-CSmNR6bibV3irkpJZZDepODfHsCJPu8,2200
+py416-0.61.dist-info/LICENSE.txt,sha256=3CdiBLbGnV8hS_Isqb907F8ptcHL69RB_aShWtOXF8I,1063
+py416-0.61.dist-info/METADATA,sha256=Hy6_7d0o11YzCgvwXMdyGt63dU_7t2_ZsR3RgtjL6IQ,2144
+py416-0.61.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+py416-0.61.dist-info/entry_points.txt,sha256=LVxpws-ohc03Bdi8ABNQl7dG5tLoI5vGmU5eQ6uxdwo,66
+py416-0.61.dist-info/top_level.txt,sha256=4H4r44WtzkKhz8qUBLlKNA-ZNbqHr8SkZR6-dI61msA,6
+py416-0.61.dist-info/RECORD,,
