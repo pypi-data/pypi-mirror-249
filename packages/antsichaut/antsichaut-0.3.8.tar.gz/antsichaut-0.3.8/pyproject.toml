@@ -1,0 +1,116 @@
+[tool.black]
+line-length = 100
+
+[tool.mypy]
+python_version = 3.9
+files = "."
+install_types = true
+namespace_packages = true
+no_implicit_optional = true
+non_interactive = true
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+strict = true
+strict_optional = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+module = ["configargparse", "ruamel.yaml", "single_source"]
+ignore_missing_imports = true
+
+[tool.poetry]
+name = "antsichaut"
+version = "0.3.8"
+description = "antsichaut automates ansible changelog generation from GitHub Pull Requests"
+authors = ["Sebastian Gumprich <sebastian.gumprich@t-systems.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rndmh3ro/antsichaut"
+repository = "https://github.com/rndmh3ro/antsichaut"
+keywords = ["antsibull-changelog", "release", "ansible"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Environment :: Console",
+  "Framework :: Ansible",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Documentation"
+]
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ConfigArgParse = "^1.4.1"
+requests = "^2.25.1"
+"ruamel.yaml" = "^0.17.9"
+single-source = "^0.3.0"
+
+[tool.poetry.dev-dependencies]
+ConfigArgParse = "^1.4.1"
+requests = "^2.25.1"
+"ruamel.yaml" = "^0.17.9"
+
+[tool.poetry.scripts]
+antsichaut = "antsichaut.antsichaut:main"
+
+[tool.pylint]
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.pylint.imports]
+preferred-modules = [
+  # NOTE: The unittest replacements below help keep
+  # NOTE: the tests pytest ecosystem-oriented.
+  "unittest:pytest",
+  "unittest.mock:pytest-mock",
+]
+
+[tool.pylint.master]
+ignore = [
+  "_version.py", # built by setuptools_scm
+
+]
+# pylint defaults + fh for with open .. as (f|fh)
+good-names = "i,j,k,ex,Run,_,f,fh"
+jobs = 0
+
+[tool.pylint.messages_control]
+disable = [
+  "duplicate-code",
+  "fixme",
+  "too-few-public-methods",
+  "unsubscriptable-object",
+  "protected-access", # covered  by ruff
+
+]
+enable = [
+  "useless-suppression", # Identify unneeded pylint disable statements
+
+]
+
+[tool.ruff]
+fix = true
+line-length = 100
+builtins = ["__"]
+select = ["ALL"]
+# Work to clean these up
+ignore = [
+  "ANN", # flake8-annotations
+  "D", # flake8-docstrings
+  "FBT", # flake8 boolean, keep
+  "T201", # flake8-bugbear, replace print with logging
+
+]
+target-version = "py38"
+
+[tool.ruff.per-file-ignores]
+# S101 allow assert in tests
+# SLF001 allow private access in tests
+"tests/**" = ["S101", "SLF001"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
