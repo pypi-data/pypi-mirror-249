@@ -1,0 +1,9 @@
+README.md
+nethermath.py
+setup.py
+nethermath.egg-info/PKG-INFO
+nethermath.egg-info/SOURCES.txt
+nethermath.egg-info/dependency_links.txt
+nethermath.egg-info/entry_points.txt
+nethermath.egg-info/requires.txt
+nethermath.egg-info/top_level.txt

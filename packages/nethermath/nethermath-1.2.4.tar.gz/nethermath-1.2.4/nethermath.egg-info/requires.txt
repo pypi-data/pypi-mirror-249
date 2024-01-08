@@ -1,0 +1,9 @@
+colorama
+cryptography
+datetime
+forex_python
+ipaddress
+numpy
+requests
+scipy
+statistics
