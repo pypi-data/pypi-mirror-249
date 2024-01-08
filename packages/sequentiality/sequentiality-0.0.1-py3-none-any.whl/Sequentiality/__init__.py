@@ -1,0 +1,1 @@
+from sequentiality import Sequentiality
