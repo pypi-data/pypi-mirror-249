@@ -1,0 +1,9 @@
+ml_algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_algorithms/algorithms.py,sha256=yr_HYE8Rq24b_H3f-kzSeNN3HqkY-MefAY8FL7-DBdw,996
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_algorithms.py,sha256=RvyVngQbAluWc0Gh7twtulILx_1aIJVbBrEwC2bi5h0,767
+metriccoders_ml-0.0.3.dist-info/LICENSE.txt,sha256=0YUOG-q8yfYGo7XkPeYrSR2A8V3-zZBFZVVrL5iTPy4,1069
+metriccoders_ml-0.0.3.dist-info/METADATA,sha256=PhTSucsuWoZucmLs67Kp0EuHHGNLj12yuHxHxlu1YZA,2507
+metriccoders_ml-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+metriccoders_ml-0.0.3.dist-info/top_level.txt,sha256=oflcBkIyGsn-wDeWl6lWsfn9O8OKEe_JOMZ7iBAFol0,19
+metriccoders_ml-0.0.3.dist-info/RECORD,,
