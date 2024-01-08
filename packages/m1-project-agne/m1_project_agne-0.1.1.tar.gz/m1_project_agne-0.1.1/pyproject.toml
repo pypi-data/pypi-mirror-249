@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "m1-project-agne"
+version = "0.1.1"
+description = ""
+authors = ["agnesema <sanara44@yahoo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+lxml = "^4.9.3"
+selenium = "^4.16.0"
+pandas = "^2.1.4"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+pytest-cov = "^4.1.0"
+codecov = "^2.1.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
