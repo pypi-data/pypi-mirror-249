@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: bdms-sim
+Version: 0.2.0
+Summary: Tree simulator for birth-death-mutation-sampling (BDMS) processes
+Project-URL: Homepage, https://github.com/WSDeWitt/BDMS
+Project-URL: Bug Tracker, https://github.com/WSDeWitt/BDMS/issues
+Project-URL: Documentation, https://wsdewitt.github.io/BDMS
+Author-email: Thanasi Bakis <abakis@uci.edu>, Michael Celentano <mcelentano@berkeley.edu>, William DeWitt <wsdewitt@gmail.com>, Frederick Matsen <ematsen@gmail.com>, Volodymyr Minin <yss@berkeley.edu>, Sebastian Prillo <sprillo@berkeley.edu>, Duncan Ralph <dkralph@gmail.com>, Yoonseo Song <ysong07@cs.washington.edu>, Yun Song <yss@berkeley.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: ete3
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pyqt5
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+[![build and test](https://github.com/WSDeWitt/BDMS/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/WSDeWitt/BDMS/actions/workflows/build-and-test.yml)
+[![docs build and deploy](https://github.com/WSDeWitt/BDMS/actions/workflows/docs-build-and-deploy.yml/badge.svg)](https://github.com/WSDeWitt/BDMS/actions/workflows/docs-build-and-deploy.yml)
+
+# BDMS
+Tree simulator for birth-death-mutation-sampling (BDMS) processes
+
+Documentation: https://wsdewitt.github.io/BDMS
