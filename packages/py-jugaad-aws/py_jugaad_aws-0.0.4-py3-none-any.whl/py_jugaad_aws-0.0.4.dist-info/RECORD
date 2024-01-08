@@ -1,0 +1,14 @@
+jugaad_aws/__init__.py,sha256=b4DwmChrS2UxicDATtqKBefqhTpIG5V83JgK88Rb1Kw,136
+jugaad_aws/config.py,sha256=14RJ3TBq87ciiLXWGWQm7785FcTHtZ8A_lA1S2x0vtA,6188
+jugaad_aws/constants.py,sha256=p0WqsDQrovPja1aEe1whVWYoih7NEryY4nzJZrmpgn8,913
+jugaad_aws/errors.py,sha256=EsnF0JnvFwmhgVHi_4BFkiKjbqH--LuyT2Vuo0QBKlA,428
+jugaad_aws/httpclient.py,sha256=supOu5I-UrORTOULjRMYmiqJN52oX1A3MaZcJwFtFgk,2338
+jugaad_aws/log.py,sha256=Wlg11P5c_gtXg4pWafSf1yX9iLAigZ5MHqoI7iHSD0c,3426
+jugaad_aws/middleware.py,sha256=nMOLgoNRrESt78ArXtbwpgZN-aa-5Iry9C62bPKlfgI,4616
+jugaad_aws/threadlocal.py,sha256=Grk7biOoDOoVlSaMhI4WQ2mok07--k9TkPm9zfJ49cY,1110
+jugaad_aws/utils.py,sha256=kenIeapwcXVmamjdD_ppACPMwXUEz5gWzcsxYRf-r3s,1419
+py_jugaad_aws-0.0.4.dist-info/LICENSE,sha256=aMweNYJQTFba7eu7hDO2Ht6o4fvypHRdpcwueJQKlVY,1090
+py_jugaad_aws-0.0.4.dist-info/METADATA,sha256=sweq7YlxOk4FdaOiwcoIJQTmbxgC2z5S4xYzVX9Qg04,3577
+py_jugaad_aws-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+py_jugaad_aws-0.0.4.dist-info/top_level.txt,sha256=fLSow6-yx5uuumNTqMNWY8H2TgBbiAIJIJX3y9VmN_s,11
+py_jugaad_aws-0.0.4.dist-info/RECORD,,
