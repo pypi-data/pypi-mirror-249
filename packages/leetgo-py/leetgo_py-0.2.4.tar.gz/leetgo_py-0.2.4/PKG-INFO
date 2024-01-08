@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: leetgo-py
+Version: 0.2.4
+Summary: Python test utils for leetgo
+Home-page: https://github.com/j178/leetgo
+License: MIT
+Keywords: leetcode
+Author: j178
+Author-email: 10510431+j178@users.noreply.github.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/j178/leetgo
