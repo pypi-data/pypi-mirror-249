@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+tg2fa_translit/__init__.py
+tg2fa_translit/convert.py
+tg2fa_translit/decode.py
+tg2fa_translit/model_2.9.zip
+tg2fa_translit/transformer.py
+tg2fa_translit.egg-info/PKG-INFO
+tg2fa_translit.egg-info/SOURCES.txt
+tg2fa_translit.egg-info/dependency_links.txt
+tg2fa_translit.egg-info/top_level.txt

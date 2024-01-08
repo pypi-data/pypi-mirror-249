@@ -1,0 +1,2 @@
+recursive-include tg2fa_translit *.py *.zip
+recursive-include *.py *.in *.md

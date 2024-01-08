@@ -1,0 +1,28 @@
+# tg2fa_translit
+
+A Tajik-to-Persian transliteration model.
+It shows a Levenshtein ratio of 0.988.
+
+## Installation
+```pip install tg2fa_translit```
+
+## Dependency
+- `numpy`
+- `torch`
+
+## API
+
+```py
+from tg2fa_translit import convert
+
+tg_text = 'То ғами фардо нахӯрем!'
+fa_text = convert(text)
+print(fa_text)
+'تا غم فردا نخوریم!'
+# Depending on your setup, the resulting string can be displayed incorrectly.
+```
+
+## Datasets and Training Details
+
+For more details visit https://github.com/stibiumghost/tajik-persian-transliteration
+
