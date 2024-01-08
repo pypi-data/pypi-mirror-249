@@ -1,0 +1,3 @@
+[console_scripts]
+dynamic_cast=dynamic_cast.__main__:main
+
