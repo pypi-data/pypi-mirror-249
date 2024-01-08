@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+bitcoin_usb/__init__.py
+bitcoin_usb/address_types.py
+bitcoin_usb/device.py
+bitcoin_usb/gui.py
+bitcoin_usb/seed_tools.py
+bitcoin_usb/software_signer.py
+bitcoin_usb.egg-info/PKG-INFO
+bitcoin_usb.egg-info/SOURCES.txt
+bitcoin_usb.egg-info/dependency_links.txt
+bitcoin_usb.egg-info/requires.txt
+bitcoin_usb.egg-info/top_level.txt
+tests/__init__.py
+tests/test_derivation.py
+tests/test_software_signer.py
