@@ -1,0 +1,8 @@
+exception_escaping/__init__.py,sha256=kCyYNpgZyV5JjkJ7Kttb6jSdYC7pNEEgtllCaAeVGdM,131
+exception_escaping/proxy_module.py,sha256=hixByTgBQF244OUK3K_hu4gdRUwTJVb0G46edKtQG3Q,780
+exception_escaping/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exception_escaping-0.0.2.dist-info/LICENSE,sha256=ORr8GcdTjVeQVDg9_JqOOPXr0lcv1aEzwu8Qwtc4-g8,1067
+exception_escaping-0.0.2.dist-info/METADATA,sha256=CLCn1v7zq-S-QNykYMIsU8DJq2YdX3KziZ-CkuI420Q,2959
+exception_escaping-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+exception_escaping-0.0.2.dist-info/top_level.txt,sha256=Yr7kngfzpOzZQY1b_u9WvR5iLDCvTSx42tFfq2G1pWc,19
+exception_escaping-0.0.2.dist-info/RECORD,,
