@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ikctl
+Version: 1.0.1
+Summary: kit installer on remote servers
+Author: David Moya López
+Author-email: 3nueves@gmail.com
+License: Apache v2.0
+License-File: LICENSE
