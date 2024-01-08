@@ -1,0 +1,9 @@
+vitamin_c_crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vitamin_c_crawler/config.py,sha256=nfeJJUVz760QwzSUjjfXDL0iVE1DTp6YtpPLuGsSmzQ,617
+vitamin_c_crawler/main.py,sha256=QNryb4dzmD_Ba9M2Z_NBUXgArgj7m1bSwVIOPX80c6c,4160
+vitamin_c_crawler/pictures_printscreen/data_example.jpg,sha256=Teg48_ExPnTn9E3krMyK-QJBGmydBr-8wLRQ-nm0M4k,90424
+vitamin_c_crawler/pictures_printscreen/example_csv.jpg,sha256=0sc1A3I7HrqjLP9lCB09n_fHFZ6aJKFeEoKNyhmfJDQ,248621
+vitamin_c_crawler/pictures_printscreen/pictures_screnshot.jpg,sha256=4rqr0hRg0_wIw7S6Wej74Bk7bGXYKHhq-MUktL8nOf8,239195
+vitamin_c_crawler-0.1.0.dist-info/METADATA,sha256=lg1vSynJZ3DUF-CQ6kVE8j_PHxQWIrJvTwFRvEhFiIA,2124
+vitamin_c_crawler-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+vitamin_c_crawler-0.1.0.dist-info/RECORD,,
