@@ -1,0 +1,15 @@
+bug_trail_core/__init__.py,sha256=H2e7hSnw0oM2ayuRT_k96rQZwDeB1ONeHrYx9R-Fwco,471
+bug_trail_core/_version.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+bug_trail_core/config.py,sha256=v8jNtrBC_WQushrN8Rhr0VwGzSqyt2PCccROfl-A0m8,1998
+bug_trail_core/create_table.sql,sha256=nqDFRH4jZUqM5Q8FbqTgQkZE4-LUBLr8rxNU5Z84BHk,645
+bug_trail_core/exceptions.py,sha256=G_UAlHVXEmijSWc-szEqT-95AxEMkdrKtBkpPlLtNTM,7111
+bug_trail_core/generate_sql.py,sha256=6iQrjLWbCE72rjO0Xe3OxNR-cv-eOdE7KwNAnCqr4qw,2249
+bug_trail_core/handlers.py,sha256=FMP2kHEIn26gg-mscUDaX06076iu1zubACw2IfN_6Tk,11134
+bug_trail_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bug_trail_core/sqlite3_utils.py,sha256=d_AVXxDTdkT3kwKjDzAnBATC61gKmwgP3pztHX1B4eQ,936
+bug_trail_core/system_info.py,sha256=zEk8gTjapT_2NSzC7cIgWvZy_0uHh2IjTk06e78fj28,4791
+bug_trail_core/venv_info.py,sha256=AngiH654YZJgd6kWe_5atqOYoDgnWj8ss0v7oJG0Y1U,2673
+bug_trail_core-2.1.0.dist-info/LICENSE,sha256=jorgCGk-Vzqzuda58x7WxtiRSnL0_WaOSLcZIe3czgo,1071
+bug_trail_core-2.1.0.dist-info/METADATA,sha256=g_wH7cpUIMYIFBE4waW9BuzInEXXuAENNrJhSagW_ss,4108
+bug_trail_core-2.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bug_trail_core-2.1.0.dist-info/RECORD,,
