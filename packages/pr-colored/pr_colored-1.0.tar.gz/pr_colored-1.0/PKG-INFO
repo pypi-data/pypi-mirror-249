@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pr_colored
+Version: 1.0
+Summary: colored print() as pr()
+Author: Andrew M
+Author-email: toni25010@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
