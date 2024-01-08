@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: mo-http
+Version: 4.482.24007
+Summary: More HTTP! A few more features atop the Requests library
+Home-page: https://github.com/klahnakoski/mo-http
+Author: Kyle Lahnakoski
+Author-email: kyle@lahnakoski.com
+License: MPL 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mo-dots ==9.476.24007
+Requires-Dist: mo-files ==6.481.24007
+Requires-Dist: mo-future ==7.476.24007
+Requires-Dist: mo-json ==6.481.24007
+Requires-Dist: mo-kwargs ==7.476.24007
+Requires-Dist: mo-logs ==8.477.24007
+Requires-Dist: mo-threads ==6.481.24007
+Requires-Dist: mo-times ==5.481.24007
+Requires-Dist: requests
+
+# mo-http
+
+More HTTP! A few more features atop the Requests library
+
+## Overview
+
+* handles large data using streams or temporary files
+* compresses/decompresses automatically 
+* try multiple urls 
+* retry a number of times with sleeps between
+* reminds you to set headers, so you are a good citizen 
