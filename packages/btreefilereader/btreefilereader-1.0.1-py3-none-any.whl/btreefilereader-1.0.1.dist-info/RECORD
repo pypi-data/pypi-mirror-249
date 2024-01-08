@@ -1,0 +1,11 @@
+btreefilereader/ByBTree/filter_by.py,sha256=JfYXcaTuRKKsrdUGJv-bu7ywcv0naWR46SR8L9Bh7Vg,2250
+btreefilereader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btreefilereader/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btreefilereader/core/__main__.py,sha256=YgIMIx9r4N6jVyv_TE3ZkvaSDYXG4IXI5B75mVUgb2o,501
+btreefilereader/core/metadata.toml,sha256=wCIEfeb_g5tiTORo--MlmrbwFeu2BNwYsqa_t7kzzK4,7152
+btreefilereader/core/models.py,sha256=zglrIueJG3BoU5NHRRNYvwD_u63qQ_9ZTtG7inWbmGU,684
+btreefilereader/core/reader_txt.py,sha256=rbJigeiOc6cWdrpBmoV9ziDkw6kBbPrUAwba-K0W1BA,2554
+btreefilereader-1.0.1.dist-info/LICENSE,sha256=ZKkWdG6ZLsvsEoRWckST-hKQfAru6upxof-i9oFm1N4,1069
+btreefilereader-1.0.1.dist-info/METADATA,sha256=vpZwpHwjCKeWcJ9SH1sdWZlJ0E0AIfxER4q4j2zLQps,4013
+btreefilereader-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+btreefilereader-1.0.1.dist-info/RECORD,,
