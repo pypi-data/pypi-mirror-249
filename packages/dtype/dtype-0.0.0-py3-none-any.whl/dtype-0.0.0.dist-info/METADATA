@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dtype
+Version: 0.0.0
+Summary: dtype.
+Home-page: https://github.com/dtype/dtype
+Author: dtype
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: typing
+
