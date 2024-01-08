@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: gaterpc
+Version: 0.1.1
+Summary: A RPC software based on ZeroMQ with built-in Majordomo.
+Home-page: https://github.com/firejoke/gate-rpc
+Author: Shi Fan
+Author-email: Shi Fan <firejokeshi@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, shifan
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification,
+        are permitted provided that the following conditions are met:
+        
+          1. Redistributions of source code must retain the above copyright notice,
+             this list of conditions and the following disclaimer.
+        
+          2. Redistributions in binary form must reproduce the above copyright
+             notice, this list of conditions and the following disclaimer in the
+             documentation and/or other materials provided with the distribution.
+        
+          3. Neither the name of the copyright holder nor the names of its
+             contributors may be used to endorse or promote products derived from
+             this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+        ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+        LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+        CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+        SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+        CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+        ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+        POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Repository, https://github.com/firejoke/gate-rpc
+Keywords: zero,zeroMQ,rpc
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: msgpack>=1.0.7
+Requires-Dist: pyzmq>=25.1.2
+
+gate-rpc
+############
+
+使用 ZeroMQ 和 asyncio 开发的”gate-rpc”。
+
+- 使用msgpack序列化消息
+- 支持在线程池和进程池里运行普通函数
+- 当函数返回的是 Generator 或 AsyncGenerator 时，会换成流式传输，接收端通过遍历 StreamReply 实例即可获得
+- 使用队列传输和记录日志，避免因为日志导致事件循环被阻塞
+- 使用可以异步设置键值和异步获取键值的 BoundedDict 来简化超时等待获取
+
+--------
+测试示范
+--------
+::
+
+    import asyncio
+    import sys
+    from collections.abc import AsyncGenerator, Generator
+    from logging import getLogger
+    from time import time
+    from traceback import format_exception
+
+    from gaterpc.global_settings import Settings
+    from gaterpc.core import Worker, Service, AMajordomo, Client
+
+    logger = getLogger("commands")
+
+
+    class GRWorker(Worker):
+        pass
+
+
+    class GRService(Service):
+        pass
+
+
+    class GRMajordomo(AMajordomo):
+        pass
+
+
+    class SRClient(Client):
+        pass
+
+
+    async def test():
+        # loop = asyncio.get_running_loop()
+        # loop.set_debug(True)
+        Settings.DEBUG = True
+        Settings.setup()
+        gr_majordomo = GRMajordomo(backend_addr="tcp://127.0.0.1:5555")
+        gr_majordomo.bind("tcp://127.0.0.1:777")
+        gr_majordomo.run()
+        gr = GRService(name="SRkv")
+        gr_worker = gr.create_worker(
+           GRWorker, "tcp://127.0.0.1:5555"
+        )
+        logger.info(gr_worker.service)
+        if gr_worker.service is not gr:
+            return
+        logger.info(gr_worker.interfaces)
+        gr_worker.run()
+        await asyncio.sleep(5)
+        gr_cli = SRClient("tcp://127.0.0.1:777")
+        i = 100
+        logger.info("start test")
+        try:
+            while i:
+                logger.info(f"i: {i}\n")
+                result = await gr_cli.SRkv.test("a", "b", "c", time=time())
+                logger.info(f"test: {result}")
+                result = await gr_cli.SRkv.atest("d", "e", "f", time=time())
+                logger.info(f"atest: {result}")
+                i -= 1
+            agen = await gr_cli.SRkv.test_agenerator(10)
+            logger.info(f"is async generator: {isinstance(agen, AsyncGenerator)}")
+            async for i in agen:
+                logger.info(f"get i for agen: {i}")
+        except Exception as e:
+            for line in format_exception(*sys.exc_info()):
+                logger.error(line)
+            gr_cli.close()
+            await gr_worker.stop()
+            gr_majordomo.stop()
+            raise e
+
+
+    if __name__ == "__main__":
+        asyncio.run(test(), debug=True)
