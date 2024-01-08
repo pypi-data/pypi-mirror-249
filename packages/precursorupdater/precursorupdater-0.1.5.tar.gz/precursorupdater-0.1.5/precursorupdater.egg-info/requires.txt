@@ -1,0 +1,4 @@
+progressbar2>=3
+pycryptodome>=3
+pyusb>=1
+requests>=2
