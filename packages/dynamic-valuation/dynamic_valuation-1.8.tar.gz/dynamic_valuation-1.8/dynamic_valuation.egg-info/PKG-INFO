@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dynamic_valuation
+Version: 1.8
+Summary: Find present value of a benefit stream subject to dynamics
+Author: Eric Larson
+Author-email: ericl3@illinois.edu
