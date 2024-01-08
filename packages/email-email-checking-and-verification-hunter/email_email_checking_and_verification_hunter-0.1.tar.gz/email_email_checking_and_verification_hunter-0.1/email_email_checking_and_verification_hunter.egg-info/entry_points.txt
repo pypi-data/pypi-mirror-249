@@ -1,0 +1,2 @@
+[console_scripts]
+hunter-client = email_email_checking_and_verification_hunter.main:main

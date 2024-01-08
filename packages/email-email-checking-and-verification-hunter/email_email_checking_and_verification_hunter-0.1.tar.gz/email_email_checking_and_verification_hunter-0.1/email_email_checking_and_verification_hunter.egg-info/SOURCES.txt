@@ -1,0 +1,8 @@
+README.md
+setup.py
+email_email_checking_and_verification_hunter.egg-info/PKG-INFO
+email_email_checking_and_verification_hunter.egg-info/SOURCES.txt
+email_email_checking_and_verification_hunter.egg-info/dependency_links.txt
+email_email_checking_and_verification_hunter.egg-info/entry_points.txt
+email_email_checking_and_verification_hunter.egg-info/requires.txt
+email_email_checking_and_verification_hunter.egg-info/top_level.txt
