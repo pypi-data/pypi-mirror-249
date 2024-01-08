@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+my_minmax.egg-info/PKG-INFO
+my_minmax.egg-info/SOURCES.txt
+my_minmax.egg-info/dependency_links.txt
+my_minmax.egg-info/top_level.txt
+my_packages/__init__.py
+my_packages/getMax.py
+my_packages/getMin.py
