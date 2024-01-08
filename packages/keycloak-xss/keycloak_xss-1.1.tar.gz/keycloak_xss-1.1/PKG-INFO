@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: keycloak_xss
+Version: 1.1
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+# Keycloak XSS
+
+Keycloak XSS is a vulnerability scanner tool designed for web application security testing. It focuses on CVE-2021-20323 and provides web penetration testers and bug bounty hunters with a tool to identify potential vulnerability.
+
+## Features
+
+- Scans a single URL or a list of URLs for vulnerabilities related to CVE-2021-20323.
+- Supports command-line interface (CLI) for easy usage.
+- Option to specify input and output files.
+- Integration with Telegram for notifications.
+- Opens a blog to read more about the identified bug.
+
+## Installation
+
+```bash
+pip install keycloak_xss
+```
+## Prerequisites
+
+Modules Required for Execution 
+- click
+- pyyaml
+- requests
+
+## Help Menu
+```bash
+keycloak_xss -h
+```
+Options:
+
+- `-u, --url`: URL to scan	 			`keycloak_xss -u https://target.com`              
+- `-i, --input <filename>`: Read input from text	`keycloak_xss -i target.txt`                        
+- `-o, --output <filename>`: Write output in txt file	`keycloak_xss -i target.txt -o output.txt`    
+- `-c, --chatid`: Creating Telegram Notification	`keycloak_xss --chatid yourid`    
+- `-b, --blog`: To Read about CVE-2021-20323 Bug	`keycloak_xss -b`	 
+- `-h, --help`: Help Menu   
+
+
+## Disclaimer 
+This module is intended for educational and ethical purposes only. Unauthorized use of this script to perform malicious activities is strictly prohibited. The developers are not responsible for any misuse or damage caused by this script.
