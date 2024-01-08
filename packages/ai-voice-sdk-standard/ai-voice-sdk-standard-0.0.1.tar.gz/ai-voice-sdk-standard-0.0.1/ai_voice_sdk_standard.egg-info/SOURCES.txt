@@ -1,0 +1,13 @@
+README.md
+setup.py
+ai_voice_sdk/__init__.py
+ai_voice_sdk/config.py
+ai_voice_sdk/converter.py
+ai_voice_sdk/enums.py
+ai_voice_sdk/textedit.py
+ai_voice_sdk/units.py
+ai_voice_sdk_standard.egg-info/PKG-INFO
+ai_voice_sdk_standard.egg-info/SOURCES.txt
+ai_voice_sdk_standard.egg-info/dependency_links.txt
+ai_voice_sdk_standard.egg-info/requires.txt
+ai_voice_sdk_standard.egg-info/top_level.txt
