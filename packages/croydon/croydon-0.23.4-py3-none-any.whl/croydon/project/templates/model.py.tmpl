@@ -1,0 +1,19 @@
+from croydon.models import StorableModel
+from croydon.models.fields import (
+{%- for ftype in field_types %}
+    {{ ftype }}
+{%- endfor %}
+)
+{%- for subtype, mod in subtype_imports %}
+from {{ mod }} import {{ subtype }}
+{%- endfor %}
+
+
+class {{ class_name }}(StorableModel):
+
+    COLLECTION = "{{ collection }}"
+{%- if key %}
+    KEY_FIELD = "{{ key }}"{% endif %}
+{% for fd in fds %}
+    {{ fd.render() -}}
+{% endfor -%}
