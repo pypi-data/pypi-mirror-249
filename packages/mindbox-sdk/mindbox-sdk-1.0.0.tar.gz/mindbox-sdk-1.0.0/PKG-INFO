@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: mindbox-sdk
+Version: 1.0.0
+Summary: Wrapper for working with Mindbox service API
+Home-page: https://github.com/RTHeLL/mindbox-sdk
+Download-URL: https://github.com/RTHeLL/mindbox-sdk/archive/master.zip
+Author: Kinder (RTHeLL)
+Author-email: k1ndermail@ya.ru
+License: Apache License, Version 2.0, see LICENSE file
+Keywords: wrapper,mindbox
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: requests~=2.27.1
+Requires-Dist: pydantic~=1.9.1
+
+# Mindbox Python API
+
+Wrapper for working with Mindbox service API
+
+[![N|Solid](https://img.shields.io/pypi/pyversions/mindbox-sdk.svg)](https://pypi.python.org/pypi/mindbox-sdk)
+
+### Installation
+You can install or upgrade package with:
+```
+$ pip install mindbox-sdk --upgrade
+```
+Or you can install from source with:
+```
+$ git clone https://github.com/RTHeLL/mindbox-sdk
+$ cd mindbox-sdk
+$ python setup.py install
+```
+...or install from source buth with pip
+```
+$ pip install git+https://github.com/RTHeLL/mindbox-sdk
+```
+### Example
+
+```python
+from mindbox.client import MindboxClient
+
+
+def main():
+    mindbox_client = MindboxClient(endpoint_id="YOUR_ENDPOINT_ID", secret_key="YOUR_SECRET_KEY", type_="async")
+    client = mindbox_client.operations.get_client(
+        "Getclient",
+        **{
+            "customer": {
+                "mobilePhone": "+79374134388"
+            }
+        }
+    )
+
+    print(
+        f'Client: {client}'
+    )
+
+
+main()
+```
+
+
+## Bugs
+
+If you have any problems, please create Issues [here](https://github.com/RTHeLL/mindbox-sdk/issues)  
