@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: aftk
+Version: 0.0.0.dev2
+Summary: Antenna Fields Toolkit
+Author-email: "Rafael R. L. Benevides" <rafael.rl.benevides@gmail.com>
+Keywords: antenna,electromagnetism,electric field,wave,propagation
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: stripy
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: PyQt5
+Requires-Dist: PyQt5-stubs
+Requires-Dist: pyvista
+Requires-Dist: pyvistaqt
+Requires-Dist: imageio-ffmpeg
+
+# aftk
+Antenna Fields Toolkit

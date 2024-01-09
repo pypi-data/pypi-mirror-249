@@ -1,0 +1,13 @@
+#  -*- coding: utf-8 -*-
+"""
+Author: Rafael R. L. Benevides
+"""
+
+
+def hl1(l: int, u: float) -> complex: ...
+
+def hl1_derivative(l: int, u: float) -> complex: ...
+
+def hl2(l: int, u: float) -> complex: ...
+
+def hl2_derivative(l: int, u: float) -> complex: ...
