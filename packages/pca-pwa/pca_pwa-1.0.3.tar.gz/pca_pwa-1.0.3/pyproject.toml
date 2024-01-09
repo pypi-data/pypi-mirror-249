@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pca-pwa"
+version = "1.0.3"
+description = "simplified manner for insights and decision-making, by visualizing complex relationships with PCA web application"
+authors = ["Dany Mukesha <danymukesha@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/danymukesha/pca-pwa"
+readme = "README.md"
+keywords = ["pca", "danymukesha"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.0"
+scikit-learn = "^1.3.2"
+matplotlib = "^3.8.2"
+pandas = "^2.1.4"
+seaborn = "^0.13.1"
+adjusttext = "^1.0"
+openpyxl = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
