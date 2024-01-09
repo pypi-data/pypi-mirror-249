@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>PCA Result</title>
+</head>
+<body>
+    <h1>PCA Result</h1>
+    <!-- Add a warning message if no imputation is performed -->
+    
+    {% if result['imputation_warning'] == 'none' %}
+        <p class="warning-message">No imputation performed. Missing values replaced with zero.</p>
+    {% elif result['imputation_warning'] == 'custom' %}
+        <p class="warning-message">Custom imputation performed. Missing values replaced with the specified value.</p>
+    {% elif result['imputation_warning'] == 'mean' %}
+        <p class="warning-message">Mean imputation performed. Missing values replaced with the mean.</p>
+    {% elif result['imputation_warning'] == 'median' %}
+        <p class="warning-message">Median imputation performed. Missing values replaced with the median.</p>
+    {% endif %}
+
+    <h2>PCA Plot</h2>
+    <img src="data:image/png;base64,{{ result['plot_image'] }}" alt="PCA Plot">
+
+    <h2>Original Data</h2>
+    <pre>{{ result['original_data'] | safe }}</pre>
+
+    <h2>Transformed Data</h2>
+    <pre>{{ result['transformed_data'] | safe }}</pre>
+</body>
+</html>
