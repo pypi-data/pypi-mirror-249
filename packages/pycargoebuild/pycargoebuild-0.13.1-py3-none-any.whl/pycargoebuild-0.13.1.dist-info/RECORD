@@ -1,0 +1,12 @@
+pycargoebuild/__init__.py,sha256=93ZT8xjwQQwbMB80QFnApoDkaj7QFWlvuA9-AxkAZtE,83
+pycargoebuild/__main__.py,sha256=3Th7KQhNfiQNuhfC3wSHDv5Se0Xv6zzAZxDf6J2WuRw,16223
+pycargoebuild/cargo.py,sha256=iUV_xm4GFYnR7_YBUKQhQrQ73QEdhACAG6e-eXlYRNU,9178
+pycargoebuild/ebuild.py,sha256=yEa_6q-H20AFRucbQsobe0m5581alNg3A8b5HXIELo8,10015
+pycargoebuild/fetch.py,sha256=omg6wLlCmAOJd-2w5N6zCVq41RwM1opLijCi9ie2jxY,2655
+pycargoebuild/format.py,sha256=9cOmlMgLb9Dzpc7a1sMqbdp4IXnGn9854qKOQdLT5Vs,4645
+pycargoebuild/license.py,sha256=bRS0Jcwzr3aegy_Ri8TOzHWjEM8O4FHUCmozUNGA8xY,3760
+pycargoebuild-0.13.1.dist-info/entry_points.txt,sha256=NEq-vDtn8wnkvj4KCh56tW-CPJDZb3ta_2PZaZaGhoQ,68
+pycargoebuild-0.13.1.dist-info/LICENSE,sha256=UaVN79hUchDDmHoAMP7bgk9RY2JsJqQHBRxX0IfIF7c,1081
+pycargoebuild-0.13.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pycargoebuild-0.13.1.dist-info/METADATA,sha256=8MzeqSIvcnzkmpe5WYc37Vb4hldyx21RtECpnVcMerk,3763
+pycargoebuild-0.13.1.dist-info/RECORD,,
