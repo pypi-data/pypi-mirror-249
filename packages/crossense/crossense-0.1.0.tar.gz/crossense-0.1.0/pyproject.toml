@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "crossense"
+version = "0.1.0"
+description = "some helpers to train or inference scikit-learn models"
+readme = "README.md"
+license = "MIT"
+authors = ["zeenome longevity <dev@zeenome.com>","Amir Daaee <amir@zeenome.com>"]
+repository = "https://github.com/Zeeonome/crossense"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scikit-learn = "^1.3.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+ruff = "^0.1.9"
+pre-commit = "^3.6.0"
+pytest = "^7.4.4"
+pdoc3 = "^0.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
