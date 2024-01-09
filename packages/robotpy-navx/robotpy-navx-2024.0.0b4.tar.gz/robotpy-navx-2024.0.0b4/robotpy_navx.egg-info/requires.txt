@@ -1,0 +1,3 @@
+robotpy-wpimath<2025.0.0,>=2024.0.0b4
+robotpy-wpiutil<2025.0.0,>=2024.0.0b4
+wpilib<2025.0.0,>=2024.0.0b4
