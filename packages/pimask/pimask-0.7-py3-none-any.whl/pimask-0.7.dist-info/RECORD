@@ -1,0 +1,9 @@
+pimask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pimask/annotator.py,sha256=FCz4hal1CgjrPQ7kWdbbWNF45DNCRydfGbmzhLlLgcM,1294
+pimask/cli.py,sha256=ksDc2urfIgmWYyBm5iZedu86A8elXsNhBnkIezArSbU,435
+pimask-0.7.dist-info/LICENSE,sha256=Pw47v1hbtf0bkMy6sr-ECxWyx3uKVqgkZ2ag8jKdhdw,1068
+pimask-0.7.dist-info/METADATA,sha256=Tf8qEw5q561BxjuraDn4hgqAYrws-FRtVuAnEnr202Y,280
+pimask-0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pimask-0.7.dist-info/entry_points.txt,sha256=eO4foR6LmZIAdPJdrqQCRmT98vfm_quvgU34mMsnOc4,43
+pimask-0.7.dist-info/top_level.txt,sha256=YrLfqo2roS3DIECodRhuVyQfHyF4Qd8qDLNgi4jVyWM,7
+pimask-0.7.dist-info/RECORD,,

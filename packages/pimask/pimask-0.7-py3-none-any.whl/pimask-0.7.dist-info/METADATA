@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pimask
+Version: 0.7
+Summary: Dead simple image annotation tool to create binary mask via command line
+Home-page: https://github.com/aGIToz/PiMask
+Author: Amitoz Azad
+License: MIT
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
