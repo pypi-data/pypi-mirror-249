@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: squeezemd
+Version: 0.2.1
+Summary: Molecular Dynamics pipeline
+Home-page: https://github.com/pruethemann/squeezemd
+Author: Rüthemann Peter
+Author-email: peter.ruethemann@gmail.com
+License: GNU General Public License v3
+Keywords: squeezemd
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=========
+squeezeMD
+=========
+
+
+.. image:: https://img.shields.io/pypi/v/squeezemd.svg
+        :target: https://pypi.python.org/pypi/squeezemd
+
+.. image:: https://img.shields.io/travis/pruethemann/squeezemd.svg
+        :target: https://travis-ci.com/pruethemann/squeezemd
+
+.. image:: https://readthedocs.org/projects/squeezemd/badge/?version=latest
+        :target: https://squeezemd.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Molecular Dynamics pipeline
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://squeezemd.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Installation
+----
+
+1. Download this github repository:
+ > git clone ..
+2. Install the squeezemd by executing
+> `cd sequeezeMD \
+conda env create -f squeezeMD.yml`
+or use mamba
+`conda install -c conda-forge mamba`
+`mamba env create -f squeezeMD.yml`
+
+1. Download this GitHub repository:
+```git clone ..```
+
+2. Install the squeezeMD by executing
+```
+cd squeezeMD \
+conda env create -f squeezeMD.yml
+```
+
+
+Demo workflow
+----
+
+1. The workflow can be tested by performing the following commands:
+```bash
+squeeze --resources gpu=1 -j4 -n
+```
+2. If this works run the pipeline
+```
+squeeze --resources gpu=1 -j4
+```
+
+1.
+
+Infos
+----
+
+- Python Package and terminal: https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html
+- Github workflow pypi: https://github.com/pypa/packaging.python.org/blob/main/source/guides/github-actions-ci-cd-sample/publish-to-test-pypi.yml
+
+Execute
+----
+
+```
+python3 setup.py sdist && pip3 install --upgrade .
+twine upload --verbose dist/squeezemd-0.1.5.tar.gz
+```
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+
+=======
+History
+=======
+
+0.1.0 (2023-12-26)
+------------------
+
+* First release on PyPI.
