@@ -1,0 +1,15 @@
+[build-system]  
+requires = ["setuptools", "wheel", "Cython"]  
+build-backend = "setuptools.build_meta"  
+  
+[project]  
+name = "nonebot_plugin_wx4"  
+version = "1.0.1"  
+description = "文心4的简易适配"  
+authors = [  
+    { name = "pasumao", email = "1830316810@qq.com" },  
+]  
+dependencies = [  
+    "nonebot2",  
+    "nonebot-adapter-onebot",  
+]  

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+nonebot_plugin_wx4/ConversationStorage.py
+nonebot_plugin_wx4/__init__.py
+nonebot_plugin_wx4/config.py
+nonebot_plugin_wx4.egg-info/PKG-INFO
+nonebot_plugin_wx4.egg-info/SOURCES.txt
+nonebot_plugin_wx4.egg-info/dependency_links.txt
+nonebot_plugin_wx4.egg-info/entry_points.txt
+nonebot_plugin_wx4.egg-info/requires.txt
+nonebot_plugin_wx4.egg-info/top_level.txt
