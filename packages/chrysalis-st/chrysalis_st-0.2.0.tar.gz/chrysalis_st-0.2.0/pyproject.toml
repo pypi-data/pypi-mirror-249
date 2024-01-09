@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# for testing use pip install --index-url=https://test.pypi.org/simple/
+# --extra-index-url=https://pypi.org/simple/ chrysalis-st==x.x.x
+
+[project]
+name = "chrysalis-st"
+version = "0.2.0"
+authors = [
+  {name="Demeter Túrós"},
+]
+description = "Powerful and lightweight package to identify tissue compartments in spatial transcriptomics datasets."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "archetypes==0.4.2",  # last version before PyTorch integration, chrysalis is not relying on that yet
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pysal",
+    "scanpy",
+    "scikit-learn",
+    "scipy",
+    "tqdm",
+    "seaborn",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rockdeme/chrysalis"
+"Documentation" = "https://chrysalis.readthedocs.io/"
+
+[tool.hatch.build.targets.wheel]
+packages = ["chrysalis"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+    "/docs",
+    "/misc",
+    "/plots",
+    "/article",
+    "/gallery",
+    ".readthedocs.yaml",
+]

@@ -1,0 +1,14 @@
+# dev and build folders
+data/
+temp/
+.pytest_cache/
+/dist
+/dist_archive
+/dev
+
+# IDE
+/.idea
+.ipynb_checkpoints/
+
+# temp
+functions.py
