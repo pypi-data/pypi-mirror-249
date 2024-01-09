@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: usv-detect-tf
+Version: 0.0.1
+Summary: USV Detection Python Package
+Author-email: Sabah Anis <sabahanis98@gmail.com>
+Project-URL: Homepage, https://github.com/lina-usc/usv-analysis
+Project-URL: Issues, https://github.com/lina-usc/usv-analysis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# usv-detection
+USV Detection with Tensorflow Object Detection API using Faster RCNN

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usv-detect-tf"
+version = "0.0.1"
+authors = [
+  { name="Sabah Anis", email="sabahanis98@gmail.com" },
+]
+description = "USV Detection Python Package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/lina-usc/usv-analysis"
+Issues = "https://github.com/lina-usc/usv-analysis/issues"

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/usv-detect-tf/__init__.py
+src/usv-detect-tf/usv_detection.py
+src/usv_detect_tf.egg-info/PKG-INFO
+src/usv_detect_tf.egg-info/SOURCES.txt
+src/usv_detect_tf.egg-info/dependency_links.txt
+src/usv_detect_tf.egg-info/top_level.txt
