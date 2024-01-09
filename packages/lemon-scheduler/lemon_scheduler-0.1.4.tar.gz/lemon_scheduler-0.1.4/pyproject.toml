@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "lemon-scheduler"
+version = "0.1.4"
+description = ""
+authors = ["la.junkai <lajunkai@lemonsutdio.tech>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+peewee = "3.13.2"
+pydantic = "1.10.12"
+requests = "2.31.0"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple"
+default = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lemon-scheduler
+Version: 0.1.4
+Summary: 
+Author: la.junkai
+Author-email: lajunkai@lemonsutdio.tech
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: peewee (==3.13.2)
+Requires-Dist: pydantic (==1.10.12)
+Requires-Dist: requests (==2.31.0)
+Description-Content-Type: text/markdown
+
+# Lemon scheduler
+LemonStudio 定时器插件
