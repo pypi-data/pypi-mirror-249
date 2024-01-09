@@ -1,0 +1,7 @@
+include emberfactory/*
+include emberfactory/templates/*
+include emberfactory/static/*
+include emberfactory/doc/*.md
+include emberfactory/doc/examples/*
+exclude emberfactory/doc/test/*
+global-exclude *.pyc *.DS_Store

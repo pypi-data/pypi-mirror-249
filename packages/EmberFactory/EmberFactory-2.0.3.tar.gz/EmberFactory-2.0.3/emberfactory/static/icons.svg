@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="download" clip-rule="evenodd" fill-rule="evenodd" viewBox="0 0 269 231">
+        <path stroke-width="8" fill="none" d="M28.295 211.805l-1.68-96.258 219.267 1.583-2.286 93.725"/>
+        <g transform="matrix(6.8352 0 0 4.85175 -2042.917 -738.04)">
+            <clipPath id="c">
+                <path clip-rule="nonzero" d="M310.037 150.969l18.798.211-.39 34.76-18.798-.211z"/>
+            </clipPath>
+            <g clip-path="url(#c)">
+                <path stroke-width="4"  fill="none" d="M319.246 152.095v17.92"/>
+                <path fill-rule="nonzero" d="M310.846 168.015l8.4 16.8 8.4-16.8z"/>
+            </g>
+        </g>
+        <path d="M0 221.756h270.59z"  stroke-width="25.326"/>
+    </symbol>
+    <symbol id="menu" viewBox="0 0 20 20">
+        <line x1="0" y1="3" x2="20" y2="3" style="stroke:white ;stroke-width:2.3"/>
+        <line x1="0" y1="10" x2="20" y2="10" style="stroke:white ;stroke-width:2.3"/>
+        <line x1="0" y1="17" x2="20" y2="17" style="stroke:white ;stroke-width:2.3"/>
+    </symbol>
+</svg>

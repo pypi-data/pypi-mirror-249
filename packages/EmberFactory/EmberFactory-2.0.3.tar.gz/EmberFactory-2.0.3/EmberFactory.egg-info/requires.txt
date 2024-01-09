@@ -1,0 +1,13 @@
+Flask
+Werkzeug
+Markdown
+setuptools
+numpy
+reportlab
+svg-py
+defusedxml
+openpyxl
+pdf2image
+APScheduler
+pytest
+embermaker
