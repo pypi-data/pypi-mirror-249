@@ -1,0 +1,71 @@
+{
+  "additionalProperties": true,
+  "description": "A generic document reference like for bills, order confirmations and cancellations",
+  "properties": {
+    "versionstruktur": {
+      "default": "2",
+      "title": "Versionstruktur",
+      "type": "string"
+    },
+    "boTyp": {
+      "allOf": [
+        {
+          "$ref": "../enum/BoTyp.json#"
+        }
+      ],
+      "default": "GESCHAEFTSOBJEKT"
+    },
+    "externeReferenzen": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "../com/ExterneReferenz.json#"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Externereferenzen"
+    },
+    "_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": " Id"
+    },
+    "erstellungsdatum": {
+      "format": "date-time",
+      "title": "Erstellungsdatum",
+      "type": "string"
+    },
+    "hasBeenSent": {
+      "title": "Hasbeensent",
+      "type": "boolean"
+    },
+    "dokumentenname": {
+      "title": "Dokumentenname",
+      "type": "string"
+    },
+    "vorlagenname": {
+      "title": "Vorlagenname",
+      "type": "string"
+    }
+  },
+  "required": [
+    "erstellungsdatum",
+    "hasBeenSent",
+    "dokumentenname",
+    "vorlagenname"
+  ],
+  "title": "Dokument",
+  "type": "object"
+}

@@ -1,0 +1,16 @@
+{
+  "description": "This AbgabeArt models the Konzessionsabgabentyp.\nIt contains concessionfee types needed for concessionFee mapping.",
+  "enum": [
+    "KAS",
+    "SA",
+    "SAS",
+    "TA",
+    "TAS",
+    "TK",
+    "TKS",
+    "TS",
+    "TSS"
+  ],
+  "title": "Abgabeart",
+  "type": "string"
+}

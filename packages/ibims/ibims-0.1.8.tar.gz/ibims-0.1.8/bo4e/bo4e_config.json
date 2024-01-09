@@ -1,0 +1,252 @@
+{
+  "requiredFields": [
+    "\\w+\\.\\w+\\._(version|typ)"
+  ],
+  "additionalFields": [
+    {
+      "$ref": "models/bo/Geschaeftspartner_extension.json"
+    },
+    {
+      "$ref": "models/bo/Marktlokation_extension.json"
+    },
+    {
+      "$ref": "models/bo/Rechnung_extension.json"
+    },
+    {
+      "$ref": "models/bo/Zaehler_extension.json"
+    },
+    {
+      "$ref": "models/com/Adresse_extension.json"
+    },
+    {
+      "$ref": "models/com/Preisgarantie_extension.json"
+    },
+    {
+      "$ref": "models/com/Preisposition_extension.json"
+    },
+    {
+      "$ref": "models/com/Rechnungsposition_extension.json"
+    },
+    {
+      "$ref": "models/com/Steuerbetrag_extension.json"
+    },
+    {
+      "$ref": "models/com/Verbrauch_extension.json"
+    },
+    {
+      "$ref": "models/com/Zaehlwerk_extension.json"
+    }
+  ],
+  "additionalEnumItems": [
+    {
+      "pattern": "enum.BDEWArtikelnummer",
+      "items": [
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_1_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_2_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_3_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_4_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_5_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_3_MSBG"
+      ]
+    },
+    {
+      "pattern": "enum.BoTyp",
+      "items": [
+        "Bilanzierung",
+        "Dokument",
+        "File",
+        "Hinweis",
+        "Kampagne",
+        "ZaehlerGas"
+      ]
+    },
+    {
+      "pattern": "enum.Rechnungstyp",
+      "items": [
+        "TURNUSRECHNUNG",
+        "ABSCHLAGSRECHNUNG",
+        "ABSCHLUSSRECHNUNG",
+        "ZWISCHENRECHNUNG",
+        "INTEGRIERTE_13TE_RECHNUNG",
+        "MONATSRECHNUNG",
+        "ZUSAETZLICHE_13TE_RECHNUNG"
+      ]
+    },
+    {
+      "pattern": "enum.Zaehlertyp",
+      "items": [
+        "WIRBELGASZAEHLER",
+        "MESSDATENREGISTRIERGERAET",
+        "ELEKTRONISCHERHAUSHALTSZAEHLER",
+        "SONDERAUSSTATTUNG",
+        "MODERNEMESSEINRICHTUNG",
+        "LASTGANGZAEHLER",
+        "NEUEMESSEINRICHTUNG"
+      ]
+    }
+  ],
+  "additionalModels": [
+    {
+      "module": "bo",
+      "schema": {
+        "$ref": "models/bo/Bilanzierung.json"
+      }
+    },
+    {
+      "module": "bo",
+      "schema": {
+        "$ref": "models/bo/Dokument.json"
+      }
+    },
+    {
+      "module": "bo",
+      "schema": {
+        "$ref": "models/bo/File.json"
+      }
+    },
+    {
+      "module": "bo",
+      "schema": {
+        "$ref": "models/bo/Hinweis.json"
+      }
+    },
+    {
+      "module": "bo",
+      "schema": {
+        "$ref": "models/bo/Kampagne.json"
+      }
+    },
+    {
+      "module": "bo",
+      "schema": {
+        "$ref": "models/bo/ZaehlerGas.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/Bankverbindung.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/ConcessionFee.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/Lastprofil.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/SepaInfo.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/Vertragskonto.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/VertragskontoCBA.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/VertragskontoMBA.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/Zaehlpunkt.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Abgabeart.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/AblesendeRolle.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Ablesungsstatus.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Aggregationsverantwortung.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/HinweisThema.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Marktgebiet.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/MesstechnischeEinordnung.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Messwerterfassung.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Messwertstatus.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Profiltyp.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Prognosegrundlage.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Regelzone.json"
+      }
+    },
+    {
+      "module": "enum",
+      "schema": {
+        "$ref": "models/enum/Variant.json"
+      }
+    }
+  ]
+}

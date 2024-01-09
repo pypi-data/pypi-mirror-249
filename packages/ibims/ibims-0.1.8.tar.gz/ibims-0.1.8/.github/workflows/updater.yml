@@ -1,0 +1,37 @@
+name: Check for BO4E updates
+on:
+  schedule:
+    - cron: '23 5 * * 0'
+    # Every Sunday at 5:23 am
+  workflow_dispatch:
+    # Enable manual workflow runs in the Actions tab
+
+jobs:
+  bo4e_updater:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r dev_requirements/requirements-generate-bo4e.txt
+      - name: Check for updates
+        run: |
+          if python -m bo4e/bo4e_updater.py; then
+            echo "No updates found"
+            exit 0
+          fi
+      - name: Install tox
+        run: pip install tox
+      - name: Rebuild BO4E
+        run: |
+          tox -e generate_bo4e
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
