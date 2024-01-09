@@ -1,0 +1,13 @@
+gmqtt==0.6.11
+ntplib==0.4.0
+aiounittest==1.4.2
+xmltodict
+ecdsa
+argon2pure
+aiosqlite
+
+[:platform_system != "Windows" and platform_system != "Darwin"]
+pyroute2
+
+[:sys_platform != "win32"]
+netifaces==0.11.0
