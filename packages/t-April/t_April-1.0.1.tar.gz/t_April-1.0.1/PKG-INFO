@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: t_April
+Version: 1.0.1
+Summary: Programming Language to make API [Utilise the power of all languages in you API]
+Home-page: https://github.com/merwin-asm/April
+Author: Cactochan
+License: UNKNOWN
+Keywords: API,programming,language,april
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+
+UNKNOWN
+
