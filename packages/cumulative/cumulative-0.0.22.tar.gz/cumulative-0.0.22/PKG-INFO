@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: cumulative
+Version: 0.0.22
+Summary: Manipulation and analysis of data series collections
+Home-page: https://elehcimd.github.io/cumulative/
+License: BSD-3
+Author: Michele Dallachiesa
+Author-email: michele.dallachiesa@sigforge.com
+Requires-Python: >=3.10.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ipywidgets (>=7.1.1,<8.0.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: scikit-learn (>=1.2.2,<2.0.0)
+Requires-Dist: scipy (>=1.11.4,<2.0.0)
+Requires-Dist: statsmodels (>=0.14.1,<0.15.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Requires-Dist: tsfel (>=0.1.6,<0.2.0)
+Project-URL: Repository, https://github.com/elehcimd/cumulative
+Description-Content-Type: text/markdown
+
+<p align="center">
+<img width="50%" height="50%" src="https://elehcimd.github.io/cumulative/assets/img/logo-black.svg" alt="CUMULATIVE Logo">
+</p>
+
+<p align="center">
+<img src="https://elehcimd.github.io/cumulative/assets/img/badges/test.svg" alt="Test">
+<img src="https://elehcimd.github.io/cumulative/assets/img/badges/coverage.svg" alt="Coverage">
+<img src="https://elehcimd.github.io/cumulative/assets/img/badges/python.svg" alt="Python">
+<img src="https://elehcimd.github.io/cumulative/assets/img/badges/pypi.svg" alt="PyPi">
+<img src="https://elehcimd.github.io/cumulative/assets/img/badges/license.svg" alt="License">
+<img src="https://elehcimd.github.io/cumulative/assets/img/badges/code-style.svg" alt="Code style">
+</p>
+
+---
+
+Manipulation and analysis of data series collections.
+
+---
+
+* **Documentation**: [https://elehcimd.github.io/cumulative/license/](https://elehcimd.github.io/cumulative/)
+* **Source code**: [https://github.com/elehcimd/cumulative](https://github.com/elehcimd/cumulative)
+
+---
+
+## Requirements
+
+* **Python >=3.10**
+
+## Installation
+
+```
+pip install cumulative
+```
+
+## License
+
+This project is licensed under the terms of the [BSD 3-Clause License](https://elehcimd.github.io/cumulative/license/).
+
+
