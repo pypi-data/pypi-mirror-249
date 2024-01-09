@@ -1,0 +1,482 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""转换器"""
+
+import copy
+import textwrap
+from typing import List
+
+# 在重写本项目前, 我写了一些 Go 的代码
+# 依照在 Go 中的经验把一个脚本拆成若干个模块
+# 并上传到 PyPI
+# 当然单文件脚本还是有用的
+from Annotations2Sub import Annotation
+from Annotations2Sub.Sub import Draw, DrawCommand, Event, Tag
+from Annotations2Sub.utils import Stderr, _
+
+
+def Convert(
+    annotations: List[Annotation],
+    resolutionX: int = 100,
+    resolutionY: int = 100,
+) -> List[Event]:
+    """转换 Annotations"""
+
+    def ConvertAnnotation(each: Annotation) -> List[Event]:
+        """将 Annotation 转换为 List[Event]"""
+
+        # 致谢: https://github.com/nirbheek/youtube-ass &
+        #       https://github.com/weizhenye/ASS/wiki/ASS-字幕格式规范
+
+        def Text(event: Event) -> Event:
+            """生成 Annotation 文本的 Event"""
+            text = each.text
+
+            if "\n" not in text:
+                coefficient = 2.0
+                if (
+                    "transform_coefficient_x" not in locals()
+                    or "transform_coefficient_y" not in locals()
+                ):
+                    coefficient = coefficient + 16 / 9
+                length = int(width / (textSize / coefficient))
+                text = "\n".join(
+                    textwrap.wrap(text, width=length, drop_whitespace=False)
+                )
+
+            if text.startswith(" "):
+                # 让前导空格生效
+                text = "\u200b" + text
+
+            # SSA 用 "\N" 换行
+            text = text.replace("\n", r"\N")
+
+            # 如果文本里包含大括号, 而且封闭, 会被识别为 "样式复写代码", 大括号内的文字不会显示
+            # 而且仅 libass 支持大括号转义, xy-vsfilter 没有那玩意
+            # 可以说, 本脚本(项目) 依赖于字幕滤镜(xy-vsfilter, libass)的怪癖
+            text = text.replace("{", r"\{")
+            text = text.replace("}", r"\}")
+
+            variable_x = 1.0
+            variable_y = 1.0
+
+            if "transform_coefficient_x" in locals():
+                variable_x = variable_x * transform_coefficient_x
+
+            if "transform_coefficient_y" in locals():
+                variable_y = variable_y * transform_coefficient_y
+
+            _x = x + variable_x
+            _y = y + variable_y
+
+            clip_x1 = x + variable_x
+            clip_y1 = y + variable_y
+            clip_x2 = x + width - variable_x
+            clip_y2 = y + height - variable_y
+
+            _x = round(_x, 3)
+            _y = round(_y, 3)
+            _textSize = round(textSize, 3)
+            clip_x1 = round(clip_x1, 3)
+            clip_y1 = round(clip_y1, 3)
+            clip_x2 = round(clip_x2, 3)
+            clip_y2 = round(clip_y2, 3)
+
+            tags = Tag()
+            tags.extend(
+                [
+                    Tag.Pos(_x, _y),
+                    Tag.Fontsize(_textSize),
+                    Tag.PrimaryColour(each.fgColor),
+                    Tag.Bord(0),
+                    Tag.Shadow(0),
+                    Tag.Clip(clip_x1, clip_y1, clip_x2, clip_y2),
+                ]
+            )
+            if each.fontWeight == "bold":
+                tags.append(Tag.Bold(1))
+            if each.effects == "textdropshadow":
+                tags[4].shadow = 2
+
+            event.Text = str(tags) + text
+            return event
+
+        def Box(event: Event) -> Event:
+            """生成 Annotation 文本框的 Event"""
+
+            _x = round(x, 3)
+            _y = round(y, 3)
+            _width = round(width, 3)
+            _height = round(height, 3)
+
+            tags = Tag()
+            tags.extend(
+                [
+                    Tag.Pos(_x, _y),
+                    Tag.PrimaryColour(each.bgColor),
+                    Tag.PrimaryAlpha(each.bgOpacity),
+                    Tag.Bord(0),
+                    Tag.Shadow(0),
+                ]
+            )
+
+            draws = Draw()
+            draws.extend(
+                [
+                    DrawCommand(0, 0, "m"),
+                    DrawCommand(_width, 0, "l"),
+                    DrawCommand(_width, _height, "l"),
+                    DrawCommand(0, _height, "l"),
+                ]
+            )
+            # "绘图命令必须被包含在 {\p<等级>} 和 {\p0} 之间。"
+            box_tag = r"{\p1}" + str(draws) + r"{\p0}"
+
+            event.Text = str(tags) + box_tag
+            return event
+
+        def HighlightBox(event: Event) -> Event:
+            variable1 = 1.0
+            variable2 = 1.0
+
+            if "transform_coefficient_x" in locals():
+                variable1 = variable1 * transform_coefficient_x
+
+            if "transform_coefficient_y" in locals():
+                variable2 = variable2 * transform_coefficient_y
+
+            x1 = x + variable1
+            y1 = y + variable2
+            x2 = x + width - variable1
+            y2 = y + height - variable2
+
+            _x = round(x, 3)
+            _y = round(y, 3)
+            x1 = round(x1, 3)
+            y1 = round(y1, 3)
+            x2 = round(x2, 3)
+            y2 = round(y2, 3)
+            _width = round(width, 3)
+            _height = round(height, 3)
+
+            draws = Draw()
+            draws.extend(
+                [
+                    DrawCommand(0, 0, "m"),
+                    DrawCommand(_width, 0, "l"),
+                    DrawCommand(_width, _height, "l"),
+                    DrawCommand(0, _height, "l"),
+                ]
+            )
+
+            box_tag = r"{\p1}" + str(draws) + r"{\p0}"
+
+            tags = Tag()
+            tags.extend(
+                [
+                    Tag.Pos(_x, _y),
+                    Tag.PrimaryColour(each.bgColor),
+                    Tag.PrimaryAlpha(each.bgOpacity),
+                    Tag.Bord(0),
+                    Tag.Shadow(0),
+                    Tag.iClip(x1, y1, x2, y2),
+                ]
+            )
+            event.Text = str(tags) + box_tag
+            return event
+
+        def Triangle(event: Event) -> Event:
+            direction_padding = 20
+
+            horizontal_base_start_multiplier = 0.17379070765180116
+            horizontal_base_end_multiplier = 0.14896346370154384
+            vertical_base_start_multiplier = 0.12
+            vertical_base_end_multiplier = 0.3
+
+            horizontal_start_value = width * horizontal_base_start_multiplier
+            horizontal_end_value = width * horizontal_base_end_multiplier
+            vertical_start_value = height * vertical_base_start_multiplier
+            vertical_end_value = height * vertical_base_end_multiplier
+
+            x_base = x - sx
+            y_base = y - sy
+
+            x_left = x_base
+            x_right = x_base + width
+
+            y_top = y_base
+            y_bottom = y_base + height
+
+            x_left_1 = x_left + horizontal_start_value
+            x_left_2 = x_left_1 + horizontal_end_value
+
+            x_right_1 = x_right - horizontal_end_value
+            x_right_2 = x_right_1 - horizontal_start_value
+
+            is_top = sy < (y - direction_padding)
+            is_bottom = sy > y + height
+            is_keep_left = sx < ((x + width) - (width / 2))
+            is_keep_right = sx > ((x + width) - (width / 2))
+
+            def draw(x1, y1, x2, y2):
+                _sx = round(sx, 3)
+                _sy = round(sy, 3)
+
+                x1 = round(x1, 3)
+                y1 = round(y1, 3)
+                x2 = round(x2, 3)
+                y2 = round(y2, 3)
+
+                tags = Tag()
+                tags.extend(
+                    [
+                        Tag.Pos(_sx, _sy),
+                        Tag.PrimaryColour(each.bgColor),
+                        Tag.PrimaryAlpha(each.bgOpacity),
+                        Tag.Bord(0),
+                        Tag.Shadow(0),
+                    ]
+                )
+
+                draws = Draw()
+                draws.extend(
+                    [
+                        DrawCommand(0, 0, "m"),
+                        DrawCommand(x1, y1, "l"),
+                        DrawCommand(x2, y2, "l"),
+                    ]
+                )
+                box_tag = r"{\p1}" + str(draws) + r"{\p0}"
+
+                event.Text = str(tags) + box_tag
+                return event
+
+            def draw1(x, y, x2):
+                return draw(x, y, x2, y)
+
+            def top_left():
+                return draw1(x_left_1, y_top, x_left_2)
+
+            def top_right():
+                return draw1(x_right_1, y_top, x_right_2)
+
+            def bottom_left():
+                return draw1(x_left_1, y_bottom, x_left_2)
+
+            def bottom_right():
+                return draw1(x_right_1, y_bottom, x_right_2)
+
+            if is_top and is_keep_left:
+                return top_left()
+            if is_top and is_keep_right:
+                return top_right()
+            if is_bottom and is_keep_left:
+                return bottom_left()
+            if is_bottom and is_keep_right:
+                return bottom_right()
+
+            y_middle_1 = y_top + vertical_start_value
+            y_middle_2 = y_middle_1 + vertical_end_value
+
+            is_left = (
+                sx > (x + width)
+                and sy > (y - direction_padding)
+                and sy < ((y + height) - direction_padding)
+            )
+            is_right = sx < x and sy > y and sy < (y + height)
+
+            def draw2(x, y, y2):
+                return draw(x, y, x, y2)
+
+            def left():
+                return draw2(x_base, y_middle_1, y_middle_2)
+
+            def right():
+                return draw2(x_right, y_middle_1, y_middle_2)
+
+            if is_left:
+                return right()
+            if is_right:
+                return left()
+
+            return bottom_left()
+
+        def popup_text() -> Event:
+            """生成 popup 样式的文本 Event"""
+            _event = copy.copy(event)
+            # 多加几个字, 便于调试
+            _event.Name += "popup_text;"
+
+            return Text(_event)
+
+        def popup_box() -> Event:
+            """生成 popup 样式的框 Event"""
+            _event = copy.copy(event)
+            _event.Name = event.Name + "popup_box;"
+
+            return Box(_event)
+
+        def title() -> Event:
+            """生成 title 样式的 Event"""
+            _event = copy.copy(event)
+            _event.Name += ";title"
+
+            return Text(_event)
+
+        def highlightText_text() -> Event:
+            """生成 highlightText 样式的文本 Event"""
+            _event = copy.copy(event)
+            _event.Name += "highlightText_text;"
+
+            return Text(_event)
+
+        def highlightText_box() -> Event:
+            """生成 highlightText 样式的框 Event"""
+            _event = copy.copy(event)
+            _event.Name = event.Name + "highlightText_box;"
+
+            return Box(_event)
+
+        def speech_text() -> Event:
+            """生成 speech 样式的文本 Event"""
+            _event = copy.copy(event)
+            _event.Name += "speech_text;"
+
+            return Text(_event)
+
+        def speech_box() -> Event:
+            """生成 speech 样式的框 Event"""
+            _event = copy.copy(event)
+            _event.Name += "speech_box;"
+
+            return Box(_event)
+
+        def speech_triangle() -> Event:
+            _event = copy.copy(event)
+            _event.Name += "speech_triangle;"
+            return Triangle(_event)
+
+        def anchored_text() -> Event:
+            """生成 anchored 样式的文本 Event"""
+            _event = copy.copy(event)
+            _event.Name += "anchored_text;"
+
+            return Text(_event)
+
+        def anchored_box() -> Event:
+            _event = copy.copy(event)
+            """生成 anchored 样式的框 Event"""
+            _event.Name += "anchored_box;"
+
+            return Box(_event)
+
+        def label_text() -> Event:
+            _event = copy.copy(event)
+            _event.Name += "label_text;"
+            return Text(_event)
+
+        def label_box() -> Event:
+            _event = copy.copy(event)
+            _event.Name += "label_box;"
+            return Box(_event)
+
+        def highlight_text() -> Event:
+            _event = copy.copy(event)
+            _event.Name += "highlight_text;"
+            return Text(_event)
+
+        def highlight_box() -> Event:
+            _event = copy.copy(event)
+            _event.Name += "highlight_box;"
+            return HighlightBox(_event)
+
+        events: List[Event] = []
+        event = Event()
+
+        # 我把 Annotation 抽成单独的结构就是为了这种效果
+        # 直接赋值, 不用加上一大坨清洗代码
+        event.Start = each.timeStart
+        event.End = each.timeEnd
+        # author;id;function;alternative
+        # Name 在 Aegisub 里是 "说话人"
+        event.Name += each.author + ";"
+        event.Name += each.id + ";"
+
+        x = each.x
+        y = each.y
+        textSize = each.textSize
+        width = each.width
+        height = each.height
+        sx = each.sx
+        sy = each.sy
+
+        if each.style == "title":
+            # Windows 酱赛高
+            textSize = textSize * 100 / 480
+
+        if resolutionX != 100:
+            # Annotations 的定位是"百分比"
+            # 恰好直接把"分辨率"设置为 100 就可以实现
+            # 但是这其实还是依赖于字幕滤镜的怪癖
+            transform_coefficient_x = resolutionX / 100
+
+            def TransformX(x: float) -> float:
+                return x * transform_coefficient_x
+
+            x = TransformX(x)
+            width = TransformX(width)
+            sx = TransformX(sx)
+
+        if resolutionY != 100:
+            transform_coefficient_y = resolutionY / 100
+
+            def TransformY(y: float) -> float:
+                return y * transform_coefficient_y
+
+            y = TransformY(y)
+            textSize = TransformY(textSize)
+            height = TransformY(height)
+            sy = TransformY(sy)
+
+        # 破坏性更改: 移除 --embrace-libass(b6e7cde)
+        # 在 https://github.com/libass/libass/pull/645 之前
+        # libass 的 x和y轴共用了一个缩放系数
+        # 以至于我需要将 width * 1.776 手动修正缩放错误
+        # 1.776 = 16/9 😅
+
+        if each.style == "popup":
+            # 用浅拷贝拷贝一遍再处理看起来简单些, 我不在意性能
+            events.append(popup_box())
+            events.append(popup_text())
+        elif each.style == "title":
+            events.append(title())
+        elif each.style == "highlightText":
+            # 我没见过 highlightText, 所以实现很可能不对
+            events.append(highlightText_box())
+            events.append(highlightText_text())
+        elif each.style == "speech":
+            events.append(speech_box())
+            events.append(speech_triangle())
+            events.append(speech_text())
+            # 我没见过 "anchored" 所有实现很可能不对
+        elif each.style == "anchored":
+            events.append(anchored_box())
+            events.append(anchored_text())
+        elif each.style == "label":
+            events.append(label_box())
+            events.append(label_text())
+        elif each.style == "" and each.type == "highlight":
+            events.append(highlight_box())
+            events.append(highlight_text())
+        else:
+            Stderr(_("不支持 {} 样式 ({})").format(each.style, each.id))
+
+        return events
+
+    events = []
+    for each in annotations:
+        # 一个 Annotation 可能会需要多个 Event 来表达.
+        events.extend(ConvertAnnotation(each))
+
+    return events
