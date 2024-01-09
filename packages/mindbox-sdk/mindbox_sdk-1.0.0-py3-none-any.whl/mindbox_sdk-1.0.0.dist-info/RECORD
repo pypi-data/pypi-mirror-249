@@ -1,0 +1,14 @@
+mindbox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mindbox/_version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+mindbox/client.py,sha256=nnfICAxyjbvtaEWrWSjYvtqTjUWDJdgTw0EsnVpiy3s,400
+mindbox/exceptions.py,sha256=Q6cMzxacP6Mr_zLiiaLrqc11u5a04qrNtLkU21eZync,2277
+mindbox/utils.py,sha256=P0Iw7kMsK5pWfO2ybpykIpU-DEtmdtY6ezEnk32_Cd0,351
+mindbox/services/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mindbox/services/base.py,sha256=z9-hunPNyk7Y01xXI8LO6ZR6tdop3pQgZitpIjmZIQE,2136
+mindbox/services/operations.py,sha256=MrvqfknbdkSFiFc06c65BYCfsO0F1hNT7MJQrY_Ie68,5210
+mindbox/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mindbox/types/operations.py,sha256=d0rr5gHamoQGmMfDh9TyvM_XYTH7cWhtG3VMZIOHIKk,294
+mindbox_sdk-1.0.0.dist-info/METADATA,sha256=NKMxuO_J6wb9GXRHJh37jvMIapqhqLn1tDOXQqTpjXo,2201
+mindbox_sdk-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mindbox_sdk-1.0.0.dist-info/top_level.txt,sha256=yPTabOJCRZxhR-2naCQGisBri64u0aGSMDGfaKjUkYY,8
+mindbox_sdk-1.0.0.dist-info/RECORD,,
