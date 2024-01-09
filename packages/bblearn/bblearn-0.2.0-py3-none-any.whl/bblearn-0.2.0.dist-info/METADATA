@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: bblearn
+Version: 0.2.0
+Summary: An API client for Blackboard Learn
+Author-email: Jacob Sánchez <jacobszpz@protonmail.com>
+Project-URL: Repository, https://github.com/sanjacob/bblearn
+Project-URL: Bug Tracker, https://github.com/sanjacob/bblearn/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: requests
+Requires-Dist: typing-extensions
+Requires-Dist: tiny-api-client
+Requires-Dist: pydantic
+Requires-Dist: pathvalidate
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+Requires-Dist: exceptiongroup ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+
+# Blackboard Learn API Client
+
+> This project is not endorsed by Blackboard© but developed independently
+
+Developed with [`tiny-api-client`][tiny-api-client]
+
+This library started as part of [Blackboard Sync][bbsync], but decided it could be extracted into its own distribution package.
+
+```python
+from blackboard import BlackboardSession
+
+session = BlackboardSession('http://blackboard.example.com/learn/api/public/v{version}', cookies=...)
+session.fetch_version()
+```
+
+
+## Installation
+
+```bash
+pip install bblearn
+```
+
+
+
+## License
+
+[![License: GPL  v2.1][license-shield]][gnu]
+
+This software is distributed under the [General Public License v2][license], more information available at the [Free Software Foundation][gnu].
+
+
+<!-- LINKS -->
+
+[tiny-api-client]: https://pypi.org/project/tiny-api-client
+[bbsync]: https://github.com/sanjacob/BlackboardSync
+
+
+<!-- LICENSE -->
+
+[license]: LICENSE "General Public License v2"
+[gnu]: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html "Free Software Foundation"
+[license-shield]: https://img.shields.io/github/license/sanjacob/bblearn
+
+
+<!-- SHIELD LINKS -->
+
+[pypi]: https://pypi.org/project/bblearn
+
+
+<!-- SHIELDS -->
+
+[pypi-shield]: https://img.shields.io/pypi/v/bblearn
+[build-shield]: https://img.shields.io/github/actions/workflow/status/sanjacob/bblearn/build.yml?branch=master
+[docs-shield]: https://img.shields.io/readthedocs/bblearn
