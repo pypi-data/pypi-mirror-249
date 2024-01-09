@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: os-notify
+Version: 0.2.0
+Home-page: https://github.com/alymohamedhassan/databaser
+Author: Aly Mohamed
+Author-email: alyhassan10@hotmail.com
+Project-URL: Bug Tracker, https://github.com/alymohamedhassan/databaser/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
