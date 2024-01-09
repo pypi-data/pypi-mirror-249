@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: TSEnsemble
+Version: 0.1.0
+Summary: A Python library for times series forecasting, which uses an ensemble of methods, including SARIMA and deep learning models
+Author: Viktor Astakhov
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: keras
+Requires-Dist: sklearn
+Requires-Dist: statsmodels
+Requires-Dist: matplotlib
+Requires-Dist: lightgbm
+Requires-Dist: catboost
+
