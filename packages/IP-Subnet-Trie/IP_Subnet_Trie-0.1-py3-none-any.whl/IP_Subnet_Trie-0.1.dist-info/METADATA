@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: IP-Subnet-Trie
+Version: 0.1
+Summary: An efficient data structure for handling a large number of IP addresses/subnets in a hierarchy.
+Home-page: https://github.com/nguoinaodo/ip-subnet-trie
+Author: Bui Hoang Luu
+Author-email: luugu196@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# ip-subnet-trie
+An efficient data structure for handling a large number of IP addresses/subnets in a hierarchy. 
+
+### Run tests
+```
+pytest -s tests
+```
+
+### Generate Python protobuf classes from proto file.
+```
+cd ip_subnet_trie
+protoc --python_out=. trie.proto
+```
+
+
+
