@@ -1,0 +1,14 @@
+fgo_api_types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fgo_api_types/base.py,sha256=a6RKpUBUsScOvozMHtf9Vlz0BUjSDdDzRu0JeP0xCy0,434
+fgo_api_types/basic.py,sha256=EJERECNxX-DzMpLhvcG_n1FZk_3h8kY9VKBhAY_v9-I,4223
+fgo_api_types/common.py,sha256=u48i82XsMh1i8TlxL4EC4Tr7EtdiyYPH-SygqJstPQk,3762
+fgo_api_types/enums.py,sha256=lHEpYWYqm26ZcqlBrtNKftcw72Y34for0ngeNIRRM_I,40733
+fgo_api_types/gameenums.py,sha256=sXMyLyHWMDoMDkb76_kvlvExD-Zd6MI6M5xkaPyZ95o,169786
+fgo_api_types/nice.py,sha256=hL8lfefP9DKXs4JsOOHhGGeIP1cFDQ_aJPwcXEhQ-cw,82234
+fgo_api_types/raw.py,sha256=u5Wdft0jo9xUz6FoKC54qOAQn73s0XxQhMM3Ubf1RE4,56511
+fgo_api_types/rayshift.py,sha256=Hkk0jBpNhiIdzUl9T9eFvp0xauuvQPXYp391xXc_Wj0,4518
+fgo_api_types/search.py,sha256=GfZ5YsUqFiMami0eDhRR-CkQ5JPrlCYKkBc3iMBhJ18,19285
+fgo_api_types-2024.1.8.14.16.37.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+fgo_api_types-2024.1.8.14.16.37.dist-info/METADATA,sha256=55zq8QmlcV06JrMYJMFgCUA8_I4m-O7TUNEDCWdJQSs,1273
+fgo_api_types-2024.1.8.14.16.37.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fgo_api_types-2024.1.8.14.16.37.dist-info/RECORD,,
