@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: email_verification
+Version: 0.4.1
+Requires-Dist: requests>=2
+Requires-Dist: urllib3==2.1.0
