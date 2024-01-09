@@ -1,0 +1,13 @@
+lato/__init__.py,sha256=Ctvn6-wJGvIolX45A_P209PnwKrFKoUIN7pTCWKIwKI,489
+lato/application.py,sha256=uwZhpYCEmW5XD0gjZWnVOXgrh6mJAcshABbx-IQ-cXw,4279
+lato/application_module.py,sha256=xmw8yNiI1w86DVu-3Txb82qNFUds1tKTlhGje_t6VmQ,2194
+lato/compositon.py,sha256=YOdglR4Wv2MU88eVsaTse1PjKfAPU7lJLtfyslW0d0I,679
+lato/dependency_provider.py,sha256=yzQ8Fl3WYJWaZ9OsEMg-brEAiW_c1yxDuYHtYbTp8h8,8509
+lato/message.py,sha256=gZAV1ujrDCsc5fr8nJZ5QL4t8ZFcrkGFsrlavgKMwso,271
+lato/testing.py,sha256=oCFZnLvdH0AfU507IwtWpwzXlKygDVaeeXQo8LpbiII,1268
+lato/transaction_context.py,sha256=Vwkos_TRpR1CiB02MWpMaSHC5vky0Rt9WyRLnqkcIFM,4429
+lato/utils.py,sha256=Pu-XPUsLcGVMoph7yvYbAPj1CxynF56Oc760RjyvxxI,420
+lato-0.8.0.dist-info/LICENSE,sha256=ssSvwugjTbaThDJ94IEaBBV1PwW8JVpg0t8u1JU0jQA,1077
+lato-0.8.0.dist-info/METADATA,sha256=-0AR0-SleSKnDzWEVlGIl1CfORTKGdf18PN_PDjNrXw,11689
+lato-0.8.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+lato-0.8.0.dist-info/RECORD,,
