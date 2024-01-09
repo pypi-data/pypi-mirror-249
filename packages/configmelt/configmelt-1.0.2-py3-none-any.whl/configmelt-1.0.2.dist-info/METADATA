@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: configmelt
+Version: 1.0.2
+Summary: 'config loader for json and yml files'
+Home-page: https://github.com/anglisanosa/configmelt
+Author: anglisanosa
+Author-email: marcanglisano@gmail.com
+License: ""
+Project-URL: Documentation, https://anglisanosa.github.io/configmelt/
+Project-URL: Bug Reports, https://github.com/anglisanosa/configmelt/issues
+Project-URL: Source, https://github.com/anglisanosa/configmelt
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pathutility ==1.0.*
+Requires-Dist: pyaml-env
+Requires-Dist: jsonschema
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-multiversion ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+# configmelt
+
+## Introduction
+The ConfigMeld package simplifies configuration handling by providing a class to manage JSON or YAML configurations. This class allows for easy loading, accessing, and manipulation of configuration attributes.
+
+## Installation
+To install configmelt, simply use pip:
+
+```bash
+pip install configmelt
+
+```
+## Features:
+- **Loading Configurations**: Load configurations from JSON or YAML files.
+- **Accessing Configurations**: Access configuration attributes as object properties.
+- **Flexible Representation**: Manage configurations in an object-oriented manner.
+- **Environmental Integration**: Easily convert configurations to environment variables.
+- **Schema Generation**: Generate JSON schema based on existing configurations.
+
+## Usage
+1. Initializing ConfigMeld:
+
+``` python
+from configmeld import ConfigMeld
+
+# Initialize ConfigMeld with attributes
+config = ConfigMeld(foo='bar', nested={'key': 'value'})
+
+# Access configuration attributes
+print(config.foo)  # Output: 'bar'
+
+```
+
+2. Loading Configurations from Files:
+
+```python
+# Load configurations from a JSON/YAML file
+path_to_config = 'path/to/config.json'
+loaded_config = ConfigMeld.load_config_from_file(path_to_config)
+
+# Access loaded configurations
+print(loaded_config.attribute_name)
+
+```
+
+3. schema Generation:
+
+```python
+# Generate JSON schema based on existing configurations
+schema = loaded_config.generate_schema()
+print(schema)
+```
+
+
+## Documentation
+The Sphinx-generated documentation for configmelt can be found [here](https://anglisanosa.github.io/configmelt/).
+
+## Contribution
+Feel free to contribute by submitting issues [here](https://github.com/anglisanosa/configmelt/issues).
