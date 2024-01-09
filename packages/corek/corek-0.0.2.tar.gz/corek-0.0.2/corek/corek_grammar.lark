@@ -1,0 +1,35 @@
+?start: comparison
+
+?comparison: calc ">" calc               -> gt
+            | calc "<" calc              -> lt
+            | calc ">=" calc             -> ge
+            | calc "<=" calc             -> le
+            | calc "==" calc             -> eq
+            | calc "!=" calc             -> ne
+            | calc "==" custom_string       -> eq
+            | calc "!=" custom_string       -> ne
+            | "(" comparison ")" "and" "(" comparison ")"  -> and_
+            | "(" comparison ")" "or" "(" comparison ")"  -> or_
+
+?calc: product
+    | calc "+" product   -> add
+    | calc "-" product   -> sub
+
+?product: atom
+    | product "*" atom  -> mul
+    | product "/" atom  -> div
+
+?atom: NUMBER           -> number
+     | "-" atom         -> neg
+     | NAME             -> var
+     | "(" calc ")"
+
+?custom_string: QUOTED_STRING -> custom_str
+
+QUOTED_STRING: "\"" /(?:\\.|[^"\\])*/ "\""
+
+%import common.CNAME -> NAME
+%import common.NUMBER
+%import common.WS_INLINE
+
+%ignore WS_INLINE

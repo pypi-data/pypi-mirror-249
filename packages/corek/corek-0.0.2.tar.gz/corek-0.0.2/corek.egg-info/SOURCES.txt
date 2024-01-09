@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+corek/__init__.py
+corek/corek_grammar.lark
+corek/rules_engine.py
+corek.egg-info/PKG-INFO
+corek.egg-info/SOURCES.txt
+corek.egg-info/dependency_links.txt
+corek.egg-info/requires.txt
+corek.egg-info/top_level.txt
+corek/transformer/__init__.py
+corek/transformer/corek_transformer.py
+tests/test_rules_engine.py
