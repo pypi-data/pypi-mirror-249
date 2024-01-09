@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: TSEnsemble
+Version: 0.1.1
+Summary: A Python library for times series forecasting, which uses an ensemble of methods, including SARIMA and deep learning models
+Home-page: https://github.com/Fabulotus/TSEnsemble/tree/main
+Author: Viktor Astakhov
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: keras
+Requires-Dist: sklearn
+Requires-Dist: statsmodels
+Requires-Dist: matplotlib
+Requires-Dist: lightgbm
+Requires-Dist: catboost
+
+Automatically build deep learning and ARIMA models and use them for an ensemble of models. Library has different tools for time series analysis and has a simple architecture to use.
