@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/notify/__init__.py
+src/os_notify.egg-info/PKG-INFO
+src/os_notify.egg-info/SOURCES.txt
+src/os_notify.egg-info/dependency_links.txt
+src/os_notify.egg-info/entry_points.txt
+src/os_notify.egg-info/top_level.txt
