@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dserver
+Version: 0.1.1
+Author: Geek Ricardo
+Author-email: GeekRicardozzZ@gmail.com
+Requires-Dist: sanic[ext] ==23.12.0
+Requires-Dist: motor ==3.3.2
+Requires-Dist: ulid-py ==1.1.0
+
