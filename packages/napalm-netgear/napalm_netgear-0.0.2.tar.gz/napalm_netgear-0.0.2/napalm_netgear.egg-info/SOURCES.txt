@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+napalm_netgear/__init__.py
+napalm_netgear/netgear.py
+napalm_netgear/parser.py
+napalm_netgear.egg-info/PKG-INFO
+napalm_netgear.egg-info/SOURCES.txt
+napalm_netgear.egg-info/dependency_links.txt
+napalm_netgear.egg-info/requires.txt
+napalm_netgear.egg-info/top_level.txt
