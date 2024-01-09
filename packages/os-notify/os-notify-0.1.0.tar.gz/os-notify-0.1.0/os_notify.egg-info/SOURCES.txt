@@ -1,0 +1,7 @@
+README.md
+setup.py
+os_notify.egg-info/PKG-INFO
+os_notify.egg-info/SOURCES.txt
+os_notify.egg-info/dependency_links.txt
+os_notify.egg-info/entry_points.txt
+os_notify.egg-info/top_level.txt
