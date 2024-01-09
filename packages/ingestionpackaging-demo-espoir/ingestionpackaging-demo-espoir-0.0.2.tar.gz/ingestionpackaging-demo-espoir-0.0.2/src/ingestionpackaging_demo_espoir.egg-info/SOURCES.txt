@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/ingestionpackaging_demo_espoir.egg-info/PKG-INFO
+src/ingestionpackaging_demo_espoir.egg-info/SOURCES.txt
+src/ingestionpackaging_demo_espoir.egg-info/dependency_links.txt
+src/ingestionpackaging_demo_espoir.egg-info/requires.txt
+src/ingestionpackaging_demo_espoir.egg-info/top_level.txt
+src/ingestionpackagingdemo/__init__.py
+src/ingestionpackagingdemo/ingest_data.py
+src/ingestionpackagingdemo/olist_customers_dataset.csv

@@ -1,0 +1,15 @@
+pandas
+
+[dev]
+ingestionpackaging[release,static-code-qa,test]
+
+[release]
+build
+twine
+
+[static-code-qa]
+pre-commit
+
+[test]
+pytest
+pytest-cov
