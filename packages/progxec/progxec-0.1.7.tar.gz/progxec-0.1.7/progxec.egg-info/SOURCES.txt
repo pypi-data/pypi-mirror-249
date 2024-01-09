@@ -1,0 +1,8 @@
+README.md
+setup.py
+progxec/__init__.py
+progxec/progxec.py
+progxec.egg-info/PKG-INFO
+progxec.egg-info/SOURCES.txt
+progxec.egg-info/dependency_links.txt
+progxec.egg-info/top_level.txt
