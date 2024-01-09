@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tanway
+Version: 3.0.3
+Summary: Defining the Future of 3D Lidar Vision
+Home-page: https://www.tanway.com
+Author: Tanway Software and Algorithm
+Author-email: develop@tanway.com
+License: BSD 3-Clause
+Platform: win_amd64
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+UNKNOWN
+
