@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: mudey-django
+Version: 1.3
+Summary: CLI Django
+Author: Espero-Soft Informatiques
+Author-email: contact@espero-soft.com
+License: MIT
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: annotated-types>=0.6.0
+Requires-Dist: asgiref>=3.7.2
+Requires-Dist: Django>=5.0
+Requires-Dist: inflect>=7.0.0
+Requires-Dist: prompt-toolkit>=3.0.36
+Requires-Dist: pydantic>=2.5.3
+Requires-Dist: pydantic_core>=2.14.6
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: questionary>=2.0.1
+Requires-Dist: setuptools>=69.0.3
+Requires-Dist: six>=1.16.0
+Requires-Dist: sqlparse>=0.4.4
+Requires-Dist: typing_extensions>=4.9.0
+Requires-Dist: tzdata>=2023.4
+Requires-Dist: wcwidth>=0.2.12
+
+# mudey-django CLI
+
+Ce package fournit une interface en ligne de commande (CLI) pour simplifier la gÃ©nÃ©ration de composants dans des projets Django.
+
+## Installation
+
+Pour installer `mudey-django`, utilisez `pip` :
+
+```bash
+pip install mudey-django
+```
+
+## Utilisation
+
+Une fois installÃ©, `mudey-django` peut Ãªtre utilisÃ© pour gÃ©nÃ©rer diffÃ©rents composants d'une application Django. Voici quelques exemples de commandes disponibles :
+
+- CrÃ©er une entitÃ© :
+  ```bash
+  mudey-django make:entity nom_application nom_modele
+  ```
+- CrÃ©er un formulaire :
+  ```bash
+  mudey-django make:form nom_application nom_modele
+  ```
+- CrÃ©er un modÃ¨le :
+  ```bash
+  mudey-django make:model nom_application nom_modele
+  ```
+- CrÃ©er une vue :
+  ```bash
+  mudey-django make:view nom_application nom_modele
+  ```
+- CrÃ©er des opÃ©rations CRUD pour une entitÃ© :
+  ```bash
+  mudey-django make:crud nom_application nom_modele
+  ```
+
+Assurez-vous d'avoir votre environnement Django configurÃ© avant d'utiliser ces commandes.
+
+## Configuration requise
+
+Ce package nÃ©cessite Python 3.x et les dÃ©pendances listÃ©es dans `setup.py`.
+
+## Contributions
+
+Les contributions sont les bienvenues ! Si vous souhaitez amÃ©liorer ce package, n'hÃ©sitez pas Ã  ouvrir une issue ou Ã  proposer une pull request.
+
+## Auteurs
+
+Ce package est maintenu par Espero-Soft Informatiques. Contactez-nous Ã  contact@espero-soft.com pour toute question ou commentaire.
+
