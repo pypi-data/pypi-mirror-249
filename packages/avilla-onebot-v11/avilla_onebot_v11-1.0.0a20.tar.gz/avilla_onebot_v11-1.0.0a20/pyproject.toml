@@ -1,0 +1,62 @@
+[project]
+name = "avilla-onebot-v11"
+version = "1.0.0a20"
+authors = [
+    { name = "GreyElaina", email = "GreyElaina@outlook.com" },
+]
+dependencies = [
+    "aiohttp>=3.8.1",
+    "starlette>=0.34.0",
+    "wsproto>=1.2.0",
+    "avilla-core >= 1.0.0a19",
+    "avilla-standard-qq >= 1.0.0a21",
+    "graia-amnesia[asgi]>=0.9.0",
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/GraiaProject/Avilla"
+repository = "https://github.com/GraiaProject/Avilla"
+
+[build-system]
+requires = [
+    "mina-build>=0.5.1",
+]
+build-backend = "mina.backend"
+
+[tool.pdm.build]
+includes = [
+    "avilla/onebot/v11",
+    ".mina/onebot-v11.toml",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.7.0",
+    "mina-build>=0.4.0",
+    "richuru>=0.1.1",
+    "ruff>=0.0.272",
+    "uvicorn>=0.22.0",
+    "devtools>=0.11",
+    "ipykernel>=6.23.2",
+    "pip>=23.2.1",
+    "pdm-mina>=0.3.1",
+]
+
+[tool.mina]
+enabled = true
+
+[tool.black]
+include = "\\.pyi?$"
+line-length = 120
+target-version = [
+    "py39",
+]
+
+[tool.isort]
+profile = "black"
