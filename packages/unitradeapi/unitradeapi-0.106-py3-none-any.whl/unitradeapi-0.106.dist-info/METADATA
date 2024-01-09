@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: unitradeapi
+Version: 0.106
+Summary: Binance, Bybit API
+Home-page: https://github.com/plv88/UniCryptTradeAPI
+Author: plv88
+Author-email: plv.andrey88@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: websocket-client
+Requires-Dist: PlvLogger
+
+
+BINANCE
+public market: all
+public socket: base
+
+BYBIT
+public market: base
+public socket: base
+private: wallet + history
+
+
+
+
+
