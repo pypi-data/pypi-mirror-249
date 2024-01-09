@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: riddlib
+Version: 0.1
+Summary: For Personal Use
+Author: Riddhiman
+Author-email: riddhimanadhikari2007@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt

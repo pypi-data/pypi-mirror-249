@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+riddlib/_init_.py
+riddlib.egg-info/PKG-INFO
+riddlib.egg-info/SOURCES.txt
+riddlib.egg-info/dependency_links.txt
+riddlib.egg-info/top_level.txt
