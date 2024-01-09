@@ -1,0 +1,12 @@
+aiogram_uptodate/__init__.py,sha256=YDBbNdcPSRSgTIdhdx7csza3e6EQUnIf8vNfWbTgEpY,304
+aiogram_uptodate/common.py,sha256=_0_rv6bnnx7H7SMmH17m4wepU2uXtIpNBiqLHnk6CRc,2593
+aiogram_uptodate/dialog_calendar.py,sha256=vqFJUT6nZIB0WFS1fjqCbJ3nFeOgF4t_KBzwrzUVxkE,9867
+aiogram_uptodate/schemas.py,sha256=UK3g3SbBV5iKjlOUvcWRGlNGDj2WGltxpEwqP5njkfg,2610
+aiogram_uptodate/simple_calendar.py,sha256=CMtwHXaYYJy9SrWyjFebieGXVu_m6KbEH_abyaEmRPw,8561
+aiogram_uptodate/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiogram_uptodate/tests/test_dialog_uptodate.py,sha256=aBIXX5VOnht68Zy0sDfn22jOqeUOEoZx8yyrfn_kGbE,3043
+aiogram_uptodate/tests/test_simple_uptodate.py,sha256=by2zgtTT0vnOuACwZExmnp89X1LS4fJADvvsixqKIqk,4129
+aiogram_uptodate-0.5.1.dist-info/LICENSE.txt,sha256=8HQxa5lxjPFKiNJxt_aViCqeJGUcTFvAN1movi47qaI,1075
+aiogram_uptodate-0.5.1.dist-info/METADATA,sha256=MFtIlKtZEfnBW4TFD3ysItSxsQR_Y-r68tAW6rpXkEs,2889
+aiogram_uptodate-0.5.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+aiogram_uptodate-0.5.1.dist-info/RECORD,,
