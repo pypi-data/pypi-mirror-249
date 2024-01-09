@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+riddhimanlib/_init_.py
+riddhimanlib.egg-info/PKG-INFO
+riddhimanlib.egg-info/SOURCES.txt
+riddhimanlib.egg-info/dependency_links.txt
+riddhimanlib.egg-info/top_level.txt
