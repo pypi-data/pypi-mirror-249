@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: fastapi-extend
+Version: 0.0.5
+Summary: fastapi extend
+Author: lvyunze
+Author-email: 17817462542@163.com
+Keywords: fastapi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi (==0.94.0)
+Requires-Dist: SQLAlchemy (==2.0.5)
+Requires-Dist: PyJWT (==2.0.0)
+Requires-Dist: pydantic (==1.9.0)
+Requires-Dist: passlib (==1.7.4)
+
+### 1、install
+``` pip install fastapi_extend ```
+### 2、use
+
+#### 1)、 jwt
+
+```python
+from pydantic import BaseModel
+from fastapi_extend import AuthHandler
+from fastapi import APIRouter, Depends
+
+auth_handler = AuthHandler()
+
+class AuthDetails(BaseModel):
+    username: str
+    password: str
+
+
+router = APIRouter()
+
+
+@router.post('/login')
+async def login(auth_details: AuthDetails):
+    token = auth_handler.encode_token(auth_details.username)
+    return {'data': token, "status": "success"}
+
+
+@router.get('/protected')
+async def protected(username=Depends(auth_handler.auth_wrapper)):
+    return {'name': username}
+
+
+```
+#### 2）、Pagination
+```python
+from fastapi_extend.pagenator import PageNumberPagination
+paginator = PageNumberPagination(
+            params,
+            Trade,
+            TradeSerial,
+            exclude={"start", "end"},
+        )
+query = paginator.get_queryset()
+if params.start:
+    query = query.where(Trade.trade_datetime >= params.start)
+if params.end:
+    query = query.where(Trade.trade_datetime <= params.end)
+data = await paginator.paginate_query(query, session)
+```
