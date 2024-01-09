@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: qaseio
+Version: 4.0.0
+Summary: Qase TestOps API
+Home-page: https://github.com/qase-tms/qase-python
+Author: Qase.io
+Author-email: support@qase.io
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Qase.io TestOps API
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+    Qase TestOps API Specification.
+    
+
