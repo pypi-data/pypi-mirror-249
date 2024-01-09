@@ -1,0 +1,12 @@
+ch347api/__device.py,sha256=4IiJEiWT79TJWr35xGGsAap5d6cB4CvVuT58m95sZEs,14376
+ch347api/__i2c.py,sha256=mWqdqSsZgFeA6zZ57oVGmEzQ-3EhCro9Bo_yJog099w,1261
+ch347api/__init__.py,sha256=DuC4UvGjXAEJPR2TSZKavtXupUXxKNAW1X5q9M0g50M,336
+ch347api/__spi.py,sha256=5rrpXfvltixayS5ECSpftpzKelg_H9l9HMwVojEeEdE,5395
+ch347api/i2c.py,sha256=h_28vls1KgOsJl8NrN_HNur2mUA_kt6eCTxuFoQ3Mik,2528
+ch347api/spi.py,sha256=fZD-VJTNJQXJ0yB6nxYhgP7Imdxxwbpq6PFxgRQVaC4,6640
+ch347api/uart.py,sha256=FQI3HVgrdYd9xcCeLl6Br5UhfIkfwn5-4z3N5gYWD_M,150
+ch347api-0.2.0.dist-info/LICENSE,sha256=ShWDp1FyB4eQMRVV6Pk905zZxXyPw2J0v_ttsQWDgp8,1087
+ch347api-0.2.0.dist-info/METADATA,sha256=1BqYGNlk56qwADRb9kteqYK8sWwRibl1TOfhQVTuRQk,2676
+ch347api-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ch347api-0.2.0.dist-info/top_level.txt,sha256=Hs1xeyOFVpT961-6WIhBEzWlaxH_Iu_aiflVo0qiBgM,9
+ch347api-0.2.0.dist-info/RECORD,,
