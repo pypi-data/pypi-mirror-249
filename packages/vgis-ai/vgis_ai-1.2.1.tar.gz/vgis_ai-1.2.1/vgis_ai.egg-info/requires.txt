@@ -1,0 +1,16 @@
+opencv-python
+Pillow
+numpy
+pandas
+loguru
+scikit-learn
+scipy
+torch
+baidu-aip
+imgaug
+shapely
+pycocotools
+requests
+vgis_utils
+vgis_log
+vgis_gis
