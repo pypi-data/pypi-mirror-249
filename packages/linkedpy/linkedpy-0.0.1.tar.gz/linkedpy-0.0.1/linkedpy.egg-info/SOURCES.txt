@@ -1,0 +1,9 @@
+README.md
+setup.py
+linkedpy.egg-info/PKG-INFO
+linkedpy.egg-info/SOURCES.txt
+linkedpy.egg-info/dependency_links.txt
+linkedpy.egg-info/top_level.txt
+src/__init__.py
+src/list.py
+src/node.py
