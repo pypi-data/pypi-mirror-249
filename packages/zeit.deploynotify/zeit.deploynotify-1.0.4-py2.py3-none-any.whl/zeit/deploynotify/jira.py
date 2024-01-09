@@ -1,0 +1,27 @@
+from .base import Notification
+from . import changelog
+import jira
+import logging
+
+
+log = logging.getLogger(__name__)
+
+
+class Jira(Notification):
+
+    def __call__(self, url, filename, issue_prefix, status_name, status_id,
+                 jira_username, jira_token, github_token):
+        t = changelog.download_changelog(
+            github_token, self.project, self.version, filename)
+        # XXX Can we get the previously active version from keptn?
+        issues = changelog.extract_issues(
+            changelog.extract_version(t, self.version), issue_prefix)
+
+        api = jira.JIRA(server=url, basic_auth=(jira_username, jira_token))
+        for issue in issues:
+            issue = api.issue(issue)
+            if issue.fields.status.name == status_name:
+                log.info('%s already has status %s', issue, status_name)
+                continue
+            log.info('Setting %s to %s', issue, status_name)
+            api.transition_issue(issue, status_id)
