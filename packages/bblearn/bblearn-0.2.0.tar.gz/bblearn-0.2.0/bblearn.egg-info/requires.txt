@@ -1,0 +1,15 @@
+requests
+typing_extensions
+tiny-api-client
+pydantic
+pathvalidate
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[test]
+pytest
+pytest-mock
+exceptiongroup
+mypy

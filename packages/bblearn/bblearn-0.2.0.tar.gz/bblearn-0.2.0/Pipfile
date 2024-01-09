@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tiny-api-client = "==1.2.1"
+pydantic = "==2.1.1"
+pathvalidate = "==3.1.0"
+python-dateutil = "==2.8.2"
+
+[dev-packages]
+mypy = "*"
+pytest = "*"
+sphinx = "*"
+build = "*"
+sphinx-rtd-theme = "*"
+exceptiongroup = "*"
+pytest-mock = "*"
+types-requests = "*"
+isort = "*"
+flake8 = "*"
+flake8-pyproject = "*"
+pre-commit = "*"
+twine = "*"
+pytest-tiny-api-client = "==1.0.1"
+autodoc-pydantic = "*"
+hypothesis = "*"
+black = "*"
+click = "*"
+
+[requires]
+python_version = "3.10"
