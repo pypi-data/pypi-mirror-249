@@ -1,0 +1,24 @@
+CHANGES
+=======
+
+2.2.0
+-----
+
+* update remove\_dir to rmtree (ref shutil)
+* remove useless imports
+* as\_posix instead of str
+* deleted commented fixtures I forgot to delete
+* changed test to use tmpdir and tmp\_path fixtures
+* changed append\_path to have only str as return type
+* update usage
+* support shell with bytes output
+* added overload so type checker is happier
+* added additional pull\_file test
+* revert non-necessary change
+* fix bug for . and .. directories when listing content
+* change screenshot from /sdcard to /data/local/tmp to fix screenshot popup
+* fix decode error, close https://github.com/openatx/adbutils/pull/99
+* support click percent support
+* fix \_device.py:390
+* add screenshot multi thread support
+* change runs-on
