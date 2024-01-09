@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: emzed_ext_mzmine2
+Version: 3.0.0a2
+Summary: emzed extension to access some algorithms from mzmine2
+Home-page: 
+Author: Uwe Schmitt
+Author-email: uwe.schmitt@id.ethz.ch
+License: MIT
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+Requires-Dist: emzed>=3.0.0a1
+
+emzed extension to access some algorithms from mzmine2
