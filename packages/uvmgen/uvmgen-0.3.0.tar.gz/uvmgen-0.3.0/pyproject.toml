@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uvmgen"
+version = "0.3.0"
+description = "A toolkit of uvm tb generate."
+authors = [
+    { name="Dragon-Git", email="1762578117@qq.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "fire==0.5.0",
+    "Mako==1.3.0",
+    "PyYAML==6.0.1",
+    "xmltodict==0.13.0",
+    "tomli==2.0.0",
+]
+keywords = [
+    "verification", "testbench", "UVM", "template", "tool", "generator",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+    "Topic :: Software Development :: Documentation",
+]
+[project.optional-dependencies]
+lint = ['ruff']
+doc = ['sphinx']
+test = ['pytest']
+dev = ['uvmgen[lint, doc, test]']
+
+[project.scripts]
+uvmgen = "uvmgen.uvmgen:main"
+[project.urls]
+"Homepage" = "https://github.com/Dragon-Git/icdk"
+"issue tracker" = "https://github.com/Dragon-Git/icdk/issues"
+
+# https://beta.ruff.rs/docs/settings/
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.pydocstyle]
+    convention = "google"
+    
