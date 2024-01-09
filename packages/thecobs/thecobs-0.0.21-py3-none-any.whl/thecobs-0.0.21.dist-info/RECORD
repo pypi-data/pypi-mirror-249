@@ -1,0 +1,15 @@
+thecobs/Constants.py,sha256=l5He7YwAQJW4M2AcaNyu1IJSo96jacaic4hmWNNkBog,1566
+thecobs/CoulombFunctions.py,sha256=KwXv6hf6wx7ttjRR3YRkTNyOhP3-LrymYfJShEyLf5E,4470
+thecobs/FiniteSize.py,sha256=2S3g0jssfW2H3mauzCn6gQeA-PtifXqWy_Vv5Apqx4w,2585
+thecobs/Functions.py,sha256=re-W8CYoxUOlbjUGHbgkBVwyVLWHquTGCHL87qfSM7M,3269
+thecobs/Generator.py,sha256=N7qIWfMJL9kTGiSaw8zLLdvvh9RbSd6Ux_OZNf6Njf8,2370
+thecobs/Screening.py,sha256=Orj1yj81p3DyddvQWEWmawkFCboJC6QZm5uz-5xrUFU,22706
+thecobs/SpectralFunctions.py,sha256=Er1rax7RnN8RU_NE6wBAC1XkN1EjSqoV4sigX7eU7cw,14008
+thecobs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thecobs/data/ExchangeData.dat,sha256=V8zeH6hC1mm-efxn16MmAvqdahEisXYUFyZVvr_CjfE,11451
+thecobs/data/ExchangeDataSimkovic.dat,sha256=YDAPORvByQqT8ndRKGWEu4D60ixqCiJkDIZ4mkYRL2g,3903
+thecobs/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thecobs-0.0.21.dist-info/METADATA,sha256=NDQFwIxm6KWfL2XKNNLrNA2TRbZtyjqnDwxYXjW_8hY,716
+thecobs-0.0.21.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+thecobs-0.0.21.dist-info/licenses/LICENSE,sha256=bp9d6jY1a2DykEnHC1oMa37-hKwUHVf6pAJozol-qe4,1071
+thecobs-0.0.21.dist-info/RECORD,,
