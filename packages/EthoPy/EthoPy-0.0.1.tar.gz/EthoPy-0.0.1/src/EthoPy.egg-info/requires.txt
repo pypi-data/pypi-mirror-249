@@ -1,0 +1,5 @@
+datajoint
+pygame
+panda3D
+numpy
+scipy
