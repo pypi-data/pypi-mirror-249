@@ -1,0 +1,16 @@
+pydantic_cereal/__init__.py,sha256=IiTYhDkJssvtpxTCJZvPEktkjLt6Vfj3XRXWMKtRs1Y,501
+pydantic_cereal/_metadata.py,sha256=k9LtTopUrxVLr8IrMDUE9yl5XKLTrot60McKYzjXOuU,391
+pydantic_cereal/_path_utils.py,sha256=tYiR4qwWRd1nog0ECSRC7DZAbdtavIzugY-G6EsEEJ8,645
+pydantic_cereal/_protocols.py,sha256=RjohP5xuDsFF2fzTbat46cHdGNt5_Sx02n2fjTsEu4g,2587
+pydantic_cereal/_utils.py,sha256=C8KF4ZlKlmszs1frwXE7sglQzG0kv_eSZLpUyyv7jT8,2470
+pydantic_cereal/errors.py,sha256=EPXGr37zOpYOu5htkfNmssk4iQhM5Px_HdU2Q2ZYpuw,430
+pydantic_cereal/main.py,sha256=ehmMjYGPHyxhAthAGoFWBbuE_XnKDFFgFlpCLhWS4U4,12697
+pydantic_cereal/py.typed,sha256=DtCsIDq6KOv2NOEdQjTbeMWJKRh6ZEL2E-6Mf1RLeMA,59
+pydantic_cereal/version.py,sha256=WCrlxE2R52T-WMDNRVeZkDdWewkjOWc7zVWZ6VT63nc,439
+pydantic_cereal/examples/__init__.py,sha256=7tNQQ1OYn7A4g6xDcGSD0GCLWcelqICvpkJGJ2KYLDE,64
+pydantic_cereal/examples/ex_pd.py,sha256=-0i6cC42kS8YT3hDM0EDQNGBE-g2RRWmYQCbWX_fhoA,566
+pydantic_cereal-0.0.5.dist-info/LICENSE,sha256=QRS32dyFqLn-Qdw6pR79Pvpz07CYVKP3Vhfo5CHVOQs,1075
+pydantic_cereal-0.0.5.dist-info/METADATA,sha256=ZdiBs2BkS47OMT6p-PaNS3pjsxdwGMHG7XGBIkLAxxY,5859
+pydantic_cereal-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pydantic_cereal-0.0.5.dist-info/top_level.txt,sha256=qEOgUlsUASMftJ6-mfXMxzqLCM0aKjUWgGTDM0LuLj8,16
+pydantic_cereal-0.0.5.dist-info/RECORD,,
