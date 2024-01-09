@@ -1,0 +1,8 @@
+grib_to_arrow/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+eccodes/libeccodes.so,sha256=rv5tVbiqEVbFZPLr_J3vX0GCoXtvOCXi1GkHtwnrkLw,13643920
+eccodes/libeccodes_memfs.so,sha256=AZSK4ldfjF_QDZ4ODFUq_4aiAObvhKTt2jROnanbn00,28278832
+gribtoarrow.cpython-39-x86_64-linux-gnu.so,sha256=G4z0WVHYZ8gBJTsDj03PFTV2UEUcd2vUM-ZRat7p_VU,476352
+lib/libeccodes_memfs.so,sha256=AZSK4ldfjF_QDZ4ODFUq_4aiAObvhKTt2jROnanbn00,28278832
+grib_to_arrow-0.1.4.dist-info/METADATA,sha256=SNo-_pzcVYC8Nbp2DQwOG8dZ3L_ma6ewuw1F8yZHnNA,13061
+grib_to_arrow-0.1.4.dist-info/WHEEL,sha256=p-3KN7fLF45_QPINP10-Z1-5vpSvZTTik5ipz-YC0Qs,108
+grib_to_arrow-0.1.4.dist-info/RECORD,,
