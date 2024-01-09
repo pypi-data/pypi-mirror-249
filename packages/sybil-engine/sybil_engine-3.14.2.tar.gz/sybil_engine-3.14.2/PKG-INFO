@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sybil_engine
+Version: 3.14.2
+Summary: Engine for web3 smart contracts automatization.
+Home-page: https://github.com/Indeoo/sybil-engine/
+Author: Indeoo
+Author-email: indeooars@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: loguru==0.7.2
+Requires-Dist: setuptools==69.0.3
+Requires-Dist: ccxt==4.1.100
+Requires-Dist: tqdm==4.66.1
+Requires-Dist: cryptography==41.0.7
+Requires-Dist: web3==6.13.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: pyTelegramBotAPI==4.14.1
+Requires-Dist: python-okx==0.2.2
+Requires-Dist: termcolor==2.4.0
+Requires-Dist: bumpversion==0.6.0
+
+#Sybil Engine
+
+python library for testing web3 contract.
+
+Supported features:
+    - withdraw from OKX to Arbitrum One, Base , Linea, ZKSync
+    - reading private keys from .csv or txt
+    - private key encryption
+    - execution planner
+    - module executor
+    - transaction executor
+    - generic dex logic
