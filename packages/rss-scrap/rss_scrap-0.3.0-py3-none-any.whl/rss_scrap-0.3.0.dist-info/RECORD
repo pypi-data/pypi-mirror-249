@@ -1,0 +1,13 @@
+torss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torss/app.py,sha256=o59FZheOJLWcWJh2d2fu3ryfXEviWOzXbd1nEUssulY,4437
+torss/args.py,sha256=CVXjD2iHEThw8zN93RtZQlnVis6QzQidq0G-fNrFpD4,1684
+torss/feed.py,sha256=h1tNqjQN_xaCCTqiynL5stPsRxl8jJ7Nrceux--G4FE,2643
+torss/feeds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torss/feeds/economist.py,sha256=fOlHOBN7RRLYpCQHiCkuKijdc_zExid64kNYqISugKs,4268
+torss/feeds/gov_pl_gis.py,sha256=TmqCuzeut5dTIh1GLmdXCzBJUrUE3OUStG0q7-CexEM,1482
+torss/feeds/wiki_current_events.py,sha256=LchLL6PDvZF_Xk8I6NR0fPJqpO8O2eNAWmMfTxG1H7k,1940
+torss/utils.py,sha256=sCRsxW901m0oTj54ADhrzkCPrLeTQczIjaY4JkqdDuw,1109
+rss_scrap-0.3.0.dist-info/METADATA,sha256=NQrVoPxBfSCupx2c-6B3G3Hf-sE-aDshn1sJohUsd1s,1477
+rss_scrap-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+rss_scrap-0.3.0.dist-info/entry_points.txt,sha256=ZKajcTGXQ-5HLJg6NFfjcbws9LNVBEdDkOpFGcCLBc0,44
+rss_scrap-0.3.0.dist-info/RECORD,,

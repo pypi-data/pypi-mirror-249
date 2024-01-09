@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: rss-scrap
+Version: 0.3.0
+Summary: Web scrapper which converts sites to RSS feeds.
+Home-page: https://git.goral.net.pl/rss-scrap.git/about
+License: GPL-3.0-only
+Author: Michal Goral
+Author-email: dev@goral.net.pl
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.0,<5.0.0)
+Project-URL: Repository, https://git.goral.net.pl/rss-scrap.git
+Description-Content-Type: text/markdown
+
+# RSS Scrap
+
+rss-scrap is a command line utility which scraps contents of web pages and
+converts them to RSS feeds. Specific web scrapers must be implemented for
+each page.
+
+rss-scrap works asynchronously, meaning that many web pages can be scraped
+simultaneously.
+
+## Implemented scrappers
+
+- `economist`: The Economist, World This Week section: Politics this week,
+  Business this week, Kal's Cartoon (3 separate feeds)
+- `wiki_current_events`: Wikipedia Current Events
+    - parameter `date`: day (ISO format) from which events should be fetched
+      (e.g. `-f wiki_current_events,date=2020-10-27`)
+- `gov_pl_gis`: Warnings of Główny Inspektorat Sanitarny (Polish Government Agency)
+
