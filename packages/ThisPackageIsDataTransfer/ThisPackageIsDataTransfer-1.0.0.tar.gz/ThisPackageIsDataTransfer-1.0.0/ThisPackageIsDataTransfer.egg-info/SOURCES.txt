@@ -1,0 +1,8 @@
+setup.py
+DataTransfer/__init__.py
+DataTransfer/main.py
+ThisPackageIsDataTransfer.egg-info/PKG-INFO
+ThisPackageIsDataTransfer.egg-info/SOURCES.txt
+ThisPackageIsDataTransfer.egg-info/dependency_links.txt
+ThisPackageIsDataTransfer.egg-info/entry_points.txt
+ThisPackageIsDataTransfer.egg-info/top_level.txt
