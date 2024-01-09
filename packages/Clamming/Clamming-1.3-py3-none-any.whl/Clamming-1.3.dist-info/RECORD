@@ -1,0 +1,14 @@
+clamming/__init__.py,sha256=pb-1gHqE3qfeuyOcse3L89xIu8s_CY-DwrKpAgGrG8U,572
+clamming/claminfo.py,sha256=RDiiVAZt05xFJJJIOk2r8WU9N4eCzFZaY8reGQ03Hv4,5519
+clamming/claminfomd.py,sha256=9bjCMJhS4urU3r00m2rOA3nm4VzBUz-fBiK7m29KilI,17622
+clamming/clamsclass.py,sha256=Kn6l6zxaRBXZBVETglBK-jpovGrvnM359c4inmJULDc,13848
+clamming/clamspack.py,sha256=ZSeNdNn3BSUURLX1EJQDjwye0p75gIdcNEBRkfylJxA,13044
+clamming/clamutils.py,sha256=cOgIKPbvROO0L2yGz1prhZxKfGDZP0qqZy9kxqnTuQM,2433
+clamming/classparser.py,sha256=_iGdPTRAV1Jna75ddEdGGxR9uhDfpmyXIoYnA0A-olk,5074
+clamming/html_export.py,sha256=dabAY6JxsqXJkpC1qHY6VTDUDObTzXNW3TpkCURG4wY,18791
+Clamming-1.3.dist-info/AUTHORS,sha256=5dGH4Jp6o2LfolC8u3wZqrCwCzTXe-S5DmNa1KFuJCY,740
+Clamming-1.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+Clamming-1.3.dist-info/METADATA,sha256=D73qwd5xt0TdQBQ-Z8YxCyGjI3daPC5IJyCLjr_9EaI,46420
+Clamming-1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Clamming-1.3.dist-info/top_level.txt,sha256=OQf97OKpmnkcWYrLkZCQBOteq0d89GkQ-Ux1gmidsn4,9
+Clamming-1.3.dist-info/RECORD,,
