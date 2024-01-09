@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pimask/__init__.py
+pimask/annotator.py
+pimask/cli.py
+pimask.egg-info/PKG-INFO
+pimask.egg-info/SOURCES.txt
+pimask.egg-info/dependency_links.txt
+pimask.egg-info/entry_points.txt
+pimask.egg-info/requires.txt
+pimask.egg-info/top_level.txt

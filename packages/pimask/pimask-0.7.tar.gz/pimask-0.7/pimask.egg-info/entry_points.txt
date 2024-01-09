@@ -1,0 +1,2 @@
+[console_scripts]
+pimask = pimask.cli:main
