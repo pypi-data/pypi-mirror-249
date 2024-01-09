@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% set active_page = "index" %}
+
+{% block content %}
+    <h1>Something went wrong</h1>
+
+    <div class="txtbox">
+        <p>
+            Information about the processing may be available below, ending with what caused the crash.
+            If it is not clear and sufficient, you may contact us - see address at the bottom of the page.
+        </p>
+        <p>
+            {{ message["critical"] }}
+        </p>
+        {% for aline in message["log"] %}
+            {{ aline|safe }}
+        {% endfor %}
+        {%  if not message["critical"] and not message["log"] %}
+            <p class="indent">No specific information, we apologise for this.</p>
+        {% endif %}
+        <p>
+            Please try again or contact us.
+        </p>
+        <button class="btn center" onclick="goBack()" style="width: 15em;">Go Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+    </script>
+
+{% endblock %}
