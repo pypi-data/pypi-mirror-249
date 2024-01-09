@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+ch347api/__device.py
+ch347api/__i2c.py
+ch347api/__init__.py
+ch347api/__spi.py
+ch347api/i2c.py
+ch347api/spi.py
+ch347api/uart.py
+ch347api.egg-info/PKG-INFO
+ch347api.egg-info/SOURCES.txt
+ch347api.egg-info/dependency_links.txt
+ch347api.egg-info/requires.txt
+ch347api.egg-info/top_level.txt
