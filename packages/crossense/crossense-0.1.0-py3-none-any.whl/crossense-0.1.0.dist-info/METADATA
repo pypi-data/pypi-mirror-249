@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: crossense
+Version: 0.1.0
+Summary: some helpers to train or inference scikit-learn models
+Home-page: https://github.com/Zeeonome/crossense
+License: MIT
+Author: zeenome longevity
+Author-email: dev@zeenome.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: scikit-learn (>=1.3.2,<2.0.0)
+Project-URL: Repository, https://github.com/Zeeonome/crossense
+Description-Content-Type: text/markdown
+
+# Crossense
+
+Crossense is a collection of utilities designed to facilitate working with scikit-learn models, including training, Inferencing and benchmarking.
+
+## Features
+(to be written)
+
+## Installation
+
+You can install Crossense using pip:
+
+```bash
+pip install crossense
+```
+
+## Usage
+``` python
+from crossense.ensemble import CrossBaggingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.datasets import load_iris
+from sklearn.model_selection import StratifiedKFold
+
+ds = load_iris()
+clf = CrossBaggingClassifier(LogisticRegression(), cv=StratifiedKFold(5))
+clf.fit(ds.data, ds.target)
+```
+For more detailed usage and examples, please refer to the [documentation](https://zeeonome.github.io/crossense).
+
+## Contributing
+If you'd like to contribute to Crossense, please follow the contribution guidelines (comming soon).
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+

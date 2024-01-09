@@ -1,0 +1,8 @@
+crossense/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossense/ensemble/__init__.py,sha256=cGG9kLN_Rk00Ov1cjQh640vuMUcjsYAU4t_eqgX6Nrs,315
+crossense/ensemble/_bagging.py,sha256=aA9p0Y3QxnWY65YwYMM0nxThAJF5hDgW1Cft6B8YJj0,27215
+crossense/ensemble/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossense/ensemble/tests/test_bagging.py,sha256=DRzTZG8xoQiqc7pPuCXDoGyKwk09FYuOf9VhV6O444E,13892
+crossense-0.1.0.dist-info/METADATA,sha256=WGLyV-oVpRqxnTZiCCX4HmPM9GJhtOUh7s0XQJSmFmw,1611
+crossense-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+crossense-0.1.0.dist-info/RECORD,,
