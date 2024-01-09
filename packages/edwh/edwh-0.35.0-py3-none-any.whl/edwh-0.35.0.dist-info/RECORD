@@ -1,0 +1,15 @@
+edwh/__about__.py,sha256=K33u_0urQkZ_oKijVMsgcZhr_RCk_p6QGQ5CmAMSWQ4,202
+edwh/__init__.py,sha256=RKcQl90MoI2i9dbuhSSQ85tDMiyHVbiJyQ8MZMv_Of8,503
+edwh/cli.py,sha256=RKQmULrDEHy632XcnGZWlihrZ24PMHEYKbLiB92F8kY,3423
+edwh/extendable_fab.py,sha256=gD9H1ROG2KyChxbbPVmovI_5U94Msf8K-ZmoTdT0Tfs,1016
+edwh/helpers.py,sha256=B1zkXfTXvVIidAveOqiRX8fOcvaV0ioRprE76cmrGw0,3304
+edwh/meta.py,sha256=Q3QUHlU4Ztb6NEco4wdWXpz5jx-5cnvCSvhkOrC_5wM,6064
+edwh/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edwh/tasks.py,sha256=iuV_AzfmxEdSa5-jqh9h5lt5mVe1Y9k68zxypMl8k-o,41601
+edwh/local_tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edwh/local_tasks/plugin.py,sha256=7l4St95GoSxjPwwZbpdFMFAmHgW6jeIawfWdv6g1kWE,19887
+edwh-0.35.0.dist-info/METADATA,sha256=U1kulEfasjXnBQRyReRTfY_WuOCxxX90QyhnKTpzSds,7201
+edwh-0.35.0.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+edwh-0.35.0.dist-info/entry_points.txt,sha256=44khznA_xSeBYTFidbM6Xlc7iLxxlVmokEIVOzArQ7A,72
+edwh-0.35.0.dist-info/licenses/LICENSE.txt,sha256=aEieA0fM2XTF7ZDTpgoyq1dgyRTHjLRSobAY2u5LQ4A,1094
+edwh-0.35.0.dist-info/RECORD,,
