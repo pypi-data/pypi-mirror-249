@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+chmod/__init__.py
+chmod/chmod.py
+chmod.egg-info/PKG-INFO
+chmod.egg-info/SOURCES.txt
+chmod.egg-info/dependency_links.txt
+chmod.egg-info/top_level.txt
+tests/test_chmod_conversion.py
