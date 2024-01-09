@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/virtumouse.py
+src/virtumouse.egg-info/PKG-INFO
+src/virtumouse.egg-info/SOURCES.txt
+src/virtumouse.egg-info/dependency_links.txt
+src/virtumouse.egg-info/entry_points.txt
+src/virtumouse.egg-info/top_level.txt
